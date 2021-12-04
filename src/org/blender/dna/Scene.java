@@ -27,7 +27,7 @@ public class Scene extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 213;
+	public static final int __DNA__SDNA_INDEX = 219;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -690,7 +690,7 @@ public class Scene extends CFacade {
 	 * Field descriptor (offset) for struct member 'depsgraph_hash'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> none of the dependency graph vars is mean to be saved </p>
+	 * <p> None of the dependency graph vars is mean to be saved. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1031,7 +1031,7 @@ public class Scene extends CFacade {
 	 * Field descriptor (offset) for struct member 'preview'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
+	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1100,7 +1100,7 @@ public class Scene extends CFacade {
 	 * Field descriptor (offset) for struct member 'collection'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Scene master collection that objects and other collections in the scene<h4>Blender Source Code:</h4>
+	 * (read-only)    Scene root collection that owns all the objects and other collections instantiated in the scene<h4>Blender Source Code:</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -2360,7 +2360,7 @@ public class Scene extends CFacade {
 	 * Get method for struct member 'depsgraph_hash'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> none of the dependency graph vars is mean to be saved </p>
+	 * <p> None of the dependency graph vars is mean to be saved. </p>
 	 * @see #__DNA__FIELD__depsgraph_hash
 	 */
 	
@@ -2380,7 +2380,7 @@ public class Scene extends CFacade {
 	 * Set method for struct member 'depsgraph_hash'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> none of the dependency graph vars is mean to be saved </p>
+	 * <p> None of the dependency graph vars is mean to be saved. </p>
 	 * @see #__DNA__FIELD__depsgraph_hash
 	 */
 	
@@ -2958,7 +2958,7 @@ public class Scene extends CFacade {
 	 * Get method for struct member 'preview'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
+	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -2978,7 +2978,7 @@ public class Scene extends CFacade {
 	 * Set method for struct member 'preview'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
+	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -3076,7 +3076,7 @@ public class Scene extends CFacade {
 	 * Get method for struct member 'collection'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Scene master collection that objects and other collections in the scene<h4>Blender Source Code:</h4>
+	 * (read-only)    Scene root collection that owns all the objects and other collections instantiated in the scene<h4>Blender Source Code:</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -3099,7 +3099,7 @@ public class Scene extends CFacade {
 	 * Set method for struct member 'collection'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Scene master collection that objects and other collections in the scene<h4>Blender Source Code:</h4>
+	 * (read-only)    Scene root collection that owns all the objects and other collections instantiated in the scene<h4>Blender Source Code:</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>

@@ -27,7 +27,7 @@ public class UserDef extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 281;
+	public static final int __DNA__SDNA_INDEX = 292;
 
 	/**
 	 * Field descriptor (offset) for struct member 'versionfile'.
@@ -1906,7 +1906,7 @@ public class UserDef extends CFacade {
 	 * Field descriptor (offset) for struct member 'recent_files'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Maximum number of recently used files to remember . </p>
+	 * <p> Maximum number of recently used files to remember. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3227,11 +3227,34 @@ public class UserDef extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad10'</li>
-	 * <li>Signature: 'char[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad10 = new long[]{13100, 13172};
+
+	/**
+	 * Field descriptor (offset) for struct member 'file_preview_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserpref_File_Preview_Type </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef userdef = ...;
+	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD__file_preview_type);
+	 * CPointer&lt;Byte&gt; p_file_preview_type = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'file_preview_type'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__file_preview_type = new long[]{13102, 13174};
 
 	/**
 	 * Field descriptor (offset) for struct member 'statusbar_flag'.
@@ -6400,7 +6423,7 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'recent_files'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Maximum number of recently used files to remember . </p>
+	 * <p> Maximum number of recently used files to remember. </p>
 	 * @see #__DNA__FIELD__recent_files
 	 */
 	
@@ -6417,7 +6440,7 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'recent_files'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Maximum number of recently used files to remember . </p>
+	 * <p> Maximum number of recently used files to remember. </p>
 	 * @see #__DNA__FIELD__recent_files
 	 */
 	
@@ -8399,7 +8422,7 @@ public class UserDef extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			2
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 13172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -8427,6 +8450,40 @@ public class UserDef extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad10);
 		} else {
 			__io__generic__copy( get_pad10(), _pad10);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'file_preview_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserpref_File_Preview_Type </p>
+	 * @see #__DNA__FIELD__file_preview_type
+	 */
+	
+	public byte getFile_preview_type() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 13174);
+		} else {
+			return __io__block.readByte(__io__address + 13102);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'file_preview_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserpref_File_Preview_Type </p>
+	 * @see #__DNA__FIELD__file_preview_type
+	 */
+	
+	public void setFile_preview_type(byte file_preview_type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 13174, file_preview_type);
+		} else {
+			__io__block.writeByte(__io__address + 13102, file_preview_type);
 		}
 	}
 

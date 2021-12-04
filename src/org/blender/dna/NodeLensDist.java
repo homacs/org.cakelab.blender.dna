@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> qdn: lens distortion node </p>
+ * <p> Lens distortion node. </p>
  */
 
 @CMetaData(size32=8, size64=8)
@@ -28,7 +28,7 @@ public class NodeLensDist extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 427;
+	public static final int __DNA__SDNA_INDEX = 441;
 
 	/**
 	 * Field descriptor (offset) for struct member 'jit'.

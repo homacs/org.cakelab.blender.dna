@@ -27,7 +27,7 @@ public class GlowShaderFxData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 570;
+	public static final int __DNA__SDNA_INDEX = 624;
 
 	/**
 	 * Field descriptor (offset) for struct member 'shaderfx'.
@@ -196,8 +196,7 @@ public class GlowShaderFxData extends CFacade {
 	 * Field descriptor (offset) for struct member 'rotation'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rotation of effect. <br/> 
-	 *  </p>
+	 * <p> Rotation of effect. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -565,8 +564,7 @@ public class GlowShaderFxData extends CFacade {
 	 * Get method for struct member 'rotation'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rotation of effect. <br/> 
-	 *  </p>
+	 * <p> Rotation of effect. </p>
 	 * @see #__DNA__FIELD__rotation
 	 */
 	
@@ -583,8 +581,7 @@ public class GlowShaderFxData extends CFacade {
 	 * Set method for struct member 'rotation'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rotation of effect. <br/> 
-	 *  </p>
+	 * <p> Rotation of effect. </p>
 	 * @see #__DNA__FIELD__rotation
 	 */
 	

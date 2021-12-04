@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Grease-Pencil Annotations - 'DataBlock' </p>
  */
 
-@CMetaData(size32=452, size64=544)
+@CMetaData(size32=464, size64=568)
 public class bGPdata extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bGPdata extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 544;
+	public static final int __DNA__SDNA_INDEX = 593;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -217,6 +217,29 @@ public class bGPdata extends CFacade {
 	public static final long[] __DNA__FIELD__palettes = new long[]{164, 216};
 
 	/**
+	 * Field descriptor (offset) for struct member 'vertex_group_names'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPdata bgpdata = ...;
+	 * CPointer&lt;Object&gt; p = bgpdata.__dna__addressof(bGPdata.__DNA__FIELD__vertex_group_names);
+	 * CPointer&lt;ListBase&gt; p_vertex_group_names = p.cast(new Class[]{ListBase.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'vertex_group_names'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__vertex_group_names = new long[]{172, 232};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pixfactor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -237,7 +260,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pixfactor = new long[]{172, 232};
+	public static final long[] __DNA__FIELD__pixfactor = new long[]{180, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'line_color'.
@@ -260,7 +283,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__line_color = new long[]{176, 236};
+	public static final long[] __DNA__FIELD__line_color = new long[]{184, 252};
 
 	/**
 	 * Field descriptor (offset) for struct member 'onion_factor'.
@@ -283,7 +306,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__onion_factor = new long[]{192, 252};
+	public static final long[] __DNA__FIELD__onion_factor = new long[]{200, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'onion_mode'.
@@ -306,7 +329,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__onion_mode = new long[]{196, 256};
+	public static final long[] __DNA__FIELD__onion_mode = new long[]{204, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'onion_flag'.
@@ -329,7 +352,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__onion_flag = new long[]{200, 260};
+	public static final long[] __DNA__FIELD__onion_flag = new long[]{208, 276};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gstep'.
@@ -352,7 +375,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gstep = new long[]{204, 264};
+	public static final long[] __DNA__FIELD__gstep = new long[]{212, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gstep_next'.
@@ -375,7 +398,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gstep_next = new long[]{206, 266};
+	public static final long[] __DNA__FIELD__gstep_next = new long[]{214, 282};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gcolor_prev'.
@@ -398,7 +421,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gcolor_prev = new long[]{208, 268};
+	public static final long[] __DNA__FIELD__gcolor_prev = new long[]{216, 284};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gcolor_next'.
@@ -421,7 +444,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gcolor_next = new long[]{220, 280};
+	public static final long[] __DNA__FIELD__gcolor_next = new long[]{228, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'zdepth_offset'.
@@ -444,7 +467,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__zdepth_offset = new long[]{232, 292};
+	public static final long[] __DNA__FIELD__zdepth_offset = new long[]{240, 308};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
@@ -467,7 +490,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat = new long[]{236, 296};
+	public static final long[] __DNA__FIELD__mat = new long[]{244, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totcol'.
@@ -490,7 +513,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totcol = new long[]{240, 304};
+	public static final long[] __DNA__FIELD__totcol = new long[]{248, 320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totlayer'.
@@ -513,7 +536,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totlayer = new long[]{242, 306};
+	public static final long[] __DNA__FIELD__totlayer = new long[]{250, 322};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totframe'.
@@ -533,7 +556,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totframe = new long[]{244, 308};
+	public static final long[] __DNA__FIELD__totframe = new long[]{252, 324};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -553,7 +576,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{246, 310};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{254, 326};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totstroke'.
@@ -573,7 +596,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totstroke = new long[]{252, 316};
+	public static final long[] __DNA__FIELD__totstroke = new long[]{260, 332};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totpoint'.
@@ -593,7 +616,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totpoint = new long[]{256, 320};
+	public static final long[] __DNA__FIELD__totpoint = new long[]{264, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_mode'.
@@ -616,7 +639,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__draw_mode = new long[]{260, 324};
+	public static final long[] __DNA__FIELD__draw_mode = new long[]{268, 340};
 
 	/**
 	 * Field descriptor (offset) for struct member 'onion_keytype'.
@@ -639,7 +662,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__onion_keytype = new long[]{262, 326};
+	public static final long[] __DNA__FIELD__onion_keytype = new long[]{270, 342};
 
 	/**
 	 * Field descriptor (offset) for struct member 'select_last_index'.
@@ -662,27 +685,27 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__select_last_index = new long[]{264, 328};
+	public static final long[] __DNA__FIELD__select_last_index = new long[]{272, 344};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad3'.
+	 * Field descriptor (offset) for struct member 'vertex_group_active_index'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bGPdata bgpdata = ...;
-	 * CPointer&lt;Object&gt; p = bgpdata.__dna__addressof(bGPdata.__DNA__FIELD___pad3);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad3 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = bgpdata.__dna__addressof(bGPdata.__DNA__FIELD__vertex_group_active_index);
+	 * CPointer&lt;Integer&gt; p_vertex_group_active_index = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad3'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'vertex_group_active_index'</li>
+	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{268, 332};
+	public static final long[] __DNA__FIELD__vertex_group_active_index = new long[]{276, 348};
 
 	/**
 	 * Field descriptor (offset) for struct member 'grid'.
@@ -702,7 +725,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__grid = new long[]{272, 336};
+	public static final long[] __DNA__FIELD__grid = new long[]{280, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -719,10 +742,10 @@ public class bGPdata extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'bGPdata_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 140/168</li>
+	 * <li>Actual Size (32bit/64bit): 144/176</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{312, 376};
+	public static final long[] __DNA__FIELD__runtime = new long[]{320, 392};
 
 	public bGPdata(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1037,6 +1060,48 @@ public class bGPdata extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'vertex_group_names'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
+	 * @see #__DNA__FIELD__vertex_group_names
+	 */
+	
+	public ListBase getVertex_group_names() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ListBase(__io__address + 232, __io__block, __io__blockTable);
+		} else {
+			return new ListBase(__io__address + 172, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'vertex_group_names'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
+	 * @see #__DNA__FIELD__vertex_group_names
+	 */
+	
+	public void setVertex_group_names(ListBase vertex_group_names) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 232;
+		} else {
+			__dna__offset = 172;
+		}
+		if (__io__equals(vertex_group_names, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, vertex_group_names)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, vertex_group_names);
+		} else {
+			__io__generic__copy( getVertex_group_names(), vertex_group_names);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pixfactor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -1047,9 +1112,9 @@ public class bGPdata extends CFacade {
 	public float getPixfactor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 232);
+			return __io__block.readFloat(__io__address + 248);
 		} else {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 180);
 		}
 	}
 
@@ -1064,9 +1129,9 @@ public class bGPdata extends CFacade {
 	public void setPixfactor(float pixfactor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 232, pixfactor);
+			__io__block.writeFloat(__io__address + 248, pixfactor);
 		} else {
-			__io__block.writeFloat(__io__address + 172, pixfactor);
+			__io__block.writeFloat(__io__address + 180, pixfactor);
 		}
 	}
 
@@ -1085,9 +1150,9 @@ public class bGPdata extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 236, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 252, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1103,9 +1168,9 @@ public class bGPdata extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 236;
+			__dna__offset = 252;
 		} else {
-			__dna__offset = 176;
+			__dna__offset = 184;
 		}
 		if (__io__equals(line_color, __io__address + __dna__offset)) {
 			return;
@@ -1127,9 +1192,9 @@ public class bGPdata extends CFacade {
 	public float getOnion_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 252);
+			return __io__block.readFloat(__io__address + 268);
 		} else {
-			return __io__block.readFloat(__io__address + 192);
+			return __io__block.readFloat(__io__address + 200);
 		}
 	}
 
@@ -1144,9 +1209,9 @@ public class bGPdata extends CFacade {
 	public void setOnion_factor(float onion_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 252, onion_factor);
+			__io__block.writeFloat(__io__address + 268, onion_factor);
 		} else {
-			__io__block.writeFloat(__io__address + 192, onion_factor);
+			__io__block.writeFloat(__io__address + 200, onion_factor);
 		}
 	}
 
@@ -1161,9 +1226,9 @@ public class bGPdata extends CFacade {
 	public int getOnion_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 256);
+			return __io__block.readInt(__io__address + 272);
 		} else {
-			return __io__block.readInt(__io__address + 196);
+			return __io__block.readInt(__io__address + 204);
 		}
 	}
 
@@ -1178,9 +1243,9 @@ public class bGPdata extends CFacade {
 	public void setOnion_mode(int onion_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 256, onion_mode);
+			__io__block.writeInt(__io__address + 272, onion_mode);
 		} else {
-			__io__block.writeInt(__io__address + 196, onion_mode);
+			__io__block.writeInt(__io__address + 204, onion_mode);
 		}
 	}
 
@@ -1195,9 +1260,9 @@ public class bGPdata extends CFacade {
 	public int getOnion_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 260);
+			return __io__block.readInt(__io__address + 276);
 		} else {
-			return __io__block.readInt(__io__address + 200);
+			return __io__block.readInt(__io__address + 208);
 		}
 	}
 
@@ -1212,9 +1277,9 @@ public class bGPdata extends CFacade {
 	public void setOnion_flag(int onion_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 260, onion_flag);
+			__io__block.writeInt(__io__address + 276, onion_flag);
 		} else {
-			__io__block.writeInt(__io__address + 200, onion_flag);
+			__io__block.writeInt(__io__address + 208, onion_flag);
 		}
 	}
 
@@ -1229,9 +1294,9 @@ public class bGPdata extends CFacade {
 	public short getGstep() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 264);
+			return __io__block.readShort(__io__address + 280);
 		} else {
-			return __io__block.readShort(__io__address + 204);
+			return __io__block.readShort(__io__address + 212);
 		}
 	}
 
@@ -1246,9 +1311,9 @@ public class bGPdata extends CFacade {
 	public void setGstep(short gstep) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 264, gstep);
+			__io__block.writeShort(__io__address + 280, gstep);
 		} else {
-			__io__block.writeShort(__io__address + 204, gstep);
+			__io__block.writeShort(__io__address + 212, gstep);
 		}
 	}
 
@@ -1263,9 +1328,9 @@ public class bGPdata extends CFacade {
 	public short getGstep_next() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 266);
+			return __io__block.readShort(__io__address + 282);
 		} else {
-			return __io__block.readShort(__io__address + 206);
+			return __io__block.readShort(__io__address + 214);
 		}
 	}
 
@@ -1280,9 +1345,9 @@ public class bGPdata extends CFacade {
 	public void setGstep_next(short gstep_next) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 266, gstep_next);
+			__io__block.writeShort(__io__address + 282, gstep_next);
 		} else {
-			__io__block.writeShort(__io__address + 206, gstep_next);
+			__io__block.writeShort(__io__address + 214, gstep_next);
 		}
 	}
 
@@ -1301,9 +1366,9 @@ public class bGPdata extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 268, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 284, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1319,9 +1384,9 @@ public class bGPdata extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 268;
+			__dna__offset = 284;
 		} else {
-			__dna__offset = 208;
+			__dna__offset = 216;
 		}
 		if (__io__equals(gcolor_prev, __io__address + __dna__offset)) {
 			return;
@@ -1347,9 +1412,9 @@ public class bGPdata extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 296, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 228, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1365,9 +1430,9 @@ public class bGPdata extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 280;
+			__dna__offset = 296;
 		} else {
-			__dna__offset = 220;
+			__dna__offset = 228;
 		}
 		if (__io__equals(gcolor_next, __io__address + __dna__offset)) {
 			return;
@@ -1389,9 +1454,9 @@ public class bGPdata extends CFacade {
 	public float getZdepth_offset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 292);
+			return __io__block.readFloat(__io__address + 308);
 		} else {
-			return __io__block.readFloat(__io__address + 232);
+			return __io__block.readFloat(__io__address + 240);
 		}
 	}
 
@@ -1406,9 +1471,9 @@ public class bGPdata extends CFacade {
 	public void setZdepth_offset(float zdepth_offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 292, zdepth_offset);
+			__io__block.writeFloat(__io__address + 308, zdepth_offset);
 		} else {
-			__io__block.writeFloat(__io__address + 232, zdepth_offset);
+			__io__block.writeFloat(__io__address + 240, zdepth_offset);
 		}
 	}
 
@@ -1424,9 +1489,9 @@ public class bGPdata extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 296);
+			__dna__targetAddress = __io__block.readLong(__io__address + 312);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 236);
+			__dna__targetAddress = __io__block.readLong(__io__address + 244);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, Material.class};
 		return new CPointer<CPointer<Material>>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -1444,9 +1509,9 @@ public class bGPdata extends CFacade {
 	{
 		long __address = ((mat == null) ? 0 : mat.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 296, __address);
+			__io__block.writeLong(__io__address + 312, __address);
 		} else {
-			__io__block.writeLong(__io__address + 236, __address);
+			__io__block.writeLong(__io__address + 244, __address);
 		}
 	}
 
@@ -1461,9 +1526,9 @@ public class bGPdata extends CFacade {
 	public short getTotcol() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 304);
+			return __io__block.readShort(__io__address + 320);
 		} else {
-			return __io__block.readShort(__io__address + 240);
+			return __io__block.readShort(__io__address + 248);
 		}
 	}
 
@@ -1478,9 +1543,9 @@ public class bGPdata extends CFacade {
 	public void setTotcol(short totcol) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 304, totcol);
+			__io__block.writeShort(__io__address + 320, totcol);
 		} else {
-			__io__block.writeShort(__io__address + 240, totcol);
+			__io__block.writeShort(__io__address + 248, totcol);
 		}
 	}
 
@@ -1495,9 +1560,9 @@ public class bGPdata extends CFacade {
 	public short getTotlayer() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 306);
+			return __io__block.readShort(__io__address + 322);
 		} else {
-			return __io__block.readShort(__io__address + 242);
+			return __io__block.readShort(__io__address + 250);
 		}
 	}
 
@@ -1512,9 +1577,9 @@ public class bGPdata extends CFacade {
 	public void setTotlayer(short totlayer) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 306, totlayer);
+			__io__block.writeShort(__io__address + 322, totlayer);
 		} else {
-			__io__block.writeShort(__io__address + 242, totlayer);
+			__io__block.writeShort(__io__address + 250, totlayer);
 		}
 	}
 
@@ -1526,9 +1591,9 @@ public class bGPdata extends CFacade {
 	public short getTotframe() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 308);
+			return __io__block.readShort(__io__address + 324);
 		} else {
-			return __io__block.readShort(__io__address + 244);
+			return __io__block.readShort(__io__address + 252);
 		}
 	}
 
@@ -1540,9 +1605,9 @@ public class bGPdata extends CFacade {
 	public void setTotframe(short totframe) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 308, totframe);
+			__io__block.writeShort(__io__address + 324, totframe);
 		} else {
-			__io__block.writeShort(__io__address + 244, totframe);
+			__io__block.writeShort(__io__address + 252, totframe);
 		}
 	}
 
@@ -1558,9 +1623,9 @@ public class bGPdata extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 310, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 326, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 246, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 254, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1573,9 +1638,9 @@ public class bGPdata extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 310;
+			__dna__offset = 326;
 		} else {
-			__dna__offset = 246;
+			__dna__offset = 254;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -1594,9 +1659,9 @@ public class bGPdata extends CFacade {
 	public int getTotstroke() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 316);
+			return __io__block.readInt(__io__address + 332);
 		} else {
-			return __io__block.readInt(__io__address + 252);
+			return __io__block.readInt(__io__address + 260);
 		}
 	}
 
@@ -1608,9 +1673,9 @@ public class bGPdata extends CFacade {
 	public void setTotstroke(int totstroke) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 316, totstroke);
+			__io__block.writeInt(__io__address + 332, totstroke);
 		} else {
-			__io__block.writeInt(__io__address + 252, totstroke);
+			__io__block.writeInt(__io__address + 260, totstroke);
 		}
 	}
 
@@ -1622,9 +1687,9 @@ public class bGPdata extends CFacade {
 	public int getTotpoint() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 320);
+			return __io__block.readInt(__io__address + 336);
 		} else {
-			return __io__block.readInt(__io__address + 256);
+			return __io__block.readInt(__io__address + 264);
 		}
 	}
 
@@ -1636,9 +1701,9 @@ public class bGPdata extends CFacade {
 	public void setTotpoint(int totpoint) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 320, totpoint);
+			__io__block.writeInt(__io__address + 336, totpoint);
 		} else {
-			__io__block.writeInt(__io__address + 256, totpoint);
+			__io__block.writeInt(__io__address + 264, totpoint);
 		}
 	}
 
@@ -1653,9 +1718,9 @@ public class bGPdata extends CFacade {
 	public short getDraw_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 324);
+			return __io__block.readShort(__io__address + 340);
 		} else {
-			return __io__block.readShort(__io__address + 260);
+			return __io__block.readShort(__io__address + 268);
 		}
 	}
 
@@ -1670,9 +1735,9 @@ public class bGPdata extends CFacade {
 	public void setDraw_mode(short draw_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 324, draw_mode);
+			__io__block.writeShort(__io__address + 340, draw_mode);
 		} else {
-			__io__block.writeShort(__io__address + 260, draw_mode);
+			__io__block.writeShort(__io__address + 268, draw_mode);
 		}
 	}
 
@@ -1687,9 +1752,9 @@ public class bGPdata extends CFacade {
 	public short getOnion_keytype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 326);
+			return __io__block.readShort(__io__address + 342);
 		} else {
-			return __io__block.readShort(__io__address + 262);
+			return __io__block.readShort(__io__address + 270);
 		}
 	}
 
@@ -1704,9 +1769,9 @@ public class bGPdata extends CFacade {
 	public void setOnion_keytype(short onion_keytype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 326, onion_keytype);
+			__io__block.writeShort(__io__address + 342, onion_keytype);
 		} else {
-			__io__block.writeShort(__io__address + 262, onion_keytype);
+			__io__block.writeShort(__io__address + 270, onion_keytype);
 		}
 	}
 
@@ -1721,9 +1786,9 @@ public class bGPdata extends CFacade {
 	public int getSelect_last_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 328);
+			return __io__block.readInt(__io__address + 344);
 		} else {
-			return __io__block.readInt(__io__address + 264);
+			return __io__block.readInt(__io__address + 272);
 		}
 	}
 
@@ -1738,49 +1803,37 @@ public class bGPdata extends CFacade {
 	public void setSelect_last_index(int select_last_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 328, select_last_index);
+			__io__block.writeInt(__io__address + 344, select_last_index);
 		} else {
-			__io__block.writeInt(__io__address + 264, select_last_index);
+			__io__block.writeInt(__io__address + 272, select_last_index);
 		}
 	}
 
 	/**
-	 * Get method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
+	 * Get method for struct member 'vertex_group_active_index'.
+	 * @see #__DNA__FIELD__vertex_group_active_index
 	 */
 	
-	public CArrayFacade<Byte> get_pad3() throws IOException
+	public int getVertex_group_active_index() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 332, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 348);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 268, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 276);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
+	 * Set method for struct member 'vertex_group_active_index'.
+	 * @see #__DNA__FIELD__vertex_group_active_index
 	 */
 	
-	public void set_pad3(CArrayFacade<Byte> _pad3) throws IOException
+	public void setVertex_group_active_index(int vertex_group_active_index) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 332;
+			__io__block.writeInt(__io__address + 348, vertex_group_active_index);
 		} else {
-			__dna__offset = 268;
-		}
-		if (__io__equals(_pad3, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad3)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad3);
-		} else {
-			__io__generic__copy( get_pad3(), _pad3);
+			__io__block.writeInt(__io__address + 276, vertex_group_active_index);
 		}
 	}
 
@@ -1792,9 +1845,9 @@ public class bGPdata extends CFacade {
 	public bGPgrid getGrid() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new bGPgrid(__io__address + 336, __io__block, __io__blockTable);
+			return new bGPgrid(__io__address + 352, __io__block, __io__blockTable);
 		} else {
-			return new bGPgrid(__io__address + 272, __io__block, __io__blockTable);
+			return new bGPgrid(__io__address + 280, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1807,9 +1860,9 @@ public class bGPdata extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 336;
+			__dna__offset = 352;
 		} else {
-			__dna__offset = 272;
+			__dna__offset = 280;
 		}
 		if (__io__equals(grid, __io__address + __dna__offset)) {
 			return;
@@ -1828,9 +1881,9 @@ public class bGPdata extends CFacade {
 	public bGPdata_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new bGPdata_Runtime(__io__address + 376, __io__block, __io__blockTable);
+			return new bGPdata_Runtime(__io__address + 392, __io__block, __io__blockTable);
 		} else {
-			return new bGPdata_Runtime(__io__address + 312, __io__block, __io__blockTable);
+			return new bGPdata_Runtime(__io__address + 320, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1843,9 +1896,9 @@ public class bGPdata extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 376;
+			__dna__offset = 392;
 		} else {
-			__dna__offset = 312;
+			__dna__offset = 320;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

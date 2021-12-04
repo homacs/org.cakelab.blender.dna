@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> XXX deprecated... old AnimSys. </p><p> channels reside in {@link Object}  or Action ({@link ListBase} ) constraintChannels </p>
+ * <p> channels reside in {@link Object}  or Action ({@link ListBase} ) constraintChannels XXX: deprecated... old AnimSys. </p>
  */
 
 @CMetaData(size32=44, size64=56)
@@ -28,7 +28,7 @@ public class bConstraintChannel extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 353;
+	public static final int __DNA__SDNA_INDEX = 365;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

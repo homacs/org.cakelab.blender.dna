@@ -27,7 +27,7 @@ public class LineStyleGeometryModifier_PerlinNoise2D extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 690;
+	public static final int __DNA__SDNA_INDEX = 743;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -100,7 +100,7 @@ public class LineStyleGeometryModifier_PerlinNoise2D extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Displacement direction<h4>Blender Source Code:</h4>
-	 * <p> In radians!. </p>
+	 * <p> In radians. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -302,7 +302,7 @@ public class LineStyleGeometryModifier_PerlinNoise2D extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Displacement direction<h4>Blender Source Code:</h4>
-	 * <p> In radians!. </p>
+	 * <p> In radians. </p>
 	 * @see #__DNA__FIELD__angle
 	 */
 	
@@ -320,7 +320,7 @@ public class LineStyleGeometryModifier_PerlinNoise2D extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Displacement direction<h4>Blender Source Code:</h4>
-	 * <p> In radians!. </p>
+	 * <p> In radians. </p>
 	 * @see #__DNA__FIELD__angle
 	 */
 	

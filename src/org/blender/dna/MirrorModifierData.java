@@ -27,7 +27,7 @@ public class MirrorModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 97;
+	public static final int __DNA__SDNA_INDEX = 104;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -135,6 +135,29 @@ public class MirrorModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__bisect_threshold = new long[]{120, 144};
 
 	/**
+	 * Field descriptor (offset) for struct member 'use_correct_order_on_merge'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mirror modifier used to merge the old vertex into its new copy, which would break code relying on access to the original geometry vertices. However, modifying this behavior to the correct one (i.e. merging the copy vertices into their original sources) has several potential effects on other modifiers and tools, so we need to keep that incorrect behavior for existing modifiers, and only use the new correct one for new modifiers. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MirrorModifierData mirrormodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = mirrormodifierdata.__dna__addressof(MirrorModifierData.__DNA__FIELD__use_correct_order_on_merge);
+	 * CPointer&lt;Byte&gt; p_use_correct_order_on_merge = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'use_correct_order_on_merge'</li>
+	 * <li>Signature: 'uchar'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__use_correct_order_on_merge = new long[]{124, 148};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -148,11 +171,11 @@ public class MirrorModifierData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{124, 148};
+	public static final long[] __DNA__FIELD___pad = new long[]{125, 149};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv_offset'.
@@ -401,6 +424,40 @@ public class MirrorModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'use_correct_order_on_merge'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mirror modifier used to merge the old vertex into its new copy, which would break code relying on access to the original geometry vertices. However, modifying this behavior to the correct one (i.e. merging the copy vertices into their original sources) has several potential effects on other modifiers and tools, so we need to keep that incorrect behavior for existing modifiers, and only use the new correct one for new modifiers. </p>
+	 * @see #__DNA__FIELD__use_correct_order_on_merge
+	 */
+	
+	public byte getUse_correct_order_on_merge() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 148);
+		} else {
+			return __io__block.readByte(__io__address + 124);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'use_correct_order_on_merge'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mirror modifier used to merge the old vertex into its new copy, which would break code relying on access to the original geometry vertices. However, modifying this behavior to the correct one (i.e. merging the copy vertices into their original sources) has several potential effects on other modifiers and tools, so we need to keep that incorrect behavior for existing modifiers, and only use the new correct one for new modifiers. </p>
+	 * @see #__DNA__FIELD__use_correct_order_on_merge
+	 */
+	
+	public void setUse_correct_order_on_merge(byte use_correct_order_on_merge) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 148, use_correct_order_on_merge);
+		} else {
+			__io__block.writeByte(__io__address + 124, use_correct_order_on_merge);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -409,12 +466,12 @@ public class MirrorModifierData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 149, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 125, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -427,9 +484,9 @@ public class MirrorModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 148;
+			__dna__offset = 149;
 		} else {
-			__dna__offset = 124;
+			__dna__offset = 125;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

@@ -28,7 +28,7 @@ public class ReportList extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 576;
+	public static final int __DNA__SDNA_INDEX = 630;
 
 	/**
 	 * Field descriptor (offset) for struct member 'list'.
@@ -54,7 +54,7 @@ public class ReportList extends CFacade {
 	 * Field descriptor (offset) for struct member 'printlevel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ReportType. </p>
+	 * <p> eReportType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -77,7 +77,7 @@ public class ReportList extends CFacade {
 	 * Field descriptor (offset) for struct member 'storelevel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ReportType. </p>
+	 * <p> eReportType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -204,7 +204,7 @@ public class ReportList extends CFacade {
 	 * Get method for struct member 'printlevel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ReportType. </p>
+	 * <p> eReportType. </p>
 	 * @see #__DNA__FIELD__printlevel
 	 */
 	
@@ -221,7 +221,7 @@ public class ReportList extends CFacade {
 	 * Set method for struct member 'printlevel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ReportType. </p>
+	 * <p> eReportType. </p>
 	 * @see #__DNA__FIELD__printlevel
 	 */
 	
@@ -238,7 +238,7 @@ public class ReportList extends CFacade {
 	 * Get method for struct member 'storelevel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ReportType. </p>
+	 * <p> eReportType. </p>
 	 * @see #__DNA__FIELD__storelevel
 	 */
 	
@@ -255,7 +255,7 @@ public class ReportList extends CFacade {
 	 * Set method for struct member 'storelevel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ReportType. </p>
+	 * <p> eReportType. </p>
 	 * @see #__DNA__FIELD__storelevel
 	 */
 	

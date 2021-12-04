@@ -27,7 +27,7 @@ public class Key extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 22;
+	public static final int __DNA__SDNA_INDEX = 28;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -76,7 +76,7 @@ public class Key extends CFacade {
 	 * Field descriptor (offset) for struct member 'refkey'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><em></em>  'key->block.first', perhaps later on it could be defined as some other {@link KeyBlock}  - campbell </p>
+	 * <p><code></code><em></em>  'key->block.first', perhaps later on it could be defined as some other {@link KeyBlock}  - campbell </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -447,7 +447,7 @@ public class Key extends CFacade {
 	 * Get method for struct member 'refkey'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><em></em>  'key->block.first', perhaps later on it could be defined as some other {@link KeyBlock}  - campbell </p>
+	 * <p><code></code><em></em>  'key->block.first', perhaps later on it could be defined as some other {@link KeyBlock}  - campbell </p>
 	 * @see #__DNA__FIELD__refkey
 	 */
 	
@@ -467,7 +467,7 @@ public class Key extends CFacade {
 	 * Set method for struct member 'refkey'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><em></em>  'key->block.first', perhaps later on it could be defined as some other {@link KeyBlock}  - campbell </p>
+	 * <p><code></code><em></em>  'key->block.first', perhaps later on it could be defined as some other {@link KeyBlock}  - campbell </p>
 	 * @see #__DNA__FIELD__refkey
 	 */
 	

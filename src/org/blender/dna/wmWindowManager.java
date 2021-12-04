@@ -28,7 +28,7 @@ public class wmWindowManager extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 578;
+	public static final int __DNA__SDNA_INDEX = 632;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -75,6 +75,11 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'winactive'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><h2>Note</h2><p><code></code>  is usually preferred. Avoid relying on this where possible as this may become NULL during when handling events that close or replace windows (opening a file for e.g.). While this happens rarely in practice, it can cause difficult to reproduce bugs. </p> CTX_wm_window(C) is usually preferred. Avoid relying on this where possible as this may become NULL during when handling events that close or replace windows (opening a file for e.g.). While this happens rarely in practice, it can cause difficult to reproduce bugs. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -674,6 +679,11 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'winactive'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><h2>Note</h2><p><code></code>  is usually preferred. Avoid relying on this where possible as this may become NULL during when handling events that close or replace windows (opening a file for e.g.). While this happens rarely in practice, it can cause difficult to reproduce bugs. </p> CTX_wm_window(C) is usually preferred. Avoid relying on this where possible as this may become NULL during when handling events that close or replace windows (opening a file for e.g.). While this happens rarely in practice, it can cause difficult to reproduce bugs. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__winactive
 	 */
 	
@@ -691,6 +701,11 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'winactive'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><h2>Note</h2><p><code></code>  is usually preferred. Avoid relying on this where possible as this may become NULL during when handling events that close or replace windows (opening a file for e.g.). While this happens rarely in practice, it can cause difficult to reproduce bugs. </p> CTX_wm_window(C) is usually preferred. Avoid relying on this where possible as this may become NULL during when handling events that close or replace windows (opening a file for e.g.). While this happens rarely in practice, it can cause difficult to reproduce bugs. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__winactive
 	 */
 	

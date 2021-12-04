@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=16, size64=24)
+@CMetaData(size32=20, size64=32)
 public class Panel_Runtime extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Panel_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 286;
+	public static final int __DNA__SDNA_INDEX = 297;
 
 	/**
 	 * Field descriptor (offset) for struct member 'region_ofsx'.
@@ -119,6 +119,29 @@ public class Panel_Runtime extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__block = new long[]{12, 16};
+
+	/**
+	 * Field descriptor (offset) for struct member 'context'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Non-owning pointer. The context is stored in the block. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Panel_Runtime panel_runtime = ...;
+	 * CPointer&lt;Object&gt; p = panel_runtime.__dna__addressof(Panel_Runtime.__DNA__FIELD__context);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_context = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'context'</li>
+	 * <li>Signature: 'bContextStore*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__context = new long[]{16, 24};
 
 	public Panel_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -279,6 +302,44 @@ public class Panel_Runtime extends CFacade {
 			__io__block.writeLong(__io__address + 16, __address);
 		} else {
 			__io__block.writeLong(__io__address + 12, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'context'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Non-owning pointer. The context is stored in the block. </p>
+	 * @see #__DNA__FIELD__context
+	 */
+	
+	public CPointer<Object> getContext() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 24);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 16);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'context'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Non-owning pointer. The context is stored in the block. </p>
+	 * @see #__DNA__FIELD__context
+	 */
+	
+	public void setContext(CPointer<Object> context) throws IOException
+	{
+		long __address = ((context == null) ? 0 : context.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 24, __address);
+		} else {
+			__io__block.writeLong(__io__address + 16, __address);
 		}
 	}
 

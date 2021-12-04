@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=264, size64=264)
+@CMetaData(size32=268, size64=268)
 public class StripElem extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class StripElem extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 299;
+	public static final int __DNA__SDNA_INDEX = 310;
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
@@ -91,6 +91,26 @@ public class StripElem extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__orig_height = new long[]{260, 260};
+
+	/**
+	 * Field descriptor (offset) for struct member 'orig_fps'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * StripElem stripelem = ...;
+	 * CPointer&lt;Object&gt; p = stripelem.__dna__addressof(StripElem.__DNA__FIELD__orig_fps);
+	 * CPointer&lt;Float&gt; p_orig_fps = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'orig_fps'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__orig_fps = new long[]{264, 264};
 
 	public StripElem(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -199,6 +219,34 @@ public class StripElem extends CFacade {
 			__io__block.writeInt(__io__address + 260, orig_height);
 		} else {
 			__io__block.writeInt(__io__address + 260, orig_height);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'orig_fps'.
+	 * @see #__DNA__FIELD__orig_fps
+	 */
+	
+	public float getOrig_fps() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 264);
+		} else {
+			return __io__block.readFloat(__io__address + 264);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'orig_fps'.
+	 * @see #__DNA__FIELD__orig_fps
+	 */
+	
+	public void setOrig_fps(float orig_fps) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 264, orig_fps);
+		} else {
+			__io__block.writeFloat(__io__address + 264, orig_fps);
 		}
 	}
 

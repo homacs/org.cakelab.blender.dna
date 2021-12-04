@@ -28,7 +28,7 @@ public class wmKeyMapItem extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 580;
+	public static final int __DNA__SDNA_INDEX = 634;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -212,7 +212,7 @@ public class wmKeyMapItem extends CFacade {
 	 * Field descriptor (offset) for struct member 'shift'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Oskey is apple or windowskey, value denotes order of pressed. </p>
+	 * <p><code></code>  also known as apple, windows-key or super, value denotes order of pressed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -736,7 +736,7 @@ public class wmKeyMapItem extends CFacade {
 	 * Get method for struct member 'shift'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Oskey is apple or windowskey, value denotes order of pressed. </p>
+	 * <p><code></code>  also known as apple, windows-key or super, value denotes order of pressed. </p>
 	 * @see #__DNA__FIELD__shift
 	 */
 	
@@ -753,7 +753,7 @@ public class wmKeyMapItem extends CFacade {
 	 * Set method for struct member 'shift'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Oskey is apple or windowskey, value denotes order of pressed. </p>
+	 * <p><code></code>  also known as apple, windows-key or super, value denotes order of pressed. </p>
 	 * @see #__DNA__FIELD__shift
 	 */
 	

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=336, size64=352)
+@CMetaData(size32=376, size64=392)
 public class OffsetGpencilModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class OffsetGpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 558;
+	public static final int __DNA__SDNA_INDEX = 610;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -250,6 +250,98 @@ public class OffsetGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__scale = new long[]{320, 336};
 
 	/**
+	 * Field descriptor (offset) for struct member 'rnd_offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Random Offset. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * OffsetGpencilModifierData offsetgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = offsetgpencilmodifierdata.__dna__addressof(OffsetGpencilModifierData.__DNA__FIELD__rnd_offset);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_rnd_offset = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rnd_offset'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rnd_offset = new long[]{332, 348};
+
+	/**
+	 * Field descriptor (offset) for struct member 'rnd_rot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Random Rotation. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * OffsetGpencilModifierData offsetgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = offsetgpencilmodifierdata.__dna__addressof(OffsetGpencilModifierData.__DNA__FIELD__rnd_rot);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_rnd_rot = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rnd_rot'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rnd_rot = new long[]{344, 360};
+
+	/**
+	 * Field descriptor (offset) for struct member 'rnd_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Random Scales. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * OffsetGpencilModifierData offsetgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = offsetgpencilmodifierdata.__dna__addressof(OffsetGpencilModifierData.__DNA__FIELD__rnd_scale);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_rnd_scale = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rnd_scale'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rnd_scale = new long[]{356, 372};
+
+	/**
+	 * Field descriptor (offset) for struct member 'seed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (first element is the index) random values. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * OffsetGpencilModifierData offsetgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = offsetgpencilmodifierdata.__dna__addressof(OffsetGpencilModifierData.__DNA__FIELD__seed);
+	 * CPointer&lt;Integer&gt; p_seed = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'seed'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__seed = new long[]{368, 384};
+
+	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -270,7 +362,7 @@ public class OffsetGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer_pass = new long[]{332, 348};
+	public static final long[] __DNA__FIELD__layer_pass = new long[]{372, 388};
 
 	public OffsetGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -685,6 +777,178 @@ public class OffsetGpencilModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'rnd_offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Random Offset. </p>
+	 * @see #__DNA__FIELD__rnd_offset
+	 */
+	
+	public CArrayFacade<Float> getRnd_offset() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 348, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 332, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rnd_offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Random Offset. </p>
+	 * @see #__DNA__FIELD__rnd_offset
+	 */
+	
+	public void setRnd_offset(CArrayFacade<Float> rnd_offset) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 348;
+		} else {
+			__dna__offset = 332;
+		}
+		if (__io__equals(rnd_offset, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, rnd_offset)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, rnd_offset);
+		} else {
+			__io__generic__copy( getRnd_offset(), rnd_offset);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'rnd_rot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Random Rotation. </p>
+	 * @see #__DNA__FIELD__rnd_rot
+	 */
+	
+	public CArrayFacade<Float> getRnd_rot() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 360, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 344, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rnd_rot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Random Rotation. </p>
+	 * @see #__DNA__FIELD__rnd_rot
+	 */
+	
+	public void setRnd_rot(CArrayFacade<Float> rnd_rot) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 360;
+		} else {
+			__dna__offset = 344;
+		}
+		if (__io__equals(rnd_rot, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, rnd_rot)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, rnd_rot);
+		} else {
+			__io__generic__copy( getRnd_rot(), rnd_rot);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'rnd_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Random Scales. </p>
+	 * @see #__DNA__FIELD__rnd_scale
+	 */
+	
+	public CArrayFacade<Float> getRnd_scale() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 372, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rnd_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Random Scales. </p>
+	 * @see #__DNA__FIELD__rnd_scale
+	 */
+	
+	public void setRnd_scale(CArrayFacade<Float> rnd_scale) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 372;
+		} else {
+			__dna__offset = 356;
+		}
+		if (__io__equals(rnd_scale, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, rnd_scale)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, rnd_scale);
+		} else {
+			__io__generic__copy( getRnd_scale(), rnd_scale);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'seed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (first element is the index) random values. </p>
+	 * @see #__DNA__FIELD__seed
+	 */
+	
+	public int getSeed() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 384);
+		} else {
+			return __io__block.readInt(__io__address + 368);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'seed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (first element is the index) random values. </p>
+	 * @see #__DNA__FIELD__seed
+	 */
+	
+	public void setSeed(int seed) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 384, seed);
+		} else {
+			__io__block.writeInt(__io__address + 368, seed);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -695,9 +959,9 @@ public class OffsetGpencilModifierData extends CFacade {
 	public int getLayer_pass() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 348);
+			return __io__block.readInt(__io__address + 388);
 		} else {
-			return __io__block.readInt(__io__address + 332);
+			return __io__block.readInt(__io__address + 372);
 		}
 	}
 
@@ -712,9 +976,9 @@ public class OffsetGpencilModifierData extends CFacade {
 	public void setLayer_pass(int layer_pass) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 348, layer_pass);
+			__io__block.writeInt(__io__address + 388, layer_pass);
 		} else {
-			__io__block.writeInt(__io__address + 332, layer_pass);
+			__io__block.writeInt(__io__address + 372, layer_pass);
 		}
 	}
 

@@ -28,7 +28,7 @@ public class FluidEffectorSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 620;
+	public static final int __DNA__SDNA_INDEX = 673;
 
 	/**
 	 * Field descriptor (offset) for struct member 'fmd'.
@@ -118,7 +118,7 @@ public class FluidEffectorSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Additional distance around mesh surface to consider as effector<h4>Blender Source Code:</h4>
-	 * <p><ndash/>  User-accesible fields (from here on). <ndash/>  Thickness of mesh surface, used in obstacle sdf. </p>
+	 * <p><ndash/>  User-accessible fields (from here on). <ndash/>  Thickness of mesh surface, used in obstacle sdf. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -426,7 +426,7 @@ public class FluidEffectorSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Additional distance around mesh surface to consider as effector<h4>Blender Source Code:</h4>
-	 * <p><ndash/>  User-accesible fields (from here on). <ndash/>  Thickness of mesh surface, used in obstacle sdf. </p>
+	 * <p><ndash/>  User-accessible fields (from here on). <ndash/>  Thickness of mesh surface, used in obstacle sdf. </p>
 	 * @see #__DNA__FIELD__surface_distance
 	 */
 	
@@ -444,7 +444,7 @@ public class FluidEffectorSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Additional distance around mesh surface to consider as effector<h4>Blender Source Code:</h4>
-	 * <p><ndash/>  User-accesible fields (from here on). <ndash/>  Thickness of mesh surface, used in obstacle sdf. </p>
+	 * <p><ndash/>  User-accessible fields (from here on). <ndash/>  Thickness of mesh surface, used in obstacle sdf. </p>
 	 * @see #__DNA__FIELD__surface_distance
 	 */
 	

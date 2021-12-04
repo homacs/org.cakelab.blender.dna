@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Config and Input for File Selector </p>
  */
 
-@CMetaData(size32=2080, size64=2080)
+@CMetaData(size32=2080, size64=2088)
 public class FileSelectParams extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class FileSelectParams extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 231;
+	public static final int __DNA__SDNA_INDEX = 239;
 
 	/**
 	 * Field descriptor (offset) for struct member 'title'.
@@ -138,11 +138,74 @@ public class FileSelectParams extends CFacade {
 	public static final long[] __DNA__FIELD__rename_flag = new long[]{1698, 1698};
 
 	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FileSelectParams fileselectparams = ...;
+	 * CPointer&lt;Object&gt; p = fileselectparams.__dna__addressof(FileSelectParams.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{1700, 1700};
+
+	/**
+	 * Field descriptor (offset) for struct member 'rename_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> An {@link ID}<code></code>  but for local IDs (takes precedence). Don't keep this stored across handlers! Would break on undo. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FileSelectParams fileselectparams = ...;
+	 * CPointer&lt;Object&gt; p = fileselectparams.__dna__addressof(FileSelectParams.__DNA__FIELD__rename_id);
+	 * CPointer&lt;CPointer&lt;ID&gt;&gt; p_rename_id = p.cast(new Class[]{CPointer.class, ID.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rename_id'</li>
+	 * <li>Signature: 'ID*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rename_id = new long[]{1704, 1704};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad3'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FileSelectParams fileselectparams = ...;
+	 * CPointer&lt;Object&gt; p = fileselectparams.__dna__addressof(FileSelectParams.__DNA__FIELD___pad3);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad3 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad3'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad3 = new long[]{1708, 1712};
+
+	/**
 	 * Field descriptor (offset) for struct member 'filter_glob'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * UNIX shell-like filename patterns matching, supports wildcards ('*') and list of patterns separated by ';'<h4>Blender Source Code:</h4>
-	 * <p> List of filetypes to filter (FILE_MAXFILE). </p>
+	 * <p> List of file-types to filter (#FILE_MAXFILE). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -159,7 +222,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 256/256</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filter_glob = new long[]{1700, 1700};
+	public static final long[] __DNA__FIELD__filter_glob = new long[]{1712, 1720};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filter_search'.
@@ -183,36 +246,14 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filter_search = new long[]{1956, 1956};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad0'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Same as filter, but for {@link ID}  types (aka library groups). </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * FileSelectParams fileselectparams = ...;
-	 * CPointer&lt;Object&gt; p = fileselectparams.__dna__addressof(FileSelectParams.__DNA__FIELD___pad0);
-	 * CPointer&lt;Integer&gt; p__pad0 = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad0'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{2020, 2020};
+	public static final long[] __DNA__FIELD__filter_search = new long[]{1968, 1976};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filter_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Which ID types to show/hide, when browsing a library
+	 * (read-only)    Which ID types to show/hide, when browsing a library<h4>Blender Source Code:</h4>
+	 * <p> Same as filter, but for {@link ID}  types (aka library groups). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -229,7 +270,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filter_id = new long[]{2024, 2024};
+	public static final long[] __DNA__FIELD__filter_id = new long[]{2032, 2040};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_file'.
@@ -252,7 +293,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_file = new long[]{2032, 2032};
+	public static final long[] __DNA__FIELD__active_file = new long[]{2040, 2048};
 
 	/**
 	 * Field descriptor (offset) for struct member 'highlight_file'.
@@ -275,7 +316,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__highlight_file = new long[]{2036, 2036};
+	public static final long[] __DNA__FIELD__highlight_file = new long[]{2044, 2052};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sel_first'.
@@ -295,7 +336,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sel_first = new long[]{2040, 2040};
+	public static final long[] __DNA__FIELD__sel_first = new long[]{2048, 2056};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sel_last'.
@@ -315,7 +356,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sel_last = new long[]{2044, 2044};
+	public static final long[] __DNA__FIELD__sel_last = new long[]{2052, 2060};
 
 	/**
 	 * Field descriptor (offset) for struct member 'thumbnail_size'.
@@ -335,7 +376,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__thumbnail_size = new long[]{2048, 2048};
+	public static final long[] __DNA__FIELD__thumbnail_size = new long[]{2056, 2064};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -355,7 +396,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{2050, 2050};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{2058, 2066};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -378,7 +419,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{2052, 2052};
+	public static final long[] __DNA__FIELD__type = new long[]{2060, 2068};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -401,7 +442,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{2054, 2054};
+	public static final long[] __DNA__FIELD__flag = new long[]{2062, 2070};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sort'.
@@ -424,7 +465,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sort = new long[]{2056, 2056};
+	public static final long[] __DNA__FIELD__sort = new long[]{2064, 2072};
 
 	/**
 	 * Field descriptor (offset) for struct member 'display'.
@@ -447,7 +488,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__display = new long[]{2058, 2058};
+	public static final long[] __DNA__FIELD__display = new long[]{2066, 2074};
 
 	/**
 	 * Field descriptor (offset) for struct member 'details_flags'.
@@ -470,7 +511,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__details_flags = new long[]{2060, 2060};
+	public static final long[] __DNA__FIELD__details_flags = new long[]{2068, 2076};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -490,7 +531,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{2061, 2061};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{2069, 2077};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filter'.
@@ -513,7 +554,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filter = new long[]{2064, 2064};
+	public static final long[] __DNA__FIELD__filter = new long[]{2072, 2080};
 
 	/**
 	 * Field descriptor (offset) for struct member 'recursion_level'.
@@ -537,53 +578,27 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__recursion_level = new long[]{2068, 2068};
+	public static final long[] __DNA__FIELD__recursion_level = new long[]{2076, 2084};
 
 	/**
-	 * Field descriptor (offset) for struct member 'f_fp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX <mdash/>  still unused <ndash/>  Show font preview. </p>
+	 * Field descriptor (offset) for struct member '_pad4'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * FileSelectParams fileselectparams = ...;
-	 * CPointer&lt;Object&gt; p = fileselectparams.__dna__addressof(FileSelectParams.__DNA__FIELD__f_fp);
-	 * CPointer&lt;Short&gt; p_f_fp = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = fileselectparams.__dna__addressof(FileSelectParams.__DNA__FIELD___pad4);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad4 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'f_fp'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad4'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__f_fp = new long[]{2070, 2070};
-
-	/**
-	 * Field descriptor (offset) for struct member 'fp_str'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> String to use for font preview. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * FileSelectParams fileselectparams = ...;
-	 * CPointer&lt;Object&gt; p = fileselectparams.__dna__addressof(FileSelectParams.__DNA__FIELD__fp_str);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_fp_str = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'fp_str'</li>
-	 * <li>Signature: 'char[8]'</li>
-	 * <li>Actual Size (32bit/64bit): 8/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__fp_str = new long[]{2072, 2072};
+	public static final long[] __DNA__FIELD___pad4 = new long[]{2078, 2086};
 
 	public FileSelectParams(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -796,11 +811,121 @@ public class FileSelectParams extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 1700, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 1700, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 1700;
+		} else {
+			__dna__offset = 1700;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'rename_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> An {@link ID}<code></code>  but for local IDs (takes precedence). Don't keep this stored across handlers! Would break on undo. </p>
+	 * @see #__DNA__FIELD__rename_id
+	 */
+	
+	public CPointer<ID> getRename_id() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1704);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1704);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{ID.class};
+		return new CPointer<ID>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ID.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'rename_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> An {@link ID}<code></code>  but for local IDs (takes precedence). Don't keep this stored across handlers! Would break on undo. </p>
+	 * @see #__DNA__FIELD__rename_id
+	 */
+	
+	public void setRename_id(CPointer<ID> rename_id) throws IOException
+	{
+		long __address = ((rename_id == null) ? 0 : rename_id.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1704, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1704, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public CPointer<Object> get_pad3() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1712);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1708);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public void set_pad3(CPointer<Object> _pad3) throws IOException
+	{
+		long __address = ((_pad3 == null) ? 0 : _pad3.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1712, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1708, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'filter_glob'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * UNIX shell-like filename patterns matching, supports wildcards ('*') and list of patterns separated by ';'<h4>Blender Source Code:</h4>
-	 * <p> List of filetypes to filter (FILE_MAXFILE). </p>
+	 * <p> List of file-types to filter (#FILE_MAXFILE). </p>
 	 * @see #__DNA__FIELD__filter_glob
 	 */
 	
@@ -811,9 +936,9 @@ public class FileSelectParams extends CFacade {
 			256
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1700, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1720, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1700, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1712, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -822,7 +947,7 @@ public class FileSelectParams extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * UNIX shell-like filename patterns matching, supports wildcards ('*') and list of patterns separated by ';'<h4>Blender Source Code:</h4>
-	 * <p> List of filetypes to filter (FILE_MAXFILE). </p>
+	 * <p> List of file-types to filter (#FILE_MAXFILE). </p>
 	 * @see #__DNA__FIELD__filter_glob
 	 */
 	
@@ -830,9 +955,9 @@ public class FileSelectParams extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1700;
+			__dna__offset = 1720;
 		} else {
-			__dna__offset = 1700;
+			__dna__offset = 1712;
 		}
 		if (__io__equals(filter_glob, __io__address + __dna__offset)) {
 			return;
@@ -859,9 +984,9 @@ public class FileSelectParams extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1956, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1976, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1956, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1968, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -878,9 +1003,9 @@ public class FileSelectParams extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1956;
+			__dna__offset = 1976;
 		} else {
-			__dna__offset = 1956;
+			__dna__offset = 1968;
 		}
 		if (__io__equals(filter_search, __io__address + __dna__offset)) {
 			return;
@@ -892,53 +1017,20 @@ public class FileSelectParams extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad0'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Same as filter, but for {@link ID}  types (aka library groups). </p>
-	 * @see #__DNA__FIELD___pad0
-	 */
-	
-	public int get_pad0() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2020);
-		} else {
-			return __io__block.readInt(__io__address + 2020);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad0'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Same as filter, but for {@link ID}  types (aka library groups). </p>
-	 * @see #__DNA__FIELD___pad0
-	 */
-	
-	public void set_pad0(int _pad0) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2020, _pad0);
-		} else {
-			__io__block.writeInt(__io__address + 2020, _pad0);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'filter_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Which ID types to show/hide, when browsing a library
+	 * (read-only)    Which ID types to show/hide, when browsing a library<h4>Blender Source Code:</h4>
+	 * <p> Same as filter, but for {@link ID}  types (aka library groups). </p>
 	 * @see #__DNA__FIELD__filter_id
 	 */
 	
 	public long getFilter_id() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt64(__io__address + 2024);
+			return __io__block.readInt64(__io__address + 2040);
 		} else {
-			return __io__block.readInt64(__io__address + 2024);
+			return __io__block.readInt64(__io__address + 2032);
 		}
 	}
 
@@ -946,16 +1038,17 @@ public class FileSelectParams extends CFacade {
 	 * Set method for struct member 'filter_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Which ID types to show/hide, when browsing a library
+	 * (read-only)    Which ID types to show/hide, when browsing a library<h4>Blender Source Code:</h4>
+	 * <p> Same as filter, but for {@link ID}  types (aka library groups). </p>
 	 * @see #__DNA__FIELD__filter_id
 	 */
 	
 	public void setFilter_id(long filter_id) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt64(__io__address + 2024, filter_id);
+			__io__block.writeInt64(__io__address + 2040, filter_id);
 		} else {
-			__io__block.writeInt64(__io__address + 2024, filter_id);
+			__io__block.writeInt64(__io__address + 2032, filter_id);
 		}
 	}
 
@@ -970,9 +1063,9 @@ public class FileSelectParams extends CFacade {
 	public int getActive_file() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2032);
+			return __io__block.readInt(__io__address + 2048);
 		} else {
-			return __io__block.readInt(__io__address + 2032);
+			return __io__block.readInt(__io__address + 2040);
 		}
 	}
 
@@ -987,9 +1080,9 @@ public class FileSelectParams extends CFacade {
 	public void setActive_file(int active_file) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2032, active_file);
+			__io__block.writeInt(__io__address + 2048, active_file);
 		} else {
-			__io__block.writeInt(__io__address + 2032, active_file);
+			__io__block.writeInt(__io__address + 2040, active_file);
 		}
 	}
 
@@ -1004,9 +1097,9 @@ public class FileSelectParams extends CFacade {
 	public int getHighlight_file() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2036);
+			return __io__block.readInt(__io__address + 2052);
 		} else {
-			return __io__block.readInt(__io__address + 2036);
+			return __io__block.readInt(__io__address + 2044);
 		}
 	}
 
@@ -1021,9 +1114,9 @@ public class FileSelectParams extends CFacade {
 	public void setHighlight_file(int highlight_file) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2036, highlight_file);
+			__io__block.writeInt(__io__address + 2052, highlight_file);
 		} else {
-			__io__block.writeInt(__io__address + 2036, highlight_file);
+			__io__block.writeInt(__io__address + 2044, highlight_file);
 		}
 	}
 
@@ -1035,9 +1128,9 @@ public class FileSelectParams extends CFacade {
 	public int getSel_first() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2040);
+			return __io__block.readInt(__io__address + 2056);
 		} else {
-			return __io__block.readInt(__io__address + 2040);
+			return __io__block.readInt(__io__address + 2048);
 		}
 	}
 
@@ -1049,9 +1142,9 @@ public class FileSelectParams extends CFacade {
 	public void setSel_first(int sel_first) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2040, sel_first);
+			__io__block.writeInt(__io__address + 2056, sel_first);
 		} else {
-			__io__block.writeInt(__io__address + 2040, sel_first);
+			__io__block.writeInt(__io__address + 2048, sel_first);
 		}
 	}
 
@@ -1063,9 +1156,9 @@ public class FileSelectParams extends CFacade {
 	public int getSel_last() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2044);
+			return __io__block.readInt(__io__address + 2060);
 		} else {
-			return __io__block.readInt(__io__address + 2044);
+			return __io__block.readInt(__io__address + 2052);
 		}
 	}
 
@@ -1077,9 +1170,9 @@ public class FileSelectParams extends CFacade {
 	public void setSel_last(int sel_last) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2044, sel_last);
+			__io__block.writeInt(__io__address + 2060, sel_last);
 		} else {
-			__io__block.writeInt(__io__address + 2044, sel_last);
+			__io__block.writeInt(__io__address + 2052, sel_last);
 		}
 	}
 
@@ -1091,9 +1184,9 @@ public class FileSelectParams extends CFacade {
 	public short getThumbnail_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2048);
+			return __io__block.readShort(__io__address + 2064);
 		} else {
-			return __io__block.readShort(__io__address + 2048);
+			return __io__block.readShort(__io__address + 2056);
 		}
 	}
 
@@ -1105,9 +1198,9 @@ public class FileSelectParams extends CFacade {
 	public void setThumbnail_size(short thumbnail_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2048, thumbnail_size);
+			__io__block.writeShort(__io__address + 2064, thumbnail_size);
 		} else {
-			__io__block.writeShort(__io__address + 2048, thumbnail_size);
+			__io__block.writeShort(__io__address + 2056, thumbnail_size);
 		}
 	}
 
@@ -1123,9 +1216,9 @@ public class FileSelectParams extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 2050, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2066, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 2050, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2058, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1138,9 +1231,9 @@ public class FileSelectParams extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2050;
+			__dna__offset = 2066;
 		} else {
-			__dna__offset = 2050;
+			__dna__offset = 2058;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -1162,9 +1255,9 @@ public class FileSelectParams extends CFacade {
 	public short getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2052);
+			return __io__block.readShort(__io__address + 2068);
 		} else {
-			return __io__block.readShort(__io__address + 2052);
+			return __io__block.readShort(__io__address + 2060);
 		}
 	}
 
@@ -1179,9 +1272,9 @@ public class FileSelectParams extends CFacade {
 	public void setType(short type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2052, type);
+			__io__block.writeShort(__io__address + 2068, type);
 		} else {
-			__io__block.writeShort(__io__address + 2052, type);
+			__io__block.writeShort(__io__address + 2060, type);
 		}
 	}
 
@@ -1196,9 +1289,9 @@ public class FileSelectParams extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2054);
+			return __io__block.readShort(__io__address + 2070);
 		} else {
-			return __io__block.readShort(__io__address + 2054);
+			return __io__block.readShort(__io__address + 2062);
 		}
 	}
 
@@ -1213,9 +1306,9 @@ public class FileSelectParams extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2054, flag);
+			__io__block.writeShort(__io__address + 2070, flag);
 		} else {
-			__io__block.writeShort(__io__address + 2054, flag);
+			__io__block.writeShort(__io__address + 2062, flag);
 		}
 	}
 
@@ -1230,9 +1323,9 @@ public class FileSelectParams extends CFacade {
 	public short getSort() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2056);
+			return __io__block.readShort(__io__address + 2072);
 		} else {
-			return __io__block.readShort(__io__address + 2056);
+			return __io__block.readShort(__io__address + 2064);
 		}
 	}
 
@@ -1247,9 +1340,9 @@ public class FileSelectParams extends CFacade {
 	public void setSort(short sort) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2056, sort);
+			__io__block.writeShort(__io__address + 2072, sort);
 		} else {
-			__io__block.writeShort(__io__address + 2056, sort);
+			__io__block.writeShort(__io__address + 2064, sort);
 		}
 	}
 
@@ -1264,9 +1357,9 @@ public class FileSelectParams extends CFacade {
 	public short getDisplay() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2058);
+			return __io__block.readShort(__io__address + 2074);
 		} else {
-			return __io__block.readShort(__io__address + 2058);
+			return __io__block.readShort(__io__address + 2066);
 		}
 	}
 
@@ -1281,9 +1374,9 @@ public class FileSelectParams extends CFacade {
 	public void setDisplay(short display) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2058, display);
+			__io__block.writeShort(__io__address + 2074, display);
 		} else {
-			__io__block.writeShort(__io__address + 2058, display);
+			__io__block.writeShort(__io__address + 2066, display);
 		}
 	}
 
@@ -1298,9 +1391,9 @@ public class FileSelectParams extends CFacade {
 	public byte getDetails_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2060);
+			return __io__block.readByte(__io__address + 2076);
 		} else {
-			return __io__block.readByte(__io__address + 2060);
+			return __io__block.readByte(__io__address + 2068);
 		}
 	}
 
@@ -1315,9 +1408,9 @@ public class FileSelectParams extends CFacade {
 	public void setDetails_flags(byte details_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2060, details_flags);
+			__io__block.writeByte(__io__address + 2076, details_flags);
 		} else {
-			__io__block.writeByte(__io__address + 2060, details_flags);
+			__io__block.writeByte(__io__address + 2068, details_flags);
 		}
 	}
 
@@ -1333,9 +1426,9 @@ public class FileSelectParams extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 2061, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2077, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 2061, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2069, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1348,9 +1441,9 @@ public class FileSelectParams extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2061;
+			__dna__offset = 2077;
 		} else {
-			__dna__offset = 2061;
+			__dna__offset = 2069;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -1372,9 +1465,9 @@ public class FileSelectParams extends CFacade {
 	public int getFilter() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2064);
+			return __io__block.readInt(__io__address + 2080);
 		} else {
-			return __io__block.readInt(__io__address + 2064);
+			return __io__block.readInt(__io__address + 2072);
 		}
 	}
 
@@ -1389,9 +1482,9 @@ public class FileSelectParams extends CFacade {
 	public void setFilter(int filter) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2064, filter);
+			__io__block.writeInt(__io__address + 2080, filter);
 		} else {
-			__io__block.writeInt(__io__address + 2064, filter);
+			__io__block.writeInt(__io__address + 2072, filter);
 		}
 	}
 
@@ -1407,9 +1500,9 @@ public class FileSelectParams extends CFacade {
 	public short getRecursion_level() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2068);
+			return __io__block.readShort(__io__address + 2084);
 		} else {
-			return __io__block.readShort(__io__address + 2068);
+			return __io__block.readShort(__io__address + 2076);
 		}
 	}
 
@@ -1425,89 +1518,49 @@ public class FileSelectParams extends CFacade {
 	public void setRecursion_level(short recursion_level) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2068, recursion_level);
+			__io__block.writeShort(__io__address + 2084, recursion_level);
 		} else {
-			__io__block.writeShort(__io__address + 2068, recursion_level);
+			__io__block.writeShort(__io__address + 2076, recursion_level);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'f_fp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX <mdash/>  still unused <ndash/>  Show font preview. </p>
-	 * @see #__DNA__FIELD__f_fp
+	 * Get method for struct member '_pad4'.
+	 * @see #__DNA__FIELD___pad4
 	 */
 	
-	public short getF_fp() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2070);
-		} else {
-			return __io__block.readShort(__io__address + 2070);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'f_fp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX <mdash/>  still unused <ndash/>  Show font preview. </p>
-	 * @see #__DNA__FIELD__f_fp
-	 */
-	
-	public void setF_fp(short f_fp) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2070, f_fp);
-		} else {
-			__io__block.writeShort(__io__address + 2070, f_fp);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'fp_str'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> String to use for font preview. </p>
-	 * @see #__DNA__FIELD__fp_str
-	 */
-	
-	public CArrayFacade<Byte> getFp_str() throws IOException
+	public CArrayFacade<Byte> get_pad4() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			8
+			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 2072, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2086, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 2072, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2078, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'fp_str'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> String to use for font preview. </p>
-	 * @see #__DNA__FIELD__fp_str
+	 * Set method for struct member '_pad4'.
+	 * @see #__DNA__FIELD___pad4
 	 */
 	
-	public void setFp_str(CArrayFacade<Byte> fp_str) throws IOException
+	public void set_pad4(CArrayFacade<Byte> _pad4) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2072;
+			__dna__offset = 2086;
 		} else {
-			__dna__offset = 2072;
+			__dna__offset = 2078;
 		}
-		if (__io__equals(fp_str, __io__address + __dna__offset)) {
+		if (__io__equals(_pad4, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, fp_str)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, fp_str);
+		} else if (__io__same__encoding(this, _pad4)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad4);
 		} else {
-			__io__generic__copy( getFp_str(), fp_str);
+			__io__generic__copy( get_pad4(), _pad4);
 		}
 	}
 

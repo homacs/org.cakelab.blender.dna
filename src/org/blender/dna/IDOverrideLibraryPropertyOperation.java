@@ -28,7 +28,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 12;
+	public static final int __DNA__SDNA_INDEX = 17;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -165,7 +165,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Used to handle insertions into collection<h4>Blender Source Code:</h4>
-	 * <p> Sub-item references, if needed (for arrays or collections only). We need both reference and local values to allow e.g. insertion into collections (constraints, modifiers...). In collection case, if names are defined, they are used in priority. Names are pointers (instead of char[64]) to save some space, NULL when unset. Indices are -1 when unset. </p>
+	 * <p> Sub-item references, if needed (for arrays or collections only). We need both reference and local values to allow e.g. insertion into RNA collections (constraints, modifiers...). In RNA collection case, if names are defined, they are used in priority. Names are pointers (instead of char[64]) to save some space, NULL or empty string when unset. Indices are -1 when unset.</p><p> NOTE: For insertion operations in RNA collections, reference may not actually exist in the linked reference data. It is used to identify the anchor of the insertion operation (i.e. the item after or before which the new local item should be inserted), in the local override. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -474,7 +474,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Used to handle insertions into collection<h4>Blender Source Code:</h4>
-	 * <p> Sub-item references, if needed (for arrays or collections only). We need both reference and local values to allow e.g. insertion into collections (constraints, modifiers...). In collection case, if names are defined, they are used in priority. Names are pointers (instead of char[64]) to save some space, NULL when unset. Indices are -1 when unset. </p>
+	 * <p> Sub-item references, if needed (for arrays or collections only). We need both reference and local values to allow e.g. insertion into RNA collections (constraints, modifiers...). In RNA collection case, if names are defined, they are used in priority. Names are pointers (instead of char[64]) to save some space, NULL or empty string when unset. Indices are -1 when unset.</p><p> NOTE: For insertion operations in RNA collections, reference may not actually exist in the linked reference data. It is used to identify the anchor of the insertion operation (i.e. the item after or before which the new local item should be inserted), in the local override. </p>
 	 * @see #__DNA__FIELD__subitem_reference_name
 	 */
 	
@@ -495,7 +495,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Used to handle insertions into collection<h4>Blender Source Code:</h4>
-	 * <p> Sub-item references, if needed (for arrays or collections only). We need both reference and local values to allow e.g. insertion into collections (constraints, modifiers...). In collection case, if names are defined, they are used in priority. Names are pointers (instead of char[64]) to save some space, NULL when unset. Indices are -1 when unset. </p>
+	 * <p> Sub-item references, if needed (for arrays or collections only). We need both reference and local values to allow e.g. insertion into RNA collections (constraints, modifiers...). In RNA collection case, if names are defined, they are used in priority. Names are pointers (instead of char[64]) to save some space, NULL or empty string when unset. Indices are -1 when unset.</p><p> NOTE: For insertion operations in RNA collections, reference may not actually exist in the linked reference data. It is used to identify the anchor of the insertion operation (i.e. the item after or before which the new local item should be inserted), in the local override. </p>
 	 * @see #__DNA__FIELD__subitem_reference_name
 	 */
 	

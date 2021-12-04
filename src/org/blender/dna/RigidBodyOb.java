@@ -28,13 +28,13 @@ public class RigidBodyOb extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 655;
+	public static final int __DNA__SDNA_INDEX = 708;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> General Settings for this {@link RigidBodyOb}  (eRigidBodyOb_Type) role of RigidBody in sim . </p>
+	 * <p> General Settings for this {@link RigidBodyOb}  (eRigidBodyOb_Type) role of RigidBody in sim. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -450,7 +450,7 @@ public class RigidBodyOb extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> General Settings for this {@link RigidBodyOb}  (eRigidBodyOb_Type) role of RigidBody in sim . </p>
+	 * <p> General Settings for this {@link RigidBodyOb}  (eRigidBodyOb_Type) role of RigidBody in sim. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -467,7 +467,7 @@ public class RigidBodyOb extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> General Settings for this {@link RigidBodyOb}  (eRigidBodyOb_Type) role of RigidBody in sim . </p>
+	 * <p> General Settings for this {@link RigidBodyOb}  (eRigidBodyOb_Type) role of RigidBody in sim. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	

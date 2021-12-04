@@ -27,7 +27,7 @@ public class MaterialGPencilStyle extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 49;
+	public static final int __DNA__SDNA_INDEX = 56;
 
 	/**
 	 * Field descriptor (offset) for struct member 'sima'.
@@ -602,7 +602,7 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Field descriptor (offset) for struct member 'alignment_rotation'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Additional rotation applied to dots and square strokes<h4>Blender Source Code:</h4>
+	 * Additional rotation applied to dots and square texture of strokes. Only applies in texture shading mode<h4>Blender Source Code:</h4>
 	 * <p> Rotation for texture for Dots and Squares. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1588,7 +1588,7 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Get method for struct member 'alignment_rotation'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Additional rotation applied to dots and square strokes<h4>Blender Source Code:</h4>
+	 * Additional rotation applied to dots and square texture of strokes. Only applies in texture shading mode<h4>Blender Source Code:</h4>
 	 * <p> Rotation for texture for Dots and Squares. </p>
 	 * @see #__DNA__FIELD__alignment_rotation
 	 */
@@ -1606,7 +1606,7 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Set method for struct member 'alignment_rotation'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Additional rotation applied to dots and square strokes<h4>Blender Source Code:</h4>
+	 * Additional rotation applied to dots and square texture of strokes. Only applies in texture shading mode<h4>Blender Source Code:</h4>
 	 * <p> Rotation for texture for Dots and Squares. </p>
 	 * @see #__DNA__FIELD__alignment_rotation
 	 */

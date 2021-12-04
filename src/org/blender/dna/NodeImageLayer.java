@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> layer info for image node outputs </p>
+ * <p> Layer info for image node outputs. </p>
  */
 
 @CMetaData(size32=68, size64=68)
@@ -28,7 +28,7 @@ public class NodeImageLayer extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 410;
+	public static final int __DNA__SDNA_INDEX = 424;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.

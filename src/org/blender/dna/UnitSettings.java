@@ -30,14 +30,14 @@ public class UnitSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 206;
+	public static final int __DNA__SDNA_INDEX = 212;
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale_length'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Scale to use when converting between blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems<h4>Blender Source Code:</h4>
-	 * <p> Display/Editing unit options for each scene Maybe have other unit conversions?. </p>
+	 * <p> Display/Editing unit options for each scene Maybe have other unit conversions? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -249,7 +249,7 @@ public class UnitSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Scale to use when converting between blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems<h4>Blender Source Code:</h4>
-	 * <p> Display/Editing unit options for each scene Maybe have other unit conversions?. </p>
+	 * <p> Display/Editing unit options for each scene Maybe have other unit conversions? </p>
 	 * @see #__DNA__FIELD__scale_length
 	 */
 	
@@ -267,7 +267,7 @@ public class UnitSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Scale to use when converting between blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems<h4>Blender Source Code:</h4>
-	 * <p> Display/Editing unit options for each scene Maybe have other unit conversions?. </p>
+	 * <p> Display/Editing unit options for each scene Maybe have other unit conversions? </p>
 	 * @see #__DNA__FIELD__scale_length
 	 */
 	

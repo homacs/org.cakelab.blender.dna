@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=144, size64=160)
+@CMetaData(size32=184, size64=200)
 public class ColorBalanceModifierData extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class ColorBalanceModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 318;
+	public static final int __DNA__SDNA_INDEX = 330;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -63,7 +63,7 @@ public class ColorBalanceModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'color_balance'</li>
 	 * <li>Signature: 'StripColorBalance'</li>
-	 * <li>Actual Size (32bit/64bit): 44/44</li>
+	 * <li>Actual Size (32bit/64bit): 84/84</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__color_balance = new long[]{96, 112};
@@ -86,7 +86,7 @@ public class ColorBalanceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__color_multiply = new long[]{140, 156};
+	public static final long[] __DNA__FIELD__color_multiply = new long[]{180, 196};
 
 	public ColorBalanceModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -176,9 +176,9 @@ public class ColorBalanceModifierData extends CFacade {
 	public float getColor_multiply() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 156);
+			return __io__block.readFloat(__io__address + 196);
 		} else {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 180);
 		}
 	}
 
@@ -190,9 +190,9 @@ public class ColorBalanceModifierData extends CFacade {
 	public void setColor_multiply(float color_multiply) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 156, color_multiply);
+			__io__block.writeFloat(__io__address + 196, color_multiply);
 		} else {
-			__io__block.writeFloat(__io__address + 140, color_multiply);
+			__io__block.writeFloat(__io__address + 180, color_multiply);
 		}
 	}
 

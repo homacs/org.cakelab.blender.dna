@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -26,7 +27,7 @@ public class BoidRuleAverageSpeed extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 612;
+	public static final int __DNA__SDNA_INDEX = 666;
 
 	/**
 	 * Field descriptor (offset) for struct member 'rule'.
@@ -118,24 +119,24 @@ public class BoidRuleAverageSpeed extends CFacade {
 	public static final long[] __DNA__FIELD__speed = new long[]{56, 64};
 
 	/**
-	 * Field descriptor (offset) for struct member 'rt'.
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BoidRuleAverageSpeed boidruleaveragespeed = ...;
-	 * CPointer&lt;Object&gt; p = boidruleaveragespeed.__dna__addressof(BoidRuleAverageSpeed.__DNA__FIELD__rt);
-	 * CPointer&lt;Float&gt; p_rt = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = boidruleaveragespeed.__dna__addressof(BoidRuleAverageSpeed.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'rt'</li>
-	 * <li>Signature: 'float'</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rt = new long[]{60, 68};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{60, 68};
 
 	public BoidRuleAverageSpeed(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -284,30 +285,42 @@ public class BoidRuleAverageSpeed extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'rt'.
-	 * @see #__DNA__FIELD__rt
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public float getRt() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 68);
+			return new CArrayFacade<Byte>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readFloat(__io__address + 60);
+			return new CArrayFacade<Byte>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'rt'.
-	 * @see #__DNA__FIELD__rt
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setRt(float rt) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 68, rt);
+			__dna__offset = 68;
 		} else {
-			__io__block.writeFloat(__io__address + 60, rt);
+			__dna__offset = 60;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 

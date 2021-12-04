@@ -36,7 +36,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 714;
+	public static final int __DNA__SDNA_INDEX = 767;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -82,7 +82,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	 * Field descriptor (offset) for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The data used to identify the relation (e.g. to find screen-layout (= value) from/for a hook). Note: Now runtime only. </p>
+	 * <p> The data used to identify the relation (e.g. to find screen-layout (= value) from/for a hook). NOTE: Now runtime only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -243,7 +243,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	 * Get method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The data used to identify the relation (e.g. to find screen-layout (= value) from/for a hook). Note: Now runtime only. </p>
+	 * <p> The data used to identify the relation (e.g. to find screen-layout (= value) from/for a hook). NOTE: Now runtime only. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -263,7 +263,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	 * Set method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The data used to identify the relation (e.g. to find screen-layout (= value) from/for a hook). Note: Now runtime only. </p>
+	 * <p> The data used to identify the relation (e.g. to find screen-layout (= value) from/for a hook). NOTE: Now runtime only. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
 	

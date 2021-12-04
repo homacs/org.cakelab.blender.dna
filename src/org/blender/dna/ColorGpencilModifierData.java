@@ -27,7 +27,7 @@ public class ColorGpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 550;
+	public static final int __DNA__SDNA_INDEX = 599;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -170,7 +170,7 @@ public class ColorGpencilModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'hsv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Hsv factors. </p>
+	 * <p> HSV factors. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -545,7 +545,7 @@ public class ColorGpencilModifierData extends CFacade {
 	 * Get method for struct member 'hsv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Hsv factors. </p>
+	 * <p> HSV factors. </p>
 	 * @see #__DNA__FIELD__hsv
 	 */
 	
@@ -566,7 +566,7 @@ public class ColorGpencilModifierData extends CFacade {
 	 * Set method for struct member 'hsv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Hsv factors. </p>
+	 * <p> HSV factors. </p>
 	 * @see #__DNA__FIELD__hsv
 	 */
 	

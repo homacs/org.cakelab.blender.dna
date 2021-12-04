@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=96, size64=112)
+@CMetaData(size32=104, size64=120)
 public class MovieTrackingDopesheetChannel extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 639;
+	public static final int __DNA__SDNA_INDEX = 692;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -223,6 +223,49 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__total_frames = new long[]{92, 108};
+
+	/**
+	 * Field descriptor (offset) for struct member 'first_not_disabled_marker_framenr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> These numbers are valid only if tot_segment > 0. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MovieTrackingDopesheetChannel movietrackingdopesheetchannel = ...;
+	 * CPointer&lt;Object&gt; p = movietrackingdopesheetchannel.__dna__addressof(MovieTrackingDopesheetChannel.__DNA__FIELD__first_not_disabled_marker_framenr);
+	 * CPointer&lt;Integer&gt; p_first_not_disabled_marker_framenr = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'first_not_disabled_marker_framenr'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__first_not_disabled_marker_framenr = new long[]{96, 112};
+
+	/**
+	 * Field descriptor (offset) for struct member 'last_not_disabled_marker_framenr'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MovieTrackingDopesheetChannel movietrackingdopesheetchannel = ...;
+	 * CPointer&lt;Object&gt; p = movietrackingdopesheetchannel.__dna__addressof(MovieTrackingDopesheetChannel.__DNA__FIELD__last_not_disabled_marker_framenr);
+	 * CPointer&lt;Integer&gt; p_last_not_disabled_marker_framenr = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'last_not_disabled_marker_framenr'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__last_not_disabled_marker_framenr = new long[]{100, 116};
 
 	public MovieTrackingDopesheetChannel(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -551,6 +594,68 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 			__io__block.writeInt(__io__address + 108, total_frames);
 		} else {
 			__io__block.writeInt(__io__address + 92, total_frames);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'first_not_disabled_marker_framenr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> These numbers are valid only if tot_segment > 0. </p>
+	 * @see #__DNA__FIELD__first_not_disabled_marker_framenr
+	 */
+	
+	public int getFirst_not_disabled_marker_framenr() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 112);
+		} else {
+			return __io__block.readInt(__io__address + 96);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'first_not_disabled_marker_framenr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> These numbers are valid only if tot_segment > 0. </p>
+	 * @see #__DNA__FIELD__first_not_disabled_marker_framenr
+	 */
+	
+	public void setFirst_not_disabled_marker_framenr(int first_not_disabled_marker_framenr) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 112, first_not_disabled_marker_framenr);
+		} else {
+			__io__block.writeInt(__io__address + 96, first_not_disabled_marker_framenr);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'last_not_disabled_marker_framenr'.
+	 * @see #__DNA__FIELD__last_not_disabled_marker_framenr
+	 */
+	
+	public int getLast_not_disabled_marker_framenr() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 116);
+		} else {
+			return __io__block.readInt(__io__address + 100);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'last_not_disabled_marker_framenr'.
+	 * @see #__DNA__FIELD__last_not_disabled_marker_framenr
+	 */
+	
+	public void setLast_not_disabled_marker_framenr(int last_not_disabled_marker_framenr) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 116, last_not_disabled_marker_framenr);
+		} else {
+			__io__block.writeInt(__io__address + 100, last_not_disabled_marker_framenr);
 		}
 	}
 

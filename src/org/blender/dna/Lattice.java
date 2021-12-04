@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=276, size64=344)
+@CMetaData(size32=292, size64=368)
 public class Lattice extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Lattice extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 158;
+	public static final int __DNA__SDNA_INDEX = 164;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -541,6 +541,69 @@ public class Lattice extends CFacade {
 	public static final long[] __DNA__FIELD__vgroup = new long[]{204, 264};
 
 	/**
+	 * Field descriptor (offset) for struct member 'vertex_group_names'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Lattice lattice = ...;
+	 * CPointer&lt;Object&gt; p = lattice.__dna__addressof(Lattice.__DNA__FIELD__vertex_group_names);
+	 * CPointer&lt;ListBase&gt; p_vertex_group_names = p.cast(new Class[]{ListBase.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'vertex_group_names'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__vertex_group_names = new long[]{268, 328};
+
+	/**
+	 * Field descriptor (offset) for struct member 'vertex_group_active_index'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Lattice lattice = ...;
+	 * CPointer&lt;Object&gt; p = lattice.__dna__addressof(Lattice.__DNA__FIELD__vertex_group_active_index);
+	 * CPointer&lt;Integer&gt; p_vertex_group_active_index = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'vertex_group_active_index'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__vertex_group_active_index = new long[]{276, 344};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad0'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Lattice lattice = ...;
+	 * CPointer&lt;Object&gt; p = lattice.__dna__addressof(Lattice.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad0 = new long[]{280, 348};
+
+	/**
 	 * Field descriptor (offset) for struct member 'editlatt'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -558,7 +621,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__editlatt = new long[]{268, 328};
+	public static final long[] __DNA__FIELD__editlatt = new long[]{284, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'batch_cache'.
@@ -578,7 +641,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__batch_cache = new long[]{272, 336};
+	public static final long[] __DNA__FIELD__batch_cache = new long[]{288, 360};
 
 	public Lattice(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1363,6 +1426,116 @@ public class Lattice extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'vertex_group_names'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
+	 * @see #__DNA__FIELD__vertex_group_names
+	 */
+	
+	public ListBase getVertex_group_names() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ListBase(__io__address + 328, __io__block, __io__blockTable);
+		} else {
+			return new ListBase(__io__address + 268, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'vertex_group_names'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
+	 * @see #__DNA__FIELD__vertex_group_names
+	 */
+	
+	public void setVertex_group_names(ListBase vertex_group_names) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 328;
+		} else {
+			__dna__offset = 268;
+		}
+		if (__io__equals(vertex_group_names, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, vertex_group_names)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, vertex_group_names);
+		} else {
+			__io__generic__copy( getVertex_group_names(), vertex_group_names);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'vertex_group_active_index'.
+	 * @see #__DNA__FIELD__vertex_group_active_index
+	 */
+	
+	public int getVertex_group_active_index() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 344);
+		} else {
+			return __io__block.readInt(__io__address + 276);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'vertex_group_active_index'.
+	 * @see #__DNA__FIELD__vertex_group_active_index
+	 */
+	
+	public void setVertex_group_active_index(int vertex_group_active_index) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 344, vertex_group_active_index);
+		} else {
+			__io__block.writeInt(__io__address + 276, vertex_group_active_index);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public CArrayFacade<Byte> get_pad0() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 348, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 348;
+		} else {
+			__dna__offset = 280;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'editlatt'.
 	 * @see #__DNA__FIELD__editlatt
 	 */
@@ -1371,9 +1544,9 @@ public class Lattice extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 328);
+			__dna__targetAddress = __io__block.readLong(__io__address + 352);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 268);
+			__dna__targetAddress = __io__block.readLong(__io__address + 284);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1388,9 +1561,9 @@ public class Lattice extends CFacade {
 	{
 		long __address = ((editlatt == null) ? 0 : editlatt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 328, __address);
+			__io__block.writeLong(__io__address + 352, __address);
 		} else {
-			__io__block.writeLong(__io__address + 268, __address);
+			__io__block.writeLong(__io__address + 284, __address);
 		}
 	}
 
@@ -1403,9 +1576,9 @@ public class Lattice extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 336);
+			__dna__targetAddress = __io__block.readLong(__io__address + 360);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 288);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1420,9 +1593,9 @@ public class Lattice extends CFacade {
 	{
 		long __address = ((batch_cache == null) ? 0 : batch_cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 336, __address);
+			__io__block.writeLong(__io__address + 360, __address);
 		} else {
-			__io__block.writeLong(__io__address + 272, __address);
+			__io__block.writeLong(__io__address + 288, __address);
 		}
 	}
 

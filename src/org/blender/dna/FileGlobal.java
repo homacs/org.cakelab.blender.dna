@@ -29,13 +29,13 @@ public class FileGlobal extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 297;
+	public static final int __DNA__SDNA_INDEX = 308;
 
 	/**
 	 * Field descriptor (offset) for struct member 'subvstr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Needs to be here, for human fileformat recognition (keep first!). </p>
+	 * <p> Needs to be here, for human file-format recognition (keep first!). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -364,7 +364,7 @@ public class FileGlobal extends CFacade {
 	 * Get method for struct member 'subvstr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Needs to be here, for human fileformat recognition (keep first!). </p>
+	 * <p> Needs to be here, for human file-format recognition (keep first!). </p>
 	 * @see #__DNA__FIELD__subvstr
 	 */
 	
@@ -385,7 +385,7 @@ public class FileGlobal extends CFacade {
 	 * Set method for struct member 'subvstr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Needs to be here, for human fileformat recognition (keep first!). </p>
+	 * <p> Needs to be here, for human file-format recognition (keep first!). </p>
 	 * @see #__DNA__FIELD__subvstr
 	 */
 	

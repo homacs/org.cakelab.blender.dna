@@ -28,13 +28,13 @@ public class ChildParticle extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 518;
+	public static final int __DNA__SDNA_INDEX = 567;
 
 	/**
 	 * Field descriptor (offset) for struct member 'num'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Num is face index on the final derived mesh. </p>
+	 * <p> Face index on the final derived mesh. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -163,24 +163,24 @@ public class ChildParticle extends CFacade {
 	public static final long[] __DNA__FIELD__foffset = new long[]{56, 56};
 
 	/**
-	 * Field descriptor (offset) for struct member 'rt'.
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ChildParticle childparticle = ...;
-	 * CPointer&lt;Object&gt; p = childparticle.__dna__addressof(ChildParticle.__DNA__FIELD__rt);
-	 * CPointer&lt;Float&gt; p_rt = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = childparticle.__dna__addressof(ChildParticle.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'rt'</li>
-	 * <li>Signature: 'float'</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rt = new long[]{60, 60};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{60, 60};
 
 	public ChildParticle(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -194,7 +194,7 @@ public class ChildParticle extends CFacade {
 	 * Get method for struct member 'num'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Num is face index on the final derived mesh. </p>
+	 * <p> Face index on the final derived mesh. </p>
 	 * @see #__DNA__FIELD__num
 	 */
 	
@@ -211,7 +211,7 @@ public class ChildParticle extends CFacade {
 	 * Set method for struct member 'num'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Num is face index on the final derived mesh. </p>
+	 * <p> Face index on the final derived mesh. </p>
 	 * @see #__DNA__FIELD__num
 	 */
 	
@@ -419,30 +419,42 @@ public class ChildParticle extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'rt'.
-	 * @see #__DNA__FIELD__rt
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public float getRt() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 60);
+			return new CArrayFacade<Byte>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readFloat(__io__address + 60);
+			return new CArrayFacade<Byte>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'rt'.
-	 * @see #__DNA__FIELD__rt
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setRt(float rt) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 60, rt);
+			__dna__offset = 60;
 		} else {
-			__io__block.writeFloat(__io__address + 60, rt);
+			__dna__offset = 60;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 

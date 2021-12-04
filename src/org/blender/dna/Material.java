@@ -27,7 +27,7 @@ public class Material extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 51;
+	public static final int __DNA__SDNA_INDEX = 58;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -555,7 +555,7 @@ public class Material extends CFacade {
 	 * Field descriptor (offset) for struct member 'preview'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
+	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1746,7 +1746,7 @@ public class Material extends CFacade {
 	 * Get method for struct member 'preview'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
+	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -1766,7 +1766,7 @@ public class Material extends CFacade {
 	 * Set method for struct member 'preview'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
+	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	

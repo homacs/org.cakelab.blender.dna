@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  Generic image format settings, this is used for {@link NodeImageFile}  and IMAGE_OT_save_as operator too.</p><p> note: its a bit strange that even though this is an image format struct the imtype can still be used to select video formats. RNA ensures these enum's are only selectable for render output. </p>
+ *  Generic image format settings, this is used for {@link NodeImageFile}  and IMAGE_OT_save_as operator too.</p><p> NOTE: its a bit strange that even though this is an image format struct the imtype can still be used to select video formats. RNA ensures these enum's are only selectable for render output. </p>
  */
 
 @CMetaData(size32=248, size64=256)
@@ -29,7 +29,7 @@ public class ImageFormatData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 180;
+	public static final int __DNA__SDNA_INDEX = 186;
 
 	/**
 	 * Field descriptor (offset) for struct member 'imtype'.

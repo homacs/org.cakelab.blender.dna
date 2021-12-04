@@ -14,10 +14,10 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> limit data in {@link bNode}  to what we want to see saved? </p>
+ * <p> TODO: Limit data in {@link bNode}  to what we want to see saved. </p>
  */
 
-@CMetaData(size32=400, size64=464)
+@CMetaData(size32=404, size64=472)
 public class bNode extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bNode extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 390;
+	public static final int __DNA__SDNA_INDEX = 402;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -1082,6 +1082,29 @@ public class bNode extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__sss_id = new long[]{396, 460};
+
+	/**
+	 * Field descriptor (offset) for struct member 'declaration'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Describes the desired interface of the node. This is run-time data only. The actual interface of the node may deviate from the declaration temporarily. It's possible to sync the actual state of the node to the desired state. Currently, this is only done when a node is created or loaded.</p><p> In the future, we may want to keep more data only in the declaration, so that it does not have to be synced to other places that are stored in files. That especially applies to data that can't be edited by users directly (e.g. min/max values of sockets, tooltips, ...).</p><p> The declaration of a node can be recreated at any time when it is used. Caching it here is just a bit more efficient when it is used a lot. To make sure that the cache is up-to-date, call #nodeDeclarationEnsure before using it.</p><p> Currently, the declaration is the same for every node of the same type. Going forward, that is intended to change though. Especially when nodes become more dynamic with respect to how many sockets they have. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bNode bnode = ...;
+	 * CPointer&lt;Object&gt; p = bnode.__dna__addressof(bNode.__DNA__FIELD__declaration);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_declaration = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'declaration'</li>
+	 * <li>Signature: 'NodeDeclarationHandle*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__declaration = new long[]{400, 464};
 
 	public bNode(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2778,6 +2801,44 @@ public class bNode extends CFacade {
 			__io__block.writeFloat(__io__address + 460, sss_id);
 		} else {
 			__io__block.writeFloat(__io__address + 396, sss_id);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'declaration'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Describes the desired interface of the node. This is run-time data only. The actual interface of the node may deviate from the declaration temporarily. It's possible to sync the actual state of the node to the desired state. Currently, this is only done when a node is created or loaded.</p><p> In the future, we may want to keep more data only in the declaration, so that it does not have to be synced to other places that are stored in files. That especially applies to data that can't be edited by users directly (e.g. min/max values of sockets, tooltips, ...).</p><p> The declaration of a node can be recreated at any time when it is used. Caching it here is just a bit more efficient when it is used a lot. To make sure that the cache is up-to-date, call #nodeDeclarationEnsure before using it.</p><p> Currently, the declaration is the same for every node of the same type. Going forward, that is intended to change though. Especially when nodes become more dynamic with respect to how many sockets they have. </p>
+	 * @see #__DNA__FIELD__declaration
+	 */
+	
+	public CPointer<Object> getDeclaration() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 464);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 400);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'declaration'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Describes the desired interface of the node. This is run-time data only. The actual interface of the node may deviate from the declaration temporarily. It's possible to sync the actual state of the node to the desired state. Currently, this is only done when a node is created or loaded.</p><p> In the future, we may want to keep more data only in the declaration, so that it does not have to be synced to other places that are stored in files. That especially applies to data that can't be edited by users directly (e.g. min/max values of sockets, tooltips, ...).</p><p> The declaration of a node can be recreated at any time when it is used. Caching it here is just a bit more efficient when it is used a lot. To make sure that the cache is up-to-date, call #nodeDeclarationEnsure before using it.</p><p> Currently, the declaration is the same for every node of the same type. Going forward, that is intended to change though. Especially when nodes become more dynamic with respect to how many sockets they have. </p>
+	 * @see #__DNA__FIELD__declaration
+	 */
+	
+	public void setDeclaration(CPointer<Object> declaration) throws IOException
+	{
+		long __address = ((declaration == null) ? 0 : declaration.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 464, __address);
+		} else {
+			__io__block.writeLong(__io__address + 400, __address);
 		}
 	}
 

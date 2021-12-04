@@ -28,7 +28,7 @@ public class SpaceAction extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 351;
+	public static final int __DNA__SDNA_INDEX = 363;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -228,7 +228,7 @@ public class SpaceAction extends CFacade {
 	 * Field descriptor (offset) for struct member 'timeslide'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> For Time-Slide transform mode drawing - current frame?. </p>
+	 * <p> For Time-Slide transform mode drawing - current frame? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -317,7 +317,7 @@ public class SpaceAction extends CFacade {
 	 * Field descriptor (offset) for struct member 'autosnap'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Automatic keyframe snapping mode . </p>
+	 * <p> Automatic keyframe snapping mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -739,7 +739,7 @@ public class SpaceAction extends CFacade {
 	 * Get method for struct member 'timeslide'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> For Time-Slide transform mode drawing - current frame?. </p>
+	 * <p> For Time-Slide transform mode drawing - current frame? </p>
 	 * @see #__DNA__FIELD__timeslide
 	 */
 	
@@ -756,7 +756,7 @@ public class SpaceAction extends CFacade {
 	 * Set method for struct member 'timeslide'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> For Time-Slide transform mode drawing - current frame?. </p>
+	 * <p> For Time-Slide transform mode drawing - current frame? </p>
 	 * @see #__DNA__FIELD__timeslide
 	 */
 	
@@ -869,7 +869,7 @@ public class SpaceAction extends CFacade {
 	 * Get method for struct member 'autosnap'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Automatic keyframe snapping mode . </p>
+	 * <p> Automatic keyframe snapping mode. </p>
 	 * @see #__DNA__FIELD__autosnap
 	 */
 	
@@ -886,7 +886,7 @@ public class SpaceAction extends CFacade {
 	 * Set method for struct member 'autosnap'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Automatic keyframe snapping mode . </p>
+	 * <p> Automatic keyframe snapping mode. </p>
 	 * @see #__DNA__FIELD__autosnap
 	 */
 	

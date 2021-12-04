@@ -28,13 +28,13 @@ public class ClothSimSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 525;
+	public static final int __DNA__SDNA_INDEX = 574;
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> UNUSED atm. </p>
+	 * <p> UNUSED. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1061,7 +1061,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'vgroup_mass'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Optional vertexgroup name for assigning weight.. </p>
+	 * <p> Optional vertexgroup name for assigning weight. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1605,7 +1605,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> UNUSED atm. </p>
+	 * <p> UNUSED. </p>
 	 * @see #__DNA__FIELD__cache
 	 */
 	
@@ -1625,7 +1625,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> UNUSED atm. </p>
+	 * <p> UNUSED. </p>
 	 * @see #__DNA__FIELD__cache
 	 */
 	
@@ -3147,7 +3147,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'vgroup_mass'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Optional vertexgroup name for assigning weight.. </p>
+	 * <p> Optional vertexgroup name for assigning weight. </p>
 	 * @see #__DNA__FIELD__vgroup_mass
 	 */
 	
@@ -3164,7 +3164,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'vgroup_mass'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Optional vertexgroup name for assigning weight.. </p>
+	 * <p> Optional vertexgroup name for assigning weight. </p>
 	 * @see #__DNA__FIELD__vgroup_mass
 	 */
 	

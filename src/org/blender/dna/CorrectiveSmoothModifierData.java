@@ -27,7 +27,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 139;
+	public static final int __DNA__SDNA_INDEX = 146;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -53,7 +53,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'bind_coords_num'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> note: -1 is used to bind </p>
+	 * <p> NOTE: -1 is used to bind. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -306,7 +306,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * Get method for struct member 'bind_coords_num'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> note: -1 is used to bind </p>
+	 * <p> NOTE: -1 is used to bind. </p>
 	 * @see #__DNA__FIELD__bind_coords_num
 	 */
 	
@@ -323,7 +323,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * Set method for struct member 'bind_coords_num'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> note: -1 is used to bind </p>
+	 * <p> NOTE: -1 is used to bind. </p>
 	 * @see #__DNA__FIELD__bind_coords_num
 	 */
 	

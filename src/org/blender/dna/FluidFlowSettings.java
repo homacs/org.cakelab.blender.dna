@@ -27,7 +27,7 @@ public class FluidFlowSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 619;
+	public static final int __DNA__SDNA_INDEX = 672;
 
 	/**
 	 * Field descriptor (offset) for struct member 'fmd'.
@@ -265,7 +265,7 @@ public class FluidFlowSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'density'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><ndash/>  User-accesible fields (from here on). <ndash/>  Emission. </p>
+	 * <p><ndash/>  User-accessible fields (from here on). <ndash/>  Emission. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -556,8 +556,7 @@ public class FluidFlowSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Smoke, flames, both, outflow, liquid. <br/> 
-	 *  </p>
+	 * <p> Smoke, flames, both, outflow, liquid. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -580,8 +579,7 @@ public class FluidFlowSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'behavior'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Inflow, outflow, static. <br/> 
-	 *  </p>
+	 * <p> Inflow, outflow, static. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1071,7 +1069,7 @@ public class FluidFlowSettings extends CFacade {
 	 * Get method for struct member 'density'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><ndash/>  User-accesible fields (from here on). <ndash/>  Emission. </p>
+	 * <p><ndash/>  User-accessible fields (from here on). <ndash/>  Emission. </p>
 	 * @see #__DNA__FIELD__density
 	 */
 	
@@ -1088,7 +1086,7 @@ public class FluidFlowSettings extends CFacade {
 	 * Set method for struct member 'density'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><ndash/>  User-accesible fields (from here on). <ndash/>  Emission. </p>
+	 * <p><ndash/>  User-accessible fields (from here on). <ndash/>  Emission. </p>
 	 * @see #__DNA__FIELD__density
 	 */
 	
@@ -1533,8 +1531,7 @@ public class FluidFlowSettings extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Smoke, flames, both, outflow, liquid. <br/> 
-	 *  </p>
+	 * <p> Smoke, flames, both, outflow, liquid. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1551,8 +1548,7 @@ public class FluidFlowSettings extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Smoke, flames, both, outflow, liquid. <br/> 
-	 *  </p>
+	 * <p> Smoke, flames, both, outflow, liquid. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1569,8 +1565,7 @@ public class FluidFlowSettings extends CFacade {
 	 * Get method for struct member 'behavior'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Inflow, outflow, static. <br/> 
-	 *  </p>
+	 * <p> Inflow, outflow, static. </p>
 	 * @see #__DNA__FIELD__behavior
 	 */
 	
@@ -1587,8 +1582,7 @@ public class FluidFlowSettings extends CFacade {
 	 * Set method for struct member 'behavior'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Inflow, outflow, static. <br/> 
-	 *  </p>
+	 * <p> Inflow, outflow, static. </p>
 	 * @see #__DNA__FIELD__behavior
 	 */
 	

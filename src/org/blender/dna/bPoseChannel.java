@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  *  Poses PoseChannel ---------------------------------<mdash/>  PoseChannel</p><p> A {@link bPoseChannel}  stores the results of Actions and transform information with respect to the rest-position of {@link bArmature}  bones. </p>
  */
 
-@CMetaData(size32=808, size64=904)
+@CMetaData(size32=864, size64=960)
 public class bPoseChannel extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class bPoseChannel extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 343;
+	public static final int __DNA__SDNA_INDEX = 355;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -529,6 +529,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'custom_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Deprecated </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -548,24 +551,64 @@ public class bPoseChannel extends CFacade {
 	public static final long[] __DNA__FIELD__custom_scale = new long[]{140, 200};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad1'.
+	 * Field descriptor (offset) for struct member 'custom_scale_xyz'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bPoseChannel bposechannel = ...;
-	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD___pad1);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__custom_scale_xyz);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_custom_scale_xyz = p.cast(new Class[]{CArrayFacade.class, Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad1'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'custom_scale_xyz'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{144, 204};
+	public static final long[] __DNA__FIELD__custom_scale_xyz = new long[]{144, 204};
+
+	/**
+	 * Field descriptor (offset) for struct member 'custom_translation'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__custom_translation);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_custom_translation = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'custom_translation'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__custom_translation = new long[]{156, 216};
+
+	/**
+	 * Field descriptor (offset) for struct member 'custom_rotation_euler'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__custom_rotation_euler);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_custom_rotation_euler = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'custom_rotation_euler'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__custom_rotation_euler = new long[]{168, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'loc'.
@@ -588,7 +631,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__loc = new long[]{148, 208};
+	public static final long[] __DNA__FIELD__loc = new long[]{180, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -608,7 +651,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size = new long[]{160, 220};
+	public static final long[] __DNA__FIELD__size = new long[]{192, 252};
 
 	/**
 	 * Field descriptor (offset) for struct member 'eul'.
@@ -631,7 +674,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__eul = new long[]{172, 232};
+	public static final long[] __DNA__FIELD__eul = new long[]{204, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'quat'.
@@ -654,7 +697,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__quat = new long[]{184, 244};
+	public static final long[] __DNA__FIELD__quat = new long[]{216, 276};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rotAxis'.
@@ -677,7 +720,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rotAxis = new long[]{200, 260};
+	public static final long[] __DNA__FIELD__rotAxis = new long[]{232, 292};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rotAngle'.
@@ -697,7 +740,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rotAngle = new long[]{212, 272};
+	public static final long[] __DNA__FIELD__rotAngle = new long[]{244, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rotmode'.
@@ -720,7 +763,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rotmode = new long[]{216, 276};
+	public static final long[] __DNA__FIELD__rotmode = new long[]{248, 308};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -740,7 +783,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{218, 278};
+	public static final long[] __DNA__FIELD___pad = new long[]{250, 310};
 
 	/**
 	 * Field descriptor (offset) for struct member 'chan_mat'.
@@ -763,7 +806,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__chan_mat = new long[]{220, 280};
+	public static final long[] __DNA__FIELD__chan_mat = new long[]{252, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pose_mat'.
@@ -786,7 +829,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pose_mat = new long[]{284, 344};
+	public static final long[] __DNA__FIELD__pose_mat = new long[]{316, 376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'disp_mat'.
@@ -809,7 +852,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__disp_mat = new long[]{348, 408};
+	public static final long[] __DNA__FIELD__disp_mat = new long[]{380, 440};
 
 	/**
 	 * Field descriptor (offset) for struct member 'disp_tail_mat'.
@@ -832,7 +875,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__disp_tail_mat = new long[]{412, 472};
+	public static final long[] __DNA__FIELD__disp_tail_mat = new long[]{444, 504};
 
 	/**
 	 * Field descriptor (offset) for struct member 'constinv'.
@@ -855,7 +898,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__constinv = new long[]{476, 536};
+	public static final long[] __DNA__FIELD__constinv = new long[]{508, 568};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pose_head'.
@@ -878,7 +921,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pose_head = new long[]{540, 600};
+	public static final long[] __DNA__FIELD__pose_head = new long[]{572, 632};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pose_tail'.
@@ -901,7 +944,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pose_tail = new long[]{552, 612};
+	public static final long[] __DNA__FIELD__pose_tail = new long[]{584, 644};
 
 	/**
 	 * Field descriptor (offset) for struct member 'limitmin'.
@@ -924,7 +967,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__limitmin = new long[]{564, 624};
+	public static final long[] __DNA__FIELD__limitmin = new long[]{596, 656};
 
 	/**
 	 * Field descriptor (offset) for struct member 'limitmax'.
@@ -944,7 +987,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__limitmax = new long[]{576, 636};
+	public static final long[] __DNA__FIELD__limitmax = new long[]{608, 668};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stiffness'.
@@ -967,7 +1010,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stiffness = new long[]{588, 648};
+	public static final long[] __DNA__FIELD__stiffness = new long[]{620, 680};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ikstretch'.
@@ -987,7 +1030,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ikstretch = new long[]{600, 660};
+	public static final long[] __DNA__FIELD__ikstretch = new long[]{632, 692};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ikrotweight'.
@@ -1010,7 +1053,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ikrotweight = new long[]{604, 664};
+	public static final long[] __DNA__FIELD__ikrotweight = new long[]{636, 696};
 
 	/**
 	 * Field descriptor (offset) for struct member 'iklinweight'.
@@ -1033,7 +1076,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__iklinweight = new long[]{608, 668};
+	public static final long[] __DNA__FIELD__iklinweight = new long[]{640, 700};
 
 	/**
 	 * Field descriptor (offset) for struct member 'roll1'.
@@ -1056,7 +1099,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__roll1 = new long[]{612, 672};
+	public static final long[] __DNA__FIELD__roll1 = new long[]{644, 704};
 
 	/**
 	 * Field descriptor (offset) for struct member 'roll2'.
@@ -1076,7 +1119,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__roll2 = new long[]{616, 676};
+	public static final long[] __DNA__FIELD__roll2 = new long[]{648, 708};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curveInX'.
@@ -1096,7 +1139,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curveInX = new long[]{620, 680};
+	public static final long[] __DNA__FIELD__curveInX = new long[]{652, 712};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curveInY'.
@@ -1116,7 +1159,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curveInY = new long[]{624, 684};
+	public static final long[] __DNA__FIELD__curveInY = new long[]{656, 716};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curveOutX'.
@@ -1136,7 +1179,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curveOutX = new long[]{628, 688};
+	public static final long[] __DNA__FIELD__curveOutX = new long[]{660, 720};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curveOutY'.
@@ -1156,7 +1199,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curveOutY = new long[]{632, 692};
+	public static final long[] __DNA__FIELD__curveOutY = new long[]{664, 724};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ease1'.
@@ -1176,7 +1219,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ease1 = new long[]{636, 696};
+	public static final long[] __DNA__FIELD__ease1 = new long[]{668, 728};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ease2'.
@@ -1196,7 +1239,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ease2 = new long[]{640, 700};
+	public static final long[] __DNA__FIELD__ease2 = new long[]{672, 732};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scaleIn'.
@@ -1216,7 +1259,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scaleIn = new long[]{644, 704};
+	public static final long[] __DNA__FIELD__scaleIn = new long[]{676, 736};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale_in_y'.
@@ -1236,7 +1279,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scale_in_y = new long[]{648, 708};
+	public static final long[] __DNA__FIELD__scale_in_y = new long[]{680, 740};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scaleOut'.
@@ -1256,7 +1299,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scaleOut = new long[]{652, 712};
+	public static final long[] __DNA__FIELD__scaleOut = new long[]{684, 744};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale_out_y'.
@@ -1276,7 +1319,47 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scale_out_y = new long[]{656, 716};
+	public static final long[] __DNA__FIELD__scale_out_y = new long[]{688, 748};
+
+	/**
+	 * Field descriptor (offset) for struct member 'scale_in'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__scale_in);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_scale_in = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'scale_in'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__scale_in = new long[]{692, 752};
+
+	/**
+	 * Field descriptor (offset) for struct member 'scale_out'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__scale_out);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_scale_out = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'scale_out'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__scale_out = new long[]{704, 764};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_prev'.
@@ -1299,7 +1382,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbone_prev = new long[]{660, 720};
+	public static final long[] __DNA__FIELD__bbone_prev = new long[]{716, 776};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_next'.
@@ -1319,7 +1402,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbone_next = new long[]{664, 728};
+	public static final long[] __DNA__FIELD__bbone_next = new long[]{720, 784};
 
 	/**
 	 * Field descriptor (offset) for struct member 'temp'.
@@ -1342,7 +1425,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__temp = new long[]{668, 736};
+	public static final long[] __DNA__FIELD__temp = new long[]{724, 792};
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_data'.
@@ -1365,7 +1448,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__draw_data = new long[]{672, 744};
+	public static final long[] __DNA__FIELD__draw_data = new long[]{728, 800};
 
 	/**
 	 * Field descriptor (offset) for struct member 'orig_pchan'.
@@ -1388,7 +1471,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__orig_pchan = new long[]{676, 752};
+	public static final long[] __DNA__FIELD__orig_pchan = new long[]{732, 808};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -1411,7 +1494,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 128/144</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{680, 760};
+	public static final long[] __DNA__FIELD__runtime = new long[]{736, 816};
 
 	public bPoseChannel(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2235,6 +2318,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'custom_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Deprecated </p>
 	 * @see #__DNA__FIELD__custom_scale
 	 */
 	
@@ -2249,6 +2335,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'custom_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Deprecated </p>
 	 * @see #__DNA__FIELD__custom_scale
 	 */
 	
@@ -2262,29 +2351,29 @@ public class bPoseChannel extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
+	 * Get method for struct member 'custom_scale_xyz'.
+	 * @see #__DNA__FIELD__custom_scale_xyz
 	 */
 	
-	public CArrayFacade<Byte> get_pad1() throws IOException
+	public CArrayFacade<Float> getCustom_scale_xyz() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
+	 * Set method for struct member 'custom_scale_xyz'.
+	 * @see #__DNA__FIELD__custom_scale_xyz
 	 */
 	
-	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
+	public void setCustom_scale_xyz(CArrayFacade<Float> custom_scale_xyz) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -2292,12 +2381,92 @@ public class bPoseChannel extends CFacade {
 		} else {
 			__dna__offset = 144;
 		}
-		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+		if (__io__equals(custom_scale_xyz, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, _pad1)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else if (__io__same__encoding(this, custom_scale_xyz)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, custom_scale_xyz);
 		} else {
-			__io__generic__copy( get_pad1(), _pad1);
+			__io__generic__copy( getCustom_scale_xyz(), custom_scale_xyz);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'custom_translation'.
+	 * @see #__DNA__FIELD__custom_translation
+	 */
+	
+	public CArrayFacade<Float> getCustom_translation() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'custom_translation'.
+	 * @see #__DNA__FIELD__custom_translation
+	 */
+	
+	public void setCustom_translation(CArrayFacade<Float> custom_translation) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 216;
+		} else {
+			__dna__offset = 156;
+		}
+		if (__io__equals(custom_translation, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, custom_translation)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, custom_translation);
+		} else {
+			__io__generic__copy( getCustom_translation(), custom_translation);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'custom_rotation_euler'.
+	 * @see #__DNA__FIELD__custom_rotation_euler
+	 */
+	
+	public CArrayFacade<Float> getCustom_rotation_euler() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 228, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'custom_rotation_euler'.
+	 * @see #__DNA__FIELD__custom_rotation_euler
+	 */
+	
+	public void setCustom_rotation_euler(CArrayFacade<Float> custom_rotation_euler) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 228;
+		} else {
+			__dna__offset = 168;
+		}
+		if (__io__equals(custom_rotation_euler, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, custom_rotation_euler)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, custom_rotation_euler);
+		} else {
+			__io__generic__copy( getCustom_rotation_euler(), custom_rotation_euler);
 		}
 	}
 
@@ -2316,9 +2485,9 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2334,9 +2503,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 208;
+			__dna__offset = 240;
 		} else {
-			__dna__offset = 148;
+			__dna__offset = 180;
 		}
 		if (__io__equals(loc, __io__address + __dna__offset)) {
 			return;
@@ -2359,9 +2528,9 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 252, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2374,9 +2543,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 220;
+			__dna__offset = 252;
 		} else {
-			__dna__offset = 160;
+			__dna__offset = 192;
 		}
 		if (__io__equals(size, __io__address + __dna__offset)) {
 			return;
@@ -2402,9 +2571,9 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 264, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2420,9 +2589,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 232;
+			__dna__offset = 264;
 		} else {
-			__dna__offset = 172;
+			__dna__offset = 204;
 		}
 		if (__io__equals(eul, __io__address + __dna__offset)) {
 			return;
@@ -2448,9 +2617,9 @@ public class bPoseChannel extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 244, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 276, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2466,9 +2635,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 244;
+			__dna__offset = 276;
 		} else {
-			__dna__offset = 184;
+			__dna__offset = 216;
 		}
 		if (__io__equals(quat, __io__address + __dna__offset)) {
 			return;
@@ -2494,9 +2663,9 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 260, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 292, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2512,9 +2681,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 260;
+			__dna__offset = 292;
 		} else {
-			__dna__offset = 200;
+			__dna__offset = 232;
 		}
 		if (__io__equals(rotAxis, __io__address + __dna__offset)) {
 			return;
@@ -2533,9 +2702,9 @@ public class bPoseChannel extends CFacade {
 	public float getRotAngle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 272);
+			return __io__block.readFloat(__io__address + 304);
 		} else {
-			return __io__block.readFloat(__io__address + 212);
+			return __io__block.readFloat(__io__address + 244);
 		}
 	}
 
@@ -2547,9 +2716,9 @@ public class bPoseChannel extends CFacade {
 	public void setRotAngle(float rotAngle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 272, rotAngle);
+			__io__block.writeFloat(__io__address + 304, rotAngle);
 		} else {
-			__io__block.writeFloat(__io__address + 212, rotAngle);
+			__io__block.writeFloat(__io__address + 244, rotAngle);
 		}
 	}
 
@@ -2564,9 +2733,9 @@ public class bPoseChannel extends CFacade {
 	public short getRotmode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 276);
+			return __io__block.readShort(__io__address + 308);
 		} else {
-			return __io__block.readShort(__io__address + 216);
+			return __io__block.readShort(__io__address + 248);
 		}
 	}
 
@@ -2581,9 +2750,9 @@ public class bPoseChannel extends CFacade {
 	public void setRotmode(short rotmode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 276, rotmode);
+			__io__block.writeShort(__io__address + 308, rotmode);
 		} else {
-			__io__block.writeShort(__io__address + 216, rotmode);
+			__io__block.writeShort(__io__address + 248, rotmode);
 		}
 	}
 
@@ -2599,9 +2768,9 @@ public class bPoseChannel extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 278, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 310, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 218, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 250, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2614,9 +2783,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 278;
+			__dna__offset = 310;
 		} else {
-			__dna__offset = 218;
+			__dna__offset = 250;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -2643,9 +2812,9 @@ public class bPoseChannel extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 312, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 252, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2661,9 +2830,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 280;
+			__dna__offset = 312;
 		} else {
-			__dna__offset = 220;
+			__dna__offset = 252;
 		}
 		if (__io__equals(chan_mat, __io__address + __dna__offset)) {
 			return;
@@ -2690,9 +2859,9 @@ public class bPoseChannel extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 344, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 376, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 284, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 316, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2708,9 +2877,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 344;
+			__dna__offset = 376;
 		} else {
-			__dna__offset = 284;
+			__dna__offset = 316;
 		}
 		if (__io__equals(pose_mat, __io__address + __dna__offset)) {
 			return;
@@ -2737,9 +2906,9 @@ public class bPoseChannel extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 408, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 440, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 348, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 380, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2755,9 +2924,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 408;
+			__dna__offset = 440;
 		} else {
-			__dna__offset = 348;
+			__dna__offset = 380;
 		}
 		if (__io__equals(disp_mat, __io__address + __dna__offset)) {
 			return;
@@ -2784,9 +2953,9 @@ public class bPoseChannel extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 472, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 504, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 412, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 444, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2802,9 +2971,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 472;
+			__dna__offset = 504;
 		} else {
-			__dna__offset = 412;
+			__dna__offset = 444;
 		}
 		if (__io__equals(disp_tail_mat, __io__address + __dna__offset)) {
 			return;
@@ -2831,9 +3000,9 @@ public class bPoseChannel extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 536, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 568, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 476, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 508, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2849,9 +3018,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 536;
+			__dna__offset = 568;
 		} else {
-			__dna__offset = 476;
+			__dna__offset = 508;
 		}
 		if (__io__equals(constinv, __io__address + __dna__offset)) {
 			return;
@@ -2877,9 +3046,9 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 600, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 632, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 540, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 572, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2895,9 +3064,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 600;
+			__dna__offset = 632;
 		} else {
-			__dna__offset = 540;
+			__dna__offset = 572;
 		}
 		if (__io__equals(pose_head, __io__address + __dna__offset)) {
 			return;
@@ -2923,9 +3092,9 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 612, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 644, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 552, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 584, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2941,9 +3110,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 612;
+			__dna__offset = 644;
 		} else {
-			__dna__offset = 552;
+			__dna__offset = 584;
 		}
 		if (__io__equals(pose_tail, __io__address + __dna__offset)) {
 			return;
@@ -2969,9 +3138,9 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 624, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 656, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 564, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 596, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2987,9 +3156,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 624;
+			__dna__offset = 656;
 		} else {
-			__dna__offset = 564;
+			__dna__offset = 596;
 		}
 		if (__io__equals(limitmin, __io__address + __dna__offset)) {
 			return;
@@ -3012,9 +3181,9 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 636, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 668, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 576, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 608, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3027,9 +3196,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 636;
+			__dna__offset = 668;
 		} else {
-			__dna__offset = 576;
+			__dna__offset = 608;
 		}
 		if (__io__equals(limitmax, __io__address + __dna__offset)) {
 			return;
@@ -3055,9 +3224,9 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 648, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 680, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 588, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 620, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3073,9 +3242,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 648;
+			__dna__offset = 680;
 		} else {
-			__dna__offset = 588;
+			__dna__offset = 620;
 		}
 		if (__io__equals(stiffness, __io__address + __dna__offset)) {
 			return;
@@ -3094,9 +3263,9 @@ public class bPoseChannel extends CFacade {
 	public float getIkstretch() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 660);
+			return __io__block.readFloat(__io__address + 692);
 		} else {
-			return __io__block.readFloat(__io__address + 600);
+			return __io__block.readFloat(__io__address + 632);
 		}
 	}
 
@@ -3108,9 +3277,9 @@ public class bPoseChannel extends CFacade {
 	public void setIkstretch(float ikstretch) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 660, ikstretch);
+			__io__block.writeFloat(__io__address + 692, ikstretch);
 		} else {
-			__io__block.writeFloat(__io__address + 600, ikstretch);
+			__io__block.writeFloat(__io__address + 632, ikstretch);
 		}
 	}
 
@@ -3125,9 +3294,9 @@ public class bPoseChannel extends CFacade {
 	public float getIkrotweight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 664);
+			return __io__block.readFloat(__io__address + 696);
 		} else {
-			return __io__block.readFloat(__io__address + 604);
+			return __io__block.readFloat(__io__address + 636);
 		}
 	}
 
@@ -3142,9 +3311,9 @@ public class bPoseChannel extends CFacade {
 	public void setIkrotweight(float ikrotweight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 664, ikrotweight);
+			__io__block.writeFloat(__io__address + 696, ikrotweight);
 		} else {
-			__io__block.writeFloat(__io__address + 604, ikrotweight);
+			__io__block.writeFloat(__io__address + 636, ikrotweight);
 		}
 	}
 
@@ -3159,9 +3328,9 @@ public class bPoseChannel extends CFacade {
 	public float getIklinweight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 668);
+			return __io__block.readFloat(__io__address + 700);
 		} else {
-			return __io__block.readFloat(__io__address + 608);
+			return __io__block.readFloat(__io__address + 640);
 		}
 	}
 
@@ -3176,9 +3345,9 @@ public class bPoseChannel extends CFacade {
 	public void setIklinweight(float iklinweight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 668, iklinweight);
+			__io__block.writeFloat(__io__address + 700, iklinweight);
 		} else {
-			__io__block.writeFloat(__io__address + 608, iklinweight);
+			__io__block.writeFloat(__io__address + 640, iklinweight);
 		}
 	}
 
@@ -3193,9 +3362,9 @@ public class bPoseChannel extends CFacade {
 	public float getRoll1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 672);
+			return __io__block.readFloat(__io__address + 704);
 		} else {
-			return __io__block.readFloat(__io__address + 612);
+			return __io__block.readFloat(__io__address + 644);
 		}
 	}
 
@@ -3210,9 +3379,9 @@ public class bPoseChannel extends CFacade {
 	public void setRoll1(float roll1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 672, roll1);
+			__io__block.writeFloat(__io__address + 704, roll1);
 		} else {
-			__io__block.writeFloat(__io__address + 612, roll1);
+			__io__block.writeFloat(__io__address + 644, roll1);
 		}
 	}
 
@@ -3224,9 +3393,9 @@ public class bPoseChannel extends CFacade {
 	public float getRoll2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 676);
+			return __io__block.readFloat(__io__address + 708);
 		} else {
-			return __io__block.readFloat(__io__address + 616);
+			return __io__block.readFloat(__io__address + 648);
 		}
 	}
 
@@ -3238,9 +3407,9 @@ public class bPoseChannel extends CFacade {
 	public void setRoll2(float roll2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 676, roll2);
+			__io__block.writeFloat(__io__address + 708, roll2);
 		} else {
-			__io__block.writeFloat(__io__address + 616, roll2);
+			__io__block.writeFloat(__io__address + 648, roll2);
 		}
 	}
 
@@ -3252,9 +3421,9 @@ public class bPoseChannel extends CFacade {
 	public float getCurveInX() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 680);
+			return __io__block.readFloat(__io__address + 712);
 		} else {
-			return __io__block.readFloat(__io__address + 620);
+			return __io__block.readFloat(__io__address + 652);
 		}
 	}
 
@@ -3266,9 +3435,9 @@ public class bPoseChannel extends CFacade {
 	public void setCurveInX(float curveInX) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 680, curveInX);
+			__io__block.writeFloat(__io__address + 712, curveInX);
 		} else {
-			__io__block.writeFloat(__io__address + 620, curveInX);
+			__io__block.writeFloat(__io__address + 652, curveInX);
 		}
 	}
 
@@ -3280,9 +3449,9 @@ public class bPoseChannel extends CFacade {
 	public float getCurveInY() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 684);
+			return __io__block.readFloat(__io__address + 716);
 		} else {
-			return __io__block.readFloat(__io__address + 624);
+			return __io__block.readFloat(__io__address + 656);
 		}
 	}
 
@@ -3294,9 +3463,9 @@ public class bPoseChannel extends CFacade {
 	public void setCurveInY(float curveInY) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 684, curveInY);
+			__io__block.writeFloat(__io__address + 716, curveInY);
 		} else {
-			__io__block.writeFloat(__io__address + 624, curveInY);
+			__io__block.writeFloat(__io__address + 656, curveInY);
 		}
 	}
 
@@ -3308,9 +3477,9 @@ public class bPoseChannel extends CFacade {
 	public float getCurveOutX() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 688);
+			return __io__block.readFloat(__io__address + 720);
 		} else {
-			return __io__block.readFloat(__io__address + 628);
+			return __io__block.readFloat(__io__address + 660);
 		}
 	}
 
@@ -3322,9 +3491,9 @@ public class bPoseChannel extends CFacade {
 	public void setCurveOutX(float curveOutX) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 688, curveOutX);
+			__io__block.writeFloat(__io__address + 720, curveOutX);
 		} else {
-			__io__block.writeFloat(__io__address + 628, curveOutX);
+			__io__block.writeFloat(__io__address + 660, curveOutX);
 		}
 	}
 
@@ -3336,9 +3505,9 @@ public class bPoseChannel extends CFacade {
 	public float getCurveOutY() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 692);
+			return __io__block.readFloat(__io__address + 724);
 		} else {
-			return __io__block.readFloat(__io__address + 632);
+			return __io__block.readFloat(__io__address + 664);
 		}
 	}
 
@@ -3350,9 +3519,9 @@ public class bPoseChannel extends CFacade {
 	public void setCurveOutY(float curveOutY) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 692, curveOutY);
+			__io__block.writeFloat(__io__address + 724, curveOutY);
 		} else {
-			__io__block.writeFloat(__io__address + 632, curveOutY);
+			__io__block.writeFloat(__io__address + 664, curveOutY);
 		}
 	}
 
@@ -3364,9 +3533,9 @@ public class bPoseChannel extends CFacade {
 	public float getEase1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 696);
+			return __io__block.readFloat(__io__address + 728);
 		} else {
-			return __io__block.readFloat(__io__address + 636);
+			return __io__block.readFloat(__io__address + 668);
 		}
 	}
 
@@ -3378,9 +3547,9 @@ public class bPoseChannel extends CFacade {
 	public void setEase1(float ease1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 696, ease1);
+			__io__block.writeFloat(__io__address + 728, ease1);
 		} else {
-			__io__block.writeFloat(__io__address + 636, ease1);
+			__io__block.writeFloat(__io__address + 668, ease1);
 		}
 	}
 
@@ -3392,9 +3561,9 @@ public class bPoseChannel extends CFacade {
 	public float getEase2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 700);
+			return __io__block.readFloat(__io__address + 732);
 		} else {
-			return __io__block.readFloat(__io__address + 640);
+			return __io__block.readFloat(__io__address + 672);
 		}
 	}
 
@@ -3406,9 +3575,9 @@ public class bPoseChannel extends CFacade {
 	public void setEase2(float ease2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 700, ease2);
+			__io__block.writeFloat(__io__address + 732, ease2);
 		} else {
-			__io__block.writeFloat(__io__address + 640, ease2);
+			__io__block.writeFloat(__io__address + 672, ease2);
 		}
 	}
 
@@ -3420,9 +3589,9 @@ public class bPoseChannel extends CFacade {
 	public float getScaleIn() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 704);
+			return __io__block.readFloat(__io__address + 736);
 		} else {
-			return __io__block.readFloat(__io__address + 644);
+			return __io__block.readFloat(__io__address + 676);
 		}
 	}
 
@@ -3434,9 +3603,9 @@ public class bPoseChannel extends CFacade {
 	public void setScaleIn(float scaleIn) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 704, scaleIn);
+			__io__block.writeFloat(__io__address + 736, scaleIn);
 		} else {
-			__io__block.writeFloat(__io__address + 644, scaleIn);
+			__io__block.writeFloat(__io__address + 676, scaleIn);
 		}
 	}
 
@@ -3448,9 +3617,9 @@ public class bPoseChannel extends CFacade {
 	public float getScale_in_y() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 708);
+			return __io__block.readFloat(__io__address + 740);
 		} else {
-			return __io__block.readFloat(__io__address + 648);
+			return __io__block.readFloat(__io__address + 680);
 		}
 	}
 
@@ -3462,9 +3631,9 @@ public class bPoseChannel extends CFacade {
 	public void setScale_in_y(float scale_in_y) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 708, scale_in_y);
+			__io__block.writeFloat(__io__address + 740, scale_in_y);
 		} else {
-			__io__block.writeFloat(__io__address + 648, scale_in_y);
+			__io__block.writeFloat(__io__address + 680, scale_in_y);
 		}
 	}
 
@@ -3476,9 +3645,9 @@ public class bPoseChannel extends CFacade {
 	public float getScaleOut() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 712);
+			return __io__block.readFloat(__io__address + 744);
 		} else {
-			return __io__block.readFloat(__io__address + 652);
+			return __io__block.readFloat(__io__address + 684);
 		}
 	}
 
@@ -3490,9 +3659,9 @@ public class bPoseChannel extends CFacade {
 	public void setScaleOut(float scaleOut) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 712, scaleOut);
+			__io__block.writeFloat(__io__address + 744, scaleOut);
 		} else {
-			__io__block.writeFloat(__io__address + 652, scaleOut);
+			__io__block.writeFloat(__io__address + 684, scaleOut);
 		}
 	}
 
@@ -3504,9 +3673,9 @@ public class bPoseChannel extends CFacade {
 	public float getScale_out_y() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 716);
+			return __io__block.readFloat(__io__address + 748);
 		} else {
-			return __io__block.readFloat(__io__address + 656);
+			return __io__block.readFloat(__io__address + 688);
 		}
 	}
 
@@ -3518,9 +3687,89 @@ public class bPoseChannel extends CFacade {
 	public void setScale_out_y(float scale_out_y) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 716, scale_out_y);
+			__io__block.writeFloat(__io__address + 748, scale_out_y);
 		} else {
-			__io__block.writeFloat(__io__address + 656, scale_out_y);
+			__io__block.writeFloat(__io__address + 688, scale_out_y);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'scale_in'.
+	 * @see #__DNA__FIELD__scale_in
+	 */
+	
+	public CArrayFacade<Float> getScale_in() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 752, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 692, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'scale_in'.
+	 * @see #__DNA__FIELD__scale_in
+	 */
+	
+	public void setScale_in(CArrayFacade<Float> scale_in) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 752;
+		} else {
+			__dna__offset = 692;
+		}
+		if (__io__equals(scale_in, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, scale_in)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, scale_in);
+		} else {
+			__io__generic__copy( getScale_in(), scale_in);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'scale_out'.
+	 * @see #__DNA__FIELD__scale_out
+	 */
+	
+	public CArrayFacade<Float> getScale_out() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 764, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 704, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'scale_out'.
+	 * @see #__DNA__FIELD__scale_out
+	 */
+	
+	public void setScale_out(CArrayFacade<Float> scale_out) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 764;
+		} else {
+			__dna__offset = 704;
+		}
+		if (__io__equals(scale_out, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, scale_out)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, scale_out);
+		} else {
+			__io__generic__copy( getScale_out(), scale_out);
 		}
 	}
 
@@ -3536,9 +3785,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 720);
+			__dna__targetAddress = __io__block.readLong(__io__address + 776);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 660);
+			__dna__targetAddress = __io__block.readLong(__io__address + 716);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bPoseChannel.class};
 		return new CPointer<bPoseChannel>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bPoseChannel.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3556,9 +3805,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __address = ((bbone_prev == null) ? 0 : bbone_prev.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 720, __address);
+			__io__block.writeLong(__io__address + 776, __address);
 		} else {
-			__io__block.writeLong(__io__address + 660, __address);
+			__io__block.writeLong(__io__address + 716, __address);
 		}
 	}
 
@@ -3571,9 +3820,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 728);
+			__dna__targetAddress = __io__block.readLong(__io__address + 784);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 664);
+			__dna__targetAddress = __io__block.readLong(__io__address + 720);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bPoseChannel.class};
 		return new CPointer<bPoseChannel>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bPoseChannel.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3588,9 +3837,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __address = ((bbone_next == null) ? 0 : bbone_next.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 728, __address);
+			__io__block.writeLong(__io__address + 784, __address);
 		} else {
-			__io__block.writeLong(__io__address + 664, __address);
+			__io__block.writeLong(__io__address + 720, __address);
 		}
 	}
 
@@ -3606,9 +3855,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 736);
+			__dna__targetAddress = __io__block.readLong(__io__address + 792);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 668);
+			__dna__targetAddress = __io__block.readLong(__io__address + 724);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -3626,9 +3875,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __address = ((temp == null) ? 0 : temp.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 736, __address);
+			__io__block.writeLong(__io__address + 792, __address);
 		} else {
-			__io__block.writeLong(__io__address + 668, __address);
+			__io__block.writeLong(__io__address + 724, __address);
 		}
 	}
 
@@ -3644,9 +3893,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 744);
+			__dna__targetAddress = __io__block.readLong(__io__address + 800);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 672);
+			__dna__targetAddress = __io__block.readLong(__io__address + 728);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -3664,9 +3913,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __address = ((draw_data == null) ? 0 : draw_data.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 744, __address);
+			__io__block.writeLong(__io__address + 800, __address);
 		} else {
-			__io__block.writeLong(__io__address + 672, __address);
+			__io__block.writeLong(__io__address + 728, __address);
 		}
 	}
 
@@ -3682,9 +3931,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 752);
+			__dna__targetAddress = __io__block.readLong(__io__address + 808);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 676);
+			__dna__targetAddress = __io__block.readLong(__io__address + 732);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bPoseChannel.class};
 		return new CPointer<bPoseChannel>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bPoseChannel.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3702,9 +3951,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __address = ((orig_pchan == null) ? 0 : orig_pchan.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 752, __address);
+			__io__block.writeLong(__io__address + 808, __address);
 		} else {
-			__io__block.writeLong(__io__address + 676, __address);
+			__io__block.writeLong(__io__address + 732, __address);
 		}
 	}
 
@@ -3719,9 +3968,9 @@ public class bPoseChannel extends CFacade {
 	public bPoseChannel_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new bPoseChannel_Runtime(__io__address + 760, __io__block, __io__blockTable);
+			return new bPoseChannel_Runtime(__io__address + 816, __io__block, __io__blockTable);
 		} else {
-			return new bPoseChannel_Runtime(__io__address + 680, __io__block, __io__blockTable);
+			return new bPoseChannel_Runtime(__io__address + 736, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3737,9 +3986,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 760;
+			__dna__offset = 816;
 		} else {
-			__dna__offset = 680;
+			__dna__offset = 736;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

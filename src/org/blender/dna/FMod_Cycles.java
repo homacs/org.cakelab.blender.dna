@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> TODO: we can only do complete cycles... </p><p> cycling/repetition modifier data </p>
+ * <p> cycling/repetition modifier data TODO: we can only do complete cycles. </p>
  */
 
 @CMetaData(size32=8, size64=8)
@@ -27,7 +27,7 @@ public class FMod_Cycles extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 591;
+	public static final int __DNA__SDNA_INDEX = 645;
 
 	/**
 	 * Field descriptor (offset) for struct member 'before_mode'.

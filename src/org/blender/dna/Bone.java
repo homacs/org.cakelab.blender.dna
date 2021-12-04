@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> this system works on different transformation space levels;</p><p> 1) {@link Bone}  Space; with each {@link Bone}  having own (0,0,0) origin 2) Armature Space; the rest position, in {@link Object}  space, Bones Spaces are applied hierarchical 3) Pose Space; the animation position, in {@link Object}  space 4) {@link World}  Space; {@link Object}  matrix applied to Pose or Armature space </p>
  */
 
-@CMetaData(size32=360, size64=392)
+@CMetaData(size32=392, size64=424)
 public class Bone extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class Bone extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 337;
+	public static final int __DNA__SDNA_INDEX = 349;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -455,7 +455,9 @@ public class Bone extends CFacade {
 	 * Field descriptor (offset) for struct member 'xwidth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> width: for block bones. keep in this order, transform!. </p>
+	 * <p> The width for block bones.</p><p><h2>Note</h2><p><code></code><code></code>  as offsets. </p> keep in this order for transform code which stores a pointer to xwidth, accessing length and zwidth as offsets. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -807,6 +809,46 @@ public class Bone extends CFacade {
 	public static final long[] __DNA__FIELD__scale_out_y = new long[]{328, 352};
 
 	/**
+	 * Field descriptor (offset) for struct member 'scale_in'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Bone bone = ...;
+	 * CPointer&lt;Object&gt; p = bone.__dna__addressof(Bone.__DNA__FIELD__scale_in);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_scale_in = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'scale_in'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__scale_in = new long[]{332, 356};
+
+	/**
+	 * Field descriptor (offset) for struct member 'scale_out'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Bone bone = ...;
+	 * CPointer&lt;Object&gt; p = bone.__dna__addressof(Bone.__DNA__FIELD__scale_out);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_scale_out = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'scale_out'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__scale_out = new long[]{344, 368};
+
+	/**
 	 * Field descriptor (offset) for struct member 'size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -827,7 +869,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size = new long[]{332, 356};
+	public static final long[] __DNA__FIELD__size = new long[]{356, 380};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer'.
@@ -850,7 +892,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer = new long[]{344, 368};
+	public static final long[] __DNA__FIELD__layer = new long[]{368, 392};
 
 	/**
 	 * Field descriptor (offset) for struct member 'segments'.
@@ -873,7 +915,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__segments = new long[]{348, 372};
+	public static final long[] __DNA__FIELD__segments = new long[]{372, 396};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_prev_type'.
@@ -896,7 +938,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbone_prev_type = new long[]{350, 374};
+	public static final long[] __DNA__FIELD__bbone_prev_type = new long[]{374, 398};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_next_type'.
@@ -916,7 +958,70 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbone_next_type = new long[]{351, 375};
+	public static final long[] __DNA__FIELD__bbone_next_type = new long[]{375, 399};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bbone_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> B-Bone flags. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Bone bone = ...;
+	 * CPointer&lt;Object&gt; p = bone.__dna__addressof(Bone.__DNA__FIELD__bbone_flag);
+	 * CPointer&lt;Integer&gt; p_bbone_flag = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bbone_flag'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bbone_flag = new long[]{376, 400};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bbone_prev_flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Bone bone = ...;
+	 * CPointer&lt;Object&gt; p = bone.__dna__addressof(Bone.__DNA__FIELD__bbone_prev_flag);
+	 * CPointer&lt;Short&gt; p_bbone_prev_flag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bbone_prev_flag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bbone_prev_flag = new long[]{380, 404};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bbone_next_flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Bone bone = ...;
+	 * CPointer&lt;Object&gt; p = bone.__dna__addressof(Bone.__DNA__FIELD__bbone_next_flag);
+	 * CPointer&lt;Short&gt; p_bbone_next_flag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bbone_next_flag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bbone_next_flag = new long[]{382, 406};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_prev'.
@@ -939,7 +1044,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbone_prev = new long[]{352, 376};
+	public static final long[] __DNA__FIELD__bbone_prev = new long[]{384, 408};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_next'.
@@ -959,7 +1064,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbone_next = new long[]{356, 384};
+	public static final long[] __DNA__FIELD__bbone_next = new long[]{388, 416};
 
 	public Bone(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1709,7 +1814,9 @@ public class Bone extends CFacade {
 	 * Get method for struct member 'xwidth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> width: for block bones. keep in this order, transform!. </p>
+	 * <p> The width for block bones.</p><p><h2>Note</h2><p><code></code><code></code>  as offsets. </p> keep in this order for transform code which stores a pointer to xwidth, accessing length and zwidth as offsets. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__xwidth
 	 */
 	
@@ -1726,7 +1833,9 @@ public class Bone extends CFacade {
 	 * Set method for struct member 'xwidth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> width: for block bones. keep in this order, transform!. </p>
+	 * <p> The width for block bones.</p><p><h2>Note</h2><p><code></code><code></code>  as offsets. </p> keep in this order for transform code which stores a pointer to xwidth, accessing length and zwidth as offsets. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__xwidth
 	 */
 	
@@ -2212,6 +2321,86 @@ public class Bone extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'scale_in'.
+	 * @see #__DNA__FIELD__scale_in
+	 */
+	
+	public CArrayFacade<Float> getScale_in() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 332, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'scale_in'.
+	 * @see #__DNA__FIELD__scale_in
+	 */
+	
+	public void setScale_in(CArrayFacade<Float> scale_in) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 356;
+		} else {
+			__dna__offset = 332;
+		}
+		if (__io__equals(scale_in, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, scale_in)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, scale_in);
+		} else {
+			__io__generic__copy( getScale_in(), scale_in);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'scale_out'.
+	 * @see #__DNA__FIELD__scale_out
+	 */
+	
+	public CArrayFacade<Float> getScale_out() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 368, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 344, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'scale_out'.
+	 * @see #__DNA__FIELD__scale_out
+	 */
+	
+	public void setScale_out(CArrayFacade<Float> scale_out) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 368;
+		} else {
+			__dna__offset = 344;
+		}
+		if (__io__equals(scale_out, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, scale_out)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, scale_out);
+		} else {
+			__io__generic__copy( getScale_out(), scale_out);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -2226,9 +2415,9 @@ public class Bone extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 380, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 332, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2244,9 +2433,9 @@ public class Bone extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 356;
+			__dna__offset = 380;
 		} else {
-			__dna__offset = 332;
+			__dna__offset = 356;
 		}
 		if (__io__equals(size, __io__address + __dna__offset)) {
 			return;
@@ -2268,9 +2457,9 @@ public class Bone extends CFacade {
 	public int getLayer() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 368);
+			return __io__block.readInt(__io__address + 392);
 		} else {
-			return __io__block.readInt(__io__address + 344);
+			return __io__block.readInt(__io__address + 368);
 		}
 	}
 
@@ -2285,9 +2474,9 @@ public class Bone extends CFacade {
 	public void setLayer(int layer) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 368, layer);
+			__io__block.writeInt(__io__address + 392, layer);
 		} else {
-			__io__block.writeInt(__io__address + 344, layer);
+			__io__block.writeInt(__io__address + 368, layer);
 		}
 	}
 
@@ -2302,9 +2491,9 @@ public class Bone extends CFacade {
 	public short getSegments() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 372);
+			return __io__block.readShort(__io__address + 396);
 		} else {
-			return __io__block.readShort(__io__address + 348);
+			return __io__block.readShort(__io__address + 372);
 		}
 	}
 
@@ -2319,9 +2508,9 @@ public class Bone extends CFacade {
 	public void setSegments(short segments) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 372, segments);
+			__io__block.writeShort(__io__address + 396, segments);
 		} else {
-			__io__block.writeShort(__io__address + 348, segments);
+			__io__block.writeShort(__io__address + 372, segments);
 		}
 	}
 
@@ -2336,9 +2525,9 @@ public class Bone extends CFacade {
 	public byte getBbone_prev_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 374);
+			return __io__block.readByte(__io__address + 398);
 		} else {
-			return __io__block.readByte(__io__address + 350);
+			return __io__block.readByte(__io__address + 374);
 		}
 	}
 
@@ -2353,9 +2542,9 @@ public class Bone extends CFacade {
 	public void setBbone_prev_type(byte bbone_prev_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 374, bbone_prev_type);
+			__io__block.writeByte(__io__address + 398, bbone_prev_type);
 		} else {
-			__io__block.writeByte(__io__address + 350, bbone_prev_type);
+			__io__block.writeByte(__io__address + 374, bbone_prev_type);
 		}
 	}
 
@@ -2367,9 +2556,9 @@ public class Bone extends CFacade {
 	public byte getBbone_next_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 375);
+			return __io__block.readByte(__io__address + 399);
 		} else {
-			return __io__block.readByte(__io__address + 351);
+			return __io__block.readByte(__io__address + 375);
 		}
 	}
 
@@ -2381,9 +2570,99 @@ public class Bone extends CFacade {
 	public void setBbone_next_type(byte bbone_next_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 375, bbone_next_type);
+			__io__block.writeByte(__io__address + 399, bbone_next_type);
 		} else {
-			__io__block.writeByte(__io__address + 351, bbone_next_type);
+			__io__block.writeByte(__io__address + 375, bbone_next_type);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bbone_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> B-Bone flags. </p>
+	 * @see #__DNA__FIELD__bbone_flag
+	 */
+	
+	public int getBbone_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 400);
+		} else {
+			return __io__block.readInt(__io__address + 376);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bbone_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> B-Bone flags. </p>
+	 * @see #__DNA__FIELD__bbone_flag
+	 */
+	
+	public void setBbone_flag(int bbone_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 400, bbone_flag);
+		} else {
+			__io__block.writeInt(__io__address + 376, bbone_flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bbone_prev_flag'.
+	 * @see #__DNA__FIELD__bbone_prev_flag
+	 */
+	
+	public short getBbone_prev_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 404);
+		} else {
+			return __io__block.readShort(__io__address + 380);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bbone_prev_flag'.
+	 * @see #__DNA__FIELD__bbone_prev_flag
+	 */
+	
+	public void setBbone_prev_flag(short bbone_prev_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 404, bbone_prev_flag);
+		} else {
+			__io__block.writeShort(__io__address + 380, bbone_prev_flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bbone_next_flag'.
+	 * @see #__DNA__FIELD__bbone_next_flag
+	 */
+	
+	public short getBbone_next_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 406);
+		} else {
+			return __io__block.readShort(__io__address + 382);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bbone_next_flag'.
+	 * @see #__DNA__FIELD__bbone_next_flag
+	 */
+	
+	public void setBbone_next_flag(short bbone_next_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 406, bbone_next_flag);
+		} else {
+			__io__block.writeShort(__io__address + 382, bbone_next_flag);
 		}
 	}
 
@@ -2399,9 +2678,9 @@ public class Bone extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 376);
+			__dna__targetAddress = __io__block.readLong(__io__address + 408);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 352);
+			__dna__targetAddress = __io__block.readLong(__io__address + 384);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Bone.class};
 		return new CPointer<Bone>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Bone.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2419,9 +2698,9 @@ public class Bone extends CFacade {
 	{
 		long __address = ((bbone_prev == null) ? 0 : bbone_prev.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 376, __address);
+			__io__block.writeLong(__io__address + 408, __address);
 		} else {
-			__io__block.writeLong(__io__address + 352, __address);
+			__io__block.writeLong(__io__address + 384, __address);
 		}
 	}
 
@@ -2434,9 +2713,9 @@ public class Bone extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 384);
+			__dna__targetAddress = __io__block.readLong(__io__address + 416);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 356);
+			__dna__targetAddress = __io__block.readLong(__io__address + 388);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Bone.class};
 		return new CPointer<Bone>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Bone.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2451,9 +2730,9 @@ public class Bone extends CFacade {
 	{
 		long __address = ((bbone_next == null) ? 0 : bbone_next.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 384, __address);
+			__io__block.writeLong(__io__address + 416, __address);
 		} else {
-			__io__block.writeLong(__io__address + 356, __address);
+			__io__block.writeLong(__io__address + 388, __address);
 		}
 	}
 

@@ -29,7 +29,7 @@ public class RenderData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 182;
+	public static final int __DNA__SDNA_INDEX = 188;
 
 	/**
 	 * Field descriptor (offset) for struct member 'im_format'.
@@ -504,7 +504,9 @@ public class RenderData extends CFacade {
 	 * Field descriptor (offset) for struct member 'tilex'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> render tile dimensions </p>
+	 * <p> render tile dimensions 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -525,6 +527,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tiley'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -952,8 +959,7 @@ public class RenderData extends CFacade {
 	 * Field descriptor (offset) for struct member 'gauss'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Value used to define filter size for all filter options <br/> 
-	 *  </p>
+	 * <p> Value used to define filter size for all filter options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1323,7 +1329,7 @@ public class RenderData extends CFacade {
 	 * Field descriptor (offset) for struct member 'seq_rend_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> UNUSED!. </p>
+	 * <p> UNUSED. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1644,24 +1650,24 @@ public class RenderData extends CFacade {
 	public static final long[] __DNA__FIELD__bake = new long[]{2400, 2424};
 
 	/**
-	 * Field descriptor (offset) for struct member 'preview_start_resolution'.
+	 * Field descriptor (offset) for struct member '_pad8'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * RenderData renderdata = ...;
-	 * CPointer&lt;Object&gt; p = renderdata.__dna__addressof(RenderData.__DNA__FIELD__preview_start_resolution);
-	 * CPointer&lt;Integer&gt; p_preview_start_resolution = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = renderdata.__dna__addressof(RenderData.__DNA__FIELD___pad8);
+	 * CPointer&lt;Integer&gt; p__pad8 = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'preview_start_resolution'</li>
+	 * <li>Field: '_pad8'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview_start_resolution = new long[]{3708, 3744};
+	public static final long[] __DNA__FIELD___pad8 = new long[]{3708, 3744};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview_pixel_size'.
@@ -1684,27 +1690,24 @@ public class RenderData extends CFacade {
 	public static final long[] __DNA__FIELD__preview_pixel_size = new long[]{3712, 3748};
 
 	/**
-	 * Field descriptor (offset) for struct member 'debug_pass_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Type of the debug pass to use. Only used when built with debug passes support. </p>
+	 * Field descriptor (offset) for struct member '_pad4'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * RenderData renderdata = ...;
-	 * CPointer&lt;Object&gt; p = renderdata.__dna__addressof(RenderData.__DNA__FIELD__debug_pass_type);
-	 * CPointer&lt;Short&gt; p_debug_pass_type = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = renderdata.__dna__addressof(RenderData.__DNA__FIELD___pad4);
+	 * CPointer&lt;Short&gt; p__pad4 = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'debug_pass_type'</li>
+	 * <li>Field: '_pad4'</li>
 	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__debug_pass_type = new long[]{3714, 3750};
+	public static final long[] __DNA__FIELD___pad4 = new long[]{3714, 3750};
 
 	/**
 	 * Field descriptor (offset) for struct member 'views'.
@@ -2553,7 +2556,9 @@ public class RenderData extends CFacade {
 	 * Get method for struct member 'tilex'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> render tile dimensions </p>
+	 * <p> render tile dimensions 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__tilex
 	 */
 	
@@ -2570,7 +2575,9 @@ public class RenderData extends CFacade {
 	 * Set method for struct member 'tilex'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> render tile dimensions </p>
+	 * <p> render tile dimensions 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__tilex
 	 */
 	
@@ -2585,6 +2592,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'tiley'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__tiley
 	 */
 	
@@ -2599,6 +2611,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'tiley'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__tiley
 	 */
 	
@@ -3261,8 +3278,7 @@ public class RenderData extends CFacade {
 	 * Get method for struct member 'gauss'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Value used to define filter size for all filter options <br/> 
-	 *  </p>
+	 * <p> Value used to define filter size for all filter options. </p>
 	 * @see #__DNA__FIELD__gauss
 	 */
 	
@@ -3279,8 +3295,7 @@ public class RenderData extends CFacade {
 	 * Set method for struct member 'gauss'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Value used to define filter size for all filter options <br/> 
-	 *  </p>
+	 * <p> Value used to define filter size for all filter options. </p>
 	 * @see #__DNA__FIELD__gauss
 	 */
 	
@@ -3859,7 +3874,7 @@ public class RenderData extends CFacade {
 	 * Get method for struct member 'seq_rend_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> UNUSED!. </p>
+	 * <p> UNUSED. </p>
 	 * @see #__DNA__FIELD__seq_rend_type
 	 */
 	
@@ -3876,7 +3891,7 @@ public class RenderData extends CFacade {
 	 * Set method for struct member 'seq_rend_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> UNUSED!. </p>
+	 * <p> UNUSED. </p>
 	 * @see #__DNA__FIELD__seq_rend_type
 	 */
 	
@@ -4368,11 +4383,11 @@ public class RenderData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'preview_start_resolution'.
-	 * @see #__DNA__FIELD__preview_start_resolution
+	 * Get method for struct member '_pad8'.
+	 * @see #__DNA__FIELD___pad8
 	 */
 	
-	public int getPreview_start_resolution() throws IOException
+	public int get_pad8() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 3744);
@@ -4382,16 +4397,16 @@ public class RenderData extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'preview_start_resolution'.
-	 * @see #__DNA__FIELD__preview_start_resolution
+	 * Set method for struct member '_pad8'.
+	 * @see #__DNA__FIELD___pad8
 	 */
 	
-	public void setPreview_start_resolution(int preview_start_resolution) throws IOException
+	public void set_pad8(int _pad8) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 3744, preview_start_resolution);
+			__io__block.writeInt(__io__address + 3744, _pad8);
 		} else {
-			__io__block.writeInt(__io__address + 3708, preview_start_resolution);
+			__io__block.writeInt(__io__address + 3708, _pad8);
 		}
 	}
 
@@ -4424,14 +4439,11 @@ public class RenderData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'debug_pass_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Type of the debug pass to use. Only used when built with debug passes support. </p>
-	 * @see #__DNA__FIELD__debug_pass_type
+	 * Get method for struct member '_pad4'.
+	 * @see #__DNA__FIELD___pad4
 	 */
 	
-	public short getDebug_pass_type() throws IOException
+	public short get_pad4() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 3750);
@@ -4441,19 +4453,16 @@ public class RenderData extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'debug_pass_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Type of the debug pass to use. Only used when built with debug passes support. </p>
-	 * @see #__DNA__FIELD__debug_pass_type
+	 * Set method for struct member '_pad4'.
+	 * @see #__DNA__FIELD___pad4
 	 */
 	
-	public void setDebug_pass_type(short debug_pass_type) throws IOException
+	public void set_pad4(short _pad4) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 3750, debug_pass_type);
+			__io__block.writeShort(__io__address + 3750, _pad4);
 		} else {
-			__io__block.writeShort(__io__address + 3714, debug_pass_type);
+			__io__block.writeShort(__io__address + 3714, _pad4);
 		}
 	}
 

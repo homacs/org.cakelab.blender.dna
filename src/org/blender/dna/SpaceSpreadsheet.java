@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=52, size64=88)
+@CMetaData(size32=60, size64=104)
 public class SpaceSpreadsheet extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SpaceSpreadsheet extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 255;
+	public static final int __DNA__SDNA_INDEX = 264;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -155,7 +155,8 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'columns'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Persistent data associated with spreadsheet columns<h4>Blender Source Code:</h4>
 	 * <p> End '{@link SpaceLink} ' header. List of {@link SpreadsheetColumn} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -176,11 +177,35 @@ public class SpaceSpreadsheet extends CFacade {
 	public static final long[] __DNA__FIELD__columns = new long[]{24, 40};
 
 	/**
+	 * Field descriptor (offset) for struct member 'row_filters'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Filters to remove rows from the displayed data<h4>Blender Source Code:</h4>
+	 * <p>{@link SpreadsheetRowFilter} . </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceSpreadsheet spacespreadsheet = ...;
+	 * CPointer&lt;Object&gt; p = spacespreadsheet.__dna__addressof(SpaceSpreadsheet.__DNA__FIELD__row_filters);
+	 * CPointer&lt;ListBase&gt; p_row_filters = p.cast(new Class[]{ListBase.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'row_filters'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__row_filters = new long[]{32, 56};
+
+	/**
 	 * Field descriptor (offset) for struct member 'context_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Context path to the data being displayed<h4>Blender Source Code:</h4>
-	 * <p> List of {@link SpreadsheetContext} . This is a path to the data that is displayed in the spreadsheet. It can be set explicitely by an action of the user (e.g. clicking the preview icon in a geometry node) or it can be derived from context automatically based on some heuristic. </p>
+	 * <p> List of {@link SpreadsheetContext} . This is a path to the data that is displayed in the spreadsheet. It can be set explicitly by an action of the user (e.g. clicking the preview icon in a geometry node) or it can be derived from context automatically based on some heuristic. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -197,7 +222,7 @@ public class SpaceSpreadsheet extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__context_path = new long[]{32, 56};
+	public static final long[] __DNA__FIELD__context_path = new long[]{40, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filter_flag'.
@@ -220,7 +245,7 @@ public class SpaceSpreadsheet extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filter_flag = new long[]{40, 72};
+	public static final long[] __DNA__FIELD__filter_flag = new long[]{48, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'geometry_component_type'.
@@ -244,7 +269,7 @@ public class SpaceSpreadsheet extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__geometry_component_type = new long[]{41, 73};
+	public static final long[] __DNA__FIELD__geometry_component_type = new long[]{49, 89};
 
 	/**
 	 * Field descriptor (offset) for struct member 'attribute_domain'.
@@ -268,7 +293,7 @@ public class SpaceSpreadsheet extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__attribute_domain = new long[]{42, 74};
+	public static final long[] __DNA__FIELD__attribute_domain = new long[]{50, 90};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_eval_state'.
@@ -291,7 +316,7 @@ public class SpaceSpreadsheet extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object_eval_state = new long[]{43, 75};
+	public static final long[] __DNA__FIELD__object_eval_state = new long[]{51, 91};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -314,7 +339,7 @@ public class SpaceSpreadsheet extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{44, 76};
+	public static final long[] __DNA__FIELD__flag = new long[]{52, 92};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -334,7 +359,7 @@ public class SpaceSpreadsheet extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{48, 80};
+	public static final long[] __DNA__FIELD__runtime = new long[]{56, 96};
 
 	public SpaceSpreadsheet(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -549,7 +574,8 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Get method for struct member 'columns'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Persistent data associated with spreadsheet columns<h4>Blender Source Code:</h4>
 	 * <p> End '{@link SpaceLink} ' header. List of {@link SpreadsheetColumn} . </p>
 	 * @see #__DNA__FIELD__columns
 	 */
@@ -566,7 +592,8 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Set method for struct member 'columns'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Persistent data associated with spreadsheet columns<h4>Blender Source Code:</h4>
 	 * <p> End '{@link SpaceLink} ' header. List of {@link SpreadsheetColumn} . </p>
 	 * @see #__DNA__FIELD__columns
 	 */
@@ -589,15 +616,15 @@ public class SpaceSpreadsheet extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'context_path'.
+	 * Get method for struct member 'row_filters'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Context path to the data being displayed<h4>Blender Source Code:</h4>
-	 * <p> List of {@link SpreadsheetContext} . This is a path to the data that is displayed in the spreadsheet. It can be set explicitely by an action of the user (e.g. clicking the preview icon in a geometry node) or it can be derived from context automatically based on some heuristic. </p>
-	 * @see #__DNA__FIELD__context_path
+	 * (read-only)    Filters to remove rows from the displayed data<h4>Blender Source Code:</h4>
+	 * <p>{@link SpreadsheetRowFilter} . </p>
+	 * @see #__DNA__FIELD__row_filters
 	 */
 	
-	public ListBase getContext_path() throws IOException
+	public ListBase getRow_filters() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return new ListBase(__io__address + 56, __io__block, __io__blockTable);
@@ -607,11 +634,55 @@ public class SpaceSpreadsheet extends CFacade {
 	}
 
 	/**
+	 * Set method for struct member 'row_filters'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Filters to remove rows from the displayed data<h4>Blender Source Code:</h4>
+	 * <p>{@link SpreadsheetRowFilter} . </p>
+	 * @see #__DNA__FIELD__row_filters
+	 */
+	
+	public void setRow_filters(ListBase row_filters) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 56;
+		} else {
+			__dna__offset = 32;
+		}
+		if (__io__equals(row_filters, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, row_filters)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, row_filters);
+		} else {
+			__io__generic__copy( getRow_filters(), row_filters);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'context_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Context path to the data being displayed<h4>Blender Source Code:</h4>
+	 * <p> List of {@link SpreadsheetContext} . This is a path to the data that is displayed in the spreadsheet. It can be set explicitly by an action of the user (e.g. clicking the preview icon in a geometry node) or it can be derived from context automatically based on some heuristic. </p>
+	 * @see #__DNA__FIELD__context_path
+	 */
+	
+	public ListBase getContext_path() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ListBase(__io__address + 72, __io__block, __io__blockTable);
+		} else {
+			return new ListBase(__io__address + 40, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
 	 * Set method for struct member 'context_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Context path to the data being displayed<h4>Blender Source Code:</h4>
-	 * <p> List of {@link SpreadsheetContext} . This is a path to the data that is displayed in the spreadsheet. It can be set explicitely by an action of the user (e.g. clicking the preview icon in a geometry node) or it can be derived from context automatically based on some heuristic. </p>
+	 * <p> List of {@link SpreadsheetContext} . This is a path to the data that is displayed in the spreadsheet. It can be set explicitly by an action of the user (e.g. clicking the preview icon in a geometry node) or it can be derived from context automatically based on some heuristic. </p>
 	 * @see #__DNA__FIELD__context_path
 	 */
 	
@@ -619,9 +690,9 @@ public class SpaceSpreadsheet extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 56;
+			__dna__offset = 72;
 		} else {
-			__dna__offset = 32;
+			__dna__offset = 40;
 		}
 		if (__io__equals(context_path, __io__address + __dna__offset)) {
 			return;
@@ -643,9 +714,9 @@ public class SpaceSpreadsheet extends CFacade {
 	public byte getFilter_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 72);
+			return __io__block.readByte(__io__address + 88);
 		} else {
-			return __io__block.readByte(__io__address + 40);
+			return __io__block.readByte(__io__address + 48);
 		}
 	}
 
@@ -660,9 +731,9 @@ public class SpaceSpreadsheet extends CFacade {
 	public void setFilter_flag(byte filter_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 72, filter_flag);
+			__io__block.writeByte(__io__address + 88, filter_flag);
 		} else {
-			__io__block.writeByte(__io__address + 40, filter_flag);
+			__io__block.writeByte(__io__address + 48, filter_flag);
 		}
 	}
 
@@ -678,9 +749,9 @@ public class SpaceSpreadsheet extends CFacade {
 	public byte getGeometry_component_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 73);
+			return __io__block.readByte(__io__address + 89);
 		} else {
-			return __io__block.readByte(__io__address + 41);
+			return __io__block.readByte(__io__address + 49);
 		}
 	}
 
@@ -696,9 +767,9 @@ public class SpaceSpreadsheet extends CFacade {
 	public void setGeometry_component_type(byte geometry_component_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 73, geometry_component_type);
+			__io__block.writeByte(__io__address + 89, geometry_component_type);
 		} else {
-			__io__block.writeByte(__io__address + 41, geometry_component_type);
+			__io__block.writeByte(__io__address + 49, geometry_component_type);
 		}
 	}
 
@@ -714,9 +785,9 @@ public class SpaceSpreadsheet extends CFacade {
 	public byte getAttribute_domain() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 74);
+			return __io__block.readByte(__io__address + 90);
 		} else {
-			return __io__block.readByte(__io__address + 42);
+			return __io__block.readByte(__io__address + 50);
 		}
 	}
 
@@ -732,9 +803,9 @@ public class SpaceSpreadsheet extends CFacade {
 	public void setAttribute_domain(byte attribute_domain) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 74, attribute_domain);
+			__io__block.writeByte(__io__address + 90, attribute_domain);
 		} else {
-			__io__block.writeByte(__io__address + 42, attribute_domain);
+			__io__block.writeByte(__io__address + 50, attribute_domain);
 		}
 	}
 
@@ -749,9 +820,9 @@ public class SpaceSpreadsheet extends CFacade {
 	public byte getObject_eval_state() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 75);
+			return __io__block.readByte(__io__address + 91);
 		} else {
-			return __io__block.readByte(__io__address + 43);
+			return __io__block.readByte(__io__address + 51);
 		}
 	}
 
@@ -766,9 +837,9 @@ public class SpaceSpreadsheet extends CFacade {
 	public void setObject_eval_state(byte object_eval_state) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 75, object_eval_state);
+			__io__block.writeByte(__io__address + 91, object_eval_state);
 		} else {
-			__io__block.writeByte(__io__address + 43, object_eval_state);
+			__io__block.writeByte(__io__address + 51, object_eval_state);
 		}
 	}
 
@@ -783,9 +854,9 @@ public class SpaceSpreadsheet extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 76);
+			return __io__block.readInt(__io__address + 92);
 		} else {
-			return __io__block.readInt(__io__address + 44);
+			return __io__block.readInt(__io__address + 52);
 		}
 	}
 
@@ -800,9 +871,9 @@ public class SpaceSpreadsheet extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 76, flag);
+			__io__block.writeInt(__io__address + 92, flag);
 		} else {
-			__io__block.writeInt(__io__address + 44, flag);
+			__io__block.writeInt(__io__address + 52, flag);
 		}
 	}
 
@@ -815,9 +886,9 @@ public class SpaceSpreadsheet extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 80);
+			__dna__targetAddress = __io__block.readLong(__io__address + 96);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 48);
+			__dna__targetAddress = __io__block.readLong(__io__address + 56);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -832,9 +903,9 @@ public class SpaceSpreadsheet extends CFacade {
 	{
 		long __address = ((runtime == null) ? 0 : runtime.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 80, __address);
+			__io__block.writeLong(__io__address + 96, __address);
 		} else {
-			__io__block.writeLong(__io__address + 48, __address);
+			__io__block.writeLong(__io__address + 56, __address);
 		}
 	}
 

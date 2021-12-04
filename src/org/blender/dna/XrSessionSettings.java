@@ -13,7 +13,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'XrSessionSettings'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  </p>
  */
 
 @CMetaData(size32=980, size64=992)
@@ -27,7 +29,7 @@ public class XrSessionSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 723;
+	public static final int __DNA__SDNA_INDEX = 776;
 
 	/**
 	 * Field descriptor (offset) for struct member 'shading'.
@@ -54,6 +56,29 @@ public class XrSessionSettings extends CFacade {
 	public static final long[] __DNA__FIELD__shading = new long[]{0, 0};
 
 	/**
+	 * Field descriptor (offset) for struct member 'base_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Uniform scale to apply to VR view
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * XrSessionSettings xrsessionsettings = ...;
+	 * CPointer&lt;Object&gt; p = xrsessionsettings.__dna__addressof(XrSessionSettings.__DNA__FIELD__base_scale);
+	 * CPointer&lt;Float&gt; p_base_scale = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'base_scale'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__base_scale = new long[]{936, 944};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -67,18 +92,18 @@ public class XrSessionSettings extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[7]'</li>
-	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{936, 944};
+	public static final long[] __DNA__FIELD___pad = new long[]{940, 948};
 
 	/**
 	 * Field descriptor (offset) for struct member 'base_pose_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Define where the location and rotation for the VR view come from, to which translation and rotation deltas from the VR headset will be applied to<h4>Blender Source Code:</h4>
-	 * <p> eXRSessionBasePoseType </p>
+	 * <p> #eXRSessionBasePoseType </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +216,30 @@ public class XrSessionSettings extends CFacade {
 	public static final long[] __DNA__FIELD__draw_flags = new long[]{964, 976};
 
 	/**
+	 * Field descriptor (offset) for struct member 'controller_draw_style'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Style to use when drawing VR controllers<h4>Blender Source Code:</h4>
+	 * <p> Draw style for controller visualization. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * XrSessionSettings xrsessionsettings = ...;
+	 * CPointer&lt;Object&gt; p = xrsessionsettings.__dna__addressof(XrSessionSettings.__DNA__FIELD__controller_draw_style);
+	 * CPointer&lt;Byte&gt; p_controller_draw_style = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'controller_draw_style'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__controller_draw_style = new long[]{965, 977};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -204,11 +253,11 @@ public class XrSessionSettings extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad2'</li>
-	 * <li>Signature: 'char[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{965, 977};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{966, 978};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clip_start'.
@@ -330,6 +379,40 @@ public class XrSessionSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'base_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Uniform scale to apply to VR view
+	 * @see #__DNA__FIELD__base_scale
+	 */
+	
+	public float getBase_scale() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 944);
+		} else {
+			return __io__block.readFloat(__io__address + 936);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'base_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Uniform scale to apply to VR view
+	 * @see #__DNA__FIELD__base_scale
+	 */
+	
+	public void setBase_scale(float base_scale) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 944, base_scale);
+		} else {
+			__io__block.writeFloat(__io__address + 936, base_scale);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -338,12 +421,12 @@ public class XrSessionSettings extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			7
+			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 944, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 948, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 936, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 940, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -356,9 +439,9 @@ public class XrSessionSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 944;
+			__dna__offset = 948;
 		} else {
-			__dna__offset = 936;
+			__dna__offset = 940;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -374,7 +457,7 @@ public class XrSessionSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Define where the location and rotation for the VR view come from, to which translation and rotation deltas from the VR headset will be applied to<h4>Blender Source Code:</h4>
-	 * <p> eXRSessionBasePoseType </p>
+	 * <p> #eXRSessionBasePoseType </p>
 	 * @see #__DNA__FIELD__base_pose_type
 	 */
 	
@@ -392,7 +475,7 @@ public class XrSessionSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Define where the location and rotation for the VR view come from, to which translation and rotation deltas from the VR headset will be applied to<h4>Blender Source Code:</h4>
-	 * <p> eXRSessionBasePoseType </p>
+	 * <p> #eXRSessionBasePoseType </p>
 	 * @see #__DNA__FIELD__base_pose_type
 	 */
 	
@@ -560,6 +643,42 @@ public class XrSessionSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'controller_draw_style'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Style to use when drawing VR controllers<h4>Blender Source Code:</h4>
+	 * <p> Draw style for controller visualization. </p>
+	 * @see #__DNA__FIELD__controller_draw_style
+	 */
+	
+	public byte getController_draw_style() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 977);
+		} else {
+			return __io__block.readByte(__io__address + 965);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'controller_draw_style'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Style to use when drawing VR controllers<h4>Blender Source Code:</h4>
+	 * <p> Draw style for controller visualization. </p>
+	 * @see #__DNA__FIELD__controller_draw_style
+	 */
+	
+	public void setController_draw_style(byte controller_draw_style) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 977, controller_draw_style);
+		} else {
+			__io__block.writeByte(__io__address + 965, controller_draw_style);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad2'.
 	 * @see #__DNA__FIELD___pad2
 	 */
@@ -568,12 +687,12 @@ public class XrSessionSettings extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 977, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 978, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 965, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 966, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -586,9 +705,9 @@ public class XrSessionSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 977;
+			__dna__offset = 978;
 		} else {
-			__dna__offset = 965;
+			__dna__offset = 966;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;

@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> qdn: tonemap node </p>
+ * <p> Tonemap node. </p>
  */
 
 @CMetaData(size32=32, size64=32)
@@ -27,7 +27,7 @@ public class NodeTonemap extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 426;
+	public static final int __DNA__SDNA_INDEX = 440;
 
 	/**
 	 * Field descriptor (offset) for struct member 'key'.

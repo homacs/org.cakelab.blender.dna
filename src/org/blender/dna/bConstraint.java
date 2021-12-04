@@ -28,7 +28,7 @@ public class bConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 354;
+	public static final int __DNA__SDNA_INDEX = 366;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -97,8 +97,7 @@ public class bConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Constraint type. <br/> 
-	 *  </p>
+	 * <p> Constraint type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -121,8 +120,7 @@ public class bConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flag - General Settings. <br/> 
-	 *  </p>
+	 * <p> Flag - General Settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -354,7 +352,7 @@ public class bConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'lin_error'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> below are readonly fields that are set at runtime by the solver for use in the GE (only IK atm) Residual error on constraint expressed in blender unit. </p>
+	 * <p> Below are read-only fields that are set at runtime by the solver for use in the GE (only IK at the moment). Residual error on constraint expressed in blender unit. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -510,8 +508,7 @@ public class bConstraint extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Constraint type. <br/> 
-	 *  </p>
+	 * <p> Constraint type. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -528,8 +525,7 @@ public class bConstraint extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Constraint type. <br/> 
-	 *  </p>
+	 * <p> Constraint type. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -546,8 +542,7 @@ public class bConstraint extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flag - General Settings. <br/> 
-	 *  </p>
+	 * <p> Flag - General Settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -564,8 +559,7 @@ public class bConstraint extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flag - General Settings. <br/> 
-	 *  </p>
+	 * <p> Flag - General Settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -924,7 +918,7 @@ public class bConstraint extends CFacade {
 	 * Get method for struct member 'lin_error'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> below are readonly fields that are set at runtime by the solver for use in the GE (only IK atm) Residual error on constraint expressed in blender unit. </p>
+	 * <p> Below are read-only fields that are set at runtime by the solver for use in the GE (only IK at the moment). Residual error on constraint expressed in blender unit. </p>
 	 * @see #__DNA__FIELD__lin_error
 	 */
 	
@@ -941,7 +935,7 @@ public class bConstraint extends CFacade {
 	 * Set method for struct member 'lin_error'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> below are readonly fields that are set at runtime by the solver for use in the GE (only IK atm) Residual error on constraint expressed in blender unit. </p>
+	 * <p> Below are read-only fields that are set at runtime by the solver for use in the GE (only IK at the moment). Residual error on constraint expressed in blender unit. </p>
 	 * @see #__DNA__FIELD__lin_error
 	 */
 	

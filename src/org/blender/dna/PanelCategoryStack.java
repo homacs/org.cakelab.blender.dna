@@ -28,7 +28,7 @@ public class PanelCategoryStack extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 288;
+	public static final int __DNA__SDNA_INDEX = 299;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

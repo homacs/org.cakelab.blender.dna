@@ -28,7 +28,7 @@ public class bTransLikeConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 365;
+	public static final int __DNA__SDNA_INDEX = 377;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
@@ -51,6 +51,26 @@ public class bTransLikeConstraint extends CFacade {
 	public static final long[] __DNA__FIELD__tar = new long[]{0, 0};
 
 	/**
+	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTransLikeConstraint btranslikeconstraint = ...;
+	 * CPointer&lt;Object&gt; p = btranslikeconstraint.__dna__addressof(bTransLikeConstraint.__DNA__FIELD__flag);
+	 * CPointer&lt;Integer&gt; p_flag = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'flag'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__flag = new long[]{4, 8};
+
+	/**
 	 * Field descriptor (offset) for struct member 'mix_mode'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -68,7 +88,7 @@ public class bTransLikeConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mix_mode = new long[]{4, 8};
+	public static final long[] __DNA__FIELD__mix_mode = new long[]{8, 12};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -84,11 +104,11 @@ public class bTransLikeConstraint extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[7]'</li>
-	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{5, 9};
+	public static final long[] __DNA__FIELD___pad = new long[]{9, 13};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
@@ -154,6 +174,34 @@ public class bTransLikeConstraint extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public int getFlag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 8);
+		} else {
+			return __io__block.readInt(__io__address + 4);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(int flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 8, flag);
+		} else {
+			__io__block.writeInt(__io__address + 4, flag);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'mix_mode'.
 	 * @see #__DNA__FIELD__mix_mode
 	 */
@@ -161,9 +209,9 @@ public class bTransLikeConstraint extends CFacade {
 	public byte getMix_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 8);
+			return __io__block.readByte(__io__address + 12);
 		} else {
-			return __io__block.readByte(__io__address + 4);
+			return __io__block.readByte(__io__address + 8);
 		}
 	}
 
@@ -175,9 +223,9 @@ public class bTransLikeConstraint extends CFacade {
 	public void setMix_mode(byte mix_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 8, mix_mode);
+			__io__block.writeByte(__io__address + 12, mix_mode);
 		} else {
-			__io__block.writeByte(__io__address + 4, mix_mode);
+			__io__block.writeByte(__io__address + 8, mix_mode);
 		}
 	}
 
@@ -190,12 +238,12 @@ public class bTransLikeConstraint extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			7
+			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 9, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 13, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 5, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 9, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -208,9 +256,9 @@ public class bTransLikeConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 9;
+			__dna__offset = 13;
 		} else {
-			__dna__offset = 5;
+			__dna__offset = 9;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

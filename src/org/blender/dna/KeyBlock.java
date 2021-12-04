@@ -27,7 +27,7 @@ public class KeyBlock extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 21;
+	public static final int __DNA__SDNA_INDEX = 27;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -96,7 +96,7 @@ public class KeyBlock extends CFacade {
 	 * Field descriptor (offset) for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> influence (typically [0 - 1] but can be more), (Key->type == KEY_RELATIVE) only. </p>
+	 * <p><code></code>  only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -119,7 +119,7 @@ public class KeyBlock extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> interpolation type (Key->type == KEY_NORMAL) only. </p>
+	 * <p><code></code>  only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,7 +251,7 @@ public class KeyBlock extends CFacade {
 	 * Field descriptor (offset) for struct member 'data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> array of shape key values, size is (Key->elemsize * KeyBlock->totelem) </p>
+	 * <p><code></code>  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -469,7 +469,7 @@ public class KeyBlock extends CFacade {
 	 * Get method for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> influence (typically [0 - 1] but can be more), (Key->type == KEY_RELATIVE) only. </p>
+	 * <p><code></code>  only. </p>
 	 * @see #__DNA__FIELD__curval
 	 */
 	
@@ -486,7 +486,7 @@ public class KeyBlock extends CFacade {
 	 * Set method for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> influence (typically [0 - 1] but can be more), (Key->type == KEY_RELATIVE) only. </p>
+	 * <p><code></code>  only. </p>
 	 * @see #__DNA__FIELD__curval
 	 */
 	
@@ -503,7 +503,7 @@ public class KeyBlock extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> interpolation type (Key->type == KEY_NORMAL) only. </p>
+	 * <p><code></code>  only. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -520,7 +520,7 @@ public class KeyBlock extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> interpolation type (Key->type == KEY_NORMAL) only. </p>
+	 * <p><code></code>  only. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -707,7 +707,7 @@ public class KeyBlock extends CFacade {
 	 * Get method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> array of shape key values, size is (Key->elemsize * KeyBlock->totelem) </p>
+	 * <p><code></code>  </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -727,7 +727,7 @@ public class KeyBlock extends CFacade {
 	 * Set method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> array of shape key values, size is (Key->elemsize * KeyBlock->totelem) </p>
+	 * <p><code></code>  </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	

@@ -26,7 +26,7 @@ public class IDPropertyData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 10;
+	public static final int __DNA__SDNA_INDEX = 15;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pointer'.
@@ -72,7 +72,7 @@ public class IDPropertyData extends CFacade {
 	 * Field descriptor (offset) for struct member 'val'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Note, we actually fit a double into these two ints. </p>
+	 * <p> NOTE: we actually fit a double into these two 32bit integers. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,7 +191,7 @@ public class IDPropertyData extends CFacade {
 	 * Get method for struct member 'val'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Note, we actually fit a double into these two ints. </p>
+	 * <p> NOTE: we actually fit a double into these two 32bit integers. </p>
 	 * @see #__DNA__FIELD__val
 	 */
 	
@@ -208,7 +208,7 @@ public class IDPropertyData extends CFacade {
 	 * Set method for struct member 'val'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Note, we actually fit a double into these two ints. </p>
+	 * <p> NOTE: we actually fit a double into these two 32bit integers. </p>
 	 * @see #__DNA__FIELD__val
 	 */
 	

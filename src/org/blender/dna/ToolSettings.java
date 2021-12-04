@@ -27,7 +27,7 @@ public class ToolSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 205;
+	public static final int __DNA__SDNA_INDEX = 211;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vpaint'.
@@ -518,50 +518,24 @@ public class ToolSettings extends CFacade {
 	public static final long[] __DNA__FIELD__gpencil_v2d_align = new long[]{56, 88};
 
 	/**
-	 * Field descriptor (offset) for struct member 'gpencil_seq_align'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Sequencer Preview. </p>
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__gpencil_seq_align);
-	 * CPointer&lt;Byte&gt; p_gpencil_seq_align = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'gpencil_seq_align'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpencil_seq_align = new long[]{57, 89};
-
-	/**
-	 * Field descriptor (offset) for struct member 'gpencil_ima_align'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Image}  Editor. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__gpencil_ima_align);
-	 * CPointer&lt;Byte&gt; p_gpencil_ima_align = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'gpencil_ima_align'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__gpencil_ima_align = new long[]{58, 90};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{57, 89};
 
 	/**
 	 * Field descriptor (offset) for struct member 'annotate_v3d_align'.
@@ -928,26 +902,6 @@ public class ToolSettings extends CFacade {
 	public static final long[] __DNA__FIELD__edge_mode_live_unwrap = new long[]{426, 526};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad1'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD___pad1);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad1'</li>
-	 * <li>Signature: 'char[1]'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{427, 527};
-
-	/**
 	 * Field descriptor (offset) for struct member 'transform_pivot_point'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -969,7 +923,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__transform_pivot_point = new long[]{428, 528};
+	public static final long[] __DNA__FIELD__transform_pivot_point = new long[]{427, 527};
 
 	/**
 	 * Field descriptor (offset) for struct member 'transform_flag'.
@@ -989,7 +943,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__transform_flag = new long[]{429, 529};
+	public static final long[] __DNA__FIELD__transform_flag = new long[]{428, 528};
 
 	/**
 	 * Field descriptor (offset) for struct member 'snap_mode'.
@@ -1009,7 +963,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__snap_mode = new long[]{430, 530};
+	public static final long[] __DNA__FIELD__snap_mode = new long[]{429, 529};
 
 	/**
 	 * Field descriptor (offset) for struct member 'snap_node_mode'.
@@ -1029,7 +983,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__snap_node_mode = new long[]{431, 531};
+	public static final long[] __DNA__FIELD__snap_node_mode = new long[]{430, 530};
 
 	/**
 	 * Field descriptor (offset) for struct member 'snap_uv_mode'.
@@ -1049,7 +1003,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__snap_uv_mode = new long[]{432, 532};
+	public static final long[] __DNA__FIELD__snap_uv_mode = new long[]{431, 531};
 
 	/**
 	 * Field descriptor (offset) for struct member 'snap_flag'.
@@ -1069,7 +1023,30 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__snap_flag = new long[]{433, 533};
+	public static final long[] __DNA__FIELD__snap_flag = new long[]{432, 532};
+
+	/**
+	 * Field descriptor (offset) for struct member 'snap_uv_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code> , limited to: #SCE_SNAP_ABS_GRID. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ToolSettings toolsettings = ...;
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__snap_uv_flag);
+	 * CPointer&lt;Byte&gt; p_snap_uv_flag = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'snap_uv_flag'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__snap_uv_flag = new long[]{433, 533};
 
 	/**
 	 * Field descriptor (offset) for struct member 'snap_target'.
@@ -2528,70 +2505,42 @@ public class ToolSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'gpencil_seq_align'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Sequencer Preview. </p>
-	 * @see #__DNA__FIELD__gpencil_seq_align
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public byte getGpencil_seq_align() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 89);
+			return new CArrayFacade<Byte>(__io__address + 89, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readByte(__io__address + 57);
+			return new CArrayFacade<Byte>(__io__address + 57, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'gpencil_seq_align'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Sequencer Preview. </p>
-	 * @see #__DNA__FIELD__gpencil_seq_align
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setGpencil_seq_align(byte gpencil_seq_align) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 89, gpencil_seq_align);
+			__dna__offset = 89;
 		} else {
-			__io__block.writeByte(__io__address + 57, gpencil_seq_align);
+			__dna__offset = 57;
 		}
-	}
-
-	/**
-	 * Get method for struct member 'gpencil_ima_align'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Image}  Editor. </p>
-	 * @see #__DNA__FIELD__gpencil_ima_align
-	 */
-	
-	public byte getGpencil_ima_align() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 90);
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
 		} else {
-			return __io__block.readByte(__io__address + 58);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'gpencil_ima_align'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Image}  Editor. </p>
-	 * @see #__DNA__FIELD__gpencil_ima_align
-	 */
-	
-	public void setGpencil_ima_align(byte gpencil_ima_align) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 90, gpencil_ima_align);
-		} else {
-			__io__block.writeByte(__io__address + 58, gpencil_ima_align);
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 
@@ -3164,46 +3113,6 @@ public class ToolSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
-	 */
-	
-	public CArrayFacade<Byte> get_pad1() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			1
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 527, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 427, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
-	 */
-	
-	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 527;
-		} else {
-			__dna__offset = 427;
-		}
-		if (__io__equals(_pad1, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad1)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
-		} else {
-			__io__generic__copy( get_pad1(), _pad1);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'transform_pivot_point'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -3215,9 +3124,9 @@ public class ToolSettings extends CFacade {
 	public byte getTransform_pivot_point() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 528);
+			return __io__block.readByte(__io__address + 527);
 		} else {
-			return __io__block.readByte(__io__address + 428);
+			return __io__block.readByte(__io__address + 427);
 		}
 	}
 
@@ -3233,9 +3142,9 @@ public class ToolSettings extends CFacade {
 	public void setTransform_pivot_point(byte transform_pivot_point) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 528, transform_pivot_point);
+			__io__block.writeByte(__io__address + 527, transform_pivot_point);
 		} else {
-			__io__block.writeByte(__io__address + 428, transform_pivot_point);
+			__io__block.writeByte(__io__address + 427, transform_pivot_point);
 		}
 	}
 
@@ -3247,9 +3156,9 @@ public class ToolSettings extends CFacade {
 	public byte getTransform_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 529);
+			return __io__block.readByte(__io__address + 528);
 		} else {
-			return __io__block.readByte(__io__address + 429);
+			return __io__block.readByte(__io__address + 428);
 		}
 	}
 
@@ -3261,9 +3170,9 @@ public class ToolSettings extends CFacade {
 	public void setTransform_flag(byte transform_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 529, transform_flag);
+			__io__block.writeByte(__io__address + 528, transform_flag);
 		} else {
-			__io__block.writeByte(__io__address + 429, transform_flag);
+			__io__block.writeByte(__io__address + 428, transform_flag);
 		}
 	}
 
@@ -3275,9 +3184,9 @@ public class ToolSettings extends CFacade {
 	public byte getSnap_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 530);
+			return __io__block.readByte(__io__address + 529);
 		} else {
-			return __io__block.readByte(__io__address + 430);
+			return __io__block.readByte(__io__address + 429);
 		}
 	}
 
@@ -3289,9 +3198,9 @@ public class ToolSettings extends CFacade {
 	public void setSnap_mode(byte snap_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 530, snap_mode);
+			__io__block.writeByte(__io__address + 529, snap_mode);
 		} else {
-			__io__block.writeByte(__io__address + 430, snap_mode);
+			__io__block.writeByte(__io__address + 429, snap_mode);
 		}
 	}
 
@@ -3303,9 +3212,9 @@ public class ToolSettings extends CFacade {
 	public byte getSnap_node_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 531);
+			return __io__block.readByte(__io__address + 530);
 		} else {
-			return __io__block.readByte(__io__address + 431);
+			return __io__block.readByte(__io__address + 430);
 		}
 	}
 
@@ -3317,9 +3226,9 @@ public class ToolSettings extends CFacade {
 	public void setSnap_node_mode(byte snap_node_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 531, snap_node_mode);
+			__io__block.writeByte(__io__address + 530, snap_node_mode);
 		} else {
-			__io__block.writeByte(__io__address + 431, snap_node_mode);
+			__io__block.writeByte(__io__address + 430, snap_node_mode);
 		}
 	}
 
@@ -3331,9 +3240,9 @@ public class ToolSettings extends CFacade {
 	public byte getSnap_uv_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 532);
+			return __io__block.readByte(__io__address + 531);
 		} else {
-			return __io__block.readByte(__io__address + 432);
+			return __io__block.readByte(__io__address + 431);
 		}
 	}
 
@@ -3345,9 +3254,9 @@ public class ToolSettings extends CFacade {
 	public void setSnap_uv_mode(byte snap_uv_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 532, snap_uv_mode);
+			__io__block.writeByte(__io__address + 531, snap_uv_mode);
 		} else {
-			__io__block.writeByte(__io__address + 432, snap_uv_mode);
+			__io__block.writeByte(__io__address + 431, snap_uv_mode);
 		}
 	}
 
@@ -3359,9 +3268,9 @@ public class ToolSettings extends CFacade {
 	public byte getSnap_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 533);
+			return __io__block.readByte(__io__address + 532);
 		} else {
-			return __io__block.readByte(__io__address + 433);
+			return __io__block.readByte(__io__address + 432);
 		}
 	}
 
@@ -3373,9 +3282,43 @@ public class ToolSettings extends CFacade {
 	public void setSnap_flag(byte snap_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 533, snap_flag);
+			__io__block.writeByte(__io__address + 532, snap_flag);
 		} else {
-			__io__block.writeByte(__io__address + 433, snap_flag);
+			__io__block.writeByte(__io__address + 432, snap_flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'snap_uv_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code> , limited to: #SCE_SNAP_ABS_GRID. </p>
+	 * @see #__DNA__FIELD__snap_uv_flag
+	 */
+	
+	public byte getSnap_uv_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 533);
+		} else {
+			return __io__block.readByte(__io__address + 433);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'snap_uv_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code> , limited to: #SCE_SNAP_ABS_GRID. </p>
+	 * @see #__DNA__FIELD__snap_uv_flag
+	 */
+	
+	public void setSnap_uv_flag(byte snap_uv_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 533, snap_uv_flag);
+		} else {
+			__io__block.writeByte(__io__address + 433, snap_uv_flag);
 		}
 	}
 

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=20, size64=20)
+@CMetaData(size32=28, size64=28)
 public class StripTransform extends CFacade {
 
 	/**
@@ -26,7 +27,7 @@ public class StripTransform extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 301;
+	public static final int __DNA__SDNA_INDEX = 312;
 
 	/**
 	 * Field descriptor (offset) for struct member 'xofs'.
@@ -127,6 +128,29 @@ public class StripTransform extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__rotation = new long[]{16, 16};
+
+	/**
+	 * Field descriptor (offset) for struct member 'origin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 0-1 range, use SEQ_image_transform_origin_offset_pixelspace_get to convert to pixel space. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * StripTransform striptransform = ...;
+	 * CPointer&lt;Object&gt; p = striptransform.__dna__addressof(StripTransform.__DNA__FIELD__origin);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_origin = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'origin'</li>
+	 * <li>Signature: 'float[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__origin = new long[]{20, 20};
 
 	public StripTransform(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -273,6 +297,52 @@ public class StripTransform extends CFacade {
 			__io__block.writeFloat(__io__address + 16, rotation);
 		} else {
 			__io__block.writeFloat(__io__address + 16, rotation);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'origin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 0-1 range, use SEQ_image_transform_origin_offset_pixelspace_get to convert to pixel space. </p>
+	 * @see #__DNA__FIELD__origin
+	 */
+	
+	public CArrayFacade<Float> getOrigin() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'origin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 0-1 range, use SEQ_image_transform_origin_offset_pixelspace_get to convert to pixel space. </p>
+	 * @see #__DNA__FIELD__origin
+	 */
+	
+	public void setOrigin(CArrayFacade<Float> origin) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 20;
+		} else {
+			__dna__offset = 20;
+		}
+		if (__io__equals(origin, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, origin)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, origin);
+		} else {
+			__io__generic__copy( getOrigin(), origin);
 		}
 	}
 

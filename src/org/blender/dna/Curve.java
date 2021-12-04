@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=472, size64=592)
+@CMetaData(size32=476, size64=600)
 public class Curve extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Curve extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 60;
+	public static final int __DNA__SDNA_INDEX = 67;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -1550,6 +1550,29 @@ public class Curve extends CFacade {
 	public static final long[] __DNA__FIELD__fsize_realtime = new long[]{464, 580};
 
 	/**
+	 * Field descriptor (offset) for struct member 'curve_eval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A pointer to curve data from evaluation. Owned by the object's #geometry_set_eval, either as a geometry instance or the data of the evaluated #CurveComponent. The curve may also contain data in the {@link nurb}  list, but for evaluated curves this is the proper place to retrieve data, since it also contains the result of geometry nodes evaluation, and isn't just a copy of the original object data. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Curve curve = ...;
+	 * CPointer&lt;Object&gt; p = curve.__dna__addressof(Curve.__DNA__FIELD__curve_eval);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_curve_eval = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'curve_eval'</li>
+	 * <li>Signature: 'CurveEval*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__curve_eval = new long[]{468, 584};
+
+	/**
 	 * Field descriptor (offset) for struct member 'batch_cache'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1567,7 +1590,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__batch_cache = new long[]{468, 584};
+	public static final long[] __DNA__FIELD__batch_cache = new long[]{472, 592};
 
 	public Curve(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -3894,6 +3917,44 @@ public class Curve extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'curve_eval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A pointer to curve data from evaluation. Owned by the object's #geometry_set_eval, either as a geometry instance or the data of the evaluated #CurveComponent. The curve may also contain data in the {@link nurb}  list, but for evaluated curves this is the proper place to retrieve data, since it also contains the result of geometry nodes evaluation, and isn't just a copy of the original object data. </p>
+	 * @see #__DNA__FIELD__curve_eval
+	 */
+	
+	public CPointer<Object> getCurve_eval() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 584);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 468);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'curve_eval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A pointer to curve data from evaluation. Owned by the object's #geometry_set_eval, either as a geometry instance or the data of the evaluated #CurveComponent. The curve may also contain data in the {@link nurb}  list, but for evaluated curves this is the proper place to retrieve data, since it also contains the result of geometry nodes evaluation, and isn't just a copy of the original object data. </p>
+	 * @see #__DNA__FIELD__curve_eval
+	 */
+	
+	public void setCurve_eval(CPointer<Object> curve_eval) throws IOException
+	{
+		long __address = ((curve_eval == null) ? 0 : curve_eval.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 584, __address);
+		} else {
+			__io__block.writeLong(__io__address + 468, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'batch_cache'.
 	 * @see #__DNA__FIELD__batch_cache
 	 */
@@ -3902,9 +3963,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 584);
+			__dna__targetAddress = __io__block.readLong(__io__address + 592);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 468);
+			__dna__targetAddress = __io__block.readLong(__io__address + 472);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -3919,9 +3980,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((batch_cache == null) ? 0 : batch_cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 584, __address);
+			__io__block.writeLong(__io__address + 592, __address);
 		} else {
-			__io__block.writeLong(__io__address + 468, __address);
+			__io__block.writeLong(__io__address + 472, __address);
 		}
 	}
 

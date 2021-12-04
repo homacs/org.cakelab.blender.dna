@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1, size64=1)
+@CMetaData(size32=2, size64=2)
 public class NodeDenoise extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class NodeDenoise extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 466;
+	public static final int __DNA__SDNA_INDEX = 481;
 
 	/**
 	 * Field descriptor (offset) for struct member 'hdr'.
@@ -47,6 +47,26 @@ public class NodeDenoise extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__hdr = new long[]{0, 0};
+
+	/**
+	 * Field descriptor (offset) for struct member 'prefilter'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeDenoise nodedenoise = ...;
+	 * CPointer&lt;Object&gt; p = nodedenoise.__dna__addressof(NodeDenoise.__DNA__FIELD__prefilter);
+	 * CPointer&lt;Byte&gt; p_prefilter = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'prefilter'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__prefilter = new long[]{1, 1};
 
 	public NodeDenoise(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -81,6 +101,34 @@ public class NodeDenoise extends CFacade {
 			__io__block.writeByte(__io__address + 0, hdr);
 		} else {
 			__io__block.writeByte(__io__address + 0, hdr);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'prefilter'.
+	 * @see #__DNA__FIELD__prefilter
+	 */
+	
+	public byte getPrefilter() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 1);
+		} else {
+			return __io__block.readByte(__io__address + 1);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'prefilter'.
+	 * @see #__DNA__FIELD__prefilter
+	 */
+	
+	public void setPrefilter(byte prefilter) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 1, prefilter);
+		} else {
+			__io__block.writeByte(__io__address + 1, prefilter);
 		}
 	}
 

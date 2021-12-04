@@ -28,7 +28,7 @@ public class World extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 173;
+	public static final int __DNA__SDNA_INDEX = 179;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -580,7 +580,7 @@ public class World extends CFacade {
 	 * Field descriptor (offset) for struct member 'preview'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)<h4>Blender Source Code:</h4>
+	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)<h4>Blender Source Code:</h4>
 	 * <p> previews </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1510,7 +1510,7 @@ public class World extends CFacade {
 	 * Get method for struct member 'preview'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)<h4>Blender Source Code:</h4>
+	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)<h4>Blender Source Code:</h4>
 	 * <p> previews </p>
 	 * @see #__DNA__FIELD__preview
 	 */
@@ -1531,7 +1531,7 @@ public class World extends CFacade {
 	 * Set method for struct member 'preview'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)<h4>Blender Source Code:</h4>
+	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)<h4>Blender Source Code:</h4>
 	 * <p> previews </p>
 	 * @see #__DNA__FIELD__preview
 	 */

@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  * 					list of additional information at IDs (see {@link ID}.
  */
 
-@CMetaData(size32=108, size64=128)
+@CMetaData(size32=112, size64=136)
 public class IDProperty extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class IDProperty extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 11;
+	public static final int __DNA__SDNA_INDEX = 16;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -211,7 +211,7 @@ public class IDProperty extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * properties' data. note, alignment for 64 bits<h4>Blender Source Code:</h4>
-	 * <p> Note, alignment for 64 bits. </p>
+	 * <p> NOTE: alignment for 64 bits. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -236,7 +236,7 @@ public class IDProperty extends CFacade {
 	 * <h4>Java .Blend:</h4>
 	 * array length, also (this is important!) string length + 1.
 	 * 	          			the idea is to be able to reuse array realloc functions on strings.<h4>Blender Source Code:</h4>
-	 * <p> array length, also (this is important!) string length + 1. the idea is to be able to reuse array realloc functions on strings. </p>
+	 * <p> Array length, also (this is important!) string length + 1. the idea is to be able to reuse array realloc functions on strings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -281,6 +281,26 @@ public class IDProperty extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__totallen = new long[]{104, 124};
+
+	/**
+	 * Field descriptor (offset) for struct member 'ui_data'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * IDProperty idproperty = ...;
+	 * CPointer&lt;Object&gt; p = idproperty.__dna__addressof(IDProperty.__DNA__FIELD__ui_data);
+	 * CPointer&lt;CPointer&lt;IDPropertyUIData&gt;&gt; p_ui_data = p.cast(new Class[]{CPointer.class, IDPropertyUIData.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'ui_data'</li>
+	 * <li>Signature: 'IDPropertyUIData*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__ui_data = new long[]{108, 128};
 
 	public IDProperty(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -581,7 +601,7 @@ public class IDProperty extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * properties' data. note, alignment for 64 bits<h4>Blender Source Code:</h4>
-	 * <p> Note, alignment for 64 bits. </p>
+	 * <p> NOTE: alignment for 64 bits. </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -599,7 +619,7 @@ public class IDProperty extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * properties' data. note, alignment for 64 bits<h4>Blender Source Code:</h4>
-	 * <p> Note, alignment for 64 bits. </p>
+	 * <p> NOTE: alignment for 64 bits. </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -626,7 +646,7 @@ public class IDProperty extends CFacade {
 	 * <h4>Java .Blend:</h4>
 	 * array length, also (this is important!) string length + 1.
 	 * 	          			the idea is to be able to reuse array realloc functions on strings.<h4>Blender Source Code:</h4>
-	 * <p> array length, also (this is important!) string length + 1. the idea is to be able to reuse array realloc functions on strings. </p>
+	 * <p> Array length, also (this is important!) string length + 1. the idea is to be able to reuse array realloc functions on strings. </p>
 	 * @see #__DNA__FIELD__len
 	 */
 	
@@ -645,7 +665,7 @@ public class IDProperty extends CFacade {
 	 * <h4>Java .Blend:</h4>
 	 * array length, also (this is important!) string length + 1.
 	 * 	          			the idea is to be able to reuse array realloc functions on strings.<h4>Blender Source Code:</h4>
-	 * <p> array length, also (this is important!) string length + 1. the idea is to be able to reuse array realloc functions on strings. </p>
+	 * <p> Array length, also (this is important!) string length + 1. the idea is to be able to reuse array realloc functions on strings. </p>
 	 * @see #__DNA__FIELD__len
 	 */
 	
@@ -697,6 +717,38 @@ public class IDProperty extends CFacade {
 			__io__block.writeInt(__io__address + 124, totallen);
 		} else {
 			__io__block.writeInt(__io__address + 104, totallen);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'ui_data'.
+	 * @see #__DNA__FIELD__ui_data
+	 */
+	
+	public CPointer<IDPropertyUIData> getUi_data() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{IDPropertyUIData.class};
+		return new CPointer<IDPropertyUIData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDPropertyUIData.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'ui_data'.
+	 * @see #__DNA__FIELD__ui_data
+	 */
+	
+	public void setUi_data(CPointer<IDPropertyUIData> ui_data) throws IOException
+	{
+		long __address = ((ui_data == null) ? 0 : ui_data.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 128, __address);
+		} else {
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 

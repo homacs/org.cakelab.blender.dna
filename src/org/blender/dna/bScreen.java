@@ -27,7 +27,7 @@ public class bScreen extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 282;
+	public static final int __DNA__SDNA_INDEX = 293;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -53,7 +53,7 @@ public class bScreen extends CFacade {
 	 * Field descriptor (offset) for struct member 'vertbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> TODO Should become {@link ScrAreaMap}  now. ** NOTE: KEEP ORDER IN SYNC WITH ScrAreaMap! (see AREAMAP_FROM_SCREEN macro above) ** Screens have vertices/edges to define areas. </p>
+	 * <p> TODO: Should become {@link ScrAreaMap}  now. NOTE: KEEP ORDER IN SYNC WITH {@link ScrAreaMap} ! (see AREAMAP_FROM_SCREEN macro above). Screens have vertices/edges to define areas. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -116,7 +116,7 @@ public class bScreen extends CFacade {
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Screen level regions (menus), runtime only. </p>
+	 * <p> End variables that must be in sync with {@link ScrAreaMap} . Screen level regions (menus), runtime only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -616,7 +616,7 @@ public class bScreen extends CFacade {
 	 * Get method for struct member 'vertbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> TODO Should become {@link ScrAreaMap}  now. ** NOTE: KEEP ORDER IN SYNC WITH ScrAreaMap! (see AREAMAP_FROM_SCREEN macro above) ** Screens have vertices/edges to define areas. </p>
+	 * <p> TODO: Should become {@link ScrAreaMap}  now. NOTE: KEEP ORDER IN SYNC WITH {@link ScrAreaMap} ! (see AREAMAP_FROM_SCREEN macro above). Screens have vertices/edges to define areas. </p>
 	 * @see #__DNA__FIELD__vertbase
 	 */
 	
@@ -633,7 +633,7 @@ public class bScreen extends CFacade {
 	 * Set method for struct member 'vertbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> TODO Should become {@link ScrAreaMap}  now. ** NOTE: KEEP ORDER IN SYNC WITH ScrAreaMap! (see AREAMAP_FROM_SCREEN macro above) ** Screens have vertices/edges to define areas. </p>
+	 * <p> TODO: Should become {@link ScrAreaMap}  now. NOTE: KEEP ORDER IN SYNC WITH {@link ScrAreaMap} ! (see AREAMAP_FROM_SCREEN macro above). Screens have vertices/edges to define areas. </p>
 	 * @see #__DNA__FIELD__vertbase
 	 */
 	
@@ -730,7 +730,7 @@ public class bScreen extends CFacade {
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Screen level regions (menus), runtime only. </p>
+	 * <p> End variables that must be in sync with {@link ScrAreaMap} . Screen level regions (menus), runtime only. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -747,7 +747,7 @@ public class bScreen extends CFacade {
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Screen level regions (menus), runtime only. </p>
+	 * <p> End variables that must be in sync with {@link ScrAreaMap} . Screen level regions (menus), runtime only. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	

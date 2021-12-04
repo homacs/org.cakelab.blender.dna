@@ -26,7 +26,7 @@ public class VolumeRender extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 730;
+	public static final int __DNA__SDNA_INDEX = 786;
 
 	/**
 	 * Field descriptor (offset) for struct member 'precision'.
@@ -52,7 +52,7 @@ public class VolumeRender extends CFacade {
 	 * Field descriptor (offset) for struct member 'space'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Specify volume density and step size  in object or world space
+	 * Specify volume density and step size in object or world space
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -157,7 +157,7 @@ public class VolumeRender extends CFacade {
 	 * Get method for struct member 'space'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Specify volume density and step size  in object or world space
+	 * Specify volume density and step size in object or world space
 	 * @see #__DNA__FIELD__space
 	 */
 	
@@ -174,7 +174,7 @@ public class VolumeRender extends CFacade {
 	 * Set method for struct member 'space'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Specify volume density and step size  in object or world space
+	 * Specify volume density and step size in object or world space
 	 * @see #__DNA__FIELD__space
 	 */
 	

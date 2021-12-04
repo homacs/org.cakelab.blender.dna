@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=3152, size64=3184)
+@CMetaData(size32=3160, size64=3200)
 public class Editing extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Editing extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 308;
+	public static final int __DNA__SDNA_INDEX = 320;
 
 	/**
 	 * Field descriptor (offset) for struct member 'seqbasep'.
@@ -188,6 +188,26 @@ public class Editing extends CFacade {
 	public static final long[] __DNA__FIELD__proxy_dir = new long[]{2072, 2096};
 
 	/**
+	 * Field descriptor (offset) for struct member 'proxy_storage'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Editing editing = ...;
+	 * CPointer&lt;Object&gt; p = editing.__dna__addressof(Editing.__DNA__FIELD__proxy_storage);
+	 * CPointer&lt;Integer&gt; p_proxy_storage = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'proxy_storage'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__proxy_storage = new long[]{3096, 3120};
+
+	/**
 	 * Field descriptor (offset) for struct member 'over_ofs'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -205,7 +225,7 @@ public class Editing extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__over_ofs = new long[]{3096, 3120};
+	public static final long[] __DNA__FIELD__over_ofs = new long[]{3100, 3124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'over_cfra'.
@@ -225,7 +245,7 @@ public class Editing extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__over_cfra = new long[]{3100, 3124};
+	public static final long[] __DNA__FIELD__over_cfra = new long[]{3104, 3128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'over_flag'.
@@ -245,27 +265,7 @@ public class Editing extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__over_flag = new long[]{3104, 3128};
-
-	/**
-	 * Field descriptor (offset) for struct member 'proxy_storage'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Editing editing = ...;
-	 * CPointer&lt;Object&gt; p = editing.__dna__addressof(Editing.__DNA__FIELD__proxy_storage);
-	 * CPointer&lt;Integer&gt; p_proxy_storage = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'proxy_storage'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__proxy_storage = new long[]{3108, 3132};
+	public static final long[] __DNA__FIELD__over_flag = new long[]{3108, 3132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'over_border'.
@@ -392,6 +392,46 @@ public class Editing extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__disk_cache_timestamp = new long[]{3144, 3176};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Editing editing = ...;
+	 * CPointer&lt;Object&gt; p = editing.__dna__addressof(Editing.__DNA__FIELD__runtime);
+	 * CPointer&lt;EditingRuntime&gt; p_runtime = p.cast(new Class[]{EditingRuntime.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'EditingRuntime'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__runtime = new long[]{3152, 3184};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Editing editing = ...;
+	 * CPointer&lt;Object&gt; p = editing.__dna__addressof(Editing.__DNA__FIELD___pad1);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad1 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad1 = new long[]{3156, 3192};
 
 	public Editing(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -694,90 +734,6 @@ public class Editing extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'over_ofs'.
-	 * @see #__DNA__FIELD__over_ofs
-	 */
-	
-	public int getOver_ofs() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 3120);
-		} else {
-			return __io__block.readInt(__io__address + 3096);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'over_ofs'.
-	 * @see #__DNA__FIELD__over_ofs
-	 */
-	
-	public void setOver_ofs(int over_ofs) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 3120, over_ofs);
-		} else {
-			__io__block.writeInt(__io__address + 3096, over_ofs);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'over_cfra'.
-	 * @see #__DNA__FIELD__over_cfra
-	 */
-	
-	public int getOver_cfra() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 3124);
-		} else {
-			return __io__block.readInt(__io__address + 3100);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'over_cfra'.
-	 * @see #__DNA__FIELD__over_cfra
-	 */
-	
-	public void setOver_cfra(int over_cfra) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 3124, over_cfra);
-		} else {
-			__io__block.writeInt(__io__address + 3100, over_cfra);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'over_flag'.
-	 * @see #__DNA__FIELD__over_flag
-	 */
-	
-	public int getOver_flag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 3128);
-		} else {
-			return __io__block.readInt(__io__address + 3104);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'over_flag'.
-	 * @see #__DNA__FIELD__over_flag
-	 */
-	
-	public void setOver_flag(int over_flag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 3128, over_flag);
-		} else {
-			__io__block.writeInt(__io__address + 3104, over_flag);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'proxy_storage'.
 	 * @see #__DNA__FIELD__proxy_storage
 	 */
@@ -785,9 +741,9 @@ public class Editing extends CFacade {
 	public int getProxy_storage() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 3132);
+			return __io__block.readInt(__io__address + 3120);
 		} else {
-			return __io__block.readInt(__io__address + 3108);
+			return __io__block.readInt(__io__address + 3096);
 		}
 	}
 
@@ -799,9 +755,93 @@ public class Editing extends CFacade {
 	public void setProxy_storage(int proxy_storage) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 3132, proxy_storage);
+			__io__block.writeInt(__io__address + 3120, proxy_storage);
 		} else {
-			__io__block.writeInt(__io__address + 3108, proxy_storage);
+			__io__block.writeInt(__io__address + 3096, proxy_storage);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'over_ofs'.
+	 * @see #__DNA__FIELD__over_ofs
+	 */
+	
+	public int getOver_ofs() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 3124);
+		} else {
+			return __io__block.readInt(__io__address + 3100);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'over_ofs'.
+	 * @see #__DNA__FIELD__over_ofs
+	 */
+	
+	public void setOver_ofs(int over_ofs) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 3124, over_ofs);
+		} else {
+			__io__block.writeInt(__io__address + 3100, over_ofs);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'over_cfra'.
+	 * @see #__DNA__FIELD__over_cfra
+	 */
+	
+	public int getOver_cfra() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 3128);
+		} else {
+			return __io__block.readInt(__io__address + 3104);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'over_cfra'.
+	 * @see #__DNA__FIELD__over_cfra
+	 */
+	
+	public void setOver_cfra(int over_cfra) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 3128, over_cfra);
+		} else {
+			__io__block.writeInt(__io__address + 3104, over_cfra);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'over_flag'.
+	 * @see #__DNA__FIELD__over_flag
+	 */
+	
+	public int getOver_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 3132);
+		} else {
+			return __io__block.readInt(__io__address + 3108);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'over_flag'.
+	 * @see #__DNA__FIELD__over_flag
+	 */
+	
+	public void setOver_flag(int over_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 3132, over_flag);
+		} else {
+			__io__block.writeInt(__io__address + 3108, over_flag);
 		}
 	}
 
@@ -998,6 +1038,74 @@ public class Editing extends CFacade {
 			__io__block.writeInt64(__io__address + 3176, disk_cache_timestamp);
 		} else {
 			__io__block.writeInt64(__io__address + 3144, disk_cache_timestamp);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public EditingRuntime getRuntime() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new EditingRuntime(__io__address + 3184, __io__block, __io__blockTable);
+		} else {
+			return new EditingRuntime(__io__address + 3152, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public void setRuntime(EditingRuntime runtime) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 3184;
+		} else {
+			__dna__offset = 3152;
+		}
+		if (__io__equals(runtime, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, runtime)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, runtime);
+		} else {
+			__io__generic__copy( getRuntime(), runtime);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public CPointer<Object> get_pad1() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 3192);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 3156);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public void set_pad1(CPointer<Object> _pad1) throws IOException
+	{
+		long __address = ((_pad1 == null) ? 0 : _pad1.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 3192, __address);
+		} else {
+			__io__block.writeLong(__io__address + 3156, __address);
 		}
 	}
 

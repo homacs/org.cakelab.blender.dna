@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> this one has been replaced with {@link ImageUser} , keep it for do_versions() </p>
+ * <p> This one has been replaced with {@link ImageUser} , keep it for do_versions(). </p>
  */
 
 @CMetaData(size32=16, size64=16)
@@ -28,7 +28,7 @@ public class NodeImageAnim extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 404;
+	public static final int __DNA__SDNA_INDEX = 418;
 
 	/**
 	 * Field descriptor (offset) for struct member 'frames'.

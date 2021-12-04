@@ -27,13 +27,13 @@ public class SPHFluidSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 522;
+	public static final int __DNA__SDNA_INDEX = 571;
 
 	/**
 	 * Field descriptor (offset) for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  Fluid </p>
+	 * <p>{@link Particle}  Fluid. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -402,7 +402,7 @@ public class SPHFluidSettings extends CFacade {
 	 * Get method for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  Fluid </p>
+	 * <p>{@link Particle}  Fluid. </p>
 	 * @see #__DNA__FIELD__radius
 	 */
 	
@@ -419,7 +419,7 @@ public class SPHFluidSettings extends CFacade {
 	 * Set method for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  Fluid </p>
+	 * <p>{@link Particle}  Fluid. </p>
 	 * @see #__DNA__FIELD__radius
 	 */
 	

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=188, size64=264)
+@CMetaData(size32=196, size64=272)
 public class WorkSpace extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class WorkSpace extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 713;
+	public static final int __DNA__SDNA_INDEX = 766;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -254,6 +254,30 @@ public class WorkSpace extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__status_text = new long[]{184, 256};
+
+	/**
+	 * Field descriptor (offset) for struct member 'asset_library_ref'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Active asset library to show in the UI, not used by the Asset Browser (which has its own active asset library)<h4>Blender Source Code:</h4>
+	 * <p> Workspace-wide active asset library, for asset UIs to use (e.g. asset view UI template). The Asset Browser has its own and doesn't use this. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * WorkSpace workspace = ...;
+	 * CPointer&lt;Object&gt; p = workspace.__dna__addressof(WorkSpace.__DNA__FIELD__asset_library_ref);
+	 * CPointer&lt;AssetLibraryReference&gt; p_asset_library_ref = p.cast(new Class[]{AssetLibraryReference.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'asset_library_ref'</li>
+	 * <li>Signature: 'AssetLibraryReference'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__asset_library_ref = new long[]{188, 264};
 
 	public WorkSpace(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -648,6 +672,50 @@ public class WorkSpace extends CFacade {
 			__io__block.writeLong(__io__address + 256, __address);
 		} else {
 			__io__block.writeLong(__io__address + 184, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'asset_library_ref'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Active asset library to show in the UI, not used by the Asset Browser (which has its own active asset library)<h4>Blender Source Code:</h4>
+	 * <p> Workspace-wide active asset library, for asset UIs to use (e.g. asset view UI template). The Asset Browser has its own and doesn't use this. </p>
+	 * @see #__DNA__FIELD__asset_library_ref
+	 */
+	
+	public AssetLibraryReference getAsset_library_ref() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new AssetLibraryReference(__io__address + 264, __io__block, __io__blockTable);
+		} else {
+			return new AssetLibraryReference(__io__address + 188, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'asset_library_ref'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Active asset library to show in the UI, not used by the Asset Browser (which has its own active asset library)<h4>Blender Source Code:</h4>
+	 * <p> Workspace-wide active asset library, for asset UIs to use (e.g. asset view UI template). The Asset Browser has its own and doesn't use this. </p>
+	 * @see #__DNA__FIELD__asset_library_ref
+	 */
+	
+	public void setAsset_library_ref(AssetLibraryReference asset_library_ref) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 264;
+		} else {
+			__dna__offset = 188;
+		}
+		if (__io__equals(asset_library_ref, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, asset_library_ref)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, asset_library_ref);
+		} else {
+			__io__generic__copy( getAsset_library_ref(), asset_library_ref);
 		}
 	}
 

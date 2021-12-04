@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=44, size64=44)
+@CMetaData(size32=84, size64=84)
 public class StripColorBalance extends CFacade {
 
 	/**
@@ -27,7 +27,27 @@ public class StripColorBalance extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 302;
+	public static final int __DNA__SDNA_INDEX = 313;
+
+	/**
+	 * Field descriptor (offset) for struct member 'method'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * StripColorBalance stripcolorbalance = ...;
+	 * CPointer&lt;Object&gt; p = stripcolorbalance.__dna__addressof(StripColorBalance.__DNA__FIELD__method);
+	 * CPointer&lt;Integer&gt; p_method = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'method'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__method = new long[]{0, 0};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lift'.
@@ -47,7 +67,7 @@ public class StripColorBalance extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lift = new long[]{0, 0};
+	public static final long[] __DNA__FIELD__lift = new long[]{4, 4};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gamma'.
@@ -67,7 +87,7 @@ public class StripColorBalance extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gamma = new long[]{12, 12};
+	public static final long[] __DNA__FIELD__gamma = new long[]{16, 16};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gain'.
@@ -87,7 +107,67 @@ public class StripColorBalance extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gain = new long[]{24, 24};
+	public static final long[] __DNA__FIELD__gain = new long[]{28, 28};
+
+	/**
+	 * Field descriptor (offset) for struct member 'slope'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * StripColorBalance stripcolorbalance = ...;
+	 * CPointer&lt;Object&gt; p = stripcolorbalance.__dna__addressof(StripColorBalance.__DNA__FIELD__slope);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_slope = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'slope'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__slope = new long[]{40, 40};
+
+	/**
+	 * Field descriptor (offset) for struct member 'offset'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * StripColorBalance stripcolorbalance = ...;
+	 * CPointer&lt;Object&gt; p = stripcolorbalance.__dna__addressof(StripColorBalance.__DNA__FIELD__offset);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_offset = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'offset'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__offset = new long[]{52, 52};
+
+	/**
+	 * Field descriptor (offset) for struct member 'power'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * StripColorBalance stripcolorbalance = ...;
+	 * CPointer&lt;Object&gt; p = stripcolorbalance.__dna__addressof(StripColorBalance.__DNA__FIELD__power);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_power = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'power'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__power = new long[]{64, 64};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -107,7 +187,7 @@ public class StripColorBalance extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{36, 36};
+	public static final long[] __DNA__FIELD__flag = new long[]{76, 76};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -127,7 +207,7 @@ public class StripColorBalance extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{40, 40};
+	public static final long[] __DNA__FIELD___pad = new long[]{80, 80};
 
 	public StripColorBalance(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -135,6 +215,34 @@ public class StripColorBalance extends CFacade {
 
 	protected StripColorBalance(StripColorBalance that) {
 		super(that.__io__address, that.__io__block, that.__io__blockTable);
+	}
+
+	/**
+	 * Get method for struct member 'method'.
+	 * @see #__DNA__FIELD__method
+	 */
+	
+	public int getMethod() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 0);
+		} else {
+			return __io__block.readInt(__io__address + 0);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'method'.
+	 * @see #__DNA__FIELD__method
+	 */
+	
+	public void setMethod(int method) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 0, method);
+		} else {
+			__io__block.writeInt(__io__address + 0, method);
+		}
 	}
 
 	/**
@@ -149,9 +257,9 @@ public class StripColorBalance extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 0, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 4, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 0, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 4, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -164,9 +272,9 @@ public class StripColorBalance extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 0;
+			__dna__offset = 4;
 		} else {
-			__dna__offset = 0;
+			__dna__offset = 4;
 		}
 		if (__io__equals(lift, __io__address + __dna__offset)) {
 			return;
@@ -189,9 +297,9 @@ public class StripColorBalance extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -204,9 +312,9 @@ public class StripColorBalance extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 12;
+			__dna__offset = 16;
 		} else {
-			__dna__offset = 12;
+			__dna__offset = 16;
 		}
 		if (__io__equals(gamma, __io__address + __dna__offset)) {
 			return;
@@ -229,9 +337,9 @@ public class StripColorBalance extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -244,9 +352,9 @@ public class StripColorBalance extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 24;
+			__dna__offset = 28;
 		} else {
-			__dna__offset = 24;
+			__dna__offset = 28;
 		}
 		if (__io__equals(gain, __io__address + __dna__offset)) {
 			return;
@@ -258,6 +366,126 @@ public class StripColorBalance extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'slope'.
+	 * @see #__DNA__FIELD__slope
+	 */
+	
+	public CArrayFacade<Float> getSlope() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'slope'.
+	 * @see #__DNA__FIELD__slope
+	 */
+	
+	public void setSlope(CArrayFacade<Float> slope) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 40;
+		} else {
+			__dna__offset = 40;
+		}
+		if (__io__equals(slope, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, slope)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, slope);
+		} else {
+			__io__generic__copy( getSlope(), slope);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'offset'.
+	 * @see #__DNA__FIELD__offset
+	 */
+	
+	public CArrayFacade<Float> getOffset() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'offset'.
+	 * @see #__DNA__FIELD__offset
+	 */
+	
+	public void setOffset(CArrayFacade<Float> offset) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 52;
+		} else {
+			__dna__offset = 52;
+		}
+		if (__io__equals(offset, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, offset)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, offset);
+		} else {
+			__io__generic__copy( getOffset(), offset);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'power'.
+	 * @see #__DNA__FIELD__power
+	 */
+	
+	public CArrayFacade<Float> getPower() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'power'.
+	 * @see #__DNA__FIELD__power
+	 */
+	
+	public void setPower(CArrayFacade<Float> power) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 64;
+		} else {
+			__dna__offset = 64;
+		}
+		if (__io__equals(power, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, power)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, power);
+		} else {
+			__io__generic__copy( getPower(), power);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'flag'.
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -265,9 +493,9 @@ public class StripColorBalance extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 36);
+			return __io__block.readInt(__io__address + 76);
 		} else {
-			return __io__block.readInt(__io__address + 36);
+			return __io__block.readInt(__io__address + 76);
 		}
 	}
 
@@ -279,9 +507,9 @@ public class StripColorBalance extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 36, flag);
+			__io__block.writeInt(__io__address + 76, flag);
 		} else {
-			__io__block.writeInt(__io__address + 36, flag);
+			__io__block.writeInt(__io__address + 76, flag);
 		}
 	}
 
@@ -297,9 +525,9 @@ public class StripColorBalance extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 80, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 80, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -312,9 +540,9 @@ public class StripColorBalance extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 40;
+			__dna__offset = 80;
 		} else {
-			__dna__offset = 40;
+			__dna__offset = 80;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=380, size64=448)
+@CMetaData(size32=372, size64=440)
 public class Tex extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Tex extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 44;
+	public static final int __DNA__SDNA_INDEX = 51;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -1088,7 +1088,7 @@ public class Tex extends CFacade {
 	 * <ul>
 	 * <li>Field: 'iuser'</li>
 	 * <li>Signature: 'ImageUser'</li>
-	 * <li>Actual Size (32bit/64bit): 44/48</li>
+	 * <li>Actual Size (32bit/64bit): 36/40</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__iuser = new long[]{308, 352};
@@ -1111,7 +1111,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nodetree = new long[]{352, 400};
+	public static final long[] __DNA__FIELD__nodetree = new long[]{344, 392};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
@@ -1136,7 +1136,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipo = new long[]{356, 408};
+	public static final long[] __DNA__FIELD__ipo = new long[]{348, 400};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ima'.
@@ -1156,7 +1156,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ima = new long[]{360, 416};
+	public static final long[] __DNA__FIELD__ima = new long[]{352, 408};
 
 	/**
 	 * Field descriptor (offset) for struct member 'coba'.
@@ -1176,7 +1176,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__coba = new long[]{364, 424};
+	public static final long[] __DNA__FIELD__coba = new long[]{356, 416};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
@@ -1196,7 +1196,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview = new long[]{368, 432};
+	public static final long[] __DNA__FIELD__preview = new long[]{360, 424};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_nodes'.
@@ -1216,7 +1216,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_nodes = new long[]{372, 440};
+	public static final long[] __DNA__FIELD__use_nodes = new long[]{364, 432};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -1236,7 +1236,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{373, 441};
+	public static final long[] __DNA__FIELD___pad = new long[]{365, 433};
 
 	public Tex(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2803,9 +2803,9 @@ public class Tex extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 400);
+			__dna__targetAddress = __io__block.readLong(__io__address + 392);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 352);
+			__dna__targetAddress = __io__block.readLong(__io__address + 344);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bNodeTree.class};
 		return new CPointer<bNodeTree>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bNodeTree.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2820,9 +2820,9 @@ public class Tex extends CFacade {
 	{
 		long __address = ((nodetree == null) ? 0 : nodetree.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 400, __address);
+			__io__block.writeLong(__io__address + 392, __address);
 		} else {
-			__io__block.writeLong(__io__address + 352, __address);
+			__io__block.writeLong(__io__address + 344, __address);
 		}
 	}
 
@@ -2840,9 +2840,9 @@ public class Tex extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 408);
+			__dna__targetAddress = __io__block.readLong(__io__address + 400);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 356);
+			__dna__targetAddress = __io__block.readLong(__io__address + 348);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Ipo.class};
 		return new CPointer<Ipo>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Ipo.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2862,9 +2862,9 @@ public class Tex extends CFacade {
 	{
 		long __address = ((ipo == null) ? 0 : ipo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 408, __address);
+			__io__block.writeLong(__io__address + 400, __address);
 		} else {
-			__io__block.writeLong(__io__address + 356, __address);
+			__io__block.writeLong(__io__address + 348, __address);
 		}
 	}
 
@@ -2877,9 +2877,9 @@ public class Tex extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 416);
+			__dna__targetAddress = __io__block.readLong(__io__address + 408);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 360);
+			__dna__targetAddress = __io__block.readLong(__io__address + 352);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Image.class};
 		return new CPointer<Image>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Image.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2894,9 +2894,9 @@ public class Tex extends CFacade {
 	{
 		long __address = ((ima == null) ? 0 : ima.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 416, __address);
+			__io__block.writeLong(__io__address + 408, __address);
 		} else {
-			__io__block.writeLong(__io__address + 360, __address);
+			__io__block.writeLong(__io__address + 352, __address);
 		}
 	}
 
@@ -2909,9 +2909,9 @@ public class Tex extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 424);
+			__dna__targetAddress = __io__block.readLong(__io__address + 416);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 364);
+			__dna__targetAddress = __io__block.readLong(__io__address + 356);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ColorBand.class};
 		return new CPointer<ColorBand>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ColorBand.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2926,9 +2926,9 @@ public class Tex extends CFacade {
 	{
 		long __address = ((coba == null) ? 0 : coba.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 424, __address);
+			__io__block.writeLong(__io__address + 416, __address);
 		} else {
-			__io__block.writeLong(__io__address + 364, __address);
+			__io__block.writeLong(__io__address + 356, __address);
 		}
 	}
 
@@ -2941,9 +2941,9 @@ public class Tex extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 432);
+			__dna__targetAddress = __io__block.readLong(__io__address + 424);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 368);
+			__dna__targetAddress = __io__block.readLong(__io__address + 360);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PreviewImage.class};
 		return new CPointer<PreviewImage>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PreviewImage.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2958,9 +2958,9 @@ public class Tex extends CFacade {
 	{
 		long __address = ((preview == null) ? 0 : preview.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 432, __address);
+			__io__block.writeLong(__io__address + 424, __address);
 		} else {
-			__io__block.writeLong(__io__address + 368, __address);
+			__io__block.writeLong(__io__address + 360, __address);
 		}
 	}
 
@@ -2972,9 +2972,9 @@ public class Tex extends CFacade {
 	public byte getUse_nodes() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 440);
+			return __io__block.readByte(__io__address + 432);
 		} else {
-			return __io__block.readByte(__io__address + 372);
+			return __io__block.readByte(__io__address + 364);
 		}
 	}
 
@@ -2986,9 +2986,9 @@ public class Tex extends CFacade {
 	public void setUse_nodes(byte use_nodes) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 440, use_nodes);
+			__io__block.writeByte(__io__address + 432, use_nodes);
 		} else {
-			__io__block.writeByte(__io__address + 372, use_nodes);
+			__io__block.writeByte(__io__address + 364, use_nodes);
 		}
 	}
 
@@ -3004,9 +3004,9 @@ public class Tex extends CFacade {
 			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 441, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 433, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 373, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 365, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3019,9 +3019,9 @@ public class Tex extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 441;
+			__dna__offset = 433;
 		} else {
-			__dna__offset = 373;
+			__dna__offset = 365;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

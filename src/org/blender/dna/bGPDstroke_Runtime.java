@@ -29,7 +29,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 535;
+	public static final int __DNA__SDNA_INDEX = 584;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tmp_layerinfo'.
@@ -81,7 +81,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'stroke_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Vertex offset in the vbo where this stroke starts. </p>
+	 * <p> Vertex offset in the VBO where this stroke starts. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -127,7 +127,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'curve_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Curve}  Handles offset in the ibo where this handle starts. </p>
+	 * <p>{@link Curve}  Handles offset in the IBO where this handle starts. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -281,7 +281,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * Get method for struct member 'stroke_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Vertex offset in the vbo where this stroke starts. </p>
+	 * <p> Vertex offset in the VBO where this stroke starts. </p>
 	 * @see #__DNA__FIELD__stroke_start
 	 */
 	
@@ -298,7 +298,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * Set method for struct member 'stroke_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Vertex offset in the vbo where this stroke starts. </p>
+	 * <p> Vertex offset in the VBO where this stroke starts. </p>
 	 * @see #__DNA__FIELD__stroke_start
 	 */
 	
@@ -349,7 +349,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * Get method for struct member 'curve_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Curve}  Handles offset in the ibo where this handle starts. </p>
+	 * <p>{@link Curve}  Handles offset in the IBO where this handle starts. </p>
 	 * @see #__DNA__FIELD__curve_start
 	 */
 	
@@ -366,7 +366,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * Set method for struct member 'curve_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Curve}  Handles offset in the ibo where this handle starts. </p>
+	 * <p>{@link Curve}  Handles offset in the IBO where this handle starts. </p>
 	 * @see #__DNA__FIELD__curve_start
 	 */
 	

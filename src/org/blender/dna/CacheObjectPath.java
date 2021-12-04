@@ -10,24 +10,25 @@ import org.cakelab.blender.nio.CPointer;
 
 
 /**
- * Generated facet for DNA struct type 'AlembicObjectPath'.
+ * Generated facet for DNA struct type 'CacheObjectPath'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> UNUSED Representation of an object's path inside the archive. Note that this is not a file path. </p>
  */
 
 @CMetaData(size32=4104, size64=4112)
-public class AlembicObjectPath extends CFacade {
+public class CacheObjectPath extends CFacade {
 
 	/**
-	 * This is the sdna index of the struct AlembicObjectPath.
+	 * This is the sdna index of the struct CacheObjectPath.
 	 * <p>
-	 * It is required when allocating a new block to store data for AlembicObjectPath.
+	 * It is required when allocating a new block to store data for CacheObjectPath.
 	 * </p>
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 701;
+	public static final int __DNA__SDNA_INDEX = 754;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -36,14 +37,14 @@ public class AlembicObjectPath extends CFacade {
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
-	 * AlembicObjectPath alembicobjectpath = ...;
-	 * CPointer&lt;Object&gt; p = alembicobjectpath.__dna__addressof(AlembicObjectPath.__DNA__FIELD__next);
-	 * CPointer&lt;CPointer&lt;AlembicObjectPath&gt;&gt; p_next = p.cast(new Class[]{CPointer.class, AlembicObjectPath.class});
+	 * CacheObjectPath cacheobjectpath = ...;
+	 * CPointer&lt;Object&gt; p = cacheobjectpath.__dna__addressof(CacheObjectPath.__DNA__FIELD__next);
+	 * CPointer&lt;CPointer&lt;CacheObjectPath&gt;&gt; p_next = p.cast(new Class[]{CPointer.class, CacheObjectPath.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'next'</li>
-	 * <li>Signature: 'AlembicObjectPath*'</li>
+	 * <li>Signature: 'CacheObjectPath*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
@@ -56,14 +57,14 @@ public class AlembicObjectPath extends CFacade {
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
-	 * AlembicObjectPath alembicobjectpath = ...;
-	 * CPointer&lt;Object&gt; p = alembicobjectpath.__dna__addressof(AlembicObjectPath.__DNA__FIELD__prev);
-	 * CPointer&lt;CPointer&lt;AlembicObjectPath&gt;&gt; p_prev = p.cast(new Class[]{CPointer.class, AlembicObjectPath.class});
+	 * CacheObjectPath cacheobjectpath = ...;
+	 * CPointer&lt;Object&gt; p = cacheobjectpath.__dna__addressof(CacheObjectPath.__DNA__FIELD__prev);
+	 * CPointer&lt;CPointer&lt;CacheObjectPath&gt;&gt; p_prev = p.cast(new Class[]{CPointer.class, CacheObjectPath.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'prev'</li>
-	 * <li>Signature: 'AlembicObjectPath*'</li>
+	 * <li>Signature: 'CacheObjectPath*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
@@ -79,8 +80,8 @@ public class AlembicObjectPath extends CFacade {
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
-	 * AlembicObjectPath alembicobjectpath = ...;
-	 * CPointer&lt;Object&gt; p = alembicobjectpath.__dna__addressof(AlembicObjectPath.__DNA__FIELD__path);
+	 * CacheObjectPath cacheobjectpath = ...;
+	 * CPointer&lt;Object&gt; p = cacheobjectpath.__dna__addressof(CacheObjectPath.__DNA__FIELD__path);
 	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_path = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
@@ -92,11 +93,11 @@ public class AlembicObjectPath extends CFacade {
 	 */
 	public static final long[] __DNA__FIELD__path = new long[]{8, 16};
 
-	public AlembicObjectPath(long __address, Block __block, BlockTable __blockTable) {
+	public CacheObjectPath(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
 	}
 
-	protected AlembicObjectPath(AlembicObjectPath that) {
+	protected CacheObjectPath(CacheObjectPath that) {
 		super(that.__io__address, that.__io__block, that.__io__blockTable);
 	}
 
@@ -105,7 +106,7 @@ public class AlembicObjectPath extends CFacade {
 	 * @see #__DNA__FIELD__next
 	 */
 	
-	public CPointer<AlembicObjectPath> getNext() throws IOException
+	public CPointer<CacheObjectPath> getNext() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -113,8 +114,8 @@ public class AlembicObjectPath extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 0);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{AlembicObjectPath.class};
-		return new CPointer<AlembicObjectPath>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AlembicObjectPath.__DNA__SDNA_INDEX), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{CacheObjectPath.class};
+		return new CPointer<CacheObjectPath>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CacheObjectPath.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
@@ -122,7 +123,7 @@ public class AlembicObjectPath extends CFacade {
 	 * @see #__DNA__FIELD__next
 	 */
 	
-	public void setNext(CPointer<AlembicObjectPath> next) throws IOException
+	public void setNext(CPointer<CacheObjectPath> next) throws IOException
 	{
 		long __address = ((next == null) ? 0 : next.getAddress());
 		if ((__io__pointersize == 8)) {
@@ -137,7 +138,7 @@ public class AlembicObjectPath extends CFacade {
 	 * @see #__DNA__FIELD__prev
 	 */
 	
-	public CPointer<AlembicObjectPath> getPrev() throws IOException
+	public CPointer<CacheObjectPath> getPrev() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -145,8 +146,8 @@ public class AlembicObjectPath extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 4);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{AlembicObjectPath.class};
-		return new CPointer<AlembicObjectPath>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AlembicObjectPath.__DNA__SDNA_INDEX), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{CacheObjectPath.class};
+		return new CPointer<CacheObjectPath>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CacheObjectPath.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
@@ -154,7 +155,7 @@ public class AlembicObjectPath extends CFacade {
 	 * @see #__DNA__FIELD__prev
 	 */
 	
-	public void setPrev(CPointer<AlembicObjectPath> prev) throws IOException
+	public void setPrev(CPointer<CacheObjectPath> prev) throws IOException
 	{
 		long __address = ((prev == null) ? 0 : prev.getAddress());
 		if ((__io__pointersize == 8)) {
@@ -213,8 +214,8 @@ public class AlembicObjectPath extends CFacade {
 	/**
 	 * Instantiates a pointer on this instance.
 	 */
-	public CPointer<AlembicObjectPath> __io__addressof() {
-		return new CPointer<AlembicObjectPath>(__io__address, new Class[]{AlembicObjectPath.class}, __io__block, __io__blockTable);
+	public CPointer<CacheObjectPath> __io__addressof() {
+		return new CPointer<CacheObjectPath>(__io__address, new Class[]{CacheObjectPath.class}, __io__block, __io__blockTable);
 	}
 
 }

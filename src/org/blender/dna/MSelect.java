@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Optionally store the order of selected elements. This wont always be set since only some selection operations have an order.</p><p> Typically accessed from #Mesh.mselect </p>
+ * <p> Optionally store the order of selected elements. This won't always be set since only some selection operations have an order.</p><p> Typically accessed from #Mesh.mselect </p>
  */
 
 @CMetaData(size32=8, size64=8)
@@ -27,7 +27,7 @@ public class MSelect extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 69;
+	public static final int __DNA__SDNA_INDEX = 76;
 
 	/**
 	 * Field descriptor (offset) for struct member 'index'.

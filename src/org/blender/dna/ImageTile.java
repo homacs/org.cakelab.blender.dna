@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=104, size64=112)
+@CMetaData(size32=128, size64=136)
 public class ImageTile extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ImageTile extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 38;
+	public static final int __DNA__SDNA_INDEX = 45;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -84,30 +84,10 @@ public class ImageTile extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'ImageTile_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 24/24</li>
+	 * <li>Actual Size (32bit/64bit): 48/48</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__runtime = new long[]{8, 16};
-
-	/**
-	 * Field descriptor (offset) for struct member 'ok'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ImageTile imagetile = ...;
-	 * CPointer&lt;Object&gt; p = imagetile.__dna__addressof(ImageTile.__DNA__FIELD__ok);
-	 * CPointer&lt;Byte&gt; p_ok = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'ok'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__ok = new long[]{32, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -123,11 +103,11 @@ public class ImageTile extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{33, 41};
+	public static final long[] __DNA__FIELD___pad = new long[]{56, 64};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tile_number'.
@@ -147,7 +127,7 @@ public class ImageTile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tile_number = new long[]{36, 44};
+	public static final long[] __DNA__FIELD__tile_number = new long[]{60, 68};
 
 	/**
 	 * Field descriptor (offset) for struct member 'label'.
@@ -167,7 +147,7 @@ public class ImageTile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__label = new long[]{40, 48};
+	public static final long[] __DNA__FIELD__label = new long[]{64, 72};
 
 	public ImageTile(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -278,34 +258,6 @@ public class ImageTile extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'ok'.
-	 * @see #__DNA__FIELD__ok
-	 */
-	
-	public byte getOk() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 40);
-		} else {
-			return __io__block.readByte(__io__address + 32);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'ok'.
-	 * @see #__DNA__FIELD__ok
-	 */
-	
-	public void setOk(byte ok) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 40, ok);
-		} else {
-			__io__block.writeByte(__io__address + 32, ok);
-		}
-	}
-
-	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -314,12 +266,12 @@ public class ImageTile extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 41, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 33, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -332,9 +284,9 @@ public class ImageTile extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 41;
+			__dna__offset = 64;
 		} else {
-			__dna__offset = 33;
+			__dna__offset = 56;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -353,9 +305,9 @@ public class ImageTile extends CFacade {
 	public int getTile_number() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 44);
+			return __io__block.readInt(__io__address + 68);
 		} else {
-			return __io__block.readInt(__io__address + 36);
+			return __io__block.readInt(__io__address + 60);
 		}
 	}
 
@@ -367,9 +319,9 @@ public class ImageTile extends CFacade {
 	public void setTile_number(int tile_number) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 44, tile_number);
+			__io__block.writeInt(__io__address + 68, tile_number);
 		} else {
-			__io__block.writeInt(__io__address + 36, tile_number);
+			__io__block.writeInt(__io__address + 60, tile_number);
 		}
 	}
 
@@ -385,9 +337,9 @@ public class ImageTile extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 72, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -400,9 +352,9 @@ public class ImageTile extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 48;
+			__dna__offset = 72;
 		} else {
-			__dna__offset = 40;
+			__dna__offset = 64;
 		}
 		if (__io__equals(label, __io__address + __dna__offset)) {
 			return;

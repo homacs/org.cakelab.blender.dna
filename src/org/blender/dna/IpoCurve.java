@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -27,7 +28,7 @@ public class IpoCurve extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 19;
+	public static final int __DNA__SDNA_INDEX = 25;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -73,7 +74,7 @@ public class IpoCurve extends CFacade {
 	 * Field descriptor (offset) for struct member 'bp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Array of BPoints (sizeof(BPoint) * totvert) - i.e. baked/imported data. </p>
+	 * <p><code></code>  - i.e. baked/imported data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -96,7 +97,7 @@ public class IpoCurve extends CFacade {
 	 * Field descriptor (offset) for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Array of BezTriples (sizeof(BezTriple) * totvert) - i.e. user-editable keyframes . </p>
+	 * <p><code></code>  - i.e. user-editable keyframes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -248,7 +249,7 @@ public class IpoCurve extends CFacade {
 	 * Field descriptor (offset) for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Interpolation and extrapolation modes . </p>
+	 * <p> Interpolation and extrapolation modes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,7 +292,7 @@ public class IpoCurve extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flag= settings; rt= ???. </p>
+	 * <p> Flag= settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,24 +312,24 @@ public class IpoCurve extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{60, 76};
 
 	/**
-	 * Field descriptor (offset) for struct member 'rt'.
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * IpoCurve ipocurve = ...;
-	 * CPointer&lt;Object&gt; p = ipocurve.__dna__addressof(IpoCurve.__DNA__FIELD__rt);
-	 * CPointer&lt;Short&gt; p_rt = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = ipocurve.__dna__addressof(IpoCurve.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'rt'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rt = new long[]{62, 78};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{62, 78};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ymin'.
@@ -377,7 +378,7 @@ public class IpoCurve extends CFacade {
 	 * Field descriptor (offset) for struct member 'bitmask'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ???. </p>
+	 * <p> Unused since the first available revision. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -561,7 +562,7 @@ public class IpoCurve extends CFacade {
 	 * Get method for struct member 'bp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Array of BPoints (sizeof(BPoint) * totvert) - i.e. baked/imported data. </p>
+	 * <p><code></code>  - i.e. baked/imported data. </p>
 	 * @see #__DNA__FIELD__bp
 	 */
 	
@@ -581,7 +582,7 @@ public class IpoCurve extends CFacade {
 	 * Set method for struct member 'bp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Array of BPoints (sizeof(BPoint) * totvert) - i.e. baked/imported data. </p>
+	 * <p><code></code>  - i.e. baked/imported data. </p>
 	 * @see #__DNA__FIELD__bp
 	 */
 	
@@ -599,7 +600,7 @@ public class IpoCurve extends CFacade {
 	 * Get method for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Array of BezTriples (sizeof(BezTriple) * totvert) - i.e. user-editable keyframes . </p>
+	 * <p><code></code>  - i.e. user-editable keyframes. </p>
 	 * @see #__DNA__FIELD__bezt
 	 */
 	
@@ -619,7 +620,7 @@ public class IpoCurve extends CFacade {
 	 * Set method for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Array of BezTriples (sizeof(BezTriple) * totvert) - i.e. user-editable keyframes . </p>
+	 * <p><code></code>  - i.e. user-editable keyframes. </p>
 	 * @see #__DNA__FIELD__bezt
 	 */
 	
@@ -839,7 +840,7 @@ public class IpoCurve extends CFacade {
 	 * Get method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Interpolation and extrapolation modes . </p>
+	 * <p> Interpolation and extrapolation modes. </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -856,7 +857,7 @@ public class IpoCurve extends CFacade {
 	 * Set method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Interpolation and extrapolation modes . </p>
+	 * <p> Interpolation and extrapolation modes. </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -901,7 +902,7 @@ public class IpoCurve extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flag= settings; rt= ???. </p>
+	 * <p> Flag= settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -918,7 +919,7 @@ public class IpoCurve extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flag= settings; rt= ???. </p>
+	 * <p> Flag= settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -932,30 +933,42 @@ public class IpoCurve extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'rt'.
-	 * @see #__DNA__FIELD__rt
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public short getRt() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 78);
+			return new CArrayFacade<Byte>(__io__address + 78, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 62);
+			return new CArrayFacade<Byte>(__io__address + 62, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'rt'.
-	 * @see #__DNA__FIELD__rt
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setRt(short rt) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 78, rt);
+			__dna__offset = 78;
 		} else {
-			__io__block.writeShort(__io__address + 62, rt);
+			__dna__offset = 62;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 
@@ -1025,7 +1038,7 @@ public class IpoCurve extends CFacade {
 	 * Get method for struct member 'bitmask'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ???. </p>
+	 * <p> Unused since the first available revision. </p>
 	 * @see #__DNA__FIELD__bitmask
 	 */
 	
@@ -1042,7 +1055,7 @@ public class IpoCurve extends CFacade {
 	 * Set method for struct member 'bitmask'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ???. </p>
+	 * <p> Unused since the first available revision. </p>
 	 * @see #__DNA__FIELD__bitmask
 	 */
 	

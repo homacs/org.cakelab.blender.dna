@@ -27,7 +27,7 @@ public class CurveProfile extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 722;
+	public static final int __DNA__SDNA_INDEX = 775;
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_len'.
@@ -102,8 +102,7 @@ public class CurveProfile extends CFacade {
 	 * Field descriptor (offset) for struct member 'path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Sequence}  of points defining the shape of the curve. <br/> 
-	 *  </p>
+	 * <p>{@link Sequence}  of points defining the shape of the curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -372,8 +371,7 @@ public class CurveProfile extends CFacade {
 	 * Get method for struct member 'path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Sequence}  of points defining the shape of the curve. <br/> 
-	 *  </p>
+	 * <p>{@link Sequence}  of points defining the shape of the curve. </p>
 	 * @see #__DNA__FIELD__path
 	 */
 	
@@ -393,8 +391,7 @@ public class CurveProfile extends CFacade {
 	 * Set method for struct member 'path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Sequence}  of points defining the shape of the curve. <br/> 
-	 *  </p>
+	 * <p>{@link Sequence}  of points defining the shape of the curve. </p>
 	 * @see #__DNA__FIELD__path
 	 */
 	

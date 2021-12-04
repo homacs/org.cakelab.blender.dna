@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=76, size64=80)
+@CMetaData(size32=68, size64=72)
 public class EffectorWeights extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class EffectorWeights extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 167;
+	public static final int __DNA__SDNA_INDEX = 173;
 
 	/**
 	 * Field descriptor (offset) for struct member 'group'.
@@ -116,26 +116,6 @@ public class EffectorWeights extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{64, 68};
 
 	/**
-	 * Field descriptor (offset) for struct member 'rt'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * EffectorWeights effectorweights = ...;
-	 * CPointer&lt;Object&gt; p = effectorweights.__dna__addressof(EffectorWeights.__DNA__FIELD__rt);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_rt = p.cast(new Class[]{CArrayFacade.class, Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'rt'</li>
-	 * <li>Signature: 'short[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__rt = new long[]{66, 70};
-
-	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -149,11 +129,11 @@ public class EffectorWeights extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{72, 76};
+	public static final long[] __DNA__FIELD___pad = new long[]{66, 70};
 
 	public EffectorWeights(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -304,46 +284,6 @@ public class EffectorWeights extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'rt'.
-	 * @see #__DNA__FIELD__rt
-	 */
-	
-	public CArrayFacade<Short> getRt() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
-		int[] __dna__dimensions = new int[]{
-			3
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 70, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Short>(__io__address + 66, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'rt'.
-	 * @see #__DNA__FIELD__rt
-	 */
-	
-	public void setRt(CArrayFacade<Short> rt) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 70;
-		} else {
-			__dna__offset = 66;
-		}
-		if (__io__equals(rt, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, rt)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, rt);
-		} else {
-			__io__generic__copy( getRt(), rt);
-		}
-	}
-
-	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -352,12 +292,12 @@ public class EffectorWeights extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 70, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 72, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 66, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -370,9 +310,9 @@ public class EffectorWeights extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 76;
+			__dna__offset = 70;
 		} else {
-			__dna__offset = 72;
+			__dna__offset = 66;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

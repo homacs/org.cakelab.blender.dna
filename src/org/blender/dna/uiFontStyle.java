@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -27,7 +28,7 @@ public class uiFontStyle extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 257;
+	public static final int __DNA__SDNA_INDEX = 267;
 
 	/**
 	 * Field descriptor (offset) for struct member 'uifont_id'.
@@ -76,29 +77,6 @@ public class uiFontStyle extends CFacade {
 	public static final long[] __DNA__FIELD__points = new long[]{2, 2};
 
 	/**
-	 * Field descriptor (offset) for struct member 'kerning'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Unfitted or default kerning value. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * uiFontStyle uifontstyle = ...;
-	 * CPointer&lt;Object&gt; p = uifontstyle.__dna__addressof(uiFontStyle.__DNA__FIELD__kerning);
-	 * CPointer&lt;Short&gt; p_kerning = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'kerning'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__kerning = new long[]{4, 4};
-
-	/**
 	 * Field descriptor (offset) for struct member 'italic'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -119,7 +97,7 @@ public class uiFontStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__italic = new long[]{6, 6};
+	public static final long[] __DNA__FIELD__italic = new long[]{4, 4};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bold'.
@@ -139,7 +117,7 @@ public class uiFontStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bold = new long[]{8, 8};
+	public static final long[] __DNA__FIELD__bold = new long[]{6, 6};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shadow'.
@@ -162,7 +140,7 @@ public class uiFontStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shadow = new long[]{10, 10};
+	public static final long[] __DNA__FIELD__shadow = new long[]{8, 8};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shadx'.
@@ -185,7 +163,7 @@ public class uiFontStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shadx = new long[]{12, 12};
+	public static final long[] __DNA__FIELD__shadx = new long[]{10, 10};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shady'.
@@ -205,7 +183,27 @@ public class uiFontStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shady = new long[]{14, 14};
+	public static final long[] __DNA__FIELD__shady = new long[]{12, 12};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad0'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * uiFontStyle uifontstyle = ...;
+	 * CPointer&lt;Object&gt; p = uifontstyle.__dna__addressof(uiFontStyle.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad0 = new long[]{14, 14};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shadowalpha'.
@@ -330,40 +328,6 @@ public class uiFontStyle extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'kerning'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Unfitted or default kerning value. </p>
-	 * @see #__DNA__FIELD__kerning
-	 */
-	
-	public short getKerning() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 4);
-		} else {
-			return __io__block.readShort(__io__address + 4);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'kerning'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Unfitted or default kerning value. </p>
-	 * @see #__DNA__FIELD__kerning
-	 */
-	
-	public void setKerning(short kerning) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 4, kerning);
-		} else {
-			__io__block.writeShort(__io__address + 4, kerning);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'italic'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -374,9 +338,9 @@ public class uiFontStyle extends CFacade {
 	public short getItalic() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 6);
+			return __io__block.readShort(__io__address + 4);
 		} else {
-			return __io__block.readShort(__io__address + 6);
+			return __io__block.readShort(__io__address + 4);
 		}
 	}
 
@@ -391,9 +355,9 @@ public class uiFontStyle extends CFacade {
 	public void setItalic(short italic) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 6, italic);
+			__io__block.writeShort(__io__address + 4, italic);
 		} else {
-			__io__block.writeShort(__io__address + 6, italic);
+			__io__block.writeShort(__io__address + 4, italic);
 		}
 	}
 
@@ -405,9 +369,9 @@ public class uiFontStyle extends CFacade {
 	public short getBold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8);
+			return __io__block.readShort(__io__address + 6);
 		} else {
-			return __io__block.readShort(__io__address + 8);
+			return __io__block.readShort(__io__address + 6);
 		}
 	}
 
@@ -419,9 +383,9 @@ public class uiFontStyle extends CFacade {
 	public void setBold(short bold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8, bold);
+			__io__block.writeShort(__io__address + 6, bold);
 		} else {
-			__io__block.writeShort(__io__address + 8, bold);
+			__io__block.writeShort(__io__address + 6, bold);
 		}
 	}
 
@@ -436,9 +400,9 @@ public class uiFontStyle extends CFacade {
 	public short getShadow() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 10);
+			return __io__block.readShort(__io__address + 8);
 		} else {
-			return __io__block.readShort(__io__address + 10);
+			return __io__block.readShort(__io__address + 8);
 		}
 	}
 
@@ -453,9 +417,9 @@ public class uiFontStyle extends CFacade {
 	public void setShadow(short shadow) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 10, shadow);
+			__io__block.writeShort(__io__address + 8, shadow);
 		} else {
-			__io__block.writeShort(__io__address + 10, shadow);
+			__io__block.writeShort(__io__address + 8, shadow);
 		}
 	}
 
@@ -470,9 +434,9 @@ public class uiFontStyle extends CFacade {
 	public short getShadx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 12);
+			return __io__block.readShort(__io__address + 10);
 		} else {
-			return __io__block.readShort(__io__address + 12);
+			return __io__block.readShort(__io__address + 10);
 		}
 	}
 
@@ -487,9 +451,9 @@ public class uiFontStyle extends CFacade {
 	public void setShadx(short shadx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 12, shadx);
+			__io__block.writeShort(__io__address + 10, shadx);
 		} else {
-			__io__block.writeShort(__io__address + 12, shadx);
+			__io__block.writeShort(__io__address + 10, shadx);
 		}
 	}
 
@@ -501,9 +465,9 @@ public class uiFontStyle extends CFacade {
 	public short getShady() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 14);
+			return __io__block.readShort(__io__address + 12);
 		} else {
-			return __io__block.readShort(__io__address + 14);
+			return __io__block.readShort(__io__address + 12);
 		}
 	}
 
@@ -515,9 +479,49 @@ public class uiFontStyle extends CFacade {
 	public void setShady(short shady) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 14, shady);
+			__io__block.writeShort(__io__address + 12, shady);
 		} else {
-			__io__block.writeShort(__io__address + 14, shady);
+			__io__block.writeShort(__io__address + 12, shady);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public CArrayFacade<Byte> get_pad0() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 14, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 14, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 14;
+		} else {
+			__dna__offset = 14;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 

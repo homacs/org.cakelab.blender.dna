@@ -27,7 +27,7 @@ public class MetaBall extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 54;
+	public static final int __DNA__SDNA_INDEX = 61;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -442,7 +442,7 @@ public class MetaBall extends CFacade {
 	 * Field descriptor (offset) for struct member 'lastelem'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used in editmode {@link ListBase}  edit_elems; </p>
+	 * <p>{@link ListBase}  edit_elems;. </p><p> used in editmode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1171,7 +1171,7 @@ public class MetaBall extends CFacade {
 	 * Get method for struct member 'lastelem'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used in editmode {@link ListBase}  edit_elems; </p>
+	 * <p>{@link ListBase}  edit_elems;. </p><p> used in editmode </p>
 	 * @see #__DNA__FIELD__lastelem
 	 */
 	
@@ -1191,7 +1191,7 @@ public class MetaBall extends CFacade {
 	 * Set method for struct member 'lastelem'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used in editmode {@link ListBase}  edit_elems; </p>
+	 * <p>{@link ListBase}  edit_elems;. </p><p> used in editmode </p>
 	 * @see #__DNA__FIELD__lastelem
 	 */
 	

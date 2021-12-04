@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  *  GP Datablock Runtime temp data for {@link bGPdata}  </p>
  */
 
-@CMetaData(size32=140, size64=168)
+@CMetaData(size32=144, size64=176)
 public class bGPdata_Runtime extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class bGPdata_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 542;
+	public static final int __DNA__SDNA_INDEX = 591;
 
 	/**
 	 * Field descriptor (offset) for struct member 'sbuffer'.
@@ -285,7 +285,7 @@ public class bGPdata_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'arrow_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Arrow points for stroke corners </p>
+	 * <p> Arrow points for stroke corners. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -475,6 +475,26 @@ public class bGPdata_Runtime extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__gpencil_cache = new long[]{136, 160};
+
+	/**
+	 * Field descriptor (offset) for struct member 'lineart_cache'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPdata_Runtime bgpdata_runtime = ...;
+	 * CPointer&lt;Object&gt; p = bgpdata_runtime.__dna__addressof(bGPdata_Runtime.__DNA__FIELD__lineart_cache);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_lineart_cache = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'lineart_cache'</li>
+	 * <li>Signature: 'LineartCache*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__lineart_cache = new long[]{140, 168};
 
 	public bGPdata_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -896,7 +916,7 @@ public class bGPdata_Runtime extends CFacade {
 	 * Get method for struct member 'arrow_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Arrow points for stroke corners </p>
+	 * <p> Arrow points for stroke corners. </p>
 	 * @see #__DNA__FIELD__arrow_start
 	 */
 	
@@ -917,7 +937,7 @@ public class bGPdata_Runtime extends CFacade {
 	 * Set method for struct member 'arrow_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Arrow points for stroke corners </p>
+	 * <p> Arrow points for stroke corners. </p>
 	 * @see #__DNA__FIELD__arrow_start
 	 */
 	
@@ -1219,6 +1239,38 @@ public class bGPdata_Runtime extends CFacade {
 			__io__block.writeLong(__io__address + 160, __address);
 		} else {
 			__io__block.writeLong(__io__address + 136, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'lineart_cache'.
+	 * @see #__DNA__FIELD__lineart_cache
+	 */
+	
+	public CPointer<Object> getLineart_cache() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 140);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'lineart_cache'.
+	 * @see #__DNA__FIELD__lineart_cache
+	 */
+	
+	public void setLineart_cache(CPointer<Object> lineart_cache) throws IOException
+	{
+		long __address = ((lineart_cache == null) ? 0 : lineart_cache.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 168, __address);
+		} else {
+			__io__block.writeLong(__io__address + 140, __address);
 		}
 	}
 

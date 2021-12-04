@@ -27,7 +27,7 @@ public class LineStyleGeometryModifier_Polygonalization extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 693;
+	public static final int __DNA__SDNA_INDEX = 746;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

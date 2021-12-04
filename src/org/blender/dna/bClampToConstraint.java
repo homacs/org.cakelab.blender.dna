@@ -27,7 +27,7 @@ public class bClampToConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 373;
+	public static final int __DNA__SDNA_INDEX = 385;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
@@ -56,7 +56,7 @@ public class bClampToConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Which axis/plane to compare owner's location on . </p>
+	 * <p> Which axis/plane to compare owner's location on. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -148,7 +148,7 @@ public class bClampToConstraint extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Which axis/plane to compare owner's location on . </p>
+	 * <p> Which axis/plane to compare owner's location on. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -165,7 +165,7 @@ public class bClampToConstraint extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Which axis/plane to compare owner's location on . </p>
+	 * <p> Which axis/plane to compare owner's location on. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

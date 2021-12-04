@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=448, size64=488)
+@CMetaData(size32=440, size64=480)
 public class SoftBody extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SoftBody extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 170;
+	public static final int __DNA__SDNA_INDEX = 176;
 
 	/**
 	 * Field descriptor (offset) for struct member 'totpoint'.
@@ -564,7 +564,7 @@ public class SoftBody extends CFacade {
 	public static final long[] __DNA__FIELD__namedVG_Spring_K = new long[]{200, 208};
 
 	/**
-	 * Field descriptor (offset) for struct member 'sfra'.
+	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> baking </p>
@@ -574,57 +574,17 @@ public class SoftBody extends CFacade {
 	 * </p>
 	 * <pre>
 	 * SoftBody softbody = ...;
-	 * CPointer&lt;Object&gt; p = softbody.__dna__addressof(SoftBody.__DNA__FIELD__sfra);
-	 * CPointer&lt;Integer&gt; p_sfra = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = softbody.__dna__addressof(SoftBody.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'sfra'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sfra = new long[]{264, 272};
-
-	/**
-	 * Field descriptor (offset) for struct member 'efra'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SoftBody softbody = ...;
-	 * CPointer&lt;Object&gt; p = softbody.__dna__addressof(SoftBody.__DNA__FIELD__efra);
-	 * CPointer&lt;Integer&gt; p_efra = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'efra'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__efra = new long[]{268, 276};
-
-	/**
-	 * Field descriptor (offset) for struct member 'interval'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SoftBody softbody = ...;
-	 * CPointer&lt;Object&gt; p = softbody.__dna__addressof(SoftBody.__DNA__FIELD__interval);
-	 * CPointer&lt;Integer&gt; p_interval = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'interval'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__interval = new long[]{272, 280};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{264, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'local'.
@@ -638,16 +598,16 @@ public class SoftBody extends CFacade {
 	 * <pre>
 	 * SoftBody softbody = ...;
 	 * CPointer&lt;Object&gt; p = softbody.__dna__addressof(SoftBody.__DNA__FIELD__local);
-	 * CPointer&lt;Short&gt; p_local = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_local = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'local'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__local = new long[]{276, 284};
+	public static final long[] __DNA__FIELD__local = new long[]{270, 278};
 
 	/**
 	 * Field descriptor (offset) for struct member 'solverflags'.
@@ -658,16 +618,16 @@ public class SoftBody extends CFacade {
 	 * <pre>
 	 * SoftBody softbody = ...;
 	 * CPointer&lt;Object&gt; p = softbody.__dna__addressof(SoftBody.__DNA__FIELD__solverflags);
-	 * CPointer&lt;Short&gt; p_solverflags = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_solverflags = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'solverflags'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__solverflags = new long[]{278, 286};
+	public static final long[] __DNA__FIELD__solverflags = new long[]{271, 279};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keys'.
@@ -690,7 +650,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keys = new long[]{280, 288};
+	public static final long[] __DNA__FIELD__keys = new long[]{272, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totpointkey'.
@@ -713,7 +673,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totpointkey = new long[]{284, 296};
+	public static final long[] __DNA__FIELD__totpointkey = new long[]{276, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totkey'.
@@ -733,7 +693,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totkey = new long[]{288, 300};
+	public static final long[] __DNA__FIELD__totkey = new long[]{280, 292};
 
 	/**
 	 * Field descriptor (offset) for struct member 'secondspring'.
@@ -757,13 +717,13 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__secondspring = new long[]{292, 304};
+	public static final long[] __DNA__FIELD__secondspring = new long[]{284, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'colball'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> self collision Fixed collision ball size if > 0. </p>
+	 * <p> Self collision. Fixed collision ball size if > 0. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -780,7 +740,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__colball = new long[]{296, 308};
+	public static final long[] __DNA__FIELD__colball = new long[]{288, 300};
 
 	/**
 	 * Field descriptor (offset) for struct member 'balldamp'.
@@ -803,7 +763,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__balldamp = new long[]{300, 312};
+	public static final long[] __DNA__FIELD__balldamp = new long[]{292, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ballstiff'.
@@ -826,7 +786,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ballstiff = new long[]{304, 316};
+	public static final long[] __DNA__FIELD__ballstiff = new long[]{296, 308};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sbc_mode'.
@@ -846,7 +806,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sbc_mode = new long[]{308, 320};
+	public static final long[] __DNA__FIELD__sbc_mode = new long[]{300, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'aeroedge'.
@@ -866,7 +826,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__aeroedge = new long[]{310, 322};
+	public static final long[] __DNA__FIELD__aeroedge = new long[]{302, 314};
 
 	/**
 	 * Field descriptor (offset) for struct member 'minloops'.
@@ -886,7 +846,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__minloops = new long[]{312, 324};
+	public static final long[] __DNA__FIELD__minloops = new long[]{304, 316};
 
 	/**
 	 * Field descriptor (offset) for struct member 'maxloops'.
@@ -906,7 +866,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__maxloops = new long[]{314, 326};
+	public static final long[] __DNA__FIELD__maxloops = new long[]{306, 318};
 
 	/**
 	 * Field descriptor (offset) for struct member 'choke'.
@@ -926,7 +886,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__choke = new long[]{316, 328};
+	public static final long[] __DNA__FIELD__choke = new long[]{308, 320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'solver_ID'.
@@ -946,7 +906,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__solver_ID = new long[]{318, 330};
+	public static final long[] __DNA__FIELD__solver_ID = new long[]{310, 322};
 
 	/**
 	 * Field descriptor (offset) for struct member 'plastic'.
@@ -966,7 +926,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__plastic = new long[]{320, 332};
+	public static final long[] __DNA__FIELD__plastic = new long[]{312, 324};
 
 	/**
 	 * Field descriptor (offset) for struct member 'springpreload'.
@@ -986,7 +946,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__springpreload = new long[]{322, 334};
+	public static final long[] __DNA__FIELD__springpreload = new long[]{314, 326};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scratch'.
@@ -1009,7 +969,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scratch = new long[]{324, 336};
+	public static final long[] __DNA__FIELD__scratch = new long[]{316, 328};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shearstiff'.
@@ -1029,7 +989,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shearstiff = new long[]{328, 344};
+	public static final long[] __DNA__FIELD__shearstiff = new long[]{320, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member 'inpush'.
@@ -1049,7 +1009,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__inpush = new long[]{332, 348};
+	public static final long[] __DNA__FIELD__inpush = new long[]{324, 340};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shared'.
@@ -1069,7 +1029,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shared = new long[]{336, 352};
+	public static final long[] __DNA__FIELD__shared = new long[]{328, 344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pointcache'.
@@ -1094,7 +1054,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pointcache = new long[]{340, 360};
+	public static final long[] __DNA__FIELD__pointcache = new long[]{332, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ptcaches'.
@@ -1119,7 +1079,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ptcaches = new long[]{344, 368};
+	public static final long[] __DNA__FIELD__ptcaches = new long[]{336, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'collision_group'.
@@ -1139,7 +1099,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__collision_group = new long[]{352, 384};
+	public static final long[] __DNA__FIELD__collision_group = new long[]{344, 376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'effector_weights'.
@@ -1159,7 +1119,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__effector_weights = new long[]{356, 392};
+	public static final long[] __DNA__FIELD__effector_weights = new long[]{348, 384};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lcom'.
@@ -1182,7 +1142,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lcom = new long[]{360, 400};
+	public static final long[] __DNA__FIELD__lcom = new long[]{352, 392};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lrot'.
@@ -1202,7 +1162,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 36/36</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lrot = new long[]{372, 412};
+	public static final long[] __DNA__FIELD__lrot = new long[]{364, 404};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lscale'.
@@ -1222,7 +1182,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 36/36</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lscale = new long[]{408, 448};
+	public static final long[] __DNA__FIELD__lscale = new long[]{400, 440};
 
 	/**
 	 * Field descriptor (offset) for struct member 'last_frame'.
@@ -1242,7 +1202,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__last_frame = new long[]{444, 484};
+	public static final long[] __DNA__FIELD__last_frame = new long[]{436, 476};
 
 	public SoftBody(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2077,92 +2037,48 @@ public class SoftBody extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'sfra'.
+	 * Get method for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> baking </p>
-	 * @see #__DNA__FIELD__sfra
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public int getSfra() throws IOException
+	public CArrayFacade<Byte> get_pad1() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			6
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 272);
+			return new CArrayFacade<Byte>(__io__address + 272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 264);
+			return new CArrayFacade<Byte>(__io__address + 264, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'sfra'.
+	 * Set method for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> baking </p>
-	 * @see #__DNA__FIELD__sfra
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public void setSfra(int sfra) throws IOException
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 272, sfra);
+			__dna__offset = 272;
 		} else {
-			__io__block.writeInt(__io__address + 264, sfra);
+			__dna__offset = 264;
 		}
-	}
-
-	/**
-	 * Get method for struct member 'efra'.
-	 * @see #__DNA__FIELD__efra
-	 */
-	
-	public int getEfra() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 276);
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
 		} else {
-			return __io__block.readInt(__io__address + 268);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'efra'.
-	 * @see #__DNA__FIELD__efra
-	 */
-	
-	public void setEfra(int efra) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 276, efra);
-		} else {
-			__io__block.writeInt(__io__address + 268, efra);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'interval'.
-	 * @see #__DNA__FIELD__interval
-	 */
-	
-	public int getInterval() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 280);
-		} else {
-			return __io__block.readInt(__io__address + 272);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'interval'.
-	 * @see #__DNA__FIELD__interval
-	 */
-	
-	public void setInterval(int interval) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 280, interval);
-		} else {
-			__io__block.writeInt(__io__address + 272, interval);
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 
@@ -2174,12 +2090,12 @@ public class SoftBody extends CFacade {
 	 * @see #__DNA__FIELD__local
 	 */
 	
-	public short getLocal() throws IOException
+	public byte getLocal() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 284);
+			return __io__block.readByte(__io__address + 278);
 		} else {
-			return __io__block.readShort(__io__address + 276);
+			return __io__block.readByte(__io__address + 270);
 		}
 	}
 
@@ -2191,12 +2107,12 @@ public class SoftBody extends CFacade {
 	 * @see #__DNA__FIELD__local
 	 */
 	
-	public void setLocal(short local) throws IOException
+	public void setLocal(byte local) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 284, local);
+			__io__block.writeByte(__io__address + 278, local);
 		} else {
-			__io__block.writeShort(__io__address + 276, local);
+			__io__block.writeByte(__io__address + 270, local);
 		}
 	}
 
@@ -2205,12 +2121,12 @@ public class SoftBody extends CFacade {
 	 * @see #__DNA__FIELD__solverflags
 	 */
 	
-	public short getSolverflags() throws IOException
+	public byte getSolverflags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 286);
+			return __io__block.readByte(__io__address + 279);
 		} else {
-			return __io__block.readShort(__io__address + 278);
+			return __io__block.readByte(__io__address + 271);
 		}
 	}
 
@@ -2219,12 +2135,12 @@ public class SoftBody extends CFacade {
 	 * @see #__DNA__FIELD__solverflags
 	 */
 	
-	public void setSolverflags(short solverflags) throws IOException
+	public void setSolverflags(byte solverflags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 286, solverflags);
+			__io__block.writeByte(__io__address + 279, solverflags);
 		} else {
-			__io__block.writeShort(__io__address + 278, solverflags);
+			__io__block.writeByte(__io__address + 271, solverflags);
 		}
 	}
 
@@ -2240,9 +2156,9 @@ public class SoftBody extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 288);
-		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 280);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 272);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, SBVertex.class};
 		return new CPointer<CPointer<SBVertex>>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -2260,9 +2176,9 @@ public class SoftBody extends CFacade {
 	{
 		long __address = ((keys == null) ? 0 : keys.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 288, __address);
-		} else {
 			__io__block.writeLong(__io__address + 280, __address);
+		} else {
+			__io__block.writeLong(__io__address + 272, __address);
 		}
 	}
 
@@ -2277,9 +2193,9 @@ public class SoftBody extends CFacade {
 	public int getTotpointkey() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 296);
+			return __io__block.readInt(__io__address + 288);
 		} else {
-			return __io__block.readInt(__io__address + 284);
+			return __io__block.readInt(__io__address + 276);
 		}
 	}
 
@@ -2294,9 +2210,9 @@ public class SoftBody extends CFacade {
 	public void setTotpointkey(int totpointkey) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 296, totpointkey);
+			__io__block.writeInt(__io__address + 288, totpointkey);
 		} else {
-			__io__block.writeInt(__io__address + 284, totpointkey);
+			__io__block.writeInt(__io__address + 276, totpointkey);
 		}
 	}
 
@@ -2308,9 +2224,9 @@ public class SoftBody extends CFacade {
 	public int getTotkey() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 300);
+			return __io__block.readInt(__io__address + 292);
 		} else {
-			return __io__block.readInt(__io__address + 288);
+			return __io__block.readInt(__io__address + 280);
 		}
 	}
 
@@ -2322,9 +2238,9 @@ public class SoftBody extends CFacade {
 	public void setTotkey(int totkey) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 300, totkey);
+			__io__block.writeInt(__io__address + 292, totkey);
 		} else {
-			__io__block.writeInt(__io__address + 288, totkey);
+			__io__block.writeInt(__io__address + 280, totkey);
 		}
 	}
 
@@ -2340,9 +2256,9 @@ public class SoftBody extends CFacade {
 	public float getSecondspring() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 304);
+			return __io__block.readFloat(__io__address + 296);
 		} else {
-			return __io__block.readFloat(__io__address + 292);
+			return __io__block.readFloat(__io__address + 284);
 		}
 	}
 
@@ -2358,9 +2274,9 @@ public class SoftBody extends CFacade {
 	public void setSecondspring(float secondspring) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 304, secondspring);
+			__io__block.writeFloat(__io__address + 296, secondspring);
 		} else {
-			__io__block.writeFloat(__io__address + 292, secondspring);
+			__io__block.writeFloat(__io__address + 284, secondspring);
 		}
 	}
 
@@ -2368,16 +2284,16 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'colball'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> self collision Fixed collision ball size if > 0. </p>
+	 * <p> Self collision. Fixed collision ball size if > 0. </p>
 	 * @see #__DNA__FIELD__colball
 	 */
 	
 	public float getColball() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 308);
+			return __io__block.readFloat(__io__address + 300);
 		} else {
-			return __io__block.readFloat(__io__address + 296);
+			return __io__block.readFloat(__io__address + 288);
 		}
 	}
 
@@ -2385,16 +2301,16 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'colball'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> self collision Fixed collision ball size if > 0. </p>
+	 * <p> Self collision. Fixed collision ball size if > 0. </p>
 	 * @see #__DNA__FIELD__colball
 	 */
 	
 	public void setColball(float colball) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 308, colball);
+			__io__block.writeFloat(__io__address + 300, colball);
 		} else {
-			__io__block.writeFloat(__io__address + 296, colball);
+			__io__block.writeFloat(__io__address + 288, colball);
 		}
 	}
 
@@ -2409,9 +2325,9 @@ public class SoftBody extends CFacade {
 	public float getBalldamp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 312);
+			return __io__block.readFloat(__io__address + 304);
 		} else {
-			return __io__block.readFloat(__io__address + 300);
+			return __io__block.readFloat(__io__address + 292);
 		}
 	}
 
@@ -2426,9 +2342,9 @@ public class SoftBody extends CFacade {
 	public void setBalldamp(float balldamp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 312, balldamp);
+			__io__block.writeFloat(__io__address + 304, balldamp);
 		} else {
-			__io__block.writeFloat(__io__address + 300, balldamp);
+			__io__block.writeFloat(__io__address + 292, balldamp);
 		}
 	}
 
@@ -2443,9 +2359,9 @@ public class SoftBody extends CFacade {
 	public float getBallstiff() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 316);
+			return __io__block.readFloat(__io__address + 308);
 		} else {
-			return __io__block.readFloat(__io__address + 304);
+			return __io__block.readFloat(__io__address + 296);
 		}
 	}
 
@@ -2460,9 +2376,9 @@ public class SoftBody extends CFacade {
 	public void setBallstiff(float ballstiff) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 316, ballstiff);
+			__io__block.writeFloat(__io__address + 308, ballstiff);
 		} else {
-			__io__block.writeFloat(__io__address + 304, ballstiff);
+			__io__block.writeFloat(__io__address + 296, ballstiff);
 		}
 	}
 
@@ -2474,9 +2390,9 @@ public class SoftBody extends CFacade {
 	public short getSbc_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 320);
+			return __io__block.readShort(__io__address + 312);
 		} else {
-			return __io__block.readShort(__io__address + 308);
+			return __io__block.readShort(__io__address + 300);
 		}
 	}
 
@@ -2488,9 +2404,9 @@ public class SoftBody extends CFacade {
 	public void setSbc_mode(short sbc_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 320, sbc_mode);
+			__io__block.writeShort(__io__address + 312, sbc_mode);
 		} else {
-			__io__block.writeShort(__io__address + 308, sbc_mode);
+			__io__block.writeShort(__io__address + 300, sbc_mode);
 		}
 	}
 
@@ -2502,9 +2418,9 @@ public class SoftBody extends CFacade {
 	public short getAeroedge() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 322);
+			return __io__block.readShort(__io__address + 314);
 		} else {
-			return __io__block.readShort(__io__address + 310);
+			return __io__block.readShort(__io__address + 302);
 		}
 	}
 
@@ -2516,9 +2432,9 @@ public class SoftBody extends CFacade {
 	public void setAeroedge(short aeroedge) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 322, aeroedge);
+			__io__block.writeShort(__io__address + 314, aeroedge);
 		} else {
-			__io__block.writeShort(__io__address + 310, aeroedge);
+			__io__block.writeShort(__io__address + 302, aeroedge);
 		}
 	}
 
@@ -2530,9 +2446,9 @@ public class SoftBody extends CFacade {
 	public short getMinloops() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 324);
+			return __io__block.readShort(__io__address + 316);
 		} else {
-			return __io__block.readShort(__io__address + 312);
+			return __io__block.readShort(__io__address + 304);
 		}
 	}
 
@@ -2544,9 +2460,9 @@ public class SoftBody extends CFacade {
 	public void setMinloops(short minloops) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 324, minloops);
+			__io__block.writeShort(__io__address + 316, minloops);
 		} else {
-			__io__block.writeShort(__io__address + 312, minloops);
+			__io__block.writeShort(__io__address + 304, minloops);
 		}
 	}
 
@@ -2558,9 +2474,9 @@ public class SoftBody extends CFacade {
 	public short getMaxloops() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 326);
+			return __io__block.readShort(__io__address + 318);
 		} else {
-			return __io__block.readShort(__io__address + 314);
+			return __io__block.readShort(__io__address + 306);
 		}
 	}
 
@@ -2572,9 +2488,9 @@ public class SoftBody extends CFacade {
 	public void setMaxloops(short maxloops) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 326, maxloops);
+			__io__block.writeShort(__io__address + 318, maxloops);
 		} else {
-			__io__block.writeShort(__io__address + 314, maxloops);
+			__io__block.writeShort(__io__address + 306, maxloops);
 		}
 	}
 
@@ -2586,9 +2502,9 @@ public class SoftBody extends CFacade {
 	public short getChoke() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 328);
+			return __io__block.readShort(__io__address + 320);
 		} else {
-			return __io__block.readShort(__io__address + 316);
+			return __io__block.readShort(__io__address + 308);
 		}
 	}
 
@@ -2600,9 +2516,9 @@ public class SoftBody extends CFacade {
 	public void setChoke(short choke) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 328, choke);
+			__io__block.writeShort(__io__address + 320, choke);
 		} else {
-			__io__block.writeShort(__io__address + 316, choke);
+			__io__block.writeShort(__io__address + 308, choke);
 		}
 	}
 
@@ -2614,9 +2530,9 @@ public class SoftBody extends CFacade {
 	public short getSolver_ID() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 330);
+			return __io__block.readShort(__io__address + 322);
 		} else {
-			return __io__block.readShort(__io__address + 318);
+			return __io__block.readShort(__io__address + 310);
 		}
 	}
 
@@ -2628,9 +2544,9 @@ public class SoftBody extends CFacade {
 	public void setSolver_ID(short solver_ID) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 330, solver_ID);
+			__io__block.writeShort(__io__address + 322, solver_ID);
 		} else {
-			__io__block.writeShort(__io__address + 318, solver_ID);
+			__io__block.writeShort(__io__address + 310, solver_ID);
 		}
 	}
 
@@ -2642,9 +2558,9 @@ public class SoftBody extends CFacade {
 	public short getPlastic() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 332);
+			return __io__block.readShort(__io__address + 324);
 		} else {
-			return __io__block.readShort(__io__address + 320);
+			return __io__block.readShort(__io__address + 312);
 		}
 	}
 
@@ -2656,9 +2572,9 @@ public class SoftBody extends CFacade {
 	public void setPlastic(short plastic) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 332, plastic);
+			__io__block.writeShort(__io__address + 324, plastic);
 		} else {
-			__io__block.writeShort(__io__address + 320, plastic);
+			__io__block.writeShort(__io__address + 312, plastic);
 		}
 	}
 
@@ -2670,9 +2586,9 @@ public class SoftBody extends CFacade {
 	public short getSpringpreload() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 334);
+			return __io__block.readShort(__io__address + 326);
 		} else {
-			return __io__block.readShort(__io__address + 322);
+			return __io__block.readShort(__io__address + 314);
 		}
 	}
 
@@ -2684,9 +2600,9 @@ public class SoftBody extends CFacade {
 	public void setSpringpreload(short springpreload) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 334, springpreload);
+			__io__block.writeShort(__io__address + 326, springpreload);
 		} else {
-			__io__block.writeShort(__io__address + 322, springpreload);
+			__io__block.writeShort(__io__address + 314, springpreload);
 		}
 	}
 
@@ -2702,9 +2618,9 @@ public class SoftBody extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 336);
+			__dna__targetAddress = __io__block.readLong(__io__address + 328);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 324);
+			__dna__targetAddress = __io__block.readLong(__io__address + 316);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -2722,9 +2638,9 @@ public class SoftBody extends CFacade {
 	{
 		long __address = ((scratch == null) ? 0 : scratch.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 336, __address);
+			__io__block.writeLong(__io__address + 328, __address);
 		} else {
-			__io__block.writeLong(__io__address + 324, __address);
+			__io__block.writeLong(__io__address + 316, __address);
 		}
 	}
 
@@ -2736,9 +2652,9 @@ public class SoftBody extends CFacade {
 	public float getShearstiff() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 344);
+			return __io__block.readFloat(__io__address + 336);
 		} else {
-			return __io__block.readFloat(__io__address + 328);
+			return __io__block.readFloat(__io__address + 320);
 		}
 	}
 
@@ -2750,9 +2666,9 @@ public class SoftBody extends CFacade {
 	public void setShearstiff(float shearstiff) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 344, shearstiff);
+			__io__block.writeFloat(__io__address + 336, shearstiff);
 		} else {
-			__io__block.writeFloat(__io__address + 328, shearstiff);
+			__io__block.writeFloat(__io__address + 320, shearstiff);
 		}
 	}
 
@@ -2764,9 +2680,9 @@ public class SoftBody extends CFacade {
 	public float getInpush() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 348);
+			return __io__block.readFloat(__io__address + 340);
 		} else {
-			return __io__block.readFloat(__io__address + 332);
+			return __io__block.readFloat(__io__address + 324);
 		}
 	}
 
@@ -2778,9 +2694,9 @@ public class SoftBody extends CFacade {
 	public void setInpush(float inpush) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 348, inpush);
+			__io__block.writeFloat(__io__address + 340, inpush);
 		} else {
-			__io__block.writeFloat(__io__address + 332, inpush);
+			__io__block.writeFloat(__io__address + 324, inpush);
 		}
 	}
 
@@ -2793,9 +2709,9 @@ public class SoftBody extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 352);
+			__dna__targetAddress = __io__block.readLong(__io__address + 344);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 336);
+			__dna__targetAddress = __io__block.readLong(__io__address + 328);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{SoftBody_Shared.class};
 		return new CPointer<SoftBody_Shared>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, SoftBody_Shared.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2810,9 +2726,9 @@ public class SoftBody extends CFacade {
 	{
 		long __address = ((shared == null) ? 0 : shared.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 352, __address);
+			__io__block.writeLong(__io__address + 344, __address);
 		} else {
-			__io__block.writeLong(__io__address + 336, __address);
+			__io__block.writeLong(__io__address + 328, __address);
 		}
 	}
 
@@ -2830,9 +2746,9 @@ public class SoftBody extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 360);
+			__dna__targetAddress = __io__block.readLong(__io__address + 352);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 340);
+			__dna__targetAddress = __io__block.readLong(__io__address + 332);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PointCache.class};
 		return new CPointer<PointCache>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PointCache.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2852,9 +2768,9 @@ public class SoftBody extends CFacade {
 	{
 		long __address = ((pointcache == null) ? 0 : pointcache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 360, __address);
+			__io__block.writeLong(__io__address + 352, __address);
 		} else {
-			__io__block.writeLong(__io__address + 340, __address);
+			__io__block.writeLong(__io__address + 332, __address);
 		}
 	}
 
@@ -2871,9 +2787,9 @@ public class SoftBody extends CFacade {
 	public ListBase getPtcaches() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 368, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 360, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 344, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 336, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2891,9 +2807,9 @@ public class SoftBody extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 368;
+			__dna__offset = 360;
 		} else {
-			__dna__offset = 344;
+			__dna__offset = 336;
 		}
 		if (__io__equals(ptcaches, __io__address + __dna__offset)) {
 			return;
@@ -2913,9 +2829,9 @@ public class SoftBody extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 384);
+			__dna__targetAddress = __io__block.readLong(__io__address + 376);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 352);
+			__dna__targetAddress = __io__block.readLong(__io__address + 344);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Collection.class};
 		return new CPointer<Collection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Collection.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2930,9 +2846,9 @@ public class SoftBody extends CFacade {
 	{
 		long __address = ((collision_group == null) ? 0 : collision_group.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 384, __address);
+			__io__block.writeLong(__io__address + 376, __address);
 		} else {
-			__io__block.writeLong(__io__address + 352, __address);
+			__io__block.writeLong(__io__address + 344, __address);
 		}
 	}
 
@@ -2945,9 +2861,9 @@ public class SoftBody extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 392);
+			__dna__targetAddress = __io__block.readLong(__io__address + 384);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 356);
+			__dna__targetAddress = __io__block.readLong(__io__address + 348);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{EffectorWeights.class};
 		return new CPointer<EffectorWeights>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, EffectorWeights.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2962,9 +2878,9 @@ public class SoftBody extends CFacade {
 	{
 		long __address = ((effector_weights == null) ? 0 : effector_weights.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 392, __address);
+			__io__block.writeLong(__io__address + 384, __address);
 		} else {
-			__io__block.writeLong(__io__address + 356, __address);
+			__io__block.writeLong(__io__address + 348, __address);
 		}
 	}
 
@@ -2983,9 +2899,9 @@ public class SoftBody extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 400, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 392, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 360, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 352, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3001,9 +2917,9 @@ public class SoftBody extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 400;
+			__dna__offset = 392;
 		} else {
-			__dna__offset = 360;
+			__dna__offset = 352;
 		}
 		if (__io__equals(lcom, __io__address + __dna__offset)) {
 			return;
@@ -3027,9 +2943,9 @@ public class SoftBody extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 412, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 404, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 372, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 364, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3042,9 +2958,9 @@ public class SoftBody extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 412;
+			__dna__offset = 404;
 		} else {
-			__dna__offset = 372;
+			__dna__offset = 364;
 		}
 		if (__io__equals(lrot, __io__address + __dna__offset)) {
 			return;
@@ -3068,9 +2984,9 @@ public class SoftBody extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 448, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 440, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 408, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 400, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3083,9 +2999,9 @@ public class SoftBody extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 448;
+			__dna__offset = 440;
 		} else {
-			__dna__offset = 408;
+			__dna__offset = 400;
 		}
 		if (__io__equals(lscale, __io__address + __dna__offset)) {
 			return;
@@ -3104,9 +3020,9 @@ public class SoftBody extends CFacade {
 	public int getLast_frame() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 484);
+			return __io__block.readInt(__io__address + 476);
 		} else {
-			return __io__block.readInt(__io__address + 444);
+			return __io__block.readInt(__io__address + 436);
 		}
 	}
 
@@ -3118,9 +3034,9 @@ public class SoftBody extends CFacade {
 	public void setLast_frame(int last_frame) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 484, last_frame);
+			__io__block.writeInt(__io__address + 476, last_frame);
 		} else {
-			__io__block.writeInt(__io__address + 444, last_frame);
+			__io__block.writeInt(__io__address + 436, last_frame);
 		}
 	}
 

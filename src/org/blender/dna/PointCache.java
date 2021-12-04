@@ -27,7 +27,7 @@ public class PointCache extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 735;
+	public static final int __DNA__SDNA_INDEX = 791;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -344,24 +344,24 @@ public class PointCache extends CFacade {
 	public static final long[] __DNA__FIELD__compression = new long[]{52, 60};
 
 	/**
-	 * Field descriptor (offset) for struct member 'rt'.
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * PointCache pointcache = ...;
-	 * CPointer&lt;Object&gt; p = pointcache.__dna__addressof(PointCache.__DNA__FIELD__rt);
-	 * CPointer&lt;Short&gt; p_rt = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = pointcache.__dna__addressof(PointCache.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'rt'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rt = new long[]{54, 62};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{54, 62};
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
@@ -1044,30 +1044,42 @@ public class PointCache extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'rt'.
-	 * @see #__DNA__FIELD__rt
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public short getRt() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 62);
+			return new CArrayFacade<Byte>(__io__address + 62, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 54);
+			return new CArrayFacade<Byte>(__io__address + 54, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'rt'.
-	 * @see #__DNA__FIELD__rt
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setRt(short rt) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 62, rt);
+			__dna__offset = 62;
 		} else {
-			__io__block.writeShort(__io__address + 54, rt);
+			__dna__offset = 54;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 

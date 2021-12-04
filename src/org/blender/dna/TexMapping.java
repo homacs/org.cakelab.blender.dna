@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> used for mapping and texture nodes. note: rot is now in radians </p>
+ * <p> Used for mapping and texture nodes. </p>
  */
 
 @CMetaData(size32=140, size64=144)
@@ -28,7 +28,7 @@ public class TexMapping extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 45;
+	public static final int __DNA__SDNA_INDEX = 52;
 
 	/**
 	 * Field descriptor (offset) for struct member 'loc'.
@@ -52,6 +52,9 @@ public class TexMapping extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Rotation in radians. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -346,6 +349,9 @@ public class TexMapping extends CFacade {
 
 	/**
 	 * Get method for struct member 'rot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Rotation in radians. </p>
 	 * @see #__DNA__FIELD__rot
 	 */
 	
@@ -364,6 +370,9 @@ public class TexMapping extends CFacade {
 
 	/**
 	 * Set method for struct member 'rot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Rotation in radians. </p>
 	 * @see #__DNA__FIELD__rot
 	 */
 	

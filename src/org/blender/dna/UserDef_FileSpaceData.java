@@ -27,7 +27,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 279;
+	public static final int __DNA__SDNA_INDEX = 290;
 
 	/**
 	 * Field descriptor (offset) for struct member 'display_type'.
@@ -168,7 +168,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Field descriptor (offset) for struct member 'filter_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> FileSelectParams.filter_id </p>
+	 * <p>{@link FileSelectParams.filter_id}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -440,7 +440,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Get method for struct member 'filter_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> FileSelectParams.filter_id </p>
+	 * <p>{@link FileSelectParams.filter_id}  </p>
 	 * @see #__DNA__FIELD__filter_id
 	 */
 	
@@ -457,7 +457,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Set method for struct member 'filter_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> FileSelectParams.filter_id </p>
+	 * <p>{@link FileSelectParams.filter_id}  </p>
 	 * @see #__DNA__FIELD__filter_id
 	 */
 	

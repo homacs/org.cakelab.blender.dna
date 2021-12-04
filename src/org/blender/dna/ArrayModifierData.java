@@ -27,7 +27,7 @@ public class ArrayModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 96;
+	public static final int __DNA__SDNA_INDEX = 103;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -53,8 +53,7 @@ public class ArrayModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'start_cap'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the object with which to cap the start of the array <br/> 
-	 *  </p>
+	 * <p> the object with which to cap the start of the array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -77,8 +76,7 @@ public class ArrayModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'end_cap'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the object with which to cap the end of the array <br/> 
-	 *  </p>
+	 * <p> the object with which to cap the end of the array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -101,7 +99,7 @@ public class ArrayModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'curve_ob'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the curve object to use for MOD_ARR_FITCURVE </p>
+	 * <p> the curve object to use for MOD_ARR_FITCURVE. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -124,7 +122,7 @@ public class ArrayModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'offset_ob'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the object to use for object offset </p>
+	 * <p> the object to use for object offset. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -405,8 +403,7 @@ public class ArrayModifierData extends CFacade {
 	 * Get method for struct member 'start_cap'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the object with which to cap the start of the array <br/> 
-	 *  </p>
+	 * <p> the object with which to cap the start of the array. </p>
 	 * @see #__DNA__FIELD__start_cap
 	 */
 	
@@ -426,8 +423,7 @@ public class ArrayModifierData extends CFacade {
 	 * Set method for struct member 'start_cap'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the object with which to cap the start of the array <br/> 
-	 *  </p>
+	 * <p> the object with which to cap the start of the array. </p>
 	 * @see #__DNA__FIELD__start_cap
 	 */
 	
@@ -445,8 +441,7 @@ public class ArrayModifierData extends CFacade {
 	 * Get method for struct member 'end_cap'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the object with which to cap the end of the array <br/> 
-	 *  </p>
+	 * <p> the object with which to cap the end of the array. </p>
 	 * @see #__DNA__FIELD__end_cap
 	 */
 	
@@ -466,8 +461,7 @@ public class ArrayModifierData extends CFacade {
 	 * Set method for struct member 'end_cap'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the object with which to cap the end of the array <br/> 
-	 *  </p>
+	 * <p> the object with which to cap the end of the array. </p>
 	 * @see #__DNA__FIELD__end_cap
 	 */
 	
@@ -485,7 +479,7 @@ public class ArrayModifierData extends CFacade {
 	 * Get method for struct member 'curve_ob'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the curve object to use for MOD_ARR_FITCURVE </p>
+	 * <p> the curve object to use for MOD_ARR_FITCURVE. </p>
 	 * @see #__DNA__FIELD__curve_ob
 	 */
 	
@@ -505,7 +499,7 @@ public class ArrayModifierData extends CFacade {
 	 * Set method for struct member 'curve_ob'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the curve object to use for MOD_ARR_FITCURVE </p>
+	 * <p> the curve object to use for MOD_ARR_FITCURVE. </p>
 	 * @see #__DNA__FIELD__curve_ob
 	 */
 	
@@ -523,7 +517,7 @@ public class ArrayModifierData extends CFacade {
 	 * Get method for struct member 'offset_ob'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the object to use for object offset </p>
+	 * <p> the object to use for object offset. </p>
 	 * @see #__DNA__FIELD__offset_ob
 	 */
 	
@@ -543,7 +537,7 @@ public class ArrayModifierData extends CFacade {
 	 * Set method for struct member 'offset_ob'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the object to use for object offset </p>
+	 * <p> the object to use for object offset. </p>
 	 * @see #__DNA__FIELD__offset_ob
 	 */
 	

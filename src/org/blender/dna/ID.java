@@ -33,7 +33,7 @@ public class ID extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 15;
+	public static final int __DNA__SDNA_INDEX = 20;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -484,24 +484,28 @@ public class ID extends CFacade {
 	public static final long[] __DNA__FIELD__py_instance = new long[]{128, 160};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad1'.
+	 * Field descriptor (offset) for struct member 'library_weak_reference'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Weak reference to a data-block in another library .blend file (used to re-use already appended data instead of appending new copies)<h4>Blender Source Code:</h4>
+	 * <p> Weak reference to an {@link ID}  in a given library file, used to allow re-using already appended data in some cases, instead of appending it again.</p><p> May be NULL. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ID id = ...;
-	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD___pad1);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad1 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD__library_weak_reference);
+	 * CPointer&lt;CPointer&lt;LibraryWeakReference&gt;&gt; p_library_weak_reference = p.cast(new Class[]{CPointer.class, LibraryWeakReference.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad1'</li>
-	 * <li>Signature: 'void*'</li>
+	 * <li>Field: 'library_weak_reference'</li>
+	 * <li>Signature: 'LibraryWeakReference*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{132, 168};
+	public static final long[] __DNA__FIELD__library_weak_reference = new long[]{132, 168};
 
 	public ID(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1240,11 +1244,15 @@ public class ID extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
+	 * Get method for struct member 'library_weak_reference'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Weak reference to a data-block in another library .blend file (used to re-use already appended data instead of appending new copies)<h4>Blender Source Code:</h4>
+	 * <p> Weak reference to an {@link ID}  in a given library file, used to allow re-using already appended data in some cases, instead of appending it again.</p><p> May be NULL. </p>
+	 * @see #__DNA__FIELD__library_weak_reference
 	 */
 	
-	public CPointer<Object> get_pad1() throws IOException
+	public CPointer<LibraryWeakReference> getLibrary_weak_reference() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -1252,18 +1260,22 @@ public class ID extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 132);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{LibraryWeakReference.class};
+		return new CPointer<LibraryWeakReference>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, LibraryWeakReference.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
+	 * Set method for struct member 'library_weak_reference'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Weak reference to a data-block in another library .blend file (used to re-use already appended data instead of appending new copies)<h4>Blender Source Code:</h4>
+	 * <p> Weak reference to an {@link ID}  in a given library file, used to allow re-using already appended data in some cases, instead of appending it again.</p><p> May be NULL. </p>
+	 * @see #__DNA__FIELD__library_weak_reference
 	 */
 	
-	public void set_pad1(CPointer<Object> _pad1) throws IOException
+	public void setLibrary_weak_reference(CPointer<LibraryWeakReference> library_weak_reference) throws IOException
 	{
-		long __address = ((_pad1 == null) ? 0 : _pad1.getAddress());
+		long __address = ((library_weak_reference == null) ? 0 : library_weak_reference.getAddress());
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 168, __address);
 		} else {

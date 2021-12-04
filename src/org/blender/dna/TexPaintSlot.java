@@ -13,8 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> WATCH IT: change type? also make changes in ipo.h <br/> 
- *  </p>
+ * <p> WATCH IT: change type? also make changes in ipo.h </p>
  */
 
 @CMetaData(size32=16, size64=24)
@@ -28,7 +27,7 @@ public class TexPaintSlot extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 48;
+	public static final int __DNA__SDNA_INDEX = 55;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ima'.

@@ -26,7 +26,7 @@ public class ARegion extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 296;
+	public static final int __DNA__SDNA_INDEX = 307;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -684,7 +684,7 @@ public class ARegion extends CFacade {
 	 * Field descriptor (offset) for struct member 'regiondata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX 2.50, need spacedata equivalent?. </p>
+	 * <p> XXX 2.50, need spacedata equivalent? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1799,7 +1799,7 @@ public class ARegion extends CFacade {
 	 * Get method for struct member 'regiondata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX 2.50, need spacedata equivalent?. </p>
+	 * <p> XXX 2.50, need spacedata equivalent? </p>
 	 * @see #__DNA__FIELD__regiondata
 	 */
 	
@@ -1819,7 +1819,7 @@ public class ARegion extends CFacade {
 	 * Set method for struct member 'regiondata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX 2.50, need spacedata equivalent?. </p>
+	 * <p> XXX 2.50, need spacedata equivalent? </p>
 	 * @see #__DNA__FIELD__regiondata
 	 */
 	

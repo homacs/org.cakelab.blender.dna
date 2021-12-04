@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=20, size64=24)
+@CMetaData(size32=28, size64=32)
 public class SpeedControlVars extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class SpeedControlVars extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 313;
+	public static final int __DNA__SDNA_INDEX = 325;
 
 	/**
 	 * Field descriptor (offset) for struct member 'frameMap'.
@@ -50,6 +50,9 @@ public class SpeedControlVars extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'globalSpeed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> DEPRECATED, only used for versioning. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -89,44 +92,84 @@ public class SpeedControlVars extends CFacade {
 	public static final long[] __DNA__FIELD__flags = new long[]{8, 12};
 
 	/**
-	 * Field descriptor (offset) for struct member 'length'.
+	 * Field descriptor (offset) for struct member 'speed_control_type'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SpeedControlVars speedcontrolvars = ...;
-	 * CPointer&lt;Object&gt; p = speedcontrolvars.__dna__addressof(SpeedControlVars.__DNA__FIELD__length);
-	 * CPointer&lt;Integer&gt; p_length = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = speedcontrolvars.__dna__addressof(SpeedControlVars.__DNA__FIELD__speed_control_type);
+	 * CPointer&lt;Integer&gt; p_speed_control_type = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'length'</li>
+	 * <li>Field: 'speed_control_type'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__length = new long[]{12, 16};
+	public static final long[] __DNA__FIELD__speed_control_type = new long[]{12, 16};
 
 	/**
-	 * Field descriptor (offset) for struct member 'lastValidFrame'.
+	 * Field descriptor (offset) for struct member 'speed_fader'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SpeedControlVars speedcontrolvars = ...;
-	 * CPointer&lt;Object&gt; p = speedcontrolvars.__dna__addressof(SpeedControlVars.__DNA__FIELD__lastValidFrame);
-	 * CPointer&lt;Integer&gt; p_lastValidFrame = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = speedcontrolvars.__dna__addressof(SpeedControlVars.__DNA__FIELD__speed_fader);
+	 * CPointer&lt;Float&gt; p_speed_fader = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'lastValidFrame'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: 'speed_fader'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lastValidFrame = new long[]{16, 20};
+	public static final long[] __DNA__FIELD__speed_fader = new long[]{16, 20};
+
+	/**
+	 * Field descriptor (offset) for struct member 'speed_fader_length'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpeedControlVars speedcontrolvars = ...;
+	 * CPointer&lt;Object&gt; p = speedcontrolvars.__dna__addressof(SpeedControlVars.__DNA__FIELD__speed_fader_length);
+	 * CPointer&lt;Float&gt; p_speed_fader_length = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'speed_fader_length'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__speed_fader_length = new long[]{20, 24};
+
+	/**
+	 * Field descriptor (offset) for struct member 'speed_fader_frame_number'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpeedControlVars speedcontrolvars = ...;
+	 * CPointer&lt;Object&gt; p = speedcontrolvars.__dna__addressof(SpeedControlVars.__DNA__FIELD__speed_fader_frame_number);
+	 * CPointer&lt;Float&gt; p_speed_fader_frame_number = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'speed_fader_frame_number'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__speed_fader_frame_number = new long[]{24, 28};
 
 	public SpeedControlVars(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -170,6 +213,9 @@ public class SpeedControlVars extends CFacade {
 
 	/**
 	 * Get method for struct member 'globalSpeed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> DEPRECATED, only used for versioning. </p>
 	 * @see #__DNA__FIELD__globalSpeed
 	 */
 	
@@ -184,6 +230,9 @@ public class SpeedControlVars extends CFacade {
 
 	/**
 	 * Set method for struct member 'globalSpeed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> DEPRECATED, only used for versioning. </p>
 	 * @see #__DNA__FIELD__globalSpeed
 	 */
 	
@@ -225,11 +274,11 @@ public class SpeedControlVars extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'length'.
-	 * @see #__DNA__FIELD__length
+	 * Get method for struct member 'speed_control_type'.
+	 * @see #__DNA__FIELD__speed_control_type
 	 */
 	
-	public int getLength() throws IOException
+	public int getSpeed_control_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 16);
@@ -239,44 +288,100 @@ public class SpeedControlVars extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'length'.
-	 * @see #__DNA__FIELD__length
+	 * Set method for struct member 'speed_control_type'.
+	 * @see #__DNA__FIELD__speed_control_type
 	 */
 	
-	public void setLength(int length) throws IOException
+	public void setSpeed_control_type(int speed_control_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 16, length);
+			__io__block.writeInt(__io__address + 16, speed_control_type);
 		} else {
-			__io__block.writeInt(__io__address + 12, length);
+			__io__block.writeInt(__io__address + 12, speed_control_type);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'lastValidFrame'.
-	 * @see #__DNA__FIELD__lastValidFrame
+	 * Get method for struct member 'speed_fader'.
+	 * @see #__DNA__FIELD__speed_fader
 	 */
 	
-	public int getLastValidFrame() throws IOException
+	public float getSpeed_fader() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 20);
+			return __io__block.readFloat(__io__address + 20);
 		} else {
-			return __io__block.readInt(__io__address + 16);
+			return __io__block.readFloat(__io__address + 16);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'lastValidFrame'.
-	 * @see #__DNA__FIELD__lastValidFrame
+	 * Set method for struct member 'speed_fader'.
+	 * @see #__DNA__FIELD__speed_fader
 	 */
 	
-	public void setLastValidFrame(int lastValidFrame) throws IOException
+	public void setSpeed_fader(float speed_fader) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 20, lastValidFrame);
+			__io__block.writeFloat(__io__address + 20, speed_fader);
 		} else {
-			__io__block.writeInt(__io__address + 16, lastValidFrame);
+			__io__block.writeFloat(__io__address + 16, speed_fader);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'speed_fader_length'.
+	 * @see #__DNA__FIELD__speed_fader_length
+	 */
+	
+	public float getSpeed_fader_length() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 24);
+		} else {
+			return __io__block.readFloat(__io__address + 20);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'speed_fader_length'.
+	 * @see #__DNA__FIELD__speed_fader_length
+	 */
+	
+	public void setSpeed_fader_length(float speed_fader_length) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 24, speed_fader_length);
+		} else {
+			__io__block.writeFloat(__io__address + 20, speed_fader_length);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'speed_fader_frame_number'.
+	 * @see #__DNA__FIELD__speed_fader_frame_number
+	 */
+	
+	public float getSpeed_fader_frame_number() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 28);
+		} else {
+			return __io__block.readFloat(__io__address + 24);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'speed_fader_frame_number'.
+	 * @see #__DNA__FIELD__speed_fader_frame_number
+	 */
+	
+	public void setSpeed_fader_frame_number(float speed_fader_frame_number) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 28, speed_fader_frame_number);
+		} else {
+			__io__block.writeFloat(__io__address + 24, speed_fader_frame_number);
 		}
 	}
 

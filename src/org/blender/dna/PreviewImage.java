@@ -27,7 +27,7 @@ public class PreviewImage extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 17;
+	public static final int __DNA__SDNA_INDEX = 23;
 
 	/**
 	 * Field descriptor (offset) for struct member 'w'.

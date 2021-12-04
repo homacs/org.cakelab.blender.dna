@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=160, size64=184)
+@CMetaData(size32=152, size64=176)
 public class NodeCryptomatte extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class NodeCryptomatte extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 465;
+	public static final int __DNA__SDNA_INDEX = 480;
 
 	/**
 	 * Field descriptor (offset) for struct member 'iuser'.
@@ -47,7 +47,7 @@ public class NodeCryptomatte extends CFacade {
 	 * <ul>
 	 * <li>Field: 'iuser'</li>
 	 * <li>Signature: 'ImageUser'</li>
-	 * <li>Actual Size (32bit/64bit): 44/48</li>
+	 * <li>Actual Size (32bit/64bit): 36/40</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__iuser = new long[]{0, 0};
@@ -73,7 +73,7 @@ public class NodeCryptomatte extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__entries = new long[]{44, 48};
+	public static final long[] __DNA__FIELD__entries = new long[]{36, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_name'.
@@ -96,7 +96,7 @@ public class NodeCryptomatte extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer_name = new long[]{52, 64};
+	public static final long[] __DNA__FIELD__layer_name = new long[]{44, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'matte_id'.
@@ -119,7 +119,7 @@ public class NodeCryptomatte extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__matte_id = new long[]{116, 128};
+	public static final long[] __DNA__FIELD__matte_id = new long[]{108, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'num_inputs'.
@@ -142,7 +142,7 @@ public class NodeCryptomatte extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__num_inputs = new long[]{120, 136};
+	public static final long[] __DNA__FIELD__num_inputs = new long[]{112, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -162,7 +162,7 @@ public class NodeCryptomatte extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{124, 140};
+	public static final long[] __DNA__FIELD___pad = new long[]{116, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -182,7 +182,7 @@ public class NodeCryptomatte extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 32/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{128, 144};
+	public static final long[] __DNA__FIELD__runtime = new long[]{120, 136};
 
 	public NodeCryptomatte(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -245,9 +245,9 @@ public class NodeCryptomatte extends CFacade {
 	public ListBase getEntries() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 48, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 40, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 44, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 36, __io__block, __io__blockTable);
 		}
 	}
 
@@ -263,9 +263,9 @@ public class NodeCryptomatte extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 48;
+			__dna__offset = 40;
 		} else {
-			__dna__offset = 44;
+			__dna__offset = 36;
 		}
 		if (__io__equals(entries, __io__address + __dna__offset)) {
 			return;
@@ -291,9 +291,9 @@ public class NodeCryptomatte extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -309,9 +309,9 @@ public class NodeCryptomatte extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 64;
+			__dna__offset = 56;
 		} else {
-			__dna__offset = 52;
+			__dna__offset = 44;
 		}
 		if (__io__equals(layer_name, __io__address + __dna__offset)) {
 			return;
@@ -334,9 +334,9 @@ public class NodeCryptomatte extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -354,9 +354,9 @@ public class NodeCryptomatte extends CFacade {
 	{
 		long __address = ((matte_id == null) ? 0 : matte_id.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 116, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -371,9 +371,9 @@ public class NodeCryptomatte extends CFacade {
 	public int getNum_inputs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 136);
+			return __io__block.readInt(__io__address + 128);
 		} else {
-			return __io__block.readInt(__io__address + 120);
+			return __io__block.readInt(__io__address + 112);
 		}
 	}
 
@@ -388,9 +388,9 @@ public class NodeCryptomatte extends CFacade {
 	public void setNum_inputs(int num_inputs) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 136, num_inputs);
+			__io__block.writeInt(__io__address + 128, num_inputs);
 		} else {
-			__io__block.writeInt(__io__address + 120, num_inputs);
+			__io__block.writeInt(__io__address + 112, num_inputs);
 		}
 	}
 
@@ -406,9 +406,9 @@ public class NodeCryptomatte extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -421,9 +421,9 @@ public class NodeCryptomatte extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 140;
+			__dna__offset = 132;
 		} else {
-			__dna__offset = 124;
+			__dna__offset = 116;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -442,9 +442,9 @@ public class NodeCryptomatte extends CFacade {
 	public NodeCryptomatte_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new NodeCryptomatte_Runtime(__io__address + 144, __io__block, __io__blockTable);
+			return new NodeCryptomatte_Runtime(__io__address + 136, __io__block, __io__blockTable);
 		} else {
-			return new NodeCryptomatte_Runtime(__io__address + 128, __io__block, __io__blockTable);
+			return new NodeCryptomatte_Runtime(__io__address + 120, __io__block, __io__blockTable);
 		}
 	}
 
@@ -457,9 +457,9 @@ public class NodeCryptomatte extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 144;
+			__dna__offset = 136;
 		} else {
-			__dna__offset = 128;
+			__dna__offset = 120;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

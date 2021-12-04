@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Descriptor and storage for a custom data layer. </p>
  */
 
-@CMetaData(size32=100, size64=104)
+@CMetaData(size32=104, size64=112)
 public class CustomDataLayer extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class CustomDataLayer extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 510;
+	public static final int __DNA__SDNA_INDEX = 559;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -328,6 +328,29 @@ public class CustomDataLayer extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__data = new long[]{96, 96};
+
+	/**
+	 * Field descriptor (offset) for struct member 'anonymous_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Run-time identifier for this layer. If no one has a strong reference to this id anymore, the layer can be removed. The custom data layer only has a weak reference to the id, because otherwise there will always be a strong reference and the attribute can't be removed automatically. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * CustomDataLayer customdatalayer = ...;
+	 * CPointer&lt;Object&gt; p = customdatalayer.__dna__addressof(CustomDataLayer.__DNA__FIELD__anonymous_id);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_anonymous_id = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'anonymous_id'</li>
+	 * <li>Signature: 'AnonymousAttributeID*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__anonymous_id = new long[]{100, 104};
 
 	public CustomDataLayer(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -826,6 +849,44 @@ public class CustomDataLayer extends CFacade {
 			__io__block.writeLong(__io__address + 96, __address);
 		} else {
 			__io__block.writeLong(__io__address + 96, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'anonymous_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Run-time identifier for this layer. If no one has a strong reference to this id anymore, the layer can be removed. The custom data layer only has a weak reference to the id, because otherwise there will always be a strong reference and the attribute can't be removed automatically. </p>
+	 * @see #__DNA__FIELD__anonymous_id
+	 */
+	
+	public CPointer<Object> getAnonymous_id() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'anonymous_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Run-time identifier for this layer. If no one has a strong reference to this id anymore, the layer can be removed. The custom data layer only has a weak reference to the id, because otherwise there will always be a strong reference and the attribute can't be removed automatically. </p>
+	 * @see #__DNA__FIELD__anonymous_id
+	 */
+	
+	public void setAnonymous_id(CPointer<Object> anonymous_id) throws IOException
+	{
+		long __address = ((anonymous_id == null) ? 0 : anonymous_id.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 104, __address);
+		} else {
+			__io__block.writeLong(__io__address + 100, __address);
 		}
 	}
 

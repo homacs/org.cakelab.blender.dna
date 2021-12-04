@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=952, size64=952)
+@CMetaData(size32=960, size64=960)
 public class ThemeUI extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ThemeUI extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 262;
+	public static final int __DNA__SDNA_INDEX = 272;
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_regular'.
@@ -1047,6 +1047,46 @@ public class ThemeUI extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__icon_border_intensity = new long[]{948, 948};
+
+	/**
+	 * Field descriptor (offset) for struct member 'panel_roundness'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__panel_roundness);
+	 * CPointer&lt;Float&gt; p_panel_roundness = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'panel_roundness'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__panel_roundness = new long[]{952, 952};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad2 = new long[]{956, 956};
 
 	public ThemeUI(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2935,6 +2975,74 @@ public class ThemeUI extends CFacade {
 			__io__block.writeFloat(__io__address + 948, icon_border_intensity);
 		} else {
 			__io__block.writeFloat(__io__address + 948, icon_border_intensity);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'panel_roundness'.
+	 * @see #__DNA__FIELD__panel_roundness
+	 */
+	
+	public float getPanel_roundness() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 952);
+		} else {
+			return __io__block.readFloat(__io__address + 952);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'panel_roundness'.
+	 * @see #__DNA__FIELD__panel_roundness
+	 */
+	
+	public void setPanel_roundness(float panel_roundness) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 952, panel_roundness);
+		} else {
+			__io__block.writeFloat(__io__address + 952, panel_roundness);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public CArrayFacade<Byte> get_pad2() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 956, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 956, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 956;
+		} else {
+			__dna__offset = 956;
+		}
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else {
+			__io__generic__copy( get_pad2(), _pad2);
 		}
 	}
 

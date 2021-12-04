@@ -27,7 +27,7 @@ public class MaterialLineArt extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 50;
+	public static final int __DNA__SDNA_INDEX = 57;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -73,6 +73,30 @@ public class MaterialLineArt extends CFacade {
 	public static final long[] __DNA__FIELD__transparency_mask = new long[]{4, 4};
 
 	/**
+	 * Field descriptor (offset) for struct member 'mat_occlusion'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Faces with this material will behave as if it has set number of layers in occlusion<h4>Blender Source Code:</h4>
+	 * <p> Maximum 255 levels of equivalent occlusion. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MaterialLineArt materiallineart = ...;
+	 * CPointer&lt;Object&gt; p = materiallineart.__dna__addressof(MaterialLineArt.__DNA__FIELD__mat_occlusion);
+	 * CPointer&lt;Byte&gt; p_mat_occlusion = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mat_occlusion'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mat_occlusion = new long[]{5, 5};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -86,11 +110,11 @@ public class MaterialLineArt extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{5, 5};
+	public static final long[] __DNA__FIELD___pad = new long[]{6, 6};
 
 	public MaterialLineArt(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -163,6 +187,42 @@ public class MaterialLineArt extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'mat_occlusion'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Faces with this material will behave as if it has set number of layers in occlusion<h4>Blender Source Code:</h4>
+	 * <p> Maximum 255 levels of equivalent occlusion. </p>
+	 * @see #__DNA__FIELD__mat_occlusion
+	 */
+	
+	public byte getMat_occlusion() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 5);
+		} else {
+			return __io__block.readByte(__io__address + 5);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'mat_occlusion'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Faces with this material will behave as if it has set number of layers in occlusion<h4>Blender Source Code:</h4>
+	 * <p> Maximum 255 levels of equivalent occlusion. </p>
+	 * @see #__DNA__FIELD__mat_occlusion
+	 */
+	
+	public void setMat_occlusion(byte mat_occlusion) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 5, mat_occlusion);
+		} else {
+			__io__block.writeByte(__io__address + 5, mat_occlusion);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -171,12 +231,12 @@ public class MaterialLineArt extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 5, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 6, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 5, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 6, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -189,9 +249,9 @@ public class MaterialLineArt extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 5;
+			__dna__offset = 6;
 		} else {
-			__dna__offset = 5;
+			__dna__offset = 6;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
