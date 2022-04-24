@@ -3,7 +3,6 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
-import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -27,7 +26,7 @@ public class NodeGeometryStringToCurves extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 538;
+	public static final int __DNA__SDNA_INDEX = 544;
 
 	/**
 	 * Field descriptor (offset) for struct member 'overflow'.
@@ -99,24 +98,24 @@ public class NodeGeometryStringToCurves extends CFacade {
 	public static final long[] __DNA__FIELD__align_y = new long[]{2, 2};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'pivot_mode'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NodeGeometryStringToCurves nodegeometrystringtocurves = ...;
-	 * CPointer&lt;Object&gt; p = nodegeometrystringtocurves.__dna__addressof(NodeGeometryStringToCurves.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = nodegeometrystringtocurves.__dna__addressof(NodeGeometryStringToCurves.__DNA__FIELD__pivot_mode);
+	 * CPointer&lt;Byte&gt; p_pivot_mode = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[1]'</li>
+	 * <li>Field: 'pivot_mode'</li>
+	 * <li>Signature: 'uchar'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{3, 3};
+	public static final long[] __DNA__FIELD__pivot_mode = new long[]{3, 3};
 
 	public NodeGeometryStringToCurves(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -229,42 +228,30 @@ public class NodeGeometryStringToCurves extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'pivot_mode'.
+	 * @see #__DNA__FIELD__pivot_mode
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public byte getPivot_mode() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			1
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 3, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 3);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 3, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 3);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'pivot_mode'.
+	 * @see #__DNA__FIELD__pivot_mode
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void setPivot_mode(byte pivot_mode) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 3;
+			__io__block.writeByte(__io__address + 3, pivot_mode);
 		} else {
-			__dna__offset = 3;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeByte(__io__address + 3, pivot_mode);
 		}
 	}
 

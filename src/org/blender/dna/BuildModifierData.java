@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=128, size64=152)
+@CMetaData(size32=120, size64=136)
 public class BuildModifierData extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class BuildModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 101;
+	public static final int __DNA__SDNA_INDEX = 103;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -43,7 +43,7 @@ public class BuildModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -66,7 +66,7 @@ public class BuildModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__start = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__start = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'length'.
@@ -86,7 +86,7 @@ public class BuildModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__length = new long[]{116, 140};
+	public static final long[] __DNA__FIELD__length = new long[]{108, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -106,7 +106,7 @@ public class BuildModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{120, 144};
+	public static final long[] __DNA__FIELD__flag = new long[]{112, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'randomize'.
@@ -129,7 +129,7 @@ public class BuildModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__randomize = new long[]{122, 146};
+	public static final long[] __DNA__FIELD__randomize = new long[]{114, 130};
 
 	/**
 	 * Field descriptor (offset) for struct member 'seed'.
@@ -152,7 +152,7 @@ public class BuildModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__seed = new long[]{124, 148};
+	public static final long[] __DNA__FIELD__seed = new long[]{116, 132};
 
 	public BuildModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -206,9 +206,9 @@ public class BuildModifierData extends CFacade {
 	public float getStart() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 120);
 		} else {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 104);
 		}
 	}
 
@@ -220,9 +220,9 @@ public class BuildModifierData extends CFacade {
 	public void setStart(float start) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 136, start);
+			__io__block.writeFloat(__io__address + 120, start);
 		} else {
-			__io__block.writeFloat(__io__address + 112, start);
+			__io__block.writeFloat(__io__address + 104, start);
 		}
 	}
 
@@ -234,9 +234,9 @@ public class BuildModifierData extends CFacade {
 	public float getLength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 124);
 		} else {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 108);
 		}
 	}
 
@@ -248,9 +248,9 @@ public class BuildModifierData extends CFacade {
 	public void setLength(float length) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 140, length);
+			__io__block.writeFloat(__io__address + 124, length);
 		} else {
-			__io__block.writeFloat(__io__address + 116, length);
+			__io__block.writeFloat(__io__address + 108, length);
 		}
 	}
 
@@ -262,9 +262,9 @@ public class BuildModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 144);
+			return __io__block.readShort(__io__address + 128);
 		} else {
-			return __io__block.readShort(__io__address + 120);
+			return __io__block.readShort(__io__address + 112);
 		}
 	}
 
@@ -276,9 +276,9 @@ public class BuildModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 144, flag);
+			__io__block.writeShort(__io__address + 128, flag);
 		} else {
-			__io__block.writeShort(__io__address + 120, flag);
+			__io__block.writeShort(__io__address + 112, flag);
 		}
 	}
 
@@ -293,9 +293,9 @@ public class BuildModifierData extends CFacade {
 	public short getRandomize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 146);
+			return __io__block.readShort(__io__address + 130);
 		} else {
-			return __io__block.readShort(__io__address + 122);
+			return __io__block.readShort(__io__address + 114);
 		}
 	}
 
@@ -310,9 +310,9 @@ public class BuildModifierData extends CFacade {
 	public void setRandomize(short randomize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 146, randomize);
+			__io__block.writeShort(__io__address + 130, randomize);
 		} else {
-			__io__block.writeShort(__io__address + 122, randomize);
+			__io__block.writeShort(__io__address + 114, randomize);
 		}
 	}
 
@@ -327,9 +327,9 @@ public class BuildModifierData extends CFacade {
 	public int getSeed() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 148);
+			return __io__block.readInt(__io__address + 132);
 		} else {
-			return __io__block.readInt(__io__address + 124);
+			return __io__block.readInt(__io__address + 116);
 		}
 	}
 
@@ -344,9 +344,9 @@ public class BuildModifierData extends CFacade {
 	public void setSeed(int seed) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 148, seed);
+			__io__block.writeInt(__io__address + 132, seed);
 		} else {
-			__io__block.writeInt(__io__address + 124, seed);
+			__io__block.writeInt(__io__address + 116, seed);
 		}
 	}
 

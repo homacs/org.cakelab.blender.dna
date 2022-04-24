@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=184, size64=240)
+@CMetaData(size32=176, size64=224)
 public class ClothModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ClothModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 117;
+	public static final int __DNA__SDNA_INDEX = 119;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class ClothModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class ClothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clothObject = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__clothObject = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sim_parms'.
@@ -93,7 +93,7 @@ public class ClothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sim_parms = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__sim_parms = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'coll_parms'.
@@ -116,7 +116,7 @@ public class ClothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__coll_parms = new long[]{120, 152};
+	public static final long[] __DNA__FIELD__coll_parms = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'point_cache'.
@@ -139,7 +139,7 @@ public class ClothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__point_cache = new long[]{124, 160};
+	public static final long[] __DNA__FIELD__point_cache = new long[]{116, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ptcaches'.
@@ -159,7 +159,7 @@ public class ClothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ptcaches = new long[]{128, 168};
+	public static final long[] __DNA__FIELD__ptcaches = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'hairdata'.
@@ -182,7 +182,7 @@ public class ClothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__hairdata = new long[]{136, 184};
+	public static final long[] __DNA__FIELD__hairdata = new long[]{128, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'hair_grid_min'.
@@ -205,7 +205,7 @@ public class ClothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__hair_grid_min = new long[]{140, 192};
+	public static final long[] __DNA__FIELD__hair_grid_min = new long[]{132, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'hair_grid_max'.
@@ -225,7 +225,7 @@ public class ClothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__hair_grid_max = new long[]{152, 204};
+	public static final long[] __DNA__FIELD__hair_grid_max = new long[]{144, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'hair_grid_res'.
@@ -245,7 +245,7 @@ public class ClothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__hair_grid_res = new long[]{164, 216};
+	public static final long[] __DNA__FIELD__hair_grid_res = new long[]{156, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'hair_grid_cellsize'.
@@ -265,7 +265,7 @@ public class ClothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__hair_grid_cellsize = new long[]{176, 228};
+	public static final long[] __DNA__FIELD__hair_grid_cellsize = new long[]{168, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'solver_result'.
@@ -285,7 +285,7 @@ public class ClothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__solver_result = new long[]{180, 232};
+	public static final long[] __DNA__FIELD__solver_result = new long[]{172, 216};
 
 	public ClothModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -343,9 +343,9 @@ public class ClothModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -363,9 +363,9 @@ public class ClothModifierData extends CFacade {
 	{
 		long __address = ((clothObject == null) ? 0 : clothObject.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		}
 	}
 
@@ -381,9 +381,9 @@ public class ClothModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ClothSimSettings.class};
 		return new CPointer<ClothSimSettings>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ClothSimSettings.__DNA__SDNA_INDEX), __io__blockTable);
@@ -401,9 +401,9 @@ public class ClothModifierData extends CFacade {
 	{
 		long __address = ((sim_parms == null) ? 0 : sim_parms.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 116, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -419,9 +419,9 @@ public class ClothModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ClothCollSettings.class};
 		return new CPointer<ClothCollSettings>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ClothCollSettings.__DNA__SDNA_INDEX), __io__blockTable);
@@ -439,9 +439,9 @@ public class ClothModifierData extends CFacade {
 	{
 		long __address = ((coll_parms == null) ? 0 : coll_parms.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 
@@ -457,9 +457,9 @@ public class ClothModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 124);
+			__dna__targetAddress = __io__block.readLong(__io__address + 116);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PointCache.class};
 		return new CPointer<PointCache>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PointCache.__DNA__SDNA_INDEX), __io__blockTable);
@@ -477,9 +477,9 @@ public class ClothModifierData extends CFacade {
 	{
 		long __address = ((point_cache == null) ? 0 : point_cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 124, __address);
+			__io__block.writeLong(__io__address + 116, __address);
 		}
 	}
 
@@ -491,9 +491,9 @@ public class ClothModifierData extends CFacade {
 	public ListBase getPtcaches() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 168, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 152, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 128, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 120, __io__block, __io__blockTable);
 		}
 	}
 
@@ -506,9 +506,9 @@ public class ClothModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 168;
+			__dna__offset = 152;
 		} else {
-			__dna__offset = 128;
+			__dna__offset = 120;
 		}
 		if (__io__equals(ptcaches, __io__address + __dna__offset)) {
 			return;
@@ -531,9 +531,9 @@ public class ClothModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -551,9 +551,9 @@ public class ClothModifierData extends CFacade {
 	{
 		long __address = ((hairdata == null) ? 0 : hairdata.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 168, __address);
 		} else {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		}
 	}
 
@@ -572,9 +572,9 @@ public class ClothModifierData extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -590,9 +590,9 @@ public class ClothModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 176;
 		} else {
-			__dna__offset = 140;
+			__dna__offset = 132;
 		}
 		if (__io__equals(hair_grid_min, __io__address + __dna__offset)) {
 			return;
@@ -615,9 +615,9 @@ public class ClothModifierData extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -630,9 +630,9 @@ public class ClothModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 204;
+			__dna__offset = 188;
 		} else {
-			__dna__offset = 152;
+			__dna__offset = 144;
 		}
 		if (__io__equals(hair_grid_max, __io__address + __dna__offset)) {
 			return;
@@ -655,9 +655,9 @@ public class ClothModifierData extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -670,9 +670,9 @@ public class ClothModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 216;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 164;
+			__dna__offset = 156;
 		}
 		if (__io__equals(hair_grid_res, __io__address + __dna__offset)) {
 			return;
@@ -691,9 +691,9 @@ public class ClothModifierData extends CFacade {
 	public float getHair_grid_cellsize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 228);
+			return __io__block.readFloat(__io__address + 212);
 		} else {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readFloat(__io__address + 168);
 		}
 	}
 
@@ -705,9 +705,9 @@ public class ClothModifierData extends CFacade {
 	public void setHair_grid_cellsize(float hair_grid_cellsize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 228, hair_grid_cellsize);
+			__io__block.writeFloat(__io__address + 212, hair_grid_cellsize);
 		} else {
-			__io__block.writeFloat(__io__address + 176, hair_grid_cellsize);
+			__io__block.writeFloat(__io__address + 168, hair_grid_cellsize);
 		}
 	}
 
@@ -720,9 +720,9 @@ public class ClothModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 232);
+			__dna__targetAddress = __io__block.readLong(__io__address + 216);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 180);
+			__dna__targetAddress = __io__block.readLong(__io__address + 172);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -737,9 +737,9 @@ public class ClothModifierData extends CFacade {
 	{
 		long __address = ((solver_result == null) ? 0 : solver_result.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 232, __address);
+			__io__block.writeLong(__io__address + 216, __address);
 		} else {
-			__io__block.writeLong(__io__address + 180, __address);
+			__io__block.writeLong(__io__address + 172, __address);
 		}
 	}
 

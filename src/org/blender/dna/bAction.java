@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Actions -----------------------------------<mdash/>  Action - reusable F-Curve 'bag' (act)</p><p> This contains F-Curves that may affect settings from more than one {@link ID}  blocktype and/or datablock (i.e. sub-data linked/used directly to the {@link ID}  block that the animation data is linked to), but with the restriction that the other unrelated data (i.e. data that is not directly used or linked to by the source {@link ID}  block).</p><p> It serves as a 'unit' of reusable animation information (i.e. keyframes/motion data), that affects a group of related settings (as defined by the user). </p>
  */
 
-@CMetaData(size32=188, size64=264)
+@CMetaData(size32=196, size64=272)
 public class bAction extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bAction extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 360;
+	public static final int __DNA__SDNA_INDEX = 361;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -237,6 +237,46 @@ public class bAction extends CFacade {
 	public static final long[] __DNA__FIELD___pad = new long[]{180, 252};
 
 	/**
+	 * Field descriptor (offset) for struct member 'frame_start'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bAction baction = ...;
+	 * CPointer&lt;Object&gt; p = baction.__dna__addressof(bAction.__DNA__FIELD__frame_start);
+	 * CPointer&lt;Float&gt; p_frame_start = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'frame_start'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__frame_start = new long[]{184, 256};
+
+	/**
+	 * Field descriptor (offset) for struct member 'frame_end'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bAction baction = ...;
+	 * CPointer&lt;Object&gt; p = baction.__dna__addressof(bAction.__DNA__FIELD__frame_end);
+	 * CPointer&lt;Float&gt; p_frame_end = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'frame_end'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__frame_end = new long[]{188, 260};
+
+	/**
 	 * Field descriptor (offset) for struct member 'preview'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -254,7 +294,7 @@ public class bAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview = new long[]{184, 256};
+	public static final long[] __DNA__FIELD__preview = new long[]{192, 264};
 
 	public bAction(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -621,6 +661,62 @@ public class bAction extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'frame_start'.
+	 * @see #__DNA__FIELD__frame_start
+	 */
+	
+	public float getFrame_start() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 256);
+		} else {
+			return __io__block.readFloat(__io__address + 184);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'frame_start'.
+	 * @see #__DNA__FIELD__frame_start
+	 */
+	
+	public void setFrame_start(float frame_start) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 256, frame_start);
+		} else {
+			__io__block.writeFloat(__io__address + 184, frame_start);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'frame_end'.
+	 * @see #__DNA__FIELD__frame_end
+	 */
+	
+	public float getFrame_end() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 260);
+		} else {
+			return __io__block.readFloat(__io__address + 188);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'frame_end'.
+	 * @see #__DNA__FIELD__frame_end
+	 */
+	
+	public void setFrame_end(float frame_end) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 260, frame_end);
+		} else {
+			__io__block.writeFloat(__io__address + 188, frame_end);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'preview'.
 	 * @see #__DNA__FIELD__preview
 	 */
@@ -629,9 +725,9 @@ public class bAction extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 264);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PreviewImage.class};
 		return new CPointer<PreviewImage>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PreviewImage.__DNA__SDNA_INDEX), __io__blockTable);
@@ -646,9 +742,9 @@ public class bAction extends CFacade {
 	{
 		long __address = ((preview == null) ? 0 : preview.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 264, __address);
 		} else {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		}
 	}
 

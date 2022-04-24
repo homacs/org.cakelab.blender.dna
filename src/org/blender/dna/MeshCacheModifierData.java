@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> cache modifier </p>
  */
 
-@CMetaData(size32=1240, size64=1264)
+@CMetaData(size32=1232, size64=1248)
 public class MeshCacheModifierData extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 148;
+	public static final int __DNA__SDNA_INDEX = 150;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -45,7 +45,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -68,7 +68,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__flag = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -91,7 +91,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{113, 137};
+	public static final long[] __DNA__FIELD__type = new long[]{105, 121};
 
 	/**
 	 * Field descriptor (offset) for struct member 'time_mode'.
@@ -111,7 +111,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__time_mode = new long[]{114, 138};
+	public static final long[] __DNA__FIELD__time_mode = new long[]{106, 122};
 
 	/**
 	 * Field descriptor (offset) for struct member 'play_mode'.
@@ -131,7 +131,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__play_mode = new long[]{115, 139};
+	public static final long[] __DNA__FIELD__play_mode = new long[]{107, 123};
 
 	/**
 	 * Field descriptor (offset) for struct member 'forward_axis'.
@@ -154,7 +154,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__forward_axis = new long[]{116, 140};
+	public static final long[] __DNA__FIELD__forward_axis = new long[]{108, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'up_axis'.
@@ -174,7 +174,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__up_axis = new long[]{117, 141};
+	public static final long[] __DNA__FIELD__up_axis = new long[]{109, 125};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flip_axis'.
@@ -194,7 +194,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flip_axis = new long[]{118, 142};
+	public static final long[] __DNA__FIELD__flip_axis = new long[]{110, 126};
 
 	/**
 	 * Field descriptor (offset) for struct member 'interp'.
@@ -214,7 +214,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__interp = new long[]{119, 143};
+	public static final long[] __DNA__FIELD__interp = new long[]{111, 127};
 
 	/**
 	 * Field descriptor (offset) for struct member 'factor'.
@@ -234,7 +234,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__factor = new long[]{120, 144};
+	public static final long[] __DNA__FIELD__factor = new long[]{112, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'deform_mode'.
@@ -254,7 +254,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__deform_mode = new long[]{124, 148};
+	public static final long[] __DNA__FIELD__deform_mode = new long[]{116, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
@@ -274,7 +274,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{125, 149};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{117, 133};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -294,7 +294,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{189, 213};
+	public static final long[] __DNA__FIELD___pad = new long[]{181, 197};
 
 	/**
 	 * Field descriptor (offset) for struct member 'frame_start'.
@@ -317,7 +317,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__frame_start = new long[]{196, 220};
+	public static final long[] __DNA__FIELD__frame_start = new long[]{188, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'frame_scale'.
@@ -337,7 +337,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__frame_scale = new long[]{200, 224};
+	public static final long[] __DNA__FIELD__frame_scale = new long[]{192, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'eval_frame'.
@@ -360,7 +360,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__eval_frame = new long[]{204, 228};
+	public static final long[] __DNA__FIELD__eval_frame = new long[]{196, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'eval_time'.
@@ -380,7 +380,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__eval_time = new long[]{208, 232};
+	public static final long[] __DNA__FIELD__eval_time = new long[]{200, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'eval_factor'.
@@ -400,7 +400,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__eval_factor = new long[]{212, 236};
+	public static final long[] __DNA__FIELD__eval_factor = new long[]{204, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filepath'.
@@ -423,7 +423,7 @@ public class MeshCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filepath = new long[]{216, 240};
+	public static final long[] __DNA__FIELD__filepath = new long[]{208, 224};
 
 	public MeshCacheModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -477,9 +477,9 @@ public class MeshCacheModifierData extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 136);
+			return __io__block.readByte(__io__address + 120);
 		} else {
-			return __io__block.readByte(__io__address + 112);
+			return __io__block.readByte(__io__address + 104);
 		}
 	}
 
@@ -491,9 +491,9 @@ public class MeshCacheModifierData extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 136, flag);
+			__io__block.writeByte(__io__address + 120, flag);
 		} else {
-			__io__block.writeByte(__io__address + 112, flag);
+			__io__block.writeByte(__io__address + 104, flag);
 		}
 	}
 
@@ -508,9 +508,9 @@ public class MeshCacheModifierData extends CFacade {
 	public byte getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 137);
+			return __io__block.readByte(__io__address + 121);
 		} else {
-			return __io__block.readByte(__io__address + 113);
+			return __io__block.readByte(__io__address + 105);
 		}
 	}
 
@@ -525,9 +525,9 @@ public class MeshCacheModifierData extends CFacade {
 	public void setType(byte type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 137, type);
+			__io__block.writeByte(__io__address + 121, type);
 		} else {
-			__io__block.writeByte(__io__address + 113, type);
+			__io__block.writeByte(__io__address + 105, type);
 		}
 	}
 
@@ -539,9 +539,9 @@ public class MeshCacheModifierData extends CFacade {
 	public byte getTime_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 138);
+			return __io__block.readByte(__io__address + 122);
 		} else {
-			return __io__block.readByte(__io__address + 114);
+			return __io__block.readByte(__io__address + 106);
 		}
 	}
 
@@ -553,9 +553,9 @@ public class MeshCacheModifierData extends CFacade {
 	public void setTime_mode(byte time_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 138, time_mode);
+			__io__block.writeByte(__io__address + 122, time_mode);
 		} else {
-			__io__block.writeByte(__io__address + 114, time_mode);
+			__io__block.writeByte(__io__address + 106, time_mode);
 		}
 	}
 
@@ -567,9 +567,9 @@ public class MeshCacheModifierData extends CFacade {
 	public byte getPlay_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 139);
+			return __io__block.readByte(__io__address + 123);
 		} else {
-			return __io__block.readByte(__io__address + 115);
+			return __io__block.readByte(__io__address + 107);
 		}
 	}
 
@@ -581,9 +581,9 @@ public class MeshCacheModifierData extends CFacade {
 	public void setPlay_mode(byte play_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 139, play_mode);
+			__io__block.writeByte(__io__address + 123, play_mode);
 		} else {
-			__io__block.writeByte(__io__address + 115, play_mode);
+			__io__block.writeByte(__io__address + 107, play_mode);
 		}
 	}
 
@@ -598,9 +598,9 @@ public class MeshCacheModifierData extends CFacade {
 	public byte getForward_axis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 140);
+			return __io__block.readByte(__io__address + 124);
 		} else {
-			return __io__block.readByte(__io__address + 116);
+			return __io__block.readByte(__io__address + 108);
 		}
 	}
 
@@ -615,9 +615,9 @@ public class MeshCacheModifierData extends CFacade {
 	public void setForward_axis(byte forward_axis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 140, forward_axis);
+			__io__block.writeByte(__io__address + 124, forward_axis);
 		} else {
-			__io__block.writeByte(__io__address + 116, forward_axis);
+			__io__block.writeByte(__io__address + 108, forward_axis);
 		}
 	}
 
@@ -629,9 +629,9 @@ public class MeshCacheModifierData extends CFacade {
 	public byte getUp_axis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 141);
+			return __io__block.readByte(__io__address + 125);
 		} else {
-			return __io__block.readByte(__io__address + 117);
+			return __io__block.readByte(__io__address + 109);
 		}
 	}
 
@@ -643,9 +643,9 @@ public class MeshCacheModifierData extends CFacade {
 	public void setUp_axis(byte up_axis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 141, up_axis);
+			__io__block.writeByte(__io__address + 125, up_axis);
 		} else {
-			__io__block.writeByte(__io__address + 117, up_axis);
+			__io__block.writeByte(__io__address + 109, up_axis);
 		}
 	}
 
@@ -657,9 +657,9 @@ public class MeshCacheModifierData extends CFacade {
 	public byte getFlip_axis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 142);
+			return __io__block.readByte(__io__address + 126);
 		} else {
-			return __io__block.readByte(__io__address + 118);
+			return __io__block.readByte(__io__address + 110);
 		}
 	}
 
@@ -671,9 +671,9 @@ public class MeshCacheModifierData extends CFacade {
 	public void setFlip_axis(byte flip_axis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 142, flip_axis);
+			__io__block.writeByte(__io__address + 126, flip_axis);
 		} else {
-			__io__block.writeByte(__io__address + 118, flip_axis);
+			__io__block.writeByte(__io__address + 110, flip_axis);
 		}
 	}
 
@@ -685,9 +685,9 @@ public class MeshCacheModifierData extends CFacade {
 	public byte getInterp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 143);
+			return __io__block.readByte(__io__address + 127);
 		} else {
-			return __io__block.readByte(__io__address + 119);
+			return __io__block.readByte(__io__address + 111);
 		}
 	}
 
@@ -699,9 +699,9 @@ public class MeshCacheModifierData extends CFacade {
 	public void setInterp(byte interp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 143, interp);
+			__io__block.writeByte(__io__address + 127, interp);
 		} else {
-			__io__block.writeByte(__io__address + 119, interp);
+			__io__block.writeByte(__io__address + 111, interp);
 		}
 	}
 
@@ -713,9 +713,9 @@ public class MeshCacheModifierData extends CFacade {
 	public float getFactor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 144);
+			return __io__block.readFloat(__io__address + 128);
 		} else {
-			return __io__block.readFloat(__io__address + 120);
+			return __io__block.readFloat(__io__address + 112);
 		}
 	}
 
@@ -727,9 +727,9 @@ public class MeshCacheModifierData extends CFacade {
 	public void setFactor(float factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 144, factor);
+			__io__block.writeFloat(__io__address + 128, factor);
 		} else {
-			__io__block.writeFloat(__io__address + 120, factor);
+			__io__block.writeFloat(__io__address + 112, factor);
 		}
 	}
 
@@ -741,9 +741,9 @@ public class MeshCacheModifierData extends CFacade {
 	public byte getDeform_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 148);
+			return __io__block.readByte(__io__address + 132);
 		} else {
-			return __io__block.readByte(__io__address + 124);
+			return __io__block.readByte(__io__address + 116);
 		}
 	}
 
@@ -755,9 +755,9 @@ public class MeshCacheModifierData extends CFacade {
 	public void setDeform_mode(byte deform_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 148, deform_mode);
+			__io__block.writeByte(__io__address + 132, deform_mode);
 		} else {
-			__io__block.writeByte(__io__address + 124, deform_mode);
+			__io__block.writeByte(__io__address + 116, deform_mode);
 		}
 	}
 
@@ -773,9 +773,9 @@ public class MeshCacheModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 149, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 133, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 125, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 117, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -788,9 +788,9 @@ public class MeshCacheModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 149;
+			__dna__offset = 133;
 		} else {
-			__dna__offset = 125;
+			__dna__offset = 117;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -813,9 +813,9 @@ public class MeshCacheModifierData extends CFacade {
 			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 213, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 197, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 189, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 181, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -828,9 +828,9 @@ public class MeshCacheModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 213;
+			__dna__offset = 197;
 		} else {
-			__dna__offset = 189;
+			__dna__offset = 181;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -852,9 +852,9 @@ public class MeshCacheModifierData extends CFacade {
 	public float getFrame_start() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 220);
+			return __io__block.readFloat(__io__address + 204);
 		} else {
-			return __io__block.readFloat(__io__address + 196);
+			return __io__block.readFloat(__io__address + 188);
 		}
 	}
 
@@ -869,9 +869,9 @@ public class MeshCacheModifierData extends CFacade {
 	public void setFrame_start(float frame_start) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 220, frame_start);
+			__io__block.writeFloat(__io__address + 204, frame_start);
 		} else {
-			__io__block.writeFloat(__io__address + 196, frame_start);
+			__io__block.writeFloat(__io__address + 188, frame_start);
 		}
 	}
 
@@ -883,9 +883,9 @@ public class MeshCacheModifierData extends CFacade {
 	public float getFrame_scale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 224);
+			return __io__block.readFloat(__io__address + 208);
 		} else {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 192);
 		}
 	}
 
@@ -897,9 +897,9 @@ public class MeshCacheModifierData extends CFacade {
 	public void setFrame_scale(float frame_scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 224, frame_scale);
+			__io__block.writeFloat(__io__address + 208, frame_scale);
 		} else {
-			__io__block.writeFloat(__io__address + 200, frame_scale);
+			__io__block.writeFloat(__io__address + 192, frame_scale);
 		}
 	}
 
@@ -914,9 +914,9 @@ public class MeshCacheModifierData extends CFacade {
 	public float getEval_frame() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 228);
+			return __io__block.readFloat(__io__address + 212);
 		} else {
-			return __io__block.readFloat(__io__address + 204);
+			return __io__block.readFloat(__io__address + 196);
 		}
 	}
 
@@ -931,9 +931,9 @@ public class MeshCacheModifierData extends CFacade {
 	public void setEval_frame(float eval_frame) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 228, eval_frame);
+			__io__block.writeFloat(__io__address + 212, eval_frame);
 		} else {
-			__io__block.writeFloat(__io__address + 204, eval_frame);
+			__io__block.writeFloat(__io__address + 196, eval_frame);
 		}
 	}
 
@@ -945,9 +945,9 @@ public class MeshCacheModifierData extends CFacade {
 	public float getEval_time() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 232);
+			return __io__block.readFloat(__io__address + 216);
 		} else {
-			return __io__block.readFloat(__io__address + 208);
+			return __io__block.readFloat(__io__address + 200);
 		}
 	}
 
@@ -959,9 +959,9 @@ public class MeshCacheModifierData extends CFacade {
 	public void setEval_time(float eval_time) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 232, eval_time);
+			__io__block.writeFloat(__io__address + 216, eval_time);
 		} else {
-			__io__block.writeFloat(__io__address + 208, eval_time);
+			__io__block.writeFloat(__io__address + 200, eval_time);
 		}
 	}
 
@@ -973,9 +973,9 @@ public class MeshCacheModifierData extends CFacade {
 	public float getEval_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 236);
+			return __io__block.readFloat(__io__address + 220);
 		} else {
-			return __io__block.readFloat(__io__address + 212);
+			return __io__block.readFloat(__io__address + 204);
 		}
 	}
 
@@ -987,9 +987,9 @@ public class MeshCacheModifierData extends CFacade {
 	public void setEval_factor(float eval_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 236, eval_factor);
+			__io__block.writeFloat(__io__address + 220, eval_factor);
 		} else {
-			__io__block.writeFloat(__io__address + 212, eval_factor);
+			__io__block.writeFloat(__io__address + 204, eval_factor);
 		}
 	}
 
@@ -1008,9 +1008,9 @@ public class MeshCacheModifierData extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 224, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1026,9 +1026,9 @@ public class MeshCacheModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 240;
+			__dna__offset = 224;
 		} else {
-			__dna__offset = 216;
+			__dna__offset = 208;
 		}
 		if (__io__equals(filepath, __io__address + __dna__offset)) {
 			return;

@@ -27,7 +27,7 @@ public class BoidRuleAverageSpeed extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 666;
+	public static final int __DNA__SDNA_INDEX = 674;
 
 	/**
 	 * Field descriptor (offset) for struct member 'rule'.

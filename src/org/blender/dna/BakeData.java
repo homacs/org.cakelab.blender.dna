@@ -27,7 +27,7 @@ public class BakeData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 187;
+	public static final int __DNA__SDNA_INDEX = 189;
 
 	/**
 	 * Field descriptor (offset) for struct member 'im_format'.
@@ -293,6 +293,26 @@ public class BakeData extends CFacade {
 	public static final long[] __DNA__FIELD__save_mode = new long[]{1297, 1305};
 
 	/**
+	 * Field descriptor (offset) for struct member 'margin_type'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BakeData bakedata = ...;
+	 * CPointer&lt;Object&gt; p = bakedata.__dna__addressof(BakeData.__DNA__FIELD__margin_type);
+	 * CPointer&lt;Byte&gt; p_margin_type = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'margin_type'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__margin_type = new long[]{1298, 1306};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -306,11 +326,11 @@ public class BakeData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[6]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * <li>Signature: 'char[5]'</li>
+	 * <li>Actual Size (32bit/64bit): 5/5</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{1298, 1306};
+	public static final long[] __DNA__FIELD___pad = new long[]{1299, 1307};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cage_object'.
@@ -743,6 +763,34 @@ public class BakeData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'margin_type'.
+	 * @see #__DNA__FIELD__margin_type
+	 */
+	
+	public byte getMargin_type() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 1306);
+		} else {
+			return __io__block.readByte(__io__address + 1298);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'margin_type'.
+	 * @see #__DNA__FIELD__margin_type
+	 */
+	
+	public void setMargin_type(byte margin_type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 1306, margin_type);
+		} else {
+			__io__block.writeByte(__io__address + 1298, margin_type);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -751,12 +799,12 @@ public class BakeData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			6
+			5
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1306, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1307, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1298, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1299, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -769,9 +817,9 @@ public class BakeData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1306;
+			__dna__offset = 1307;
 		} else {
-			__dna__offset = 1298;
+			__dna__offset = 1299;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

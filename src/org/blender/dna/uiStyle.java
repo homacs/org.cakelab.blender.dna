@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> this is fed to the layout engine and widget code </p>
  */
 
-@CMetaData(size32=192, size64=200)
+@CMetaData(size32=224, size64=232)
 public class uiStyle extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class uiStyle extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 268;
+	public static final int __DNA__SDNA_INDEX = 269;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -108,7 +108,7 @@ public class uiStyle extends CFacade {
 	 * <ul>
 	 * <li>Field: 'paneltitle'</li>
 	 * <li>Signature: 'uiFontStyle'</li>
-	 * <li>Actual Size (32bit/64bit): 24/24</li>
+	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__paneltitle = new long[]{72, 80};
@@ -128,10 +128,10 @@ public class uiStyle extends CFacade {
 	 * <ul>
 	 * <li>Field: 'grouplabel'</li>
 	 * <li>Signature: 'uiFontStyle'</li>
-	 * <li>Actual Size (32bit/64bit): 24/24</li>
+	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__grouplabel = new long[]{96, 104};
+	public static final long[] __DNA__FIELD__grouplabel = new long[]{104, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'widgetlabel'.
@@ -148,10 +148,10 @@ public class uiStyle extends CFacade {
 	 * <ul>
 	 * <li>Field: 'widgetlabel'</li>
 	 * <li>Signature: 'uiFontStyle'</li>
-	 * <li>Actual Size (32bit/64bit): 24/24</li>
+	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__widgetlabel = new long[]{120, 128};
+	public static final long[] __DNA__FIELD__widgetlabel = new long[]{136, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'widget'.
@@ -168,10 +168,10 @@ public class uiStyle extends CFacade {
 	 * <ul>
 	 * <li>Field: 'widget'</li>
 	 * <li>Signature: 'uiFontStyle'</li>
-	 * <li>Actual Size (32bit/64bit): 24/24</li>
+	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__widget = new long[]{144, 152};
+	public static final long[] __DNA__FIELD__widget = new long[]{168, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'panelzoom'.
@@ -191,7 +191,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__panelzoom = new long[]{168, 176};
+	public static final long[] __DNA__FIELD__panelzoom = new long[]{200, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'minlabelchars'.
@@ -214,7 +214,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__minlabelchars = new long[]{172, 180};
+	public static final long[] __DNA__FIELD__minlabelchars = new long[]{204, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'minwidgetchars'.
@@ -237,7 +237,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__minwidgetchars = new long[]{174, 182};
+	public static final long[] __DNA__FIELD__minwidgetchars = new long[]{206, 214};
 
 	/**
 	 * Field descriptor (offset) for struct member 'columnspace'.
@@ -257,7 +257,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__columnspace = new long[]{176, 184};
+	public static final long[] __DNA__FIELD__columnspace = new long[]{208, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'templatespace'.
@@ -277,7 +277,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__templatespace = new long[]{178, 186};
+	public static final long[] __DNA__FIELD__templatespace = new long[]{210, 218};
 
 	/**
 	 * Field descriptor (offset) for struct member 'boxspace'.
@@ -297,7 +297,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__boxspace = new long[]{180, 188};
+	public static final long[] __DNA__FIELD__boxspace = new long[]{212, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'buttonspacex'.
@@ -317,7 +317,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__buttonspacex = new long[]{182, 190};
+	public static final long[] __DNA__FIELD__buttonspacex = new long[]{214, 222};
 
 	/**
 	 * Field descriptor (offset) for struct member 'buttonspacey'.
@@ -337,7 +337,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__buttonspacey = new long[]{184, 192};
+	public static final long[] __DNA__FIELD__buttonspacey = new long[]{216, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'panelspace'.
@@ -357,7 +357,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__panelspace = new long[]{186, 194};
+	public static final long[] __DNA__FIELD__panelspace = new long[]{218, 226};
 
 	/**
 	 * Field descriptor (offset) for struct member 'panelouter'.
@@ -377,7 +377,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__panelouter = new long[]{188, 196};
+	public static final long[] __DNA__FIELD__panelouter = new long[]{220, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad0'.
@@ -397,7 +397,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{190, 198};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{222, 230};
 
 	public uiStyle(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -561,9 +561,9 @@ public class uiStyle extends CFacade {
 	public uiFontStyle getGrouplabel() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiFontStyle(__io__address + 104, __io__block, __io__blockTable);
+			return new uiFontStyle(__io__address + 112, __io__block, __io__blockTable);
 		} else {
-			return new uiFontStyle(__io__address + 96, __io__block, __io__blockTable);
+			return new uiFontStyle(__io__address + 104, __io__block, __io__blockTable);
 		}
 	}
 
@@ -576,9 +576,9 @@ public class uiStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 104;
+			__dna__offset = 112;
 		} else {
-			__dna__offset = 96;
+			__dna__offset = 104;
 		}
 		if (__io__equals(grouplabel, __io__address + __dna__offset)) {
 			return;
@@ -597,9 +597,9 @@ public class uiStyle extends CFacade {
 	public uiFontStyle getWidgetlabel() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiFontStyle(__io__address + 128, __io__block, __io__blockTable);
+			return new uiFontStyle(__io__address + 144, __io__block, __io__blockTable);
 		} else {
-			return new uiFontStyle(__io__address + 120, __io__block, __io__blockTable);
+			return new uiFontStyle(__io__address + 136, __io__block, __io__blockTable);
 		}
 	}
 
@@ -612,9 +612,9 @@ public class uiStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__dna__offset = 144;
 		} else {
-			__dna__offset = 120;
+			__dna__offset = 136;
 		}
 		if (__io__equals(widgetlabel, __io__address + __dna__offset)) {
 			return;
@@ -633,9 +633,9 @@ public class uiStyle extends CFacade {
 	public uiFontStyle getWidget() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiFontStyle(__io__address + 152, __io__block, __io__blockTable);
+			return new uiFontStyle(__io__address + 176, __io__block, __io__blockTable);
 		} else {
-			return new uiFontStyle(__io__address + 144, __io__block, __io__blockTable);
+			return new uiFontStyle(__io__address + 168, __io__block, __io__blockTable);
 		}
 	}
 
@@ -648,9 +648,9 @@ public class uiStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 152;
+			__dna__offset = 176;
 		} else {
-			__dna__offset = 144;
+			__dna__offset = 168;
 		}
 		if (__io__equals(widget, __io__address + __dna__offset)) {
 			return;
@@ -669,9 +669,9 @@ public class uiStyle extends CFacade {
 	public float getPanelzoom() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readFloat(__io__address + 208);
 		} else {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 200);
 		}
 	}
 
@@ -683,9 +683,9 @@ public class uiStyle extends CFacade {
 	public void setPanelzoom(float panelzoom) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 176, panelzoom);
+			__io__block.writeFloat(__io__address + 208, panelzoom);
 		} else {
-			__io__block.writeFloat(__io__address + 168, panelzoom);
+			__io__block.writeFloat(__io__address + 200, panelzoom);
 		}
 	}
 
@@ -700,9 +700,9 @@ public class uiStyle extends CFacade {
 	public short getMinlabelchars() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 180);
+			return __io__block.readShort(__io__address + 212);
 		} else {
-			return __io__block.readShort(__io__address + 172);
+			return __io__block.readShort(__io__address + 204);
 		}
 	}
 
@@ -717,9 +717,9 @@ public class uiStyle extends CFacade {
 	public void setMinlabelchars(short minlabelchars) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 180, minlabelchars);
+			__io__block.writeShort(__io__address + 212, minlabelchars);
 		} else {
-			__io__block.writeShort(__io__address + 172, minlabelchars);
+			__io__block.writeShort(__io__address + 204, minlabelchars);
 		}
 	}
 
@@ -734,9 +734,9 @@ public class uiStyle extends CFacade {
 	public short getMinwidgetchars() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 182);
+			return __io__block.readShort(__io__address + 214);
 		} else {
-			return __io__block.readShort(__io__address + 174);
+			return __io__block.readShort(__io__address + 206);
 		}
 	}
 
@@ -751,9 +751,9 @@ public class uiStyle extends CFacade {
 	public void setMinwidgetchars(short minwidgetchars) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 182, minwidgetchars);
+			__io__block.writeShort(__io__address + 214, minwidgetchars);
 		} else {
-			__io__block.writeShort(__io__address + 174, minwidgetchars);
+			__io__block.writeShort(__io__address + 206, minwidgetchars);
 		}
 	}
 
@@ -765,9 +765,9 @@ public class uiStyle extends CFacade {
 	public short getColumnspace() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 184);
+			return __io__block.readShort(__io__address + 216);
 		} else {
-			return __io__block.readShort(__io__address + 176);
+			return __io__block.readShort(__io__address + 208);
 		}
 	}
 
@@ -779,9 +779,9 @@ public class uiStyle extends CFacade {
 	public void setColumnspace(short columnspace) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 184, columnspace);
+			__io__block.writeShort(__io__address + 216, columnspace);
 		} else {
-			__io__block.writeShort(__io__address + 176, columnspace);
+			__io__block.writeShort(__io__address + 208, columnspace);
 		}
 	}
 
@@ -793,9 +793,9 @@ public class uiStyle extends CFacade {
 	public short getTemplatespace() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 186);
+			return __io__block.readShort(__io__address + 218);
 		} else {
-			return __io__block.readShort(__io__address + 178);
+			return __io__block.readShort(__io__address + 210);
 		}
 	}
 
@@ -807,9 +807,9 @@ public class uiStyle extends CFacade {
 	public void setTemplatespace(short templatespace) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 186, templatespace);
+			__io__block.writeShort(__io__address + 218, templatespace);
 		} else {
-			__io__block.writeShort(__io__address + 178, templatespace);
+			__io__block.writeShort(__io__address + 210, templatespace);
 		}
 	}
 
@@ -821,9 +821,9 @@ public class uiStyle extends CFacade {
 	public short getBoxspace() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 188);
+			return __io__block.readShort(__io__address + 220);
 		} else {
-			return __io__block.readShort(__io__address + 180);
+			return __io__block.readShort(__io__address + 212);
 		}
 	}
 
@@ -835,9 +835,9 @@ public class uiStyle extends CFacade {
 	public void setBoxspace(short boxspace) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 188, boxspace);
+			__io__block.writeShort(__io__address + 220, boxspace);
 		} else {
-			__io__block.writeShort(__io__address + 180, boxspace);
+			__io__block.writeShort(__io__address + 212, boxspace);
 		}
 	}
 
@@ -849,9 +849,9 @@ public class uiStyle extends CFacade {
 	public short getButtonspacex() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 190);
+			return __io__block.readShort(__io__address + 222);
 		} else {
-			return __io__block.readShort(__io__address + 182);
+			return __io__block.readShort(__io__address + 214);
 		}
 	}
 
@@ -863,9 +863,9 @@ public class uiStyle extends CFacade {
 	public void setButtonspacex(short buttonspacex) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 190, buttonspacex);
+			__io__block.writeShort(__io__address + 222, buttonspacex);
 		} else {
-			__io__block.writeShort(__io__address + 182, buttonspacex);
+			__io__block.writeShort(__io__address + 214, buttonspacex);
 		}
 	}
 
@@ -877,9 +877,9 @@ public class uiStyle extends CFacade {
 	public short getButtonspacey() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 192);
+			return __io__block.readShort(__io__address + 224);
 		} else {
-			return __io__block.readShort(__io__address + 184);
+			return __io__block.readShort(__io__address + 216);
 		}
 	}
 
@@ -891,9 +891,9 @@ public class uiStyle extends CFacade {
 	public void setButtonspacey(short buttonspacey) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 192, buttonspacey);
+			__io__block.writeShort(__io__address + 224, buttonspacey);
 		} else {
-			__io__block.writeShort(__io__address + 184, buttonspacey);
+			__io__block.writeShort(__io__address + 216, buttonspacey);
 		}
 	}
 
@@ -905,9 +905,9 @@ public class uiStyle extends CFacade {
 	public short getPanelspace() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 194);
+			return __io__block.readShort(__io__address + 226);
 		} else {
-			return __io__block.readShort(__io__address + 186);
+			return __io__block.readShort(__io__address + 218);
 		}
 	}
 
@@ -919,9 +919,9 @@ public class uiStyle extends CFacade {
 	public void setPanelspace(short panelspace) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 194, panelspace);
+			__io__block.writeShort(__io__address + 226, panelspace);
 		} else {
-			__io__block.writeShort(__io__address + 186, panelspace);
+			__io__block.writeShort(__io__address + 218, panelspace);
 		}
 	}
 
@@ -933,9 +933,9 @@ public class uiStyle extends CFacade {
 	public short getPanelouter() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 196);
+			return __io__block.readShort(__io__address + 228);
 		} else {
-			return __io__block.readShort(__io__address + 188);
+			return __io__block.readShort(__io__address + 220);
 		}
 	}
 
@@ -947,9 +947,9 @@ public class uiStyle extends CFacade {
 	public void setPanelouter(short panelouter) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 196, panelouter);
+			__io__block.writeShort(__io__address + 228, panelouter);
 		} else {
-			__io__block.writeShort(__io__address + 188, panelouter);
+			__io__block.writeShort(__io__address + 220, panelouter);
 		}
 	}
 
@@ -965,9 +965,9 @@ public class uiStyle extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 198, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 230, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 190, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 222, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -980,9 +980,9 @@ public class uiStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 198;
+			__dna__offset = 230;
 		} else {
-			__dna__offset = 190;
+			__dna__offset = 222;
 		}
 		if (__io__equals(_pad0, __io__address + __dna__offset)) {
 			return;

@@ -27,7 +27,7 @@ public class MetaBall extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 61;
+	public static final int __DNA__SDNA_INDEX = 62;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -255,13 +255,13 @@ public class MetaBall extends CFacade {
 	 * <pre>
 	 * MetaBall metaball = ...;
 	 * CPointer&lt;Object&gt; p = metaball.__dna__addressof(MetaBall.__DNA__FIELD__texflag);
-	 * CPointer&lt;Short&gt; p_texflag = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_texflag = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'texflag'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__texflag = new long[]{172, 244};
@@ -280,11 +280,11 @@ public class MetaBall extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[1]'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{174, 246};
+	public static final long[] __DNA__FIELD___pad = new long[]{173, 245};
 
 	/**
 	 * Field descriptor (offset) for struct member 'needs_flush_to_id'.
@@ -845,12 +845,12 @@ public class MetaBall extends CFacade {
 	 * @see #__DNA__FIELD__texflag
 	 */
 	
-	public short getTexflag() throws IOException
+	public byte getTexflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 244);
+			return __io__block.readByte(__io__address + 244);
 		} else {
-			return __io__block.readShort(__io__address + 172);
+			return __io__block.readByte(__io__address + 172);
 		}
 	}
 
@@ -862,12 +862,12 @@ public class MetaBall extends CFacade {
 	 * @see #__DNA__FIELD__texflag
 	 */
 	
-	public void setTexflag(short texflag) throws IOException
+	public void setTexflag(byte texflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 244, texflag);
+			__io__block.writeByte(__io__address + 244, texflag);
 		} else {
-			__io__block.writeShort(__io__address + 172, texflag);
+			__io__block.writeByte(__io__address + 172, texflag);
 		}
 	}
 
@@ -880,12 +880,12 @@ public class MetaBall extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			1
+			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 246, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 245, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 174, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 173, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -898,9 +898,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 246;
+			__dna__offset = 245;
 		} else {
-			__dna__offset = 174;
+			__dna__offset = 173;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

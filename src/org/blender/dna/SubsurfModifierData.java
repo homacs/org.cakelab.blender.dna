@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=136, size64=168)
+@CMetaData(size32=128, size64=152)
 public class SubsurfModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SubsurfModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 98;
+	public static final int __DNA__SDNA_INDEX = 100;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class SubsurfModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class SubsurfModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subdivType = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__subdivType = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'levels'.
@@ -87,7 +87,7 @@ public class SubsurfModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__levels = new long[]{114, 138};
+	public static final long[] __DNA__FIELD__levels = new long[]{106, 122};
 
 	/**
 	 * Field descriptor (offset) for struct member 'renderLevels'.
@@ -107,7 +107,7 @@ public class SubsurfModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__renderLevels = new long[]{116, 140};
+	public static final long[] __DNA__FIELD__renderLevels = new long[]{108, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -127,7 +127,7 @@ public class SubsurfModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{118, 142};
+	public static final long[] __DNA__FIELD__flags = new long[]{110, 126};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv_smooth'.
@@ -147,7 +147,7 @@ public class SubsurfModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uv_smooth = new long[]{120, 144};
+	public static final long[] __DNA__FIELD__uv_smooth = new long[]{112, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'quality'.
@@ -167,7 +167,7 @@ public class SubsurfModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__quality = new long[]{122, 146};
+	public static final long[] __DNA__FIELD__quality = new long[]{114, 130};
 
 	/**
 	 * Field descriptor (offset) for struct member 'boundary_smooth'.
@@ -187,7 +187,7 @@ public class SubsurfModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__boundary_smooth = new long[]{124, 148};
+	public static final long[] __DNA__FIELD__boundary_smooth = new long[]{116, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -207,7 +207,7 @@ public class SubsurfModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{126, 150};
+	public static final long[] __DNA__FIELD___pad = new long[]{118, 134};
 
 	/**
 	 * Field descriptor (offset) for struct member 'emCache'.
@@ -230,7 +230,7 @@ public class SubsurfModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__emCache = new long[]{128, 152};
+	public static final long[] __DNA__FIELD__emCache = new long[]{120, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mCache'.
@@ -250,7 +250,7 @@ public class SubsurfModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mCache = new long[]{132, 160};
+	public static final long[] __DNA__FIELD__mCache = new long[]{124, 144};
 
 	public SubsurfModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -304,9 +304,9 @@ public class SubsurfModifierData extends CFacade {
 	public short getSubdivType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 136);
+			return __io__block.readShort(__io__address + 120);
 		} else {
-			return __io__block.readShort(__io__address + 112);
+			return __io__block.readShort(__io__address + 104);
 		}
 	}
 
@@ -318,9 +318,9 @@ public class SubsurfModifierData extends CFacade {
 	public void setSubdivType(short subdivType) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 136, subdivType);
+			__io__block.writeShort(__io__address + 120, subdivType);
 		} else {
-			__io__block.writeShort(__io__address + 112, subdivType);
+			__io__block.writeShort(__io__address + 104, subdivType);
 		}
 	}
 
@@ -332,9 +332,9 @@ public class SubsurfModifierData extends CFacade {
 	public short getLevels() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 138);
+			return __io__block.readShort(__io__address + 122);
 		} else {
-			return __io__block.readShort(__io__address + 114);
+			return __io__block.readShort(__io__address + 106);
 		}
 	}
 
@@ -346,9 +346,9 @@ public class SubsurfModifierData extends CFacade {
 	public void setLevels(short levels) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 138, levels);
+			__io__block.writeShort(__io__address + 122, levels);
 		} else {
-			__io__block.writeShort(__io__address + 114, levels);
+			__io__block.writeShort(__io__address + 106, levels);
 		}
 	}
 
@@ -360,9 +360,9 @@ public class SubsurfModifierData extends CFacade {
 	public short getRenderLevels() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 140);
+			return __io__block.readShort(__io__address + 124);
 		} else {
-			return __io__block.readShort(__io__address + 116);
+			return __io__block.readShort(__io__address + 108);
 		}
 	}
 
@@ -374,9 +374,9 @@ public class SubsurfModifierData extends CFacade {
 	public void setRenderLevels(short renderLevels) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 140, renderLevels);
+			__io__block.writeShort(__io__address + 124, renderLevels);
 		} else {
-			__io__block.writeShort(__io__address + 116, renderLevels);
+			__io__block.writeShort(__io__address + 108, renderLevels);
 		}
 	}
 
@@ -388,9 +388,9 @@ public class SubsurfModifierData extends CFacade {
 	public short getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 142);
+			return __io__block.readShort(__io__address + 126);
 		} else {
-			return __io__block.readShort(__io__address + 118);
+			return __io__block.readShort(__io__address + 110);
 		}
 	}
 
@@ -402,9 +402,9 @@ public class SubsurfModifierData extends CFacade {
 	public void setFlags(short flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 142, flags);
+			__io__block.writeShort(__io__address + 126, flags);
 		} else {
-			__io__block.writeShort(__io__address + 118, flags);
+			__io__block.writeShort(__io__address + 110, flags);
 		}
 	}
 
@@ -416,9 +416,9 @@ public class SubsurfModifierData extends CFacade {
 	public short getUv_smooth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 144);
+			return __io__block.readShort(__io__address + 128);
 		} else {
-			return __io__block.readShort(__io__address + 120);
+			return __io__block.readShort(__io__address + 112);
 		}
 	}
 
@@ -430,9 +430,9 @@ public class SubsurfModifierData extends CFacade {
 	public void setUv_smooth(short uv_smooth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 144, uv_smooth);
+			__io__block.writeShort(__io__address + 128, uv_smooth);
 		} else {
-			__io__block.writeShort(__io__address + 120, uv_smooth);
+			__io__block.writeShort(__io__address + 112, uv_smooth);
 		}
 	}
 
@@ -444,9 +444,9 @@ public class SubsurfModifierData extends CFacade {
 	public short getQuality() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 146);
+			return __io__block.readShort(__io__address + 130);
 		} else {
-			return __io__block.readShort(__io__address + 122);
+			return __io__block.readShort(__io__address + 114);
 		}
 	}
 
@@ -458,9 +458,9 @@ public class SubsurfModifierData extends CFacade {
 	public void setQuality(short quality) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 146, quality);
+			__io__block.writeShort(__io__address + 130, quality);
 		} else {
-			__io__block.writeShort(__io__address + 122, quality);
+			__io__block.writeShort(__io__address + 114, quality);
 		}
 	}
 
@@ -472,9 +472,9 @@ public class SubsurfModifierData extends CFacade {
 	public short getBoundary_smooth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 148);
+			return __io__block.readShort(__io__address + 132);
 		} else {
-			return __io__block.readShort(__io__address + 124);
+			return __io__block.readShort(__io__address + 116);
 		}
 	}
 
@@ -486,9 +486,9 @@ public class SubsurfModifierData extends CFacade {
 	public void setBoundary_smooth(short boundary_smooth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 148, boundary_smooth);
+			__io__block.writeShort(__io__address + 132, boundary_smooth);
 		} else {
-			__io__block.writeShort(__io__address + 124, boundary_smooth);
+			__io__block.writeShort(__io__address + 116, boundary_smooth);
 		}
 	}
 
@@ -504,9 +504,9 @@ public class SubsurfModifierData extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 150, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 134, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 126, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 118, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -519,9 +519,9 @@ public class SubsurfModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 150;
+			__dna__offset = 134;
 		} else {
-			__dna__offset = 126;
+			__dna__offset = 118;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -544,9 +544,9 @@ public class SubsurfModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -564,9 +564,9 @@ public class SubsurfModifierData extends CFacade {
 	{
 		long __address = ((emCache == null) ? 0 : emCache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		}
 	}
 
@@ -579,9 +579,9 @@ public class SubsurfModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 132);
+			__dna__targetAddress = __io__block.readLong(__io__address + 124);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -596,9 +596,9 @@ public class SubsurfModifierData extends CFacade {
 	{
 		long __address = ((mCache == null) ? 0 : mCache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 132, __address);
+			__io__block.writeLong(__io__address + 124, __address);
 		}
 	}
 

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> For each library file used, a {@link Library}  struct is added to Main WARNING: readfile.c, expand_doit() reads this struct without DNA check! </p>
  */
 
-@CMetaData(size32=2204, size64=2256)
+@CMetaData(size32=2212, size64=2264)
 public class Library extends CFacade {
 
 	/**
@@ -161,6 +161,49 @@ public class Library extends CFacade {
 	public static final long[] __DNA__FIELD__packedfile = new long[]{2192, 2240};
 
 	/**
+	 * Field descriptor (offset) for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Tools can use this to tag data for their own purposes (initial state is undefined)
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Library library = ...;
+	 * CPointer&lt;Object&gt; p = library.__dna__addressof(Library.__DNA__FIELD__tag);
+	 * CPointer&lt;Short&gt; p_tag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tag'</li>
+	 * <li>Signature: 'ushort'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tag = new long[]{2196, 2248};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad_0'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Library library = ...;
+	 * CPointer&lt;Object&gt; p = library.__dna__addressof(Library.__DNA__FIELD___pad_0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad_0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad_0'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad_0 = new long[]{2198, 2250};
+
+	/**
 	 * Field descriptor (offset) for struct member 'temp_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -181,7 +224,7 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__temp_index = new long[]{2196, 2248};
+	public static final long[] __DNA__FIELD__temp_index = new long[]{2204, 2256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'versionfile'.
@@ -204,7 +247,7 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__versionfile = new long[]{2200, 2252};
+	public static final long[] __DNA__FIELD__versionfile = new long[]{2208, 2260};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subversionfile'.
@@ -224,7 +267,7 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subversionfile = new long[]{2202, 2254};
+	public static final long[] __DNA__FIELD__subversionfile = new long[]{2210, 2262};
 
 	public Library(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -467,6 +510,80 @@ public class Library extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Tools can use this to tag data for their own purposes (initial state is undefined)
+	 * @see #__DNA__FIELD__tag
+	 */
+	
+	public short getTag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 2248);
+		} else {
+			return __io__block.readShort(__io__address + 2196);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Tools can use this to tag data for their own purposes (initial state is undefined)
+	 * @see #__DNA__FIELD__tag
+	 */
+	
+	public void setTag(short tag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 2248, tag);
+		} else {
+			__io__block.writeShort(__io__address + 2196, tag);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad_0'.
+	 * @see #__DNA__FIELD___pad_0
+	 */
+	
+	public CArrayFacade<Byte> get_pad_0() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			6
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 2250, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 2198, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad_0'.
+	 * @see #__DNA__FIELD___pad_0
+	 */
+	
+	public void set_pad_0(CArrayFacade<Byte> _pad_0) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 2250;
+		} else {
+			__dna__offset = 2198;
+		}
+		if (__io__equals(_pad_0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad_0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad_0);
+		} else {
+			__io__generic__copy( get_pad_0(), _pad_0);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'temp_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -477,9 +594,9 @@ public class Library extends CFacade {
 	public int getTemp_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2248);
+			return __io__block.readInt(__io__address + 2256);
 		} else {
-			return __io__block.readInt(__io__address + 2196);
+			return __io__block.readInt(__io__address + 2204);
 		}
 	}
 
@@ -494,9 +611,9 @@ public class Library extends CFacade {
 	public void setTemp_index(int temp_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2248, temp_index);
+			__io__block.writeInt(__io__address + 2256, temp_index);
 		} else {
-			__io__block.writeInt(__io__address + 2196, temp_index);
+			__io__block.writeInt(__io__address + 2204, temp_index);
 		}
 	}
 
@@ -511,9 +628,9 @@ public class Library extends CFacade {
 	public short getVersionfile() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2252);
+			return __io__block.readShort(__io__address + 2260);
 		} else {
-			return __io__block.readShort(__io__address + 2200);
+			return __io__block.readShort(__io__address + 2208);
 		}
 	}
 
@@ -528,9 +645,9 @@ public class Library extends CFacade {
 	public void setVersionfile(short versionfile) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2252, versionfile);
+			__io__block.writeShort(__io__address + 2260, versionfile);
 		} else {
-			__io__block.writeShort(__io__address + 2200, versionfile);
+			__io__block.writeShort(__io__address + 2208, versionfile);
 		}
 	}
 
@@ -542,9 +659,9 @@ public class Library extends CFacade {
 	public short getSubversionfile() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2254);
+			return __io__block.readShort(__io__address + 2262);
 		} else {
-			return __io__block.readShort(__io__address + 2202);
+			return __io__block.readShort(__io__address + 2210);
 		}
 	}
 
@@ -556,9 +673,9 @@ public class Library extends CFacade {
 	public void setSubversionfile(short subversionfile) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2254, subversionfile);
+			__io__block.writeShort(__io__address + 2262, subversionfile);
 		} else {
-			__io__block.writeShort(__io__address + 2202, subversionfile);
+			__io__block.writeShort(__io__address + 2210, subversionfile);
 		}
 	}
 

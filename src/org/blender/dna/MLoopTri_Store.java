@@ -29,7 +29,7 @@ public class MLoopTri_Store extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 68;
+	public static final int __DNA__SDNA_INDEX = 69;
 
 	/**
 	 * Field descriptor (offset) for struct member 'array'.

@@ -3,7 +3,6 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
-import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -17,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> not saved in file! </p>
  */
 
-@CMetaData(size32=144, size64=192)
+@CMetaData(size32=152, size64=208)
 public class Mesh_Runtime extends CFacade {
 
 	/**
@@ -28,7 +27,7 @@ public class Mesh_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 69;
+	public static final int __DNA__SDNA_INDEX = 70;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_eval'.
@@ -74,405 +73,24 @@ public class Mesh_Runtime extends CFacade {
 	public static final long[] __DNA__FIELD__eval_mutex = new long[]{4, 8};
 
 	/**
-	 * Field descriptor (offset) for struct member 'edit_data'.
+	 * Field descriptor (offset) for struct member 'normals_mutex'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__edit_data);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_edit_data = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__normals_mutex);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_normals_mutex = p.cast(new Class[]{CPointer.class, Object.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'edit_data'</li>
-	 * <li>Signature: 'EditMeshData*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__edit_data = new long[]{8, 16};
-
-	/**
-	 * Field descriptor (offset) for struct member 'batch_cache'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__batch_cache);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_batch_cache = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'batch_cache'</li>
+	 * <li>Field: 'normals_mutex'</li>
 	 * <li>Signature: 'void*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__batch_cache = new long[]{12, 24};
-
-	/**
-	 * Field descriptor (offset) for struct member 'subdiv_ccg'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__subdiv_ccg);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_subdiv_ccg = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'subdiv_ccg'</li>
-	 * <li>Signature: 'SubdivCCG*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__subdiv_ccg = new long[]{16, 32};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad1'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD___pad1);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad1 = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad1'</li>
-	 * <li>Signature: 'void*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{20, 40};
-
-	/**
-	 * Field descriptor (offset) for struct member 'subdiv_ccg_tot_level'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__subdiv_ccg_tot_level);
-	 * CPointer&lt;Integer&gt; p_subdiv_ccg_tot_level = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'subdiv_ccg_tot_level'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__subdiv_ccg_tot_level = new long[]{24, 48};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad2'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD___pad2);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad2'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{28, 52};
-
-	/**
-	 * Field descriptor (offset) for struct member 'cd_dirty_vert'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__cd_dirty_vert);
-	 * CPointer&lt;int64&gt; p_cd_dirty_vert = p.cast(new Class[]{int64.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'cd_dirty_vert'</li>
-	 * <li>Signature: 'int64_t'</li>
-	 * <li>Actual Size (32bit/64bit): 8/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__cd_dirty_vert = new long[]{32, 56};
-
-	/**
-	 * Field descriptor (offset) for struct member 'cd_dirty_edge'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__cd_dirty_edge);
-	 * CPointer&lt;int64&gt; p_cd_dirty_edge = p.cast(new Class[]{int64.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'cd_dirty_edge'</li>
-	 * <li>Signature: 'int64_t'</li>
-	 * <li>Actual Size (32bit/64bit): 8/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__cd_dirty_edge = new long[]{40, 64};
-
-	/**
-	 * Field descriptor (offset) for struct member 'cd_dirty_loop'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__cd_dirty_loop);
-	 * CPointer&lt;int64&gt; p_cd_dirty_loop = p.cast(new Class[]{int64.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'cd_dirty_loop'</li>
-	 * <li>Signature: 'int64_t'</li>
-	 * <li>Actual Size (32bit/64bit): 8/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__cd_dirty_loop = new long[]{48, 72};
-
-	/**
-	 * Field descriptor (offset) for struct member 'cd_dirty_poly'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__cd_dirty_poly);
-	 * CPointer&lt;int64&gt; p_cd_dirty_poly = p.cast(new Class[]{int64.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'cd_dirty_poly'</li>
-	 * <li>Signature: 'int64_t'</li>
-	 * <li>Actual Size (32bit/64bit): 8/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__cd_dirty_poly = new long[]{56, 80};
-
-	/**
-	 * Field descriptor (offset) for struct member 'looptris'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__looptris);
-	 * CPointer&lt;MLoopTri_Store&gt; p_looptris = p.cast(new Class[]{MLoopTri_Store.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'looptris'</li>
-	 * <li>Signature: 'MLoopTri_Store'</li>
-	 * <li>Actual Size (32bit/64bit): 16/24</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__looptris = new long[]{64, 88};
-
-	/**
-	 * Field descriptor (offset) for struct member 'bvh_cache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p><code></code>  defined in 'BKE_bvhutil.c' </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__bvh_cache);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_bvh_cache = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'bvh_cache'</li>
-	 * <li>Signature: 'BVHCache*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__bvh_cache = new long[]{80, 112};
-
-	/**
-	 * Field descriptor (offset) for struct member 'shrinkwrap_data'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Non-manifold boundary data for Shrinkwrap Target Project. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__shrinkwrap_data);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_shrinkwrap_data = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'shrinkwrap_data'</li>
-	 * <li>Signature: 'ShrinkwrapBoundaryData*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__shrinkwrap_data = new long[]{84, 120};
-
-	/**
-	 * Field descriptor (offset) for struct member 'deformed_only'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Set by modifier stack if only deformed from original. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__deformed_only);
-	 * CPointer&lt;Byte&gt; p_deformed_only = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'deformed_only'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__deformed_only = new long[]{88, 128};
-
-	/**
-	 * Field descriptor (offset) for struct member 'is_original'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Copied from edit-mesh (hint, draw with edit-mesh data when true).</p><p> Modifiers that edit the mesh data in-place must set this to false (most #eModifierTypeType_NonGeometrical modifiers). Otherwise the edit-mesh data will be used for drawing, missing changes from modifiers. See T79517. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__is_original);
-	 * CPointer&lt;Byte&gt; p_is_original = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'is_original'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__is_original = new long[]{89, 129};
-
-	/**
-	 * Field descriptor (offset) for struct member 'wrapper_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eMeshWrapperType}  and others. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__wrapper_type);
-	 * CPointer&lt;Byte&gt; p_wrapper_type = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'wrapper_type'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__wrapper_type = new long[]{90, 130};
-
-	/**
-	 * Field descriptor (offset) for struct member 'wrapper_type_finalize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> A type mask from wrapper_type, in case there are differences in finalizing logic between types. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__wrapper_type_finalize);
-	 * CPointer&lt;Byte&gt; p_wrapper_type_finalize = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'wrapper_type_finalize'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__wrapper_type_finalize = new long[]{91, 131};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{92, 132};
-
-	/**
-	 * Field descriptor (offset) for struct member 'cd_mask_extra'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Needed in case we need to lazily initialize the mesh. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__cd_mask_extra);
-	 * CPointer&lt;CustomData_MeshMasks&gt; p_cd_mask_extra = p.cast(new Class[]{CustomData_MeshMasks.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'cd_mask_extra'</li>
-	 * <li>Signature: 'CustomData_MeshMasks'</li>
-	 * <li>Actual Size (32bit/64bit): 40/40</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__cd_mask_extra = new long[]{96, 136};
+	public static final long[] __DNA__FIELD__normals_mutex = new long[]{8, 16};
 
 	/**
 	 * Field descriptor (offset) for struct member 'render_mutex'.
@@ -495,27 +113,468 @@ public class Mesh_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__render_mutex = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__render_mutex = new long[]{12, 24};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad3'.
+	 * Field descriptor (offset) for struct member 'edit_data'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD___pad3);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad3 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__edit_data);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_edit_data = p.cast(new Class[]{CPointer.class, Object.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad3'</li>
+	 * <li>Field: 'edit_data'</li>
+	 * <li>Signature: 'EditMeshData*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__edit_data = new long[]{16, 32};
+
+	/**
+	 * Field descriptor (offset) for struct member 'batch_cache'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__batch_cache);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_batch_cache = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'batch_cache'</li>
 	 * <li>Signature: 'void*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{140, 184};
+	public static final long[] __DNA__FIELD__batch_cache = new long[]{20, 40};
+
+	/**
+	 * Field descriptor (offset) for struct member 'looptris'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__looptris);
+	 * CPointer&lt;MLoopTri_Store&gt; p_looptris = p.cast(new Class[]{MLoopTri_Store.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'looptris'</li>
+	 * <li>Signature: 'MLoopTri_Store'</li>
+	 * <li>Actual Size (32bit/64bit): 16/24</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__looptris = new long[]{24, 48};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bvh_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  defined in 'BKE_bvhutil.c' </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__bvh_cache);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_bvh_cache = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bvh_cache'</li>
+	 * <li>Signature: 'BVHCache*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bvh_cache = new long[]{40, 72};
+
+	/**
+	 * Field descriptor (offset) for struct member 'shrinkwrap_data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Non-manifold boundary data for Shrinkwrap Target Project. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__shrinkwrap_data);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_shrinkwrap_data = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'shrinkwrap_data'</li>
+	 * <li>Signature: 'ShrinkwrapBoundaryData*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__shrinkwrap_data = new long[]{44, 80};
+
+	/**
+	 * Field descriptor (offset) for struct member 'cd_mask_extra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Needed in case we need to lazily initialize the mesh. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__cd_mask_extra);
+	 * CPointer&lt;CustomData_MeshMasks&gt; p_cd_mask_extra = p.cast(new Class[]{CustomData_MeshMasks.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cd_mask_extra'</li>
+	 * <li>Signature: 'CustomData_MeshMasks'</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cd_mask_extra = new long[]{48, 88};
+
+	/**
+	 * Field descriptor (offset) for struct member 'subdiv_ccg'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__subdiv_ccg);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_subdiv_ccg = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'subdiv_ccg'</li>
+	 * <li>Signature: 'SubdivCCG*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__subdiv_ccg = new long[]{88, 128};
+
+	/**
+	 * Field descriptor (offset) for struct member 'subdiv_ccg_tot_level'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__subdiv_ccg_tot_level);
+	 * CPointer&lt;Integer&gt; p_subdiv_ccg_tot_level = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'subdiv_ccg_tot_level'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__subdiv_ccg_tot_level = new long[]{92, 136};
+
+	/**
+	 * Field descriptor (offset) for struct member 'deformed_only'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Set by modifier stack if only deformed from original. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__deformed_only);
+	 * CPointer&lt;Byte&gt; p_deformed_only = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'deformed_only'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__deformed_only = new long[]{96, 140};
+
+	/**
+	 * Field descriptor (offset) for struct member 'is_original'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Copied from edit-mesh (hint, draw with edit-mesh data when true).</p><p> Modifiers that edit the mesh data in-place must set this to false (most #eModifierTypeType_NonGeometrical modifiers). Otherwise the edit-mesh data will be used for drawing, missing changes from modifiers. See T79517. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__is_original);
+	 * CPointer&lt;Byte&gt; p_is_original = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'is_original'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__is_original = new long[]{97, 141};
+
+	/**
+	 * Field descriptor (offset) for struct member 'wrapper_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link eMeshWrapperType}  and others. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__wrapper_type);
+	 * CPointer&lt;Byte&gt; p_wrapper_type = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'wrapper_type'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__wrapper_type = new long[]{98, 142};
+
+	/**
+	 * Field descriptor (offset) for struct member 'wrapper_type_finalize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A type mask from wrapper_type, in case there are differences in finalizing logic between types. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__wrapper_type_finalize);
+	 * CPointer&lt;Byte&gt; p_wrapper_type_finalize = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'wrapper_type_finalize'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__wrapper_type_finalize = new long[]{99, 143};
+
+	/**
+	 * Field descriptor (offset) for struct member 'subsurf_resolution'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__subsurf_resolution);
+	 * CPointer&lt;Integer&gt; p_subsurf_resolution = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'subsurf_resolution'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__subsurf_resolution = new long[]{100, 144};
+
+	/**
+	 * Field descriptor (offset) for struct member 'subsurf_apply_render'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__subsurf_apply_render);
+	 * CPointer&lt;Byte&gt; p_subsurf_apply_render = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'subsurf_apply_render'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__subsurf_apply_render = new long[]{104, 148};
+
+	/**
+	 * Field descriptor (offset) for struct member 'subsurf_use_optimal_display'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__subsurf_use_optimal_display);
+	 * CPointer&lt;Byte&gt; p_subsurf_use_optimal_display = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'subsurf_use_optimal_display'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__subsurf_use_optimal_display = new long[]{105, 149};
+
+	/**
+	 * Field descriptor (offset) for struct member 'vert_normals_dirty'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__vert_normals_dirty);
+	 * CPointer&lt;Byte&gt; p_vert_normals_dirty = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'vert_normals_dirty'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__vert_normals_dirty = new long[]{106, 150};
+
+	/**
+	 * Field descriptor (offset) for struct member 'poly_normals_dirty'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__poly_normals_dirty);
+	 * CPointer&lt;Byte&gt; p_poly_normals_dirty = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'poly_normals_dirty'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__poly_normals_dirty = new long[]{107, 151};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD___pad2);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad2 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad2 = new long[]{116, 168};
+
+	/**
+	 * Field descriptor (offset) for struct member 'cd_dirty_vert'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__cd_dirty_vert);
+	 * CPointer&lt;int64&gt; p_cd_dirty_vert = p.cast(new Class[]{int64.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cd_dirty_vert'</li>
+	 * <li>Signature: 'int64_t'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cd_dirty_vert = new long[]{120, 176};
+
+	/**
+	 * Field descriptor (offset) for struct member 'cd_dirty_edge'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__cd_dirty_edge);
+	 * CPointer&lt;int64&gt; p_cd_dirty_edge = p.cast(new Class[]{int64.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cd_dirty_edge'</li>
+	 * <li>Signature: 'int64_t'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cd_dirty_edge = new long[]{128, 184};
+
+	/**
+	 * Field descriptor (offset) for struct member 'cd_dirty_loop'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__cd_dirty_loop);
+	 * CPointer&lt;int64&gt; p_cd_dirty_loop = p.cast(new Class[]{int64.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cd_dirty_loop'</li>
+	 * <li>Signature: 'int64_t'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cd_dirty_loop = new long[]{136, 192};
+
+	/**
+	 * Field descriptor (offset) for struct member 'cd_dirty_poly'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__cd_dirty_poly);
+	 * CPointer&lt;int64&gt; p_cd_dirty_poly = p.cast(new Class[]{int64.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cd_dirty_poly'</li>
+	 * <li>Signature: 'int64_t'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cd_dirty_poly = new long[]{144, 200};
 
 	public Mesh_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -596,6 +655,76 @@ public class Mesh_Runtime extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'normals_mutex'.
+	 * @see #__DNA__FIELD__normals_mutex
+	 */
+	
+	public CPointer<Object> getNormals_mutex() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 16);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 8);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'normals_mutex'.
+	 * @see #__DNA__FIELD__normals_mutex
+	 */
+	
+	public void setNormals_mutex(CPointer<Object> normals_mutex) throws IOException
+	{
+		long __address = ((normals_mutex == null) ? 0 : normals_mutex.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 16, __address);
+		} else {
+			__io__block.writeLong(__io__address + 8, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'render_mutex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Needed to ensure some thread-safety during render data pre-processing. </p>
+	 * @see #__DNA__FIELD__render_mutex
+	 */
+	
+	public CPointer<Object> getRender_mutex() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 24);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 12);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'render_mutex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Needed to ensure some thread-safety during render data pre-processing. </p>
+	 * @see #__DNA__FIELD__render_mutex
+	 */
+	
+	public void setRender_mutex(CPointer<Object> render_mutex) throws IOException
+	{
+		long __address = ((render_mutex == null) ? 0 : render_mutex.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 24, __address);
+		} else {
+			__io__block.writeLong(__io__address + 12, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'edit_data'.
 	 * @see #__DNA__FIELD__edit_data
 	 */
@@ -604,9 +733,9 @@ public class Mesh_Runtime extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 16);
+			__dna__targetAddress = __io__block.readLong(__io__address + 32);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 8);
+			__dna__targetAddress = __io__block.readLong(__io__address + 16);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -621,9 +750,9 @@ public class Mesh_Runtime extends CFacade {
 	{
 		long __address = ((edit_data == null) ? 0 : edit_data.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 16, __address);
+			__io__block.writeLong(__io__address + 32, __address);
 		} else {
-			__io__block.writeLong(__io__address + 8, __address);
+			__io__block.writeLong(__io__address + 16, __address);
 		}
 	}
 
@@ -636,9 +765,9 @@ public class Mesh_Runtime extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 24);
+			__dna__targetAddress = __io__block.readLong(__io__address + 40);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 12);
+			__dna__targetAddress = __io__block.readLong(__io__address + 20);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -653,253 +782,9 @@ public class Mesh_Runtime extends CFacade {
 	{
 		long __address = ((batch_cache == null) ? 0 : batch_cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 24, __address);
-		} else {
-			__io__block.writeLong(__io__address + 12, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'subdiv_ccg'.
-	 * @see #__DNA__FIELD__subdiv_ccg
-	 */
-	
-	public CPointer<Object> getSubdiv_ccg() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 32);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 16);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'subdiv_ccg'.
-	 * @see #__DNA__FIELD__subdiv_ccg
-	 */
-	
-	public void setSubdiv_ccg(CPointer<Object> subdiv_ccg) throws IOException
-	{
-		long __address = ((subdiv_ccg == null) ? 0 : subdiv_ccg.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 32, __address);
-		} else {
-			__io__block.writeLong(__io__address + 16, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
-	 */
-	
-	public CPointer<Object> get_pad1() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 40);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 20);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
-	 */
-	
-	public void set_pad1(CPointer<Object> _pad1) throws IOException
-	{
-		long __address = ((_pad1 == null) ? 0 : _pad1.getAddress());
-		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 40, __address);
 		} else {
 			__io__block.writeLong(__io__address + 20, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'subdiv_ccg_tot_level'.
-	 * @see #__DNA__FIELD__subdiv_ccg_tot_level
-	 */
-	
-	public int getSubdiv_ccg_tot_level() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 48);
-		} else {
-			return __io__block.readInt(__io__address + 24);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'subdiv_ccg_tot_level'.
-	 * @see #__DNA__FIELD__subdiv_ccg_tot_level
-	 */
-	
-	public void setSubdiv_ccg_tot_level(int subdiv_ccg_tot_level) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 48, subdiv_ccg_tot_level);
-		} else {
-			__io__block.writeInt(__io__address + 24, subdiv_ccg_tot_level);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad2'.
-	 * @see #__DNA__FIELD___pad2
-	 */
-	
-	public CArrayFacade<Byte> get_pad2() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad2'.
-	 * @see #__DNA__FIELD___pad2
-	 */
-	
-	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 52;
-		} else {
-			__dna__offset = 28;
-		}
-		if (__io__equals(_pad2, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad2)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
-		} else {
-			__io__generic__copy( get_pad2(), _pad2);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'cd_dirty_vert'.
-	 * @see #__DNA__FIELD__cd_dirty_vert
-	 */
-	
-	public long getCd_dirty_vert() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt64(__io__address + 56);
-		} else {
-			return __io__block.readInt64(__io__address + 32);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'cd_dirty_vert'.
-	 * @see #__DNA__FIELD__cd_dirty_vert
-	 */
-	
-	public void setCd_dirty_vert(long cd_dirty_vert) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt64(__io__address + 56, cd_dirty_vert);
-		} else {
-			__io__block.writeInt64(__io__address + 32, cd_dirty_vert);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'cd_dirty_edge'.
-	 * @see #__DNA__FIELD__cd_dirty_edge
-	 */
-	
-	public long getCd_dirty_edge() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt64(__io__address + 64);
-		} else {
-			return __io__block.readInt64(__io__address + 40);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'cd_dirty_edge'.
-	 * @see #__DNA__FIELD__cd_dirty_edge
-	 */
-	
-	public void setCd_dirty_edge(long cd_dirty_edge) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt64(__io__address + 64, cd_dirty_edge);
-		} else {
-			__io__block.writeInt64(__io__address + 40, cd_dirty_edge);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'cd_dirty_loop'.
-	 * @see #__DNA__FIELD__cd_dirty_loop
-	 */
-	
-	public long getCd_dirty_loop() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt64(__io__address + 72);
-		} else {
-			return __io__block.readInt64(__io__address + 48);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'cd_dirty_loop'.
-	 * @see #__DNA__FIELD__cd_dirty_loop
-	 */
-	
-	public void setCd_dirty_loop(long cd_dirty_loop) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt64(__io__address + 72, cd_dirty_loop);
-		} else {
-			__io__block.writeInt64(__io__address + 48, cd_dirty_loop);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'cd_dirty_poly'.
-	 * @see #__DNA__FIELD__cd_dirty_poly
-	 */
-	
-	public long getCd_dirty_poly() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt64(__io__address + 80);
-		} else {
-			return __io__block.readInt64(__io__address + 56);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'cd_dirty_poly'.
-	 * @see #__DNA__FIELD__cd_dirty_poly
-	 */
-	
-	public void setCd_dirty_poly(long cd_dirty_poly) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt64(__io__address + 80, cd_dirty_poly);
-		} else {
-			__io__block.writeInt64(__io__address + 56, cd_dirty_poly);
 		}
 	}
 
@@ -911,9 +796,9 @@ public class Mesh_Runtime extends CFacade {
 	public MLoopTri_Store getLooptris() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new MLoopTri_Store(__io__address + 88, __io__block, __io__blockTable);
+			return new MLoopTri_Store(__io__address + 48, __io__block, __io__blockTable);
 		} else {
-			return new MLoopTri_Store(__io__address + 64, __io__block, __io__blockTable);
+			return new MLoopTri_Store(__io__address + 24, __io__block, __io__blockTable);
 		}
 	}
 
@@ -926,9 +811,9 @@ public class Mesh_Runtime extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 88;
+			__dna__offset = 48;
 		} else {
-			__dna__offset = 64;
+			__dna__offset = 24;
 		}
 		if (__io__equals(looptris, __io__address + __dna__offset)) {
 			return;
@@ -951,9 +836,9 @@ public class Mesh_Runtime extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 72);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 80);
+			__dna__targetAddress = __io__block.readLong(__io__address + 40);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -971,9 +856,9 @@ public class Mesh_Runtime extends CFacade {
 	{
 		long __address = ((bvh_cache == null) ? 0 : bvh_cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 72, __address);
 		} else {
-			__io__block.writeLong(__io__address + 80, __address);
+			__io__block.writeLong(__io__address + 40, __address);
 		}
 	}
 
@@ -989,9 +874,9 @@ public class Mesh_Runtime extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 80);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 84);
+			__dna__targetAddress = __io__block.readLong(__io__address + 44);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1009,185 +894,9 @@ public class Mesh_Runtime extends CFacade {
 	{
 		long __address = ((shrinkwrap_data == null) ? 0 : shrinkwrap_data.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 80, __address);
 		} else {
-			__io__block.writeLong(__io__address + 84, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'deformed_only'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Set by modifier stack if only deformed from original. </p>
-	 * @see #__DNA__FIELD__deformed_only
-	 */
-	
-	public byte getDeformed_only() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 128);
-		} else {
-			return __io__block.readByte(__io__address + 88);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'deformed_only'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Set by modifier stack if only deformed from original. </p>
-	 * @see #__DNA__FIELD__deformed_only
-	 */
-	
-	public void setDeformed_only(byte deformed_only) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 128, deformed_only);
-		} else {
-			__io__block.writeByte(__io__address + 88, deformed_only);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'is_original'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Copied from edit-mesh (hint, draw with edit-mesh data when true).</p><p> Modifiers that edit the mesh data in-place must set this to false (most #eModifierTypeType_NonGeometrical modifiers). Otherwise the edit-mesh data will be used for drawing, missing changes from modifiers. See T79517. </p>
-	 * @see #__DNA__FIELD__is_original
-	 */
-	
-	public byte getIs_original() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 129);
-		} else {
-			return __io__block.readByte(__io__address + 89);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'is_original'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Copied from edit-mesh (hint, draw with edit-mesh data when true).</p><p> Modifiers that edit the mesh data in-place must set this to false (most #eModifierTypeType_NonGeometrical modifiers). Otherwise the edit-mesh data will be used for drawing, missing changes from modifiers. See T79517. </p>
-	 * @see #__DNA__FIELD__is_original
-	 */
-	
-	public void setIs_original(byte is_original) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 129, is_original);
-		} else {
-			__io__block.writeByte(__io__address + 89, is_original);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'wrapper_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eMeshWrapperType}  and others. </p>
-	 * @see #__DNA__FIELD__wrapper_type
-	 */
-	
-	public byte getWrapper_type() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 130);
-		} else {
-			return __io__block.readByte(__io__address + 90);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'wrapper_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eMeshWrapperType}  and others. </p>
-	 * @see #__DNA__FIELD__wrapper_type
-	 */
-	
-	public void setWrapper_type(byte wrapper_type) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 130, wrapper_type);
-		} else {
-			__io__block.writeByte(__io__address + 90, wrapper_type);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'wrapper_type_finalize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> A type mask from wrapper_type, in case there are differences in finalizing logic between types. </p>
-	 * @see #__DNA__FIELD__wrapper_type_finalize
-	 */
-	
-	public byte getWrapper_type_finalize() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 131);
-		} else {
-			return __io__block.readByte(__io__address + 91);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'wrapper_type_finalize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> A type mask from wrapper_type, in case there are differences in finalizing logic between types. </p>
-	 * @see #__DNA__FIELD__wrapper_type_finalize
-	 */
-	
-	public void setWrapper_type_finalize(byte wrapper_type_finalize) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 131, wrapper_type_finalize);
-		} else {
-			__io__block.writeByte(__io__address + 91, wrapper_type_finalize);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public CArrayFacade<Byte> get_pad() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 132;
-		} else {
-			__dna__offset = 92;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeLong(__io__address + 44, __address);
 		}
 	}
 
@@ -1202,9 +911,9 @@ public class Mesh_Runtime extends CFacade {
 	public CustomData_MeshMasks getCd_mask_extra() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CustomData_MeshMasks(__io__address + 136, __io__block, __io__blockTable);
+			return new CustomData_MeshMasks(__io__address + 88, __io__block, __io__blockTable);
 		} else {
-			return new CustomData_MeshMasks(__io__address + 96, __io__block, __io__blockTable);
+			return new CustomData_MeshMasks(__io__address + 48, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1220,9 +929,9 @@ public class Mesh_Runtime extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 136;
+			__dna__offset = 88;
 		} else {
-			__dna__offset = 96;
+			__dna__offset = 48;
 		}
 		if (__io__equals(cd_mask_extra, __io__address + __dna__offset)) {
 			return;
@@ -1234,72 +943,482 @@ public class Mesh_Runtime extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'render_mutex'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Needed to ensure some thread-safety during render data pre-processing. </p>
-	 * @see #__DNA__FIELD__render_mutex
+	 * Get method for struct member 'subdiv_ccg'.
+	 * @see #__DNA__FIELD__subdiv_ccg
 	 */
 	
-	public CPointer<Object> getRender_mutex() throws IOException
+	public CPointer<Object> getSubdiv_ccg() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 88);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member 'render_mutex'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Needed to ensure some thread-safety during render data pre-processing. </p>
-	 * @see #__DNA__FIELD__render_mutex
+	 * Set method for struct member 'subdiv_ccg'.
+	 * @see #__DNA__FIELD__subdiv_ccg
 	 */
 	
-	public void setRender_mutex(CPointer<Object> render_mutex) throws IOException
+	public void setSubdiv_ccg(CPointer<Object> subdiv_ccg) throws IOException
 	{
-		long __address = ((render_mutex == null) ? 0 : render_mutex.getAddress());
+		long __address = ((subdiv_ccg == null) ? 0 : subdiv_ccg.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 88, __address);
 		}
 	}
 
 	/**
-	 * Get method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
+	 * Get method for struct member 'subdiv_ccg_tot_level'.
+	 * @see #__DNA__FIELD__subdiv_ccg_tot_level
 	 */
 	
-	public CPointer<Object> get_pad3() throws IOException
+	public int getSubdiv_ccg_tot_level() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 136);
+		} else {
+			return __io__block.readInt(__io__address + 92);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'subdiv_ccg_tot_level'.
+	 * @see #__DNA__FIELD__subdiv_ccg_tot_level
+	 */
+	
+	public void setSubdiv_ccg_tot_level(int subdiv_ccg_tot_level) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 136, subdiv_ccg_tot_level);
+		} else {
+			__io__block.writeInt(__io__address + 92, subdiv_ccg_tot_level);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'deformed_only'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Set by modifier stack if only deformed from original. </p>
+	 * @see #__DNA__FIELD__deformed_only
+	 */
+	
+	public byte getDeformed_only() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 140);
+		} else {
+			return __io__block.readByte(__io__address + 96);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'deformed_only'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Set by modifier stack if only deformed from original. </p>
+	 * @see #__DNA__FIELD__deformed_only
+	 */
+	
+	public void setDeformed_only(byte deformed_only) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 140, deformed_only);
+		} else {
+			__io__block.writeByte(__io__address + 96, deformed_only);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'is_original'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Copied from edit-mesh (hint, draw with edit-mesh data when true).</p><p> Modifiers that edit the mesh data in-place must set this to false (most #eModifierTypeType_NonGeometrical modifiers). Otherwise the edit-mesh data will be used for drawing, missing changes from modifiers. See T79517. </p>
+	 * @see #__DNA__FIELD__is_original
+	 */
+	
+	public byte getIs_original() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 141);
+		} else {
+			return __io__block.readByte(__io__address + 97);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'is_original'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Copied from edit-mesh (hint, draw with edit-mesh data when true).</p><p> Modifiers that edit the mesh data in-place must set this to false (most #eModifierTypeType_NonGeometrical modifiers). Otherwise the edit-mesh data will be used for drawing, missing changes from modifiers. See T79517. </p>
+	 * @see #__DNA__FIELD__is_original
+	 */
+	
+	public void setIs_original(byte is_original) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 141, is_original);
+		} else {
+			__io__block.writeByte(__io__address + 97, is_original);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'wrapper_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link eMeshWrapperType}  and others. </p>
+	 * @see #__DNA__FIELD__wrapper_type
+	 */
+	
+	public byte getWrapper_type() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 142);
+		} else {
+			return __io__block.readByte(__io__address + 98);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'wrapper_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link eMeshWrapperType}  and others. </p>
+	 * @see #__DNA__FIELD__wrapper_type
+	 */
+	
+	public void setWrapper_type(byte wrapper_type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 142, wrapper_type);
+		} else {
+			__io__block.writeByte(__io__address + 98, wrapper_type);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'wrapper_type_finalize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A type mask from wrapper_type, in case there are differences in finalizing logic between types. </p>
+	 * @see #__DNA__FIELD__wrapper_type_finalize
+	 */
+	
+	public byte getWrapper_type_finalize() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 143);
+		} else {
+			return __io__block.readByte(__io__address + 99);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'wrapper_type_finalize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A type mask from wrapper_type, in case there are differences in finalizing logic between types. </p>
+	 * @see #__DNA__FIELD__wrapper_type_finalize
+	 */
+	
+	public void setWrapper_type_finalize(byte wrapper_type_finalize) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 143, wrapper_type_finalize);
+		} else {
+			__io__block.writeByte(__io__address + 99, wrapper_type_finalize);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'subsurf_resolution'.
+	 * @see #__DNA__FIELD__subsurf_resolution
+	 */
+	
+	public int getSubsurf_resolution() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 144);
+		} else {
+			return __io__block.readInt(__io__address + 100);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'subsurf_resolution'.
+	 * @see #__DNA__FIELD__subsurf_resolution
+	 */
+	
+	public void setSubsurf_resolution(int subsurf_resolution) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 144, subsurf_resolution);
+		} else {
+			__io__block.writeInt(__io__address + 100, subsurf_resolution);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'subsurf_apply_render'.
+	 * @see #__DNA__FIELD__subsurf_apply_render
+	 */
+	
+	public byte getSubsurf_apply_render() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 148);
+		} else {
+			return __io__block.readByte(__io__address + 104);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'subsurf_apply_render'.
+	 * @see #__DNA__FIELD__subsurf_apply_render
+	 */
+	
+	public void setSubsurf_apply_render(byte subsurf_apply_render) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 148, subsurf_apply_render);
+		} else {
+			__io__block.writeByte(__io__address + 104, subsurf_apply_render);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'subsurf_use_optimal_display'.
+	 * @see #__DNA__FIELD__subsurf_use_optimal_display
+	 */
+	
+	public byte getSubsurf_use_optimal_display() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 149);
+		} else {
+			return __io__block.readByte(__io__address + 105);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'subsurf_use_optimal_display'.
+	 * @see #__DNA__FIELD__subsurf_use_optimal_display
+	 */
+	
+	public void setSubsurf_use_optimal_display(byte subsurf_use_optimal_display) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 149, subsurf_use_optimal_display);
+		} else {
+			__io__block.writeByte(__io__address + 105, subsurf_use_optimal_display);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'vert_normals_dirty'.
+	 * @see #__DNA__FIELD__vert_normals_dirty
+	 */
+	
+	public byte getVert_normals_dirty() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 150);
+		} else {
+			return __io__block.readByte(__io__address + 106);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'vert_normals_dirty'.
+	 * @see #__DNA__FIELD__vert_normals_dirty
+	 */
+	
+	public void setVert_normals_dirty(byte vert_normals_dirty) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 150, vert_normals_dirty);
+		} else {
+			__io__block.writeByte(__io__address + 106, vert_normals_dirty);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'poly_normals_dirty'.
+	 * @see #__DNA__FIELD__poly_normals_dirty
+	 */
+	
+	public byte getPoly_normals_dirty() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 151);
+		} else {
+			return __io__block.readByte(__io__address + 107);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'poly_normals_dirty'.
+	 * @see #__DNA__FIELD__poly_normals_dirty
+	 */
+	
+	public void setPoly_normals_dirty(byte poly_normals_dirty) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 151, poly_normals_dirty);
+		} else {
+			__io__block.writeByte(__io__address + 107, poly_normals_dirty);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public CPointer<Object> get_pad2() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 140);
+			__dna__targetAddress = __io__block.readLong(__io__address + 116);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public void set_pad3(CPointer<Object> _pad3) throws IOException
+	public void set_pad2(CPointer<Object> _pad2) throws IOException
 	{
-		long __address = ((_pad3 == null) ? 0 : _pad3.getAddress());
+		long __address = ((_pad2 == null) ? 0 : _pad2.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 168, __address);
 		} else {
-			__io__block.writeLong(__io__address + 140, __address);
+			__io__block.writeLong(__io__address + 116, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cd_dirty_vert'.
+	 * @see #__DNA__FIELD__cd_dirty_vert
+	 */
+	
+	public long getCd_dirty_vert() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt64(__io__address + 176);
+		} else {
+			return __io__block.readInt64(__io__address + 120);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cd_dirty_vert'.
+	 * @see #__DNA__FIELD__cd_dirty_vert
+	 */
+	
+	public void setCd_dirty_vert(long cd_dirty_vert) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt64(__io__address + 176, cd_dirty_vert);
+		} else {
+			__io__block.writeInt64(__io__address + 120, cd_dirty_vert);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cd_dirty_edge'.
+	 * @see #__DNA__FIELD__cd_dirty_edge
+	 */
+	
+	public long getCd_dirty_edge() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt64(__io__address + 184);
+		} else {
+			return __io__block.readInt64(__io__address + 128);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cd_dirty_edge'.
+	 * @see #__DNA__FIELD__cd_dirty_edge
+	 */
+	
+	public void setCd_dirty_edge(long cd_dirty_edge) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt64(__io__address + 184, cd_dirty_edge);
+		} else {
+			__io__block.writeInt64(__io__address + 128, cd_dirty_edge);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cd_dirty_loop'.
+	 * @see #__DNA__FIELD__cd_dirty_loop
+	 */
+	
+	public long getCd_dirty_loop() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt64(__io__address + 192);
+		} else {
+			return __io__block.readInt64(__io__address + 136);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cd_dirty_loop'.
+	 * @see #__DNA__FIELD__cd_dirty_loop
+	 */
+	
+	public void setCd_dirty_loop(long cd_dirty_loop) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt64(__io__address + 192, cd_dirty_loop);
+		} else {
+			__io__block.writeInt64(__io__address + 136, cd_dirty_loop);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cd_dirty_poly'.
+	 * @see #__DNA__FIELD__cd_dirty_poly
+	 */
+	
+	public long getCd_dirty_poly() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt64(__io__address + 200);
+		} else {
+			return __io__block.readInt64(__io__address + 144);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cd_dirty_poly'.
+	 * @see #__DNA__FIELD__cd_dirty_poly
+	 */
+	
+	public void setCd_dirty_poly(long cd_dirty_poly) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt64(__io__address + 200, cd_dirty_poly);
+		} else {
+			__io__block.writeInt64(__io__address + 144, cd_dirty_poly);
 		}
 	}
 

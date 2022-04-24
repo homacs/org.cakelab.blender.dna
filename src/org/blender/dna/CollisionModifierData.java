@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=168, size64=224)
+@CMetaData(size32=160, size64=208)
 public class CollisionModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class CollisionModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 118;
+	public static final int __DNA__SDNA_INDEX = 120;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class CollisionModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class CollisionModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__x = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__x = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'xnew'.
@@ -93,7 +93,7 @@ public class CollisionModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__xnew = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__xnew = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'xold'.
@@ -116,7 +116,7 @@ public class CollisionModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__xold = new long[]{120, 152};
+	public static final long[] __DNA__FIELD__xold = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'current_xnew'.
@@ -139,7 +139,7 @@ public class CollisionModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__current_xnew = new long[]{124, 160};
+	public static final long[] __DNA__FIELD__current_xnew = new long[]{116, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'current_x'.
@@ -162,7 +162,7 @@ public class CollisionModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__current_x = new long[]{128, 168};
+	public static final long[] __DNA__FIELD__current_x = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'current_v'.
@@ -185,7 +185,7 @@ public class CollisionModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__current_v = new long[]{132, 176};
+	public static final long[] __DNA__FIELD__current_v = new long[]{124, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tri'.
@@ -205,7 +205,7 @@ public class CollisionModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tri = new long[]{136, 184};
+	public static final long[] __DNA__FIELD__tri = new long[]{128, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mvert_num'.
@@ -225,7 +225,7 @@ public class CollisionModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mvert_num = new long[]{140, 192};
+	public static final long[] __DNA__FIELD__mvert_num = new long[]{132, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tri_num'.
@@ -245,7 +245,7 @@ public class CollisionModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tri_num = new long[]{144, 196};
+	public static final long[] __DNA__FIELD__tri_num = new long[]{136, 180};
 
 	/**
 	 * Field descriptor (offset) for struct member 'time_x'.
@@ -268,7 +268,7 @@ public class CollisionModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__time_x = new long[]{148, 200};
+	public static final long[] __DNA__FIELD__time_x = new long[]{140, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'time_xnew'.
@@ -288,7 +288,7 @@ public class CollisionModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__time_xnew = new long[]{152, 204};
+	public static final long[] __DNA__FIELD__time_xnew = new long[]{144, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'is_static'.
@@ -311,7 +311,7 @@ public class CollisionModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__is_static = new long[]{156, 208};
+	public static final long[] __DNA__FIELD__is_static = new long[]{148, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -331,7 +331,7 @@ public class CollisionModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{157, 209};
+	public static final long[] __DNA__FIELD___pad = new long[]{149, 193};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bvhtree'.
@@ -354,7 +354,7 @@ public class CollisionModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bvhtree = new long[]{164, 216};
+	public static final long[] __DNA__FIELD__bvhtree = new long[]{156, 200};
 
 	public CollisionModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -412,9 +412,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MVert.class};
 		return new CPointer<MVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MVert.__DNA__SDNA_INDEX), __io__blockTable);
@@ -432,9 +432,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __address = ((x == null) ? 0 : x.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		}
 	}
 
@@ -450,9 +450,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MVert.class};
 		return new CPointer<MVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MVert.__DNA__SDNA_INDEX), __io__blockTable);
@@ -470,9 +470,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __address = ((xnew == null) ? 0 : xnew.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 116, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -488,9 +488,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MVert.class};
 		return new CPointer<MVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MVert.__DNA__SDNA_INDEX), __io__blockTable);
@@ -508,9 +508,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __address = ((xold == null) ? 0 : xold.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 
@@ -526,9 +526,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 124);
+			__dna__targetAddress = __io__block.readLong(__io__address + 116);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MVert.class};
 		return new CPointer<MVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MVert.__DNA__SDNA_INDEX), __io__blockTable);
@@ -546,9 +546,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __address = ((current_xnew == null) ? 0 : current_xnew.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 124, __address);
+			__io__block.writeLong(__io__address + 116, __address);
 		}
 	}
 
@@ -564,9 +564,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MVert.class};
 		return new CPointer<MVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MVert.__DNA__SDNA_INDEX), __io__blockTable);
@@ -584,9 +584,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __address = ((current_x == null) ? 0 : current_x.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 168, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		}
 	}
 
@@ -602,9 +602,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 132);
+			__dna__targetAddress = __io__block.readLong(__io__address + 124);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MVert.class};
 		return new CPointer<MVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MVert.__DNA__SDNA_INDEX), __io__blockTable);
@@ -622,9 +622,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __address = ((current_v == null) ? 0 : current_v.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		} else {
-			__io__block.writeLong(__io__address + 132, __address);
+			__io__block.writeLong(__io__address + 124, __address);
 		}
 	}
 
@@ -637,9 +637,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -654,9 +654,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __address = ((tri == null) ? 0 : tri.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 168, __address);
 		} else {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		}
 	}
 
@@ -668,9 +668,9 @@ public class CollisionModifierData extends CFacade {
 	public int getMvert_num() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 192);
+			return __io__block.readInt(__io__address + 176);
 		} else {
-			return __io__block.readInt(__io__address + 140);
+			return __io__block.readInt(__io__address + 132);
 		}
 	}
 
@@ -682,9 +682,9 @@ public class CollisionModifierData extends CFacade {
 	public void setMvert_num(int mvert_num) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 192, mvert_num);
+			__io__block.writeInt(__io__address + 176, mvert_num);
 		} else {
-			__io__block.writeInt(__io__address + 140, mvert_num);
+			__io__block.writeInt(__io__address + 132, mvert_num);
 		}
 	}
 
@@ -696,9 +696,9 @@ public class CollisionModifierData extends CFacade {
 	public int getTri_num() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 196);
+			return __io__block.readInt(__io__address + 180);
 		} else {
-			return __io__block.readInt(__io__address + 144);
+			return __io__block.readInt(__io__address + 136);
 		}
 	}
 
@@ -710,9 +710,9 @@ public class CollisionModifierData extends CFacade {
 	public void setTri_num(int tri_num) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 196, tri_num);
+			__io__block.writeInt(__io__address + 180, tri_num);
 		} else {
-			__io__block.writeInt(__io__address + 144, tri_num);
+			__io__block.writeInt(__io__address + 136, tri_num);
 		}
 	}
 
@@ -727,9 +727,9 @@ public class CollisionModifierData extends CFacade {
 	public float getTime_x() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 184);
 		} else {
-			return __io__block.readFloat(__io__address + 148);
+			return __io__block.readFloat(__io__address + 140);
 		}
 	}
 
@@ -744,9 +744,9 @@ public class CollisionModifierData extends CFacade {
 	public void setTime_x(float time_x) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 200, time_x);
+			__io__block.writeFloat(__io__address + 184, time_x);
 		} else {
-			__io__block.writeFloat(__io__address + 148, time_x);
+			__io__block.writeFloat(__io__address + 140, time_x);
 		}
 	}
 
@@ -758,9 +758,9 @@ public class CollisionModifierData extends CFacade {
 	public float getTime_xnew() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 204);
+			return __io__block.readFloat(__io__address + 188);
 		} else {
-			return __io__block.readFloat(__io__address + 152);
+			return __io__block.readFloat(__io__address + 144);
 		}
 	}
 
@@ -772,9 +772,9 @@ public class CollisionModifierData extends CFacade {
 	public void setTime_xnew(float time_xnew) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 204, time_xnew);
+			__io__block.writeFloat(__io__address + 188, time_xnew);
 		} else {
-			__io__block.writeFloat(__io__address + 152, time_xnew);
+			__io__block.writeFloat(__io__address + 144, time_xnew);
 		}
 	}
 
@@ -789,9 +789,9 @@ public class CollisionModifierData extends CFacade {
 	public byte getIs_static() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 208);
+			return __io__block.readByte(__io__address + 192);
 		} else {
-			return __io__block.readByte(__io__address + 156);
+			return __io__block.readByte(__io__address + 148);
 		}
 	}
 
@@ -806,9 +806,9 @@ public class CollisionModifierData extends CFacade {
 	public void setIs_static(byte is_static) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 208, is_static);
+			__io__block.writeByte(__io__address + 192, is_static);
 		} else {
-			__io__block.writeByte(__io__address + 156, is_static);
+			__io__block.writeByte(__io__address + 148, is_static);
 		}
 	}
 
@@ -824,9 +824,9 @@ public class CollisionModifierData extends CFacade {
 			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 209, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 193, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 157, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 149, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -839,9 +839,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 209;
+			__dna__offset = 193;
 		} else {
-			__dna__offset = 157;
+			__dna__offset = 149;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -864,9 +864,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 164);
+			__dna__targetAddress = __io__block.readLong(__io__address + 156);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -884,9 +884,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __address = ((bvhtree == null) ? 0 : bvhtree.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 216, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 164, __address);
+			__io__block.writeLong(__io__address + 156, __address);
 		}
 	}
 

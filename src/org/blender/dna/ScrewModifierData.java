@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=152, size64=184)
+@CMetaData(size32=144, size64=168)
 public class ScrewModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ScrewModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 134;
+	public static final int __DNA__SDNA_INDEX = 136;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class ScrewModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class ScrewModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ob_axis = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__ob_axis = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'steps'.
@@ -87,7 +87,7 @@ public class ScrewModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__steps = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__steps = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'render_steps'.
@@ -107,7 +107,7 @@ public class ScrewModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__render_steps = new long[]{120, 148};
+	public static final long[] __DNA__FIELD__render_steps = new long[]{112, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'iter'.
@@ -127,7 +127,7 @@ public class ScrewModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__iter = new long[]{124, 152};
+	public static final long[] __DNA__FIELD__iter = new long[]{116, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'screw_ofs'.
@@ -147,7 +147,7 @@ public class ScrewModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__screw_ofs = new long[]{128, 156};
+	public static final long[] __DNA__FIELD__screw_ofs = new long[]{120, 140};
 
 	/**
 	 * Field descriptor (offset) for struct member 'angle'.
@@ -167,7 +167,7 @@ public class ScrewModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__angle = new long[]{132, 160};
+	public static final long[] __DNA__FIELD__angle = new long[]{124, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'merge_dist'.
@@ -187,7 +187,7 @@ public class ScrewModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__merge_dist = new long[]{136, 164};
+	public static final long[] __DNA__FIELD__merge_dist = new long[]{128, 148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -207,7 +207,7 @@ public class ScrewModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{140, 168};
+	public static final long[] __DNA__FIELD__flag = new long[]{132, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'axis'.
@@ -227,7 +227,7 @@ public class ScrewModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__axis = new long[]{142, 170};
+	public static final long[] __DNA__FIELD__axis = new long[]{134, 154};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -247,7 +247,7 @@ public class ScrewModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 5/5</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{143, 171};
+	public static final long[] __DNA__FIELD___pad = new long[]{135, 155};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -267,7 +267,7 @@ public class ScrewModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{148, 176};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{140, 160};
 
 	public ScrewModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -322,9 +322,9 @@ public class ScrewModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -339,9 +339,9 @@ public class ScrewModifierData extends CFacade {
 	{
 		long __address = ((ob_axis == null) ? 0 : ob_axis.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		}
 	}
 
@@ -353,9 +353,9 @@ public class ScrewModifierData extends CFacade {
 	public int getSteps() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 144);
+			return __io__block.readInt(__io__address + 128);
 		} else {
-			return __io__block.readInt(__io__address + 116);
+			return __io__block.readInt(__io__address + 108);
 		}
 	}
 
@@ -367,9 +367,9 @@ public class ScrewModifierData extends CFacade {
 	public void setSteps(int steps) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 144, steps);
+			__io__block.writeInt(__io__address + 128, steps);
 		} else {
-			__io__block.writeInt(__io__address + 116, steps);
+			__io__block.writeInt(__io__address + 108, steps);
 		}
 	}
 
@@ -381,9 +381,9 @@ public class ScrewModifierData extends CFacade {
 	public int getRender_steps() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 148);
+			return __io__block.readInt(__io__address + 132);
 		} else {
-			return __io__block.readInt(__io__address + 120);
+			return __io__block.readInt(__io__address + 112);
 		}
 	}
 
@@ -395,9 +395,9 @@ public class ScrewModifierData extends CFacade {
 	public void setRender_steps(int render_steps) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 148, render_steps);
+			__io__block.writeInt(__io__address + 132, render_steps);
 		} else {
-			__io__block.writeInt(__io__address + 120, render_steps);
+			__io__block.writeInt(__io__address + 112, render_steps);
 		}
 	}
 
@@ -409,9 +409,9 @@ public class ScrewModifierData extends CFacade {
 	public int getIter() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 152);
+			return __io__block.readInt(__io__address + 136);
 		} else {
-			return __io__block.readInt(__io__address + 124);
+			return __io__block.readInt(__io__address + 116);
 		}
 	}
 
@@ -423,9 +423,9 @@ public class ScrewModifierData extends CFacade {
 	public void setIter(int iter) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 152, iter);
+			__io__block.writeInt(__io__address + 136, iter);
 		} else {
-			__io__block.writeInt(__io__address + 124, iter);
+			__io__block.writeInt(__io__address + 116, iter);
 		}
 	}
 
@@ -437,9 +437,9 @@ public class ScrewModifierData extends CFacade {
 	public float getScrew_ofs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 156);
+			return __io__block.readFloat(__io__address + 140);
 		} else {
-			return __io__block.readFloat(__io__address + 128);
+			return __io__block.readFloat(__io__address + 120);
 		}
 	}
 
@@ -451,9 +451,9 @@ public class ScrewModifierData extends CFacade {
 	public void setScrew_ofs(float screw_ofs) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 156, screw_ofs);
+			__io__block.writeFloat(__io__address + 140, screw_ofs);
 		} else {
-			__io__block.writeFloat(__io__address + 128, screw_ofs);
+			__io__block.writeFloat(__io__address + 120, screw_ofs);
 		}
 	}
 
@@ -465,9 +465,9 @@ public class ScrewModifierData extends CFacade {
 	public float getAngle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 160);
+			return __io__block.readFloat(__io__address + 144);
 		} else {
-			return __io__block.readFloat(__io__address + 132);
+			return __io__block.readFloat(__io__address + 124);
 		}
 	}
 
@@ -479,9 +479,9 @@ public class ScrewModifierData extends CFacade {
 	public void setAngle(float angle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 160, angle);
+			__io__block.writeFloat(__io__address + 144, angle);
 		} else {
-			__io__block.writeFloat(__io__address + 132, angle);
+			__io__block.writeFloat(__io__address + 124, angle);
 		}
 	}
 
@@ -493,9 +493,9 @@ public class ScrewModifierData extends CFacade {
 	public float getMerge_dist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 164);
+			return __io__block.readFloat(__io__address + 148);
 		} else {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 128);
 		}
 	}
 
@@ -507,9 +507,9 @@ public class ScrewModifierData extends CFacade {
 	public void setMerge_dist(float merge_dist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 164, merge_dist);
+			__io__block.writeFloat(__io__address + 148, merge_dist);
 		} else {
-			__io__block.writeFloat(__io__address + 136, merge_dist);
+			__io__block.writeFloat(__io__address + 128, merge_dist);
 		}
 	}
 
@@ -521,9 +521,9 @@ public class ScrewModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 168);
+			return __io__block.readShort(__io__address + 152);
 		} else {
-			return __io__block.readShort(__io__address + 140);
+			return __io__block.readShort(__io__address + 132);
 		}
 	}
 
@@ -535,9 +535,9 @@ public class ScrewModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 168, flag);
+			__io__block.writeShort(__io__address + 152, flag);
 		} else {
-			__io__block.writeShort(__io__address + 140, flag);
+			__io__block.writeShort(__io__address + 132, flag);
 		}
 	}
 
@@ -549,9 +549,9 @@ public class ScrewModifierData extends CFacade {
 	public byte getAxis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 170);
+			return __io__block.readByte(__io__address + 154);
 		} else {
-			return __io__block.readByte(__io__address + 142);
+			return __io__block.readByte(__io__address + 134);
 		}
 	}
 
@@ -563,9 +563,9 @@ public class ScrewModifierData extends CFacade {
 	public void setAxis(byte axis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 170, axis);
+			__io__block.writeByte(__io__address + 154, axis);
 		} else {
-			__io__block.writeByte(__io__address + 142, axis);
+			__io__block.writeByte(__io__address + 134, axis);
 		}
 	}
 
@@ -581,9 +581,9 @@ public class ScrewModifierData extends CFacade {
 			5
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 171, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 155, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 143, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 135, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -596,9 +596,9 @@ public class ScrewModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 171;
+			__dna__offset = 155;
 		} else {
-			__dna__offset = 143;
+			__dna__offset = 135;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -618,9 +618,9 @@ public class ScrewModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 148);
+			__dna__targetAddress = __io__block.readLong(__io__address + 140);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -635,9 +635,9 @@ public class ScrewModifierData extends CFacade {
 	{
 		long __address = ((_pad1 == null) ? 0 : _pad1.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		} else {
-			__io__block.writeLong(__io__address + 148, __address);
+			__io__block.writeLong(__io__address + 140, __address);
 		}
 	}
 

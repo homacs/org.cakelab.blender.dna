@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -16,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Main container for all overriding data info of a data-block. </p>
  */
 
-@CMetaData(size32=20, size64=40)
+@CMetaData(size32=32, size64=56)
 public class IDOverrideLibrary extends CFacade {
 
 	/**
@@ -119,6 +120,66 @@ public class IDOverrideLibrary extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__runtime = new long[]{16, 32};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad_0'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * IDOverrideLibrary idoverridelibrary = ...;
+	 * CPointer&lt;Object&gt; p = idoverridelibrary.__dna__addressof(IDOverrideLibrary.__DNA__FIELD___pad_0);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad_0 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad_0'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad_0 = new long[]{20, 40};
+
+	/**
+	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * IDOverrideLibrary idoverridelibrary = ...;
+	 * CPointer&lt;Object&gt; p = idoverridelibrary.__dna__addressof(IDOverrideLibrary.__DNA__FIELD__flag);
+	 * CPointer&lt;Integer&gt; p_flag = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'flag'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__flag = new long[]{24, 48};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad_1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * IDOverrideLibrary idoverridelibrary = ...;
+	 * CPointer&lt;Object&gt; p = idoverridelibrary.__dna__addressof(IDOverrideLibrary.__DNA__FIELD___pad_1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad_1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad_1'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad_1 = new long[]{28, 52};
 
 	public IDOverrideLibrary(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -279,6 +340,106 @@ public class IDOverrideLibrary extends CFacade {
 			__io__block.writeLong(__io__address + 32, __address);
 		} else {
 			__io__block.writeLong(__io__address + 16, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad_0'.
+	 * @see #__DNA__FIELD___pad_0
+	 */
+	
+	public CPointer<Object> get_pad_0() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 20);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member '_pad_0'.
+	 * @see #__DNA__FIELD___pad_0
+	 */
+	
+	public void set_pad_0(CPointer<Object> _pad_0) throws IOException
+	{
+		long __address = ((_pad_0 == null) ? 0 : _pad_0.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 40, __address);
+		} else {
+			__io__block.writeLong(__io__address + 20, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public int getFlag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 48);
+		} else {
+			return __io__block.readInt(__io__address + 24);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(int flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 48, flag);
+		} else {
+			__io__block.writeInt(__io__address + 24, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad_1'.
+	 * @see #__DNA__FIELD___pad_1
+	 */
+	
+	public CArrayFacade<Byte> get_pad_1() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad_1'.
+	 * @see #__DNA__FIELD___pad_1
+	 */
+	
+	public void set_pad_1(CArrayFacade<Byte> _pad_1) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 52;
+		} else {
+			__dna__offset = 28;
+		}
+		if (__io__equals(_pad_1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad_1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad_1);
+		} else {
+			__io__generic__copy( get_pad_1(), _pad_1);
 		}
 	}
 

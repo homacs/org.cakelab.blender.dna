@@ -32,7 +32,7 @@ public class Sequence extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 317;
+	public static final int __DNA__SDNA_INDEX = 318;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -448,26 +448,6 @@ public class Sequence extends CFacade {
 	public static final long[] __DNA__FIELD__mul = new long[]{132, 148};
 
 	/**
-	 * Field descriptor (offset) for struct member 'tmp_tag'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Sequence sequence = ...;
-	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD__tmp_tag);
-	 * CPointer&lt;Byte&gt; p_tmp_tag = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'tmp_tag'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__tmp_tag = new long[]{136, 152};
-
-	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -476,16 +456,16 @@ public class Sequence extends CFacade {
 	 * <pre>
 	 * Sequence sequence = ...;
 	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Float&gt; p__pad = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{137, 153};
+	public static final long[] __DNA__FIELD___pad = new long[]{136, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'anim_preseek'.
@@ -1975,48 +1955,16 @@ public class Sequence extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'tmp_tag'.
-	 * @see #__DNA__FIELD__tmp_tag
-	 */
-	
-	public byte getTmp_tag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 152);
-		} else {
-			return __io__block.readByte(__io__address + 136);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'tmp_tag'.
-	 * @see #__DNA__FIELD__tmp_tag
-	 */
-	
-	public void setTmp_tag(byte tmp_tag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 152, tmp_tag);
-		} else {
-			__io__block.writeByte(__io__address + 136, tmp_tag);
-		}
-	}
-
-	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public float get_pad() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			3
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 153, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readFloat(__io__address + 152);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 137, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readFloat(__io__address + 136);
 		}
 	}
 
@@ -2025,20 +1973,12 @@ public class Sequence extends CFacade {
 	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void set_pad(float _pad) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 153;
+			__io__block.writeFloat(__io__address + 152, _pad);
 		} else {
-			__dna__offset = 137;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeFloat(__io__address + 136, _pad);
 		}
 	}
 

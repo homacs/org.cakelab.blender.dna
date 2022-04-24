@@ -23,7 +23,7 @@ import org.cakelab.blender.nio.CPointer;
  * 					</p>
  */
 
-@CMetaData(size32=1420, size64=1576)
+@CMetaData(size32=1424, size64=1584)
 public class Image extends CFacade {
 
 	/**
@@ -34,7 +34,7 @@ public class Image extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 46;
+	public static final int __DNA__SDNA_INDEX = 47;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -356,29 +356,6 @@ public class Image extends CFacade {
 	public static final long[] __DNA__FIELD__lastframe = new long[]{1244, 1356};
 
 	/**
-	 * Field descriptor (offset) for struct member 'gpu_refresh_areas'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p><code></code> . </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Image image = ...;
-	 * CPointer&lt;Object&gt; p = image.__dna__addressof(Image.__DNA__FIELD__gpu_refresh_areas);
-	 * CPointer&lt;ListBase&gt; p_gpu_refresh_areas = p.cast(new Class[]{ListBase.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'gpu_refresh_areas'</li>
-	 * <li>Signature: 'ListBase'</li>
-	 * <li>Actual Size (32bit/64bit): 8/16</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__gpu_refresh_areas = new long[]{1248, 1360};
-
-	/**
 	 * Field descriptor (offset) for struct member 'gpuframenr'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -396,7 +373,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpuframenr = new long[]{1256, 1376};
+	public static final long[] __DNA__FIELD__gpuframenr = new long[]{1248, 1360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpuflag'.
@@ -416,7 +393,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpuflag = new long[]{1260, 1380};
+	public static final long[] __DNA__FIELD__gpuflag = new long[]{1252, 1364};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpu_pass'.
@@ -436,7 +413,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpu_pass = new long[]{1262, 1382};
+	public static final long[] __DNA__FIELD__gpu_pass = new long[]{1254, 1366};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpu_layer'.
@@ -456,7 +433,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpu_layer = new long[]{1264, 1384};
+	public static final long[] __DNA__FIELD__gpu_layer = new long[]{1256, 1368};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpu_view'.
@@ -476,7 +453,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpu_view = new long[]{1266, 1386};
+	public static final long[] __DNA__FIELD__gpu_view = new long[]{1258, 1370};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -496,7 +473,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{1268, 1388};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{1260, 1372};
 
 	/**
 	 * Field descriptor (offset) for struct member 'packedfile'.
@@ -521,7 +498,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__packedfile = new long[]{1272, 1392};
+	public static final long[] __DNA__FIELD__packedfile = new long[]{1264, 1376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'packedfiles'.
@@ -541,7 +518,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__packedfiles = new long[]{1276, 1400};
+	public static final long[] __DNA__FIELD__packedfiles = new long[]{1268, 1384};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
@@ -564,7 +541,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview = new long[]{1284, 1416};
+	public static final long[] __DNA__FIELD__preview = new long[]{1276, 1400};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lastused'.
@@ -587,7 +564,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lastused = new long[]{1288, 1424};
+	public static final long[] __DNA__FIELD__lastused = new long[]{1280, 1408};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gen_x'.
@@ -611,7 +588,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gen_x = new long[]{1292, 1428};
+	public static final long[] __DNA__FIELD__gen_x = new long[]{1284, 1412};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gen_y'.
@@ -634,7 +611,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gen_y = new long[]{1296, 1432};
+	public static final long[] __DNA__FIELD__gen_y = new long[]{1288, 1416};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gen_type'.
@@ -662,7 +639,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gen_type = new long[]{1300, 1436};
+	public static final long[] __DNA__FIELD__gen_type = new long[]{1292, 1420};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gen_flag'.
@@ -688,7 +665,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gen_flag = new long[]{1301, 1437};
+	public static final long[] __DNA__FIELD__gen_flag = new long[]{1293, 1421};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gen_depth'.
@@ -711,7 +688,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gen_depth = new long[]{1302, 1438};
+	public static final long[] __DNA__FIELD__gen_depth = new long[]{1294, 1422};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gen_color'.
@@ -734,7 +711,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gen_color = new long[]{1304, 1440};
+	public static final long[] __DNA__FIELD__gen_color = new long[]{1296, 1424};
 
 	/**
 	 * Field descriptor (offset) for struct member 'aspx'.
@@ -757,7 +734,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__aspx = new long[]{1320, 1456};
+	public static final long[] __DNA__FIELD__aspx = new long[]{1312, 1440};
 
 	/**
 	 * Field descriptor (offset) for struct member 'aspy'.
@@ -777,7 +754,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__aspy = new long[]{1324, 1460};
+	public static final long[] __DNA__FIELD__aspy = new long[]{1316, 1444};
 
 	/**
 	 * Field descriptor (offset) for struct member 'colorspace_settings'.
@@ -801,7 +778,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__colorspace_settings = new long[]{1328, 1464};
+	public static final long[] __DNA__FIELD__colorspace_settings = new long[]{1320, 1448};
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha_mode'.
@@ -824,7 +801,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__alpha_mode = new long[]{1392, 1528};
+	public static final long[] __DNA__FIELD__alpha_mode = new long[]{1384, 1512};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -844,7 +821,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{1393, 1529};
+	public static final long[] __DNA__FIELD___pad = new long[]{1385, 1513};
 
 	/**
 	 * Field descriptor (offset) for struct member 'eye'.
@@ -867,7 +844,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__eye = new long[]{1394, 1530};
+	public static final long[] __DNA__FIELD__eye = new long[]{1386, 1514};
 
 	/**
 	 * Field descriptor (offset) for struct member 'views_format'.
@@ -890,7 +867,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__views_format = new long[]{1395, 1531};
+	public static final long[] __DNA__FIELD__views_format = new long[]{1387, 1515};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_tile_index'.
@@ -913,7 +890,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_tile_index = new long[]{1396, 1532};
+	public static final long[] __DNA__FIELD__active_tile_index = new long[]{1388, 1516};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tiles'.
@@ -936,7 +913,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tiles = new long[]{1400, 1536};
+	public static final long[] __DNA__FIELD__tiles = new long[]{1392, 1520};
 
 	/**
 	 * Field descriptor (offset) for struct member 'views'.
@@ -959,7 +936,7 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__views = new long[]{1408, 1552};
+	public static final long[] __DNA__FIELD__views = new long[]{1400, 1536};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stereo3d_format'.
@@ -979,7 +956,27 @@ public class Image extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stereo3d_format = new long[]{1416, 1568};
+	public static final long[] __DNA__FIELD__stereo3d_format = new long[]{1408, 1552};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Image image = ...;
+	 * CPointer&lt;Object&gt; p = image.__dna__addressof(Image.__DNA__FIELD__runtime);
+	 * CPointer&lt;Image_Runtime&gt; p_runtime = p.cast(new Class[]{Image_Runtime.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'Image_Runtime'</li>
+	 * <li>Actual Size (32bit/64bit): 12/24</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__runtime = new long[]{1412, 1560};
 
 	public Image(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1530,48 +1527,6 @@ public class Image extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'gpu_refresh_areas'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p><code></code> . </p>
-	 * @see #__DNA__FIELD__gpu_refresh_areas
-	 */
-	
-	public ListBase getGpu_refresh_areas() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1360, __io__block, __io__blockTable);
-		} else {
-			return new ListBase(__io__address + 1248, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'gpu_refresh_areas'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p><code></code> . </p>
-	 * @see #__DNA__FIELD__gpu_refresh_areas
-	 */
-	
-	public void setGpu_refresh_areas(ListBase gpu_refresh_areas) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 1360;
-		} else {
-			__dna__offset = 1248;
-		}
-		if (__io__equals(gpu_refresh_areas, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, gpu_refresh_areas)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, gpu_refresh_areas);
-		} else {
-			__io__generic__copy( getGpu_refresh_areas(), gpu_refresh_areas);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'gpuframenr'.
 	 * @see #__DNA__FIELD__gpuframenr
 	 */
@@ -1579,9 +1534,9 @@ public class Image extends CFacade {
 	public int getGpuframenr() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1376);
+			return __io__block.readInt(__io__address + 1360);
 		} else {
-			return __io__block.readInt(__io__address + 1256);
+			return __io__block.readInt(__io__address + 1248);
 		}
 	}
 
@@ -1593,9 +1548,9 @@ public class Image extends CFacade {
 	public void setGpuframenr(int gpuframenr) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1376, gpuframenr);
+			__io__block.writeInt(__io__address + 1360, gpuframenr);
 		} else {
-			__io__block.writeInt(__io__address + 1256, gpuframenr);
+			__io__block.writeInt(__io__address + 1248, gpuframenr);
 		}
 	}
 
@@ -1607,9 +1562,9 @@ public class Image extends CFacade {
 	public short getGpuflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1380);
+			return __io__block.readShort(__io__address + 1364);
 		} else {
-			return __io__block.readShort(__io__address + 1260);
+			return __io__block.readShort(__io__address + 1252);
 		}
 	}
 
@@ -1621,9 +1576,9 @@ public class Image extends CFacade {
 	public void setGpuflag(short gpuflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1380, gpuflag);
+			__io__block.writeShort(__io__address + 1364, gpuflag);
 		} else {
-			__io__block.writeShort(__io__address + 1260, gpuflag);
+			__io__block.writeShort(__io__address + 1252, gpuflag);
 		}
 	}
 
@@ -1635,9 +1590,9 @@ public class Image extends CFacade {
 	public short getGpu_pass() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1382);
+			return __io__block.readShort(__io__address + 1366);
 		} else {
-			return __io__block.readShort(__io__address + 1262);
+			return __io__block.readShort(__io__address + 1254);
 		}
 	}
 
@@ -1649,9 +1604,9 @@ public class Image extends CFacade {
 	public void setGpu_pass(short gpu_pass) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1382, gpu_pass);
+			__io__block.writeShort(__io__address + 1366, gpu_pass);
 		} else {
-			__io__block.writeShort(__io__address + 1262, gpu_pass);
+			__io__block.writeShort(__io__address + 1254, gpu_pass);
 		}
 	}
 
@@ -1663,9 +1618,9 @@ public class Image extends CFacade {
 	public short getGpu_layer() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1384);
+			return __io__block.readShort(__io__address + 1368);
 		} else {
-			return __io__block.readShort(__io__address + 1264);
+			return __io__block.readShort(__io__address + 1256);
 		}
 	}
 
@@ -1677,9 +1632,9 @@ public class Image extends CFacade {
 	public void setGpu_layer(short gpu_layer) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1384, gpu_layer);
+			__io__block.writeShort(__io__address + 1368, gpu_layer);
 		} else {
-			__io__block.writeShort(__io__address + 1264, gpu_layer);
+			__io__block.writeShort(__io__address + 1256, gpu_layer);
 		}
 	}
 
@@ -1691,9 +1646,9 @@ public class Image extends CFacade {
 	public short getGpu_view() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1386);
+			return __io__block.readShort(__io__address + 1370);
 		} else {
-			return __io__block.readShort(__io__address + 1266);
+			return __io__block.readShort(__io__address + 1258);
 		}
 	}
 
@@ -1705,9 +1660,9 @@ public class Image extends CFacade {
 	public void setGpu_view(short gpu_view) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1386, gpu_view);
+			__io__block.writeShort(__io__address + 1370, gpu_view);
 		} else {
-			__io__block.writeShort(__io__address + 1266, gpu_view);
+			__io__block.writeShort(__io__address + 1258, gpu_view);
 		}
 	}
 
@@ -1723,9 +1678,9 @@ public class Image extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1388, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1372, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1268, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1260, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1738,9 +1693,9 @@ public class Image extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1388;
+			__dna__offset = 1372;
 		} else {
-			__dna__offset = 1268;
+			__dna__offset = 1260;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -1765,9 +1720,9 @@ public class Image extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1392);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1376);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1264);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PackedFile.class};
 		return new CPointer<PackedFile>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PackedFile.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1787,9 +1742,9 @@ public class Image extends CFacade {
 	{
 		long __address = ((packedfile == null) ? 0 : packedfile.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1392, __address);
+			__io__block.writeLong(__io__address + 1376, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1272, __address);
+			__io__block.writeLong(__io__address + 1264, __address);
 		}
 	}
 
@@ -1801,9 +1756,9 @@ public class Image extends CFacade {
 	public ListBase getPackedfiles() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1400, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1384, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 1276, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1268, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1816,9 +1771,9 @@ public class Image extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1400;
+			__dna__offset = 1384;
 		} else {
-			__dna__offset = 1276;
+			__dna__offset = 1268;
 		}
 		if (__io__equals(packedfiles, __io__address + __dna__offset)) {
 			return;
@@ -1841,9 +1796,9 @@ public class Image extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1416);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1400);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1284);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1276);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PreviewImage.class};
 		return new CPointer<PreviewImage>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PreviewImage.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1861,9 +1816,9 @@ public class Image extends CFacade {
 	{
 		long __address = ((preview == null) ? 0 : preview.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1416, __address);
+			__io__block.writeLong(__io__address + 1400, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1284, __address);
+			__io__block.writeLong(__io__address + 1276, __address);
 		}
 	}
 
@@ -1878,9 +1833,9 @@ public class Image extends CFacade {
 	public int getLastused() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1424);
+			return __io__block.readInt(__io__address + 1408);
 		} else {
-			return __io__block.readInt(__io__address + 1288);
+			return __io__block.readInt(__io__address + 1280);
 		}
 	}
 
@@ -1895,9 +1850,9 @@ public class Image extends CFacade {
 	public void setLastused(int lastused) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1424, lastused);
+			__io__block.writeInt(__io__address + 1408, lastused);
 		} else {
-			__io__block.writeInt(__io__address + 1288, lastused);
+			__io__block.writeInt(__io__address + 1280, lastused);
 		}
 	}
 
@@ -1913,9 +1868,9 @@ public class Image extends CFacade {
 	public int getGen_x() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1428);
+			return __io__block.readInt(__io__address + 1412);
 		} else {
-			return __io__block.readInt(__io__address + 1292);
+			return __io__block.readInt(__io__address + 1284);
 		}
 	}
 
@@ -1931,9 +1886,9 @@ public class Image extends CFacade {
 	public void setGen_x(int gen_x) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1428, gen_x);
+			__io__block.writeInt(__io__address + 1412, gen_x);
 		} else {
-			__io__block.writeInt(__io__address + 1292, gen_x);
+			__io__block.writeInt(__io__address + 1284, gen_x);
 		}
 	}
 
@@ -1948,9 +1903,9 @@ public class Image extends CFacade {
 	public int getGen_y() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1432);
+			return __io__block.readInt(__io__address + 1416);
 		} else {
-			return __io__block.readInt(__io__address + 1296);
+			return __io__block.readInt(__io__address + 1288);
 		}
 	}
 
@@ -1965,9 +1920,9 @@ public class Image extends CFacade {
 	public void setGen_y(int gen_y) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1432, gen_y);
+			__io__block.writeInt(__io__address + 1416, gen_y);
 		} else {
-			__io__block.writeInt(__io__address + 1296, gen_y);
+			__io__block.writeInt(__io__address + 1288, gen_y);
 		}
 	}
 
@@ -1987,9 +1942,9 @@ public class Image extends CFacade {
 	public byte getGen_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1436);
+			return __io__block.readByte(__io__address + 1420);
 		} else {
-			return __io__block.readByte(__io__address + 1300);
+			return __io__block.readByte(__io__address + 1292);
 		}
 	}
 
@@ -2009,9 +1964,9 @@ public class Image extends CFacade {
 	public void setGen_type(byte gen_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1436, gen_type);
+			__io__block.writeByte(__io__address + 1420, gen_type);
 		} else {
-			__io__block.writeByte(__io__address + 1300, gen_type);
+			__io__block.writeByte(__io__address + 1292, gen_type);
 		}
 	}
 
@@ -2029,9 +1984,9 @@ public class Image extends CFacade {
 	public byte getGen_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1437);
+			return __io__block.readByte(__io__address + 1421);
 		} else {
-			return __io__block.readByte(__io__address + 1301);
+			return __io__block.readByte(__io__address + 1293);
 		}
 	}
 
@@ -2049,9 +2004,9 @@ public class Image extends CFacade {
 	public void setGen_flag(byte gen_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1437, gen_flag);
+			__io__block.writeByte(__io__address + 1421, gen_flag);
 		} else {
-			__io__block.writeByte(__io__address + 1301, gen_flag);
+			__io__block.writeByte(__io__address + 1293, gen_flag);
 		}
 	}
 
@@ -2066,9 +2021,9 @@ public class Image extends CFacade {
 	public short getGen_depth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1438);
+			return __io__block.readShort(__io__address + 1422);
 		} else {
-			return __io__block.readShort(__io__address + 1302);
+			return __io__block.readShort(__io__address + 1294);
 		}
 	}
 
@@ -2083,9 +2038,9 @@ public class Image extends CFacade {
 	public void setGen_depth(short gen_depth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1438, gen_depth);
+			__io__block.writeShort(__io__address + 1422, gen_depth);
 		} else {
-			__io__block.writeShort(__io__address + 1302, gen_depth);
+			__io__block.writeShort(__io__address + 1294, gen_depth);
 		}
 	}
 
@@ -2104,9 +2059,9 @@ public class Image extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1440, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1424, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 1304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1296, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2122,9 +2077,9 @@ public class Image extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1440;
+			__dna__offset = 1424;
 		} else {
-			__dna__offset = 1304;
+			__dna__offset = 1296;
 		}
 		if (__io__equals(gen_color, __io__address + __dna__offset)) {
 			return;
@@ -2146,9 +2101,9 @@ public class Image extends CFacade {
 	public float getAspx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1456);
+			return __io__block.readFloat(__io__address + 1440);
 		} else {
-			return __io__block.readFloat(__io__address + 1320);
+			return __io__block.readFloat(__io__address + 1312);
 		}
 	}
 
@@ -2163,9 +2118,9 @@ public class Image extends CFacade {
 	public void setAspx(float aspx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1456, aspx);
+			__io__block.writeFloat(__io__address + 1440, aspx);
 		} else {
-			__io__block.writeFloat(__io__address + 1320, aspx);
+			__io__block.writeFloat(__io__address + 1312, aspx);
 		}
 	}
 
@@ -2177,9 +2132,9 @@ public class Image extends CFacade {
 	public float getAspy() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1460);
+			return __io__block.readFloat(__io__address + 1444);
 		} else {
-			return __io__block.readFloat(__io__address + 1324);
+			return __io__block.readFloat(__io__address + 1316);
 		}
 	}
 
@@ -2191,9 +2146,9 @@ public class Image extends CFacade {
 	public void setAspy(float aspy) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1460, aspy);
+			__io__block.writeFloat(__io__address + 1444, aspy);
 		} else {
-			__io__block.writeFloat(__io__address + 1324, aspy);
+			__io__block.writeFloat(__io__address + 1316, aspy);
 		}
 	}
 
@@ -2209,9 +2164,9 @@ public class Image extends CFacade {
 	public ColorManagedColorspaceSettings getColorspace_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ColorManagedColorspaceSettings(__io__address + 1464, __io__block, __io__blockTable);
+			return new ColorManagedColorspaceSettings(__io__address + 1448, __io__block, __io__blockTable);
 		} else {
-			return new ColorManagedColorspaceSettings(__io__address + 1328, __io__block, __io__blockTable);
+			return new ColorManagedColorspaceSettings(__io__address + 1320, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2228,9 +2183,9 @@ public class Image extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1464;
+			__dna__offset = 1448;
 		} else {
-			__dna__offset = 1328;
+			__dna__offset = 1320;
 		}
 		if (__io__equals(colorspace_settings, __io__address + __dna__offset)) {
 			return;
@@ -2252,9 +2207,9 @@ public class Image extends CFacade {
 	public byte getAlpha_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1528);
+			return __io__block.readByte(__io__address + 1512);
 		} else {
-			return __io__block.readByte(__io__address + 1392);
+			return __io__block.readByte(__io__address + 1384);
 		}
 	}
 
@@ -2269,9 +2224,9 @@ public class Image extends CFacade {
 	public void setAlpha_mode(byte alpha_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1528, alpha_mode);
+			__io__block.writeByte(__io__address + 1512, alpha_mode);
 		} else {
-			__io__block.writeByte(__io__address + 1392, alpha_mode);
+			__io__block.writeByte(__io__address + 1384, alpha_mode);
 		}
 	}
 
@@ -2283,9 +2238,9 @@ public class Image extends CFacade {
 	public byte get_pad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1529);
+			return __io__block.readByte(__io__address + 1513);
 		} else {
-			return __io__block.readByte(__io__address + 1393);
+			return __io__block.readByte(__io__address + 1385);
 		}
 	}
 
@@ -2297,9 +2252,9 @@ public class Image extends CFacade {
 	public void set_pad(byte _pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1529, _pad);
+			__io__block.writeByte(__io__address + 1513, _pad);
 		} else {
-			__io__block.writeByte(__io__address + 1393, _pad);
+			__io__block.writeByte(__io__address + 1385, _pad);
 		}
 	}
 
@@ -2314,9 +2269,9 @@ public class Image extends CFacade {
 	public byte getEye() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1530);
+			return __io__block.readByte(__io__address + 1514);
 		} else {
-			return __io__block.readByte(__io__address + 1394);
+			return __io__block.readByte(__io__address + 1386);
 		}
 	}
 
@@ -2331,9 +2286,9 @@ public class Image extends CFacade {
 	public void setEye(byte eye) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1530, eye);
+			__io__block.writeByte(__io__address + 1514, eye);
 		} else {
-			__io__block.writeByte(__io__address + 1394, eye);
+			__io__block.writeByte(__io__address + 1386, eye);
 		}
 	}
 
@@ -2348,9 +2303,9 @@ public class Image extends CFacade {
 	public byte getViews_format() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1531);
+			return __io__block.readByte(__io__address + 1515);
 		} else {
-			return __io__block.readByte(__io__address + 1395);
+			return __io__block.readByte(__io__address + 1387);
 		}
 	}
 
@@ -2365,9 +2320,9 @@ public class Image extends CFacade {
 	public void setViews_format(byte views_format) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1531, views_format);
+			__io__block.writeByte(__io__address + 1515, views_format);
 		} else {
-			__io__block.writeByte(__io__address + 1395, views_format);
+			__io__block.writeByte(__io__address + 1387, views_format);
 		}
 	}
 
@@ -2382,9 +2337,9 @@ public class Image extends CFacade {
 	public int getActive_tile_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1532);
+			return __io__block.readInt(__io__address + 1516);
 		} else {
-			return __io__block.readInt(__io__address + 1396);
+			return __io__block.readInt(__io__address + 1388);
 		}
 	}
 
@@ -2399,9 +2354,9 @@ public class Image extends CFacade {
 	public void setActive_tile_index(int active_tile_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1532, active_tile_index);
+			__io__block.writeInt(__io__address + 1516, active_tile_index);
 		} else {
-			__io__block.writeInt(__io__address + 1396, active_tile_index);
+			__io__block.writeInt(__io__address + 1388, active_tile_index);
 		}
 	}
 
@@ -2416,9 +2371,9 @@ public class Image extends CFacade {
 	public ListBase getTiles() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1536, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1520, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 1400, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1392, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2434,9 +2389,9 @@ public class Image extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1536;
+			__dna__offset = 1520;
 		} else {
-			__dna__offset = 1400;
+			__dna__offset = 1392;
 		}
 		if (__io__equals(tiles, __io__address + __dna__offset)) {
 			return;
@@ -2458,9 +2413,9 @@ public class Image extends CFacade {
 	public ListBase getViews() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1552, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1536, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 1408, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1400, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2476,9 +2431,9 @@ public class Image extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1552;
+			__dna__offset = 1536;
 		} else {
-			__dna__offset = 1408;
+			__dna__offset = 1400;
 		}
 		if (__io__equals(views, __io__address + __dna__offset)) {
 			return;
@@ -2498,9 +2453,9 @@ public class Image extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1568);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1552);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1416);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1408);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Stereo3dFormat.class};
 		return new CPointer<Stereo3dFormat>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Stereo3dFormat.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2515,9 +2470,45 @@ public class Image extends CFacade {
 	{
 		long __address = ((stereo3d_format == null) ? 0 : stereo3d_format.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1568, __address);
+			__io__block.writeLong(__io__address + 1552, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1416, __address);
+			__io__block.writeLong(__io__address + 1408, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public Image_Runtime getRuntime() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new Image_Runtime(__io__address + 1560, __io__block, __io__blockTable);
+		} else {
+			return new Image_Runtime(__io__address + 1412, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public void setRuntime(Image_Runtime runtime) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 1560;
+		} else {
+			__dna__offset = 1412;
+		}
+		if (__io__equals(runtime, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, runtime)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, runtime);
+		} else {
+			__io__generic__copy( getRuntime(), runtime);
 		}
 	}
 

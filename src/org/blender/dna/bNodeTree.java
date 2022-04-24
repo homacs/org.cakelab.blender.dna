@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> the basis for a Node tree, all links and nodes reside internal here only re-usable node trees are in the library though, materials and textures allocate own tree struct </p>
  */
 
-@CMetaData(size32=364, size64=496)
+@CMetaData(size32=368, size64=504)
 public class bNodeTree extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bNodeTree extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 405;
+	public static final int __DNA__SDNA_INDEX = 406;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -338,27 +338,24 @@ public class bNodeTree extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{256, 332};
 
 	/**
-	 * Field descriptor (offset) for struct member 'update'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Update flags. </p>
+	 * Field descriptor (offset) for struct member 'changed_flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bNodeTree bnodetree = ...;
-	 * CPointer&lt;Object&gt; p = bnodetree.__dna__addressof(bNodeTree.__DNA__FIELD__update);
-	 * CPointer&lt;Integer&gt; p_update = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = bnodetree.__dna__addressof(bNodeTree.__DNA__FIELD__changed_flag);
+	 * CPointer&lt;Integer&gt; p_changed_flag = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'update'</li>
+	 * <li>Field: 'changed_flag'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__update = new long[]{260, 336};
+	public static final long[] __DNA__FIELD__changed_flag = new long[]{260, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member 'is_updating'.
@@ -633,24 +630,24 @@ public class bNodeTree extends CFacade {
 	public static final long[] __DNA__FIELD__active_viewer_key = new long[]{320, 416};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'output_topology_hash'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bNodeTree bnodetree = ...;
-	 * CPointer&lt;Object&gt; p = bnodetree.__dna__addressof(bNodeTree.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = bnodetree.__dna__addressof(bNodeTree.__DNA__FIELD__output_topology_hash);
+	 * CPointer&lt;Integer&gt; p_output_topology_hash = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'output_topology_hash'</li>
+	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{324, 420};
+	public static final long[] __DNA__FIELD__output_topology_hash = new long[]{324, 420};
 
 	/**
 	 * Field descriptor (offset) for struct member 'execdata'.
@@ -754,6 +751,26 @@ public class bNodeTree extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__udh = new long[]{360, 488};
+
+	/**
+	 * Field descriptor (offset) for struct member 'preview'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bNodeTree bnodetree = ...;
+	 * CPointer&lt;Object&gt; p = bnodetree.__dna__addressof(bNodeTree.__DNA__FIELD__preview);
+	 * CPointer&lt;CPointer&lt;PreviewImage&gt;&gt; p_preview = p.cast(new Class[]{CPointer.class, PreviewImage.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'preview'</li>
+	 * <li>Signature: 'PreviewImage*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__preview = new long[]{364, 496};
 
 	public bNodeTree(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1278,14 +1295,11 @@ public class bNodeTree extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'update'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Update flags. </p>
-	 * @see #__DNA__FIELD__update
+	 * Get method for struct member 'changed_flag'.
+	 * @see #__DNA__FIELD__changed_flag
 	 */
 	
-	public int getUpdate() throws IOException
+	public int getChanged_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 336);
@@ -1295,19 +1309,16 @@ public class bNodeTree extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'update'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Update flags. </p>
-	 * @see #__DNA__FIELD__update
+	 * Set method for struct member 'changed_flag'.
+	 * @see #__DNA__FIELD__changed_flag
 	 */
 	
-	public void setUpdate(int update) throws IOException
+	public void setChanged_flag(int changed_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 336, update);
+			__io__block.writeInt(__io__address + 336, changed_flag);
 		} else {
-			__io__block.writeInt(__io__address + 260, update);
+			__io__block.writeInt(__io__address + 260, changed_flag);
 		}
 	}
 
@@ -1748,42 +1759,30 @@ public class bNodeTree extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'output_topology_hash'.
+	 * @see #__DNA__FIELD__output_topology_hash
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public int getOutput_topology_hash() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 420, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 420);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 324, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 324);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'output_topology_hash'.
+	 * @see #__DNA__FIELD__output_topology_hash
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void setOutput_topology_hash(int output_topology_hash) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 420;
+			__io__block.writeInt(__io__address + 420, output_topology_hash);
 		} else {
-			__dna__offset = 324;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeInt(__io__address + 324, output_topology_hash);
 		}
 	}
 
@@ -1950,6 +1949,38 @@ public class bNodeTree extends CFacade {
 			__io__block.writeLong(__io__address + 488, __address);
 		} else {
 			__io__block.writeLong(__io__address + 360, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'preview'.
+	 * @see #__DNA__FIELD__preview
+	 */
+	
+	public CPointer<PreviewImage> getPreview() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 496);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 364);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{PreviewImage.class};
+		return new CPointer<PreviewImage>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PreviewImage.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'preview'.
+	 * @see #__DNA__FIELD__preview
+	 */
+	
+	public void setPreview(CPointer<PreviewImage> preview) throws IOException
+	{
+		long __address = ((preview == null) ? 0 : preview.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 496, __address);
+		} else {
+			__io__block.writeLong(__io__address + 364, __address);
 		}
 	}
 

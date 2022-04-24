@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=152, size64=184)
+@CMetaData(size32=144, size64=168)
 public class MeshToVolumeModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 161;
+	public static final int __DNA__SDNA_INDEX = 163;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__object = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'resolution_mode'.
@@ -93,7 +93,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__resolution_mode = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__resolution_mode = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'voxel_size'.
@@ -116,7 +116,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__voxel_size = new long[]{120, 148};
+	public static final long[] __DNA__FIELD__voxel_size = new long[]{112, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'voxel_amount'.
@@ -139,7 +139,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__voxel_amount = new long[]{124, 152};
+	public static final long[] __DNA__FIELD__voxel_amount = new long[]{116, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fill_volume'.
@@ -162,7 +162,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fill_volume = new long[]{128, 156};
+	public static final long[] __DNA__FIELD__fill_volume = new long[]{120, 140};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -182,7 +182,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{129, 157};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{121, 141};
 
 	/**
 	 * Field descriptor (offset) for struct member 'interior_band_width'.
@@ -205,7 +205,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__interior_band_width = new long[]{132, 160};
+	public static final long[] __DNA__FIELD__interior_band_width = new long[]{124, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'exterior_band_width'.
@@ -225,7 +225,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__exterior_band_width = new long[]{136, 164};
+	public static final long[] __DNA__FIELD__exterior_band_width = new long[]{128, 148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'density'.
@@ -245,7 +245,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__density = new long[]{140, 168};
+	public static final long[] __DNA__FIELD__density = new long[]{132, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -265,7 +265,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{144, 172};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{136, 156};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad3'.
@@ -285,7 +285,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{148, 176};
+	public static final long[] __DNA__FIELD___pad3 = new long[]{140, 160};
 
 	public MeshToVolumeModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -343,9 +343,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -363,9 +363,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	{
 		long __address = ((object == null) ? 0 : object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		}
 	}
 
@@ -380,9 +380,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	public int getResolution_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 144);
+			return __io__block.readInt(__io__address + 128);
 		} else {
-			return __io__block.readInt(__io__address + 116);
+			return __io__block.readInt(__io__address + 108);
 		}
 	}
 
@@ -397,9 +397,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	public void setResolution_mode(int resolution_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 144, resolution_mode);
+			__io__block.writeInt(__io__address + 128, resolution_mode);
 		} else {
-			__io__block.writeInt(__io__address + 116, resolution_mode);
+			__io__block.writeInt(__io__address + 108, resolution_mode);
 		}
 	}
 
@@ -414,9 +414,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	public float getVoxel_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 148);
+			return __io__block.readFloat(__io__address + 132);
 		} else {
-			return __io__block.readFloat(__io__address + 120);
+			return __io__block.readFloat(__io__address + 112);
 		}
 	}
 
@@ -431,9 +431,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	public void setVoxel_size(float voxel_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 148, voxel_size);
+			__io__block.writeFloat(__io__address + 132, voxel_size);
 		} else {
-			__io__block.writeFloat(__io__address + 120, voxel_size);
+			__io__block.writeFloat(__io__address + 112, voxel_size);
 		}
 	}
 
@@ -448,9 +448,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	public int getVoxel_amount() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 152);
+			return __io__block.readInt(__io__address + 136);
 		} else {
-			return __io__block.readInt(__io__address + 124);
+			return __io__block.readInt(__io__address + 116);
 		}
 	}
 
@@ -465,9 +465,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	public void setVoxel_amount(int voxel_amount) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 152, voxel_amount);
+			__io__block.writeInt(__io__address + 136, voxel_amount);
 		} else {
-			__io__block.writeInt(__io__address + 124, voxel_amount);
+			__io__block.writeInt(__io__address + 116, voxel_amount);
 		}
 	}
 
@@ -482,9 +482,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	public byte getFill_volume() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 156);
+			return __io__block.readByte(__io__address + 140);
 		} else {
-			return __io__block.readByte(__io__address + 128);
+			return __io__block.readByte(__io__address + 120);
 		}
 	}
 
@@ -499,9 +499,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	public void setFill_volume(byte fill_volume) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 156, fill_volume);
+			__io__block.writeByte(__io__address + 140, fill_volume);
 		} else {
-			__io__block.writeByte(__io__address + 128, fill_volume);
+			__io__block.writeByte(__io__address + 120, fill_volume);
 		}
 	}
 
@@ -517,9 +517,9 @@ public class MeshToVolumeModifierData extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 157, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 141, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 129, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 121, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -532,9 +532,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 157;
+			__dna__offset = 141;
 		} else {
-			__dna__offset = 129;
+			__dna__offset = 121;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -556,9 +556,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	public float getInterior_band_width() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 160);
+			return __io__block.readFloat(__io__address + 144);
 		} else {
-			return __io__block.readFloat(__io__address + 132);
+			return __io__block.readFloat(__io__address + 124);
 		}
 	}
 
@@ -573,9 +573,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	public void setInterior_band_width(float interior_band_width) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 160, interior_band_width);
+			__io__block.writeFloat(__io__address + 144, interior_band_width);
 		} else {
-			__io__block.writeFloat(__io__address + 132, interior_band_width);
+			__io__block.writeFloat(__io__address + 124, interior_band_width);
 		}
 	}
 
@@ -587,9 +587,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	public float getExterior_band_width() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 164);
+			return __io__block.readFloat(__io__address + 148);
 		} else {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 128);
 		}
 	}
 
@@ -601,9 +601,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	public void setExterior_band_width(float exterior_band_width) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 164, exterior_band_width);
+			__io__block.writeFloat(__io__address + 148, exterior_band_width);
 		} else {
-			__io__block.writeFloat(__io__address + 136, exterior_band_width);
+			__io__block.writeFloat(__io__address + 128, exterior_band_width);
 		}
 	}
 
@@ -615,9 +615,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	public float getDensity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 152);
 		} else {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 132);
 		}
 	}
 
@@ -629,9 +629,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	public void setDensity(float density) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 168, density);
+			__io__block.writeFloat(__io__address + 152, density);
 		} else {
-			__io__block.writeFloat(__io__address + 140, density);
+			__io__block.writeFloat(__io__address + 132, density);
 		}
 	}
 
@@ -647,9 +647,9 @@ public class MeshToVolumeModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -662,9 +662,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 172;
+			__dna__offset = 156;
 		} else {
-			__dna__offset = 144;
+			__dna__offset = 136;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -684,9 +684,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 148);
+			__dna__targetAddress = __io__block.readLong(__io__address + 140);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -701,9 +701,9 @@ public class MeshToVolumeModifierData extends CFacade {
 	{
 		long __address = ((_pad3 == null) ? 0 : _pad3.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		} else {
-			__io__block.writeLong(__io__address + 148, __address);
+			__io__block.writeLong(__io__address + 140, __address);
 		}
 	}
 

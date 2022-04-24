@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=136, size64=160)
+@CMetaData(size32=128, size64=144)
 public class RemeshModifierData extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class RemeshModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 141;
+	public static final int __DNA__SDNA_INDEX = 143;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -43,7 +43,7 @@ public class RemeshModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -69,7 +69,7 @@ public class RemeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__threshold = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__threshold = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale'.
@@ -92,7 +92,7 @@ public class RemeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scale = new long[]{116, 140};
+	public static final long[] __DNA__FIELD__scale = new long[]{108, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'hermite_num'.
@@ -112,7 +112,7 @@ public class RemeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__hermite_num = new long[]{120, 144};
+	public static final long[] __DNA__FIELD__hermite_num = new long[]{112, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'depth'.
@@ -135,7 +135,7 @@ public class RemeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__depth = new long[]{124, 148};
+	public static final long[] __DNA__FIELD__depth = new long[]{116, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -155,7 +155,7 @@ public class RemeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{125, 149};
+	public static final long[] __DNA__FIELD__flag = new long[]{117, 133};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
@@ -175,7 +175,7 @@ public class RemeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{126, 150};
+	public static final long[] __DNA__FIELD__mode = new long[]{118, 134};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -195,7 +195,7 @@ public class RemeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{127, 151};
+	public static final long[] __DNA__FIELD___pad = new long[]{119, 135};
 
 	/**
 	 * Field descriptor (offset) for struct member 'voxel_size'.
@@ -218,7 +218,7 @@ public class RemeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__voxel_size = new long[]{128, 152};
+	public static final long[] __DNA__FIELD__voxel_size = new long[]{120, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'adaptivity'.
@@ -238,7 +238,7 @@ public class RemeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adaptivity = new long[]{132, 156};
+	public static final long[] __DNA__FIELD__adaptivity = new long[]{124, 140};
 
 	public RemeshModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -295,9 +295,9 @@ public class RemeshModifierData extends CFacade {
 	public float getThreshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 120);
 		} else {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 104);
 		}
 	}
 
@@ -312,9 +312,9 @@ public class RemeshModifierData extends CFacade {
 	public void setThreshold(float threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 136, threshold);
+			__io__block.writeFloat(__io__address + 120, threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 112, threshold);
+			__io__block.writeFloat(__io__address + 104, threshold);
 		}
 	}
 
@@ -329,9 +329,9 @@ public class RemeshModifierData extends CFacade {
 	public float getScale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 124);
 		} else {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 108);
 		}
 	}
 
@@ -346,9 +346,9 @@ public class RemeshModifierData extends CFacade {
 	public void setScale(float scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 140, scale);
+			__io__block.writeFloat(__io__address + 124, scale);
 		} else {
-			__io__block.writeFloat(__io__address + 116, scale);
+			__io__block.writeFloat(__io__address + 108, scale);
 		}
 	}
 
@@ -360,9 +360,9 @@ public class RemeshModifierData extends CFacade {
 	public float getHermite_num() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 144);
+			return __io__block.readFloat(__io__address + 128);
 		} else {
-			return __io__block.readFloat(__io__address + 120);
+			return __io__block.readFloat(__io__address + 112);
 		}
 	}
 
@@ -374,9 +374,9 @@ public class RemeshModifierData extends CFacade {
 	public void setHermite_num(float hermite_num) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 144, hermite_num);
+			__io__block.writeFloat(__io__address + 128, hermite_num);
 		} else {
-			__io__block.writeFloat(__io__address + 120, hermite_num);
+			__io__block.writeFloat(__io__address + 112, hermite_num);
 		}
 	}
 
@@ -391,9 +391,9 @@ public class RemeshModifierData extends CFacade {
 	public byte getDepth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 148);
+			return __io__block.readByte(__io__address + 132);
 		} else {
-			return __io__block.readByte(__io__address + 124);
+			return __io__block.readByte(__io__address + 116);
 		}
 	}
 
@@ -408,9 +408,9 @@ public class RemeshModifierData extends CFacade {
 	public void setDepth(byte depth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 148, depth);
+			__io__block.writeByte(__io__address + 132, depth);
 		} else {
-			__io__block.writeByte(__io__address + 124, depth);
+			__io__block.writeByte(__io__address + 116, depth);
 		}
 	}
 
@@ -422,9 +422,9 @@ public class RemeshModifierData extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 149);
+			return __io__block.readByte(__io__address + 133);
 		} else {
-			return __io__block.readByte(__io__address + 125);
+			return __io__block.readByte(__io__address + 117);
 		}
 	}
 
@@ -436,9 +436,9 @@ public class RemeshModifierData extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 149, flag);
+			__io__block.writeByte(__io__address + 133, flag);
 		} else {
-			__io__block.writeByte(__io__address + 125, flag);
+			__io__block.writeByte(__io__address + 117, flag);
 		}
 	}
 
@@ -450,9 +450,9 @@ public class RemeshModifierData extends CFacade {
 	public byte getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 150);
+			return __io__block.readByte(__io__address + 134);
 		} else {
-			return __io__block.readByte(__io__address + 126);
+			return __io__block.readByte(__io__address + 118);
 		}
 	}
 
@@ -464,9 +464,9 @@ public class RemeshModifierData extends CFacade {
 	public void setMode(byte mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 150, mode);
+			__io__block.writeByte(__io__address + 134, mode);
 		} else {
-			__io__block.writeByte(__io__address + 126, mode);
+			__io__block.writeByte(__io__address + 118, mode);
 		}
 	}
 
@@ -478,9 +478,9 @@ public class RemeshModifierData extends CFacade {
 	public byte get_pad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 151);
+			return __io__block.readByte(__io__address + 135);
 		} else {
-			return __io__block.readByte(__io__address + 127);
+			return __io__block.readByte(__io__address + 119);
 		}
 	}
 
@@ -492,9 +492,9 @@ public class RemeshModifierData extends CFacade {
 	public void set_pad(byte _pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 151, _pad);
+			__io__block.writeByte(__io__address + 135, _pad);
 		} else {
-			__io__block.writeByte(__io__address + 127, _pad);
+			__io__block.writeByte(__io__address + 119, _pad);
 		}
 	}
 
@@ -509,9 +509,9 @@ public class RemeshModifierData extends CFacade {
 	public float getVoxel_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 152);
+			return __io__block.readFloat(__io__address + 136);
 		} else {
-			return __io__block.readFloat(__io__address + 128);
+			return __io__block.readFloat(__io__address + 120);
 		}
 	}
 
@@ -526,9 +526,9 @@ public class RemeshModifierData extends CFacade {
 	public void setVoxel_size(float voxel_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 152, voxel_size);
+			__io__block.writeFloat(__io__address + 136, voxel_size);
 		} else {
-			__io__block.writeFloat(__io__address + 128, voxel_size);
+			__io__block.writeFloat(__io__address + 120, voxel_size);
 		}
 	}
 
@@ -540,9 +540,9 @@ public class RemeshModifierData extends CFacade {
 	public float getAdaptivity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 156);
+			return __io__block.readFloat(__io__address + 140);
 		} else {
-			return __io__block.readFloat(__io__address + 132);
+			return __io__block.readFloat(__io__address + 124);
 		}
 	}
 
@@ -554,9 +554,9 @@ public class RemeshModifierData extends CFacade {
 	public void setAdaptivity(float adaptivity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 156, adaptivity);
+			__io__block.writeFloat(__io__address + 140, adaptivity);
 		} else {
-			__io__block.writeFloat(__io__address + 132, adaptivity);
+			__io__block.writeFloat(__io__address + 124, adaptivity);
 		}
 	}
 

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> 3D ViewPort Struct. </p>
  */
 
-@CMetaData(size32=1288, size64=1336)
+@CMetaData(size32=1296, size64=1344)
 public class View3D extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class View3D extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 225;
+	public static final int __DNA__SDNA_INDEX = 227;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -1235,7 +1235,7 @@ public class View3D extends CFacade {
 	 * <ul>
 	 * <li>Field: 'overlay'</li>
 	 * <li>Signature: 'View3DOverlay'</li>
-	 * <li>Actual Size (32bit/64bit): 88/88</li>
+	 * <li>Actual Size (32bit/64bit): 96/96</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__overlay = new long[]{1184, 1224};
@@ -1261,7 +1261,7 @@ public class View3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/24</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{1272, 1312};
+	public static final long[] __DNA__FIELD__runtime = new long[]{1280, 1320};
 
 	public View3D(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -3170,9 +3170,9 @@ public class View3D extends CFacade {
 	public View3D_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new View3D_Runtime(__io__address + 1312, __io__block, __io__blockTable);
+			return new View3D_Runtime(__io__address + 1320, __io__block, __io__blockTable);
 		} else {
-			return new View3D_Runtime(__io__address + 1272, __io__block, __io__blockTable);
+			return new View3D_Runtime(__io__address + 1280, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3188,9 +3188,9 @@ public class View3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1312;
+			__dna__offset = 1320;
 		} else {
-			__dna__offset = 1272;
+			__dna__offset = 1280;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

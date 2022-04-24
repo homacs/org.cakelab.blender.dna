@@ -30,7 +30,7 @@ public class UnitSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 212;
+	public static final int __DNA__SDNA_INDEX = 214;
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale_length'.

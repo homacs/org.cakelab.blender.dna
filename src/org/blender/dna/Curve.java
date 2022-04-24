@@ -27,7 +27,7 @@ public class Curve extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 67;
+	public static final int __DNA__SDNA_INDEX = 68;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -344,13 +344,13 @@ public class Curve extends CFacade {
 	 * <pre>
 	 * Curve curve = ...;
 	 * CPointer&lt;Object&gt; p = curve.__dna__addressof(Curve.__DNA__FIELD__texflag);
-	 * CPointer&lt;Short&gt; p_texflag = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_texflag = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'texflag'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__texflag = new long[]{206, 290};
@@ -369,11 +369,11 @@ public class Curve extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad0'</li>
-	 * <li>Signature: 'char[6]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{208, 292};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{207, 291};
 
 	/**
 	 * Field descriptor (offset) for struct member 'twist_mode'.
@@ -2122,12 +2122,12 @@ public class Curve extends CFacade {
 	 * @see #__DNA__FIELD__texflag
 	 */
 	
-	public short getTexflag() throws IOException
+	public byte getTexflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 290);
+			return __io__block.readByte(__io__address + 290);
 		} else {
-			return __io__block.readShort(__io__address + 206);
+			return __io__block.readByte(__io__address + 206);
 		}
 	}
 
@@ -2139,12 +2139,12 @@ public class Curve extends CFacade {
 	 * @see #__DNA__FIELD__texflag
 	 */
 	
-	public void setTexflag(short texflag) throws IOException
+	public void setTexflag(byte texflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 290, texflag);
+			__io__block.writeByte(__io__address + 290, texflag);
 		} else {
-			__io__block.writeShort(__io__address + 206, texflag);
+			__io__block.writeByte(__io__address + 206, texflag);
 		}
 	}
 
@@ -2157,12 +2157,12 @@ public class Curve extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			6
+			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 292, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 291, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 207, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2175,9 +2175,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 292;
+			__dna__offset = 291;
 		} else {
-			__dna__offset = 208;
+			__dna__offset = 207;
 		}
 		if (__io__equals(_pad0, __io__address + __dna__offset)) {
 			return;
