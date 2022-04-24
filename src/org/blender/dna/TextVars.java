@@ -27,7 +27,7 @@ public class TextVars extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 327;
+	public static final int __DNA__SDNA_INDEX = 328;
 
 	/**
 	 * Field descriptor (offset) for struct member 'text'.
@@ -98,12 +98,12 @@ public class TextVars extends CFacade {
 	 * <pre>
 	 * TextVars textvars = ...;
 	 * CPointer&lt;Object&gt; p = textvars.__dna__addressof(TextVars.__DNA__FIELD__text_size);
-	 * CPointer&lt;Integer&gt; p_text_size = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Float&gt; p_text_size = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'text_size'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
@@ -422,12 +422,12 @@ public class TextVars extends CFacade {
 	 * @see #__DNA__FIELD__text_size
 	 */
 	
-	public int getText_size() throws IOException
+	public float getText_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 524);
+			return __io__block.readFloat(__io__address + 524);
 		} else {
-			return __io__block.readInt(__io__address + 520);
+			return __io__block.readFloat(__io__address + 520);
 		}
 	}
 
@@ -436,12 +436,12 @@ public class TextVars extends CFacade {
 	 * @see #__DNA__FIELD__text_size
 	 */
 	
-	public void setText_size(int text_size) throws IOException
+	public void setText_size(float text_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 524, text_size);
+			__io__block.writeFloat(__io__address + 524, text_size);
 		} else {
-			__io__block.writeInt(__io__address + 520, text_size);
+			__io__block.writeFloat(__io__address + 520, text_size);
 		}
 	}
 

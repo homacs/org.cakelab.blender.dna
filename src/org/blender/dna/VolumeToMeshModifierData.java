@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=208, size64=240)
+@CMetaData(size32=200, size64=224)
 public class VolumeToMeshModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 163;
+	public static final int __DNA__SDNA_INDEX = 165;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__object = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'threshold'.
@@ -90,7 +90,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__threshold = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__threshold = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'adaptivity'.
@@ -110,7 +110,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adaptivity = new long[]{120, 148};
+	public static final long[] __DNA__FIELD__adaptivity = new long[]{112, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -133,7 +133,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{124, 152};
+	public static final long[] __DNA__FIELD__flag = new long[]{116, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'resolution_mode'.
@@ -156,7 +156,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__resolution_mode = new long[]{128, 156};
+	public static final long[] __DNA__FIELD__resolution_mode = new long[]{120, 140};
 
 	/**
 	 * Field descriptor (offset) for struct member 'voxel_size'.
@@ -176,7 +176,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__voxel_size = new long[]{132, 160};
+	public static final long[] __DNA__FIELD__voxel_size = new long[]{124, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'voxel_amount'.
@@ -196,7 +196,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__voxel_amount = new long[]{136, 164};
+	public static final long[] __DNA__FIELD__voxel_amount = new long[]{128, 148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'grid_name'.
@@ -219,7 +219,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__grid_name = new long[]{140, 168};
+	public static final long[] __DNA__FIELD__grid_name = new long[]{132, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -239,7 +239,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{204, 232};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{196, 216};
 
 	public VolumeToMeshModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -297,9 +297,9 @@ public class VolumeToMeshModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -317,9 +317,9 @@ public class VolumeToMeshModifierData extends CFacade {
 	{
 		long __address = ((object == null) ? 0 : object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		}
 	}
 
@@ -331,9 +331,9 @@ public class VolumeToMeshModifierData extends CFacade {
 	public float getThreshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 144);
+			return __io__block.readFloat(__io__address + 128);
 		} else {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 108);
 		}
 	}
 
@@ -345,9 +345,9 @@ public class VolumeToMeshModifierData extends CFacade {
 	public void setThreshold(float threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 144, threshold);
+			__io__block.writeFloat(__io__address + 128, threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 116, threshold);
+			__io__block.writeFloat(__io__address + 108, threshold);
 		}
 	}
 
@@ -359,9 +359,9 @@ public class VolumeToMeshModifierData extends CFacade {
 	public float getAdaptivity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 148);
+			return __io__block.readFloat(__io__address + 132);
 		} else {
-			return __io__block.readFloat(__io__address + 120);
+			return __io__block.readFloat(__io__address + 112);
 		}
 	}
 
@@ -373,9 +373,9 @@ public class VolumeToMeshModifierData extends CFacade {
 	public void setAdaptivity(float adaptivity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 148, adaptivity);
+			__io__block.writeFloat(__io__address + 132, adaptivity);
 		} else {
-			__io__block.writeFloat(__io__address + 120, adaptivity);
+			__io__block.writeFloat(__io__address + 112, adaptivity);
 		}
 	}
 
@@ -390,9 +390,9 @@ public class VolumeToMeshModifierData extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 152);
+			return __io__block.readInt(__io__address + 136);
 		} else {
-			return __io__block.readInt(__io__address + 124);
+			return __io__block.readInt(__io__address + 116);
 		}
 	}
 
@@ -407,9 +407,9 @@ public class VolumeToMeshModifierData extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 152, flag);
+			__io__block.writeInt(__io__address + 136, flag);
 		} else {
-			__io__block.writeInt(__io__address + 124, flag);
+			__io__block.writeInt(__io__address + 116, flag);
 		}
 	}
 
@@ -424,9 +424,9 @@ public class VolumeToMeshModifierData extends CFacade {
 	public int getResolution_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 140);
 		} else {
-			return __io__block.readInt(__io__address + 128);
+			return __io__block.readInt(__io__address + 120);
 		}
 	}
 
@@ -441,9 +441,9 @@ public class VolumeToMeshModifierData extends CFacade {
 	public void setResolution_mode(int resolution_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 156, resolution_mode);
+			__io__block.writeInt(__io__address + 140, resolution_mode);
 		} else {
-			__io__block.writeInt(__io__address + 128, resolution_mode);
+			__io__block.writeInt(__io__address + 120, resolution_mode);
 		}
 	}
 
@@ -455,9 +455,9 @@ public class VolumeToMeshModifierData extends CFacade {
 	public float getVoxel_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 160);
+			return __io__block.readFloat(__io__address + 144);
 		} else {
-			return __io__block.readFloat(__io__address + 132);
+			return __io__block.readFloat(__io__address + 124);
 		}
 	}
 
@@ -469,9 +469,9 @@ public class VolumeToMeshModifierData extends CFacade {
 	public void setVoxel_size(float voxel_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 160, voxel_size);
+			__io__block.writeFloat(__io__address + 144, voxel_size);
 		} else {
-			__io__block.writeFloat(__io__address + 132, voxel_size);
+			__io__block.writeFloat(__io__address + 124, voxel_size);
 		}
 	}
 
@@ -483,9 +483,9 @@ public class VolumeToMeshModifierData extends CFacade {
 	public int getVoxel_amount() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 164);
+			return __io__block.readInt(__io__address + 148);
 		} else {
-			return __io__block.readInt(__io__address + 136);
+			return __io__block.readInt(__io__address + 128);
 		}
 	}
 
@@ -497,9 +497,9 @@ public class VolumeToMeshModifierData extends CFacade {
 	public void setVoxel_amount(int voxel_amount) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 164, voxel_amount);
+			__io__block.writeInt(__io__address + 148, voxel_amount);
 		} else {
-			__io__block.writeInt(__io__address + 136, voxel_amount);
+			__io__block.writeInt(__io__address + 128, voxel_amount);
 		}
 	}
 
@@ -518,9 +518,9 @@ public class VolumeToMeshModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -536,9 +536,9 @@ public class VolumeToMeshModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 168;
+			__dna__offset = 152;
 		} else {
-			__dna__offset = 140;
+			__dna__offset = 132;
 		}
 		if (__io__equals(grid_name, __io__address + __dna__offset)) {
 			return;
@@ -558,9 +558,9 @@ public class VolumeToMeshModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 232);
+			__dna__targetAddress = __io__block.readLong(__io__address + 216);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 204);
+			__dna__targetAddress = __io__block.readLong(__io__address + 196);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -575,9 +575,9 @@ public class VolumeToMeshModifierData extends CFacade {
 	{
 		long __address = ((_pad1 == null) ? 0 : _pad1.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 232, __address);
+			__io__block.writeLong(__io__address + 216, __address);
 		} else {
-			__io__block.writeLong(__io__address + 204, __address);
+			__io__block.writeLong(__io__address + 196, __address);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=128, size64=160)
+@CMetaData(size32=120, size64=144)
 public class DynamicPaintModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class DynamicPaintModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 140;
+	public static final int __DNA__SDNA_INDEX = 142;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class DynamicPaintModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class DynamicPaintModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__canvas = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__canvas = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'brush'.
@@ -87,7 +87,7 @@ public class DynamicPaintModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__brush = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__brush = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -110,7 +110,7 @@ public class DynamicPaintModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{120, 152};
+	public static final long[] __DNA__FIELD__type = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -130,7 +130,7 @@ public class DynamicPaintModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{124, 156};
+	public static final long[] __DNA__FIELD___pad = new long[]{116, 140};
 
 	public DynamicPaintModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -185,9 +185,9 @@ public class DynamicPaintModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{DynamicPaintCanvasSettings.class};
 		return new CPointer<DynamicPaintCanvasSettings>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, DynamicPaintCanvasSettings.__DNA__SDNA_INDEX), __io__blockTable);
@@ -202,9 +202,9 @@ public class DynamicPaintModifierData extends CFacade {
 	{
 		long __address = ((canvas == null) ? 0 : canvas.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		}
 	}
 
@@ -217,9 +217,9 @@ public class DynamicPaintModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{DynamicPaintBrushSettings.class};
 		return new CPointer<DynamicPaintBrushSettings>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, DynamicPaintBrushSettings.__DNA__SDNA_INDEX), __io__blockTable);
@@ -234,9 +234,9 @@ public class DynamicPaintModifierData extends CFacade {
 	{
 		long __address = ((brush == null) ? 0 : brush.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 116, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -251,9 +251,9 @@ public class DynamicPaintModifierData extends CFacade {
 	public int getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 152);
+			return __io__block.readInt(__io__address + 136);
 		} else {
-			return __io__block.readInt(__io__address + 120);
+			return __io__block.readInt(__io__address + 112);
 		}
 	}
 
@@ -268,9 +268,9 @@ public class DynamicPaintModifierData extends CFacade {
 	public void setType(int type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 152, type);
+			__io__block.writeInt(__io__address + 136, type);
 		} else {
-			__io__block.writeInt(__io__address + 120, type);
+			__io__block.writeInt(__io__address + 112, type);
 		}
 	}
 
@@ -286,9 +286,9 @@ public class DynamicPaintModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -301,9 +301,9 @@ public class DynamicPaintModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 156;
+			__dna__offset = 140;
 		} else {
-			__dna__offset = 124;
+			__dna__offset = 116;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=128, size64=168)
+@CMetaData(size32=120, size64=152)
 public class NodesModifierData extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class NodesModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 160;
+	public static final int __DNA__SDNA_INDEX = 162;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -43,7 +43,7 @@ public class NodesModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -66,7 +66,7 @@ public class NodesModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__node_group = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__node_group = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'settings'.
@@ -86,7 +86,7 @@ public class NodesModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__settings = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__settings = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime_eval_log'.
@@ -109,7 +109,7 @@ public class NodesModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime_eval_log = new long[]{120, 152};
+	public static final long[] __DNA__FIELD__runtime_eval_log = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -129,7 +129,7 @@ public class NodesModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{124, 160};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{116, 144};
 
 	public NodesModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -184,9 +184,9 @@ public class NodesModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bNodeTree.class};
 		return new CPointer<bNodeTree>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bNodeTree.__DNA__SDNA_INDEX), __io__blockTable);
@@ -201,9 +201,9 @@ public class NodesModifierData extends CFacade {
 	{
 		long __address = ((node_group == null) ? 0 : node_group.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		}
 	}
 
@@ -215,9 +215,9 @@ public class NodesModifierData extends CFacade {
 	public NodesModifierSettings getSettings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new NodesModifierSettings(__io__address + 144, __io__block, __io__blockTable);
+			return new NodesModifierSettings(__io__address + 128, __io__block, __io__blockTable);
 		} else {
-			return new NodesModifierSettings(__io__address + 116, __io__block, __io__blockTable);
+			return new NodesModifierSettings(__io__address + 108, __io__block, __io__blockTable);
 		}
 	}
 
@@ -230,9 +230,9 @@ public class NodesModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 144;
+			__dna__offset = 128;
 		} else {
-			__dna__offset = 116;
+			__dna__offset = 108;
 		}
 		if (__io__equals(settings, __io__address + __dna__offset)) {
 			return;
@@ -255,9 +255,9 @@ public class NodesModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -275,9 +275,9 @@ public class NodesModifierData extends CFacade {
 	{
 		long __address = ((runtime_eval_log == null) ? 0 : runtime_eval_log.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 
@@ -290,9 +290,9 @@ public class NodesModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 124);
+			__dna__targetAddress = __io__block.readLong(__io__address + 116);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -307,9 +307,9 @@ public class NodesModifierData extends CFacade {
 	{
 		long __address = ((_pad1 == null) ? 0 : _pad1.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 124, __address);
+			__io__block.writeLong(__io__address + 116, __address);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=200, size64=232)
+@CMetaData(size32=192, size64=216)
 public class LaplacianDeformModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 149;
+	public static final int __DNA__SDNA_INDEX = 151;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__anchor_grp_name = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__anchor_grp_name = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'total_verts'.
@@ -90,7 +90,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__total_verts = new long[]{176, 200};
+	public static final long[] __DNA__FIELD__total_verts = new long[]{168, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'repeat'.
@@ -110,7 +110,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__repeat = new long[]{180, 204};
+	public static final long[] __DNA__FIELD__repeat = new long[]{172, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vertexco'.
@@ -130,7 +130,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vertexco = new long[]{184, 208};
+	public static final long[] __DNA__FIELD__vertexco = new long[]{176, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_system'.
@@ -153,7 +153,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_system = new long[]{188, 216};
+	public static final long[] __DNA__FIELD__cache_system = new long[]{180, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -173,7 +173,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{192, 224};
+	public static final long[] __DNA__FIELD__flag = new long[]{184, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -193,7 +193,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{194, 226};
+	public static final long[] __DNA__FIELD___pad = new long[]{186, 210};
 
 	public LaplacianDeformModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -254,9 +254,9 @@ public class LaplacianDeformModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -272,9 +272,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 136;
+			__dna__offset = 120;
 		} else {
-			__dna__offset = 112;
+			__dna__offset = 104;
 		}
 		if (__io__equals(anchor_grp_name, __io__address + __dna__offset)) {
 			return;
@@ -293,9 +293,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	public int getTotal_verts() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 200);
+			return __io__block.readInt(__io__address + 184);
 		} else {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 168);
 		}
 	}
 
@@ -307,9 +307,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	public void setTotal_verts(int total_verts) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 200, total_verts);
+			__io__block.writeInt(__io__address + 184, total_verts);
 		} else {
-			__io__block.writeInt(__io__address + 176, total_verts);
+			__io__block.writeInt(__io__address + 168, total_verts);
 		}
 	}
 
@@ -321,9 +321,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	public int getRepeat() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 204);
+			return __io__block.readInt(__io__address + 188);
 		} else {
-			return __io__block.readInt(__io__address + 180);
+			return __io__block.readInt(__io__address + 172);
 		}
 	}
 
@@ -335,9 +335,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	public void setRepeat(int repeat) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 204, repeat);
+			__io__block.writeInt(__io__address + 188, repeat);
 		} else {
-			__io__block.writeInt(__io__address + 180, repeat);
+			__io__block.writeInt(__io__address + 172, repeat);
 		}
 	}
 
@@ -350,9 +350,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
 		return new CPointer<Float>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -367,9 +367,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	{
 		long __address = ((vertexco == null) ? 0 : vertexco.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 208, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		}
 	}
 
@@ -385,9 +385,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 188);
+			__dna__targetAddress = __io__block.readLong(__io__address + 180);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -405,9 +405,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	{
 		long __address = ((cache_system == null) ? 0 : cache_system.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 216, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 188, __address);
+			__io__block.writeLong(__io__address + 180, __address);
 		}
 	}
 
@@ -419,9 +419,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 224);
+			return __io__block.readShort(__io__address + 208);
 		} else {
-			return __io__block.readShort(__io__address + 192);
+			return __io__block.readShort(__io__address + 184);
 		}
 	}
 
@@ -433,9 +433,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 224, flag);
+			__io__block.writeShort(__io__address + 208, flag);
 		} else {
-			__io__block.writeShort(__io__address + 192, flag);
+			__io__block.writeShort(__io__address + 184, flag);
 		}
 	}
 
@@ -451,9 +451,9 @@ public class LaplacianDeformModifierData extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 226, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 210, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 194, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 186, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -466,9 +466,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 226;
+			__dna__offset = 210;
 		} else {
-			__dna__offset = 194;
+			__dna__offset = 186;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

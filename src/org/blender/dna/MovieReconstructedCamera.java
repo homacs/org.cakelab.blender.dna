@@ -27,7 +27,7 @@ public class MovieReconstructedCamera extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 681;
+	public static final int __DNA__SDNA_INDEX = 689;
 
 	/**
 	 * Field descriptor (offset) for struct member 'framenr'.

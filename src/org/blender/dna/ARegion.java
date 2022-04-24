@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=316, size64=416)
+@CMetaData(size32=320, size64=424)
 public class ARegion extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class ARegion extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 307;
+	public static final int __DNA__SDNA_INDEX = 308;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -718,7 +718,7 @@ public class ARegion extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'ARegion_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 28/32</li>
+	 * <li>Actual Size (32bit/64bit): 32/40</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__runtime = new long[]{288, 384};

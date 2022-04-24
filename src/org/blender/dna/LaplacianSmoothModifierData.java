@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=192, size64=216)
+@CMetaData(size32=184, size64=200)
 public class LaplacianSmoothModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class LaplacianSmoothModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 144;
+	public static final int __DNA__SDNA_INDEX = 146;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class LaplacianSmoothModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class LaplacianSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lambda = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__lambda = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lambda_border'.
@@ -87,7 +87,7 @@ public class LaplacianSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lambda_border = new long[]{116, 140};
+	public static final long[] __DNA__FIELD__lambda_border = new long[]{108, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -107,7 +107,7 @@ public class LaplacianSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{120, 144};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{112, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
@@ -130,7 +130,7 @@ public class LaplacianSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{124, 148};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{116, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -150,7 +150,7 @@ public class LaplacianSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{188, 212};
+	public static final long[] __DNA__FIELD__flag = new long[]{180, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'repeat'.
@@ -170,7 +170,7 @@ public class LaplacianSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__repeat = new long[]{190, 214};
+	public static final long[] __DNA__FIELD__repeat = new long[]{182, 198};
 
 	public LaplacianSmoothModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -224,9 +224,9 @@ public class LaplacianSmoothModifierData extends CFacade {
 	public float getLambda() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 120);
 		} else {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 104);
 		}
 	}
 
@@ -238,9 +238,9 @@ public class LaplacianSmoothModifierData extends CFacade {
 	public void setLambda(float lambda) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 136, lambda);
+			__io__block.writeFloat(__io__address + 120, lambda);
 		} else {
-			__io__block.writeFloat(__io__address + 112, lambda);
+			__io__block.writeFloat(__io__address + 104, lambda);
 		}
 	}
 
@@ -252,9 +252,9 @@ public class LaplacianSmoothModifierData extends CFacade {
 	public float getLambda_border() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 124);
 		} else {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 108);
 		}
 	}
 
@@ -266,9 +266,9 @@ public class LaplacianSmoothModifierData extends CFacade {
 	public void setLambda_border(float lambda_border) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 140, lambda_border);
+			__io__block.writeFloat(__io__address + 124, lambda_border);
 		} else {
-			__io__block.writeFloat(__io__address + 116, lambda_border);
+			__io__block.writeFloat(__io__address + 108, lambda_border);
 		}
 	}
 
@@ -284,9 +284,9 @@ public class LaplacianSmoothModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -299,9 +299,9 @@ public class LaplacianSmoothModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 144;
+			__dna__offset = 128;
 		} else {
-			__dna__offset = 120;
+			__dna__offset = 112;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -327,9 +327,9 @@ public class LaplacianSmoothModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -345,9 +345,9 @@ public class LaplacianSmoothModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 148;
+			__dna__offset = 132;
 		} else {
-			__dna__offset = 124;
+			__dna__offset = 116;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -366,9 +366,9 @@ public class LaplacianSmoothModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 212);
+			return __io__block.readShort(__io__address + 196);
 		} else {
-			return __io__block.readShort(__io__address + 188);
+			return __io__block.readShort(__io__address + 180);
 		}
 	}
 
@@ -380,9 +380,9 @@ public class LaplacianSmoothModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 212, flag);
+			__io__block.writeShort(__io__address + 196, flag);
 		} else {
-			__io__block.writeShort(__io__address + 188, flag);
+			__io__block.writeShort(__io__address + 180, flag);
 		}
 	}
 
@@ -394,9 +394,9 @@ public class LaplacianSmoothModifierData extends CFacade {
 	public short getRepeat() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 214);
+			return __io__block.readShort(__io__address + 198);
 		} else {
-			return __io__block.readShort(__io__address + 190);
+			return __io__block.readShort(__io__address + 182);
 		}
 	}
 
@@ -408,9 +408,9 @@ public class LaplacianSmoothModifierData extends CFacade {
 	public void setRepeat(short repeat) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 214, repeat);
+			__io__block.writeShort(__io__address + 198, repeat);
 		} else {
-			__io__block.writeShort(__io__address + 190, repeat);
+			__io__block.writeShort(__io__address + 182, repeat);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=376, size64=416)
+@CMetaData(size32=368, size64=400)
 public class WaveModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class WaveModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 113;
+	public static final int __DNA__SDNA_INDEX = 115;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class WaveModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texture = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__texture = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'map_object'.
@@ -90,7 +90,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__map_object = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__map_object = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'map_bone'.
@@ -110,7 +110,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__map_bone = new long[]{120, 152};
+	public static final long[] __DNA__FIELD__map_bone = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_name'.
@@ -133,7 +133,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvlayer_name = new long[]{184, 216};
+	public static final long[] __DNA__FIELD__uvlayer_name = new long[]{176, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_tmp'.
@@ -153,7 +153,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvlayer_tmp = new long[]{248, 280};
+	public static final long[] __DNA__FIELD__uvlayer_tmp = new long[]{240, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texmapping'.
@@ -173,7 +173,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texmapping = new long[]{252, 284};
+	public static final long[] __DNA__FIELD__texmapping = new long[]{244, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'objectcenter'.
@@ -196,7 +196,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__objectcenter = new long[]{256, 288};
+	public static final long[] __DNA__FIELD__objectcenter = new long[]{248, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
@@ -219,7 +219,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{260, 296};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{252, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -239,7 +239,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{324, 360};
+	public static final long[] __DNA__FIELD__flag = new long[]{316, 344};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -259,7 +259,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{326, 362};
+	public static final long[] __DNA__FIELD___pad = new long[]{318, 346};
 
 	/**
 	 * Field descriptor (offset) for struct member 'startx'.
@@ -279,7 +279,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__startx = new long[]{328, 364};
+	public static final long[] __DNA__FIELD__startx = new long[]{320, 348};
 
 	/**
 	 * Field descriptor (offset) for struct member 'starty'.
@@ -299,7 +299,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__starty = new long[]{332, 368};
+	public static final long[] __DNA__FIELD__starty = new long[]{324, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'height'.
@@ -319,7 +319,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__height = new long[]{336, 372};
+	public static final long[] __DNA__FIELD__height = new long[]{328, 356};
 
 	/**
 	 * Field descriptor (offset) for struct member 'width'.
@@ -339,7 +339,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__width = new long[]{340, 376};
+	public static final long[] __DNA__FIELD__width = new long[]{332, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'narrow'.
@@ -359,7 +359,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__narrow = new long[]{344, 380};
+	public static final long[] __DNA__FIELD__narrow = new long[]{336, 364};
 
 	/**
 	 * Field descriptor (offset) for struct member 'speed'.
@@ -379,7 +379,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__speed = new long[]{348, 384};
+	public static final long[] __DNA__FIELD__speed = new long[]{340, 368};
 
 	/**
 	 * Field descriptor (offset) for struct member 'damp'.
@@ -399,7 +399,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__damp = new long[]{352, 388};
+	public static final long[] __DNA__FIELD__damp = new long[]{344, 372};
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff'.
@@ -419,7 +419,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__falloff = new long[]{356, 392};
+	public static final long[] __DNA__FIELD__falloff = new long[]{348, 376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'timeoffs'.
@@ -439,7 +439,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__timeoffs = new long[]{360, 396};
+	public static final long[] __DNA__FIELD__timeoffs = new long[]{352, 380};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lifetime'.
@@ -459,7 +459,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lifetime = new long[]{364, 400};
+	public static final long[] __DNA__FIELD__lifetime = new long[]{356, 384};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -479,7 +479,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{368, 404};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{360, 388};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -499,7 +499,7 @@ public class WaveModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{372, 408};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{364, 392};
 
 	public WaveModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -557,9 +557,9 @@ public class WaveModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Tex.class};
 		return new CPointer<Tex>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Tex.__DNA__SDNA_INDEX), __io__blockTable);
@@ -577,9 +577,9 @@ public class WaveModifierData extends CFacade {
 	{
 		long __address = ((texture == null) ? 0 : texture.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		}
 	}
 
@@ -592,9 +592,9 @@ public class WaveModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -609,9 +609,9 @@ public class WaveModifierData extends CFacade {
 	{
 		long __address = ((map_object == null) ? 0 : map_object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 116, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -627,9 +627,9 @@ public class WaveModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -642,9 +642,9 @@ public class WaveModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 152;
+			__dna__offset = 136;
 		} else {
-			__dna__offset = 120;
+			__dna__offset = 112;
 		}
 		if (__io__equals(map_bone, __io__address + __dna__offset)) {
 			return;
@@ -670,9 +670,9 @@ public class WaveModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -688,9 +688,9 @@ public class WaveModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 216;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 184;
+			__dna__offset = 176;
 		}
 		if (__io__equals(uvlayer_name, __io__address + __dna__offset)) {
 			return;
@@ -709,9 +709,9 @@ public class WaveModifierData extends CFacade {
 	public int getUvlayer_tmp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 280);
+			return __io__block.readInt(__io__address + 264);
 		} else {
-			return __io__block.readInt(__io__address + 248);
+			return __io__block.readInt(__io__address + 240);
 		}
 	}
 
@@ -723,9 +723,9 @@ public class WaveModifierData extends CFacade {
 	public void setUvlayer_tmp(int uvlayer_tmp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 280, uvlayer_tmp);
+			__io__block.writeInt(__io__address + 264, uvlayer_tmp);
 		} else {
-			__io__block.writeInt(__io__address + 248, uvlayer_tmp);
+			__io__block.writeInt(__io__address + 240, uvlayer_tmp);
 		}
 	}
 
@@ -737,9 +737,9 @@ public class WaveModifierData extends CFacade {
 	public int getTexmapping() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 284);
+			return __io__block.readInt(__io__address + 268);
 		} else {
-			return __io__block.readInt(__io__address + 252);
+			return __io__block.readInt(__io__address + 244);
 		}
 	}
 
@@ -751,9 +751,9 @@ public class WaveModifierData extends CFacade {
 	public void setTexmapping(int texmapping) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 284, texmapping);
+			__io__block.writeInt(__io__address + 268, texmapping);
 		} else {
-			__io__block.writeInt(__io__address + 252, texmapping);
+			__io__block.writeInt(__io__address + 244, texmapping);
 		}
 	}
 
@@ -769,9 +769,9 @@ public class WaveModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 288);
+			__dna__targetAddress = __io__block.readLong(__io__address + 272);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 248);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -789,9 +789,9 @@ public class WaveModifierData extends CFacade {
 	{
 		long __address = ((objectcenter == null) ? 0 : objectcenter.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 288, __address);
+			__io__block.writeLong(__io__address + 272, __address);
 		} else {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 248, __address);
 		}
 	}
 
@@ -810,9 +810,9 @@ public class WaveModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 296, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 260, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 252, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -828,9 +828,9 @@ public class WaveModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 296;
+			__dna__offset = 280;
 		} else {
-			__dna__offset = 260;
+			__dna__offset = 252;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -849,9 +849,9 @@ public class WaveModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 360);
+			return __io__block.readShort(__io__address + 344);
 		} else {
-			return __io__block.readShort(__io__address + 324);
+			return __io__block.readShort(__io__address + 316);
 		}
 	}
 
@@ -863,9 +863,9 @@ public class WaveModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 360, flag);
+			__io__block.writeShort(__io__address + 344, flag);
 		} else {
-			__io__block.writeShort(__io__address + 324, flag);
+			__io__block.writeShort(__io__address + 316, flag);
 		}
 	}
 
@@ -881,9 +881,9 @@ public class WaveModifierData extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 362, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 346, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 326, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 318, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -896,9 +896,9 @@ public class WaveModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 362;
+			__dna__offset = 346;
 		} else {
-			__dna__offset = 326;
+			__dna__offset = 318;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -917,9 +917,9 @@ public class WaveModifierData extends CFacade {
 	public float getStartx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 364);
+			return __io__block.readFloat(__io__address + 348);
 		} else {
-			return __io__block.readFloat(__io__address + 328);
+			return __io__block.readFloat(__io__address + 320);
 		}
 	}
 
@@ -931,9 +931,9 @@ public class WaveModifierData extends CFacade {
 	public void setStartx(float startx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 364, startx);
+			__io__block.writeFloat(__io__address + 348, startx);
 		} else {
-			__io__block.writeFloat(__io__address + 328, startx);
+			__io__block.writeFloat(__io__address + 320, startx);
 		}
 	}
 
@@ -945,9 +945,9 @@ public class WaveModifierData extends CFacade {
 	public float getStarty() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 368);
+			return __io__block.readFloat(__io__address + 352);
 		} else {
-			return __io__block.readFloat(__io__address + 332);
+			return __io__block.readFloat(__io__address + 324);
 		}
 	}
 
@@ -959,9 +959,9 @@ public class WaveModifierData extends CFacade {
 	public void setStarty(float starty) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 368, starty);
+			__io__block.writeFloat(__io__address + 352, starty);
 		} else {
-			__io__block.writeFloat(__io__address + 332, starty);
+			__io__block.writeFloat(__io__address + 324, starty);
 		}
 	}
 
@@ -973,9 +973,9 @@ public class WaveModifierData extends CFacade {
 	public float getHeight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 372);
+			return __io__block.readFloat(__io__address + 356);
 		} else {
-			return __io__block.readFloat(__io__address + 336);
+			return __io__block.readFloat(__io__address + 328);
 		}
 	}
 
@@ -987,9 +987,9 @@ public class WaveModifierData extends CFacade {
 	public void setHeight(float height) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 372, height);
+			__io__block.writeFloat(__io__address + 356, height);
 		} else {
-			__io__block.writeFloat(__io__address + 336, height);
+			__io__block.writeFloat(__io__address + 328, height);
 		}
 	}
 
@@ -1001,9 +1001,9 @@ public class WaveModifierData extends CFacade {
 	public float getWidth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 376);
+			return __io__block.readFloat(__io__address + 360);
 		} else {
-			return __io__block.readFloat(__io__address + 340);
+			return __io__block.readFloat(__io__address + 332);
 		}
 	}
 
@@ -1015,9 +1015,9 @@ public class WaveModifierData extends CFacade {
 	public void setWidth(float width) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 376, width);
+			__io__block.writeFloat(__io__address + 360, width);
 		} else {
-			__io__block.writeFloat(__io__address + 340, width);
+			__io__block.writeFloat(__io__address + 332, width);
 		}
 	}
 
@@ -1029,9 +1029,9 @@ public class WaveModifierData extends CFacade {
 	public float getNarrow() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 380);
+			return __io__block.readFloat(__io__address + 364);
 		} else {
-			return __io__block.readFloat(__io__address + 344);
+			return __io__block.readFloat(__io__address + 336);
 		}
 	}
 
@@ -1043,9 +1043,9 @@ public class WaveModifierData extends CFacade {
 	public void setNarrow(float narrow) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 380, narrow);
+			__io__block.writeFloat(__io__address + 364, narrow);
 		} else {
-			__io__block.writeFloat(__io__address + 344, narrow);
+			__io__block.writeFloat(__io__address + 336, narrow);
 		}
 	}
 
@@ -1057,9 +1057,9 @@ public class WaveModifierData extends CFacade {
 	public float getSpeed() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 384);
+			return __io__block.readFloat(__io__address + 368);
 		} else {
-			return __io__block.readFloat(__io__address + 348);
+			return __io__block.readFloat(__io__address + 340);
 		}
 	}
 
@@ -1071,9 +1071,9 @@ public class WaveModifierData extends CFacade {
 	public void setSpeed(float speed) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 384, speed);
+			__io__block.writeFloat(__io__address + 368, speed);
 		} else {
-			__io__block.writeFloat(__io__address + 348, speed);
+			__io__block.writeFloat(__io__address + 340, speed);
 		}
 	}
 
@@ -1085,9 +1085,9 @@ public class WaveModifierData extends CFacade {
 	public float getDamp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 388);
+			return __io__block.readFloat(__io__address + 372);
 		} else {
-			return __io__block.readFloat(__io__address + 352);
+			return __io__block.readFloat(__io__address + 344);
 		}
 	}
 
@@ -1099,9 +1099,9 @@ public class WaveModifierData extends CFacade {
 	public void setDamp(float damp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 388, damp);
+			__io__block.writeFloat(__io__address + 372, damp);
 		} else {
-			__io__block.writeFloat(__io__address + 352, damp);
+			__io__block.writeFloat(__io__address + 344, damp);
 		}
 	}
 
@@ -1113,9 +1113,9 @@ public class WaveModifierData extends CFacade {
 	public float getFalloff() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 392);
+			return __io__block.readFloat(__io__address + 376);
 		} else {
-			return __io__block.readFloat(__io__address + 356);
+			return __io__block.readFloat(__io__address + 348);
 		}
 	}
 
@@ -1127,9 +1127,9 @@ public class WaveModifierData extends CFacade {
 	public void setFalloff(float falloff) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 392, falloff);
+			__io__block.writeFloat(__io__address + 376, falloff);
 		} else {
-			__io__block.writeFloat(__io__address + 356, falloff);
+			__io__block.writeFloat(__io__address + 348, falloff);
 		}
 	}
 
@@ -1141,9 +1141,9 @@ public class WaveModifierData extends CFacade {
 	public float getTimeoffs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 396);
+			return __io__block.readFloat(__io__address + 380);
 		} else {
-			return __io__block.readFloat(__io__address + 360);
+			return __io__block.readFloat(__io__address + 352);
 		}
 	}
 
@@ -1155,9 +1155,9 @@ public class WaveModifierData extends CFacade {
 	public void setTimeoffs(float timeoffs) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 396, timeoffs);
+			__io__block.writeFloat(__io__address + 380, timeoffs);
 		} else {
-			__io__block.writeFloat(__io__address + 360, timeoffs);
+			__io__block.writeFloat(__io__address + 352, timeoffs);
 		}
 	}
 
@@ -1169,9 +1169,9 @@ public class WaveModifierData extends CFacade {
 	public float getLifetime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 400);
+			return __io__block.readFloat(__io__address + 384);
 		} else {
-			return __io__block.readFloat(__io__address + 364);
+			return __io__block.readFloat(__io__address + 356);
 		}
 	}
 
@@ -1183,9 +1183,9 @@ public class WaveModifierData extends CFacade {
 	public void setLifetime(float lifetime) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 400, lifetime);
+			__io__block.writeFloat(__io__address + 384, lifetime);
 		} else {
-			__io__block.writeFloat(__io__address + 364, lifetime);
+			__io__block.writeFloat(__io__address + 356, lifetime);
 		}
 	}
 
@@ -1201,9 +1201,9 @@ public class WaveModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 404, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 388, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 368, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 360, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1216,9 +1216,9 @@ public class WaveModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 404;
+			__dna__offset = 388;
 		} else {
-			__dna__offset = 368;
+			__dna__offset = 360;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -1238,9 +1238,9 @@ public class WaveModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 408);
+			__dna__targetAddress = __io__block.readLong(__io__address + 392);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 372);
+			__dna__targetAddress = __io__block.readLong(__io__address + 364);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1255,9 +1255,9 @@ public class WaveModifierData extends CFacade {
 	{
 		long __address = ((_pad2 == null) ? 0 : _pad2.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 408, __address);
+			__io__block.writeLong(__io__address + 392, __address);
 		} else {
-			__io__block.writeLong(__io__address + 372, __address);
+			__io__block.writeLong(__io__address + 364, __address);
 		}
 	}
 

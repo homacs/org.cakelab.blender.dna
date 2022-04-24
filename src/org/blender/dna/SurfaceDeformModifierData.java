@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=280, size64=320)
+@CMetaData(size32=272, size64=304)
 public class SurfaceDeformModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 157;
+	public static final int __DNA__SDNA_INDEX = 159;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__depsgraph = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__depsgraph = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'target'.
@@ -90,7 +90,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__target = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__target = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'verts'.
@@ -113,7 +113,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__verts = new long[]{120, 152};
+	public static final long[] __DNA__FIELD__verts = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff'.
@@ -133,7 +133,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__falloff = new long[]{124, 160};
+	public static final long[] __DNA__FIELD__falloff = new long[]{116, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'num_mesh_verts'.
@@ -153,7 +153,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__num_mesh_verts = new long[]{128, 164};
+	public static final long[] __DNA__FIELD__num_mesh_verts = new long[]{120, 148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'numverts'.
@@ -173,7 +173,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__numverts = new long[]{132, 168};
+	public static final long[] __DNA__FIELD__numverts = new long[]{124, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'numpoly'.
@@ -193,7 +193,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__numpoly = new long[]{136, 172};
+	public static final long[] __DNA__FIELD__numpoly = new long[]{128, 156};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -213,7 +213,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{140, 176};
+	public static final long[] __DNA__FIELD__flags = new long[]{132, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
@@ -233,7 +233,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat = new long[]{144, 180};
+	public static final long[] __DNA__FIELD__mat = new long[]{136, 164};
 
 	/**
 	 * Field descriptor (offset) for struct member 'strength'.
@@ -253,7 +253,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__strength = new long[]{208, 244};
+	public static final long[] __DNA__FIELD__strength = new long[]{200, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
@@ -273,7 +273,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{212, 248};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{204, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -293,7 +293,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{276, 312};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{268, 296};
 
 	public SurfaceDeformModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -348,9 +348,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -365,9 +365,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	{
 		long __address = ((depsgraph == null) ? 0 : depsgraph.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		}
 	}
 
@@ -383,9 +383,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -403,9 +403,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	{
 		long __address = ((target == null) ? 0 : target.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 116, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -421,9 +421,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{SDefVert.class};
 		return new CPointer<SDefVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, SDefVert.__DNA__SDNA_INDEX), __io__blockTable);
@@ -441,9 +441,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	{
 		long __address = ((verts == null) ? 0 : verts.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 
@@ -455,9 +455,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	public float getFalloff() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 160);
+			return __io__block.readFloat(__io__address + 144);
 		} else {
-			return __io__block.readFloat(__io__address + 124);
+			return __io__block.readFloat(__io__address + 116);
 		}
 	}
 
@@ -469,9 +469,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	public void setFalloff(float falloff) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 160, falloff);
+			__io__block.writeFloat(__io__address + 144, falloff);
 		} else {
-			__io__block.writeFloat(__io__address + 124, falloff);
+			__io__block.writeFloat(__io__address + 116, falloff);
 		}
 	}
 
@@ -483,9 +483,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	public int getNum_mesh_verts() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 164);
+			return __io__block.readInt(__io__address + 148);
 		} else {
-			return __io__block.readInt(__io__address + 128);
+			return __io__block.readInt(__io__address + 120);
 		}
 	}
 
@@ -497,9 +497,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	public void setNum_mesh_verts(int num_mesh_verts) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 164, num_mesh_verts);
+			__io__block.writeInt(__io__address + 148, num_mesh_verts);
 		} else {
-			__io__block.writeInt(__io__address + 128, num_mesh_verts);
+			__io__block.writeInt(__io__address + 120, num_mesh_verts);
 		}
 	}
 
@@ -511,9 +511,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	public int getNumverts() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 168);
+			return __io__block.readInt(__io__address + 152);
 		} else {
-			return __io__block.readInt(__io__address + 132);
+			return __io__block.readInt(__io__address + 124);
 		}
 	}
 
@@ -525,9 +525,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	public void setNumverts(int numverts) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 168, numverts);
+			__io__block.writeInt(__io__address + 152, numverts);
 		} else {
-			__io__block.writeInt(__io__address + 132, numverts);
+			__io__block.writeInt(__io__address + 124, numverts);
 		}
 	}
 
@@ -539,9 +539,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	public int getNumpoly() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 172);
+			return __io__block.readInt(__io__address + 156);
 		} else {
-			return __io__block.readInt(__io__address + 136);
+			return __io__block.readInt(__io__address + 128);
 		}
 	}
 
@@ -553,9 +553,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	public void setNumpoly(int numpoly) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 172, numpoly);
+			__io__block.writeInt(__io__address + 156, numpoly);
 		} else {
-			__io__block.writeInt(__io__address + 136, numpoly);
+			__io__block.writeInt(__io__address + 128, numpoly);
 		}
 	}
 
@@ -567,9 +567,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 160);
 		} else {
-			return __io__block.readInt(__io__address + 140);
+			return __io__block.readInt(__io__address + 132);
 		}
 	}
 
@@ -581,9 +581,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 176, flags);
+			__io__block.writeInt(__io__address + 160, flags);
 		} else {
-			__io__block.writeInt(__io__address + 140, flags);
+			__io__block.writeInt(__io__address + 132, flags);
 		}
 	}
 
@@ -600,9 +600,9 @@ public class SurfaceDeformModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -615,9 +615,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 180;
+			__dna__offset = 164;
 		} else {
-			__dna__offset = 144;
+			__dna__offset = 136;
 		}
 		if (__io__equals(mat, __io__address + __dna__offset)) {
 			return;
@@ -636,9 +636,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	public float getStrength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 244);
+			return __io__block.readFloat(__io__address + 228);
 		} else {
-			return __io__block.readFloat(__io__address + 208);
+			return __io__block.readFloat(__io__address + 200);
 		}
 	}
 
@@ -650,9 +650,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	public void setStrength(float strength) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 244, strength);
+			__io__block.writeFloat(__io__address + 228, strength);
 		} else {
-			__io__block.writeFloat(__io__address + 208, strength);
+			__io__block.writeFloat(__io__address + 200, strength);
 		}
 	}
 
@@ -668,9 +668,9 @@ public class SurfaceDeformModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 248, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -683,9 +683,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 248;
+			__dna__offset = 232;
 		} else {
-			__dna__offset = 212;
+			__dna__offset = 204;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -705,9 +705,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 312);
+			__dna__targetAddress = __io__block.readLong(__io__address + 296);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 276);
+			__dna__targetAddress = __io__block.readLong(__io__address + 268);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -722,9 +722,9 @@ public class SurfaceDeformModifierData extends CFacade {
 	{
 		long __address = ((_pad1 == null) ? 0 : _pad1.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 312, __address);
+			__io__block.writeLong(__io__address + 296, __address);
 		} else {
-			__io__block.writeLong(__io__address + 276, __address);
+			__io__block.writeLong(__io__address + 268, __address);
 		}
 	}
 

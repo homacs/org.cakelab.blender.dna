@@ -39,7 +39,7 @@ import org.cakelab.blender.nio.CPointer;
  * 			</p>
  */
 
-@CMetaData(size32=1096, size64=1384)
+@CMetaData(size32=1128, size64=1432)
 public class BlenderObject extends CFacade {
 
 	/**
@@ -50,7 +50,7 @@ public class BlenderObject extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 170;
+	public static final int __DNA__SDNA_INDEX = 172;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -2704,7 +2704,7 @@ public class BlenderObject extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'Object_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 120/160</li>
+	 * <li>Actual Size (32bit/64bit): 152/208</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__runtime = new long[]{976, 1224};

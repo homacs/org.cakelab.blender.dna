@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=200, size64=216)
+@CMetaData(size32=224, size64=240)
 public class LengthGpencilModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class LengthGpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 604;
+	public static final int __DNA__SDNA_INDEX = 611;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -208,6 +208,66 @@ public class LengthGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__end_fac = new long[]{176, 192};
 
 	/**
+	 * Field descriptor (offset) for struct member 'rand_start_fac'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LengthGpencilModifierData lengthgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = lengthgpencilmodifierdata.__dna__addressof(LengthGpencilModifierData.__DNA__FIELD__rand_start_fac);
+	 * CPointer&lt;Float&gt; p_rand_start_fac = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rand_start_fac'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rand_start_fac = new long[]{180, 196};
+
+	/**
+	 * Field descriptor (offset) for struct member 'rand_end_fac'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LengthGpencilModifierData lengthgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = lengthgpencilmodifierdata.__dna__addressof(LengthGpencilModifierData.__DNA__FIELD__rand_end_fac);
+	 * CPointer&lt;Float&gt; p_rand_end_fac = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rand_end_fac'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rand_end_fac = new long[]{184, 200};
+
+	/**
+	 * Field descriptor (offset) for struct member 'rand_offset'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LengthGpencilModifierData lengthgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = lengthgpencilmodifierdata.__dna__addressof(LengthGpencilModifierData.__DNA__FIELD__rand_offset);
+	 * CPointer&lt;Float&gt; p_rand_offset = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rand_offset'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rand_offset = new long[]{188, 204};
+
+	/**
 	 * Field descriptor (offset) for struct member 'overshoot_fac'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -228,7 +288,47 @@ public class LengthGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__overshoot_fac = new long[]{180, 196};
+	public static final long[] __DNA__FIELD__overshoot_fac = new long[]{192, 208};
+
+	/**
+	 * Field descriptor (offset) for struct member 'seed'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LengthGpencilModifierData lengthgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = lengthgpencilmodifierdata.__dna__addressof(LengthGpencilModifierData.__DNA__FIELD__seed);
+	 * CPointer&lt;Integer&gt; p_seed = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'seed'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__seed = new long[]{196, 212};
+
+	/**
+	 * Field descriptor (offset) for struct member 'step'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LengthGpencilModifierData lengthgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = lengthgpencilmodifierdata.__dna__addressof(LengthGpencilModifierData.__DNA__FIELD__step);
+	 * CPointer&lt;Integer&gt; p_step = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'step'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__step = new long[]{200, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
@@ -251,7 +351,27 @@ public class LengthGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{184, 200};
+	public static final long[] __DNA__FIELD__mode = new long[]{204, 220};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LengthGpencilModifierData lengthgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = lengthgpencilmodifierdata.__dna__addressof(LengthGpencilModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{208, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'point_density'.
@@ -274,7 +394,7 @@ public class LengthGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__point_density = new long[]{188, 204};
+	public static final long[] __DNA__FIELD__point_density = new long[]{212, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'segment_influence'.
@@ -294,7 +414,7 @@ public class LengthGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__segment_influence = new long[]{192, 208};
+	public static final long[] __DNA__FIELD__segment_influence = new long[]{216, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'max_angle'.
@@ -314,7 +434,7 @@ public class LengthGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__max_angle = new long[]{196, 212};
+	public static final long[] __DNA__FIELD__max_angle = new long[]{220, 236};
 
 	public LengthGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -609,6 +729,90 @@ public class LengthGpencilModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'rand_start_fac'.
+	 * @see #__DNA__FIELD__rand_start_fac
+	 */
+	
+	public float getRand_start_fac() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 196);
+		} else {
+			return __io__block.readFloat(__io__address + 180);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rand_start_fac'.
+	 * @see #__DNA__FIELD__rand_start_fac
+	 */
+	
+	public void setRand_start_fac(float rand_start_fac) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 196, rand_start_fac);
+		} else {
+			__io__block.writeFloat(__io__address + 180, rand_start_fac);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'rand_end_fac'.
+	 * @see #__DNA__FIELD__rand_end_fac
+	 */
+	
+	public float getRand_end_fac() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 200);
+		} else {
+			return __io__block.readFloat(__io__address + 184);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rand_end_fac'.
+	 * @see #__DNA__FIELD__rand_end_fac
+	 */
+	
+	public void setRand_end_fac(float rand_end_fac) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 200, rand_end_fac);
+		} else {
+			__io__block.writeFloat(__io__address + 184, rand_end_fac);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'rand_offset'.
+	 * @see #__DNA__FIELD__rand_offset
+	 */
+	
+	public float getRand_offset() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 204);
+		} else {
+			return __io__block.readFloat(__io__address + 188);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rand_offset'.
+	 * @see #__DNA__FIELD__rand_offset
+	 */
+	
+	public void setRand_offset(float rand_offset) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 204, rand_offset);
+		} else {
+			__io__block.writeFloat(__io__address + 188, rand_offset);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'overshoot_fac'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -619,9 +823,9 @@ public class LengthGpencilModifierData extends CFacade {
 	public float getOvershoot_fac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 196);
+			return __io__block.readFloat(__io__address + 208);
 		} else {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readFloat(__io__address + 192);
 		}
 	}
 
@@ -636,9 +840,65 @@ public class LengthGpencilModifierData extends CFacade {
 	public void setOvershoot_fac(float overshoot_fac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 196, overshoot_fac);
+			__io__block.writeFloat(__io__address + 208, overshoot_fac);
 		} else {
-			__io__block.writeFloat(__io__address + 180, overshoot_fac);
+			__io__block.writeFloat(__io__address + 192, overshoot_fac);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'seed'.
+	 * @see #__DNA__FIELD__seed
+	 */
+	
+	public int getSeed() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 212);
+		} else {
+			return __io__block.readInt(__io__address + 196);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'seed'.
+	 * @see #__DNA__FIELD__seed
+	 */
+	
+	public void setSeed(int seed) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 212, seed);
+		} else {
+			__io__block.writeInt(__io__address + 196, seed);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'step'.
+	 * @see #__DNA__FIELD__step
+	 */
+	
+	public int getStep() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 216);
+		} else {
+			return __io__block.readInt(__io__address + 200);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'step'.
+	 * @see #__DNA__FIELD__step
+	 */
+	
+	public void setStep(int step) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 216, step);
+		} else {
+			__io__block.writeInt(__io__address + 200, step);
 		}
 	}
 
@@ -653,9 +913,9 @@ public class LengthGpencilModifierData extends CFacade {
 	public int getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 200);
+			return __io__block.readInt(__io__address + 220);
 		} else {
-			return __io__block.readInt(__io__address + 184);
+			return __io__block.readInt(__io__address + 204);
 		}
 	}
 
@@ -670,9 +930,49 @@ public class LengthGpencilModifierData extends CFacade {
 	public void setMode(int mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 200, mode);
+			__io__block.writeInt(__io__address + 220, mode);
 		} else {
-			__io__block.writeInt(__io__address + 184, mode);
+			__io__block.writeInt(__io__address + 204, mode);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 224, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 224;
+		} else {
+			__dna__offset = 208;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -687,9 +987,9 @@ public class LengthGpencilModifierData extends CFacade {
 	public float getPoint_density() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 204);
+			return __io__block.readFloat(__io__address + 228);
 		} else {
-			return __io__block.readFloat(__io__address + 188);
+			return __io__block.readFloat(__io__address + 212);
 		}
 	}
 
@@ -704,9 +1004,9 @@ public class LengthGpencilModifierData extends CFacade {
 	public void setPoint_density(float point_density) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 204, point_density);
+			__io__block.writeFloat(__io__address + 228, point_density);
 		} else {
-			__io__block.writeFloat(__io__address + 188, point_density);
+			__io__block.writeFloat(__io__address + 212, point_density);
 		}
 	}
 
@@ -718,9 +1018,9 @@ public class LengthGpencilModifierData extends CFacade {
 	public float getSegment_influence() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 208);
+			return __io__block.readFloat(__io__address + 232);
 		} else {
-			return __io__block.readFloat(__io__address + 192);
+			return __io__block.readFloat(__io__address + 216);
 		}
 	}
 
@@ -732,9 +1032,9 @@ public class LengthGpencilModifierData extends CFacade {
 	public void setSegment_influence(float segment_influence) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 208, segment_influence);
+			__io__block.writeFloat(__io__address + 232, segment_influence);
 		} else {
-			__io__block.writeFloat(__io__address + 192, segment_influence);
+			__io__block.writeFloat(__io__address + 216, segment_influence);
 		}
 	}
 
@@ -746,9 +1046,9 @@ public class LengthGpencilModifierData extends CFacade {
 	public float getMax_angle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 212);
+			return __io__block.readFloat(__io__address + 236);
 		} else {
-			return __io__block.readFloat(__io__address + 196);
+			return __io__block.readFloat(__io__address + 220);
 		}
 	}
 
@@ -760,9 +1060,9 @@ public class LengthGpencilModifierData extends CFacade {
 	public void setMax_angle(float max_angle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 212, max_angle);
+			__io__block.writeFloat(__io__address + 236, max_angle);
 		} else {
-			__io__block.writeFloat(__io__address + 196, max_angle);
+			__io__block.writeFloat(__io__address + 220, max_angle);
 		}
 	}
 

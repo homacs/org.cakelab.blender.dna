@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=28, size64=32)
+@CMetaData(size32=32, size64=40)
 public class ARegion_Runtime extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class ARegion_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 306;
+	public static final int __DNA__SDNA_INDEX = 307;
 
 	/**
 	 * Field descriptor (offset) for struct member 'category'.
@@ -116,6 +116,26 @@ public class ARegion_Runtime extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__offset_y = new long[]{24, 28};
+
+	/**
+	 * Field descriptor (offset) for struct member 'block_name_map'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ARegion_Runtime aregion_runtime = ...;
+	 * CPointer&lt;Object&gt; p = aregion_runtime.__dna__addressof(ARegion_Runtime.__DNA__FIELD__block_name_map);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_block_name_map = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'block_name_map'</li>
+	 * <li>Signature: 'GHash*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__block_name_map = new long[]{28, 32};
 
 	public ARegion_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -264,6 +284,38 @@ public class ARegion_Runtime extends CFacade {
 			__io__block.writeInt(__io__address + 28, offset_y);
 		} else {
 			__io__block.writeInt(__io__address + 24, offset_y);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'block_name_map'.
+	 * @see #__DNA__FIELD__block_name_map
+	 */
+	
+	public CPointer<Object> getBlock_name_map() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 32);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 28);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'block_name_map'.
+	 * @see #__DNA__FIELD__block_name_map
+	 */
+	
+	public void setBlock_name_map(CPointer<Object> block_name_map) throws IOException
+	{
+		long __address = ((block_name_map == null) ? 0 : block_name_map.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 32, __address);
+		} else {
+			__io__block.writeLong(__io__address + 28, __address);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> DEPRECATED, only used for versioning. </p>
  */
 
-@CMetaData(size32=120, size64=144)
+@CMetaData(size32=112, size64=128)
 public class SmokeModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SmokeModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 129;
+	public static final int __DNA__SDNA_INDEX = 131;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class SmokeModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class SmokeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__type = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -90,7 +90,7 @@ public class SmokeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{116, 140};
+	public static final long[] __DNA__FIELD___pad = new long[]{108, 124};
 
 	public SmokeModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -147,9 +147,9 @@ public class SmokeModifierData extends CFacade {
 	public int getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 136);
+			return __io__block.readInt(__io__address + 120);
 		} else {
-			return __io__block.readInt(__io__address + 112);
+			return __io__block.readInt(__io__address + 104);
 		}
 	}
 
@@ -164,9 +164,9 @@ public class SmokeModifierData extends CFacade {
 	public void setType(int type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 136, type);
+			__io__block.writeInt(__io__address + 120, type);
 		} else {
-			__io__block.writeInt(__io__address + 112, type);
+			__io__block.writeInt(__io__address + 104, type);
 		}
 	}
 
@@ -178,9 +178,9 @@ public class SmokeModifierData extends CFacade {
 	public int get_pad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 140);
+			return __io__block.readInt(__io__address + 124);
 		} else {
-			return __io__block.readInt(__io__address + 116);
+			return __io__block.readInt(__io__address + 108);
 		}
 	}
 
@@ -192,9 +192,9 @@ public class SmokeModifierData extends CFacade {
 	public void set_pad(int _pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 140, _pad);
+			__io__block.writeInt(__io__address + 124, _pad);
 		} else {
-			__io__block.writeInt(__io__address + 116, _pad);
+			__io__block.writeInt(__io__address + 108, _pad);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=192, size64=224)
+@CMetaData(size32=184, size64=208)
 public class ArmatureModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ArmatureModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 114;
+	public static final int __DNA__SDNA_INDEX = 116;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class ArmatureModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class ArmatureModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__deformflag = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__deformflag = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'multi'.
@@ -90,7 +90,7 @@ public class ArmatureModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__multi = new long[]{114, 138};
+	public static final long[] __DNA__FIELD__multi = new long[]{106, 122};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -110,7 +110,7 @@ public class ArmatureModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{116, 140};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{108, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object'.
@@ -130,7 +130,7 @@ public class ArmatureModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object = new long[]{120, 144};
+	public static final long[] __DNA__FIELD__object = new long[]{112, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
@@ -153,7 +153,7 @@ public class ArmatureModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{128, 160};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{120, 144};
 
 	public ArmatureModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -210,9 +210,9 @@ public class ArmatureModifierData extends CFacade {
 	public short getDeformflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 136);
+			return __io__block.readShort(__io__address + 120);
 		} else {
-			return __io__block.readShort(__io__address + 112);
+			return __io__block.readShort(__io__address + 104);
 		}
 	}
 
@@ -227,9 +227,9 @@ public class ArmatureModifierData extends CFacade {
 	public void setDeformflag(short deformflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 136, deformflag);
+			__io__block.writeShort(__io__address + 120, deformflag);
 		} else {
-			__io__block.writeShort(__io__address + 112, deformflag);
+			__io__block.writeShort(__io__address + 104, deformflag);
 		}
 	}
 
@@ -241,9 +241,9 @@ public class ArmatureModifierData extends CFacade {
 	public short getMulti() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 138);
+			return __io__block.readShort(__io__address + 122);
 		} else {
-			return __io__block.readShort(__io__address + 114);
+			return __io__block.readShort(__io__address + 106);
 		}
 	}
 
@@ -255,9 +255,9 @@ public class ArmatureModifierData extends CFacade {
 	public void setMulti(short multi) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 138, multi);
+			__io__block.writeShort(__io__address + 122, multi);
 		} else {
-			__io__block.writeShort(__io__address + 114, multi);
+			__io__block.writeShort(__io__address + 106, multi);
 		}
 	}
 
@@ -273,9 +273,9 @@ public class ArmatureModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -288,9 +288,9 @@ public class ArmatureModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 140;
+			__dna__offset = 124;
 		} else {
-			__dna__offset = 116;
+			__dna__offset = 108;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -310,9 +310,9 @@ public class ArmatureModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -327,9 +327,9 @@ public class ArmatureModifierData extends CFacade {
 	{
 		long __address = ((object == null) ? 0 : object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 
@@ -348,9 +348,9 @@ public class ArmatureModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -366,9 +366,9 @@ public class ArmatureModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 160;
+			__dna__offset = 144;
 		} else {
-			__dna__offset = 128;
+			__dna__offset = 120;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;

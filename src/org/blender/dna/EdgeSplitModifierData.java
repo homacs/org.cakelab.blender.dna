@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=120, size64=144)
+@CMetaData(size32=112, size64=128)
 public class EdgeSplitModifierData extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class EdgeSplitModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 105;
+	public static final int __DNA__SDNA_INDEX = 107;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -43,7 +43,7 @@ public class EdgeSplitModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -69,7 +69,7 @@ public class EdgeSplitModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__split_angle = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__split_angle = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -89,7 +89,7 @@ public class EdgeSplitModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{116, 140};
+	public static final long[] __DNA__FIELD__flags = new long[]{108, 124};
 
 	public EdgeSplitModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -146,9 +146,9 @@ public class EdgeSplitModifierData extends CFacade {
 	public float getSplit_angle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 120);
 		} else {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 104);
 		}
 	}
 
@@ -163,9 +163,9 @@ public class EdgeSplitModifierData extends CFacade {
 	public void setSplit_angle(float split_angle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 136, split_angle);
+			__io__block.writeFloat(__io__address + 120, split_angle);
 		} else {
-			__io__block.writeFloat(__io__address + 112, split_angle);
+			__io__block.writeFloat(__io__address + 104, split_angle);
 		}
 	}
 
@@ -177,9 +177,9 @@ public class EdgeSplitModifierData extends CFacade {
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 140);
+			return __io__block.readInt(__io__address + 124);
 		} else {
-			return __io__block.readInt(__io__address + 116);
+			return __io__block.readInt(__io__address + 108);
 		}
 	}
 
@@ -191,9 +191,9 @@ public class EdgeSplitModifierData extends CFacade {
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 140, flags);
+			__io__block.writeInt(__io__address + 124, flags);
 		} else {
-			__io__block.writeInt(__io__address + 116, flags);
+			__io__block.writeInt(__io__address + 108, flags);
 		}
 	}
 

@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=136, size64=176)
+@CMetaData(size32=128, size64=160)
 public class FluidModifierData extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class FluidModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 107;
+	public static final int __DNA__SDNA_INDEX = 109;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -43,7 +43,7 @@ public class FluidModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -66,7 +66,7 @@ public class FluidModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__domain = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__domain = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flow'.
@@ -89,7 +89,7 @@ public class FluidModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flow = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__flow = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'effector'.
@@ -112,7 +112,7 @@ public class FluidModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__effector = new long[]{120, 152};
+	public static final long[] __DNA__FIELD__effector = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'time'.
@@ -132,7 +132,7 @@ public class FluidModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__time = new long[]{124, 160};
+	public static final long[] __DNA__FIELD__time = new long[]{116, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -155,7 +155,7 @@ public class FluidModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{128, 164};
+	public static final long[] __DNA__FIELD__type = new long[]{120, 148};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -175,7 +175,7 @@ public class FluidModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{132, 168};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{124, 152};
 
 	public FluidModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -230,9 +230,9 @@ public class FluidModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{FluidDomainSettings.class};
 		return new CPointer<FluidDomainSettings>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, FluidDomainSettings.__DNA__SDNA_INDEX), __io__blockTable);
@@ -247,9 +247,9 @@ public class FluidModifierData extends CFacade {
 	{
 		long __address = ((domain == null) ? 0 : domain.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		}
 	}
 
@@ -265,9 +265,9 @@ public class FluidModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{FluidFlowSettings.class};
 		return new CPointer<FluidFlowSettings>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, FluidFlowSettings.__DNA__SDNA_INDEX), __io__blockTable);
@@ -285,9 +285,9 @@ public class FluidModifierData extends CFacade {
 	{
 		long __address = ((flow == null) ? 0 : flow.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 116, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -303,9 +303,9 @@ public class FluidModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{FluidEffectorSettings.class};
 		return new CPointer<FluidEffectorSettings>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, FluidEffectorSettings.__DNA__SDNA_INDEX), __io__blockTable);
@@ -323,9 +323,9 @@ public class FluidModifierData extends CFacade {
 	{
 		long __address = ((effector == null) ? 0 : effector.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 
@@ -337,9 +337,9 @@ public class FluidModifierData extends CFacade {
 	public float getTime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 160);
+			return __io__block.readFloat(__io__address + 144);
 		} else {
-			return __io__block.readFloat(__io__address + 124);
+			return __io__block.readFloat(__io__address + 116);
 		}
 	}
 
@@ -351,9 +351,9 @@ public class FluidModifierData extends CFacade {
 	public void setTime(float time) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 160, time);
+			__io__block.writeFloat(__io__address + 144, time);
 		} else {
-			__io__block.writeFloat(__io__address + 124, time);
+			__io__block.writeFloat(__io__address + 116, time);
 		}
 	}
 
@@ -368,9 +368,9 @@ public class FluidModifierData extends CFacade {
 	public int getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 164);
+			return __io__block.readInt(__io__address + 148);
 		} else {
-			return __io__block.readInt(__io__address + 128);
+			return __io__block.readInt(__io__address + 120);
 		}
 	}
 
@@ -385,9 +385,9 @@ public class FluidModifierData extends CFacade {
 	public void setType(int type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 164, type);
+			__io__block.writeInt(__io__address + 148, type);
 		} else {
-			__io__block.writeInt(__io__address + 128, type);
+			__io__block.writeInt(__io__address + 120, type);
 		}
 	}
 
@@ -400,9 +400,9 @@ public class FluidModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 132);
+			__dna__targetAddress = __io__block.readLong(__io__address + 124);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -417,9 +417,9 @@ public class FluidModifierData extends CFacade {
 	{
 		long __address = ((_pad1 == null) ? 0 : _pad1.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 168, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 132, __address);
+			__io__block.writeLong(__io__address + 124, __address);
 		}
 	}
 

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * Wrapper for referencing Objects in a Scene
  */
 
-@CMetaData(size32=1640, size64=1872)
+@CMetaData(size32=1648, size64=1888)
 public class Mesh extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class Mesh extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 70;
+	public static final int __DNA__SDNA_INDEX = 71;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -139,188 +139,6 @@ public class Mesh extends CFacade {
 	public static final long[] __DNA__FIELD__mat = new long[]{148, 200};
 
 	/**
-	 * Field descriptor (offset) for struct member 'mselect'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__mselect);
-	 * CPointer&lt;CPointer&lt;MSelect&gt;&gt; p_mselect = p.cast(new Class[]{CPointer.class, MSelect.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'mselect'</li>
-	 * <li>Signature: 'MSelect*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__mselect = new long[]{152, 208};
-
-	/**
-	 * Field descriptor (offset) for struct member 'mpoly'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> BMESH ONLY New face structures. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__mpoly);
-	 * CPointer&lt;CPointer&lt;MPoly&gt;&gt; p_mpoly = p.cast(new Class[]{CPointer.class, MPoly.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'mpoly'</li>
-	 * <li>Signature: 'MPoly*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__mpoly = new long[]{156, 216};
-
-	/**
-	 * Field descriptor (offset) for struct member 'mloop'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * <p>pointer on array with loops, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__mloop);
-	 * CPointer&lt;CPointer&lt;MLoop&gt;&gt; p_mloop = p.cast(new Class[]{CPointer.class, MLoop.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'mloop'</li>
-	 * <li>Signature: 'MLoop*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__mloop = new long[]{160, 224};
-
-	/**
-	 * Field descriptor (offset) for struct member 'mloopuv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * <p>pointer on array with UV coordinates, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__mloopuv);
-	 * CPointer&lt;CPointer&lt;MLoopUV&gt;&gt; p_mloopuv = p.cast(new Class[]{CPointer.class, MLoopUV.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'mloopuv'</li>
-	 * <li>Signature: 'MLoopUV*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__mloopuv = new long[]{164, 232};
-
-	/**
-	 * Field descriptor (offset) for struct member 'mloopcol'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__mloopcol);
-	 * CPointer&lt;CPointer&lt;MLoopCol&gt;&gt; p_mloopcol = p.cast(new Class[]{CPointer.class, MLoopCol.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'mloopcol'</li>
-	 * <li>Signature: 'MLoopCol*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__mloopcol = new long[]{168, 240};
-
-	/**
-	 * Field descriptor (offset) for struct member 'mface'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> END BMESH ONLY Legacy face storage (quads & tries only), faces are now stored in {@link Mesh.mpoly}  & #Mesh.mloop arrays.</p><p><h2>Note</h2><p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
-	 * 
-	 * </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__mface);
-	 * CPointer&lt;CPointer&lt;MFace&gt;&gt; p_mface = p.cast(new Class[]{CPointer.class, MFace.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'mface'</li>
-	 * <li>Signature: 'MFace*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__mface = new long[]{172, 248};
-
-	/**
-	 * Field descriptor (offset) for struct member 'mtface'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Store tessellation face UV's and texture here. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__mtface);
-	 * CPointer&lt;CPointer&lt;MTFace&gt;&gt; p_mtface = p.cast(new Class[]{CPointer.class, MTFace.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'mtface'</li>
-	 * <li>Signature: 'MTFace*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__mtface = new long[]{176, 256};
-
-	/**
-	 * Field descriptor (offset) for struct member 'tface'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Deprecated, use mtface. 
-	 * @deprecated
-	 *  Deprecated</p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__tface);
-	 * CPointer&lt;CPointer&lt;TFace&gt;&gt; p_tface = p.cast(new Class[]{CPointer.class, TFace.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'tface'</li>
-	 * <li>Signature: 'TFace*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__tface = new long[]{180, 264};
-
-	/**
 	 * Field descriptor (offset) for struct member 'mvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
@@ -342,7 +160,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mvert = new long[]{184, 272};
+	public static final long[] __DNA__FIELD__mvert = new long[]{152, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'medge'.
@@ -366,119 +184,139 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__medge = new long[]{188, 280};
+	public static final long[] __DNA__FIELD__medge = new long[]{156, 216};
 
 	/**
-	 * Field descriptor (offset) for struct member 'dvert'.
+	 * Field descriptor (offset) for struct member 'mpoly'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Deform-group vertices. </p>
+	 * <p> BMESH ONLY New face structures. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__dvert);
-	 * CPointer&lt;CPointer&lt;MDeformVert&gt;&gt; p_dvert = p.cast(new Class[]{CPointer.class, MDeformVert.class});
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__mpoly);
+	 * CPointer&lt;CPointer&lt;MPoly&gt;&gt; p_mpoly = p.cast(new Class[]{CPointer.class, MPoly.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'dvert'</li>
-	 * <li>Signature: 'MDeformVert*'</li>
+	 * <li>Field: 'mpoly'</li>
+	 * <li>Signature: 'MPoly*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dvert = new long[]{192, 288};
+	public static final long[] __DNA__FIELD__mpoly = new long[]{160, 224};
 
 	/**
-	 * Field descriptor (offset) for struct member 'vertex_group_names'.
+	 * Field descriptor (offset) for struct member 'mloop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
+	 * <h4>Java .Blend:</h4>
+	 * <p>pointer on array with loops, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__vertex_group_names);
-	 * CPointer&lt;ListBase&gt; p_vertex_group_names = p.cast(new Class[]{ListBase.class});
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__mloop);
+	 * CPointer&lt;CPointer&lt;MLoop&gt;&gt; p_mloop = p.cast(new Class[]{CPointer.class, MLoop.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'vertex_group_names'</li>
-	 * <li>Signature: 'ListBase'</li>
-	 * <li>Actual Size (32bit/64bit): 8/16</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__vertex_group_names = new long[]{196, 296};
-
-	/**
-	 * Field descriptor (offset) for struct member 'mcol'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> array of colors for the tessellated faces, must be number of tessellated faces * 4 in length </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__mcol);
-	 * CPointer&lt;CPointer&lt;MCol&gt;&gt; p_mcol = p.cast(new Class[]{CPointer.class, MCol.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'mcol'</li>
-	 * <li>Signature: 'MCol*'</li>
+	 * <li>Field: 'mloop'</li>
+	 * <li>Signature: 'MLoop*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mcol = new long[]{204, 312};
+	public static final long[] __DNA__FIELD__mloop = new long[]{164, 232};
 
 	/**
-	 * Field descriptor (offset) for struct member 'texcomesh'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__texcomesh);
-	 * CPointer&lt;CPointer&lt;Mesh&gt;&gt; p_texcomesh = p.cast(new Class[]{CPointer.class, Mesh.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'texcomesh'</li>
-	 * <li>Signature: 'Mesh*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__texcomesh = new long[]{208, 320};
-
-	/**
-	 * Field descriptor (offset) for struct member 'edit_mesh'.
+	 * Field descriptor (offset) for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> When the object is available, the preferred access method is: BKE_editmesh_from_object(ob) Not saved in file. </p>
+	 * <p> END BMESH ONLY </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__edit_mesh);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_edit_mesh = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__totvert);
+	 * CPointer&lt;Integer&gt; p_totvert = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'edit_mesh'</li>
-	 * <li>Signature: 'BMEditMesh*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * <li>Field: 'totvert'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__edit_mesh = new long[]{212, 328};
+	public static final long[] __DNA__FIELD__totvert = new long[]{168, 240};
+
+	/**
+	 * Field descriptor (offset) for struct member 'totedge'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh mesh = ...;
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__totedge);
+	 * CPointer&lt;Integer&gt; p_totedge = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'totedge'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__totedge = new long[]{172, 244};
+
+	/**
+	 * Field descriptor (offset) for struct member 'totpoly'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> BMESH ONLY </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh mesh = ...;
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__totpoly);
+	 * CPointer&lt;Integer&gt; p_totpoly = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'totpoly'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__totpoly = new long[]{176, 248};
+
+	/**
+	 * Field descriptor (offset) for struct member 'totloop'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh mesh = ...;
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__totloop);
+	 * CPointer&lt;Integer&gt; p_totloop = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'totloop'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__totloop = new long[]{180, 252};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vdata'.
@@ -501,7 +339,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 236/248</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vdata = new long[]{216, 336};
+	public static final long[] __DNA__FIELD__vdata = new long[]{184, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'edata'.
@@ -524,30 +362,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 236/248</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__edata = new long[]{452, 584};
-
-	/**
-	 * Field descriptor (offset) for struct member 'fdata'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Custom data layers containing {@link MFace}.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__fdata);
-	 * CPointer&lt;CustomData&gt; p_fdata = p.cast(new Class[]{CustomData.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'fdata'</li>
-	 * <li>Signature: 'CustomData'</li>
-	 * <li>Actual Size (32bit/64bit): 236/248</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__fdata = new long[]{688, 832};
+	public static final long[] __DNA__FIELD__edata = new long[]{420, 504};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pdata'.
@@ -570,7 +385,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 236/248</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pdata = new long[]{924, 1080};
+	public static final long[] __DNA__FIELD__pdata = new long[]{656, 752};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ldata'.
@@ -594,136 +409,73 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 236/248</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ldata = new long[]{1160, 1328};
+	public static final long[] __DNA__FIELD__ldata = new long[]{892, 1000};
 
 	/**
-	 * Field descriptor (offset) for struct member 'totvert'.
+	 * Field descriptor (offset) for struct member 'dvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> END BMESH ONLY </p>
+	 * <p> Deform-group vertices. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__totvert);
-	 * CPointer&lt;Integer&gt; p_totvert = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__dvert);
+	 * CPointer&lt;CPointer&lt;MDeformVert&gt;&gt; p_dvert = p.cast(new Class[]{CPointer.class, MDeformVert.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'totvert'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'dvert'</li>
+	 * <li>Signature: 'MDeformVert*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totvert = new long[]{1396, 1576};
+	public static final long[] __DNA__FIELD__dvert = new long[]{1128, 1248};
 
 	/**
-	 * Field descriptor (offset) for struct member 'totedge'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__totedge);
-	 * CPointer&lt;Integer&gt; p_totedge = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'totedge'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__totedge = new long[]{1400, 1580};
-
-	/**
-	 * Field descriptor (offset) for struct member 'totface'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__totface);
-	 * CPointer&lt;Integer&gt; p_totface = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'totface'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__totface = new long[]{1404, 1584};
-
-	/**
-	 * Field descriptor (offset) for struct member 'totselect'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Number of entries in mselect (see {@link #getMselect()}).
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__totselect);
-	 * CPointer&lt;Integer&gt; p_totselect = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'totselect'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__totselect = new long[]{1408, 1588};
-
-	/**
-	 * Field descriptor (offset) for struct member 'totpoly'.
+	 * Field descriptor (offset) for struct member 'vertex_group_names'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> BMESH ONLY </p>
+	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__totpoly);
-	 * CPointer&lt;Integer&gt; p_totpoly = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__vertex_group_names);
+	 * CPointer&lt;ListBase&gt; p_vertex_group_names = p.cast(new Class[]{ListBase.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'totpoly'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'vertex_group_names'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totpoly = new long[]{1412, 1592};
+	public static final long[] __DNA__FIELD__vertex_group_names = new long[]{1132, 1256};
 
 	/**
-	 * Field descriptor (offset) for struct member 'totloop'.
+	 * Field descriptor (offset) for struct member 'vertex_group_active_index'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__totloop);
-	 * CPointer&lt;Integer&gt; p_totloop = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__vertex_group_active_index);
+	 * CPointer&lt;Integer&gt; p_vertex_group_active_index = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'totloop'</li>
+	 * <li>Field: 'vertex_group_active_index'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totloop = new long[]{1416, 1596};
+	public static final long[] __DNA__FIELD__vertex_group_active_index = new long[]{1140, 1272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'attributes_active_index'.
@@ -746,27 +498,116 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__attributes_active_index = new long[]{1420, 1600};
+	public static final long[] __DNA__FIELD__attributes_active_index = new long[]{1144, 1276};
 
 	/**
-	 * Field descriptor (offset) for struct member 'vertex_group_active_index'.
+	 * Field descriptor (offset) for struct member 'mloopuv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <p>pointer on array with UV coordinates, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__vertex_group_active_index);
-	 * CPointer&lt;Integer&gt; p_vertex_group_active_index = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__mloopuv);
+	 * CPointer&lt;CPointer&lt;MLoopUV&gt;&gt; p_mloopuv = p.cast(new Class[]{CPointer.class, MLoopUV.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'vertex_group_active_index'</li>
+	 * <li>Field: 'mloopuv'</li>
+	 * <li>Signature: 'MLoopUV*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mloopuv = new long[]{1148, 1280};
+
+	/**
+	 * Field descriptor (offset) for struct member 'mloopcol'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh mesh = ...;
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__mloopcol);
+	 * CPointer&lt;CPointer&lt;MLoopCol&gt;&gt; p_mloopcol = p.cast(new Class[]{CPointer.class, MLoopCol.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mloopcol'</li>
+	 * <li>Signature: 'MLoopCol*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mloopcol = new long[]{1152, 1288};
+
+	/**
+	 * Field descriptor (offset) for struct member 'edit_mesh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> When the object is available, the preferred access method is: BKE_editmesh_from_object(ob) Not saved in file. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh mesh = ...;
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__edit_mesh);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_edit_mesh = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'edit_mesh'</li>
+	 * <li>Signature: 'BMEditMesh*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__edit_mesh = new long[]{1156, 1296};
+
+	/**
+	 * Field descriptor (offset) for struct member 'mselect'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh mesh = ...;
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__mselect);
+	 * CPointer&lt;CPointer&lt;MSelect&gt;&gt; p_mselect = p.cast(new Class[]{CPointer.class, MSelect.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mselect'</li>
+	 * <li>Signature: 'MSelect*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mselect = new long[]{1160, 1304};
+
+	/**
+	 * Field descriptor (offset) for struct member 'totselect'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Number of entries in mselect (see {@link #getMselect()}).
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh mesh = ...;
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__totselect);
+	 * CPointer&lt;Integer&gt; p_totselect = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'totselect'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vertex_group_active_index = new long[]{1424, 1604};
+	public static final long[] __DNA__FIELD__totselect = new long[]{1164, 1312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_face'.
@@ -789,7 +630,27 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__act_face = new long[]{1428, 1608};
+	public static final long[] __DNA__FIELD__act_face = new long[]{1168, 1316};
+
+	/**
+	 * Field descriptor (offset) for struct member 'texcomesh'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh mesh = ...;
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__texcomesh);
+	 * CPointer&lt;CPointer&lt;Mesh&gt;&gt; p_texcomesh = p.cast(new Class[]{CPointer.class, Mesh.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'texcomesh'</li>
+	 * <li>Signature: 'Mesh*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__texcomesh = new long[]{1172, 1320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'loc'.
@@ -812,7 +673,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__loc = new long[]{1432, 1612};
+	public static final long[] __DNA__FIELD__loc = new long[]{1176, 1328};
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -832,7 +693,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size = new long[]{1444, 1624};
+	public static final long[] __DNA__FIELD__size = new long[]{1188, 1340};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texflag'.
@@ -849,16 +710,36 @@ public class Mesh extends CFacade {
 	 * <pre>
 	 * Mesh mesh = ...;
 	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__texflag);
-	 * CPointer&lt;Short&gt; p_texflag = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_texflag = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'texflag'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texflag = new long[]{1456, 1636};
+	public static final long[] __DNA__FIELD__texflag = new long[]{1200, 1352};
+
+	/**
+	 * Field descriptor (offset) for struct member 'editflag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh mesh = ...;
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__editflag);
+	 * CPointer&lt;Byte&gt; p_editflag = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'editflag'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__editflag = new long[]{1201, 1353};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -894,7 +775,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{1458, 1638};
+	public static final long[] __DNA__FIELD__flag = new long[]{1202, 1354};
 
 	/**
 	 * Field descriptor (offset) for struct member 'smoothresh'.
@@ -914,7 +795,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__smoothresh = new long[]{1460, 1640};
+	public static final long[] __DNA__FIELD__smoothresh = new long[]{1204, 1356};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cd_flag'.
@@ -937,27 +818,70 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cd_flag = new long[]{1464, 1644};
+	public static final long[] __DNA__FIELD__cd_flag = new long[]{1208, 1360};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'symmetry'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Indicates the symmetry that a mesh has, according to the artist, so that tools can consistently ensure that this symmetry is maintained. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD___pad);
-	 * CPointer&lt;Byte&gt; p__pad = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__symmetry);
+	 * CPointer&lt;Byte&gt; p_symmetry = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
+	 * <li>Field: 'symmetry'</li>
 	 * <li>Signature: 'char'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{1465, 1645};
+	public static final long[] __DNA__FIELD__symmetry = new long[]{1209, 1361};
+
+	/**
+	 * Field descriptor (offset) for struct member 'totcol'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh mesh = ...;
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__totcol);
+	 * CPointer&lt;Short&gt; p_totcol = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'totcol'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__totcol = new long[]{1210, 1362};
+
+	/**
+	 * Field descriptor (offset) for struct member 'remesh_mode'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh mesh = ...;
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__remesh_mode);
+	 * CPointer&lt;Byte&gt; p_remesh_mode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'remesh_mode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__remesh_mode = new long[]{1212, 1364};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subdiv'.
@@ -982,7 +906,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subdiv = new long[]{1466, 1646};
+	public static final long[] __DNA__FIELD__subdiv = new long[]{1213, 1365};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subdivr'.
@@ -1007,7 +931,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subdivr = new long[]{1467, 1647};
+	public static final long[] __DNA__FIELD__subdivr = new long[]{1214, 1366};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subsurftype'.
@@ -1032,47 +956,146 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subsurftype = new long[]{1468, 1648};
+	public static final long[] __DNA__FIELD__subsurftype = new long[]{1215, 1367};
 
 	/**
-	 * Field descriptor (offset) for struct member 'editflag'.
+	 * Field descriptor (offset) for struct member 'mtface'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Store tessellation face UV's and texture here. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__editflag);
-	 * CPointer&lt;Byte&gt; p_editflag = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__mtface);
+	 * CPointer&lt;CPointer&lt;MTFace&gt;&gt; p_mtface = p.cast(new Class[]{CPointer.class, MTFace.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'editflag'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * <li>Field: 'mtface'</li>
+	 * <li>Signature: 'MTFace*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__editflag = new long[]{1469, 1649};
+	public static final long[] __DNA__FIELD__mtface = new long[]{1216, 1368};
 
 	/**
-	 * Field descriptor (offset) for struct member 'totcol'.
+	 * Field descriptor (offset) for struct member 'tface'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Deprecated, use mtface. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__totcol);
-	 * CPointer&lt;Short&gt; p_totcol = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__tface);
+	 * CPointer&lt;CPointer&lt;TFace&gt;&gt; p_tface = p.cast(new Class[]{CPointer.class, TFace.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'totcol'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Field: 'tface'</li>
+	 * <li>Signature: 'TFace*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totcol = new long[]{1470, 1650};
+	public static final long[] __DNA__FIELD__tface = new long[]{1220, 1376};
+
+	/**
+	 * Field descriptor (offset) for struct member 'mcol'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> array of colors for the tessellated faces, must be number of tessellated faces * 4 in length </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh mesh = ...;
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__mcol);
+	 * CPointer&lt;CPointer&lt;MCol&gt;&gt; p_mcol = p.cast(new Class[]{CPointer.class, MCol.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mcol'</li>
+	 * <li>Signature: 'MCol*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mcol = new long[]{1224, 1384};
+
+	/**
+	 * Field descriptor (offset) for struct member 'mface'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> END BMESH ONLY Legacy face storage (quads & tries only), faces are now stored in {@link Mesh.mpoly}  & #Mesh.mloop arrays.</p><p><h2>Note</h2><p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
+	 * 
+	 * </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh mesh = ...;
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__mface);
+	 * CPointer&lt;CPointer&lt;MFace&gt;&gt; p_mface = p.cast(new Class[]{CPointer.class, MFace.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mface'</li>
+	 * <li>Signature: 'MFace*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mface = new long[]{1228, 1392};
+
+	/**
+	 * Field descriptor (offset) for struct member 'fdata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Custom data layers containing {@link MFace}.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh mesh = ...;
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__fdata);
+	 * CPointer&lt;CustomData&gt; p_fdata = p.cast(new Class[]{CustomData.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'fdata'</li>
+	 * <li>Signature: 'CustomData'</li>
+	 * <li>Actual Size (32bit/64bit): 236/248</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__fdata = new long[]{1232, 1400};
+
+	/**
+	 * Field descriptor (offset) for struct member 'totface'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh mesh = ...;
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__totface);
+	 * CPointer&lt;Integer&gt; p_totface = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'totface'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__totface = new long[]{1468, 1648};
 
 	/**
 	 * Field descriptor (offset) for struct member 'remesh_voxel_size'.
@@ -1121,69 +1144,6 @@ public class Mesh extends CFacade {
 	public static final long[] __DNA__FIELD__remesh_voxel_adaptivity = new long[]{1476, 1656};
 
 	/**
-	 * Field descriptor (offset) for struct member 'remesh_mode'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__remesh_mode);
-	 * CPointer&lt;Byte&gt; p_remesh_mode = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'remesh_mode'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__remesh_mode = new long[]{1480, 1660};
-
-	/**
-	 * Field descriptor (offset) for struct member 'symmetry'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Indicates the symmetry that a mesh has, according to the artist, so that tools can consistently ensure that this symmetry is maintained. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__symmetry);
-	 * CPointer&lt;Byte&gt; p_symmetry = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'symmetry'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__symmetry = new long[]{1481, 1661};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad1'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD___pad1);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad1'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{1482, 1662};
-
-	/**
 	 * Field descriptor (offset) for struct member 'face_sets_color_seed'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1201,7 +1161,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__face_sets_color_seed = new long[]{1484, 1664};
+	public static final long[] __DNA__FIELD__face_sets_color_seed = new long[]{1480, 1660};
 
 	/**
 	 * Field descriptor (offset) for struct member 'face_sets_color_default'.
@@ -1224,7 +1184,27 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__face_sets_color_default = new long[]{1488, 1668};
+	public static final long[] __DNA__FIELD__face_sets_color_default = new long[]{1484, 1664};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh mesh = ...;
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad1 = new long[]{1488, 1668};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -1261,7 +1241,7 @@ public class Mesh extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'Mesh_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 144/192</li>
+	 * <li>Actual Size (32bit/64bit): 152/208</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__runtime = new long[]{1496, 1680};
@@ -1455,306 +1435,6 @@ public class Mesh extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'mselect'.
-	 * @see #__DNA__FIELD__mselect
-	 */
-	
-	public CPointer<MSelect> getMselect() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 208);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{MSelect.class};
-		return new CPointer<MSelect>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MSelect.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'mselect'.
-	 * @see #__DNA__FIELD__mselect
-	 */
-	
-	public void setMselect(CPointer<MSelect> mselect) throws IOException
-	{
-		long __address = ((mselect == null) ? 0 : mselect.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 208, __address);
-		} else {
-			__io__block.writeLong(__io__address + 152, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'mpoly'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> BMESH ONLY New face structures. </p>
-	 * @see #__DNA__FIELD__mpoly
-	 */
-	
-	public CPointer<MPoly> getMpoly() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 216);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 156);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{MPoly.class};
-		return new CPointer<MPoly>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MPoly.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'mpoly'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> BMESH ONLY New face structures. </p>
-	 * @see #__DNA__FIELD__mpoly
-	 */
-	
-	public void setMpoly(CPointer<MPoly> mpoly) throws IOException
-	{
-		long __address = ((mpoly == null) ? 0 : mpoly.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 216, __address);
-		} else {
-			__io__block.writeLong(__io__address + 156, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'mloop'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * <p>pointer on array with loops, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
-	 * @see #__DNA__FIELD__mloop
-	 */
-	
-	public CPointer<MLoop> getMloop() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 224);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{MLoop.class};
-		return new CPointer<MLoop>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MLoop.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'mloop'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * <p>pointer on array with loops, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
-	 * @see #__DNA__FIELD__mloop
-	 */
-	
-	public void setMloop(CPointer<MLoop> mloop) throws IOException
-	{
-		long __address = ((mloop == null) ? 0 : mloop.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 224, __address);
-		} else {
-			__io__block.writeLong(__io__address + 160, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'mloopuv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * <p>pointer on array with UV coordinates, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
-	 * @see #__DNA__FIELD__mloopuv
-	 */
-	
-	public CPointer<MLoopUV> getMloopuv() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 232);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 164);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{MLoopUV.class};
-		return new CPointer<MLoopUV>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MLoopUV.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'mloopuv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * <p>pointer on array with UV coordinates, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
-	 * @see #__DNA__FIELD__mloopuv
-	 */
-	
-	public void setMloopuv(CPointer<MLoopUV> mloopuv) throws IOException
-	{
-		long __address = ((mloopuv == null) ? 0 : mloopuv.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 232, __address);
-		} else {
-			__io__block.writeLong(__io__address + 164, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'mloopcol'.
-	 * @see #__DNA__FIELD__mloopcol
-	 */
-	
-	public CPointer<MLoopCol> getMloopcol() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 240);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 168);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{MLoopCol.class};
-		return new CPointer<MLoopCol>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MLoopCol.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'mloopcol'.
-	 * @see #__DNA__FIELD__mloopcol
-	 */
-	
-	public void setMloopcol(CPointer<MLoopCol> mloopcol) throws IOException
-	{
-		long __address = ((mloopcol == null) ? 0 : mloopcol.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 240, __address);
-		} else {
-			__io__block.writeLong(__io__address + 168, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'mface'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> END BMESH ONLY Legacy face storage (quads & tries only), faces are now stored in {@link Mesh.mpoly}  & #Mesh.mloop arrays.</p><p><h2>Note</h2><p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
-	 * 
-	 * </p>
-	 * @see #__DNA__FIELD__mface
-	 */
-	
-	public CPointer<MFace> getMface() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 248);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 172);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{MFace.class};
-		return new CPointer<MFace>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MFace.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'mface'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> END BMESH ONLY Legacy face storage (quads & tries only), faces are now stored in {@link Mesh.mpoly}  & #Mesh.mloop arrays.</p><p><h2>Note</h2><p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
-	 * 
-	 * </p>
-	 * @see #__DNA__FIELD__mface
-	 */
-	
-	public void setMface(CPointer<MFace> mface) throws IOException
-	{
-		long __address = ((mface == null) ? 0 : mface.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 248, __address);
-		} else {
-			__io__block.writeLong(__io__address + 172, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'mtface'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Store tessellation face UV's and texture here. </p>
-	 * @see #__DNA__FIELD__mtface
-	 */
-	
-	public CPointer<MTFace> getMtface() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{MTFace.class};
-		return new CPointer<MTFace>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MTFace.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'mtface'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Store tessellation face UV's and texture here. </p>
-	 * @see #__DNA__FIELD__mtface
-	 */
-	
-	public void setMtface(CPointer<MTFace> mtface) throws IOException
-	{
-		long __address = ((mtface == null) ? 0 : mtface.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 256, __address);
-		} else {
-			__io__block.writeLong(__io__address + 176, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'tface'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Deprecated, use mtface. 
-	 * @deprecated
-	 *  Deprecated</p>
-	 * @see #__DNA__FIELD__tface
-	 */
-	
-	public CPointer<TFace> getTface() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 264);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 180);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{TFace.class};
-		return new CPointer<TFace>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, TFace.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'tface'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Deprecated, use mtface. 
-	 * @deprecated
-	 *  Deprecated</p>
-	 * @see #__DNA__FIELD__tface
-	 */
-	
-	public void setTface(CPointer<TFace> tface) throws IOException
-	{
-		long __address = ((tface == null) ? 0 : tface.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 264, __address);
-		} else {
-			__io__block.writeLong(__io__address + 180, __address);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'mvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
@@ -1767,9 +1447,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MVert.class};
 		return new CPointer<MVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MVert.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1788,9 +1468,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((mvert == null) ? 0 : mvert.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 272, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		} else {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		}
 	}
 
@@ -1807,9 +1487,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 280);
+			__dna__targetAddress = __io__block.readLong(__io__address + 216);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 188);
+			__dna__targetAddress = __io__block.readLong(__io__address + 156);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MEdge.class};
 		return new CPointer<MEdge>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MEdge.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1828,197 +1508,209 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((medge == null) ? 0 : medge.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 280, __address);
+			__io__block.writeLong(__io__address + 216, __address);
 		} else {
-			__io__block.writeLong(__io__address + 188, __address);
+			__io__block.writeLong(__io__address + 156, __address);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'dvert'.
+	 * Get method for struct member 'mpoly'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Deform-group vertices. </p>
-	 * @see #__DNA__FIELD__dvert
+	 * <p> BMESH ONLY New face structures. </p>
+	 * @see #__DNA__FIELD__mpoly
 	 */
 	
-	public CPointer<MDeformVert> getDvert() throws IOException
+	public CPointer<MPoly> getMpoly() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 288);
+			__dna__targetAddress = __io__block.readLong(__io__address + 224);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{MDeformVert.class};
-		return new CPointer<MDeformVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MDeformVert.__DNA__SDNA_INDEX), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{MPoly.class};
+		return new CPointer<MPoly>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MPoly.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member 'dvert'.
+	 * Set method for struct member 'mpoly'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Deform-group vertices. </p>
-	 * @see #__DNA__FIELD__dvert
+	 * <p> BMESH ONLY New face structures. </p>
+	 * @see #__DNA__FIELD__mpoly
 	 */
 	
-	public void setDvert(CPointer<MDeformVert> dvert) throws IOException
+	public void setMpoly(CPointer<MPoly> mpoly) throws IOException
 	{
-		long __address = ((dvert == null) ? 0 : dvert.getAddress());
+		long __address = ((mpoly == null) ? 0 : mpoly.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 288, __address);
+			__io__block.writeLong(__io__address + 224, __address);
 		} else {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'vertex_group_names'.
+	 * Get method for struct member 'mloop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
-	 * @see #__DNA__FIELD__vertex_group_names
+	 * <h4>Java .Blend:</h4>
+	 * <p>pointer on array with loops, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
+	 * @see #__DNA__FIELD__mloop
 	 */
 	
-	public ListBase getVertex_group_names() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 296, __io__block, __io__blockTable);
-		} else {
-			return new ListBase(__io__address + 196, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'vertex_group_names'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
-	 * @see #__DNA__FIELD__vertex_group_names
-	 */
-	
-	public void setVertex_group_names(ListBase vertex_group_names) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 296;
-		} else {
-			__dna__offset = 196;
-		}
-		if (__io__equals(vertex_group_names, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, vertex_group_names)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, vertex_group_names);
-		} else {
-			__io__generic__copy( getVertex_group_names(), vertex_group_names);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'mcol'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> array of colors for the tessellated faces, must be number of tessellated faces * 4 in length </p>
-	 * @see #__DNA__FIELD__mcol
-	 */
-	
-	public CPointer<MCol> getMcol() throws IOException
+	public CPointer<MLoop> getMloop() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 312);
+			__dna__targetAddress = __io__block.readLong(__io__address + 232);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 204);
+			__dna__targetAddress = __io__block.readLong(__io__address + 164);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{MCol.class};
-		return new CPointer<MCol>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MCol.__DNA__SDNA_INDEX), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{MLoop.class};
+		return new CPointer<MLoop>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MLoop.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member 'mcol'.
+	 * Set method for struct member 'mloop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <p>pointer on array with loops, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
+	 * @see #__DNA__FIELD__mloop
+	 */
+	
+	public void setMloop(CPointer<MLoop> mloop) throws IOException
+	{
+		long __address = ((mloop == null) ? 0 : mloop.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 232, __address);
+		} else {
+			__io__block.writeLong(__io__address + 164, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> array of colors for the tessellated faces, must be number of tessellated faces * 4 in length </p>
-	 * @see #__DNA__FIELD__mcol
+	 * <p> END BMESH ONLY </p>
+	 * @see #__DNA__FIELD__totvert
 	 */
 	
-	public void setMcol(CPointer<MCol> mcol) throws IOException
+	public int getTotvert() throws IOException
 	{
-		long __address = ((mcol == null) ? 0 : mcol.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 312, __address);
+			return __io__block.readInt(__io__address + 240);
 		} else {
-			__io__block.writeLong(__io__address + 204, __address);
+			return __io__block.readInt(__io__address + 168);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'texcomesh'.
-	 * @see #__DNA__FIELD__texcomesh
-	 */
-	
-	public CPointer<Mesh> getTexcomesh() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 320);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 208);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Mesh.class};
-		return new CPointer<Mesh>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Mesh.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'texcomesh'.
-	 * @see #__DNA__FIELD__texcomesh
-	 */
-	
-	public void setTexcomesh(CPointer<Mesh> texcomesh) throws IOException
-	{
-		long __address = ((texcomesh == null) ? 0 : texcomesh.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 320, __address);
-		} else {
-			__io__block.writeLong(__io__address + 208, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'edit_mesh'.
+	 * Set method for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> When the object is available, the preferred access method is: BKE_editmesh_from_object(ob) Not saved in file. </p>
-	 * @see #__DNA__FIELD__edit_mesh
+	 * <p> END BMESH ONLY </p>
+	 * @see #__DNA__FIELD__totvert
 	 */
 	
-	public CPointer<Object> getEdit_mesh() throws IOException
+	public void setTotvert(int totvert) throws IOException
 	{
-		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 328);
+			__io__block.writeInt(__io__address + 240, totvert);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 212);
+			__io__block.writeInt(__io__address + 168, totvert);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member 'edit_mesh'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> When the object is available, the preferred access method is: BKE_editmesh_from_object(ob) Not saved in file. </p>
-	 * @see #__DNA__FIELD__edit_mesh
+	 * Get method for struct member 'totedge'.
+	 * @see #__DNA__FIELD__totedge
 	 */
 	
-	public void setEdit_mesh(CPointer<Object> edit_mesh) throws IOException
+	public int getTotedge() throws IOException
 	{
-		long __address = ((edit_mesh == null) ? 0 : edit_mesh.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 328, __address);
+			return __io__block.readInt(__io__address + 244);
 		} else {
-			__io__block.writeLong(__io__address + 212, __address);
+			return __io__block.readInt(__io__address + 172);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'totedge'.
+	 * @see #__DNA__FIELD__totedge
+	 */
+	
+	public void setTotedge(int totedge) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 244, totedge);
+		} else {
+			__io__block.writeInt(__io__address + 172, totedge);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'totpoly'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> BMESH ONLY </p>
+	 * @see #__DNA__FIELD__totpoly
+	 */
+	
+	public int getTotpoly() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 248);
+		} else {
+			return __io__block.readInt(__io__address + 176);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'totpoly'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> BMESH ONLY </p>
+	 * @see #__DNA__FIELD__totpoly
+	 */
+	
+	public void setTotpoly(int totpoly) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 248, totpoly);
+		} else {
+			__io__block.writeInt(__io__address + 176, totpoly);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'totloop'.
+	 * @see #__DNA__FIELD__totloop
+	 */
+	
+	public int getTotloop() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 252);
+		} else {
+			return __io__block.readInt(__io__address + 180);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'totloop'.
+	 * @see #__DNA__FIELD__totloop
+	 */
+	
+	public void setTotloop(int totloop) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 252, totloop);
+		} else {
+			__io__block.writeInt(__io__address + 180, totloop);
 		}
 	}
 
@@ -2033,9 +1725,9 @@ public class Mesh extends CFacade {
 	public CustomData getVdata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CustomData(__io__address + 336, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 256, __io__block, __io__blockTable);
 		} else {
-			return new CustomData(__io__address + 216, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 184, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2051,9 +1743,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 336;
+			__dna__offset = 256;
 		} else {
-			__dna__offset = 216;
+			__dna__offset = 184;
 		}
 		if (__io__equals(vdata, __io__address + __dna__offset)) {
 			return;
@@ -2075,9 +1767,9 @@ public class Mesh extends CFacade {
 	public CustomData getEdata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CustomData(__io__address + 584, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 504, __io__block, __io__blockTable);
 		} else {
-			return new CustomData(__io__address + 452, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 420, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2093,9 +1785,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 584;
+			__dna__offset = 504;
 		} else {
-			__dna__offset = 452;
+			__dna__offset = 420;
 		}
 		if (__io__equals(edata, __io__address + __dna__offset)) {
 			return;
@@ -2103,48 +1795,6 @@ public class Mesh extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, edata);
 		} else {
 			__io__generic__copy( getEdata(), edata);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'fdata'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Custom data layers containing {@link MFace}.
-	 * @see #__DNA__FIELD__fdata
-	 */
-	
-	public CustomData getFdata() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return new CustomData(__io__address + 832, __io__block, __io__blockTable);
-		} else {
-			return new CustomData(__io__address + 688, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'fdata'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Custom data layers containing {@link MFace}.
-	 * @see #__DNA__FIELD__fdata
-	 */
-	
-	public void setFdata(CustomData fdata) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 832;
-		} else {
-			__dna__offset = 688;
-		}
-		if (__io__equals(fdata, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, fdata)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, fdata);
-		} else {
-			__io__generic__copy( getFdata(), fdata);
 		}
 	}
 
@@ -2159,9 +1809,9 @@ public class Mesh extends CFacade {
 	public CustomData getPdata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CustomData(__io__address + 1080, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 752, __io__block, __io__blockTable);
 		} else {
-			return new CustomData(__io__address + 924, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 656, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2177,9 +1827,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1080;
+			__dna__offset = 752;
 		} else {
-			__dna__offset = 924;
+			__dna__offset = 656;
 		}
 		if (__io__equals(pdata, __io__address + __dna__offset)) {
 			return;
@@ -2202,9 +1852,9 @@ public class Mesh extends CFacade {
 	public CustomData getLdata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CustomData(__io__address + 1328, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 1000, __io__block, __io__blockTable);
 		} else {
-			return new CustomData(__io__address + 1160, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 892, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2221,9 +1871,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1328;
+			__dna__offset = 1000;
 		} else {
-			__dna__offset = 1160;
+			__dna__offset = 892;
 		}
 		if (__io__equals(ldata, __io__address + __dna__offset)) {
 			return;
@@ -2235,188 +1885,110 @@ public class Mesh extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'totvert'.
+	 * Get method for struct member 'dvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> END BMESH ONLY </p>
-	 * @see #__DNA__FIELD__totvert
+	 * <p> Deform-group vertices. </p>
+	 * @see #__DNA__FIELD__dvert
 	 */
 	
-	public int getTotvert() throws IOException
+	public CPointer<MDeformVert> getDvert() throws IOException
 	{
+		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1576);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1248);
 		} else {
-			return __io__block.readInt(__io__address + 1396);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1128);
 		}
+		Class<?>[] __dna__targetTypes = new Class[]{MDeformVert.class};
+		return new CPointer<MDeformVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MDeformVert.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member 'totvert'.
+	 * Set method for struct member 'dvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> END BMESH ONLY </p>
-	 * @see #__DNA__FIELD__totvert
+	 * <p> Deform-group vertices. </p>
+	 * @see #__DNA__FIELD__dvert
 	 */
 	
-	public void setTotvert(int totvert) throws IOException
+	public void setDvert(CPointer<MDeformVert> dvert) throws IOException
 	{
+		long __address = ((dvert == null) ? 0 : dvert.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1576, totvert);
+			__io__block.writeLong(__io__address + 1248, __address);
 		} else {
-			__io__block.writeInt(__io__address + 1396, totvert);
+			__io__block.writeLong(__io__address + 1128, __address);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'totedge'.
-	 * @see #__DNA__FIELD__totedge
-	 */
-	
-	public int getTotedge() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1580);
-		} else {
-			return __io__block.readInt(__io__address + 1400);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'totedge'.
-	 * @see #__DNA__FIELD__totedge
-	 */
-	
-	public void setTotedge(int totedge) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1580, totedge);
-		} else {
-			__io__block.writeInt(__io__address + 1400, totedge);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'totface'.
-	 * @see #__DNA__FIELD__totface
-	 */
-	
-	public int getTotface() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1584);
-		} else {
-			return __io__block.readInt(__io__address + 1404);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'totface'.
-	 * @see #__DNA__FIELD__totface
-	 */
-	
-	public void setTotface(int totface) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1584, totface);
-		} else {
-			__io__block.writeInt(__io__address + 1404, totface);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'totselect'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Number of entries in mselect (see {@link #getMselect()}).
-	 * @see #__DNA__FIELD__totselect
-	 */
-	
-	public int getTotselect() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1588);
-		} else {
-			return __io__block.readInt(__io__address + 1408);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'totselect'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Number of entries in mselect (see {@link #getMselect()}).
-	 * @see #__DNA__FIELD__totselect
-	 */
-	
-	public void setTotselect(int totselect) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1588, totselect);
-		} else {
-			__io__block.writeInt(__io__address + 1408, totselect);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'totpoly'.
+	 * Get method for struct member 'vertex_group_names'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> BMESH ONLY </p>
-	 * @see #__DNA__FIELD__totpoly
+	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
+	 * @see #__DNA__FIELD__vertex_group_names
 	 */
 	
-	public int getTotpoly() throws IOException
+	public ListBase getVertex_group_names() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1592);
+			return new ListBase(__io__address + 1256, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 1412);
+			return new ListBase(__io__address + 1132, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'totpoly'.
+	 * Set method for struct member 'vertex_group_names'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> BMESH ONLY </p>
-	 * @see #__DNA__FIELD__totpoly
+	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
+	 * @see #__DNA__FIELD__vertex_group_names
 	 */
 	
-	public void setTotpoly(int totpoly) throws IOException
+	public void setVertex_group_names(ListBase vertex_group_names) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1592, totpoly);
+			__dna__offset = 1256;
 		} else {
-			__io__block.writeInt(__io__address + 1412, totpoly);
+			__dna__offset = 1132;
+		}
+		if (__io__equals(vertex_group_names, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, vertex_group_names)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, vertex_group_names);
+		} else {
+			__io__generic__copy( getVertex_group_names(), vertex_group_names);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'totloop'.
-	 * @see #__DNA__FIELD__totloop
+	 * Get method for struct member 'vertex_group_active_index'.
+	 * @see #__DNA__FIELD__vertex_group_active_index
 	 */
 	
-	public int getTotloop() throws IOException
+	public int getVertex_group_active_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1596);
+			return __io__block.readInt(__io__address + 1272);
 		} else {
-			return __io__block.readInt(__io__address + 1416);
+			return __io__block.readInt(__io__address + 1140);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'totloop'.
-	 * @see #__DNA__FIELD__totloop
+	 * Set method for struct member 'vertex_group_active_index'.
+	 * @see #__DNA__FIELD__vertex_group_active_index
 	 */
 	
-	public void setTotloop(int totloop) throws IOException
+	public void setVertex_group_active_index(int vertex_group_active_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1596, totloop);
+			__io__block.writeInt(__io__address + 1272, vertex_group_active_index);
 		} else {
-			__io__block.writeInt(__io__address + 1416, totloop);
+			__io__block.writeInt(__io__address + 1140, vertex_group_active_index);
 		}
 	}
 
@@ -2431,9 +2003,9 @@ public class Mesh extends CFacade {
 	public int getAttributes_active_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1600);
+			return __io__block.readInt(__io__address + 1276);
 		} else {
-			return __io__block.readInt(__io__address + 1420);
+			return __io__block.readInt(__io__address + 1144);
 		}
 	}
 
@@ -2448,37 +2020,183 @@ public class Mesh extends CFacade {
 	public void setAttributes_active_index(int attributes_active_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1600, attributes_active_index);
+			__io__block.writeInt(__io__address + 1276, attributes_active_index);
 		} else {
-			__io__block.writeInt(__io__address + 1420, attributes_active_index);
+			__io__block.writeInt(__io__address + 1144, attributes_active_index);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'vertex_group_active_index'.
-	 * @see #__DNA__FIELD__vertex_group_active_index
+	 * Get method for struct member 'mloopuv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <p>pointer on array with UV coordinates, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
+	 * @see #__DNA__FIELD__mloopuv
 	 */
 	
-	public int getVertex_group_active_index() throws IOException
+	public CPointer<MLoopUV> getMloopuv() throws IOException
 	{
+		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1604);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1280);
 		} else {
-			return __io__block.readInt(__io__address + 1424);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1148);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{MLoopUV.class};
+		return new CPointer<MLoopUV>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MLoopUV.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'mloopuv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <p>pointer on array with UV coordinates, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
+	 * @see #__DNA__FIELD__mloopuv
+	 */
+	
+	public void setMloopuv(CPointer<MLoopUV> mloopuv) throws IOException
+	{
+		long __address = ((mloopuv == null) ? 0 : mloopuv.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1280, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1148, __address);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'vertex_group_active_index'.
-	 * @see #__DNA__FIELD__vertex_group_active_index
+	 * Get method for struct member 'mloopcol'.
+	 * @see #__DNA__FIELD__mloopcol
 	 */
 	
-	public void setVertex_group_active_index(int vertex_group_active_index) throws IOException
+	public CPointer<MLoopCol> getMloopcol() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1288);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1152);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{MLoopCol.class};
+		return new CPointer<MLoopCol>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MLoopCol.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'mloopcol'.
+	 * @see #__DNA__FIELD__mloopcol
+	 */
+	
+	public void setMloopcol(CPointer<MLoopCol> mloopcol) throws IOException
+	{
+		long __address = ((mloopcol == null) ? 0 : mloopcol.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1288, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1152, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'edit_mesh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> When the object is available, the preferred access method is: BKE_editmesh_from_object(ob) Not saved in file. </p>
+	 * @see #__DNA__FIELD__edit_mesh
+	 */
+	
+	public CPointer<Object> getEdit_mesh() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1296);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1156);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'edit_mesh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> When the object is available, the preferred access method is: BKE_editmesh_from_object(ob) Not saved in file. </p>
+	 * @see #__DNA__FIELD__edit_mesh
+	 */
+	
+	public void setEdit_mesh(CPointer<Object> edit_mesh) throws IOException
+	{
+		long __address = ((edit_mesh == null) ? 0 : edit_mesh.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1296, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1156, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'mselect'.
+	 * @see #__DNA__FIELD__mselect
+	 */
+	
+	public CPointer<MSelect> getMselect() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1304);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1160);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{MSelect.class};
+		return new CPointer<MSelect>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MSelect.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'mselect'.
+	 * @see #__DNA__FIELD__mselect
+	 */
+	
+	public void setMselect(CPointer<MSelect> mselect) throws IOException
+	{
+		long __address = ((mselect == null) ? 0 : mselect.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1304, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1160, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'totselect'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Number of entries in mselect (see {@link #getMselect()}).
+	 * @see #__DNA__FIELD__totselect
+	 */
+	
+	public int getTotselect() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1604, vertex_group_active_index);
+			return __io__block.readInt(__io__address + 1312);
 		} else {
-			__io__block.writeInt(__io__address + 1424, vertex_group_active_index);
+			return __io__block.readInt(__io__address + 1164);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'totselect'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Number of entries in mselect (see {@link #getMselect()}).
+	 * @see #__DNA__FIELD__totselect
+	 */
+	
+	public void setTotselect(int totselect) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 1312, totselect);
+		} else {
+			__io__block.writeInt(__io__address + 1164, totselect);
 		}
 	}
 
@@ -2493,9 +2211,9 @@ public class Mesh extends CFacade {
 	public int getAct_face() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1608);
+			return __io__block.readInt(__io__address + 1316);
 		} else {
-			return __io__block.readInt(__io__address + 1428);
+			return __io__block.readInt(__io__address + 1168);
 		}
 	}
 
@@ -2510,9 +2228,41 @@ public class Mesh extends CFacade {
 	public void setAct_face(int act_face) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1608, act_face);
+			__io__block.writeInt(__io__address + 1316, act_face);
 		} else {
-			__io__block.writeInt(__io__address + 1428, act_face);
+			__io__block.writeInt(__io__address + 1168, act_face);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'texcomesh'.
+	 * @see #__DNA__FIELD__texcomesh
+	 */
+	
+	public CPointer<Mesh> getTexcomesh() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1320);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1172);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Mesh.class};
+		return new CPointer<Mesh>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Mesh.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'texcomesh'.
+	 * @see #__DNA__FIELD__texcomesh
+	 */
+	
+	public void setTexcomesh(CPointer<Mesh> texcomesh) throws IOException
+	{
+		long __address = ((texcomesh == null) ? 0 : texcomesh.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1320, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1172, __address);
 		}
 	}
 
@@ -2531,9 +2281,9 @@ public class Mesh extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1612, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1328, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 1432, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2549,9 +2299,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1612;
+			__dna__offset = 1328;
 		} else {
-			__dna__offset = 1432;
+			__dna__offset = 1176;
 		}
 		if (__io__equals(loc, __io__address + __dna__offset)) {
 			return;
@@ -2574,9 +2324,9 @@ public class Mesh extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1624, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1340, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 1444, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2589,9 +2339,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1624;
+			__dna__offset = 1340;
 		} else {
-			__dna__offset = 1444;
+			__dna__offset = 1188;
 		}
 		if (__io__equals(size, __io__address + __dna__offset)) {
 			return;
@@ -2613,12 +2363,12 @@ public class Mesh extends CFacade {
 	 * @see #__DNA__FIELD__texflag
 	 */
 	
-	public short getTexflag() throws IOException
+	public byte getTexflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1636);
+			return __io__block.readByte(__io__address + 1352);
 		} else {
-			return __io__block.readShort(__io__address + 1456);
+			return __io__block.readByte(__io__address + 1200);
 		}
 	}
 
@@ -2633,12 +2383,40 @@ public class Mesh extends CFacade {
 	 * @see #__DNA__FIELD__texflag
 	 */
 	
-	public void setTexflag(short texflag) throws IOException
+	public void setTexflag(byte texflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1636, texflag);
+			__io__block.writeByte(__io__address + 1352, texflag);
 		} else {
-			__io__block.writeShort(__io__address + 1456, texflag);
+			__io__block.writeByte(__io__address + 1200, texflag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'editflag'.
+	 * @see #__DNA__FIELD__editflag
+	 */
+	
+	public byte getEditflag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 1353);
+		} else {
+			return __io__block.readByte(__io__address + 1201);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'editflag'.
+	 * @see #__DNA__FIELD__editflag
+	 */
+	
+	public void setEditflag(byte editflag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 1353, editflag);
+		} else {
+			__io__block.writeByte(__io__address + 1201, editflag);
 		}
 	}
 
@@ -2666,9 +2444,9 @@ public class Mesh extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1638);
+			return __io__block.readShort(__io__address + 1354);
 		} else {
-			return __io__block.readShort(__io__address + 1458);
+			return __io__block.readShort(__io__address + 1202);
 		}
 	}
 
@@ -2696,9 +2474,9 @@ public class Mesh extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1638, flag);
+			__io__block.writeShort(__io__address + 1354, flag);
 		} else {
-			__io__block.writeShort(__io__address + 1458, flag);
+			__io__block.writeShort(__io__address + 1202, flag);
 		}
 	}
 
@@ -2710,9 +2488,9 @@ public class Mesh extends CFacade {
 	public float getSmoothresh() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1640);
+			return __io__block.readFloat(__io__address + 1356);
 		} else {
-			return __io__block.readFloat(__io__address + 1460);
+			return __io__block.readFloat(__io__address + 1204);
 		}
 	}
 
@@ -2724,9 +2502,9 @@ public class Mesh extends CFacade {
 	public void setSmoothresh(float smoothresh) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1640, smoothresh);
+			__io__block.writeFloat(__io__address + 1356, smoothresh);
 		} else {
-			__io__block.writeFloat(__io__address + 1460, smoothresh);
+			__io__block.writeFloat(__io__address + 1204, smoothresh);
 		}
 	}
 
@@ -2741,9 +2519,9 @@ public class Mesh extends CFacade {
 	public byte getCd_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1644);
+			return __io__block.readByte(__io__address + 1360);
 		} else {
-			return __io__block.readByte(__io__address + 1464);
+			return __io__block.readByte(__io__address + 1208);
 		}
 	}
 
@@ -2758,37 +2536,99 @@ public class Mesh extends CFacade {
 	public void setCd_flag(byte cd_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1644, cd_flag);
+			__io__block.writeByte(__io__address + 1360, cd_flag);
 		} else {
-			__io__block.writeByte(__io__address + 1464, cd_flag);
+			__io__block.writeByte(__io__address + 1208, cd_flag);
 		}
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'symmetry'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Indicates the symmetry that a mesh has, according to the artist, so that tools can consistently ensure that this symmetry is maintained. </p>
+	 * @see #__DNA__FIELD__symmetry
 	 */
 	
-	public byte get_pad() throws IOException
+	public byte getSymmetry() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1645);
+			return __io__block.readByte(__io__address + 1361);
 		} else {
-			return __io__block.readByte(__io__address + 1465);
+			return __io__block.readByte(__io__address + 1209);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'symmetry'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Indicates the symmetry that a mesh has, according to the artist, so that tools can consistently ensure that this symmetry is maintained. </p>
+	 * @see #__DNA__FIELD__symmetry
 	 */
 	
-	public void set_pad(byte _pad) throws IOException
+	public void setSymmetry(byte symmetry) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1645, _pad);
+			__io__block.writeByte(__io__address + 1361, symmetry);
 		} else {
-			__io__block.writeByte(__io__address + 1465, _pad);
+			__io__block.writeByte(__io__address + 1209, symmetry);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'totcol'.
+	 * @see #__DNA__FIELD__totcol
+	 */
+	
+	public short getTotcol() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 1362);
+		} else {
+			return __io__block.readShort(__io__address + 1210);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'totcol'.
+	 * @see #__DNA__FIELD__totcol
+	 */
+	
+	public void setTotcol(short totcol) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 1362, totcol);
+		} else {
+			__io__block.writeShort(__io__address + 1210, totcol);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'remesh_mode'.
+	 * @see #__DNA__FIELD__remesh_mode
+	 */
+	
+	public byte getRemesh_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 1364);
+		} else {
+			return __io__block.readByte(__io__address + 1212);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'remesh_mode'.
+	 * @see #__DNA__FIELD__remesh_mode
+	 */
+	
+	public void setRemesh_mode(byte remesh_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 1364, remesh_mode);
+		} else {
+			__io__block.writeByte(__io__address + 1212, remesh_mode);
 		}
 	}
 
@@ -2805,9 +2645,9 @@ public class Mesh extends CFacade {
 	public byte getSubdiv() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1646);
+			return __io__block.readByte(__io__address + 1365);
 		} else {
-			return __io__block.readByte(__io__address + 1466);
+			return __io__block.readByte(__io__address + 1213);
 		}
 	}
 
@@ -2824,9 +2664,9 @@ public class Mesh extends CFacade {
 	public void setSubdiv(byte subdiv) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1646, subdiv);
+			__io__block.writeByte(__io__address + 1365, subdiv);
 		} else {
-			__io__block.writeByte(__io__address + 1466, subdiv);
+			__io__block.writeByte(__io__address + 1213, subdiv);
 		}
 	}
 
@@ -2843,9 +2683,9 @@ public class Mesh extends CFacade {
 	public byte getSubdivr() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1647);
+			return __io__block.readByte(__io__address + 1366);
 		} else {
-			return __io__block.readByte(__io__address + 1467);
+			return __io__block.readByte(__io__address + 1214);
 		}
 	}
 
@@ -2862,9 +2702,9 @@ public class Mesh extends CFacade {
 	public void setSubdivr(byte subdivr) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1647, subdivr);
+			__io__block.writeByte(__io__address + 1366, subdivr);
 		} else {
-			__io__block.writeByte(__io__address + 1467, subdivr);
+			__io__block.writeByte(__io__address + 1214, subdivr);
 		}
 	}
 
@@ -2881,9 +2721,9 @@ public class Mesh extends CFacade {
 	public byte getSubsurftype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1648);
+			return __io__block.readByte(__io__address + 1367);
 		} else {
-			return __io__block.readByte(__io__address + 1468);
+			return __io__block.readByte(__io__address + 1215);
 		}
 	}
 
@@ -2900,65 +2740,239 @@ public class Mesh extends CFacade {
 	public void setSubsurftype(byte subsurftype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1648, subsurftype);
+			__io__block.writeByte(__io__address + 1367, subsurftype);
 		} else {
-			__io__block.writeByte(__io__address + 1468, subsurftype);
+			__io__block.writeByte(__io__address + 1215, subsurftype);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'editflag'.
-	 * @see #__DNA__FIELD__editflag
+	 * Get method for struct member 'mtface'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Store tessellation face UV's and texture here. </p>
+	 * @see #__DNA__FIELD__mtface
 	 */
 	
-	public byte getEditflag() throws IOException
+	public CPointer<MTFace> getMtface() throws IOException
 	{
+		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1649);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1368);
 		} else {
-			return __io__block.readByte(__io__address + 1469);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1216);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{MTFace.class};
+		return new CPointer<MTFace>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MTFace.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'mtface'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Store tessellation face UV's and texture here. </p>
+	 * @see #__DNA__FIELD__mtface
+	 */
+	
+	public void setMtface(CPointer<MTFace> mtface) throws IOException
+	{
+		long __address = ((mtface == null) ? 0 : mtface.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1368, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1216, __address);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'editflag'.
-	 * @see #__DNA__FIELD__editflag
+	 * Get method for struct member 'tface'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Deprecated, use mtface. 
+	 * @deprecated
+	 *  Deprecated</p>
+	 * @see #__DNA__FIELD__tface
 	 */
 	
-	public void setEditflag(byte editflag) throws IOException
+	public CPointer<TFace> getTface() throws IOException
 	{
+		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1649, editflag);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1376);
 		} else {
-			__io__block.writeByte(__io__address + 1469, editflag);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1220);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{TFace.class};
+		return new CPointer<TFace>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, TFace.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'tface'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Deprecated, use mtface. 
+	 * @deprecated
+	 *  Deprecated</p>
+	 * @see #__DNA__FIELD__tface
+	 */
+	
+	public void setTface(CPointer<TFace> tface) throws IOException
+	{
+		long __address = ((tface == null) ? 0 : tface.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1376, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1220, __address);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'totcol'.
-	 * @see #__DNA__FIELD__totcol
+	 * Get method for struct member 'mcol'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> array of colors for the tessellated faces, must be number of tessellated faces * 4 in length </p>
+	 * @see #__DNA__FIELD__mcol
 	 */
 	
-	public short getTotcol() throws IOException
+	public CPointer<MCol> getMcol() throws IOException
 	{
+		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1650);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1384);
 		} else {
-			return __io__block.readShort(__io__address + 1470);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1224);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{MCol.class};
+		return new CPointer<MCol>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MCol.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'mcol'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> array of colors for the tessellated faces, must be number of tessellated faces * 4 in length </p>
+	 * @see #__DNA__FIELD__mcol
+	 */
+	
+	public void setMcol(CPointer<MCol> mcol) throws IOException
+	{
+		long __address = ((mcol == null) ? 0 : mcol.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1384, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1224, __address);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'totcol'.
-	 * @see #__DNA__FIELD__totcol
+	 * Get method for struct member 'mface'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> END BMESH ONLY Legacy face storage (quads & tries only), faces are now stored in {@link Mesh.mpoly}  & #Mesh.mloop arrays.</p><p><h2>Note</h2><p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
+	 * 
+	 * </p>
+	 * @see #__DNA__FIELD__mface
 	 */
 	
-	public void setTotcol(short totcol) throws IOException
+	public CPointer<MFace> getMface() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1392);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1228);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{MFace.class};
+		return new CPointer<MFace>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MFace.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'mface'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> END BMESH ONLY Legacy face storage (quads & tries only), faces are now stored in {@link Mesh.mpoly}  & #Mesh.mloop arrays.</p><p><h2>Note</h2><p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
+	 * 
+	 * </p>
+	 * @see #__DNA__FIELD__mface
+	 */
+	
+	public void setMface(CPointer<MFace> mface) throws IOException
+	{
+		long __address = ((mface == null) ? 0 : mface.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1392, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1228, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'fdata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Custom data layers containing {@link MFace}.
+	 * @see #__DNA__FIELD__fdata
+	 */
+	
+	public CustomData getFdata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1650, totcol);
+			return new CustomData(__io__address + 1400, __io__block, __io__blockTable);
 		} else {
-			__io__block.writeShort(__io__address + 1470, totcol);
+			return new CustomData(__io__address + 1232, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'fdata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Custom data layers containing {@link MFace}.
+	 * @see #__DNA__FIELD__fdata
+	 */
+	
+	public void setFdata(CustomData fdata) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 1400;
+		} else {
+			__dna__offset = 1232;
+		}
+		if (__io__equals(fdata, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, fdata)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, fdata);
+		} else {
+			__io__generic__copy( getFdata(), fdata);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'totface'.
+	 * @see #__DNA__FIELD__totface
+	 */
+	
+	public int getTotface() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 1648);
+		} else {
+			return __io__block.readInt(__io__address + 1468);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'totface'.
+	 * @see #__DNA__FIELD__totface
+	 */
+	
+	public void setTotface(int totface) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 1648, totface);
+		} else {
+			__io__block.writeInt(__io__address + 1468, totface);
 		}
 	}
 
@@ -3031,108 +3045,6 @@ public class Mesh extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'remesh_mode'.
-	 * @see #__DNA__FIELD__remesh_mode
-	 */
-	
-	public byte getRemesh_mode() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1660);
-		} else {
-			return __io__block.readByte(__io__address + 1480);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'remesh_mode'.
-	 * @see #__DNA__FIELD__remesh_mode
-	 */
-	
-	public void setRemesh_mode(byte remesh_mode) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1660, remesh_mode);
-		} else {
-			__io__block.writeByte(__io__address + 1480, remesh_mode);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'symmetry'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Indicates the symmetry that a mesh has, according to the artist, so that tools can consistently ensure that this symmetry is maintained. </p>
-	 * @see #__DNA__FIELD__symmetry
-	 */
-	
-	public byte getSymmetry() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1661);
-		} else {
-			return __io__block.readByte(__io__address + 1481);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'symmetry'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Indicates the symmetry that a mesh has, according to the artist, so that tools can consistently ensure that this symmetry is maintained. </p>
-	 * @see #__DNA__FIELD__symmetry
-	 */
-	
-	public void setSymmetry(byte symmetry) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1661, symmetry);
-		} else {
-			__io__block.writeByte(__io__address + 1481, symmetry);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
-	 */
-	
-	public CArrayFacade<Byte> get_pad1() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1662, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 1482, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
-	 */
-	
-	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 1662;
-		} else {
-			__dna__offset = 1482;
-		}
-		if (__io__equals(_pad1, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad1)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
-		} else {
-			__io__generic__copy( get_pad1(), _pad1);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'face_sets_color_seed'.
 	 * @see #__DNA__FIELD__face_sets_color_seed
 	 */
@@ -3140,9 +3052,9 @@ public class Mesh extends CFacade {
 	public int getFace_sets_color_seed() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1664);
+			return __io__block.readInt(__io__address + 1660);
 		} else {
-			return __io__block.readInt(__io__address + 1484);
+			return __io__block.readInt(__io__address + 1480);
 		}
 	}
 
@@ -3154,9 +3066,9 @@ public class Mesh extends CFacade {
 	public void setFace_sets_color_seed(int face_sets_color_seed) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1664, face_sets_color_seed);
+			__io__block.writeInt(__io__address + 1660, face_sets_color_seed);
 		} else {
-			__io__block.writeInt(__io__address + 1484, face_sets_color_seed);
+			__io__block.writeInt(__io__address + 1480, face_sets_color_seed);
 		}
 	}
 
@@ -3171,9 +3083,9 @@ public class Mesh extends CFacade {
 	public int getFace_sets_color_default() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1668);
+			return __io__block.readInt(__io__address + 1664);
 		} else {
-			return __io__block.readInt(__io__address + 1488);
+			return __io__block.readInt(__io__address + 1484);
 		}
 	}
 
@@ -3188,9 +3100,49 @@ public class Mesh extends CFacade {
 	public void setFace_sets_color_default(int face_sets_color_default) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1668, face_sets_color_default);
+			__io__block.writeInt(__io__address + 1664, face_sets_color_default);
 		} else {
-			__io__block.writeInt(__io__address + 1488, face_sets_color_default);
+			__io__block.writeInt(__io__address + 1484, face_sets_color_default);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public CArrayFacade<Byte> get_pad1() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 1668, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 1488, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 1668;
+		} else {
+			__dna__offset = 1488;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 

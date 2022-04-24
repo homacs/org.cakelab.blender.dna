@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> not a real modifier </p>
  */
 
-@CMetaData(size32=256, size64=288)
+@CMetaData(size32=248, size64=272)
 public class MappingInfoModifierData extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class MappingInfoModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 97;
+	public static final int __DNA__SDNA_INDEX = 98;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -45,7 +45,7 @@ public class MappingInfoModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 112/136</li>
+	 * <li>Actual Size (32bit/64bit): 104/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -68,7 +68,7 @@ public class MappingInfoModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texture = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__texture = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'map_object'.
@@ -88,7 +88,7 @@ public class MappingInfoModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__map_object = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__map_object = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'map_bone'.
@@ -108,7 +108,7 @@ public class MappingInfoModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__map_bone = new long[]{120, 152};
+	public static final long[] __DNA__FIELD__map_bone = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_name'.
@@ -131,7 +131,7 @@ public class MappingInfoModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvlayer_name = new long[]{184, 216};
+	public static final long[] __DNA__FIELD__uvlayer_name = new long[]{176, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_tmp'.
@@ -151,7 +151,7 @@ public class MappingInfoModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvlayer_tmp = new long[]{248, 280};
+	public static final long[] __DNA__FIELD__uvlayer_tmp = new long[]{240, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texmapping'.
@@ -171,7 +171,7 @@ public class MappingInfoModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texmapping = new long[]{252, 284};
+	public static final long[] __DNA__FIELD__texmapping = new long[]{244, 268};
 
 	public MappingInfoModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -226,9 +226,9 @@ public class MappingInfoModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Tex.class};
 		return new CPointer<Tex>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Tex.__DNA__SDNA_INDEX), __io__blockTable);
@@ -243,9 +243,9 @@ public class MappingInfoModifierData extends CFacade {
 	{
 		long __address = ((texture == null) ? 0 : texture.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		}
 	}
 
@@ -258,9 +258,9 @@ public class MappingInfoModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -275,9 +275,9 @@ public class MappingInfoModifierData extends CFacade {
 	{
 		long __address = ((map_object == null) ? 0 : map_object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 116, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -293,9 +293,9 @@ public class MappingInfoModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -308,9 +308,9 @@ public class MappingInfoModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 152;
+			__dna__offset = 136;
 		} else {
-			__dna__offset = 120;
+			__dna__offset = 112;
 		}
 		if (__io__equals(map_bone, __io__address + __dna__offset)) {
 			return;
@@ -336,9 +336,9 @@ public class MappingInfoModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -354,9 +354,9 @@ public class MappingInfoModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 216;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 184;
+			__dna__offset = 176;
 		}
 		if (__io__equals(uvlayer_name, __io__address + __dna__offset)) {
 			return;
@@ -375,9 +375,9 @@ public class MappingInfoModifierData extends CFacade {
 	public int getUvlayer_tmp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 280);
+			return __io__block.readInt(__io__address + 264);
 		} else {
-			return __io__block.readInt(__io__address + 248);
+			return __io__block.readInt(__io__address + 240);
 		}
 	}
 
@@ -389,9 +389,9 @@ public class MappingInfoModifierData extends CFacade {
 	public void setUvlayer_tmp(int uvlayer_tmp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 280, uvlayer_tmp);
+			__io__block.writeInt(__io__address + 264, uvlayer_tmp);
 		} else {
-			__io__block.writeInt(__io__address + 248, uvlayer_tmp);
+			__io__block.writeInt(__io__address + 240, uvlayer_tmp);
 		}
 	}
 
@@ -403,9 +403,9 @@ public class MappingInfoModifierData extends CFacade {
 	public int getTexmapping() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 284);
+			return __io__block.readInt(__io__address + 268);
 		} else {
-			return __io__block.readInt(__io__address + 252);
+			return __io__block.readInt(__io__address + 244);
 		}
 	}
 
@@ -417,9 +417,9 @@ public class MappingInfoModifierData extends CFacade {
 	public void setTexmapping(int texmapping) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 284, texmapping);
+			__io__block.writeInt(__io__address + 268, texmapping);
 		} else {
-			__io__block.writeInt(__io__address + 252, texmapping);
+			__io__block.writeInt(__io__address + 244, texmapping);
 		}
 	}
 
