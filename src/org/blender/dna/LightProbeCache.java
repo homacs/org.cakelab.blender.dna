@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> -<mdash/><mdash/>  Eevee LightProbes -<mdash/><mdash/>  Needs to be there because written to file with the light-cache. IMPORTANT Padding in these structs is essential. It must match GLSL struct definition in lightprobe_lib.glsl. Must match CubeData. </p>
+ * <p> ----<mdash/>  Eevee LightProbes ----<mdash/>  Needs to be there because written to file with the light-cache. IMPORTANT Padding in these structs is essential. It must match GLSL struct definition in lightprobe_lib.glsl. Must match CubeData. </p>
  */
 
 @CMetaData(size32=160, size64=160)

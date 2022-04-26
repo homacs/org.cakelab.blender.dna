@@ -97,7 +97,8 @@ public class bConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Constraint type. </p>
+	 * <p> Constraint type. <br/> 
+	 *  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -120,7 +121,8 @@ public class bConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flag - General Settings. </p>
+	 * <p> Flag - General Settings. <br/> 
+	 *  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -459,7 +461,8 @@ public class bConstraint extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Constraint type. </p>
+	 * <p> Constraint type. <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -476,7 +479,8 @@ public class bConstraint extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Constraint type. </p>
+	 * <p> Constraint type. <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -493,7 +497,8 @@ public class bConstraint extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flag - General Settings. </p>
+	 * <p> Flag - General Settings. <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -510,7 +515,8 @@ public class bConstraint extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flag - General Settings. </p>
+	 * <p> Flag - General Settings. <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

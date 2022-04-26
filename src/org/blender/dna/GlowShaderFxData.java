@@ -196,7 +196,8 @@ public class GlowShaderFxData extends CFacade {
 	 * Field descriptor (offset) for struct member 'rotation'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rotation of effect. </p>
+	 * <p> Rotation of effect. <br/> 
+	 *  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -564,7 +565,8 @@ public class GlowShaderFxData extends CFacade {
 	 * Get method for struct member 'rotation'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rotation of effect. </p>
+	 * <p> Rotation of effect. <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__rotation
 	 */
 	
@@ -581,7 +583,8 @@ public class GlowShaderFxData extends CFacade {
 	 * Set method for struct member 'rotation'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rotation of effect. </p>
+	 * <p> Rotation of effect. <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__rotation
 	 */
 	

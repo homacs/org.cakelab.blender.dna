@@ -14,6 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><h2>Note</h2><p> While alpha is currently is not in the view-port, this may eventually be added back, keep this value set to 255. </p> While alpha is currently is not in the view-port, this may eventually be added back, keep this value set to 255. 
+ * 
  * </p>
  */
 

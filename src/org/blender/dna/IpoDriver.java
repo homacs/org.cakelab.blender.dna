@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> -----------------<mdash/><mdash/><mdash/>  Type Defines ------------------<mdash/><mdash/><mdash/>  <mdash/>  IPO {@link Curve}  Driver <mdash/>  IPO {@link Curve}  Driver </p>
+ * <p> -----------------------<mdash/>  Type Defines ------------------------<mdash/>  <mdash/>  IPO {@link Curve}  Driver <mdash/>  IPO {@link Curve}  Driver </p>
  */
 
 @CMetaData(size32=140, size64=144)

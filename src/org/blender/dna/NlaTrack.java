@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> NLA Tracks -------------------------------<mdash/><mdash/>  NLA Track (nlt)</p><p> A track groups a bunch of 'strips', which should form a continuous set of motion, on top of which other such groups can be layered. This should allow for animators to work in a non-destructive manner, layering tweaks, etc. over 'rough' blocks of their work. </p>
+ * <p> NLA Tracks ----------------------------------<mdash/>  NLA Track (nlt)</p><p> A track groups a bunch of 'strips', which should form a continuous set of motion, on top of which other such groups can be layered. This should allow for animators to work in a non-destructive manner, layering tweaks, etc. over 'rough' blocks of their work. </p>
  */
 
 @CMetaData(size32=88, size64=104)
@@ -122,6 +122,7 @@ public class NlaTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Index of the track in the stack <h2>Note</h2><p> not really useful, but we need a '_pad' var anyways! </p> not really useful, but we need a '_pad' var anyways! 
+	 * 
 	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -319,6 +320,7 @@ public class NlaTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Index of the track in the stack <h2>Note</h2><p> not really useful, but we need a '_pad' var anyways! </p> not really useful, but we need a '_pad' var anyways! 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__index
 	 */
@@ -337,6 +339,7 @@ public class NlaTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Index of the track in the stack <h2>Note</h2><p> not really useful, but we need a '_pad' var anyways! </p> not really useful, but we need a '_pad' var anyways! 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__index
 	 */

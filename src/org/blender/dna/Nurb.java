@@ -15,6 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><h2>Note</h2><p>{@link Nurb}  name is misleading, since it can be used for polygons too, also, it should be NURBS ({@link Nurb}  isn't the singular of Nurbs). </p>  name is misleading, since it can be used for polygons too, also, it should be NURBS (Nurb isn't the singular of Nurbs). 
+ * 
  * </p>
  */
 

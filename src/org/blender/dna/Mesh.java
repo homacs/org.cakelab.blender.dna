@@ -252,6 +252,7 @@ public class Mesh extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> END BMESH ONLY Legacy face storage (quads & tries only), faces are now stored in {@link Mesh.mpoly}  & #Mesh.mloop arrays.</p><p><h2>Note</h2><p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
+	 * 
 	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1552,6 +1553,7 @@ public class Mesh extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> END BMESH ONLY Legacy face storage (quads & tries only), faces are now stored in {@link Mesh.mpoly}  & #Mesh.mloop arrays.</p><p><h2>Note</h2><p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__mface
 	 */
@@ -1573,6 +1575,7 @@ public class Mesh extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> END BMESH ONLY Legacy face storage (quads & tries only), faces are now stored in {@link Mesh.mpoly}  & #Mesh.mloop arrays.</p><p><h2>Note</h2><p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__mface
 	 */

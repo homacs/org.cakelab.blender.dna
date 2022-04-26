@@ -37,19 +37,7 @@ import org.cakelab.blender.nio.CPointer;
  * 			  0----------4
  * 			 </pre>
  * 			<h4>Blender Source Code:</h4>
- * <p> The following illustrates the orientation of the bounding box in local space</p><p><pre></pre></p><p><pre> Z  Y
- * | /
- * |/
- * .--<mdash/> X
- *     2-------<mdash/> 6
- *    /|         /|
- *   / |        / |
- *  1-------<mdash/> 5  |
- *  |  |       |  |
- *  |  3----<mdash/> |<ndash/> 7
- *  | /        | /
- *  |/         |/
- *  0-------<mdash/></pre>  </p>
+ * <p> The following illustrates the orientation of the bounding box in local space</p><p><pre></pre></p><p><pre></pre>  </p>
  */
 
 @CMetaData(size32=104, size64=104)

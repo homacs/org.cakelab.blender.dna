@@ -28,36 +28,42 @@ import org.cakelab.blender.utils.MainLibBase;
 public class MainLib extends MainLibBase {
 
 	/**
-	 * This is the version of blender, the data model was generated from.
-	 * Implicitly, it is the maximum version the generated import code can understand.
+	 * This is the version of blender, the data model was generated from. It's also called Blender file version and is usually equivalent to the versino of the Blender program.
+	 * Implicitly, it is the maximum file version the generated import code can understand.
 	 */
 	public static final short BLENDER_VERSION = 283;
 
 	/**
-	 * This is the subversion of blender, the data model was generated from.
-	 * Implicitly, it is the maximum subversion the generated import code can understand.
+	 * This is the subversion of blender, the data model was generated from. It's also called Blender file sub-version, which can differ from the patch-level of the Blender program.
+	 * Implicitly, it is the maximum file sub-version the generated import code can understand.
 	 */
-	public static final short BLENDER_SUBVERSION = 18;
+	public static final short BLENDER_SUBVERSION = 21;
 
 	/**
-	 * This is the minimal version of blender, the generated data model corresponds to.
+	 * This is the minimal Blender file version, the generated data model corresponds to.
 	 * Every file with a version lower than this needs conversion.
+	 * @see #BLENDER_VERSION
 	 */
 	public static final short BLENDER_MINVERSION = 280;
 
 	/**
-	 * This is the minimal version of blender, the generated data model corresponds to.
+	 * This is the minimal Blender file sub-version, the generated data model corresponds to.
 	 * Every file with a version lower than this needs conversion.
+	 * @see #BLENDER_SUBVERSION
 	 */
 	public static final short BLENDER_MINSUBVERSION = 0;
 
 	/**
-	 * BLENDER_VERSION and _SUBVERSION as a String.
+	 * #BLENDER_VERSION and _SUBVERSION as a String.
+	 * @see #BLENDER_VERSION
+	 * @see #BLENDER_SUBVERSION
 	 */
-	public static final String BLENDER_VERSION_STRING = "2.83.18";
+	public static final String BLENDER_VERSION_STRING = "2.83.21";
 
 	/**
-	 * BLENDER_MINVERSION and _MINSUBVERSION as a String.
+	 * #BLENDER_MINVERSION and _MINSUBVERSION as a String.
+	 * @see #BLENDER_MINVERSION
+	 * @see #BLENDER_MINSUBVERSION
 	 */
 	public static final String BLENDER_MINVERSION_STRING = "2.80.0";
 
@@ -299,17 +305,19 @@ public class MainLib extends MainLibBase {
 
 	/**
 	 * 
-	 * This method checks whether the given file contains data that can be converted
-	 * into the generated data model. This means, that the data model contains all
-	 * required structs and structs have all required member variables to
-	 * hold all information given in the file but it has to be converted.
+	 * This method checks, whether the given blender file complies to the file version range 
+	 * (see e.g. #BLENDER_VERSION and #BLENDER_MINVERSION) that could in principle be supported 
+	 * by the data model. That means, required structs may exist but the content may have to be 
+	 * converted, which is generally not supported by the library.
 	 * 
-	 * <em>Please note that conversion requires to take into account all semantic 
-	 * reinterpretation to be found in Blender's source code in files 
-	 * <code>source/blender/blenloader/intern/versioning_*.c</code>. Thus, it is 
-	 * not enough to just apply type conversions on raw data.</em>
+	 * <em>Unless you have added methods to convert the data, you should convert the file with. 
+	 * blender before reading it.</em> Conversion code can be found in Blender's source code in files 
+	 * <code>source/blender/blenloader/intern/versioning_*.c</code>. These functions 
+	 * are not implemeted in Java .Blend.
 	 * 
 	 * You can get file version info from {@link BlenderFile#readFileGlobal}.
+	 * @see #readFileGlobal
+	 * @see #doVersionCheck
 	 */
 	public static boolean doCompatibilityCheck(FileVersionInfo fileVersionInfo) throws IOException {
 		int version = fileVersionInfo.getVersion().getCode();

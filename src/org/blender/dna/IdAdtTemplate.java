@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p>{@link Base}  Struct for Anim -------------------------------<mdash/><mdash/>  Used for #BKE_animdata_from_id() All ID-data-blocks which have their own 'local' {@link AnimData}  should have the same arrangement in their structs. </p>
+ * <p>{@link Base}  Struct for Anim ----------------------------------<mdash/>  Used for #BKE_animdata_from_id() All ID-data-blocks which have their own 'local' {@link AnimData}  should have the same arrangement in their structs. </p>
  */
 
 @CMetaData(size32=132, size64=168)

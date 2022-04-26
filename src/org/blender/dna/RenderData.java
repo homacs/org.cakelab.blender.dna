@@ -367,7 +367,7 @@ public class RenderData extends CFacade {
 	 * Field descriptor (offset) for struct member 'stereomode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated since .2.5. </p><p> Standalone player stereo settings
+	 * <p> XXX deprecated since .2.5. </p><p> Standalone player stereo settings 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -952,7 +952,8 @@ public class RenderData extends CFacade {
 	 * Field descriptor (offset) for struct member 'gauss'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Value used to define filter size for all filter options </p>
+	 * <p> Value used to define filter size for all filter options <br/> 
+	 *  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2318,7 +2319,7 @@ public class RenderData extends CFacade {
 	 * Get method for struct member 'stereomode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated since .2.5. </p><p> Standalone player stereo settings
+	 * <p> XXX deprecated since .2.5. </p><p> Standalone player stereo settings 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__stereomode
@@ -2337,7 +2338,7 @@ public class RenderData extends CFacade {
 	 * Set method for struct member 'stereomode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated since .2.5. </p><p> Standalone player stereo settings
+	 * <p> XXX deprecated since .2.5. </p><p> Standalone player stereo settings 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__stereomode
@@ -3240,7 +3241,8 @@ public class RenderData extends CFacade {
 	 * Get method for struct member 'gauss'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Value used to define filter size for all filter options </p>
+	 * <p> Value used to define filter size for all filter options <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__gauss
 	 */
 	
@@ -3257,7 +3259,8 @@ public class RenderData extends CFacade {
 	 * Set method for struct member 'gauss'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Value used to define filter size for all filter options </p>
+	 * <p> Value used to define filter size for all filter options <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__gauss
 	 */
 	

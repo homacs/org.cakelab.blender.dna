@@ -16,6 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h4>Blender Source Code:</h4>
  * <p> ........ Motion {@link Path}  data cache (mpath)<ul><li><p> for elements providing transforms (i.e. Objects or PoseChannels) </p></li></ul> 
  * for elements providing transforms (i.e. Objects or PoseChannels) 
+ * 
  * </p>
  */
 

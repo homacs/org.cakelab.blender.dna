@@ -15,7 +15,8 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  Assorted {@link Scene}  Data -------------------------------------<mdash/><mdash/>  Unit Settings </p>
+ *  Assorted {@link Scene}  Data <hr/> 
+ *  Unit Settings </p>
  */
 
 @CMetaData(size32=16, size64=16)

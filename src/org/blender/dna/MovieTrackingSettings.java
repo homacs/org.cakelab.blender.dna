@@ -337,7 +337,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'keyframe1'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** reconstruction settings ** two keyframes for reconstruction initialization were moved to per-tracking object settings
+	 * <p> ** reconstruction settings ** two keyframes for reconstruction initialization were moved to per-tracking object settings 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -1047,7 +1047,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * Get method for struct member 'keyframe1'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** reconstruction settings ** two keyframes for reconstruction initialization were moved to per-tracking object settings
+	 * <p> ** reconstruction settings ** two keyframes for reconstruction initialization were moved to per-tracking object settings 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__keyframe1
@@ -1066,7 +1066,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * Set method for struct member 'keyframe1'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** reconstruction settings ** two keyframes for reconstruction initialization were moved to per-tracking object settings
+	 * <p> ** reconstruction settings ** two keyframes for reconstruction initialization were moved to per-tracking object settings 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__keyframe1

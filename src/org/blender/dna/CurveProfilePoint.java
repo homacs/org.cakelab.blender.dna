@@ -14,6 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p> Each control point that makes up the profile. <h2>Note</h2><p> The flags use the same enum as Bezier curves, but they aren't guaranteed to have identical functionality, and all types aren't implemented. </p> The flags use the same enum as Bezier curves, but they aren't guaranteed to have identical functionality, and all types aren't implemented. 
+ * 
  * </p>
  */
 

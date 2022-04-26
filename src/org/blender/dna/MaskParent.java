@@ -34,7 +34,7 @@ public class MaskParent extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Type of ID-block that can be used<h4>Blender Source Code:</h4>
-	 * <p> int flag; </p><p> // Parenting flags not used.Type of parenting. </p>
+	 * <p> / int flag; </p><p> Type of parenting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -208,7 +208,7 @@ public class MaskParent extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Type of ID-block that can be used<h4>Blender Source Code:</h4>
-	 * <p> int flag; </p><p> // Parenting flags not used.Type of parenting. </p>
+	 * <p> / int flag; </p><p> Type of parenting. </p>
 	 * @see #__DNA__FIELD__id_type
 	 */
 	
@@ -226,7 +226,7 @@ public class MaskParent extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Type of ID-block that can be used<h4>Blender Source Code:</h4>
-	 * <p> int flag; </p><p> // Parenting flags not used.Type of parenting. </p>
+	 * <p> / int flag; </p><p> Type of parenting. </p>
 	 * @see #__DNA__FIELD__id_type
 	 */
 	

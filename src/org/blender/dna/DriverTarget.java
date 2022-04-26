@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Drivers --------------------------------<mdash/><mdash/>  Driver Target (dtar)</p><p> Defines how to access a dependency needed for a driver variable. </p>
+ * <p> Drivers -----------------------------------<mdash/>  Driver Target (dtar)</p><p> Defines how to access a dependency needed for a driver variable. </p>
  */
 
 @CMetaData(size32=88, size64=96)

@@ -160,7 +160,11 @@ public class bArmature extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> active bones should work like active object where possible<ul><li><p> active and selection are unrelated</p></li><li><p> active & hidden is not allowed</p></li><li><p> from the user perspective active == last selected</p></li><li><p> active should be ignored when not visible (hidden layer) Active bone. </p></li></ul> 
-	 * active and selection are unrelatedactive & hidden is not allowedfrom the user perspective active == last selectedactive should be ignored when not visible (hidden layer) Active bone. 
+	 * active and selection are unrelated
+	 * active & hidden is not allowed
+	 * from the user perspective active == last selected
+	 * active should be ignored when not visible (hidden layer) Active bone. 
+	 * 
 	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -617,7 +621,11 @@ public class bArmature extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> active bones should work like active object where possible<ul><li><p> active and selection are unrelated</p></li><li><p> active & hidden is not allowed</p></li><li><p> from the user perspective active == last selected</p></li><li><p> active should be ignored when not visible (hidden layer) Active bone. </p></li></ul> 
-	 * active and selection are unrelatedactive & hidden is not allowedfrom the user perspective active == last selectedactive should be ignored when not visible (hidden layer) Active bone. 
+	 * active and selection are unrelated
+	 * active & hidden is not allowed
+	 * from the user perspective active == last selected
+	 * active should be ignored when not visible (hidden layer) Active bone. 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__act_bone
 	 */
@@ -639,7 +647,11 @@ public class bArmature extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> active bones should work like active object where possible<ul><li><p> active and selection are unrelated</p></li><li><p> active & hidden is not allowed</p></li><li><p> from the user perspective active == last selected</p></li><li><p> active should be ignored when not visible (hidden layer) Active bone. </p></li></ul> 
-	 * active and selection are unrelatedactive & hidden is not allowedfrom the user perspective active == last selectedactive should be ignored when not visible (hidden layer) Active bone. 
+	 * active and selection are unrelated
+	 * active & hidden is not allowed
+	 * from the user perspective active == last selected
+	 * active should be ignored when not visible (hidden layer) Active bone. 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__act_bone
 	 */

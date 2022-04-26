@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=6124, size64=6408)
+@CMetaData(size32=6128, size64=6416)
 public class Scene extends CFacade {
 
 	/**
@@ -1183,7 +1183,7 @@ public class Scene extends CFacade {
 	 * <ul>
 	 * <li>Field: 'display'</li>
 	 * <li>Signature: 'SceneDisplay'</li>
-	 * <li>Actual Size (32bit/64bit): 908/912</li>
+	 * <li>Actual Size (32bit/64bit): 912/920</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__display = new long[]{4952, 5224};
@@ -1209,7 +1209,7 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 256/264</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__eevee = new long[]{5860, 6136};
+	public static final long[] __DNA__FIELD__eevee = new long[]{5864, 6144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'grease_pencil_settings'.
@@ -1232,7 +1232,7 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__grease_pencil_settings = new long[]{6116, 6400};
+	public static final long[] __DNA__FIELD__grease_pencil_settings = new long[]{6120, 6408};
 
 	public Scene(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -3239,9 +3239,9 @@ public class Scene extends CFacade {
 	public SceneEEVEE getEevee() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new SceneEEVEE(__io__address + 6136, __io__block, __io__blockTable);
+			return new SceneEEVEE(__io__address + 6144, __io__block, __io__blockTable);
 		} else {
-			return new SceneEEVEE(__io__address + 5860, __io__block, __io__blockTable);
+			return new SceneEEVEE(__io__address + 5864, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3257,9 +3257,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 6136;
+			__dna__offset = 6144;
 		} else {
-			__dna__offset = 5860;
+			__dna__offset = 5864;
 		}
 		if (__io__equals(eevee, __io__address + __dna__offset)) {
 			return;
@@ -3281,9 +3281,9 @@ public class Scene extends CFacade {
 	public SceneGpencil getGrease_pencil_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new SceneGpencil(__io__address + 6400, __io__block, __io__blockTable);
+			return new SceneGpencil(__io__address + 6408, __io__block, __io__blockTable);
 		} else {
-			return new SceneGpencil(__io__address + 6116, __io__block, __io__blockTable);
+			return new SceneGpencil(__io__address + 6120, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3299,9 +3299,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 6400;
+			__dna__offset = 6408;
 		} else {
-			__dna__offset = 6116;
+			__dna__offset = 6120;
 		}
 		if (__io__equals(grease_pencil_settings, __io__address + __dna__offset)) {
 			return;

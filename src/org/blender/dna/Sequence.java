@@ -15,7 +15,9 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p> The sequence structure is the basic struct used by any strip. each of the strips uses a different sequence structure.</p><p><h2>Warning</h2><p> The first part identical to {@link ID}  (for use in ipo's) the comment above is historic, probably we can drop the {@link ID}  compatibility, but take care making this change.</p> The first part identical to ID (for use in ipo's) the comment above is historic, probably we can drop the ID compatibility, but take care making this change.
+ * 
  * <h2>Warning</h2><p> This is really a '{@link Strip} ' in the UI!, name is highly confusing. </p> This is really a 'Strip' in the UI!, name is highly confusing. 
+ * 
  * </p>
  */
 

@@ -162,7 +162,7 @@ public class bNodeSocket extends CFacade {
 	 * Field descriptor (offset) for struct member 'storage'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated, only used for the {@link Image}  and OutputFile nodes, should be removed at some point.Custom storage. </p>
+	 * <p> XXX deprecated, only used for the {@link Image}  and OutputFile nodes, should be removed at some point. Custom storage. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -514,7 +514,7 @@ public class bNodeSocket extends CFacade {
 	 * Field descriptor (offset) for struct member 'own_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> internal data to retrieve relations and groups DEPRECATED, now uses the generic identifier string insteadGroup socket identifiers, to find matching pairs after reading files. 
+	 * <p> internal data to retrieve relations and groups DEPRECATED, now uses the generic identifier string instead Group socket identifiers, to find matching pairs after reading files. 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -871,7 +871,7 @@ public class bNodeSocket extends CFacade {
 	 * Get method for struct member 'storage'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated, only used for the {@link Image}  and OutputFile nodes, should be removed at some point.Custom storage. </p>
+	 * <p> XXX deprecated, only used for the {@link Image}  and OutputFile nodes, should be removed at some point. Custom storage. </p>
 	 * @see #__DNA__FIELD__storage
 	 */
 	
@@ -891,7 +891,7 @@ public class bNodeSocket extends CFacade {
 	 * Set method for struct member 'storage'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated, only used for the {@link Image}  and OutputFile nodes, should be removed at some point.Custom storage. </p>
+	 * <p> XXX deprecated, only used for the {@link Image}  and OutputFile nodes, should be removed at some point. Custom storage. </p>
 	 * @see #__DNA__FIELD__storage
 	 */
 	
@@ -1435,7 +1435,7 @@ public class bNodeSocket extends CFacade {
 	 * Get method for struct member 'own_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> internal data to retrieve relations and groups DEPRECATED, now uses the generic identifier string insteadGroup socket identifiers, to find matching pairs after reading files. 
+	 * <p> internal data to retrieve relations and groups DEPRECATED, now uses the generic identifier string instead Group socket identifiers, to find matching pairs after reading files. 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__own_index
@@ -1454,7 +1454,7 @@ public class bNodeSocket extends CFacade {
 	 * Set method for struct member 'own_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> internal data to retrieve relations and groups DEPRECATED, now uses the generic identifier string insteadGroup socket identifiers, to find matching pairs after reading files. 
+	 * <p> internal data to retrieve relations and groups DEPRECATED, now uses the generic identifier string instead Group socket identifiers, to find matching pairs after reading files. 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__own_index

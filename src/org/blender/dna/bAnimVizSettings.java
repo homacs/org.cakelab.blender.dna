@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Visualization General ------------------<mdash/><mdash/><mdash/>  for Objects or Poses (but NOT PoseChannels) Animation Visualization Settings (avs) </p>
+ * <p> Visualization General ------------------------<mdash/>  for Objects or Poses (but NOT PoseChannels) Animation Visualization Settings (avs) </p>
  */
 
 @CMetaData(size32=32, size64=32)
@@ -34,7 +34,7 @@ public class bAnimVizSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'recalc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> General Settings ------------------<mdash/><mdash/>  {@link eAnimViz_RecalcFlags} . </p>
+	 * <p> General Settings ---------------------<mdash/>  {@link eAnimViz_RecalcFlags} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -57,7 +57,7 @@ public class bAnimVizSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'path_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Motion {@link Path}  Settings -------------<mdash/><mdash/>  {@link eMotionPath_Types} . </p>
+	 * <p> Motion {@link Path}  Settings ----------------<mdash/>  {@link eMotionPath_Types} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -263,7 +263,7 @@ public class bAnimVizSettings extends CFacade {
 	 * Get method for struct member 'recalc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> General Settings ------------------<mdash/><mdash/>  {@link eAnimViz_RecalcFlags} . </p>
+	 * <p> General Settings ---------------------<mdash/>  {@link eAnimViz_RecalcFlags} . </p>
 	 * @see #__DNA__FIELD__recalc
 	 */
 	
@@ -280,7 +280,7 @@ public class bAnimVizSettings extends CFacade {
 	 * Set method for struct member 'recalc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> General Settings ------------------<mdash/><mdash/>  {@link eAnimViz_RecalcFlags} . </p>
+	 * <p> General Settings ---------------------<mdash/>  {@link eAnimViz_RecalcFlags} . </p>
 	 * @see #__DNA__FIELD__recalc
 	 */
 	
@@ -297,7 +297,7 @@ public class bAnimVizSettings extends CFacade {
 	 * Get method for struct member 'path_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Motion {@link Path}  Settings -------------<mdash/><mdash/>  {@link eMotionPath_Types} . </p>
+	 * <p> Motion {@link Path}  Settings ----------------<mdash/>  {@link eMotionPath_Types} . </p>
 	 * @see #__DNA__FIELD__path_type
 	 */
 	
@@ -314,7 +314,7 @@ public class bAnimVizSettings extends CFacade {
 	 * Set method for struct member 'path_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Motion {@link Path}  Settings -------------<mdash/><mdash/>  {@link eMotionPath_Types} . </p>
+	 * <p> Motion {@link Path}  Settings ----------------<mdash/>  {@link eMotionPath_Types} . </p>
 	 * @see #__DNA__FIELD__path_type
 	 */
 	

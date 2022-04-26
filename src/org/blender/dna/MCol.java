@@ -14,6 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p> Tessellation vertex color data.</p><p><h2>Note</h2><p> The red and blue are swapped for historical reasons. </p> The red and blue are swapped for historical reasons. 
+ * 
  * </p>
  */
 

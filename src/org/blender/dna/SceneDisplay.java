@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  *  {@link Scene}  Display - used for store scene specific display settings for the 3d view </p>
  */
 
-@CMetaData(size32=908, size64=912)
+@CMetaData(size32=912, size64=920)
 public class SceneDisplay extends CFacade {
 
 	/**
@@ -257,7 +257,7 @@ public class SceneDisplay extends CFacade {
 	 * <ul>
 	 * <li>Field: 'shading'</li>
 	 * <li>Signature: 'View3DShading'</li>
-	 * <li>Actual Size (32bit/64bit): 868/872</li>
+	 * <li>Actual Size (32bit/64bit): 872/880</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__shading = new long[]{40, 40};

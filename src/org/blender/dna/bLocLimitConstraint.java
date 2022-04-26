@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> transform limiting constraints - zero target ----------------------<mdash/><mdash/>  Limit Location Constraint </p>
+ * <p> transform limiting constraints - zero target -------------------------<mdash/>  <br/> 
+ *  Limit Location Constraint </p>
  */
 
 @CMetaData(size32=28, size64=28)

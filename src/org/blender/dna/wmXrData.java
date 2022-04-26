@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> #ifdef WITH_XR_OPENXR </p>
  */
 
-@CMetaData(size32=916, size64=928)
+@CMetaData(size32=920, size64=936)
 public class wmXrData extends CFacade {
 
 	/**
@@ -70,7 +70,7 @@ public class wmXrData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'session_settings'</li>
 	 * <li>Signature: 'XrSessionSettings'</li>
-	 * <li>Actual Size (32bit/64bit): 912/920</li>
+	 * <li>Actual Size (32bit/64bit): 916/928</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__session_settings = new long[]{4, 8};

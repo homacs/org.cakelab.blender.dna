@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> planned for near future typedef struct BoidSignal { struct BoidSignal *next, *prev; float loc[3]; float volume, falloff; int id; } BoidSignal; typedef struct BoidSignalDefine { struct BoidSignalDefine *next, *prev; int id, rt; char name[32]; } BoidSignalDefine; </p><p> typedef struct BoidSimulationData { {@link ListBase}  signal_defines;// list of defined signals  {@link ListBase}  signals[20]; // gathers signals from all channels  struct KDTree_3d *signaltrees[20]; char channel_names[20][32]; int last_signal_id; // used for incrementing signal ids  int flag; // switches for drawing stuff  } BoidSimulationData; </p>
+ * <p> planned for near future typedef struct BoidSignal { struct BoidSignal *next, *prev; float loc[3]; float volume, falloff; int id; } BoidSignal; typedef struct BoidSignalDefine { struct BoidSignalDefine *next, *prev; int id, rt; char name[32]; } BoidSignalDefine; </p><p> typedef struct BoidSimulationData { {@link ListBase} / {@link ListBase} / } BoidSimulationData; </p>
  */
 
 @CMetaData(size32=96, size64=104)

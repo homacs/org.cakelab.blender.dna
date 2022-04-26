@@ -97,7 +97,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Field descriptor (offset) for struct member 'pat_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** settings ** positions of left-bottom and right-top corners of pattern (in unified 0..1 units, relative to marker->pos) moved to marker's corners since planar tracking implementation
+	 * <p> ** settings ** positions of left-bottom and right-top corners of pattern (in unified 0..1 units, relative to marker->pos) moved to marker's corners since planar tracking implementation 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -147,7 +147,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Field descriptor (offset) for struct member 'search_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> positions of left-bottom and right-top corners of search area (in unified 0..1 units, relative to marker->pos moved to marker since affine tracking implementation
+	 * <p> positions of left-bottom and right-top corners of search area (in unified 0..1 units, relative to marker->pos moved to marker since affine tracking implementation 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -757,7 +757,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Get method for struct member 'pat_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** settings ** positions of left-bottom and right-top corners of pattern (in unified 0..1 units, relative to marker->pos) moved to marker's corners since planar tracking implementation
+	 * <p> ** settings ** positions of left-bottom and right-top corners of pattern (in unified 0..1 units, relative to marker->pos) moved to marker's corners since planar tracking implementation 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__pat_min
@@ -780,7 +780,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Set method for struct member 'pat_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** settings ** positions of left-bottom and right-top corners of pattern (in unified 0..1 units, relative to marker->pos) moved to marker's corners since planar tracking implementation
+	 * <p> ** settings ** positions of left-bottom and right-top corners of pattern (in unified 0..1 units, relative to marker->pos) moved to marker's corners since planar tracking implementation 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__pat_min
@@ -857,7 +857,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Get method for struct member 'search_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> positions of left-bottom and right-top corners of search area (in unified 0..1 units, relative to marker->pos moved to marker since affine tracking implementation
+	 * <p> positions of left-bottom and right-top corners of search area (in unified 0..1 units, relative to marker->pos moved to marker since affine tracking implementation 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__search_min
@@ -880,7 +880,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Set method for struct member 'search_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> positions of left-bottom and right-top corners of search area (in unified 0..1 units, relative to marker->pos moved to marker since affine tracking implementation
+	 * <p> positions of left-bottom and right-top corners of search area (in unified 0..1 units, relative to marker->pos moved to marker since affine tracking implementation 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__search_min

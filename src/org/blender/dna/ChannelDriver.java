@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- * </p><p> Channel Driver (i.e. Drivers / Expressions) (driver)</p><p> Channel Drivers are part of the dependency system, and are executed in addition to normal user-defined animation. They take the animation result of some channel(s), and use that (optionally combined with its own F-Curve for modification of results) to define the value of some setting semi-procedurally.</p><p> Drivers are stored as part of F-Curve data, so that the F-Curve's RNA-path settings (for storing what setting the driver will affect). The order in which they are stored defines the order that they're evaluated in. This order is set by the Depsgraph's sorting stuff. </p>
+ *  Channel Driver (i.e. Drivers / Expressions) (driver)</p><p> Channel Drivers are part of the dependency system, and are executed in addition to normal user-defined animation. They take the animation result of some channel(s), and use that (optionally combined with its own F-Curve for modification of results) to define the value of some setting semi-procedurally.</p><p> Drivers are stored as part of F-Curve data, so that the F-Curve's RNA-path settings (for storing what setting the driver will affect). The order in which they are stored defines the order that they're evaluated in. This order is set by the Depsgraph's sorting stuff. </p>
  */
 
 @CMetaData(size32=288, size64=304)
@@ -58,7 +58,7 @@ public class ChannelDriver extends CFacade {
 	 * Field descriptor (offset) for struct member 'expression'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> python expression to execute (may call functions defined in an accessory file) which relates the target 'variables' in some way to yield a single usable valueExpression to compile for evaluation. </p>
+	 * <p> python expression to execute (may call functions defined in an accessory file) which relates the target 'variables' in some way to yield a single usable value Expression to compile for evaluation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -269,7 +269,7 @@ public class ChannelDriver extends CFacade {
 	 * Get method for struct member 'expression'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> python expression to execute (may call functions defined in an accessory file) which relates the target 'variables' in some way to yield a single usable valueExpression to compile for evaluation. </p>
+	 * <p> python expression to execute (may call functions defined in an accessory file) which relates the target 'variables' in some way to yield a single usable value Expression to compile for evaluation. </p>
 	 * @see #__DNA__FIELD__expression
 	 */
 	
@@ -290,7 +290,7 @@ public class ChannelDriver extends CFacade {
 	 * Set method for struct member 'expression'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> python expression to execute (may call functions defined in an accessory file) which relates the target 'variables' in some way to yield a single usable valueExpression to compile for evaluation. </p>
+	 * <p> python expression to execute (may call functions defined in an accessory file) which relates the target 'variables' in some way to yield a single usable value Expression to compile for evaluation. </p>
 	 * @see #__DNA__FIELD__expression
 	 */
 	

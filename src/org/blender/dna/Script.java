@@ -194,7 +194,7 @@ public class Script extends CFacade {
 	 * Field descriptor (offset) for struct member 'scriptname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Store the script file here so we can re-run it on loading blender, if "Enable Scripts" is on1024 = FILE_MAX. </p>
+	 * <p> Store the script file here so we can re-run it on loading blender, if "Enable Scripts" is on 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -500,7 +500,7 @@ public class Script extends CFacade {
 	 * Get method for struct member 'scriptname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Store the script file here so we can re-run it on loading blender, if "Enable Scripts" is on1024 = FILE_MAX. </p>
+	 * <p> Store the script file here so we can re-run it on loading blender, if "Enable Scripts" is on 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__scriptname
 	 */
 	
@@ -521,7 +521,7 @@ public class Script extends CFacade {
 	 * Set method for struct member 'scriptname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Store the script file here so we can re-run it on loading blender, if "Enable Scripts" is on1024 = FILE_MAX. </p>
+	 * <p> Store the script file here so we can re-run it on loading blender, if "Enable Scripts" is on 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__scriptname
 	 */
 	

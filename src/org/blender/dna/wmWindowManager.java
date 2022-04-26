@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> #endif </p><p> reports need to be before {@link wmWindowManager}  windowmanager is saved, tag WMAN </p>
  */
 
-@CMetaData(size32=1184, size64=1336)
+@CMetaData(size32=1188, size64=1344)
 public class wmWindowManager extends CFacade {
 
 	/**
@@ -585,7 +585,7 @@ public class wmWindowManager extends CFacade {
 	 * <ul>
 	 * <li>Field: 'xr'</li>
 	 * <li>Signature: 'wmXrData'</li>
-	 * <li>Actual Size (32bit/64bit): 916/928</li>
+	 * <li>Actual Size (32bit/64bit): 920/936</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__xr = new long[]{268, 408};

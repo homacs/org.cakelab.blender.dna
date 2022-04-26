@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> F-Curves --------------------------------<mdash/><mdash/>  {@link FPoint}  (fpt)</p><p> This is the bare-minimum data required storing motion samples. Should be more efficient than using BPoints, which contain a lot of other unnecessary data... </p>
+ * <p> F-Curves -----------------------------------<mdash/>  {@link FPoint}  (fpt)</p><p> This is the bare-minimum data required storing motion samples. Should be more efficient than using BPoints, which contain a lot of other unnecessary data... </p>
  */
 
 @CMetaData(size32=16, size64=16)

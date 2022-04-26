@@ -53,7 +53,7 @@ public class bSound extends CFacade {
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The path to the sound file.1024 = FILE_MAX. </p>
+	 * <p> The path to the sound file. 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -484,7 +484,7 @@ public class bSound extends CFacade {
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The path to the sound file.1024 = FILE_MAX. </p>
+	 * <p> The path to the sound file. 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -505,7 +505,7 @@ public class bSound extends CFacade {
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The path to the sound file.1024 = FILE_MAX. </p>
+	 * <p> The path to the sound file. 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	

@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> WATCH IT: change type? also make changes in ipo.h </p>
+ * <p> WATCH IT: change type? also make changes in ipo.h <br/> 
+ *  </p>
  */
 
 @CMetaData(size32=16, size64=24)

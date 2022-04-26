@@ -233,6 +233,7 @@ public class wmWindow extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Global areas aren't part of the screen, but part of the window directly. <h2>Note</h2><p> Code assumes global areas with fixed height, fixed width not supported yet </p> Code assumes global areas with fixed height, fixed width not supported yet 
+	 * 
 	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1205,6 +1206,7 @@ public class wmWindow extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Global areas aren't part of the screen, but part of the window directly. <h2>Note</h2><p> Code assumes global areas with fixed height, fixed width not supported yet </p> Code assumes global areas with fixed height, fixed width not supported yet 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__global_areas
 	 */
@@ -1223,6 +1225,7 @@ public class wmWindow extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Global areas aren't part of the screen, but part of the window directly. <h2>Note</h2><p> Code assumes global areas with fixed height, fixed width not supported yet </p> Code assumes global areas with fixed height, fixed width not supported yet 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__global_areas
 	 */

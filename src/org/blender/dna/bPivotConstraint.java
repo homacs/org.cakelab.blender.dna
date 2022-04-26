@@ -34,7 +34,7 @@ public class bPivotConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Pivot Point: Either target object + offset, or just offset is usedTarget object (optional). </p>
+	 * <p> Pivot Point: Either target object + offset, or just offset is used Target object (optional). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -103,7 +103,7 @@ public class bPivotConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'rotAxis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rotation-driven activation: This option provides easier one-stop setups for foot-rolls.Rotation axes to consider for this ({@link ePivotConstraint_Axis} ). </p>
+	 * <p> Rotation-driven activation: This option provides easier one-stop setups for foot-rolls. Rotation axes to consider for this ({@link ePivotConstraint_Axis} ). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -157,7 +157,7 @@ public class bPivotConstraint extends CFacade {
 	 * Get method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Pivot Point: Either target object + offset, or just offset is usedTarget object (optional). </p>
+	 * <p> Pivot Point: Either target object + offset, or just offset is used Target object (optional). </p>
 	 * @see #__DNA__FIELD__tar
 	 */
 	
@@ -177,7 +177,7 @@ public class bPivotConstraint extends CFacade {
 	 * Set method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Pivot Point: Either target object + offset, or just offset is usedTarget object (optional). </p>
+	 * <p> Pivot Point: Either target object + offset, or just offset is used Target object (optional). </p>
 	 * @see #__DNA__FIELD__tar
 	 */
 	
@@ -287,7 +287,7 @@ public class bPivotConstraint extends CFacade {
 	 * Get method for struct member 'rotAxis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rotation-driven activation: This option provides easier one-stop setups for foot-rolls.Rotation axes to consider for this ({@link ePivotConstraint_Axis} ). </p>
+	 * <p> Rotation-driven activation: This option provides easier one-stop setups for foot-rolls. Rotation axes to consider for this ({@link ePivotConstraint_Axis} ). </p>
 	 * @see #__DNA__FIELD__rotAxis
 	 */
 	
@@ -304,7 +304,7 @@ public class bPivotConstraint extends CFacade {
 	 * Set method for struct member 'rotAxis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rotation-driven activation: This option provides easier one-stop setups for foot-rolls.Rotation axes to consider for this ({@link ePivotConstraint_Axis} ). </p>
+	 * <p> Rotation-driven activation: This option provides easier one-stop setups for foot-rolls. Rotation axes to consider for this ({@link ePivotConstraint_Axis} ). </p>
 	 * @see #__DNA__FIELD__rotAxis
 	 */
 	

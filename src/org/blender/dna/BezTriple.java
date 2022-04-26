@@ -15,10 +15,30 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p> Keyframes on F-Curves (allows code reuse of Bezier eval code) and Points on Bezier Curves/Paths are generally BezTriples.</p><p><h2>Note</h2><p>{@link BezTriple.tilt}  location in struct is abused by {@link Key}  system.</p> BezTriple.tilt location in struct is abused by Key system.
+ * 
  * <h2>Note</h2><p> vec in {@link BezTriple}  looks like this:<ul><li><p> vec[0][0] = x location of handle 1</p></li><li><p> vec[0][1] = y location of handle 1</p></li><li><p> vec[0][2] = z location of handle 1 (not used for {@link FCurve}  Points(2d))</p></li><li><p> vec[1][0] = x location of control point</p></li><li><p> vec[1][1] = y location of control point</p></li><li><p> vec[1][2] = z location of control point</p></li><li><p> vec[2][0] = x location of handle 2</p></li><li><p> vec[2][1] = y location of handle 2</p></li><li><p> vec[2][2] = z location of handle 2 (not used for {@link FCurve}  Points(2d)) </p></li></ul> 
- * vec[0][0] = x location of handle 1vec[0][1] = y location of handle 1vec[0][2] = z location of handle 1 (not used for FCurve Points(2d))vec[1][0] = x location of control pointvec[1][1] = y location of control pointvec[1][2] = z location of control pointvec[2][0] = x location of handle 2vec[2][1] = y location of handle 2vec[2][2] = z location of handle 2 (not used for FCurve Points(2d)) 
+ * vec[0][0] = x location of handle 1
+ * vec[0][1] = y location of handle 1
+ * vec[0][2] = z location of handle 1 (not used for FCurve Points(2d))
+ * vec[1][0] = x location of control point
+ * vec[1][1] = y location of control point
+ * vec[1][2] = z location of control point
+ * vec[2][0] = x location of handle 2
+ * vec[2][1] = y location of handle 2
+ * vec[2][2] = z location of handle 2 (not used for FCurve Points(2d)) 
+ * 
  * </p> vec in BezTriple looks like this:
- * vec[0][0] = x location of handle 1vec[0][1] = y location of handle 1vec[0][2] = z location of handle 1 (not used for FCurve Points(2d))vec[1][0] = x location of control pointvec[1][1] = y location of control pointvec[1][2] = z location of control pointvec[2][0] = x location of handle 2vec[2][1] = y location of handle 2vec[2][2] = z location of handle 2 (not used for FCurve Points(2d)) 
+ * vec[0][0] = x location of handle 1
+ * vec[0][1] = y location of handle 1
+ * vec[0][2] = z location of handle 1 (not used for FCurve Points(2d))
+ * vec[1][0] = x location of control point
+ * vec[1][1] = y location of control point
+ * vec[1][2] = z location of control point
+ * vec[2][0] = x location of handle 2
+ * vec[2][1] = y location of handle 2
+ * vec[2][2] = z location of handle 2 (not used for FCurve Points(2d)) 
+ * 
+ * 
  * 
  * </p>
  */
