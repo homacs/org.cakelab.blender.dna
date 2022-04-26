@@ -214,7 +214,9 @@ public class ParticleData extends CFacade {
 	 * Field descriptor (offset) for struct member 'dietime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Particles can die unnaturally (collision). </p>
+	 * <p> Particles can die unnaturally (collision).</p><p><h2>Note</h2><p> Particles die on this frame, be sure to add 1 when clamping the lifetime of particles to inclusive ranges such as the scenes end frame. See: T68290. </p> Particles die on this frame, be sure to add 1 when clamping the lifetime of particles to inclusive ranges such as the scenes end frame. See: T68290. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -757,7 +759,9 @@ public class ParticleData extends CFacade {
 	 * Get method for struct member 'dietime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Particles can die unnaturally (collision). </p>
+	 * <p> Particles can die unnaturally (collision).</p><p><h2>Note</h2><p> Particles die on this frame, be sure to add 1 when clamping the lifetime of particles to inclusive ranges such as the scenes end frame. See: T68290. </p> Particles die on this frame, be sure to add 1 when clamping the lifetime of particles to inclusive ranges such as the scenes end frame. See: T68290. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__dietime
 	 */
 	
@@ -774,7 +778,9 @@ public class ParticleData extends CFacade {
 	 * Set method for struct member 'dietime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Particles can die unnaturally (collision). </p>
+	 * <p> Particles can die unnaturally (collision).</p><p><h2>Note</h2><p> Particles die on this frame, be sure to add 1 when clamping the lifetime of particles to inclusive ranges such as the scenes end frame. See: T68290. </p> Particles die on this frame, be sure to add 1 when clamping the lifetime of particles to inclusive ranges such as the scenes end frame. See: T68290. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__dietime
 	 */
 	

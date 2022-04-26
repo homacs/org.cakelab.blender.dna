@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'AlembicObjectPath'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> UNUSED Representation of an object's path inside the Alembic file. Note that this is not a file path. </p>
  */
 
 @CMetaData(size32=4104, size64=4112)
