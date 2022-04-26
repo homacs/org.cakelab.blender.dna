@@ -471,7 +471,7 @@ public class View3D extends CFacade {
 	 * Field descriptor (offset) for struct member 'localvd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Allocated backup of its self while in local-view. </p>
+	 * <p> Allocated backup of itself while in local-view. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1977,7 +1977,7 @@ public class View3D extends CFacade {
 	 * Get method for struct member 'localvd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Allocated backup of its self while in local-view. </p>
+	 * <p> Allocated backup of itself while in local-view. </p>
 	 * @see #__DNA__FIELD__localvd
 	 */
 	
@@ -1997,7 +1997,7 @@ public class View3D extends CFacade {
 	 * Set method for struct member 'localvd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Allocated backup of its self while in local-view. </p>
+	 * <p> Allocated backup of itself while in local-view. </p>
 	 * @see #__DNA__FIELD__localvd
 	 */
 	

@@ -688,7 +688,7 @@ public class ParticleSystem extends CFacade {
 	 * Field descriptor (offset) for struct member 'recalc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NOTE: Recalc is one of ID_RECALC_PSYS_ALL flags.</p><p> TODO(sergey): Use part->id.recalc instead of this duplicated flag somehow. </p>
+	 * <p> NOTE: Recalc is one of ID_RECALC_PSYS_ALL flags.</p><p> TODO(sergey): Use #ParticleSettings.id.recalc instead of this duplicated flag somehow. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2241,7 +2241,7 @@ public class ParticleSystem extends CFacade {
 	 * Get method for struct member 'recalc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NOTE: Recalc is one of ID_RECALC_PSYS_ALL flags.</p><p> TODO(sergey): Use part->id.recalc instead of this duplicated flag somehow. </p>
+	 * <p> NOTE: Recalc is one of ID_RECALC_PSYS_ALL flags.</p><p> TODO(sergey): Use #ParticleSettings.id.recalc instead of this duplicated flag somehow. </p>
 	 * @see #__DNA__FIELD__recalc
 	 */
 	
@@ -2258,7 +2258,7 @@ public class ParticleSystem extends CFacade {
 	 * Set method for struct member 'recalc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NOTE: Recalc is one of ID_RECALC_PSYS_ALL flags.</p><p> TODO(sergey): Use part->id.recalc instead of this duplicated flag somehow. </p>
+	 * <p> NOTE: Recalc is one of ID_RECALC_PSYS_ALL flags.</p><p> TODO(sergey): Use #ParticleSettings.id.recalc instead of this duplicated flag somehow. </p>
 	 * @see #__DNA__FIELD__recalc
 	 */
 	

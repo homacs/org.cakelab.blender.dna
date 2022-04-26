@@ -12,8 +12,7 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'WipeVars'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
- * <p> ************* {@link Effect}  Variable Structs ********* </p>
+ * 
  */
 
 @CMetaData(size32=12, size64=12)

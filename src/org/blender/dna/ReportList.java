@@ -14,7 +14,9 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> saved in the wm, don't remove </p>
+ * <p><h2>Note</h2><p> Saved in the wm, don't remove. </p> Saved in the wm, don't remove. 
+ * 
+ * </p>
  */
 
 @CMetaData(size32=28, size64=40)

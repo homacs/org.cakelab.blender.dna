@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> set of colors for use as a custom color set for Objects/Bones wire drawing </p>
+ * <p> Set of colors for use as a custom color set for Objects/Bones wire drawing. </p>
  */
 
 @CMetaData(size32=16, size64=16)

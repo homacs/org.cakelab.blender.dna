@@ -53,7 +53,7 @@ public class WaveModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
+	 * <p> Keep in sync with {@link MappingInfoModifierData} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -179,7 +179,7 @@ public class WaveModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'objectcenter'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> end {@link MappingInfoModifierData}  </p>
+	 * <p> End {@link MappingInfoModifierData} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -549,7 +549,7 @@ public class WaveModifierData extends CFacade {
 	 * Get method for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
+	 * <p> Keep in sync with {@link MappingInfoModifierData} . </p>
 	 * @see #__DNA__FIELD__texture
 	 */
 	
@@ -569,7 +569,7 @@ public class WaveModifierData extends CFacade {
 	 * Set method for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
+	 * <p> Keep in sync with {@link MappingInfoModifierData} . </p>
 	 * @see #__DNA__FIELD__texture
 	 */
 	
@@ -761,7 +761,7 @@ public class WaveModifierData extends CFacade {
 	 * Get method for struct member 'objectcenter'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> end {@link MappingInfoModifierData}  </p>
+	 * <p> End {@link MappingInfoModifierData} . </p>
 	 * @see #__DNA__FIELD__objectcenter
 	 */
 	
@@ -781,7 +781,7 @@ public class WaveModifierData extends CFacade {
 	 * Set method for struct member 'objectcenter'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> end {@link MappingInfoModifierData}  </p>
+	 * <p> End {@link MappingInfoModifierData} . </p>
 	 * @see #__DNA__FIELD__objectcenter
 	 */
 	

@@ -99,7 +99,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'proximity_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Proximity modes. </p>
+	 * <p> Modes of proximity weighting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -120,6 +120,9 @@ public class WeightVGProximityModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'proximity_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Options for proximity weighting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -392,7 +395,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'falloff_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Put here to avoid breaking existing struct... Using MOD_WVG_MAPPING_* enums. </p>
+	 * <p> Put here to avoid breaking existing struct... Mapping modes (using MOD_WVG_MAPPING_* enums). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -566,7 +569,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * Get method for struct member 'proximity_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Proximity modes. </p>
+	 * <p> Modes of proximity weighting. </p>
 	 * @see #__DNA__FIELD__proximity_mode
 	 */
 	
@@ -583,7 +586,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * Set method for struct member 'proximity_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Proximity modes. </p>
+	 * <p> Modes of proximity weighting. </p>
 	 * @see #__DNA__FIELD__proximity_mode
 	 */
 	
@@ -598,6 +601,9 @@ public class WeightVGProximityModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'proximity_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Options for proximity weighting. </p>
 	 * @see #__DNA__FIELD__proximity_flags
 	 */
 	
@@ -612,6 +618,9 @@ public class WeightVGProximityModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'proximity_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Options for proximity weighting. </p>
 	 * @see #__DNA__FIELD__proximity_flags
 	 */
 	
@@ -1044,7 +1053,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * Get method for struct member 'falloff_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Put here to avoid breaking existing struct... Using MOD_WVG_MAPPING_* enums. </p>
+	 * <p> Put here to avoid breaking existing struct... Mapping modes (using MOD_WVG_MAPPING_* enums). </p>
 	 * @see #__DNA__FIELD__falloff_type
 	 */
 	
@@ -1061,7 +1070,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * Set method for struct member 'falloff_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Put here to avoid breaking existing struct... Using MOD_WVG_MAPPING_* enums. </p>
+	 * <p> Put here to avoid breaking existing struct... Mapping modes (using MOD_WVG_MAPPING_* enums). </p>
 	 * @see #__DNA__FIELD__falloff_type
 	 */
 	

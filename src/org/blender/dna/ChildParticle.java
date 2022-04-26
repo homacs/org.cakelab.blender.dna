@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Child particles are created around or between parent particles </p>
+ * <p> Child particles are created around or between parent particles. </p>
  */
 
 @CMetaData(size32=64, size64=64)

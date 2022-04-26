@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Vertex group index and weight for #MDeformVert.dw </p>
+ * <p> Vertex group index and weight for {@link MDeformVert.dw}  </p>
  */
 
 @CMetaData(size32=8, size64=8)

@@ -14,7 +14,9 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> 32 = MAXCOLORBAND note that this has to remain a single struct, for {@link UserDef}  </p>
+ * <p> 32 = #MAXCOLORBAND <h2>Note</h2><p> that this has to remain a single struct, for {@link UserDef} . </p> that this has to remain a single struct, for UserDef. 
+ * 
+ * </p>
  */
 
 @CMetaData(size32=776, size64=776)

@@ -78,6 +78,9 @@ public class Object_Runtime extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'collection_management'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Opaque data reserved for management of objects in collection context. E.g. used currently to check for potential duplicates of objects in a collection, after remapping process. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -232,7 +235,7 @@ public class Object_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'bb'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Axis aligned boundbox (in localspace). </p>
+	 * <p> Axis aligned bound-box (in local-space). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -345,6 +348,9 @@ public class Object_Runtime extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'editmesh_eval_cage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Evaluated mesh cage in edit mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -365,6 +371,9 @@ public class Object_Runtime extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'editmesh_bb_cage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  for selection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -664,6 +673,9 @@ public class Object_Runtime extends CFacade {
 
 	/**
 	 * Get method for struct member 'collection_management'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Opaque data reserved for management of objects in collection context. E.g. used currently to check for potential duplicates of objects in a collection, after remapping process. </p>
 	 * @see #__DNA__FIELD__collection_management
 	 */
 	
@@ -678,6 +690,9 @@ public class Object_Runtime extends CFacade {
 
 	/**
 	 * Set method for struct member 'collection_management'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Opaque data reserved for management of objects in collection context. E.g. used currently to check for potential duplicates of objects in a collection, after remapping process. </p>
 	 * @see #__DNA__FIELD__collection_management
 	 */
 	
@@ -922,7 +937,7 @@ public class Object_Runtime extends CFacade {
 	 * Get method for struct member 'bb'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Axis aligned boundbox (in localspace). </p>
+	 * <p> Axis aligned bound-box (in local-space). </p>
 	 * @see #__DNA__FIELD__bb
 	 */
 	
@@ -942,7 +957,7 @@ public class Object_Runtime extends CFacade {
 	 * Set method for struct member 'bb'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Axis aligned boundbox (in localspace). </p>
+	 * <p> Axis aligned bound-box (in local-space). </p>
 	 * @see #__DNA__FIELD__bb
 	 */
 	
@@ -1110,6 +1125,9 @@ public class Object_Runtime extends CFacade {
 
 	/**
 	 * Get method for struct member 'editmesh_eval_cage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Evaluated mesh cage in edit mode. </p>
 	 * @see #__DNA__FIELD__editmesh_eval_cage
 	 */
 	
@@ -1127,6 +1145,9 @@ public class Object_Runtime extends CFacade {
 
 	/**
 	 * Set method for struct member 'editmesh_eval_cage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Evaluated mesh cage in edit mode. </p>
 	 * @see #__DNA__FIELD__editmesh_eval_cage
 	 */
 	
@@ -1142,6 +1163,9 @@ public class Object_Runtime extends CFacade {
 
 	/**
 	 * Get method for struct member 'editmesh_bb_cage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  for selection. </p>
 	 * @see #__DNA__FIELD__editmesh_bb_cage
 	 */
 	
@@ -1159,6 +1183,9 @@ public class Object_Runtime extends CFacade {
 
 	/**
 	 * Set method for struct member 'editmesh_bb_cage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  for selection. </p>
 	 * @see #__DNA__FIELD__editmesh_bb_cage
 	 */
 	

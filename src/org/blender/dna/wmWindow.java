@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> IME is win32 and apple only! the saveable part, rest of data is local in ghostwinlay </p>
+ * <p> IME is win32 and apple only! The saveable part, the rest of the data is local in GHOST. </p>
  */
 
 @CMetaData(size32=216, size64=336)

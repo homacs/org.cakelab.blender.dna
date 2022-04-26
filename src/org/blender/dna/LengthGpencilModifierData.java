@@ -209,6 +209,9 @@ public class LengthGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rand_start_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Random length factors. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -292,6 +295,9 @@ public class LengthGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'seed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (first element is the index) random values. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -312,6 +318,9 @@ public class LengthGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'step'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> How many frames before recalculate randoms. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -730,6 +739,9 @@ public class LengthGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'rand_start_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Random length factors. </p>
 	 * @see #__DNA__FIELD__rand_start_fac
 	 */
 	
@@ -744,6 +756,9 @@ public class LengthGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'rand_start_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Random length factors. </p>
 	 * @see #__DNA__FIELD__rand_start_fac
 	 */
 	
@@ -848,6 +863,9 @@ public class LengthGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'seed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (first element is the index) random values. </p>
 	 * @see #__DNA__FIELD__seed
 	 */
 	
@@ -862,6 +880,9 @@ public class LengthGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'seed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (first element is the index) random values. </p>
 	 * @see #__DNA__FIELD__seed
 	 */
 	
@@ -876,6 +897,9 @@ public class LengthGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'step'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> How many frames before recalculate randoms. </p>
 	 * @see #__DNA__FIELD__step
 	 */
 	
@@ -890,6 +914,9 @@ public class LengthGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'step'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> How many frames before recalculate randoms. </p>
 	 * @see #__DNA__FIELD__step
 	 */
 	

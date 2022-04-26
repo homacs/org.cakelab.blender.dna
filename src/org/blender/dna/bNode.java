@@ -290,6 +290,9 @@ public class bNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'changed_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> #eNodeTreeChangedFlag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -837,7 +840,7 @@ public class bNode extends CFacade {
 	 * Field descriptor (offset) for struct member 'totr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Entire boundbox (worldspace). </p>
+	 * <p> Entire bound-box (world-space). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1494,6 +1497,9 @@ public class bNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'changed_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> #eNodeTreeChangedFlag. </p>
 	 * @see #__DNA__FIELD__changed_flag
 	 */
 	
@@ -1508,6 +1514,9 @@ public class bNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'changed_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> #eNodeTreeChangedFlag. </p>
 	 * @see #__DNA__FIELD__changed_flag
 	 */
 	
@@ -2362,7 +2371,7 @@ public class bNode extends CFacade {
 	 * Get method for struct member 'totr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Entire boundbox (worldspace). </p>
+	 * <p> Entire bound-box (world-space). </p>
 	 * @see #__DNA__FIELD__totr
 	 */
 	
@@ -2379,7 +2388,7 @@ public class bNode extends CFacade {
 	 * Set method for struct member 'totr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Entire boundbox (worldspace). </p>
+	 * <p> Entire bound-box (world-space). </p>
 	 * @see #__DNA__FIELD__totr
 	 */
 	

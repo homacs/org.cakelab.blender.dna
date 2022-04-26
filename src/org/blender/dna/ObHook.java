@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Warning, this is not used anymore because hooks are now modifiers </p>
+ * <p> DEPRECATED: this is not used anymore because hooks are now modifiers. </p>
  */
 
 @CMetaData(size32=240, size64=256)

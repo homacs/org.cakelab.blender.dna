@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> #endif </p><p> reports need to be before {@link wmWindowManager}  windowmanager is saved, tag WMAN </p>
+ * <p> #endif </p><p> reports need to be before {@link wmWindowManager}  Window-manager is saved, tag WMAN. </p>
  */
 
 @CMetaData(size32=1260, size64=1424)

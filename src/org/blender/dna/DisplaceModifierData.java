@@ -53,7 +53,7 @@ public class DisplaceModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
+	 * <p> Keep in sync with {@link MappingInfoModifierData} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -369,7 +369,7 @@ public class DisplaceModifierData extends CFacade {
 	 * Get method for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
+	 * <p> Keep in sync with {@link MappingInfoModifierData} . </p>
 	 * @see #__DNA__FIELD__texture
 	 */
 	
@@ -389,7 +389,7 @@ public class DisplaceModifierData extends CFacade {
 	 * Set method for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
+	 * <p> Keep in sync with {@link MappingInfoModifierData} . </p>
 	 * @see #__DNA__FIELD__texture
 	 */
 	

@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Settings for a GPencil Speed Guide </p>
+ * <p> Settings for a GPencil Speed Guide. </p>
  */
 
 @CMetaData(size32=36, size64=40)

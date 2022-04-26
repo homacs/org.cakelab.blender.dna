@@ -334,9 +334,6 @@ public class Curve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'texflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Keep a short because of BKE_object_obdata_texspace_get(). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2116,9 +2113,6 @@ public class Curve extends CFacade {
 
 	/**
 	 * Get method for struct member 'texflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Keep a short because of BKE_object_obdata_texspace_get(). </p>
 	 * @see #__DNA__FIELD__texflag
 	 */
 	
@@ -2133,9 +2127,6 @@ public class Curve extends CFacade {
 
 	/**
 	 * Set method for struct member 'texflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Keep a short because of BKE_object_obdata_texspace_get(). </p>
 	 * @see #__DNA__FIELD__texflag
 	 */
 	

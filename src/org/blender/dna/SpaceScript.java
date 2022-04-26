@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p>{@link Script}  View - Obsolete (pre 2.5) </p>
+ * <p>{@link Script}  View - Obsolete (pre 2.5). </p>
  */
 
 @CMetaData(size32=40, size64=64)

@@ -257,7 +257,7 @@ public class WeightVGEditModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'mask_tex_use_channel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Texture masking. Which channel to use as weightf. </p>
+	 * <p> Texture masking. Which channel to use as weight/mask. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -810,7 +810,7 @@ public class WeightVGEditModifierData extends CFacade {
 	 * Get method for struct member 'mask_tex_use_channel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Texture masking. Which channel to use as weightf. </p>
+	 * <p> Texture masking. Which channel to use as weight/mask. </p>
 	 * @see #__DNA__FIELD__mask_tex_use_channel
 	 */
 	
@@ -827,7 +827,7 @@ public class WeightVGEditModifierData extends CFacade {
 	 * Set method for struct member 'mask_tex_use_channel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Texture masking. Which channel to use as weightf. </p>
+	 * <p> Texture masking. Which channel to use as weight/mask. </p>
 	 * @see #__DNA__FIELD__mask_tex_use_channel
 	 */
 	

@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  View 2D data - stored per region </p>
+ *  View 2D data - stored per region. </p>
  */
 
 @CMetaData(size32=144, size64=152)

@@ -14,7 +14,9 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> not a real modifier </p>
+ * <p><h2>Note</h2><p> Not a real modifier. </p> Not a real modifier. 
+ * 
+ * </p>
  */
 
 @CMetaData(size32=248, size64=272)

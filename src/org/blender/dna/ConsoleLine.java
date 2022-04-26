@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Console content </p>
+ * <p> Console content. </p>
  */
 
 @CMetaData(size32=28, size64=40)

@@ -585,7 +585,7 @@ public class FluidDomainSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'global_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Global size of domain axises. </p>
+	 * <p> Global size of domain axes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3912,7 +3912,7 @@ public class FluidDomainSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'viewsettings'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><ndash/>  Deprecated / unsed options (below). <ndash/>  View options. </p>
+	 * <p><ndash/>  Deprecated / unused options (below). <ndash/>  View options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -5020,7 +5020,7 @@ public class FluidDomainSettings extends CFacade {
 	 * Get method for struct member 'global_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Global size of domain axises. </p>
+	 * <p> Global size of domain axes. </p>
 	 * @see #__DNA__FIELD__global_size
 	 */
 	
@@ -5041,7 +5041,7 @@ public class FluidDomainSettings extends CFacade {
 	 * Set method for struct member 'global_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Global size of domain axises. </p>
+	 * <p> Global size of domain axes. </p>
 	 * @see #__DNA__FIELD__global_size
 	 */
 	
@@ -10278,7 +10278,7 @@ public class FluidDomainSettings extends CFacade {
 	 * Get method for struct member 'viewsettings'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><ndash/>  Deprecated / unsed options (below). <ndash/>  View options. </p>
+	 * <p><ndash/>  Deprecated / unused options (below). <ndash/>  View options. </p>
 	 * @see #__DNA__FIELD__viewsettings
 	 */
 	
@@ -10295,7 +10295,7 @@ public class FluidDomainSettings extends CFacade {
 	 * Set method for struct member 'viewsettings'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><ndash/>  Deprecated / unsed options (below). <ndash/>  View options. </p>
+	 * <p><ndash/>  Deprecated / unused options (below). <ndash/>  View options. </p>
 	 * @see #__DNA__FIELD__viewsettings
 	 */
 	

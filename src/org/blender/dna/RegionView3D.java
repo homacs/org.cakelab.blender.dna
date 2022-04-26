@@ -237,7 +237,7 @@ public class RegionView3D extends CFacade {
 	 * Field descriptor (offset) for struct member 'clip_local'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Clip in object space, means we can test for clipping in editmode without first going into worldspace. </p>
+	 * <p> Clip in object space, means we can test for clipping in edit-mode without first going into world-space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -280,7 +280,7 @@ public class RegionView3D extends CFacade {
 	 * Field descriptor (offset) for struct member 'localvd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Allocated backup of its self while in local-view. </p>
+	 * <p> Allocated backup of itself while in local-view. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -589,7 +589,7 @@ public class RegionView3D extends CFacade {
 	 * Field descriptor (offset) for struct member 'ofs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> View center & orbit pivot, negative of worldspace location, also matches -viewinv[3][0:3] in ortho mode. </p>
+	 * <p><code></code>  in orthographic mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1446,7 +1446,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'clip_local'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Clip in object space, means we can test for clipping in editmode without first going into worldspace. </p>
+	 * <p> Clip in object space, means we can test for clipping in edit-mode without first going into world-space. </p>
 	 * @see #__DNA__FIELD__clip_local
 	 */
 	
@@ -1468,7 +1468,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'clip_local'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Clip in object space, means we can test for clipping in editmode without first going into worldspace. </p>
+	 * <p> Clip in object space, means we can test for clipping in edit-mode without first going into world-space. </p>
 	 * @see #__DNA__FIELD__clip_local
 	 */
 	
@@ -1525,7 +1525,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'localvd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Allocated backup of its self while in local-view. </p>
+	 * <p> Allocated backup of itself while in local-view. </p>
 	 * @see #__DNA__FIELD__localvd
 	 */
 	
@@ -1545,7 +1545,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'localvd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Allocated backup of its self while in local-view. </p>
+	 * <p> Allocated backup of itself while in local-view. </p>
 	 * @see #__DNA__FIELD__localvd
 	 */
 	
@@ -2053,7 +2053,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'ofs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> View center & orbit pivot, negative of worldspace location, also matches -viewinv[3][0:3] in ortho mode. </p>
+	 * <p><code></code>  in orthographic mode. </p>
 	 * @see #__DNA__FIELD__ofs
 	 */
 	
@@ -2074,7 +2074,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'ofs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> View center & orbit pivot, negative of worldspace location, also matches -viewinv[3][0:3] in ortho mode. </p>
+	 * <p><code></code>  in orthographic mode. </p>
 	 * @see #__DNA__FIELD__ofs
 	 */
 	

@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> DEPRECATED, only used for versioning. </p>
+ * <p> DEPRECATED: only used for versioning. </p>
  */
 
 @CMetaData(size32=112, size64=136)

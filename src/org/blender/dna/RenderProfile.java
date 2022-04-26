@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  Render Conversion/Simplification Settings control render convert and shading engine </p>
+ *  Render Conversion/Simplification Settings Control render convert and shading engine. </p>
  */
 
 @CMetaData(size32=56, size64=64)

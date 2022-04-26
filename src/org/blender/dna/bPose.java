@@ -57,7 +57,7 @@ public class bPose extends CFacade {
 	 * Field descriptor (offset) for struct member 'chanhash'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Ghash for quicker string lookups. </p>
+	 * <p> Use a hash-table for quicker string lookups. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -466,7 +466,7 @@ public class bPose extends CFacade {
 	 * Get method for struct member 'chanhash'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Ghash for quicker string lookups. </p>
+	 * <p> Use a hash-table for quicker string lookups. </p>
 	 * @see #__DNA__FIELD__chanhash
 	 */
 	
@@ -486,7 +486,7 @@ public class bPose extends CFacade {
 	 * Set method for struct member 'chanhash'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Ghash for quicker string lookups. </p>
+	 * <p> Use a hash-table for quicker string lookups. </p>
 	 * @see #__DNA__FIELD__chanhash
 	 */
 	

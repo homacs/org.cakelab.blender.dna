@@ -53,7 +53,7 @@ public class WarpModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
+	 * <p> Keep in sync with {@link MappingInfoModifierData} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -179,7 +179,7 @@ public class WarpModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'object_from'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> end {@link MappingInfoModifierData}  </p>
+	 * <p> End {@link MappingInfoModifierData} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -475,7 +475,7 @@ public class WarpModifierData extends CFacade {
 	 * Get method for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
+	 * <p> Keep in sync with {@link MappingInfoModifierData} . </p>
 	 * @see #__DNA__FIELD__texture
 	 */
 	
@@ -495,7 +495,7 @@ public class WarpModifierData extends CFacade {
 	 * Set method for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
+	 * <p> Keep in sync with {@link MappingInfoModifierData} . </p>
 	 * @see #__DNA__FIELD__texture
 	 */
 	
@@ -687,7 +687,7 @@ public class WarpModifierData extends CFacade {
 	 * Get method for struct member 'object_from'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> end {@link MappingInfoModifierData}  </p>
+	 * <p> End {@link MappingInfoModifierData} . </p>
 	 * @see #__DNA__FIELD__object_from
 	 */
 	
@@ -707,7 +707,7 @@ public class WarpModifierData extends CFacade {
 	 * Set method for struct member 'object_from'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> end {@link MappingInfoModifierData}  </p>
+	 * <p> End {@link MappingInfoModifierData} . </p>
 	 * @see #__DNA__FIELD__object_from
 	 */
 	

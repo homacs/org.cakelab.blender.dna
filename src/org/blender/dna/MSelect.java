@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Optionally store the order of selected elements. This won't always be set since only some selection operations have an order.</p><p> Typically accessed from #Mesh.mselect </p>
+ * <p> Optionally store the order of selected elements. This won't always be set since only some selection operations have an order.</p><p> Typically accessed from {@link Mesh.mselect}  </p>
  */
 
 @CMetaData(size32=8, size64=8)

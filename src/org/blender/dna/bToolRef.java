@@ -14,7 +14,9 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Stored per mode. </p>
+ * <p><h2>Note</h2><p> Stored per mode. </p> Stored per mode. 
+ * 
+ * </p>
  */
 
 @CMetaData(size32=152, size64=168)

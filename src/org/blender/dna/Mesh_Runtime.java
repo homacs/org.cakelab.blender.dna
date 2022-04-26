@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> not saved in file! </p>
+ * <p> Runtime data, not saved in files. </p>
  */
 
 @CMetaData(size32=152, size64=208)
@@ -74,6 +74,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'normals_mutex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A separate mutex is needed for normal calculation, because sometimes the normals are needed while #eval_mutex is already locked. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -117,6 +120,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'edit_data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Lazily initialized SoA data from the #edit_mesh field in {@link Mesh} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -137,6 +143,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'batch_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -157,6 +166,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'looptris'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cache for derived triangulation of the mesh. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -179,7 +191,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'bvh_cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><code></code>  defined in 'BKE_bvhutil.c' </p>
+	 * <p> Cache for BVH trees generated for the mesh. Defined in 'BKE_bvhutil.c' </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -202,7 +214,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'shrinkwrap_data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Non-manifold boundary data for Shrinkwrap Target Project. </p>
+	 * <p> Cache of non-manifold boundary data for Shrinkwrap Target Project. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -398,6 +410,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'subsurf_apply_render'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Settings for lazily evaluating the subdivision on the CPU if needed. These are set in the modifier when GPU subdivision can be performed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -438,6 +453,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'vert_normals_dirty'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Caches for lazily computed vertex and polygon normals. These are stored here rather than in {@link CustomData}  because they can be calculated on a const mesh, and adding custom data layers on a const mesh is not thread-safe. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -498,6 +516,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cd_dirty_vert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used to mark when derived data needs to be recalculated for a certain layer. Currently only normals. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -656,6 +677,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Get method for struct member 'normals_mutex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A separate mutex is needed for normal calculation, because sometimes the normals are needed while #eval_mutex is already locked. </p>
 	 * @see #__DNA__FIELD__normals_mutex
 	 */
 	
@@ -673,6 +697,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Set method for struct member 'normals_mutex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A separate mutex is needed for normal calculation, because sometimes the normals are needed while #eval_mutex is already locked. </p>
 	 * @see #__DNA__FIELD__normals_mutex
 	 */
 	
@@ -726,6 +753,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Get method for struct member 'edit_data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Lazily initialized SoA data from the #edit_mesh field in {@link Mesh} . </p>
 	 * @see #__DNA__FIELD__edit_data
 	 */
 	
@@ -743,6 +773,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Set method for struct member 'edit_data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Lazily initialized SoA data from the #edit_mesh field in {@link Mesh} . </p>
 	 * @see #__DNA__FIELD__edit_data
 	 */
 	
@@ -758,6 +791,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Get method for struct member 'batch_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__batch_cache
 	 */
 	
@@ -775,6 +811,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Set method for struct member 'batch_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__batch_cache
 	 */
 	
@@ -790,6 +829,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Get method for struct member 'looptris'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cache for derived triangulation of the mesh. </p>
 	 * @see #__DNA__FIELD__looptris
 	 */
 	
@@ -804,6 +846,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Set method for struct member 'looptris'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cache for derived triangulation of the mesh. </p>
 	 * @see #__DNA__FIELD__looptris
 	 */
 	
@@ -828,7 +873,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Get method for struct member 'bvh_cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><code></code>  defined in 'BKE_bvhutil.c' </p>
+	 * <p> Cache for BVH trees generated for the mesh. Defined in 'BKE_bvhutil.c' </p>
 	 * @see #__DNA__FIELD__bvh_cache
 	 */
 	
@@ -848,7 +893,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Set method for struct member 'bvh_cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><code></code>  defined in 'BKE_bvhutil.c' </p>
+	 * <p> Cache for BVH trees generated for the mesh. Defined in 'BKE_bvhutil.c' </p>
 	 * @see #__DNA__FIELD__bvh_cache
 	 */
 	
@@ -866,7 +911,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Get method for struct member 'shrinkwrap_data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Non-manifold boundary data for Shrinkwrap Target Project. </p>
+	 * <p> Cache of non-manifold boundary data for Shrinkwrap Target Project. </p>
 	 * @see #__DNA__FIELD__shrinkwrap_data
 	 */
 	
@@ -886,7 +931,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Set method for struct member 'shrinkwrap_data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Non-manifold boundary data for Shrinkwrap Target Project. </p>
+	 * <p> Cache of non-manifold boundary data for Shrinkwrap Target Project. </p>
 	 * @see #__DNA__FIELD__shrinkwrap_data
 	 */
 	
@@ -1168,6 +1213,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Get method for struct member 'subsurf_apply_render'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Settings for lazily evaluating the subdivision on the CPU if needed. These are set in the modifier when GPU subdivision can be performed. </p>
 	 * @see #__DNA__FIELD__subsurf_apply_render
 	 */
 	
@@ -1182,6 +1230,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Set method for struct member 'subsurf_apply_render'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Settings for lazily evaluating the subdivision on the CPU if needed. These are set in the modifier when GPU subdivision can be performed. </p>
 	 * @see #__DNA__FIELD__subsurf_apply_render
 	 */
 	
@@ -1224,6 +1275,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Get method for struct member 'vert_normals_dirty'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Caches for lazily computed vertex and polygon normals. These are stored here rather than in {@link CustomData}  because they can be calculated on a const mesh, and adding custom data layers on a const mesh is not thread-safe. </p>
 	 * @see #__DNA__FIELD__vert_normals_dirty
 	 */
 	
@@ -1238,6 +1292,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Set method for struct member 'vert_normals_dirty'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Caches for lazily computed vertex and polygon normals. These are stored here rather than in {@link CustomData}  because they can be calculated on a const mesh, and adding custom data layers on a const mesh is not thread-safe. </p>
 	 * @see #__DNA__FIELD__vert_normals_dirty
 	 */
 	
@@ -1312,6 +1369,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Get method for struct member 'cd_dirty_vert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used to mark when derived data needs to be recalculated for a certain layer. Currently only normals. </p>
 	 * @see #__DNA__FIELD__cd_dirty_vert
 	 */
 	
@@ -1326,6 +1386,9 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Set method for struct member 'cd_dirty_vert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used to mark when derived data needs to be recalculated for a certain layer. Currently only normals. </p>
 	 * @see #__DNA__FIELD__cd_dirty_vert
 	 */
 	

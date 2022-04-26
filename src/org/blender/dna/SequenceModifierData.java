@@ -13,8 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SequenceModifierData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
- * <p> ***************** {@link Sequence}  modifiers ****************** </p>
+ * 
  */
 
 @CMetaData(size32=96, size64=112)

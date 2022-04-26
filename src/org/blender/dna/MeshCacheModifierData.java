@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> cache modifier </p>
+ * <p>{@link Mesh}  cache modifier. </p>
  */
 
 @CMetaData(size32=1232, size64=1248)

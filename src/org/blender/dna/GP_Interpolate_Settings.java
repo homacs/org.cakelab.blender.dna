@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Settings for GP Interpolation Operators </p>
+ * <p> Settings for GP Interpolation Operators. </p>
  */
 
 @CMetaData(size32=4, size64=8)

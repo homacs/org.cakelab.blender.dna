@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> simple uniform modifier structure, assumed it can hold all type info </p>
+ * <p> Simple uniform modifier structure, assumed it can hold all type info. </p>
  */
 
 @CMetaData(size32=60, size64=72)

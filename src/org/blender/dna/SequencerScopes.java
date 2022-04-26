@@ -12,8 +12,7 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SequencerScopes'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
- * <p> ***************** {@link Scopes}  ****************** </p>
+ * 
  */
 
 @CMetaData(size32=24, size64=48)

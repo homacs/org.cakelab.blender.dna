@@ -356,7 +356,7 @@ public class BlenderObject extends CFacade {
 	 * <h4>Java .Blend:</h4>
 	 * if ob->proxy (or proxy_group), this object is proxy for object ob->proxy<h4>Blender Python API:</h4>
 	 * (read-only)    Library object this proxy object controls<h4>Blender Source Code:</h4>
-	 * <p> if ob->proxy (or proxy_group), this object is proxy for object ob->proxy proxy_from is set in target back to the proxy. </p>
+	 * <p><code></code><code></code> . proxy_from is set in target back to the proxy. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1277,7 +1277,7 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * final worldspace matrix with constraints & animsys applied<h4>Blender Source Code:</h4>
-	 * <p> Final worldspace matrix with constraints & animsys applied. </p>
+	 * <p> Final world-space matrix with constraints & animsys applied. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1352,7 +1352,7 @@ public class BlenderObject extends CFacade {
 	 * 							note: this isn't assured to be valid as with 'obmat',
 	 * 	                     	before using this value you should do...
 	 * 	                    	invert_m4_m4(ob->imat, ob->obmat);<h4>Blender Source Code:</h4>
-	 * <p> Inverse matrix of 'obmat' for any other use than rendering!</p><p><h2>Note</h2><p> this isn't assured to be valid as with 'obmat', before using this value you should do... invert_m4_m4(ob->imat, ob->obmat); </p> this isn't assured to be valid as with 'obmat', before using this value you should do... invert_m4_m4(ob->imat, ob->obmat); 
+	 * <p> Inverse matrix of 'obmat' for any other use than rendering!</p><p><h2>Note</h2><p><code></code>  </p> this isn't assured to be valid as with 'obmat', before using this value you should do: invert_m4_m4(ob->imat, ob->obmat) 
 	 * 
 	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -3219,7 +3219,7 @@ public class BlenderObject extends CFacade {
 	 * <h4>Java .Blend:</h4>
 	 * if ob->proxy (or proxy_group), this object is proxy for object ob->proxy<h4>Blender Python API:</h4>
 	 * (read-only)    Library object this proxy object controls<h4>Blender Source Code:</h4>
-	 * <p> if ob->proxy (or proxy_group), this object is proxy for object ob->proxy proxy_from is set in target back to the proxy. </p>
+	 * <p><code></code><code></code> . proxy_from is set in target back to the proxy. </p>
 	 * @see #__DNA__FIELD__proxy
 	 */
 	
@@ -3241,7 +3241,7 @@ public class BlenderObject extends CFacade {
 	 * <h4>Java .Blend:</h4>
 	 * if ob->proxy (or proxy_group), this object is proxy for object ob->proxy<h4>Blender Python API:</h4>
 	 * (read-only)    Library object this proxy object controls<h4>Blender Source Code:</h4>
-	 * <p> if ob->proxy (or proxy_group), this object is proxy for object ob->proxy proxy_from is set in target back to the proxy. </p>
+	 * <p><code></code><code></code> . proxy_from is set in target back to the proxy. </p>
 	 * @see #__DNA__FIELD__proxy
 	 */
 	
@@ -4854,7 +4854,7 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * final worldspace matrix with constraints & animsys applied<h4>Blender Source Code:</h4>
-	 * <p> Final worldspace matrix with constraints & animsys applied. </p>
+	 * <p> Final world-space matrix with constraints & animsys applied. </p>
 	 * @see #__DNA__FIELD__obmat
 	 */
 	
@@ -4877,7 +4877,7 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * final worldspace matrix with constraints & animsys applied<h4>Blender Source Code:</h4>
-	 * <p> Final worldspace matrix with constraints & animsys applied. </p>
+	 * <p> Final world-space matrix with constraints & animsys applied. </p>
 	 * @see #__DNA__FIELD__obmat
 	 */
 	
@@ -5004,7 +5004,7 @@ public class BlenderObject extends CFacade {
 	 * 							note: this isn't assured to be valid as with 'obmat',
 	 * 	                     	before using this value you should do...
 	 * 	                    	invert_m4_m4(ob->imat, ob->obmat);<h4>Blender Source Code:</h4>
-	 * <p> Inverse matrix of 'obmat' for any other use than rendering!</p><p><h2>Note</h2><p> this isn't assured to be valid as with 'obmat', before using this value you should do... invert_m4_m4(ob->imat, ob->obmat); </p> this isn't assured to be valid as with 'obmat', before using this value you should do... invert_m4_m4(ob->imat, ob->obmat); 
+	 * <p> Inverse matrix of 'obmat' for any other use than rendering!</p><p><h2>Note</h2><p><code></code>  </p> this isn't assured to be valid as with 'obmat', before using this value you should do: invert_m4_m4(ob->imat, ob->obmat) 
 	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__imat
@@ -5032,7 +5032,7 @@ public class BlenderObject extends CFacade {
 	 * 							note: this isn't assured to be valid as with 'obmat',
 	 * 	                     	before using this value you should do...
 	 * 	                    	invert_m4_m4(ob->imat, ob->obmat);<h4>Blender Source Code:</h4>
-	 * <p> Inverse matrix of 'obmat' for any other use than rendering!</p><p><h2>Note</h2><p> this isn't assured to be valid as with 'obmat', before using this value you should do... invert_m4_m4(ob->imat, ob->obmat); </p> this isn't assured to be valid as with 'obmat', before using this value you should do... invert_m4_m4(ob->imat, ob->obmat); 
+	 * <p> Inverse matrix of 'obmat' for any other use than rendering!</p><p><h2>Note</h2><p><code></code>  </p> this isn't assured to be valid as with 'obmat', before using this value you should do: invert_m4_m4(ob->imat, ob->obmat) 
 	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__imat

@@ -457,6 +457,9 @@ public class CacheFile extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Index of the currently selected layer in the UI, starts at 1. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1303,6 +1306,9 @@ public class CacheFile extends CFacade {
 
 	/**
 	 * Get method for struct member 'active_layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Index of the currently selected layer in the UI, starts at 1. </p>
 	 * @see #__DNA__FIELD__active_layer
 	 */
 	
@@ -1317,6 +1323,9 @@ public class CacheFile extends CFacade {
 
 	/**
 	 * Set method for struct member 'active_layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Index of the currently selected layer in the UI, starts at 1. </p>
 	 * @see #__DNA__FIELD__active_layer
 	 */
 	

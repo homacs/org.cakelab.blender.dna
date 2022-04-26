@@ -99,6 +99,9 @@ public class NodeGeometryStringToCurves extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pivot_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> GeometryNodeStringToCurvesPivotMode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -229,6 +232,9 @@ public class NodeGeometryStringToCurves extends CFacade {
 
 	/**
 	 * Get method for struct member 'pivot_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> GeometryNodeStringToCurvesPivotMode </p>
 	 * @see #__DNA__FIELD__pivot_mode
 	 */
 	
@@ -243,6 +249,9 @@ public class NodeGeometryStringToCurves extends CFacade {
 
 	/**
 	 * Set method for struct member 'pivot_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> GeometryNodeStringToCurvesPivotMode </p>
 	 * @see #__DNA__FIELD__pivot_mode
 	 */
 	

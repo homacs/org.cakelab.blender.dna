@@ -32,7 +32,7 @@ public class Volume_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'grids'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> OpenVDB Grids </p>
+	 * <p> OpenVDB Grids. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -55,7 +55,7 @@ public class Volume_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'frame'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Current frame in sequence for evaluated volume </p>
+	 * <p> Current frame in sequence for evaluated volume. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -109,7 +109,7 @@ public class Volume_Runtime extends CFacade {
 	 * Get method for struct member 'grids'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> OpenVDB Grids </p>
+	 * <p> OpenVDB Grids. </p>
 	 * @see #__DNA__FIELD__grids
 	 */
 	
@@ -129,7 +129,7 @@ public class Volume_Runtime extends CFacade {
 	 * Set method for struct member 'grids'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> OpenVDB Grids </p>
+	 * <p> OpenVDB Grids. </p>
 	 * @see #__DNA__FIELD__grids
 	 */
 	
@@ -147,7 +147,7 @@ public class Volume_Runtime extends CFacade {
 	 * Get method for struct member 'frame'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Current frame in sequence for evaluated volume </p>
+	 * <p> Current frame in sequence for evaluated volume. </p>
 	 * @see #__DNA__FIELD__frame
 	 */
 	
@@ -164,7 +164,7 @@ public class Volume_Runtime extends CFacade {
 	 * Set method for struct member 'frame'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Current frame in sequence for evaluated volume </p>
+	 * <p> Current frame in sequence for evaluated volume. </p>
 	 * @see #__DNA__FIELD__frame
 	 */
 	

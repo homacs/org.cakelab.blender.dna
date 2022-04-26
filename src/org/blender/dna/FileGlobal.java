@@ -331,9 +331,6 @@ public class FileGlobal extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'filename'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> File path where this was saved, for recover (1024 = FILE_MAX). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -854,9 +851,6 @@ public class FileGlobal extends CFacade {
 
 	/**
 	 * Get method for struct member 'filename'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> File path where this was saved, for recover (1024 = FILE_MAX). </p>
 	 * @see #__DNA__FIELD__filename
 	 */
 	
@@ -875,9 +869,6 @@ public class FileGlobal extends CFacade {
 
 	/**
 	 * Set method for struct member 'filename'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> File path where this was saved, for recover (1024 = FILE_MAX). </p>
 	 * @see #__DNA__FIELD__filename
 	 */
 	

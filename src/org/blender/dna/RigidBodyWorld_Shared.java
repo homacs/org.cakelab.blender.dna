@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  RigidBody {@link World}  Container for data shared by original and evaluated copies of {@link RigidBodyWorld}  </p>
+ *  RigidBody {@link World}  Container for data shared by original and evaluated copies of {@link RigidBodyWorld} . </p>
  */
 
 @CMetaData(size32=16, size64=32)

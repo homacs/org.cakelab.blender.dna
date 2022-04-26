@@ -262,7 +262,7 @@ public class PointDensity extends CFacade {
 	 * Field descriptor (offset) for struct member 'psys_cache_space'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> cache points in worldspace, object space, ... ? </p>
+	 * <p> cache points in world-space, object space, ... ? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -285,7 +285,7 @@ public class PointDensity extends CFacade {
 	 * Field descriptor (offset) for struct member 'ob_cache_space'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> cache points in worldspace, object space, ... ? </p>
+	 * <p> cache points in world-space, object space, ... ? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -953,7 +953,7 @@ public class PointDensity extends CFacade {
 	 * Get method for struct member 'psys_cache_space'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> cache points in worldspace, object space, ... ? </p>
+	 * <p> cache points in world-space, object space, ... ? </p>
 	 * @see #__DNA__FIELD__psys_cache_space
 	 */
 	
@@ -970,7 +970,7 @@ public class PointDensity extends CFacade {
 	 * Set method for struct member 'psys_cache_space'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> cache points in worldspace, object space, ... ? </p>
+	 * <p> cache points in world-space, object space, ... ? </p>
 	 * @see #__DNA__FIELD__psys_cache_space
 	 */
 	
@@ -987,7 +987,7 @@ public class PointDensity extends CFacade {
 	 * Get method for struct member 'ob_cache_space'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> cache points in worldspace, object space, ... ? </p>
+	 * <p> cache points in world-space, object space, ... ? </p>
 	 * @see #__DNA__FIELD__ob_cache_space
 	 */
 	
@@ -1004,7 +1004,7 @@ public class PointDensity extends CFacade {
 	 * Set method for struct member 'ob_cache_space'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> cache points in worldspace, object space, ... ? </p>
+	 * <p> cache points in world-space, object space, ... ? </p>
 	 * @see #__DNA__FIELD__ob_cache_space
 	 */
 	

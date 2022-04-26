@@ -14,8 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p><hr/> 
- *  {@link Scene}  Display - used for store scene specific display settings for the 3d view </p>
+ * <p>{@link Scene}  Display - used for store scene specific display settings for the 3d view. </p>
  */
 
 @CMetaData(size32=976, size64=984)

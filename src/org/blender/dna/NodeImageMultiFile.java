@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> XXX first struct fields should match {@link NodeImageFile}  to ensure forward compatibility </p>
+ * <p> XXX: first struct fields should match {@link NodeImageFile}  to ensure forward compatibility. </p>
  */
 
 @CMetaData(size32=1288, size64=1296)

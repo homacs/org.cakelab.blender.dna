@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> stored in WM, the actively used keymaps </p>
+ * <p> Stored in WM, the actively used key-maps. </p>
  */
 
 @CMetaData(size32=172, size64=208)

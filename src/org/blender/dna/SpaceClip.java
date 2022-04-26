@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Clip Editor </p>
+ * <p> Clip Editor. </p>
  */
 
 @CMetaData(size32=376, size64=416)
@@ -576,7 +576,7 @@ public class SpaceClip extends CFacade {
 	 * Field descriptor (offset) for struct member 'postproc_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> movie postprocessing </p>
+	 * <p> Movie postprocessing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1630,7 +1630,7 @@ public class SpaceClip extends CFacade {
 	 * Get method for struct member 'postproc_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> movie postprocessing </p>
+	 * <p> Movie postprocessing. </p>
 	 * @see #__DNA__FIELD__postproc_flag
 	 */
 	
@@ -1647,7 +1647,7 @@ public class SpaceClip extends CFacade {
 	 * Set method for struct member 'postproc_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> movie postprocessing </p>
+	 * <p> Movie postprocessing. </p>
 	 * @see #__DNA__FIELD__postproc_flag
 	 */
 	

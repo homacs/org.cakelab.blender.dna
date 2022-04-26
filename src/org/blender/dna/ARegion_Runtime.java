@@ -119,6 +119,9 @@ public class ARegion_Runtime extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'block_name_map'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Maps uiBlock->name to uiBlock for faster lookups. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -289,6 +292,9 @@ public class ARegion_Runtime extends CFacade {
 
 	/**
 	 * Get method for struct member 'block_name_map'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Maps uiBlock->name to uiBlock for faster lookups. </p>
 	 * @see #__DNA__FIELD__block_name_map
 	 */
 	
@@ -306,6 +312,9 @@ public class ARegion_Runtime extends CFacade {
 
 	/**
 	 * Set method for struct member 'block_name_map'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Maps uiBlock->name to uiBlock for faster lookups. </p>
 	 * @see #__DNA__FIELD__block_name_map
 	 */
 	

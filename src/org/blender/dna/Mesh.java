@@ -120,6 +120,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> An array of materials, with length {@link totcol} . These can be overridden by material slots on {@link Object} . Indices in #MPoly.mat_nr control which material is used for every face. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -143,7 +146,9 @@ public class Mesh extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * <p>pointer on array with vertices, which is contained in a custom data layer referenced by {@link #getVdata()}]</p><h4>Blender Source Code:</h4>
-	 * <p> Array of verts. </p>
+	 * <p> Array of vertices. Edges and faces are defined by indices into this array. <h2>Note</h2><p> This pointer is for convenient access to the #CD_MVERT layer in #vdata. </p> This pointer is for convenient access to the #CD_MVERT layer in #vdata. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -167,7 +172,9 @@ public class Mesh extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * <p>pointer on array with edges, which is contained in a custom data layer referenced by {@link #getEdata()}]</p><h4>Blender Source Code:</h4>
-	 * <p> Array of edges. </p>
+	 * <p> Array of edges, containing vertex indices. For simple triangle or quad meshes, edges could be calculated from the {@link MPoly}  and {@link MLoop}  arrays, however, edges need to be stored explicitly to edge domain attributes and to support loose edges that aren't connected to faces. <h2>Note</h2><p> This pointer is for convenient access to the #CD_MEDGE layer in #edata. </p> This pointer is for convenient access to the #CD_MEDGE layer in #edata. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -190,7 +197,9 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'mpoly'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> BMESH ONLY New face structures. </p>
+	 * <p> Face topology storage of the size and offset of each face's section of the {@link mloop}<code></code>  attribute. <h2>Note</h2><p> This pointer is for convenient access to the {@link CD_MPOLY}  layer in #pdata. </p> This pointer is for convenient access to the CD_MPOLY layer in #pdata. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -213,7 +222,10 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'mloop'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * <p>pointer on array with loops, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
+	 * <p>pointer on array with loops, which is contained in a custom data layer referenced by {@link #getLdata()}]</p><h4>Blender Source Code:</h4>
+	 * <p> The vertex and edge index at each face corner. <h2>Note</h2><p> This pointer is for convenient access to the #CD_MLOOP layer in #ldata. </p> This pointer is for convenient access to the #CD_MLOOP layer in #ldata. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -236,7 +248,7 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> END BMESH ONLY </p>
+	 * <p> The number of vertices ({@link MVert} ) in the mesh, and the size of #vdata. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -257,6 +269,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totedge'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of edges ({@link MEdge} ) in the mesh, and the size of #edata. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -279,7 +294,7 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'totpoly'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> BMESH ONLY </p>
+	 * <p> The number of polygons/faces ({@link MPoly} ) in the mesh, and the size of #pdata. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -300,6 +315,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totloop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of face corners ({@link MLoop} ) in the mesh, and the size of #ldata. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,8 +409,7 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'ldata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Custom data layers containing {@link MLoopUV}s and {@link MLoop}s.<h4>Blender Source Code:</h4>
-	 * <p> BMESH ONLY </p>
+	 * Custom data layers containing {@link MLoopUV}s and {@link MLoop}s.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -415,7 +432,7 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'dvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Deform-group vertices. </p>
+	 * <p> "Vertex group" vertices. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -438,7 +455,9 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'vertex_group_names'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
+	 * <p> List of vertex group ({@link bDeformGroup} ) names and flags only. Actual weights are stored in dvert. <h2>Note</h2><p> This pointer is for convenient access to the #CD_MDEFORMVERT layer in #vdata. </p> This pointer is for convenient access to the #CD_MDEFORMVERT layer in #vdata. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -459,6 +478,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'vertex_group_active_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The active index in the {@link vertex_group_names}  list. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -481,7 +503,7 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'attributes_active_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> END BMESH ONLY </p>
+	 * <p> The index of the active attribute in the UI. The attribute list is a combination of the generic type attributes from vertex, edge, face, and corner custom data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -504,7 +526,10 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'mloopuv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * <p>pointer on array with UV coordinates, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
+	 * <p>pointer on array with UV coordinates, which is contained in a custom data layer referenced by {@link #getLdata()}]</p><h4>Blender Source Code:</h4>
+	 * <p> 2D vector data used for UVs. "UV" data can also be stored as generic attributes in #ldata. <h2>Note</h2><p> This pointer is for convenient access to the {@link CD_MLOOPUV}  layer in #ldata. </p> This pointer is for convenient access to the CD_MLOOPUV layer in #ldata. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -525,6 +550,11 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mloopcol'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The active vertex corner color layer, if it exists. Also called "Vertex Color" in Blender's UI, even though it is stored per face corner. <h2>Note</h2><p> This pointer is for convenient access to the #CD_MLOOPCOL layer in #ldata. </p> This pointer is for convenient access to the #CD_MLOOPCOL layer in #ldata. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -547,7 +577,9 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'edit_mesh'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> When the object is available, the preferred access method is: BKE_editmesh_from_object(ob) Not saved in file. </p>
+	 * <p> Runtime storage of the edit mode mesh. If it exists, it generally has the most up-to-date information about the mesh. <h2>Note</h2><p> When the object is available, the preferred access method is #BKE_editmesh_from_object. </p> When the object is available, the preferred access method is #BKE_editmesh_from_object. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -568,6 +600,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mselect'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> This array represents the selection order when the user manually picks elements in edit-mode, some tools take advantage of this information. All elements in this array are expected to be selected, see #BKE_mesh_mselect_validate which ensures this. For procedurally created meshes, this is generally empty (selections are stored as boolean attributes in the corresponding custom data). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -590,7 +625,8 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'totselect'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Number of entries in mselect (see {@link #getMselect()}).
+	 * Number of entries in mselect (see {@link #getMselect()}).<h4>Blender Source Code:</h4>
+	 * <p> The length of the {@link mselect}  array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -613,7 +649,9 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'act_face'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the last selected vertex/edge/face are used for the active face however this means the active face must always be selected, this is to keep track of the last selected face and is similar to the old active face flag where the face does not need to be selected, -1 is inactive </p>
+	 * <p> In most cases the last selected element (see {@link mselect} ) represents the active element. For faces we make an exception and store the active face separately so it can be active even when no faces are selected. This is done to prevent flickering in the material properties and UV Editor which base the content they display on the current material which is controlled by the active face.</p><p><h2>Note</h2><p> This is mainly stored for use in edit-mode. </p> This is mainly stored for use in edit-mode. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -634,6 +672,11 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'texcomesh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> An optional mesh owned elsewhere (by #Main) that can be used to override the texture space {@link loc}  and #size. <h2>Note</h2><p> Vertex indices should be aligned for this to work usefully. </p> Vertex indices should be aligned for this to work usefully. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -656,7 +699,7 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'loc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> texture space, copied as one block in editobject.c </p>
+	 * <p> Texture space location and size, used for procedural coordinates when rendering. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -723,6 +766,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'editflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Various flags used when editing the mesh. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -758,7 +804,8 @@ public class Mesh extends CFacade {
 	 * 	ME_OPT_EDGES               = 1 << 8,
 	 * 	ME_DS_EXPAND               = 1 << 9,
 	 * 	ME_SCULPT_DYNAMIC_TOPOLOGY = 1 << 10,
-	 * 				</pre>
+	 * 				</pre><h4>Blender Source Code:</h4>
+	 * <p> Mostly more flags used when editing or displaying the mesh. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -779,6 +826,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'smoothresh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  (180 degrees) causes all edges to be smooth. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -801,7 +851,7 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'cd_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> customdata flag, for bevel-weight and crease, which are now optional </p>
+	 * <p> Flag for choosing whether or not so store bevel weight and crease as custom data layers in the edit mesh (they are always stored in {@link MVert}  and {@link MEdge}  currently). In the future, this data may be stored as generic named attributes (see T89054 and T93602). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -824,7 +874,7 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'symmetry'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Indicates the symmetry that a mesh has, according to the artist, so that tools can consistently ensure that this symmetry is maintained. </p>
+	 * <p> User-defined symmetry flag ({@link eMeshSymmetryType} ) that causes editing operations to maintain symmetrical geometry. Supported by operations such as transform and weight-painting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -845,6 +895,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totcol'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The length of the {@link mat}  array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -865,6 +918,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'remesh_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Choice between different remesh methods in the UI. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -937,7 +993,7 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'subsurftype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Only kept for backwards compat, not used anymore. 
+	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -962,7 +1018,9 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'mtface'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Store tessellation face UV's and texture here. </p>
+	 * <p> Deprecated. Store of runtime data for tessellation face UVs and texture.</p><p><h2>Note</h2><p> This would be marked deprecated, however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated, however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1010,7 +1068,7 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'mcol'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> array of colors for the tessellated faces, must be number of tessellated faces * 4 in length </p>
+	 * <p> Deprecated. Array of colors for the tessellated faces, must be number of tessellated faces * 4 in length. This is stored in {@link fdata} , and deprecated. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1033,7 +1091,7 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'mface'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> END BMESH ONLY Legacy face storage (quads & tries only), faces are now stored in {@link Mesh.mpoly}  & #Mesh.mloop arrays.</p><p><h2>Note</h2><p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
+	 * <p> Deprecated face storage (quads & triangles only); faces are now pointed to by {@link Mesh.mpoly}  and {@link Mesh.mloop} .</p><p><h2>Note</h2><p> This would be marked deprecated, however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated, however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
 	 * 
 	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -1058,7 +1116,8 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'fdata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Custom data layers containing {@link MFace}.
+	 * Custom data layers containing {@link MFace}.<h4>Blender Source Code:</h4>
+	 * <p> Deprecated storage of old faces (only triangles or quads). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1079,6 +1138,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totface'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Deprecated size of {@link fdata} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1101,7 +1163,8 @@ public class Mesh extends CFacade {
 	 * Field descriptor (offset) for struct member 'remesh_voxel_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Size of the voxel in object space used for volume evaluation. Lower values preserve finer details
+	 * Size of the voxel in object space used for volume evaluation. Lower values preserve finer details<h4>Blender Source Code:</h4>
+	 * <p> Per-mesh settings for voxel remesh. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1404,6 +1467,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Get method for struct member 'mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> An array of materials, with length {@link totcol} . These can be overridden by material slots on {@link Object} . Indices in #MPoly.mat_nr control which material is used for every face. </p>
 	 * @see #__DNA__FIELD__mat
 	 */
 	
@@ -1421,6 +1487,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Set method for struct member 'mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> An array of materials, with length {@link totcol} . These can be overridden by material slots on {@link Object} . Indices in #MPoly.mat_nr control which material is used for every face. </p>
 	 * @see #__DNA__FIELD__mat
 	 */
 	
@@ -1439,7 +1508,9 @@ public class Mesh extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * <p>pointer on array with vertices, which is contained in a custom data layer referenced by {@link #getVdata()}]</p><h4>Blender Source Code:</h4>
-	 * <p> Array of verts. </p>
+	 * <p> Array of vertices. Edges and faces are defined by indices into this array. <h2>Note</h2><p> This pointer is for convenient access to the #CD_MVERT layer in #vdata. </p> This pointer is for convenient access to the #CD_MVERT layer in #vdata. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__mvert
 	 */
 	
@@ -1460,7 +1531,9 @@ public class Mesh extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * <p>pointer on array with vertices, which is contained in a custom data layer referenced by {@link #getVdata()}]</p><h4>Blender Source Code:</h4>
-	 * <p> Array of verts. </p>
+	 * <p> Array of vertices. Edges and faces are defined by indices into this array. <h2>Note</h2><p> This pointer is for convenient access to the #CD_MVERT layer in #vdata. </p> This pointer is for convenient access to the #CD_MVERT layer in #vdata. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__mvert
 	 */
 	
@@ -1479,7 +1552,9 @@ public class Mesh extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * <p>pointer on array with edges, which is contained in a custom data layer referenced by {@link #getEdata()}]</p><h4>Blender Source Code:</h4>
-	 * <p> Array of edges. </p>
+	 * <p> Array of edges, containing vertex indices. For simple triangle or quad meshes, edges could be calculated from the {@link MPoly}  and {@link MLoop}  arrays, however, edges need to be stored explicitly to edge domain attributes and to support loose edges that aren't connected to faces. <h2>Note</h2><p> This pointer is for convenient access to the #CD_MEDGE layer in #edata. </p> This pointer is for convenient access to the #CD_MEDGE layer in #edata. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__medge
 	 */
 	
@@ -1500,7 +1575,9 @@ public class Mesh extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * <p>pointer on array with edges, which is contained in a custom data layer referenced by {@link #getEdata()}]</p><h4>Blender Source Code:</h4>
-	 * <p> Array of edges. </p>
+	 * <p> Array of edges, containing vertex indices. For simple triangle or quad meshes, edges could be calculated from the {@link MPoly}  and {@link MLoop}  arrays, however, edges need to be stored explicitly to edge domain attributes and to support loose edges that aren't connected to faces. <h2>Note</h2><p> This pointer is for convenient access to the #CD_MEDGE layer in #edata. </p> This pointer is for convenient access to the #CD_MEDGE layer in #edata. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__medge
 	 */
 	
@@ -1518,7 +1595,9 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'mpoly'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> BMESH ONLY New face structures. </p>
+	 * <p> Face topology storage of the size and offset of each face's section of the {@link mloop}<code></code>  attribute. <h2>Note</h2><p> This pointer is for convenient access to the {@link CD_MPOLY}  layer in #pdata. </p> This pointer is for convenient access to the CD_MPOLY layer in #pdata. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__mpoly
 	 */
 	
@@ -1538,7 +1617,9 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'mpoly'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> BMESH ONLY New face structures. </p>
+	 * <p> Face topology storage of the size and offset of each face's section of the {@link mloop}<code></code>  attribute. <h2>Note</h2><p> This pointer is for convenient access to the {@link CD_MPOLY}  layer in #pdata. </p> This pointer is for convenient access to the CD_MPOLY layer in #pdata. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__mpoly
 	 */
 	
@@ -1556,7 +1637,10 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'mloop'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * <p>pointer on array with loops, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
+	 * <p>pointer on array with loops, which is contained in a custom data layer referenced by {@link #getLdata()}]</p><h4>Blender Source Code:</h4>
+	 * <p> The vertex and edge index at each face corner. <h2>Note</h2><p> This pointer is for convenient access to the #CD_MLOOP layer in #ldata. </p> This pointer is for convenient access to the #CD_MLOOP layer in #ldata. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__mloop
 	 */
 	
@@ -1576,7 +1660,10 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'mloop'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * <p>pointer on array with loops, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
+	 * <p>pointer on array with loops, which is contained in a custom data layer referenced by {@link #getLdata()}]</p><h4>Blender Source Code:</h4>
+	 * <p> The vertex and edge index at each face corner. <h2>Note</h2><p> This pointer is for convenient access to the #CD_MLOOP layer in #ldata. </p> This pointer is for convenient access to the #CD_MLOOP layer in #ldata. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__mloop
 	 */
 	
@@ -1594,7 +1681,7 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> END BMESH ONLY </p>
+	 * <p> The number of vertices ({@link MVert} ) in the mesh, and the size of #vdata. </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
 	
@@ -1611,7 +1698,7 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> END BMESH ONLY </p>
+	 * <p> The number of vertices ({@link MVert} ) in the mesh, and the size of #vdata. </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
 	
@@ -1626,6 +1713,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Get method for struct member 'totedge'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of edges ({@link MEdge} ) in the mesh, and the size of #edata. </p>
 	 * @see #__DNA__FIELD__totedge
 	 */
 	
@@ -1640,6 +1730,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Set method for struct member 'totedge'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of edges ({@link MEdge} ) in the mesh, and the size of #edata. </p>
 	 * @see #__DNA__FIELD__totedge
 	 */
 	
@@ -1656,7 +1749,7 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'totpoly'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> BMESH ONLY </p>
+	 * <p> The number of polygons/faces ({@link MPoly} ) in the mesh, and the size of #pdata. </p>
 	 * @see #__DNA__FIELD__totpoly
 	 */
 	
@@ -1673,7 +1766,7 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'totpoly'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> BMESH ONLY </p>
+	 * <p> The number of polygons/faces ({@link MPoly} ) in the mesh, and the size of #pdata. </p>
 	 * @see #__DNA__FIELD__totpoly
 	 */
 	
@@ -1688,6 +1781,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Get method for struct member 'totloop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of face corners ({@link MLoop} ) in the mesh, and the size of #ldata. </p>
 	 * @see #__DNA__FIELD__totloop
 	 */
 	
@@ -1702,6 +1798,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Set method for struct member 'totloop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of face corners ({@link MLoop} ) in the mesh, and the size of #ldata. </p>
 	 * @see #__DNA__FIELD__totloop
 	 */
 	
@@ -1844,8 +1943,7 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'ldata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Custom data layers containing {@link MLoopUV}s and {@link MLoop}s.<h4>Blender Source Code:</h4>
-	 * <p> BMESH ONLY </p>
+	 * Custom data layers containing {@link MLoopUV}s and {@link MLoop}s.
 	 * @see #__DNA__FIELD__ldata
 	 */
 	
@@ -1862,8 +1960,7 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'ldata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Custom data layers containing {@link MLoopUV}s and {@link MLoop}s.<h4>Blender Source Code:</h4>
-	 * <p> BMESH ONLY </p>
+	 * Custom data layers containing {@link MLoopUV}s and {@link MLoop}s.
 	 * @see #__DNA__FIELD__ldata
 	 */
 	
@@ -1888,7 +1985,7 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'dvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Deform-group vertices. </p>
+	 * <p> "Vertex group" vertices. </p>
 	 * @see #__DNA__FIELD__dvert
 	 */
 	
@@ -1908,7 +2005,7 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'dvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Deform-group vertices. </p>
+	 * <p> "Vertex group" vertices. </p>
 	 * @see #__DNA__FIELD__dvert
 	 */
 	
@@ -1926,7 +2023,9 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'vertex_group_names'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
+	 * <p> List of vertex group ({@link bDeformGroup} ) names and flags only. Actual weights are stored in dvert. <h2>Note</h2><p> This pointer is for convenient access to the #CD_MDEFORMVERT layer in #vdata. </p> This pointer is for convenient access to the #CD_MDEFORMVERT layer in #vdata. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__vertex_group_names
 	 */
 	
@@ -1943,7 +2042,9 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'vertex_group_names'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
+	 * <p> List of vertex group ({@link bDeformGroup} ) names and flags only. Actual weights are stored in dvert. <h2>Note</h2><p> This pointer is for convenient access to the #CD_MDEFORMVERT layer in #vdata. </p> This pointer is for convenient access to the #CD_MDEFORMVERT layer in #vdata. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__vertex_group_names
 	 */
 	
@@ -1966,6 +2067,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Get method for struct member 'vertex_group_active_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The active index in the {@link vertex_group_names}  list. </p>
 	 * @see #__DNA__FIELD__vertex_group_active_index
 	 */
 	
@@ -1980,6 +2084,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Set method for struct member 'vertex_group_active_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The active index in the {@link vertex_group_names}  list. </p>
 	 * @see #__DNA__FIELD__vertex_group_active_index
 	 */
 	
@@ -1996,7 +2103,7 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'attributes_active_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> END BMESH ONLY </p>
+	 * <p> The index of the active attribute in the UI. The attribute list is a combination of the generic type attributes from vertex, edge, face, and corner custom data. </p>
 	 * @see #__DNA__FIELD__attributes_active_index
 	 */
 	
@@ -2013,7 +2120,7 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'attributes_active_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> END BMESH ONLY </p>
+	 * <p> The index of the active attribute in the UI. The attribute list is a combination of the generic type attributes from vertex, edge, face, and corner custom data. </p>
 	 * @see #__DNA__FIELD__attributes_active_index
 	 */
 	
@@ -2030,7 +2137,10 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'mloopuv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * <p>pointer on array with UV coordinates, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
+	 * <p>pointer on array with UV coordinates, which is contained in a custom data layer referenced by {@link #getLdata()}]</p><h4>Blender Source Code:</h4>
+	 * <p> 2D vector data used for UVs. "UV" data can also be stored as generic attributes in #ldata. <h2>Note</h2><p> This pointer is for convenient access to the {@link CD_MLOOPUV}  layer in #ldata. </p> This pointer is for convenient access to the CD_MLOOPUV layer in #ldata. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__mloopuv
 	 */
 	
@@ -2050,7 +2160,10 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'mloopuv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * <p>pointer on array with UV coordinates, which is contained in a custom data layer referenced by {@link #getLdata()}]</p>
+	 * <p>pointer on array with UV coordinates, which is contained in a custom data layer referenced by {@link #getLdata()}]</p><h4>Blender Source Code:</h4>
+	 * <p> 2D vector data used for UVs. "UV" data can also be stored as generic attributes in #ldata. <h2>Note</h2><p> This pointer is for convenient access to the {@link CD_MLOOPUV}  layer in #ldata. </p> This pointer is for convenient access to the CD_MLOOPUV layer in #ldata. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__mloopuv
 	 */
 	
@@ -2066,6 +2179,11 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Get method for struct member 'mloopcol'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The active vertex corner color layer, if it exists. Also called "Vertex Color" in Blender's UI, even though it is stored per face corner. <h2>Note</h2><p> This pointer is for convenient access to the #CD_MLOOPCOL layer in #ldata. </p> This pointer is for convenient access to the #CD_MLOOPCOL layer in #ldata. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__mloopcol
 	 */
 	
@@ -2083,6 +2201,11 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Set method for struct member 'mloopcol'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The active vertex corner color layer, if it exists. Also called "Vertex Color" in Blender's UI, even though it is stored per face corner. <h2>Note</h2><p> This pointer is for convenient access to the #CD_MLOOPCOL layer in #ldata. </p> This pointer is for convenient access to the #CD_MLOOPCOL layer in #ldata. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__mloopcol
 	 */
 	
@@ -2100,7 +2223,9 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'edit_mesh'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> When the object is available, the preferred access method is: BKE_editmesh_from_object(ob) Not saved in file. </p>
+	 * <p> Runtime storage of the edit mode mesh. If it exists, it generally has the most up-to-date information about the mesh. <h2>Note</h2><p> When the object is available, the preferred access method is #BKE_editmesh_from_object. </p> When the object is available, the preferred access method is #BKE_editmesh_from_object. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__edit_mesh
 	 */
 	
@@ -2120,7 +2245,9 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'edit_mesh'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> When the object is available, the preferred access method is: BKE_editmesh_from_object(ob) Not saved in file. </p>
+	 * <p> Runtime storage of the edit mode mesh. If it exists, it generally has the most up-to-date information about the mesh. <h2>Note</h2><p> When the object is available, the preferred access method is #BKE_editmesh_from_object. </p> When the object is available, the preferred access method is #BKE_editmesh_from_object. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__edit_mesh
 	 */
 	
@@ -2136,6 +2263,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Get method for struct member 'mselect'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> This array represents the selection order when the user manually picks elements in edit-mode, some tools take advantage of this information. All elements in this array are expected to be selected, see #BKE_mesh_mselect_validate which ensures this. For procedurally created meshes, this is generally empty (selections are stored as boolean attributes in the corresponding custom data). </p>
 	 * @see #__DNA__FIELD__mselect
 	 */
 	
@@ -2153,6 +2283,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Set method for struct member 'mselect'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> This array represents the selection order when the user manually picks elements in edit-mode, some tools take advantage of this information. All elements in this array are expected to be selected, see #BKE_mesh_mselect_validate which ensures this. For procedurally created meshes, this is generally empty (selections are stored as boolean attributes in the corresponding custom data). </p>
 	 * @see #__DNA__FIELD__mselect
 	 */
 	
@@ -2170,7 +2303,8 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'totselect'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Number of entries in mselect (see {@link #getMselect()}).
+	 * Number of entries in mselect (see {@link #getMselect()}).<h4>Blender Source Code:</h4>
+	 * <p> The length of the {@link mselect}  array. </p>
 	 * @see #__DNA__FIELD__totselect
 	 */
 	
@@ -2187,7 +2321,8 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'totselect'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Number of entries in mselect (see {@link #getMselect()}).
+	 * Number of entries in mselect (see {@link #getMselect()}).<h4>Blender Source Code:</h4>
+	 * <p> The length of the {@link mselect}  array. </p>
 	 * @see #__DNA__FIELD__totselect
 	 */
 	
@@ -2204,7 +2339,9 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'act_face'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the last selected vertex/edge/face are used for the active face however this means the active face must always be selected, this is to keep track of the last selected face and is similar to the old active face flag where the face does not need to be selected, -1 is inactive </p>
+	 * <p> In most cases the last selected element (see {@link mselect} ) represents the active element. For faces we make an exception and store the active face separately so it can be active even when no faces are selected. This is done to prevent flickering in the material properties and UV Editor which base the content they display on the current material which is controlled by the active face.</p><p><h2>Note</h2><p> This is mainly stored for use in edit-mode. </p> This is mainly stored for use in edit-mode. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__act_face
 	 */
 	
@@ -2221,7 +2358,9 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'act_face'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the last selected vertex/edge/face are used for the active face however this means the active face must always be selected, this is to keep track of the last selected face and is similar to the old active face flag where the face does not need to be selected, -1 is inactive </p>
+	 * <p> In most cases the last selected element (see {@link mselect} ) represents the active element. For faces we make an exception and store the active face separately so it can be active even when no faces are selected. This is done to prevent flickering in the material properties and UV Editor which base the content they display on the current material which is controlled by the active face.</p><p><h2>Note</h2><p> This is mainly stored for use in edit-mode. </p> This is mainly stored for use in edit-mode. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__act_face
 	 */
 	
@@ -2236,6 +2375,11 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Get method for struct member 'texcomesh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> An optional mesh owned elsewhere (by #Main) that can be used to override the texture space {@link loc}  and #size. <h2>Note</h2><p> Vertex indices should be aligned for this to work usefully. </p> Vertex indices should be aligned for this to work usefully. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__texcomesh
 	 */
 	
@@ -2253,6 +2397,11 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Set method for struct member 'texcomesh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> An optional mesh owned elsewhere (by #Main) that can be used to override the texture space {@link loc}  and #size. <h2>Note</h2><p> Vertex indices should be aligned for this to work usefully. </p> Vertex indices should be aligned for this to work usefully. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__texcomesh
 	 */
 	
@@ -2270,7 +2419,7 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'loc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> texture space, copied as one block in editobject.c </p>
+	 * <p> Texture space location and size, used for procedural coordinates when rendering. </p>
 	 * @see #__DNA__FIELD__loc
 	 */
 	
@@ -2291,7 +2440,7 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'loc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> texture space, copied as one block in editobject.c </p>
+	 * <p> Texture space location and size, used for procedural coordinates when rendering. </p>
 	 * @see #__DNA__FIELD__loc
 	 */
 	
@@ -2394,6 +2543,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Get method for struct member 'editflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Various flags used when editing the mesh. </p>
 	 * @see #__DNA__FIELD__editflag
 	 */
 	
@@ -2408,6 +2560,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Set method for struct member 'editflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Various flags used when editing the mesh. </p>
 	 * @see #__DNA__FIELD__editflag
 	 */
 	
@@ -2437,7 +2592,8 @@ public class Mesh extends CFacade {
 	 * 	ME_OPT_EDGES               = 1 << 8,
 	 * 	ME_DS_EXPAND               = 1 << 9,
 	 * 	ME_SCULPT_DYNAMIC_TOPOLOGY = 1 << 10,
-	 * 				</pre>
+	 * 				</pre><h4>Blender Source Code:</h4>
+	 * <p> Mostly more flags used when editing or displaying the mesh. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -2467,7 +2623,8 @@ public class Mesh extends CFacade {
 	 * 	ME_OPT_EDGES               = 1 << 8,
 	 * 	ME_DS_EXPAND               = 1 << 9,
 	 * 	ME_SCULPT_DYNAMIC_TOPOLOGY = 1 << 10,
-	 * 				</pre>
+	 * 				</pre><h4>Blender Source Code:</h4>
+	 * <p> Mostly more flags used when editing or displaying the mesh. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -2482,6 +2639,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Get method for struct member 'smoothresh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  (180 degrees) causes all edges to be smooth. </p>
 	 * @see #__DNA__FIELD__smoothresh
 	 */
 	
@@ -2496,6 +2656,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Set method for struct member 'smoothresh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  (180 degrees) causes all edges to be smooth. </p>
 	 * @see #__DNA__FIELD__smoothresh
 	 */
 	
@@ -2512,7 +2675,7 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'cd_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> customdata flag, for bevel-weight and crease, which are now optional </p>
+	 * <p> Flag for choosing whether or not so store bevel weight and crease as custom data layers in the edit mesh (they are always stored in {@link MVert}  and {@link MEdge}  currently). In the future, this data may be stored as generic named attributes (see T89054 and T93602). </p>
 	 * @see #__DNA__FIELD__cd_flag
 	 */
 	
@@ -2529,7 +2692,7 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'cd_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> customdata flag, for bevel-weight and crease, which are now optional </p>
+	 * <p> Flag for choosing whether or not so store bevel weight and crease as custom data layers in the edit mesh (they are always stored in {@link MVert}  and {@link MEdge}  currently). In the future, this data may be stored as generic named attributes (see T89054 and T93602). </p>
 	 * @see #__DNA__FIELD__cd_flag
 	 */
 	
@@ -2546,7 +2709,7 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'symmetry'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Indicates the symmetry that a mesh has, according to the artist, so that tools can consistently ensure that this symmetry is maintained. </p>
+	 * <p> User-defined symmetry flag ({@link eMeshSymmetryType} ) that causes editing operations to maintain symmetrical geometry. Supported by operations such as transform and weight-painting. </p>
 	 * @see #__DNA__FIELD__symmetry
 	 */
 	
@@ -2563,7 +2726,7 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'symmetry'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Indicates the symmetry that a mesh has, according to the artist, so that tools can consistently ensure that this symmetry is maintained. </p>
+	 * <p> User-defined symmetry flag ({@link eMeshSymmetryType} ) that causes editing operations to maintain symmetrical geometry. Supported by operations such as transform and weight-painting. </p>
 	 * @see #__DNA__FIELD__symmetry
 	 */
 	
@@ -2578,6 +2741,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Get method for struct member 'totcol'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The length of the {@link mat}  array. </p>
 	 * @see #__DNA__FIELD__totcol
 	 */
 	
@@ -2592,6 +2758,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Set method for struct member 'totcol'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The length of the {@link mat}  array. </p>
 	 * @see #__DNA__FIELD__totcol
 	 */
 	
@@ -2606,6 +2775,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Get method for struct member 'remesh_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Choice between different remesh methods in the UI. </p>
 	 * @see #__DNA__FIELD__remesh_mode
 	 */
 	
@@ -2620,6 +2792,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Set method for struct member 'remesh_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Choice between different remesh methods in the UI. </p>
 	 * @see #__DNA__FIELD__remesh_mode
 	 */
 	
@@ -2712,7 +2887,7 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'subsurftype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Only kept for backwards compat, not used anymore. 
+	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__subsurftype
@@ -2731,7 +2906,7 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'subsurftype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Only kept for backwards compat, not used anymore. 
+	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__subsurftype
@@ -2750,7 +2925,9 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'mtface'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Store tessellation face UV's and texture here. </p>
+	 * <p> Deprecated. Store of runtime data for tessellation face UVs and texture.</p><p><h2>Note</h2><p> This would be marked deprecated, however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated, however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__mtface
 	 */
 	
@@ -2770,7 +2947,9 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'mtface'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Store tessellation face UV's and texture here. </p>
+	 * <p> Deprecated. Store of runtime data for tessellation face UVs and texture.</p><p><h2>Note</h2><p> This would be marked deprecated, however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated, however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__mtface
 	 */
 	
@@ -2830,7 +3009,7 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'mcol'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> array of colors for the tessellated faces, must be number of tessellated faces * 4 in length </p>
+	 * <p> Deprecated. Array of colors for the tessellated faces, must be number of tessellated faces * 4 in length. This is stored in {@link fdata} , and deprecated. </p>
 	 * @see #__DNA__FIELD__mcol
 	 */
 	
@@ -2850,7 +3029,7 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'mcol'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> array of colors for the tessellated faces, must be number of tessellated faces * 4 in length </p>
+	 * <p> Deprecated. Array of colors for the tessellated faces, must be number of tessellated faces * 4 in length. This is stored in {@link fdata} , and deprecated. </p>
 	 * @see #__DNA__FIELD__mcol
 	 */
 	
@@ -2868,7 +3047,7 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'mface'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> END BMESH ONLY Legacy face storage (quads & tries only), faces are now stored in {@link Mesh.mpoly}  & #Mesh.mloop arrays.</p><p><h2>Note</h2><p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
+	 * <p> Deprecated face storage (quads & triangles only); faces are now pointed to by {@link Mesh.mpoly}  and {@link Mesh.mloop} .</p><p><h2>Note</h2><p> This would be marked deprecated, however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated, however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
 	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__mface
@@ -2890,7 +3069,7 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'mface'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> END BMESH ONLY Legacy face storage (quads & tries only), faces are now stored in {@link Mesh.mpoly}  & #Mesh.mloop arrays.</p><p><h2>Note</h2><p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
+	 * <p> Deprecated face storage (quads & triangles only); faces are now pointed to by {@link Mesh.mpoly}  and {@link Mesh.mloop} .</p><p><h2>Note</h2><p> This would be marked deprecated, however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated, however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
 	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__mface
@@ -2910,7 +3089,8 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'fdata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Custom data layers containing {@link MFace}.
+	 * Custom data layers containing {@link MFace}.<h4>Blender Source Code:</h4>
+	 * <p> Deprecated storage of old faces (only triangles or quads). </p>
 	 * @see #__DNA__FIELD__fdata
 	 */
 	
@@ -2927,7 +3107,8 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'fdata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Custom data layers containing {@link MFace}.
+	 * Custom data layers containing {@link MFace}.<h4>Blender Source Code:</h4>
+	 * <p> Deprecated storage of old faces (only triangles or quads). </p>
 	 * @see #__DNA__FIELD__fdata
 	 */
 	
@@ -2950,6 +3131,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Get method for struct member 'totface'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Deprecated size of {@link fdata} . </p>
 	 * @see #__DNA__FIELD__totface
 	 */
 	
@@ -2964,6 +3148,9 @@ public class Mesh extends CFacade {
 
 	/**
 	 * Set method for struct member 'totface'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Deprecated size of {@link fdata} . </p>
 	 * @see #__DNA__FIELD__totface
 	 */
 	
@@ -2980,7 +3167,8 @@ public class Mesh extends CFacade {
 	 * Get method for struct member 'remesh_voxel_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Size of the voxel in object space used for volume evaluation. Lower values preserve finer details
+	 * Size of the voxel in object space used for volume evaluation. Lower values preserve finer details<h4>Blender Source Code:</h4>
+	 * <p> Per-mesh settings for voxel remesh. </p>
 	 * @see #__DNA__FIELD__remesh_voxel_size
 	 */
 	
@@ -2997,7 +3185,8 @@ public class Mesh extends CFacade {
 	 * Set method for struct member 'remesh_voxel_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Size of the voxel in object space used for volume evaluation. Lower values preserve finer details
+	 * Size of the voxel in object space used for volume evaluation. Lower values preserve finer details<h4>Blender Source Code:</h4>
+	 * <p> Per-mesh settings for voxel remesh. </p>
 	 * @see #__DNA__FIELD__remesh_voxel_size
 	 */
 	
