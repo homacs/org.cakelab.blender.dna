@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -14,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> #endif </p><p> reports need to be before {@link wmWindowManager}  windowmanager is saved, tag WMAN </p>
+ * <p> #endif </p><p> reports need to be before {@link wmWindowManager}  Window-manager is saved, tag WMAN. </p>
  */
 
 @CMetaData(size32=1260, size64=1424)
@@ -25,8 +26,8 @@ public class wmWindowManager extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for wmWindowManager.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 640;
 

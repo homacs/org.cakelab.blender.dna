@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -14,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> XXX first struct fields should match {@link NodeImageFile}  to ensure forward compatibility </p>
+ * <p> XXX: first struct fields should match {@link NodeImageFile}  to ensure forward compatibility. </p>
  */
 
 @CMetaData(size32=1288, size64=1296)
@@ -25,8 +26,8 @@ public class NodeImageMultiFile extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for NodeImageMultiFile.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 432;
 

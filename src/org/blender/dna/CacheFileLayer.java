@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class CacheFileLayer extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for CacheFileLayer.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 763;
 
@@ -73,7 +74,8 @@ public class CacheFileLayer extends CFacade {
 	 * Field descriptor (offset) for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Path to the archive
+	 * Path to the archive<h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -208,7 +210,8 @@ public class CacheFileLayer extends CFacade {
 	 * Get method for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Path to the archive
+	 * Path to the archive<h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__filepath
 	 */
 	
@@ -229,7 +232,8 @@ public class CacheFileLayer extends CFacade {
 	 * Set method for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Path to the archive
+	 * Path to the archive<h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__filepath
 	 */
 	

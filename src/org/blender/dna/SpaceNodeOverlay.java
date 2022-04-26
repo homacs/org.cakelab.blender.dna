@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,13 +24,16 @@ public class SpaceNodeOverlay extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for SpaceNodeOverlay.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 252;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eSpaceNodeOverlay_Flag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -58,6 +62,9 @@ public class SpaceNodeOverlay extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eSpaceNodeOverlay_Flag </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -72,6 +79,9 @@ public class SpaceNodeOverlay extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eSpaceNodeOverlay_Flag </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

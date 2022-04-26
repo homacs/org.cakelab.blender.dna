@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for WeightVGProximityModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 141;
 
@@ -99,7 +100,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'proximity_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Proximity modes. </p>
+	 * <p> Modes of proximity weighting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -120,6 +121,9 @@ public class WeightVGProximityModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'proximity_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Options for proximity weighting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -392,7 +396,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'falloff_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Put here to avoid breaking existing struct... Using MOD_WVG_MAPPING_* enums. </p>
+	 * <p> Put here to avoid breaking existing struct... Mapping modes (using MOD_WVG_MAPPING_* enums). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -566,7 +570,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * Get method for struct member 'proximity_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Proximity modes. </p>
+	 * <p> Modes of proximity weighting. </p>
 	 * @see #__DNA__FIELD__proximity_mode
 	 */
 	
@@ -583,7 +587,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * Set method for struct member 'proximity_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Proximity modes. </p>
+	 * <p> Modes of proximity weighting. </p>
 	 * @see #__DNA__FIELD__proximity_mode
 	 */
 	
@@ -598,6 +602,9 @@ public class WeightVGProximityModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'proximity_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Options for proximity weighting. </p>
 	 * @see #__DNA__FIELD__proximity_flags
 	 */
 	
@@ -612,6 +619,9 @@ public class WeightVGProximityModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'proximity_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Options for proximity weighting. </p>
 	 * @see #__DNA__FIELD__proximity_flags
 	 */
 	
@@ -1044,7 +1054,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * Get method for struct member 'falloff_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Put here to avoid breaking existing struct... Using MOD_WVG_MAPPING_* enums. </p>
+	 * <p> Put here to avoid breaking existing struct... Mapping modes (using MOD_WVG_MAPPING_* enums). </p>
 	 * @see #__DNA__FIELD__falloff_type
 	 */
 	
@@ -1061,7 +1071,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * Set method for struct member 'falloff_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Put here to avoid breaking existing struct... Using MOD_WVG_MAPPING_* enums. </p>
+	 * <p> Put here to avoid breaking existing struct... Mapping modes (using MOD_WVG_MAPPING_* enums). </p>
 	 * @see #__DNA__FIELD__falloff_type
 	 */
 	

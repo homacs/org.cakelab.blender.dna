@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MDeformVert'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Stores all of an element's vertex groups, and their weight values. </p>
  */
 
 @CMetaData(size32=12, size64=16)
@@ -23,13 +25,21 @@ public class MDeformVert extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MDeformVert.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 84;
 
 	/**
 	 * Field descriptor (offset) for struct member 'dw'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Array of weight indices and values.<ul><li><p> There must not be any duplicate #def_nr indices.</p></li><li><p> Groups in the array are unordered.</p></li><li><p> Indices outside the usable range of groups are ignored. </p></li></ul> 
+	 * There must not be any duplicate #def_nr indices.
+	 * Groups in the array are unordered.
+	 * Indices outside the usable range of groups are ignored. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +60,11 @@ public class MDeformVert extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totweight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The length of the {@link dw}  array. <h2>Note</h2><p> This is not necessarily the same length as the total number of vertex groups. However, generally it isn't larger. </p> This is not necessarily the same length as the total number of vertex groups. However, generally it isn't larger. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -101,6 +116,14 @@ public class MDeformVert extends CFacade {
 
 	/**
 	 * Get method for struct member 'dw'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Array of weight indices and values.<ul><li><p> There must not be any duplicate #def_nr indices.</p></li><li><p> Groups in the array are unordered.</p></li><li><p> Indices outside the usable range of groups are ignored. </p></li></ul> 
+	 * There must not be any duplicate #def_nr indices.
+	 * Groups in the array are unordered.
+	 * Indices outside the usable range of groups are ignored. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__dw
 	 */
 	
@@ -118,6 +141,14 @@ public class MDeformVert extends CFacade {
 
 	/**
 	 * Set method for struct member 'dw'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Array of weight indices and values.<ul><li><p> There must not be any duplicate #def_nr indices.</p></li><li><p> Groups in the array are unordered.</p></li><li><p> Indices outside the usable range of groups are ignored. </p></li></ul> 
+	 * There must not be any duplicate #def_nr indices.
+	 * Groups in the array are unordered.
+	 * Indices outside the usable range of groups are ignored. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__dw
 	 */
 	
@@ -133,6 +164,11 @@ public class MDeformVert extends CFacade {
 
 	/**
 	 * Get method for struct member 'totweight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The length of the {@link dw}  array. <h2>Note</h2><p> This is not necessarily the same length as the total number of vertex groups. However, generally it isn't larger. </p> This is not necessarily the same length as the total number of vertex groups. However, generally it isn't larger. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__totweight
 	 */
 	
@@ -147,6 +183,11 @@ public class MDeformVert extends CFacade {
 
 	/**
 	 * Set method for struct member 'totweight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The length of the {@link dw}  array. <h2>Note</h2><p> This is not necessarily the same length as the total number of vertex groups. However, generally it isn't larger. </p> This is not necessarily the same length as the total number of vertex groups. However, generally it isn't larger. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__totweight
 	 */
 	

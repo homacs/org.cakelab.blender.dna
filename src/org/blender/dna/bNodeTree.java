@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -25,8 +26,8 @@ public class bNodeTree extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bNodeTree.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 406;
 
@@ -339,6 +340,9 @@ public class bNodeTree extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'changed_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code> . #eNodeTreeChangedFlag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -631,6 +635,9 @@ public class bNodeTree extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'output_topology_hash'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A hash of the topology of the node tree leading up to the outputs. This is used to determine of the node tree changed in a way that requires updating geometry nodes or shaders. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -754,6 +761,9 @@ public class bNodeTree extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Image}  representing what the node group does. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1296,6 +1306,9 @@ public class bNodeTree extends CFacade {
 
 	/**
 	 * Get method for struct member 'changed_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code> . #eNodeTreeChangedFlag. </p>
 	 * @see #__DNA__FIELD__changed_flag
 	 */
 	
@@ -1310,6 +1323,9 @@ public class bNodeTree extends CFacade {
 
 	/**
 	 * Set method for struct member 'changed_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code> . #eNodeTreeChangedFlag. </p>
 	 * @see #__DNA__FIELD__changed_flag
 	 */
 	
@@ -1760,6 +1776,9 @@ public class bNodeTree extends CFacade {
 
 	/**
 	 * Get method for struct member 'output_topology_hash'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A hash of the topology of the node tree leading up to the outputs. This is used to determine of the node tree changed in a way that requires updating geometry nodes or shaders. </p>
 	 * @see #__DNA__FIELD__output_topology_hash
 	 */
 	
@@ -1774,6 +1793,9 @@ public class bNodeTree extends CFacade {
 
 	/**
 	 * Set method for struct member 'output_topology_hash'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A hash of the topology of the node tree leading up to the outputs. This is used to determine of the node tree changed in a way that requires updating geometry nodes or shaders. </p>
 	 * @see #__DNA__FIELD__output_topology_hash
 	 */
 	
@@ -1954,6 +1976,9 @@ public class bNodeTree extends CFacade {
 
 	/**
 	 * Get method for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Image}  representing what the node group does. </p>
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -1971,6 +1996,9 @@ public class bNodeTree extends CFacade {
 
 	/**
 	 * Set method for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Image}  representing what the node group does. </p>
 	 * @see #__DNA__FIELD__preview
 	 */
 	

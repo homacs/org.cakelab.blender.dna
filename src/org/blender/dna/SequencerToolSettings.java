@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,8 +24,8 @@ public class SequencerToolSettings extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for SequencerToolSettings.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 212;
 
@@ -121,7 +122,7 @@ public class SequencerToolSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Maximum distance for snapping in pixels<h4>Blender Source Code:</h4>
-	 * <p> When there are many snap points, 0-1 range corresponds to resolution from boundbox to all possible snap points. </p>
+	 * <p> When there are many snap points, 0-1 range corresponds to resolution from bound-box to all possible snap points. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -304,7 +305,7 @@ public class SequencerToolSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Maximum distance for snapping in pixels<h4>Blender Source Code:</h4>
-	 * <p> When there are many snap points, 0-1 range corresponds to resolution from boundbox to all possible snap points. </p>
+	 * <p> When there are many snap points, 0-1 range corresponds to resolution from bound-box to all possible snap points. </p>
 	 * @see #__DNA__FIELD__snap_distance
 	 */
 	
@@ -322,7 +323,7 @@ public class SequencerToolSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Maximum distance for snapping in pixels<h4>Blender Source Code:</h4>
-	 * <p> When there are many snap points, 0-1 range corresponds to resolution from boundbox to all possible snap points. </p>
+	 * <p> When there are many snap points, 0-1 range corresponds to resolution from bound-box to all possible snap points. </p>
 	 * @see #__DNA__FIELD__snap_distance
 	 */
 	

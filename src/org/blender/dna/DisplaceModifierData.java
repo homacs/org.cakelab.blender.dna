@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class DisplaceModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for DisplaceModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 110;
 
@@ -53,7 +54,7 @@ public class DisplaceModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
+	 * <p> Keep in sync with {@link MappingInfoModifierData} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -369,7 +370,7 @@ public class DisplaceModifierData extends CFacade {
 	 * Get method for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
+	 * <p> Keep in sync with {@link MappingInfoModifierData} . </p>
 	 * @see #__DNA__FIELD__texture
 	 */
 	
@@ -389,7 +390,7 @@ public class DisplaceModifierData extends CFacade {
 	 * Set method for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
+	 * <p> Keep in sync with {@link MappingInfoModifierData} . </p>
 	 * @see #__DNA__FIELD__texture
 	 */
 	

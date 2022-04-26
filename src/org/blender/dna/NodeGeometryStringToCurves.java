@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,8 +24,8 @@ public class NodeGeometryStringToCurves extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for NodeGeometryStringToCurves.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 544;
 
@@ -99,6 +100,9 @@ public class NodeGeometryStringToCurves extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pivot_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> GeometryNodeStringToCurvesPivotMode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -229,6 +233,9 @@ public class NodeGeometryStringToCurves extends CFacade {
 
 	/**
 	 * Get method for struct member 'pivot_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> GeometryNodeStringToCurvesPivotMode </p>
 	 * @see #__DNA__FIELD__pivot_mode
 	 */
 	
@@ -243,6 +250,9 @@ public class NodeGeometryStringToCurves extends CFacade {
 
 	/**
 	 * Set method for struct member 'pivot_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> GeometryNodeStringToCurvesPivotMode </p>
 	 * @see #__DNA__FIELD__pivot_mode
 	 */
 	

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class bArmature extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bArmature.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 351;
 
@@ -93,7 +94,7 @@ public class bArmature extends CFacade {
 	 * Field descriptor (offset) for struct member 'bonehash'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Ghash for quicker lookups of bones by name. </p>
+	 * <p> Use a hash-table for quicker lookups of bones by name. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -136,7 +137,7 @@ public class bArmature extends CFacade {
 	 * Field descriptor (offset) for struct member 'edbo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Editbone listbase, we use pointer so we can check state. </p>
+	 * <p> #EditBone list (use an allocated pointer so the state can be checked). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -535,7 +536,7 @@ public class bArmature extends CFacade {
 	 * Get method for struct member 'bonehash'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Ghash for quicker lookups of bones by name. </p>
+	 * <p> Use a hash-table for quicker lookups of bones by name. </p>
 	 * @see #__DNA__FIELD__bonehash
 	 */
 	
@@ -555,7 +556,7 @@ public class bArmature extends CFacade {
 	 * Set method for struct member 'bonehash'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Ghash for quicker lookups of bones by name. </p>
+	 * <p> Use a hash-table for quicker lookups of bones by name. </p>
 	 * @see #__DNA__FIELD__bonehash
 	 */
 	
@@ -605,7 +606,7 @@ public class bArmature extends CFacade {
 	 * Get method for struct member 'edbo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Editbone listbase, we use pointer so we can check state. </p>
+	 * <p> #EditBone list (use an allocated pointer so the state can be checked). </p>
 	 * @see #__DNA__FIELD__edbo
 	 */
 	
@@ -625,7 +626,7 @@ public class bArmature extends CFacade {
 	 * Set method for struct member 'edbo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Editbone listbase, we use pointer so we can check state. </p>
+	 * <p> #EditBone list (use an allocated pointer so the state can be checked). </p>
 	 * @see #__DNA__FIELD__edbo
 	 */
 	

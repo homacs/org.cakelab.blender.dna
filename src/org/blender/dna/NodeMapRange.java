@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,13 +25,16 @@ public class NodeMapRange extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for NodeMapRange.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 484;
 
 	/**
 	 * Field descriptor (offset) for struct member 'data_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> CustomDataType </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +55,9 @@ public class NodeMapRange extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'interpolation_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> NodeMapRangeType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -119,6 +126,9 @@ public class NodeMapRange extends CFacade {
 
 	/**
 	 * Get method for struct member 'data_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> CustomDataType </p>
 	 * @see #__DNA__FIELD__data_type
 	 */
 	
@@ -133,6 +143,9 @@ public class NodeMapRange extends CFacade {
 
 	/**
 	 * Set method for struct member 'data_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> CustomDataType </p>
 	 * @see #__DNA__FIELD__data_type
 	 */
 	
@@ -147,6 +160,9 @@ public class NodeMapRange extends CFacade {
 
 	/**
 	 * Get method for struct member 'interpolation_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> NodeMapRangeType. </p>
 	 * @see #__DNA__FIELD__interpolation_type
 	 */
 	
@@ -161,6 +177,9 @@ public class NodeMapRange extends CFacade {
 
 	/**
 	 * Set method for struct member 'interpolation_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> NodeMapRangeType. </p>
 	 * @see #__DNA__FIELD__interpolation_type
 	 */
 	

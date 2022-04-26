@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,8 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SequenceModifierData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
- * <p> ***************** {@link Sequence}  modifiers ****************** </p>
+ * 
  */
 
 @CMetaData(size32=96, size64=112)
@@ -25,8 +25,8 @@ public class SequenceModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for SequenceModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 330;
 

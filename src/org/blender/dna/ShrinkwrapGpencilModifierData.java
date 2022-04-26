@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ShrinkwrapGpencilModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 626;
 
@@ -51,6 +52,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'target'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Shrink target. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +75,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'aux_target'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Additional shrink target. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +98,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'material'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  for filtering. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +121,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'layername'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Layer name. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +144,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional vertexgroup filter name, MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +167,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +190,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +213,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +236,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'keep_dist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Distance offset to keep from mesh/projection point. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +259,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'shrink_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Shrink type projection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +282,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'shrink_opts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Shrink options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +305,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'shrink_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Shrink to surface mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +328,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'proj_limit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Limit the projection ray cast. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +351,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'proj_axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Axis to project over. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +374,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'subsurf_levels'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> If using projection over vertex normal this controls the level of subsurface that must be done before getting the vertex coordinates and normal </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -371,6 +417,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Factor of smooth. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,6 +440,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_step'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> How many times apply smooth. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,6 +463,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -475,6 +530,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'target'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Shrink target. </p>
 	 * @see #__DNA__FIELD__target
 	 */
 	
@@ -492,6 +550,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'target'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Shrink target. </p>
 	 * @see #__DNA__FIELD__target
 	 */
 	
@@ -507,6 +568,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'aux_target'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Additional shrink target. </p>
 	 * @see #__DNA__FIELD__aux_target
 	 */
 	
@@ -524,6 +588,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'aux_target'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Additional shrink target. </p>
 	 * @see #__DNA__FIELD__aux_target
 	 */
 	
@@ -539,6 +606,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'material'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
 	
@@ -556,6 +626,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'material'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
 	
@@ -571,6 +644,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'layername'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
 	
@@ -589,6 +665,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'layername'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
 	
@@ -611,6 +690,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'vgname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional vertexgroup filter name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgname
 	 */
 	
@@ -629,6 +711,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'vgname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional vertexgroup filter name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgname
 	 */
 	
@@ -651,6 +736,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'pass_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
 	
@@ -665,6 +753,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'pass_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
 	
@@ -679,6 +770,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -693,6 +787,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -707,6 +804,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'layer_pass'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
 	
@@ -721,6 +821,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'layer_pass'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
 	
@@ -735,6 +838,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'keep_dist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Distance offset to keep from mesh/projection point. </p>
 	 * @see #__DNA__FIELD__keep_dist
 	 */
 	
@@ -749,6 +855,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'keep_dist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Distance offset to keep from mesh/projection point. </p>
 	 * @see #__DNA__FIELD__keep_dist
 	 */
 	
@@ -763,6 +872,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'shrink_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Shrink type projection. </p>
 	 * @see #__DNA__FIELD__shrink_type
 	 */
 	
@@ -777,6 +889,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'shrink_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Shrink type projection. </p>
 	 * @see #__DNA__FIELD__shrink_type
 	 */
 	
@@ -791,6 +906,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'shrink_opts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Shrink options. </p>
 	 * @see #__DNA__FIELD__shrink_opts
 	 */
 	
@@ -805,6 +923,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'shrink_opts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Shrink options. </p>
 	 * @see #__DNA__FIELD__shrink_opts
 	 */
 	
@@ -819,6 +940,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'shrink_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Shrink to surface mode. </p>
 	 * @see #__DNA__FIELD__shrink_mode
 	 */
 	
@@ -833,6 +957,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'shrink_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Shrink to surface mode. </p>
 	 * @see #__DNA__FIELD__shrink_mode
 	 */
 	
@@ -847,6 +974,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'proj_limit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Limit the projection ray cast. </p>
 	 * @see #__DNA__FIELD__proj_limit
 	 */
 	
@@ -861,6 +991,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'proj_limit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Limit the projection ray cast. </p>
 	 * @see #__DNA__FIELD__proj_limit
 	 */
 	
@@ -875,6 +1008,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'proj_axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Axis to project over. </p>
 	 * @see #__DNA__FIELD__proj_axis
 	 */
 	
@@ -889,6 +1025,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'proj_axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Axis to project over. </p>
 	 * @see #__DNA__FIELD__proj_axis
 	 */
 	
@@ -903,6 +1042,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'subsurf_levels'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> If using projection over vertex normal this controls the level of subsurface that must be done before getting the vertex coordinates and normal </p>
 	 * @see #__DNA__FIELD__subsurf_levels
 	 */
 	
@@ -917,6 +1059,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'subsurf_levels'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> If using projection over vertex normal this controls the level of subsurface that must be done before getting the vertex coordinates and normal </p>
 	 * @see #__DNA__FIELD__subsurf_levels
 	 */
 	
@@ -971,6 +1116,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'smooth_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Factor of smooth. </p>
 	 * @see #__DNA__FIELD__smooth_factor
 	 */
 	
@@ -985,6 +1133,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'smooth_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Factor of smooth. </p>
 	 * @see #__DNA__FIELD__smooth_factor
 	 */
 	
@@ -999,6 +1150,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'smooth_step'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> How many times apply smooth. </p>
 	 * @see #__DNA__FIELD__smooth_step
 	 */
 	
@@ -1013,6 +1167,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'smooth_step'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> How many times apply smooth. </p>
 	 * @see #__DNA__FIELD__smooth_step
 	 */
 	
@@ -1027,6 +1184,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'cache_data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime only. </p>
 	 * @see #__DNA__FIELD__cache_data
 	 */
 	
@@ -1044,6 +1204,9 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'cache_data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime only. </p>
 	 * @see #__DNA__FIELD__cache_data
 	 */
 	

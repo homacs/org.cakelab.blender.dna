@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class SmoothGpencilModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for SmoothGpencilModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 618;
 
@@ -193,7 +194,7 @@ public class SmoothGpencilModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Factor of noise. </p>
+	 * <p> Factor of smooth. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -594,7 +595,7 @@ public class SmoothGpencilModifierData extends CFacade {
 	 * Get method for struct member 'factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Factor of noise. </p>
+	 * <p> Factor of smooth. </p>
 	 * @see #__DNA__FIELD__factor
 	 */
 	
@@ -611,7 +612,7 @@ public class SmoothGpencilModifierData extends CFacade {
 	 * Set method for struct member 'factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Factor of noise. </p>
+	 * <p> Factor of smooth. </p>
 	 * @see #__DNA__FIELD__factor
 	 */
 	

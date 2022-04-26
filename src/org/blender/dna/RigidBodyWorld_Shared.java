@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -14,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  RigidBody {@link World}  Container for data shared by original and evaluated copies of {@link RigidBodyWorld}  </p>
+ *  RigidBody {@link World}  Container for data shared by original and evaluated copies of {@link RigidBodyWorld} . </p>
  */
 
 @CMetaData(size32=16, size64=32)
@@ -25,8 +26,8 @@ public class RigidBodyWorld_Shared extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for RigidBodyWorld_Shared.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 714;
 

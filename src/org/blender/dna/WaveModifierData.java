@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class WaveModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for WaveModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 115;
 
@@ -53,7 +54,7 @@ public class WaveModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
+	 * <p> Keep in sync with {@link MappingInfoModifierData} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -179,7 +180,7 @@ public class WaveModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'objectcenter'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> end {@link MappingInfoModifierData}  </p>
+	 * <p> End {@link MappingInfoModifierData} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -549,7 +550,7 @@ public class WaveModifierData extends CFacade {
 	 * Get method for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
+	 * <p> Keep in sync with {@link MappingInfoModifierData} . </p>
 	 * @see #__DNA__FIELD__texture
 	 */
 	
@@ -569,7 +570,7 @@ public class WaveModifierData extends CFacade {
 	 * Set method for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
+	 * <p> Keep in sync with {@link MappingInfoModifierData} . </p>
 	 * @see #__DNA__FIELD__texture
 	 */
 	
@@ -761,7 +762,7 @@ public class WaveModifierData extends CFacade {
 	 * Get method for struct member 'objectcenter'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> end {@link MappingInfoModifierData}  </p>
+	 * <p> End {@link MappingInfoModifierData} . </p>
 	 * @see #__DNA__FIELD__objectcenter
 	 */
 	
@@ -781,7 +782,7 @@ public class WaveModifierData extends CFacade {
 	 * Set method for struct member 'objectcenter'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> end {@link MappingInfoModifierData}  </p>
+	 * <p> End {@link MappingInfoModifierData} . </p>
 	 * @see #__DNA__FIELD__objectcenter
 	 */
 	

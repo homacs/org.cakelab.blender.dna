@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -24,8 +25,8 @@ public class TreeStore extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for TreeStore.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 345;
 
@@ -33,7 +34,7 @@ public class TreeStore extends CFacade {
 	 * Field descriptor (offset) for struct member 'totelem'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Was previously used for memory preallocation. 
+	 * <p> Was previously used for memory pre-allocation. 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -81,7 +82,7 @@ public class TreeStore extends CFacade {
 	 * Field descriptor (offset) for struct member 'data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Elements to be packed from mempool in writefile.c or extracted to mempool in readfile.c </p>
+	 * <p><code></code><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -112,7 +113,7 @@ public class TreeStore extends CFacade {
 	 * Get method for struct member 'totelem'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Was previously used for memory preallocation. 
+	 * <p> Was previously used for memory pre-allocation. 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__totelem
@@ -131,7 +132,7 @@ public class TreeStore extends CFacade {
 	 * Set method for struct member 'totelem'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Was previously used for memory preallocation. 
+	 * <p> Was previously used for memory pre-allocation. 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__totelem
@@ -184,7 +185,7 @@ public class TreeStore extends CFacade {
 	 * Get method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Elements to be packed from mempool in writefile.c or extracted to mempool in readfile.c </p>
+	 * <p><code></code><code></code> . </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -204,7 +205,7 @@ public class TreeStore extends CFacade {
 	 * Set method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Elements to be packed from mempool in writefile.c or extracted to mempool in readfile.c </p>
+	 * <p><code></code><code></code> . </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	

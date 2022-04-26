@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class BrushGpencilSettings extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for BrushGpencilSettings.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 559;
 
@@ -861,7 +862,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Preselected mode when using this brush<h4>Blender Source Code:</h4>
-	 * <p>{@link Brush}  preselected mode (Active/Material/Vertexcolor). </p>
+	 * <p>{@link Brush}  preselected mode (Active/Material/Vertex-color). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2455,7 +2456,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Preselected mode when using this brush<h4>Blender Source Code:</h4>
-	 * <p>{@link Brush}  preselected mode (Active/Material/Vertexcolor). </p>
+	 * <p>{@link Brush}  preselected mode (Active/Material/Vertex-color). </p>
 	 * @see #__DNA__FIELD__brush_draw_mode
 	 */
 	
@@ -2473,7 +2474,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Preselected mode when using this brush<h4>Blender Source Code:</h4>
-	 * <p>{@link Brush}  preselected mode (Active/Material/Vertexcolor). </p>
+	 * <p>{@link Brush}  preselected mode (Active/Material/Vertex-color). </p>
 	 * @see #__DNA__FIELD__brush_draw_mode
 	 */
 	

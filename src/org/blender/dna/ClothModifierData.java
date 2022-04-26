@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class ClothModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ClothModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 119;
 
@@ -122,7 +123,7 @@ public class ClothModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'point_cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link PointCache}  can be shared with other instances of {@link ClothModifierData} . Inspect (modifier.flag & eModifierFlag_SharedCaches) to find out. Definition is in {@link DNA_object_force_types.h} . </p>
+	 * <p>{@link PointCache}  can be shared with other instances of {@link ClothModifierData}<code></code>  to find out. Definition is in {@link DNA_object_force_types.h} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -165,7 +166,7 @@ public class ClothModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'hairdata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX nasty hack, remove once hair can be separated from cloth modifier data </p>
+	 * <p> XXX: nasty hack, remove once hair can be separated from cloth modifier data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -188,7 +189,7 @@ public class ClothModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'hair_grid_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> grid geometry values of hair continuum </p>
+	 * <p> Grid geometry values of hair continuum. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -449,7 +450,7 @@ public class ClothModifierData extends CFacade {
 	 * Get method for struct member 'point_cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link PointCache}  can be shared with other instances of {@link ClothModifierData} . Inspect (modifier.flag & eModifierFlag_SharedCaches) to find out. Definition is in {@link DNA_object_force_types.h} . </p>
+	 * <p>{@link PointCache}  can be shared with other instances of {@link ClothModifierData}<code></code>  to find out. Definition is in {@link DNA_object_force_types.h} . </p>
 	 * @see #__DNA__FIELD__point_cache
 	 */
 	
@@ -469,7 +470,7 @@ public class ClothModifierData extends CFacade {
 	 * Set method for struct member 'point_cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link PointCache}  can be shared with other instances of {@link ClothModifierData} . Inspect (modifier.flag & eModifierFlag_SharedCaches) to find out. Definition is in {@link DNA_object_force_types.h} . </p>
+	 * <p>{@link PointCache}  can be shared with other instances of {@link ClothModifierData}<code></code>  to find out. Definition is in {@link DNA_object_force_types.h} . </p>
 	 * @see #__DNA__FIELD__point_cache
 	 */
 	
@@ -523,7 +524,7 @@ public class ClothModifierData extends CFacade {
 	 * Get method for struct member 'hairdata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX nasty hack, remove once hair can be separated from cloth modifier data </p>
+	 * <p> XXX: nasty hack, remove once hair can be separated from cloth modifier data. </p>
 	 * @see #__DNA__FIELD__hairdata
 	 */
 	
@@ -543,7 +544,7 @@ public class ClothModifierData extends CFacade {
 	 * Set method for struct member 'hairdata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX nasty hack, remove once hair can be separated from cloth modifier data </p>
+	 * <p> XXX: nasty hack, remove once hair can be separated from cloth modifier data. </p>
 	 * @see #__DNA__FIELD__hairdata
 	 */
 	
@@ -561,7 +562,7 @@ public class ClothModifierData extends CFacade {
 	 * Get method for struct member 'hair_grid_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> grid geometry values of hair continuum </p>
+	 * <p> Grid geometry values of hair continuum. </p>
 	 * @see #__DNA__FIELD__hair_grid_min
 	 */
 	
@@ -582,7 +583,7 @@ public class ClothModifierData extends CFacade {
 	 * Set method for struct member 'hair_grid_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> grid geometry values of hair continuum </p>
+	 * <p> Grid geometry values of hair continuum. </p>
 	 * @see #__DNA__FIELD__hair_grid_min
 	 */
 	

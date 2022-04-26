@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -14,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> IME is win32 and apple only! the saveable part, rest of data is local in ghostwinlay </p>
+ * <p> IME is win32 and apple only! The saveable part, the rest of the data is local in GHOST. </p>
  */
 
 @CMetaData(size32=216, size64=336)
@@ -25,8 +26,8 @@ public class wmWindow extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for wmWindow.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 641;
 

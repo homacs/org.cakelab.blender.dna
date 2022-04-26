@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -14,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Java .Blend:</h4>
  * A loop element defined by a vertex and an edge. A loop is a face of the 3D object in Blender. A full loop (face) is defined by a set of loop entries, where each entry references a vertex and the adjacent edge in clock order. Thus, for each loop entry the system knows which side is front facing<h4>Blender Source Code:</h4>
- * <p>{@link Mesh}  Loops. Each loop represents the corner of a polygon ({@link MPoly} ).</p><p> Typically accessed from #Mesh.mloop. </p>
+ * <p>{@link Mesh}  Face Corners. "Loop" is an internal name for the corner of a polygon ({@link MPoly} ).</p><p> Typically accessed from {@link Mesh.mloop} . </p>
  */
 
 @CMetaData(size32=8, size64=8)
@@ -25,8 +26,8 @@ public class MLoop extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MLoop.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 76;
 
@@ -35,7 +36,7 @@ public class MLoop extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Associated vertex (index in vertex array).<h4>Blender Source Code:</h4>
-	 * <p> Vertex index. </p>
+	 * <p> Vertex index into an {@link MVert}  array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -59,9 +60,7 @@ public class MLoop extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Associated edge (index in edge array).<h4>Blender Source Code:</h4>
-	 * <p> Edge index.</p><p><h2>Note</h2><p> The e here is because we want to move away from relying on edge hashes. </p> The e here is because we want to move away from relying on edge hashes. 
-	 * 
-	 * </p>
+	 * <p> Edge index into an {@link MEdge}  array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -93,7 +92,7 @@ public class MLoop extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Associated vertex (index in vertex array).<h4>Blender Source Code:</h4>
-	 * <p> Vertex index. </p>
+	 * <p> Vertex index into an {@link MVert}  array. </p>
 	 * @see #__DNA__FIELD__v
 	 */
 	
@@ -111,7 +110,7 @@ public class MLoop extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Associated vertex (index in vertex array).<h4>Blender Source Code:</h4>
-	 * <p> Vertex index. </p>
+	 * <p> Vertex index into an {@link MVert}  array. </p>
 	 * @see #__DNA__FIELD__v
 	 */
 	
@@ -129,9 +128,7 @@ public class MLoop extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Associated edge (index in edge array).<h4>Blender Source Code:</h4>
-	 * <p> Edge index.</p><p><h2>Note</h2><p> The e here is because we want to move away from relying on edge hashes. </p> The e here is because we want to move away from relying on edge hashes. 
-	 * 
-	 * </p>
+	 * <p> Edge index into an {@link MEdge}  array. </p>
 	 * @see #__DNA__FIELD__e
 	 */
 	
@@ -149,9 +146,7 @@ public class MLoop extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Associated edge (index in edge array).<h4>Blender Source Code:</h4>
-	 * <p> Edge index.</p><p><h2>Note</h2><p> The e here is because we want to move away from relying on edge hashes. </p> The e here is because we want to move away from relying on edge hashes. 
-	 * 
-	 * </p>
+	 * <p> Edge index into an {@link MEdge}  array. </p>
 	 * @see #__DNA__FIELD__e
 	 */
 	

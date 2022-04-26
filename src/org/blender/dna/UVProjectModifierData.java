@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class UVProjectModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for UVProjectModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 111;
 
@@ -53,7 +54,9 @@ public class UVProjectModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'projectors'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the objects which do the projecting MOD_UVPROJECT_MAXPROJECTORS. </p>
+	 * <p> The objects which do the projecting. <h2>Note</h2><p> 10=MOD_UVPROJECT_MAXPROJECTORS. </p> 10=MOD_UVPROJECT_MAXPROJECTORS. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -303,7 +306,9 @@ public class UVProjectModifierData extends CFacade {
 	 * Get method for struct member 'projectors'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the objects which do the projecting MOD_UVPROJECT_MAXPROJECTORS. </p>
+	 * <p> The objects which do the projecting. <h2>Note</h2><p> 10=MOD_UVPROJECT_MAXPROJECTORS. </p> 10=MOD_UVPROJECT_MAXPROJECTORS. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__projectors
 	 */
 	
@@ -324,7 +329,9 @@ public class UVProjectModifierData extends CFacade {
 	 * Set method for struct member 'projectors'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the objects which do the projecting MOD_UVPROJECT_MAXPROJECTORS. </p>
+	 * <p> The objects which do the projecting. <h2>Note</h2><p> 10=MOD_UVPROJECT_MAXPROJECTORS. </p> 10=MOD_UVPROJECT_MAXPROJECTORS. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__projectors
 	 */
 	

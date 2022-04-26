@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class Curve extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for Curve.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 68;
 
@@ -334,9 +335,6 @@ public class Curve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'texflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Keep a short because of BKE_object_obdata_texspace_get(). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2116,9 +2114,6 @@ public class Curve extends CFacade {
 
 	/**
 	 * Get method for struct member 'texflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Keep a short because of BKE_object_obdata_texspace_get(). </p>
 	 * @see #__DNA__FIELD__texflag
 	 */
 	
@@ -2133,9 +2128,6 @@ public class Curve extends CFacade {
 
 	/**
 	 * Set method for struct member 'texflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Keep a short because of BKE_object_obdata_texspace_get(). </p>
 	 * @see #__DNA__FIELD__texflag
 	 */
 	

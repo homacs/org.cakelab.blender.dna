@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class bNodeSocket extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bNodeSocket.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 402;
 
@@ -142,7 +143,7 @@ public class bNodeSocket extends CFacade {
 	 * Field descriptor (offset) for struct member 'storage'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated, only used for the {@link Image}  and OutputFile nodes, should be removed at some point. Custom storage. </p>
+	 * <p> Only used for the {@link Image}  and OutputFile nodes, should be removed at some point. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -163,6 +164,9 @@ public class bNodeSocket extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The socket's data type. {@link eNodeSocketDatatype} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -183,6 +187,9 @@ public class bNodeSocket extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link eNodeSocketFlag}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -205,7 +212,7 @@ public class bNodeSocket extends CFacade {
 	 * Field descriptor (offset) for struct member 'limit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Max. number of links. Read via nodeSocketLinkLimit, because the limit might be defined on the socket type. </p>
+	 * <p> Maximum number of links that can connect to the socket. Read via #nodeSocketLinkLimit, because the limit might be defined on the socket type, in which case this value does not have any effect. It is necessary to store this in the socket because it is exposed as an RNA property for custom nodes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -295,6 +302,11 @@ public class bNodeSocket extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'locx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The location of the sockets, in the view-space of the node editor. <h2>Note</h2><p> These are runtime data<ndash/>  only calculated when drawing, and could be removed from DNA. </p> These are runtime data only calculated when drawing, and could be removed from DNA. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -615,7 +627,7 @@ public class bNodeSocket extends CFacade {
 	 * Field descriptor (offset) for struct member 'link'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> A link pointer, set in ntreeUpdateTree. </p>
+	 * <p> A link pointer, set in #BKE_ntree_update_main. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -661,6 +673,9 @@ public class bNodeSocket extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'declaration'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code> . This is only runtime data. It has to be updated when the node declaration changes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -681,6 +696,9 @@ public class bNodeSocket extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'changed_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> #eNodeTreeChangedFlag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -925,7 +943,7 @@ public class bNodeSocket extends CFacade {
 	 * Get method for struct member 'storage'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated, only used for the {@link Image}  and OutputFile nodes, should be removed at some point. Custom storage. </p>
+	 * <p> Only used for the {@link Image}  and OutputFile nodes, should be removed at some point. </p>
 	 * @see #__DNA__FIELD__storage
 	 */
 	
@@ -945,7 +963,7 @@ public class bNodeSocket extends CFacade {
 	 * Set method for struct member 'storage'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated, only used for the {@link Image}  and OutputFile nodes, should be removed at some point. Custom storage. </p>
+	 * <p> Only used for the {@link Image}  and OutputFile nodes, should be removed at some point. </p>
 	 * @see #__DNA__FIELD__storage
 	 */
 	
@@ -961,6 +979,9 @@ public class bNodeSocket extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The socket's data type. {@link eNodeSocketDatatype} . </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -975,6 +996,9 @@ public class bNodeSocket extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The socket's data type. {@link eNodeSocketDatatype} . </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -989,6 +1013,9 @@ public class bNodeSocket extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link eNodeSocketFlag}  </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -1003,6 +1030,9 @@ public class bNodeSocket extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link eNodeSocketFlag}  </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -1019,7 +1049,7 @@ public class bNodeSocket extends CFacade {
 	 * Get method for struct member 'limit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Max. number of links. Read via nodeSocketLinkLimit, because the limit might be defined on the socket type. </p>
+	 * <p> Maximum number of links that can connect to the socket. Read via #nodeSocketLinkLimit, because the limit might be defined on the socket type, in which case this value does not have any effect. It is necessary to store this in the socket because it is exposed as an RNA property for custom nodes. </p>
 	 * @see #__DNA__FIELD__limit
 	 */
 	
@@ -1036,7 +1066,7 @@ public class bNodeSocket extends CFacade {
 	 * Set method for struct member 'limit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Max. number of links. Read via nodeSocketLinkLimit, because the limit might be defined on the socket type. </p>
+	 * <p> Maximum number of links that can connect to the socket. Read via #nodeSocketLinkLimit, because the limit might be defined on the socket type, in which case this value does not have any effect. It is necessary to store this in the socket because it is exposed as an RNA property for custom nodes. </p>
 	 * @see #__DNA__FIELD__limit
 	 */
 	
@@ -1169,6 +1199,11 @@ public class bNodeSocket extends CFacade {
 
 	/**
 	 * Get method for struct member 'locx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The location of the sockets, in the view-space of the node editor. <h2>Note</h2><p> These are runtime data<ndash/>  only calculated when drawing, and could be removed from DNA. </p> These are runtime data only calculated when drawing, and could be removed from DNA. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__locx
 	 */
 	
@@ -1183,6 +1218,11 @@ public class bNodeSocket extends CFacade {
 
 	/**
 	 * Set method for struct member 'locx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The location of the sockets, in the view-space of the node editor. <h2>Note</h2><p> These are runtime data<ndash/>  only calculated when drawing, and could be removed from DNA. </p> These are runtime data only calculated when drawing, and could be removed from DNA. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__locx
 	 */
 	
@@ -1675,7 +1715,7 @@ public class bNodeSocket extends CFacade {
 	 * Get method for struct member 'link'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> A link pointer, set in ntreeUpdateTree. </p>
+	 * <p> A link pointer, set in #BKE_ntree_update_main. </p>
 	 * @see #__DNA__FIELD__link
 	 */
 	
@@ -1695,7 +1735,7 @@ public class bNodeSocket extends CFacade {
 	 * Set method for struct member 'link'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> A link pointer, set in ntreeUpdateTree. </p>
+	 * <p> A link pointer, set in #BKE_ntree_update_main. </p>
 	 * @see #__DNA__FIELD__link
 	 */
 	
@@ -1757,6 +1797,9 @@ public class bNodeSocket extends CFacade {
 
 	/**
 	 * Get method for struct member 'declaration'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code> . This is only runtime data. It has to be updated when the node declaration changes. </p>
 	 * @see #__DNA__FIELD__declaration
 	 */
 	
@@ -1774,6 +1817,9 @@ public class bNodeSocket extends CFacade {
 
 	/**
 	 * Set method for struct member 'declaration'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code> . This is only runtime data. It has to be updated when the node declaration changes. </p>
 	 * @see #__DNA__FIELD__declaration
 	 */
 	
@@ -1789,6 +1835,9 @@ public class bNodeSocket extends CFacade {
 
 	/**
 	 * Get method for struct member 'changed_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> #eNodeTreeChangedFlag. </p>
 	 * @see #__DNA__FIELD__changed_flag
 	 */
 	
@@ -1803,6 +1852,9 @@ public class bNodeSocket extends CFacade {
 
 	/**
 	 * Set method for struct member 'changed_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> #eNodeTreeChangedFlag. </p>
 	 * @see #__DNA__FIELD__changed_flag
 	 */
 	
