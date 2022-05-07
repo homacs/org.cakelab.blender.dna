@@ -492,7 +492,7 @@ public class ScrArea extends CFacade {
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink#regionbase}  if it's inactive (but only then)! {@link ARegion} . </p>
+	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink#getRegionbase()}  if it's inactive (but only then)! {@link ARegion} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1317,7 +1317,7 @@ public class ScrArea extends CFacade {
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink#regionbase}  if it's inactive (but only then)! {@link ARegion} . </p>
+	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink#getRegionbase()}  if it's inactive (but only then)! {@link ARegion} . </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -1334,7 +1334,7 @@ public class ScrArea extends CFacade {
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink#regionbase}  if it's inactive (but only then)! {@link ARegion} . </p>
+	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink#getRegionbase()}  if it's inactive (but only then)! {@link ARegion} . </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	

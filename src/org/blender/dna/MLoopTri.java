@@ -54,7 +54,7 @@ import org.cakelab.blender.nio.CPointer;
  * mloopuv[lt->tri[1]].uv,
  * mloopuv[lt->tri[2]].uv,
  * };
- * </p><p>{@link MLoopTri} 's are allocated in an array, where each polygon's {@link MLoopTri} 's are stored contiguously, the number of triangles for each polygon is guaranteed to be ({@link MPoly#totloop}  - 2), even for degenerate geometry. See ME_POLY_TRI_TOT  macro.</p><p> It's also possible to perform a reverse lookup (find all {@link MLoopTri} 's for any given {@link MPoly} ).</p><p><code>                   i ///loopoveralllooptri'sforagivenpolygon:i
+ * </p><p>{@link MLoopTri} 's are allocated in an array, where each polygon's {@link MLoopTri} 's are stored contiguously, the number of triangles for each polygon is guaranteed to be ({@link MPoly#getTotloop()}  - 2), even for degenerate geometry. See ME_POLY_TRI_TOT  macro.</p><p> It's also possible to perform a reverse lookup (find all {@link MLoopTri} 's for any given {@link MPoly} ).</p><p><code>                   i ///loopoveralllooptri'sforagivenpolygon:i
  * {@link MPoly}       &mpoly[i]; *mp=&mpoly[i];
  * {@link MLoopTri}         mp->loopstart )]; MLoopTri*lt=&looptri[poly_to_tri_count(i,mp->loopstart)];
  *  int int        ME_POLY_TRI_TOT (mp); j,lt_tot=ME_POLY_TRI_TOT(mp);
@@ -80,7 +80,7 @@ import org.cakelab.blender.nio.CPointer;
  * };
  * printf("tri%u%u%u\n",vtri[0],vtri[1],vtri[2]);
  * };
- * </p><p> It may also be useful to check whether or not two vertices of a triangle form an edge in the underlying mesh.</p><p> This can be done by checking the edge of the referenced loop ({@link MLoop#e} ), the winding of the {@link MLoopTri}  and the {@link MLoop} 's will always match, however the order of vertices in the edge is undefined.</p><p><code>               lt ///printrealedgesfromanMLoopTri:lt
+ * </p><p> It may also be useful to check whether or not two vertices of a triangle form an edge in the underlying mesh.</p><p> This can be done by checking the edge of the referenced loop ({@link MLoop#getE()} ), the winding of the {@link MLoopTri}  and the {@link MLoop} 's will always match, however the order of vertices in the edge is undefined.</p><p><code>               lt ///printrealedgesfromanMLoopTri:lt
  *  int int     j_next; j,j_next;
  *  for for                           { (j=2,j_next=0;j_next<3;j=j_next++){
  *         {@link MEdge}       &medge[mloop[lt->tri[j]].e]; *ed=&medge[mloop[lt->tri[j]].e];

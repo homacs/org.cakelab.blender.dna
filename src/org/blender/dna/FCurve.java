@@ -215,7 +215,7 @@ public class FCurve extends CFacade {
 	 * Field descriptor (offset) for struct member 'active_keyframe_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Index of active keyframe in {@link #bezt}  for numerical editing in the interface. A value of FCURVE_ACTIVE_KEYFRAME_NONE  indicates that the {@link FCurve}  has no active keyframe.</p><p> Do not access directly, use #BKE_fcurve_active_keyframe_index() and #BKE_fcurve_active_keyframe_set() instead. </p>
+	 * <p> Index of active keyframe in {@link #getBezt()}  for numerical editing in the interface. A value of FCURVE_ACTIVE_KEYFRAME_NONE  indicates that the {@link FCurve}  has no active keyframe.</p><p> Do not access directly, use #BKE_fcurve_active_keyframe_index() and #BKE_fcurve_active_keyframe_set() instead. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -794,7 +794,7 @@ public class FCurve extends CFacade {
 	 * Get method for struct member 'active_keyframe_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Index of active keyframe in {@link #bezt}  for numerical editing in the interface. A value of FCURVE_ACTIVE_KEYFRAME_NONE  indicates that the {@link FCurve}  has no active keyframe.</p><p> Do not access directly, use #BKE_fcurve_active_keyframe_index() and #BKE_fcurve_active_keyframe_set() instead. </p>
+	 * <p> Index of active keyframe in {@link #getBezt()}  for numerical editing in the interface. A value of FCURVE_ACTIVE_KEYFRAME_NONE  indicates that the {@link FCurve}  has no active keyframe.</p><p> Do not access directly, use #BKE_fcurve_active_keyframe_index() and #BKE_fcurve_active_keyframe_set() instead. </p>
 	 * @see #__DNA__FIELD__active_keyframe_index
 	 */
 	
@@ -811,7 +811,7 @@ public class FCurve extends CFacade {
 	 * Set method for struct member 'active_keyframe_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Index of active keyframe in {@link #bezt}  for numerical editing in the interface. A value of FCURVE_ACTIVE_KEYFRAME_NONE  indicates that the {@link FCurve}  has no active keyframe.</p><p> Do not access directly, use #BKE_fcurve_active_keyframe_index() and #BKE_fcurve_active_keyframe_set() instead. </p>
+	 * <p> Index of active keyframe in {@link #getBezt()}  for numerical editing in the interface. A value of FCURVE_ACTIVE_KEYFRAME_NONE  indicates that the {@link FCurve}  has no active keyframe.</p><p> Do not access directly, use #BKE_fcurve_active_keyframe_index() and #BKE_fcurve_active_keyframe_set() instead. </p>
 	 * @see #__DNA__FIELD__active_keyframe_index
 	 */
 	

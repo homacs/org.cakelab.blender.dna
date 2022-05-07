@@ -23,7 +23,7 @@ import org.cakelab.blender.utils.MainLibBase;
  * them to the appropriate members of the main lib (represented by this class).
  * </p>
  * <p>This class is also vital to check whether a given blender file is compatible
- * with the data model associated with this Main lib class (see {@link #doVersionCheck} and {@link #getfileGlobal).</p>@author homac
+ * with the data model associated with this Main lib class (see {@link #doVersionCheck(FileVersionInfo)} and {@link #getFileGlobal()}).</p>@author homac
  */
 public class MainLib extends MainLibBase {
 
@@ -321,8 +321,8 @@ public class MainLib extends MainLibBase {
 	 * are not implemeted in Java .Blend.
 	 * 
 	 * You can get file version info from {@link BlenderFile#readFileGlobal}.
-	 * @see #readFileGlobal
-	 * @see #doVersionCheck
+	 * @see #getFileGlobal()
+	 * @see #doVersionCheck(FileVersionInfo)
 	 */
 	public static boolean doCompatibilityCheck(FileVersionInfo fileVersionInfo) throws IOException {
 		int version = fileVersionInfo.getVersion().getCode();

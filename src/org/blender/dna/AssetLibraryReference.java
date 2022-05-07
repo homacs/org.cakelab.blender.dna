@@ -78,7 +78,7 @@ public class AssetLibraryReference extends CFacade {
 	 * Field descriptor (offset) for struct member 'custom_library_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> If showing a custom asset library (ASSET_LIBRARY_CUSTOM ), this is the index of the {@link bUserAssetLibrary}  within {@link UserDef#asset_libraries} . Should be ignored otherwise (but better set to -1 then, for sanity and debugging). </p>
+	 * <p> If showing a custom asset library (ASSET_LIBRARY_CUSTOM ), this is the index of the {@link bUserAssetLibrary}  within {@link UserDef#getAsset_libraries()} . Should be ignored otherwise (but better set to -1 then, for sanity and debugging). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -183,7 +183,7 @@ public class AssetLibraryReference extends CFacade {
 	 * Get method for struct member 'custom_library_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> If showing a custom asset library (ASSET_LIBRARY_CUSTOM ), this is the index of the {@link bUserAssetLibrary}  within {@link UserDef#asset_libraries} . Should be ignored otherwise (but better set to -1 then, for sanity and debugging). </p>
+	 * <p> If showing a custom asset library (ASSET_LIBRARY_CUSTOM ), this is the index of the {@link bUserAssetLibrary}  within {@link UserDef#getAsset_libraries()} . Should be ignored otherwise (but better set to -1 then, for sanity and debugging). </p>
 	 * @see #__DNA__FIELD__custom_library_index
 	 */
 	
@@ -200,7 +200,7 @@ public class AssetLibraryReference extends CFacade {
 	 * Set method for struct member 'custom_library_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> If showing a custom asset library (ASSET_LIBRARY_CUSTOM ), this is the index of the {@link bUserAssetLibrary}  within {@link UserDef#asset_libraries} . Should be ignored otherwise (but better set to -1 then, for sanity and debugging). </p>
+	 * <p> If showing a custom asset library (ASSET_LIBRARY_CUSTOM ), this is the index of the {@link bUserAssetLibrary}  within {@link UserDef#getAsset_libraries()} . Should be ignored otherwise (but better set to -1 then, for sanity and debugging). </p>
 	 * @see #__DNA__FIELD__custom_library_index
 	 */
 	

@@ -158,7 +158,7 @@ public class ID extends CFacade {
 	 * 				    Names of library elements which have an specific block code, such as 
 	 * 				    Mesh (ME) and Tex (ME), always have the first two ASCII characters of
 	 * 				    the block code as its prefix. Data of blocks with unspecified block 
-	 * 				    code (i.e. {@link BlockCodes#ID_DATA}) have other names.
+	 * 				    code (i.e. {@link org.cakelab.blender.io.block.BlockCodes#ID_DATA}) have other names.
 	 * 				    </p>
 	 * 				    <b>A few examples of names:</b>
 	 * 					<table border="1">
@@ -711,7 +711,7 @@ public class ID extends CFacade {
 	 * 				    Names of library elements which have an specific block code, such as 
 	 * 				    Mesh (ME) and Tex (ME), always have the first two ASCII characters of
 	 * 				    the block code as its prefix. Data of blocks with unspecified block 
-	 * 				    code (i.e. {@link BlockCodes#ID_DATA}) have other names.
+	 * 				    code (i.e. {@link org.cakelab.blender.io.block.BlockCodes#ID_DATA}) have other names.
 	 * 				    </p>
 	 * 				    <b>A few examples of names:</b>
 	 * 					<table border="1">
@@ -750,7 +750,7 @@ public class ID extends CFacade {
 	 * 				    Names of library elements which have an specific block code, such as 
 	 * 				    Mesh (ME) and Tex (ME), always have the first two ASCII characters of
 	 * 				    the block code as its prefix. Data of blocks with unspecified block 
-	 * 				    code (i.e. {@link BlockCodes#ID_DATA}) have other names.
+	 * 				    code (i.e. {@link org.cakelab.blender.io.block.BlockCodes#ID_DATA}) have other names.
 	 * 				    </p>
 	 * 				    <b>A few examples of names:</b>
 	 * 					<table border="1">

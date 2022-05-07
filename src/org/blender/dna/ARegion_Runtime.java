@@ -56,7 +56,7 @@ public class ARegion_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'visible_rect'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion#winrct}  x/y min. </p>
+	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion#getWinrct()}  x/y min. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,7 +191,7 @@ public class ARegion_Runtime extends CFacade {
 	 * Get method for struct member 'visible_rect'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion#winrct}  x/y min. </p>
+	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion#getWinrct()}  x/y min. </p>
 	 * @see #__DNA__FIELD__visible_rect
 	 */
 	
@@ -208,7 +208,7 @@ public class ARegion_Runtime extends CFacade {
 	 * Set method for struct member 'visible_rect'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion#winrct}  x/y min. </p>
+	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion#getWinrct()}  x/y min. </p>
 	 * @see #__DNA__FIELD__visible_rect
 	 */
 	

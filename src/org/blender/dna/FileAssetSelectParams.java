@@ -119,7 +119,7 @@ public class FileAssetSelectParams extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    The UUID of the catalog shown in the browser<h4>Blender Source Code:</h4>
-	 * <p> If {@link #asset_catalog_visibility}  is #FILE_SHOW_ASSETS_FROM_CATALOG, this sets the {@link ID}  of the catalog to show. </p>
+	 * <p> If {@link #getAsset_catalog_visibility()}  is #FILE_SHOW_ASSETS_FROM_CATALOG, this sets the {@link ID}  of the catalog to show. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -341,7 +341,7 @@ public class FileAssetSelectParams extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    The UUID of the catalog shown in the browser<h4>Blender Source Code:</h4>
-	 * <p> If {@link #asset_catalog_visibility}  is #FILE_SHOW_ASSETS_FROM_CATALOG, this sets the {@link ID}  of the catalog to show. </p>
+	 * <p> If {@link #getAsset_catalog_visibility()}  is #FILE_SHOW_ASSETS_FROM_CATALOG, this sets the {@link ID}  of the catalog to show. </p>
 	 * @see #__DNA__FIELD__catalog_id
 	 */
 	
@@ -359,7 +359,7 @@ public class FileAssetSelectParams extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    The UUID of the catalog shown in the browser<h4>Blender Source Code:</h4>
-	 * <p> If {@link #asset_catalog_visibility}  is #FILE_SHOW_ASSETS_FROM_CATALOG, this sets the {@link ID}  of the catalog to show. </p>
+	 * <p> If {@link #getAsset_catalog_visibility()}  is #FILE_SHOW_ASSETS_FROM_CATALOG, this sets the {@link ID}  of the catalog to show. </p>
 	 * @see #__DNA__FIELD__catalog_id
 	 */
 	

@@ -426,7 +426,7 @@ public class BlenderObject extends CFacade {
 	 * Field descriptor (offset) for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * old animation system, deprecated for 2.5.<br/>@deprecated<h4>Blender Source Code:</h4>
+	 * old animation system, deprecated for 2.5.<br/>@deprecated <h4>Blender Source Code:</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -452,7 +452,7 @@ public class BlenderObject extends CFacade {
 	 * Field descriptor (offset) for struct member 'action'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * old animation system. @deprecated<h4>Blender Source Code:</h4>
+	 * old animation system. @deprecated <h4>Blender Source Code:</h4>
 	 * <p> struct Path *path; <p> XXX deprecated... old animation system </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... old animation system 
@@ -644,7 +644,7 @@ public class BlenderObject extends CFacade {
 	 * Field descriptor (offset) for struct member 'constraintChannels'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * old animation system.<br/>@deprecated<h4>Blender Source Code:</h4>
+	 * old animation system.<br/>@deprecated <h4>Blender Source Code:</h4>
 	 * <p><p> XXX deprecated... old animation system </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... old animation system 
@@ -671,7 +671,7 @@ public class BlenderObject extends CFacade {
 	 * Field descriptor (offset) for struct member 'effect'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * <br/>@deprecated<h4>Blender Source Code:</h4>
+	 * <br/>@deprecated <h4>Blender Source Code:</h4>
 	 * <p><p> XXX deprecated... keep for readfile </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... keep for readfile 
@@ -1040,7 +1040,7 @@ public class BlenderObject extends CFacade {
 	 * Field descriptor (offset) for struct member 'dsize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @deprecated<h4>Blender Source Code:</h4>
+	 * @deprecated <h4>Blender Source Code:</h4>
 	 * <p> DEPRECATED, 2.60 and older only. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1404,7 +1404,7 @@ public class BlenderObject extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * copy of {@link Base#flag}<h4>Blender Source Code:</h4>
+	 * copy of {@link Base#getFlag()}<h4>Blender Source Code:</h4>
 	 * <p> Copy of {@link Base} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1428,7 +1428,7 @@ public class BlenderObject extends CFacade {
 	 * Field descriptor (offset) for struct member 'colbits'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @deprecated<h4>Blender Source Code:</h4>
+	 * @deprecated <h4>Blender Source Code:</h4>
 	 * <p> Deprecated, use 'matbits'. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -2251,7 +2251,7 @@ public class BlenderObject extends CFacade {
 	 * Field descriptor (offset) for struct member 'nlastrips'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @deprecated<h4>Blender Source Code:</h4>
+	 * @deprecated <h4>Blender Source Code:</h4>
 	 * <p><p> XXX deprecated... old animation system </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... old animation system 
@@ -2278,7 +2278,7 @@ public class BlenderObject extends CFacade {
 	 * Field descriptor (offset) for struct member 'hooks'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @deprecated<h4>Blender Source Code:</h4>
+	 * @deprecated <h4>Blender Source Code:</h4>
 	 * <p><p> XXX deprecated... old animation system </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... old animation system 
@@ -3336,7 +3336,7 @@ public class BlenderObject extends CFacade {
 	 * Get method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * old animation system, deprecated for 2.5.<br/>@deprecated<h4>Blender Source Code:</h4>
+	 * old animation system, deprecated for 2.5.<br/>@deprecated <h4>Blender Source Code:</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -3359,7 +3359,7 @@ public class BlenderObject extends CFacade {
 	 * Set method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * old animation system, deprecated for 2.5.<br/>@deprecated<h4>Blender Source Code:</h4>
+	 * old animation system, deprecated for 2.5.<br/>@deprecated <h4>Blender Source Code:</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -3380,7 +3380,7 @@ public class BlenderObject extends CFacade {
 	 * Get method for struct member 'action'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * old animation system. @deprecated<h4>Blender Source Code:</h4>
+	 * old animation system. @deprecated <h4>Blender Source Code:</h4>
 	 * <p> struct Path *path; <p> XXX deprecated... old animation system </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... old animation system 
@@ -3404,7 +3404,7 @@ public class BlenderObject extends CFacade {
 	 * Set method for struct member 'action'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * old animation system. @deprecated<h4>Blender Source Code:</h4>
+	 * old animation system. @deprecated <h4>Blender Source Code:</h4>
 	 * <p> struct Path *path; <p> XXX deprecated... old animation system </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... old animation system 
@@ -3704,7 +3704,7 @@ public class BlenderObject extends CFacade {
 	 * Get method for struct member 'constraintChannels'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * old animation system.<br/>@deprecated<h4>Blender Source Code:</h4>
+	 * old animation system.<br/>@deprecated <h4>Blender Source Code:</h4>
 	 * <p><p> XXX deprecated... old animation system </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... old animation system 
@@ -3725,7 +3725,7 @@ public class BlenderObject extends CFacade {
 	 * Set method for struct member 'constraintChannels'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * old animation system.<br/>@deprecated<h4>Blender Source Code:</h4>
+	 * old animation system.<br/>@deprecated <h4>Blender Source Code:</h4>
 	 * <p><p> XXX deprecated... old animation system </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... old animation system 
@@ -3754,7 +3754,7 @@ public class BlenderObject extends CFacade {
 	 * Get method for struct member 'effect'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * <br/>@deprecated<h4>Blender Source Code:</h4>
+	 * <br/>@deprecated <h4>Blender Source Code:</h4>
 	 * <p><p> XXX deprecated... keep for readfile </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... keep for readfile 
@@ -3775,7 +3775,7 @@ public class BlenderObject extends CFacade {
 	 * Set method for struct member 'effect'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * <br/>@deprecated<h4>Blender Source Code:</h4>
+	 * <br/>@deprecated <h4>Blender Source Code:</h4>
 	 * <p><p> XXX deprecated... keep for readfile </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... keep for readfile 
@@ -4404,7 +4404,7 @@ public class BlenderObject extends CFacade {
 	 * Get method for struct member 'dsize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @deprecated<h4>Blender Source Code:</h4>
+	 * @deprecated <h4>Blender Source Code:</h4>
 	 * <p> DEPRECATED, 2.60 and older only. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -4428,7 +4428,7 @@ public class BlenderObject extends CFacade {
 	 * Set method for struct member 'dsize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @deprecated<h4>Blender Source Code:</h4>
+	 * @deprecated <h4>Blender Source Code:</h4>
 	 * <p> DEPRECATED, 2.60 and older only. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -5100,7 +5100,7 @@ public class BlenderObject extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * copy of {@link Base#flag}<h4>Blender Source Code:</h4>
+	 * copy of {@link Base#getFlag()}<h4>Blender Source Code:</h4>
 	 * <p> Copy of {@link Base} . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -5118,7 +5118,7 @@ public class BlenderObject extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * copy of {@link Base#flag}<h4>Blender Source Code:</h4>
+	 * copy of {@link Base#getFlag()}<h4>Blender Source Code:</h4>
 	 * <p> Copy of {@link Base} . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -5136,7 +5136,7 @@ public class BlenderObject extends CFacade {
 	 * Get method for struct member 'colbits'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @deprecated<h4>Blender Source Code:</h4>
+	 * @deprecated <h4>Blender Source Code:</h4>
 	 * <p> Deprecated, use 'matbits'. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -5156,7 +5156,7 @@ public class BlenderObject extends CFacade {
 	 * Set method for struct member 'colbits'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @deprecated<h4>Blender Source Code:</h4>
+	 * @deprecated <h4>Blender Source Code:</h4>
 	 * <p> Deprecated, use 'matbits'. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -6454,7 +6454,7 @@ public class BlenderObject extends CFacade {
 	 * Get method for struct member 'nlastrips'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @deprecated<h4>Blender Source Code:</h4>
+	 * @deprecated <h4>Blender Source Code:</h4>
 	 * <p><p> XXX deprecated... old animation system </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... old animation system 
@@ -6475,7 +6475,7 @@ public class BlenderObject extends CFacade {
 	 * Set method for struct member 'nlastrips'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @deprecated<h4>Blender Source Code:</h4>
+	 * @deprecated <h4>Blender Source Code:</h4>
 	 * <p><p> XXX deprecated... old animation system </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... old animation system 
@@ -6504,7 +6504,7 @@ public class BlenderObject extends CFacade {
 	 * Get method for struct member 'hooks'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @deprecated<h4>Blender Source Code:</h4>
+	 * @deprecated <h4>Blender Source Code:</h4>
 	 * <p><p> XXX deprecated... old animation system </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... old animation system 
@@ -6525,7 +6525,7 @@ public class BlenderObject extends CFacade {
 	 * Set method for struct member 'hooks'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @deprecated<h4>Blender Source Code:</h4>
+	 * @deprecated <h4>Blender Source Code:</h4>
 	 * <p><p> XXX deprecated... old animation system </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... old animation system 
