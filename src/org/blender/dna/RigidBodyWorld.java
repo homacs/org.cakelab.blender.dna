@@ -311,7 +311,7 @@ public class RigidBodyWorld extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ({@link eRigidBodyWorld_Flag} ) settings for this {@link RigidBodyWorld} . </p>
+	 * <p> (eRigidBodyWorld_Flag ) settings for this {@link RigidBodyWorld} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -818,7 +818,7 @@ public class RigidBodyWorld extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ({@link eRigidBodyWorld_Flag} ) settings for this {@link RigidBodyWorld} . </p>
+	 * <p> (eRigidBodyWorld_Flag ) settings for this {@link RigidBodyWorld} . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -835,7 +835,7 @@ public class RigidBodyWorld extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ({@link eRigidBodyWorld_Flag} ) settings for this {@link RigidBodyWorld} . </p>
+	 * <p> (eRigidBodyWorld_Flag ) settings for this {@link RigidBodyWorld} . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

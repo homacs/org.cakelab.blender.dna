@@ -887,7 +887,7 @@ public class bNode extends CFacade {
 	 * Field descriptor (offset) for struct member 'preview_xsize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX TODO Node totr size depends on the prvr size, which in turn is determined from preview size. In earlier versions {@link bNodePreview}  was stored directly in nodes, but since now there can be multiple instances using different preview images it is possible that required node size varies between instances. preview_xsize, preview_ysize defines a common reserved size for preview rect for now, could be replaced by more accurate node instance drawing, but that requires removing totr from DNA and replacing all uses with per-instance data. Reserved size of the preview rect. </p>
+	 * <p> XXX TODO Node totr size depends on the prvr size, which in turn is determined from preview size. In earlier versions bNodePreview  was stored directly in nodes, but since now there can be multiple instances using different preview images it is possible that required node size varies between instances. preview_xsize, preview_ysize defines a common reserved size for preview rect for now, could be replaced by more accurate node instance drawing, but that requires removing totr from DNA and replacing all uses with per-instance data. Reserved size of the preview rect. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2456,7 +2456,7 @@ public class bNode extends CFacade {
 	 * Get method for struct member 'preview_xsize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX TODO Node totr size depends on the prvr size, which in turn is determined from preview size. In earlier versions {@link bNodePreview}  was stored directly in nodes, but since now there can be multiple instances using different preview images it is possible that required node size varies between instances. preview_xsize, preview_ysize defines a common reserved size for preview rect for now, could be replaced by more accurate node instance drawing, but that requires removing totr from DNA and replacing all uses with per-instance data. Reserved size of the preview rect. </p>
+	 * <p> XXX TODO Node totr size depends on the prvr size, which in turn is determined from preview size. In earlier versions bNodePreview  was stored directly in nodes, but since now there can be multiple instances using different preview images it is possible that required node size varies between instances. preview_xsize, preview_ysize defines a common reserved size for preview rect for now, could be replaced by more accurate node instance drawing, but that requires removing totr from DNA and replacing all uses with per-instance data. Reserved size of the preview rect. </p>
 	 * @see #__DNA__FIELD__preview_xsize
 	 */
 	
@@ -2473,7 +2473,7 @@ public class bNode extends CFacade {
 	 * Set method for struct member 'preview_xsize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX TODO Node totr size depends on the prvr size, which in turn is determined from preview size. In earlier versions {@link bNodePreview}  was stored directly in nodes, but since now there can be multiple instances using different preview images it is possible that required node size varies between instances. preview_xsize, preview_ysize defines a common reserved size for preview rect for now, could be replaced by more accurate node instance drawing, but that requires removing totr from DNA and replacing all uses with per-instance data. Reserved size of the preview rect. </p>
+	 * <p> XXX TODO Node totr size depends on the prvr size, which in turn is determined from preview size. In earlier versions bNodePreview  was stored directly in nodes, but since now there can be multiple instances using different preview images it is possible that required node size varies between instances. preview_xsize, preview_ysize defines a common reserved size for preview rect for now, could be replaced by more accurate node instance drawing, but that requires removing totr from DNA and replacing all uses with per-instance data. Reserved size of the preview rect. </p>
 	 * @see #__DNA__FIELD__preview_xsize
 	 */
 	

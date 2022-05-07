@@ -305,7 +305,7 @@ public class Object_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'geometry_set_eval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> s can evaluate to a geometry set instead of a single {@link ID} . In those cases, the evaluated geometry set will be stored here. An {@link ID}  of the correct type is still stored in {@link data_eval} . {@link geometry_set_eval}  might reference the {@link ID}  pointed to by {@link data_eval}  as well, but does not own the data. </p>
+	 * <p> s can evaluate to a geometry set instead of a single {@link ID} . In those cases, the evaluated geometry set will be stored here. An {@link ID}  of the correct type is still stored in {@link #data_eval} . {@link #geometry_set_eval}  might reference the {@link ID}  pointed to by {@link #data_eval}  as well, but does not own the data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1052,7 +1052,7 @@ public class Object_Runtime extends CFacade {
 	 * Get method for struct member 'geometry_set_eval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> s can evaluate to a geometry set instead of a single {@link ID} . In those cases, the evaluated geometry set will be stored here. An {@link ID}  of the correct type is still stored in {@link data_eval} . {@link geometry_set_eval}  might reference the {@link ID}  pointed to by {@link data_eval}  as well, but does not own the data. </p>
+	 * <p> s can evaluate to a geometry set instead of a single {@link ID} . In those cases, the evaluated geometry set will be stored here. An {@link ID}  of the correct type is still stored in {@link #data_eval} . {@link #geometry_set_eval}  might reference the {@link ID}  pointed to by {@link #data_eval}  as well, but does not own the data. </p>
 	 * @see #__DNA__FIELD__geometry_set_eval
 	 */
 	
@@ -1072,7 +1072,7 @@ public class Object_Runtime extends CFacade {
 	 * Set method for struct member 'geometry_set_eval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> s can evaluate to a geometry set instead of a single {@link ID} . In those cases, the evaluated geometry set will be stored here. An {@link ID}  of the correct type is still stored in {@link data_eval} . {@link geometry_set_eval}  might reference the {@link ID}  pointed to by {@link data_eval}  as well, but does not own the data. </p>
+	 * <p> s can evaluate to a geometry set instead of a single {@link ID} . In those cases, the evaluated geometry set will be stored here. An {@link ID}  of the correct type is still stored in {@link #data_eval} . {@link #geometry_set_eval}  might reference the {@link ID}  pointed to by {@link #data_eval}  as well, but does not own the data. </p>
 	 * @see #__DNA__FIELD__geometry_set_eval
 	 */
 	

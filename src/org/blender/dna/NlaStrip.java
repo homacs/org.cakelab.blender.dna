@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  'Action' Datatypes NOTE: Although these are part of the Animation System, they are not stored here... see {@link DNA_action_types.h}  instead <hr/> 
+ *  'Action' Datatypes NOTE: Although these are part of the Animation System, they are not stored here... see DNA_action_types.h  instead <hr/> 
  *  NLA - Non-Linear Animation NLA Strips ----------------------------------<mdash/>  NLA {@link Strip}  (strip)</p><p> A NLA {@link Strip}  is a container for the reuse of Action data, defining parameters to control the remapping of the Action data to some destination. </p>
  */
 

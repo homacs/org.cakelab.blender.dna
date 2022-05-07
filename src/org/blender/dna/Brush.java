@@ -343,7 +343,7 @@ public class Brush extends CFacade {
 	 * Field descriptor (offset) for struct member 'ob_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eObjectMode} : to see if the brush is compatible, use for display only. </p>
+	 * <p>eObjectMode : to see if the brush is compatible, use for display only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3201,7 +3201,7 @@ public class Brush extends CFacade {
 	 * Get method for struct member 'ob_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eObjectMode} : to see if the brush is compatible, use for display only. </p>
+	 * <p>eObjectMode : to see if the brush is compatible, use for display only. </p>
 	 * @see #__DNA__FIELD__ob_mode
 	 */
 	
@@ -3218,7 +3218,7 @@ public class Brush extends CFacade {
 	 * Set method for struct member 'ob_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eObjectMode} : to see if the brush is compatible, use for display only. </p>
+	 * <p>eObjectMode : to see if the brush is compatible, use for display only. </p>
 	 * @see #__DNA__FIELD__ob_mode
 	 */
 	

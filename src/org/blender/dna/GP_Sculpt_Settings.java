@@ -58,7 +58,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eGP_Sculpt_SettingsFlag} . </p>
+	 * <p>eGP_Sculpt_SettingsFlag . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -81,7 +81,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * Field descriptor (offset) for struct member 'lock_axis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eGP_Lockaxis_Types}  lock drawing to one axis. </p>
+	 * <p>eGP_Lockaxis_Types  lock drawing to one axis. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -262,7 +262,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eGP_Sculpt_SettingsFlag} . </p>
+	 * <p>eGP_Sculpt_SettingsFlag . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -279,7 +279,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eGP_Sculpt_SettingsFlag} . </p>
+	 * <p>eGP_Sculpt_SettingsFlag . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -296,7 +296,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * Get method for struct member 'lock_axis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eGP_Lockaxis_Types}  lock drawing to one axis. </p>
+	 * <p>eGP_Lockaxis_Types  lock drawing to one axis. </p>
 	 * @see #__DNA__FIELD__lock_axis
 	 */
 	
@@ -313,7 +313,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * Set method for struct member 'lock_axis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eGP_Lockaxis_Types}  lock drawing to one axis. </p>
+	 * <p>eGP_Lockaxis_Types  lock drawing to one axis. </p>
 	 * @see #__DNA__FIELD__lock_axis
 	 */
 	

@@ -719,7 +719,7 @@ public class RegionView3D extends CFacade {
 	 * Field descriptor (offset) for struct member 'viewlock'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Should usually be accessed with {@link RV3D_LOCK_FLAGS()} ! </p>
+	 * <p> Should usually be accessed with RV3D_LOCK_FLAGS() ! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -742,7 +742,7 @@ public class RegionView3D extends CFacade {
 	 * Field descriptor (offset) for struct member 'runtime_viewlock'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Options for runtime only locking (cleared on file read) Should usually be accessed with {@link RV3D_LOCK_FLAGS()} ! </p>
+	 * <p> Options for runtime only locking (cleared on file read) Should usually be accessed with RV3D_LOCK_FLAGS() ! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2252,7 +2252,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'viewlock'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Should usually be accessed with {@link RV3D_LOCK_FLAGS()} ! </p>
+	 * <p> Should usually be accessed with RV3D_LOCK_FLAGS() ! </p>
 	 * @see #__DNA__FIELD__viewlock
 	 */
 	
@@ -2269,7 +2269,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'viewlock'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Should usually be accessed with {@link RV3D_LOCK_FLAGS()} ! </p>
+	 * <p> Should usually be accessed with RV3D_LOCK_FLAGS() ! </p>
 	 * @see #__DNA__FIELD__viewlock
 	 */
 	
@@ -2286,7 +2286,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'runtime_viewlock'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Options for runtime only locking (cleared on file read) Should usually be accessed with {@link RV3D_LOCK_FLAGS()} ! </p>
+	 * <p> Options for runtime only locking (cleared on file read) Should usually be accessed with RV3D_LOCK_FLAGS() ! </p>
 	 * @see #__DNA__FIELD__runtime_viewlock
 	 */
 	
@@ -2303,7 +2303,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'runtime_viewlock'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Options for runtime only locking (cleared on file read) Should usually be accessed with {@link RV3D_LOCK_FLAGS()} ! </p>
+	 * <p> Options for runtime only locking (cleared on file read) Should usually be accessed with RV3D_LOCK_FLAGS() ! </p>
 	 * @see #__DNA__FIELD__runtime_viewlock
 	 */
 	

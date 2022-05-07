@@ -34,7 +34,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Field descriptor (offset) for struct member 'display_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.display}  </p>
+	 * <p>{@link FileSelectParams#display}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -80,7 +80,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Field descriptor (offset) for struct member 'sort_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.sort}  </p>
+	 * <p>{@link FileSelectParams#sort}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -103,7 +103,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Field descriptor (offset) for struct member 'details_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.details_flags}  </p>
+	 * <p>{@link FileSelectParams#details_flags}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -126,7 +126,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.flag}  </p>
+	 * <p>{@link FileSelectParams#flag}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -169,7 +169,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Field descriptor (offset) for struct member 'filter_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.filter_id}  </p>
+	 * <p>{@link FileSelectParams#filter_id}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -243,7 +243,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Get method for struct member 'display_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.display}  </p>
+	 * <p>{@link FileSelectParams#display}  </p>
 	 * @see #__DNA__FIELD__display_type
 	 */
 	
@@ -260,7 +260,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Set method for struct member 'display_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.display}  </p>
+	 * <p>{@link FileSelectParams#display}  </p>
 	 * @see #__DNA__FIELD__display_type
 	 */
 	
@@ -311,7 +311,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Get method for struct member 'sort_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.sort}  </p>
+	 * <p>{@link FileSelectParams#sort}  </p>
 	 * @see #__DNA__FIELD__sort_type
 	 */
 	
@@ -328,7 +328,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Set method for struct member 'sort_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.sort}  </p>
+	 * <p>{@link FileSelectParams#sort}  </p>
 	 * @see #__DNA__FIELD__sort_type
 	 */
 	
@@ -345,7 +345,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Get method for struct member 'details_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.details_flags}  </p>
+	 * <p>{@link FileSelectParams#details_flags}  </p>
 	 * @see #__DNA__FIELD__details_flags
 	 */
 	
@@ -362,7 +362,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Set method for struct member 'details_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.details_flags}  </p>
+	 * <p>{@link FileSelectParams#details_flags}  </p>
 	 * @see #__DNA__FIELD__details_flags
 	 */
 	
@@ -379,7 +379,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.flag}  </p>
+	 * <p>{@link FileSelectParams#flag}  </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -396,7 +396,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.flag}  </p>
+	 * <p>{@link FileSelectParams#flag}  </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -441,7 +441,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Get method for struct member 'filter_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.filter_id}  </p>
+	 * <p>{@link FileSelectParams#filter_id}  </p>
 	 * @see #__DNA__FIELD__filter_id
 	 */
 	
@@ -458,7 +458,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * Set method for struct member 'filter_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.filter_id}  </p>
+	 * <p>{@link FileSelectParams#filter_id}  </p>
 	 * @see #__DNA__FIELD__filter_id
 	 */
 	

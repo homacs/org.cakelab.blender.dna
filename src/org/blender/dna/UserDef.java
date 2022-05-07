@@ -77,7 +77,7 @@ public class UserDef extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eUserPref_Flag} . </p>
+	 * <p>eUserPref_Flag . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -100,7 +100,7 @@ public class UserDef extends CFacade {
 	 * Field descriptor (offset) for struct member 'dupflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eDupli_ID_Flags} . </p>
+	 * <p>eDupli_ID_Flags . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -467,7 +467,7 @@ public class UserDef extends CFacade {
 	 * Field descriptor (offset) for struct member 'timecode_style'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eTimecodeStyles} , style of time-code display. </p>
+	 * <p>eTimecodeStyles , style of time-code display. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -570,7 +570,7 @@ public class UserDef extends CFacade {
 	 * Field descriptor (offset) for struct member 'uiflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eUserpref_UI_Flag} . </p>
+	 * <p>eUserpref_UI_Flag . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -593,7 +593,7 @@ public class UserDef extends CFacade {
 	 * Field descriptor (offset) for struct member 'uiflag2'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eUserpref_UI_Flag2} . </p>
+	 * <p>eUserpref_UI_Flag2 . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1046,7 +1046,7 @@ public class UserDef extends CFacade {
 	 * Field descriptor (offset) for struct member 'transopts'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eUserpref_Translation_Flags} . </p>
+	 * <p>eUserpref_Translation_Flags . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1486,7 +1486,7 @@ public class UserDef extends CFacade {
 	 * Field descriptor (offset) for struct member 'gp_settings'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eGP_UserdefSettings} . </p>
+	 * <p>eGP_UserdefSettings . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1973,7 +1973,7 @@ public class UserDef extends CFacade {
 	 * Field descriptor (offset) for struct member 'color_picker_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eColorPicker_Types} . </p>
+	 * <p>eColorPicker_Types . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2085,7 +2085,7 @@ public class UserDef extends CFacade {
 	 * Field descriptor (offset) for struct member 'view_frame_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eZoomFrame_Mode} . </p>
+	 * <p>eZoomFrame_Mode . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2352,7 +2352,7 @@ public class UserDef extends CFacade {
 	 * Field descriptor (offset) for struct member 'ndof_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eNdof_Flag} , flags for 3D mouse. </p>
+	 * <p>eNdof_Flag , flags for 3D mouse. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2375,7 +2375,7 @@ public class UserDef extends CFacade {
 	 * Field descriptor (offset) for struct member 'ogl_multisamples'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eMultiSample_Type} , amount of samples for OpenGL FSA, if zero no FSA. </p>
+	 * <p>eMultiSample_Type , amount of samples for OpenGL FSA, if zero no FSA. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2441,7 +2441,7 @@ public class UserDef extends CFacade {
 	 * Field descriptor (offset) for struct member 'autokey_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eAutokey_Mode} , autokeying mode. </p>
+	 * <p>eAutokey_Mode , autokeying mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3480,7 +3480,7 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eUserPref_Flag} . </p>
+	 * <p>eUserPref_Flag . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -3497,7 +3497,7 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eUserPref_Flag} . </p>
+	 * <p>eUserPref_Flag . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -3514,7 +3514,7 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'dupflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eDupli_ID_Flags} . </p>
+	 * <p>eDupli_ID_Flags . </p>
 	 * @see #__DNA__FIELD__dupflag
 	 */
 	
@@ -3531,7 +3531,7 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'dupflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eDupli_ID_Flags} . </p>
+	 * <p>eDupli_ID_Flags . </p>
 	 * @see #__DNA__FIELD__dupflag
 	 */
 	
@@ -4176,7 +4176,7 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'timecode_style'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eTimecodeStyles} , style of time-code display. </p>
+	 * <p>eTimecodeStyles , style of time-code display. </p>
 	 * @see #__DNA__FIELD__timecode_style
 	 */
 	
@@ -4193,7 +4193,7 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'timecode_style'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eTimecodeStyles} , style of time-code display. </p>
+	 * <p>eTimecodeStyles , style of time-code display. </p>
 	 * @see #__DNA__FIELD__timecode_style
 	 */
 	
@@ -4334,7 +4334,7 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'uiflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eUserpref_UI_Flag} . </p>
+	 * <p>eUserpref_UI_Flag . </p>
 	 * @see #__DNA__FIELD__uiflag
 	 */
 	
@@ -4351,7 +4351,7 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'uiflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eUserpref_UI_Flag} . </p>
+	 * <p>eUserpref_UI_Flag . </p>
 	 * @see #__DNA__FIELD__uiflag
 	 */
 	
@@ -4368,7 +4368,7 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'uiflag2'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eUserpref_UI_Flag2} . </p>
+	 * <p>eUserpref_UI_Flag2 . </p>
 	 * @see #__DNA__FIELD__uiflag2
 	 */
 	
@@ -4385,7 +4385,7 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'uiflag2'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eUserpref_UI_Flag2} . </p>
+	 * <p>eUserpref_UI_Flag2 . </p>
 	 * @see #__DNA__FIELD__uiflag2
 	 */
 	
@@ -5046,7 +5046,7 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'transopts'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eUserpref_Translation_Flags} . </p>
+	 * <p>eUserpref_Translation_Flags . </p>
 	 * @see #__DNA__FIELD__transopts
 	 */
 	
@@ -5063,7 +5063,7 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'transopts'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eUserpref_Translation_Flags} . </p>
+	 * <p>eUserpref_Translation_Flags . </p>
 	 * @see #__DNA__FIELD__transopts
 	 */
 	
@@ -5782,7 +5782,7 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'gp_settings'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eGP_UserdefSettings} . </p>
+	 * <p>eGP_UserdefSettings . </p>
 	 * @see #__DNA__FIELD__gp_settings
 	 */
 	
@@ -5799,7 +5799,7 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'gp_settings'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eGP_UserdefSettings} . </p>
+	 * <p>eGP_UserdefSettings . </p>
 	 * @see #__DNA__FIELD__gp_settings
 	 */
 	
@@ -6540,7 +6540,7 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'color_picker_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eColorPicker_Types} . </p>
+	 * <p>eColorPicker_Types . </p>
 	 * @see #__DNA__FIELD__color_picker_type
 	 */
 	
@@ -6557,7 +6557,7 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'color_picker_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eColorPicker_Types} . </p>
+	 * <p>eColorPicker_Types . </p>
 	 * @see #__DNA__FIELD__color_picker_type
 	 */
 	
@@ -6716,7 +6716,7 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'view_frame_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eZoomFrame_Mode} . </p>
+	 * <p>eZoomFrame_Mode . </p>
 	 * @see #__DNA__FIELD__view_frame_type
 	 */
 	
@@ -6733,7 +6733,7 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'view_frame_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eZoomFrame_Mode} . </p>
+	 * <p>eZoomFrame_Mode . </p>
 	 * @see #__DNA__FIELD__view_frame_type
 	 */
 	
@@ -7118,7 +7118,7 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'ndof_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eNdof_Flag} , flags for 3D mouse. </p>
+	 * <p>eNdof_Flag , flags for 3D mouse. </p>
 	 * @see #__DNA__FIELD__ndof_flag
 	 */
 	
@@ -7135,7 +7135,7 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'ndof_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eNdof_Flag} , flags for 3D mouse. </p>
+	 * <p>eNdof_Flag , flags for 3D mouse. </p>
 	 * @see #__DNA__FIELD__ndof_flag
 	 */
 	
@@ -7152,7 +7152,7 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'ogl_multisamples'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eMultiSample_Type} , amount of samples for OpenGL FSA, if zero no FSA. </p>
+	 * <p>eMultiSample_Type , amount of samples for OpenGL FSA, if zero no FSA. </p>
 	 * @see #__DNA__FIELD__ogl_multisamples
 	 */
 	
@@ -7169,7 +7169,7 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'ogl_multisamples'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eMultiSample_Type} , amount of samples for OpenGL FSA, if zero no FSA. </p>
+	 * <p>eMultiSample_Type , amount of samples for OpenGL FSA, if zero no FSA. </p>
 	 * @see #__DNA__FIELD__ogl_multisamples
 	 */
 	
@@ -7248,7 +7248,7 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'autokey_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eAutokey_Mode} , autokeying mode. </p>
+	 * <p>eAutokey_Mode , autokeying mode. </p>
 	 * @see #__DNA__FIELD__autokey_mode
 	 */
 	
@@ -7265,7 +7265,7 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'autokey_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eAutokey_Mode} , autokeying mode. </p>
+	 * <p>eAutokey_Mode , autokeying mode. </p>
 	 * @see #__DNA__FIELD__autokey_mode
 	 */
 	

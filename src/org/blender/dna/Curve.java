@@ -1551,7 +1551,7 @@ public class Curve extends CFacade {
 	 * Field descriptor (offset) for struct member 'curve_eval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> A pointer to curve data from evaluation. Owned by the object's #geometry_set_eval, either as a geometry instance or the data of the evaluated #CurveComponent. The curve may also contain data in the {@link nurb}  list, but for evaluated curves this is the proper place to retrieve data, since it also contains the result of geometry nodes evaluation, and isn't just a copy of the original object data. </p>
+	 * <p> A pointer to curve data from evaluation. Owned by the object's #geometry_set_eval, either as a geometry instance or the data of the evaluated #CurveComponent. The curve may also contain data in the {@link #nurb}  list, but for evaluated curves this is the proper place to retrieve data, since it also contains the result of geometry nodes evaluation, and isn't just a copy of the original object data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3912,7 +3912,7 @@ public class Curve extends CFacade {
 	 * Get method for struct member 'curve_eval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> A pointer to curve data from evaluation. Owned by the object's #geometry_set_eval, either as a geometry instance or the data of the evaluated #CurveComponent. The curve may also contain data in the {@link nurb}  list, but for evaluated curves this is the proper place to retrieve data, since it also contains the result of geometry nodes evaluation, and isn't just a copy of the original object data. </p>
+	 * <p> A pointer to curve data from evaluation. Owned by the object's #geometry_set_eval, either as a geometry instance or the data of the evaluated #CurveComponent. The curve may also contain data in the {@link #nurb}  list, but for evaluated curves this is the proper place to retrieve data, since it also contains the result of geometry nodes evaluation, and isn't just a copy of the original object data. </p>
 	 * @see #__DNA__FIELD__curve_eval
 	 */
 	
@@ -3932,7 +3932,7 @@ public class Curve extends CFacade {
 	 * Set method for struct member 'curve_eval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> A pointer to curve data from evaluation. Owned by the object's #geometry_set_eval, either as a geometry instance or the data of the evaluated #CurveComponent. The curve may also contain data in the {@link nurb}  list, but for evaluated curves this is the proper place to retrieve data, since it also contains the result of geometry nodes evaluation, and isn't just a copy of the original object data. </p>
+	 * <p> A pointer to curve data from evaluation. Owned by the object's #geometry_set_eval, either as a geometry instance or the data of the evaluated #CurveComponent. The curve may also contain data in the {@link #nurb}  list, but for evaluated curves this is the proper place to retrieve data, since it also contains the result of geometry nodes evaluation, and isn't just a copy of the original object data. </p>
 	 * @see #__DNA__FIELD__curve_eval
 	 */
 	

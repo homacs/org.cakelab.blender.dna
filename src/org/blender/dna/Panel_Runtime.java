@@ -34,7 +34,7 @@ public class Panel_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'region_ofsx'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Applied to {@link Panel.ofsx} , but saved separately so we can track changes between redraws. </p>
+	 * <p> Applied to {@link Panel#ofsx} , but saved separately so we can track changes between redraws. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -156,7 +156,7 @@ public class Panel_Runtime extends CFacade {
 	 * Get method for struct member 'region_ofsx'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Applied to {@link Panel.ofsx} , but saved separately so we can track changes between redraws. </p>
+	 * <p> Applied to {@link Panel#ofsx} , but saved separately so we can track changes between redraws. </p>
 	 * @see #__DNA__FIELD__region_ofsx
 	 */
 	
@@ -173,7 +173,7 @@ public class Panel_Runtime extends CFacade {
 	 * Set method for struct member 'region_ofsx'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Applied to {@link Panel.ofsx} , but saved separately so we can track changes between redraws. </p>
+	 * <p> Applied to {@link Panel#ofsx} , but saved separately so we can track changes between redraws. </p>
 	 * @see #__DNA__FIELD__region_ofsx
 	 */
 	

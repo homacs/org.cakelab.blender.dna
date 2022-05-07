@@ -703,7 +703,7 @@ public class ToolSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'particle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  {@link Editing}  </p>
+	 * <p>Particle  {@link Editing}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -773,7 +773,7 @@ public class ToolSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'autokey_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Auto-Keying Mode Defines in {@link DNA_userdef_types.h} . </p>
+	 * <p> Auto-Keying Mode Defines in DNA_userdef_types.h . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -817,7 +817,7 @@ public class ToolSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Type of keyframes to create when inserting keyframes<h4>Blender Source Code:</h4>
-	 * <p> Keyframe type (see {@link DNA_curve_types.h} ). </p>
+	 * <p> Keyframe type (see DNA_curve_types.h ). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2811,7 +2811,7 @@ public class ToolSettings extends CFacade {
 	 * Get method for struct member 'particle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  {@link Editing}  </p>
+	 * <p>Particle  {@link Editing}  </p>
 	 * @see #__DNA__FIELD__particle
 	 */
 	
@@ -2828,7 +2828,7 @@ public class ToolSettings extends CFacade {
 	 * Set method for struct member 'particle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  {@link Editing}  </p>
+	 * <p>Particle  {@link Editing}  </p>
 	 * @see #__DNA__FIELD__particle
 	 */
 	
@@ -2923,7 +2923,7 @@ public class ToolSettings extends CFacade {
 	 * Get method for struct member 'autokey_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Auto-Keying Mode Defines in {@link DNA_userdef_types.h} . </p>
+	 * <p> Auto-Keying Mode Defines in DNA_userdef_types.h . </p>
 	 * @see #__DNA__FIELD__autokey_flag
 	 */
 	
@@ -2940,7 +2940,7 @@ public class ToolSettings extends CFacade {
 	 * Set method for struct member 'autokey_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Auto-Keying Mode Defines in {@link DNA_userdef_types.h} . </p>
+	 * <p> Auto-Keying Mode Defines in DNA_userdef_types.h . </p>
 	 * @see #__DNA__FIELD__autokey_flag
 	 */
 	
@@ -2986,7 +2986,7 @@ public class ToolSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Type of keyframes to create when inserting keyframes<h4>Blender Source Code:</h4>
-	 * <p> Keyframe type (see {@link DNA_curve_types.h} ). </p>
+	 * <p> Keyframe type (see DNA_curve_types.h ). </p>
 	 * @see #__DNA__FIELD__keyframe_type
 	 */
 	
@@ -3004,7 +3004,7 @@ public class ToolSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Type of keyframes to create when inserting keyframes<h4>Blender Source Code:</h4>
-	 * <p> Keyframe type (see {@link DNA_curve_types.h} ). </p>
+	 * <p> Keyframe type (see DNA_curve_types.h ). </p>
 	 * @see #__DNA__FIELD__keyframe_type
 	 */
 	

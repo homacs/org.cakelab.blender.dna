@@ -77,7 +77,7 @@ public class ParticleSystem extends CFacade {
 	 * Field descriptor (offset) for struct member 'part'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  settings. </p>
+	 * <p>Particle  settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -147,7 +147,7 @@ public class ParticleSystem extends CFacade {
 	 * Field descriptor (offset) for struct member 'edit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  editmode (runtime). </p>
+	 * <p>Particle  editmode (runtime). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -417,7 +417,7 @@ public class ParticleSystem extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Particle system name<h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  system name, MAX_NAME. </p>
+	 * <p>Particle  system name, MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1257,7 +1257,7 @@ public class ParticleSystem extends CFacade {
 	 * Get method for struct member 'part'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  settings. </p>
+	 * <p>Particle  settings. </p>
 	 * @see #__DNA__FIELD__part
 	 */
 	
@@ -1277,7 +1277,7 @@ public class ParticleSystem extends CFacade {
 	 * Set method for struct member 'part'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  settings. </p>
+	 * <p>Particle  settings. </p>
 	 * @see #__DNA__FIELD__part
 	 */
 	
@@ -1373,7 +1373,7 @@ public class ParticleSystem extends CFacade {
 	 * Get method for struct member 'edit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  editmode (runtime). </p>
+	 * <p>Particle  editmode (runtime). </p>
 	 * @see #__DNA__FIELD__edit
 	 */
 	
@@ -1393,7 +1393,7 @@ public class ParticleSystem extends CFacade {
 	 * Set method for struct member 'edit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  editmode (runtime). </p>
+	 * <p>Particle  editmode (runtime). </p>
 	 * @see #__DNA__FIELD__edit
 	 */
 	
@@ -1828,7 +1828,7 @@ public class ParticleSystem extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Particle system name<h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  system name, MAX_NAME. </p>
+	 * <p>Particle  system name, MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -1850,7 +1850,7 @@ public class ParticleSystem extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Particle system name<h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  system name, MAX_NAME. </p>
+	 * <p>Particle  system name, MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	

@@ -166,7 +166,7 @@ public class bNodeSocket extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The socket's data type. {@link eNodeSocketDatatype} . </p>
+	 * <p> The socket's data type. eNodeSocketDatatype . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -189,7 +189,7 @@ public class bNodeSocket extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eNodeSocketFlag}  </p>
+	 * <p>eNodeSocketFlag  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -981,7 +981,7 @@ public class bNodeSocket extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The socket's data type. {@link eNodeSocketDatatype} . </p>
+	 * <p> The socket's data type. eNodeSocketDatatype . </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -998,7 +998,7 @@ public class bNodeSocket extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The socket's data type. {@link eNodeSocketDatatype} . </p>
+	 * <p> The socket's data type. eNodeSocketDatatype . </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1015,7 +1015,7 @@ public class bNodeSocket extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eNodeSocketFlag}  </p>
+	 * <p>eNodeSocketFlag  </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -1032,7 +1032,7 @@ public class bNodeSocket extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eNodeSocketFlag}  </p>
+	 * <p>eNodeSocketFlag  </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

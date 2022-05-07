@@ -55,7 +55,7 @@ public class UserDef_SpaceData extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eUserPref_SpaceData_Flag}  UI options. </p>
+	 * <p>eUserPref_SpaceData_Flag  UI options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -134,7 +134,7 @@ public class UserDef_SpaceData extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eUserPref_SpaceData_Flag}  UI options. </p>
+	 * <p>eUserPref_SpaceData_Flag  UI options. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -151,7 +151,7 @@ public class UserDef_SpaceData extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eUserPref_SpaceData_Flag}  UI options. </p>
+	 * <p>eUserPref_SpaceData_Flag  UI options. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

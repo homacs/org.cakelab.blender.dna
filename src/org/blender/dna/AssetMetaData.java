@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> The meta-data of an asset. By creating and giving this for a data-block ({@link ID.asset_data} ), the data-block becomes an asset. </p><p><h2>Note</h2><p> This struct must be readable without having to read anything but blocks from the {@link ID}  it is attached to! That way, asset information of a file can be read, without reading anything more than that from the file. So pointers to other IDs or {@link ID}  data are strictly forbidden. </p> This struct must be readable without having to read anything but blocks from the ID it is attached to! That way, asset information of a file can be read, without reading anything more than that from the file. So pointers to other IDs or ID data are strictly forbidden. 
+ * <p> The meta-data of an asset. By creating and giving this for a data-block ({@link ID#asset_data} ), the data-block becomes an asset. </p><p><h2>Note</h2><p> This struct must be readable without having to read anything but blocks from the {@link ID}  it is attached to! That way, asset information of a file can be read, without reading anything more than that from the file. So pointers to other IDs or {@link ID}  data are strictly forbidden. </p> This struct must be readable without having to read anything but blocks from the ID it is attached to! That way, asset information of a file can be read, without reading anything more than that from the file. So pointers to other IDs or ID data are strictly forbidden. 
  * 
  * </p>
  */
@@ -108,7 +108,7 @@ public class AssetMetaData extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Simple name of the asset's catalog, for debugging and data recovery purposes<h4>Blender Source Code:</h4>
-	 * <p> Short name of the asset's catalog. This is for debugging purposes only, to allow (partial) reconstruction of asset catalogs in the unfortunate case that the mapping from catalog UUID to catalog path is lost. The catalog's simple name is copied to {@link catalog_simple_name}  whenever {@link catalog_id}  is updated. MAX_NAME </p>
+	 * <p> Short name of the asset's catalog. This is for debugging purposes only, to allow (partial) reconstruction of asset catalogs in the unfortunate case that the mapping from catalog UUID to catalog path is lost. The catalog's simple name is copied to {@link #catalog_simple_name}  whenever {@link #catalog_id}  is updated. MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -398,7 +398,7 @@ public class AssetMetaData extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Simple name of the asset's catalog, for debugging and data recovery purposes<h4>Blender Source Code:</h4>
-	 * <p> Short name of the asset's catalog. This is for debugging purposes only, to allow (partial) reconstruction of asset catalogs in the unfortunate case that the mapping from catalog UUID to catalog path is lost. The catalog's simple name is copied to {@link catalog_simple_name}  whenever {@link catalog_id}  is updated. MAX_NAME </p>
+	 * <p> Short name of the asset's catalog. This is for debugging purposes only, to allow (partial) reconstruction of asset catalogs in the unfortunate case that the mapping from catalog UUID to catalog path is lost. The catalog's simple name is copied to {@link #catalog_simple_name}  whenever {@link #catalog_id}  is updated. MAX_NAME </p>
 	 * @see #__DNA__FIELD__catalog_simple_name
 	 */
 	
@@ -420,7 +420,7 @@ public class AssetMetaData extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Simple name of the asset's catalog, for debugging and data recovery purposes<h4>Blender Source Code:</h4>
-	 * <p> Short name of the asset's catalog. This is for debugging purposes only, to allow (partial) reconstruction of asset catalogs in the unfortunate case that the mapping from catalog UUID to catalog path is lost. The catalog's simple name is copied to {@link catalog_simple_name}  whenever {@link catalog_id}  is updated. MAX_NAME </p>
+	 * <p> Short name of the asset's catalog. This is for debugging purposes only, to allow (partial) reconstruction of asset catalogs in the unfortunate case that the mapping from catalog UUID to catalog path is lost. The catalog's simple name is copied to {@link #catalog_simple_name}  whenever {@link #catalog_id}  is updated. MAX_NAME </p>
 	 * @see #__DNA__FIELD__catalog_simple_name
 	 */
 	

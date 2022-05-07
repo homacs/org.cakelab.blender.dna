@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> A wrapper to store previous and next folder lists (#FolderList) for a specific browse mode ({@link eFileBrowse_Mode} ). </p>
+ * <p> A wrapper to store previous and next folder lists (#FolderList) for a specific browse mode (eFileBrowse_Mode ). </p>
  */
 
 @CMetaData(size32=32, size64=56)

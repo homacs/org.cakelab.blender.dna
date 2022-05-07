@@ -117,7 +117,7 @@ public class FMod_FunctionGenerator extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags {@link eFMod_Generator_Functions} . </p>
+	 * <p> flags eFMod_Generator_Functions . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -289,7 +289,7 @@ public class FMod_FunctionGenerator extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags {@link eFMod_Generator_Functions} . </p>
+	 * <p> flags eFMod_Generator_Functions . </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -306,7 +306,7 @@ public class FMod_FunctionGenerator extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags {@link eFMod_Generator_Functions} . </p>
+	 * <p> flags eFMod_Generator_Functions . </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	

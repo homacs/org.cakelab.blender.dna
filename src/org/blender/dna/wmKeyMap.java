@@ -138,7 +138,7 @@ public class wmKeyMap extends CFacade {
 	 * Field descriptor (offset) for struct member 'spaceid'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Same IDs as in {@link DNA_space_types.h} . </p>
+	 * <p> Same IDs as in DNA_space_types.h . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -466,7 +466,7 @@ public class wmKeyMap extends CFacade {
 	 * Get method for struct member 'spaceid'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Same IDs as in {@link DNA_space_types.h} . </p>
+	 * <p> Same IDs as in DNA_space_types.h . </p>
 	 * @see #__DNA__FIELD__spaceid
 	 */
 	
@@ -483,7 +483,7 @@ public class wmKeyMap extends CFacade {
 	 * Set method for struct member 'spaceid'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Same IDs as in {@link DNA_space_types.h} . </p>
+	 * <p> Same IDs as in DNA_space_types.h . </p>
 	 * @see #__DNA__FIELD__spaceid
 	 */
 	

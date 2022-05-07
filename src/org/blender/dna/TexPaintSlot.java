@@ -57,7 +57,7 @@ public class TexPaintSlot extends CFacade {
 	 * Field descriptor (offset) for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Custom-data index for uv layer, {@link MAX_NAME} . </p>
+	 * <p> Custom-data index for uv layer, MAX_NAME . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -172,7 +172,7 @@ public class TexPaintSlot extends CFacade {
 	 * Get method for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Custom-data index for uv layer, {@link MAX_NAME} . </p>
+	 * <p> Custom-data index for uv layer, MAX_NAME . </p>
 	 * @see #__DNA__FIELD__uvname
 	 */
 	
@@ -192,7 +192,7 @@ public class TexPaintSlot extends CFacade {
 	 * Set method for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Custom-data index for uv layer, {@link MAX_NAME} . </p>
+	 * <p> Custom-data index for uv layer, MAX_NAME . </p>
 	 * @see #__DNA__FIELD__uvname
 	 */
 	

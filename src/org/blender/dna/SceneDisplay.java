@@ -36,7 +36,7 @@ public class SceneDisplay extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Direction of the light for shadows and highlights<h4>Blender Source Code:</h4>
-	 * <p>{@link Light}  direction for shadows/highlight. </p>
+	 * <p>Light  direction for shadows/highlight. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -275,7 +275,7 @@ public class SceneDisplay extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Direction of the light for shadows and highlights<h4>Blender Source Code:</h4>
-	 * <p>{@link Light}  direction for shadows/highlight. </p>
+	 * <p>Light  direction for shadows/highlight. </p>
 	 * @see #__DNA__FIELD__light_direction
 	 */
 	
@@ -297,7 +297,7 @@ public class SceneDisplay extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Direction of the light for shadows and highlights<h4>Blender Source Code:</h4>
-	 * <p>{@link Light}  direction for shadows/highlight. </p>
+	 * <p>Light  direction for shadows/highlight. </p>
 	 * @see #__DNA__FIELD__light_direction
 	 */
 	

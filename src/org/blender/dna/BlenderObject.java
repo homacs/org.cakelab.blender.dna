@@ -21,7 +21,7 @@ import org.cakelab.blender.nio.CPointer;
  * 			There are the following types of objects:
  * 			</p>
  * 			<table border="1">
- * 				<tr><th>Name</th><th>type id<br/>(see {@link #getType()})</th><th>Data type<br/>(see {@link #getData()})</th><tr>
+ * 				<tr><th>Name</th><th>type id<br/>(see #getType())</th><th>Data type<br/>(see #getData())</th><tr>
  * 				<tr><td>OB_EMPTY</td><td>0</td><td>--</td></tr>
  * 				<tr><td>OB_MESH</td><td>1</td><td>{@link Mesh}</td></tr>
  * 				<tr><td>OB_CURVE</td><td>2</td><td>{@link Curve}</td></tr>
@@ -36,7 +36,7 @@ import org.cakelab.blender.nio.CPointer;
  * 				<tr><td>OB_ARMATURE</td><td>25</td><td>{@link bArmature}</td></tr>
  * 			</table>
  * 			<p>
- * 			The type of an object defines what type of data is to be retrieved from {@link #getData()}.			
+ * 			The type of an object defines what type of data is to be retrieved from #getData().			
  * 			</p>
  */
 
@@ -877,7 +877,7 @@ public class BlenderObject extends CFacade {
 	 * Field descriptor (offset) for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Material slots. Pointer on a list of pointers on instances of {@link Material}.<br/><b>see</b> {@link #getTotcol()}<h4>Blender Source Code:</h4>
+	 * Material slots. Pointer on a list of pointers on instances of {@link Material}.<br/><b>see</b> #getTotcol()<h4>Blender Source Code:</h4>
 	 * <p> materials {@link Material}  slots. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -925,7 +925,7 @@ public class BlenderObject extends CFacade {
 	 * Field descriptor (offset) for struct member 'totcol'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Number of available material slots (see {@link #getMat()}). Copy of {@link Mesh#getTotcol()}, {@link Curve#getTotcol()} and meta struct member of same name (keep in sync).<h4>Blender Source Code:</h4>
+	 * Number of available material slots (see #getMat()). Copy of Mesh#getTotcol(), Curve#getTotcol() and meta struct member of same name (keep in sync).<h4>Blender Source Code:</h4>
 	 * <p> Copy of mesh, curve & meta struct member of same name (keep in sync). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1765,7 +1765,7 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * rotation mode - uses defines set out in DNA_action_types.h for PoseChannel rotations...<h4>Blender Source Code:</h4>
-	 * <p> Rotation mode - uses defines set out in {@link DNA_action_types.h}  for PoseChannel rotations.... </p>
+	 * <p> Rotation mode - uses defines set out in DNA_action_types.h  for PoseChannel rotations.... </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2306,7 +2306,7 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * particle systems<h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  systems. </p>
+	 * <p>Particle  systems. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2330,7 +2330,7 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * particle deflector/attractor/collision data<h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  deflector/attractor/collision data. </p>
+	 * <p>Particle  deflector/attractor/collision data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -4118,7 +4118,7 @@ public class BlenderObject extends CFacade {
 	 * Get method for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Material slots. Pointer on a list of pointers on instances of {@link Material}.<br/><b>see</b> {@link #getTotcol()}<h4>Blender Source Code:</h4>
+	 * Material slots. Pointer on a list of pointers on instances of {@link Material}.<br/><b>see</b> #getTotcol()<h4>Blender Source Code:</h4>
 	 * <p> materials {@link Material}  slots. </p>
 	 * @see #__DNA__FIELD__mat
 	 */
@@ -4139,7 +4139,7 @@ public class BlenderObject extends CFacade {
 	 * Set method for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Material slots. Pointer on a list of pointers on instances of {@link Material}.<br/><b>see</b> {@link #getTotcol()}<h4>Blender Source Code:</h4>
+	 * Material slots. Pointer on a list of pointers on instances of {@link Material}.<br/><b>see</b> #getTotcol()<h4>Blender Source Code:</h4>
 	 * <p> materials {@link Material}  slots. </p>
 	 * @see #__DNA__FIELD__mat
 	 */
@@ -4198,7 +4198,7 @@ public class BlenderObject extends CFacade {
 	 * Get method for struct member 'totcol'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Number of available material slots (see {@link #getMat()}). Copy of {@link Mesh#getTotcol()}, {@link Curve#getTotcol()} and meta struct member of same name (keep in sync).<h4>Blender Source Code:</h4>
+	 * Number of available material slots (see #getMat()). Copy of Mesh#getTotcol(), Curve#getTotcol() and meta struct member of same name (keep in sync).<h4>Blender Source Code:</h4>
 	 * <p> Copy of mesh, curve & meta struct member of same name (keep in sync). </p>
 	 * @see #__DNA__FIELD__totcol
 	 */
@@ -4216,7 +4216,7 @@ public class BlenderObject extends CFacade {
 	 * Set method for struct member 'totcol'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Number of available material slots (see {@link #getMat()}). Copy of {@link Mesh#getTotcol()}, {@link Curve#getTotcol()} and meta struct member of same name (keep in sync).<h4>Blender Source Code:</h4>
+	 * Number of available material slots (see #getMat()). Copy of Mesh#getTotcol(), Curve#getTotcol() and meta struct member of same name (keep in sync).<h4>Blender Source Code:</h4>
 	 * <p> Copy of mesh, curve & meta struct member of same name (keep in sync). </p>
 	 * @see #__DNA__FIELD__totcol
 	 */
@@ -5665,7 +5665,7 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * rotation mode - uses defines set out in DNA_action_types.h for PoseChannel rotations...<h4>Blender Source Code:</h4>
-	 * <p> Rotation mode - uses defines set out in {@link DNA_action_types.h}  for PoseChannel rotations.... </p>
+	 * <p> Rotation mode - uses defines set out in DNA_action_types.h  for PoseChannel rotations.... </p>
 	 * @see #__DNA__FIELD__rotmode
 	 */
 	
@@ -5683,7 +5683,7 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * rotation mode - uses defines set out in DNA_action_types.h for PoseChannel rotations...<h4>Blender Source Code:</h4>
-	 * <p> Rotation mode - uses defines set out in {@link DNA_action_types.h}  for PoseChannel rotations.... </p>
+	 * <p> Rotation mode - uses defines set out in DNA_action_types.h  for PoseChannel rotations.... </p>
 	 * @see #__DNA__FIELD__rotmode
 	 */
 	
@@ -6555,7 +6555,7 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * particle systems<h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  systems. </p>
+	 * <p>Particle  systems. </p>
 	 * @see #__DNA__FIELD__particlesystem
 	 */
 	
@@ -6573,7 +6573,7 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * particle systems<h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  systems. </p>
+	 * <p>Particle  systems. </p>
 	 * @see #__DNA__FIELD__particlesystem
 	 */
 	
@@ -6599,7 +6599,7 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * particle deflector/attractor/collision data<h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  deflector/attractor/collision data. </p>
+	 * <p>Particle  deflector/attractor/collision data. </p>
 	 * @see #__DNA__FIELD__pd
 	 */
 	
@@ -6620,7 +6620,7 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * particle deflector/attractor/collision data<h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  deflector/attractor/collision data. </p>
+	 * <p>Particle  deflector/attractor/collision data. </p>
 	 * @see #__DNA__FIELD__pd
 	 */
 	

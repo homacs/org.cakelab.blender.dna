@@ -747,7 +747,7 @@ public class bPoseChannel extends CFacade {
 	 * Field descriptor (offset) for struct member 'rotmode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eRotationModes}  - rotation representation to use. </p>
+	 * <p>eRotationModes  - rotation representation to use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -790,7 +790,7 @@ public class bPoseChannel extends CFacade {
 	 * Field descriptor (offset) for struct member 'chan_mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><code></code>  (without {@link Bone.arm_mat} ). </p>
+	 * <p><code></code>  (without {@link Bone#arm_mat} ). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2727,7 +2727,7 @@ public class bPoseChannel extends CFacade {
 	 * Get method for struct member 'rotmode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eRotationModes}  - rotation representation to use. </p>
+	 * <p>eRotationModes  - rotation representation to use. </p>
 	 * @see #__DNA__FIELD__rotmode
 	 */
 	
@@ -2744,7 +2744,7 @@ public class bPoseChannel extends CFacade {
 	 * Set method for struct member 'rotmode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eRotationModes}  - rotation representation to use. </p>
+	 * <p>eRotationModes  - rotation representation to use. </p>
 	 * @see #__DNA__FIELD__rotmode
 	 */
 	
@@ -2801,7 +2801,7 @@ public class bPoseChannel extends CFacade {
 	 * Get method for struct member 'chan_mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><code></code>  (without {@link Bone.arm_mat} ). </p>
+	 * <p><code></code>  (without {@link Bone#arm_mat} ). </p>
 	 * @see #__DNA__FIELD__chan_mat
 	 */
 	
@@ -2823,7 +2823,7 @@ public class bPoseChannel extends CFacade {
 	 * Set method for struct member 'chan_mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><code></code>  (without {@link Bone.arm_mat} ). </p>
+	 * <p><code></code>  (without {@link Bone#arm_mat} ). </p>
 	 * @see #__DNA__FIELD__chan_mat
 	 */
 	

@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Java .Blend:</h4>
  * An edge defined by two vertices v1 and v2. Vertex order does not tell which side is front facing. @see {@link MLoop}, {@link MVert}<h4>Blender Source Code:</h4>
- * <p>{@link Mesh}  Edges.</p><p> Typically accessed from {@link Mesh.medge}  </p>
+ * <p>{@link Mesh}  Edges.</p><p> Typically accessed from {@link Mesh#medge}  </p>
  */
 
 @CMetaData(size32=12, size64=12)

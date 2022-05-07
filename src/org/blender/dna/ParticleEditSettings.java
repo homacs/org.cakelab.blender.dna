@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p>{@link Particle}  Edit Mode Settings. </p>
+ * <p>Particle  Edit Mode Settings. </p>
  */
 
 @CMetaData(size32=160, size64=176)

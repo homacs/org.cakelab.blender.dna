@@ -877,7 +877,7 @@ public class FluidsimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'particleInfSize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  display - size scaling, and alpha influence. </p>
+	 * <p>Particle  display - size scaling, and alpha influence. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2493,7 +2493,7 @@ public class FluidsimSettings extends CFacade {
 	 * Get method for struct member 'particleInfSize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  display - size scaling, and alpha influence. </p>
+	 * <p>Particle  display - size scaling, and alpha influence. </p>
 	 * @see #__DNA__FIELD__particleInfSize
 	 */
 	
@@ -2510,7 +2510,7 @@ public class FluidsimSettings extends CFacade {
 	 * Set method for struct member 'particleInfSize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  display - size scaling, and alpha influence. </p>
+	 * <p>Particle  display - size scaling, and alpha influence. </p>
 	 * @see #__DNA__FIELD__particleInfSize
 	 */
 	

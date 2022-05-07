@@ -217,7 +217,7 @@ public class PointDensity extends CFacade {
 	 * Field descriptor (offset) for struct member 'object'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for '{@link Object} ' or '{@link Particle}  system' type - source object </p>
+	 * <p> for '{@link Object} ' or 'Particle  system' type - source object </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -882,7 +882,7 @@ public class PointDensity extends CFacade {
 	 * Get method for struct member 'object'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for '{@link Object} ' or '{@link Particle}  system' type - source object </p>
+	 * <p> for '{@link Object} ' or 'Particle  system' type - source object </p>
 	 * @see #__DNA__FIELD__object
 	 */
 	
@@ -902,7 +902,7 @@ public class PointDensity extends CFacade {
 	 * Set method for struct member 'object'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for '{@link Object} ' or '{@link Particle}  system' type - source object </p>
+	 * <p> for '{@link Object} ' or 'Particle  system' type - source object </p>
 	 * @see #__DNA__FIELD__object
 	 */
 	

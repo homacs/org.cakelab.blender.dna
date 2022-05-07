@@ -542,7 +542,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'brush_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Moved to '{@link Brush.gpencil_tool} '. 
+	 * <p> Moved to '{@link Brush#gpencil_tool} '. 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -1973,7 +1973,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * Get method for struct member 'brush_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Moved to '{@link Brush.gpencil_tool} '. 
+	 * <p> Moved to '{@link Brush#gpencil_tool} '. 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__brush_type
@@ -1992,7 +1992,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * Set method for struct member 'brush_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Moved to '{@link Brush.gpencil_tool} '. 
+	 * <p> Moved to '{@link Brush#gpencil_tool} '. 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__brush_type

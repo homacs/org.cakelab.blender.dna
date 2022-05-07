@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Action Editor Space. This is defined here instead of in {@link DNA_space_types.h}  </p>
+ * <p> Action Editor Space. This is defined here instead of in DNA_space_types.h  </p>
  */
 
 @CMetaData(size32=292, size64=336)

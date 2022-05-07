@@ -347,7 +347,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'wrapper_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eMeshWrapperType}  and others. </p>
+	 * <p>eMeshWrapperType  and others. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1120,7 +1120,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Get method for struct member 'wrapper_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eMeshWrapperType}  and others. </p>
+	 * <p>eMeshWrapperType  and others. </p>
 	 * @see #__DNA__FIELD__wrapper_type
 	 */
 	
@@ -1137,7 +1137,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Set method for struct member 'wrapper_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eMeshWrapperType}  and others. </p>
+	 * <p>eMeshWrapperType  and others. </p>
 	 * @see #__DNA__FIELD__wrapper_type
 	 */
 	
