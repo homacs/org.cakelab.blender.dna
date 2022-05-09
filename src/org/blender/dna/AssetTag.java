@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'AssetTag'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> User defined tag. Currently only used by assets, could be used more often at some point. Maybe add a custom icon and color to these in future? </p>
  */
 
@@ -74,8 +75,9 @@ public class AssetTag extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The identifier that makes up this tag<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * The identifier that makes up this tag
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -170,8 +172,9 @@ public class AssetTag extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The identifier that makes up this tag<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * The identifier that makes up this tag
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -192,8 +195,9 @@ public class AssetTag extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The identifier that makes up this tag<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * The identifier that makes up this tag
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FluidEffectorSettings'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Collision objects (filled with smoke). </p>
  */
 
@@ -34,7 +35,7 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  Runtime-only fields (from here on). <ndash/>  For fast RNA access. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -117,8 +118,9 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'surface_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Additional distance around mesh surface to consider as effector<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Additional distance around mesh surface to consider as effector
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  User-accessible fields (from here on). <ndash/>  Thickness of mesh surface, used in obstacle sdf. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -161,7 +163,7 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'subframes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of additional samples to take between frames to improve quality of fast moving effector objects
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -224,7 +226,7 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vel_multi'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Guiding options. Multiplier for object velocity. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -295,7 +297,7 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  Runtime-only fields (from here on). <ndash/>  For fast RNA access. </p>
 	 * @see #__DNA__FIELD__fmd
 	 */
@@ -315,7 +317,7 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  Runtime-only fields (from here on). <ndash/>  For fast RNA access. </p>
 	 * @see #__DNA__FIELD__fmd
 	 */
@@ -425,8 +427,9 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Get method for struct member 'surface_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Additional distance around mesh surface to consider as effector<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Additional distance around mesh surface to consider as effector
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  User-accessible fields (from here on). <ndash/>  Thickness of mesh surface, used in obstacle sdf. </p>
 	 * @see #__DNA__FIELD__surface_distance
 	 */
@@ -443,8 +446,9 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Set method for struct member 'surface_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Additional distance around mesh surface to consider as effector<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Additional distance around mesh surface to consider as effector
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  User-accessible fields (from here on). <ndash/>  Thickness of mesh surface, used in obstacle sdf. </p>
 	 * @see #__DNA__FIELD__surface_distance
 	 */
@@ -489,7 +493,7 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Get method for struct member 'subframes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of additional samples to take between frames to improve quality of fast moving effector objects
 	 * @see #__DNA__FIELD__subframes
 	 */
@@ -506,7 +510,7 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Set method for struct member 'subframes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of additional samples to take between frames to improve quality of fast moving effector objects
 	 * @see #__DNA__FIELD__subframes
 	 */
@@ -591,7 +595,7 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Get method for struct member 'vel_multi'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Guiding options. Multiplier for object velocity. </p>
 	 * @see #__DNA__FIELD__vel_multi
 	 */
@@ -608,7 +612,7 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Set method for struct member 'vel_multi'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Guiding options. Multiplier for object velocity. </p>
 	 * @see #__DNA__FIELD__vel_multi
 	 */

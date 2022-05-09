@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Paint'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p>{@link Paint}  Tool {@link Base} . </p>
  */
 
@@ -34,7 +35,7 @@ public class Paint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'brush'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Active Brush
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,8 +58,9 @@ public class Paint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tool_slots'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Each tool has its own active brush, The currently active tool is defined by the current 'brush'. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,7 +123,7 @@ public class Paint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'palette'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Active Palette
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -144,8 +146,9 @@ public class Paint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cavity_curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Editable cavity curve<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Editable cavity curve
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cavity curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -168,7 +171,7 @@ public class Paint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'paint_cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> WM {@link Paint}  cursor </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -211,7 +214,7 @@ public class Paint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> enum ePaintFlags </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -234,7 +237,7 @@ public class Paint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'num_input_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Paint}  stroke can use up to PAINT_MAX_INPUT_SAMPLES inputs to smooth the stroke </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -257,7 +260,7 @@ public class Paint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'symmetry_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> flags used for symmetry </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -280,7 +283,7 @@ public class Paint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tile_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Stride at which tiled strokes are copied
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -351,7 +354,7 @@ public class Paint extends CFacade {
 	/**
 	 * Get method for struct member 'brush'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Active Brush
 	 * @see #__DNA__FIELD__brush
 	 */
@@ -371,7 +374,7 @@ public class Paint extends CFacade {
 	/**
 	 * Set method for struct member 'brush'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Active Brush
 	 * @see #__DNA__FIELD__brush
 	 */
@@ -389,8 +392,9 @@ public class Paint extends CFacade {
 	/**
 	 * Get method for struct member 'tool_slots'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Each tool has its own active brush, The currently active tool is defined by the current 'brush'. </p>
 	 * @see #__DNA__FIELD__tool_slots
 	 */
@@ -410,8 +414,9 @@ public class Paint extends CFacade {
 	/**
 	 * Set method for struct member 'tool_slots'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Each tool has its own active brush, The currently active tool is defined by the current 'brush'. </p>
 	 * @see #__DNA__FIELD__tool_slots
 	 */
@@ -497,7 +502,7 @@ public class Paint extends CFacade {
 	/**
 	 * Get method for struct member 'palette'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Active Palette
 	 * @see #__DNA__FIELD__palette
 	 */
@@ -517,7 +522,7 @@ public class Paint extends CFacade {
 	/**
 	 * Set method for struct member 'palette'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Active Palette
 	 * @see #__DNA__FIELD__palette
 	 */
@@ -535,8 +540,9 @@ public class Paint extends CFacade {
 	/**
 	 * Get method for struct member 'cavity_curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Editable cavity curve<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Editable cavity curve
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cavity curve. </p>
 	 * @see #__DNA__FIELD__cavity_curve
 	 */
@@ -556,8 +562,9 @@ public class Paint extends CFacade {
 	/**
 	 * Set method for struct member 'cavity_curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Editable cavity curve<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Editable cavity curve
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cavity curve. </p>
 	 * @see #__DNA__FIELD__cavity_curve
 	 */
@@ -575,7 +582,7 @@ public class Paint extends CFacade {
 	/**
 	 * Get method for struct member 'paint_cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> WM {@link Paint}  cursor </p>
 	 * @see #__DNA__FIELD__paint_cursor
 	 */
@@ -595,7 +602,7 @@ public class Paint extends CFacade {
 	/**
 	 * Set method for struct member 'paint_cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> WM {@link Paint}  cursor </p>
 	 * @see #__DNA__FIELD__paint_cursor
 	 */
@@ -653,7 +660,7 @@ public class Paint extends CFacade {
 	/**
 	 * Get method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> enum ePaintFlags </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -670,7 +677,7 @@ public class Paint extends CFacade {
 	/**
 	 * Set method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> enum ePaintFlags </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -687,7 +694,7 @@ public class Paint extends CFacade {
 	/**
 	 * Get method for struct member 'num_input_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Paint}  stroke can use up to PAINT_MAX_INPUT_SAMPLES inputs to smooth the stroke </p>
 	 * @see #__DNA__FIELD__num_input_samples
 	 */
@@ -704,7 +711,7 @@ public class Paint extends CFacade {
 	/**
 	 * Set method for struct member 'num_input_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Paint}  stroke can use up to PAINT_MAX_INPUT_SAMPLES inputs to smooth the stroke </p>
 	 * @see #__DNA__FIELD__num_input_samples
 	 */
@@ -721,7 +728,7 @@ public class Paint extends CFacade {
 	/**
 	 * Get method for struct member 'symmetry_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> flags used for symmetry </p>
 	 * @see #__DNA__FIELD__symmetry_flags
 	 */
@@ -738,7 +745,7 @@ public class Paint extends CFacade {
 	/**
 	 * Set method for struct member 'symmetry_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> flags used for symmetry </p>
 	 * @see #__DNA__FIELD__symmetry_flags
 	 */
@@ -755,7 +762,7 @@ public class Paint extends CFacade {
 	/**
 	 * Get method for struct member 'tile_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Stride at which tiled strokes are copied
 	 * @see #__DNA__FIELD__tile_offset
 	 */
@@ -776,7 +783,7 @@ public class Paint extends CFacade {
 	/**
 	 * Set method for struct member 'tile_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Stride at which tiled strokes are copied
 	 * @see #__DNA__FIELD__tile_offset
 	 */

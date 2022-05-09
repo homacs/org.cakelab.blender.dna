@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'GP_Interpolate_Settings'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Settings for GP Interpolation Operators. </p>
  */
 
@@ -33,7 +34,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'custom_ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom interpolation curve (for use with GP_IPO_CURVEMAP). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -64,7 +65,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	/**
 	 * Get method for struct member 'custom_ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom interpolation curve (for use with GP_IPO_CURVEMAP). </p>
 	 * @see #__DNA__FIELD__custom_ipo
 	 */
@@ -84,7 +85,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	/**
 	 * Set method for struct member 'custom_ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom interpolation curve (for use with GP_IPO_CURVEMAP). </p>
 	 * @see #__DNA__FIELD__custom_ipo
 	 */

@@ -53,7 +53,7 @@ public class MirrorModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated, use flag instead. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -138,7 +138,7 @@ public class MirrorModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'use_correct_order_on_merge'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Mirror modifier used to merge the old vertex into its new copy, which would break code relying on access to the original geometry vertices. However, modifying this behavior to the correct one (i.e. merging the copy vertices into their original sources) has several potential effects on other modifiers and tools, so we need to keep that incorrect behavior for existing modifiers, and only use the new correct one for new modifiers. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -305,7 +305,7 @@ public class MirrorModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated, use flag instead. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -324,7 +324,7 @@ public class MirrorModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated, use flag instead. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -427,7 +427,7 @@ public class MirrorModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'use_correct_order_on_merge'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Mirror modifier used to merge the old vertex into its new copy, which would break code relying on access to the original geometry vertices. However, modifying this behavior to the correct one (i.e. merging the copy vertices into their original sources) has several potential effects on other modifiers and tools, so we need to keep that incorrect behavior for existing modifiers, and only use the new correct one for new modifiers. </p>
 	 * @see #__DNA__FIELD__use_correct_order_on_merge
 	 */
@@ -444,7 +444,7 @@ public class MirrorModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'use_correct_order_on_merge'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Mirror modifier used to merge the old vertex into its new copy, which would break code relying on access to the original geometry vertices. However, modifying this behavior to the correct one (i.e. merging the copy vertices into their original sources) has several potential effects on other modifiers and tools, so we need to keep that incorrect behavior for existing modifiers, and only use the new correct one for new modifiers. </p>
 	 * @see #__DNA__FIELD__use_correct_order_on_merge
 	 */

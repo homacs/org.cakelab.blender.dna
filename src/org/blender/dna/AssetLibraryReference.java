@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'AssetLibraryReference'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Information to identify a asset library. May be either one of the predefined types (current 'Main', builtin library, project library), or a custom type as defined in the Preferences.</p><p> If the type is set to ASSET_LIBRARY_CUSTOM<code></code>  must be set to identify the custom library. Otherwise it is not used. </p>
  */
 
@@ -34,7 +35,7 @@ public class AssetLibraryReference extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eAssetLibraryType </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -77,7 +78,7 @@ public class AssetLibraryReference extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'custom_library_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If showing a custom asset library (ASSET_LIBRARY_CUSTOM ), this is the index of the {@link bUserAssetLibrary}  within {@link UserDef#getAsset_libraries()} . Should be ignored otherwise (but better set to -1 then, for sanity and debugging). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -108,7 +109,7 @@ public class AssetLibraryReference extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eAssetLibraryType </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -125,7 +126,7 @@ public class AssetLibraryReference extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eAssetLibraryType </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -182,7 +183,7 @@ public class AssetLibraryReference extends CFacade {
 	/**
 	 * Get method for struct member 'custom_library_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If showing a custom asset library (ASSET_LIBRARY_CUSTOM ), this is the index of the {@link bUserAssetLibrary}  within {@link UserDef#getAsset_libraries()} . Should be ignored otherwise (but better set to -1 then, for sanity and debugging). </p>
 	 * @see #__DNA__FIELD__custom_library_index
 	 */
@@ -199,7 +200,7 @@ public class AssetLibraryReference extends CFacade {
 	/**
 	 * Set method for struct member 'custom_library_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If showing a custom asset library (ASSET_LIBRARY_CUSTOM ), this is the index of the {@link bUserAssetLibrary}  within {@link UserDef#getAsset_libraries()} . Should be ignored otherwise (but better set to -1 then, for sanity and debugging). </p>
 	 * @see #__DNA__FIELD__custom_library_index
 	 */

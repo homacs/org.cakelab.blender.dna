@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'IdAdtTemplate'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p>{@link Base}  Struct for Anim ----------------------------------<mdash/>  Used for #BKE_animdata_from_id() All ID-data-blocks which have their own 'local' {@link AnimData}  should have the same arrangement in their structs. </p>
  */
 

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FileFolderHistory'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> A wrapper to store previous and next folder lists (#FolderList) for a specific browse mode (eFileBrowse_Mode ). </p>
  */
 
@@ -74,7 +75,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'browse_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The browse mode this prev/next folder-lists are created for. eFileBrowse_Mode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -117,7 +118,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'folders_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the list of previous directories to show. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -140,7 +141,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'folders_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the list of next directories (pushed from previous) to show. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -235,7 +236,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Get method for struct member 'browse_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The browse mode this prev/next folder-lists are created for. eFileBrowse_Mode </p>
 	 * @see #__DNA__FIELD__browse_mode
 	 */
@@ -252,7 +253,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Set method for struct member 'browse_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The browse mode this prev/next folder-lists are created for. eFileBrowse_Mode </p>
 	 * @see #__DNA__FIELD__browse_mode
 	 */
@@ -309,7 +310,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Get method for struct member 'folders_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the list of previous directories to show. </p>
 	 * @see #__DNA__FIELD__folders_prev
 	 */
@@ -326,7 +327,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Set method for struct member 'folders_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the list of previous directories to show. </p>
 	 * @see #__DNA__FIELD__folders_prev
 	 */
@@ -351,7 +352,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Get method for struct member 'folders_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the list of next directories (pushed from previous) to show. </p>
 	 * @see #__DNA__FIELD__folders_next
 	 */
@@ -368,7 +369,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Set method for struct member 'folders_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the list of next directories (pushed from previous) to show. </p>
 	 * @see #__DNA__FIELD__folders_next
 	 */

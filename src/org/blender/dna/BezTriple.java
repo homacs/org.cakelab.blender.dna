@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'BezTriple'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Keyframes on F-Curves (allows code reuse of Bezier eval code) and Points on Bezier Curves/Paths are generally BezTriples.</p><p><h2>Note</h2><p>BezTriple.tilt  location in struct is abused by {@link Key}  system.</p> BezTriple.tilt location in struct is abused by Key system.
  * 
  * <h2>Note</h2><p> vec in {@link BezTriple}  looks like this:<ul><li><p> vec[0][0] = x location of handle 1</p></li><li><p> vec[0][1] = y location of handle 1</p></li><li><p> vec[0][2] = z location of handle 1 (not used for {@link FCurve}  Points(2d))</p></li><li><p> vec[1][0] = x location of control point</p></li><li><p> vec[1][1] = y location of control point</p></li><li><p> vec[1][2] = z location of control point</p></li><li><p> vec[2][0] = x location of handle 2</p></li><li><p> vec[2][1] = y location of handle 2</p></li><li><p> vec[2][2] = z location of handle 2 (not used for {@link FCurve}  Points(2d)) </p></li></ul> 
@@ -100,7 +101,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for softbody goal weight. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -123,7 +124,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For bevel tapering & modifiers. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -146,7 +147,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Ipo} : interpolation mode for segment from this {@link BezTriple}  to the next. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,7 +170,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'h1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> H1, h2: the handle type of the two handles. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -212,7 +213,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'f1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> F1, f2, f3: used for selection status. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -275,7 +276,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'hide'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Hide: used to indicate whether {@link BezTriple}  is hidden (3D), type of keyframe (eBezTriple_KeyframeType). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -298,7 +299,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'easing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Easing: easing type for interpolation mode (eBezTriple_Easing). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -321,7 +322,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'back'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> BEZT_IPO_BACK. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -344,7 +345,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'amplitude'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> BEZT_IPO_ELASTIC. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -387,7 +388,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'auto_handle_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used during auto handle calculation to mark special cases (local extremes). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -507,7 +508,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Get method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for softbody goal weight. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
@@ -524,7 +525,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Set method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for softbody goal weight. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
@@ -541,7 +542,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Get method for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For bevel tapering & modifiers. </p>
 	 * @see #__DNA__FIELD__radius
 	 */
@@ -558,7 +559,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Set method for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For bevel tapering & modifiers. </p>
 	 * @see #__DNA__FIELD__radius
 	 */
@@ -575,7 +576,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Get method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Ipo} : interpolation mode for segment from this {@link BezTriple}  to the next. </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
@@ -592,7 +593,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Set method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Ipo} : interpolation mode for segment from this {@link BezTriple}  to the next. </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
@@ -609,7 +610,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Get method for struct member 'h1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> H1, h2: the handle type of the two handles. </p>
 	 * @see #__DNA__FIELD__h1
 	 */
@@ -626,7 +627,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Set method for struct member 'h1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> H1, h2: the handle type of the two handles. </p>
 	 * @see #__DNA__FIELD__h1
 	 */
@@ -671,7 +672,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Get method for struct member 'f1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> F1, f2, f3: used for selection status. </p>
 	 * @see #__DNA__FIELD__f1
 	 */
@@ -688,7 +689,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Set method for struct member 'f1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> F1, f2, f3: used for selection status. </p>
 	 * @see #__DNA__FIELD__f1
 	 */
@@ -761,7 +762,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Get method for struct member 'hide'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Hide: used to indicate whether {@link BezTriple}  is hidden (3D), type of keyframe (eBezTriple_KeyframeType). </p>
 	 * @see #__DNA__FIELD__hide
 	 */
@@ -778,7 +779,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Set method for struct member 'hide'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Hide: used to indicate whether {@link BezTriple}  is hidden (3D), type of keyframe (eBezTriple_KeyframeType). </p>
 	 * @see #__DNA__FIELD__hide
 	 */
@@ -795,7 +796,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Get method for struct member 'easing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Easing: easing type for interpolation mode (eBezTriple_Easing). </p>
 	 * @see #__DNA__FIELD__easing
 	 */
@@ -812,7 +813,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Set method for struct member 'easing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Easing: easing type for interpolation mode (eBezTriple_Easing). </p>
 	 * @see #__DNA__FIELD__easing
 	 */
@@ -829,7 +830,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Get method for struct member 'back'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> BEZT_IPO_BACK. </p>
 	 * @see #__DNA__FIELD__back
 	 */
@@ -846,7 +847,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Set method for struct member 'back'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> BEZT_IPO_BACK. </p>
 	 * @see #__DNA__FIELD__back
 	 */
@@ -863,7 +864,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Get method for struct member 'amplitude'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> BEZT_IPO_ELASTIC. </p>
 	 * @see #__DNA__FIELD__amplitude
 	 */
@@ -880,7 +881,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Set method for struct member 'amplitude'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> BEZT_IPO_ELASTIC. </p>
 	 * @see #__DNA__FIELD__amplitude
 	 */
@@ -925,7 +926,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Get method for struct member 'auto_handle_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used during auto handle calculation to mark special cases (local extremes). </p>
 	 * @see #__DNA__FIELD__auto_handle_type
 	 */
@@ -942,7 +943,7 @@ public class BezTriple extends CFacade {
 	/**
 	 * Set method for struct member 'auto_handle_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used during auto handle calculation to mark special cases (local extremes). </p>
 	 * @see #__DNA__FIELD__auto_handle_type
 	 */

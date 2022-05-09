@@ -32,7 +32,7 @@ public class NodeGeometryStringToCurves extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'overflow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeStringToCurvesOverflowMode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +55,7 @@ public class NodeGeometryStringToCurves extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'align_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeStringToCurvesAlignXMode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -78,7 +78,7 @@ public class NodeGeometryStringToCurves extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'align_y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeStringToCurvesAlignYMode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -101,7 +101,7 @@ public class NodeGeometryStringToCurves extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pivot_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeStringToCurvesPivotMode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -132,7 +132,7 @@ public class NodeGeometryStringToCurves extends CFacade {
 	/**
 	 * Get method for struct member 'overflow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeStringToCurvesOverflowMode </p>
 	 * @see #__DNA__FIELD__overflow
 	 */
@@ -149,7 +149,7 @@ public class NodeGeometryStringToCurves extends CFacade {
 	/**
 	 * Set method for struct member 'overflow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeStringToCurvesOverflowMode </p>
 	 * @see #__DNA__FIELD__overflow
 	 */
@@ -166,7 +166,7 @@ public class NodeGeometryStringToCurves extends CFacade {
 	/**
 	 * Get method for struct member 'align_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeStringToCurvesAlignXMode </p>
 	 * @see #__DNA__FIELD__align_x
 	 */
@@ -183,7 +183,7 @@ public class NodeGeometryStringToCurves extends CFacade {
 	/**
 	 * Set method for struct member 'align_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeStringToCurvesAlignXMode </p>
 	 * @see #__DNA__FIELD__align_x
 	 */
@@ -200,7 +200,7 @@ public class NodeGeometryStringToCurves extends CFacade {
 	/**
 	 * Get method for struct member 'align_y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeStringToCurvesAlignYMode </p>
 	 * @see #__DNA__FIELD__align_y
 	 */
@@ -217,7 +217,7 @@ public class NodeGeometryStringToCurves extends CFacade {
 	/**
 	 * Set method for struct member 'align_y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeStringToCurvesAlignYMode </p>
 	 * @see #__DNA__FIELD__align_y
 	 */
@@ -234,7 +234,7 @@ public class NodeGeometryStringToCurves extends CFacade {
 	/**
 	 * Get method for struct member 'pivot_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeStringToCurvesPivotMode </p>
 	 * @see #__DNA__FIELD__pivot_mode
 	 */
@@ -251,7 +251,7 @@ public class NodeGeometryStringToCurves extends CFacade {
 	/**
 	 * Set method for struct member 'pivot_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeStringToCurvesPivotMode </p>
 	 * @see #__DNA__FIELD__pivot_mode
 	 */

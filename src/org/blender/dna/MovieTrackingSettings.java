@@ -32,8 +32,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'default_motion_model'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Default motion model to use for tracking<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Default motion model to use for tracking
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** default tracker settings Model of the motion for this track. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +57,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'default_algorithm_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags for the tracking algorithm (use brute, use ESM, use pyramid, etc. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +80,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'default_minimum_correlation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimal correlation which is still treated as successful tracking. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -102,8 +103,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'default_pattern_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of pattern area for newly created tracks<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Size of pattern area for newly created tracks
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of pattern area for new tracks, measured in pixels. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,8 +128,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'default_search_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of search area for newly created tracks<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Size of search area for newly created tracks
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of search area for new tracks, measured in pixels. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -150,8 +153,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'default_frames_limit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Every tracking cycle, this number of frames are tracked<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Every tracking cycle, this number of frames are tracked
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of frames to be tracked during single tracking session (if TRACKING_FRAMES_LIMIT is set). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -174,8 +178,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'default_margin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Default distance from image boundary at which marker stops tracking<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Default distance from image boundary at which marker stops tracking
+	 * <h4>Blender Source Code</h4>
 	 * <p> Margin from frame boundaries. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -198,8 +203,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'default_pattern_match'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Track pattern from given frame when tracking marker to next frame<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Track pattern from given frame when tracking marker to next frame
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -222,7 +228,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'default_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default flags like color channels used by default. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -245,8 +251,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'default_weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Influence of newly created track on a final solution<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Influence of newly created track on a final solution
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default weight of the track. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -269,7 +276,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'motion_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags describes motion type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -292,8 +299,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'speed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Limit speed of tracking to make visual feedback easier (this does not affect the tracking quality)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Limit speed of tracking to make visual feedback easier (this does not affect the tracking quality)
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** common tracker settings ** Speed of tracking. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -316,7 +324,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'keyframe1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** reconstruction settings ** two keyframes for reconstruction initialization were moved to per-tracking object settings 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -341,7 +349,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'keyframe2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -386,7 +394,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'refine_camera_intrinsics'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> which camera intrinsics to refine. uses on the REFINE_* flags </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -409,7 +417,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** tool settings ** set scale Distance between two bundles used for scene scaling. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -432,8 +440,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'clean_frames'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Effect on tracks which are tracked less than the specified amount of frames<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Effect on tracks which are tracked less than the specified amount of frames
+	 * <h4>Blender Source Code</h4>
 	 * <p> cleanup </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -456,7 +465,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'clean_action'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Cleanup action to execute
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -479,7 +488,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'clean_error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Effect on tracks which have a larger re-projection error
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -502,8 +511,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Distance between two bundles used for object scaling<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Distance between two bundles used for object scaling
+	 * <h4>Blender Source Code</h4>
 	 * <p> set object scale Distance between two bundles used for object scaling. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -534,8 +544,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'default_motion_model'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Default motion model to use for tracking<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Default motion model to use for tracking
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** default tracker settings Model of the motion for this track. </p>
 	 * @see #__DNA__FIELD__default_motion_model
 	 */
@@ -552,8 +563,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'default_motion_model'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Default motion model to use for tracking<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Default motion model to use for tracking
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** default tracker settings Model of the motion for this track. </p>
 	 * @see #__DNA__FIELD__default_motion_model
 	 */
@@ -570,7 +582,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'default_algorithm_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags for the tracking algorithm (use brute, use ESM, use pyramid, etc. </p>
 	 * @see #__DNA__FIELD__default_algorithm_flag
 	 */
@@ -587,7 +599,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'default_algorithm_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags for the tracking algorithm (use brute, use ESM, use pyramid, etc. </p>
 	 * @see #__DNA__FIELD__default_algorithm_flag
 	 */
@@ -604,7 +616,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'default_minimum_correlation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimal correlation which is still treated as successful tracking. </p>
 	 * @see #__DNA__FIELD__default_minimum_correlation
 	 */
@@ -621,7 +633,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'default_minimum_correlation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimal correlation which is still treated as successful tracking. </p>
 	 * @see #__DNA__FIELD__default_minimum_correlation
 	 */
@@ -638,8 +650,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'default_pattern_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of pattern area for newly created tracks<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Size of pattern area for newly created tracks
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of pattern area for new tracks, measured in pixels. </p>
 	 * @see #__DNA__FIELD__default_pattern_size
 	 */
@@ -656,8 +669,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'default_pattern_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of pattern area for newly created tracks<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Size of pattern area for newly created tracks
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of pattern area for new tracks, measured in pixels. </p>
 	 * @see #__DNA__FIELD__default_pattern_size
 	 */
@@ -674,8 +688,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'default_search_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of search area for newly created tracks<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Size of search area for newly created tracks
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of search area for new tracks, measured in pixels. </p>
 	 * @see #__DNA__FIELD__default_search_size
 	 */
@@ -692,8 +707,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'default_search_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of search area for newly created tracks<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Size of search area for newly created tracks
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of search area for new tracks, measured in pixels. </p>
 	 * @see #__DNA__FIELD__default_search_size
 	 */
@@ -710,8 +726,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'default_frames_limit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Every tracking cycle, this number of frames are tracked<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Every tracking cycle, this number of frames are tracked
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of frames to be tracked during single tracking session (if TRACKING_FRAMES_LIMIT is set). </p>
 	 * @see #__DNA__FIELD__default_frames_limit
 	 */
@@ -728,8 +745,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'default_frames_limit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Every tracking cycle, this number of frames are tracked<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Every tracking cycle, this number of frames are tracked
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of frames to be tracked during single tracking session (if TRACKING_FRAMES_LIMIT is set). </p>
 	 * @see #__DNA__FIELD__default_frames_limit
 	 */
@@ -746,8 +764,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'default_margin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Default distance from image boundary at which marker stops tracking<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Default distance from image boundary at which marker stops tracking
+	 * <h4>Blender Source Code</h4>
 	 * <p> Margin from frame boundaries. </p>
 	 * @see #__DNA__FIELD__default_margin
 	 */
@@ -764,8 +783,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'default_margin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Default distance from image boundary at which marker stops tracking<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Default distance from image boundary at which marker stops tracking
+	 * <h4>Blender Source Code</h4>
 	 * <p> Margin from frame boundaries. </p>
 	 * @see #__DNA__FIELD__default_margin
 	 */
@@ -782,8 +802,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'default_pattern_match'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Track pattern from given frame when tracking marker to next frame<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Track pattern from given frame when tracking marker to next frame
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__default_pattern_match
 	 */
@@ -800,8 +821,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'default_pattern_match'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Track pattern from given frame when tracking marker to next frame<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Track pattern from given frame when tracking marker to next frame
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__default_pattern_match
 	 */
@@ -818,7 +840,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'default_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default flags like color channels used by default. </p>
 	 * @see #__DNA__FIELD__default_flag
 	 */
@@ -835,7 +857,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'default_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default flags like color channels used by default. </p>
 	 * @see #__DNA__FIELD__default_flag
 	 */
@@ -852,8 +874,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'default_weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Influence of newly created track on a final solution<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Influence of newly created track on a final solution
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default weight of the track. </p>
 	 * @see #__DNA__FIELD__default_weight
 	 */
@@ -870,8 +893,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'default_weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Influence of newly created track on a final solution<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Influence of newly created track on a final solution
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default weight of the track. </p>
 	 * @see #__DNA__FIELD__default_weight
 	 */
@@ -888,7 +912,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'motion_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags describes motion type. </p>
 	 * @see #__DNA__FIELD__motion_flag
 	 */
@@ -905,7 +929,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'motion_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags describes motion type. </p>
 	 * @see #__DNA__FIELD__motion_flag
 	 */
@@ -922,8 +946,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'speed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Limit speed of tracking to make visual feedback easier (this does not affect the tracking quality)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Limit speed of tracking to make visual feedback easier (this does not affect the tracking quality)
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** common tracker settings ** Speed of tracking. </p>
 	 * @see #__DNA__FIELD__speed
 	 */
@@ -940,8 +965,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'speed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Limit speed of tracking to make visual feedback easier (this does not affect the tracking quality)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Limit speed of tracking to make visual feedback easier (this does not affect the tracking quality)
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** common tracker settings ** Speed of tracking. </p>
 	 * @see #__DNA__FIELD__speed
 	 */
@@ -958,7 +984,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'keyframe1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** reconstruction settings ** two keyframes for reconstruction initialization were moved to per-tracking object settings 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -977,7 +1003,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'keyframe1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** reconstruction settings ** two keyframes for reconstruction initialization were moved to per-tracking object settings 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -996,7 +1022,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'keyframe2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1015,7 +1041,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'keyframe2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1062,7 +1088,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'refine_camera_intrinsics'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> which camera intrinsics to refine. uses on the REFINE_* flags </p>
 	 * @see #__DNA__FIELD__refine_camera_intrinsics
 	 */
@@ -1079,7 +1105,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'refine_camera_intrinsics'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> which camera intrinsics to refine. uses on the REFINE_* flags </p>
 	 * @see #__DNA__FIELD__refine_camera_intrinsics
 	 */
@@ -1096,7 +1122,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'dist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** tool settings ** set scale Distance between two bundles used for scene scaling. </p>
 	 * @see #__DNA__FIELD__dist
 	 */
@@ -1113,7 +1139,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'dist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** tool settings ** set scale Distance between two bundles used for scene scaling. </p>
 	 * @see #__DNA__FIELD__dist
 	 */
@@ -1130,8 +1156,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'clean_frames'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Effect on tracks which are tracked less than the specified amount of frames<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Effect on tracks which are tracked less than the specified amount of frames
+	 * <h4>Blender Source Code</h4>
 	 * <p> cleanup </p>
 	 * @see #__DNA__FIELD__clean_frames
 	 */
@@ -1148,8 +1175,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'clean_frames'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Effect on tracks which are tracked less than the specified amount of frames<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Effect on tracks which are tracked less than the specified amount of frames
+	 * <h4>Blender Source Code</h4>
 	 * <p> cleanup </p>
 	 * @see #__DNA__FIELD__clean_frames
 	 */
@@ -1166,7 +1194,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'clean_action'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Cleanup action to execute
 	 * @see #__DNA__FIELD__clean_action
 	 */
@@ -1183,7 +1211,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'clean_action'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Cleanup action to execute
 	 * @see #__DNA__FIELD__clean_action
 	 */
@@ -1200,7 +1228,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'clean_error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Effect on tracks which have a larger re-projection error
 	 * @see #__DNA__FIELD__clean_error
 	 */
@@ -1217,7 +1245,7 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'clean_error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Effect on tracks which have a larger re-projection error
 	 * @see #__DNA__FIELD__clean_error
 	 */
@@ -1234,8 +1262,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Get method for struct member 'object_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Distance between two bundles used for object scaling<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Distance between two bundles used for object scaling
+	 * <h4>Blender Source Code</h4>
 	 * <p> set object scale Distance between two bundles used for object scaling. </p>
 	 * @see #__DNA__FIELD__object_distance
 	 */
@@ -1252,8 +1281,9 @@ public class MovieTrackingSettings extends CFacade {
 	/**
 	 * Set method for struct member 'object_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Distance between two bundles used for object scaling<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Distance between two bundles used for object scaling
+	 * <h4>Blender Source Code</h4>
 	 * <p> set object scale Distance between two bundles used for object scaling. </p>
 	 * @see #__DNA__FIELD__object_distance
 	 */

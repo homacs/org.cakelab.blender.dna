@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Object_Runtime'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Not saved in file! </p>
  */
 
@@ -34,7 +35,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'last_data_mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The custom data layer mask that was last used to calculate data_eval and mesh_deform_eval. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +58,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'last_need_mapping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Did last modifier stack generation need mapping support? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +81,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'collection_management'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Opaque data reserved for management of objects in collection context. E.g. used currently to check for potential duplicates of objects in a collection, after remapping process. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -123,7 +124,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parent_display_origin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only used for drawing the parent/child help-line. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -146,7 +147,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'select_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selection id of this object. It might differ between an evaluated and its original object, when the object is being instanced. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -189,7 +190,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'is_data_eval_owned'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Denotes whether the evaluated data is owned by this object or is referenced and owned by somebody else. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -212,7 +213,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'overlay_mode_transfer_start_time'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Start time of the mode transfer overlay animation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -235,7 +236,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis aligned bound-box (in local-space). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -258,7 +259,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'data_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original data pointer, before object->data was changed to point to data_eval. Is assigned by dependency graph's copy-on-write evaluation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -281,7 +282,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'data_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  data structure created during object evaluation. It has all modifiers applied. The type is determined by the type of the original object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -304,7 +305,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'geometry_set_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> s can evaluate to a geometry set instead of a single {@link ID} . In those cases, the evaluated geometry set will be stored here. An {@link ID}  of the correct type is still stored in {@link #getData_eval()} . {@link #getGeometry_set_eval()}  might reference the {@link ID}  pointed to by {@link #getData_eval()}  as well, but does not own the data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -327,7 +328,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_deform_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mesh}  structure created during object evaluation. It has deformation only modifiers applied on it. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -350,7 +351,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'editmesh_eval_cage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Evaluated mesh cage in edit mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -373,7 +374,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'editmesh_bb_cage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  for selection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -396,7 +397,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpd_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original grease pencil {@link bGPdata}  pointer, before object->data was changed to point to gpd_eval. Is assigned by dependency graph's copy-on-write evaluation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -419,7 +420,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpd_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link bGPdata}  structure created during object evaluation. It has all modifiers applied. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -442,7 +443,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object_as_temp_mesh'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -465,7 +466,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object_as_temp_curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -488,7 +489,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime evaluated curve-specific data, not stored in the file. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -599,7 +600,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'last_data_mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The custom data layer mask that was last used to calculate data_eval and mesh_deform_eval. </p>
 	 * @see #__DNA__FIELD__last_data_mask
 	 */
@@ -616,7 +617,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'last_data_mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The custom data layer mask that was last used to calculate data_eval and mesh_deform_eval. </p>
 	 * @see #__DNA__FIELD__last_data_mask
 	 */
@@ -641,7 +642,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'last_need_mapping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Did last modifier stack generation need mapping support? </p>
 	 * @see #__DNA__FIELD__last_need_mapping
 	 */
@@ -658,7 +659,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'last_need_mapping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Did last modifier stack generation need mapping support? </p>
 	 * @see #__DNA__FIELD__last_need_mapping
 	 */
@@ -675,7 +676,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'collection_management'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Opaque data reserved for management of objects in collection context. E.g. used currently to check for potential duplicates of objects in a collection, after remapping process. </p>
 	 * @see #__DNA__FIELD__collection_management
 	 */
@@ -692,7 +693,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'collection_management'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Opaque data reserved for management of objects in collection context. E.g. used currently to check for potential duplicates of objects in a collection, after remapping process. </p>
 	 * @see #__DNA__FIELD__collection_management
 	 */
@@ -749,7 +750,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'parent_display_origin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only used for drawing the parent/child help-line. </p>
 	 * @see #__DNA__FIELD__parent_display_origin
 	 */
@@ -770,7 +771,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'parent_display_origin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only used for drawing the parent/child help-line. </p>
 	 * @see #__DNA__FIELD__parent_display_origin
 	 */
@@ -795,7 +796,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'select_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selection id of this object. It might differ between an evaluated and its original object, when the object is being instanced. </p>
 	 * @see #__DNA__FIELD__select_id
 	 */
@@ -812,7 +813,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'select_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selection id of this object. It might differ between an evaluated and its original object, when the object is being instanced. </p>
 	 * @see #__DNA__FIELD__select_id
 	 */
@@ -869,7 +870,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'is_data_eval_owned'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Denotes whether the evaluated data is owned by this object or is referenced and owned by somebody else. </p>
 	 * @see #__DNA__FIELD__is_data_eval_owned
 	 */
@@ -886,7 +887,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'is_data_eval_owned'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Denotes whether the evaluated data is owned by this object or is referenced and owned by somebody else. </p>
 	 * @see #__DNA__FIELD__is_data_eval_owned
 	 */
@@ -903,7 +904,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'overlay_mode_transfer_start_time'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Start time of the mode transfer overlay animation. </p>
 	 * @see #__DNA__FIELD__overlay_mode_transfer_start_time
 	 */
@@ -920,7 +921,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'overlay_mode_transfer_start_time'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Start time of the mode transfer overlay animation. </p>
 	 * @see #__DNA__FIELD__overlay_mode_transfer_start_time
 	 */
@@ -937,7 +938,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'bb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis aligned bound-box (in local-space). </p>
 	 * @see #__DNA__FIELD__bb
 	 */
@@ -957,7 +958,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'bb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis aligned bound-box (in local-space). </p>
 	 * @see #__DNA__FIELD__bb
 	 */
@@ -975,7 +976,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'data_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original data pointer, before object->data was changed to point to data_eval. Is assigned by dependency graph's copy-on-write evaluation. </p>
 	 * @see #__DNA__FIELD__data_orig
 	 */
@@ -995,7 +996,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'data_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original data pointer, before object->data was changed to point to data_eval. Is assigned by dependency graph's copy-on-write evaluation. </p>
 	 * @see #__DNA__FIELD__data_orig
 	 */
@@ -1013,7 +1014,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'data_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  data structure created during object evaluation. It has all modifiers applied. The type is determined by the type of the original object. </p>
 	 * @see #__DNA__FIELD__data_eval
 	 */
@@ -1033,7 +1034,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'data_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  data structure created during object evaluation. It has all modifiers applied. The type is determined by the type of the original object. </p>
 	 * @see #__DNA__FIELD__data_eval
 	 */
@@ -1051,7 +1052,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'geometry_set_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> s can evaluate to a geometry set instead of a single {@link ID} . In those cases, the evaluated geometry set will be stored here. An {@link ID}  of the correct type is still stored in {@link #getData_eval()} . {@link #getGeometry_set_eval()}  might reference the {@link ID}  pointed to by {@link #getData_eval()}  as well, but does not own the data. </p>
 	 * @see #__DNA__FIELD__geometry_set_eval
 	 */
@@ -1071,7 +1072,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'geometry_set_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> s can evaluate to a geometry set instead of a single {@link ID} . In those cases, the evaluated geometry set will be stored here. An {@link ID}  of the correct type is still stored in {@link #getData_eval()} . {@link #getGeometry_set_eval()}  might reference the {@link ID}  pointed to by {@link #getData_eval()}  as well, but does not own the data. </p>
 	 * @see #__DNA__FIELD__geometry_set_eval
 	 */
@@ -1089,7 +1090,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'mesh_deform_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mesh}  structure created during object evaluation. It has deformation only modifiers applied on it. </p>
 	 * @see #__DNA__FIELD__mesh_deform_eval
 	 */
@@ -1109,7 +1110,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'mesh_deform_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mesh}  structure created during object evaluation. It has deformation only modifiers applied on it. </p>
 	 * @see #__DNA__FIELD__mesh_deform_eval
 	 */
@@ -1127,7 +1128,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'editmesh_eval_cage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Evaluated mesh cage in edit mode. </p>
 	 * @see #__DNA__FIELD__editmesh_eval_cage
 	 */
@@ -1147,7 +1148,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'editmesh_eval_cage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Evaluated mesh cage in edit mode. </p>
 	 * @see #__DNA__FIELD__editmesh_eval_cage
 	 */
@@ -1165,7 +1166,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'editmesh_bb_cage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  for selection. </p>
 	 * @see #__DNA__FIELD__editmesh_bb_cage
 	 */
@@ -1185,7 +1186,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'editmesh_bb_cage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  for selection. </p>
 	 * @see #__DNA__FIELD__editmesh_bb_cage
 	 */
@@ -1203,7 +1204,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'gpd_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original grease pencil {@link bGPdata}  pointer, before object->data was changed to point to gpd_eval. Is assigned by dependency graph's copy-on-write evaluation. </p>
 	 * @see #__DNA__FIELD__gpd_orig
 	 */
@@ -1223,7 +1224,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'gpd_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original grease pencil {@link bGPdata}  pointer, before object->data was changed to point to gpd_eval. Is assigned by dependency graph's copy-on-write evaluation. </p>
 	 * @see #__DNA__FIELD__gpd_orig
 	 */
@@ -1241,7 +1242,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'gpd_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link bGPdata}  structure created during object evaluation. It has all modifiers applied. </p>
 	 * @see #__DNA__FIELD__gpd_eval
 	 */
@@ -1261,7 +1262,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'gpd_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link bGPdata}  structure created during object evaluation. It has all modifiers applied. </p>
 	 * @see #__DNA__FIELD__gpd_eval
 	 */
@@ -1279,7 +1280,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'object_as_temp_mesh'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__object_as_temp_mesh
 	 */
@@ -1299,7 +1300,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'object_as_temp_mesh'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__object_as_temp_mesh
 	 */
@@ -1317,7 +1318,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'object_as_temp_curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__object_as_temp_curve
 	 */
@@ -1337,7 +1338,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'object_as_temp_curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__object_as_temp_curve
 	 */
@@ -1355,7 +1356,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'curve_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime evaluated curve-specific data, not stored in the file. </p>
 	 * @see #__DNA__FIELD__curve_cache
 	 */
@@ -1375,7 +1376,7 @@ public class Object_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'curve_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime evaluated curve-specific data, not stored in the file. </p>
 	 * @see #__DNA__FIELD__curve_cache
 	 */

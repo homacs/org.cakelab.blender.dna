@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpaceNla'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> NLA Editor </p>
  */
 
@@ -74,7 +75,7 @@ public class SpaceNla extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -157,7 +158,7 @@ public class SpaceNla extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'autosnap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. This uses the same settings as autosnap for Action Editor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -240,7 +241,7 @@ public class SpaceNla extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated, copied to region. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -337,7 +338,7 @@ public class SpaceNla extends CFacade {
 	/**
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -354,7 +355,7 @@ public class SpaceNla extends CFacade {
 	/**
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -475,7 +476,7 @@ public class SpaceNla extends CFacade {
 	/**
 	 * Get method for struct member 'autosnap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. This uses the same settings as autosnap for Action Editor. </p>
 	 * @see #__DNA__FIELD__autosnap
 	 */
@@ -492,7 +493,7 @@ public class SpaceNla extends CFacade {
 	/**
 	 * Set method for struct member 'autosnap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. This uses the same settings as autosnap for Action Editor. </p>
 	 * @see #__DNA__FIELD__autosnap
 	 */
@@ -609,7 +610,7 @@ public class SpaceNla extends CFacade {
 	/**
 	 * Get method for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated, copied to region. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -628,7 +629,7 @@ public class SpaceNla extends CFacade {
 	/**
 	 * Set method for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated, copied to region. 
 	 * @deprecated
 	 *  Deprecated</p>

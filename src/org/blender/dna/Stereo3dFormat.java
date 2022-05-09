@@ -53,7 +53,7 @@ public class Stereo3dFormat extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'display_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Encoding mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class Stereo3dFormat extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'anaglyph_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Anaglyph scheme for the user display. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +99,7 @@ public class Stereo3dFormat extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'interlace_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Interlace type for the user display. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -178,7 +178,7 @@ public class Stereo3dFormat extends CFacade {
 	/**
 	 * Get method for struct member 'display_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Encoding mode. </p>
 	 * @see #__DNA__FIELD__display_mode
 	 */
@@ -195,7 +195,7 @@ public class Stereo3dFormat extends CFacade {
 	/**
 	 * Set method for struct member 'display_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Encoding mode. </p>
 	 * @see #__DNA__FIELD__display_mode
 	 */
@@ -212,7 +212,7 @@ public class Stereo3dFormat extends CFacade {
 	/**
 	 * Get method for struct member 'anaglyph_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Anaglyph scheme for the user display. </p>
 	 * @see #__DNA__FIELD__anaglyph_type
 	 */
@@ -229,7 +229,7 @@ public class Stereo3dFormat extends CFacade {
 	/**
 	 * Set method for struct member 'anaglyph_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Anaglyph scheme for the user display. </p>
 	 * @see #__DNA__FIELD__anaglyph_type
 	 */
@@ -246,7 +246,7 @@ public class Stereo3dFormat extends CFacade {
 	/**
 	 * Get method for struct member 'interlace_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Interlace type for the user display. </p>
 	 * @see #__DNA__FIELD__interlace_type
 	 */
@@ -263,7 +263,7 @@ public class Stereo3dFormat extends CFacade {
 	/**
 	 * Set method for struct member 'interlace_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Interlace type for the user display. </p>
 	 * @see #__DNA__FIELD__interlace_type
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'View3DOverlay'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> 3D Viewport Overlay settings. </p>
  */
 
@@ -54,7 +55,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'edit_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Edit mode settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -77,7 +78,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'normals_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Display size for normals in the 3D view
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -100,7 +101,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'normals_constant_screen_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Screen size for normals in the 3D view
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -123,7 +124,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'backwire_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Opacity when rendering transparent wires
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -146,7 +147,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'paint_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Paint}  mode settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,7 +170,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'wpaint_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weight paint mode settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -192,8 +193,9 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'texture_paint_mode_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Opacity of the texture paint mode stencil mask overlay<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Opacity of the texture paint mode stencil mask overlay
+	 * <h4>Blender Source Code</h4>
 	 * <p> Alpha for texture, weight, vertex paint overlay. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -216,7 +218,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vertex_paint_mode_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Opacity of the texture paint mode stencil mask overlay
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -239,7 +241,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'weight_paint_mode_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Opacity of the weight paint mode overlay
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -302,8 +304,9 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'xray_alpha_bone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Opacity to use for bone selection<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Opacity to use for bone selection
+	 * <h4>Blender Source Code</h4>
 	 * <p> Armature edit/pose mode settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -326,7 +329,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bone_wire_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum opacity of bones in wireframe display mode
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -369,7 +372,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fade_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Darken Inactive. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -392,8 +395,9 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'wireframe_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust the angle threshold for displaying edges (1.0 for all)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Adjust the angle threshold for displaying edges (1.0 for all)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Other settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -416,7 +420,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'wireframe_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Opacity of the displayed edges (1.0 for opaque)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -439,7 +443,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_paper_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease pencil settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -462,7 +466,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_grid_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Canvas grid opacity
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -485,7 +489,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_fade_layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Fade layer opacity for Grease Pencil layers except the active one
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -508,8 +512,9 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_vertex_paint_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Vertex Paint mix factor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Vertex Paint mix factor
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor for mixing vertex paint with original color </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -532,7 +537,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'handle_display'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Handles display type for curves. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -611,7 +616,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'edit_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Edit mode settings. </p>
 	 * @see #__DNA__FIELD__edit_flag
 	 */
@@ -628,7 +633,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'edit_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Edit mode settings. </p>
 	 * @see #__DNA__FIELD__edit_flag
 	 */
@@ -645,7 +650,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'normals_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Display size for normals in the 3D view
 	 * @see #__DNA__FIELD__normals_length
 	 */
@@ -662,7 +667,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'normals_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Display size for normals in the 3D view
 	 * @see #__DNA__FIELD__normals_length
 	 */
@@ -679,7 +684,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'normals_constant_screen_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Screen size for normals in the 3D view
 	 * @see #__DNA__FIELD__normals_constant_screen_size
 	 */
@@ -696,7 +701,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'normals_constant_screen_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Screen size for normals in the 3D view
 	 * @see #__DNA__FIELD__normals_constant_screen_size
 	 */
@@ -713,7 +718,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'backwire_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Opacity when rendering transparent wires
 	 * @see #__DNA__FIELD__backwire_opacity
 	 */
@@ -730,7 +735,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'backwire_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Opacity when rendering transparent wires
 	 * @see #__DNA__FIELD__backwire_opacity
 	 */
@@ -747,7 +752,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'paint_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Paint}  mode settings. </p>
 	 * @see #__DNA__FIELD__paint_flag
 	 */
@@ -764,7 +769,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'paint_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Paint}  mode settings. </p>
 	 * @see #__DNA__FIELD__paint_flag
 	 */
@@ -781,7 +786,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'wpaint_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weight paint mode settings. </p>
 	 * @see #__DNA__FIELD__wpaint_flag
 	 */
@@ -798,7 +803,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'wpaint_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weight paint mode settings. </p>
 	 * @see #__DNA__FIELD__wpaint_flag
 	 */
@@ -815,8 +820,9 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'texture_paint_mode_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Opacity of the texture paint mode stencil mask overlay<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Opacity of the texture paint mode stencil mask overlay
+	 * <h4>Blender Source Code</h4>
 	 * <p> Alpha for texture, weight, vertex paint overlay. </p>
 	 * @see #__DNA__FIELD__texture_paint_mode_opacity
 	 */
@@ -833,8 +839,9 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'texture_paint_mode_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Opacity of the texture paint mode stencil mask overlay<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Opacity of the texture paint mode stencil mask overlay
+	 * <h4>Blender Source Code</h4>
 	 * <p> Alpha for texture, weight, vertex paint overlay. </p>
 	 * @see #__DNA__FIELD__texture_paint_mode_opacity
 	 */
@@ -851,7 +858,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'vertex_paint_mode_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Opacity of the texture paint mode stencil mask overlay
 	 * @see #__DNA__FIELD__vertex_paint_mode_opacity
 	 */
@@ -868,7 +875,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'vertex_paint_mode_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Opacity of the texture paint mode stencil mask overlay
 	 * @see #__DNA__FIELD__vertex_paint_mode_opacity
 	 */
@@ -885,7 +892,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'weight_paint_mode_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Opacity of the weight paint mode overlay
 	 * @see #__DNA__FIELD__weight_paint_mode_opacity
 	 */
@@ -902,7 +909,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'weight_paint_mode_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Opacity of the weight paint mode overlay
 	 * @see #__DNA__FIELD__weight_paint_mode_opacity
 	 */
@@ -975,8 +982,9 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'xray_alpha_bone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Opacity to use for bone selection<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Opacity to use for bone selection
+	 * <h4>Blender Source Code</h4>
 	 * <p> Armature edit/pose mode settings. </p>
 	 * @see #__DNA__FIELD__xray_alpha_bone
 	 */
@@ -993,8 +1001,9 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'xray_alpha_bone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Opacity to use for bone selection<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Opacity to use for bone selection
+	 * <h4>Blender Source Code</h4>
 	 * <p> Armature edit/pose mode settings. </p>
 	 * @see #__DNA__FIELD__xray_alpha_bone
 	 */
@@ -1011,7 +1020,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'bone_wire_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum opacity of bones in wireframe display mode
 	 * @see #__DNA__FIELD__bone_wire_alpha
 	 */
@@ -1028,7 +1037,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'bone_wire_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum opacity of bones in wireframe display mode
 	 * @see #__DNA__FIELD__bone_wire_alpha
 	 */
@@ -1085,7 +1094,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'fade_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Darken Inactive. </p>
 	 * @see #__DNA__FIELD__fade_alpha
 	 */
@@ -1102,7 +1111,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'fade_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Darken Inactive. </p>
 	 * @see #__DNA__FIELD__fade_alpha
 	 */
@@ -1119,8 +1128,9 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'wireframe_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust the angle threshold for displaying edges (1.0 for all)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Adjust the angle threshold for displaying edges (1.0 for all)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Other settings. </p>
 	 * @see #__DNA__FIELD__wireframe_threshold
 	 */
@@ -1137,8 +1147,9 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'wireframe_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust the angle threshold for displaying edges (1.0 for all)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Adjust the angle threshold for displaying edges (1.0 for all)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Other settings. </p>
 	 * @see #__DNA__FIELD__wireframe_threshold
 	 */
@@ -1155,7 +1166,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'wireframe_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Opacity of the displayed edges (1.0 for opaque)
 	 * @see #__DNA__FIELD__wireframe_opacity
 	 */
@@ -1172,7 +1183,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'wireframe_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Opacity of the displayed edges (1.0 for opaque)
 	 * @see #__DNA__FIELD__wireframe_opacity
 	 */
@@ -1189,7 +1200,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_paper_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease pencil settings. </p>
 	 * @see #__DNA__FIELD__gpencil_paper_opacity
 	 */
@@ -1206,7 +1217,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_paper_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease pencil settings. </p>
 	 * @see #__DNA__FIELD__gpencil_paper_opacity
 	 */
@@ -1223,7 +1234,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_grid_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Canvas grid opacity
 	 * @see #__DNA__FIELD__gpencil_grid_opacity
 	 */
@@ -1240,7 +1251,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_grid_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Canvas grid opacity
 	 * @see #__DNA__FIELD__gpencil_grid_opacity
 	 */
@@ -1257,7 +1268,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_fade_layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Fade layer opacity for Grease Pencil layers except the active one
 	 * @see #__DNA__FIELD__gpencil_fade_layer
 	 */
@@ -1274,7 +1285,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_fade_layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Fade layer opacity for Grease Pencil layers except the active one
 	 * @see #__DNA__FIELD__gpencil_fade_layer
 	 */
@@ -1291,8 +1302,9 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_vertex_paint_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Vertex Paint mix factor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Vertex Paint mix factor
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor for mixing vertex paint with original color </p>
 	 * @see #__DNA__FIELD__gpencil_vertex_paint_opacity
 	 */
@@ -1309,8 +1321,9 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_vertex_paint_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Vertex Paint mix factor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Vertex Paint mix factor
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor for mixing vertex paint with original color </p>
 	 * @see #__DNA__FIELD__gpencil_vertex_paint_opacity
 	 */
@@ -1327,7 +1340,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'handle_display'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Handles display type for curves. </p>
 	 * @see #__DNA__FIELD__handle_display
 	 */
@@ -1344,7 +1357,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'handle_display'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Handles display type for curves. </p>
 	 * @see #__DNA__FIELD__handle_display
 	 */

@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'wmKeyMapDiffItem'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Used instead of {@link wmKeyMapItem}  for diff keymaps. </p>
  */
 

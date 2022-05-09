@@ -53,7 +53,7 @@ public class LineStyleGeometryModifier_Simplification extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tolerance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance below which segments will be merged
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -140,7 +140,7 @@ public class LineStyleGeometryModifier_Simplification extends CFacade {
 	/**
 	 * Get method for struct member 'tolerance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance below which segments will be merged
 	 * @see #__DNA__FIELD__tolerance
 	 */
@@ -157,7 +157,7 @@ public class LineStyleGeometryModifier_Simplification extends CFacade {
 	/**
 	 * Set method for struct member 'tolerance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance below which segments will be merged
 	 * @see #__DNA__FIELD__tolerance
 	 */

@@ -53,8 +53,9 @@ public class Palette extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'colors'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to individual colors. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -161,8 +162,9 @@ public class Palette extends CFacade {
 	/**
 	 * Get method for struct member 'colors'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to individual colors. </p>
 	 * @see #__DNA__FIELD__colors
 	 */
@@ -179,8 +181,9 @@ public class Palette extends CFacade {
 	/**
 	 * Set method for struct member 'colors'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to individual colors. </p>
 	 * @see #__DNA__FIELD__colors
 	 */

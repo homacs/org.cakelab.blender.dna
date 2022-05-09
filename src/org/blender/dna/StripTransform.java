@@ -133,7 +133,7 @@ public class StripTransform extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'origin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 0-1 range, use SEQ_image_transform_origin_offset_pixelspace_get to convert to pixel space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -304,7 +304,7 @@ public class StripTransform extends CFacade {
 	/**
 	 * Get method for struct member 'origin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 0-1 range, use SEQ_image_transform_origin_offset_pixelspace_get to convert to pixel space. </p>
 	 * @see #__DNA__FIELD__origin
 	 */
@@ -325,7 +325,7 @@ public class StripTransform extends CFacade {
 	/**
 	 * Set method for struct member 'origin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 0-1 range, use SEQ_image_transform_origin_offset_pixelspace_get to convert to pixel space. </p>
 	 * @see #__DNA__FIELD__origin
 	 */

@@ -73,7 +73,7 @@ public class BoidRule extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -116,7 +116,7 @@ public class BoidRule extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Boid rule name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -211,7 +211,7 @@ public class BoidRule extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__type
 	 */
@@ -228,7 +228,7 @@ public class BoidRule extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__type
 	 */
@@ -273,7 +273,7 @@ public class BoidRule extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Boid rule name
 	 * @see #__DNA__FIELD__name
 	 */
@@ -294,7 +294,7 @@ public class BoidRule extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Boid rule name
 	 * @see #__DNA__FIELD__name
 	 */

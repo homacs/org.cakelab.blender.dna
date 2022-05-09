@@ -93,7 +93,7 @@ public class ParticleDupliWeight extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The number of times this object is repeated with respect to other objects
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -136,7 +136,7 @@ public class ParticleDupliWeight extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only updated on file save and used on file load. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -283,7 +283,7 @@ public class ParticleDupliWeight extends CFacade {
 	/**
 	 * Get method for struct member 'count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The number of times this object is repeated with respect to other objects
 	 * @see #__DNA__FIELD__count
 	 */
@@ -300,7 +300,7 @@ public class ParticleDupliWeight extends CFacade {
 	/**
 	 * Set method for struct member 'count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The number of times this object is repeated with respect to other objects
 	 * @see #__DNA__FIELD__count
 	 */
@@ -345,7 +345,7 @@ public class ParticleDupliWeight extends CFacade {
 	/**
 	 * Get method for struct member 'index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only updated on file save and used on file load. </p>
 	 * @see #__DNA__FIELD__index
 	 */
@@ -362,7 +362,7 @@ public class ParticleDupliWeight extends CFacade {
 	/**
 	 * Set method for struct member 'index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only updated on file save and used on file load. </p>
 	 * @see #__DNA__FIELD__index
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bToolRef'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><h2>Note</h2><p> Stored per mode. </p> Stored per mode. 
  * 
  * </p>
@@ -96,7 +97,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'idname_fallback'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optionally use these when not interacting directly with the primary tools gizmo. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -119,7 +120,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use to avoid initializing the same tool multiple times. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -142,7 +143,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'space_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> #bToolKey (spacetype, mode), used in 'WM_api.h' </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -165,7 +166,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value depends on the 'space_type', object mode for 3D view, image editor has own mode too. RNA needs to handle using item function. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -188,7 +189,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use for tool options, each group's name must match a tool name:</p><p> {"Tool Name": {"SOME_OT_operator": {...}, ..}, ..}</p><p> This is done since different tools may call the same operators with their own options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -211,7 +212,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Variables needed to operate the tool. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -346,7 +347,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Get method for struct member 'idname_fallback'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optionally use these when not interacting directly with the primary tools gizmo. </p>
 	 * @see #__DNA__FIELD__idname_fallback
 	 */
@@ -367,7 +368,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Set method for struct member 'idname_fallback'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optionally use these when not interacting directly with the primary tools gizmo. </p>
 	 * @see #__DNA__FIELD__idname_fallback
 	 */
@@ -392,7 +393,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Get method for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use to avoid initializing the same tool multiple times. </p>
 	 * @see #__DNA__FIELD__tag
 	 */
@@ -409,7 +410,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Set method for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use to avoid initializing the same tool multiple times. </p>
 	 * @see #__DNA__FIELD__tag
 	 */
@@ -426,7 +427,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Get method for struct member 'space_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> #bToolKey (spacetype, mode), used in 'WM_api.h' </p>
 	 * @see #__DNA__FIELD__space_type
 	 */
@@ -443,7 +444,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Set method for struct member 'space_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> #bToolKey (spacetype, mode), used in 'WM_api.h' </p>
 	 * @see #__DNA__FIELD__space_type
 	 */
@@ -460,7 +461,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value depends on the 'space_type', object mode for 3D view, image editor has own mode too. RNA needs to handle using item function. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -477,7 +478,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value depends on the 'space_type', object mode for 3D view, image editor has own mode too. RNA needs to handle using item function. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -494,7 +495,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Get method for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use for tool options, each group's name must match a tool name:</p><p> {"Tool Name": {"SOME_OT_operator": {...}, ..}, ..}</p><p> This is done since different tools may call the same operators with their own options. </p>
 	 * @see #__DNA__FIELD__properties
 	 */
@@ -514,7 +515,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Set method for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use for tool options, each group's name must match a tool name:</p><p> {"Tool Name": {"SOME_OT_operator": {...}, ..}, ..}</p><p> This is done since different tools may call the same operators with their own options. </p>
 	 * @see #__DNA__FIELD__properties
 	 */
@@ -532,7 +533,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Get method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Variables needed to operate the tool. </p>
 	 * @see #__DNA__FIELD__runtime
 	 */
@@ -552,7 +553,7 @@ public class bToolRef extends CFacade {
 	/**
 	 * Set method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Variables needed to operate the tool. </p>
 	 * @see #__DNA__FIELD__runtime
 	 */

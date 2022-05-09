@@ -73,7 +73,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'source_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  or {@link Collection} , from #eLineartGpencilModifierSource. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -256,7 +256,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'source_vertex_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  specifies which vertex groups our strokes from source_vertex_group will go to. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -299,7 +299,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'overscan'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Camera}<code></code> , before calculation, which give a wider FOV, this doesn't change coordinates range internally (-1, 1), but makes the calculated frame bigger than actual output. This is for the easier shifting calculation. A value of 0.5 means the "internal" focal length become 2/3 of the actual camera. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -442,7 +442,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'crease_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  range for cosine angle </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -465,7 +465,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'angle_splitting_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  angle, for splitting strokes at sharp points. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -488,7 +488,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'chain_smooth_tolerance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Strength for smoothing jagged chains. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -511,7 +511,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'chaining_image_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CPU mode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -534,7 +534,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'calculation_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ported from SceneLineArt flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -557,7 +557,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eLineArtGPencilModifierFlags , modifier internal state. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -580,7 +580,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'stroke_depth_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Move strokes towards camera to avoid clipping while preserve depth for the viewport. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -603,7 +603,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'level_start_override'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data. Because we can potentially only compute features lines once per modifier stack (Use Cache), we need to have these override values to ensure that we have the data we need is computed and stored in the cache. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -686,7 +686,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'render_buffer_ptr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keep a pointer to the render buffer so we can call destroy from {@link ModifierData} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -781,7 +781,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'source_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  or {@link Collection} , from #eLineartGpencilModifierSource. </p>
 	 * @see #__DNA__FIELD__source_type
 	 */
@@ -798,7 +798,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'source_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  or {@link Collection} , from #eLineartGpencilModifierSource. </p>
 	 * @see #__DNA__FIELD__source_type
 	 */
@@ -1067,7 +1067,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'source_vertex_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  specifies which vertex groups our strokes from source_vertex_group will go to. </p>
 	 * @see #__DNA__FIELD__source_vertex_group
 	 */
@@ -1088,7 +1088,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'source_vertex_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  specifies which vertex groups our strokes from source_vertex_group will go to. </p>
 	 * @see #__DNA__FIELD__source_vertex_group
 	 */
@@ -1153,7 +1153,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'overscan'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Camera}<code></code> , before calculation, which give a wider FOV, this doesn't change coordinates range internally (-1, 1), but makes the calculated frame bigger than actual output. This is for the easier shifting calculation. A value of 0.5 means the "internal" focal length become 2/3 of the actual camera. </p>
 	 * @see #__DNA__FIELD__overscan
 	 */
@@ -1170,7 +1170,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'overscan'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Camera}<code></code> , before calculation, which give a wider FOV, this doesn't change coordinates range internally (-1, 1), but makes the calculated frame bigger than actual output. This is for the easier shifting calculation. A value of 0.5 means the "internal" focal length become 2/3 of the actual camera. </p>
 	 * @see #__DNA__FIELD__overscan
 	 */
@@ -1367,7 +1367,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'crease_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  range for cosine angle </p>
 	 * @see #__DNA__FIELD__crease_threshold
 	 */
@@ -1384,7 +1384,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'crease_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  range for cosine angle </p>
 	 * @see #__DNA__FIELD__crease_threshold
 	 */
@@ -1401,7 +1401,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'angle_splitting_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  angle, for splitting strokes at sharp points. </p>
 	 * @see #__DNA__FIELD__angle_splitting_threshold
 	 */
@@ -1418,7 +1418,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'angle_splitting_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  angle, for splitting strokes at sharp points. </p>
 	 * @see #__DNA__FIELD__angle_splitting_threshold
 	 */
@@ -1435,7 +1435,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'chain_smooth_tolerance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Strength for smoothing jagged chains. </p>
 	 * @see #__DNA__FIELD__chain_smooth_tolerance
 	 */
@@ -1452,7 +1452,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'chain_smooth_tolerance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Strength for smoothing jagged chains. </p>
 	 * @see #__DNA__FIELD__chain_smooth_tolerance
 	 */
@@ -1469,7 +1469,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'chaining_image_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CPU mode </p>
 	 * @see #__DNA__FIELD__chaining_image_threshold
 	 */
@@ -1486,7 +1486,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'chaining_image_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CPU mode </p>
 	 * @see #__DNA__FIELD__chaining_image_threshold
 	 */
@@ -1503,7 +1503,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'calculation_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ported from SceneLineArt flags. </p>
 	 * @see #__DNA__FIELD__calculation_flags
 	 */
@@ -1520,7 +1520,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'calculation_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ported from SceneLineArt flags. </p>
 	 * @see #__DNA__FIELD__calculation_flags
 	 */
@@ -1537,7 +1537,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eLineArtGPencilModifierFlags , modifier internal state. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -1554,7 +1554,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eLineArtGPencilModifierFlags , modifier internal state. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -1571,7 +1571,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'stroke_depth_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Move strokes towards camera to avoid clipping while preserve depth for the viewport. </p>
 	 * @see #__DNA__FIELD__stroke_depth_offset
 	 */
@@ -1588,7 +1588,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'stroke_depth_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Move strokes towards camera to avoid clipping while preserve depth for the viewport. </p>
 	 * @see #__DNA__FIELD__stroke_depth_offset
 	 */
@@ -1605,7 +1605,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'level_start_override'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data. Because we can potentially only compute features lines once per modifier stack (Use Cache), we need to have these override values to ensure that we have the data we need is computed and stored in the cache. </p>
 	 * @see #__DNA__FIELD__level_start_override
 	 */
@@ -1622,7 +1622,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'level_start_override'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data. Because we can potentially only compute features lines once per modifier stack (Use Cache), we need to have these override values to ensure that we have the data we need is computed and stored in the cache. </p>
 	 * @see #__DNA__FIELD__level_start_override
 	 */
@@ -1727,7 +1727,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'render_buffer_ptr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keep a pointer to the render buffer so we can call destroy from {@link ModifierData} . </p>
 	 * @see #__DNA__FIELD__render_buffer_ptr
 	 */
@@ -1747,7 +1747,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'render_buffer_ptr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keep a pointer to the render buffer so we can call destroy from {@link ModifierData} . </p>
 	 * @see #__DNA__FIELD__render_buffer_ptr
 	 */

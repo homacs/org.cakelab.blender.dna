@@ -53,7 +53,7 @@ public class LineStyleAlphaModifier_DistanceFromCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the curve mapping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,7 +96,7 @@ public class LineStyleAlphaModifier_DistanceFromCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'range_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower bound of the input range the mapping is applied
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -119,7 +119,7 @@ public class LineStyleAlphaModifier_DistanceFromCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'range_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Upper bound of the input range the mapping is applied
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -206,7 +206,7 @@ public class LineStyleAlphaModifier_DistanceFromCamera extends CFacade {
 	/**
 	 * Get method for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the curve mapping
 	 * @see #__DNA__FIELD__curve
 	 */
@@ -226,7 +226,7 @@ public class LineStyleAlphaModifier_DistanceFromCamera extends CFacade {
 	/**
 	 * Set method for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the curve mapping
 	 * @see #__DNA__FIELD__curve
 	 */
@@ -272,7 +272,7 @@ public class LineStyleAlphaModifier_DistanceFromCamera extends CFacade {
 	/**
 	 * Get method for struct member 'range_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower bound of the input range the mapping is applied
 	 * @see #__DNA__FIELD__range_min
 	 */
@@ -289,7 +289,7 @@ public class LineStyleAlphaModifier_DistanceFromCamera extends CFacade {
 	/**
 	 * Set method for struct member 'range_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower bound of the input range the mapping is applied
 	 * @see #__DNA__FIELD__range_min
 	 */
@@ -306,7 +306,7 @@ public class LineStyleAlphaModifier_DistanceFromCamera extends CFacade {
 	/**
 	 * Get method for struct member 'range_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Upper bound of the input range the mapping is applied
 	 * @see #__DNA__FIELD__range_max
 	 */
@@ -323,7 +323,7 @@ public class LineStyleAlphaModifier_DistanceFromCamera extends CFacade {
 	/**
 	 * Set method for struct member 'range_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Upper bound of the input range the mapping is applied
 	 * @see #__DNA__FIELD__range_max
 	 */

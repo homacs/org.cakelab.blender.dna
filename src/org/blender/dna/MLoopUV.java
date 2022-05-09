@@ -14,8 +14,10 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MLoopUV'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
- * Elements of the UV map. Each element contains the UV coordinates for a point of the corresponding loop entry. Thus for each loopuv entry there exists a loop entry with the same index.<h4>Blender Source Code:</h4>
+ * 
+ * <h4>Java .Blend</h4>
+ * Elements of the UV map. Each element contains the UV coordinates for a point of the corresponding loop entry. Thus for each loopuv entry there exists a loop entry with the same index.
+ * <h4>Blender Source Code</h4>
  * <p> UV coordinate for a polygon face & flag for selection & other options. </p>
  */
 
@@ -35,7 +37,7 @@ public class MLoopUV extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * The 2D UV coordinates.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -58,7 +60,7 @@ public class MLoopUV extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values:</h3>
 	 * 				<pre>
 	 * 	MLOOPUV_EDGESEL = (1 << 0),
@@ -94,7 +96,7 @@ public class MLoopUV extends CFacade {
 	/**
 	 * Get method for struct member 'uv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * The 2D UV coordinates.
 	 * @see #__DNA__FIELD__uv
 	 */
@@ -115,7 +117,7 @@ public class MLoopUV extends CFacade {
 	/**
 	 * Set method for struct member 'uv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * The 2D UV coordinates.
 	 * @see #__DNA__FIELD__uv
 	 */
@@ -140,7 +142,7 @@ public class MLoopUV extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values:</h3>
 	 * 				<pre>
 	 * 	MLOOPUV_EDGESEL = (1 << 0),
@@ -162,7 +164,7 @@ public class MLoopUV extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values:</h3>
 	 * 				<pre>
 	 * 	MLOOPUV_EDGESEL = (1 << 0),

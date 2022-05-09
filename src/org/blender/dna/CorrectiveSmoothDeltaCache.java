@@ -53,7 +53,7 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lambda'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value of settings when creating the cache. These are used to check if the cache should be recomputed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -232,7 +232,7 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	/**
 	 * Get method for struct member 'lambda'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value of settings when creating the cache. These are used to check if the cache should be recomputed. </p>
 	 * @see #__DNA__FIELD__lambda
 	 */
@@ -249,7 +249,7 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	/**
 	 * Set method for struct member 'lambda'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value of settings when creating the cache. These are used to check if the cache should be recomputed. </p>
 	 * @see #__DNA__FIELD__lambda
 	 */

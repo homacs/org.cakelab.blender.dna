@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Base'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
+ * 
+ * <h4>Java .Blend</h4>
  * Wrapper for referencing Objects in a Scene
  */
 
@@ -34,7 +35,7 @@ public class Base extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * next object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +58,7 @@ public class Base extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * previous object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +81,7 @@ public class Base extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag_from_collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags which are based on the collections flags evaluation, does not include flags from object's restrictions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -103,7 +104,7 @@ public class Base extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values:</h3>
 	 * 				<pre>
 	 * 	BA_WAS_SEL          (1 << 1)
@@ -127,7 +128,8 @@ public class Base extends CFacade {
 	 * 	OB_DONE             (1 << 10)  // unknown state, clear before use
 	 * 	// OB_RADIO            (1 << 11) // deprecated
 	 * 	OB_FROMGROUP        (1 << 12)
-	 * 				</pre><h4>Blender Source Code:</h4>
+	 * 				</pre>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Final flags, including both accumulated collection flags and object's restriction flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -230,7 +232,7 @@ public class Base extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * this object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -253,8 +255,9 @@ public class Base extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lay'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Layer<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * Layer
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -339,7 +342,7 @@ public class Base extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'base_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to an original base. Is initialized for evaluated view layer. NOTE: Only allowed to be accessed from within active dependency graph. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -390,7 +393,7 @@ public class Base extends CFacade {
 	/**
 	 * Get method for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * next object
 	 * @see #__DNA__FIELD__next
 	 */
@@ -410,7 +413,7 @@ public class Base extends CFacade {
 	/**
 	 * Set method for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * next object
 	 * @see #__DNA__FIELD__next
 	 */
@@ -428,7 +431,7 @@ public class Base extends CFacade {
 	/**
 	 * Get method for struct member 'prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * previous object
 	 * @see #__DNA__FIELD__prev
 	 */
@@ -448,7 +451,7 @@ public class Base extends CFacade {
 	/**
 	 * Set method for struct member 'prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * previous object
 	 * @see #__DNA__FIELD__prev
 	 */
@@ -466,7 +469,7 @@ public class Base extends CFacade {
 	/**
 	 * Get method for struct member 'flag_from_collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags which are based on the collections flags evaluation, does not include flags from object's restrictions. </p>
 	 * @see #__DNA__FIELD__flag_from_collection
 	 */
@@ -483,7 +486,7 @@ public class Base extends CFacade {
 	/**
 	 * Set method for struct member 'flag_from_collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags which are based on the collections flags evaluation, does not include flags from object's restrictions. </p>
 	 * @see #__DNA__FIELD__flag_from_collection
 	 */
@@ -500,7 +503,7 @@ public class Base extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values:</h3>
 	 * 				<pre>
 	 * 	BA_WAS_SEL          (1 << 1)
@@ -524,7 +527,8 @@ public class Base extends CFacade {
 	 * 	OB_DONE             (1 << 10)  // unknown state, clear before use
 	 * 	// OB_RADIO            (1 << 11) // deprecated
 	 * 	OB_FROMGROUP        (1 << 12)
-	 * 				</pre><h4>Blender Source Code:</h4>
+	 * 				</pre>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Final flags, including both accumulated collection flags and object's restriction flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -541,7 +545,7 @@ public class Base extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values:</h3>
 	 * 				<pre>
 	 * 	BA_WAS_SEL          (1 << 1)
@@ -565,7 +569,8 @@ public class Base extends CFacade {
 	 * 	OB_DONE             (1 << 10)  // unknown state, clear before use
 	 * 	// OB_RADIO            (1 << 11) // deprecated
 	 * 	OB_FROMGROUP        (1 << 12)
-	 * 				</pre><h4>Blender Source Code:</h4>
+	 * 				</pre>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Final flags, including both accumulated collection flags and object's restriction flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -706,7 +711,7 @@ public class Base extends CFacade {
 	/**
 	 * Get method for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * this object
 	 * @see #__DNA__FIELD__object
 	 */
@@ -726,7 +731,7 @@ public class Base extends CFacade {
 	/**
 	 * Set method for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * this object
 	 * @see #__DNA__FIELD__object
 	 */
@@ -744,8 +749,9 @@ public class Base extends CFacade {
 	/**
 	 * Get method for struct member 'lay'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Layer<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * Layer
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -764,8 +770,9 @@ public class Base extends CFacade {
 	/**
 	 * Set method for struct member 'lay'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Layer<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * Layer
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -880,7 +887,7 @@ public class Base extends CFacade {
 	/**
 	 * Get method for struct member 'base_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to an original base. Is initialized for evaluated view layer. NOTE: Only allowed to be accessed from within active dependency graph. </p>
 	 * @see #__DNA__FIELD__base_orig
 	 */
@@ -900,7 +907,7 @@ public class Base extends CFacade {
 	/**
 	 * Set method for struct member 'base_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to an original base. Is initialized for evaluated view layer. NOTE: Only allowed to be accessed from within active dependency graph. </p>
 	 * @see #__DNA__FIELD__base_orig
 	 */

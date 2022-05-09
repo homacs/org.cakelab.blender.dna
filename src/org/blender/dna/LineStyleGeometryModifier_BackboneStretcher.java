@@ -53,7 +53,7 @@ public class LineStyleGeometryModifier_BackboneStretcher extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'backbone_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of backbone stretching
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -140,7 +140,7 @@ public class LineStyleGeometryModifier_BackboneStretcher extends CFacade {
 	/**
 	 * Get method for struct member 'backbone_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of backbone stretching
 	 * @see #__DNA__FIELD__backbone_length
 	 */
@@ -157,7 +157,7 @@ public class LineStyleGeometryModifier_BackboneStretcher extends CFacade {
 	/**
 	 * Set method for struct member 'backbone_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of backbone stretching
 	 * @see #__DNA__FIELD__backbone_length
 	 */

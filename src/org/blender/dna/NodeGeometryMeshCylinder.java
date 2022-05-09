@@ -32,7 +32,7 @@ public class NodeGeometryMeshCylinder extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fill_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeMeshCircleFillType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -63,7 +63,7 @@ public class NodeGeometryMeshCylinder extends CFacade {
 	/**
 	 * Get method for struct member 'fill_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeMeshCircleFillType. </p>
 	 * @see #__DNA__FIELD__fill_type
 	 */
@@ -80,7 +80,7 @@ public class NodeGeometryMeshCylinder extends CFacade {
 	/**
 	 * Set method for struct member 'fill_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeMeshCircleFillType. </p>
 	 * @see #__DNA__FIELD__fill_type
 	 */

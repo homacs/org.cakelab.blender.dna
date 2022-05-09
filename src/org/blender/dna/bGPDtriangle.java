@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPDtriangle'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  GP Fill - Triangle Tessellation Data Grease-Pencil Annotations - 'Triangle' -> A triangle contains the index of three vertices for filling the stroke This is only used if high quality fill is enabled </p>
  */
@@ -35,7 +36,7 @@ public class bGPDtriangle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'verts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> indices for tessellated triangle used for GP Fill </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -66,7 +67,7 @@ public class bGPDtriangle extends CFacade {
 	/**
 	 * Get method for struct member 'verts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> indices for tessellated triangle used for GP Fill </p>
 	 * @see #__DNA__FIELD__verts
 	 */
@@ -87,7 +88,7 @@ public class bGPDtriangle extends CFacade {
 	/**
 	 * Set method for struct member 'verts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> indices for tessellated triangle used for GP Fill </p>
 	 * @see #__DNA__FIELD__verts
 	 */

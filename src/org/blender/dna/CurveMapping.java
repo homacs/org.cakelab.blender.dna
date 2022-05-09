@@ -33,7 +33,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cur; for buttons, to show active curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -116,7 +116,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Current rect, clip rect (is default rect too). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -159,7 +159,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Max 4 builtin curves per mapping struct now. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -182,7 +182,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'black'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Black/white point (black[0] abused for current frame). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -225,7 +225,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bwmul'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Black/white point multiply value, for speed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -248,7 +248,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sample'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sample values, if flag set it draws line and intersection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -271,7 +271,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Tone of the curve
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -322,7 +322,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cur; for buttons, to show active curve. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -339,7 +339,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cur; for buttons, to show active curve. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -440,7 +440,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Get method for struct member 'curr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Current rect, clip rect (is default rect too). </p>
 	 * @see #__DNA__FIELD__curr
 	 */
@@ -457,7 +457,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Set method for struct member 'curr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Current rect, clip rect (is default rect too). </p>
 	 * @see #__DNA__FIELD__curr
 	 */
@@ -518,7 +518,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Get method for struct member 'cm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Max 4 builtin curves per mapping struct now. </p>
 	 * @see #__DNA__FIELD__cm
 	 */
@@ -539,7 +539,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Set method for struct member 'cm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Max 4 builtin curves per mapping struct now. </p>
 	 * @see #__DNA__FIELD__cm
 	 */
@@ -564,7 +564,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Get method for struct member 'black'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Black/white point (black[0] abused for current frame). </p>
 	 * @see #__DNA__FIELD__black
 	 */
@@ -585,7 +585,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Set method for struct member 'black'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Black/white point (black[0] abused for current frame). </p>
 	 * @see #__DNA__FIELD__black
 	 */
@@ -650,7 +650,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Get method for struct member 'bwmul'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Black/white point multiply value, for speed. </p>
 	 * @see #__DNA__FIELD__bwmul
 	 */
@@ -671,7 +671,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Set method for struct member 'bwmul'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Black/white point multiply value, for speed. </p>
 	 * @see #__DNA__FIELD__bwmul
 	 */
@@ -696,7 +696,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Get method for struct member 'sample'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sample values, if flag set it draws line and intersection. </p>
 	 * @see #__DNA__FIELD__sample
 	 */
@@ -717,7 +717,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Set method for struct member 'sample'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sample values, if flag set it draws line and intersection. </p>
 	 * @see #__DNA__FIELD__sample
 	 */
@@ -742,7 +742,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Get method for struct member 'tone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Tone of the curve
 	 * @see #__DNA__FIELD__tone
 	 */
@@ -759,7 +759,7 @@ public class CurveMapping extends CFacade {
 	/**
 	 * Set method for struct member 'tone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Tone of the curve
 	 * @see #__DNA__FIELD__tone
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'LibraryWeakReference'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> A weak library/ID reference for local data that has been appended, to allow re-using that local data instead of creating a new copy of it in future appends.</p><p> NOTE: This is by design a week reference, in other words code should be totally fine and perform a regular append if it cannot find a valid matching local {@link ID} .</p><p> NOTE: There should always be only one single {@link ID}  in current Main matching a given linked reference. </p>
  */
 
@@ -34,7 +35,7 @@ public class LibraryWeakReference extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'library_filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code> Expected to match a Library.filepath</code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +58,7 @@ public class LibraryWeakReference extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'library_id_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_ID_NAME. May be different from the current local {@link ID}  name. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -108,7 +109,7 @@ public class LibraryWeakReference extends CFacade {
 	/**
 	 * Get method for struct member 'library_filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code> Expected to match a Library.filepath</code> . </p>
 	 * @see #__DNA__FIELD__library_filepath
 	 */
@@ -129,7 +130,7 @@ public class LibraryWeakReference extends CFacade {
 	/**
 	 * Set method for struct member 'library_filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code> Expected to match a Library.filepath</code> . </p>
 	 * @see #__DNA__FIELD__library_filepath
 	 */
@@ -154,7 +155,7 @@ public class LibraryWeakReference extends CFacade {
 	/**
 	 * Get method for struct member 'library_id_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_ID_NAME. May be different from the current local {@link ID}  name. </p>
 	 * @see #__DNA__FIELD__library_id_name
 	 */
@@ -175,7 +176,7 @@ public class LibraryWeakReference extends CFacade {
 	/**
 	 * Set method for struct member 'library_id_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_ID_NAME. May be different from the current local {@link ID}  name. </p>
 	 * @see #__DNA__FIELD__library_id_name
 	 */

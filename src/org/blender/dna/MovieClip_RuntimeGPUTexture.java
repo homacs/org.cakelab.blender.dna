@@ -93,7 +93,7 @@ public class MovieClip_RuntimeGPUTexture extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gputexture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not written in file 3 = TEXTARGET_COUNT. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -224,7 +224,7 @@ public class MovieClip_RuntimeGPUTexture extends CFacade {
 	/**
 	 * Get method for struct member 'gputexture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not written in file 3 = TEXTARGET_COUNT. </p>
 	 * @see #__DNA__FIELD__gputexture
 	 */
@@ -245,7 +245,7 @@ public class MovieClip_RuntimeGPUTexture extends CFacade {
 	/**
 	 * Set method for struct member 'gputexture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not written in file 3 = TEXTARGET_COUNT. </p>
 	 * @see #__DNA__FIELD__gputexture
 	 */

@@ -73,7 +73,7 @@ public class SceneCollection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,7 +96,7 @@ public class SceneCollection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'active_object_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For UI. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -179,7 +179,7 @@ public class SceneCollection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'objects'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ({@link Object}  *)LinkData->data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -202,7 +202,7 @@ public class SceneCollection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scene_collections'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nested collections. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -297,7 +297,7 @@ public class SceneCollection extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -318,7 +318,7 @@ public class SceneCollection extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -343,7 +343,7 @@ public class SceneCollection extends CFacade {
 	/**
 	 * Get method for struct member 'active_object_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For UI. </p>
 	 * @see #__DNA__FIELD__active_object_index
 	 */
@@ -360,7 +360,7 @@ public class SceneCollection extends CFacade {
 	/**
 	 * Set method for struct member 'active_object_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For UI. </p>
 	 * @see #__DNA__FIELD__active_object_index
 	 */
@@ -461,7 +461,7 @@ public class SceneCollection extends CFacade {
 	/**
 	 * Get method for struct member 'objects'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ({@link Object}  *)LinkData->data. </p>
 	 * @see #__DNA__FIELD__objects
 	 */
@@ -478,7 +478,7 @@ public class SceneCollection extends CFacade {
 	/**
 	 * Set method for struct member 'objects'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ({@link Object}  *)LinkData->data. </p>
 	 * @see #__DNA__FIELD__objects
 	 */
@@ -503,7 +503,7 @@ public class SceneCollection extends CFacade {
 	/**
 	 * Get method for struct member 'scene_collections'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nested collections. </p>
 	 * @see #__DNA__FIELD__scene_collections
 	 */
@@ -520,7 +520,7 @@ public class SceneCollection extends CFacade {
 	/**
 	 * Set method for struct member 'scene_collections'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nested collections. </p>
 	 * @see #__DNA__FIELD__scene_collections
 	 */

@@ -14,12 +14,14 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ID'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
+ * 
+ * <h4>Java .Blend</h4>
  * Represents the ID of any element in DNA which 
  * 					 is stored in a library (see {@link Library}). Those 
  * 					 elements are instances of structs which contain an 
  * 					 embedded member of type ID as their first element.<br/>
- * 					 IDs of the same element type are linked in linked list (see {@link Link})<h4>Blender Source Code:</h4>
+ * 					 IDs of the same element type are linked in linked list (see {@link Link})
+ * <h4>Blender Source Code</h4>
  * <p> There's a nasty circular dependency here.... 'void *' to the rescue! I really wonder why this is needed. </p>
  */
 
@@ -39,7 +41,7 @@ public class ID extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * reference on the next element in linked list
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -62,7 +64,7 @@ public class ID extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * reference on previous element in linked list
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -105,7 +107,7 @@ public class ID extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lib'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * Reference on the library this library element belongs to.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -128,8 +130,9 @@ public class ID extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'asset_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Additional data for an asset data-block<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Additional data for an asset data-block
+	 * <h4>Blender Source Code</h4>
 	 * <p> If the {@link ID}  is an asset, this pointer is set. Owning pointer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -152,7 +155,7 @@ public class ID extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * The name of the element. Names follow a certain convention. 
 	 * 				    <p>
 	 * 				    Names of library elements which have an specific block code, such as 
@@ -169,8 +172,10 @@ public class ID extends CFacade {
 	 * 					<tr><td>{@link Tex}</td><td>"TE"</td></tr>
 	 * 					<tr><td>{@link CustomDataLayer} for {@link MPoly}</td><td>"NGon Face"</td></tr>
 	 * 					<tr><td>{@link CustomDataLayer} for {@link MLoop}</td><td>"NGon Face-Vertex"</td></tr>
-	 * 					</table><h4>Blender Python API:</h4>
-	 * Unique data-block ID name<h4>Blender Source Code:</h4>
+	 * 					</table>
+	 * <h4>Blender Python API</h4>
+	 * Unique data-block ID name
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_ID_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -193,7 +198,7 @@ public class ID extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * In files usually 1024. One of: <table border="1">
 	 * 					<tr><td>LIB_LOCAL</td><td>0</td><td></td><tr>
 	 * 					<tr><td>LIB_EXTERN</td><td>1</td><td></td><tr>
@@ -210,7 +215,8 @@ public class ID extends CFacade {
 	 * 					<tr><td>LIB_ID_RECALC</td><td>4096</td><td>runtime</td><tr>
 	 * 					<tr><td>LIB_ID_RECALC_DATA</td><td>8192</td><td>runtime</td><tr>
 	 * 					</table>
-	 * 				<h4>Blender Source Code:</h4>
+	 * 				
+	 * <h4>Blender Source Code</h4>
 	 * <p> LIB_... flags report on status of the data-block this {@link ID}  belongs to (persistent, saved to and read from .blend). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -233,8 +239,9 @@ public class ID extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Tools can use this to tag data for their own purposes (initial state is undefined)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Tools can use this to tag data for their own purposes (initial state is undefined)
+	 * <h4>Blender Source Code</h4>
 	 * <p> LIB_TAG_... tags (runtime only, cleared at read time). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -257,7 +264,7 @@ public class ID extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'us'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * Reference counter, counts number of references on the corresponding element. If 0, the element will not be stored in a file.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -280,7 +287,7 @@ public class ID extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'icon_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * Always 0 in files. Will be recalculated base on the library element type when loaded.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -323,7 +330,7 @@ public class ID extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'recalc_up_to_undo_push'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used by undo code. recalc_after_undo_push contains the changes between the last undo push and the current state. This is accumulated as IDs are tagged for update in the depsgraph, and only cleared on undo push.</p><p> recalc_up_to_undo_push is saved to undo memory, and is the value of recalc_after_undo_push at the time of the undo push. This means it can be used to find the changes between undo states. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -366,7 +373,7 @@ public class ID extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'session_uuid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A session-wide unique identifier for a given {@link ID} , that remain the same across potential re-allocations (e.g. due to undo/redo steps). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -389,7 +396,7 @@ public class ID extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * List of associated properties.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -412,8 +419,9 @@ public class ID extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'override_library'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Library override data<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Library override data
+	 * <h4>Blender Source Code</h4>
 	 * <p> Reference linked {@link ID}  which this one overrides. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -436,7 +444,7 @@ public class ID extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'orig_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only set for data-blocks which are coming from copy-on-write, points to the original version of it. Also used temporarily during memfile undo to keep a reference to old {@link ID}  when found. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -459,7 +467,7 @@ public class ID extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'py_instance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the #PyObject reference to the {@link ID}  (initialized on demand).</p><p> This isn't essential, it could be removed however it gives some advantages:</p><p><ul><li><p> Every time the {@link ID}  is accessed a #BPy_StructRNA doesn't have to be created & destroyed (consider all the polling and drawing functions that access {@link ID} 's).</p></li><li><p> When this {@link ID}  is deleted, the #BPy_StructRNA can be invalidated so accessing it from Python raises an exception instead of crashing.</p><p> This is of limited benefit though, as it doesn't apply to non {@link ID}  data that references this {@link ID}  (the bones of an armature or the modifiers of an object for e.g.). </p></li></ul> 
 	 * Every time the ID is accessed a #BPy_StructRNA doesn't have to be created & destroyed (consider all the polling and drawing functions that access ID's).
 	 * When this ID is deleted, the #BPy_StructRNA can be invalidated so accessing it from Python raises an exception instead of crashing.
@@ -487,8 +495,9 @@ public class ID extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'library_weak_reference'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Weak reference to a data-block in another library .blend file (used to re-use already appended data instead of appending new copies)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Weak reference to a data-block in another library .blend file (used to re-use already appended data instead of appending new copies)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weak reference to an {@link ID}  in a given library file, used to allow re-using already appended data in some cases, instead of appending it again.</p><p> May be NULL. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -519,7 +528,7 @@ public class ID extends CFacade {
 	/**
 	 * Get method for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * reference on the next element in linked list
 	 * @see #__DNA__FIELD__next
 	 */
@@ -539,7 +548,7 @@ public class ID extends CFacade {
 	/**
 	 * Set method for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * reference on the next element in linked list
 	 * @see #__DNA__FIELD__next
 	 */
@@ -557,7 +566,7 @@ public class ID extends CFacade {
 	/**
 	 * Get method for struct member 'prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * reference on previous element in linked list
 	 * @see #__DNA__FIELD__prev
 	 */
@@ -577,7 +586,7 @@ public class ID extends CFacade {
 	/**
 	 * Set method for struct member 'prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * reference on previous element in linked list
 	 * @see #__DNA__FIELD__prev
 	 */
@@ -627,7 +636,7 @@ public class ID extends CFacade {
 	/**
 	 * Get method for struct member 'lib'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * Reference on the library this library element belongs to.
 	 * @see #__DNA__FIELD__lib
 	 */
@@ -647,7 +656,7 @@ public class ID extends CFacade {
 	/**
 	 * Set method for struct member 'lib'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * Reference on the library this library element belongs to.
 	 * @see #__DNA__FIELD__lib
 	 */
@@ -665,8 +674,9 @@ public class ID extends CFacade {
 	/**
 	 * Get method for struct member 'asset_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Additional data for an asset data-block<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Additional data for an asset data-block
+	 * <h4>Blender Source Code</h4>
 	 * <p> If the {@link ID}  is an asset, this pointer is set. Owning pointer. </p>
 	 * @see #__DNA__FIELD__asset_data
 	 */
@@ -686,8 +696,9 @@ public class ID extends CFacade {
 	/**
 	 * Set method for struct member 'asset_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Additional data for an asset data-block<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Additional data for an asset data-block
+	 * <h4>Blender Source Code</h4>
 	 * <p> If the {@link ID}  is an asset, this pointer is set. Owning pointer. </p>
 	 * @see #__DNA__FIELD__asset_data
 	 */
@@ -705,7 +716,7 @@ public class ID extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * The name of the element. Names follow a certain convention. 
 	 * 				    <p>
 	 * 				    Names of library elements which have an specific block code, such as 
@@ -722,8 +733,10 @@ public class ID extends CFacade {
 	 * 					<tr><td>{@link Tex}</td><td>"TE"</td></tr>
 	 * 					<tr><td>{@link CustomDataLayer} for {@link MPoly}</td><td>"NGon Face"</td></tr>
 	 * 					<tr><td>{@link CustomDataLayer} for {@link MLoop}</td><td>"NGon Face-Vertex"</td></tr>
-	 * 					</table><h4>Blender Python API:</h4>
-	 * Unique data-block ID name<h4>Blender Source Code:</h4>
+	 * 					</table>
+	 * <h4>Blender Python API</h4>
+	 * Unique data-block ID name
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_ID_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -744,7 +757,7 @@ public class ID extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * The name of the element. Names follow a certain convention. 
 	 * 				    <p>
 	 * 				    Names of library elements which have an specific block code, such as 
@@ -761,8 +774,10 @@ public class ID extends CFacade {
 	 * 					<tr><td>{@link Tex}</td><td>"TE"</td></tr>
 	 * 					<tr><td>{@link CustomDataLayer} for {@link MPoly}</td><td>"NGon Face"</td></tr>
 	 * 					<tr><td>{@link CustomDataLayer} for {@link MLoop}</td><td>"NGon Face-Vertex"</td></tr>
-	 * 					</table><h4>Blender Python API:</h4>
-	 * Unique data-block ID name<h4>Blender Source Code:</h4>
+	 * 					</table>
+	 * <h4>Blender Python API</h4>
+	 * Unique data-block ID name
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_ID_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -787,7 +802,7 @@ public class ID extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * In files usually 1024. One of: <table border="1">
 	 * 					<tr><td>LIB_LOCAL</td><td>0</td><td></td><tr>
 	 * 					<tr><td>LIB_EXTERN</td><td>1</td><td></td><tr>
@@ -804,7 +819,8 @@ public class ID extends CFacade {
 	 * 					<tr><td>LIB_ID_RECALC</td><td>4096</td><td>runtime</td><tr>
 	 * 					<tr><td>LIB_ID_RECALC_DATA</td><td>8192</td><td>runtime</td><tr>
 	 * 					</table>
-	 * 				<h4>Blender Source Code:</h4>
+	 * 				
+	 * <h4>Blender Source Code</h4>
 	 * <p> LIB_... flags report on status of the data-block this {@link ID}  belongs to (persistent, saved to and read from .blend). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -821,7 +837,7 @@ public class ID extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * In files usually 1024. One of: <table border="1">
 	 * 					<tr><td>LIB_LOCAL</td><td>0</td><td></td><tr>
 	 * 					<tr><td>LIB_EXTERN</td><td>1</td><td></td><tr>
@@ -838,7 +854,8 @@ public class ID extends CFacade {
 	 * 					<tr><td>LIB_ID_RECALC</td><td>4096</td><td>runtime</td><tr>
 	 * 					<tr><td>LIB_ID_RECALC_DATA</td><td>8192</td><td>runtime</td><tr>
 	 * 					</table>
-	 * 				<h4>Blender Source Code:</h4>
+	 * 				
+	 * <h4>Blender Source Code</h4>
 	 * <p> LIB_... flags report on status of the data-block this {@link ID}  belongs to (persistent, saved to and read from .blend). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -855,8 +872,9 @@ public class ID extends CFacade {
 	/**
 	 * Get method for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Tools can use this to tag data for their own purposes (initial state is undefined)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Tools can use this to tag data for their own purposes (initial state is undefined)
+	 * <h4>Blender Source Code</h4>
 	 * <p> LIB_TAG_... tags (runtime only, cleared at read time). </p>
 	 * @see #__DNA__FIELD__tag
 	 */
@@ -873,8 +891,9 @@ public class ID extends CFacade {
 	/**
 	 * Set method for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Tools can use this to tag data for their own purposes (initial state is undefined)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Tools can use this to tag data for their own purposes (initial state is undefined)
+	 * <h4>Blender Source Code</h4>
 	 * <p> LIB_TAG_... tags (runtime only, cleared at read time). </p>
 	 * @see #__DNA__FIELD__tag
 	 */
@@ -891,7 +910,7 @@ public class ID extends CFacade {
 	/**
 	 * Get method for struct member 'us'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * Reference counter, counts number of references on the corresponding element. If 0, the element will not be stored in a file.
 	 * @see #__DNA__FIELD__us
 	 */
@@ -908,7 +927,7 @@ public class ID extends CFacade {
 	/**
 	 * Set method for struct member 'us'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * Reference counter, counts number of references on the corresponding element. If 0, the element will not be stored in a file.
 	 * @see #__DNA__FIELD__us
 	 */
@@ -925,7 +944,7 @@ public class ID extends CFacade {
 	/**
 	 * Get method for struct member 'icon_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * Always 0 in files. Will be recalculated base on the library element type when loaded.
 	 * @see #__DNA__FIELD__icon_id
 	 */
@@ -942,7 +961,7 @@ public class ID extends CFacade {
 	/**
 	 * Set method for struct member 'icon_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * Always 0 in files. Will be recalculated base on the library element type when loaded.
 	 * @see #__DNA__FIELD__icon_id
 	 */
@@ -987,7 +1006,7 @@ public class ID extends CFacade {
 	/**
 	 * Get method for struct member 'recalc_up_to_undo_push'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used by undo code. recalc_after_undo_push contains the changes between the last undo push and the current state. This is accumulated as IDs are tagged for update in the depsgraph, and only cleared on undo push.</p><p> recalc_up_to_undo_push is saved to undo memory, and is the value of recalc_after_undo_push at the time of the undo push. This means it can be used to find the changes between undo states. </p>
 	 * @see #__DNA__FIELD__recalc_up_to_undo_push
 	 */
@@ -1004,7 +1023,7 @@ public class ID extends CFacade {
 	/**
 	 * Set method for struct member 'recalc_up_to_undo_push'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used by undo code. recalc_after_undo_push contains the changes between the last undo push and the current state. This is accumulated as IDs are tagged for update in the depsgraph, and only cleared on undo push.</p><p> recalc_up_to_undo_push is saved to undo memory, and is the value of recalc_after_undo_push at the time of the undo push. This means it can be used to find the changes between undo states. </p>
 	 * @see #__DNA__FIELD__recalc_up_to_undo_push
 	 */
@@ -1049,7 +1068,7 @@ public class ID extends CFacade {
 	/**
 	 * Get method for struct member 'session_uuid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A session-wide unique identifier for a given {@link ID} , that remain the same across potential re-allocations (e.g. due to undo/redo steps). </p>
 	 * @see #__DNA__FIELD__session_uuid
 	 */
@@ -1066,7 +1085,7 @@ public class ID extends CFacade {
 	/**
 	 * Set method for struct member 'session_uuid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A session-wide unique identifier for a given {@link ID} , that remain the same across potential re-allocations (e.g. due to undo/redo steps). </p>
 	 * @see #__DNA__FIELD__session_uuid
 	 */
@@ -1083,7 +1102,7 @@ public class ID extends CFacade {
 	/**
 	 * Get method for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * List of associated properties.
 	 * @see #__DNA__FIELD__properties
 	 */
@@ -1103,7 +1122,7 @@ public class ID extends CFacade {
 	/**
 	 * Set method for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * List of associated properties.
 	 * @see #__DNA__FIELD__properties
 	 */
@@ -1121,8 +1140,9 @@ public class ID extends CFacade {
 	/**
 	 * Get method for struct member 'override_library'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Library override data<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Library override data
+	 * <h4>Blender Source Code</h4>
 	 * <p> Reference linked {@link ID}  which this one overrides. </p>
 	 * @see #__DNA__FIELD__override_library
 	 */
@@ -1142,8 +1162,9 @@ public class ID extends CFacade {
 	/**
 	 * Set method for struct member 'override_library'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Library override data<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Library override data
+	 * <h4>Blender Source Code</h4>
 	 * <p> Reference linked {@link ID}  which this one overrides. </p>
 	 * @see #__DNA__FIELD__override_library
 	 */
@@ -1161,7 +1182,7 @@ public class ID extends CFacade {
 	/**
 	 * Get method for struct member 'orig_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only set for data-blocks which are coming from copy-on-write, points to the original version of it. Also used temporarily during memfile undo to keep a reference to old {@link ID}  when found. </p>
 	 * @see #__DNA__FIELD__orig_id
 	 */
@@ -1181,7 +1202,7 @@ public class ID extends CFacade {
 	/**
 	 * Set method for struct member 'orig_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only set for data-blocks which are coming from copy-on-write, points to the original version of it. Also used temporarily during memfile undo to keep a reference to old {@link ID}  when found. </p>
 	 * @see #__DNA__FIELD__orig_id
 	 */
@@ -1199,7 +1220,7 @@ public class ID extends CFacade {
 	/**
 	 * Get method for struct member 'py_instance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the #PyObject reference to the {@link ID}  (initialized on demand).</p><p> This isn't essential, it could be removed however it gives some advantages:</p><p><ul><li><p> Every time the {@link ID}  is accessed a #BPy_StructRNA doesn't have to be created & destroyed (consider all the polling and drawing functions that access {@link ID} 's).</p></li><li><p> When this {@link ID}  is deleted, the #BPy_StructRNA can be invalidated so accessing it from Python raises an exception instead of crashing.</p><p> This is of limited benefit though, as it doesn't apply to non {@link ID}  data that references this {@link ID}  (the bones of an armature or the modifiers of an object for e.g.). </p></li></ul> 
 	 * Every time the ID is accessed a #BPy_StructRNA doesn't have to be created & destroyed (consider all the polling and drawing functions that access ID's).
 	 * When this ID is deleted, the #BPy_StructRNA can be invalidated so accessing it from Python raises an exception instead of crashing.
@@ -1224,7 +1245,7 @@ public class ID extends CFacade {
 	/**
 	 * Set method for struct member 'py_instance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the #PyObject reference to the {@link ID}  (initialized on demand).</p><p> This isn't essential, it could be removed however it gives some advantages:</p><p><ul><li><p> Every time the {@link ID}  is accessed a #BPy_StructRNA doesn't have to be created & destroyed (consider all the polling and drawing functions that access {@link ID} 's).</p></li><li><p> When this {@link ID}  is deleted, the #BPy_StructRNA can be invalidated so accessing it from Python raises an exception instead of crashing.</p><p> This is of limited benefit though, as it doesn't apply to non {@link ID}  data that references this {@link ID}  (the bones of an armature or the modifiers of an object for e.g.). </p></li></ul> 
 	 * Every time the ID is accessed a #BPy_StructRNA doesn't have to be created & destroyed (consider all the polling and drawing functions that access ID's).
 	 * When this ID is deleted, the #BPy_StructRNA can be invalidated so accessing it from Python raises an exception instead of crashing.
@@ -1247,8 +1268,9 @@ public class ID extends CFacade {
 	/**
 	 * Get method for struct member 'library_weak_reference'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Weak reference to a data-block in another library .blend file (used to re-use already appended data instead of appending new copies)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Weak reference to a data-block in another library .blend file (used to re-use already appended data instead of appending new copies)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weak reference to an {@link ID}  in a given library file, used to allow re-using already appended data in some cases, instead of appending it again.</p><p> May be NULL. </p>
 	 * @see #__DNA__FIELD__library_weak_reference
 	 */
@@ -1268,8 +1290,9 @@ public class ID extends CFacade {
 	/**
 	 * Set method for struct member 'library_weak_reference'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Weak reference to a data-block in another library .blend file (used to re-use already appended data instead of appending new copies)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Weak reference to a data-block in another library .blend file (used to re-use already appended data instead of appending new copies)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weak reference to an {@link ID}  in a given library file, used to allow re-using already appended data in some cases, instead of appending it again.</p><p> May be NULL. </p>
 	 * @see #__DNA__FIELD__library_weak_reference
 	 */

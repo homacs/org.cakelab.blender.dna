@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'CurveProfile'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Defines a profile. </p>
  */
 
@@ -33,7 +34,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'path_len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of user-added points that define the profile. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +57,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'segments_len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of sampled points. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +80,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'preset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Preset to use when reset. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -102,7 +103,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Sequence}  of points defining the shape of the curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -125,7 +126,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'table'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display and evaluation table at higher resolution for curves. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -148,8 +149,9 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Segments sampled from control points<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Segments sampled from control points
+	 * <h4>Blender Source Code</h4>
 	 * <p> The positions of the sampled points. Used to display a preview of where they will be. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -172,7 +174,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag for mode states, sampling options, etc... </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -195,7 +197,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'changed_timestamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for keeping track how many times the widget is changed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -218,7 +220,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'view_rect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Widget's current view, and clipping rect (is default rect too). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -269,7 +271,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Get method for struct member 'path_len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of user-added points that define the profile. </p>
 	 * @see #__DNA__FIELD__path_len
 	 */
@@ -286,7 +288,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Set method for struct member 'path_len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of user-added points that define the profile. </p>
 	 * @see #__DNA__FIELD__path_len
 	 */
@@ -303,7 +305,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Get method for struct member 'segments_len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of sampled points. </p>
 	 * @see #__DNA__FIELD__segments_len
 	 */
@@ -320,7 +322,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Set method for struct member 'segments_len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of sampled points. </p>
 	 * @see #__DNA__FIELD__segments_len
 	 */
@@ -337,7 +339,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Get method for struct member 'preset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Preset to use when reset. </p>
 	 * @see #__DNA__FIELD__preset
 	 */
@@ -354,7 +356,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Set method for struct member 'preset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Preset to use when reset. </p>
 	 * @see #__DNA__FIELD__preset
 	 */
@@ -371,7 +373,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Get method for struct member 'path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Sequence}  of points defining the shape of the curve. </p>
 	 * @see #__DNA__FIELD__path
 	 */
@@ -391,7 +393,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Set method for struct member 'path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Sequence}  of points defining the shape of the curve. </p>
 	 * @see #__DNA__FIELD__path
 	 */
@@ -409,7 +411,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Get method for struct member 'table'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display and evaluation table at higher resolution for curves. </p>
 	 * @see #__DNA__FIELD__table
 	 */
@@ -429,7 +431,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Set method for struct member 'table'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display and evaluation table at higher resolution for curves. </p>
 	 * @see #__DNA__FIELD__table
 	 */
@@ -447,8 +449,9 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Get method for struct member 'segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Segments sampled from control points<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Segments sampled from control points
+	 * <h4>Blender Source Code</h4>
 	 * <p> The positions of the sampled points. Used to display a preview of where they will be. </p>
 	 * @see #__DNA__FIELD__segments
 	 */
@@ -468,8 +471,9 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Set method for struct member 'segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Segments sampled from control points<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Segments sampled from control points
+	 * <h4>Blender Source Code</h4>
 	 * <p> The positions of the sampled points. Used to display a preview of where they will be. </p>
 	 * @see #__DNA__FIELD__segments
 	 */
@@ -487,7 +491,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag for mode states, sampling options, etc... </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -504,7 +508,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag for mode states, sampling options, etc... </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -521,7 +525,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Get method for struct member 'changed_timestamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for keeping track how many times the widget is changed. </p>
 	 * @see #__DNA__FIELD__changed_timestamp
 	 */
@@ -538,7 +542,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Set method for struct member 'changed_timestamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for keeping track how many times the widget is changed. </p>
 	 * @see #__DNA__FIELD__changed_timestamp
 	 */
@@ -555,7 +559,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Get method for struct member 'view_rect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Widget's current view, and clipping rect (is default rect too). </p>
 	 * @see #__DNA__FIELD__view_rect
 	 */
@@ -572,7 +576,7 @@ public class CurveProfile extends CFacade {
 	/**
 	 * Set method for struct member 'view_rect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Widget's current view, and clipping rect (is default rect too). </p>
 	 * @see #__DNA__FIELD__view_rect
 	 */

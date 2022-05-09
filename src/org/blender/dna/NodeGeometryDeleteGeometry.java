@@ -32,7 +32,7 @@ public class NodeGeometryDeleteGeometry extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'domain'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> AttributeDomain. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +55,7 @@ public class NodeGeometryDeleteGeometry extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeDeleteGeometryMode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -86,7 +86,7 @@ public class NodeGeometryDeleteGeometry extends CFacade {
 	/**
 	 * Get method for struct member 'domain'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> AttributeDomain. </p>
 	 * @see #__DNA__FIELD__domain
 	 */
@@ -103,7 +103,7 @@ public class NodeGeometryDeleteGeometry extends CFacade {
 	/**
 	 * Set method for struct member 'domain'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> AttributeDomain. </p>
 	 * @see #__DNA__FIELD__domain
 	 */
@@ -120,7 +120,7 @@ public class NodeGeometryDeleteGeometry extends CFacade {
 	/**
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeDeleteGeometryMode. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -137,7 +137,7 @@ public class NodeGeometryDeleteGeometry extends CFacade {
 	/**
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeDeleteGeometryMode. </p>
 	 * @see #__DNA__FIELD__mode
 	 */

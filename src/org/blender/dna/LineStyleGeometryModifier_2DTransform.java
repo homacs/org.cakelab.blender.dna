@@ -53,7 +53,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pivot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Pivot of scaling and rotation operations
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scale_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Scaling factor that is applied along the X axis
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +99,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scale_y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Scaling factor that is applied along the Y axis
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -122,8 +122,9 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Rotation angle<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Rotation angle
+	 * <h4>Blender Source Code</h4>
 	 * <p> In radians. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -146,7 +147,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pivot_u'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Pivot in terms of the stroke point parameter u (0 <= u <= 1)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,7 +170,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pivot_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * 2D X coordinate of the absolute pivot
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -192,7 +193,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pivot_y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * 2D Y coordinate of the absolute pivot
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -279,7 +280,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Get method for struct member 'pivot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Pivot of scaling and rotation operations
 	 * @see #__DNA__FIELD__pivot
 	 */
@@ -296,7 +297,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Set method for struct member 'pivot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Pivot of scaling and rotation operations
 	 * @see #__DNA__FIELD__pivot
 	 */
@@ -313,7 +314,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Get method for struct member 'scale_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Scaling factor that is applied along the X axis
 	 * @see #__DNA__FIELD__scale_x
 	 */
@@ -330,7 +331,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Set method for struct member 'scale_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Scaling factor that is applied along the X axis
 	 * @see #__DNA__FIELD__scale_x
 	 */
@@ -347,7 +348,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Get method for struct member 'scale_y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Scaling factor that is applied along the Y axis
 	 * @see #__DNA__FIELD__scale_y
 	 */
@@ -364,7 +365,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Set method for struct member 'scale_y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Scaling factor that is applied along the Y axis
 	 * @see #__DNA__FIELD__scale_y
 	 */
@@ -381,8 +382,9 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Get method for struct member 'angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Rotation angle<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Rotation angle
+	 * <h4>Blender Source Code</h4>
 	 * <p> In radians. </p>
 	 * @see #__DNA__FIELD__angle
 	 */
@@ -399,8 +401,9 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Set method for struct member 'angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Rotation angle<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Rotation angle
+	 * <h4>Blender Source Code</h4>
 	 * <p> In radians. </p>
 	 * @see #__DNA__FIELD__angle
 	 */
@@ -417,7 +420,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Get method for struct member 'pivot_u'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Pivot in terms of the stroke point parameter u (0 <= u <= 1)
 	 * @see #__DNA__FIELD__pivot_u
 	 */
@@ -434,7 +437,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Set method for struct member 'pivot_u'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Pivot in terms of the stroke point parameter u (0 <= u <= 1)
 	 * @see #__DNA__FIELD__pivot_u
 	 */
@@ -451,7 +454,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Get method for struct member 'pivot_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * 2D X coordinate of the absolute pivot
 	 * @see #__DNA__FIELD__pivot_x
 	 */
@@ -468,7 +471,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Set method for struct member 'pivot_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * 2D X coordinate of the absolute pivot
 	 * @see #__DNA__FIELD__pivot_x
 	 */
@@ -485,7 +488,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Get method for struct member 'pivot_y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * 2D Y coordinate of the absolute pivot
 	 * @see #__DNA__FIELD__pivot_y
 	 */
@@ -502,7 +505,7 @@ public class LineStyleGeometryModifier_2DTransform extends CFacade {
 	/**
 	 * Set method for struct member 'pivot_y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * 2D Y coordinate of the absolute pivot
 	 * @see #__DNA__FIELD__pivot_y
 	 */

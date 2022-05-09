@@ -33,7 +33,7 @@ public class SubsurfRuntimeData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'subdiv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cached subdivision surface descriptor, with topology and settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -104,7 +104,7 @@ public class SubsurfRuntimeData extends CFacade {
 	/**
 	 * Get method for struct member 'subdiv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cached subdivision surface descriptor, with topology and settings. </p>
 	 * @see #__DNA__FIELD__subdiv
 	 */
@@ -124,7 +124,7 @@ public class SubsurfRuntimeData extends CFacade {
 	/**
 	 * Set method for struct member 'subdiv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cached subdivision surface descriptor, with topology and settings. </p>
 	 * @see #__DNA__FIELD__subdiv
 	 */

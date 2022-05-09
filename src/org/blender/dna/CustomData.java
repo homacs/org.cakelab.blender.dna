@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'CustomData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Structure which stores custom element data associated with mesh elements (vertices, edges or faces). The custom data is organized into a series of layers, each with a data type (e.g. {@link MTFace} , {@link MDeformVert} , etc.). </p>
  */
 
@@ -34,7 +35,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CustomDataLayers, ordered by type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +58,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'typemap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> runtime only! - maps types to indices of first layer of that type, MUST be >= CD_NUMTYPES, but we can't use a define here. Correct size is ensured in CustomData_update_typemap assert(). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -100,7 +101,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'totlayer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of layers, size of layers array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -143,7 +144,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'totsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In editmode, total size of all data layers. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -166,7 +167,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (BMesh Only): Memory pool for allocation of blocks. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -189,7 +190,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'external'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> External file storing customdata layers. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -220,7 +221,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Get method for struct member 'layers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CustomDataLayers, ordered by type. </p>
 	 * @see #__DNA__FIELD__layers
 	 */
@@ -240,7 +241,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Set method for struct member 'layers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CustomDataLayers, ordered by type. </p>
 	 * @see #__DNA__FIELD__layers
 	 */
@@ -258,7 +259,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Get method for struct member 'typemap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> runtime only! - maps types to indices of first layer of that type, MUST be >= CD_NUMTYPES, but we can't use a define here. Correct size is ensured in CustomData_update_typemap assert(). </p>
 	 * @see #__DNA__FIELD__typemap
 	 */
@@ -279,7 +280,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Set method for struct member 'typemap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> runtime only! - maps types to indices of first layer of that type, MUST be >= CD_NUMTYPES, but we can't use a define here. Correct size is ensured in CustomData_update_typemap assert(). </p>
 	 * @see #__DNA__FIELD__typemap
 	 */
@@ -344,7 +345,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Get method for struct member 'totlayer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of layers, size of layers array. </p>
 	 * @see #__DNA__FIELD__totlayer
 	 */
@@ -361,7 +362,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Set method for struct member 'totlayer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of layers, size of layers array. </p>
 	 * @see #__DNA__FIELD__totlayer
 	 */
@@ -406,7 +407,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Get method for struct member 'totsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In editmode, total size of all data layers. </p>
 	 * @see #__DNA__FIELD__totsize
 	 */
@@ -423,7 +424,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Set method for struct member 'totsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In editmode, total size of all data layers. </p>
 	 * @see #__DNA__FIELD__totsize
 	 */
@@ -440,7 +441,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Get method for struct member 'pool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (BMesh Only): Memory pool for allocation of blocks. </p>
 	 * @see #__DNA__FIELD__pool
 	 */
@@ -460,7 +461,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Set method for struct member 'pool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (BMesh Only): Memory pool for allocation of blocks. </p>
 	 * @see #__DNA__FIELD__pool
 	 */
@@ -478,7 +479,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Get method for struct member 'external'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> External file storing customdata layers. </p>
 	 * @see #__DNA__FIELD__external
 	 */
@@ -498,7 +499,7 @@ public class CustomData extends CFacade {
 	/**
 	 * Set method for struct member 'external'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> External file storing customdata layers. </p>
 	 * @see #__DNA__FIELD__external
 	 */

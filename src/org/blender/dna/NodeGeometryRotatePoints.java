@@ -33,7 +33,7 @@ public class NodeGeometryRotatePoints extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeRotatePointsType </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +56,7 @@ public class NodeGeometryRotatePoints extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeRotatePointsSpace </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +79,7 @@ public class NodeGeometryRotatePoints extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'input_type_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeInputMode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -170,7 +170,7 @@ public class NodeGeometryRotatePoints extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeRotatePointsType </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -187,7 +187,7 @@ public class NodeGeometryRotatePoints extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeRotatePointsType </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -204,7 +204,7 @@ public class NodeGeometryRotatePoints extends CFacade {
 	/**
 	 * Get method for struct member 'space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeRotatePointsSpace </p>
 	 * @see #__DNA__FIELD__space
 	 */
@@ -221,7 +221,7 @@ public class NodeGeometryRotatePoints extends CFacade {
 	/**
 	 * Set method for struct member 'space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeRotatePointsSpace </p>
 	 * @see #__DNA__FIELD__space
 	 */
@@ -238,7 +238,7 @@ public class NodeGeometryRotatePoints extends CFacade {
 	/**
 	 * Get method for struct member 'input_type_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeInputMode </p>
 	 * @see #__DNA__FIELD__input_type_axis
 	 */
@@ -255,7 +255,7 @@ public class NodeGeometryRotatePoints extends CFacade {
 	/**
 	 * Set method for struct member 'input_type_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeInputMode </p>
 	 * @see #__DNA__FIELD__input_type_axis
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'uiPreview'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Some preview UI data need to be saved in file. </p>
  */
 
@@ -74,7 +75,7 @@ public class uiPreview extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'preview_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Defined as #UI_MAX_NAME_STR. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -209,7 +210,7 @@ public class uiPreview extends CFacade {
 	/**
 	 * Get method for struct member 'preview_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Defined as #UI_MAX_NAME_STR. </p>
 	 * @see #__DNA__FIELD__preview_id
 	 */
@@ -230,7 +231,7 @@ public class uiPreview extends CFacade {
 	/**
 	 * Set method for struct member 'preview_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Defined as #UI_MAX_NAME_STR. </p>
 	 * @see #__DNA__FIELD__preview_id
 	 */

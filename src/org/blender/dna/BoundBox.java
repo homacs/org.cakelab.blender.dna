@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'BoundBox'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
+ * 
+ * <h4>Java .Blend</h4>
  * 
  * 			 The following illustrates the orientation of the
  * 			 bounding box in local space.
@@ -37,7 +38,8 @@ import org.cakelab.blender.nio.CPointer;
  * 			  |/         |/
  * 			  0----------4
  * 			 </pre>
- * 			<h4>Blender Source Code:</h4>
+ * 			
+ * <h4>Blender Source Code</h4>
  * <p> The following illustrates the orientation of the bounding box in local space</p><p><pre></pre></p><p><pre></pre>  </p>
  */
 
@@ -57,7 +59,7 @@ public class BoundBox extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vec'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * The 8 vectors with 3 components (xyz) (see class documentation).
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +82,7 @@ public class BoundBox extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * One of: 	
 	 * 				<ul><li>BOUNDBOX_DISABLED</td><td>(1 << 0)</li>
 	 * 				<li>BOUNDBOX_DIRTY </td><td>(1 << 1)</li>
@@ -134,7 +136,7 @@ public class BoundBox extends CFacade {
 	/**
 	 * Get method for struct member 'vec'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * The 8 vectors with 3 components (xyz) (see class documentation).
 	 * @see #__DNA__FIELD__vec
 	 */
@@ -156,7 +158,7 @@ public class BoundBox extends CFacade {
 	/**
 	 * Set method for struct member 'vec'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * The 8 vectors with 3 components (xyz) (see class documentation).
 	 * @see #__DNA__FIELD__vec
 	 */
@@ -181,7 +183,7 @@ public class BoundBox extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * One of: 	
 	 * 				<ul><li>BOUNDBOX_DISABLED</td><td>(1 << 0)</li>
 	 * 				<li>BOUNDBOX_DIRTY </td><td>(1 << 1)</li>
@@ -201,7 +203,7 @@ public class BoundBox extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * One of: 	
 	 * 				<ul><li>BOUNDBOX_DISABLED</td><td>(1 << 0)</li>
 	 * 				<li>BOUNDBOX_DIRTY </td><td>(1 << 1)</li>

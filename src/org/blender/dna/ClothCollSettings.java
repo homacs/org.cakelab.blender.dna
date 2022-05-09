@@ -33,7 +33,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'collision_list'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> E.g. pointer to temp memory for collisions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +56,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'epsilon'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Min distance for collisions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +79,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'self_friction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fiction/damping with self contact. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -102,7 +102,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'friction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Friction/damping applied on contact with other object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -125,7 +125,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'damping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Collision restitution on contact with other object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -148,7 +148,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'selfepsilon'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For selfcollision. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -171,7 +171,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'repel_force'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -196,7 +196,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'distance_repel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -221,7 +221,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Collision flags defined in BKE_cloth.h. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -244,7 +244,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'self_loop_count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How many iterations for the selfcollision loop. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -269,7 +269,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'loop_count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How many iterations for the collision loop. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -312,7 +312,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only use colliders from this group of objects. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -335,7 +335,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup_selfcol'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vgroup to paint which vertices are not used for self collisions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -358,7 +358,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup_objcol'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vgroup to paint which vertices are not used for object collisions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -401,7 +401,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'clamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Impulse clamp for object collisions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -424,7 +424,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'self_clamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Impulse clamp for self collisions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -455,7 +455,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Get method for struct member 'collision_list'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> E.g. pointer to temp memory for collisions. </p>
 	 * @see #__DNA__FIELD__collision_list
 	 */
@@ -475,7 +475,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Set method for struct member 'collision_list'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> E.g. pointer to temp memory for collisions. </p>
 	 * @see #__DNA__FIELD__collision_list
 	 */
@@ -493,7 +493,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Get method for struct member 'epsilon'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Min distance for collisions. </p>
 	 * @see #__DNA__FIELD__epsilon
 	 */
@@ -510,7 +510,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Set method for struct member 'epsilon'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Min distance for collisions. </p>
 	 * @see #__DNA__FIELD__epsilon
 	 */
@@ -527,7 +527,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Get method for struct member 'self_friction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fiction/damping with self contact. </p>
 	 * @see #__DNA__FIELD__self_friction
 	 */
@@ -544,7 +544,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Set method for struct member 'self_friction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fiction/damping with self contact. </p>
 	 * @see #__DNA__FIELD__self_friction
 	 */
@@ -561,7 +561,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Get method for struct member 'friction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Friction/damping applied on contact with other object. </p>
 	 * @see #__DNA__FIELD__friction
 	 */
@@ -578,7 +578,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Set method for struct member 'friction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Friction/damping applied on contact with other object. </p>
 	 * @see #__DNA__FIELD__friction
 	 */
@@ -595,7 +595,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Get method for struct member 'damping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Collision restitution on contact with other object. </p>
 	 * @see #__DNA__FIELD__damping
 	 */
@@ -612,7 +612,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Set method for struct member 'damping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Collision restitution on contact with other object. </p>
 	 * @see #__DNA__FIELD__damping
 	 */
@@ -629,7 +629,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Get method for struct member 'selfepsilon'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For selfcollision. </p>
 	 * @see #__DNA__FIELD__selfepsilon
 	 */
@@ -646,7 +646,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Set method for struct member 'selfepsilon'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For selfcollision. </p>
 	 * @see #__DNA__FIELD__selfepsilon
 	 */
@@ -663,7 +663,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Get method for struct member 'repel_force'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -682,7 +682,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Set method for struct member 'repel_force'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -701,7 +701,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Get method for struct member 'distance_repel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -720,7 +720,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Set method for struct member 'distance_repel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -739,7 +739,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Get method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Collision flags defined in BKE_cloth.h. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -756,7 +756,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Set method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Collision flags defined in BKE_cloth.h. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -773,7 +773,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Get method for struct member 'self_loop_count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How many iterations for the selfcollision loop. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -792,7 +792,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Set method for struct member 'self_loop_count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How many iterations for the selfcollision loop. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -811,7 +811,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Get method for struct member 'loop_count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How many iterations for the collision loop. </p>
 	 * @see #__DNA__FIELD__loop_count
 	 */
@@ -828,7 +828,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Set method for struct member 'loop_count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How many iterations for the collision loop. </p>
 	 * @see #__DNA__FIELD__loop_count
 	 */
@@ -885,7 +885,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Get method for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only use colliders from this group of objects. </p>
 	 * @see #__DNA__FIELD__group
 	 */
@@ -905,7 +905,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Set method for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only use colliders from this group of objects. </p>
 	 * @see #__DNA__FIELD__group
 	 */
@@ -923,7 +923,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Get method for struct member 'vgroup_selfcol'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vgroup to paint which vertices are not used for self collisions. </p>
 	 * @see #__DNA__FIELD__vgroup_selfcol
 	 */
@@ -940,7 +940,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Set method for struct member 'vgroup_selfcol'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vgroup to paint which vertices are not used for self collisions. </p>
 	 * @see #__DNA__FIELD__vgroup_selfcol
 	 */
@@ -957,7 +957,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Get method for struct member 'vgroup_objcol'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vgroup to paint which vertices are not used for object collisions. </p>
 	 * @see #__DNA__FIELD__vgroup_objcol
 	 */
@@ -974,7 +974,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Set method for struct member 'vgroup_objcol'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vgroup to paint which vertices are not used for object collisions. </p>
 	 * @see #__DNA__FIELD__vgroup_objcol
 	 */
@@ -1031,7 +1031,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Get method for struct member 'clamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Impulse clamp for object collisions. </p>
 	 * @see #__DNA__FIELD__clamp
 	 */
@@ -1048,7 +1048,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Set method for struct member 'clamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Impulse clamp for object collisions. </p>
 	 * @see #__DNA__FIELD__clamp
 	 */
@@ -1065,7 +1065,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Get method for struct member 'self_clamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Impulse clamp for self collisions. </p>
 	 * @see #__DNA__FIELD__self_clamp
 	 */
@@ -1082,7 +1082,7 @@ public class ClothCollSettings extends CFacade {
 	/**
 	 * Set method for struct member 'self_clamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Impulse clamp for self collisions. </p>
 	 * @see #__DNA__FIELD__self_clamp
 	 */

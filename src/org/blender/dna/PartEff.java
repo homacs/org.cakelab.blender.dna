@@ -833,7 +833,7 @@ public class PartEff extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vgroupname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -876,7 +876,7 @@ public class PartEff extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'imat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inverse matrix of parent {@link Object} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2159,7 +2159,7 @@ public class PartEff extends CFacade {
 	/**
 	 * Get method for struct member 'vgroupname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgroupname
 	 */
@@ -2180,7 +2180,7 @@ public class PartEff extends CFacade {
 	/**
 	 * Set method for struct member 'vgroupname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgroupname
 	 */
@@ -2245,7 +2245,7 @@ public class PartEff extends CFacade {
 	/**
 	 * Get method for struct member 'imat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inverse matrix of parent {@link Object} . </p>
 	 * @see #__DNA__FIELD__imat
 	 */
@@ -2267,7 +2267,7 @@ public class PartEff extends CFacade {
 	/**
 	 * Set method for struct member 'imat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inverse matrix of parent {@link Object} . </p>
 	 * @see #__DNA__FIELD__imat
 	 */

@@ -312,7 +312,7 @@ public class NodeBlurData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'image_in_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Needed for absolute/relative conversions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -755,7 +755,7 @@ public class NodeBlurData extends CFacade {
 	/**
 	 * Get method for struct member 'image_in_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Needed for absolute/relative conversions. </p>
 	 * @see #__DNA__FIELD__image_in_width
 	 */
@@ -772,7 +772,7 @@ public class NodeBlurData extends CFacade {
 	/**
 	 * Set method for struct member 'image_in_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Needed for absolute/relative conversions. </p>
 	 * @see #__DNA__FIELD__image_in_width
 	 */

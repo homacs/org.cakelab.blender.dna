@@ -52,7 +52,7 @@ public class VolumeRender extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Specify volume density and step size in object or world space
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,7 +75,7 @@ public class VolumeRender extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'step_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance between volume samples. Lower values render more detail at the cost of performance. If set to zero, the step size is automatically determined based on voxel size
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +98,7 @@ public class VolumeRender extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'clipping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Value under which voxels are considered empty space to optimize rendering
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -157,7 +157,7 @@ public class VolumeRender extends CFacade {
 	/**
 	 * Get method for struct member 'space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Specify volume density and step size in object or world space
 	 * @see #__DNA__FIELD__space
 	 */
@@ -174,7 +174,7 @@ public class VolumeRender extends CFacade {
 	/**
 	 * Set method for struct member 'space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Specify volume density and step size in object or world space
 	 * @see #__DNA__FIELD__space
 	 */
@@ -191,7 +191,7 @@ public class VolumeRender extends CFacade {
 	/**
 	 * Get method for struct member 'step_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance between volume samples. Lower values render more detail at the cost of performance. If set to zero, the step size is automatically determined based on voxel size
 	 * @see #__DNA__FIELD__step_size
 	 */
@@ -208,7 +208,7 @@ public class VolumeRender extends CFacade {
 	/**
 	 * Set method for struct member 'step_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance between volume samples. Lower values render more detail at the cost of performance. If set to zero, the step size is automatically determined based on voxel size
 	 * @see #__DNA__FIELD__step_size
 	 */
@@ -225,7 +225,7 @@ public class VolumeRender extends CFacade {
 	/**
 	 * Get method for struct member 'clipping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Value under which voxels are considered empty space to optimize rendering
 	 * @see #__DNA__FIELD__clipping
 	 */
@@ -242,7 +242,7 @@ public class VolumeRender extends CFacade {
 	/**
 	 * Set method for struct member 'clipping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Value under which voxels are considered empty space to optimize rendering
 	 * @see #__DNA__FIELD__clipping
 	 */

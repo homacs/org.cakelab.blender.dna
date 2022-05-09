@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bDeformGroup'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Vertex Groups - Name Info </p>
  */
 
@@ -74,7 +75,7 @@ public class bDeformGroup extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -97,7 +98,7 @@ public class bDeformGroup extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> need this flag for locking weights </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -212,7 +213,7 @@ public class bDeformGroup extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -233,7 +234,7 @@ public class bDeformGroup extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -258,7 +259,7 @@ public class bDeformGroup extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> need this flag for locking weights </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -275,7 +276,7 @@ public class bDeformGroup extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> need this flag for locking weights </p>
 	 * @see #__DNA__FIELD__flag
 	 */

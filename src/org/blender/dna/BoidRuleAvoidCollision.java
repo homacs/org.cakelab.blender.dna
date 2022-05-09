@@ -72,7 +72,7 @@ public class BoidRuleAvoidCollision extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'look_ahead'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Time to look ahead in seconds
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -167,7 +167,7 @@ public class BoidRuleAvoidCollision extends CFacade {
 	/**
 	 * Get method for struct member 'look_ahead'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Time to look ahead in seconds
 	 * @see #__DNA__FIELD__look_ahead
 	 */
@@ -184,7 +184,7 @@ public class BoidRuleAvoidCollision extends CFacade {
 	/**
 	 * Set method for struct member 'look_ahead'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Time to look ahead in seconds
 	 * @see #__DNA__FIELD__look_ahead
 	 */

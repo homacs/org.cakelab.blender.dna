@@ -32,8 +32,9 @@ public class MaskSplinePointUW extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'u'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * U coordinate of point along spline segment<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * U coordinate of point along spline segment
+	 * <h4>Blender Source Code</h4>
 	 * <p> U coordinate along spline segment and weight of this point. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +77,7 @@ public class MaskSplinePointUW extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Different flags of this point. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -107,8 +108,9 @@ public class MaskSplinePointUW extends CFacade {
 	/**
 	 * Get method for struct member 'u'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * U coordinate of point along spline segment<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * U coordinate of point along spline segment
+	 * <h4>Blender Source Code</h4>
 	 * <p> U coordinate along spline segment and weight of this point. </p>
 	 * @see #__DNA__FIELD__u
 	 */
@@ -125,8 +127,9 @@ public class MaskSplinePointUW extends CFacade {
 	/**
 	 * Set method for struct member 'u'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * U coordinate of point along spline segment<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * U coordinate of point along spline segment
+	 * <h4>Blender Source Code</h4>
 	 * <p> U coordinate along spline segment and weight of this point. </p>
 	 * @see #__DNA__FIELD__u
 	 */
@@ -171,7 +174,7 @@ public class MaskSplinePointUW extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Different flags of this point. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -188,7 +191,7 @@ public class MaskSplinePointUW extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Different flags of this point. </p>
 	 * @see #__DNA__FIELD__flag
 	 */

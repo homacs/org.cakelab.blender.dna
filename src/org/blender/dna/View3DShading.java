@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'View3DShading'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> 3D Viewport Shading settings. </p>
  */
 
@@ -34,8 +35,9 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method to display/shade objects in the 3D View<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Method to display/shade objects in the 3D View
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shading type (OB_SOLID, ..). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -58,7 +60,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'prev_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime, for toggle between rendered viewport. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -101,7 +103,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'color_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color Type
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -144,7 +146,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'light'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lighting Method for Solid/Texture Viewport Shading
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -167,7 +169,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'background_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Way to display the background
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -190,7 +192,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cavity_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Way to display the cavity shading
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -253,8 +255,9 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'studio_light'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Studio lighting setup<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Studio lighting setup
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAXFILE. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -277,7 +280,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lookdev_light'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAXFILE. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -300,7 +303,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'matcap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAXFILE. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -323,7 +326,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shadow_intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Darkness of shadows
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -346,7 +349,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'single_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color for single color mode
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -409,7 +412,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'studiolight_intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Strength of the studiolight
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -452,7 +455,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object_outline_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color for object outline
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -475,7 +478,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'xray_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of alpha to use
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -518,7 +521,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cavity_valley_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor for the cavity valleys
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -541,7 +544,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cavity_ridge_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor for the cavity ridges
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -564,7 +567,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'background_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color for custom background color
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -587,7 +590,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curvature_ridge_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor for the curvature ridges
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -610,7 +613,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curvature_valley_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor for the curvature valleys
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -633,8 +636,9 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'render_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Render Pass to show in the viewport<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Render Pass to show in the viewport
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  where one bit is set </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -657,7 +661,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'aov_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Name of the active Shader AOV
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -728,8 +732,9 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method to display/shade objects in the 3D View<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Method to display/shade objects in the 3D View
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shading type (OB_SOLID, ..). </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -746,8 +751,9 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method to display/shade objects in the 3D View<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Method to display/shade objects in the 3D View
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shading type (OB_SOLID, ..). </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -764,7 +770,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'prev_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime, for toggle between rendered viewport. </p>
 	 * @see #__DNA__FIELD__prev_type
 	 */
@@ -781,7 +787,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'prev_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime, for toggle between rendered viewport. </p>
 	 * @see #__DNA__FIELD__prev_type
 	 */
@@ -826,7 +832,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'color_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color Type
 	 * @see #__DNA__FIELD__color_type
 	 */
@@ -843,7 +849,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'color_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color Type
 	 * @see #__DNA__FIELD__color_type
 	 */
@@ -888,7 +894,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'light'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lighting Method for Solid/Texture Viewport Shading
 	 * @see #__DNA__FIELD__light
 	 */
@@ -905,7 +911,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'light'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lighting Method for Solid/Texture Viewport Shading
 	 * @see #__DNA__FIELD__light
 	 */
@@ -922,7 +928,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'background_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Way to display the background
 	 * @see #__DNA__FIELD__background_type
 	 */
@@ -939,7 +945,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'background_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Way to display the background
 	 * @see #__DNA__FIELD__background_type
 	 */
@@ -956,7 +962,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'cavity_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Way to display the cavity shading
 	 * @see #__DNA__FIELD__cavity_type
 	 */
@@ -973,7 +979,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'cavity_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Way to display the cavity shading
 	 * @see #__DNA__FIELD__cavity_type
 	 */
@@ -1058,8 +1064,9 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'studio_light'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Studio lighting setup<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Studio lighting setup
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAXFILE. </p>
 	 * @see #__DNA__FIELD__studio_light
 	 */
@@ -1080,8 +1087,9 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'studio_light'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Studio lighting setup<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Studio lighting setup
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAXFILE. </p>
 	 * @see #__DNA__FIELD__studio_light
 	 */
@@ -1106,7 +1114,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'lookdev_light'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAXFILE. </p>
 	 * @see #__DNA__FIELD__lookdev_light
 	 */
@@ -1127,7 +1135,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'lookdev_light'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAXFILE. </p>
 	 * @see #__DNA__FIELD__lookdev_light
 	 */
@@ -1152,7 +1160,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'matcap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAXFILE. </p>
 	 * @see #__DNA__FIELD__matcap
 	 */
@@ -1173,7 +1181,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'matcap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAXFILE. </p>
 	 * @see #__DNA__FIELD__matcap
 	 */
@@ -1198,7 +1206,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'shadow_intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Darkness of shadows
 	 * @see #__DNA__FIELD__shadow_intensity
 	 */
@@ -1215,7 +1223,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'shadow_intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Darkness of shadows
 	 * @see #__DNA__FIELD__shadow_intensity
 	 */
@@ -1232,7 +1240,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'single_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color for single color mode
 	 * @see #__DNA__FIELD__single_color
 	 */
@@ -1253,7 +1261,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'single_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color for single color mode
 	 * @see #__DNA__FIELD__single_color
 	 */
@@ -1334,7 +1342,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'studiolight_intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Strength of the studiolight
 	 * @see #__DNA__FIELD__studiolight_intensity
 	 */
@@ -1351,7 +1359,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'studiolight_intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Strength of the studiolight
 	 * @see #__DNA__FIELD__studiolight_intensity
 	 */
@@ -1396,7 +1404,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'object_outline_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color for object outline
 	 * @see #__DNA__FIELD__object_outline_color
 	 */
@@ -1417,7 +1425,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'object_outline_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color for object outline
 	 * @see #__DNA__FIELD__object_outline_color
 	 */
@@ -1442,7 +1450,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'xray_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of alpha to use
 	 * @see #__DNA__FIELD__xray_alpha
 	 */
@@ -1459,7 +1467,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'xray_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of alpha to use
 	 * @see #__DNA__FIELD__xray_alpha
 	 */
@@ -1504,7 +1512,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'cavity_valley_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor for the cavity valleys
 	 * @see #__DNA__FIELD__cavity_valley_factor
 	 */
@@ -1521,7 +1529,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'cavity_valley_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor for the cavity valleys
 	 * @see #__DNA__FIELD__cavity_valley_factor
 	 */
@@ -1538,7 +1546,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'cavity_ridge_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor for the cavity ridges
 	 * @see #__DNA__FIELD__cavity_ridge_factor
 	 */
@@ -1555,7 +1563,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'cavity_ridge_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor for the cavity ridges
 	 * @see #__DNA__FIELD__cavity_ridge_factor
 	 */
@@ -1572,7 +1580,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'background_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color for custom background color
 	 * @see #__DNA__FIELD__background_color
 	 */
@@ -1593,7 +1601,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'background_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color for custom background color
 	 * @see #__DNA__FIELD__background_color
 	 */
@@ -1618,7 +1626,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'curvature_ridge_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor for the curvature ridges
 	 * @see #__DNA__FIELD__curvature_ridge_factor
 	 */
@@ -1635,7 +1643,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'curvature_ridge_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor for the curvature ridges
 	 * @see #__DNA__FIELD__curvature_ridge_factor
 	 */
@@ -1652,7 +1660,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'curvature_valley_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor for the curvature valleys
 	 * @see #__DNA__FIELD__curvature_valley_factor
 	 */
@@ -1669,7 +1677,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'curvature_valley_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor for the curvature valleys
 	 * @see #__DNA__FIELD__curvature_valley_factor
 	 */
@@ -1686,8 +1694,9 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'render_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Render Pass to show in the viewport<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Render Pass to show in the viewport
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  where one bit is set </p>
 	 * @see #__DNA__FIELD__render_pass
 	 */
@@ -1704,8 +1713,9 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'render_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Render Pass to show in the viewport<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Render Pass to show in the viewport
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  where one bit is set </p>
 	 * @see #__DNA__FIELD__render_pass
 	 */
@@ -1722,7 +1732,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Get method for struct member 'aov_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Name of the active Shader AOV
 	 * @see #__DNA__FIELD__aov_name
 	 */
@@ -1743,7 +1753,7 @@ public class View3DShading extends CFacade {
 	/**
 	 * Set method for struct member 'aov_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Name of the active Shader AOV
 	 * @see #__DNA__FIELD__aov_name
 	 */

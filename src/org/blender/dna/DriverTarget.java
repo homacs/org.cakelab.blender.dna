@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'DriverTarget'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Drivers -----------------------------------<mdash/>  Driver Target (dtar)</p><p> Defines how to access a dependency needed for a driver variable. </p>
  */
 
@@ -34,8 +35,9 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * ID-block that the specific property used can be found from (id_type property must be set first)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * ID-block that the specific property used can be found from (id_type property must be set first)
+	 * <h4>Blender Source Code</h4>
 	 * <p> ID-block which owns the target, no user count. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -58,7 +60,7 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> RNA path defining the setting to use (for DVAR_TYPE_SINGLE_PROP). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -81,7 +83,7 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pchan_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -104,7 +106,7 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'transChan'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transform channel index (for DVAR_TYPE_TRANSFORM_CHAN ). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -127,8 +129,9 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rotation_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mode for calculating rotation channel values<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Mode for calculating rotation channel values
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation channel calculation type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -171,7 +174,7 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags for the validity of the target (NOTE: these get reset every time the types change). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -194,7 +197,7 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'idtype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of ID-block that this target can use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -225,8 +228,9 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Get method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * ID-block that the specific property used can be found from (id_type property must be set first)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * ID-block that the specific property used can be found from (id_type property must be set first)
+	 * <h4>Blender Source Code</h4>
 	 * <p> ID-block which owns the target, no user count. </p>
 	 * @see #__DNA__FIELD__id
 	 */
@@ -246,8 +250,9 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Set method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * ID-block that the specific property used can be found from (id_type property must be set first)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * ID-block that the specific property used can be found from (id_type property must be set first)
+	 * <h4>Blender Source Code</h4>
 	 * <p> ID-block which owns the target, no user count. </p>
 	 * @see #__DNA__FIELD__id
 	 */
@@ -265,7 +270,7 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Get method for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> RNA path defining the setting to use (for DVAR_TYPE_SINGLE_PROP). </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
@@ -285,7 +290,7 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Set method for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> RNA path defining the setting to use (for DVAR_TYPE_SINGLE_PROP). </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
@@ -303,7 +308,7 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Get method for struct member 'pchan_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__pchan_name
 	 */
@@ -324,7 +329,7 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Set method for struct member 'pchan_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__pchan_name
 	 */
@@ -349,7 +354,7 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Get method for struct member 'transChan'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transform channel index (for DVAR_TYPE_TRANSFORM_CHAN ). </p>
 	 * @see #__DNA__FIELD__transChan
 	 */
@@ -366,7 +371,7 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Set method for struct member 'transChan'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transform channel index (for DVAR_TYPE_TRANSFORM_CHAN ). </p>
 	 * @see #__DNA__FIELD__transChan
 	 */
@@ -383,8 +388,9 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Get method for struct member 'rotation_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mode for calculating rotation channel values<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Mode for calculating rotation channel values
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation channel calculation type. </p>
 	 * @see #__DNA__FIELD__rotation_mode
 	 */
@@ -401,8 +407,9 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Set method for struct member 'rotation_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mode for calculating rotation channel values<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Mode for calculating rotation channel values
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation channel calculation type. </p>
 	 * @see #__DNA__FIELD__rotation_mode
 	 */
@@ -459,7 +466,7 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags for the validity of the target (NOTE: these get reset every time the types change). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -476,7 +483,7 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags for the validity of the target (NOTE: these get reset every time the types change). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -493,7 +500,7 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Get method for struct member 'idtype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of ID-block that this target can use. </p>
 	 * @see #__DNA__FIELD__idtype
 	 */
@@ -510,7 +517,7 @@ public class DriverTarget extends CFacade {
 	/**
 	 * Set method for struct member 'idtype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of ID-block that this target can use. </p>
 	 * @see #__DNA__FIELD__idtype
 	 */

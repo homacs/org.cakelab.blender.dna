@@ -93,7 +93,7 @@ public class DynamicPaintModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UI display: canvas / brush. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -244,7 +244,7 @@ public class DynamicPaintModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UI display: canvas / brush. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -261,7 +261,7 @@ public class DynamicPaintModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UI display: canvas / brush. </p>
 	 * @see #__DNA__FIELD__type
 	 */

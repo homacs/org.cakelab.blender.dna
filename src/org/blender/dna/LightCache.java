@@ -53,7 +53,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'version'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Version number to know if the cache data is compatible with this version of blender. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of data this cache contains. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +99,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cube_len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> only a single cache for now Number of probes to use for rendering. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -142,7 +142,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mips_len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of mipmap level to use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -165,7 +165,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vis_res'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of a visibility/reflection sample. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -228,7 +228,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'grid_tx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In the future, we could create a bigger texture containing multiple caches (for animation) and interpolate between the caches overtime to another texture. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -251,7 +251,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cube_tx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Contains data for mipmap level 0. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -274,7 +274,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cube_mips'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Does not contains valid GPUTexture, only data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -297,7 +297,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cube_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> All lightprobes data contained in the cache. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -376,7 +376,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Get method for struct member 'version'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Version number to know if the cache data is compatible with this version of blender. </p>
 	 * @see #__DNA__FIELD__version
 	 */
@@ -393,7 +393,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Set method for struct member 'version'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Version number to know if the cache data is compatible with this version of blender. </p>
 	 * @see #__DNA__FIELD__version
 	 */
@@ -410,7 +410,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of data this cache contains. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -427,7 +427,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of data this cache contains. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -444,7 +444,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Get method for struct member 'cube_len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> only a single cache for now Number of probes to use for rendering. </p>
 	 * @see #__DNA__FIELD__cube_len
 	 */
@@ -461,7 +461,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Set method for struct member 'cube_len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> only a single cache for now Number of probes to use for rendering. </p>
 	 * @see #__DNA__FIELD__cube_len
 	 */
@@ -506,7 +506,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Get method for struct member 'mips_len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of mipmap level to use. </p>
 	 * @see #__DNA__FIELD__mips_len
 	 */
@@ -523,7 +523,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Set method for struct member 'mips_len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of mipmap level to use. </p>
 	 * @see #__DNA__FIELD__mips_len
 	 */
@@ -540,7 +540,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Get method for struct member 'vis_res'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of a visibility/reflection sample. </p>
 	 * @see #__DNA__FIELD__vis_res
 	 */
@@ -557,7 +557,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Set method for struct member 'vis_res'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of a visibility/reflection sample. </p>
 	 * @see #__DNA__FIELD__vis_res
 	 */
@@ -643,7 +643,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Get method for struct member 'grid_tx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In the future, we could create a bigger texture containing multiple caches (for animation) and interpolate between the caches overtime to another texture. </p>
 	 * @see #__DNA__FIELD__grid_tx
 	 */
@@ -660,7 +660,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Set method for struct member 'grid_tx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In the future, we could create a bigger texture containing multiple caches (for animation) and interpolate between the caches overtime to another texture. </p>
 	 * @see #__DNA__FIELD__grid_tx
 	 */
@@ -685,7 +685,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Get method for struct member 'cube_tx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Contains data for mipmap level 0. </p>
 	 * @see #__DNA__FIELD__cube_tx
 	 */
@@ -702,7 +702,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Set method for struct member 'cube_tx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Contains data for mipmap level 0. </p>
 	 * @see #__DNA__FIELD__cube_tx
 	 */
@@ -727,7 +727,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Get method for struct member 'cube_mips'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Does not contains valid GPUTexture, only data. </p>
 	 * @see #__DNA__FIELD__cube_mips
 	 */
@@ -747,7 +747,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Set method for struct member 'cube_mips'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Does not contains valid GPUTexture, only data. </p>
 	 * @see #__DNA__FIELD__cube_mips
 	 */
@@ -765,7 +765,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Get method for struct member 'cube_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> All lightprobes data contained in the cache. </p>
 	 * @see #__DNA__FIELD__cube_data
 	 */
@@ -785,7 +785,7 @@ public class LightCache extends CFacade {
 	/**
 	 * Set method for struct member 'cube_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> All lightprobes data contained in the cache. </p>
 	 * @see #__DNA__FIELD__cube_data
 	 */

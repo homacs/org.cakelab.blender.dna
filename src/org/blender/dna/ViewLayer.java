@@ -73,8 +73,9 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * View layer name<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * View layer name
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -137,7 +138,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object_bases'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ObjectBase. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -160,7 +161,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'stats'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default allocated now. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -203,7 +204,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer_collections'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A view layer has one top level layer collection, because a scene has only one top level collection. The layer_collections list always contains a single element. {@link ListBase}  is convenient when applying functions to all layer collections recursively. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -246,7 +247,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old {@link SceneRenderLayer}  data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -269,7 +270,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'passflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pass_xor has to be after passflag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -292,7 +293,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pass_alpha_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Z, Index, normal, UV and vector passes are only affected by surfaces with alpha transparency equal to or higher than this threshold
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -375,7 +376,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Override number of render samples for this view layer, 0 will use the scene setting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -418,7 +419,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'id_properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Equivalent to datablocks {@link ID}  properties. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -461,7 +462,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'eevee'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    View layer settings for Eevee
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -484,8 +485,9 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'aovs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p><code> List containing the {@link ViewLayerAOV}</code> s </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -508,7 +510,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'active_aov'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Active AOV
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -531,7 +533,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'drawdata'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data {@link ViewLayerEngineData} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -666,8 +668,9 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * View layer name<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * View layer name
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -688,8 +691,9 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * View layer name<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * View layer name
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -782,7 +786,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Get method for struct member 'object_bases'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ObjectBase. </p>
 	 * @see #__DNA__FIELD__object_bases
 	 */
@@ -799,7 +803,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Set method for struct member 'object_bases'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ObjectBase. </p>
 	 * @see #__DNA__FIELD__object_bases
 	 */
@@ -824,7 +828,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Get method for struct member 'stats'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default allocated now. </p>
 	 * @see #__DNA__FIELD__stats
 	 */
@@ -844,7 +848,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Set method for struct member 'stats'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default allocated now. </p>
 	 * @see #__DNA__FIELD__stats
 	 */
@@ -894,7 +898,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Get method for struct member 'layer_collections'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A view layer has one top level layer collection, because a scene has only one top level collection. The layer_collections list always contains a single element. {@link ListBase}  is convenient when applying functions to all layer collections recursively. </p>
 	 * @see #__DNA__FIELD__layer_collections
 	 */
@@ -911,7 +915,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Set method for struct member 'layer_collections'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A view layer has one top level layer collection, because a scene has only one top level collection. The layer_collections list always contains a single element. {@link ListBase}  is convenient when applying functions to all layer collections recursively. </p>
 	 * @see #__DNA__FIELD__layer_collections
 	 */
@@ -968,7 +972,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Get method for struct member 'layflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old {@link SceneRenderLayer}  data. </p>
 	 * @see #__DNA__FIELD__layflag
 	 */
@@ -985,7 +989,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Set method for struct member 'layflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old {@link SceneRenderLayer}  data. </p>
 	 * @see #__DNA__FIELD__layflag
 	 */
@@ -1002,7 +1006,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Get method for struct member 'passflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pass_xor has to be after passflag. </p>
 	 * @see #__DNA__FIELD__passflag
 	 */
@@ -1019,7 +1023,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Set method for struct member 'passflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pass_xor has to be after passflag. </p>
 	 * @see #__DNA__FIELD__passflag
 	 */
@@ -1036,7 +1040,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Get method for struct member 'pass_alpha_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Z, Index, normal, UV and vector passes are only affected by surfaces with alpha transparency equal to or higher than this threshold
 	 * @see #__DNA__FIELD__pass_alpha_threshold
 	 */
@@ -1053,7 +1057,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Set method for struct member 'pass_alpha_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Z, Index, normal, UV and vector passes are only affected by surfaces with alpha transparency equal to or higher than this threshold
 	 * @see #__DNA__FIELD__pass_alpha_threshold
 	 */
@@ -1166,7 +1170,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Get method for struct member 'samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Override number of render samples for this view layer, 0 will use the scene setting
 	 * @see #__DNA__FIELD__samples
 	 */
@@ -1183,7 +1187,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Set method for struct member 'samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Override number of render samples for this view layer, 0 will use the scene setting
 	 * @see #__DNA__FIELD__samples
 	 */
@@ -1232,7 +1236,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Get method for struct member 'id_properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Equivalent to datablocks {@link ID}  properties. </p>
 	 * @see #__DNA__FIELD__id_properties
 	 */
@@ -1252,7 +1256,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Set method for struct member 'id_properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Equivalent to datablocks {@link ID}  properties. </p>
 	 * @see #__DNA__FIELD__id_properties
 	 */
@@ -1306,7 +1310,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Get method for struct member 'eevee'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    View layer settings for Eevee
 	 * @see #__DNA__FIELD__eevee
 	 */
@@ -1323,7 +1327,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Set method for struct member 'eevee'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    View layer settings for Eevee
 	 * @see #__DNA__FIELD__eevee
 	 */
@@ -1348,8 +1352,9 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Get method for struct member 'aovs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p><code> List containing the {@link ViewLayerAOV}</code> s </p>
 	 * @see #__DNA__FIELD__aovs
 	 */
@@ -1366,8 +1371,9 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Set method for struct member 'aovs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p><code> List containing the {@link ViewLayerAOV}</code> s </p>
 	 * @see #__DNA__FIELD__aovs
 	 */
@@ -1392,7 +1398,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Get method for struct member 'active_aov'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Active AOV
 	 * @see #__DNA__FIELD__active_aov
 	 */
@@ -1412,7 +1418,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Set method for struct member 'active_aov'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Active AOV
 	 * @see #__DNA__FIELD__active_aov
 	 */
@@ -1430,7 +1436,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Get method for struct member 'drawdata'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data {@link ViewLayerEngineData} . </p>
 	 * @see #__DNA__FIELD__drawdata
 	 */
@@ -1447,7 +1453,7 @@ public class ViewLayer extends CFacade {
 	/**
 	 * Set method for struct member 'drawdata'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data {@link ViewLayerEngineData} . </p>
 	 * @see #__DNA__FIELD__drawdata
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPdata'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Grease-Pencil Annotations - 'DataBlock' </p>
  */
 
@@ -34,7 +35,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease Pencil data is a data-block. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +58,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data - for animating draw settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +81,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease-Pencil data {@link bGPDlayer} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -103,7 +104,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for this data-block. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,7 +127,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve_edit_resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default resolution for generated curves using curve editing method. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -149,7 +150,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve_edit_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  {@link Editing}  error threshold. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -172,7 +173,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve_edit_corner_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  {@link Editing}  corner angle (less or equal is treated as corner). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -195,7 +196,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'palettes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Palettes List of {@link bGPDpalette} 's - Deprecated (2.78 - 2.79 only). 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -220,7 +221,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vertex_group_names'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -243,7 +244,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pixfactor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 3D Viewport/Appearance Settings Factor to define pixel size conversion. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -266,7 +267,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'line_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color for edit line. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -289,7 +290,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'onion_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Onion skinning Onion alpha factor change. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -312,7 +313,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'onion_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Onion skinning range (eGP_OnionModes). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -335,7 +336,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'onion_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Onion skinning flags (eGPD_OnionFlag). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -358,7 +359,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gstep'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ghosts Before: max number of ghost frames to show between active frame and the one before it (0 = only the ghost itself). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -381,7 +382,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gstep_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ghosts After: max number of ghost frames to show after active frame and the following it (0 = only the ghost itself). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -404,7 +405,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gcolor_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional color for ghosts before the active frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -427,7 +428,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gcolor_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional color for ghosts after the active frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -450,7 +451,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'zdepth_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset for drawing over surfaces to keep strokes on top. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -473,7 +474,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Materials array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -496,7 +497,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'totcol'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total materials. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -519,7 +520,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'totlayer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> stats </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -622,7 +623,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'draw_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Draw mode for strokes (eGP_DrawMode). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -645,7 +646,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'onion_keytype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keyframe type for onion filter (eBezTriple_KeyframeType plus All option) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -668,7 +669,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'select_last_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke selection last index. Used to generate a unique selection index. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -759,7 +760,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease Pencil data is a data-block. </p>
 	 * @see #__DNA__FIELD__id
 	 */
@@ -776,7 +777,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease Pencil data is a data-block. </p>
 	 * @see #__DNA__FIELD__id
 	 */
@@ -801,7 +802,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data - for animating draw settings. </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -821,7 +822,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data - for animating draw settings. </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -839,7 +840,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'layers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease-Pencil data {@link bGPDlayer} . </p>
 	 * @see #__DNA__FIELD__layers
 	 */
@@ -856,7 +857,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'layers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease-Pencil data {@link bGPDlayer} . </p>
 	 * @see #__DNA__FIELD__layers
 	 */
@@ -881,7 +882,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for this data-block. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -898,7 +899,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for this data-block. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -915,7 +916,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'curve_edit_resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default resolution for generated curves using curve editing method. </p>
 	 * @see #__DNA__FIELD__curve_edit_resolution
 	 */
@@ -932,7 +933,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'curve_edit_resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default resolution for generated curves using curve editing method. </p>
 	 * @see #__DNA__FIELD__curve_edit_resolution
 	 */
@@ -949,7 +950,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'curve_edit_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  {@link Editing}  error threshold. </p>
 	 * @see #__DNA__FIELD__curve_edit_threshold
 	 */
@@ -966,7 +967,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'curve_edit_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  {@link Editing}  error threshold. </p>
 	 * @see #__DNA__FIELD__curve_edit_threshold
 	 */
@@ -983,7 +984,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'curve_edit_corner_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  {@link Editing}  corner angle (less or equal is treated as corner). </p>
 	 * @see #__DNA__FIELD__curve_edit_corner_angle
 	 */
@@ -1000,7 +1001,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'curve_edit_corner_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  {@link Editing}  corner angle (less or equal is treated as corner). </p>
 	 * @see #__DNA__FIELD__curve_edit_corner_angle
 	 */
@@ -1017,7 +1018,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'palettes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Palettes List of {@link bGPDpalette} 's - Deprecated (2.78 - 2.79 only). 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1036,7 +1037,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'palettes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Palettes List of {@link bGPDpalette} 's - Deprecated (2.78 - 2.79 only). 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1063,7 +1064,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'vertex_group_names'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
 	 * @see #__DNA__FIELD__vertex_group_names
 	 */
@@ -1080,7 +1081,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'vertex_group_names'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
 	 * @see #__DNA__FIELD__vertex_group_names
 	 */
@@ -1105,7 +1106,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'pixfactor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 3D Viewport/Appearance Settings Factor to define pixel size conversion. </p>
 	 * @see #__DNA__FIELD__pixfactor
 	 */
@@ -1122,7 +1123,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'pixfactor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 3D Viewport/Appearance Settings Factor to define pixel size conversion. </p>
 	 * @see #__DNA__FIELD__pixfactor
 	 */
@@ -1139,7 +1140,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'line_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color for edit line. </p>
 	 * @see #__DNA__FIELD__line_color
 	 */
@@ -1160,7 +1161,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'line_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color for edit line. </p>
 	 * @see #__DNA__FIELD__line_color
 	 */
@@ -1185,7 +1186,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'onion_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Onion skinning Onion alpha factor change. </p>
 	 * @see #__DNA__FIELD__onion_factor
 	 */
@@ -1202,7 +1203,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'onion_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Onion skinning Onion alpha factor change. </p>
 	 * @see #__DNA__FIELD__onion_factor
 	 */
@@ -1219,7 +1220,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'onion_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Onion skinning range (eGP_OnionModes). </p>
 	 * @see #__DNA__FIELD__onion_mode
 	 */
@@ -1236,7 +1237,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'onion_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Onion skinning range (eGP_OnionModes). </p>
 	 * @see #__DNA__FIELD__onion_mode
 	 */
@@ -1253,7 +1254,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'onion_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Onion skinning flags (eGPD_OnionFlag). </p>
 	 * @see #__DNA__FIELD__onion_flag
 	 */
@@ -1270,7 +1271,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'onion_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Onion skinning flags (eGPD_OnionFlag). </p>
 	 * @see #__DNA__FIELD__onion_flag
 	 */
@@ -1287,7 +1288,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'gstep'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ghosts Before: max number of ghost frames to show between active frame and the one before it (0 = only the ghost itself). </p>
 	 * @see #__DNA__FIELD__gstep
 	 */
@@ -1304,7 +1305,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'gstep'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ghosts Before: max number of ghost frames to show between active frame and the one before it (0 = only the ghost itself). </p>
 	 * @see #__DNA__FIELD__gstep
 	 */
@@ -1321,7 +1322,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'gstep_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ghosts After: max number of ghost frames to show after active frame and the following it (0 = only the ghost itself). </p>
 	 * @see #__DNA__FIELD__gstep_next
 	 */
@@ -1338,7 +1339,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'gstep_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ghosts After: max number of ghost frames to show after active frame and the following it (0 = only the ghost itself). </p>
 	 * @see #__DNA__FIELD__gstep_next
 	 */
@@ -1355,7 +1356,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'gcolor_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional color for ghosts before the active frame. </p>
 	 * @see #__DNA__FIELD__gcolor_prev
 	 */
@@ -1376,7 +1377,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'gcolor_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional color for ghosts before the active frame. </p>
 	 * @see #__DNA__FIELD__gcolor_prev
 	 */
@@ -1401,7 +1402,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'gcolor_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional color for ghosts after the active frame. </p>
 	 * @see #__DNA__FIELD__gcolor_next
 	 */
@@ -1422,7 +1423,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'gcolor_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional color for ghosts after the active frame. </p>
 	 * @see #__DNA__FIELD__gcolor_next
 	 */
@@ -1447,7 +1448,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'zdepth_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset for drawing over surfaces to keep strokes on top. </p>
 	 * @see #__DNA__FIELD__zdepth_offset
 	 */
@@ -1464,7 +1465,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'zdepth_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset for drawing over surfaces to keep strokes on top. </p>
 	 * @see #__DNA__FIELD__zdepth_offset
 	 */
@@ -1481,7 +1482,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Materials array. </p>
 	 * @see #__DNA__FIELD__mat
 	 */
@@ -1501,7 +1502,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Materials array. </p>
 	 * @see #__DNA__FIELD__mat
 	 */
@@ -1519,7 +1520,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'totcol'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total materials. </p>
 	 * @see #__DNA__FIELD__totcol
 	 */
@@ -1536,7 +1537,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'totcol'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total materials. </p>
 	 * @see #__DNA__FIELD__totcol
 	 */
@@ -1553,7 +1554,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'totlayer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> stats </p>
 	 * @see #__DNA__FIELD__totlayer
 	 */
@@ -1570,7 +1571,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'totlayer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> stats </p>
 	 * @see #__DNA__FIELD__totlayer
 	 */
@@ -1711,7 +1712,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'draw_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Draw mode for strokes (eGP_DrawMode). </p>
 	 * @see #__DNA__FIELD__draw_mode
 	 */
@@ -1728,7 +1729,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'draw_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Draw mode for strokes (eGP_DrawMode). </p>
 	 * @see #__DNA__FIELD__draw_mode
 	 */
@@ -1745,7 +1746,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'onion_keytype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keyframe type for onion filter (eBezTriple_KeyframeType plus All option) </p>
 	 * @see #__DNA__FIELD__onion_keytype
 	 */
@@ -1762,7 +1763,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'onion_keytype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keyframe type for onion filter (eBezTriple_KeyframeType plus All option) </p>
 	 * @see #__DNA__FIELD__onion_keytype
 	 */
@@ -1779,7 +1780,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Get method for struct member 'select_last_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke selection last index. Used to generate a unique selection index. </p>
 	 * @see #__DNA__FIELD__select_last_index
 	 */
@@ -1796,7 +1797,7 @@ public class bGPdata extends CFacade {
 	/**
 	 * Set method for struct member 'select_last_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke selection last index. Used to generate a unique selection index. </p>
 	 * @see #__DNA__FIELD__select_last_index
 	 */

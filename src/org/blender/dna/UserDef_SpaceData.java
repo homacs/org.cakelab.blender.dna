@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'UserDef_SpaceData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Store UI data here instead of the space since the space is typically a window which is freed. </p>
  */
 
@@ -54,7 +55,7 @@ public class UserDef_SpaceData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eUserPref_SpaceData_Flag  UI options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -133,7 +134,7 @@ public class UserDef_SpaceData extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eUserPref_SpaceData_Flag  UI options. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -150,7 +151,7 @@ public class UserDef_SpaceData extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eUserPref_SpaceData_Flag  UI options. </p>
 	 * @see #__DNA__FIELD__flag
 	 */

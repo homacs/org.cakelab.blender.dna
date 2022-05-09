@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'TreeStore'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Used only to store data in blend files. </p>
  */
 
@@ -33,7 +34,7 @@ public class TreeStore extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'totelem'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Was previously used for memory pre-allocation. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -58,7 +59,7 @@ public class TreeStore extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'usedelem'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of elements in data array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -81,7 +82,7 @@ public class TreeStore extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -112,7 +113,7 @@ public class TreeStore extends CFacade {
 	/**
 	 * Get method for struct member 'totelem'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Was previously used for memory pre-allocation. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -131,7 +132,7 @@ public class TreeStore extends CFacade {
 	/**
 	 * Set method for struct member 'totelem'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Was previously used for memory pre-allocation. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -150,7 +151,7 @@ public class TreeStore extends CFacade {
 	/**
 	 * Get method for struct member 'usedelem'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of elements in data array. </p>
 	 * @see #__DNA__FIELD__usedelem
 	 */
@@ -167,7 +168,7 @@ public class TreeStore extends CFacade {
 	/**
 	 * Set method for struct member 'usedelem'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of elements in data array. </p>
 	 * @see #__DNA__FIELD__usedelem
 	 */
@@ -184,7 +185,7 @@ public class TreeStore extends CFacade {
 	/**
 	 * Get method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code> . </p>
 	 * @see #__DNA__FIELD__data
 	 */
@@ -204,7 +205,7 @@ public class TreeStore extends CFacade {
 	/**
 	 * Set method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code> . </p>
 	 * @see #__DNA__FIELD__data
 	 */

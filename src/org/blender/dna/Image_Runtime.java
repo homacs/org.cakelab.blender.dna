@@ -32,7 +32,7 @@ public class Image_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cache_mutex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Mutex used to guarantee thread-safe access to the cached ImBuf of the corresponding image {@link ID} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +55,7 @@ public class Image_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'partial_update_register'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Register containing partial updates. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -78,7 +78,7 @@ public class Image_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'partial_update_user'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Partial update user for GPUTextures stored inside the {@link Image} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -109,7 +109,7 @@ public class Image_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'cache_mutex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Mutex used to guarantee thread-safe access to the cached ImBuf of the corresponding image {@link ID} . </p>
 	 * @see #__DNA__FIELD__cache_mutex
 	 */
@@ -129,7 +129,7 @@ public class Image_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'cache_mutex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Mutex used to guarantee thread-safe access to the cached ImBuf of the corresponding image {@link ID} . </p>
 	 * @see #__DNA__FIELD__cache_mutex
 	 */
@@ -147,7 +147,7 @@ public class Image_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'partial_update_register'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Register containing partial updates. </p>
 	 * @see #__DNA__FIELD__partial_update_register
 	 */
@@ -167,7 +167,7 @@ public class Image_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'partial_update_register'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Register containing partial updates. </p>
 	 * @see #__DNA__FIELD__partial_update_register
 	 */
@@ -185,7 +185,7 @@ public class Image_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'partial_update_user'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Partial update user for GPUTextures stored inside the {@link Image} . </p>
 	 * @see #__DNA__FIELD__partial_update_user
 	 */
@@ -205,7 +205,7 @@ public class Image_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'partial_update_user'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Partial update user for GPUTextures stored inside the {@link Image} . </p>
 	 * @see #__DNA__FIELD__partial_update_user
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bPythonConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Python {@link Script}  Constraint </p>
  */
 
@@ -34,7 +35,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'text'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Text-buffer (containing script) to execute. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +58,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 'id-properties' used to store custom properties for constraint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +81,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General settings/state indicators accessed by bitmapping. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -103,7 +104,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tarnum'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of targets - usually only 1-3 are needed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,7 +127,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'targets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A list of targets that this constraint has (bConstraintTarget-s). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -149,7 +150,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Target from previous implementation (version-patch sets this to NULL on file-load). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -172,7 +173,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Subtarget from previous implementation (version-patch sets this to "" on file-load), MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -203,7 +204,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'text'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Text-buffer (containing script) to execute. </p>
 	 * @see #__DNA__FIELD__text
 	 */
@@ -223,7 +224,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'text'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Text-buffer (containing script) to execute. </p>
 	 * @see #__DNA__FIELD__text
 	 */
@@ -241,7 +242,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 'id-properties' used to store custom properties for constraint. </p>
 	 * @see #__DNA__FIELD__prop
 	 */
@@ -261,7 +262,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 'id-properties' used to store custom properties for constraint. </p>
 	 * @see #__DNA__FIELD__prop
 	 */
@@ -279,7 +280,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General settings/state indicators accessed by bitmapping. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -296,7 +297,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General settings/state indicators accessed by bitmapping. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -313,7 +314,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'tarnum'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of targets - usually only 1-3 are needed. </p>
 	 * @see #__DNA__FIELD__tarnum
 	 */
@@ -330,7 +331,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'tarnum'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of targets - usually only 1-3 are needed. </p>
 	 * @see #__DNA__FIELD__tarnum
 	 */
@@ -347,7 +348,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'targets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A list of targets that this constraint has (bConstraintTarget-s). </p>
 	 * @see #__DNA__FIELD__targets
 	 */
@@ -364,7 +365,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'targets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A list of targets that this constraint has (bConstraintTarget-s). </p>
 	 * @see #__DNA__FIELD__targets
 	 */
@@ -389,7 +390,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Target from previous implementation (version-patch sets this to NULL on file-load). </p>
 	 * @see #__DNA__FIELD__tar
 	 */
@@ -409,7 +410,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Target from previous implementation (version-patch sets this to NULL on file-load). </p>
 	 * @see #__DNA__FIELD__tar
 	 */
@@ -427,7 +428,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Subtarget from previous implementation (version-patch sets this to "" on file-load), MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
@@ -448,7 +449,7 @@ public class bPythonConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Subtarget from previous implementation (version-patch sets this to "" on file-load), MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */

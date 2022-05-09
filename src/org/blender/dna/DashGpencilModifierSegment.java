@@ -33,7 +33,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Name of the dash segment
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +56,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For path reference. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +79,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The number of consecutive points from the original stroke to include in this segment
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -102,7 +102,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The number of points skipped after this segment
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -125,7 +125,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The factor to apply to the original point's radius for the new points
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -148,7 +148,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The factor to apply to the original point's opacity for the new points
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -219,7 +219,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Name of the dash segment
 	 * @see #__DNA__FIELD__name
 	 */
@@ -240,7 +240,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Name of the dash segment
 	 * @see #__DNA__FIELD__name
 	 */
@@ -265,7 +265,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Get method for struct member 'dmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For path reference. </p>
 	 * @see #__DNA__FIELD__dmd
 	 */
@@ -285,7 +285,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Set method for struct member 'dmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For path reference. </p>
 	 * @see #__DNA__FIELD__dmd
 	 */
@@ -303,7 +303,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Get method for struct member 'dash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The number of consecutive points from the original stroke to include in this segment
 	 * @see #__DNA__FIELD__dash
 	 */
@@ -320,7 +320,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Set method for struct member 'dash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The number of consecutive points from the original stroke to include in this segment
 	 * @see #__DNA__FIELD__dash
 	 */
@@ -337,7 +337,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Get method for struct member 'gap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The number of points skipped after this segment
 	 * @see #__DNA__FIELD__gap
 	 */
@@ -354,7 +354,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Set method for struct member 'gap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The number of points skipped after this segment
 	 * @see #__DNA__FIELD__gap
 	 */
@@ -371,7 +371,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Get method for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The factor to apply to the original point's radius for the new points
 	 * @see #__DNA__FIELD__radius
 	 */
@@ -388,7 +388,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Set method for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The factor to apply to the original point's radius for the new points
 	 * @see #__DNA__FIELD__radius
 	 */
@@ -405,7 +405,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Get method for struct member 'opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The factor to apply to the original point's opacity for the new points
 	 * @see #__DNA__FIELD__opacity
 	 */
@@ -422,7 +422,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	/**
 	 * Set method for struct member 'opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The factor to apply to the original point's opacity for the new points
 	 * @see #__DNA__FIELD__opacity
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'IDPropertyUIDataFloat'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> IDP_UI_DATA_TYPE_FLOAT </p>
  */
 
@@ -54,7 +55,7 @@ public class IDPropertyUIDataFloat extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'default_array'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only for array properties. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -301,7 +302,7 @@ public class IDPropertyUIDataFloat extends CFacade {
 	/**
 	 * Get method for struct member 'default_array'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only for array properties. </p>
 	 * @see #__DNA__FIELD__default_array
 	 */
@@ -321,7 +322,7 @@ public class IDPropertyUIDataFloat extends CFacade {
 	/**
 	 * Set method for struct member 'default_array'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only for array properties. </p>
 	 * @see #__DNA__FIELD__default_array
 	 */

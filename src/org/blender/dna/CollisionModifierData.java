@@ -53,7 +53,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Position at the beginning of the frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'xnew'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Position at the end of the frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +99,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'xold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused at the moment, but was discussed during sprint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -122,7 +122,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'current_xnew'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> New position at the actual inter-frame step. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -145,7 +145,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'current_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Position at the actual inter-frame step. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -168,7 +168,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'current_v'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (xnew - x) at the actual inter-frame step. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -251,7 +251,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'time_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cfra time of modifier. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -294,7 +294,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'is_static'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Collider doesn't move this frame, i.e. x[].co==xnew[].co. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -337,7 +337,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bvhtree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bounding volume hierarchy for this cloth object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -404,7 +404,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Position at the beginning of the frame. </p>
 	 * @see #__DNA__FIELD__x
 	 */
@@ -424,7 +424,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Position at the beginning of the frame. </p>
 	 * @see #__DNA__FIELD__x
 	 */
@@ -442,7 +442,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'xnew'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Position at the end of the frame. </p>
 	 * @see #__DNA__FIELD__xnew
 	 */
@@ -462,7 +462,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'xnew'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Position at the end of the frame. </p>
 	 * @see #__DNA__FIELD__xnew
 	 */
@@ -480,7 +480,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'xold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused at the moment, but was discussed during sprint. </p>
 	 * @see #__DNA__FIELD__xold
 	 */
@@ -500,7 +500,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'xold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused at the moment, but was discussed during sprint. </p>
 	 * @see #__DNA__FIELD__xold
 	 */
@@ -518,7 +518,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'current_xnew'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> New position at the actual inter-frame step. </p>
 	 * @see #__DNA__FIELD__current_xnew
 	 */
@@ -538,7 +538,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'current_xnew'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> New position at the actual inter-frame step. </p>
 	 * @see #__DNA__FIELD__current_xnew
 	 */
@@ -556,7 +556,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'current_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Position at the actual inter-frame step. </p>
 	 * @see #__DNA__FIELD__current_x
 	 */
@@ -576,7 +576,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'current_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Position at the actual inter-frame step. </p>
 	 * @see #__DNA__FIELD__current_x
 	 */
@@ -594,7 +594,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'current_v'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (xnew - x) at the actual inter-frame step. </p>
 	 * @see #__DNA__FIELD__current_v
 	 */
@@ -614,7 +614,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'current_v'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (xnew - x) at the actual inter-frame step. </p>
 	 * @see #__DNA__FIELD__current_v
 	 */
@@ -720,7 +720,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'time_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cfra time of modifier. </p>
 	 * @see #__DNA__FIELD__time_x
 	 */
@@ -737,7 +737,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'time_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cfra time of modifier. </p>
 	 * @see #__DNA__FIELD__time_x
 	 */
@@ -782,7 +782,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'is_static'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Collider doesn't move this frame, i.e. x[].co==xnew[].co. </p>
 	 * @see #__DNA__FIELD__is_static
 	 */
@@ -799,7 +799,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'is_static'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Collider doesn't move this frame, i.e. x[].co==xnew[].co. </p>
 	 * @see #__DNA__FIELD__is_static
 	 */
@@ -856,7 +856,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'bvhtree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bounding volume hierarchy for this cloth object. </p>
 	 * @see #__DNA__FIELD__bvhtree
 	 */
@@ -876,7 +876,7 @@ public class CollisionModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'bvhtree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bounding volume hierarchy for this cloth object. </p>
 	 * @see #__DNA__FIELD__bvhtree
 	 */

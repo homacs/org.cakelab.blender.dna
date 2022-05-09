@@ -73,7 +73,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,7 +96,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -119,7 +119,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -142,7 +142,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -167,7 +167,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vgname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -190,7 +190,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -213,7 +213,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -276,7 +276,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use enums from WarpGpencilModifier (exact same functionality). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -319,7 +319,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parentinv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Matrix making current transform unmodified. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -342,7 +342,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Visualization of hook. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -365,7 +365,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If not zero, falloff is distance where influence zero. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -504,7 +504,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
@@ -524,7 +524,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
@@ -542,7 +542,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
@@ -563,7 +563,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
@@ -588,7 +588,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -609,7 +609,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -634,7 +634,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -657,7 +657,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -684,7 +684,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'vgname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgname
 	 */
@@ -705,7 +705,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'vgname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgname
 	 */
@@ -730,7 +730,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
@@ -747,7 +747,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
@@ -764,7 +764,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
@@ -781,7 +781,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
@@ -866,7 +866,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'falloff_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use enums from WarpGpencilModifier (exact same functionality). </p>
 	 * @see #__DNA__FIELD__falloff_type
 	 */
@@ -883,7 +883,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'falloff_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use enums from WarpGpencilModifier (exact same functionality). </p>
 	 * @see #__DNA__FIELD__falloff_type
 	 */
@@ -940,7 +940,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'parentinv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Matrix making current transform unmodified. </p>
 	 * @see #__DNA__FIELD__parentinv
 	 */
@@ -962,7 +962,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'parentinv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Matrix making current transform unmodified. </p>
 	 * @see #__DNA__FIELD__parentinv
 	 */
@@ -987,7 +987,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'cent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Visualization of hook. </p>
 	 * @see #__DNA__FIELD__cent
 	 */
@@ -1008,7 +1008,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'cent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Visualization of hook. </p>
 	 * @see #__DNA__FIELD__cent
 	 */
@@ -1033,7 +1033,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If not zero, falloff is distance where influence zero. </p>
 	 * @see #__DNA__FIELD__falloff
 	 */
@@ -1050,7 +1050,7 @@ public class HookGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If not zero, falloff is distance where influence zero. </p>
 	 * @see #__DNA__FIELD__falloff
 	 */

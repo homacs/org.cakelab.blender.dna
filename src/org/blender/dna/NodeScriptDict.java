@@ -32,7 +32,7 @@ public class NodeScriptDict extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dict'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For PyObject *dict. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +55,7 @@ public class NodeScriptDict extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'node'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For BPy_Node *node. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -86,7 +86,7 @@ public class NodeScriptDict extends CFacade {
 	/**
 	 * Get method for struct member 'dict'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For PyObject *dict. </p>
 	 * @see #__DNA__FIELD__dict
 	 */
@@ -106,7 +106,7 @@ public class NodeScriptDict extends CFacade {
 	/**
 	 * Set method for struct member 'dict'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For PyObject *dict. </p>
 	 * @see #__DNA__FIELD__dict
 	 */
@@ -124,7 +124,7 @@ public class NodeScriptDict extends CFacade {
 	/**
 	 * Get method for struct member 'node'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For BPy_Node *node. </p>
 	 * @see #__DNA__FIELD__node
 	 */
@@ -144,7 +144,7 @@ public class NodeScriptDict extends CFacade {
 	/**
 	 * Set method for struct member 'node'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For BPy_Node *node. </p>
 	 * @see #__DNA__FIELD__node
 	 */

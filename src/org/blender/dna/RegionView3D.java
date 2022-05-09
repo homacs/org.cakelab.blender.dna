@@ -33,7 +33,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'winmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GL_PROJECTION matrix. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +56,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'viewmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GL_MODELVIEW matrix. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +79,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'viewinv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inverse of viewmat. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -102,7 +102,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'persmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Viewmat*winmat. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -125,7 +125,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'persinv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inverse of persmat. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -148,7 +148,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'viewcamtexcofac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset/scale for camera glsl texcoords. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -171,7 +171,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'viewmatob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> viewmat/persmat multiplied with object matrix, while drawing and selection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -214,7 +214,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'clip'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined clipping planes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -237,7 +237,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'clip_local'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Clip in object space, means we can test for clipping in edit-mode without first going into world-space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -280,7 +280,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'localvd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Allocated backup of itself while in local-view. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -323,7 +323,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sms'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animated smooth view. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -366,7 +366,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'twmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transform gizmo matrix. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -389,7 +389,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tw_axis_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> min/max dot product on twmat xyz axis. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -452,7 +452,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gridview'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -477,7 +477,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'viewquat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> View rotation, must be kept normalized. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -500,7 +500,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Distance from 'ofs' along -viewinv[2] vector, where result is negative as is 'ofs'. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -523,7 +523,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'camdx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Camera}  view offsets, 1.0 = viewplane moves entire width/height. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -566,7 +566,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pixsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -589,7 +589,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ofs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  in orthographic mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -612,7 +612,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'camzoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Viewport zoom on the camera frame, see BKE_screen_view3d_zoom_to_fac. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -635,7 +635,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'is_persp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Check if persp/ortho view, since 'persp' can't be used for this since it can have cameras assigned as well. (only set in #view3d_winmatrix_set) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -718,7 +718,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'viewlock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Should usually be accessed with RV3D_LOCK_FLAGS() ! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -741,7 +741,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'runtime_viewlock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Options for runtime only locking (cleared on file read) Should usually be accessed with RV3D_LOCK_FLAGS() ! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -764,7 +764,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'viewlock_quad'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Options for quadview (store while out of quad view). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -807,7 +807,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ofs_lock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Normalized offset for locked view: (-1, -1) bottom left, (1, 1) upper right. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -830,7 +830,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'twdrawflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX can easily get rid of this (Julian). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -873,7 +873,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lviewquat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Last view (use when switching out of camera view). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -896,7 +896,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lpersp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Lpersp can never be set to 'RV3D_CAMOB'. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -979,7 +979,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rot_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active rotation from NDOF or elsewhere. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1030,7 +1030,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'winmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GL_PROJECTION matrix. </p>
 	 * @see #__DNA__FIELD__winmat
 	 */
@@ -1052,7 +1052,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'winmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GL_PROJECTION matrix. </p>
 	 * @see #__DNA__FIELD__winmat
 	 */
@@ -1077,7 +1077,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'viewmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GL_MODELVIEW matrix. </p>
 	 * @see #__DNA__FIELD__viewmat
 	 */
@@ -1099,7 +1099,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'viewmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GL_MODELVIEW matrix. </p>
 	 * @see #__DNA__FIELD__viewmat
 	 */
@@ -1124,7 +1124,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'viewinv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inverse of viewmat. </p>
 	 * @see #__DNA__FIELD__viewinv
 	 */
@@ -1146,7 +1146,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'viewinv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inverse of viewmat. </p>
 	 * @see #__DNA__FIELD__viewinv
 	 */
@@ -1171,7 +1171,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'persmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Viewmat*winmat. </p>
 	 * @see #__DNA__FIELD__persmat
 	 */
@@ -1193,7 +1193,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'persmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Viewmat*winmat. </p>
 	 * @see #__DNA__FIELD__persmat
 	 */
@@ -1218,7 +1218,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'persinv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inverse of persmat. </p>
 	 * @see #__DNA__FIELD__persinv
 	 */
@@ -1240,7 +1240,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'persinv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inverse of persmat. </p>
 	 * @see #__DNA__FIELD__persinv
 	 */
@@ -1265,7 +1265,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'viewcamtexcofac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset/scale for camera glsl texcoords. </p>
 	 * @see #__DNA__FIELD__viewcamtexcofac
 	 */
@@ -1286,7 +1286,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'viewcamtexcofac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset/scale for camera glsl texcoords. </p>
 	 * @see #__DNA__FIELD__viewcamtexcofac
 	 */
@@ -1311,7 +1311,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'viewmatob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> viewmat/persmat multiplied with object matrix, while drawing and selection. </p>
 	 * @see #__DNA__FIELD__viewmatob
 	 */
@@ -1333,7 +1333,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'viewmatob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> viewmat/persmat multiplied with object matrix, while drawing and selection. </p>
 	 * @see #__DNA__FIELD__viewmatob
 	 */
@@ -1399,7 +1399,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'clip'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined clipping planes. </p>
 	 * @see #__DNA__FIELD__clip
 	 */
@@ -1421,7 +1421,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'clip'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined clipping planes. </p>
 	 * @see #__DNA__FIELD__clip
 	 */
@@ -1446,7 +1446,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'clip_local'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Clip in object space, means we can test for clipping in edit-mode without first going into world-space. </p>
 	 * @see #__DNA__FIELD__clip_local
 	 */
@@ -1468,7 +1468,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'clip_local'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Clip in object space, means we can test for clipping in edit-mode without first going into world-space. </p>
 	 * @see #__DNA__FIELD__clip_local
 	 */
@@ -1525,7 +1525,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'localvd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Allocated backup of itself while in local-view. </p>
 	 * @see #__DNA__FIELD__localvd
 	 */
@@ -1545,7 +1545,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'localvd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Allocated backup of itself while in local-view. </p>
 	 * @see #__DNA__FIELD__localvd
 	 */
@@ -1595,7 +1595,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'sms'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animated smooth view. </p>
 	 * @see #__DNA__FIELD__sms
 	 */
@@ -1615,7 +1615,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'sms'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animated smooth view. </p>
 	 * @see #__DNA__FIELD__sms
 	 */
@@ -1665,7 +1665,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'twmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transform gizmo matrix. </p>
 	 * @see #__DNA__FIELD__twmat
 	 */
@@ -1687,7 +1687,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'twmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transform gizmo matrix. </p>
 	 * @see #__DNA__FIELD__twmat
 	 */
@@ -1712,7 +1712,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'tw_axis_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> min/max dot product on twmat xyz axis. </p>
 	 * @see #__DNA__FIELD__tw_axis_min
 	 */
@@ -1733,7 +1733,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'tw_axis_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> min/max dot product on twmat xyz axis. </p>
 	 * @see #__DNA__FIELD__tw_axis_min
 	 */
@@ -1839,7 +1839,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'gridview'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1858,7 +1858,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'gridview'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1877,7 +1877,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'viewquat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> View rotation, must be kept normalized. </p>
 	 * @see #__DNA__FIELD__viewquat
 	 */
@@ -1898,7 +1898,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'viewquat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> View rotation, must be kept normalized. </p>
 	 * @see #__DNA__FIELD__viewquat
 	 */
@@ -1923,7 +1923,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'dist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Distance from 'ofs' along -viewinv[2] vector, where result is negative as is 'ofs'. </p>
 	 * @see #__DNA__FIELD__dist
 	 */
@@ -1940,7 +1940,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'dist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Distance from 'ofs' along -viewinv[2] vector, where result is negative as is 'ofs'. </p>
 	 * @see #__DNA__FIELD__dist
 	 */
@@ -1957,7 +1957,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'camdx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Camera}  view offsets, 1.0 = viewplane moves entire width/height. </p>
 	 * @see #__DNA__FIELD__camdx
 	 */
@@ -1974,7 +1974,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'camdx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Camera}  view offsets, 1.0 = viewplane moves entire width/height. </p>
 	 * @see #__DNA__FIELD__camdx
 	 */
@@ -2019,7 +2019,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'pixsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only. </p>
 	 * @see #__DNA__FIELD__pixsize
 	 */
@@ -2036,7 +2036,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'pixsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only. </p>
 	 * @see #__DNA__FIELD__pixsize
 	 */
@@ -2053,7 +2053,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'ofs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  in orthographic mode. </p>
 	 * @see #__DNA__FIELD__ofs
 	 */
@@ -2074,7 +2074,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'ofs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  in orthographic mode. </p>
 	 * @see #__DNA__FIELD__ofs
 	 */
@@ -2099,7 +2099,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'camzoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Viewport zoom on the camera frame, see BKE_screen_view3d_zoom_to_fac. </p>
 	 * @see #__DNA__FIELD__camzoom
 	 */
@@ -2116,7 +2116,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'camzoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Viewport zoom on the camera frame, see BKE_screen_view3d_zoom_to_fac. </p>
 	 * @see #__DNA__FIELD__camzoom
 	 */
@@ -2133,7 +2133,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'is_persp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Check if persp/ortho view, since 'persp' can't be used for this since it can have cameras assigned as well. (only set in #view3d_winmatrix_set) </p>
 	 * @see #__DNA__FIELD__is_persp
 	 */
@@ -2150,7 +2150,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'is_persp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Check if persp/ortho view, since 'persp' can't be used for this since it can have cameras assigned as well. (only set in #view3d_winmatrix_set) </p>
 	 * @see #__DNA__FIELD__is_persp
 	 */
@@ -2251,7 +2251,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'viewlock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Should usually be accessed with RV3D_LOCK_FLAGS() ! </p>
 	 * @see #__DNA__FIELD__viewlock
 	 */
@@ -2268,7 +2268,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'viewlock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Should usually be accessed with RV3D_LOCK_FLAGS() ! </p>
 	 * @see #__DNA__FIELD__viewlock
 	 */
@@ -2285,7 +2285,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'runtime_viewlock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Options for runtime only locking (cleared on file read) Should usually be accessed with RV3D_LOCK_FLAGS() ! </p>
 	 * @see #__DNA__FIELD__runtime_viewlock
 	 */
@@ -2302,7 +2302,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'runtime_viewlock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Options for runtime only locking (cleared on file read) Should usually be accessed with RV3D_LOCK_FLAGS() ! </p>
 	 * @see #__DNA__FIELD__runtime_viewlock
 	 */
@@ -2319,7 +2319,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'viewlock_quad'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Options for quadview (store while out of quad view). </p>
 	 * @see #__DNA__FIELD__viewlock_quad
 	 */
@@ -2336,7 +2336,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'viewlock_quad'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Options for quadview (store while out of quad view). </p>
 	 * @see #__DNA__FIELD__viewlock_quad
 	 */
@@ -2393,7 +2393,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'ofs_lock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Normalized offset for locked view: (-1, -1) bottom left, (1, 1) upper right. </p>
 	 * @see #__DNA__FIELD__ofs_lock
 	 */
@@ -2414,7 +2414,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'ofs_lock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Normalized offset for locked view: (-1, -1) bottom left, (1, 1) upper right. </p>
 	 * @see #__DNA__FIELD__ofs_lock
 	 */
@@ -2439,7 +2439,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'twdrawflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX can easily get rid of this (Julian). </p>
 	 * @see #__DNA__FIELD__twdrawflag
 	 */
@@ -2456,7 +2456,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'twdrawflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX can easily get rid of this (Julian). </p>
 	 * @see #__DNA__FIELD__twdrawflag
 	 */
@@ -2501,7 +2501,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'lviewquat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Last view (use when switching out of camera view). </p>
 	 * @see #__DNA__FIELD__lviewquat
 	 */
@@ -2522,7 +2522,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'lviewquat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Last view (use when switching out of camera view). </p>
 	 * @see #__DNA__FIELD__lviewquat
 	 */
@@ -2547,7 +2547,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'lpersp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Lpersp can never be set to 'RV3D_CAMOB'. </p>
 	 * @see #__DNA__FIELD__lpersp
 	 */
@@ -2564,7 +2564,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'lpersp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Lpersp can never be set to 'RV3D_CAMOB'. </p>
 	 * @see #__DNA__FIELD__lpersp
 	 */
@@ -2677,7 +2677,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Get method for struct member 'rot_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active rotation from NDOF or elsewhere. </p>
 	 * @see #__DNA__FIELD__rot_angle
 	 */
@@ -2694,7 +2694,7 @@ public class RegionView3D extends CFacade {
 	/**
 	 * Set method for struct member 'rot_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active rotation from NDOF or elsewhere. </p>
 	 * @see #__DNA__FIELD__rot_angle
 	 */

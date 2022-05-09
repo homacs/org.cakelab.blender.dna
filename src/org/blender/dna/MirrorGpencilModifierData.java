@@ -73,7 +73,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,7 +96,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -119,7 +119,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -144,7 +144,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -167,7 +167,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -190,7 +190,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -309,7 +309,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
@@ -329,7 +329,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
@@ -347,7 +347,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -368,7 +368,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -393,7 +393,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -416,7 +416,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -443,7 +443,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
@@ -460,7 +460,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
@@ -477,7 +477,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -494,7 +494,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -511,7 +511,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
@@ -528,7 +528,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */

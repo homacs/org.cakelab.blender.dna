@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpreadsheetContext'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> An item in {@link SpaceSpreadsheet#getContext_path()} . This is a bases struct for the structs below. </p>
  */
 
@@ -74,8 +75,9 @@ public class SpreadsheetContext extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Type of the context<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Type of the context
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_ContextType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -190,8 +192,9 @@ public class SpreadsheetContext extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Type of the context<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Type of the context
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_ContextType. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -208,8 +211,9 @@ public class SpreadsheetContext extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Type of the context<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Type of the context
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_ContextType. </p>
 	 * @see #__DNA__FIELD__type
 	 */

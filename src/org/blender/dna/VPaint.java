@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'VPaint'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  Vertex {@link Paint}  Vertex {@link Paint} . </p>
  */
@@ -95,7 +96,7 @@ public class VPaint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'radial_symm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For mirrored painting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -230,7 +231,7 @@ public class VPaint extends CFacade {
 	/**
 	 * Get method for struct member 'radial_symm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For mirrored painting. </p>
 	 * @see #__DNA__FIELD__radial_symm
 	 */
@@ -251,7 +252,7 @@ public class VPaint extends CFacade {
 	/**
 	 * Set method for struct member 'radial_symm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For mirrored painting. </p>
 	 * @see #__DNA__FIELD__radial_symm
 	 */

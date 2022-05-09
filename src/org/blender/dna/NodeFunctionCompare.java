@@ -33,7 +33,7 @@ public class NodeFunctionCompare extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'operation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NodeCompareOperation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +56,7 @@ public class NodeFunctionCompare extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eNodeSocketDatatype </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +79,7 @@ public class NodeFunctionCompare extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NodeCompareMode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -130,7 +130,7 @@ public class NodeFunctionCompare extends CFacade {
 	/**
 	 * Get method for struct member 'operation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NodeCompareOperation </p>
 	 * @see #__DNA__FIELD__operation
 	 */
@@ -147,7 +147,7 @@ public class NodeFunctionCompare extends CFacade {
 	/**
 	 * Set method for struct member 'operation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NodeCompareOperation </p>
 	 * @see #__DNA__FIELD__operation
 	 */
@@ -164,7 +164,7 @@ public class NodeFunctionCompare extends CFacade {
 	/**
 	 * Get method for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eNodeSocketDatatype </p>
 	 * @see #__DNA__FIELD__data_type
 	 */
@@ -181,7 +181,7 @@ public class NodeFunctionCompare extends CFacade {
 	/**
 	 * Set method for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eNodeSocketDatatype </p>
 	 * @see #__DNA__FIELD__data_type
 	 */
@@ -198,7 +198,7 @@ public class NodeFunctionCompare extends CFacade {
 	/**
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NodeCompareMode </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -215,7 +215,7 @@ public class NodeFunctionCompare extends CFacade {
 	/**
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NodeCompareMode </p>
 	 * @see #__DNA__FIELD__mode
 	 */

@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SoftBody_Shared'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Container for data that is shared among CoW copies.</p><p> This is placed in a separate struct so that values can be changed without having to update all CoW copies. </p>
  */
 

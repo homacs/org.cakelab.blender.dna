@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'IDOverrideLibraryPropertyOperation'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> add any future new id property types here. Static {@link ID}  override structs. </p>
  */
 
@@ -74,8 +75,9 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'operation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    What override operation is performed<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    What override operation is performed
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of override. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +100,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Optional flags (NOT USED)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,7 +123,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime, tags are common to both IDOverrideProperty and IDOverridePropertyOperation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -164,8 +166,9 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'subitem_reference_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Used to handle insertions into collection<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Used to handle insertions into collection
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sub-item references, if needed (for arrays or collections only). We need both reference and local values to allow e.g. insertion into RNA collections (constraints, modifiers...). In RNA collection case, if names are defined, they are used in priority. Names are pointers (instead of char[64]) to save some space, NULL or empty string when unset. Indices are -1 when unset.</p><p> NOTE: For insertion operations in RNA collections, reference may not actually exist in the linked reference data. It is used to identify the anchor of the insertion operation (i.e. the item after or before which the new local item should be inserted), in the local override. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -188,7 +191,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'subitem_local_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Used to handle insertions into collection
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -211,7 +214,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'subitem_reference_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Used to handle insertions into collection
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -234,7 +237,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'subitem_local_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Used to handle insertions into collection
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -329,8 +332,9 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Get method for struct member 'operation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    What override operation is performed<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    What override operation is performed
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of override. </p>
 	 * @see #__DNA__FIELD__operation
 	 */
@@ -347,8 +351,9 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Set method for struct member 'operation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    What override operation is performed<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    What override operation is performed
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of override. </p>
 	 * @see #__DNA__FIELD__operation
 	 */
@@ -365,7 +370,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Optional flags (NOT USED)
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -382,7 +387,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Optional flags (NOT USED)
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -399,7 +404,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Get method for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime, tags are common to both IDOverrideProperty and IDOverridePropertyOperation. </p>
 	 * @see #__DNA__FIELD__tag
 	 */
@@ -416,7 +421,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Set method for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime, tags are common to both IDOverrideProperty and IDOverridePropertyOperation. </p>
 	 * @see #__DNA__FIELD__tag
 	 */
@@ -473,8 +478,9 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Get method for struct member 'subitem_reference_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Used to handle insertions into collection<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Used to handle insertions into collection
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sub-item references, if needed (for arrays or collections only). We need both reference and local values to allow e.g. insertion into RNA collections (constraints, modifiers...). In RNA collection case, if names are defined, they are used in priority. Names are pointers (instead of char[64]) to save some space, NULL or empty string when unset. Indices are -1 when unset.</p><p> NOTE: For insertion operations in RNA collections, reference may not actually exist in the linked reference data. It is used to identify the anchor of the insertion operation (i.e. the item after or before which the new local item should be inserted), in the local override. </p>
 	 * @see #__DNA__FIELD__subitem_reference_name
 	 */
@@ -494,8 +500,9 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Set method for struct member 'subitem_reference_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Used to handle insertions into collection<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Used to handle insertions into collection
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sub-item references, if needed (for arrays or collections only). We need both reference and local values to allow e.g. insertion into RNA collections (constraints, modifiers...). In RNA collection case, if names are defined, they are used in priority. Names are pointers (instead of char[64]) to save some space, NULL or empty string when unset. Indices are -1 when unset.</p><p> NOTE: For insertion operations in RNA collections, reference may not actually exist in the linked reference data. It is used to identify the anchor of the insertion operation (i.e. the item after or before which the new local item should be inserted), in the local override. </p>
 	 * @see #__DNA__FIELD__subitem_reference_name
 	 */
@@ -513,7 +520,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Get method for struct member 'subitem_local_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Used to handle insertions into collection
 	 * @see #__DNA__FIELD__subitem_local_name
 	 */
@@ -533,7 +540,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Set method for struct member 'subitem_local_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Used to handle insertions into collection
 	 * @see #__DNA__FIELD__subitem_local_name
 	 */
@@ -551,7 +558,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Get method for struct member 'subitem_reference_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Used to handle insertions into collection
 	 * @see #__DNA__FIELD__subitem_reference_index
 	 */
@@ -568,7 +575,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Set method for struct member 'subitem_reference_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Used to handle insertions into collection
 	 * @see #__DNA__FIELD__subitem_reference_index
 	 */
@@ -585,7 +592,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Get method for struct member 'subitem_local_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Used to handle insertions into collection
 	 * @see #__DNA__FIELD__subitem_local_index
 	 */
@@ -602,7 +609,7 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	/**
 	 * Set method for struct member 'subitem_local_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Used to handle insertions into collection
 	 * @see #__DNA__FIELD__subitem_local_index
 	 */

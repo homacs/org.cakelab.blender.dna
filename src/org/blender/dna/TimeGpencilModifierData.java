@@ -53,7 +53,7 @@ public class TimeGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class TimeGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +99,7 @@ public class TimeGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -142,7 +142,7 @@ public class TimeGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'frame_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation scale. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -185,7 +185,7 @@ public class TimeGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Start and end frame for custom range. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -292,7 +292,7 @@ public class TimeGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -313,7 +313,7 @@ public class TimeGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -338,7 +338,7 @@ public class TimeGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
@@ -355,7 +355,7 @@ public class TimeGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
@@ -372,7 +372,7 @@ public class TimeGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -389,7 +389,7 @@ public class TimeGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -434,7 +434,7 @@ public class TimeGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'frame_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation scale. </p>
 	 * @see #__DNA__FIELD__frame_scale
 	 */
@@ -451,7 +451,7 @@ public class TimeGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'frame_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation scale. </p>
 	 * @see #__DNA__FIELD__frame_scale
 	 */
@@ -496,7 +496,7 @@ public class TimeGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Start and end frame for custom range. </p>
 	 * @see #__DNA__FIELD__sfra
 	 */
@@ -513,7 +513,7 @@ public class TimeGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Start and end frame for custom range. </p>
 	 * @see #__DNA__FIELD__sfra
 	 */

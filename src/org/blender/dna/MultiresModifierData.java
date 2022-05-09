@@ -133,7 +133,7 @@ public class MultiresModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'simple'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -434,7 +434,7 @@ public class MultiresModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'simple'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -453,7 +453,7 @@ public class MultiresModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'simple'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>

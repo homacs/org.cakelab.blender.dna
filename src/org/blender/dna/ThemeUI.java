@@ -33,7 +33,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_regular'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Interface Elements (buttons, menus, icons) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -476,7 +476,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'menu_shadow_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> fac: 0 - 1 for blend factor, width in pixels </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -539,7 +539,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'transparent_checker_primary'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transparent Grid </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -682,7 +682,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'xaxis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis Colors </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -745,7 +745,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gizmo_hi'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gizmo Colors. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -868,7 +868,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'icon_scene'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Icon Colors. {@link Scene}  items. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -891,7 +891,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'icon_collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Collection}  items. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -914,7 +914,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'icon_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  items. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -937,7 +937,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'icon_object_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  data items. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -960,7 +960,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'icon_modifier'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Modifier and constraint items. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -983,7 +983,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'icon_shading'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shading related items. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1006,7 +1006,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'icon_folder'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> File folders. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1029,7 +1029,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'icon_border_intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Intensity of the border icons. >0 will render an border around themed icons. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1100,7 +1100,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Get method for struct member 'wcol_regular'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Interface Elements (buttons, menus, icons) </p>
 	 * @see #__DNA__FIELD__wcol_regular
 	 */
@@ -1117,7 +1117,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Set method for struct member 'wcol_regular'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Interface Elements (buttons, menus, icons) </p>
 	 * @see #__DNA__FIELD__wcol_regular
 	 */
@@ -1902,7 +1902,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Get method for struct member 'menu_shadow_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> fac: 0 - 1 for blend factor, width in pixels </p>
 	 * @see #__DNA__FIELD__menu_shadow_fac
 	 */
@@ -1919,7 +1919,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Set method for struct member 'menu_shadow_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> fac: 0 - 1 for blend factor, width in pixels </p>
 	 * @see #__DNA__FIELD__menu_shadow_fac
 	 */
@@ -2004,7 +2004,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Get method for struct member 'transparent_checker_primary'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transparent Grid </p>
 	 * @see #__DNA__FIELD__transparent_checker_primary
 	 */
@@ -2025,7 +2025,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Set method for struct member 'transparent_checker_primary'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transparent Grid </p>
 	 * @see #__DNA__FIELD__transparent_checker_primary
 	 */
@@ -2254,7 +2254,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Get method for struct member 'xaxis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis Colors </p>
 	 * @see #__DNA__FIELD__xaxis
 	 */
@@ -2275,7 +2275,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Set method for struct member 'xaxis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis Colors </p>
 	 * @see #__DNA__FIELD__xaxis
 	 */
@@ -2380,7 +2380,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Get method for struct member 'gizmo_hi'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gizmo Colors. </p>
 	 * @see #__DNA__FIELD__gizmo_hi
 	 */
@@ -2401,7 +2401,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Set method for struct member 'gizmo_hi'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gizmo Colors. </p>
 	 * @see #__DNA__FIELD__gizmo_hi
 	 */
@@ -2626,7 +2626,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Get method for struct member 'icon_scene'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Icon Colors. {@link Scene}  items. </p>
 	 * @see #__DNA__FIELD__icon_scene
 	 */
@@ -2647,7 +2647,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Set method for struct member 'icon_scene'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Icon Colors. {@link Scene}  items. </p>
 	 * @see #__DNA__FIELD__icon_scene
 	 */
@@ -2672,7 +2672,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Get method for struct member 'icon_collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Collection}  items. </p>
 	 * @see #__DNA__FIELD__icon_collection
 	 */
@@ -2693,7 +2693,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Set method for struct member 'icon_collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Collection}  items. </p>
 	 * @see #__DNA__FIELD__icon_collection
 	 */
@@ -2718,7 +2718,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Get method for struct member 'icon_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  items. </p>
 	 * @see #__DNA__FIELD__icon_object
 	 */
@@ -2739,7 +2739,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Set method for struct member 'icon_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  items. </p>
 	 * @see #__DNA__FIELD__icon_object
 	 */
@@ -2764,7 +2764,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Get method for struct member 'icon_object_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  data items. </p>
 	 * @see #__DNA__FIELD__icon_object_data
 	 */
@@ -2785,7 +2785,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Set method for struct member 'icon_object_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  data items. </p>
 	 * @see #__DNA__FIELD__icon_object_data
 	 */
@@ -2810,7 +2810,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Get method for struct member 'icon_modifier'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Modifier and constraint items. </p>
 	 * @see #__DNA__FIELD__icon_modifier
 	 */
@@ -2831,7 +2831,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Set method for struct member 'icon_modifier'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Modifier and constraint items. </p>
 	 * @see #__DNA__FIELD__icon_modifier
 	 */
@@ -2856,7 +2856,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Get method for struct member 'icon_shading'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shading related items. </p>
 	 * @see #__DNA__FIELD__icon_shading
 	 */
@@ -2877,7 +2877,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Set method for struct member 'icon_shading'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shading related items. </p>
 	 * @see #__DNA__FIELD__icon_shading
 	 */
@@ -2902,7 +2902,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Get method for struct member 'icon_folder'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> File folders. </p>
 	 * @see #__DNA__FIELD__icon_folder
 	 */
@@ -2923,7 +2923,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Set method for struct member 'icon_folder'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> File folders. </p>
 	 * @see #__DNA__FIELD__icon_folder
 	 */
@@ -2948,7 +2948,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Get method for struct member 'icon_border_intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Intensity of the border icons. >0 will render an border around themed icons. </p>
 	 * @see #__DNA__FIELD__icon_border_intensity
 	 */
@@ -2965,7 +2965,7 @@ public class ThemeUI extends CFacade {
 	/**
 	 * Set method for struct member 'icon_border_intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Intensity of the border icons. >0 will render an border around themed icons. </p>
 	 * @see #__DNA__FIELD__icon_border_intensity
 	 */

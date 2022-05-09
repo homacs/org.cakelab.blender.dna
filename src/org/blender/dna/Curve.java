@@ -53,7 +53,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'nurb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Actual data, called splines in rna. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +99,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'editnurb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Edited data, not in file, use pointer so we can check for it. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -182,7 +182,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -247,7 +247,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bevel_profile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    The path for the curve's custom profile
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -270,7 +270,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'loc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> texture space, copied as one block in editobject.c </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -313,7 +313,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Creation-time type of curve datablock. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -376,7 +376,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'twist_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The type of tilt calculation for 3D Curves
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -399,7 +399,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'twist_smooth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Smoothing iteration for tangents
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -582,7 +582,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'resolu'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> default </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -665,7 +665,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'actnu'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> edit, index in nurb list </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -688,7 +688,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'actvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> edit, index in active nurb ({@link BPoint}  or {@link BezTriple} ) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -771,7 +771,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bevel_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Determine how to build the curve's bevel geometry
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -794,8 +794,9 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'taper_radius_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Determine how the effective radius of the spline point is computed when a taper object is specified<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Determine how the effective radius of the spline point is computed when a taper object is specified
+	 * <h4>Blender Source Code</h4>
 	 * <p> Determine how the effective radius of the bevel point is computed when a taper object is specified. The effective radius is a function of the bevel point radius and the taper radius. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -838,7 +839,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lines'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> font part </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1061,7 +1062,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> copy of EditFont vars (wchar_t aligned), warning! don't use in editmode (storage only) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1144,7 +1145,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1407,7 +1408,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ctime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> font part end Current evaltime - for use by Objects parented to curves. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1550,7 +1551,7 @@ public class Curve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A pointer to curve data from evaluation. Owned by the object's #geometry_set_eval, either as a geometry instance or the data of the evaluated #CurveComponent. The curve may also contain data in the {@link #getNurb()}  list, but for evaluated curves this is the proper place to retrieve data, since it also contains the result of geometry nodes evaluation, and isn't just a copy of the original object data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1637,7 +1638,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -1657,7 +1658,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -1675,7 +1676,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'nurb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Actual data, called splines in rna. </p>
 	 * @see #__DNA__FIELD__nurb
 	 */
@@ -1692,7 +1693,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'nurb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Actual data, called splines in rna. </p>
 	 * @see #__DNA__FIELD__nurb
 	 */
@@ -1717,7 +1718,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'editnurb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Edited data, not in file, use pointer so we can check for it. </p>
 	 * @see #__DNA__FIELD__editnurb
 	 */
@@ -1737,7 +1738,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'editnurb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Edited data, not in file, use pointer so we can check for it. </p>
 	 * @see #__DNA__FIELD__editnurb
 	 */
@@ -1851,7 +1852,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1873,7 +1874,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1957,7 +1958,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'bevel_profile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    The path for the curve's custom profile
 	 * @see #__DNA__FIELD__bevel_profile
 	 */
@@ -1977,7 +1978,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'bevel_profile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    The path for the curve's custom profile
 	 * @see #__DNA__FIELD__bevel_profile
 	 */
@@ -1995,7 +1996,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'loc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> texture space, copied as one block in editobject.c </p>
 	 * @see #__DNA__FIELD__loc
 	 */
@@ -2016,7 +2017,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'loc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> texture space, copied as one block in editobject.c </p>
 	 * @see #__DNA__FIELD__loc
 	 */
@@ -2081,7 +2082,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Creation-time type of curve datablock. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -2098,7 +2099,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Creation-time type of curve datablock. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -2183,7 +2184,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'twist_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The type of tilt calculation for 3D Curves
 	 * @see #__DNA__FIELD__twist_mode
 	 */
@@ -2200,7 +2201,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'twist_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The type of tilt calculation for 3D Curves
 	 * @see #__DNA__FIELD__twist_mode
 	 */
@@ -2217,7 +2218,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'twist_smooth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Smoothing iteration for tangents
 	 * @see #__DNA__FIELD__twist_smooth
 	 */
@@ -2234,7 +2235,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'twist_smooth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Smoothing iteration for tangents
 	 * @see #__DNA__FIELD__twist_smooth
 	 */
@@ -2475,7 +2476,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'resolu'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> default </p>
 	 * @see #__DNA__FIELD__resolu
 	 */
@@ -2492,7 +2493,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'resolu'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> default </p>
 	 * @see #__DNA__FIELD__resolu
 	 */
@@ -2593,7 +2594,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'actnu'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> edit, index in nurb list </p>
 	 * @see #__DNA__FIELD__actnu
 	 */
@@ -2610,7 +2611,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'actnu'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> edit, index in nurb list </p>
 	 * @see #__DNA__FIELD__actnu
 	 */
@@ -2627,7 +2628,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'actvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> edit, index in active nurb ({@link BPoint}  or {@link BezTriple} ) </p>
 	 * @see #__DNA__FIELD__actvert
 	 */
@@ -2644,7 +2645,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'actvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> edit, index in active nurb ({@link BPoint}  or {@link BezTriple} ) </p>
 	 * @see #__DNA__FIELD__actvert
 	 */
@@ -2745,7 +2746,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'bevel_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Determine how to build the curve's bevel geometry
 	 * @see #__DNA__FIELD__bevel_mode
 	 */
@@ -2762,7 +2763,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'bevel_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Determine how to build the curve's bevel geometry
 	 * @see #__DNA__FIELD__bevel_mode
 	 */
@@ -2779,8 +2780,9 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'taper_radius_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Determine how the effective radius of the spline point is computed when a taper object is specified<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Determine how the effective radius of the spline point is computed when a taper object is specified
+	 * <h4>Blender Source Code</h4>
 	 * <p> Determine how the effective radius of the bevel point is computed when a taper object is specified. The effective radius is a function of the bevel point radius and the taper radius. </p>
 	 * @see #__DNA__FIELD__taper_radius_mode
 	 */
@@ -2797,8 +2799,9 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'taper_radius_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Determine how the effective radius of the spline point is computed when a taper object is specified<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Determine how the effective radius of the spline point is computed when a taper object is specified
+	 * <h4>Blender Source Code</h4>
 	 * <p> Determine how the effective radius of the bevel point is computed when a taper object is specified. The effective radius is a function of the bevel point radius and the taper radius. </p>
 	 * @see #__DNA__FIELD__taper_radius_mode
 	 */
@@ -2843,7 +2846,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'lines'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> font part </p>
 	 * @see #__DNA__FIELD__lines
 	 */
@@ -2860,7 +2863,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'lines'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> font part </p>
 	 * @see #__DNA__FIELD__lines
 	 */
@@ -3157,7 +3160,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> copy of EditFont vars (wchar_t aligned), warning! don't use in editmode (storage only) </p>
 	 * @see #__DNA__FIELD__pos
 	 */
@@ -3174,7 +3177,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> copy of EditFont vars (wchar_t aligned), warning! don't use in editmode (storage only) </p>
 	 * @see #__DNA__FIELD__pos
 	 */
@@ -3275,7 +3278,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__len
 	 */
@@ -3292,7 +3295,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__len
 	 */
@@ -3697,7 +3700,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'ctime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> font part end Current evaltime - for use by Objects parented to curves. </p>
 	 * @see #__DNA__FIELD__ctime
 	 */
@@ -3714,7 +3717,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'ctime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> font part end Current evaltime - for use by Objects parented to curves. </p>
 	 * @see #__DNA__FIELD__ctime
 	 */
@@ -3911,7 +3914,7 @@ public class Curve extends CFacade {
 	/**
 	 * Get method for struct member 'curve_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A pointer to curve data from evaluation. Owned by the object's #geometry_set_eval, either as a geometry instance or the data of the evaluated #CurveComponent. The curve may also contain data in the {@link #getNurb()}  list, but for evaluated curves this is the proper place to retrieve data, since it also contains the result of geometry nodes evaluation, and isn't just a copy of the original object data. </p>
 	 * @see #__DNA__FIELD__curve_eval
 	 */
@@ -3931,7 +3934,7 @@ public class Curve extends CFacade {
 	/**
 	 * Set method for struct member 'curve_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A pointer to curve data from evaluation. Owned by the object's #geometry_set_eval, either as a geometry instance or the data of the evaluated #CurveComponent. The curve may also contain data in the {@link #getNurb()}  list, but for evaluated curves this is the proper place to retrieve data, since it also contains the result of geometry nodes evaluation, and isn't just a copy of the original object data. </p>
 	 * @see #__DNA__FIELD__curve_eval
 	 */

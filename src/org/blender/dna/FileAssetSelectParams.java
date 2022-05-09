@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FileAssetSelectParams'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> File selection parameters for asset browsing mode, with {@link FileSelectParams}  as base. </p>
  */
 
@@ -74,7 +75,7 @@ public class FileAssetSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'asset_catalog_visibility'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eFileSel_Params_AssetCatalogVisibility </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -117,8 +118,9 @@ public class FileAssetSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'catalog_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    The UUID of the catalog shown in the browser<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    The UUID of the catalog shown in the browser
+	 * <h4>Blender Source Code</h4>
 	 * <p> If {@link #getAsset_catalog_visibility()}  is #FILE_SHOW_ASSETS_FROM_CATALOG, this sets the {@link ID}  of the catalog to show. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -141,8 +143,9 @@ public class FileAssetSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'import_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Determine how the asset will be imported<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Determine how the asset will be imported
+	 * <h4>Blender Source Code</h4>
 	 * <p> eFileAssetImportType </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -265,7 +268,7 @@ public class FileAssetSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'asset_catalog_visibility'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eFileSel_Params_AssetCatalogVisibility </p>
 	 * @see #__DNA__FIELD__asset_catalog_visibility
 	 */
@@ -282,7 +285,7 @@ public class FileAssetSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'asset_catalog_visibility'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eFileSel_Params_AssetCatalogVisibility </p>
 	 * @see #__DNA__FIELD__asset_catalog_visibility
 	 */
@@ -339,8 +342,9 @@ public class FileAssetSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'catalog_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    The UUID of the catalog shown in the browser<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    The UUID of the catalog shown in the browser
+	 * <h4>Blender Source Code</h4>
 	 * <p> If {@link #getAsset_catalog_visibility()}  is #FILE_SHOW_ASSETS_FROM_CATALOG, this sets the {@link ID}  of the catalog to show. </p>
 	 * @see #__DNA__FIELD__catalog_id
 	 */
@@ -357,8 +361,9 @@ public class FileAssetSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'catalog_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    The UUID of the catalog shown in the browser<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    The UUID of the catalog shown in the browser
+	 * <h4>Blender Source Code</h4>
 	 * <p> If {@link #getAsset_catalog_visibility()}  is #FILE_SHOW_ASSETS_FROM_CATALOG, this sets the {@link ID}  of the catalog to show. </p>
 	 * @see #__DNA__FIELD__catalog_id
 	 */
@@ -383,8 +388,9 @@ public class FileAssetSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'import_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Determine how the asset will be imported<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Determine how the asset will be imported
+	 * <h4>Blender Source Code</h4>
 	 * <p> eFileAssetImportType </p>
 	 * @see #__DNA__FIELD__import_type
 	 */
@@ -401,8 +407,9 @@ public class FileAssetSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'import_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Determine how the asset will be imported<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Determine how the asset will be imported
+	 * <h4>Blender Source Code</h4>
 	 * <p> eFileAssetImportType </p>
 	 * @see #__DNA__FIELD__import_type
 	 */

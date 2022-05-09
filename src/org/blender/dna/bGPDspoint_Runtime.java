@@ -33,7 +33,7 @@ public class bGPDspoint_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pt_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original point (used to dereference evaluated data) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +56,7 @@ public class bGPDspoint_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'idx_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original index array position </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -107,7 +107,7 @@ public class bGPDspoint_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'pt_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original point (used to dereference evaluated data) </p>
 	 * @see #__DNA__FIELD__pt_orig
 	 */
@@ -127,7 +127,7 @@ public class bGPDspoint_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'pt_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original point (used to dereference evaluated data) </p>
 	 * @see #__DNA__FIELD__pt_orig
 	 */
@@ -145,7 +145,7 @@ public class bGPDspoint_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'idx_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original index array position </p>
 	 * @see #__DNA__FIELD__idx_orig
 	 */
@@ -162,7 +162,7 @@ public class bGPDspoint_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'idx_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original index array position </p>
 	 * @see #__DNA__FIELD__idx_orig
 	 */

@@ -73,7 +73,7 @@ public class NodeTexEnvironment extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'color_space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -238,7 +238,7 @@ public class NodeTexEnvironment extends CFacade {
 	/**
 	 * Get method for struct member 'color_space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -257,7 +257,7 @@ public class NodeTexEnvironment extends CFacade {
 	/**
 	 * Set method for struct member 'color_space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>

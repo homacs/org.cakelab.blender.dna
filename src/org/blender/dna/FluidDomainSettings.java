@@ -33,7 +33,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  Runtime-only fields (from here on). <ndash/>  For fast RNA access. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fluid_old'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Adaptive domain needs access to old fluid state. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -119,7 +119,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fluid_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Limit fluid objects to this collection
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -142,7 +142,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'force_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UNUSED </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -165,8 +165,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'effector_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Limit effectors to this collection<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Limit effectors to this collection
+	 * <h4>Blender Source Code</h4>
 	 * <p> Effector objects group. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -469,7 +470,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'effector_weights'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -492,7 +493,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'p0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Domain object data. Start point of BB in local space (includes sub-cell shift for adaptive domain). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -515,7 +516,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'p1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End point of BB in local space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -538,7 +539,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dp0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Difference from object center to grid start point. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -561,8 +562,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cell_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Cell Size<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Cell Size
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of simulation cell in local space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -585,7 +587,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'global_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Global size of domain axes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -628,7 +630,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Current domain shift in simulation cells. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -651,7 +653,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shift_f'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Exact domain shift. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -674,7 +676,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'obj_shift_f'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How much object has shifted since previous smoke frame (used to "lock" domain while drawing). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -697,7 +699,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'imat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Domain object imat. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -720,7 +722,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'obmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Domain obmat. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -743,7 +745,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fluidmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Low res fluid matrix. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -766,7 +768,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fluidmat_wt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> High res fluid matrix. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -789,7 +791,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'base_res'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Initial "non-adapted" resolution. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -812,7 +814,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'res_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cell min. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -835,7 +837,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'res_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cell max. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -858,7 +860,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'res'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Data resolution (res_max-res_min). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -901,7 +903,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1.0f / res. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -924,7 +926,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Largest domain size. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -947,7 +949,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'boundary_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Usually this is just 1. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -970,7 +972,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gravity_final'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Scene}  or domain gravity multiplied with gravity weight. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -993,8 +995,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'adapt_margin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Margin added around fluid to minimize boundary interference<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Margin added around fluid to minimize boundary interference
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  User-accessible fields (from here on). <ndash/>  Adaptive domain options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1037,7 +1040,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'adapt_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum amount of fluid a cell can contain before it is considered empty
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1060,7 +1063,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'maxres'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fluid domain options Longest axis on the BB gets this resolution assigned. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1083,7 +1086,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'solver_res'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dimension of manta solver, 2d or 3d. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1106,7 +1109,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'border_collisions'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How domain border collisions are handled. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1129,7 +1132,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use-mesh, use-noise, etc. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1152,7 +1155,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gravity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Gravity in X, Y and Z direction
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1195,7 +1198,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gas, liquid. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1218,7 +1221,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1241,8 +1244,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Buoyant force based on smoke density (higher value results in faster rising smoke)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Buoyant force based on smoke density (higher value results in faster rising smoke)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Smoke domain options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1265,7 +1269,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'beta'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Buoyant force based on smoke heat (higher value results in faster rising smoke)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1288,7 +1292,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'diss_speed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In frames. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1311,7 +1315,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vorticity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of turbulence and rotation in smoke
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1334,7 +1338,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'active_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Monitor smoke color. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1357,7 +1361,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'highres_sampling'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Method for sampling the high resolution flow
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1380,8 +1384,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'burning_rate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Speed of the burning reaction (higher value results in smaller flames)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Speed of the burning reaction (higher value results in smaller flames)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flame options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1404,7 +1409,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flame_smoke'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of smoke created by burning fuel
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1427,7 +1432,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flame_vorticity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Additional vorticity for the flames
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1450,7 +1455,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flame_ignition'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum temperature of the flames (higher value results in faster rising flames)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1473,7 +1478,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flame_max_temp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum temperature of the flames (higher value results in faster rising flames)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1496,7 +1501,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flame_smoke_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color of smoke emitted from burning fuel
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1519,8 +1524,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'noise_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Strength of noise<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Strength of noise
+	 * <h4>Blender Source Code</h4>
 	 * <p> Noise options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1543,7 +1549,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'noise_pos_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Scale of noise (higher value results in larger vortices)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1566,7 +1572,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'noise_time_anim'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Animation time of noise
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1609,7 +1615,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'noise_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The noise simulation is scaled up by this factor (compared to the base resolution of the domain)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1632,7 +1638,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1655,8 +1661,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'particle_randomness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Randomness factor for particle sampling<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Randomness factor for particle sampling
+	 * <h4>Blender Source Code</h4>
 	 * <p> Liquid domain options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1679,7 +1686,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'particle_number'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Particle number factor (higher value results in more particles)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1742,7 +1749,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'particle_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Particle radius factor. Increase this value if the simulation appears to leak volume, decrease it if the simulation seems to gain volume
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1765,7 +1772,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'particle_band_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Particle (narrow) band width (higher value results in thicker band and more particles)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1788,7 +1795,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fractions_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Determines how much fluid is allowed in an obstacle cell (higher values will tag a boundary cell as an obstacle easier and reduce the boundary smoothening effect)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1811,7 +1818,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fractions_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Determines how far apart fluid and obstacle are (higher values will result in fluid being further away from obstacles, smaller values will let fluid move towards the inside of obstacles)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1834,7 +1841,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flip_ratio'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * PIC/FLIP Ratio. A value of 1.0 will result in a completely FLIP based simulation. Use a lower value for simulations which should produce smaller splashes
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1857,7 +1864,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sys_particle_maximum'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum number of fluid particles that are allowed in this simulation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1880,7 +1887,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'simulation_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Change the underlying simulation method
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1923,8 +1930,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'viscosity_value'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Viscosity of liquid (higher values result in more viscous fluids, a value of 0 will still apply some viscosity)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Viscosity of liquid (higher values result in more viscous fluids, a value of 0 will still apply some viscosity)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Viscosity options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1967,8 +1975,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'surface_tension'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Surface tension of liquid (higher value results in greater hydrophobic behavior)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Surface tension of liquid (higher value results in greater hydrophobic behavior)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Diffusion options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1991,7 +2000,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'viscosity_base'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Viscosity setting: value that is multiplied by 10 to the power of (exponent*-1)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2014,7 +2023,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'viscosity_exponent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Negative exponent for the viscosity value (to simplify entering small values e.g. 5*10^-6)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2037,8 +2046,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_concave_upper'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Upper mesh concavity bound (high values tend to smoothen and fill out concave regions)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Upper mesh concavity bound (high values tend to smoothen and fill out concave regions)
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mesh}  options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2061,7 +2071,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_concave_lower'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower mesh concavity bound (high values tend to smoothen and fill out concave regions)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2084,7 +2094,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_particle_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Particle radius factor (higher value results in larger (meshed) particles). Needs to be adjusted after changing the mesh scale
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2107,7 +2117,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_smoothen_pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Positive mesh smoothening
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2130,7 +2140,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_smoothen_neg'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Negative mesh smoothening
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2153,7 +2163,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The mesh simulation is scaled up by this factor (compared to the base resolution of the domain). For best meshing, it is recommended to adjust the mesh particle radius alongside this value
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2176,7 +2186,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_generator'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Which particle level set generator to use
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2199,7 +2209,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad6'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2222,7 +2232,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'particle_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Secondary particle options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2245,7 +2255,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'particle_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The particle simulation is scaled up by this factor (compared to the base resolution of the domain)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2508,7 +2518,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_potential_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Radius to compute potential for each cell (higher values are slower but create smoother potential grids)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2531,7 +2541,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_update_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Radius to compute position update for each particle (higher values are slower but particles move less chaotic)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2554,7 +2564,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_boundary'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How particles that left the domain are treated
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2577,7 +2587,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_combined_export'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Determines which particle systems are created from secondary particles
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2600,7 +2610,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad7'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2683,7 +2693,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'guide_res'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Res for velocity guide grids - independent from base res. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2726,7 +2736,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad8'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2749,8 +2759,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cache_frame_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Frame on which the simulation starts. This is the first frame that will be baked<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Frame on which the simulation starts. This is the first frame that will be baked
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2773,7 +2784,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cache_frame_end'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Frame on which the simulation stops. This is the last frame that will be baked
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2896,7 +2907,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cache_frame_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Frame offset that is used when loading the simulation from the cache. It is not considered when baking the simulation, only when loading it
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2939,7 +2950,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cache_mesh_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the file format to be used for caching surface data
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2962,7 +2973,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cache_data_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the file format to be used for caching volumetric data
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2985,7 +2996,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cache_particle_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the file format to be used for caching particle data
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3008,7 +3019,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cache_noise_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the file format to be used for caching noise data
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3031,7 +3042,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cache_directory'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Directory that contains fluid cache files
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3054,7 +3065,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bake error description. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3077,7 +3088,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cache_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Change the cache type of the simulation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3100,7 +3111,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cache_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Run-time only </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3123,7 +3134,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad9'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3146,7 +3157,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Time options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3229,7 +3240,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'time_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Adjust simulation speed
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3252,7 +3263,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cfl_condition'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximal velocity per cell (higher value results in greater timesteps)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3315,8 +3326,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'slice_per_voxel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How many slices per voxel should be generated<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How many slices per voxel should be generated
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3339,7 +3351,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'slice_depth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Position of the slice
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3362,7 +3374,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'display_thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Thickness of smoke display in the viewport
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3425,7 +3437,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vector_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Multiplier for scaling the vectors
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3448,7 +3460,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gridlines_lower_bound'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower bound of the highlighting range
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3471,7 +3483,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gridlines_upper_bound'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Upper bound of the highlighting range
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3494,7 +3506,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gridlines_range_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color used to highlight the range
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3557,7 +3569,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'show_gridlines'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Show gridlines
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3620,8 +3632,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vector_field'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Vector field to be represented by the display vectors<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Vector field to be represented by the display vectors
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Simulation}  field used for vector display. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3644,7 +3657,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vector_scale_with_magnitude'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Scale vectors with their magnitudes
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3707,7 +3720,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'coba_field'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Simulation}  field used for the color mapping. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3750,8 +3763,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gridlines_color_field'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Simulation field to color map onto gridlines<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Simulation field to color map onto gridlines
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Simulation}  field used to color map onto gridlines. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3774,7 +3788,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gridlines_cell_filter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Cell type to be highlighted
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3797,7 +3811,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad10'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3820,7 +3834,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'openvdb_compression'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenVDB cache options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3843,7 +3857,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'clipping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Value under which voxels are considered empty space to optimize rendering
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3866,7 +3880,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'openvdb_data_depth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Bit depth for fluid particles and grids (lower bit values reduce file size)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3889,7 +3903,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad11'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3912,7 +3926,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'viewsettings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  Deprecated / unused options (below). <ndash/>  View options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3935,7 +3949,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad12'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3958,7 +3972,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'point_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointcache options. Smoke uses only one cache from now on (index [0]), but keeping the array for now for reading old files. Definition is in DNA_object_force_types.h . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -4061,7 +4075,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad13'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -4092,7 +4106,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  Runtime-only fields (from here on). <ndash/>  For fast RNA access. </p>
 	 * @see #__DNA__FIELD__fmd
 	 */
@@ -4112,7 +4126,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  Runtime-only fields (from here on). <ndash/>  For fast RNA access. </p>
 	 * @see #__DNA__FIELD__fmd
 	 */
@@ -4162,7 +4176,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fluid_old'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Adaptive domain needs access to old fluid state. </p>
 	 * @see #__DNA__FIELD__fluid_old
 	 */
@@ -4182,7 +4196,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fluid_old'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Adaptive domain needs access to old fluid state. </p>
 	 * @see #__DNA__FIELD__fluid_old
 	 */
@@ -4232,7 +4246,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fluid_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Limit fluid objects to this collection
 	 * @see #__DNA__FIELD__fluid_group
 	 */
@@ -4252,7 +4266,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fluid_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Limit fluid objects to this collection
 	 * @see #__DNA__FIELD__fluid_group
 	 */
@@ -4270,7 +4284,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'force_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UNUSED </p>
 	 * @see #__DNA__FIELD__force_group
 	 */
@@ -4290,7 +4304,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'force_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UNUSED </p>
 	 * @see #__DNA__FIELD__force_group
 	 */
@@ -4308,8 +4322,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'effector_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Limit effectors to this collection<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Limit effectors to this collection
+	 * <h4>Blender Source Code</h4>
 	 * <p> Effector objects group. </p>
 	 * @see #__DNA__FIELD__effector_group
 	 */
@@ -4329,8 +4344,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'effector_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Limit effectors to this collection<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Limit effectors to this collection
+	 * <h4>Blender Source Code</h4>
 	 * <p> Effector objects group. </p>
 	 * @see #__DNA__FIELD__effector_group
 	 */
@@ -4796,7 +4812,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'effector_weights'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__effector_weights
 	 */
@@ -4816,7 +4832,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'effector_weights'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__effector_weights
 	 */
@@ -4834,7 +4850,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'p0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Domain object data. Start point of BB in local space (includes sub-cell shift for adaptive domain). </p>
 	 * @see #__DNA__FIELD__p0
 	 */
@@ -4855,7 +4871,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'p0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Domain object data. Start point of BB in local space (includes sub-cell shift for adaptive domain). </p>
 	 * @see #__DNA__FIELD__p0
 	 */
@@ -4880,7 +4896,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'p1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End point of BB in local space. </p>
 	 * @see #__DNA__FIELD__p1
 	 */
@@ -4901,7 +4917,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'p1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End point of BB in local space. </p>
 	 * @see #__DNA__FIELD__p1
 	 */
@@ -4926,7 +4942,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'dp0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Difference from object center to grid start point. </p>
 	 * @see #__DNA__FIELD__dp0
 	 */
@@ -4947,7 +4963,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'dp0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Difference from object center to grid start point. </p>
 	 * @see #__DNA__FIELD__dp0
 	 */
@@ -4972,8 +4988,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'cell_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Cell Size<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Cell Size
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of simulation cell in local space. </p>
 	 * @see #__DNA__FIELD__cell_size
 	 */
@@ -4994,8 +5011,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'cell_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Cell Size<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Cell Size
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of simulation cell in local space. </p>
 	 * @see #__DNA__FIELD__cell_size
 	 */
@@ -5020,7 +5038,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'global_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Global size of domain axes. </p>
 	 * @see #__DNA__FIELD__global_size
 	 */
@@ -5041,7 +5059,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'global_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Global size of domain axes. </p>
 	 * @see #__DNA__FIELD__global_size
 	 */
@@ -5106,7 +5124,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'shift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Current domain shift in simulation cells. </p>
 	 * @see #__DNA__FIELD__shift
 	 */
@@ -5127,7 +5145,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'shift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Current domain shift in simulation cells. </p>
 	 * @see #__DNA__FIELD__shift
 	 */
@@ -5152,7 +5170,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'shift_f'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Exact domain shift. </p>
 	 * @see #__DNA__FIELD__shift_f
 	 */
@@ -5173,7 +5191,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'shift_f'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Exact domain shift. </p>
 	 * @see #__DNA__FIELD__shift_f
 	 */
@@ -5198,7 +5216,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'obj_shift_f'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How much object has shifted since previous smoke frame (used to "lock" domain while drawing). </p>
 	 * @see #__DNA__FIELD__obj_shift_f
 	 */
@@ -5219,7 +5237,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'obj_shift_f'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How much object has shifted since previous smoke frame (used to "lock" domain while drawing). </p>
 	 * @see #__DNA__FIELD__obj_shift_f
 	 */
@@ -5244,7 +5262,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'imat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Domain object imat. </p>
 	 * @see #__DNA__FIELD__imat
 	 */
@@ -5266,7 +5284,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'imat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Domain object imat. </p>
 	 * @see #__DNA__FIELD__imat
 	 */
@@ -5291,7 +5309,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'obmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Domain obmat. </p>
 	 * @see #__DNA__FIELD__obmat
 	 */
@@ -5313,7 +5331,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'obmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Domain obmat. </p>
 	 * @see #__DNA__FIELD__obmat
 	 */
@@ -5338,7 +5356,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fluidmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Low res fluid matrix. </p>
 	 * @see #__DNA__FIELD__fluidmat
 	 */
@@ -5360,7 +5378,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fluidmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Low res fluid matrix. </p>
 	 * @see #__DNA__FIELD__fluidmat
 	 */
@@ -5385,7 +5403,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fluidmat_wt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> High res fluid matrix. </p>
 	 * @see #__DNA__FIELD__fluidmat_wt
 	 */
@@ -5407,7 +5425,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fluidmat_wt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> High res fluid matrix. </p>
 	 * @see #__DNA__FIELD__fluidmat_wt
 	 */
@@ -5432,7 +5450,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'base_res'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Initial "non-adapted" resolution. </p>
 	 * @see #__DNA__FIELD__base_res
 	 */
@@ -5453,7 +5471,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'base_res'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Initial "non-adapted" resolution. </p>
 	 * @see #__DNA__FIELD__base_res
 	 */
@@ -5478,7 +5496,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'res_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cell min. </p>
 	 * @see #__DNA__FIELD__res_min
 	 */
@@ -5499,7 +5517,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'res_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cell min. </p>
 	 * @see #__DNA__FIELD__res_min
 	 */
@@ -5524,7 +5542,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'res_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cell max. </p>
 	 * @see #__DNA__FIELD__res_max
 	 */
@@ -5545,7 +5563,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'res_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cell max. </p>
 	 * @see #__DNA__FIELD__res_max
 	 */
@@ -5570,7 +5588,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'res'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Data resolution (res_max-res_min). </p>
 	 * @see #__DNA__FIELD__res
 	 */
@@ -5591,7 +5609,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'res'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Data resolution (res_max-res_min). </p>
 	 * @see #__DNA__FIELD__res
 	 */
@@ -5644,7 +5662,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'dx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1.0f / res. </p>
 	 * @see #__DNA__FIELD__dx
 	 */
@@ -5661,7 +5679,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'dx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1.0f / res. </p>
 	 * @see #__DNA__FIELD__dx
 	 */
@@ -5678,7 +5696,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Largest domain size. </p>
 	 * @see #__DNA__FIELD__scale
 	 */
@@ -5695,7 +5713,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Largest domain size. </p>
 	 * @see #__DNA__FIELD__scale
 	 */
@@ -5712,7 +5730,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'boundary_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Usually this is just 1. </p>
 	 * @see #__DNA__FIELD__boundary_width
 	 */
@@ -5729,7 +5747,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'boundary_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Usually this is just 1. </p>
 	 * @see #__DNA__FIELD__boundary_width
 	 */
@@ -5746,7 +5764,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gravity_final'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Scene}  or domain gravity multiplied with gravity weight. </p>
 	 * @see #__DNA__FIELD__gravity_final
 	 */
@@ -5767,7 +5785,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gravity_final'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Scene}  or domain gravity multiplied with gravity weight. </p>
 	 * @see #__DNA__FIELD__gravity_final
 	 */
@@ -5792,8 +5810,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'adapt_margin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Margin added around fluid to minimize boundary interference<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Margin added around fluid to minimize boundary interference
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  User-accessible fields (from here on). <ndash/>  Adaptive domain options. </p>
 	 * @see #__DNA__FIELD__adapt_margin
 	 */
@@ -5810,8 +5829,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'adapt_margin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Margin added around fluid to minimize boundary interference<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Margin added around fluid to minimize boundary interference
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  User-accessible fields (from here on). <ndash/>  Adaptive domain options. </p>
 	 * @see #__DNA__FIELD__adapt_margin
 	 */
@@ -5856,7 +5876,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'adapt_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum amount of fluid a cell can contain before it is considered empty
 	 * @see #__DNA__FIELD__adapt_threshold
 	 */
@@ -5873,7 +5893,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'adapt_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum amount of fluid a cell can contain before it is considered empty
 	 * @see #__DNA__FIELD__adapt_threshold
 	 */
@@ -5890,7 +5910,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'maxres'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fluid domain options Longest axis on the BB gets this resolution assigned. </p>
 	 * @see #__DNA__FIELD__maxres
 	 */
@@ -5907,7 +5927,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'maxres'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fluid domain options Longest axis on the BB gets this resolution assigned. </p>
 	 * @see #__DNA__FIELD__maxres
 	 */
@@ -5924,7 +5944,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'solver_res'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dimension of manta solver, 2d or 3d. </p>
 	 * @see #__DNA__FIELD__solver_res
 	 */
@@ -5941,7 +5961,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'solver_res'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dimension of manta solver, 2d or 3d. </p>
 	 * @see #__DNA__FIELD__solver_res
 	 */
@@ -5958,7 +5978,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'border_collisions'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How domain border collisions are handled. </p>
 	 * @see #__DNA__FIELD__border_collisions
 	 */
@@ -5975,7 +5995,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'border_collisions'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How domain border collisions are handled. </p>
 	 * @see #__DNA__FIELD__border_collisions
 	 */
@@ -5992,7 +6012,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use-mesh, use-noise, etc. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -6009,7 +6029,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use-mesh, use-noise, etc. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -6026,7 +6046,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gravity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Gravity in X, Y and Z direction
 	 * @see #__DNA__FIELD__gravity
 	 */
@@ -6047,7 +6067,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gravity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Gravity in X, Y and Z direction
 	 * @see #__DNA__FIELD__gravity
 	 */
@@ -6100,7 +6120,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gas, liquid. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -6117,7 +6137,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gas, liquid. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -6134,7 +6154,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member '_pad2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad2
 	 */
@@ -6155,7 +6175,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member '_pad2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad2
 	 */
@@ -6180,8 +6200,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Buoyant force based on smoke density (higher value results in faster rising smoke)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Buoyant force based on smoke density (higher value results in faster rising smoke)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Smoke domain options. </p>
 	 * @see #__DNA__FIELD__alpha
 	 */
@@ -6198,8 +6219,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Buoyant force based on smoke density (higher value results in faster rising smoke)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Buoyant force based on smoke density (higher value results in faster rising smoke)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Smoke domain options. </p>
 	 * @see #__DNA__FIELD__alpha
 	 */
@@ -6216,7 +6238,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'beta'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Buoyant force based on smoke heat (higher value results in faster rising smoke)
 	 * @see #__DNA__FIELD__beta
 	 */
@@ -6233,7 +6255,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'beta'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Buoyant force based on smoke heat (higher value results in faster rising smoke)
 	 * @see #__DNA__FIELD__beta
 	 */
@@ -6250,7 +6272,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'diss_speed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In frames. </p>
 	 * @see #__DNA__FIELD__diss_speed
 	 */
@@ -6267,7 +6289,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'diss_speed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In frames. </p>
 	 * @see #__DNA__FIELD__diss_speed
 	 */
@@ -6284,7 +6306,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'vorticity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of turbulence and rotation in smoke
 	 * @see #__DNA__FIELD__vorticity
 	 */
@@ -6301,7 +6323,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'vorticity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of turbulence and rotation in smoke
 	 * @see #__DNA__FIELD__vorticity
 	 */
@@ -6318,7 +6340,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'active_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Monitor smoke color. </p>
 	 * @see #__DNA__FIELD__active_color
 	 */
@@ -6339,7 +6361,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'active_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Monitor smoke color. </p>
 	 * @see #__DNA__FIELD__active_color
 	 */
@@ -6364,7 +6386,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'highres_sampling'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Method for sampling the high resolution flow
 	 * @see #__DNA__FIELD__highres_sampling
 	 */
@@ -6381,7 +6403,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'highres_sampling'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Method for sampling the high resolution flow
 	 * @see #__DNA__FIELD__highres_sampling
 	 */
@@ -6398,8 +6420,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'burning_rate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Speed of the burning reaction (higher value results in smaller flames)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Speed of the burning reaction (higher value results in smaller flames)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flame options. </p>
 	 * @see #__DNA__FIELD__burning_rate
 	 */
@@ -6416,8 +6439,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'burning_rate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Speed of the burning reaction (higher value results in smaller flames)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Speed of the burning reaction (higher value results in smaller flames)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flame options. </p>
 	 * @see #__DNA__FIELD__burning_rate
 	 */
@@ -6434,7 +6458,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'flame_smoke'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of smoke created by burning fuel
 	 * @see #__DNA__FIELD__flame_smoke
 	 */
@@ -6451,7 +6475,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'flame_smoke'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of smoke created by burning fuel
 	 * @see #__DNA__FIELD__flame_smoke
 	 */
@@ -6468,7 +6492,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'flame_vorticity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Additional vorticity for the flames
 	 * @see #__DNA__FIELD__flame_vorticity
 	 */
@@ -6485,7 +6509,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'flame_vorticity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Additional vorticity for the flames
 	 * @see #__DNA__FIELD__flame_vorticity
 	 */
@@ -6502,7 +6526,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'flame_ignition'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum temperature of the flames (higher value results in faster rising flames)
 	 * @see #__DNA__FIELD__flame_ignition
 	 */
@@ -6519,7 +6543,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'flame_ignition'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum temperature of the flames (higher value results in faster rising flames)
 	 * @see #__DNA__FIELD__flame_ignition
 	 */
@@ -6536,7 +6560,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'flame_max_temp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum temperature of the flames (higher value results in faster rising flames)
 	 * @see #__DNA__FIELD__flame_max_temp
 	 */
@@ -6553,7 +6577,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'flame_max_temp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum temperature of the flames (higher value results in faster rising flames)
 	 * @see #__DNA__FIELD__flame_max_temp
 	 */
@@ -6570,7 +6594,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'flame_smoke_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color of smoke emitted from burning fuel
 	 * @see #__DNA__FIELD__flame_smoke_color
 	 */
@@ -6591,7 +6615,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'flame_smoke_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color of smoke emitted from burning fuel
 	 * @see #__DNA__FIELD__flame_smoke_color
 	 */
@@ -6616,8 +6640,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'noise_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Strength of noise<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Strength of noise
+	 * <h4>Blender Source Code</h4>
 	 * <p> Noise options. </p>
 	 * @see #__DNA__FIELD__noise_strength
 	 */
@@ -6634,8 +6659,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'noise_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Strength of noise<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Strength of noise
+	 * <h4>Blender Source Code</h4>
 	 * <p> Noise options. </p>
 	 * @see #__DNA__FIELD__noise_strength
 	 */
@@ -6652,7 +6678,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'noise_pos_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Scale of noise (higher value results in larger vortices)
 	 * @see #__DNA__FIELD__noise_pos_scale
 	 */
@@ -6669,7 +6695,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'noise_pos_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Scale of noise (higher value results in larger vortices)
 	 * @see #__DNA__FIELD__noise_pos_scale
 	 */
@@ -6686,7 +6712,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'noise_time_anim'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Animation time of noise
 	 * @see #__DNA__FIELD__noise_time_anim
 	 */
@@ -6703,7 +6729,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'noise_time_anim'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Animation time of noise
 	 * @see #__DNA__FIELD__noise_time_anim
 	 */
@@ -6760,7 +6786,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'noise_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The noise simulation is scaled up by this factor (compared to the base resolution of the domain)
 	 * @see #__DNA__FIELD__noise_scale
 	 */
@@ -6777,7 +6803,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'noise_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The noise simulation is scaled up by this factor (compared to the base resolution of the domain)
 	 * @see #__DNA__FIELD__noise_scale
 	 */
@@ -6794,7 +6820,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member '_pad3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad3
 	 */
@@ -6815,7 +6841,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member '_pad3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad3
 	 */
@@ -6840,8 +6866,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'particle_randomness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Randomness factor for particle sampling<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Randomness factor for particle sampling
+	 * <h4>Blender Source Code</h4>
 	 * <p> Liquid domain options. </p>
 	 * @see #__DNA__FIELD__particle_randomness
 	 */
@@ -6858,8 +6885,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'particle_randomness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Randomness factor for particle sampling<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Randomness factor for particle sampling
+	 * <h4>Blender Source Code</h4>
 	 * <p> Liquid domain options. </p>
 	 * @see #__DNA__FIELD__particle_randomness
 	 */
@@ -6876,7 +6904,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'particle_number'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Particle number factor (higher value results in more particles)
 	 * @see #__DNA__FIELD__particle_number
 	 */
@@ -6893,7 +6921,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'particle_number'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Particle number factor (higher value results in more particles)
 	 * @see #__DNA__FIELD__particle_number
 	 */
@@ -6966,7 +6994,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'particle_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Particle radius factor. Increase this value if the simulation appears to leak volume, decrease it if the simulation seems to gain volume
 	 * @see #__DNA__FIELD__particle_radius
 	 */
@@ -6983,7 +7011,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'particle_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Particle radius factor. Increase this value if the simulation appears to leak volume, decrease it if the simulation seems to gain volume
 	 * @see #__DNA__FIELD__particle_radius
 	 */
@@ -7000,7 +7028,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'particle_band_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Particle (narrow) band width (higher value results in thicker band and more particles)
 	 * @see #__DNA__FIELD__particle_band_width
 	 */
@@ -7017,7 +7045,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'particle_band_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Particle (narrow) band width (higher value results in thicker band and more particles)
 	 * @see #__DNA__FIELD__particle_band_width
 	 */
@@ -7034,7 +7062,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fractions_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Determines how much fluid is allowed in an obstacle cell (higher values will tag a boundary cell as an obstacle easier and reduce the boundary smoothening effect)
 	 * @see #__DNA__FIELD__fractions_threshold
 	 */
@@ -7051,7 +7079,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fractions_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Determines how much fluid is allowed in an obstacle cell (higher values will tag a boundary cell as an obstacle easier and reduce the boundary smoothening effect)
 	 * @see #__DNA__FIELD__fractions_threshold
 	 */
@@ -7068,7 +7096,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fractions_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Determines how far apart fluid and obstacle are (higher values will result in fluid being further away from obstacles, smaller values will let fluid move towards the inside of obstacles)
 	 * @see #__DNA__FIELD__fractions_distance
 	 */
@@ -7085,7 +7113,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fractions_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Determines how far apart fluid and obstacle are (higher values will result in fluid being further away from obstacles, smaller values will let fluid move towards the inside of obstacles)
 	 * @see #__DNA__FIELD__fractions_distance
 	 */
@@ -7102,7 +7130,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'flip_ratio'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * PIC/FLIP Ratio. A value of 1.0 will result in a completely FLIP based simulation. Use a lower value for simulations which should produce smaller splashes
 	 * @see #__DNA__FIELD__flip_ratio
 	 */
@@ -7119,7 +7147,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'flip_ratio'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * PIC/FLIP Ratio. A value of 1.0 will result in a completely FLIP based simulation. Use a lower value for simulations which should produce smaller splashes
 	 * @see #__DNA__FIELD__flip_ratio
 	 */
@@ -7136,7 +7164,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'sys_particle_maximum'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum number of fluid particles that are allowed in this simulation
 	 * @see #__DNA__FIELD__sys_particle_maximum
 	 */
@@ -7153,7 +7181,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'sys_particle_maximum'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum number of fluid particles that are allowed in this simulation
 	 * @see #__DNA__FIELD__sys_particle_maximum
 	 */
@@ -7170,7 +7198,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'simulation_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Change the underlying simulation method
 	 * @see #__DNA__FIELD__simulation_method
 	 */
@@ -7187,7 +7215,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'simulation_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Change the underlying simulation method
 	 * @see #__DNA__FIELD__simulation_method
 	 */
@@ -7244,8 +7272,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'viscosity_value'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Viscosity of liquid (higher values result in more viscous fluids, a value of 0 will still apply some viscosity)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Viscosity of liquid (higher values result in more viscous fluids, a value of 0 will still apply some viscosity)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Viscosity options. </p>
 	 * @see #__DNA__FIELD__viscosity_value
 	 */
@@ -7262,8 +7291,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'viscosity_value'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Viscosity of liquid (higher values result in more viscous fluids, a value of 0 will still apply some viscosity)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Viscosity of liquid (higher values result in more viscous fluids, a value of 0 will still apply some viscosity)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Viscosity options. </p>
 	 * @see #__DNA__FIELD__viscosity_value
 	 */
@@ -7320,8 +7350,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'surface_tension'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Surface tension of liquid (higher value results in greater hydrophobic behavior)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Surface tension of liquid (higher value results in greater hydrophobic behavior)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Diffusion options. </p>
 	 * @see #__DNA__FIELD__surface_tension
 	 */
@@ -7338,8 +7369,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'surface_tension'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Surface tension of liquid (higher value results in greater hydrophobic behavior)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Surface tension of liquid (higher value results in greater hydrophobic behavior)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Diffusion options. </p>
 	 * @see #__DNA__FIELD__surface_tension
 	 */
@@ -7356,7 +7388,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'viscosity_base'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Viscosity setting: value that is multiplied by 10 to the power of (exponent*-1)
 	 * @see #__DNA__FIELD__viscosity_base
 	 */
@@ -7373,7 +7405,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'viscosity_base'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Viscosity setting: value that is multiplied by 10 to the power of (exponent*-1)
 	 * @see #__DNA__FIELD__viscosity_base
 	 */
@@ -7390,7 +7422,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'viscosity_exponent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Negative exponent for the viscosity value (to simplify entering small values e.g. 5*10^-6)
 	 * @see #__DNA__FIELD__viscosity_exponent
 	 */
@@ -7407,7 +7439,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'viscosity_exponent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Negative exponent for the viscosity value (to simplify entering small values e.g. 5*10^-6)
 	 * @see #__DNA__FIELD__viscosity_exponent
 	 */
@@ -7424,8 +7456,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'mesh_concave_upper'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Upper mesh concavity bound (high values tend to smoothen and fill out concave regions)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Upper mesh concavity bound (high values tend to smoothen and fill out concave regions)
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mesh}  options. </p>
 	 * @see #__DNA__FIELD__mesh_concave_upper
 	 */
@@ -7442,8 +7475,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'mesh_concave_upper'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Upper mesh concavity bound (high values tend to smoothen and fill out concave regions)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Upper mesh concavity bound (high values tend to smoothen and fill out concave regions)
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mesh}  options. </p>
 	 * @see #__DNA__FIELD__mesh_concave_upper
 	 */
@@ -7460,7 +7494,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'mesh_concave_lower'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower mesh concavity bound (high values tend to smoothen and fill out concave regions)
 	 * @see #__DNA__FIELD__mesh_concave_lower
 	 */
@@ -7477,7 +7511,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'mesh_concave_lower'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower mesh concavity bound (high values tend to smoothen and fill out concave regions)
 	 * @see #__DNA__FIELD__mesh_concave_lower
 	 */
@@ -7494,7 +7528,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'mesh_particle_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Particle radius factor (higher value results in larger (meshed) particles). Needs to be adjusted after changing the mesh scale
 	 * @see #__DNA__FIELD__mesh_particle_radius
 	 */
@@ -7511,7 +7545,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'mesh_particle_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Particle radius factor (higher value results in larger (meshed) particles). Needs to be adjusted after changing the mesh scale
 	 * @see #__DNA__FIELD__mesh_particle_radius
 	 */
@@ -7528,7 +7562,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'mesh_smoothen_pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Positive mesh smoothening
 	 * @see #__DNA__FIELD__mesh_smoothen_pos
 	 */
@@ -7545,7 +7579,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'mesh_smoothen_pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Positive mesh smoothening
 	 * @see #__DNA__FIELD__mesh_smoothen_pos
 	 */
@@ -7562,7 +7596,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'mesh_smoothen_neg'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Negative mesh smoothening
 	 * @see #__DNA__FIELD__mesh_smoothen_neg
 	 */
@@ -7579,7 +7613,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'mesh_smoothen_neg'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Negative mesh smoothening
 	 * @see #__DNA__FIELD__mesh_smoothen_neg
 	 */
@@ -7596,7 +7630,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'mesh_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The mesh simulation is scaled up by this factor (compared to the base resolution of the domain). For best meshing, it is recommended to adjust the mesh particle radius alongside this value
 	 * @see #__DNA__FIELD__mesh_scale
 	 */
@@ -7613,7 +7647,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'mesh_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The mesh simulation is scaled up by this factor (compared to the base resolution of the domain). For best meshing, it is recommended to adjust the mesh particle radius alongside this value
 	 * @see #__DNA__FIELD__mesh_scale
 	 */
@@ -7630,7 +7664,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'mesh_generator'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Which particle level set generator to use
 	 * @see #__DNA__FIELD__mesh_generator
 	 */
@@ -7647,7 +7681,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'mesh_generator'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Which particle level set generator to use
 	 * @see #__DNA__FIELD__mesh_generator
 	 */
@@ -7664,7 +7698,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member '_pad6'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad6
 	 */
@@ -7685,7 +7719,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member '_pad6'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad6
 	 */
@@ -7710,7 +7744,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'particle_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Secondary particle options. </p>
 	 * @see #__DNA__FIELD__particle_type
 	 */
@@ -7727,7 +7761,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'particle_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Secondary particle options. </p>
 	 * @see #__DNA__FIELD__particle_type
 	 */
@@ -7744,7 +7778,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'particle_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The particle simulation is scaled up by this factor (compared to the base resolution of the domain)
 	 * @see #__DNA__FIELD__particle_scale
 	 */
@@ -7761,7 +7795,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'particle_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The particle simulation is scaled up by this factor (compared to the base resolution of the domain)
 	 * @see #__DNA__FIELD__particle_scale
 	 */
@@ -8114,7 +8148,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'sndparticle_potential_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Radius to compute potential for each cell (higher values are slower but create smoother potential grids)
 	 * @see #__DNA__FIELD__sndparticle_potential_radius
 	 */
@@ -8131,7 +8165,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'sndparticle_potential_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Radius to compute potential for each cell (higher values are slower but create smoother potential grids)
 	 * @see #__DNA__FIELD__sndparticle_potential_radius
 	 */
@@ -8148,7 +8182,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'sndparticle_update_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Radius to compute position update for each particle (higher values are slower but particles move less chaotic)
 	 * @see #__DNA__FIELD__sndparticle_update_radius
 	 */
@@ -8165,7 +8199,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'sndparticle_update_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Radius to compute position update for each particle (higher values are slower but particles move less chaotic)
 	 * @see #__DNA__FIELD__sndparticle_update_radius
 	 */
@@ -8182,7 +8216,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'sndparticle_boundary'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How particles that left the domain are treated
 	 * @see #__DNA__FIELD__sndparticle_boundary
 	 */
@@ -8199,7 +8233,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'sndparticle_boundary'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How particles that left the domain are treated
 	 * @see #__DNA__FIELD__sndparticle_boundary
 	 */
@@ -8216,7 +8250,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'sndparticle_combined_export'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Determines which particle systems are created from secondary particles
 	 * @see #__DNA__FIELD__sndparticle_combined_export
 	 */
@@ -8233,7 +8267,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'sndparticle_combined_export'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Determines which particle systems are created from secondary particles
 	 * @see #__DNA__FIELD__sndparticle_combined_export
 	 */
@@ -8250,7 +8284,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member '_pad7'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad7
 	 */
@@ -8271,7 +8305,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member '_pad7'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad7
 	 */
@@ -8380,7 +8414,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'guide_res'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Res for velocity guide grids - independent from base res. </p>
 	 * @see #__DNA__FIELD__guide_res
 	 */
@@ -8401,7 +8435,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'guide_res'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Res for velocity guide grids - independent from base res. </p>
 	 * @see #__DNA__FIELD__guide_res
 	 */
@@ -8454,7 +8488,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member '_pad8'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad8
 	 */
@@ -8475,7 +8509,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member '_pad8'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad8
 	 */
@@ -8500,8 +8534,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'cache_frame_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Frame on which the simulation starts. This is the first frame that will be baked<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Frame on which the simulation starts. This is the first frame that will be baked
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache options. </p>
 	 * @see #__DNA__FIELD__cache_frame_start
 	 */
@@ -8518,8 +8553,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'cache_frame_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Frame on which the simulation starts. This is the first frame that will be baked<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Frame on which the simulation starts. This is the first frame that will be baked
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache options. </p>
 	 * @see #__DNA__FIELD__cache_frame_start
 	 */
@@ -8536,7 +8572,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'cache_frame_end'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Frame on which the simulation stops. This is the last frame that will be baked
 	 * @see #__DNA__FIELD__cache_frame_end
 	 */
@@ -8553,7 +8589,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'cache_frame_end'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Frame on which the simulation stops. This is the last frame that will be baked
 	 * @see #__DNA__FIELD__cache_frame_end
 	 */
@@ -8710,7 +8746,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'cache_frame_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Frame offset that is used when loading the simulation from the cache. It is not considered when baking the simulation, only when loading it
 	 * @see #__DNA__FIELD__cache_frame_offset
 	 */
@@ -8727,7 +8763,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'cache_frame_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Frame offset that is used when loading the simulation from the cache. It is not considered when baking the simulation, only when loading it
 	 * @see #__DNA__FIELD__cache_frame_offset
 	 */
@@ -8772,7 +8808,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'cache_mesh_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the file format to be used for caching surface data
 	 * @see #__DNA__FIELD__cache_mesh_format
 	 */
@@ -8789,7 +8825,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'cache_mesh_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the file format to be used for caching surface data
 	 * @see #__DNA__FIELD__cache_mesh_format
 	 */
@@ -8806,7 +8842,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'cache_data_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the file format to be used for caching volumetric data
 	 * @see #__DNA__FIELD__cache_data_format
 	 */
@@ -8823,7 +8859,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'cache_data_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the file format to be used for caching volumetric data
 	 * @see #__DNA__FIELD__cache_data_format
 	 */
@@ -8840,7 +8876,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'cache_particle_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the file format to be used for caching particle data
 	 * @see #__DNA__FIELD__cache_particle_format
 	 */
@@ -8857,7 +8893,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'cache_particle_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the file format to be used for caching particle data
 	 * @see #__DNA__FIELD__cache_particle_format
 	 */
@@ -8874,7 +8910,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'cache_noise_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the file format to be used for caching noise data
 	 * @see #__DNA__FIELD__cache_noise_format
 	 */
@@ -8891,7 +8927,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'cache_noise_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the file format to be used for caching noise data
 	 * @see #__DNA__FIELD__cache_noise_format
 	 */
@@ -8908,7 +8944,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'cache_directory'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Directory that contains fluid cache files
 	 * @see #__DNA__FIELD__cache_directory
 	 */
@@ -8929,7 +8965,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'cache_directory'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Directory that contains fluid cache files
 	 * @see #__DNA__FIELD__cache_directory
 	 */
@@ -8954,7 +8990,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bake error description. </p>
 	 * @see #__DNA__FIELD__error
 	 */
@@ -8975,7 +9011,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bake error description. </p>
 	 * @see #__DNA__FIELD__error
 	 */
@@ -9000,7 +9036,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'cache_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Change the cache type of the simulation
 	 * @see #__DNA__FIELD__cache_type
 	 */
@@ -9017,7 +9053,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'cache_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Change the cache type of the simulation
 	 * @see #__DNA__FIELD__cache_type
 	 */
@@ -9034,7 +9070,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'cache_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Run-time only </p>
 	 * @see #__DNA__FIELD__cache_id
 	 */
@@ -9055,7 +9091,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'cache_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Run-time only </p>
 	 * @see #__DNA__FIELD__cache_id
 	 */
@@ -9080,7 +9116,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member '_pad9'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad9
 	 */
@@ -9101,7 +9137,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member '_pad9'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad9
 	 */
@@ -9126,7 +9162,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'dt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Time options. </p>
 	 * @see #__DNA__FIELD__dt
 	 */
@@ -9143,7 +9179,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'dt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Time options. </p>
 	 * @see #__DNA__FIELD__dt
 	 */
@@ -9244,7 +9280,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'time_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Adjust simulation speed
 	 * @see #__DNA__FIELD__time_scale
 	 */
@@ -9261,7 +9297,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'time_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Adjust simulation speed
 	 * @see #__DNA__FIELD__time_scale
 	 */
@@ -9278,7 +9314,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'cfl_condition'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximal velocity per cell (higher value results in greater timesteps)
 	 * @see #__DNA__FIELD__cfl_condition
 	 */
@@ -9295,7 +9331,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'cfl_condition'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximal velocity per cell (higher value results in greater timesteps)
 	 * @see #__DNA__FIELD__cfl_condition
 	 */
@@ -9368,8 +9404,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'slice_per_voxel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How many slices per voxel should be generated<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How many slices per voxel should be generated
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display options. </p>
 	 * @see #__DNA__FIELD__slice_per_voxel
 	 */
@@ -9386,8 +9423,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'slice_per_voxel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How many slices per voxel should be generated<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How many slices per voxel should be generated
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display options. </p>
 	 * @see #__DNA__FIELD__slice_per_voxel
 	 */
@@ -9404,7 +9442,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'slice_depth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Position of the slice
 	 * @see #__DNA__FIELD__slice_depth
 	 */
@@ -9421,7 +9459,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'slice_depth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Position of the slice
 	 * @see #__DNA__FIELD__slice_depth
 	 */
@@ -9438,7 +9476,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'display_thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Thickness of smoke display in the viewport
 	 * @see #__DNA__FIELD__display_thickness
 	 */
@@ -9455,7 +9493,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'display_thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Thickness of smoke display in the viewport
 	 * @see #__DNA__FIELD__display_thickness
 	 */
@@ -9532,7 +9570,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'vector_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Multiplier for scaling the vectors
 	 * @see #__DNA__FIELD__vector_scale
 	 */
@@ -9549,7 +9587,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'vector_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Multiplier for scaling the vectors
 	 * @see #__DNA__FIELD__vector_scale
 	 */
@@ -9566,7 +9604,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gridlines_lower_bound'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower bound of the highlighting range
 	 * @see #__DNA__FIELD__gridlines_lower_bound
 	 */
@@ -9583,7 +9621,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gridlines_lower_bound'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower bound of the highlighting range
 	 * @see #__DNA__FIELD__gridlines_lower_bound
 	 */
@@ -9600,7 +9638,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gridlines_upper_bound'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Upper bound of the highlighting range
 	 * @see #__DNA__FIELD__gridlines_upper_bound
 	 */
@@ -9617,7 +9655,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gridlines_upper_bound'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Upper bound of the highlighting range
 	 * @see #__DNA__FIELD__gridlines_upper_bound
 	 */
@@ -9634,7 +9672,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gridlines_range_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color used to highlight the range
 	 * @see #__DNA__FIELD__gridlines_range_color
 	 */
@@ -9655,7 +9693,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gridlines_range_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color used to highlight the range
 	 * @see #__DNA__FIELD__gridlines_range_color
 	 */
@@ -9736,7 +9774,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'show_gridlines'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Show gridlines
 	 * @see #__DNA__FIELD__show_gridlines
 	 */
@@ -9753,7 +9791,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'show_gridlines'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Show gridlines
 	 * @see #__DNA__FIELD__show_gridlines
 	 */
@@ -9826,8 +9864,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'vector_field'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Vector field to be represented by the display vectors<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Vector field to be represented by the display vectors
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Simulation}  field used for vector display. </p>
 	 * @see #__DNA__FIELD__vector_field
 	 */
@@ -9844,8 +9883,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'vector_field'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Vector field to be represented by the display vectors<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Vector field to be represented by the display vectors
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Simulation}  field used for vector display. </p>
 	 * @see #__DNA__FIELD__vector_field
 	 */
@@ -9862,7 +9902,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'vector_scale_with_magnitude'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Scale vectors with their magnitudes
 	 * @see #__DNA__FIELD__vector_scale_with_magnitude
 	 */
@@ -9879,7 +9919,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'vector_scale_with_magnitude'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Scale vectors with their magnitudes
 	 * @see #__DNA__FIELD__vector_scale_with_magnitude
 	 */
@@ -9952,7 +9992,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'coba_field'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Simulation}  field used for the color mapping. </p>
 	 * @see #__DNA__FIELD__coba_field
 	 */
@@ -9969,7 +10009,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'coba_field'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Simulation}  field used for the color mapping. </p>
 	 * @see #__DNA__FIELD__coba_field
 	 */
@@ -10014,8 +10054,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gridlines_color_field'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Simulation field to color map onto gridlines<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Simulation field to color map onto gridlines
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Simulation}  field used to color map onto gridlines. </p>
 	 * @see #__DNA__FIELD__gridlines_color_field
 	 */
@@ -10032,8 +10073,9 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gridlines_color_field'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Simulation field to color map onto gridlines<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Simulation field to color map onto gridlines
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Simulation}  field used to color map onto gridlines. </p>
 	 * @see #__DNA__FIELD__gridlines_color_field
 	 */
@@ -10050,7 +10092,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gridlines_cell_filter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Cell type to be highlighted
 	 * @see #__DNA__FIELD__gridlines_cell_filter
 	 */
@@ -10067,7 +10109,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gridlines_cell_filter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Cell type to be highlighted
 	 * @see #__DNA__FIELD__gridlines_cell_filter
 	 */
@@ -10084,7 +10126,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member '_pad10'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad10
 	 */
@@ -10105,7 +10147,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member '_pad10'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad10
 	 */
@@ -10130,7 +10172,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'openvdb_compression'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenVDB cache options. </p>
 	 * @see #__DNA__FIELD__openvdb_compression
 	 */
@@ -10147,7 +10189,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'openvdb_compression'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenVDB cache options. </p>
 	 * @see #__DNA__FIELD__openvdb_compression
 	 */
@@ -10164,7 +10206,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'clipping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Value under which voxels are considered empty space to optimize rendering
 	 * @see #__DNA__FIELD__clipping
 	 */
@@ -10181,7 +10223,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'clipping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Value under which voxels are considered empty space to optimize rendering
 	 * @see #__DNA__FIELD__clipping
 	 */
@@ -10198,7 +10240,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'openvdb_data_depth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Bit depth for fluid particles and grids (lower bit values reduce file size)
 	 * @see #__DNA__FIELD__openvdb_data_depth
 	 */
@@ -10215,7 +10257,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'openvdb_data_depth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Bit depth for fluid particles and grids (lower bit values reduce file size)
 	 * @see #__DNA__FIELD__openvdb_data_depth
 	 */
@@ -10232,7 +10274,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member '_pad11'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad11
 	 */
@@ -10253,7 +10295,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member '_pad11'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad11
 	 */
@@ -10278,7 +10320,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'viewsettings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  Deprecated / unused options (below). <ndash/>  View options. </p>
 	 * @see #__DNA__FIELD__viewsettings
 	 */
@@ -10295,7 +10337,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'viewsettings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  Deprecated / unused options (below). <ndash/>  View options. </p>
 	 * @see #__DNA__FIELD__viewsettings
 	 */
@@ -10312,7 +10354,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member '_pad12'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad12
 	 */
@@ -10333,7 +10375,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member '_pad12'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad12
 	 */
@@ -10358,7 +10400,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member 'point_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointcache options. Smoke uses only one cache from now on (index [0]), but keeping the array for now for reading old files. Definition is in DNA_object_force_types.h . </p>
 	 * @see #__DNA__FIELD__point_cache
 	 */
@@ -10379,7 +10421,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member 'point_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointcache options. Smoke uses only one cache from now on (index [0]), but keeping the array for now for reading old files. Definition is in DNA_object_force_types.h . </p>
 	 * @see #__DNA__FIELD__point_cache
 	 */
@@ -10528,7 +10570,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Get method for struct member '_pad13'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad13
 	 */
@@ -10549,7 +10591,7 @@ public class FluidDomainSettings extends CFacade {
 	/**
 	 * Set method for struct member '_pad13'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD___pad13
 	 */

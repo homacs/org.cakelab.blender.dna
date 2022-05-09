@@ -52,7 +52,7 @@ public class PaintCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Points of curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -95,7 +95,7 @@ public class PaintCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'add_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index where next point will be added. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -162,7 +162,7 @@ public class PaintCurve extends CFacade {
 	/**
 	 * Get method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Points of curve. </p>
 	 * @see #__DNA__FIELD__points
 	 */
@@ -182,7 +182,7 @@ public class PaintCurve extends CFacade {
 	/**
 	 * Set method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Points of curve. </p>
 	 * @see #__DNA__FIELD__points
 	 */
@@ -228,7 +228,7 @@ public class PaintCurve extends CFacade {
 	/**
 	 * Get method for struct member 'add_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index where next point will be added. </p>
 	 * @see #__DNA__FIELD__add_index
 	 */
@@ -245,7 +245,7 @@ public class PaintCurve extends CFacade {
 	/**
 	 * Set method for struct member 'add_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index where next point will be added. </p>
 	 * @see #__DNA__FIELD__add_index
 	 */

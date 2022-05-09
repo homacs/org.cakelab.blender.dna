@@ -32,7 +32,7 @@ public class SpaceSeqRuntime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'last_thumbnail_area'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Required for Thumbnail job start condition. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +55,7 @@ public class SpaceSeqRuntime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'last_displayed_thumbnails'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stores lists of most recently displayed thumbnails. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -86,7 +86,7 @@ public class SpaceSeqRuntime extends CFacade {
 	/**
 	 * Get method for struct member 'last_thumbnail_area'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Required for Thumbnail job start condition. </p>
 	 * @see #__DNA__FIELD__last_thumbnail_area
 	 */
@@ -103,7 +103,7 @@ public class SpaceSeqRuntime extends CFacade {
 	/**
 	 * Set method for struct member 'last_thumbnail_area'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Required for Thumbnail job start condition. </p>
 	 * @see #__DNA__FIELD__last_thumbnail_area
 	 */
@@ -128,7 +128,7 @@ public class SpaceSeqRuntime extends CFacade {
 	/**
 	 * Get method for struct member 'last_displayed_thumbnails'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stores lists of most recently displayed thumbnails. </p>
 	 * @see #__DNA__FIELD__last_displayed_thumbnails
 	 */
@@ -148,7 +148,7 @@ public class SpaceSeqRuntime extends CFacade {
 	/**
 	 * Set method for struct member 'last_displayed_thumbnails'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stores lists of most recently displayed thumbnails. </p>
 	 * @see #__DNA__FIELD__last_displayed_thumbnails
 	 */

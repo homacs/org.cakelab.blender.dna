@@ -53,7 +53,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'camera'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Active camera, used for rendering the scene
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +99,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'world'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * World used for rendering the scene
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -142,7 +142,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'base'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -167,7 +167,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'basact'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active base. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -212,8 +212,9 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> 3d cursor location. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -236,7 +237,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lay'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bitflags for layer visibility (deprecated). 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -261,7 +262,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layact'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active layer (deprecated) 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -306,7 +307,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Various settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -329,7 +330,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'use_nodes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Enable the compositing node tree
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -392,7 +393,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Sequence}  editor data is allocated here. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -415,7 +416,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'toolsettings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default allocated now. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -458,7 +459,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'safe_areas'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -481,7 +482,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'r'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> migrate or replace? depends on some internal things... no, is on the right place (ton) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -564,7 +565,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'orientation_slots'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> First is the [scene, translate, rotate, scale]. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -667,7 +668,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fps_info'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (runtime) info/cache used for presenting playback framerate info to the user. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -690,7 +691,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'depsgraph_hash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> None of the dependency graph vars is mean to be saved. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -733,7 +734,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'active_keyingset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-Defined KeyingSets Index of the active {@link KeyingSet} . first {@link KeyingSet}  has index 1, 'none' active is 0, 'add new' is -1 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -756,7 +757,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'keyingsets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> s for this scene </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -779,7 +780,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Units </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -802,7 +803,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease Pencil - Annotations </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -825,7 +826,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'clip'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Movie Tracking Active movie clip. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -848,7 +849,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'physics_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Physics simulation settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -891,7 +892,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'customdata_mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX. runtime flag for drawing, actually belongs in the window, only used by BKE_object_handle_update() </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -914,7 +915,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'customdata_mask_modal'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX. same as above but for temp operator use (gl renders) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -937,8 +938,9 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'view_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Color management settings applied on image before saving<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Color management settings applied on image before saving
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color Management </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -961,7 +963,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'display_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Settings of device saved image would be displayed on
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -984,7 +986,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sequencer_colorspace_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Settings of color space sequencer is working in
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1007,8 +1009,9 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rigidbody_world'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> RigidBody simulation world+settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1030,9 +1033,6 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1054,7 +1054,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'view_layers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1077,7 +1077,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'master_collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not an actual datablock, but memory owned by scene. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1100,8 +1100,9 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Scene root collection that owns all the objects and other collections instantiated in the scene<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Scene root collection that owns all the objects and other collections instantiated in the scene
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1126,7 +1127,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer_properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings to be override by workspaces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1169,7 +1170,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'display'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Scene display settings for 3D viewport
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1192,7 +1193,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'eevee'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Eevee settings for the scene
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1215,7 +1216,7 @@ public class Scene extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'grease_pencil_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Grease Pencil settings for the scene
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1282,7 +1283,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -1302,7 +1303,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -1320,7 +1321,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'camera'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Active camera, used for rendering the scene
 	 * @see #__DNA__FIELD__camera
 	 */
@@ -1340,7 +1341,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'camera'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Active camera, used for rendering the scene
 	 * @see #__DNA__FIELD__camera
 	 */
@@ -1358,7 +1359,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'world'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * World used for rendering the scene
 	 * @see #__DNA__FIELD__world
 	 */
@@ -1378,7 +1379,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'world'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * World used for rendering the scene
 	 * @see #__DNA__FIELD__world
 	 */
@@ -1428,7 +1429,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'base'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1447,7 +1448,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'base'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1474,7 +1475,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'basact'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active base. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1496,7 +1497,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'basact'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active base. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1548,8 +1549,9 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> 3d cursor location. </p>
 	 * @see #__DNA__FIELD__cursor
 	 */
@@ -1566,8 +1568,9 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> 3d cursor location. </p>
 	 * @see #__DNA__FIELD__cursor
 	 */
@@ -1592,7 +1595,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'lay'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bitflags for layer visibility (deprecated). 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1611,7 +1614,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'lay'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bitflags for layer visibility (deprecated). 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1630,7 +1633,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'layact'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active layer (deprecated) 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1649,7 +1652,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'layact'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active layer (deprecated) 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1708,7 +1711,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Various settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -1725,7 +1728,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Various settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -1742,7 +1745,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'use_nodes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Enable the compositing node tree
 	 * @see #__DNA__FIELD__use_nodes
 	 */
@@ -1759,7 +1762,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'use_nodes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Enable the compositing node tree
 	 * @see #__DNA__FIELD__use_nodes
 	 */
@@ -1848,7 +1851,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'ed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Sequence}  editor data is allocated here. </p>
 	 * @see #__DNA__FIELD__ed
 	 */
@@ -1868,7 +1871,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'ed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Sequence}  editor data is allocated here. </p>
 	 * @see #__DNA__FIELD__ed
 	 */
@@ -1886,7 +1889,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'toolsettings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default allocated now. </p>
 	 * @see #__DNA__FIELD__toolsettings
 	 */
@@ -1906,7 +1909,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'toolsettings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default allocated now. </p>
 	 * @see #__DNA__FIELD__toolsettings
 	 */
@@ -1956,7 +1959,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'safe_areas'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__safe_areas
 	 */
@@ -1973,7 +1976,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'safe_areas'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__safe_areas
 	 */
@@ -1998,7 +2001,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'r'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> migrate or replace? depends on some internal things... no, is on the right place (ton) </p>
 	 * @see #__DNA__FIELD__r
 	 */
@@ -2015,7 +2018,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'r'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> migrate or replace? depends on some internal things... no, is on the right place (ton) </p>
 	 * @see #__DNA__FIELD__r
 	 */
@@ -2148,7 +2151,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'orientation_slots'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> First is the [scene, translate, rotate, scale]. </p>
 	 * @see #__DNA__FIELD__orientation_slots
 	 */
@@ -2169,7 +2172,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'orientation_slots'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> First is the [scene, translate, rotate, scale]. </p>
 	 * @see #__DNA__FIELD__orientation_slots
 	 */
@@ -2322,7 +2325,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'fps_info'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (runtime) info/cache used for presenting playback framerate info to the user. </p>
 	 * @see #__DNA__FIELD__fps_info
 	 */
@@ -2342,7 +2345,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'fps_info'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (runtime) info/cache used for presenting playback framerate info to the user. </p>
 	 * @see #__DNA__FIELD__fps_info
 	 */
@@ -2360,7 +2363,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'depsgraph_hash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> None of the dependency graph vars is mean to be saved. </p>
 	 * @see #__DNA__FIELD__depsgraph_hash
 	 */
@@ -2380,7 +2383,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'depsgraph_hash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> None of the dependency graph vars is mean to be saved. </p>
 	 * @see #__DNA__FIELD__depsgraph_hash
 	 */
@@ -2438,7 +2441,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'active_keyingset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-Defined KeyingSets Index of the active {@link KeyingSet} . first {@link KeyingSet}  has index 1, 'none' active is 0, 'add new' is -1 </p>
 	 * @see #__DNA__FIELD__active_keyingset
 	 */
@@ -2455,7 +2458,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'active_keyingset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-Defined KeyingSets Index of the active {@link KeyingSet} . first {@link KeyingSet}  has index 1, 'none' active is 0, 'add new' is -1 </p>
 	 * @see #__DNA__FIELD__active_keyingset
 	 */
@@ -2472,7 +2475,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'keyingsets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> s for this scene </p>
 	 * @see #__DNA__FIELD__keyingsets
 	 */
@@ -2489,7 +2492,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'keyingsets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> s for this scene </p>
 	 * @see #__DNA__FIELD__keyingsets
 	 */
@@ -2514,7 +2517,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Units </p>
 	 * @see #__DNA__FIELD__unit
 	 */
@@ -2531,7 +2534,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Units </p>
 	 * @see #__DNA__FIELD__unit
 	 */
@@ -2556,7 +2559,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease Pencil - Annotations </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
@@ -2576,7 +2579,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease Pencil - Annotations </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
@@ -2594,7 +2597,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'clip'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Movie Tracking Active movie clip. </p>
 	 * @see #__DNA__FIELD__clip
 	 */
@@ -2614,7 +2617,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'clip'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Movie Tracking Active movie clip. </p>
 	 * @see #__DNA__FIELD__clip
 	 */
@@ -2632,7 +2635,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'physics_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Physics simulation settings </p>
 	 * @see #__DNA__FIELD__physics_settings
 	 */
@@ -2649,7 +2652,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'physics_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Physics simulation settings </p>
 	 * @see #__DNA__FIELD__physics_settings
 	 */
@@ -2706,7 +2709,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'customdata_mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX. runtime flag for drawing, actually belongs in the window, only used by BKE_object_handle_update() </p>
 	 * @see #__DNA__FIELD__customdata_mask
 	 */
@@ -2723,7 +2726,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'customdata_mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX. runtime flag for drawing, actually belongs in the window, only used by BKE_object_handle_update() </p>
 	 * @see #__DNA__FIELD__customdata_mask
 	 */
@@ -2748,7 +2751,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'customdata_mask_modal'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX. same as above but for temp operator use (gl renders) </p>
 	 * @see #__DNA__FIELD__customdata_mask_modal
 	 */
@@ -2765,7 +2768,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'customdata_mask_modal'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX. same as above but for temp operator use (gl renders) </p>
 	 * @see #__DNA__FIELD__customdata_mask_modal
 	 */
@@ -2790,8 +2793,9 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'view_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Color management settings applied on image before saving<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Color management settings applied on image before saving
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color Management </p>
 	 * @see #__DNA__FIELD__view_settings
 	 */
@@ -2808,8 +2812,9 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'view_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Color management settings applied on image before saving<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Color management settings applied on image before saving
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color Management </p>
 	 * @see #__DNA__FIELD__view_settings
 	 */
@@ -2834,7 +2839,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'display_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Settings of device saved image would be displayed on
 	 * @see #__DNA__FIELD__display_settings
 	 */
@@ -2851,7 +2856,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'display_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Settings of device saved image would be displayed on
 	 * @see #__DNA__FIELD__display_settings
 	 */
@@ -2876,7 +2881,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'sequencer_colorspace_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Settings of color space sequencer is working in
 	 * @see #__DNA__FIELD__sequencer_colorspace_settings
 	 */
@@ -2893,7 +2898,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'sequencer_colorspace_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Settings of color space sequencer is working in
 	 * @see #__DNA__FIELD__sequencer_colorspace_settings
 	 */
@@ -2918,8 +2923,9 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'rigidbody_world'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> RigidBody simulation world+settings </p>
 	 * @see #__DNA__FIELD__rigidbody_world
 	 */
@@ -2939,8 +2945,9 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'rigidbody_world'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> RigidBody simulation world+settings </p>
 	 * @see #__DNA__FIELD__rigidbody_world
 	 */
@@ -2957,9 +2964,6 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'preview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -2977,9 +2981,6 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'preview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -2996,7 +2997,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'view_layers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__view_layers
 	 */
@@ -3013,7 +3014,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'view_layers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__view_layers
 	 */
@@ -3038,7 +3039,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'master_collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not an actual datablock, but memory owned by scene. </p>
 	 * @see #__DNA__FIELD__master_collection
 	 */
@@ -3058,7 +3059,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'master_collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not an actual datablock, but memory owned by scene. </p>
 	 * @see #__DNA__FIELD__master_collection
 	 */
@@ -3076,8 +3077,9 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Scene root collection that owns all the objects and other collections instantiated in the scene<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Scene root collection that owns all the objects and other collections instantiated in the scene
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -3099,8 +3101,9 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Scene root collection that owns all the objects and other collections instantiated in the scene<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Scene root collection that owns all the objects and other collections instantiated in the scene
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -3120,7 +3123,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'layer_properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings to be override by workspaces. </p>
 	 * @see #__DNA__FIELD__layer_properties
 	 */
@@ -3140,7 +3143,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'layer_properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings to be override by workspaces. </p>
 	 * @see #__DNA__FIELD__layer_properties
 	 */
@@ -3190,7 +3193,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'display'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Scene display settings for 3D viewport
 	 * @see #__DNA__FIELD__display
 	 */
@@ -3207,7 +3210,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'display'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Scene display settings for 3D viewport
 	 * @see #__DNA__FIELD__display
 	 */
@@ -3232,7 +3235,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'eevee'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Eevee settings for the scene
 	 * @see #__DNA__FIELD__eevee
 	 */
@@ -3249,7 +3252,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'eevee'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Eevee settings for the scene
 	 * @see #__DNA__FIELD__eevee
 	 */
@@ -3274,7 +3277,7 @@ public class Scene extends CFacade {
 	/**
 	 * Get method for struct member 'grease_pencil_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Grease Pencil settings for the scene
 	 * @see #__DNA__FIELD__grease_pencil_settings
 	 */
@@ -3291,7 +3294,7 @@ public class Scene extends CFacade {
 	/**
 	 * Set method for struct member 'grease_pencil_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Grease Pencil settings for the scene
 	 * @see #__DNA__FIELD__grease_pencil_settings
 	 */

@@ -33,7 +33,7 @@ public class ColorManagedDisplaySettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'display_device'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Display device name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -64,7 +64,7 @@ public class ColorManagedDisplaySettings extends CFacade {
 	/**
 	 * Get method for struct member 'display_device'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Display device name
 	 * @see #__DNA__FIELD__display_device
 	 */
@@ -85,7 +85,7 @@ public class ColorManagedDisplaySettings extends CFacade {
 	/**
 	 * Set method for struct member 'display_device'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Display device name
 	 * @see #__DNA__FIELD__display_device
 	 */

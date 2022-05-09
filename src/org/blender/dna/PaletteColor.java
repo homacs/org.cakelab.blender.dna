@@ -73,7 +73,7 @@ public class PaletteColor extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rgb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> two values, one to store rgb, other to store values for sculpt/weight </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -188,7 +188,7 @@ public class PaletteColor extends CFacade {
 	/**
 	 * Get method for struct member 'rgb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> two values, one to store rgb, other to store values for sculpt/weight </p>
 	 * @see #__DNA__FIELD__rgb
 	 */
@@ -209,7 +209,7 @@ public class PaletteColor extends CFacade {
 	/**
 	 * Set method for struct member 'rgb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> two values, one to store rgb, other to store values for sculpt/weight </p>
 	 * @see #__DNA__FIELD__rgb
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'NormalEditModifierData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Set Split Normals modifier. </p>
  */
 
@@ -54,7 +55,7 @@ public class NormalEditModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -77,7 +78,7 @@ public class NormalEditModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Source of normals, or center of ellipsoid. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -324,7 +325,7 @@ public class NormalEditModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
@@ -345,7 +346,7 @@ public class NormalEditModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
@@ -370,7 +371,7 @@ public class NormalEditModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Source of normals, or center of ellipsoid. </p>
 	 * @see #__DNA__FIELD__target
 	 */
@@ -390,7 +391,7 @@ public class NormalEditModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Source of normals, or center of ellipsoid. </p>
 	 * @see #__DNA__FIELD__target
 	 */

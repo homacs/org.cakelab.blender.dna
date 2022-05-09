@@ -73,7 +73,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,7 +96,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of elements in array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -119,7 +119,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Several flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -142,7 +142,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Location increments. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -165,7 +165,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shift increment. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -188,7 +188,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rnd_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random Offset. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -211,7 +211,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rnd_rot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random Rotation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -234,7 +234,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rnd_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random Scales. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -277,7 +277,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'seed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (first element is the index) random values. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -300,7 +300,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -323,7 +323,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -346,7 +346,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -371,7 +371,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mat_rpl'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  replace (0 keep default). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -394,7 +394,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -493,7 +493,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
@@ -513,7 +513,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
@@ -531,7 +531,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of elements in array. </p>
 	 * @see #__DNA__FIELD__count
 	 */
@@ -548,7 +548,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of elements in array. </p>
 	 * @see #__DNA__FIELD__count
 	 */
@@ -565,7 +565,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Several flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -582,7 +582,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Several flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -599,7 +599,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Location increments. </p>
 	 * @see #__DNA__FIELD__offset
 	 */
@@ -620,7 +620,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Location increments. </p>
 	 * @see #__DNA__FIELD__offset
 	 */
@@ -645,7 +645,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'shift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shift increment. </p>
 	 * @see #__DNA__FIELD__shift
 	 */
@@ -666,7 +666,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'shift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shift increment. </p>
 	 * @see #__DNA__FIELD__shift
 	 */
@@ -691,7 +691,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'rnd_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random Offset. </p>
 	 * @see #__DNA__FIELD__rnd_offset
 	 */
@@ -712,7 +712,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'rnd_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random Offset. </p>
 	 * @see #__DNA__FIELD__rnd_offset
 	 */
@@ -737,7 +737,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'rnd_rot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random Rotation. </p>
 	 * @see #__DNA__FIELD__rnd_rot
 	 */
@@ -758,7 +758,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'rnd_rot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random Rotation. </p>
 	 * @see #__DNA__FIELD__rnd_rot
 	 */
@@ -783,7 +783,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'rnd_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random Scales. </p>
 	 * @see #__DNA__FIELD__rnd_scale
 	 */
@@ -804,7 +804,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'rnd_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random Scales. </p>
 	 * @see #__DNA__FIELD__rnd_scale
 	 */
@@ -869,7 +869,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'seed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (first element is the index) random values. </p>
 	 * @see #__DNA__FIELD__seed
 	 */
@@ -886,7 +886,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'seed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (first element is the index) random values. </p>
 	 * @see #__DNA__FIELD__seed
 	 */
@@ -903,7 +903,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
@@ -920,7 +920,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
@@ -937,7 +937,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -958,7 +958,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -983,7 +983,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1006,7 +1006,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1033,7 +1033,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mat_rpl'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  replace (0 keep default). </p>
 	 * @see #__DNA__FIELD__mat_rpl
 	 */
@@ -1050,7 +1050,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mat_rpl'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  replace (0 keep default). </p>
 	 * @see #__DNA__FIELD__mat_rpl
 	 */
@@ -1067,7 +1067,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
@@ -1084,7 +1084,7 @@ public class ArrayGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */

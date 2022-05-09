@@ -53,7 +53,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +99,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -122,7 +122,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -145,7 +145,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -168,7 +168,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'start_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Length. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -211,7 +211,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rand_start_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random length factors. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -274,7 +274,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'overshoot_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Overshoot trajectory factor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -297,7 +297,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'seed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (first element is the index) random values. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -320,7 +320,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'step'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How many frames before recalculate randoms. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -343,7 +343,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Modifier mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -386,7 +386,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'point_density'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Curvature parameters. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -493,7 +493,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
@@ -513,7 +513,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
@@ -531,7 +531,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -552,7 +552,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -577,7 +577,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
@@ -594,7 +594,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
@@ -611,7 +611,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -628,7 +628,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -645,7 +645,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
@@ -662,7 +662,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
@@ -679,7 +679,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'start_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Length. </p>
 	 * @see #__DNA__FIELD__start_fac
 	 */
@@ -696,7 +696,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'start_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Length. </p>
 	 * @see #__DNA__FIELD__start_fac
 	 */
@@ -741,7 +741,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'rand_start_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random length factors. </p>
 	 * @see #__DNA__FIELD__rand_start_fac
 	 */
@@ -758,7 +758,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'rand_start_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random length factors. </p>
 	 * @see #__DNA__FIELD__rand_start_fac
 	 */
@@ -831,7 +831,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'overshoot_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Overshoot trajectory factor. </p>
 	 * @see #__DNA__FIELD__overshoot_fac
 	 */
@@ -848,7 +848,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'overshoot_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Overshoot trajectory factor. </p>
 	 * @see #__DNA__FIELD__overshoot_fac
 	 */
@@ -865,7 +865,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'seed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (first element is the index) random values. </p>
 	 * @see #__DNA__FIELD__seed
 	 */
@@ -882,7 +882,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'seed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (first element is the index) random values. </p>
 	 * @see #__DNA__FIELD__seed
 	 */
@@ -899,7 +899,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'step'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How many frames before recalculate randoms. </p>
 	 * @see #__DNA__FIELD__step
 	 */
@@ -916,7 +916,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'step'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How many frames before recalculate randoms. </p>
 	 * @see #__DNA__FIELD__step
 	 */
@@ -933,7 +933,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Modifier mode. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -950,7 +950,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Modifier mode. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -1007,7 +1007,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'point_density'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Curvature parameters. </p>
 	 * @see #__DNA__FIELD__point_density
 	 */
@@ -1024,7 +1024,7 @@ public class LengthGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'point_density'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Curvature parameters. </p>
 	 * @see #__DNA__FIELD__point_density
 	 */

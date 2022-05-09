@@ -52,7 +52,7 @@ public class LineStyleThicknessModifier_Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the curve mapping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -95,7 +95,7 @@ public class LineStyleThicknessModifier_Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'value_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum output value of the mapping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -118,7 +118,7 @@ public class LineStyleThicknessModifier_Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'value_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum output value of the mapping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -205,7 +205,7 @@ public class LineStyleThicknessModifier_Material extends CFacade {
 	/**
 	 * Get method for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the curve mapping
 	 * @see #__DNA__FIELD__curve
 	 */
@@ -225,7 +225,7 @@ public class LineStyleThicknessModifier_Material extends CFacade {
 	/**
 	 * Set method for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the curve mapping
 	 * @see #__DNA__FIELD__curve
 	 */
@@ -271,7 +271,7 @@ public class LineStyleThicknessModifier_Material extends CFacade {
 	/**
 	 * Get method for struct member 'value_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum output value of the mapping
 	 * @see #__DNA__FIELD__value_min
 	 */
@@ -288,7 +288,7 @@ public class LineStyleThicknessModifier_Material extends CFacade {
 	/**
 	 * Set method for struct member 'value_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum output value of the mapping
 	 * @see #__DNA__FIELD__value_min
 	 */
@@ -305,7 +305,7 @@ public class LineStyleThicknessModifier_Material extends CFacade {
 	/**
 	 * Get method for struct member 'value_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum output value of the mapping
 	 * @see #__DNA__FIELD__value_max
 	 */
@@ -322,7 +322,7 @@ public class LineStyleThicknessModifier_Material extends CFacade {
 	/**
 	 * Set method for struct member 'value_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum output value of the mapping
 	 * @see #__DNA__FIELD__value_max
 	 */

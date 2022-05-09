@@ -52,7 +52,7 @@ public class NodeFrame extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'label_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Font size to use for displaying the label
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -111,7 +111,7 @@ public class NodeFrame extends CFacade {
 	/**
 	 * Get method for struct member 'label_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Font size to use for displaying the label
 	 * @see #__DNA__FIELD__label_size
 	 */
@@ -128,7 +128,7 @@ public class NodeFrame extends CFacade {
 	/**
 	 * Set method for struct member 'label_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Font size to use for displaying the label
 	 * @see #__DNA__FIELD__label_size
 	 */

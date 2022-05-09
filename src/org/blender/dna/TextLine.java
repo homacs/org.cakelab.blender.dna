@@ -93,7 +93,7 @@ public class TextLine extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> May be NULL if syntax is off or not yet formatted. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -116,7 +116,7 @@ public class TextLine extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blen unused. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -263,7 +263,7 @@ public class TextLine extends CFacade {
 	/**
 	 * Get method for struct member 'format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> May be NULL if syntax is off or not yet formatted. </p>
 	 * @see #__DNA__FIELD__format
 	 */
@@ -283,7 +283,7 @@ public class TextLine extends CFacade {
 	/**
 	 * Set method for struct member 'format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> May be NULL if syntax is off or not yet formatted. </p>
 	 * @see #__DNA__FIELD__format
 	 */
@@ -301,7 +301,7 @@ public class TextLine extends CFacade {
 	/**
 	 * Get method for struct member 'len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blen unused. </p>
 	 * @see #__DNA__FIELD__len
 	 */
@@ -318,7 +318,7 @@ public class TextLine extends CFacade {
 	/**
 	 * Set method for struct member 'len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blen unused. </p>
 	 * @see #__DNA__FIELD__len
 	 */

@@ -32,7 +32,7 @@ public class NodeGeometryCollectionInfo extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'transform_space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeTransformSpace. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -63,7 +63,7 @@ public class NodeGeometryCollectionInfo extends CFacade {
 	/**
 	 * Get method for struct member 'transform_space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeTransformSpace. </p>
 	 * @see #__DNA__FIELD__transform_space
 	 */
@@ -80,7 +80,7 @@ public class NodeGeometryCollectionInfo extends CFacade {
 	/**
 	 * Set method for struct member 'transform_space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeTransformSpace. </p>
 	 * @see #__DNA__FIELD__transform_space
 	 */

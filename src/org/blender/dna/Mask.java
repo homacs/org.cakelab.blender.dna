@@ -73,7 +73,7 @@ public class Mask extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'masklayers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mask}  layers. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,7 +96,7 @@ public class Mask extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'masklay_act'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of active mask layer (-1 == None). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -119,7 +119,7 @@ public class Mask extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'masklay_tot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of mask layers. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -142,7 +142,7 @@ public class Mask extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Frames, used by the sequencer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -185,7 +185,7 @@ public class Mask extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For anim info. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -304,7 +304,7 @@ public class Mask extends CFacade {
 	/**
 	 * Get method for struct member 'masklayers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mask}  layers. </p>
 	 * @see #__DNA__FIELD__masklayers
 	 */
@@ -321,7 +321,7 @@ public class Mask extends CFacade {
 	/**
 	 * Set method for struct member 'masklayers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mask}  layers. </p>
 	 * @see #__DNA__FIELD__masklayers
 	 */
@@ -346,7 +346,7 @@ public class Mask extends CFacade {
 	/**
 	 * Get method for struct member 'masklay_act'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of active mask layer (-1 == None). </p>
 	 * @see #__DNA__FIELD__masklay_act
 	 */
@@ -363,7 +363,7 @@ public class Mask extends CFacade {
 	/**
 	 * Set method for struct member 'masklay_act'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of active mask layer (-1 == None). </p>
 	 * @see #__DNA__FIELD__masklay_act
 	 */
@@ -380,7 +380,7 @@ public class Mask extends CFacade {
 	/**
 	 * Get method for struct member 'masklay_tot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of mask layers. </p>
 	 * @see #__DNA__FIELD__masklay_tot
 	 */
@@ -397,7 +397,7 @@ public class Mask extends CFacade {
 	/**
 	 * Set method for struct member 'masklay_tot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of mask layers. </p>
 	 * @see #__DNA__FIELD__masklay_tot
 	 */
@@ -414,7 +414,7 @@ public class Mask extends CFacade {
 	/**
 	 * Get method for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Frames, used by the sequencer. </p>
 	 * @see #__DNA__FIELD__sfra
 	 */
@@ -431,7 +431,7 @@ public class Mask extends CFacade {
 	/**
 	 * Set method for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Frames, used by the sequencer. </p>
 	 * @see #__DNA__FIELD__sfra
 	 */
@@ -476,7 +476,7 @@ public class Mask extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For anim info. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -493,7 +493,7 @@ public class Mask extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For anim info. </p>
 	 * @see #__DNA__FIELD__flag
 	 */

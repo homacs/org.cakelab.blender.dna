@@ -32,8 +32,9 @@ public class SequencerToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fit_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Scale fit method<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Scale fit method
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSeqImageFitMethod </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,8 +97,9 @@ public class SequencerToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'overlap_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How to resolve overlap after transformation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How to resolve overlap after transformation
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSeqOverlapMode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -120,8 +122,9 @@ public class SequencerToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'snap_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum distance for snapping in pixels<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Maximum distance for snapping in pixels
+	 * <h4>Blender Source Code</h4>
 	 * <p> When there are many snap points, 0-1 range corresponds to resolution from bound-box to all possible snap points. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -144,7 +147,7 @@ public class SequencerToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pivot_point'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Rotation or scaling pivot point
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -175,8 +178,9 @@ public class SequencerToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fit_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Scale fit method<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Scale fit method
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSeqImageFitMethod </p>
 	 * @see #__DNA__FIELD__fit_method
 	 */
@@ -193,8 +197,9 @@ public class SequencerToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fit_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Scale fit method<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Scale fit method
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSeqImageFitMethod </p>
 	 * @see #__DNA__FIELD__fit_method
 	 */
@@ -267,8 +272,9 @@ public class SequencerToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'overlap_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How to resolve overlap after transformation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How to resolve overlap after transformation
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSeqOverlapMode </p>
 	 * @see #__DNA__FIELD__overlap_mode
 	 */
@@ -285,8 +291,9 @@ public class SequencerToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'overlap_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How to resolve overlap after transformation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How to resolve overlap after transformation
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSeqOverlapMode </p>
 	 * @see #__DNA__FIELD__overlap_mode
 	 */
@@ -303,8 +310,9 @@ public class SequencerToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'snap_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum distance for snapping in pixels<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Maximum distance for snapping in pixels
+	 * <h4>Blender Source Code</h4>
 	 * <p> When there are many snap points, 0-1 range corresponds to resolution from bound-box to all possible snap points. </p>
 	 * @see #__DNA__FIELD__snap_distance
 	 */
@@ -321,8 +329,9 @@ public class SequencerToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'snap_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum distance for snapping in pixels<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Maximum distance for snapping in pixels
+	 * <h4>Blender Source Code</h4>
 	 * <p> When there are many snap points, 0-1 range corresponds to resolution from bound-box to all possible snap points. </p>
 	 * @see #__DNA__FIELD__snap_distance
 	 */
@@ -339,7 +348,7 @@ public class SequencerToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'pivot_point'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Rotation or scaling pivot point
 	 * @see #__DNA__FIELD__pivot_point
 	 */
@@ -356,7 +365,7 @@ public class SequencerToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'pivot_point'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Rotation or scaling pivot point
 	 * @see #__DNA__FIELD__pivot_point
 	 */

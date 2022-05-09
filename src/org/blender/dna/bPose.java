@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bPose'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Pose ---------------------------------<mdash/>  Pose-Object.</p><p> It is only found under ob->pose. It is not library data, even though there is a define for it (hack for the outliner). </p>
  */
 
@@ -34,7 +35,7 @@ public class bPose extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'chanbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of pose channels, PoseBones in RNA. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +58,7 @@ public class bPose extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'chanhash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use a hash-table for quicker string lookups. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +81,7 @@ public class bPose extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'chan_array'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flat array of pose channels. It references pointers from chanbase. Used for quick pose channel lookup from an index. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -143,7 +144,7 @@ public class bPose extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'proxy_layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proxy layer: copy from armature, gets synced. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -186,7 +187,7 @@ public class bPose extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ctime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Local action time of this pose. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -209,7 +210,7 @@ public class bPose extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'stride_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Applied to object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -232,7 +233,7 @@ public class bPose extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cyclic_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Result of match and cycles, applied in BKE_pose_where_is(). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -255,7 +256,7 @@ public class bPose extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'agroups'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of bActionGroups. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -278,7 +279,7 @@ public class bPose extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'active_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of active group (starts from 1). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -301,7 +302,7 @@ public class bPose extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'iksolver'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ik solver to use, see ePose_IKSolverType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -324,7 +325,7 @@ public class bPose extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ikdata'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temporary IK data, depends on the IK solver. Not saved in file. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -347,7 +348,7 @@ public class bPose extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ikparam'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> IK solver parameters, structure depends on iksolver. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -370,7 +371,7 @@ public class bPose extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'avs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for visualization of bone animation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -393,7 +394,7 @@ public class bPose extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'proxy_act_bone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proxy active bone name, MAXBONENAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -424,7 +425,7 @@ public class bPose extends CFacade {
 	/**
 	 * Get method for struct member 'chanbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of pose channels, PoseBones in RNA. </p>
 	 * @see #__DNA__FIELD__chanbase
 	 */
@@ -441,7 +442,7 @@ public class bPose extends CFacade {
 	/**
 	 * Set method for struct member 'chanbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of pose channels, PoseBones in RNA. </p>
 	 * @see #__DNA__FIELD__chanbase
 	 */
@@ -466,7 +467,7 @@ public class bPose extends CFacade {
 	/**
 	 * Get method for struct member 'chanhash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use a hash-table for quicker string lookups. </p>
 	 * @see #__DNA__FIELD__chanhash
 	 */
@@ -486,7 +487,7 @@ public class bPose extends CFacade {
 	/**
 	 * Set method for struct member 'chanhash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use a hash-table for quicker string lookups. </p>
 	 * @see #__DNA__FIELD__chanhash
 	 */
@@ -504,7 +505,7 @@ public class bPose extends CFacade {
 	/**
 	 * Get method for struct member 'chan_array'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flat array of pose channels. It references pointers from chanbase. Used for quick pose channel lookup from an index. </p>
 	 * @see #__DNA__FIELD__chan_array
 	 */
@@ -524,7 +525,7 @@ public class bPose extends CFacade {
 	/**
 	 * Set method for struct member 'chan_array'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flat array of pose channels. It references pointers from chanbase. Used for quick pose channel lookup from an index. </p>
 	 * @see #__DNA__FIELD__chan_array
 	 */
@@ -610,7 +611,7 @@ public class bPose extends CFacade {
 	/**
 	 * Get method for struct member 'proxy_layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proxy layer: copy from armature, gets synced. </p>
 	 * @see #__DNA__FIELD__proxy_layer
 	 */
@@ -627,7 +628,7 @@ public class bPose extends CFacade {
 	/**
 	 * Set method for struct member 'proxy_layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proxy layer: copy from armature, gets synced. </p>
 	 * @see #__DNA__FIELD__proxy_layer
 	 */
@@ -684,7 +685,7 @@ public class bPose extends CFacade {
 	/**
 	 * Get method for struct member 'ctime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Local action time of this pose. </p>
 	 * @see #__DNA__FIELD__ctime
 	 */
@@ -701,7 +702,7 @@ public class bPose extends CFacade {
 	/**
 	 * Set method for struct member 'ctime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Local action time of this pose. </p>
 	 * @see #__DNA__FIELD__ctime
 	 */
@@ -718,7 +719,7 @@ public class bPose extends CFacade {
 	/**
 	 * Get method for struct member 'stride_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Applied to object. </p>
 	 * @see #__DNA__FIELD__stride_offset
 	 */
@@ -739,7 +740,7 @@ public class bPose extends CFacade {
 	/**
 	 * Set method for struct member 'stride_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Applied to object. </p>
 	 * @see #__DNA__FIELD__stride_offset
 	 */
@@ -764,7 +765,7 @@ public class bPose extends CFacade {
 	/**
 	 * Get method for struct member 'cyclic_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Result of match and cycles, applied in BKE_pose_where_is(). </p>
 	 * @see #__DNA__FIELD__cyclic_offset
 	 */
@@ -785,7 +786,7 @@ public class bPose extends CFacade {
 	/**
 	 * Set method for struct member 'cyclic_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Result of match and cycles, applied in BKE_pose_where_is(). </p>
 	 * @see #__DNA__FIELD__cyclic_offset
 	 */
@@ -810,7 +811,7 @@ public class bPose extends CFacade {
 	/**
 	 * Get method for struct member 'agroups'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of bActionGroups. </p>
 	 * @see #__DNA__FIELD__agroups
 	 */
@@ -827,7 +828,7 @@ public class bPose extends CFacade {
 	/**
 	 * Set method for struct member 'agroups'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of bActionGroups. </p>
 	 * @see #__DNA__FIELD__agroups
 	 */
@@ -852,7 +853,7 @@ public class bPose extends CFacade {
 	/**
 	 * Get method for struct member 'active_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of active group (starts from 1). </p>
 	 * @see #__DNA__FIELD__active_group
 	 */
@@ -869,7 +870,7 @@ public class bPose extends CFacade {
 	/**
 	 * Set method for struct member 'active_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of active group (starts from 1). </p>
 	 * @see #__DNA__FIELD__active_group
 	 */
@@ -886,7 +887,7 @@ public class bPose extends CFacade {
 	/**
 	 * Get method for struct member 'iksolver'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ik solver to use, see ePose_IKSolverType. </p>
 	 * @see #__DNA__FIELD__iksolver
 	 */
@@ -903,7 +904,7 @@ public class bPose extends CFacade {
 	/**
 	 * Set method for struct member 'iksolver'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ik solver to use, see ePose_IKSolverType. </p>
 	 * @see #__DNA__FIELD__iksolver
 	 */
@@ -920,7 +921,7 @@ public class bPose extends CFacade {
 	/**
 	 * Get method for struct member 'ikdata'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temporary IK data, depends on the IK solver. Not saved in file. </p>
 	 * @see #__DNA__FIELD__ikdata
 	 */
@@ -940,7 +941,7 @@ public class bPose extends CFacade {
 	/**
 	 * Set method for struct member 'ikdata'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temporary IK data, depends on the IK solver. Not saved in file. </p>
 	 * @see #__DNA__FIELD__ikdata
 	 */
@@ -958,7 +959,7 @@ public class bPose extends CFacade {
 	/**
 	 * Get method for struct member 'ikparam'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> IK solver parameters, structure depends on iksolver. </p>
 	 * @see #__DNA__FIELD__ikparam
 	 */
@@ -978,7 +979,7 @@ public class bPose extends CFacade {
 	/**
 	 * Set method for struct member 'ikparam'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> IK solver parameters, structure depends on iksolver. </p>
 	 * @see #__DNA__FIELD__ikparam
 	 */
@@ -996,7 +997,7 @@ public class bPose extends CFacade {
 	/**
 	 * Get method for struct member 'avs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for visualization of bone animation. </p>
 	 * @see #__DNA__FIELD__avs
 	 */
@@ -1013,7 +1014,7 @@ public class bPose extends CFacade {
 	/**
 	 * Set method for struct member 'avs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for visualization of bone animation. </p>
 	 * @see #__DNA__FIELD__avs
 	 */
@@ -1038,7 +1039,7 @@ public class bPose extends CFacade {
 	/**
 	 * Get method for struct member 'proxy_act_bone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proxy active bone name, MAXBONENAME. </p>
 	 * @see #__DNA__FIELD__proxy_act_bone
 	 */
@@ -1059,7 +1060,7 @@ public class bPose extends CFacade {
 	/**
 	 * Set method for struct member 'proxy_act_bone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proxy active bone name, MAXBONENAME. </p>
 	 * @see #__DNA__FIELD__proxy_act_bone
 	 */

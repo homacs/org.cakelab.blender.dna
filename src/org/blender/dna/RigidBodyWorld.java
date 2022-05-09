@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'RigidBodyWorld'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p>{@link RigidBodyWorld}  (rbw)</p><p> Represents a "simulation scene" existing within the parent scene. </p>
  */
 
@@ -34,8 +35,9 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'effector_weights'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sim {@link World}  Settings ----------------------------------------------------------<mdash/>  Effectors info. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -58,7 +60,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Group containing objects to use for Rigid Bodies. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -81,7 +83,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'objects'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array to access group objects by index, only used at runtime. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -104,8 +106,9 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'constraints'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Collection containing rigid body constraint objects<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Collection containing rigid body constraint objects
+	 * <h4>Blender Source Code</h4>
 	 * <p> Group containing objects to use for Rigid Body Constraints. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -148,7 +151,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ltime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Last frame world was evaluated for (internal). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -171,7 +174,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shared'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This pointer is shared between all evaluated copies. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -194,7 +197,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pointcache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -219,7 +222,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ptcaches'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -244,7 +247,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'numbodies'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of objects in rigid body group. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -287,7 +290,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'num_solver_iterations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of constraint solver iterations made per simulation step. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -310,7 +313,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eRigidBodyWorld_Flag ) settings for this {@link RigidBodyWorld} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -333,8 +336,9 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'time_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Change the speed of the simulation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Change the speed of the simulation
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used to speed up or slow down the simulation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -365,8 +369,9 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Get method for struct member 'effector_weights'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sim {@link World}  Settings ----------------------------------------------------------<mdash/>  Effectors info. </p>
 	 * @see #__DNA__FIELD__effector_weights
 	 */
@@ -386,8 +391,9 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Set method for struct member 'effector_weights'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sim {@link World}  Settings ----------------------------------------------------------<mdash/>  Effectors info. </p>
 	 * @see #__DNA__FIELD__effector_weights
 	 */
@@ -405,7 +411,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Get method for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Group containing objects to use for Rigid Bodies. </p>
 	 * @see #__DNA__FIELD__group
 	 */
@@ -425,7 +431,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Set method for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Group containing objects to use for Rigid Bodies. </p>
 	 * @see #__DNA__FIELD__group
 	 */
@@ -443,7 +449,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Get method for struct member 'objects'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array to access group objects by index, only used at runtime. </p>
 	 * @see #__DNA__FIELD__objects
 	 */
@@ -463,7 +469,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Set method for struct member 'objects'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array to access group objects by index, only used at runtime. </p>
 	 * @see #__DNA__FIELD__objects
 	 */
@@ -481,8 +487,9 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Get method for struct member 'constraints'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Collection containing rigid body constraint objects<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Collection containing rigid body constraint objects
+	 * <h4>Blender Source Code</h4>
 	 * <p> Group containing objects to use for Rigid Body Constraints. </p>
 	 * @see #__DNA__FIELD__constraints
 	 */
@@ -502,8 +509,9 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Set method for struct member 'constraints'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Collection containing rigid body constraint objects<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Collection containing rigid body constraint objects
+	 * <h4>Blender Source Code</h4>
 	 * <p> Group containing objects to use for Rigid Body Constraints. </p>
 	 * @see #__DNA__FIELD__constraints
 	 */
@@ -561,7 +569,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Get method for struct member 'ltime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Last frame world was evaluated for (internal). </p>
 	 * @see #__DNA__FIELD__ltime
 	 */
@@ -578,7 +586,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Set method for struct member 'ltime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Last frame world was evaluated for (internal). </p>
 	 * @see #__DNA__FIELD__ltime
 	 */
@@ -595,7 +603,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Get method for struct member 'shared'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This pointer is shared between all evaluated copies. </p>
 	 * @see #__DNA__FIELD__shared
 	 */
@@ -615,7 +623,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Set method for struct member 'shared'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This pointer is shared between all evaluated copies. </p>
 	 * @see #__DNA__FIELD__shared
 	 */
@@ -633,7 +641,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Get method for struct member 'pointcache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -655,7 +663,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Set method for struct member 'pointcache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -675,7 +683,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Get method for struct member 'ptcaches'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -694,7 +702,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Set method for struct member 'ptcaches'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -721,7 +729,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Get method for struct member 'numbodies'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of objects in rigid body group. </p>
 	 * @see #__DNA__FIELD__numbodies
 	 */
@@ -738,7 +746,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Set method for struct member 'numbodies'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of objects in rigid body group. </p>
 	 * @see #__DNA__FIELD__numbodies
 	 */
@@ -783,7 +791,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Get method for struct member 'num_solver_iterations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of constraint solver iterations made per simulation step. </p>
 	 * @see #__DNA__FIELD__num_solver_iterations
 	 */
@@ -800,7 +808,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Set method for struct member 'num_solver_iterations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of constraint solver iterations made per simulation step. </p>
 	 * @see #__DNA__FIELD__num_solver_iterations
 	 */
@@ -817,7 +825,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eRigidBodyWorld_Flag ) settings for this {@link RigidBodyWorld} . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -834,7 +842,7 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eRigidBodyWorld_Flag ) settings for this {@link RigidBodyWorld} . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -851,8 +859,9 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Get method for struct member 'time_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Change the speed of the simulation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Change the speed of the simulation
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used to speed up or slow down the simulation. </p>
 	 * @see #__DNA__FIELD__time_scale
 	 */
@@ -869,8 +878,9 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Set method for struct member 'time_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Change the speed of the simulation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Change the speed of the simulation
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used to speed up or slow down the simulation. </p>
 	 * @see #__DNA__FIELD__time_scale
 	 */

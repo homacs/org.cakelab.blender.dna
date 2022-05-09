@@ -32,7 +32,7 @@ public class ScrAreaMap extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vertbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** NOTE: KEEP ORDER IN SYNC WITH LISTBASES IN bScreen! ** {@link ScrVert}  - screens have vertices/edges to define areas. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +55,7 @@ public class ScrAreaMap extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'edgebase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ScrEdge} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -78,7 +78,7 @@ public class ScrAreaMap extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'areabase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ScrArea} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -109,7 +109,7 @@ public class ScrAreaMap extends CFacade {
 	/**
 	 * Get method for struct member 'vertbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** NOTE: KEEP ORDER IN SYNC WITH LISTBASES IN bScreen! ** {@link ScrVert}  - screens have vertices/edges to define areas. </p>
 	 * @see #__DNA__FIELD__vertbase
 	 */
@@ -126,7 +126,7 @@ public class ScrAreaMap extends CFacade {
 	/**
 	 * Set method for struct member 'vertbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** NOTE: KEEP ORDER IN SYNC WITH LISTBASES IN bScreen! ** {@link ScrVert}  - screens have vertices/edges to define areas. </p>
 	 * @see #__DNA__FIELD__vertbase
 	 */
@@ -151,7 +151,7 @@ public class ScrAreaMap extends CFacade {
 	/**
 	 * Get method for struct member 'edgebase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ScrEdge} . </p>
 	 * @see #__DNA__FIELD__edgebase
 	 */
@@ -168,7 +168,7 @@ public class ScrAreaMap extends CFacade {
 	/**
 	 * Set method for struct member 'edgebase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ScrEdge} . </p>
 	 * @see #__DNA__FIELD__edgebase
 	 */
@@ -193,7 +193,7 @@ public class ScrAreaMap extends CFacade {
 	/**
 	 * Get method for struct member 'areabase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ScrArea} . </p>
 	 * @see #__DNA__FIELD__areabase
 	 */
@@ -210,7 +210,7 @@ public class ScrAreaMap extends CFacade {
 	/**
 	 * Set method for struct member 'areabase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ScrArea} . </p>
 	 * @see #__DNA__FIELD__areabase
 	 */

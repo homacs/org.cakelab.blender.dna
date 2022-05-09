@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FMod_Python'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Python-script modifier data </p>
  */
 
@@ -33,7 +34,7 @@ public class FMod_Python extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'script'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Text}  buffer containing script to execute. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +57,7 @@ public class FMod_Python extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ID-properties to provide 'custom' settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -87,7 +88,7 @@ public class FMod_Python extends CFacade {
 	/**
 	 * Get method for struct member 'script'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Text}  buffer containing script to execute. </p>
 	 * @see #__DNA__FIELD__script
 	 */
@@ -107,7 +108,7 @@ public class FMod_Python extends CFacade {
 	/**
 	 * Set method for struct member 'script'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Text}  buffer containing script to execute. </p>
 	 * @see #__DNA__FIELD__script
 	 */
@@ -125,7 +126,7 @@ public class FMod_Python extends CFacade {
 	/**
 	 * Get method for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ID-properties to provide 'custom' settings. </p>
 	 * @see #__DNA__FIELD__prop
 	 */
@@ -145,7 +146,7 @@ public class FMod_Python extends CFacade {
 	/**
 	 * Set method for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ID-properties to provide 'custom' settings. </p>
 	 * @see #__DNA__FIELD__prop
 	 */

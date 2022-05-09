@@ -53,7 +53,7 @@ public class PointCloud extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> animation data (must be immediately after id) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -176,7 +176,7 @@ public class PointCloud extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pdata'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom Data </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -239,7 +239,7 @@ public class PointCloud extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -302,7 +302,7 @@ public class PointCloud extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'batch_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Draw Cache </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -369,7 +369,7 @@ public class PointCloud extends CFacade {
 	/**
 	 * Get method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> animation data (must be immediately after id) </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -389,7 +389,7 @@ public class PointCloud extends CFacade {
 	/**
 	 * Set method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> animation data (must be immediately after id) </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -575,7 +575,7 @@ public class PointCloud extends CFacade {
 	/**
 	 * Get method for struct member 'pdata'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom Data </p>
 	 * @see #__DNA__FIELD__pdata
 	 */
@@ -592,7 +592,7 @@ public class PointCloud extends CFacade {
 	/**
 	 * Set method for struct member 'pdata'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom Data </p>
 	 * @see #__DNA__FIELD__pdata
 	 */
@@ -673,7 +673,7 @@ public class PointCloud extends CFacade {
 	/**
 	 * Get method for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  </p>
 	 * @see #__DNA__FIELD__mat
 	 */
@@ -693,7 +693,7 @@ public class PointCloud extends CFacade {
 	/**
 	 * Set method for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  </p>
 	 * @see #__DNA__FIELD__mat
 	 */
@@ -779,7 +779,7 @@ public class PointCloud extends CFacade {
 	/**
 	 * Get method for struct member 'batch_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Draw Cache </p>
 	 * @see #__DNA__FIELD__batch_cache
 	 */
@@ -799,7 +799,7 @@ public class PointCloud extends CFacade {
 	/**
 	 * Set method for struct member 'batch_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Draw Cache </p>
 	 * @see #__DNA__FIELD__batch_cache
 	 */

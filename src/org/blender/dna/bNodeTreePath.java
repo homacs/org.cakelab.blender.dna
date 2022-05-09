@@ -93,7 +93,7 @@ public class bNodeTreePath extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parent_key'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Base}  key for nodes in this tree instance. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -136,7 +136,7 @@ public class bNodeTreePath extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'view_center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> V2d center point, so node trees can have different offsets in editors. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -159,7 +159,7 @@ public class bNodeTreePath extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'node_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -306,7 +306,7 @@ public class bNodeTreePath extends CFacade {
 	/**
 	 * Get method for struct member 'parent_key'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Base}  key for nodes in this tree instance. </p>
 	 * @see #__DNA__FIELD__parent_key
 	 */
@@ -323,7 +323,7 @@ public class bNodeTreePath extends CFacade {
 	/**
 	 * Set method for struct member 'parent_key'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Base}  key for nodes in this tree instance. </p>
 	 * @see #__DNA__FIELD__parent_key
 	 */
@@ -388,7 +388,7 @@ public class bNodeTreePath extends CFacade {
 	/**
 	 * Get method for struct member 'view_center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> V2d center point, so node trees can have different offsets in editors. </p>
 	 * @see #__DNA__FIELD__view_center
 	 */
@@ -409,7 +409,7 @@ public class bNodeTreePath extends CFacade {
 	/**
 	 * Set method for struct member 'view_center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> V2d center point, so node trees can have different offsets in editors. </p>
 	 * @see #__DNA__FIELD__view_center
 	 */
@@ -434,7 +434,7 @@ public class bNodeTreePath extends CFacade {
 	/**
 	 * Get method for struct member 'node_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__node_name
 	 */
@@ -455,7 +455,7 @@ public class bNodeTreePath extends CFacade {
 	/**
 	 * Set method for struct member 'node_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__node_name
 	 */

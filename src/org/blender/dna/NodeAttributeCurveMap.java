@@ -33,7 +33,7 @@ public class NodeAttributeCurveMap extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CustomDataType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -124,7 +124,7 @@ public class NodeAttributeCurveMap extends CFacade {
 	/**
 	 * Get method for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CustomDataType. </p>
 	 * @see #__DNA__FIELD__data_type
 	 */
@@ -141,7 +141,7 @@ public class NodeAttributeCurveMap extends CFacade {
 	/**
 	 * Set method for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CustomDataType. </p>
 	 * @see #__DNA__FIELD__data_type
 	 */

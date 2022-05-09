@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'GP_Sculpt_Settings'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> GPencil Stroke Sculpting Settings. </p>
  */
 
@@ -34,7 +35,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'paintcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +58,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eGP_Sculpt_SettingsFlag . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +81,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lock_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eGP_Lockaxis_Types  lock drawing to one axis. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -103,7 +104,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'isect_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Threshold for intersections </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -146,7 +147,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cur_falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiframe edit falloff effect by frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,7 +170,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cur_primitive'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  used for primitive tools. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -192,7 +193,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'guide'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Guides used for paint tools </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -223,7 +224,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Get method for struct member 'paintcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. </p>
 	 * @see #__DNA__FIELD__paintcursor
 	 */
@@ -243,7 +244,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Set method for struct member 'paintcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. </p>
 	 * @see #__DNA__FIELD__paintcursor
 	 */
@@ -261,7 +262,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eGP_Sculpt_SettingsFlag . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -278,7 +279,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eGP_Sculpt_SettingsFlag . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -295,7 +296,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Get method for struct member 'lock_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eGP_Lockaxis_Types  lock drawing to one axis. </p>
 	 * @see #__DNA__FIELD__lock_axis
 	 */
@@ -312,7 +313,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Set method for struct member 'lock_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eGP_Lockaxis_Types  lock drawing to one axis. </p>
 	 * @see #__DNA__FIELD__lock_axis
 	 */
@@ -329,7 +330,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Get method for struct member 'isect_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Threshold for intersections </p>
 	 * @see #__DNA__FIELD__isect_threshold
 	 */
@@ -346,7 +347,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Set method for struct member 'isect_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Threshold for intersections </p>
 	 * @see #__DNA__FIELD__isect_threshold
 	 */
@@ -403,7 +404,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Get method for struct member 'cur_falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiframe edit falloff effect by frame. </p>
 	 * @see #__DNA__FIELD__cur_falloff
 	 */
@@ -423,7 +424,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Set method for struct member 'cur_falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiframe edit falloff effect by frame. </p>
 	 * @see #__DNA__FIELD__cur_falloff
 	 */
@@ -441,7 +442,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Get method for struct member 'cur_primitive'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  used for primitive tools. </p>
 	 * @see #__DNA__FIELD__cur_primitive
 	 */
@@ -461,7 +462,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Set method for struct member 'cur_primitive'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  used for primitive tools. </p>
 	 * @see #__DNA__FIELD__cur_primitive
 	 */
@@ -479,7 +480,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Get method for struct member 'guide'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Guides used for paint tools </p>
 	 * @see #__DNA__FIELD__guide
 	 */
@@ -496,7 +497,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	/**
 	 * Set method for struct member 'guide'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Guides used for paint tools </p>
 	 * @see #__DNA__FIELD__guide
 	 */

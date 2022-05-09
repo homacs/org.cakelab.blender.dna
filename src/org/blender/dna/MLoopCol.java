@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MLoopCol'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><h2>Note</h2><p> While alpha is not currently in the 3D Viewport, this may eventually be added back, keep this value set to 255. </p> While alpha is not currently in the 3D Viewport, this may eventually be added back, keep this value set to 255. 
  * 
  * </p>

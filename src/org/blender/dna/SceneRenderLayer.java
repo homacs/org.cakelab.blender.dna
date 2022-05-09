@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SceneRenderLayer'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  Render Layers Render Layer. </p>
  */
@@ -75,7 +76,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -100,7 +101,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mat_override'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  setting. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -125,7 +126,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lay'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link LayerCollection}  cycles camera visibility override. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -150,7 +151,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lay_zmask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link LayerCollection}  cycles holdout override. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -175,7 +176,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lay_exclude'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -200,7 +201,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  layflag and flag. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -225,7 +226,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'passflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> pass_xor has to be after passflag Pass_xor has to be after passflag. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -250,7 +251,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pass_xor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  passflag and flag. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -275,7 +276,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  setting. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -300,7 +301,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pass_alpha_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  pass_alpha_threshold. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -325,7 +326,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  id_properties. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -350,7 +351,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'freestyleConfig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  freestyleConfig. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -447,7 +448,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -470,7 +471,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -497,7 +498,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Get method for struct member 'mat_override'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  setting. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -519,7 +520,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Set method for struct member 'mat_override'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  setting. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -539,7 +540,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Get method for struct member 'lay'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link LayerCollection}  cycles camera visibility override. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -558,7 +559,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Set method for struct member 'lay'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link LayerCollection}  cycles camera visibility override. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -577,7 +578,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Get method for struct member 'lay_zmask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link LayerCollection}  cycles holdout override. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -596,7 +597,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Set method for struct member 'lay_zmask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link LayerCollection}  cycles holdout override. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -615,7 +616,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Get method for struct member 'lay_exclude'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -634,7 +635,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Set method for struct member 'lay_exclude'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -653,7 +654,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Get method for struct member 'layflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  layflag and flag. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -672,7 +673,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Set method for struct member 'layflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  layflag and flag. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -691,7 +692,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Get method for struct member 'passflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> pass_xor has to be after passflag Pass_xor has to be after passflag. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -710,7 +711,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Set method for struct member 'passflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> pass_xor has to be after passflag Pass_xor has to be after passflag. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -729,7 +730,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Get method for struct member 'pass_xor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  passflag and flag. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -748,7 +749,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Set method for struct member 'pass_xor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  passflag and flag. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -767,7 +768,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Get method for struct member 'samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  setting. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -786,7 +787,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Set method for struct member 'samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  setting. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -805,7 +806,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Get method for struct member 'pass_alpha_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  pass_alpha_threshold. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -824,7 +825,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Set method for struct member 'pass_alpha_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  pass_alpha_threshold. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -843,7 +844,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Get method for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  id_properties. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -865,7 +866,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Set method for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  id_properties. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -885,7 +886,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Get method for struct member 'freestyleConfig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  freestyleConfig. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -904,7 +905,7 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Set method for struct member 'freestyleConfig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Converted to {@link ViewLayer}  freestyleConfig. 
 	 * @deprecated
 	 *  Deprecated</p>

@@ -33,7 +33,7 @@ public class UserDef_Experimental extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'use_undo_legacy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Debug options, always available. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -196,7 +196,7 @@ public class UserDef_Experimental extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'use_new_hair_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The following options are automatically sanitized (set to 0) when the release cycle is not alpha. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -367,7 +367,7 @@ public class UserDef_Experimental extends CFacade {
 	/**
 	 * Get method for struct member 'use_undo_legacy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Debug options, always available. </p>
 	 * @see #__DNA__FIELD__use_undo_legacy
 	 */
@@ -384,7 +384,7 @@ public class UserDef_Experimental extends CFacade {
 	/**
 	 * Set method for struct member 'use_undo_legacy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Debug options, always available. </p>
 	 * @see #__DNA__FIELD__use_undo_legacy
 	 */
@@ -597,7 +597,7 @@ public class UserDef_Experimental extends CFacade {
 	/**
 	 * Get method for struct member 'use_new_hair_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The following options are automatically sanitized (set to 0) when the release cycle is not alpha. </p>
 	 * @see #__DNA__FIELD__use_new_hair_type
 	 */
@@ -614,7 +614,7 @@ public class UserDef_Experimental extends CFacade {
 	/**
 	 * Set method for struct member 'use_new_hair_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The following options are automatically sanitized (set to 0) when the release cycle is not alpha. </p>
 	 * @see #__DNA__FIELD__use_new_hair_type
 	 */

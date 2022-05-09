@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPDlayer_Mask'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  GP Layer List of masking layers. </p>
  */
@@ -115,7 +116,7 @@ public class bGPDlayer_Mask extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sort_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index for sorting. Only valid while sorting algorithm is running. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -298,7 +299,7 @@ public class bGPDlayer_Mask extends CFacade {
 	/**
 	 * Get method for struct member 'sort_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index for sorting. Only valid while sorting algorithm is running. </p>
 	 * @see #__DNA__FIELD__sort_index
 	 */
@@ -315,7 +316,7 @@ public class bGPDlayer_Mask extends CFacade {
 	/**
 	 * Set method for struct member 'sort_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index for sorting. Only valid while sorting algorithm is running. </p>
 	 * @see #__DNA__FIELD__sort_index
 	 */

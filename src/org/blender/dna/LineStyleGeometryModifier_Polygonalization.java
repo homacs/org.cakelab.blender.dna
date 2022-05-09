@@ -53,7 +53,7 @@ public class LineStyleGeometryModifier_Polygonalization extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum distance between the original stroke and its polygonal approximation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -140,7 +140,7 @@ public class LineStyleGeometryModifier_Polygonalization extends CFacade {
 	/**
 	 * Get method for struct member 'error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum distance between the original stroke and its polygonal approximation
 	 * @see #__DNA__FIELD__error
 	 */
@@ -157,7 +157,7 @@ public class LineStyleGeometryModifier_Polygonalization extends CFacade {
 	/**
 	 * Set method for struct member 'error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum distance between the original stroke and its polygonal approximation
 	 * @see #__DNA__FIELD__error
 	 */

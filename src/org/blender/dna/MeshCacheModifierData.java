@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MeshCacheModifierData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p>{@link Mesh}  cache modifier. </p>
  */
 
@@ -74,7 +75,7 @@ public class MeshCacheModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> File format. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -137,7 +138,7 @@ public class MeshCacheModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'forward_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> axis conversion </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -300,7 +301,7 @@ public class MeshCacheModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'frame_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> play_mode == MOD_MESHCACHE_PLAY_CFEA </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -343,7 +344,7 @@ public class MeshCacheModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'eval_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> play_mode == MOD_MESHCACHE_PLAY_EVAL we could use one float for all these but their purpose is very different </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -406,7 +407,7 @@ public class MeshCacheModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -501,7 +502,7 @@ public class MeshCacheModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> File format. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -518,7 +519,7 @@ public class MeshCacheModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> File format. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -591,7 +592,7 @@ public class MeshCacheModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'forward_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> axis conversion </p>
 	 * @see #__DNA__FIELD__forward_axis
 	 */
@@ -608,7 +609,7 @@ public class MeshCacheModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'forward_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> axis conversion </p>
 	 * @see #__DNA__FIELD__forward_axis
 	 */
@@ -845,7 +846,7 @@ public class MeshCacheModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'frame_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> play_mode == MOD_MESHCACHE_PLAY_CFEA </p>
 	 * @see #__DNA__FIELD__frame_start
 	 */
@@ -862,7 +863,7 @@ public class MeshCacheModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'frame_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> play_mode == MOD_MESHCACHE_PLAY_CFEA </p>
 	 * @see #__DNA__FIELD__frame_start
 	 */
@@ -907,7 +908,7 @@ public class MeshCacheModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'eval_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> play_mode == MOD_MESHCACHE_PLAY_EVAL we could use one float for all these but their purpose is very different </p>
 	 * @see #__DNA__FIELD__eval_frame
 	 */
@@ -924,7 +925,7 @@ public class MeshCacheModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'eval_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> play_mode == MOD_MESHCACHE_PLAY_EVAL we could use one float for all these but their purpose is very different </p>
 	 * @see #__DNA__FIELD__eval_frame
 	 */
@@ -997,7 +998,7 @@ public class MeshCacheModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAX. </p>
 	 * @see #__DNA__FIELD__filepath
 	 */
@@ -1018,7 +1019,7 @@ public class MeshCacheModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAX. </p>
 	 * @see #__DNA__FIELD__filepath
 	 */

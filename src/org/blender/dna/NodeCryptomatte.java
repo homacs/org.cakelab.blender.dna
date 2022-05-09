@@ -33,7 +33,7 @@ public class NodeCryptomatte extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'iuser'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code> , so storage needs to be cast to {@link ImageUser}  directly. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +56,7 @@ public class NodeCryptomatte extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'entries'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code> Contains {@link CryptomatteEntry}</code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +79,7 @@ public class NodeCryptomatte extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -102,7 +102,7 @@ public class NodeCryptomatte extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'matte_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  as a string for opening in 2.80-2.91. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -125,7 +125,7 @@ public class NodeCryptomatte extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'num_inputs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Legacy attributes Number of input sockets. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -196,7 +196,7 @@ public class NodeCryptomatte extends CFacade {
 	/**
 	 * Get method for struct member 'iuser'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code> , so storage needs to be cast to {@link ImageUser}  directly. </p>
 	 * @see #__DNA__FIELD__iuser
 	 */
@@ -213,7 +213,7 @@ public class NodeCryptomatte extends CFacade {
 	/**
 	 * Set method for struct member 'iuser'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code> , so storage needs to be cast to {@link ImageUser}  directly. </p>
 	 * @see #__DNA__FIELD__iuser
 	 */
@@ -238,7 +238,7 @@ public class NodeCryptomatte extends CFacade {
 	/**
 	 * Get method for struct member 'entries'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code> Contains {@link CryptomatteEntry}</code> . </p>
 	 * @see #__DNA__FIELD__entries
 	 */
@@ -255,7 +255,7 @@ public class NodeCryptomatte extends CFacade {
 	/**
 	 * Set method for struct member 'entries'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code> Contains {@link CryptomatteEntry}</code> . </p>
 	 * @see #__DNA__FIELD__entries
 	 */
@@ -280,7 +280,7 @@ public class NodeCryptomatte extends CFacade {
 	/**
 	 * Get method for struct member 'layer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__layer_name
 	 */
@@ -301,7 +301,7 @@ public class NodeCryptomatte extends CFacade {
 	/**
 	 * Set method for struct member 'layer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__layer_name
 	 */
@@ -326,7 +326,7 @@ public class NodeCryptomatte extends CFacade {
 	/**
 	 * Get method for struct member 'matte_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  as a string for opening in 2.80-2.91. </p>
 	 * @see #__DNA__FIELD__matte_id
 	 */
@@ -346,7 +346,7 @@ public class NodeCryptomatte extends CFacade {
 	/**
 	 * Set method for struct member 'matte_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  as a string for opening in 2.80-2.91. </p>
 	 * @see #__DNA__FIELD__matte_id
 	 */
@@ -364,7 +364,7 @@ public class NodeCryptomatte extends CFacade {
 	/**
 	 * Get method for struct member 'num_inputs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Legacy attributes Number of input sockets. </p>
 	 * @see #__DNA__FIELD__num_inputs
 	 */
@@ -381,7 +381,7 @@ public class NodeCryptomatte extends CFacade {
 	/**
 	 * Set method for struct member 'num_inputs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Legacy attributes Number of input sockets. </p>
 	 * @see #__DNA__FIELD__num_inputs
 	 */

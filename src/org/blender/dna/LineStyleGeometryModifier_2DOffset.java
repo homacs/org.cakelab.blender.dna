@@ -52,7 +52,7 @@ public class LineStyleGeometryModifier_2DOffset extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied from the beginning of the stroke
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,7 +75,7 @@ public class LineStyleGeometryModifier_2DOffset extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'end'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied from the end of the stroke
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +98,7 @@ public class LineStyleGeometryModifier_2DOffset extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied to the X coordinates of stroke vertices
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,7 +121,7 @@ public class LineStyleGeometryModifier_2DOffset extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied to the Y coordinates of stroke vertices
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -188,7 +188,7 @@ public class LineStyleGeometryModifier_2DOffset extends CFacade {
 	/**
 	 * Get method for struct member 'start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied from the beginning of the stroke
 	 * @see #__DNA__FIELD__start
 	 */
@@ -205,7 +205,7 @@ public class LineStyleGeometryModifier_2DOffset extends CFacade {
 	/**
 	 * Set method for struct member 'start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied from the beginning of the stroke
 	 * @see #__DNA__FIELD__start
 	 */
@@ -222,7 +222,7 @@ public class LineStyleGeometryModifier_2DOffset extends CFacade {
 	/**
 	 * Get method for struct member 'end'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied from the end of the stroke
 	 * @see #__DNA__FIELD__end
 	 */
@@ -239,7 +239,7 @@ public class LineStyleGeometryModifier_2DOffset extends CFacade {
 	/**
 	 * Set method for struct member 'end'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied from the end of the stroke
 	 * @see #__DNA__FIELD__end
 	 */
@@ -256,7 +256,7 @@ public class LineStyleGeometryModifier_2DOffset extends CFacade {
 	/**
 	 * Get method for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied to the X coordinates of stroke vertices
 	 * @see #__DNA__FIELD__x
 	 */
@@ -273,7 +273,7 @@ public class LineStyleGeometryModifier_2DOffset extends CFacade {
 	/**
 	 * Set method for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied to the X coordinates of stroke vertices
 	 * @see #__DNA__FIELD__x
 	 */
@@ -290,7 +290,7 @@ public class LineStyleGeometryModifier_2DOffset extends CFacade {
 	/**
 	 * Get method for struct member 'y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied to the Y coordinates of stroke vertices
 	 * @see #__DNA__FIELD__y
 	 */
@@ -307,7 +307,7 @@ public class LineStyleGeometryModifier_2DOffset extends CFacade {
 	/**
 	 * Set method for struct member 'y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied to the Y coordinates of stroke vertices
 	 * @see #__DNA__FIELD__y
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Library'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> For each library file used, a {@link Library}  struct is added to Main WARNING: readfile.c, expand_doit() reads this struct without DNA check! </p>
  */
 
@@ -73,9 +74,6 @@ public class Library extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique data-block ID name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -97,7 +95,7 @@ public class Library extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filepath_abs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  is the real path used on file read but in some cases its useful to access the absolute one.</p><p><code></code>  directly and it will be kept in sync - campbell </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -120,8 +118,9 @@ public class Library extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set for indirectly linked libs, used in the outliner and while reading. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -163,9 +162,6 @@ public class Library extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Tools can use this to tag data for their own purposes (initial state is undefined)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -207,7 +203,7 @@ public class Library extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'temp_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp data needed by read/write code, and liboverride recursive resync. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -230,7 +226,7 @@ public class Library extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'versionfile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See BLENDER_FILE_VERSION, BLENDER_FILE_SUBVERSION, needed for do_versions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -348,9 +344,6 @@ public class Library extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique data-block ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -369,9 +362,6 @@ public class Library extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique data-block ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -395,7 +385,7 @@ public class Library extends CFacade {
 	/**
 	 * Get method for struct member 'filepath_abs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  is the real path used on file read but in some cases its useful to access the absolute one.</p><p><code></code>  directly and it will be kept in sync - campbell </p>
 	 * @see #__DNA__FIELD__filepath_abs
 	 */
@@ -416,7 +406,7 @@ public class Library extends CFacade {
 	/**
 	 * Set method for struct member 'filepath_abs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  is the real path used on file read but in some cases its useful to access the absolute one.</p><p><code></code>  directly and it will be kept in sync - campbell </p>
 	 * @see #__DNA__FIELD__filepath_abs
 	 */
@@ -441,8 +431,9 @@ public class Library extends CFacade {
 	/**
 	 * Get method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set for indirectly linked libs, used in the outliner and while reading. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -462,8 +453,9 @@ public class Library extends CFacade {
 	/**
 	 * Set method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set for indirectly linked libs, used in the outliner and while reading. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -512,9 +504,6 @@ public class Library extends CFacade {
 
 	/**
 	 * Get method for struct member 'tag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Tools can use this to tag data for their own purposes (initial state is undefined)
 	 * @see #__DNA__FIELD__tag
 	 */
 	
@@ -529,9 +518,6 @@ public class Library extends CFacade {
 
 	/**
 	 * Set method for struct member 'tag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Tools can use this to tag data for their own purposes (initial state is undefined)
 	 * @see #__DNA__FIELD__tag
 	 */
 	
@@ -587,7 +573,7 @@ public class Library extends CFacade {
 	/**
 	 * Get method for struct member 'temp_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp data needed by read/write code, and liboverride recursive resync. </p>
 	 * @see #__DNA__FIELD__temp_index
 	 */
@@ -604,7 +590,7 @@ public class Library extends CFacade {
 	/**
 	 * Set method for struct member 'temp_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp data needed by read/write code, and liboverride recursive resync. </p>
 	 * @see #__DNA__FIELD__temp_index
 	 */
@@ -621,7 +607,7 @@ public class Library extends CFacade {
 	/**
 	 * Get method for struct member 'versionfile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See BLENDER_FILE_VERSION, BLENDER_FILE_SUBVERSION, needed for do_versions. </p>
 	 * @see #__DNA__FIELD__versionfile
 	 */
@@ -638,7 +624,7 @@ public class Library extends CFacade {
 	/**
 	 * Set method for struct member 'versionfile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See BLENDER_FILE_VERSION, BLENDER_FILE_SUBVERSION, needed for do_versions. </p>
 	 * @see #__DNA__FIELD__versionfile
 	 */

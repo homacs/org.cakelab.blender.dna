@@ -33,7 +33,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lheight_px'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Actual line height, scaled by dpi. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +56,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cwidth_px'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime computed, character width. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +79,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scroll_region_handle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The handle of the scroll-bar which can be clicked and dragged. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -102,7 +102,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scroll_region_select'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The region for selected text to show in the scrolling area. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -125,7 +125,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'line_number_display_digits'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of digits to show in the line numbers column (when enabled). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -148,7 +148,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'viewlines'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of lines this window can display (even when they aren't used). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -171,7 +171,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scroll_px_per_line'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use for drawing scroll-bar & calculating scroll operator motion scaling. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -194,7 +194,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scroll_ofs_px'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Run-time for scroll increments smaller than a line (smooth scroll). Values must be between zero and the line, column width: (cwidth, TXT_LINE_HEIGHT(st)). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -237,7 +237,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'drawcache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache for faster drawing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -268,7 +268,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'lheight_px'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Actual line height, scaled by dpi. </p>
 	 * @see #__DNA__FIELD__lheight_px
 	 */
@@ -285,7 +285,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'lheight_px'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Actual line height, scaled by dpi. </p>
 	 * @see #__DNA__FIELD__lheight_px
 	 */
@@ -302,7 +302,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'cwidth_px'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime computed, character width. </p>
 	 * @see #__DNA__FIELD__cwidth_px
 	 */
@@ -319,7 +319,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'cwidth_px'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime computed, character width. </p>
 	 * @see #__DNA__FIELD__cwidth_px
 	 */
@@ -336,7 +336,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'scroll_region_handle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The handle of the scroll-bar which can be clicked and dragged. </p>
 	 * @see #__DNA__FIELD__scroll_region_handle
 	 */
@@ -353,7 +353,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'scroll_region_handle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The handle of the scroll-bar which can be clicked and dragged. </p>
 	 * @see #__DNA__FIELD__scroll_region_handle
 	 */
@@ -378,7 +378,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'scroll_region_select'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The region for selected text to show in the scrolling area. </p>
 	 * @see #__DNA__FIELD__scroll_region_select
 	 */
@@ -395,7 +395,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'scroll_region_select'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The region for selected text to show in the scrolling area. </p>
 	 * @see #__DNA__FIELD__scroll_region_select
 	 */
@@ -420,7 +420,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'line_number_display_digits'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of digits to show in the line numbers column (when enabled). </p>
 	 * @see #__DNA__FIELD__line_number_display_digits
 	 */
@@ -437,7 +437,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'line_number_display_digits'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of digits to show in the line numbers column (when enabled). </p>
 	 * @see #__DNA__FIELD__line_number_display_digits
 	 */
@@ -454,7 +454,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'viewlines'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of lines this window can display (even when they aren't used). </p>
 	 * @see #__DNA__FIELD__viewlines
 	 */
@@ -471,7 +471,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'viewlines'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of lines this window can display (even when they aren't used). </p>
 	 * @see #__DNA__FIELD__viewlines
 	 */
@@ -488,7 +488,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'scroll_px_per_line'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use for drawing scroll-bar & calculating scroll operator motion scaling. </p>
 	 * @see #__DNA__FIELD__scroll_px_per_line
 	 */
@@ -505,7 +505,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'scroll_px_per_line'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use for drawing scroll-bar & calculating scroll operator motion scaling. </p>
 	 * @see #__DNA__FIELD__scroll_px_per_line
 	 */
@@ -522,7 +522,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'scroll_ofs_px'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Run-time for scroll increments smaller than a line (smooth scroll). Values must be between zero and the line, column width: (cwidth, TXT_LINE_HEIGHT(st)). </p>
 	 * @see #__DNA__FIELD__scroll_ofs_px
 	 */
@@ -543,7 +543,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'scroll_ofs_px'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Run-time for scroll increments smaller than a line (smooth scroll). Values must be between zero and the line, column width: (cwidth, TXT_LINE_HEIGHT(st)). </p>
 	 * @see #__DNA__FIELD__scroll_ofs_px
 	 */
@@ -608,7 +608,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'drawcache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache for faster drawing. </p>
 	 * @see #__DNA__FIELD__drawcache
 	 */
@@ -628,7 +628,7 @@ public class SpaceText_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'drawcache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache for faster drawing. </p>
 	 * @see #__DNA__FIELD__drawcache
 	 */

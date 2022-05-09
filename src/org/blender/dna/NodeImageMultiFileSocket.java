@@ -33,7 +33,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'use_render_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> single layer file output 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -58,7 +58,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'use_node_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use overall node image format. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,7 +121,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -164,7 +164,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> multilayer output EXR_TOT_MAXNAME-2 ('.' and channel char are appended). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -215,7 +215,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	/**
 	 * Get method for struct member 'use_render_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> single layer file output 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -234,7 +234,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	/**
 	 * Set method for struct member 'use_render_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> single layer file output 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -253,7 +253,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	/**
 	 * Get method for struct member 'use_node_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use overall node image format. </p>
 	 * @see #__DNA__FIELD__use_node_format
 	 */
@@ -270,7 +270,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	/**
 	 * Set method for struct member 'use_node_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use overall node image format. </p>
 	 * @see #__DNA__FIELD__use_node_format
 	 */
@@ -355,7 +355,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	/**
 	 * Get method for struct member 'path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__path
 	 */
@@ -376,7 +376,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	/**
 	 * Set method for struct member 'path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__path
 	 */
@@ -437,7 +437,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	/**
 	 * Get method for struct member 'layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> multilayer output EXR_TOT_MAXNAME-2 ('.' and channel char are appended). </p>
 	 * @see #__DNA__FIELD__layer
 	 */
@@ -458,7 +458,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	/**
 	 * Set method for struct member 'layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> multilayer output EXR_TOT_MAXNAME-2 ('.' and channel char are appended). </p>
 	 * @see #__DNA__FIELD__layer
 	 */

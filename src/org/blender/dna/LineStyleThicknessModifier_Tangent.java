@@ -53,7 +53,7 @@ public class LineStyleThicknessModifier_Tangent extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the curve mapping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -200,7 +200,7 @@ public class LineStyleThicknessModifier_Tangent extends CFacade {
 	/**
 	 * Get method for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the curve mapping
 	 * @see #__DNA__FIELD__curve
 	 */
@@ -220,7 +220,7 @@ public class LineStyleThicknessModifier_Tangent extends CFacade {
 	/**
 	 * Set method for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the curve mapping
 	 * @see #__DNA__FIELD__curve
 	 */

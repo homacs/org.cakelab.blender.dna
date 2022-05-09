@@ -133,7 +133,7 @@ public class bUserMenu extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'items'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link bUserMenuItem}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -336,7 +336,7 @@ public class bUserMenu extends CFacade {
 	/**
 	 * Get method for struct member 'items'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link bUserMenuItem}  </p>
 	 * @see #__DNA__FIELD__items
 	 */
@@ -353,7 +353,7 @@ public class bUserMenu extends CFacade {
 	/**
 	 * Set method for struct member 'items'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link bUserMenuItem}  </p>
 	 * @see #__DNA__FIELD__items
 	 */

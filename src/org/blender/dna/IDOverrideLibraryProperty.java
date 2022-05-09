@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'IDOverrideLibraryProperty'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> A single overridden property, contain all operations on this one. </p>
  */
 
@@ -74,8 +75,9 @@ public class IDOverrideLibraryProperty extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    RNA path leading to that property, from owning ID<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    RNA path leading to that property, from owning ID
+	 * <h4>Blender Source Code</h4>
 	 * <p> Path from {@link ID}<em></em>  include indices/names for final arrays/collections items. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,8 +100,9 @@ public class IDOverrideLibraryProperty extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'operations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of overriding operations for a property<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    List of overriding operations for a property
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of overriding operations ({@link IDOverrideLibraryPropertyOperation} ) applied to this property. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -122,7 +125,7 @@ public class IDOverrideLibraryProperty extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime, tags are common to both {@link IDOverrideLibraryProperty}  and {@link IDOverrideLibraryPropertyOperation} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -165,7 +168,7 @@ public class IDOverrideLibraryProperty extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rna_prop_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The property type matching the rna_path. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -260,8 +263,9 @@ public class IDOverrideLibraryProperty extends CFacade {
 	/**
 	 * Get method for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    RNA path leading to that property, from owning ID<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    RNA path leading to that property, from owning ID
+	 * <h4>Blender Source Code</h4>
 	 * <p> Path from {@link ID}<em></em>  include indices/names for final arrays/collections items. </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
@@ -281,8 +285,9 @@ public class IDOverrideLibraryProperty extends CFacade {
 	/**
 	 * Set method for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    RNA path leading to that property, from owning ID<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    RNA path leading to that property, from owning ID
+	 * <h4>Blender Source Code</h4>
 	 * <p> Path from {@link ID}<em></em>  include indices/names for final arrays/collections items. </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
@@ -300,8 +305,9 @@ public class IDOverrideLibraryProperty extends CFacade {
 	/**
 	 * Get method for struct member 'operations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of overriding operations for a property<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    List of overriding operations for a property
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of overriding operations ({@link IDOverrideLibraryPropertyOperation} ) applied to this property. </p>
 	 * @see #__DNA__FIELD__operations
 	 */
@@ -318,8 +324,9 @@ public class IDOverrideLibraryProperty extends CFacade {
 	/**
 	 * Set method for struct member 'operations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of overriding operations for a property<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    List of overriding operations for a property
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of overriding operations ({@link IDOverrideLibraryPropertyOperation} ) applied to this property. </p>
 	 * @see #__DNA__FIELD__operations
 	 */
@@ -344,7 +351,7 @@ public class IDOverrideLibraryProperty extends CFacade {
 	/**
 	 * Get method for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime, tags are common to both {@link IDOverrideLibraryProperty}  and {@link IDOverrideLibraryPropertyOperation} . </p>
 	 * @see #__DNA__FIELD__tag
 	 */
@@ -361,7 +368,7 @@ public class IDOverrideLibraryProperty extends CFacade {
 	/**
 	 * Set method for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime, tags are common to both {@link IDOverrideLibraryProperty}  and {@link IDOverrideLibraryPropertyOperation} . </p>
 	 * @see #__DNA__FIELD__tag
 	 */
@@ -418,7 +425,7 @@ public class IDOverrideLibraryProperty extends CFacade {
 	/**
 	 * Get method for struct member 'rna_prop_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The property type matching the rna_path. </p>
 	 * @see #__DNA__FIELD__rna_prop_type
 	 */
@@ -435,7 +442,7 @@ public class IDOverrideLibraryProperty extends CFacade {
 	/**
 	 * Set method for struct member 'rna_prop_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The property type matching the rna_path. </p>
 	 * @see #__DNA__FIELD__rna_prop_type
 	 */

@@ -52,7 +52,7 @@ public class SpeedControlVars extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'globalSpeed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> DEPRECATED, only used for versioning. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -215,7 +215,7 @@ public class SpeedControlVars extends CFacade {
 	/**
 	 * Get method for struct member 'globalSpeed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> DEPRECATED, only used for versioning. </p>
 	 * @see #__DNA__FIELD__globalSpeed
 	 */
@@ -232,7 +232,7 @@ public class SpeedControlVars extends CFacade {
 	/**
 	 * Set method for struct member 'globalSpeed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> DEPRECATED, only used for versioning. </p>
 	 * @see #__DNA__FIELD__globalSpeed
 	 */

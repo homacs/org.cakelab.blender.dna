@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ViewLayerAOV'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> AOV Renderpass definition. </p>
  */
 
@@ -74,7 +75,7 @@ public class ViewLayerAOV extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the AOV </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -117,7 +118,7 @@ public class ViewLayerAOV extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -212,7 +213,7 @@ public class ViewLayerAOV extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the AOV </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -233,7 +234,7 @@ public class ViewLayerAOV extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the AOV </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -286,7 +287,7 @@ public class ViewLayerAOV extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -303,7 +304,7 @@ public class ViewLayerAOV extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  </p>
 	 * @see #__DNA__FIELD__type
 	 */

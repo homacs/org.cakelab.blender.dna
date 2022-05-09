@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'DynamicPaintCanvasSettings'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Canvas settings </p>
  */
 
@@ -34,7 +35,7 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For fast RNA access. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -137,7 +138,7 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bake error description. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -168,7 +169,7 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	/**
 	 * Get method for struct member 'pmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For fast RNA access. </p>
 	 * @see #__DNA__FIELD__pmd
 	 */
@@ -188,7 +189,7 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	/**
 	 * Set method for struct member 'pmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For fast RNA access. </p>
 	 * @see #__DNA__FIELD__pmd
 	 */
@@ -338,7 +339,7 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	/**
 	 * Get method for struct member 'error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bake error description. </p>
 	 * @see #__DNA__FIELD__error
 	 */
@@ -359,7 +360,7 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	/**
 	 * Set method for struct member 'error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bake error description. </p>
 	 * @see #__DNA__FIELD__error
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPdata_Runtime'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  GP Datablock Runtime temp data for {@link bGPdata}  </p>
  */
@@ -35,7 +36,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sbuffer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke buffer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -58,7 +59,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sbuffer_stroke_batch'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp batches cleared after drawing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -101,7 +102,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sbuffer_gps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp stroke used for drawing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -124,7 +125,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'playing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation playing flag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -147,7 +148,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'matid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  index of the stroke. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -170,7 +171,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sbuffer_sflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke Buffer data (only used during paint-session)<ul><li><p> buffer must be initialized before use, but freed after whole paint operation is over Flags for stroke that cache represents. </p></li></ul> 
 	 * buffer must be initialized before use, but freed after whole paint operation is over Flags for stroke that cache represents. 
 	 * 
@@ -216,7 +217,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sbuffer_used'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of elements currently used in cache. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -239,7 +240,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sbuffer_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of total elements available in cache. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -262,7 +263,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vert_color_fill'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex Color applied to Fill (while drawing). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -285,7 +286,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'arrow_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Arrow points for stroke corners. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -328,7 +329,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'arrow_start_style'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Arrow style for each corner </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -371,7 +372,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tot_cp_points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of control-points for stroke. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -414,7 +415,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cp_points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of control-points for stroke. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -437,7 +438,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sbuffer_brush'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Brush}  pointer </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -508,7 +509,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'sbuffer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke buffer. </p>
 	 * @see #__DNA__FIELD__sbuffer
 	 */
@@ -528,7 +529,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'sbuffer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke buffer. </p>
 	 * @see #__DNA__FIELD__sbuffer
 	 */
@@ -546,7 +547,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'sbuffer_stroke_batch'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp batches cleared after drawing. </p>
 	 * @see #__DNA__FIELD__sbuffer_stroke_batch
 	 */
@@ -566,7 +567,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'sbuffer_stroke_batch'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp batches cleared after drawing. </p>
 	 * @see #__DNA__FIELD__sbuffer_stroke_batch
 	 */
@@ -616,7 +617,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'sbuffer_gps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp stroke used for drawing. </p>
 	 * @see #__DNA__FIELD__sbuffer_gps
 	 */
@@ -636,7 +637,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'sbuffer_gps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp stroke used for drawing. </p>
 	 * @see #__DNA__FIELD__sbuffer_gps
 	 */
@@ -654,7 +655,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'playing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation playing flag. </p>
 	 * @see #__DNA__FIELD__playing
 	 */
@@ -671,7 +672,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'playing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation playing flag. </p>
 	 * @see #__DNA__FIELD__playing
 	 */
@@ -688,7 +689,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'matid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  index of the stroke. </p>
 	 * @see #__DNA__FIELD__matid
 	 */
@@ -705,7 +706,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'matid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  index of the stroke. </p>
 	 * @see #__DNA__FIELD__matid
 	 */
@@ -722,7 +723,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'sbuffer_sflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke Buffer data (only used during paint-session)<ul><li><p> buffer must be initialized before use, but freed after whole paint operation is over Flags for stroke that cache represents. </p></li></ul> 
 	 * buffer must be initialized before use, but freed after whole paint operation is over Flags for stroke that cache represents. 
 	 * 
@@ -742,7 +743,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'sbuffer_sflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke Buffer data (only used during paint-session)<ul><li><p> buffer must be initialized before use, but freed after whole paint operation is over Flags for stroke that cache represents. </p></li></ul> 
 	 * buffer must be initialized before use, but freed after whole paint operation is over Flags for stroke that cache represents. 
 	 * 
@@ -802,7 +803,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'sbuffer_used'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of elements currently used in cache. </p>
 	 * @see #__DNA__FIELD__sbuffer_used
 	 */
@@ -819,7 +820,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'sbuffer_used'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of elements currently used in cache. </p>
 	 * @see #__DNA__FIELD__sbuffer_used
 	 */
@@ -836,7 +837,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'sbuffer_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of total elements available in cache. </p>
 	 * @see #__DNA__FIELD__sbuffer_size
 	 */
@@ -853,7 +854,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'sbuffer_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of total elements available in cache. </p>
 	 * @see #__DNA__FIELD__sbuffer_size
 	 */
@@ -870,7 +871,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'vert_color_fill'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex Color applied to Fill (while drawing). </p>
 	 * @see #__DNA__FIELD__vert_color_fill
 	 */
@@ -891,7 +892,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'vert_color_fill'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex Color applied to Fill (while drawing). </p>
 	 * @see #__DNA__FIELD__vert_color_fill
 	 */
@@ -916,7 +917,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'arrow_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Arrow points for stroke corners. </p>
 	 * @see #__DNA__FIELD__arrow_start
 	 */
@@ -937,7 +938,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'arrow_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Arrow points for stroke corners. </p>
 	 * @see #__DNA__FIELD__arrow_start
 	 */
@@ -1002,7 +1003,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'arrow_start_style'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Arrow style for each corner </p>
 	 * @see #__DNA__FIELD__arrow_start_style
 	 */
@@ -1019,7 +1020,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'arrow_start_style'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Arrow style for each corner </p>
 	 * @see #__DNA__FIELD__arrow_start_style
 	 */
@@ -1064,7 +1065,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'tot_cp_points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of control-points for stroke. </p>
 	 * @see #__DNA__FIELD__tot_cp_points
 	 */
@@ -1081,7 +1082,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'tot_cp_points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of control-points for stroke. </p>
 	 * @see #__DNA__FIELD__tot_cp_points
 	 */
@@ -1138,7 +1139,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'cp_points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of control-points for stroke. </p>
 	 * @see #__DNA__FIELD__cp_points
 	 */
@@ -1158,7 +1159,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'cp_points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of control-points for stroke. </p>
 	 * @see #__DNA__FIELD__cp_points
 	 */
@@ -1176,7 +1177,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'sbuffer_brush'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Brush}  pointer </p>
 	 * @see #__DNA__FIELD__sbuffer_brush
 	 */
@@ -1196,7 +1197,7 @@ public class bGPdata_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'sbuffer_brush'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Brush}  pointer </p>
 	 * @see #__DNA__FIELD__sbuffer_brush
 	 */

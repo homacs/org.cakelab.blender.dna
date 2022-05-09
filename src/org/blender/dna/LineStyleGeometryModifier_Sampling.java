@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'LineStyleGeometryModifier_Sampling'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Geometry modifiers </p>
  */
 
@@ -54,7 +55,7 @@ public class LineStyleGeometryModifier_Sampling extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sampling'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * New sampling value to be used for subsequent modifiers
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -141,7 +142,7 @@ public class LineStyleGeometryModifier_Sampling extends CFacade {
 	/**
 	 * Get method for struct member 'sampling'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * New sampling value to be used for subsequent modifiers
 	 * @see #__DNA__FIELD__sampling
 	 */
@@ -158,7 +159,7 @@ public class LineStyleGeometryModifier_Sampling extends CFacade {
 	/**
 	 * Set method for struct member 'sampling'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * New sampling value to be used for subsequent modifiers
 	 * @see #__DNA__FIELD__sampling
 	 */

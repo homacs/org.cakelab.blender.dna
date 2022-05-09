@@ -73,7 +73,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -156,7 +156,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'image'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -199,7 +199,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scopes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Histogram}  waveform and vectorscope. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -222,7 +222,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sample_line_hist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sample line histogram. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -245,7 +245,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease pencil data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -268,7 +268,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV editor 2d cursor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -291,7 +291,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'xof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined offset, image is centered. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -334,7 +334,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'zoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined zoom level. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -357,7 +357,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'centx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage for offset while render drawing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -400,7 +400,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> View/paint/mask. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -423,7 +423,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage for sub-space types. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -506,7 +506,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dt_uv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV draw type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -529,7 +529,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sticky'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sticky selection type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -672,7 +672,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'custom_grid_subdiv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code>  grid. Use when #SI_CUSTOM_GRID is set. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -827,7 +827,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -844,7 +844,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -965,7 +965,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Get method for struct member 'image'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * @see #__DNA__FIELD__image
 	 */
@@ -985,7 +985,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Set method for struct member 'image'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * @see #__DNA__FIELD__image
 	 */
@@ -1039,7 +1039,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Get method for struct member 'scopes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Histogram}  waveform and vectorscope. </p>
 	 * @see #__DNA__FIELD__scopes
 	 */
@@ -1056,7 +1056,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Set method for struct member 'scopes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Histogram}  waveform and vectorscope. </p>
 	 * @see #__DNA__FIELD__scopes
 	 */
@@ -1081,7 +1081,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Get method for struct member 'sample_line_hist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sample line histogram. </p>
 	 * @see #__DNA__FIELD__sample_line_hist
 	 */
@@ -1098,7 +1098,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Set method for struct member 'sample_line_hist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sample line histogram. </p>
 	 * @see #__DNA__FIELD__sample_line_hist
 	 */
@@ -1123,7 +1123,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Get method for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease pencil data. </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
@@ -1143,7 +1143,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Set method for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease pencil data. </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
@@ -1161,7 +1161,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Get method for struct member 'cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV editor 2d cursor. </p>
 	 * @see #__DNA__FIELD__cursor
 	 */
@@ -1182,7 +1182,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Set method for struct member 'cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV editor 2d cursor. </p>
 	 * @see #__DNA__FIELD__cursor
 	 */
@@ -1207,7 +1207,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Get method for struct member 'xof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined offset, image is centered. </p>
 	 * @see #__DNA__FIELD__xof
 	 */
@@ -1224,7 +1224,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Set method for struct member 'xof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined offset, image is centered. </p>
 	 * @see #__DNA__FIELD__xof
 	 */
@@ -1269,7 +1269,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Get method for struct member 'zoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined zoom level. </p>
 	 * @see #__DNA__FIELD__zoom
 	 */
@@ -1286,7 +1286,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Set method for struct member 'zoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined zoom level. </p>
 	 * @see #__DNA__FIELD__zoom
 	 */
@@ -1303,7 +1303,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Get method for struct member 'centx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage for offset while render drawing. </p>
 	 * @see #__DNA__FIELD__centx
 	 */
@@ -1320,7 +1320,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Set method for struct member 'centx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage for offset while render drawing. </p>
 	 * @see #__DNA__FIELD__centx
 	 */
@@ -1365,7 +1365,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> View/paint/mask. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -1382,7 +1382,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> View/paint/mask. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -1399,7 +1399,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Get method for struct member 'mode_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage for sub-space types. </p>
 	 * @see #__DNA__FIELD__mode_prev
 	 */
@@ -1416,7 +1416,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Set method for struct member 'mode_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage for sub-space types. </p>
 	 * @see #__DNA__FIELD__mode_prev
 	 */
@@ -1517,7 +1517,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Get method for struct member 'dt_uv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV draw type. </p>
 	 * @see #__DNA__FIELD__dt_uv
 	 */
@@ -1534,7 +1534,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Set method for struct member 'dt_uv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV draw type. </p>
 	 * @see #__DNA__FIELD__dt_uv
 	 */
@@ -1551,7 +1551,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Get method for struct member 'sticky'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sticky selection type. </p>
 	 * @see #__DNA__FIELD__sticky
 	 */
@@ -1568,7 +1568,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Set method for struct member 'sticky'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sticky selection type. </p>
 	 * @see #__DNA__FIELD__sticky
 	 */
@@ -1777,7 +1777,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Get method for struct member 'custom_grid_subdiv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code>  grid. Use when #SI_CUSTOM_GRID is set. </p>
 	 * @see #__DNA__FIELD__custom_grid_subdiv
 	 */
@@ -1794,7 +1794,7 @@ public class SpaceImage extends CFacade {
 	/**
 	 * Set method for struct member 'custom_grid_subdiv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code>  grid. Use when #SI_CUSTOM_GRID is set. </p>
 	 * @see #__DNA__FIELD__custom_grid_subdiv
 	 */

@@ -293,7 +293,7 @@ public class Lattice extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'actbp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active element index, unset with LT_ACTBP_NONE. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -456,7 +456,7 @@ public class Lattice extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -521,7 +521,7 @@ public class Lattice extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiply the influence, MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -544,7 +544,7 @@ public class Lattice extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vertex_group_names'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1043,7 +1043,7 @@ public class Lattice extends CFacade {
 	/**
 	 * Get method for struct member 'actbp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active element index, unset with LT_ACTBP_NONE. </p>
 	 * @see #__DNA__FIELD__actbp
 	 */
@@ -1060,7 +1060,7 @@ public class Lattice extends CFacade {
 	/**
 	 * Set method for struct member 'actbp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active element index, unset with LT_ACTBP_NONE. </p>
 	 * @see #__DNA__FIELD__actbp
 	 */
@@ -1277,7 +1277,7 @@ public class Lattice extends CFacade {
 	/**
 	 * Get method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1299,7 +1299,7 @@ public class Lattice extends CFacade {
 	/**
 	 * Set method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1383,7 +1383,7 @@ public class Lattice extends CFacade {
 	/**
 	 * Get method for struct member 'vgroup'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiply the influence, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgroup
 	 */
@@ -1404,7 +1404,7 @@ public class Lattice extends CFacade {
 	/**
 	 * Set method for struct member 'vgroup'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiply the influence, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgroup
 	 */
@@ -1429,7 +1429,7 @@ public class Lattice extends CFacade {
 	/**
 	 * Get method for struct member 'vertex_group_names'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
 	 * @see #__DNA__FIELD__vertex_group_names
 	 */
@@ -1446,7 +1446,7 @@ public class Lattice extends CFacade {
 	/**
 	 * Set method for struct member 'vertex_group_names'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of {@link bDeformGroup}  names and flag only. </p>
 	 * @see #__DNA__FIELD__vertex_group_names
 	 */

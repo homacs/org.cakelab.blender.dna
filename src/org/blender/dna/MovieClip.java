@@ -53,7 +53,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,9 +75,6 @@ public class MovieClip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique data-block ID name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -99,8 +96,9 @@ public class MovieClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Where the clip comes from<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Where the clip comes from
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Sequence}  or movie. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -123,7 +121,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lastframe'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Last accessed frame number. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -146,7 +144,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lastsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of last accessed frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,7 +167,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'aspx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display aspect. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -212,7 +210,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'anim'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Movie source data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -235,7 +233,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache for different stuff, not in file. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -258,7 +256,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease pencil data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -281,8 +279,9 @@ public class MovieClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tracking'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Data for SfM tracking. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -305,7 +304,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tracking_context'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Context of tracking job used to synchronize data like frame-number in {@link SpaceClip}  clip user. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -328,8 +327,9 @@ public class MovieClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'proxy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proxy to clip data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -372,7 +372,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Length of movie. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -395,7 +395,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'start_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Scene}  frame number footage starts playing at affects all data which is associated with a clip such as motion tracking, camera Reconstruction and so. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -418,8 +418,9 @@ public class MovieClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'frame_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Offset of footage first frame relative to its file name (affects only how footage is loading, does not change data associated with a clip)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Offset of footage first frame relative to its file name (affects only how footage is loading, does not change data associated with a clip)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset which is adding to a file number when reading frame from a file. affects only a way how scene frame is mapping to a file name and not touches other data associated with a clip. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -442,8 +443,9 @@ public class MovieClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'colorspace_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Input color space settings<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Input color space settings
+	 * <h4>Blender Source Code</h4>
 	 * <p> color management </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -530,7 +532,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Get method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -550,7 +552,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Set method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -567,9 +569,6 @@ public class MovieClip extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique data-block ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -588,9 +587,6 @@ public class MovieClip extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique data-block ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -614,8 +610,9 @@ public class MovieClip extends CFacade {
 	/**
 	 * Get method for struct member 'source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Where the clip comes from<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Where the clip comes from
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Sequence}  or movie. </p>
 	 * @see #__DNA__FIELD__source
 	 */
@@ -632,8 +629,9 @@ public class MovieClip extends CFacade {
 	/**
 	 * Set method for struct member 'source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Where the clip comes from<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Where the clip comes from
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Sequence}  or movie. </p>
 	 * @see #__DNA__FIELD__source
 	 */
@@ -650,7 +648,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Get method for struct member 'lastframe'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Last accessed frame number. </p>
 	 * @see #__DNA__FIELD__lastframe
 	 */
@@ -667,7 +665,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Set method for struct member 'lastframe'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Last accessed frame number. </p>
 	 * @see #__DNA__FIELD__lastframe
 	 */
@@ -684,7 +682,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Get method for struct member 'lastsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of last accessed frame. </p>
 	 * @see #__DNA__FIELD__lastsize
 	 */
@@ -705,7 +703,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Set method for struct member 'lastsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of last accessed frame. </p>
 	 * @see #__DNA__FIELD__lastsize
 	 */
@@ -730,7 +728,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Get method for struct member 'aspx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display aspect. </p>
 	 * @see #__DNA__FIELD__aspx
 	 */
@@ -747,7 +745,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Set method for struct member 'aspx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display aspect. </p>
 	 * @see #__DNA__FIELD__aspx
 	 */
@@ -792,7 +790,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Get method for struct member 'anim'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Movie source data. </p>
 	 * @see #__DNA__FIELD__anim
 	 */
@@ -812,7 +810,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Set method for struct member 'anim'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Movie source data. </p>
 	 * @see #__DNA__FIELD__anim
 	 */
@@ -830,7 +828,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Get method for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache for different stuff, not in file. </p>
 	 * @see #__DNA__FIELD__cache
 	 */
@@ -850,7 +848,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Set method for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache for different stuff, not in file. </p>
 	 * @see #__DNA__FIELD__cache
 	 */
@@ -868,7 +866,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Get method for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease pencil data. </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
@@ -888,7 +886,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Set method for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease pencil data. </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
@@ -906,8 +904,9 @@ public class MovieClip extends CFacade {
 	/**
 	 * Get method for struct member 'tracking'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Data for SfM tracking. </p>
 	 * @see #__DNA__FIELD__tracking
 	 */
@@ -924,8 +923,9 @@ public class MovieClip extends CFacade {
 	/**
 	 * Set method for struct member 'tracking'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Data for SfM tracking. </p>
 	 * @see #__DNA__FIELD__tracking
 	 */
@@ -950,7 +950,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Get method for struct member 'tracking_context'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Context of tracking job used to synchronize data like frame-number in {@link SpaceClip}  clip user. </p>
 	 * @see #__DNA__FIELD__tracking_context
 	 */
@@ -970,7 +970,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Set method for struct member 'tracking_context'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Context of tracking job used to synchronize data like frame-number in {@link SpaceClip}  clip user. </p>
 	 * @see #__DNA__FIELD__tracking_context
 	 */
@@ -988,8 +988,9 @@ public class MovieClip extends CFacade {
 	/**
 	 * Get method for struct member 'proxy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proxy to clip data. </p>
 	 * @see #__DNA__FIELD__proxy
 	 */
@@ -1006,8 +1007,9 @@ public class MovieClip extends CFacade {
 	/**
 	 * Set method for struct member 'proxy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proxy to clip data. </p>
 	 * @see #__DNA__FIELD__proxy
 	 */
@@ -1060,7 +1062,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Get method for struct member 'len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Length of movie. </p>
 	 * @see #__DNA__FIELD__len
 	 */
@@ -1077,7 +1079,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Set method for struct member 'len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Length of movie. </p>
 	 * @see #__DNA__FIELD__len
 	 */
@@ -1094,7 +1096,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Get method for struct member 'start_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Scene}  frame number footage starts playing at affects all data which is associated with a clip such as motion tracking, camera Reconstruction and so. </p>
 	 * @see #__DNA__FIELD__start_frame
 	 */
@@ -1111,7 +1113,7 @@ public class MovieClip extends CFacade {
 	/**
 	 * Set method for struct member 'start_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Scene}  frame number footage starts playing at affects all data which is associated with a clip such as motion tracking, camera Reconstruction and so. </p>
 	 * @see #__DNA__FIELD__start_frame
 	 */
@@ -1128,8 +1130,9 @@ public class MovieClip extends CFacade {
 	/**
 	 * Get method for struct member 'frame_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Offset of footage first frame relative to its file name (affects only how footage is loading, does not change data associated with a clip)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Offset of footage first frame relative to its file name (affects only how footage is loading, does not change data associated with a clip)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset which is adding to a file number when reading frame from a file. affects only a way how scene frame is mapping to a file name and not touches other data associated with a clip. </p>
 	 * @see #__DNA__FIELD__frame_offset
 	 */
@@ -1146,8 +1149,9 @@ public class MovieClip extends CFacade {
 	/**
 	 * Set method for struct member 'frame_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Offset of footage first frame relative to its file name (affects only how footage is loading, does not change data associated with a clip)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Offset of footage first frame relative to its file name (affects only how footage is loading, does not change data associated with a clip)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset which is adding to a file number when reading frame from a file. affects only a way how scene frame is mapping to a file name and not touches other data associated with a clip. </p>
 	 * @see #__DNA__FIELD__frame_offset
 	 */
@@ -1164,8 +1168,9 @@ public class MovieClip extends CFacade {
 	/**
 	 * Get method for struct member 'colorspace_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Input color space settings<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Input color space settings
+	 * <h4>Blender Source Code</h4>
 	 * <p> color management </p>
 	 * @see #__DNA__FIELD__colorspace_settings
 	 */
@@ -1182,8 +1187,9 @@ public class MovieClip extends CFacade {
 	/**
 	 * Set method for struct member 'colorspace_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Input color space settings<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Input color space settings
+	 * <h4>Blender Source Code</h4>
 	 * <p> color management </p>
 	 * @see #__DNA__FIELD__colorspace_settings
 	 */

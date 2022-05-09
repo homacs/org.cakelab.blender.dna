@@ -32,7 +32,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Type of curve to use for new strokes
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,7 +75,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'depth_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Method of projecting depth
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +98,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'surface_plane'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Plane for projected stroke
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,7 +121,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fit_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Curve fitting method
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -164,7 +164,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'error_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Allow deviation for a smoother, less precise line
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -187,7 +187,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'radius_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum radius when the minimum pressure is applied (also the minimum when tapering)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -210,7 +210,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'radius_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Radius to use when the maximum pressure is applied (or when a tablet isn't used)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -233,7 +233,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'radius_taper_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Taper factor for the radius of each point along the curve
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -256,7 +256,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'radius_taper_end'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Taper factor for the radius of each point along the curve
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -279,7 +279,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'surface_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset the stroke from the surface
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -302,7 +302,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'corner_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Angles above this are considered corners
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -333,7 +333,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'curve_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Type of curve to use for new strokes
 	 * @see #__DNA__FIELD__curve_type
 	 */
@@ -350,7 +350,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'curve_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Type of curve to use for new strokes
 	 * @see #__DNA__FIELD__curve_type
 	 */
@@ -395,7 +395,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'depth_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Method of projecting depth
 	 * @see #__DNA__FIELD__depth_mode
 	 */
@@ -412,7 +412,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'depth_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Method of projecting depth
 	 * @see #__DNA__FIELD__depth_mode
 	 */
@@ -429,7 +429,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'surface_plane'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Plane for projected stroke
 	 * @see #__DNA__FIELD__surface_plane
 	 */
@@ -446,7 +446,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'surface_plane'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Plane for projected stroke
 	 * @see #__DNA__FIELD__surface_plane
 	 */
@@ -463,7 +463,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fit_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Curve fitting method
 	 * @see #__DNA__FIELD__fit_method
 	 */
@@ -480,7 +480,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fit_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Curve fitting method
 	 * @see #__DNA__FIELD__fit_method
 	 */
@@ -525,7 +525,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'error_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Allow deviation for a smoother, less precise line
 	 * @see #__DNA__FIELD__error_threshold
 	 */
@@ -542,7 +542,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'error_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Allow deviation for a smoother, less precise line
 	 * @see #__DNA__FIELD__error_threshold
 	 */
@@ -559,7 +559,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'radius_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum radius when the minimum pressure is applied (also the minimum when tapering)
 	 * @see #__DNA__FIELD__radius_min
 	 */
@@ -576,7 +576,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'radius_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum radius when the minimum pressure is applied (also the minimum when tapering)
 	 * @see #__DNA__FIELD__radius_min
 	 */
@@ -593,7 +593,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'radius_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Radius to use when the maximum pressure is applied (or when a tablet isn't used)
 	 * @see #__DNA__FIELD__radius_max
 	 */
@@ -610,7 +610,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'radius_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Radius to use when the maximum pressure is applied (or when a tablet isn't used)
 	 * @see #__DNA__FIELD__radius_max
 	 */
@@ -627,7 +627,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'radius_taper_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Taper factor for the radius of each point along the curve
 	 * @see #__DNA__FIELD__radius_taper_start
 	 */
@@ -644,7 +644,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'radius_taper_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Taper factor for the radius of each point along the curve
 	 * @see #__DNA__FIELD__radius_taper_start
 	 */
@@ -661,7 +661,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'radius_taper_end'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Taper factor for the radius of each point along the curve
 	 * @see #__DNA__FIELD__radius_taper_end
 	 */
@@ -678,7 +678,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'radius_taper_end'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Taper factor for the radius of each point along the curve
 	 * @see #__DNA__FIELD__radius_taper_end
 	 */
@@ -695,7 +695,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'surface_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset the stroke from the surface
 	 * @see #__DNA__FIELD__surface_offset
 	 */
@@ -712,7 +712,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'surface_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset the stroke from the surface
 	 * @see #__DNA__FIELD__surface_offset
 	 */
@@ -729,7 +729,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'corner_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Angles above this are considered corners
 	 * @see #__DNA__FIELD__corner_angle
 	 */
@@ -746,7 +746,7 @@ public class CurvePaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'corner_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Angles above this are considered corners
 	 * @see #__DNA__FIELD__corner_angle
 	 */

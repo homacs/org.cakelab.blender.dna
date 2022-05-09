@@ -213,7 +213,7 @@ public class SubsurfModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'emCache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> TODO(sergey): Get rid of those with the old CCG subdivision code. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -536,7 +536,7 @@ public class SubsurfModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'emCache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> TODO(sergey): Get rid of those with the old CCG subdivision code. </p>
 	 * @see #__DNA__FIELD__emCache
 	 */
@@ -556,7 +556,7 @@ public class SubsurfModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'emCache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> TODO(sergey): Get rid of those with the old CCG subdivision code. </p>
 	 * @see #__DNA__FIELD__emCache
 	 */

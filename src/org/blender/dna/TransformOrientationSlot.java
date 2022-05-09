@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'TransformOrientationSlot'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  {@link Scene}  ID-Block </p>
  */
@@ -35,7 +36,7 @@ public class TransformOrientationSlot extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Transformation orientation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,7 +127,7 @@ public class TransformOrientationSlot extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Transformation orientation
 	 * @see #__DNA__FIELD__type
 	 */
@@ -143,7 +144,7 @@ public class TransformOrientationSlot extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Transformation orientation
 	 * @see #__DNA__FIELD__type
 	 */

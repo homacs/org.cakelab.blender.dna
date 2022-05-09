@@ -73,7 +73,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Motion track for which channel is created. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -116,7 +116,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of channel. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -139,7 +139,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tot_segment'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of segments. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -162,7 +162,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tracked segments. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -185,7 +185,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'max_segment'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Longest segment length and total number of tracked frames. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -228,7 +228,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'first_not_disabled_marker_framenr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> These numbers are valid only if tot_segment > 0. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -343,7 +343,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Get method for struct member 'track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Motion track for which channel is created. </p>
 	 * @see #__DNA__FIELD__track
 	 */
@@ -363,7 +363,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Set method for struct member 'track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Motion track for which channel is created. </p>
 	 * @see #__DNA__FIELD__track
 	 */
@@ -421,7 +421,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of channel. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -442,7 +442,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of channel. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -467,7 +467,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Get method for struct member 'tot_segment'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of segments. </p>
 	 * @see #__DNA__FIELD__tot_segment
 	 */
@@ -484,7 +484,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Set method for struct member 'tot_segment'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of segments. </p>
 	 * @see #__DNA__FIELD__tot_segment
 	 */
@@ -501,7 +501,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Get method for struct member 'segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tracked segments. </p>
 	 * @see #__DNA__FIELD__segments
 	 */
@@ -521,7 +521,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Set method for struct member 'segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tracked segments. </p>
 	 * @see #__DNA__FIELD__segments
 	 */
@@ -539,7 +539,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Get method for struct member 'max_segment'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Longest segment length and total number of tracked frames. </p>
 	 * @see #__DNA__FIELD__max_segment
 	 */
@@ -556,7 +556,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Set method for struct member 'max_segment'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Longest segment length and total number of tracked frames. </p>
 	 * @see #__DNA__FIELD__max_segment
 	 */
@@ -601,7 +601,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Get method for struct member 'first_not_disabled_marker_framenr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> These numbers are valid only if tot_segment > 0. </p>
 	 * @see #__DNA__FIELD__first_not_disabled_marker_framenr
 	 */
@@ -618,7 +618,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	/**
 	 * Set method for struct member 'first_not_disabled_marker_framenr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> These numbers are valid only if tot_segment > 0. </p>
 	 * @see #__DNA__FIELD__first_not_disabled_marker_framenr
 	 */

@@ -33,7 +33,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vpaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex paint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +56,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'wpaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weight paint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +79,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -102,7 +102,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uvsculpt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Uv smooth. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -125,7 +125,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gp_paint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gpencil paint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -148,7 +148,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gp_vertexpaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gpencil vertex paint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -171,7 +171,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gp_sculptpaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gpencil sculpt paint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -194,7 +194,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gp_weightpaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gpencil weight paint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -217,7 +217,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup_weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex group weight - used only for editmode, not weight paint </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -240,7 +240,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'doublimit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Remove doubles limit. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -303,7 +303,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'selectmode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selection Mode for {@link Mesh}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -326,7 +326,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'unwrapper'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV Calculation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -429,7 +429,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'autoik_chainlen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Auto-IK Runtime only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -452,7 +452,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease Pencil Flags/options for how the tool works. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -475,7 +475,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_v3d_align'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke placement settings: 3D View. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -498,7 +498,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_v2d_align'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General 2D Editor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -541,7 +541,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'annotate_v3d_align'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Annotations Stroke placement settings - 3D View. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -564,7 +564,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'annotate_thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default stroke thickness for annotation strokes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -587,7 +587,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_selectmode_edit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke selection mode for Edit. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -610,7 +610,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_selectmode_sculpt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke selection mode for {@link Sculpt} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -633,7 +633,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gp_sculpt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease Pencil {@link Sculpt}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -656,7 +656,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gp_interpolate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease Pencil Interpolation Tool(s) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -679,7 +679,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'imapaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  {@link Paint}  (8 bytes aligned please!) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -702,7 +702,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'particle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>Particle  {@link Editing}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -725,8 +725,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'proportional_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Display size for proportional editing circle<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Display size for proportional editing circle
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transform Proportional Area of {@link Effect}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -749,7 +750,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'select_thresh'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Select Group Threshold </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -772,7 +773,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'autokey_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Auto-Keying Mode Defines in DNA_userdef_types.h . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -815,8 +816,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'keyframe_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Type of keyframes to create when inserting keyframes<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Type of keyframes to create when inserting keyframes
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keyframe type (see DNA_curve_types.h ). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -839,7 +841,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'multires_subdiv_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multires </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -862,7 +864,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'edge_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Edge tagging, store operator settings (no UI access). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -905,8 +907,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'transform_pivot_point'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Pivot center for rotation/scaling<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Pivot center for rotation/scaling
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transform </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1029,7 +1032,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'snap_uv_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> , limited to: #SCE_SNAP_ABS_GRID. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1052,7 +1055,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'snap_target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Which part to snap onto the target
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1135,7 +1138,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'proportional_objects'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proportional edit, object mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1158,7 +1161,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'proportional_mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proportional edit, mask editing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1181,7 +1184,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'proportional_action'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proportional edit, action editor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1204,7 +1207,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'proportional_fcurve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proportional edit, graph editor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1227,8 +1230,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lock_markers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Prevent marker editing<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Prevent marker editing
+	 * <h4>Blender Source Code</h4>
 	 * <p> Lock marker editing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1251,7 +1255,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'auto_normalize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Auto normalizing mode in wpaint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1274,7 +1278,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'wpaint_lock_relative'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Present weights as if all locked vertex groups were deleted, and the remaining deform groups normalized. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1297,7 +1301,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'multipaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Paint}  multiple bones in wpaint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1340,7 +1344,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vgroupsubset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Subset selection filter in wpaint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1363,7 +1367,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_selectmode_vertex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke selection mode for Vertex {@link Paint} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1386,7 +1390,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV painting </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1429,7 +1433,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uv_relax_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Algorithm used for UV relaxation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1452,7 +1456,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_paint_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX: these sculpt_paint_* fields are deprecated, use the unified_paint_settings field instead! 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1477,7 +1481,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'workspace_tool_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Action when dragging in the viewport
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1520,7 +1524,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_paint_unified_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1545,7 +1549,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_paint_unified_unprojected_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1570,7 +1574,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_paint_unified_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1595,8 +1599,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'unified_paint_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unified {@link Paint}  Settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1619,7 +1624,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve_paint_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1642,7 +1647,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'statvis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1665,8 +1670,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'normal_vector'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Normal Vector used to copy, add or multiply<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Normal Vector used to copy, add or multiply
+	 * <h4>Blender Source Code</h4>
 	 * <p> Normal {@link Editing}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1709,8 +1715,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'custom_bevel_profile_preset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Used for defining a profile's path<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Used for defining a profile's path
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom {@link Curve}  Profile for bevel tool: Temporary until there is a proper preset system that stores the profiles or maybe stores entire bevel configurations. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1733,7 +1740,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sequencer_tool_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1764,7 +1771,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'vpaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex paint. </p>
 	 * @see #__DNA__FIELD__vpaint
 	 */
@@ -1784,7 +1791,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'vpaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex paint. </p>
 	 * @see #__DNA__FIELD__vpaint
 	 */
@@ -1802,7 +1809,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'wpaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weight paint. </p>
 	 * @see #__DNA__FIELD__wpaint
 	 */
@@ -1822,7 +1829,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'wpaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weight paint. </p>
 	 * @see #__DNA__FIELD__wpaint
 	 */
@@ -1840,7 +1847,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'sculpt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__sculpt
 	 */
@@ -1860,7 +1867,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'sculpt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__sculpt
 	 */
@@ -1878,7 +1885,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'uvsculpt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Uv smooth. </p>
 	 * @see #__DNA__FIELD__uvsculpt
 	 */
@@ -1898,7 +1905,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'uvsculpt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Uv smooth. </p>
 	 * @see #__DNA__FIELD__uvsculpt
 	 */
@@ -1916,7 +1923,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gp_paint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gpencil paint. </p>
 	 * @see #__DNA__FIELD__gp_paint
 	 */
@@ -1936,7 +1943,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gp_paint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gpencil paint. </p>
 	 * @see #__DNA__FIELD__gp_paint
 	 */
@@ -1954,7 +1961,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gp_vertexpaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gpencil vertex paint. </p>
 	 * @see #__DNA__FIELD__gp_vertexpaint
 	 */
@@ -1974,7 +1981,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gp_vertexpaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gpencil vertex paint. </p>
 	 * @see #__DNA__FIELD__gp_vertexpaint
 	 */
@@ -1992,7 +1999,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gp_sculptpaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gpencil sculpt paint. </p>
 	 * @see #__DNA__FIELD__gp_sculptpaint
 	 */
@@ -2012,7 +2019,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gp_sculptpaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gpencil sculpt paint. </p>
 	 * @see #__DNA__FIELD__gp_sculptpaint
 	 */
@@ -2030,7 +2037,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gp_weightpaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gpencil weight paint. </p>
 	 * @see #__DNA__FIELD__gp_weightpaint
 	 */
@@ -2050,7 +2057,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gp_weightpaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gpencil weight paint. </p>
 	 * @see #__DNA__FIELD__gp_weightpaint
 	 */
@@ -2068,7 +2075,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'vgroup_weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex group weight - used only for editmode, not weight paint </p>
 	 * @see #__DNA__FIELD__vgroup_weight
 	 */
@@ -2085,7 +2092,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'vgroup_weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex group weight - used only for editmode, not weight paint </p>
 	 * @see #__DNA__FIELD__vgroup_weight
 	 */
@@ -2102,7 +2109,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'doublimit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Remove doubles limit. </p>
 	 * @see #__DNA__FIELD__doublimit
 	 */
@@ -2119,7 +2126,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'doublimit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Remove doubles limit. </p>
 	 * @see #__DNA__FIELD__doublimit
 	 */
@@ -2192,7 +2199,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'selectmode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selection Mode for {@link Mesh}  </p>
 	 * @see #__DNA__FIELD__selectmode
 	 */
@@ -2209,7 +2216,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'selectmode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selection Mode for {@link Mesh}  </p>
 	 * @see #__DNA__FIELD__selectmode
 	 */
@@ -2226,7 +2233,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'unwrapper'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV Calculation </p>
 	 * @see #__DNA__FIELD__unwrapper
 	 */
@@ -2243,7 +2250,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'unwrapper'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV Calculation </p>
 	 * @see #__DNA__FIELD__unwrapper
 	 */
@@ -2372,7 +2379,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'autoik_chainlen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Auto-IK Runtime only. </p>
 	 * @see #__DNA__FIELD__autoik_chainlen
 	 */
@@ -2389,7 +2396,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'autoik_chainlen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Auto-IK Runtime only. </p>
 	 * @see #__DNA__FIELD__autoik_chainlen
 	 */
@@ -2406,7 +2413,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease Pencil Flags/options for how the tool works. </p>
 	 * @see #__DNA__FIELD__gpencil_flags
 	 */
@@ -2423,7 +2430,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease Pencil Flags/options for how the tool works. </p>
 	 * @see #__DNA__FIELD__gpencil_flags
 	 */
@@ -2440,7 +2447,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_v3d_align'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke placement settings: 3D View. </p>
 	 * @see #__DNA__FIELD__gpencil_v3d_align
 	 */
@@ -2457,7 +2464,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_v3d_align'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke placement settings: 3D View. </p>
 	 * @see #__DNA__FIELD__gpencil_v3d_align
 	 */
@@ -2474,7 +2481,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_v2d_align'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General 2D Editor. </p>
 	 * @see #__DNA__FIELD__gpencil_v2d_align
 	 */
@@ -2491,7 +2498,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_v2d_align'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General 2D Editor. </p>
 	 * @see #__DNA__FIELD__gpencil_v2d_align
 	 */
@@ -2548,7 +2555,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'annotate_v3d_align'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Annotations Stroke placement settings - 3D View. </p>
 	 * @see #__DNA__FIELD__annotate_v3d_align
 	 */
@@ -2565,7 +2572,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'annotate_v3d_align'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Annotations Stroke placement settings - 3D View. </p>
 	 * @see #__DNA__FIELD__annotate_v3d_align
 	 */
@@ -2582,7 +2589,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'annotate_thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default stroke thickness for annotation strokes. </p>
 	 * @see #__DNA__FIELD__annotate_thickness
 	 */
@@ -2599,7 +2606,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'annotate_thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default stroke thickness for annotation strokes. </p>
 	 * @see #__DNA__FIELD__annotate_thickness
 	 */
@@ -2616,7 +2623,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_selectmode_edit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke selection mode for Edit. </p>
 	 * @see #__DNA__FIELD__gpencil_selectmode_edit
 	 */
@@ -2633,7 +2640,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_selectmode_edit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke selection mode for Edit. </p>
 	 * @see #__DNA__FIELD__gpencil_selectmode_edit
 	 */
@@ -2650,7 +2657,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_selectmode_sculpt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke selection mode for {@link Sculpt} . </p>
 	 * @see #__DNA__FIELD__gpencil_selectmode_sculpt
 	 */
@@ -2667,7 +2674,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_selectmode_sculpt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke selection mode for {@link Sculpt} . </p>
 	 * @see #__DNA__FIELD__gpencil_selectmode_sculpt
 	 */
@@ -2684,7 +2691,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gp_sculpt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease Pencil {@link Sculpt}  </p>
 	 * @see #__DNA__FIELD__gp_sculpt
 	 */
@@ -2701,7 +2708,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gp_sculpt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease Pencil {@link Sculpt}  </p>
 	 * @see #__DNA__FIELD__gp_sculpt
 	 */
@@ -2726,7 +2733,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gp_interpolate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease Pencil Interpolation Tool(s) </p>
 	 * @see #__DNA__FIELD__gp_interpolate
 	 */
@@ -2743,7 +2750,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gp_interpolate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease Pencil Interpolation Tool(s) </p>
 	 * @see #__DNA__FIELD__gp_interpolate
 	 */
@@ -2768,7 +2775,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'imapaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  {@link Paint}  (8 bytes aligned please!) </p>
 	 * @see #__DNA__FIELD__imapaint
 	 */
@@ -2785,7 +2792,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'imapaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  {@link Paint}  (8 bytes aligned please!) </p>
 	 * @see #__DNA__FIELD__imapaint
 	 */
@@ -2810,7 +2817,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'particle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>Particle  {@link Editing}  </p>
 	 * @see #__DNA__FIELD__particle
 	 */
@@ -2827,7 +2834,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'particle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>Particle  {@link Editing}  </p>
 	 * @see #__DNA__FIELD__particle
 	 */
@@ -2852,8 +2859,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'proportional_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Display size for proportional editing circle<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Display size for proportional editing circle
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transform Proportional Area of {@link Effect}  </p>
 	 * @see #__DNA__FIELD__proportional_size
 	 */
@@ -2870,8 +2878,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'proportional_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Display size for proportional editing circle<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Display size for proportional editing circle
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transform Proportional Area of {@link Effect}  </p>
 	 * @see #__DNA__FIELD__proportional_size
 	 */
@@ -2888,7 +2897,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'select_thresh'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Select Group Threshold </p>
 	 * @see #__DNA__FIELD__select_thresh
 	 */
@@ -2905,7 +2914,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'select_thresh'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Select Group Threshold </p>
 	 * @see #__DNA__FIELD__select_thresh
 	 */
@@ -2922,7 +2931,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'autokey_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Auto-Keying Mode Defines in DNA_userdef_types.h . </p>
 	 * @see #__DNA__FIELD__autokey_flag
 	 */
@@ -2939,7 +2948,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'autokey_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Auto-Keying Mode Defines in DNA_userdef_types.h . </p>
 	 * @see #__DNA__FIELD__autokey_flag
 	 */
@@ -2984,8 +2993,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'keyframe_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Type of keyframes to create when inserting keyframes<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Type of keyframes to create when inserting keyframes
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keyframe type (see DNA_curve_types.h ). </p>
 	 * @see #__DNA__FIELD__keyframe_type
 	 */
@@ -3002,8 +3012,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'keyframe_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Type of keyframes to create when inserting keyframes<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Type of keyframes to create when inserting keyframes
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keyframe type (see DNA_curve_types.h ). </p>
 	 * @see #__DNA__FIELD__keyframe_type
 	 */
@@ -3020,7 +3031,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'multires_subdiv_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multires </p>
 	 * @see #__DNA__FIELD__multires_subdiv_type
 	 */
@@ -3037,7 +3048,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'multires_subdiv_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multires </p>
 	 * @see #__DNA__FIELD__multires_subdiv_type
 	 */
@@ -3054,7 +3065,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'edge_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Edge tagging, store operator settings (no UI access). </p>
 	 * @see #__DNA__FIELD__edge_mode
 	 */
@@ -3071,7 +3082,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'edge_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Edge tagging, store operator settings (no UI access). </p>
 	 * @see #__DNA__FIELD__edge_mode
 	 */
@@ -3116,8 +3127,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'transform_pivot_point'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Pivot center for rotation/scaling<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Pivot center for rotation/scaling
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transform </p>
 	 * @see #__DNA__FIELD__transform_pivot_point
 	 */
@@ -3134,8 +3146,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'transform_pivot_point'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Pivot center for rotation/scaling<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Pivot center for rotation/scaling
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transform </p>
 	 * @see #__DNA__FIELD__transform_pivot_point
 	 */
@@ -3292,7 +3305,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'snap_uv_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> , limited to: #SCE_SNAP_ABS_GRID. </p>
 	 * @see #__DNA__FIELD__snap_uv_flag
 	 */
@@ -3309,7 +3322,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'snap_uv_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> , limited to: #SCE_SNAP_ABS_GRID. </p>
 	 * @see #__DNA__FIELD__snap_uv_flag
 	 */
@@ -3326,7 +3339,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'snap_target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Which part to snap onto the target
 	 * @see #__DNA__FIELD__snap_target
 	 */
@@ -3343,7 +3356,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'snap_target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Which part to snap onto the target
 	 * @see #__DNA__FIELD__snap_target
 	 */
@@ -3444,7 +3457,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'proportional_objects'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proportional edit, object mode. </p>
 	 * @see #__DNA__FIELD__proportional_objects
 	 */
@@ -3461,7 +3474,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'proportional_objects'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proportional edit, object mode. </p>
 	 * @see #__DNA__FIELD__proportional_objects
 	 */
@@ -3478,7 +3491,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'proportional_mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proportional edit, mask editing. </p>
 	 * @see #__DNA__FIELD__proportional_mask
 	 */
@@ -3495,7 +3508,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'proportional_mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proportional edit, mask editing. </p>
 	 * @see #__DNA__FIELD__proportional_mask
 	 */
@@ -3512,7 +3525,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'proportional_action'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proportional edit, action editor. </p>
 	 * @see #__DNA__FIELD__proportional_action
 	 */
@@ -3529,7 +3542,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'proportional_action'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proportional edit, action editor. </p>
 	 * @see #__DNA__FIELD__proportional_action
 	 */
@@ -3546,7 +3559,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'proportional_fcurve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proportional edit, graph editor. </p>
 	 * @see #__DNA__FIELD__proportional_fcurve
 	 */
@@ -3563,7 +3576,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'proportional_fcurve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Proportional edit, graph editor. </p>
 	 * @see #__DNA__FIELD__proportional_fcurve
 	 */
@@ -3580,8 +3593,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'lock_markers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Prevent marker editing<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Prevent marker editing
+	 * <h4>Blender Source Code</h4>
 	 * <p> Lock marker editing. </p>
 	 * @see #__DNA__FIELD__lock_markers
 	 */
@@ -3598,8 +3612,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'lock_markers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Prevent marker editing<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Prevent marker editing
+	 * <h4>Blender Source Code</h4>
 	 * <p> Lock marker editing. </p>
 	 * @see #__DNA__FIELD__lock_markers
 	 */
@@ -3616,7 +3631,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'auto_normalize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Auto normalizing mode in wpaint. </p>
 	 * @see #__DNA__FIELD__auto_normalize
 	 */
@@ -3633,7 +3648,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'auto_normalize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Auto normalizing mode in wpaint. </p>
 	 * @see #__DNA__FIELD__auto_normalize
 	 */
@@ -3650,7 +3665,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'wpaint_lock_relative'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Present weights as if all locked vertex groups were deleted, and the remaining deform groups normalized. </p>
 	 * @see #__DNA__FIELD__wpaint_lock_relative
 	 */
@@ -3667,7 +3682,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'wpaint_lock_relative'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Present weights as if all locked vertex groups were deleted, and the remaining deform groups normalized. </p>
 	 * @see #__DNA__FIELD__wpaint_lock_relative
 	 */
@@ -3684,7 +3699,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'multipaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Paint}  multiple bones in wpaint. </p>
 	 * @see #__DNA__FIELD__multipaint
 	 */
@@ -3701,7 +3716,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'multipaint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Paint}  multiple bones in wpaint. </p>
 	 * @see #__DNA__FIELD__multipaint
 	 */
@@ -3746,7 +3761,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'vgroupsubset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Subset selection filter in wpaint. </p>
 	 * @see #__DNA__FIELD__vgroupsubset
 	 */
@@ -3763,7 +3778,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'vgroupsubset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Subset selection filter in wpaint. </p>
 	 * @see #__DNA__FIELD__vgroupsubset
 	 */
@@ -3780,7 +3795,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_selectmode_vertex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke selection mode for Vertex {@link Paint} . </p>
 	 * @see #__DNA__FIELD__gpencil_selectmode_vertex
 	 */
@@ -3797,7 +3812,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_selectmode_vertex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke selection mode for Vertex {@link Paint} . </p>
 	 * @see #__DNA__FIELD__gpencil_selectmode_vertex
 	 */
@@ -3814,7 +3829,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member '_pad2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV painting </p>
 	 * @see #__DNA__FIELD___pad2
 	 */
@@ -3835,7 +3850,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member '_pad2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV painting </p>
 	 * @see #__DNA__FIELD___pad2
 	 */
@@ -3888,7 +3903,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'uv_relax_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Algorithm used for UV relaxation
 	 * @see #__DNA__FIELD__uv_relax_method
 	 */
@@ -3905,7 +3920,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'uv_relax_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Algorithm used for UV relaxation
 	 * @see #__DNA__FIELD__uv_relax_method
 	 */
@@ -3922,7 +3937,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'sculpt_paint_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX: these sculpt_paint_* fields are deprecated, use the unified_paint_settings field instead! 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -3941,7 +3956,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'sculpt_paint_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX: these sculpt_paint_* fields are deprecated, use the unified_paint_settings field instead! 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -3960,7 +3975,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'workspace_tool_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Action when dragging in the viewport
 	 * @see #__DNA__FIELD__workspace_tool_type
 	 */
@@ -3977,7 +3992,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'workspace_tool_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Action when dragging in the viewport
 	 * @see #__DNA__FIELD__workspace_tool_type
 	 */
@@ -4034,7 +4049,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'sculpt_paint_unified_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -4053,7 +4068,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'sculpt_paint_unified_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -4072,7 +4087,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'sculpt_paint_unified_unprojected_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -4091,7 +4106,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'sculpt_paint_unified_unprojected_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -4110,7 +4125,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'sculpt_paint_unified_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -4129,7 +4144,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'sculpt_paint_unified_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -4148,8 +4163,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'unified_paint_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unified {@link Paint}  Settings </p>
 	 * @see #__DNA__FIELD__unified_paint_settings
 	 */
@@ -4166,8 +4182,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'unified_paint_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unified {@link Paint}  Settings </p>
 	 * @see #__DNA__FIELD__unified_paint_settings
 	 */
@@ -4192,7 +4209,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'curve_paint_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__curve_paint_settings
 	 */
@@ -4209,7 +4226,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'curve_paint_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__curve_paint_settings
 	 */
@@ -4234,7 +4251,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'statvis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__statvis
 	 */
@@ -4251,7 +4268,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'statvis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__statvis
 	 */
@@ -4276,8 +4293,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'normal_vector'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Normal Vector used to copy, add or multiply<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Normal Vector used to copy, add or multiply
+	 * <h4>Blender Source Code</h4>
 	 * <p> Normal {@link Editing}  </p>
 	 * @see #__DNA__FIELD__normal_vector
 	 */
@@ -4298,8 +4316,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'normal_vector'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Normal Vector used to copy, add or multiply<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Normal Vector used to copy, add or multiply
+	 * <h4>Blender Source Code</h4>
 	 * <p> Normal {@link Editing}  </p>
 	 * @see #__DNA__FIELD__normal_vector
 	 */
@@ -4364,8 +4383,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'custom_bevel_profile_preset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Used for defining a profile's path<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Used for defining a profile's path
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom {@link Curve}  Profile for bevel tool: Temporary until there is a proper preset system that stores the profiles or maybe stores entire bevel configurations. </p>
 	 * @see #__DNA__FIELD__custom_bevel_profile_preset
 	 */
@@ -4385,8 +4405,9 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'custom_bevel_profile_preset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Used for defining a profile's path<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Used for defining a profile's path
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom {@link Curve}  Profile for bevel tool: Temporary until there is a proper preset system that stores the profiles or maybe stores entire bevel configurations. </p>
 	 * @see #__DNA__FIELD__custom_bevel_profile_preset
 	 */
@@ -4404,7 +4425,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Get method for struct member 'sequencer_tool_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__sequencer_tool_settings
 	 */
@@ -4424,7 +4445,7 @@ public class ToolSettings extends CFacade {
 	/**
 	 * Set method for struct member 'sequencer_tool_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__sequencer_tool_settings
 	 */

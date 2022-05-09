@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'CameraDOFSettings'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Properties for dof effect. </p>
  */
 
@@ -34,8 +35,9 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'focus_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Use this object to define the depth of field focal point<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Use this object to define the depth of field focal point
+	 * <h4>Blender Source Code</h4>
 	 * <p> Focal distance for depth of field. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -58,7 +60,7 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'focus_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance to the focus point for depth of field
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -81,7 +83,7 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'aperture_fstop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * F-Stop ratio (lower numbers give more defocus, higher numbers give a sharper image)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -104,7 +106,7 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'aperture_rotation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Rotation of blades in aperture
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -127,7 +129,7 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'aperture_ratio'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distortion to simulate anamorphic lens bokeh
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -150,7 +152,7 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'aperture_blades'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of blades in aperture for polygonal bokeh (at least 3)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -221,8 +223,9 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Get method for struct member 'focus_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Use this object to define the depth of field focal point<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Use this object to define the depth of field focal point
+	 * <h4>Blender Source Code</h4>
 	 * <p> Focal distance for depth of field. </p>
 	 * @see #__DNA__FIELD__focus_object
 	 */
@@ -242,8 +245,9 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Set method for struct member 'focus_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Use this object to define the depth of field focal point<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Use this object to define the depth of field focal point
+	 * <h4>Blender Source Code</h4>
 	 * <p> Focal distance for depth of field. </p>
 	 * @see #__DNA__FIELD__focus_object
 	 */
@@ -261,7 +265,7 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Get method for struct member 'focus_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance to the focus point for depth of field
 	 * @see #__DNA__FIELD__focus_distance
 	 */
@@ -278,7 +282,7 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Set method for struct member 'focus_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance to the focus point for depth of field
 	 * @see #__DNA__FIELD__focus_distance
 	 */
@@ -295,7 +299,7 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Get method for struct member 'aperture_fstop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * F-Stop ratio (lower numbers give more defocus, higher numbers give a sharper image)
 	 * @see #__DNA__FIELD__aperture_fstop
 	 */
@@ -312,7 +316,7 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Set method for struct member 'aperture_fstop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * F-Stop ratio (lower numbers give more defocus, higher numbers give a sharper image)
 	 * @see #__DNA__FIELD__aperture_fstop
 	 */
@@ -329,7 +333,7 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Get method for struct member 'aperture_rotation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Rotation of blades in aperture
 	 * @see #__DNA__FIELD__aperture_rotation
 	 */
@@ -346,7 +350,7 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Set method for struct member 'aperture_rotation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Rotation of blades in aperture
 	 * @see #__DNA__FIELD__aperture_rotation
 	 */
@@ -363,7 +367,7 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Get method for struct member 'aperture_ratio'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distortion to simulate anamorphic lens bokeh
 	 * @see #__DNA__FIELD__aperture_ratio
 	 */
@@ -380,7 +384,7 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Set method for struct member 'aperture_ratio'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distortion to simulate anamorphic lens bokeh
 	 * @see #__DNA__FIELD__aperture_ratio
 	 */
@@ -397,7 +401,7 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Get method for struct member 'aperture_blades'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of blades in aperture for polygonal bokeh (at least 3)
 	 * @see #__DNA__FIELD__aperture_blades
 	 */
@@ -414,7 +418,7 @@ public class CameraDOFSettings extends CFacade {
 	/**
 	 * Set method for struct member 'aperture_blades'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of blades in aperture for polygonal bokeh (at least 3)
 	 * @see #__DNA__FIELD__aperture_blades
 	 */

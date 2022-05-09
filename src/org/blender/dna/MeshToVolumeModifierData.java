@@ -53,7 +53,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This is the object that is supposed to be converted to a volume. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'resolution_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ToVolumeModifierResolutionMode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +99,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'voxel_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of a voxel in object space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -122,7 +122,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'voxel_amount'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The desired amount of voxels along one axis. The actual amount of voxels might be slightly different. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -145,7 +145,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fill_volume'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If true, every cell in the enclosed volume gets a density. Otherwise, the interior_band_width is used. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -188,7 +188,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'interior_band_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Band widths are in object space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -335,7 +335,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This is the object that is supposed to be converted to a volume. </p>
 	 * @see #__DNA__FIELD__object
 	 */
@@ -355,7 +355,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This is the object that is supposed to be converted to a volume. </p>
 	 * @see #__DNA__FIELD__object
 	 */
@@ -373,7 +373,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'resolution_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ToVolumeModifierResolutionMode </p>
 	 * @see #__DNA__FIELD__resolution_mode
 	 */
@@ -390,7 +390,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'resolution_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ToVolumeModifierResolutionMode </p>
 	 * @see #__DNA__FIELD__resolution_mode
 	 */
@@ -407,7 +407,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'voxel_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of a voxel in object space. </p>
 	 * @see #__DNA__FIELD__voxel_size
 	 */
@@ -424,7 +424,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'voxel_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of a voxel in object space. </p>
 	 * @see #__DNA__FIELD__voxel_size
 	 */
@@ -441,7 +441,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'voxel_amount'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The desired amount of voxels along one axis. The actual amount of voxels might be slightly different. </p>
 	 * @see #__DNA__FIELD__voxel_amount
 	 */
@@ -458,7 +458,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'voxel_amount'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The desired amount of voxels along one axis. The actual amount of voxels might be slightly different. </p>
 	 * @see #__DNA__FIELD__voxel_amount
 	 */
@@ -475,7 +475,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'fill_volume'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If true, every cell in the enclosed volume gets a density. Otherwise, the interior_band_width is used. </p>
 	 * @see #__DNA__FIELD__fill_volume
 	 */
@@ -492,7 +492,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'fill_volume'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If true, every cell in the enclosed volume gets a density. Otherwise, the interior_band_width is used. </p>
 	 * @see #__DNA__FIELD__fill_volume
 	 */
@@ -549,7 +549,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'interior_band_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Band widths are in object space. </p>
 	 * @see #__DNA__FIELD__interior_band_width
 	 */
@@ -566,7 +566,7 @@ public class MeshToVolumeModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'interior_band_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Band widths are in object space. </p>
 	 * @see #__DNA__FIELD__interior_band_width
 	 */

@@ -32,7 +32,7 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAlignRotationToVectorAxis </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +55,7 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pivot_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAlignRotationToVectorPivotAxis </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -78,7 +78,7 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'input_type_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeInputMode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -129,7 +129,7 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	/**
 	 * Get method for struct member 'axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAlignRotationToVectorAxis </p>
 	 * @see #__DNA__FIELD__axis
 	 */
@@ -146,7 +146,7 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	/**
 	 * Set method for struct member 'axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAlignRotationToVectorAxis </p>
 	 * @see #__DNA__FIELD__axis
 	 */
@@ -163,7 +163,7 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	/**
 	 * Get method for struct member 'pivot_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAlignRotationToVectorPivotAxis </p>
 	 * @see #__DNA__FIELD__pivot_axis
 	 */
@@ -180,7 +180,7 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	/**
 	 * Set method for struct member 'pivot_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAlignRotationToVectorPivotAxis </p>
 	 * @see #__DNA__FIELD__pivot_axis
 	 */
@@ -197,7 +197,7 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	/**
 	 * Get method for struct member 'input_type_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeInputMode </p>
 	 * @see #__DNA__FIELD__input_type_factor
 	 */
@@ -214,7 +214,7 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	/**
 	 * Set method for struct member 'input_type_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeInputMode </p>
 	 * @see #__DNA__FIELD__input_type_factor
 	 */

@@ -14,8 +14,10 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MVert'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
- * A single vertex with coordinates and normal vector.<h4>Blender Source Code:</h4>
+ * 
+ * <h4>Java .Blend</h4>
+ * A single vertex with coordinates and normal vector.
+ * <h4>Blender Source Code</h4>
  * <p>{@link Mesh}  Vertices.</p><p> Typically accessed from {@link Mesh#getMvert()}  </p>
  */
 
@@ -35,7 +37,7 @@ public class MVert extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * XYZ coordinates.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -58,7 +60,7 @@ public class MVert extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values</h3>
 	 * 				<pre>
 	 * 	SELECT				= 1
@@ -136,7 +138,7 @@ public class MVert extends CFacade {
 	/**
 	 * Get method for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * XYZ coordinates.
 	 * @see #__DNA__FIELD__co
 	 */
@@ -157,7 +159,7 @@ public class MVert extends CFacade {
 	/**
 	 * Set method for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * XYZ coordinates.
 	 * @see #__DNA__FIELD__co
 	 */
@@ -182,7 +184,7 @@ public class MVert extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values</h3>
 	 * 				<pre>
 	 * 	SELECT				= 1
@@ -206,7 +208,7 @@ public class MVert extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values</h3>
 	 * 				<pre>
 	 * 	SELECT				= 1

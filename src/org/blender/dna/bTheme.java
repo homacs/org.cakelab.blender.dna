@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bTheme'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> A theme.</p><p><h2>Note</h2><p> Currently only a single theme is ever used at once. Different theme presets are stored as external files now. </p> Currently only a single theme is ever used at once. Different theme presets are stored as external files now. 
  * 
  * </p>
@@ -476,7 +477,7 @@ public class bTheme extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tarm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 20 sets of bone colors for this theme </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -499,7 +500,7 @@ public class bTheme extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'collection_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ThemeWireColor}  tobj[20];. </p><p> See COLLECTION_COLOR_TOT for the number of collection colors. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -522,7 +523,7 @@ public class bTheme extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'strip_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See SEQUENCE_COLOR_TOT for the total number of strip colors. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1361,7 +1362,7 @@ public class bTheme extends CFacade {
 	/**
 	 * Get method for struct member 'tarm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 20 sets of bone colors for this theme </p>
 	 * @see #__DNA__FIELD__tarm
 	 */
@@ -1382,7 +1383,7 @@ public class bTheme extends CFacade {
 	/**
 	 * Set method for struct member 'tarm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 20 sets of bone colors for this theme </p>
 	 * @see #__DNA__FIELD__tarm
 	 */
@@ -1407,7 +1408,7 @@ public class bTheme extends CFacade {
 	/**
 	 * Get method for struct member 'collection_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ThemeWireColor}  tobj[20];. </p><p> See COLLECTION_COLOR_TOT for the number of collection colors. </p>
 	 * @see #__DNA__FIELD__collection_color
 	 */
@@ -1428,7 +1429,7 @@ public class bTheme extends CFacade {
 	/**
 	 * Set method for struct member 'collection_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ThemeWireColor}  tobj[20];. </p><p> See COLLECTION_COLOR_TOT for the number of collection colors. </p>
 	 * @see #__DNA__FIELD__collection_color
 	 */
@@ -1453,7 +1454,7 @@ public class bTheme extends CFacade {
 	/**
 	 * Get method for struct member 'strip_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See SEQUENCE_COLOR_TOT for the total number of strip colors. </p>
 	 * @see #__DNA__FIELD__strip_color
 	 */
@@ -1474,7 +1475,7 @@ public class bTheme extends CFacade {
 	/**
 	 * Set method for struct member 'strip_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See SEQUENCE_COLOR_TOT for the total number of strip colors. </p>
 	 * @see #__DNA__FIELD__strip_color
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpaceText'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p>{@link Text}  Editor. </p>
  */
 
@@ -74,7 +75,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -157,7 +158,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'text'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -180,7 +181,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'top'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Determines at what line the top of the text is displayed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -203,7 +204,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'left'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Determines the horizontal scroll (in columns). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -266,7 +267,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lheight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User preference, is font_size! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -309,7 +310,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'wordwrap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Booleans </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -432,7 +433,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'live_edit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Run python while editing, evil. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -475,7 +476,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'findstr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ST_MAX_FIND_STR. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -498,7 +499,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'replacestr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ST_MAX_FIND_STR. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -521,7 +522,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'margin_column'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Column number to show right margin at. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -564,7 +565,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keep last. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -659,7 +660,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -676,7 +677,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -797,7 +798,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Get method for struct member 'text'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * @see #__DNA__FIELD__text
 	 */
@@ -817,7 +818,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Set method for struct member 'text'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * @see #__DNA__FIELD__text
 	 */
@@ -835,7 +836,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Get method for struct member 'top'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Determines at what line the top of the text is displayed. </p>
 	 * @see #__DNA__FIELD__top
 	 */
@@ -852,7 +853,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Set method for struct member 'top'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Determines at what line the top of the text is displayed. </p>
 	 * @see #__DNA__FIELD__top
 	 */
@@ -869,7 +870,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Get method for struct member 'left'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Determines the horizontal scroll (in columns). </p>
 	 * @see #__DNA__FIELD__left
 	 */
@@ -886,7 +887,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Set method for struct member 'left'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Determines the horizontal scroll (in columns). </p>
 	 * @see #__DNA__FIELD__left
 	 */
@@ -971,7 +972,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Get method for struct member 'lheight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User preference, is font_size! </p>
 	 * @see #__DNA__FIELD__lheight
 	 */
@@ -988,7 +989,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Set method for struct member 'lheight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User preference, is font_size! </p>
 	 * @see #__DNA__FIELD__lheight
 	 */
@@ -1033,7 +1034,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Get method for struct member 'wordwrap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Booleans </p>
 	 * @see #__DNA__FIELD__wordwrap
 	 */
@@ -1050,7 +1051,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Set method for struct member 'wordwrap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Booleans </p>
 	 * @see #__DNA__FIELD__wordwrap
 	 */
@@ -1207,7 +1208,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Get method for struct member 'live_edit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Run python while editing, evil. </p>
 	 * @see #__DNA__FIELD__live_edit
 	 */
@@ -1224,7 +1225,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Set method for struct member 'live_edit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Run python while editing, evil. </p>
 	 * @see #__DNA__FIELD__live_edit
 	 */
@@ -1281,7 +1282,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Get method for struct member 'findstr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ST_MAX_FIND_STR. </p>
 	 * @see #__DNA__FIELD__findstr
 	 */
@@ -1302,7 +1303,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Set method for struct member 'findstr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ST_MAX_FIND_STR. </p>
 	 * @see #__DNA__FIELD__findstr
 	 */
@@ -1327,7 +1328,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Get method for struct member 'replacestr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ST_MAX_FIND_STR. </p>
 	 * @see #__DNA__FIELD__replacestr
 	 */
@@ -1348,7 +1349,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Set method for struct member 'replacestr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ST_MAX_FIND_STR. </p>
 	 * @see #__DNA__FIELD__replacestr
 	 */
@@ -1373,7 +1374,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Get method for struct member 'margin_column'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Column number to show right margin at. </p>
 	 * @see #__DNA__FIELD__margin_column
 	 */
@@ -1390,7 +1391,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Set method for struct member 'margin_column'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Column number to show right margin at. </p>
 	 * @see #__DNA__FIELD__margin_column
 	 */
@@ -1447,7 +1448,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Get method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keep last. </p>
 	 * @see #__DNA__FIELD__runtime
 	 */
@@ -1464,7 +1465,7 @@ public class SpaceText extends CFacade {
 	/**
 	 * Set method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keep last. </p>
 	 * @see #__DNA__FIELD__runtime
 	 */

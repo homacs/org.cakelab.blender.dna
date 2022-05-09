@@ -52,7 +52,7 @@ public class LineStyleColorModifier_Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'color_ramp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Color ramp used to change line color
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -159,7 +159,7 @@ public class LineStyleColorModifier_Material extends CFacade {
 	/**
 	 * Get method for struct member 'color_ramp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Color ramp used to change line color
 	 * @see #__DNA__FIELD__color_ramp
 	 */
@@ -179,7 +179,7 @@ public class LineStyleColorModifier_Material extends CFacade {
 	/**
 	 * Set method for struct member 'color_ramp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Color ramp used to change line color
 	 * @see #__DNA__FIELD__color_ramp
 	 */

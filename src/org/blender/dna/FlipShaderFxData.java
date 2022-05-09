@@ -52,7 +52,7 @@ public class FlipShaderFxData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,7 +75,7 @@ public class FlipShaderFxData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flipmode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Internal, not visible in rna. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -162,7 +162,7 @@ public class FlipShaderFxData extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -179,7 +179,7 @@ public class FlipShaderFxData extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -196,7 +196,7 @@ public class FlipShaderFxData extends CFacade {
 	/**
 	 * Get method for struct member 'flipmode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Internal, not visible in rna. </p>
 	 * @see #__DNA__FIELD__flipmode
 	 */
@@ -213,7 +213,7 @@ public class FlipShaderFxData extends CFacade {
 	/**
 	 * Set method for struct member 'flipmode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Internal, not visible in rna. </p>
 	 * @see #__DNA__FIELD__flipmode
 	 */

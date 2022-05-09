@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ChildParticle'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Child particles are created around or between parent particles. </p>
  */
 
@@ -34,7 +35,7 @@ public class ChildParticle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'num'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Face index on the final derived mesh. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -77,7 +78,7 @@ public class ChildParticle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pa'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nearest particles to the child, used for the interpolation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -100,7 +101,7 @@ public class ChildParticle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'w'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Interpolation weights for the above particles. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -123,7 +124,7 @@ public class ChildParticle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fuv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Face vertex weights and offset. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -194,7 +195,7 @@ public class ChildParticle extends CFacade {
 	/**
 	 * Get method for struct member 'num'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Face index on the final derived mesh. </p>
 	 * @see #__DNA__FIELD__num
 	 */
@@ -211,7 +212,7 @@ public class ChildParticle extends CFacade {
 	/**
 	 * Set method for struct member 'num'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Face index on the final derived mesh. </p>
 	 * @see #__DNA__FIELD__num
 	 */
@@ -256,7 +257,7 @@ public class ChildParticle extends CFacade {
 	/**
 	 * Get method for struct member 'pa'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nearest particles to the child, used for the interpolation. </p>
 	 * @see #__DNA__FIELD__pa
 	 */
@@ -277,7 +278,7 @@ public class ChildParticle extends CFacade {
 	/**
 	 * Set method for struct member 'pa'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nearest particles to the child, used for the interpolation. </p>
 	 * @see #__DNA__FIELD__pa
 	 */
@@ -302,7 +303,7 @@ public class ChildParticle extends CFacade {
 	/**
 	 * Get method for struct member 'w'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Interpolation weights for the above particles. </p>
 	 * @see #__DNA__FIELD__w
 	 */
@@ -323,7 +324,7 @@ public class ChildParticle extends CFacade {
 	/**
 	 * Set method for struct member 'w'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Interpolation weights for the above particles. </p>
 	 * @see #__DNA__FIELD__w
 	 */
@@ -348,7 +349,7 @@ public class ChildParticle extends CFacade {
 	/**
 	 * Get method for struct member 'fuv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Face vertex weights and offset. </p>
 	 * @see #__DNA__FIELD__fuv
 	 */
@@ -369,7 +370,7 @@ public class ChildParticle extends CFacade {
 	/**
 	 * Set method for struct member 'fuv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Face vertex weights and offset. </p>
 	 * @see #__DNA__FIELD__fuv
 	 */

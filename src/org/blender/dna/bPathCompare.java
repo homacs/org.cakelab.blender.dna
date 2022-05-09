@@ -73,7 +73,7 @@ public class bPathCompare extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAXDIR. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -208,7 +208,7 @@ public class bPathCompare extends CFacade {
 	/**
 	 * Get method for struct member 'path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAXDIR. </p>
 	 * @see #__DNA__FIELD__path
 	 */
@@ -229,7 +229,7 @@ public class bPathCompare extends CFacade {
 	/**
 	 * Set method for struct member 'path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAXDIR. </p>
 	 * @see #__DNA__FIELD__path
 	 */

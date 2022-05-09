@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ReportList'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><h2>Note</h2><p> Saved in the wm, don't remove. </p> Saved in the wm, don't remove. 
  * 
  * </p>
@@ -56,7 +57,7 @@ public class ReportList extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'printlevel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eReportType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +80,7 @@ public class ReportList extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'storelevel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eReportType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -206,7 +207,7 @@ public class ReportList extends CFacade {
 	/**
 	 * Get method for struct member 'printlevel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eReportType. </p>
 	 * @see #__DNA__FIELD__printlevel
 	 */
@@ -223,7 +224,7 @@ public class ReportList extends CFacade {
 	/**
 	 * Set method for struct member 'printlevel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eReportType. </p>
 	 * @see #__DNA__FIELD__printlevel
 	 */
@@ -240,7 +241,7 @@ public class ReportList extends CFacade {
 	/**
 	 * Get method for struct member 'storelevel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eReportType. </p>
 	 * @see #__DNA__FIELD__storelevel
 	 */
@@ -257,7 +258,7 @@ public class ReportList extends CFacade {
 	/**
 	 * Set method for struct member 'storelevel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eReportType. </p>
 	 * @see #__DNA__FIELD__storelevel
 	 */

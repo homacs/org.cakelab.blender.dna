@@ -93,7 +93,7 @@ public class Scopes extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'accuracy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Proportion of original image source pixel lines to sample
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -488,7 +488,7 @@ public class Scopes extends CFacade {
 	/**
 	 * Get method for struct member 'accuracy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Proportion of original image source pixel lines to sample
 	 * @see #__DNA__FIELD__accuracy
 	 */
@@ -505,7 +505,7 @@ public class Scopes extends CFacade {
 	/**
 	 * Set method for struct member 'accuracy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Proportion of original image source pixel lines to sample
 	 * @see #__DNA__FIELD__accuracy
 	 */

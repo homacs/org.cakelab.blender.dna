@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpaceSeq'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Sequencer. </p>
  */
 
@@ -74,7 +75,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -157,7 +158,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. Deprecated, copied to region. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -182,7 +183,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'xof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated: offset for drawing the image preview. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -207,7 +208,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'yof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -232,7 +233,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mainb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weird name for the sequencer subtype (seq, image, luma... etc). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -255,7 +256,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'render_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ESpaceSeq_Proxy_RenderSize. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -338,7 +339,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'zoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated, handled by {@link View2D}  now. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -363,7 +364,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'view'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See SEQ_VIEW_* below. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -406,7 +407,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'draw_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Overlay an image of the editing on below the strips. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -469,7 +470,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2D cursor for transform. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -492,7 +493,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease-pencil data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -515,7 +516,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scopes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Different scoped displayed in space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -578,7 +579,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'multiview_eye'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiview current eye - for internal use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -713,7 +714,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -730,7 +731,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -851,7 +852,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Get method for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. Deprecated, copied to region. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -870,7 +871,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Set method for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. Deprecated, copied to region. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -897,7 +898,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Get method for struct member 'xof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated: offset for drawing the image preview. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -916,7 +917,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Set method for struct member 'xof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated: offset for drawing the image preview. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -935,7 +936,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Get method for struct member 'yof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -954,7 +955,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Set method for struct member 'yof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -973,7 +974,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Get method for struct member 'mainb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weird name for the sequencer subtype (seq, image, luma... etc). </p>
 	 * @see #__DNA__FIELD__mainb
 	 */
@@ -990,7 +991,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Set method for struct member 'mainb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weird name for the sequencer subtype (seq, image, luma... etc). </p>
 	 * @see #__DNA__FIELD__mainb
 	 */
@@ -1007,7 +1008,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Get method for struct member 'render_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ESpaceSeq_Proxy_RenderSize. </p>
 	 * @see #__DNA__FIELD__render_size
 	 */
@@ -1024,7 +1025,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Set method for struct member 'render_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ESpaceSeq_Proxy_RenderSize. </p>
 	 * @see #__DNA__FIELD__render_size
 	 */
@@ -1125,7 +1126,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Get method for struct member 'zoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated, handled by {@link View2D}  now. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1144,7 +1145,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Set method for struct member 'zoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated, handled by {@link View2D}  now. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1163,7 +1164,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Get method for struct member 'view'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See SEQ_VIEW_* below. </p>
 	 * @see #__DNA__FIELD__view
 	 */
@@ -1180,7 +1181,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Set method for struct member 'view'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See SEQ_VIEW_* below. </p>
 	 * @see #__DNA__FIELD__view
 	 */
@@ -1225,7 +1226,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Get method for struct member 'draw_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Overlay an image of the editing on below the strips. </p>
 	 * @see #__DNA__FIELD__draw_flag
 	 */
@@ -1242,7 +1243,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Set method for struct member 'draw_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Overlay an image of the editing on below the strips. </p>
 	 * @see #__DNA__FIELD__draw_flag
 	 */
@@ -1327,7 +1328,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Get method for struct member 'cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2D cursor for transform. </p>
 	 * @see #__DNA__FIELD__cursor
 	 */
@@ -1348,7 +1349,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Set method for struct member 'cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2D cursor for transform. </p>
 	 * @see #__DNA__FIELD__cursor
 	 */
@@ -1373,7 +1374,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Get method for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease-pencil data. </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
@@ -1393,7 +1394,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Set method for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease-pencil data. </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
@@ -1411,7 +1412,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Get method for struct member 'scopes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Different scoped displayed in space. </p>
 	 * @see #__DNA__FIELD__scopes
 	 */
@@ -1428,7 +1429,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Set method for struct member 'scopes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Different scoped displayed in space. </p>
 	 * @see #__DNA__FIELD__scopes
 	 */
@@ -1525,7 +1526,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Get method for struct member 'multiview_eye'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiview current eye - for internal use. </p>
 	 * @see #__DNA__FIELD__multiview_eye
 	 */
@@ -1542,7 +1543,7 @@ public class SpaceSeq extends CFacade {
 	/**
 	 * Set method for struct member 'multiview_eye'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiview current eye - for internal use. </p>
 	 * @see #__DNA__FIELD__multiview_eye
 	 */

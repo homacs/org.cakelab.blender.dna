@@ -53,7 +53,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layouts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link WorkSpaceLayout} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'hook_layout_relations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Store for each hook (so for each window) which layout has been activated the last time this workspace was visible. {@link WorkSpaceDataRelation} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,8 +99,9 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'owner_ids'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Feature tagging (use for addons) {@link wmOwnerID} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -123,8 +124,9 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tools'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of {@link bToolRef}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -167,7 +169,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Switch to this object mode when activating the workspace
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -190,7 +192,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Enum eWorkSpaceFlags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -213,7 +215,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'order'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number for workspace tab reordering in the UI. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -236,7 +238,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'status_text'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Info text from modal operators (runtime). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -259,8 +261,9 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'asset_library_ref'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Active asset library to show in the UI, not used by the Asset Browser (which has its own active asset library)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Active asset library to show in the UI, not used by the Asset Browser (which has its own active asset library)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Workspace-wide active asset library, for asset UIs to use (e.g. asset view UI template). The Asset Browser has its own and doesn't use this. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -327,7 +330,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Get method for struct member 'layouts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link WorkSpaceLayout} . </p>
 	 * @see #__DNA__FIELD__layouts
 	 */
@@ -344,7 +347,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Set method for struct member 'layouts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link WorkSpaceLayout} . </p>
 	 * @see #__DNA__FIELD__layouts
 	 */
@@ -369,7 +372,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Get method for struct member 'hook_layout_relations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Store for each hook (so for each window) which layout has been activated the last time this workspace was visible. {@link WorkSpaceDataRelation} . </p>
 	 * @see #__DNA__FIELD__hook_layout_relations
 	 */
@@ -386,7 +389,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Set method for struct member 'hook_layout_relations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Store for each hook (so for each window) which layout has been activated the last time this workspace was visible. {@link WorkSpaceDataRelation} . </p>
 	 * @see #__DNA__FIELD__hook_layout_relations
 	 */
@@ -411,8 +414,9 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Get method for struct member 'owner_ids'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Feature tagging (use for addons) {@link wmOwnerID} . </p>
 	 * @see #__DNA__FIELD__owner_ids
 	 */
@@ -429,8 +433,9 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Set method for struct member 'owner_ids'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Feature tagging (use for addons) {@link wmOwnerID} . </p>
 	 * @see #__DNA__FIELD__owner_ids
 	 */
@@ -455,8 +460,9 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Get method for struct member 'tools'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of {@link bToolRef}  </p>
 	 * @see #__DNA__FIELD__tools
 	 */
@@ -473,8 +479,9 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Set method for struct member 'tools'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of {@link bToolRef}  </p>
 	 * @see #__DNA__FIELD__tools
 	 */
@@ -539,7 +546,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Get method for struct member 'object_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Switch to this object mode when activating the workspace
 	 * @see #__DNA__FIELD__object_mode
 	 */
@@ -556,7 +563,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Set method for struct member 'object_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Switch to this object mode when activating the workspace
 	 * @see #__DNA__FIELD__object_mode
 	 */
@@ -573,7 +580,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Get method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Enum eWorkSpaceFlags. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -590,7 +597,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Set method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Enum eWorkSpaceFlags. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -607,7 +614,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Get method for struct member 'order'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number for workspace tab reordering in the UI. </p>
 	 * @see #__DNA__FIELD__order
 	 */
@@ -624,7 +631,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Set method for struct member 'order'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number for workspace tab reordering in the UI. </p>
 	 * @see #__DNA__FIELD__order
 	 */
@@ -641,7 +648,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Get method for struct member 'status_text'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Info text from modal operators (runtime). </p>
 	 * @see #__DNA__FIELD__status_text
 	 */
@@ -661,7 +668,7 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Set method for struct member 'status_text'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Info text from modal operators (runtime). </p>
 	 * @see #__DNA__FIELD__status_text
 	 */
@@ -679,8 +686,9 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Get method for struct member 'asset_library_ref'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Active asset library to show in the UI, not used by the Asset Browser (which has its own active asset library)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Active asset library to show in the UI, not used by the Asset Browser (which has its own active asset library)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Workspace-wide active asset library, for asset UIs to use (e.g. asset view UI template). The Asset Browser has its own and doesn't use this. </p>
 	 * @see #__DNA__FIELD__asset_library_ref
 	 */
@@ -697,8 +705,9 @@ public class WorkSpace extends CFacade {
 	/**
 	 * Set method for struct member 'asset_library_ref'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Active asset library to show in the UI, not used by the Asset Browser (which has its own active asset library)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Active asset library to show in the UI, not used by the Asset Browser (which has its own active asset library)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Workspace-wide active asset library, for asset UIs to use (e.g. asset view UI template). The Asset Browser has its own and doesn't use this. </p>
 	 * @see #__DNA__FIELD__asset_library_ref
 	 */

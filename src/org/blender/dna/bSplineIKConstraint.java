@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bSplineIKConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Spline IK Constraint Aligns 'n' bones to the curvature defined by the curve, with the chain ending on the bone that owns this constraint, and starting on the nth parent. </p>
  */
 
@@ -34,7 +35,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> target(s) {@link Curve}  object (with follow path enabled) which drives the bone chain. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +58,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> binding details Array of numpoints items, denoting parametric positions along curve that joints should follow. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +81,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'numpoints'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of points to bound in points array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -103,7 +104,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'chainlen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of bones ('n') that are in the chain. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,7 +127,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> settings General settings for constraint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -149,7 +150,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'xzScaleMode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Method used for determining the x & z scaling of the bones. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -172,7 +173,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'yScaleMode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Method used for determining the y scaling of the bones. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -215,7 +216,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bulge'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> volume preservation settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -306,7 +307,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> target(s) {@link Curve}  object (with follow path enabled) which drives the bone chain. </p>
 	 * @see #__DNA__FIELD__tar
 	 */
@@ -326,7 +327,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> target(s) {@link Curve}  object (with follow path enabled) which drives the bone chain. </p>
 	 * @see #__DNA__FIELD__tar
 	 */
@@ -344,7 +345,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> binding details Array of numpoints items, denoting parametric positions along curve that joints should follow. </p>
 	 * @see #__DNA__FIELD__points
 	 */
@@ -364,7 +365,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> binding details Array of numpoints items, denoting parametric positions along curve that joints should follow. </p>
 	 * @see #__DNA__FIELD__points
 	 */
@@ -382,7 +383,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'numpoints'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of points to bound in points array. </p>
 	 * @see #__DNA__FIELD__numpoints
 	 */
@@ -399,7 +400,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'numpoints'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of points to bound in points array. </p>
 	 * @see #__DNA__FIELD__numpoints
 	 */
@@ -416,7 +417,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'chainlen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of bones ('n') that are in the chain. </p>
 	 * @see #__DNA__FIELD__chainlen
 	 */
@@ -433,7 +434,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'chainlen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of bones ('n') that are in the chain. </p>
 	 * @see #__DNA__FIELD__chainlen
 	 */
@@ -450,7 +451,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> settings General settings for constraint. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -467,7 +468,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> settings General settings for constraint. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -484,7 +485,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'xzScaleMode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Method used for determining the x & z scaling of the bones. </p>
 	 * @see #__DNA__FIELD__xzScaleMode
 	 */
@@ -501,7 +502,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'xzScaleMode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Method used for determining the x & z scaling of the bones. </p>
 	 * @see #__DNA__FIELD__xzScaleMode
 	 */
@@ -518,7 +519,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'yScaleMode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Method used for determining the y scaling of the bones. </p>
 	 * @see #__DNA__FIELD__yScaleMode
 	 */
@@ -535,7 +536,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'yScaleMode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Method used for determining the y scaling of the bones. </p>
 	 * @see #__DNA__FIELD__yScaleMode
 	 */
@@ -592,7 +593,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'bulge'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> volume preservation settings </p>
 	 * @see #__DNA__FIELD__bulge
 	 */
@@ -609,7 +610,7 @@ public class bSplineIKConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'bulge'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> volume preservation settings </p>
 	 * @see #__DNA__FIELD__bulge
 	 */

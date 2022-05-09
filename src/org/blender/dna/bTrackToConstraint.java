@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bTrackToConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Single-target subobject constraints ------------------<mdash/>  Track To Constraint </p>
  */
 
@@ -54,7 +55,7 @@ public class bTrackToConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'reserved1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> I'll be using reserved1 and reserved2 as Track and Up flags, not sure if that's what they were intended for anyway. Not sure either if it would create backward incompatibility if I were to rename them.<ul><li><p> theeth </p></li></ul> 
 	 * theeth 
 	 * 
@@ -140,7 +141,7 @@ public class bTrackToConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -203,7 +204,7 @@ public class bTrackToConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'reserved1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> I'll be using reserved1 and reserved2 as Track and Up flags, not sure if that's what they were intended for anyway. Not sure either if it would create backward incompatibility if I were to rename them.<ul><li><p> theeth </p></li></ul> 
 	 * theeth 
 	 * 
@@ -223,7 +224,7 @@ public class bTrackToConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'reserved1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> I'll be using reserved1 and reserved2 as Track and Up flags, not sure if that's what they were intended for anyway. Not sure either if it would create backward incompatibility if I were to rename them.<ul><li><p> theeth </p></li></ul> 
 	 * theeth 
 	 * 
@@ -339,7 +340,7 @@ public class bTrackToConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
@@ -360,7 +361,7 @@ public class bTrackToConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */

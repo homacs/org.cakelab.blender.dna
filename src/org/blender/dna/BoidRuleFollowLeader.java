@@ -133,7 +133,7 @@ public class BoidRuleFollowLeader extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance behind leader to follow
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -380,7 +380,7 @@ public class BoidRuleFollowLeader extends CFacade {
 	/**
 	 * Get method for struct member 'distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance behind leader to follow
 	 * @see #__DNA__FIELD__distance
 	 */
@@ -397,7 +397,7 @@ public class BoidRuleFollowLeader extends CFacade {
 	/**
 	 * Set method for struct member 'distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance behind leader to follow
 	 * @see #__DNA__FIELD__distance
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Sculpt'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  {@link Sculpt}  {@link Sculpt} . </p>
  */
@@ -55,7 +56,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> float pivot[3]; XXX not used? </p><p> For rotating around a pivot point </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +99,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'radial_symm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> char tablet_size, tablet_strength; XXX not used? </p><p> Control tablet input </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,8 +122,9 @@ public class Sculpt extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'detail_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum edge length for dynamic topology sculpting (in pixels)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Maximum edge length for dynamic topology sculpting (in pixels)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum edge length for dynamic topology sculpting (in pixels) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -145,8 +147,9 @@ public class Sculpt extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'symmetrize_direction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Source and destination for symmetrize operator<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Source and destination for symmetrize operator
+	 * <h4>Blender Source Code</h4>
 	 * <p> Direction used for SCULPT_OT_symmetrize operator </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,7 +172,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gravity_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> gravity factor for sculpting </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -192,7 +195,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'constant_detail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> scale for constant detail size Constant detail resolution (Blender unit / constant_detail). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -215,7 +218,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'detail_percent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum edge length for dynamic topology sculpting (in brush percenage)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -238,7 +241,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gravity_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Object whose Z axis defines orientation of gravity
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -305,7 +308,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Get method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> float pivot[3]; XXX not used? </p><p> For rotating around a pivot point </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -322,7 +325,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Set method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> float pivot[3]; XXX not used? </p><p> For rotating around a pivot point </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -367,7 +370,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Get method for struct member 'radial_symm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> char tablet_size, tablet_strength; XXX not used? </p><p> Control tablet input </p>
 	 * @see #__DNA__FIELD__radial_symm
 	 */
@@ -388,7 +391,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Set method for struct member 'radial_symm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> char tablet_size, tablet_strength; XXX not used? </p><p> Control tablet input </p>
 	 * @see #__DNA__FIELD__radial_symm
 	 */
@@ -413,8 +416,9 @@ public class Sculpt extends CFacade {
 	/**
 	 * Get method for struct member 'detail_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum edge length for dynamic topology sculpting (in pixels)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Maximum edge length for dynamic topology sculpting (in pixels)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum edge length for dynamic topology sculpting (in pixels) </p>
 	 * @see #__DNA__FIELD__detail_size
 	 */
@@ -431,8 +435,9 @@ public class Sculpt extends CFacade {
 	/**
 	 * Set method for struct member 'detail_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum edge length for dynamic topology sculpting (in pixels)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Maximum edge length for dynamic topology sculpting (in pixels)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum edge length for dynamic topology sculpting (in pixels) </p>
 	 * @see #__DNA__FIELD__detail_size
 	 */
@@ -449,8 +454,9 @@ public class Sculpt extends CFacade {
 	/**
 	 * Get method for struct member 'symmetrize_direction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Source and destination for symmetrize operator<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Source and destination for symmetrize operator
+	 * <h4>Blender Source Code</h4>
 	 * <p> Direction used for SCULPT_OT_symmetrize operator </p>
 	 * @see #__DNA__FIELD__symmetrize_direction
 	 */
@@ -467,8 +473,9 @@ public class Sculpt extends CFacade {
 	/**
 	 * Set method for struct member 'symmetrize_direction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Source and destination for symmetrize operator<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Source and destination for symmetrize operator
+	 * <h4>Blender Source Code</h4>
 	 * <p> Direction used for SCULPT_OT_symmetrize operator </p>
 	 * @see #__DNA__FIELD__symmetrize_direction
 	 */
@@ -485,7 +492,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Get method for struct member 'gravity_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> gravity factor for sculpting </p>
 	 * @see #__DNA__FIELD__gravity_factor
 	 */
@@ -502,7 +509,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Set method for struct member 'gravity_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> gravity factor for sculpting </p>
 	 * @see #__DNA__FIELD__gravity_factor
 	 */
@@ -519,7 +526,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Get method for struct member 'constant_detail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> scale for constant detail size Constant detail resolution (Blender unit / constant_detail). </p>
 	 * @see #__DNA__FIELD__constant_detail
 	 */
@@ -536,7 +543,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Set method for struct member 'constant_detail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> scale for constant detail size Constant detail resolution (Blender unit / constant_detail). </p>
 	 * @see #__DNA__FIELD__constant_detail
 	 */
@@ -553,7 +560,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Get method for struct member 'detail_percent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum edge length for dynamic topology sculpting (in brush percenage)
 	 * @see #__DNA__FIELD__detail_percent
 	 */
@@ -570,7 +577,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Set method for struct member 'detail_percent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum edge length for dynamic topology sculpting (in brush percenage)
 	 * @see #__DNA__FIELD__detail_percent
 	 */
@@ -587,7 +594,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Get method for struct member 'gravity_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Object whose Z axis defines orientation of gravity
 	 * @see #__DNA__FIELD__gravity_object
 	 */
@@ -607,7 +614,7 @@ public class Sculpt extends CFacade {
 	/**
 	 * Set method for struct member 'gravity_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Object whose Z axis defines orientation of gravity
 	 * @see #__DNA__FIELD__gravity_object
 	 */

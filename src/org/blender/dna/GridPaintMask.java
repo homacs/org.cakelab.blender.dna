@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'GridPaintMask'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Multi-Resolution grid loop data. </p>
  */
 
@@ -34,7 +35,7 @@ public class GridPaintMask extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +58,7 @@ public class GridPaintMask extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'level'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The maximum multires level associated with this grid. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -108,7 +109,7 @@ public class GridPaintMask extends CFacade {
 	/**
 	 * Get method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code> . </p>
 	 * @see #__DNA__FIELD__data
 	 */
@@ -128,7 +129,7 @@ public class GridPaintMask extends CFacade {
 	/**
 	 * Set method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code> . </p>
 	 * @see #__DNA__FIELD__data
 	 */
@@ -146,7 +147,7 @@ public class GridPaintMask extends CFacade {
 	/**
 	 * Get method for struct member 'level'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The maximum multires level associated with this grid. </p>
 	 * @see #__DNA__FIELD__level
 	 */
@@ -163,7 +164,7 @@ public class GridPaintMask extends CFacade {
 	/**
 	 * Set method for struct member 'level'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The maximum multires level associated with this grid. </p>
 	 * @see #__DNA__FIELD__level
 	 */

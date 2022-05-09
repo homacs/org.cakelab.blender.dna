@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPDcontrolpoint'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  GP Stroke Points 'Control Point' data for primitives and curves </p>
  */
@@ -35,7 +36,7 @@ public class bGPDcontrolpoint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> X and y coordinates of control point. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +99,7 @@ public class bGPDcontrolpoint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Point color. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,7 +122,7 @@ public class bGPDcontrolpoint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radius. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -152,7 +153,7 @@ public class bGPDcontrolpoint extends CFacade {
 	/**
 	 * Get method for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> X and y coordinates of control point. </p>
 	 * @see #__DNA__FIELD__x
 	 */
@@ -169,7 +170,7 @@ public class bGPDcontrolpoint extends CFacade {
 	/**
 	 * Set method for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> X and y coordinates of control point. </p>
 	 * @see #__DNA__FIELD__x
 	 */
@@ -242,7 +243,7 @@ public class bGPDcontrolpoint extends CFacade {
 	/**
 	 * Get method for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Point color. </p>
 	 * @see #__DNA__FIELD__color
 	 */
@@ -263,7 +264,7 @@ public class bGPDcontrolpoint extends CFacade {
 	/**
 	 * Set method for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Point color. </p>
 	 * @see #__DNA__FIELD__color
 	 */
@@ -288,7 +289,7 @@ public class bGPDcontrolpoint extends CFacade {
 	/**
 	 * Get method for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radius. </p>
 	 * @see #__DNA__FIELD__size
 	 */
@@ -305,7 +306,7 @@ public class bGPDcontrolpoint extends CFacade {
 	/**
 	 * Set method for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radius. </p>
 	 * @see #__DNA__FIELD__size
 	 */

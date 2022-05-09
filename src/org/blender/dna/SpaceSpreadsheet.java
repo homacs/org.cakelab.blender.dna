@@ -73,7 +73,7 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -156,8 +156,9 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'columns'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Persistent data associated with spreadsheet columns<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Persistent data associated with spreadsheet columns
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. List of {@link SpreadsheetColumn} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -180,8 +181,9 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'row_filters'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Filters to remove rows from the displayed data<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Filters to remove rows from the displayed data
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link SpreadsheetRowFilter} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -204,8 +206,9 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'context_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Context path to the data being displayed<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Context path to the data being displayed
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of {@link SpreadsheetContext} . This is a path to the data that is displayed in the spreadsheet. It can be set explicitly by an action of the user (e.g. clicking the preview icon in a geometry node) or it can be derived from context automatically based on some heuristic. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -228,7 +231,7 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filter_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_FilterFlag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -251,8 +254,9 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'geometry_component_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Part of the geometry to display data from<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Part of the geometry to display data from
+	 * <h4>Blender Source Code</h4>
 	 * <p> #GeometryComponentType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -275,8 +279,9 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'attribute_domain'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Attribute domain to display<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Attribute domain to display
+	 * <h4>Blender Source Code</h4>
 	 * <p> #AttributeDomain. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -299,7 +304,7 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object_eval_state'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_ObjectContext. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -322,7 +327,7 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_Flag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -437,7 +442,7 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -454,7 +459,7 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -575,8 +580,9 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Get method for struct member 'columns'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Persistent data associated with spreadsheet columns<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Persistent data associated with spreadsheet columns
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. List of {@link SpreadsheetColumn} . </p>
 	 * @see #__DNA__FIELD__columns
 	 */
@@ -593,8 +599,9 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Set method for struct member 'columns'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Persistent data associated with spreadsheet columns<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Persistent data associated with spreadsheet columns
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. List of {@link SpreadsheetColumn} . </p>
 	 * @see #__DNA__FIELD__columns
 	 */
@@ -619,8 +626,9 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Get method for struct member 'row_filters'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Filters to remove rows from the displayed data<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Filters to remove rows from the displayed data
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link SpreadsheetRowFilter} . </p>
 	 * @see #__DNA__FIELD__row_filters
 	 */
@@ -637,8 +645,9 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Set method for struct member 'row_filters'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Filters to remove rows from the displayed data<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Filters to remove rows from the displayed data
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link SpreadsheetRowFilter} . </p>
 	 * @see #__DNA__FIELD__row_filters
 	 */
@@ -663,8 +672,9 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Get method for struct member 'context_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Context path to the data being displayed<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Context path to the data being displayed
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of {@link SpreadsheetContext} . This is a path to the data that is displayed in the spreadsheet. It can be set explicitly by an action of the user (e.g. clicking the preview icon in a geometry node) or it can be derived from context automatically based on some heuristic. </p>
 	 * @see #__DNA__FIELD__context_path
 	 */
@@ -681,8 +691,9 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Set method for struct member 'context_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Context path to the data being displayed<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Context path to the data being displayed
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of {@link SpreadsheetContext} . This is a path to the data that is displayed in the spreadsheet. It can be set explicitly by an action of the user (e.g. clicking the preview icon in a geometry node) or it can be derived from context automatically based on some heuristic. </p>
 	 * @see #__DNA__FIELD__context_path
 	 */
@@ -707,7 +718,7 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Get method for struct member 'filter_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_FilterFlag. </p>
 	 * @see #__DNA__FIELD__filter_flag
 	 */
@@ -724,7 +735,7 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Set method for struct member 'filter_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_FilterFlag. </p>
 	 * @see #__DNA__FIELD__filter_flag
 	 */
@@ -741,8 +752,9 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Get method for struct member 'geometry_component_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Part of the geometry to display data from<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Part of the geometry to display data from
+	 * <h4>Blender Source Code</h4>
 	 * <p> #GeometryComponentType. </p>
 	 * @see #__DNA__FIELD__geometry_component_type
 	 */
@@ -759,8 +771,9 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Set method for struct member 'geometry_component_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Part of the geometry to display data from<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Part of the geometry to display data from
+	 * <h4>Blender Source Code</h4>
 	 * <p> #GeometryComponentType. </p>
 	 * @see #__DNA__FIELD__geometry_component_type
 	 */
@@ -777,8 +790,9 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Get method for struct member 'attribute_domain'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Attribute domain to display<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Attribute domain to display
+	 * <h4>Blender Source Code</h4>
 	 * <p> #AttributeDomain. </p>
 	 * @see #__DNA__FIELD__attribute_domain
 	 */
@@ -795,8 +809,9 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Set method for struct member 'attribute_domain'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Attribute domain to display<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Attribute domain to display
+	 * <h4>Blender Source Code</h4>
 	 * <p> #AttributeDomain. </p>
 	 * @see #__DNA__FIELD__attribute_domain
 	 */
@@ -813,7 +828,7 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Get method for struct member 'object_eval_state'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_ObjectContext. </p>
 	 * @see #__DNA__FIELD__object_eval_state
 	 */
@@ -830,7 +845,7 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Set method for struct member 'object_eval_state'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_ObjectContext. </p>
 	 * @see #__DNA__FIELD__object_eval_state
 	 */
@@ -847,7 +862,7 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_Flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -864,7 +879,7 @@ public class SpaceSpreadsheet extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_Flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */

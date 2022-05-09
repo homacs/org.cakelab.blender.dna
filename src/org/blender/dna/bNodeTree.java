@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bNodeTree'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> the basis for a Node tree, all links and nodes reside internal here only re-usable node trees are in the library though, materials and textures allocate own tree struct </p>
  */
 
@@ -54,7 +55,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -77,7 +78,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'typeinfo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type information. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -100,7 +101,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type identifier. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -123,7 +124,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'interface_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime RNA type of the group interface. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -146,7 +147,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease pencil data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,7 +170,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'view_center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Node tree stores own offset for consistent editor view. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -232,7 +233,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'field_inferencing_interface'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Information about how inputs and outputs of the node group interact with fields. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -255,7 +256,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set init on fileread. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -298,7 +299,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cur_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sockets in groups have unique identifiers, adding new sockets always will increase this counter. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -341,7 +342,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'changed_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . #eNodeTreeChangedFlag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -364,7 +365,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'is_updating'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag to prevent re-entrant update calls. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -387,7 +388,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'done'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Generic temporary flag for recursion check (DFS/BFS). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -410,7 +411,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'nodetype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Specific node type this tree is used for. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -435,7 +436,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'edit_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Quality setting when editing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -458,7 +459,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'render_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Quality setting when rendering. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -481,7 +482,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'chunksize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tile size for compositor engine. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -504,7 +505,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'execution_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Execution mode to use for compositor engine. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -547,7 +548,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'inputs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Lists of {@link bNodeSocket}  to hold default values and own_index. Warning! Don't make links to these sockets, input/output nodes are used for that. These sockets are used only for generating external interfaces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -590,7 +591,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'previews'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Node preview hash table Only available in base node trees (e.g. scene->node_tree) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -613,7 +614,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'active_viewer_key'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Defines the node tree instance to use for the "active" context, in case multiple different editors are used and make context ambiguous. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -636,7 +637,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'output_topology_hash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A hash of the topology of the node tree leading up to the outputs. This is used to determine of the node tree changed in a way that requires updating geometry nodes or shaders. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -659,7 +660,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'execdata'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Execution data.</p><p> XXX It would be preferable to completely move this data out of the underlying node tree, so node tree execution could finally run independent of the tree itself. This would allow node trees to be merely linked by other data (materials, textures, etc.), as {@link ID}  data is supposed to. Execution data is generated from the tree once at execution start and can then be used as long as necessary, even while the tree is being modified. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -762,7 +763,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  representing what the node group does. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -829,7 +830,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -849,7 +850,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -867,7 +868,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'typeinfo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type information. </p>
 	 * @see #__DNA__FIELD__typeinfo
 	 */
@@ -887,7 +888,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'typeinfo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type information. </p>
 	 * @see #__DNA__FIELD__typeinfo
 	 */
@@ -905,7 +906,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type identifier. </p>
 	 * @see #__DNA__FIELD__idname
 	 */
@@ -926,7 +927,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type identifier. </p>
 	 * @see #__DNA__FIELD__idname
 	 */
@@ -951,7 +952,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'interface_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime RNA type of the group interface. </p>
 	 * @see #__DNA__FIELD__interface_type
 	 */
@@ -971,7 +972,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'interface_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime RNA type of the group interface. </p>
 	 * @see #__DNA__FIELD__interface_type
 	 */
@@ -989,7 +990,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease pencil data. </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
@@ -1009,7 +1010,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease pencil data. </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
@@ -1027,7 +1028,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'view_center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Node tree stores own offset for consistent editor view. </p>
 	 * @see #__DNA__FIELD__view_center
 	 */
@@ -1048,7 +1049,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'view_center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Node tree stores own offset for consistent editor view. </p>
 	 * @see #__DNA__FIELD__view_center
 	 */
@@ -1145,7 +1146,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'field_inferencing_interface'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Information about how inputs and outputs of the node group interact with fields. </p>
 	 * @see #__DNA__FIELD__field_inferencing_interface
 	 */
@@ -1165,7 +1166,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'field_inferencing_interface'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Information about how inputs and outputs of the node group interact with fields. </p>
 	 * @see #__DNA__FIELD__field_inferencing_interface
 	 */
@@ -1183,7 +1184,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set init on fileread. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -1200,7 +1201,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set init on fileread. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -1245,7 +1246,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'cur_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sockets in groups have unique identifiers, adding new sockets always will increase this counter. </p>
 	 * @see #__DNA__FIELD__cur_index
 	 */
@@ -1262,7 +1263,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'cur_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sockets in groups have unique identifiers, adding new sockets always will increase this counter. </p>
 	 * @see #__DNA__FIELD__cur_index
 	 */
@@ -1307,7 +1308,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'changed_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . #eNodeTreeChangedFlag. </p>
 	 * @see #__DNA__FIELD__changed_flag
 	 */
@@ -1324,7 +1325,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'changed_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . #eNodeTreeChangedFlag. </p>
 	 * @see #__DNA__FIELD__changed_flag
 	 */
@@ -1341,7 +1342,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'is_updating'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag to prevent re-entrant update calls. </p>
 	 * @see #__DNA__FIELD__is_updating
 	 */
@@ -1358,7 +1359,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'is_updating'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag to prevent re-entrant update calls. </p>
 	 * @see #__DNA__FIELD__is_updating
 	 */
@@ -1375,7 +1376,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'done'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Generic temporary flag for recursion check (DFS/BFS). </p>
 	 * @see #__DNA__FIELD__done
 	 */
@@ -1392,7 +1393,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'done'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Generic temporary flag for recursion check (DFS/BFS). </p>
 	 * @see #__DNA__FIELD__done
 	 */
@@ -1409,7 +1410,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'nodetype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Specific node type this tree is used for. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1428,7 +1429,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'nodetype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Specific node type this tree is used for. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1447,7 +1448,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'edit_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Quality setting when editing. </p>
 	 * @see #__DNA__FIELD__edit_quality
 	 */
@@ -1464,7 +1465,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'edit_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Quality setting when editing. </p>
 	 * @see #__DNA__FIELD__edit_quality
 	 */
@@ -1481,7 +1482,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'render_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Quality setting when rendering. </p>
 	 * @see #__DNA__FIELD__render_quality
 	 */
@@ -1498,7 +1499,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'render_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Quality setting when rendering. </p>
 	 * @see #__DNA__FIELD__render_quality
 	 */
@@ -1515,7 +1516,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'chunksize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tile size for compositor engine. </p>
 	 * @see #__DNA__FIELD__chunksize
 	 */
@@ -1532,7 +1533,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'chunksize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tile size for compositor engine. </p>
 	 * @see #__DNA__FIELD__chunksize
 	 */
@@ -1549,7 +1550,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'execution_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Execution mode to use for compositor engine. </p>
 	 * @see #__DNA__FIELD__execution_mode
 	 */
@@ -1566,7 +1567,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'execution_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Execution mode to use for compositor engine. </p>
 	 * @see #__DNA__FIELD__execution_mode
 	 */
@@ -1619,7 +1620,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'inputs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Lists of {@link bNodeSocket}  to hold default values and own_index. Warning! Don't make links to these sockets, input/output nodes are used for that. These sockets are used only for generating external interfaces. </p>
 	 * @see #__DNA__FIELD__inputs
 	 */
@@ -1636,7 +1637,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'inputs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Lists of {@link bNodeSocket}  to hold default values and own_index. Warning! Don't make links to these sockets, input/output nodes are used for that. These sockets are used only for generating external interfaces. </p>
 	 * @see #__DNA__FIELD__inputs
 	 */
@@ -1697,7 +1698,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'previews'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Node preview hash table Only available in base node trees (e.g. scene->node_tree) </p>
 	 * @see #__DNA__FIELD__previews
 	 */
@@ -1717,7 +1718,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'previews'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Node preview hash table Only available in base node trees (e.g. scene->node_tree) </p>
 	 * @see #__DNA__FIELD__previews
 	 */
@@ -1735,7 +1736,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'active_viewer_key'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Defines the node tree instance to use for the "active" context, in case multiple different editors are used and make context ambiguous. </p>
 	 * @see #__DNA__FIELD__active_viewer_key
 	 */
@@ -1752,7 +1753,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'active_viewer_key'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Defines the node tree instance to use for the "active" context, in case multiple different editors are used and make context ambiguous. </p>
 	 * @see #__DNA__FIELD__active_viewer_key
 	 */
@@ -1777,7 +1778,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'output_topology_hash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A hash of the topology of the node tree leading up to the outputs. This is used to determine of the node tree changed in a way that requires updating geometry nodes or shaders. </p>
 	 * @see #__DNA__FIELD__output_topology_hash
 	 */
@@ -1794,7 +1795,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'output_topology_hash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A hash of the topology of the node tree leading up to the outputs. This is used to determine of the node tree changed in a way that requires updating geometry nodes or shaders. </p>
 	 * @see #__DNA__FIELD__output_topology_hash
 	 */
@@ -1811,7 +1812,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'execdata'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Execution data.</p><p> XXX It would be preferable to completely move this data out of the underlying node tree, so node tree execution could finally run independent of the tree itself. This would allow node trees to be merely linked by other data (materials, textures, etc.), as {@link ID}  data is supposed to. Execution data is generated from the tree once at execution start and can then be used as long as necessary, even while the tree is being modified. </p>
 	 * @see #__DNA__FIELD__execdata
 	 */
@@ -1831,7 +1832,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'execdata'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Execution data.</p><p> XXX It would be preferable to completely move this data out of the underlying node tree, so node tree execution could finally run independent of the tree itself. This would allow node trees to be merely linked by other data (materials, textures, etc.), as {@link ID}  data is supposed to. Execution data is generated from the tree once at execution start and can then be used as long as necessary, even while the tree is being modified. </p>
 	 * @see #__DNA__FIELD__execdata
 	 */
@@ -1977,7 +1978,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Get method for struct member 'preview'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  representing what the node group does. </p>
 	 * @see #__DNA__FIELD__preview
 	 */
@@ -1997,7 +1998,7 @@ public class bNodeTree extends CFacade {
 	/**
 	 * Set method for struct member 'preview'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  representing what the node group does. </p>
 	 * @see #__DNA__FIELD__preview
 	 */

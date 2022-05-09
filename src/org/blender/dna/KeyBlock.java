@@ -73,7 +73,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> point in time (Key->type == KEY_NORMAL) only, for historic reasons this is relative to (Key->ctime / 100), so this value increments by 0.1f per frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,7 +96,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -119,7 +119,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -162,7 +162,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'relative'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> relative == 0 means first key is reference, otherwise the index of Key->blocks </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -205,7 +205,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'totelem'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> total number if items in the keyblock (compare with mesh/curve verts to check we match) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -228,7 +228,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> for meshes only, match the unique number with the customdata layer </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -251,7 +251,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -274,7 +274,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME (unique name, user assigned) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -297,7 +297,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME (optional vertex group), array gets allocated into 'weights' when set </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -320,7 +320,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'slidermin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ranges, for RNA and UI only to clamp 'curval' </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -435,7 +435,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Get method for struct member 'pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> point in time (Key->type == KEY_NORMAL) only, for historic reasons this is relative to (Key->ctime / 100), so this value increments by 0.1f per frame. </p>
 	 * @see #__DNA__FIELD__pos
 	 */
@@ -452,7 +452,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Set method for struct member 'pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> point in time (Key->type == KEY_NORMAL) only, for historic reasons this is relative to (Key->ctime / 100), so this value increments by 0.1f per frame. </p>
 	 * @see #__DNA__FIELD__pos
 	 */
@@ -469,7 +469,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Get method for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  only. </p>
 	 * @see #__DNA__FIELD__curval
 	 */
@@ -486,7 +486,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Set method for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  only. </p>
 	 * @see #__DNA__FIELD__curval
 	 */
@@ -503,7 +503,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  only. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -520,7 +520,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  only. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -577,7 +577,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Get method for struct member 'relative'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> relative == 0 means first key is reference, otherwise the index of Key->blocks </p>
 	 * @see #__DNA__FIELD__relative
 	 */
@@ -594,7 +594,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Set method for struct member 'relative'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> relative == 0 means first key is reference, otherwise the index of Key->blocks </p>
 	 * @see #__DNA__FIELD__relative
 	 */
@@ -639,7 +639,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Get method for struct member 'totelem'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> total number if items in the keyblock (compare with mesh/curve verts to check we match) </p>
 	 * @see #__DNA__FIELD__totelem
 	 */
@@ -656,7 +656,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Set method for struct member 'totelem'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> total number if items in the keyblock (compare with mesh/curve verts to check we match) </p>
 	 * @see #__DNA__FIELD__totelem
 	 */
@@ -673,7 +673,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Get method for struct member 'uid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> for meshes only, match the unique number with the customdata layer </p>
 	 * @see #__DNA__FIELD__uid
 	 */
@@ -690,7 +690,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Set method for struct member 'uid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> for meshes only, match the unique number with the customdata layer </p>
 	 * @see #__DNA__FIELD__uid
 	 */
@@ -707,7 +707,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Get method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  </p>
 	 * @see #__DNA__FIELD__data
 	 */
@@ -727,7 +727,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Set method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  </p>
 	 * @see #__DNA__FIELD__data
 	 */
@@ -745,7 +745,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME (unique name, user assigned) </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -766,7 +766,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME (unique name, user assigned) </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -791,7 +791,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Get method for struct member 'vgroup'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME (optional vertex group), array gets allocated into 'weights' when set </p>
 	 * @see #__DNA__FIELD__vgroup
 	 */
@@ -812,7 +812,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Set method for struct member 'vgroup'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME (optional vertex group), array gets allocated into 'weights' when set </p>
 	 * @see #__DNA__FIELD__vgroup
 	 */
@@ -837,7 +837,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Get method for struct member 'slidermin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ranges, for RNA and UI only to clamp 'curval' </p>
 	 * @see #__DNA__FIELD__slidermin
 	 */
@@ -854,7 +854,7 @@ public class KeyBlock extends CFacade {
 	/**
 	 * Set method for struct member 'slidermin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ranges, for RNA and UI only to clamp 'curval' </p>
 	 * @see #__DNA__FIELD__slidermin
 	 */

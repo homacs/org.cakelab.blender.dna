@@ -32,7 +32,7 @@ public class NodeGeometryRaycast extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mapping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeRaycastMapMode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +55,7 @@ public class NodeGeometryRaycast extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CustomDataType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -78,7 +78,7 @@ public class NodeGeometryRaycast extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'input_type_ray_direction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated input types in new Ray-cast node. Can be removed when legacy nodes are no longer supported. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -129,7 +129,7 @@ public class NodeGeometryRaycast extends CFacade {
 	/**
 	 * Get method for struct member 'mapping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeRaycastMapMode. </p>
 	 * @see #__DNA__FIELD__mapping
 	 */
@@ -146,7 +146,7 @@ public class NodeGeometryRaycast extends CFacade {
 	/**
 	 * Set method for struct member 'mapping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeRaycastMapMode. </p>
 	 * @see #__DNA__FIELD__mapping
 	 */
@@ -163,7 +163,7 @@ public class NodeGeometryRaycast extends CFacade {
 	/**
 	 * Get method for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CustomDataType. </p>
 	 * @see #__DNA__FIELD__data_type
 	 */
@@ -180,7 +180,7 @@ public class NodeGeometryRaycast extends CFacade {
 	/**
 	 * Set method for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CustomDataType. </p>
 	 * @see #__DNA__FIELD__data_type
 	 */
@@ -197,7 +197,7 @@ public class NodeGeometryRaycast extends CFacade {
 	/**
 	 * Get method for struct member 'input_type_ray_direction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated input types in new Ray-cast node. Can be removed when legacy nodes are no longer supported. </p>
 	 * @see #__DNA__FIELD__input_type_ray_direction
 	 */
@@ -214,7 +214,7 @@ public class NodeGeometryRaycast extends CFacade {
 	/**
 	 * Set method for struct member 'input_type_ray_direction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated input types in new Ray-cast node. Can be removed when legacy nodes are no longer supported. </p>
 	 * @see #__DNA__FIELD__input_type_ray_direction
 	 */

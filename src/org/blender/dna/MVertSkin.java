@@ -33,7 +33,7 @@ public class MVertSkin extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radii of the skin, define how big the generated frames are. Currently only the first two elements are used. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +56,7 @@ public class MVertSkin extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eMVertSkinFlag  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -87,7 +87,7 @@ public class MVertSkin extends CFacade {
 	/**
 	 * Get method for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radii of the skin, define how big the generated frames are. Currently only the first two elements are used. </p>
 	 * @see #__DNA__FIELD__radius
 	 */
@@ -108,7 +108,7 @@ public class MVertSkin extends CFacade {
 	/**
 	 * Set method for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radii of the skin, define how big the generated frames are. Currently only the first two elements are used. </p>
 	 * @see #__DNA__FIELD__radius
 	 */
@@ -133,7 +133,7 @@ public class MVertSkin extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eMVertSkinFlag  </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -150,7 +150,7 @@ public class MVertSkin extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eMVertSkinFlag  </p>
 	 * @see #__DNA__FIELD__flag
 	 */

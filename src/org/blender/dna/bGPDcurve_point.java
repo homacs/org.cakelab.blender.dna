@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPDcurve_point'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  GP {@link Curve}  Point </p>
  */
@@ -35,7 +36,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bezier Triple for the handles and control points. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -58,7 +59,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pressure'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pressure of input device (from 0 to 1) at this point. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -81,7 +82,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color strength (used for alpha factor). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -104,7 +105,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'point_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of corresponding point in gps->points. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -127,7 +128,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Additional options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -150,7 +151,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uv_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of uv along the stroke. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -173,7 +174,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uv_rot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Uv rotation for dot mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -196,7 +197,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uv_fill'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Uv for fill mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -219,7 +220,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vert_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex Color RGBA (A=mix factor). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -270,7 +271,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Get method for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bezier Triple for the handles and control points. </p>
 	 * @see #__DNA__FIELD__bezt
 	 */
@@ -287,7 +288,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Set method for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bezier Triple for the handles and control points. </p>
 	 * @see #__DNA__FIELD__bezt
 	 */
@@ -312,7 +313,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Get method for struct member 'pressure'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pressure of input device (from 0 to 1) at this point. </p>
 	 * @see #__DNA__FIELD__pressure
 	 */
@@ -329,7 +330,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Set method for struct member 'pressure'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pressure of input device (from 0 to 1) at this point. </p>
 	 * @see #__DNA__FIELD__pressure
 	 */
@@ -346,7 +347,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Get method for struct member 'strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color strength (used for alpha factor). </p>
 	 * @see #__DNA__FIELD__strength
 	 */
@@ -363,7 +364,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Set method for struct member 'strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color strength (used for alpha factor). </p>
 	 * @see #__DNA__FIELD__strength
 	 */
@@ -380,7 +381,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Get method for struct member 'point_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of corresponding point in gps->points. </p>
 	 * @see #__DNA__FIELD__point_index
 	 */
@@ -397,7 +398,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Set method for struct member 'point_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of corresponding point in gps->points. </p>
 	 * @see #__DNA__FIELD__point_index
 	 */
@@ -414,7 +415,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Additional options. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -431,7 +432,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Additional options. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -448,7 +449,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Get method for struct member 'uv_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of uv along the stroke. </p>
 	 * @see #__DNA__FIELD__uv_fac
 	 */
@@ -465,7 +466,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Set method for struct member 'uv_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of uv along the stroke. </p>
 	 * @see #__DNA__FIELD__uv_fac
 	 */
@@ -482,7 +483,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Get method for struct member 'uv_rot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Uv rotation for dot mode. </p>
 	 * @see #__DNA__FIELD__uv_rot
 	 */
@@ -499,7 +500,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Set method for struct member 'uv_rot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Uv rotation for dot mode. </p>
 	 * @see #__DNA__FIELD__uv_rot
 	 */
@@ -516,7 +517,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Get method for struct member 'uv_fill'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Uv for fill mode. </p>
 	 * @see #__DNA__FIELD__uv_fill
 	 */
@@ -537,7 +538,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Set method for struct member 'uv_fill'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Uv for fill mode. </p>
 	 * @see #__DNA__FIELD__uv_fill
 	 */
@@ -562,7 +563,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Get method for struct member 'vert_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex Color RGBA (A=mix factor). </p>
 	 * @see #__DNA__FIELD__vert_color
 	 */
@@ -583,7 +584,7 @@ public class bGPDcurve_point extends CFacade {
 	/**
 	 * Set method for struct member 'vert_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex Color RGBA (A=mix factor). </p>
 	 * @see #__DNA__FIELD__vert_color
 	 */

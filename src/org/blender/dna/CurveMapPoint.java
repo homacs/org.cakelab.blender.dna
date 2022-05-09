@@ -72,7 +72,7 @@ public class CurveMapPoint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shorty for result lookup. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -179,7 +179,7 @@ public class CurveMapPoint extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shorty for result lookup. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -196,7 +196,7 @@ public class CurveMapPoint extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shorty for result lookup. </p>
 	 * @see #__DNA__FIELD__flag
 	 */

@@ -53,7 +53,7 @@ public class LineStyleGeometryModifier_GuidingLines extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied to the main direction line along its normal
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -140,7 +140,7 @@ public class LineStyleGeometryModifier_GuidingLines extends CFacade {
 	/**
 	 * Get method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied to the main direction line along its normal
 	 * @see #__DNA__FIELD__offset
 	 */
@@ -157,7 +157,7 @@ public class LineStyleGeometryModifier_GuidingLines extends CFacade {
 	/**
 	 * Set method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied to the main direction line along its normal
 	 * @see #__DNA__FIELD__offset
 	 */

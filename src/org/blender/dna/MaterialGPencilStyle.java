@@ -33,7 +33,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sima'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture image for strokes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +56,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ima'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture image for filling. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +79,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'stroke_rgba'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color for paint and strokes (alpha included). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -102,7 +102,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fill_rgba'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color that should be used for drawing "fills" for strokes (alpha included). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -125,7 +125,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mix_rgba'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Secondary color used for gradients and other stuff. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -148,7 +148,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -171,7 +171,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -194,8 +194,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'stroke_style'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select style used to draw strokes<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Select style used to draw strokes
+	 * <h4>Blender Source Code</h4>
 	 * <p> Style for drawing strokes (used to select shader type). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -218,8 +219,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fill_style'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select style used to fill strokes<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Select style used to fill strokes
+	 * <h4>Blender Source Code</h4>
 	 * <p> Style for filling areas (used to select shader type). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -242,8 +244,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mix_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mix Factor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Mix Factor
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor used to define shader behavior (several uses). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -266,7 +269,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gradient_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angle used for gradients orientation. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -291,7 +294,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gradient_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radius for radial gradients. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -336,7 +339,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gradient_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Uv coordinates scale. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -361,7 +364,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gradient_shift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to shift filling in 2d space. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -386,8 +389,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'texture_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Texture Orientation Angle<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Texture Orientation Angle
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angle used for texture orientation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -410,8 +414,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'texture_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Scale Factor for Texture<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Scale Factor for Texture
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture scale (separated of uv scale). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -434,8 +439,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'texture_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Shift Texture in 2d Space<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Shift Texture in 2d Space
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to shift texture in 2d space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -458,7 +464,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'texture_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture opacity. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -483,7 +489,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'texture_pixsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pixel size for uv along the stroke. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -506,8 +512,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select line type for strokes<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Select line type for strokes
+	 * <h4>Blender Source Code</h4>
 	 * <p> Drawing mode (line or dots). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -530,8 +537,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gradient_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select type of gradient used to fill strokes<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Select type of gradient used to fill strokes
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of gradient. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -554,8 +562,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mix_stroke_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mix Stroke Factor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Mix Stroke Factor
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor used to mix texture and stroke color. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -578,8 +587,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'alignment_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Defines how align Dots and Boxes with drawing path and object rotation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Defines how align Dots and Boxes with drawing path and object rotation
+	 * <h4>Blender Source Code</h4>
 	 * <p> Mode used to align Dots and Boxes with stroke drawing path and object rotation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -602,8 +612,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'alignment_rotation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Additional rotation applied to dots and square texture of strokes. Only applies in texture shading mode<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Additional rotation applied to dots and square texture of strokes. Only applies in texture shading mode
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation for texture for Dots and Squares. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -634,7 +645,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'sima'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture image for strokes. </p>
 	 * @see #__DNA__FIELD__sima
 	 */
@@ -654,7 +665,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'sima'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture image for strokes. </p>
 	 * @see #__DNA__FIELD__sima
 	 */
@@ -672,7 +683,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'ima'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture image for filling. </p>
 	 * @see #__DNA__FIELD__ima
 	 */
@@ -692,7 +703,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'ima'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture image for filling. </p>
 	 * @see #__DNA__FIELD__ima
 	 */
@@ -710,7 +721,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'stroke_rgba'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color for paint and strokes (alpha included). </p>
 	 * @see #__DNA__FIELD__stroke_rgba
 	 */
@@ -731,7 +742,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'stroke_rgba'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color for paint and strokes (alpha included). </p>
 	 * @see #__DNA__FIELD__stroke_rgba
 	 */
@@ -756,7 +767,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'fill_rgba'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color that should be used for drawing "fills" for strokes (alpha included). </p>
 	 * @see #__DNA__FIELD__fill_rgba
 	 */
@@ -777,7 +788,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'fill_rgba'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color that should be used for drawing "fills" for strokes (alpha included). </p>
 	 * @see #__DNA__FIELD__fill_rgba
 	 */
@@ -802,7 +813,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'mix_rgba'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Secondary color used for gradients and other stuff. </p>
 	 * @see #__DNA__FIELD__mix_rgba
 	 */
@@ -823,7 +834,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'mix_rgba'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Secondary color used for gradients and other stuff. </p>
 	 * @see #__DNA__FIELD__mix_rgba
 	 */
@@ -848,7 +859,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -865,7 +876,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -882,7 +893,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__index
 	 */
@@ -899,7 +910,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__index
 	 */
@@ -916,8 +927,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'stroke_style'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select style used to draw strokes<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Select style used to draw strokes
+	 * <h4>Blender Source Code</h4>
 	 * <p> Style for drawing strokes (used to select shader type). </p>
 	 * @see #__DNA__FIELD__stroke_style
 	 */
@@ -934,8 +946,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'stroke_style'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select style used to draw strokes<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Select style used to draw strokes
+	 * <h4>Blender Source Code</h4>
 	 * <p> Style for drawing strokes (used to select shader type). </p>
 	 * @see #__DNA__FIELD__stroke_style
 	 */
@@ -952,8 +965,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'fill_style'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select style used to fill strokes<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Select style used to fill strokes
+	 * <h4>Blender Source Code</h4>
 	 * <p> Style for filling areas (used to select shader type). </p>
 	 * @see #__DNA__FIELD__fill_style
 	 */
@@ -970,8 +984,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'fill_style'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select style used to fill strokes<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Select style used to fill strokes
+	 * <h4>Blender Source Code</h4>
 	 * <p> Style for filling areas (used to select shader type). </p>
 	 * @see #__DNA__FIELD__fill_style
 	 */
@@ -988,8 +1003,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'mix_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mix Factor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Mix Factor
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor used to define shader behavior (several uses). </p>
 	 * @see #__DNA__FIELD__mix_factor
 	 */
@@ -1006,8 +1022,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'mix_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mix Factor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Mix Factor
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor used to define shader behavior (several uses). </p>
 	 * @see #__DNA__FIELD__mix_factor
 	 */
@@ -1024,7 +1041,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'gradient_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angle used for gradients orientation. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1043,7 +1060,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'gradient_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angle used for gradients orientation. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1062,7 +1079,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'gradient_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radius for radial gradients. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1081,7 +1098,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'gradient_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radius for radial gradients. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1140,7 +1157,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'gradient_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Uv coordinates scale. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1163,7 +1180,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'gradient_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Uv coordinates scale. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1190,7 +1207,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'gradient_shift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to shift filling in 2d space. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1213,7 +1230,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'gradient_shift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to shift filling in 2d space. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1240,8 +1257,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'texture_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Texture Orientation Angle<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Texture Orientation Angle
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angle used for texture orientation. </p>
 	 * @see #__DNA__FIELD__texture_angle
 	 */
@@ -1258,8 +1276,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'texture_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Texture Orientation Angle<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Texture Orientation Angle
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angle used for texture orientation. </p>
 	 * @see #__DNA__FIELD__texture_angle
 	 */
@@ -1276,8 +1295,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'texture_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Scale Factor for Texture<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Scale Factor for Texture
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture scale (separated of uv scale). </p>
 	 * @see #__DNA__FIELD__texture_scale
 	 */
@@ -1298,8 +1318,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'texture_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Scale Factor for Texture<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Scale Factor for Texture
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture scale (separated of uv scale). </p>
 	 * @see #__DNA__FIELD__texture_scale
 	 */
@@ -1324,8 +1345,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'texture_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Shift Texture in 2d Space<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Shift Texture in 2d Space
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to shift texture in 2d space. </p>
 	 * @see #__DNA__FIELD__texture_offset
 	 */
@@ -1346,8 +1368,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'texture_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Shift Texture in 2d Space<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Shift Texture in 2d Space
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to shift texture in 2d space. </p>
 	 * @see #__DNA__FIELD__texture_offset
 	 */
@@ -1372,7 +1395,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'texture_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture opacity. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1391,7 +1414,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'texture_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture opacity. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1410,7 +1433,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'texture_pixsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pixel size for uv along the stroke. </p>
 	 * @see #__DNA__FIELD__texture_pixsize
 	 */
@@ -1427,7 +1450,7 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'texture_pixsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pixel size for uv along the stroke. </p>
 	 * @see #__DNA__FIELD__texture_pixsize
 	 */
@@ -1444,8 +1467,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select line type for strokes<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Select line type for strokes
+	 * <h4>Blender Source Code</h4>
 	 * <p> Drawing mode (line or dots). </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -1462,8 +1486,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select line type for strokes<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Select line type for strokes
+	 * <h4>Blender Source Code</h4>
 	 * <p> Drawing mode (line or dots). </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -1480,8 +1505,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'gradient_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select type of gradient used to fill strokes<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Select type of gradient used to fill strokes
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of gradient. </p>
 	 * @see #__DNA__FIELD__gradient_type
 	 */
@@ -1498,8 +1524,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'gradient_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select type of gradient used to fill strokes<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Select type of gradient used to fill strokes
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of gradient. </p>
 	 * @see #__DNA__FIELD__gradient_type
 	 */
@@ -1516,8 +1543,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'mix_stroke_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mix Stroke Factor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Mix Stroke Factor
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor used to mix texture and stroke color. </p>
 	 * @see #__DNA__FIELD__mix_stroke_factor
 	 */
@@ -1534,8 +1562,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'mix_stroke_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mix Stroke Factor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Mix Stroke Factor
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor used to mix texture and stroke color. </p>
 	 * @see #__DNA__FIELD__mix_stroke_factor
 	 */
@@ -1552,8 +1581,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'alignment_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Defines how align Dots and Boxes with drawing path and object rotation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Defines how align Dots and Boxes with drawing path and object rotation
+	 * <h4>Blender Source Code</h4>
 	 * <p> Mode used to align Dots and Boxes with stroke drawing path and object rotation </p>
 	 * @see #__DNA__FIELD__alignment_mode
 	 */
@@ -1570,8 +1600,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'alignment_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Defines how align Dots and Boxes with drawing path and object rotation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Defines how align Dots and Boxes with drawing path and object rotation
+	 * <h4>Blender Source Code</h4>
 	 * <p> Mode used to align Dots and Boxes with stroke drawing path and object rotation </p>
 	 * @see #__DNA__FIELD__alignment_mode
 	 */
@@ -1588,8 +1619,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'alignment_rotation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Additional rotation applied to dots and square texture of strokes. Only applies in texture shading mode<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Additional rotation applied to dots and square texture of strokes. Only applies in texture shading mode
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation for texture for Dots and Squares. </p>
 	 * @see #__DNA__FIELD__alignment_rotation
 	 */
@@ -1606,8 +1638,9 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'alignment_rotation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Additional rotation applied to dots and square texture of strokes. Only applies in texture shading mode<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Additional rotation applied to dots and square texture of strokes. Only applies in texture shading mode
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation for texture for Dots and Squares. </p>
 	 * @see #__DNA__FIELD__alignment_rotation
 	 */

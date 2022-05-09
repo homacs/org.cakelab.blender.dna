@@ -53,7 +53,7 @@ public class Tex extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -276,7 +276,7 @@ public class Tex extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mg_H'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> newnoise: musgrave parameters </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -379,7 +379,7 @@ public class Tex extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dist_amount'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> newnoise: distorted noise amount, musgrave & voronoi output scale </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -422,7 +422,7 @@ public class Tex extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vn_w1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> newnoise: voronoi nearest neighbor weights, minkovsky exponent, distance metric & color type </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -565,7 +565,7 @@ public class Tex extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'noisedepth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> noisedepth MUST be <= 30 else we get floating point exceptions </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -608,7 +608,7 @@ public class Tex extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'noisebasis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> newnoise: noisebasis type for clouds/marble/etc, noisebasis2 only used for distorted noise </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -831,7 +831,7 @@ public class Tex extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'afmax'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> anisotropic filter maximum value, ewa -> max eccentricity, feline -> max probes </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -914,7 +914,7 @@ public class Tex extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> variables disabled, moved to struct iuser </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1117,7 +1117,7 @@ public class Tex extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> old animation system, deprecated for 2.5 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1286,7 +1286,7 @@ public class Tex extends CFacade {
 	/**
 	 * Get method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -1306,7 +1306,7 @@ public class Tex extends CFacade {
 	/**
 	 * Set method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -1616,7 +1616,7 @@ public class Tex extends CFacade {
 	/**
 	 * Get method for struct member 'mg_H'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> newnoise: musgrave parameters </p>
 	 * @see #__DNA__FIELD__mg_H
 	 */
@@ -1633,7 +1633,7 @@ public class Tex extends CFacade {
 	/**
 	 * Set method for struct member 'mg_H'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> newnoise: musgrave parameters </p>
 	 * @see #__DNA__FIELD__mg_H
 	 */
@@ -1762,7 +1762,7 @@ public class Tex extends CFacade {
 	/**
 	 * Get method for struct member 'dist_amount'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> newnoise: distorted noise amount, musgrave & voronoi output scale </p>
 	 * @see #__DNA__FIELD__dist_amount
 	 */
@@ -1779,7 +1779,7 @@ public class Tex extends CFacade {
 	/**
 	 * Set method for struct member 'dist_amount'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> newnoise: distorted noise amount, musgrave & voronoi output scale </p>
 	 * @see #__DNA__FIELD__dist_amount
 	 */
@@ -1824,7 +1824,7 @@ public class Tex extends CFacade {
 	/**
 	 * Get method for struct member 'vn_w1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> newnoise: voronoi nearest neighbor weights, minkovsky exponent, distance metric & color type </p>
 	 * @see #__DNA__FIELD__vn_w1
 	 */
@@ -1841,7 +1841,7 @@ public class Tex extends CFacade {
 	/**
 	 * Set method for struct member 'vn_w1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> newnoise: voronoi nearest neighbor weights, minkovsky exponent, distance metric & color type </p>
 	 * @see #__DNA__FIELD__vn_w1
 	 */
@@ -2026,7 +2026,7 @@ public class Tex extends CFacade {
 	/**
 	 * Get method for struct member 'noisedepth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> noisedepth MUST be <= 30 else we get floating point exceptions </p>
 	 * @see #__DNA__FIELD__noisedepth
 	 */
@@ -2043,7 +2043,7 @@ public class Tex extends CFacade {
 	/**
 	 * Set method for struct member 'noisedepth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> noisedepth MUST be <= 30 else we get floating point exceptions </p>
 	 * @see #__DNA__FIELD__noisedepth
 	 */
@@ -2088,7 +2088,7 @@ public class Tex extends CFacade {
 	/**
 	 * Get method for struct member 'noisebasis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> newnoise: noisebasis type for clouds/marble/etc, noisebasis2 only used for distorted noise </p>
 	 * @see #__DNA__FIELD__noisebasis
 	 */
@@ -2105,7 +2105,7 @@ public class Tex extends CFacade {
 	/**
 	 * Set method for struct member 'noisebasis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> newnoise: noisebasis type for clouds/marble/etc, noisebasis2 only used for distorted noise </p>
 	 * @see #__DNA__FIELD__noisebasis
 	 */
@@ -2402,7 +2402,7 @@ public class Tex extends CFacade {
 	/**
 	 * Get method for struct member 'afmax'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> anisotropic filter maximum value, ewa -> max eccentricity, feline -> max probes </p>
 	 * @see #__DNA__FIELD__afmax
 	 */
@@ -2419,7 +2419,7 @@ public class Tex extends CFacade {
 	/**
 	 * Set method for struct member 'afmax'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> anisotropic filter maximum value, ewa -> max eccentricity, feline -> max probes </p>
 	 * @see #__DNA__FIELD__afmax
 	 */
@@ -2520,7 +2520,7 @@ public class Tex extends CFacade {
 	/**
 	 * Get method for struct member '_pad0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> variables disabled, moved to struct iuser </p>
 	 * @see #__DNA__FIELD___pad0
 	 */
@@ -2537,7 +2537,7 @@ public class Tex extends CFacade {
 	/**
 	 * Set method for struct member '_pad0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> variables disabled, moved to struct iuser </p>
 	 * @see #__DNA__FIELD___pad0
 	 */
@@ -2830,7 +2830,7 @@ public class Tex extends CFacade {
 	/**
 	 * Get method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> old animation system, deprecated for 2.5 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -2852,7 +2852,7 @@ public class Tex extends CFacade {
 	/**
 	 * Set method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> old animation system, deprecated for 2.5 
 	 * @deprecated
 	 *  Deprecated</p>

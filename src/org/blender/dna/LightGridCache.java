@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'LightGridCache'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Must match GridData. </p>
  */
 
@@ -54,7 +55,7 @@ public class LightGridCache extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset to the first irradiance sample in the pool. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -137,7 +138,7 @@ public class LightGridCache extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'increment_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link World}  space vector between 2 opposite cells. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -389,7 +390,7 @@ public class LightGridCache extends CFacade {
 	/**
 	 * Get method for struct member 'resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset to the first irradiance sample in the pool. </p>
 	 * @see #__DNA__FIELD__resolution
 	 */
@@ -410,7 +411,7 @@ public class LightGridCache extends CFacade {
 	/**
 	 * Set method for struct member 'resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset to the first irradiance sample in the pool. </p>
 	 * @see #__DNA__FIELD__resolution
 	 */
@@ -531,7 +532,7 @@ public class LightGridCache extends CFacade {
 	/**
 	 * Get method for struct member 'increment_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link World}  space vector between 2 opposite cells. </p>
 	 * @see #__DNA__FIELD__increment_x
 	 */
@@ -552,7 +553,7 @@ public class LightGridCache extends CFacade {
 	/**
 	 * Set method for struct member 'increment_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link World}  space vector between 2 opposite cells. </p>
 	 * @see #__DNA__FIELD__increment_x
 	 */

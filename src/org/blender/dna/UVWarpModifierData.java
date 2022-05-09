@@ -113,7 +113,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for rotate/scale. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -196,7 +196,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object_src'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Source. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -219,7 +219,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bone_src'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -242,7 +242,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object_dst'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Target. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -265,7 +265,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bone_dst'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -288,7 +288,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -311,7 +311,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -462,7 +462,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for rotate/scale. </p>
 	 * @see #__DNA__FIELD__center
 	 */
@@ -483,7 +483,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for rotate/scale. </p>
 	 * @see #__DNA__FIELD__center
 	 */
@@ -616,7 +616,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'object_src'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Source. </p>
 	 * @see #__DNA__FIELD__object_src
 	 */
@@ -636,7 +636,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'object_src'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Source. </p>
 	 * @see #__DNA__FIELD__object_src
 	 */
@@ -654,7 +654,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'bone_src'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__bone_src
 	 */
@@ -675,7 +675,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'bone_src'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__bone_src
 	 */
@@ -700,7 +700,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'object_dst'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Target. </p>
 	 * @see #__DNA__FIELD__object_dst
 	 */
@@ -720,7 +720,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'object_dst'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Target. </p>
 	 * @see #__DNA__FIELD__object_dst
 	 */
@@ -738,7 +738,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'bone_dst'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__bone_dst
 	 */
@@ -759,7 +759,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'bone_dst'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__bone_dst
 	 */
@@ -784,7 +784,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'vgroup_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgroup_name
 	 */
@@ -805,7 +805,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'vgroup_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgroup_name
 	 */
@@ -830,7 +830,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
@@ -851,7 +851,7 @@ public class UVWarpModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */

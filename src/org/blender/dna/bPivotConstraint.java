@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bPivotConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Pivot Constraint </p>
  */
 
@@ -34,7 +35,7 @@ public class bPivotConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pivot Point: Either target object + offset, or just offset is used Target object (optional). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +58,7 @@ public class bPivotConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Subtarget name (optional), MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +81,7 @@ public class bPivotConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset from the target to use, regardless of whether it exists. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -103,7 +104,7 @@ public class bPivotConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rotAxis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation-driven activation: This option provides easier one-stop setups for foot-rolls. Rotation axes to consider for this (ePivotConstraint_Axis ). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,7 +127,7 @@ public class bPivotConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General flags ePivotConstraint_Flag . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -157,7 +158,7 @@ public class bPivotConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pivot Point: Either target object + offset, or just offset is used Target object (optional). </p>
 	 * @see #__DNA__FIELD__tar
 	 */
@@ -177,7 +178,7 @@ public class bPivotConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pivot Point: Either target object + offset, or just offset is used Target object (optional). </p>
 	 * @see #__DNA__FIELD__tar
 	 */
@@ -195,7 +196,7 @@ public class bPivotConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Subtarget name (optional), MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
@@ -216,7 +217,7 @@ public class bPivotConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Subtarget name (optional), MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
@@ -241,7 +242,7 @@ public class bPivotConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset from the target to use, regardless of whether it exists. </p>
 	 * @see #__DNA__FIELD__offset
 	 */
@@ -262,7 +263,7 @@ public class bPivotConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset from the target to use, regardless of whether it exists. </p>
 	 * @see #__DNA__FIELD__offset
 	 */
@@ -287,7 +288,7 @@ public class bPivotConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'rotAxis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation-driven activation: This option provides easier one-stop setups for foot-rolls. Rotation axes to consider for this (ePivotConstraint_Axis ). </p>
 	 * @see #__DNA__FIELD__rotAxis
 	 */
@@ -304,7 +305,7 @@ public class bPivotConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'rotAxis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation-driven activation: This option provides easier one-stop setups for foot-rolls. Rotation axes to consider for this (ePivotConstraint_Axis ). </p>
 	 * @see #__DNA__FIELD__rotAxis
 	 */
@@ -321,7 +322,7 @@ public class bPivotConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General flags ePivotConstraint_Flag . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -338,7 +339,7 @@ public class bPivotConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General flags ePivotConstraint_Flag . </p>
 	 * @see #__DNA__FIELD__flag
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'wmKeyConfigPref'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> This is similar to addon-preferences, however unlike add-ons key-config's aren't saved to disk.</p><p>{@link wmKeyConfigPref}  is written to DNA, #wmKeyConfigPrefType_Runtime has the RNA type. </p>
  */
 
@@ -74,7 +75,7 @@ public class wmKeyConfigPref extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unique name. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -189,7 +190,7 @@ public class wmKeyConfigPref extends CFacade {
 	/**
 	 * Get method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unique name. </p>
 	 * @see #__DNA__FIELD__idname
 	 */
@@ -210,7 +211,7 @@ public class wmKeyConfigPref extends CFacade {
 	/**
 	 * Set method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unique name. </p>
 	 * @see #__DNA__FIELD__idname
 	 */

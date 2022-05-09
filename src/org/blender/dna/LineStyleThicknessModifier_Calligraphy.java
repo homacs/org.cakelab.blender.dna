@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'LineStyleThicknessModifier_Calligraphy'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Calligraphic thickness modifier </p>
  */
 
@@ -94,8 +95,9 @@ public class LineStyleThicknessModifier_Calligraphy extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'orientation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Angle of the main direction<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Angle of the main direction
+	 * <h4>Blender Source Code</h4>
 	 * <p> In radians. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -238,8 +240,9 @@ public class LineStyleThicknessModifier_Calligraphy extends CFacade {
 	/**
 	 * Get method for struct member 'orientation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Angle of the main direction<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Angle of the main direction
+	 * <h4>Blender Source Code</h4>
 	 * <p> In radians. </p>
 	 * @see #__DNA__FIELD__orientation
 	 */
@@ -256,8 +259,9 @@ public class LineStyleThicknessModifier_Calligraphy extends CFacade {
 	/**
 	 * Set method for struct member 'orientation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Angle of the main direction<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Angle of the main direction
+	 * <h4>Blender Source Code</h4>
 	 * <p> In radians. </p>
 	 * @see #__DNA__FIELD__orientation
 	 */

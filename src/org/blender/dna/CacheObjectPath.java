@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'CacheObjectPath'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> UNUSED Representation of an object's path inside the archive. Note that this is not a file path. </p>
  */
 
@@ -74,7 +75,7 @@ public class CacheObjectPath extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Object path
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,7 +170,7 @@ public class CacheObjectPath extends CFacade {
 	/**
 	 * Get method for struct member 'path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Object path
 	 * @see #__DNA__FIELD__path
 	 */
@@ -190,7 +191,7 @@ public class CacheObjectPath extends CFacade {
 	/**
 	 * Set method for struct member 'path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Object path
 	 * @see #__DNA__FIELD__path
 	 */

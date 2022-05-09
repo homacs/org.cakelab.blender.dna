@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'AviCodecData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  {@link Scene}  Data <hr/> 
  *  Output Format Data </p>
@@ -36,7 +37,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lpFormat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Save format. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -59,7 +60,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lpParms'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Compressor options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -82,7 +83,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cbFormat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of lpFormat buffer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -105,7 +106,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cbParms'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of lpParms buffer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -128,7 +129,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fccType'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stream type, for consistency. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -151,7 +152,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fccHandler'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Compressor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -174,7 +175,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dwKeyFrameEvery'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keyframe rate. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -197,7 +198,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dwQuality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Compress quality 0-10,000. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -220,7 +221,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dwBytesPerSecond'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bytes per second. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -243,7 +244,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dwFlags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags... see below. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -266,7 +267,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dwInterleaveEvery'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For non-video streams only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -337,7 +338,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Get method for struct member 'lpFormat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Save format. </p>
 	 * @see #__DNA__FIELD__lpFormat
 	 */
@@ -357,7 +358,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Set method for struct member 'lpFormat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Save format. </p>
 	 * @see #__DNA__FIELD__lpFormat
 	 */
@@ -375,7 +376,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Get method for struct member 'lpParms'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Compressor options. </p>
 	 * @see #__DNA__FIELD__lpParms
 	 */
@@ -395,7 +396,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Set method for struct member 'lpParms'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Compressor options. </p>
 	 * @see #__DNA__FIELD__lpParms
 	 */
@@ -413,7 +414,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Get method for struct member 'cbFormat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of lpFormat buffer. </p>
 	 * @see #__DNA__FIELD__cbFormat
 	 */
@@ -430,7 +431,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Set method for struct member 'cbFormat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of lpFormat buffer. </p>
 	 * @see #__DNA__FIELD__cbFormat
 	 */
@@ -447,7 +448,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Get method for struct member 'cbParms'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of lpParms buffer. </p>
 	 * @see #__DNA__FIELD__cbParms
 	 */
@@ -464,7 +465,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Set method for struct member 'cbParms'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of lpParms buffer. </p>
 	 * @see #__DNA__FIELD__cbParms
 	 */
@@ -481,7 +482,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Get method for struct member 'fccType'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stream type, for consistency. </p>
 	 * @see #__DNA__FIELD__fccType
 	 */
@@ -498,7 +499,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Set method for struct member 'fccType'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stream type, for consistency. </p>
 	 * @see #__DNA__FIELD__fccType
 	 */
@@ -515,7 +516,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Get method for struct member 'fccHandler'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Compressor. </p>
 	 * @see #__DNA__FIELD__fccHandler
 	 */
@@ -532,7 +533,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Set method for struct member 'fccHandler'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Compressor. </p>
 	 * @see #__DNA__FIELD__fccHandler
 	 */
@@ -549,7 +550,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Get method for struct member 'dwKeyFrameEvery'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keyframe rate. </p>
 	 * @see #__DNA__FIELD__dwKeyFrameEvery
 	 */
@@ -566,7 +567,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Set method for struct member 'dwKeyFrameEvery'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keyframe rate. </p>
 	 * @see #__DNA__FIELD__dwKeyFrameEvery
 	 */
@@ -583,7 +584,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Get method for struct member 'dwQuality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Compress quality 0-10,000. </p>
 	 * @see #__DNA__FIELD__dwQuality
 	 */
@@ -600,7 +601,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Set method for struct member 'dwQuality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Compress quality 0-10,000. </p>
 	 * @see #__DNA__FIELD__dwQuality
 	 */
@@ -617,7 +618,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Get method for struct member 'dwBytesPerSecond'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bytes per second. </p>
 	 * @see #__DNA__FIELD__dwBytesPerSecond
 	 */
@@ -634,7 +635,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Set method for struct member 'dwBytesPerSecond'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bytes per second. </p>
 	 * @see #__DNA__FIELD__dwBytesPerSecond
 	 */
@@ -651,7 +652,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Get method for struct member 'dwFlags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags... see below. </p>
 	 * @see #__DNA__FIELD__dwFlags
 	 */
@@ -668,7 +669,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Set method for struct member 'dwFlags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags... see below. </p>
 	 * @see #__DNA__FIELD__dwFlags
 	 */
@@ -685,7 +686,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Get method for struct member 'dwInterleaveEvery'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For non-video streams only. </p>
 	 * @see #__DNA__FIELD__dwInterleaveEvery
 	 */
@@ -702,7 +703,7 @@ public class AviCodecData extends CFacade {
 	/**
 	 * Set method for struct member 'dwInterleaveEvery'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For non-video streams only. </p>
 	 * @see #__DNA__FIELD__dwInterleaveEvery
 	 */

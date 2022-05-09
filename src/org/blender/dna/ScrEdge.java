@@ -113,7 +113,7 @@ public class ScrEdge extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'border'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1 when at edge of screen. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -312,7 +312,7 @@ public class ScrEdge extends CFacade {
 	/**
 	 * Get method for struct member 'border'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1 when at edge of screen. </p>
 	 * @see #__DNA__FIELD__border
 	 */
@@ -329,7 +329,7 @@ public class ScrEdge extends CFacade {
 	/**
 	 * Set method for struct member 'border'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1 when at edge of screen. </p>
 	 * @see #__DNA__FIELD__border
 	 */

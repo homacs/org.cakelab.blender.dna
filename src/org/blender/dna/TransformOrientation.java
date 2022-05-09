@@ -73,8 +73,9 @@ public class TransformOrientation extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of the custom transform orientation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of the custom transform orientation
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -209,8 +210,9 @@ public class TransformOrientation extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of the custom transform orientation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of the custom transform orientation
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -231,8 +233,9 @@ public class TransformOrientation extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of the custom transform orientation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of the custom transform orientation
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */

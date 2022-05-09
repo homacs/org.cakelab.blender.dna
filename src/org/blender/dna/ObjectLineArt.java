@@ -32,7 +32,7 @@ public class ObjectLineArt extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'usage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How to use this object in line art calculation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,8 +75,9 @@ public class ObjectLineArt extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'crease_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Angles smaller than this will be treated as creases<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Angles smaller than this will be treated as creases
+	 * <h4>Blender Source Code</h4>
 	 * <p> if OBJECT_LRT_OWN_CREASE is set </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -107,7 +108,7 @@ public class ObjectLineArt extends CFacade {
 	/**
 	 * Get method for struct member 'usage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How to use this object in line art calculation
 	 * @see #__DNA__FIELD__usage
 	 */
@@ -124,7 +125,7 @@ public class ObjectLineArt extends CFacade {
 	/**
 	 * Set method for struct member 'usage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How to use this object in line art calculation
 	 * @see #__DNA__FIELD__usage
 	 */
@@ -169,8 +170,9 @@ public class ObjectLineArt extends CFacade {
 	/**
 	 * Get method for struct member 'crease_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Angles smaller than this will be treated as creases<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Angles smaller than this will be treated as creases
+	 * <h4>Blender Source Code</h4>
 	 * <p> if OBJECT_LRT_OWN_CREASE is set </p>
 	 * @see #__DNA__FIELD__crease_threshold
 	 */
@@ -187,8 +189,9 @@ public class ObjectLineArt extends CFacade {
 	/**
 	 * Set method for struct member 'crease_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Angles smaller than this will be treated as creases<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Angles smaller than this will be treated as creases
+	 * <h4>Blender Source Code</h4>
 	 * <p> if OBJECT_LRT_OWN_CREASE is set </p>
 	 * @see #__DNA__FIELD__crease_threshold
 	 */

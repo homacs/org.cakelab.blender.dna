@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'wmWindow'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> IME is win32 and apple only! The saveable part, the rest of the data is local in GHOST. </p>
  */
 
@@ -74,7 +75,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ghostwin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Don't want to include ghost.h stuff. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -97,7 +98,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpuctx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Don't want to include gpu stuff. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -120,7 +121,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parent window. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -143,7 +144,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scene'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active scene displayed in this window. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -166,7 +167,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'new_scene'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temporary when switching. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -189,7 +190,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'view_layer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active view layer displayed in this window. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -252,7 +253,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'screen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -277,7 +278,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'winid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Winid also in screens, is for retrieving this window after read. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -300,7 +301,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'posx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Window coords. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -383,7 +384,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'windowstate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Borderless, full. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -406,7 +407,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set to 1 if an active window, for quick rejects. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -429,7 +430,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Current mouse cursor type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -452,7 +453,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lastcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Previous cursor when setting modal one. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -475,7 +476,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'modalcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The current modal cursor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -498,7 +499,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'grabcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cursor grab mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -521,7 +522,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'addmousemove'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Internal: tag this for extra mouse-move event, makes cursors/buttons active on UI switching. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -564,7 +565,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'event_queue_check_click'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Track the state of the event queue, these store the state that needs to be kept between handling events in the queue. Enable when #KM_PRESS events are not handled (keyboard/mouse-buttons only). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -587,7 +588,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'event_queue_check_drag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Enable when #KM_PRESS events are not handled (keyboard/mouse-buttons only). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -610,7 +611,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'event_queue_check_drag_handled'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Enable when the drag was handled, to avoid mouse-motion continually triggering drag events which are not handled but add overhead to gizmo handling (for example), see T87511. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -653,7 +654,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pie_event_type_lock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Internal, lock pie creation from this event until released. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -676,7 +677,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pie_event_type_last'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Exception to the above rule for nested pies, store last pie event for operators that spawn a new pie right after destruction of last pie. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -699,7 +700,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'eventstate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage for event system. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -722,7 +723,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tweak'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Internal for wm_operators.c. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -745,7 +746,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ime_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Input Method Editor data - complex character input (especially for Asian character input) Currently WIN32 and APPLE, runtime-only data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -768,7 +769,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'event_queue'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> All events #wmEvent (ghost level events were handled). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -791,7 +792,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'handlers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Window+screen handlers, handled last. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -814,7 +815,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'modalhandlers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Priority handlers, handled first. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -837,7 +838,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gesture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gesture stuff. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -860,7 +861,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'stereo3d_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Properties for stereoscopic displays. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -883,7 +884,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'drawcalls'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> custom drawing callbacks </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -906,7 +907,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cursor_keymap_status'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Private runtime info to show text in the status bar. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1001,7 +1002,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'ghostwin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Don't want to include ghost.h stuff. </p>
 	 * @see #__DNA__FIELD__ghostwin
 	 */
@@ -1021,7 +1022,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'ghostwin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Don't want to include ghost.h stuff. </p>
 	 * @see #__DNA__FIELD__ghostwin
 	 */
@@ -1039,7 +1040,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'gpuctx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Don't want to include gpu stuff. </p>
 	 * @see #__DNA__FIELD__gpuctx
 	 */
@@ -1059,7 +1060,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'gpuctx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Don't want to include gpu stuff. </p>
 	 * @see #__DNA__FIELD__gpuctx
 	 */
@@ -1077,7 +1078,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parent window. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -1097,7 +1098,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parent window. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -1115,7 +1116,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'scene'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active scene displayed in this window. </p>
 	 * @see #__DNA__FIELD__scene
 	 */
@@ -1135,7 +1136,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'scene'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active scene displayed in this window. </p>
 	 * @see #__DNA__FIELD__scene
 	 */
@@ -1153,7 +1154,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'new_scene'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temporary when switching. </p>
 	 * @see #__DNA__FIELD__new_scene
 	 */
@@ -1173,7 +1174,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'new_scene'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temporary when switching. </p>
 	 * @see #__DNA__FIELD__new_scene
 	 */
@@ -1191,7 +1192,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'view_layer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active view layer displayed in this window. </p>
 	 * @see #__DNA__FIELD__view_layer_name
 	 */
@@ -1212,7 +1213,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'view_layer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active view layer displayed in this window. </p>
 	 * @see #__DNA__FIELD__view_layer_name
 	 */
@@ -1305,7 +1306,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'screen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1327,7 +1328,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'screen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1347,7 +1348,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'winid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Winid also in screens, is for retrieving this window after read. </p>
 	 * @see #__DNA__FIELD__winid
 	 */
@@ -1364,7 +1365,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'winid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Winid also in screens, is for retrieving this window after read. </p>
 	 * @see #__DNA__FIELD__winid
 	 */
@@ -1381,7 +1382,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'posx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Window coords. </p>
 	 * @see #__DNA__FIELD__posx
 	 */
@@ -1398,7 +1399,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'posx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Window coords. </p>
 	 * @see #__DNA__FIELD__posx
 	 */
@@ -1499,7 +1500,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'windowstate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Borderless, full. </p>
 	 * @see #__DNA__FIELD__windowstate
 	 */
@@ -1516,7 +1517,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'windowstate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Borderless, full. </p>
 	 * @see #__DNA__FIELD__windowstate
 	 */
@@ -1533,7 +1534,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set to 1 if an active window, for quick rejects. </p>
 	 * @see #__DNA__FIELD__active
 	 */
@@ -1550,7 +1551,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set to 1 if an active window, for quick rejects. </p>
 	 * @see #__DNA__FIELD__active
 	 */
@@ -1567,7 +1568,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Current mouse cursor type. </p>
 	 * @see #__DNA__FIELD__cursor
 	 */
@@ -1584,7 +1585,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Current mouse cursor type. </p>
 	 * @see #__DNA__FIELD__cursor
 	 */
@@ -1601,7 +1602,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'lastcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Previous cursor when setting modal one. </p>
 	 * @see #__DNA__FIELD__lastcursor
 	 */
@@ -1618,7 +1619,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'lastcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Previous cursor when setting modal one. </p>
 	 * @see #__DNA__FIELD__lastcursor
 	 */
@@ -1635,7 +1636,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'modalcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The current modal cursor. </p>
 	 * @see #__DNA__FIELD__modalcursor
 	 */
@@ -1652,7 +1653,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'modalcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The current modal cursor. </p>
 	 * @see #__DNA__FIELD__modalcursor
 	 */
@@ -1669,7 +1670,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'grabcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cursor grab mode. </p>
 	 * @see #__DNA__FIELD__grabcursor
 	 */
@@ -1686,7 +1687,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'grabcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cursor grab mode. </p>
 	 * @see #__DNA__FIELD__grabcursor
 	 */
@@ -1703,7 +1704,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'addmousemove'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Internal: tag this for extra mouse-move event, makes cursors/buttons active on UI switching. </p>
 	 * @see #__DNA__FIELD__addmousemove
 	 */
@@ -1720,7 +1721,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'addmousemove'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Internal: tag this for extra mouse-move event, makes cursors/buttons active on UI switching. </p>
 	 * @see #__DNA__FIELD__addmousemove
 	 */
@@ -1765,7 +1766,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'event_queue_check_click'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Track the state of the event queue, these store the state that needs to be kept between handling events in the queue. Enable when #KM_PRESS events are not handled (keyboard/mouse-buttons only). </p>
 	 * @see #__DNA__FIELD__event_queue_check_click
 	 */
@@ -1782,7 +1783,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'event_queue_check_click'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Track the state of the event queue, these store the state that needs to be kept between handling events in the queue. Enable when #KM_PRESS events are not handled (keyboard/mouse-buttons only). </p>
 	 * @see #__DNA__FIELD__event_queue_check_click
 	 */
@@ -1799,7 +1800,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'event_queue_check_drag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Enable when #KM_PRESS events are not handled (keyboard/mouse-buttons only). </p>
 	 * @see #__DNA__FIELD__event_queue_check_drag
 	 */
@@ -1816,7 +1817,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'event_queue_check_drag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Enable when #KM_PRESS events are not handled (keyboard/mouse-buttons only). </p>
 	 * @see #__DNA__FIELD__event_queue_check_drag
 	 */
@@ -1833,7 +1834,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'event_queue_check_drag_handled'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Enable when the drag was handled, to avoid mouse-motion continually triggering drag events which are not handled but add overhead to gizmo handling (for example), see T87511. </p>
 	 * @see #__DNA__FIELD__event_queue_check_drag_handled
 	 */
@@ -1850,7 +1851,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'event_queue_check_drag_handled'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Enable when the drag was handled, to avoid mouse-motion continually triggering drag events which are not handled but add overhead to gizmo handling (for example), see T87511. </p>
 	 * @see #__DNA__FIELD__event_queue_check_drag_handled
 	 */
@@ -1907,7 +1908,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'pie_event_type_lock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Internal, lock pie creation from this event until released. </p>
 	 * @see #__DNA__FIELD__pie_event_type_lock
 	 */
@@ -1924,7 +1925,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'pie_event_type_lock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Internal, lock pie creation from this event until released. </p>
 	 * @see #__DNA__FIELD__pie_event_type_lock
 	 */
@@ -1941,7 +1942,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'pie_event_type_last'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Exception to the above rule for nested pies, store last pie event for operators that spawn a new pie right after destruction of last pie. </p>
 	 * @see #__DNA__FIELD__pie_event_type_last
 	 */
@@ -1958,7 +1959,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'pie_event_type_last'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Exception to the above rule for nested pies, store last pie event for operators that spawn a new pie right after destruction of last pie. </p>
 	 * @see #__DNA__FIELD__pie_event_type_last
 	 */
@@ -1975,7 +1976,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'eventstate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage for event system. </p>
 	 * @see #__DNA__FIELD__eventstate
 	 */
@@ -1995,7 +1996,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'eventstate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage for event system. </p>
 	 * @see #__DNA__FIELD__eventstate
 	 */
@@ -2013,7 +2014,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'tweak'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Internal for wm_operators.c. </p>
 	 * @see #__DNA__FIELD__tweak
 	 */
@@ -2033,7 +2034,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'tweak'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Internal for wm_operators.c. </p>
 	 * @see #__DNA__FIELD__tweak
 	 */
@@ -2051,7 +2052,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'ime_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Input Method Editor data - complex character input (especially for Asian character input) Currently WIN32 and APPLE, runtime-only data. </p>
 	 * @see #__DNA__FIELD__ime_data
 	 */
@@ -2071,7 +2072,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'ime_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Input Method Editor data - complex character input (especially for Asian character input) Currently WIN32 and APPLE, runtime-only data. </p>
 	 * @see #__DNA__FIELD__ime_data
 	 */
@@ -2089,7 +2090,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'event_queue'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> All events #wmEvent (ghost level events were handled). </p>
 	 * @see #__DNA__FIELD__event_queue
 	 */
@@ -2106,7 +2107,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'event_queue'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> All events #wmEvent (ghost level events were handled). </p>
 	 * @see #__DNA__FIELD__event_queue
 	 */
@@ -2131,7 +2132,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'handlers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Window+screen handlers, handled last. </p>
 	 * @see #__DNA__FIELD__handlers
 	 */
@@ -2148,7 +2149,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'handlers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Window+screen handlers, handled last. </p>
 	 * @see #__DNA__FIELD__handlers
 	 */
@@ -2173,7 +2174,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'modalhandlers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Priority handlers, handled first. </p>
 	 * @see #__DNA__FIELD__modalhandlers
 	 */
@@ -2190,7 +2191,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'modalhandlers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Priority handlers, handled first. </p>
 	 * @see #__DNA__FIELD__modalhandlers
 	 */
@@ -2215,7 +2216,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'gesture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gesture stuff. </p>
 	 * @see #__DNA__FIELD__gesture
 	 */
@@ -2232,7 +2233,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'gesture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gesture stuff. </p>
 	 * @see #__DNA__FIELD__gesture
 	 */
@@ -2257,7 +2258,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'stereo3d_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Properties for stereoscopic displays. </p>
 	 * @see #__DNA__FIELD__stereo3d_format
 	 */
@@ -2277,7 +2278,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'stereo3d_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Properties for stereoscopic displays. </p>
 	 * @see #__DNA__FIELD__stereo3d_format
 	 */
@@ -2295,7 +2296,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'drawcalls'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> custom drawing callbacks </p>
 	 * @see #__DNA__FIELD__drawcalls
 	 */
@@ -2312,7 +2313,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'drawcalls'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> custom drawing callbacks </p>
 	 * @see #__DNA__FIELD__drawcalls
 	 */
@@ -2337,7 +2338,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Get method for struct member 'cursor_keymap_status'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Private runtime info to show text in the status bar. </p>
 	 * @see #__DNA__FIELD__cursor_keymap_status
 	 */
@@ -2357,7 +2358,7 @@ public class wmWindow extends CFacade {
 	/**
 	 * Set method for struct member 'cursor_keymap_status'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Private runtime info to show text in the status bar. </p>
 	 * @see #__DNA__FIELD__cursor_keymap_status
 	 */

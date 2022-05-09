@@ -53,8 +53,9 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Material used for filtering effect<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Material used for filtering effect
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -77,7 +78,7 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -100,8 +101,9 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Pass index<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Pass index
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -124,7 +126,7 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -147,8 +149,9 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Layer pass index<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Layer pass index
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -171,7 +174,7 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dash_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset into each stroke before the beginning of  the dashed segment generation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -194,7 +197,7 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -237,7 +240,7 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'segment_active_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Active index in the segment list
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -304,8 +307,9 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Material used for filtering effect<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Material used for filtering effect
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
@@ -325,8 +329,9 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Material used for filtering effect<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Material used for filtering effect
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
@@ -344,7 +349,7 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -365,7 +370,7 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -390,8 +395,9 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Pass index<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Pass index
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
@@ -408,8 +414,9 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Pass index<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Pass index
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
@@ -426,7 +433,7 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -443,7 +450,7 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -460,8 +467,9 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Layer pass index<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Layer pass index
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
@@ -478,8 +486,9 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Layer pass index<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Layer pass index
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
@@ -496,7 +505,7 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'dash_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset into each stroke before the beginning of  the dashed segment generation
 	 * @see #__DNA__FIELD__dash_offset
 	 */
@@ -513,7 +522,7 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'dash_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset into each stroke before the beginning of  the dashed segment generation
 	 * @see #__DNA__FIELD__dash_offset
 	 */
@@ -530,7 +539,7 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__segments
 	 */
@@ -550,7 +559,7 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__segments
 	 */
@@ -596,7 +605,7 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'segment_active_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Active index in the segment list
 	 * @see #__DNA__FIELD__segment_active_index
 	 */
@@ -613,7 +622,7 @@ public class DashGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'segment_active_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Active index in the segment list
 	 * @see #__DNA__FIELD__segment_active_index
 	 */

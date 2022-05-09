@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ParticleEditSettings'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p>Particle  Edit Mode Settings. </p>
  */
 
@@ -134,7 +135,7 @@ public class ParticleEditSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'paintcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -497,7 +498,7 @@ public class ParticleEditSettings extends CFacade {
 	/**
 	 * Get method for struct member 'paintcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. </p>
 	 * @see #__DNA__FIELD__paintcursor
 	 */
@@ -517,7 +518,7 @@ public class ParticleEditSettings extends CFacade {
 	/**
 	 * Set method for struct member 'paintcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. </p>
 	 * @see #__DNA__FIELD__paintcursor
 	 */

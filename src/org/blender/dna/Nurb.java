@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Nurb'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><h2>Note</h2><p>{@link Nurb}  name is misleading, since it can be used for polygons too, also, it should be NURBS ({@link Nurb}  isn't the singular of Nurbs). </p>  name is misleading, since it can be used for polygons too, also, it should be NURBS (Nurb isn't the singular of Nurbs). 
  * 
  * </p>
@@ -36,7 +37,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiple nurbs per curve object are allowed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +100,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mat_nr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index into material list. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -162,7 +163,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pntsu'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of points in the U or V directions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -225,7 +226,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'resolu'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tessellation resolution in the U or V directions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -428,7 +429,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tilt_interp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> KEY_LINEAR, KEY_CARDINAL, KEY_BSPLINE. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -471,7 +472,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'charidx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> only used for dynamically generated Nurbs created from OB_FONT's </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -502,7 +503,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Get method for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiple nurbs per curve object are allowed. </p>
 	 * @see #__DNA__FIELD__next
 	 */
@@ -522,7 +523,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Set method for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiple nurbs per curve object are allowed. </p>
 	 * @see #__DNA__FIELD__next
 	 */
@@ -600,7 +601,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Get method for struct member 'mat_nr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index into material list. </p>
 	 * @see #__DNA__FIELD__mat_nr
 	 */
@@ -617,7 +618,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Set method for struct member 'mat_nr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index into material list. </p>
 	 * @see #__DNA__FIELD__mat_nr
 	 */
@@ -690,7 +691,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Get method for struct member 'pntsu'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of points in the U or V directions. </p>
 	 * @see #__DNA__FIELD__pntsu
 	 */
@@ -707,7 +708,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Set method for struct member 'pntsu'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of points in the U or V directions. </p>
 	 * @see #__DNA__FIELD__pntsu
 	 */
@@ -792,7 +793,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Get method for struct member 'resolu'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tessellation resolution in the U or V directions. </p>
 	 * @see #__DNA__FIELD__resolu
 	 */
@@ -809,7 +810,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Set method for struct member 'resolu'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tessellation resolution in the U or V directions. </p>
 	 * @see #__DNA__FIELD__resolu
 	 */
@@ -1094,7 +1095,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Get method for struct member 'tilt_interp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> KEY_LINEAR, KEY_CARDINAL, KEY_BSPLINE. </p>
 	 * @see #__DNA__FIELD__tilt_interp
 	 */
@@ -1111,7 +1112,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Set method for struct member 'tilt_interp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> KEY_LINEAR, KEY_CARDINAL, KEY_BSPLINE. </p>
 	 * @see #__DNA__FIELD__tilt_interp
 	 */
@@ -1156,7 +1157,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Get method for struct member 'charidx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> only used for dynamically generated Nurbs created from OB_FONT's </p>
 	 * @see #__DNA__FIELD__charidx
 	 */
@@ -1173,7 +1174,7 @@ public class Nurb extends CFacade {
 	/**
 	 * Set method for struct member 'charidx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> only used for dynamically generated Nurbs created from OB_FONT's </p>
 	 * @see #__DNA__FIELD__charidx
 	 */

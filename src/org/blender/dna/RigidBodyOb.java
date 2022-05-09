@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'RigidBodyOb'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> RigidBodyObject (rbo)</p><p> Represents an object participating in a RigidBody sim. This is attached to each object that is currently participating in a sim. </p>
  */
 
@@ -34,7 +35,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General Settings for this {@link RigidBodyOb}  (eRigidBodyOb_Type) role of RigidBody in sim. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +58,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shape'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eRigidBody_Shape) collision shape to use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +81,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eRigidBodyOb_Flag). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -103,7 +104,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'col_groups'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Collision groups that determines which rigid bodies can collide with each other. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,7 +127,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eRigidBody_MeshSource) mesh source for mesh based collision shapes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,7 +170,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Physics Parameters How much object 'weighs' (i.e. absolute 'amount of stuff' it holds). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -192,7 +193,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'friction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Resistance of object to movement. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -215,7 +216,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'restitution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How 'bouncy' object is when it collides. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -238,7 +239,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'margin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tolerance for detecting collisions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -261,7 +262,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lin_damping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Damping for linear velocities. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -284,7 +285,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ang_damping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Damping for angular velocities. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -307,7 +308,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lin_sleep_thresh'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deactivation threshold for linear velocities. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -330,7 +331,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ang_sleep_thresh'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deactivation threshold for angular velocities. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -353,7 +354,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'orn'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rigid body orientation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -376,7 +377,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rigid body position. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -419,7 +420,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shared'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This pointer is shared between all evaluated copies. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -450,7 +451,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General Settings for this {@link RigidBodyOb}  (eRigidBodyOb_Type) role of RigidBody in sim. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -467,7 +468,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General Settings for this {@link RigidBodyOb}  (eRigidBodyOb_Type) role of RigidBody in sim. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -484,7 +485,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Get method for struct member 'shape'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eRigidBody_Shape) collision shape to use. </p>
 	 * @see #__DNA__FIELD__shape
 	 */
@@ -501,7 +502,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Set method for struct member 'shape'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eRigidBody_Shape) collision shape to use. </p>
 	 * @see #__DNA__FIELD__shape
 	 */
@@ -518,7 +519,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eRigidBodyOb_Flag). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -535,7 +536,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eRigidBodyOb_Flag). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -552,7 +553,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Get method for struct member 'col_groups'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Collision groups that determines which rigid bodies can collide with each other. </p>
 	 * @see #__DNA__FIELD__col_groups
 	 */
@@ -569,7 +570,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Set method for struct member 'col_groups'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Collision groups that determines which rigid bodies can collide with each other. </p>
 	 * @see #__DNA__FIELD__col_groups
 	 */
@@ -586,7 +587,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Get method for struct member 'mesh_source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eRigidBody_MeshSource) mesh source for mesh based collision shapes. </p>
 	 * @see #__DNA__FIELD__mesh_source
 	 */
@@ -603,7 +604,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Set method for struct member 'mesh_source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eRigidBody_MeshSource) mesh source for mesh based collision shapes. </p>
 	 * @see #__DNA__FIELD__mesh_source
 	 */
@@ -660,7 +661,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Get method for struct member 'mass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Physics Parameters How much object 'weighs' (i.e. absolute 'amount of stuff' it holds). </p>
 	 * @see #__DNA__FIELD__mass
 	 */
@@ -677,7 +678,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Set method for struct member 'mass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Physics Parameters How much object 'weighs' (i.e. absolute 'amount of stuff' it holds). </p>
 	 * @see #__DNA__FIELD__mass
 	 */
@@ -694,7 +695,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Get method for struct member 'friction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Resistance of object to movement. </p>
 	 * @see #__DNA__FIELD__friction
 	 */
@@ -711,7 +712,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Set method for struct member 'friction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Resistance of object to movement. </p>
 	 * @see #__DNA__FIELD__friction
 	 */
@@ -728,7 +729,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Get method for struct member 'restitution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How 'bouncy' object is when it collides. </p>
 	 * @see #__DNA__FIELD__restitution
 	 */
@@ -745,7 +746,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Set method for struct member 'restitution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How 'bouncy' object is when it collides. </p>
 	 * @see #__DNA__FIELD__restitution
 	 */
@@ -762,7 +763,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Get method for struct member 'margin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tolerance for detecting collisions. </p>
 	 * @see #__DNA__FIELD__margin
 	 */
@@ -779,7 +780,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Set method for struct member 'margin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tolerance for detecting collisions. </p>
 	 * @see #__DNA__FIELD__margin
 	 */
@@ -796,7 +797,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Get method for struct member 'lin_damping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Damping for linear velocities. </p>
 	 * @see #__DNA__FIELD__lin_damping
 	 */
@@ -813,7 +814,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Set method for struct member 'lin_damping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Damping for linear velocities. </p>
 	 * @see #__DNA__FIELD__lin_damping
 	 */
@@ -830,7 +831,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Get method for struct member 'ang_damping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Damping for angular velocities. </p>
 	 * @see #__DNA__FIELD__ang_damping
 	 */
@@ -847,7 +848,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Set method for struct member 'ang_damping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Damping for angular velocities. </p>
 	 * @see #__DNA__FIELD__ang_damping
 	 */
@@ -864,7 +865,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Get method for struct member 'lin_sleep_thresh'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deactivation threshold for linear velocities. </p>
 	 * @see #__DNA__FIELD__lin_sleep_thresh
 	 */
@@ -881,7 +882,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Set method for struct member 'lin_sleep_thresh'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deactivation threshold for linear velocities. </p>
 	 * @see #__DNA__FIELD__lin_sleep_thresh
 	 */
@@ -898,7 +899,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Get method for struct member 'ang_sleep_thresh'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deactivation threshold for angular velocities. </p>
 	 * @see #__DNA__FIELD__ang_sleep_thresh
 	 */
@@ -915,7 +916,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Set method for struct member 'ang_sleep_thresh'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deactivation threshold for angular velocities. </p>
 	 * @see #__DNA__FIELD__ang_sleep_thresh
 	 */
@@ -932,7 +933,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Get method for struct member 'orn'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rigid body orientation. </p>
 	 * @see #__DNA__FIELD__orn
 	 */
@@ -953,7 +954,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Set method for struct member 'orn'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rigid body orientation. </p>
 	 * @see #__DNA__FIELD__orn
 	 */
@@ -978,7 +979,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Get method for struct member 'pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rigid body position. </p>
 	 * @see #__DNA__FIELD__pos
 	 */
@@ -999,7 +1000,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Set method for struct member 'pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rigid body position. </p>
 	 * @see #__DNA__FIELD__pos
 	 */
@@ -1064,7 +1065,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Get method for struct member 'shared'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This pointer is shared between all evaluated copies. </p>
 	 * @see #__DNA__FIELD__shared
 	 */
@@ -1084,7 +1085,7 @@ public class RigidBodyOb extends CFacade {
 	/**
 	 * Set method for struct member 'shared'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This pointer is shared between all evaluated copies. </p>
 	 * @see #__DNA__FIELD__shared
 	 */

@@ -112,7 +112,7 @@ public class BoidRuleGoalAvoid extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'signal_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> signals </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -287,7 +287,7 @@ public class BoidRuleGoalAvoid extends CFacade {
 	/**
 	 * Get method for struct member 'signal_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> signals </p>
 	 * @see #__DNA__FIELD__signal_id
 	 */
@@ -304,7 +304,7 @@ public class BoidRuleGoalAvoid extends CFacade {
 	/**
 	 * Set method for struct member 'signal_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> signals </p>
 	 * @see #__DNA__FIELD__signal_id
 	 */

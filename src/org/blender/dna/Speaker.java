@@ -53,7 +53,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sound'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Sound data-block used by this speaker
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,8 +99,9 @@ public class Speaker extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'volume_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum volume, no matter how near the object is<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Maximum volume, no matter how near the object is
+	 * <h4>Blender Source Code</h4>
 	 * <p> not animatable properties </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -123,7 +124,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'volume_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum volume, no matter how far away the object is
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -146,7 +147,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'distance_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum distance for volume calculation, no matter how far away the object is
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,7 +170,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'distance_reference'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Reference distance at which volume is 100%
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -192,7 +193,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'attenuation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How strong the distance affects volume, depending on distance model
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -215,7 +216,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cone_angle_outer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Angle of the outer cone, in degrees, outside this cone the volume is the outer cone volume, between inner and outer cone the volume is interpolated
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -238,7 +239,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cone_angle_inner'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Angle of the inner cone, in degrees, inside the cone the volume is 100%
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -261,7 +262,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cone_volume_outer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Volume outside the outer cone
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -284,8 +285,9 @@ public class Speaker extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'volume'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How loud the sound is<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How loud the sound is
+	 * <h4>Blender Source Code</h4>
 	 * <p> animatable properties </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -308,7 +310,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pitch'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Playback pitch of the sound
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -331,7 +333,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> flag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -418,7 +420,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Get method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -438,7 +440,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Set method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -456,7 +458,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Get method for struct member 'sound'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Sound data-block used by this speaker
 	 * @see #__DNA__FIELD__sound
 	 */
@@ -476,7 +478,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Set method for struct member 'sound'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Sound data-block used by this speaker
 	 * @see #__DNA__FIELD__sound
 	 */
@@ -494,8 +496,9 @@ public class Speaker extends CFacade {
 	/**
 	 * Get method for struct member 'volume_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum volume, no matter how near the object is<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Maximum volume, no matter how near the object is
+	 * <h4>Blender Source Code</h4>
 	 * <p> not animatable properties </p>
 	 * @see #__DNA__FIELD__volume_max
 	 */
@@ -512,8 +515,9 @@ public class Speaker extends CFacade {
 	/**
 	 * Set method for struct member 'volume_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum volume, no matter how near the object is<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Maximum volume, no matter how near the object is
+	 * <h4>Blender Source Code</h4>
 	 * <p> not animatable properties </p>
 	 * @see #__DNA__FIELD__volume_max
 	 */
@@ -530,7 +534,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Get method for struct member 'volume_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum volume, no matter how far away the object is
 	 * @see #__DNA__FIELD__volume_min
 	 */
@@ -547,7 +551,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Set method for struct member 'volume_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum volume, no matter how far away the object is
 	 * @see #__DNA__FIELD__volume_min
 	 */
@@ -564,7 +568,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Get method for struct member 'distance_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum distance for volume calculation, no matter how far away the object is
 	 * @see #__DNA__FIELD__distance_max
 	 */
@@ -581,7 +585,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Set method for struct member 'distance_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum distance for volume calculation, no matter how far away the object is
 	 * @see #__DNA__FIELD__distance_max
 	 */
@@ -598,7 +602,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Get method for struct member 'distance_reference'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Reference distance at which volume is 100%
 	 * @see #__DNA__FIELD__distance_reference
 	 */
@@ -615,7 +619,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Set method for struct member 'distance_reference'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Reference distance at which volume is 100%
 	 * @see #__DNA__FIELD__distance_reference
 	 */
@@ -632,7 +636,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Get method for struct member 'attenuation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How strong the distance affects volume, depending on distance model
 	 * @see #__DNA__FIELD__attenuation
 	 */
@@ -649,7 +653,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Set method for struct member 'attenuation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How strong the distance affects volume, depending on distance model
 	 * @see #__DNA__FIELD__attenuation
 	 */
@@ -666,7 +670,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Get method for struct member 'cone_angle_outer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Angle of the outer cone, in degrees, outside this cone the volume is the outer cone volume, between inner and outer cone the volume is interpolated
 	 * @see #__DNA__FIELD__cone_angle_outer
 	 */
@@ -683,7 +687,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Set method for struct member 'cone_angle_outer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Angle of the outer cone, in degrees, outside this cone the volume is the outer cone volume, between inner and outer cone the volume is interpolated
 	 * @see #__DNA__FIELD__cone_angle_outer
 	 */
@@ -700,7 +704,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Get method for struct member 'cone_angle_inner'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Angle of the inner cone, in degrees, inside the cone the volume is 100%
 	 * @see #__DNA__FIELD__cone_angle_inner
 	 */
@@ -717,7 +721,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Set method for struct member 'cone_angle_inner'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Angle of the inner cone, in degrees, inside the cone the volume is 100%
 	 * @see #__DNA__FIELD__cone_angle_inner
 	 */
@@ -734,7 +738,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Get method for struct member 'cone_volume_outer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Volume outside the outer cone
 	 * @see #__DNA__FIELD__cone_volume_outer
 	 */
@@ -751,7 +755,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Set method for struct member 'cone_volume_outer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Volume outside the outer cone
 	 * @see #__DNA__FIELD__cone_volume_outer
 	 */
@@ -768,8 +772,9 @@ public class Speaker extends CFacade {
 	/**
 	 * Get method for struct member 'volume'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How loud the sound is<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How loud the sound is
+	 * <h4>Blender Source Code</h4>
 	 * <p> animatable properties </p>
 	 * @see #__DNA__FIELD__volume
 	 */
@@ -786,8 +791,9 @@ public class Speaker extends CFacade {
 	/**
 	 * Set method for struct member 'volume'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How loud the sound is<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How loud the sound is
+	 * <h4>Blender Source Code</h4>
 	 * <p> animatable properties </p>
 	 * @see #__DNA__FIELD__volume
 	 */
@@ -804,7 +810,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Get method for struct member 'pitch'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Playback pitch of the sound
 	 * @see #__DNA__FIELD__pitch
 	 */
@@ -821,7 +827,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Set method for struct member 'pitch'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Playback pitch of the sound
 	 * @see #__DNA__FIELD__pitch
 	 */
@@ -838,7 +844,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> flag </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -855,7 +861,7 @@ public class Speaker extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> flag </p>
 	 * @see #__DNA__FIELD__flag
 	 */

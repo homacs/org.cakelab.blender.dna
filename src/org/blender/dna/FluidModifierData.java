@@ -72,7 +72,7 @@ public class FluidModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inflow, outflow, smoke objects. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -95,7 +95,7 @@ public class FluidModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'effector'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Effector objects (collision, guiding). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -138,7 +138,7 @@ public class FluidModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Domain, inflow, outflow, .... </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -257,7 +257,7 @@ public class FluidModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'flow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inflow, outflow, smoke objects. </p>
 	 * @see #__DNA__FIELD__flow
 	 */
@@ -277,7 +277,7 @@ public class FluidModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'flow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inflow, outflow, smoke objects. </p>
 	 * @see #__DNA__FIELD__flow
 	 */
@@ -295,7 +295,7 @@ public class FluidModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'effector'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Effector objects (collision, guiding). </p>
 	 * @see #__DNA__FIELD__effector
 	 */
@@ -315,7 +315,7 @@ public class FluidModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'effector'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Effector objects (collision, guiding). </p>
 	 * @see #__DNA__FIELD__effector
 	 */
@@ -361,7 +361,7 @@ public class FluidModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Domain, inflow, outflow, .... </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -378,7 +378,7 @@ public class FluidModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Domain, inflow, outflow, .... </p>
 	 * @see #__DNA__FIELD__type
 	 */

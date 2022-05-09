@@ -73,7 +73,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -156,7 +156,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -199,7 +199,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Search term for filtering in the UI. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -294,7 +294,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -311,7 +311,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -432,7 +432,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Get method for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * @see #__DNA__FIELD___pad1
 	 */
@@ -453,7 +453,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Set method for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * @see #__DNA__FIELD___pad1
 	 */
@@ -506,7 +506,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Get method for struct member 'filter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Search term for filtering in the UI. </p>
 	 * @see #__DNA__FIELD__filter
 	 */
@@ -527,7 +527,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Set method for struct member 'filter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Search term for filtering in the UI. </p>
 	 * @see #__DNA__FIELD__filter
 	 */

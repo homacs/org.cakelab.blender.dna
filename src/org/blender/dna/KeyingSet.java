@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'KeyingSet'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  {@link KeyingSet}  definition (ks)</p><p> A {@link KeyingSet}  defines a group of properties that should be keyframed together, providing a convenient way for animators to insert keyframes without resorting to Auto-Keyframing.</p><p> A few 'generic' (non-absolute and dependent on templates) KeyingSets are defined 'built-in' to facilitate easy animating for the casual animator without the need to add extra steps to the rigging process. </p>
  */
@@ -75,8 +76,9 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'paths'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Keying Set Paths to define settings that get keyframed together<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Keying Set Paths to define settings that get keyframed together
+	 * <h4>Blender Source Code</h4>
 	 * <p> ({@link KS_Path} ) paths to keyframe to. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +101,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -122,7 +124,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-viewable name for {@link KeyingSet}<code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -145,7 +147,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'description'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (RNA_DYN_DESCR_MAX) short help text. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -168,7 +170,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'typeinfo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -191,7 +193,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'active_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of the active path. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -214,7 +216,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for {@link KeyingSet} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -237,7 +239,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'keyingflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eInsertKeyFlags) settings to supply insertkey() with. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -260,7 +262,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'keyingoverride'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eInsertKeyFlags) for each flag set, the relevant keyingflag bit overrides the default. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -375,8 +377,9 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Get method for struct member 'paths'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Keying Set Paths to define settings that get keyframed together<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Keying Set Paths to define settings that get keyframed together
+	 * <h4>Blender Source Code</h4>
 	 * <p> ({@link KS_Path} ) paths to keyframe to. </p>
 	 * @see #__DNA__FIELD__paths
 	 */
@@ -393,8 +396,9 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Set method for struct member 'paths'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Keying Set Paths to define settings that get keyframed together<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Keying Set Paths to define settings that get keyframed together
+	 * <h4>Blender Source Code</h4>
 	 * <p> ({@link KS_Path} ) paths to keyframe to. </p>
 	 * @see #__DNA__FIELD__paths
 	 */
@@ -419,7 +423,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Get method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__idname
 	 */
@@ -440,7 +444,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Set method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__idname
 	 */
@@ -465,7 +469,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-viewable name for {@link KeyingSet}<code></code> . </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -486,7 +490,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-viewable name for {@link KeyingSet}<code></code> . </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -511,7 +515,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Get method for struct member 'description'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (RNA_DYN_DESCR_MAX) short help text. </p>
 	 * @see #__DNA__FIELD__description
 	 */
@@ -532,7 +536,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Set method for struct member 'description'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (RNA_DYN_DESCR_MAX) short help text. </p>
 	 * @see #__DNA__FIELD__description
 	 */
@@ -557,7 +561,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Get method for struct member 'typeinfo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__typeinfo
 	 */
@@ -578,7 +582,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Set method for struct member 'typeinfo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__typeinfo
 	 */
@@ -603,7 +607,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Get method for struct member 'active_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of the active path. </p>
 	 * @see #__DNA__FIELD__active_path
 	 */
@@ -620,7 +624,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Set method for struct member 'active_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of the active path. </p>
 	 * @see #__DNA__FIELD__active_path
 	 */
@@ -637,7 +641,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for {@link KeyingSet} . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -654,7 +658,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for {@link KeyingSet} . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -671,7 +675,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Get method for struct member 'keyingflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eInsertKeyFlags) settings to supply insertkey() with. </p>
 	 * @see #__DNA__FIELD__keyingflag
 	 */
@@ -688,7 +692,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Set method for struct member 'keyingflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eInsertKeyFlags) settings to supply insertkey() with. </p>
 	 * @see #__DNA__FIELD__keyingflag
 	 */
@@ -705,7 +709,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Get method for struct member 'keyingoverride'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eInsertKeyFlags) for each flag set, the relevant keyingflag bit overrides the default. </p>
 	 * @see #__DNA__FIELD__keyingoverride
 	 */
@@ -722,7 +726,7 @@ public class KeyingSet extends CFacade {
 	/**
 	 * Set method for struct member 'keyingoverride'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eInsertKeyFlags) for each flag set, the relevant keyingflag bit overrides the default. </p>
 	 * @see #__DNA__FIELD__keyingoverride
 	 */

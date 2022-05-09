@@ -53,7 +53,7 @@ public class CharInfo extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mat_nr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index start at 1, unlike mesh & nurbs. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -152,7 +152,7 @@ public class CharInfo extends CFacade {
 	/**
 	 * Get method for struct member 'mat_nr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index start at 1, unlike mesh & nurbs. </p>
 	 * @see #__DNA__FIELD__mat_nr
 	 */
@@ -169,7 +169,7 @@ public class CharInfo extends CFacade {
 	/**
 	 * Set method for struct member 'mat_nr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index start at 1, unlike mesh & nurbs. </p>
 	 * @see #__DNA__FIELD__mat_nr
 	 */

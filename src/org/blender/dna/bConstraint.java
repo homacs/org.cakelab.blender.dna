@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> A Constraint </p>
  */
 
@@ -74,7 +75,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Constraint data (a valid constraint type). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -97,7 +98,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Constraint type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -120,7 +121,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag - General Settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -143,7 +144,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ownspace'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Space that owner should be evaluated in. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -166,7 +167,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tarspace'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Space that target should be evaluated in (only used if 1 target). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -189,7 +190,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ui_expand_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> An "expand" bit for each of the constraint's (sub)panels (uiPanelDataExpansion). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -212,7 +213,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'space_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  to use as target for Custom Space of owner. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -235,7 +236,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'space_subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Subtarget for Custom Space of owner - pchan or vgroup name, MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -258,7 +259,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Constraint name, MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -281,7 +282,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'enforce'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Amount of influence exerted by constraint (0.0-1.0). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -304,7 +305,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'headtail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  bone where the actual target is. 0=head (default for all), 1=tail. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -327,7 +328,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> old animation system, deprecated for 2.5. Local influence ipo or driver 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -352,7 +353,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lin_error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Below are read-only fields that are set at runtime by the solver for use in the GE (only IK at the moment). Residual error on constraint expressed in blender unit. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -375,7 +376,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rot_error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Residual error on constraint expressed in radiant. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -470,7 +471,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Constraint data (a valid constraint type). </p>
 	 * @see #__DNA__FIELD__data
 	 */
@@ -490,7 +491,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Constraint data (a valid constraint type). </p>
 	 * @see #__DNA__FIELD__data
 	 */
@@ -508,7 +509,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Constraint type. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -525,7 +526,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Constraint type. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -542,7 +543,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag - General Settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -559,7 +560,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag - General Settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -576,7 +577,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'ownspace'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Space that owner should be evaluated in. </p>
 	 * @see #__DNA__FIELD__ownspace
 	 */
@@ -593,7 +594,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'ownspace'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Space that owner should be evaluated in. </p>
 	 * @see #__DNA__FIELD__ownspace
 	 */
@@ -610,7 +611,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'tarspace'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Space that target should be evaluated in (only used if 1 target). </p>
 	 * @see #__DNA__FIELD__tarspace
 	 */
@@ -627,7 +628,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'tarspace'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Space that target should be evaluated in (only used if 1 target). </p>
 	 * @see #__DNA__FIELD__tarspace
 	 */
@@ -644,7 +645,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'ui_expand_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> An "expand" bit for each of the constraint's (sub)panels (uiPanelDataExpansion). </p>
 	 * @see #__DNA__FIELD__ui_expand_flag
 	 */
@@ -661,7 +662,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'ui_expand_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> An "expand" bit for each of the constraint's (sub)panels (uiPanelDataExpansion). </p>
 	 * @see #__DNA__FIELD__ui_expand_flag
 	 */
@@ -678,7 +679,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'space_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  to use as target for Custom Space of owner. </p>
 	 * @see #__DNA__FIELD__space_object
 	 */
@@ -698,7 +699,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'space_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  to use as target for Custom Space of owner. </p>
 	 * @see #__DNA__FIELD__space_object
 	 */
@@ -716,7 +717,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'space_subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Subtarget for Custom Space of owner - pchan or vgroup name, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__space_subtarget
 	 */
@@ -737,7 +738,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'space_subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Subtarget for Custom Space of owner - pchan or vgroup name, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__space_subtarget
 	 */
@@ -762,7 +763,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Constraint name, MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -783,7 +784,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Constraint name, MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -808,7 +809,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'enforce'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Amount of influence exerted by constraint (0.0-1.0). </p>
 	 * @see #__DNA__FIELD__enforce
 	 */
@@ -825,7 +826,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'enforce'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Amount of influence exerted by constraint (0.0-1.0). </p>
 	 * @see #__DNA__FIELD__enforce
 	 */
@@ -842,7 +843,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'headtail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  bone where the actual target is. 0=head (default for all), 1=tail. </p>
 	 * @see #__DNA__FIELD__headtail
 	 */
@@ -859,7 +860,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'headtail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  bone where the actual target is. 0=head (default for all), 1=tail. </p>
 	 * @see #__DNA__FIELD__headtail
 	 */
@@ -876,7 +877,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> old animation system, deprecated for 2.5. Local influence ipo or driver 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -898,7 +899,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> old animation system, deprecated for 2.5. Local influence ipo or driver 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -918,7 +919,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'lin_error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Below are read-only fields that are set at runtime by the solver for use in the GE (only IK at the moment). Residual error on constraint expressed in blender unit. </p>
 	 * @see #__DNA__FIELD__lin_error
 	 */
@@ -935,7 +936,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'lin_error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Below are read-only fields that are set at runtime by the solver for use in the GE (only IK at the moment). Residual error on constraint expressed in blender unit. </p>
 	 * @see #__DNA__FIELD__lin_error
 	 */
@@ -952,7 +953,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'rot_error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Residual error on constraint expressed in radiant. </p>
 	 * @see #__DNA__FIELD__rot_error
 	 */
@@ -969,7 +970,7 @@ public class bConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'rot_error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Residual error on constraint expressed in radiant. </p>
 	 * @see #__DNA__FIELD__rot_error
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'UnitSettings'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  Assorted {@link Scene}  Data <hr/> 
  *  Unit Settings </p>
@@ -36,8 +37,9 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scale_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Scale to use when converting between blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Scale to use when converting between blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display/Editing unit options for each scene Maybe have other unit conversions? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -60,8 +62,9 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'system'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The unit system to use for user interface controls<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * The unit system to use for user interface controls
+	 * <h4>Blender Source Code</h4>
 	 * <p> Imperial, metric etc. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -84,8 +87,9 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'system_rotation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unit to use for displaying/editing rotation values<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Unit to use for displaying/editing rotation values
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not implemented as a proper unit system yet. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -128,7 +132,7 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'length_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Unit that will be used to display length values
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -151,7 +155,7 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mass_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Unit that will be used to display mass values
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -174,7 +178,7 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'time_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Unit that will be used to display time values
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -197,7 +201,7 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'temperature_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Unit that will be used to display temperature values
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -248,8 +252,9 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Get method for struct member 'scale_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Scale to use when converting between blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Scale to use when converting between blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display/Editing unit options for each scene Maybe have other unit conversions? </p>
 	 * @see #__DNA__FIELD__scale_length
 	 */
@@ -266,8 +271,9 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Set method for struct member 'scale_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Scale to use when converting between blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Scale to use when converting between blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display/Editing unit options for each scene Maybe have other unit conversions? </p>
 	 * @see #__DNA__FIELD__scale_length
 	 */
@@ -284,8 +290,9 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Get method for struct member 'system'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The unit system to use for user interface controls<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * The unit system to use for user interface controls
+	 * <h4>Blender Source Code</h4>
 	 * <p> Imperial, metric etc. </p>
 	 * @see #__DNA__FIELD__system
 	 */
@@ -302,8 +309,9 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Set method for struct member 'system'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The unit system to use for user interface controls<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * The unit system to use for user interface controls
+	 * <h4>Blender Source Code</h4>
 	 * <p> Imperial, metric etc. </p>
 	 * @see #__DNA__FIELD__system
 	 */
@@ -320,8 +328,9 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Get method for struct member 'system_rotation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unit to use for displaying/editing rotation values<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Unit to use for displaying/editing rotation values
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not implemented as a proper unit system yet. </p>
 	 * @see #__DNA__FIELD__system_rotation
 	 */
@@ -338,8 +347,9 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Set method for struct member 'system_rotation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unit to use for displaying/editing rotation values<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Unit to use for displaying/editing rotation values
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not implemented as a proper unit system yet. </p>
 	 * @see #__DNA__FIELD__system_rotation
 	 */
@@ -384,7 +394,7 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Get method for struct member 'length_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Unit that will be used to display length values
 	 * @see #__DNA__FIELD__length_unit
 	 */
@@ -401,7 +411,7 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Set method for struct member 'length_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Unit that will be used to display length values
 	 * @see #__DNA__FIELD__length_unit
 	 */
@@ -418,7 +428,7 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Get method for struct member 'mass_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Unit that will be used to display mass values
 	 * @see #__DNA__FIELD__mass_unit
 	 */
@@ -435,7 +445,7 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Set method for struct member 'mass_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Unit that will be used to display mass values
 	 * @see #__DNA__FIELD__mass_unit
 	 */
@@ -452,7 +462,7 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Get method for struct member 'time_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Unit that will be used to display time values
 	 * @see #__DNA__FIELD__time_unit
 	 */
@@ -469,7 +479,7 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Set method for struct member 'time_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Unit that will be used to display time values
 	 * @see #__DNA__FIELD__time_unit
 	 */
@@ -486,7 +496,7 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Get method for struct member 'temperature_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Unit that will be used to display temperature values
 	 * @see #__DNA__FIELD__temperature_unit
 	 */
@@ -503,7 +513,7 @@ public class UnitSettings extends CFacade {
 	/**
 	 * Set method for struct member 'temperature_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Unit that will be used to display temperature values
 	 * @see #__DNA__FIELD__temperature_unit
 	 */

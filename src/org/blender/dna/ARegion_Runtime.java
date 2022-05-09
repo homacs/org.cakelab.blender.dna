@@ -32,7 +32,7 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'category'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  category to use between 'layout' and 'draw'. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +55,7 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'visible_rect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion#getWinrct()}  x/y min. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -78,7 +78,7 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'offset_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The offset needed to not overlap with window scrollbars. Only used by HUD regions for now. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,7 +121,7 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'block_name_map'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maps uiBlock->name to uiBlock for faster lookups. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -152,7 +152,7 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'category'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  category to use between 'layout' and 'draw'. </p>
 	 * @see #__DNA__FIELD__category
 	 */
@@ -172,7 +172,7 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'category'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  category to use between 'layout' and 'draw'. </p>
 	 * @see #__DNA__FIELD__category
 	 */
@@ -190,7 +190,7 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'visible_rect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion#getWinrct()}  x/y min. </p>
 	 * @see #__DNA__FIELD__visible_rect
 	 */
@@ -207,7 +207,7 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'visible_rect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion#getWinrct()}  x/y min. </p>
 	 * @see #__DNA__FIELD__visible_rect
 	 */
@@ -232,7 +232,7 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'offset_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The offset needed to not overlap with window scrollbars. Only used by HUD regions for now. </p>
 	 * @see #__DNA__FIELD__offset_x
 	 */
@@ -249,7 +249,7 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'offset_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The offset needed to not overlap with window scrollbars. Only used by HUD regions for now. </p>
 	 * @see #__DNA__FIELD__offset_x
 	 */
@@ -294,7 +294,7 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'block_name_map'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maps uiBlock->name to uiBlock for faster lookups. </p>
 	 * @see #__DNA__FIELD__block_name_map
 	 */
@@ -314,7 +314,7 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'block_name_map'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maps uiBlock->name to uiBlock for faster lookups. </p>
 	 * @see #__DNA__FIELD__block_name_map
 	 */

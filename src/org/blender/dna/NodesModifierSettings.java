@@ -32,7 +32,7 @@ public class NodesModifierSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This stores data that is passed into the node group. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -63,7 +63,7 @@ public class NodesModifierSettings extends CFacade {
 	/**
 	 * Get method for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This stores data that is passed into the node group. </p>
 	 * @see #__DNA__FIELD__properties
 	 */
@@ -83,7 +83,7 @@ public class NodesModifierSettings extends CFacade {
 	/**
 	 * Set method for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This stores data that is passed into the node group. </p>
 	 * @see #__DNA__FIELD__properties
 	 */

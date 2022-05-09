@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FMod_Envelope'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> envelope-like adjustment to values (for fade in/out) </p>
  */
 
@@ -33,7 +34,7 @@ public class FMod_Envelope extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Data-points defining envelope to apply (array). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +57,7 @@ public class FMod_Envelope extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of envelope points. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +80,7 @@ public class FMod_Envelope extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'midval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value that envelope's influence is centered around / based on. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -102,7 +103,7 @@ public class FMod_Envelope extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Distances from 'middle-value' for 1:1 envelope influence. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -153,7 +154,7 @@ public class FMod_Envelope extends CFacade {
 	/**
 	 * Get method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Data-points defining envelope to apply (array). </p>
 	 * @see #__DNA__FIELD__data
 	 */
@@ -173,7 +174,7 @@ public class FMod_Envelope extends CFacade {
 	/**
 	 * Set method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Data-points defining envelope to apply (array). </p>
 	 * @see #__DNA__FIELD__data
 	 */
@@ -191,7 +192,7 @@ public class FMod_Envelope extends CFacade {
 	/**
 	 * Get method for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of envelope points. </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
@@ -208,7 +209,7 @@ public class FMod_Envelope extends CFacade {
 	/**
 	 * Set method for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of envelope points. </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
@@ -225,7 +226,7 @@ public class FMod_Envelope extends CFacade {
 	/**
 	 * Get method for struct member 'midval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value that envelope's influence is centered around / based on. </p>
 	 * @see #__DNA__FIELD__midval
 	 */
@@ -242,7 +243,7 @@ public class FMod_Envelope extends CFacade {
 	/**
 	 * Set method for struct member 'midval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value that envelope's influence is centered around / based on. </p>
 	 * @see #__DNA__FIELD__midval
 	 */
@@ -259,7 +260,7 @@ public class FMod_Envelope extends CFacade {
 	/**
 	 * Get method for struct member 'min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Distances from 'middle-value' for 1:1 envelope influence. </p>
 	 * @see #__DNA__FIELD__min
 	 */
@@ -276,7 +277,7 @@ public class FMod_Envelope extends CFacade {
 	/**
 	 * Set method for struct member 'min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Distances from 'middle-value' for 1:1 envelope influence. </p>
 	 * @see #__DNA__FIELD__min
 	 */

@@ -32,7 +32,7 @@ public class NodeAttributeSeparateXYZ extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'input_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeInputMode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -63,7 +63,7 @@ public class NodeAttributeSeparateXYZ extends CFacade {
 	/**
 	 * Get method for struct member 'input_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeInputMode. </p>
 	 * @see #__DNA__FIELD__input_type
 	 */
@@ -80,7 +80,7 @@ public class NodeAttributeSeparateXYZ extends CFacade {
 	/**
 	 * Set method for struct member 'input_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeInputMode. </p>
 	 * @see #__DNA__FIELD__input_type
 	 */

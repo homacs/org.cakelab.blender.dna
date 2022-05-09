@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bAnimVizSettings'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Visualization General ------------------------<mdash/>  for Objects or Poses (but NOT PoseChannels) Animation Visualization Settings (avs) </p>
  */
 
@@ -34,7 +35,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'recalc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General Settings ---------------------<mdash/>  eAnimViz_RecalcFlags . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +58,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'path_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Motion Path Settings ----------------<mdash/>  eMotionPath_Types . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +81,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'path_step'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of frames between points indicated on the paths. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -103,7 +104,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'path_viewflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eMotionPaths_ViewFlag . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,7 +127,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'path_bakeflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eMotionPaths_BakeFlag . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,7 +170,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'path_sf'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Start and end frames of path-calculation range. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -212,7 +213,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'path_bc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of frames before/after current frame to show. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -263,7 +264,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Get method for struct member 'recalc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General Settings ---------------------<mdash/>  eAnimViz_RecalcFlags . </p>
 	 * @see #__DNA__FIELD__recalc
 	 */
@@ -280,7 +281,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Set method for struct member 'recalc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General Settings ---------------------<mdash/>  eAnimViz_RecalcFlags . </p>
 	 * @see #__DNA__FIELD__recalc
 	 */
@@ -297,7 +298,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Get method for struct member 'path_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Motion Path Settings ----------------<mdash/>  eMotionPath_Types . </p>
 	 * @see #__DNA__FIELD__path_type
 	 */
@@ -314,7 +315,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Set method for struct member 'path_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Motion Path Settings ----------------<mdash/>  eMotionPath_Types . </p>
 	 * @see #__DNA__FIELD__path_type
 	 */
@@ -331,7 +332,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Get method for struct member 'path_step'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of frames between points indicated on the paths. </p>
 	 * @see #__DNA__FIELD__path_step
 	 */
@@ -348,7 +349,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Set method for struct member 'path_step'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of frames between points indicated on the paths. </p>
 	 * @see #__DNA__FIELD__path_step
 	 */
@@ -365,7 +366,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Get method for struct member 'path_viewflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eMotionPaths_ViewFlag . </p>
 	 * @see #__DNA__FIELD__path_viewflag
 	 */
@@ -382,7 +383,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Set method for struct member 'path_viewflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eMotionPaths_ViewFlag . </p>
 	 * @see #__DNA__FIELD__path_viewflag
 	 */
@@ -399,7 +400,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Get method for struct member 'path_bakeflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eMotionPaths_BakeFlag . </p>
 	 * @see #__DNA__FIELD__path_bakeflag
 	 */
@@ -416,7 +417,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Set method for struct member 'path_bakeflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eMotionPaths_BakeFlag . </p>
 	 * @see #__DNA__FIELD__path_bakeflag
 	 */
@@ -473,7 +474,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Get method for struct member 'path_sf'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Start and end frames of path-calculation range. </p>
 	 * @see #__DNA__FIELD__path_sf
 	 */
@@ -490,7 +491,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Set method for struct member 'path_sf'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Start and end frames of path-calculation range. </p>
 	 * @see #__DNA__FIELD__path_sf
 	 */
@@ -535,7 +536,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Get method for struct member 'path_bc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of frames before/after current frame to show. </p>
 	 * @see #__DNA__FIELD__path_bc
 	 */
@@ -552,7 +553,7 @@ public class bAnimVizSettings extends CFacade {
 	/**
 	 * Set method for struct member 'path_bc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of frames before/after current frame to show. </p>
 	 * @see #__DNA__FIELD__path_bc
 	 */

@@ -52,7 +52,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'key'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The value the average luminance is mapped to
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,7 +75,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Normally always 1, but can be used as an extra control to alter the brightness curve
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +98,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gamma'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * If not used, set to 1
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,7 +121,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * If less than zero, darkens image; otherwise, makes it brighter
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -144,7 +144,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'contrast'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Set to 0 to use estimate from input image
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -167,7 +167,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'adaptation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * If 0, global; if 1, based on pixel intensity
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -190,7 +190,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'correction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * If 0, same for all channels; if 1, each independent
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -212,9 +212,6 @@ public class SequencerTonemapModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -280,7 +277,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'key'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The value the average luminance is mapped to
 	 * @see #__DNA__FIELD__key
 	 */
@@ -297,7 +294,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'key'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The value the average luminance is mapped to
 	 * @see #__DNA__FIELD__key
 	 */
@@ -314,7 +311,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Normally always 1, but can be used as an extra control to alter the brightness curve
 	 * @see #__DNA__FIELD__offset
 	 */
@@ -331,7 +328,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Normally always 1, but can be used as an extra control to alter the brightness curve
 	 * @see #__DNA__FIELD__offset
 	 */
@@ -348,7 +345,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'gamma'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * If not used, set to 1
 	 * @see #__DNA__FIELD__gamma
 	 */
@@ -365,7 +362,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'gamma'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * If not used, set to 1
 	 * @see #__DNA__FIELD__gamma
 	 */
@@ -382,7 +379,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * If less than zero, darkens image; otherwise, makes it brighter
 	 * @see #__DNA__FIELD__intensity
 	 */
@@ -399,7 +396,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * If less than zero, darkens image; otherwise, makes it brighter
 	 * @see #__DNA__FIELD__intensity
 	 */
@@ -416,7 +413,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'contrast'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Set to 0 to use estimate from input image
 	 * @see #__DNA__FIELD__contrast
 	 */
@@ -433,7 +430,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'contrast'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Set to 0 to use estimate from input image
 	 * @see #__DNA__FIELD__contrast
 	 */
@@ -450,7 +447,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'adaptation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * If 0, global; if 1, based on pixel intensity
 	 * @see #__DNA__FIELD__adaptation
 	 */
@@ -467,7 +464,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'adaptation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * If 0, global; if 1, based on pixel intensity
 	 * @see #__DNA__FIELD__adaptation
 	 */
@@ -484,7 +481,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'correction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * If 0, same for all channels; if 1, each independent
 	 * @see #__DNA__FIELD__correction
 	 */
@@ -501,7 +498,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'correction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * If 0, same for all channels; if 1, each independent
 	 * @see #__DNA__FIELD__correction
 	 */
@@ -517,9 +514,6 @@ public class SequencerTonemapModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -534,9 +528,6 @@ public class SequencerTonemapModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__type
 	 */
 	

@@ -52,7 +52,7 @@ public class SurfaceModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old position. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,7 +75,7 @@ public class SurfaceModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'v'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Velocity. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -118,7 +118,7 @@ public class SurfaceModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bvhtree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bounding volume hierarchy of the mesh faces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -225,7 +225,7 @@ public class SurfaceModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old position. </p>
 	 * @see #__DNA__FIELD__x
 	 */
@@ -245,7 +245,7 @@ public class SurfaceModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old position. </p>
 	 * @see #__DNA__FIELD__x
 	 */
@@ -263,7 +263,7 @@ public class SurfaceModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'v'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Velocity. </p>
 	 * @see #__DNA__FIELD__v
 	 */
@@ -283,7 +283,7 @@ public class SurfaceModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'v'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Velocity. </p>
 	 * @see #__DNA__FIELD__v
 	 */
@@ -333,7 +333,7 @@ public class SurfaceModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'bvhtree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bounding volume hierarchy of the mesh faces. </p>
 	 * @see #__DNA__FIELD__bvhtree
 	 */
@@ -353,7 +353,7 @@ public class SurfaceModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'bvhtree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bounding volume hierarchy of the mesh faces. </p>
 	 * @see #__DNA__FIELD__bvhtree
 	 */

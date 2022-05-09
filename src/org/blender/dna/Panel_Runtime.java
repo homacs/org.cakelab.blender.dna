@@ -33,7 +33,7 @@ public class Panel_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'region_ofsx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Applied to {@link Panel#getOfsx()} , but saved separately so we can track changes between redraws. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class Panel_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'custom_data_ptr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer for storing which data the panel corresponds to. Useful when there can be multiple instances of the same panel type.</p><p><h2>Note</h2><p> A panel and its sub-panels share the same custom data pointer. This avoids freeing the same pointer twice when panels are removed. </p> A panel and its sub-panels share the same custom data pointer. This avoids freeing the same pointer twice when panels are removed. 
 	 * 
 	 * </p>
@@ -101,7 +101,7 @@ public class Panel_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'block'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to the panel's block. Useful when changes to panel #uiBlocks need some context from traversal of the panel "tree". </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -124,7 +124,7 @@ public class Panel_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'context'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Non-owning pointer. The context is stored in the block. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -155,7 +155,7 @@ public class Panel_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'region_ofsx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Applied to {@link Panel#getOfsx()} , but saved separately so we can track changes between redraws. </p>
 	 * @see #__DNA__FIELD__region_ofsx
 	 */
@@ -172,7 +172,7 @@ public class Panel_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'region_ofsx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Applied to {@link Panel#getOfsx()} , but saved separately so we can track changes between redraws. </p>
 	 * @see #__DNA__FIELD__region_ofsx
 	 */
@@ -229,7 +229,7 @@ public class Panel_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'custom_data_ptr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer for storing which data the panel corresponds to. Useful when there can be multiple instances of the same panel type.</p><p><h2>Note</h2><p> A panel and its sub-panels share the same custom data pointer. This avoids freeing the same pointer twice when panels are removed. </p> A panel and its sub-panels share the same custom data pointer. This avoids freeing the same pointer twice when panels are removed. 
 	 * 
 	 * </p>
@@ -251,7 +251,7 @@ public class Panel_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'custom_data_ptr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer for storing which data the panel corresponds to. Useful when there can be multiple instances of the same panel type.</p><p><h2>Note</h2><p> A panel and its sub-panels share the same custom data pointer. This avoids freeing the same pointer twice when panels are removed. </p> A panel and its sub-panels share the same custom data pointer. This avoids freeing the same pointer twice when panels are removed. 
 	 * 
 	 * </p>
@@ -271,7 +271,7 @@ public class Panel_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'block'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to the panel's block. Useful when changes to panel #uiBlocks need some context from traversal of the panel "tree". </p>
 	 * @see #__DNA__FIELD__block
 	 */
@@ -291,7 +291,7 @@ public class Panel_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'block'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to the panel's block. Useful when changes to panel #uiBlocks need some context from traversal of the panel "tree". </p>
 	 * @see #__DNA__FIELD__block
 	 */
@@ -309,7 +309,7 @@ public class Panel_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'context'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Non-owning pointer. The context is stored in the block. </p>
 	 * @see #__DNA__FIELD__context
 	 */
@@ -329,7 +329,7 @@ public class Panel_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'context'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Non-owning pointer. The context is stored in the block. </p>
 	 * @see #__DNA__FIELD__context
 	 */

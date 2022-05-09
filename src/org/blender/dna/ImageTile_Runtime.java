@@ -33,7 +33,7 @@ public class ImageTile_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'slots'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code>  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -64,7 +64,7 @@ public class ImageTile_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'slots'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code>  </p>
 	 * @see #__DNA__FIELD__slots
 	 */
@@ -85,7 +85,7 @@ public class ImageTile_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'slots'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code>  </p>
 	 * @see #__DNA__FIELD__slots
 	 */

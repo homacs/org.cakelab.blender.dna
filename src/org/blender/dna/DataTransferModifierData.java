@@ -73,7 +73,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'data_types'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See DT_TYPE_ enum in ED_object.h. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,7 +96,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vmap_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See MREMAP_MODE_ enum in BKE_mesh_mapping.h </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -259,7 +259,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layers_select_src'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> DT_MULTILAYER_INDEX_MAX; See DT_FROMLAYERS_ enum in ED_object.h. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -282,7 +282,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layers_select_dst'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> DT_MULTILAYER_INDEX_MAX; See DT_TOLAYERS_ enum in ED_object.h. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -305,7 +305,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mix_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See CDT_MIX_ enum in BKE_customdata.h. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -348,7 +348,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -487,7 +487,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'data_types'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See DT_TYPE_ enum in ED_object.h. </p>
 	 * @see #__DNA__FIELD__data_types
 	 */
@@ -504,7 +504,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'data_types'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See DT_TYPE_ enum in ED_object.h. </p>
 	 * @see #__DNA__FIELD__data_types
 	 */
@@ -521,7 +521,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'vmap_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See MREMAP_MODE_ enum in BKE_mesh_mapping.h </p>
 	 * @see #__DNA__FIELD__vmap_mode
 	 */
@@ -538,7 +538,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'vmap_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See MREMAP_MODE_ enum in BKE_mesh_mapping.h </p>
 	 * @see #__DNA__FIELD__vmap_mode
 	 */
@@ -763,7 +763,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layers_select_src'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> DT_MULTILAYER_INDEX_MAX; See DT_FROMLAYERS_ enum in ED_object.h. </p>
 	 * @see #__DNA__FIELD__layers_select_src
 	 */
@@ -784,7 +784,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layers_select_src'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> DT_MULTILAYER_INDEX_MAX; See DT_FROMLAYERS_ enum in ED_object.h. </p>
 	 * @see #__DNA__FIELD__layers_select_src
 	 */
@@ -809,7 +809,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layers_select_dst'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> DT_MULTILAYER_INDEX_MAX; See DT_TOLAYERS_ enum in ED_object.h. </p>
 	 * @see #__DNA__FIELD__layers_select_dst
 	 */
@@ -830,7 +830,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layers_select_dst'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> DT_MULTILAYER_INDEX_MAX; See DT_TOLAYERS_ enum in ED_object.h. </p>
 	 * @see #__DNA__FIELD__layers_select_dst
 	 */
@@ -855,7 +855,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mix_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See CDT_MIX_ enum in BKE_customdata.h. </p>
 	 * @see #__DNA__FIELD__mix_mode
 	 */
@@ -872,7 +872,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mix_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> See CDT_MIX_ enum in BKE_customdata.h. </p>
 	 * @see #__DNA__FIELD__mix_mode
 	 */
@@ -917,7 +917,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
@@ -938,7 +938,7 @@ public class DataTransferModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'uiFontStyle'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> This state defines appearance of text. </p>
  */
 
@@ -34,7 +35,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uifont_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Saved in file, 0 is default. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -77,7 +78,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Actual size depends on 'global' dpi. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -100,7 +101,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'italic'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Style hint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -143,7 +144,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shadow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value is amount of pixels blur. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -166,7 +167,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shadx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shadow offset in pixels. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -229,7 +230,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shadowalpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total alpha. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -252,7 +253,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shadowcolor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1 value, typically white or black anyway. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -303,7 +304,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Get method for struct member 'uifont_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Saved in file, 0 is default. </p>
 	 * @see #__DNA__FIELD__uifont_id
 	 */
@@ -320,7 +321,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Set method for struct member 'uifont_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Saved in file, 0 is default. </p>
 	 * @see #__DNA__FIELD__uifont_id
 	 */
@@ -377,7 +378,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Get method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Actual size depends on 'global' dpi. </p>
 	 * @see #__DNA__FIELD__points
 	 */
@@ -394,7 +395,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Set method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Actual size depends on 'global' dpi. </p>
 	 * @see #__DNA__FIELD__points
 	 */
@@ -411,7 +412,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Get method for struct member 'italic'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Style hint. </p>
 	 * @see #__DNA__FIELD__italic
 	 */
@@ -428,7 +429,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Set method for struct member 'italic'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Style hint. </p>
 	 * @see #__DNA__FIELD__italic
 	 */
@@ -473,7 +474,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Get method for struct member 'shadow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value is amount of pixels blur. </p>
 	 * @see #__DNA__FIELD__shadow
 	 */
@@ -490,7 +491,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Set method for struct member 'shadow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value is amount of pixels blur. </p>
 	 * @see #__DNA__FIELD__shadow
 	 */
@@ -507,7 +508,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Get method for struct member 'shadx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shadow offset in pixels. </p>
 	 * @see #__DNA__FIELD__shadx
 	 */
@@ -524,7 +525,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Set method for struct member 'shadx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shadow offset in pixels. </p>
 	 * @see #__DNA__FIELD__shadx
 	 */
@@ -609,7 +610,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Get method for struct member 'shadowalpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total alpha. </p>
 	 * @see #__DNA__FIELD__shadowalpha
 	 */
@@ -626,7 +627,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Set method for struct member 'shadowalpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total alpha. </p>
 	 * @see #__DNA__FIELD__shadowalpha
 	 */
@@ -643,7 +644,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Get method for struct member 'shadowcolor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1 value, typically white or black anyway. </p>
 	 * @see #__DNA__FIELD__shadowcolor
 	 */
@@ -660,7 +661,7 @@ public class uiFontStyle extends CFacade {
 	/**
 	 * Set method for struct member 'shadowcolor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1 value, typically white or black anyway. </p>
 	 * @see #__DNA__FIELD__shadowcolor
 	 */

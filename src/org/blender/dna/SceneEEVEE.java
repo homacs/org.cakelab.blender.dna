@@ -53,7 +53,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gi_diffuse_bounces'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of time the light is reinjected inside light grids, 0 disable indirect diffuse light
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gi_cubemap_resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Size of every cubemaps
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +99,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gi_visibility_resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Size of the shadow map applied to each irradiance sample
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -122,7 +122,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gi_irradiance_smoothing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Smoother irradiance interpolation but introduce light bleeding
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -145,7 +145,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gi_glossy_clamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Clamp pixel intensity to reduce noise inside glossy reflections from reflection cubemaps (0 to disabled)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -168,7 +168,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gi_filter_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Take more samples during cubemap filtering to remove artifacts
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -231,7 +231,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'taa_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples, unlimited if 0
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -254,7 +254,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'taa_render_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples per pixels for rendering
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -277,7 +277,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sss_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples to compute the scattering effect
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -300,7 +300,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sss_jitter_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Rotate samples that are below this threshold
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -323,7 +323,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ssr_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Precision of the screen space ray-tracing
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -346,7 +346,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ssr_max_roughness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Do not raytrace reflections for roughness above this value
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -369,7 +369,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ssr_thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Pixel thickness used to detect intersection
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -392,7 +392,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ssr_border_fade'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Screen percentage used to fade the SSR
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -415,7 +415,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ssr_firefly_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Clamp pixel intensity to remove noise (0 to disabled)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -438,7 +438,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'volumetric_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Start distance of the volumetric effect
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -461,7 +461,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'volumetric_end'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * End distance of the volumetric effect
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -484,7 +484,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'volumetric_tile_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Control the quality of the volumetric effects (lower size increase vram usage and quality)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -507,7 +507,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'volumetric_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples to compute volumetric effects
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -530,7 +530,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'volumetric_sample_distribution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distribute more samples closer to the camera
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -553,7 +553,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'volumetric_light_clamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum light contribution, reducing noise
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -576,7 +576,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'volumetric_shadow_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples to compute volumetric shadowing
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -599,7 +599,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gtao_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance of object that contribute to the ambient occlusion effect
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -622,7 +622,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gtao_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor for ambient occlusion blending
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -645,7 +645,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gtao_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Precision of the horizon search
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -668,7 +668,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bokeh_overblur'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Apply blur to each jittered sample to reduce under-sampling artifacts
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -691,7 +691,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bokeh_max_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Max size of the bokeh shape for the depth of field (lower is faster)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -714,7 +714,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bokeh_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Brightness threshold for using sprite base depth of field
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -737,7 +737,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bokeh_neighbor_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum brightness to consider when rejecting bokeh sprites based on neighborhood (lower is faster)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -760,7 +760,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bokeh_denoise_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of flicker removal applied to bokeh highlights
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -783,7 +783,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bloom_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color applied to the bloom effect
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -806,7 +806,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bloom_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Filters out pixels under this level of brightness
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -829,7 +829,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bloom_knee'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Makes transition between under/over-threshold gradual
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -852,7 +852,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bloom_intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Blend factor
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -875,7 +875,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bloom_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Bloom spread distance
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -898,7 +898,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bloom_clamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum intensity a bloom pixel can have (0 to disabled)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -921,7 +921,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'motion_blur_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -946,7 +946,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'motion_blur_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum blur distance a pixel can spread over
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -969,7 +969,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'motion_blur_steps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Controls accuracy of motion blur, more steps means longer render time
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -992,7 +992,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'motion_blur_position'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset for the shutter's time interval, allows to change the motion blur trails
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1015,7 +1015,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'motion_blur_shutter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Time taken in frames between shutter open and close
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1038,7 +1038,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'motion_blur_depth_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower values will reduce background bleeding onto foreground elements
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1061,7 +1061,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shadow_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1086,7 +1086,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shadow_cube_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Size of point and area light shadow maps
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1109,7 +1109,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shadow_cascade_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Size of sun light shadow maps
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1132,7 +1132,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'light_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1217,7 +1217,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'light_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum light intensity for a light to contribute to the lighting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1276,7 +1276,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'gi_diffuse_bounces'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of time the light is reinjected inside light grids, 0 disable indirect diffuse light
 	 * @see #__DNA__FIELD__gi_diffuse_bounces
 	 */
@@ -1293,7 +1293,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'gi_diffuse_bounces'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of time the light is reinjected inside light grids, 0 disable indirect diffuse light
 	 * @see #__DNA__FIELD__gi_diffuse_bounces
 	 */
@@ -1310,7 +1310,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'gi_cubemap_resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Size of every cubemaps
 	 * @see #__DNA__FIELD__gi_cubemap_resolution
 	 */
@@ -1327,7 +1327,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'gi_cubemap_resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Size of every cubemaps
 	 * @see #__DNA__FIELD__gi_cubemap_resolution
 	 */
@@ -1344,7 +1344,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'gi_visibility_resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Size of the shadow map applied to each irradiance sample
 	 * @see #__DNA__FIELD__gi_visibility_resolution
 	 */
@@ -1361,7 +1361,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'gi_visibility_resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Size of the shadow map applied to each irradiance sample
 	 * @see #__DNA__FIELD__gi_visibility_resolution
 	 */
@@ -1378,7 +1378,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'gi_irradiance_smoothing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Smoother irradiance interpolation but introduce light bleeding
 	 * @see #__DNA__FIELD__gi_irradiance_smoothing
 	 */
@@ -1395,7 +1395,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'gi_irradiance_smoothing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Smoother irradiance interpolation but introduce light bleeding
 	 * @see #__DNA__FIELD__gi_irradiance_smoothing
 	 */
@@ -1412,7 +1412,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'gi_glossy_clamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Clamp pixel intensity to reduce noise inside glossy reflections from reflection cubemaps (0 to disabled)
 	 * @see #__DNA__FIELD__gi_glossy_clamp
 	 */
@@ -1429,7 +1429,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'gi_glossy_clamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Clamp pixel intensity to reduce noise inside glossy reflections from reflection cubemaps (0 to disabled)
 	 * @see #__DNA__FIELD__gi_glossy_clamp
 	 */
@@ -1446,7 +1446,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'gi_filter_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Take more samples during cubemap filtering to remove artifacts
 	 * @see #__DNA__FIELD__gi_filter_quality
 	 */
@@ -1463,7 +1463,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'gi_filter_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Take more samples during cubemap filtering to remove artifacts
 	 * @see #__DNA__FIELD__gi_filter_quality
 	 */
@@ -1536,7 +1536,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'taa_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples, unlimited if 0
 	 * @see #__DNA__FIELD__taa_samples
 	 */
@@ -1553,7 +1553,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'taa_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples, unlimited if 0
 	 * @see #__DNA__FIELD__taa_samples
 	 */
@@ -1570,7 +1570,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'taa_render_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples per pixels for rendering
 	 * @see #__DNA__FIELD__taa_render_samples
 	 */
@@ -1587,7 +1587,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'taa_render_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples per pixels for rendering
 	 * @see #__DNA__FIELD__taa_render_samples
 	 */
@@ -1604,7 +1604,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'sss_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples to compute the scattering effect
 	 * @see #__DNA__FIELD__sss_samples
 	 */
@@ -1621,7 +1621,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'sss_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples to compute the scattering effect
 	 * @see #__DNA__FIELD__sss_samples
 	 */
@@ -1638,7 +1638,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'sss_jitter_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Rotate samples that are below this threshold
 	 * @see #__DNA__FIELD__sss_jitter_threshold
 	 */
@@ -1655,7 +1655,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'sss_jitter_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Rotate samples that are below this threshold
 	 * @see #__DNA__FIELD__sss_jitter_threshold
 	 */
@@ -1672,7 +1672,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'ssr_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Precision of the screen space ray-tracing
 	 * @see #__DNA__FIELD__ssr_quality
 	 */
@@ -1689,7 +1689,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'ssr_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Precision of the screen space ray-tracing
 	 * @see #__DNA__FIELD__ssr_quality
 	 */
@@ -1706,7 +1706,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'ssr_max_roughness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Do not raytrace reflections for roughness above this value
 	 * @see #__DNA__FIELD__ssr_max_roughness
 	 */
@@ -1723,7 +1723,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'ssr_max_roughness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Do not raytrace reflections for roughness above this value
 	 * @see #__DNA__FIELD__ssr_max_roughness
 	 */
@@ -1740,7 +1740,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'ssr_thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Pixel thickness used to detect intersection
 	 * @see #__DNA__FIELD__ssr_thickness
 	 */
@@ -1757,7 +1757,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'ssr_thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Pixel thickness used to detect intersection
 	 * @see #__DNA__FIELD__ssr_thickness
 	 */
@@ -1774,7 +1774,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'ssr_border_fade'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Screen percentage used to fade the SSR
 	 * @see #__DNA__FIELD__ssr_border_fade
 	 */
@@ -1791,7 +1791,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'ssr_border_fade'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Screen percentage used to fade the SSR
 	 * @see #__DNA__FIELD__ssr_border_fade
 	 */
@@ -1808,7 +1808,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'ssr_firefly_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Clamp pixel intensity to remove noise (0 to disabled)
 	 * @see #__DNA__FIELD__ssr_firefly_fac
 	 */
@@ -1825,7 +1825,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'ssr_firefly_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Clamp pixel intensity to remove noise (0 to disabled)
 	 * @see #__DNA__FIELD__ssr_firefly_fac
 	 */
@@ -1842,7 +1842,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'volumetric_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Start distance of the volumetric effect
 	 * @see #__DNA__FIELD__volumetric_start
 	 */
@@ -1859,7 +1859,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'volumetric_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Start distance of the volumetric effect
 	 * @see #__DNA__FIELD__volumetric_start
 	 */
@@ -1876,7 +1876,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'volumetric_end'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * End distance of the volumetric effect
 	 * @see #__DNA__FIELD__volumetric_end
 	 */
@@ -1893,7 +1893,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'volumetric_end'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * End distance of the volumetric effect
 	 * @see #__DNA__FIELD__volumetric_end
 	 */
@@ -1910,7 +1910,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'volumetric_tile_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Control the quality of the volumetric effects (lower size increase vram usage and quality)
 	 * @see #__DNA__FIELD__volumetric_tile_size
 	 */
@@ -1927,7 +1927,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'volumetric_tile_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Control the quality of the volumetric effects (lower size increase vram usage and quality)
 	 * @see #__DNA__FIELD__volumetric_tile_size
 	 */
@@ -1944,7 +1944,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'volumetric_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples to compute volumetric effects
 	 * @see #__DNA__FIELD__volumetric_samples
 	 */
@@ -1961,7 +1961,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'volumetric_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples to compute volumetric effects
 	 * @see #__DNA__FIELD__volumetric_samples
 	 */
@@ -1978,7 +1978,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'volumetric_sample_distribution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distribute more samples closer to the camera
 	 * @see #__DNA__FIELD__volumetric_sample_distribution
 	 */
@@ -1995,7 +1995,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'volumetric_sample_distribution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distribute more samples closer to the camera
 	 * @see #__DNA__FIELD__volumetric_sample_distribution
 	 */
@@ -2012,7 +2012,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'volumetric_light_clamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum light contribution, reducing noise
 	 * @see #__DNA__FIELD__volumetric_light_clamp
 	 */
@@ -2029,7 +2029,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'volumetric_light_clamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum light contribution, reducing noise
 	 * @see #__DNA__FIELD__volumetric_light_clamp
 	 */
@@ -2046,7 +2046,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'volumetric_shadow_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples to compute volumetric shadowing
 	 * @see #__DNA__FIELD__volumetric_shadow_samples
 	 */
@@ -2063,7 +2063,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'volumetric_shadow_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples to compute volumetric shadowing
 	 * @see #__DNA__FIELD__volumetric_shadow_samples
 	 */
@@ -2080,7 +2080,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'gtao_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance of object that contribute to the ambient occlusion effect
 	 * @see #__DNA__FIELD__gtao_distance
 	 */
@@ -2097,7 +2097,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'gtao_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance of object that contribute to the ambient occlusion effect
 	 * @see #__DNA__FIELD__gtao_distance
 	 */
@@ -2114,7 +2114,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'gtao_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor for ambient occlusion blending
 	 * @see #__DNA__FIELD__gtao_factor
 	 */
@@ -2131,7 +2131,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'gtao_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor for ambient occlusion blending
 	 * @see #__DNA__FIELD__gtao_factor
 	 */
@@ -2148,7 +2148,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'gtao_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Precision of the horizon search
 	 * @see #__DNA__FIELD__gtao_quality
 	 */
@@ -2165,7 +2165,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'gtao_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Precision of the horizon search
 	 * @see #__DNA__FIELD__gtao_quality
 	 */
@@ -2182,7 +2182,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'bokeh_overblur'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Apply blur to each jittered sample to reduce under-sampling artifacts
 	 * @see #__DNA__FIELD__bokeh_overblur
 	 */
@@ -2199,7 +2199,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'bokeh_overblur'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Apply blur to each jittered sample to reduce under-sampling artifacts
 	 * @see #__DNA__FIELD__bokeh_overblur
 	 */
@@ -2216,7 +2216,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'bokeh_max_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Max size of the bokeh shape for the depth of field (lower is faster)
 	 * @see #__DNA__FIELD__bokeh_max_size
 	 */
@@ -2233,7 +2233,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'bokeh_max_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Max size of the bokeh shape for the depth of field (lower is faster)
 	 * @see #__DNA__FIELD__bokeh_max_size
 	 */
@@ -2250,7 +2250,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'bokeh_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Brightness threshold for using sprite base depth of field
 	 * @see #__DNA__FIELD__bokeh_threshold
 	 */
@@ -2267,7 +2267,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'bokeh_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Brightness threshold for using sprite base depth of field
 	 * @see #__DNA__FIELD__bokeh_threshold
 	 */
@@ -2284,7 +2284,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'bokeh_neighbor_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum brightness to consider when rejecting bokeh sprites based on neighborhood (lower is faster)
 	 * @see #__DNA__FIELD__bokeh_neighbor_max
 	 */
@@ -2301,7 +2301,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'bokeh_neighbor_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum brightness to consider when rejecting bokeh sprites based on neighborhood (lower is faster)
 	 * @see #__DNA__FIELD__bokeh_neighbor_max
 	 */
@@ -2318,7 +2318,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'bokeh_denoise_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of flicker removal applied to bokeh highlights
 	 * @see #__DNA__FIELD__bokeh_denoise_fac
 	 */
@@ -2335,7 +2335,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'bokeh_denoise_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of flicker removal applied to bokeh highlights
 	 * @see #__DNA__FIELD__bokeh_denoise_fac
 	 */
@@ -2352,7 +2352,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'bloom_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color applied to the bloom effect
 	 * @see #__DNA__FIELD__bloom_color
 	 */
@@ -2373,7 +2373,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'bloom_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color applied to the bloom effect
 	 * @see #__DNA__FIELD__bloom_color
 	 */
@@ -2398,7 +2398,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'bloom_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Filters out pixels under this level of brightness
 	 * @see #__DNA__FIELD__bloom_threshold
 	 */
@@ -2415,7 +2415,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'bloom_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Filters out pixels under this level of brightness
 	 * @see #__DNA__FIELD__bloom_threshold
 	 */
@@ -2432,7 +2432,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'bloom_knee'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Makes transition between under/over-threshold gradual
 	 * @see #__DNA__FIELD__bloom_knee
 	 */
@@ -2449,7 +2449,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'bloom_knee'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Makes transition between under/over-threshold gradual
 	 * @see #__DNA__FIELD__bloom_knee
 	 */
@@ -2466,7 +2466,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'bloom_intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Blend factor
 	 * @see #__DNA__FIELD__bloom_intensity
 	 */
@@ -2483,7 +2483,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'bloom_intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Blend factor
 	 * @see #__DNA__FIELD__bloom_intensity
 	 */
@@ -2500,7 +2500,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'bloom_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Bloom spread distance
 	 * @see #__DNA__FIELD__bloom_radius
 	 */
@@ -2517,7 +2517,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'bloom_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Bloom spread distance
 	 * @see #__DNA__FIELD__bloom_radius
 	 */
@@ -2534,7 +2534,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'bloom_clamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum intensity a bloom pixel can have (0 to disabled)
 	 * @see #__DNA__FIELD__bloom_clamp
 	 */
@@ -2551,7 +2551,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'bloom_clamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum intensity a bloom pixel can have (0 to disabled)
 	 * @see #__DNA__FIELD__bloom_clamp
 	 */
@@ -2568,7 +2568,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'motion_blur_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -2587,7 +2587,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'motion_blur_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -2606,7 +2606,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'motion_blur_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum blur distance a pixel can spread over
 	 * @see #__DNA__FIELD__motion_blur_max
 	 */
@@ -2623,7 +2623,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'motion_blur_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum blur distance a pixel can spread over
 	 * @see #__DNA__FIELD__motion_blur_max
 	 */
@@ -2640,7 +2640,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'motion_blur_steps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Controls accuracy of motion blur, more steps means longer render time
 	 * @see #__DNA__FIELD__motion_blur_steps
 	 */
@@ -2657,7 +2657,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'motion_blur_steps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Controls accuracy of motion blur, more steps means longer render time
 	 * @see #__DNA__FIELD__motion_blur_steps
 	 */
@@ -2674,7 +2674,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'motion_blur_position'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset for the shutter's time interval, allows to change the motion blur trails
 	 * @see #__DNA__FIELD__motion_blur_position
 	 */
@@ -2691,7 +2691,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'motion_blur_position'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset for the shutter's time interval, allows to change the motion blur trails
 	 * @see #__DNA__FIELD__motion_blur_position
 	 */
@@ -2708,7 +2708,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'motion_blur_shutter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Time taken in frames between shutter open and close
 	 * @see #__DNA__FIELD__motion_blur_shutter
 	 */
@@ -2725,7 +2725,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'motion_blur_shutter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Time taken in frames between shutter open and close
 	 * @see #__DNA__FIELD__motion_blur_shutter
 	 */
@@ -2742,7 +2742,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'motion_blur_depth_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower values will reduce background bleeding onto foreground elements
 	 * @see #__DNA__FIELD__motion_blur_depth_scale
 	 */
@@ -2759,7 +2759,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'motion_blur_depth_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower values will reduce background bleeding onto foreground elements
 	 * @see #__DNA__FIELD__motion_blur_depth_scale
 	 */
@@ -2776,7 +2776,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'shadow_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -2795,7 +2795,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'shadow_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -2814,7 +2814,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'shadow_cube_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Size of point and area light shadow maps
 	 * @see #__DNA__FIELD__shadow_cube_size
 	 */
@@ -2831,7 +2831,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'shadow_cube_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Size of point and area light shadow maps
 	 * @see #__DNA__FIELD__shadow_cube_size
 	 */
@@ -2848,7 +2848,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'shadow_cascade_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Size of sun light shadow maps
 	 * @see #__DNA__FIELD__shadow_cascade_size
 	 */
@@ -2865,7 +2865,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'shadow_cascade_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Size of sun light shadow maps
 	 * @see #__DNA__FIELD__shadow_cascade_size
 	 */
@@ -2882,7 +2882,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'light_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -2904,7 +2904,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'light_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -3024,7 +3024,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Get method for struct member 'light_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum light intensity for a light to contribute to the lighting
 	 * @see #__DNA__FIELD__light_threshold
 	 */
@@ -3041,7 +3041,7 @@ public class SceneEEVEE extends CFacade {
 	/**
 	 * Set method for struct member 'light_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum light intensity for a light to contribute to the lighting
 	 * @see #__DNA__FIELD__light_threshold
 	 */

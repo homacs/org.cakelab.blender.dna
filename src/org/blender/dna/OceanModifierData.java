@@ -93,7 +93,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Render resolution. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -116,7 +116,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'viewport_resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Viewport resolution for the non-render case. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -359,7 +359,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'spectrum'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Spectrum being used. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -382,7 +382,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fetch_jonswap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Common JONSWAP parameters. This is the distance from a lee shore, called the fetch, or the distance over which the wind blows with constant velocity. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -465,7 +465,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cachepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -488,7 +488,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'foamlayername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -839,7 +839,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Render resolution. </p>
 	 * @see #__DNA__FIELD__resolution
 	 */
@@ -856,7 +856,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Render resolution. </p>
 	 * @see #__DNA__FIELD__resolution
 	 */
@@ -873,7 +873,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'viewport_resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Viewport resolution for the non-render case. </p>
 	 * @see #__DNA__FIELD__viewport_resolution
 	 */
@@ -890,7 +890,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'viewport_resolution'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Viewport resolution for the non-render case. </p>
 	 * @see #__DNA__FIELD__viewport_resolution
 	 */
@@ -1215,7 +1215,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'spectrum'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Spectrum being used. </p>
 	 * @see #__DNA__FIELD__spectrum
 	 */
@@ -1232,7 +1232,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'spectrum'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Spectrum being used. </p>
 	 * @see #__DNA__FIELD__spectrum
 	 */
@@ -1249,7 +1249,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'fetch_jonswap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Common JONSWAP parameters. This is the distance from a lee shore, called the fetch, or the distance over which the wind blows with constant velocity. </p>
 	 * @see #__DNA__FIELD__fetch_jonswap
 	 */
@@ -1266,7 +1266,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'fetch_jonswap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Common JONSWAP parameters. This is the distance from a lee shore, called the fetch, or the distance over which the wind blows with constant velocity. </p>
 	 * @see #__DNA__FIELD__fetch_jonswap
 	 */
@@ -1367,7 +1367,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'cachepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAX. </p>
 	 * @see #__DNA__FIELD__cachepath
 	 */
@@ -1388,7 +1388,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'cachepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAX. </p>
 	 * @see #__DNA__FIELD__cachepath
 	 */
@@ -1413,7 +1413,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'foamlayername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__foamlayername
 	 */
@@ -1434,7 +1434,7 @@ public class OceanModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'foamlayername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__foamlayername
 	 */

@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bItasc'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> bPose->ikparam when bPose->iksolver=1 </p>
  */
 
@@ -213,7 +214,7 @@ public class bItasc extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'maxvel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Max velocity to SDLS solver. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -236,7 +237,7 @@ public class bItasc extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dampmax'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum damping for DLS solver. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -259,7 +260,7 @@ public class bItasc extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dampeps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Threshold of singular value from which the damping start progressively. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -542,7 +543,7 @@ public class bItasc extends CFacade {
 	/**
 	 * Get method for struct member 'maxvel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Max velocity to SDLS solver. </p>
 	 * @see #__DNA__FIELD__maxvel
 	 */
@@ -559,7 +560,7 @@ public class bItasc extends CFacade {
 	/**
 	 * Set method for struct member 'maxvel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Max velocity to SDLS solver. </p>
 	 * @see #__DNA__FIELD__maxvel
 	 */
@@ -576,7 +577,7 @@ public class bItasc extends CFacade {
 	/**
 	 * Get method for struct member 'dampmax'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum damping for DLS solver. </p>
 	 * @see #__DNA__FIELD__dampmax
 	 */
@@ -593,7 +594,7 @@ public class bItasc extends CFacade {
 	/**
 	 * Set method for struct member 'dampmax'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum damping for DLS solver. </p>
 	 * @see #__DNA__FIELD__dampmax
 	 */
@@ -610,7 +611,7 @@ public class bItasc extends CFacade {
 	/**
 	 * Get method for struct member 'dampeps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Threshold of singular value from which the damping start progressively. </p>
 	 * @see #__DNA__FIELD__dampeps
 	 */
@@ -627,7 +628,7 @@ public class bItasc extends CFacade {
 	/**
 	 * Set method for struct member 'dampeps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Threshold of singular value from which the damping start progressively. </p>
 	 * @see #__DNA__FIELD__dampeps
 	 */

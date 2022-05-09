@@ -33,7 +33,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'versionfile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link UserDef}  has separate do-version handling, and can be read from other files. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eUserPref_Flag . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +99,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dupflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eDupli_ID_Flags . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -122,7 +122,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pref_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> #eUserPref_PrefFlag preferences for the preferences. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -205,7 +205,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tempdir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAXDIR length. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -248,7 +248,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'renderdir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAX length. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -271,7 +271,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'render_cachedir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> EXR cache path 768 = FILE_MAXDIR. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -314,7 +314,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pythondir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional user location for scripts.</p><p><code></code> .</p><p><h2>Note</h2><p><code></code><code></code><code></code><em></em>  have been in gets complicated.</p><code></code>  is refreshed when loading preferences. This is done to support #PREFERENCES_OT_copy_prev which is available to the user when they launch with a new version of Blender. In this case setting the script path on top of factory settings will work without problems. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -377,7 +377,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'image_editor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -400,7 +400,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'anim_player'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -443,7 +443,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'v2d_min_gridsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimum spacing between grid-lines in {@link View2D}  grids. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -466,7 +466,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'timecode_style'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eTimecodeStyles , style of time-code display. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -569,7 +569,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uiflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eUserpref_UI_Flag . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -592,7 +592,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uiflag2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eUserpref_UI_Flag2 . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -655,7 +655,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'app_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Experimental flag for app-templates to make changes to behavior which are outside the scope of typical preferences. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -818,7 +818,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ui_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Setting for UI scale (fractional), before screen DPI has been applied. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -841,7 +841,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ui_line_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Setting for UI line width. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -864,7 +864,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dpi'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -887,7 +887,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dpi_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime, multiplier to scale UI elements based on DPI (fractional). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -910,7 +910,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'inv_dpi_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -933,7 +933,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pixelsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime, calculated from line-width and point-size based on DPI (rounded to int). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -956,7 +956,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'virtual_pixel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated, for forward compatibility. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -979,7 +979,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scrollback'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Console scroll-back limit. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1002,7 +1002,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'node_margin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Node insert offset (aka auto-offset) margin, but might be useful for later stuff as well. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1045,7 +1045,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'transopts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eUserpref_Translation_Flags . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1108,7 +1108,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'app_template'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Startup application template. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1211,7 +1211,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'user_keyconfig_prefs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link wmKeyConfigPref} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1274,7 +1274,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'user_menus'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link bUserMenu} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1297,7 +1297,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'asset_libraries'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link bUserAssetLibrary}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1400,7 +1400,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpu_viewport_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1485,7 +1485,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gp_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eGP_UserdefSettings . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1588,7 +1588,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gizmo_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Generic gizmo size. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1611,7 +1611,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gizmo_size_navigate_v3d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Navigate gizmo size. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1794,7 +1794,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'prefetchframes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1817,7 +1817,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pad_rot_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Control the rotation step of the view when PAD2, PAD4, PAD6&PAD8 is use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1860,7 +1860,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rvisize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotating view icon size. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1883,7 +1883,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rvibright'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotating view icon brightness. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1906,7 +1906,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'recent_files'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum number of recently used files to remember. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1929,7 +1929,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_viewtx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Milliseconds to spend spinning the view. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1972,7 +1972,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'color_picker_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eColorPicker_Types . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1995,7 +1995,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'auto_smoothing_new'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  smoothing type for newly added F-Curves. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2018,7 +2018,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ipo_new'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Interpolation mode for newly added F-Curves. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2041,7 +2041,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'keyhandles_new'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Handle types for newly added keyframes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2084,7 +2084,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'view_frame_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eZoomFrame_Mode . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2107,7 +2107,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'view_frame_keyframes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of keyframes to zoom around current frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2130,7 +2130,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'view_frame_seconds'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Seconds to zoom around current frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2173,7 +2173,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'widget_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Private, defaults to 20 for 72 DPI setting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2216,7 +2216,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tablet_api'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tablet API to use (Windows only). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2239,7 +2239,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pressure_threshold_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Raw tablet pressure that maps to 100%. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2262,7 +2262,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pressure_softness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  non-linearity parameter. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2285,7 +2285,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ndof_sensitivity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Overall sensitivity of 3D mouse. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2328,7 +2328,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ndof_deadzone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dead-zone of 3D mouse. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2351,7 +2351,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ndof_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eNdof_Flag , flags for 3D mouse. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2374,7 +2374,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ogl_multisamples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eMultiSample_Type , amount of samples for OpenGL FSA, if zero no FSA. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2397,7 +2397,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'image_draw_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eImageDrawMethod, Method to be used to draw the images (AUTO, GLSL, Textures or DrawPixels) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2440,7 +2440,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'autokey_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eAutokey_Mode , autokeying mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2463,7 +2463,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'autokey_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags for autokeying. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2486,7 +2486,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'animation_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags for animation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2509,7 +2509,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'text_render'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Options for text rendering. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2552,7 +2552,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'view_rotate_sensitivity_turntable'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Turn-table rotation amount per-pixel in radians. Scaled with DPI. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2575,7 +2575,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'view_rotate_sensitivity_trackball'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Track-ball rotation scale. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2598,7 +2598,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'coba_weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> From texture.h. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2641,7 +2641,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_new_layer_col'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default color for newly created Grease Pencil layers. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2664,7 +2664,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'drag_threshold_mouse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Drag pixels (scaled by DPI). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2787,7 +2787,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'compute_device_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Legacy, for backwards compatibility only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2810,7 +2810,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fcu_inactive_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Opacity of inactive F-Curves in F-Curve Editor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2833,7 +2833,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pie_tap_timeout'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If keeping a pie menu spawn button pressed after this time, it turns into a drag/release pie menu. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2856,7 +2856,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pie_initial_timeout'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Direction in the pie menu will always be calculated from the initial position within this time limit. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2919,7 +2919,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pie_menu_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pie menu radius. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2942,7 +2942,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pie_menu_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pie menu distance from center before a direction is set. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3045,7 +3045,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'render_display_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_RenderDisplayType </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3068,7 +3068,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filebrowser_display_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_TempSpaceDisplayType </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3111,7 +3111,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sequencer_disk_cache_compression'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_DiskCacheCompression </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3174,7 +3174,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sequencer_proxy_setup'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_SeqProxySetup </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3257,7 +3257,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'file_preview_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_File_Preview_Type </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3280,7 +3280,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'statusbar_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_StatusBar_Flag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3323,7 +3323,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'space_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The UI for the user preferences. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3386,7 +3386,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data (keep last). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3417,7 +3417,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'versionfile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link UserDef}  has separate do-version handling, and can be read from other files. </p>
 	 * @see #__DNA__FIELD__versionfile
 	 */
@@ -3434,7 +3434,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'versionfile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link UserDef}  has separate do-version handling, and can be read from other files. </p>
 	 * @see #__DNA__FIELD__versionfile
 	 */
@@ -3479,7 +3479,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eUserPref_Flag . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -3496,7 +3496,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eUserPref_Flag . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -3513,7 +3513,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'dupflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eDupli_ID_Flags . </p>
 	 * @see #__DNA__FIELD__dupflag
 	 */
@@ -3530,7 +3530,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'dupflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eDupli_ID_Flags . </p>
 	 * @see #__DNA__FIELD__dupflag
 	 */
@@ -3547,7 +3547,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'pref_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> #eUserPref_PrefFlag preferences for the preferences. </p>
 	 * @see #__DNA__FIELD__pref_flag
 	 */
@@ -3564,7 +3564,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'pref_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> #eUserPref_PrefFlag preferences for the preferences. </p>
 	 * @see #__DNA__FIELD__pref_flag
 	 */
@@ -3677,7 +3677,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'tempdir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAXDIR length. </p>
 	 * @see #__DNA__FIELD__tempdir
 	 */
@@ -3698,7 +3698,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'tempdir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAXDIR length. </p>
 	 * @see #__DNA__FIELD__tempdir
 	 */
@@ -3763,7 +3763,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'renderdir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAX length. </p>
 	 * @see #__DNA__FIELD__renderdir
 	 */
@@ -3784,7 +3784,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'renderdir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAX length. </p>
 	 * @see #__DNA__FIELD__renderdir
 	 */
@@ -3809,7 +3809,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'render_cachedir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> EXR cache path 768 = FILE_MAXDIR. </p>
 	 * @see #__DNA__FIELD__render_cachedir
 	 */
@@ -3830,7 +3830,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'render_cachedir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> EXR cache path 768 = FILE_MAXDIR. </p>
 	 * @see #__DNA__FIELD__render_cachedir
 	 */
@@ -3895,7 +3895,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'pythondir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional user location for scripts.</p><p><code></code> .</p><p><h2>Note</h2><p><code></code><code></code><code></code><em></em>  have been in gets complicated.</p><code></code>  is refreshed when loading preferences. This is done to support #PREFERENCES_OT_copy_prev which is available to the user when they launch with a new version of Blender. In this case setting the script path on top of factory settings will work without problems. </p>
 	 * @see #__DNA__FIELD__pythondir
 	 */
@@ -3916,7 +3916,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'pythondir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional user location for scripts.</p><p><code></code> .</p><p><h2>Note</h2><p><code></code><code></code><code></code><em></em>  have been in gets complicated.</p><code></code>  is refreshed when loading preferences. This is done to support #PREFERENCES_OT_copy_prev which is available to the user when they launch with a new version of Blender. In this case setting the script path on top of factory settings will work without problems. </p>
 	 * @see #__DNA__FIELD__pythondir
 	 */
@@ -4021,7 +4021,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'image_editor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__image_editor
 	 */
@@ -4042,7 +4042,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'image_editor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__image_editor
 	 */
@@ -4067,7 +4067,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'anim_player'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__anim_player
 	 */
@@ -4088,7 +4088,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'anim_player'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__anim_player
 	 */
@@ -4141,7 +4141,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'v2d_min_gridsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimum spacing between grid-lines in {@link View2D}  grids. </p>
 	 * @see #__DNA__FIELD__v2d_min_gridsize
 	 */
@@ -4158,7 +4158,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'v2d_min_gridsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimum spacing between grid-lines in {@link View2D}  grids. </p>
 	 * @see #__DNA__FIELD__v2d_min_gridsize
 	 */
@@ -4175,7 +4175,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'timecode_style'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eTimecodeStyles , style of time-code display. </p>
 	 * @see #__DNA__FIELD__timecode_style
 	 */
@@ -4192,7 +4192,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'timecode_style'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eTimecodeStyles , style of time-code display. </p>
 	 * @see #__DNA__FIELD__timecode_style
 	 */
@@ -4333,7 +4333,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'uiflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eUserpref_UI_Flag . </p>
 	 * @see #__DNA__FIELD__uiflag
 	 */
@@ -4350,7 +4350,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'uiflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eUserpref_UI_Flag . </p>
 	 * @see #__DNA__FIELD__uiflag
 	 */
@@ -4367,7 +4367,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'uiflag2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eUserpref_UI_Flag2 . </p>
 	 * @see #__DNA__FIELD__uiflag2
 	 */
@@ -4384,7 +4384,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'uiflag2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eUserpref_UI_Flag2 . </p>
 	 * @see #__DNA__FIELD__uiflag2
 	 */
@@ -4469,7 +4469,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'app_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Experimental flag for app-templates to make changes to behavior which are outside the scope of typical preferences. </p>
 	 * @see #__DNA__FIELD__app_flag
 	 */
@@ -4486,7 +4486,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'app_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Experimental flag for app-templates to make changes to behavior which are outside the scope of typical preferences. </p>
 	 * @see #__DNA__FIELD__app_flag
 	 */
@@ -4699,7 +4699,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'ui_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Setting for UI scale (fractional), before screen DPI has been applied. </p>
 	 * @see #__DNA__FIELD__ui_scale
 	 */
@@ -4716,7 +4716,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'ui_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Setting for UI scale (fractional), before screen DPI has been applied. </p>
 	 * @see #__DNA__FIELD__ui_scale
 	 */
@@ -4733,7 +4733,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'ui_line_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Setting for UI line width. </p>
 	 * @see #__DNA__FIELD__ui_line_width
 	 */
@@ -4750,7 +4750,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'ui_line_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Setting for UI line width. </p>
 	 * @see #__DNA__FIELD__ui_line_width
 	 */
@@ -4767,7 +4767,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'dpi'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__dpi
 	 */
@@ -4784,7 +4784,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'dpi'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__dpi
 	 */
@@ -4801,7 +4801,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'dpi_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime, multiplier to scale UI elements based on DPI (fractional). </p>
 	 * @see #__DNA__FIELD__dpi_fac
 	 */
@@ -4818,7 +4818,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'dpi_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime, multiplier to scale UI elements based on DPI (fractional). </p>
 	 * @see #__DNA__FIELD__dpi_fac
 	 */
@@ -4835,7 +4835,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'inv_dpi_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  </p>
 	 * @see #__DNA__FIELD__inv_dpi_fac
 	 */
@@ -4852,7 +4852,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'inv_dpi_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  </p>
 	 * @see #__DNA__FIELD__inv_dpi_fac
 	 */
@@ -4869,7 +4869,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'pixelsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime, calculated from line-width and point-size based on DPI (rounded to int). </p>
 	 * @see #__DNA__FIELD__pixelsize
 	 */
@@ -4886,7 +4886,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'pixelsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime, calculated from line-width and point-size based on DPI (rounded to int). </p>
 	 * @see #__DNA__FIELD__pixelsize
 	 */
@@ -4903,7 +4903,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'virtual_pixel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated, for forward compatibility. </p>
 	 * @see #__DNA__FIELD__virtual_pixel
 	 */
@@ -4920,7 +4920,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'virtual_pixel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated, for forward compatibility. </p>
 	 * @see #__DNA__FIELD__virtual_pixel
 	 */
@@ -4937,7 +4937,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'scrollback'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Console scroll-back limit. </p>
 	 * @see #__DNA__FIELD__scrollback
 	 */
@@ -4954,7 +4954,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'scrollback'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Console scroll-back limit. </p>
 	 * @see #__DNA__FIELD__scrollback
 	 */
@@ -4971,7 +4971,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'node_margin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Node insert offset (aka auto-offset) margin, but might be useful for later stuff as well. </p>
 	 * @see #__DNA__FIELD__node_margin
 	 */
@@ -4988,7 +4988,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'node_margin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Node insert offset (aka auto-offset) margin, but might be useful for later stuff as well. </p>
 	 * @see #__DNA__FIELD__node_margin
 	 */
@@ -5045,7 +5045,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'transopts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eUserpref_Translation_Flags . </p>
 	 * @see #__DNA__FIELD__transopts
 	 */
@@ -5062,7 +5062,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'transopts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eUserpref_Translation_Flags . </p>
 	 * @see #__DNA__FIELD__transopts
 	 */
@@ -5135,7 +5135,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'app_template'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Startup application template. </p>
 	 * @see #__DNA__FIELD__app_template
 	 */
@@ -5156,7 +5156,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'app_template'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Startup application template. </p>
 	 * @see #__DNA__FIELD__app_template
 	 */
@@ -5325,7 +5325,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'user_keyconfig_prefs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link wmKeyConfigPref} . </p>
 	 * @see #__DNA__FIELD__user_keyconfig_prefs
 	 */
@@ -5342,7 +5342,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'user_keyconfig_prefs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link wmKeyConfigPref} . </p>
 	 * @see #__DNA__FIELD__user_keyconfig_prefs
 	 */
@@ -5439,7 +5439,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'user_menus'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link bUserMenu} . </p>
 	 * @see #__DNA__FIELD__user_menus
 	 */
@@ -5456,7 +5456,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'user_menus'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link bUserMenu} . </p>
 	 * @see #__DNA__FIELD__user_menus
 	 */
@@ -5481,7 +5481,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'asset_libraries'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link bUserAssetLibrary}  </p>
 	 * @see #__DNA__FIELD__asset_libraries
 	 */
@@ -5498,7 +5498,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'asset_libraries'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link bUserAssetLibrary}  </p>
 	 * @see #__DNA__FIELD__asset_libraries
 	 */
@@ -5659,7 +5659,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'gpu_viewport_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -5678,7 +5678,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'gpu_viewport_quality'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -5781,7 +5781,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'gp_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eGP_UserdefSettings . </p>
 	 * @see #__DNA__FIELD__gp_settings
 	 */
@@ -5798,7 +5798,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'gp_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eGP_UserdefSettings . </p>
 	 * @see #__DNA__FIELD__gp_settings
 	 */
@@ -5963,7 +5963,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'gizmo_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Generic gizmo size. </p>
 	 * @see #__DNA__FIELD__gizmo_size
 	 */
@@ -5980,7 +5980,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'gizmo_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Generic gizmo size. </p>
 	 * @see #__DNA__FIELD__gizmo_size
 	 */
@@ -5997,7 +5997,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'gizmo_size_navigate_v3d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Navigate gizmo size. </p>
 	 * @see #__DNA__FIELD__gizmo_size_navigate_v3d
 	 */
@@ -6014,7 +6014,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'gizmo_size_navigate_v3d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Navigate gizmo size. </p>
 	 * @see #__DNA__FIELD__gizmo_size_navigate_v3d
 	 */
@@ -6267,7 +6267,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'prefetchframes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD__prefetchframes
 	 */
@@ -6284,7 +6284,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'prefetchframes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD__prefetchframes
 	 */
@@ -6301,7 +6301,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'pad_rot_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Control the rotation step of the view when PAD2, PAD4, PAD6&PAD8 is use. </p>
 	 * @see #__DNA__FIELD__pad_rot_angle
 	 */
@@ -6318,7 +6318,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'pad_rot_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Control the rotation step of the view when PAD2, PAD4, PAD6&PAD8 is use. </p>
 	 * @see #__DNA__FIELD__pad_rot_angle
 	 */
@@ -6375,7 +6375,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'rvisize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotating view icon size. </p>
 	 * @see #__DNA__FIELD__rvisize
 	 */
@@ -6392,7 +6392,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'rvisize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotating view icon size. </p>
 	 * @see #__DNA__FIELD__rvisize
 	 */
@@ -6409,7 +6409,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'rvibright'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotating view icon brightness. </p>
 	 * @see #__DNA__FIELD__rvibright
 	 */
@@ -6426,7 +6426,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'rvibright'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotating view icon brightness. </p>
 	 * @see #__DNA__FIELD__rvibright
 	 */
@@ -6443,7 +6443,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'recent_files'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum number of recently used files to remember. </p>
 	 * @see #__DNA__FIELD__recent_files
 	 */
@@ -6460,7 +6460,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'recent_files'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum number of recently used files to remember. </p>
 	 * @see #__DNA__FIELD__recent_files
 	 */
@@ -6477,7 +6477,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'smooth_viewtx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Milliseconds to spend spinning the view. </p>
 	 * @see #__DNA__FIELD__smooth_viewtx
 	 */
@@ -6494,7 +6494,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'smooth_viewtx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Milliseconds to spend spinning the view. </p>
 	 * @see #__DNA__FIELD__smooth_viewtx
 	 */
@@ -6539,7 +6539,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'color_picker_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eColorPicker_Types . </p>
 	 * @see #__DNA__FIELD__color_picker_type
 	 */
@@ -6556,7 +6556,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'color_picker_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eColorPicker_Types . </p>
 	 * @see #__DNA__FIELD__color_picker_type
 	 */
@@ -6573,7 +6573,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'auto_smoothing_new'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  smoothing type for newly added F-Curves. </p>
 	 * @see #__DNA__FIELD__auto_smoothing_new
 	 */
@@ -6590,7 +6590,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'auto_smoothing_new'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  smoothing type for newly added F-Curves. </p>
 	 * @see #__DNA__FIELD__auto_smoothing_new
 	 */
@@ -6607,7 +6607,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'ipo_new'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Interpolation mode for newly added F-Curves. </p>
 	 * @see #__DNA__FIELD__ipo_new
 	 */
@@ -6624,7 +6624,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'ipo_new'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Interpolation mode for newly added F-Curves. </p>
 	 * @see #__DNA__FIELD__ipo_new
 	 */
@@ -6641,7 +6641,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'keyhandles_new'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Handle types for newly added keyframes. </p>
 	 * @see #__DNA__FIELD__keyhandles_new
 	 */
@@ -6658,7 +6658,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'keyhandles_new'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Handle types for newly added keyframes. </p>
 	 * @see #__DNA__FIELD__keyhandles_new
 	 */
@@ -6715,7 +6715,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'view_frame_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eZoomFrame_Mode . </p>
 	 * @see #__DNA__FIELD__view_frame_type
 	 */
@@ -6732,7 +6732,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'view_frame_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eZoomFrame_Mode . </p>
 	 * @see #__DNA__FIELD__view_frame_type
 	 */
@@ -6749,7 +6749,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'view_frame_keyframes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of keyframes to zoom around current frame. </p>
 	 * @see #__DNA__FIELD__view_frame_keyframes
 	 */
@@ -6766,7 +6766,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'view_frame_keyframes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of keyframes to zoom around current frame. </p>
 	 * @see #__DNA__FIELD__view_frame_keyframes
 	 */
@@ -6783,7 +6783,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'view_frame_seconds'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Seconds to zoom around current frame. </p>
 	 * @see #__DNA__FIELD__view_frame_seconds
 	 */
@@ -6800,7 +6800,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'view_frame_seconds'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Seconds to zoom around current frame. </p>
 	 * @see #__DNA__FIELD__view_frame_seconds
 	 */
@@ -6857,7 +6857,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'widget_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Private, defaults to 20 for 72 DPI setting. </p>
 	 * @see #__DNA__FIELD__widget_unit
 	 */
@@ -6874,7 +6874,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'widget_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Private, defaults to 20 for 72 DPI setting. </p>
 	 * @see #__DNA__FIELD__widget_unit
 	 */
@@ -6919,7 +6919,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'tablet_api'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tablet API to use (Windows only). </p>
 	 * @see #__DNA__FIELD__tablet_api
 	 */
@@ -6936,7 +6936,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'tablet_api'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tablet API to use (Windows only). </p>
 	 * @see #__DNA__FIELD__tablet_api
 	 */
@@ -6953,7 +6953,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'pressure_threshold_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Raw tablet pressure that maps to 100%. </p>
 	 * @see #__DNA__FIELD__pressure_threshold_max
 	 */
@@ -6970,7 +6970,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'pressure_threshold_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Raw tablet pressure that maps to 100%. </p>
 	 * @see #__DNA__FIELD__pressure_threshold_max
 	 */
@@ -6987,7 +6987,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'pressure_softness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  non-linearity parameter. </p>
 	 * @see #__DNA__FIELD__pressure_softness
 	 */
@@ -7004,7 +7004,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'pressure_softness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  non-linearity parameter. </p>
 	 * @see #__DNA__FIELD__pressure_softness
 	 */
@@ -7021,7 +7021,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'ndof_sensitivity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Overall sensitivity of 3D mouse. </p>
 	 * @see #__DNA__FIELD__ndof_sensitivity
 	 */
@@ -7038,7 +7038,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'ndof_sensitivity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Overall sensitivity of 3D mouse. </p>
 	 * @see #__DNA__FIELD__ndof_sensitivity
 	 */
@@ -7083,7 +7083,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'ndof_deadzone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dead-zone of 3D mouse. </p>
 	 * @see #__DNA__FIELD__ndof_deadzone
 	 */
@@ -7100,7 +7100,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'ndof_deadzone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dead-zone of 3D mouse. </p>
 	 * @see #__DNA__FIELD__ndof_deadzone
 	 */
@@ -7117,7 +7117,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'ndof_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eNdof_Flag , flags for 3D mouse. </p>
 	 * @see #__DNA__FIELD__ndof_flag
 	 */
@@ -7134,7 +7134,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'ndof_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eNdof_Flag , flags for 3D mouse. </p>
 	 * @see #__DNA__FIELD__ndof_flag
 	 */
@@ -7151,7 +7151,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'ogl_multisamples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eMultiSample_Type , amount of samples for OpenGL FSA, if zero no FSA. </p>
 	 * @see #__DNA__FIELD__ogl_multisamples
 	 */
@@ -7168,7 +7168,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'ogl_multisamples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eMultiSample_Type , amount of samples for OpenGL FSA, if zero no FSA. </p>
 	 * @see #__DNA__FIELD__ogl_multisamples
 	 */
@@ -7185,7 +7185,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'image_draw_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eImageDrawMethod, Method to be used to draw the images (AUTO, GLSL, Textures or DrawPixels) </p>
 	 * @see #__DNA__FIELD__image_draw_method
 	 */
@@ -7202,7 +7202,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'image_draw_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eImageDrawMethod, Method to be used to draw the images (AUTO, GLSL, Textures or DrawPixels) </p>
 	 * @see #__DNA__FIELD__image_draw_method
 	 */
@@ -7247,7 +7247,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'autokey_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eAutokey_Mode , autokeying mode. </p>
 	 * @see #__DNA__FIELD__autokey_mode
 	 */
@@ -7264,7 +7264,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'autokey_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eAutokey_Mode , autokeying mode. </p>
 	 * @see #__DNA__FIELD__autokey_mode
 	 */
@@ -7281,7 +7281,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'autokey_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags for autokeying. </p>
 	 * @see #__DNA__FIELD__autokey_flag
 	 */
@@ -7298,7 +7298,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'autokey_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags for autokeying. </p>
 	 * @see #__DNA__FIELD__autokey_flag
 	 */
@@ -7315,7 +7315,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'animation_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags for animation. </p>
 	 * @see #__DNA__FIELD__animation_flag
 	 */
@@ -7332,7 +7332,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'animation_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags for animation. </p>
 	 * @see #__DNA__FIELD__animation_flag
 	 */
@@ -7349,7 +7349,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'text_render'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Options for text rendering. </p>
 	 * @see #__DNA__FIELD__text_render
 	 */
@@ -7366,7 +7366,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'text_render'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Options for text rendering. </p>
 	 * @see #__DNA__FIELD__text_render
 	 */
@@ -7411,7 +7411,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'view_rotate_sensitivity_turntable'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Turn-table rotation amount per-pixel in radians. Scaled with DPI. </p>
 	 * @see #__DNA__FIELD__view_rotate_sensitivity_turntable
 	 */
@@ -7428,7 +7428,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'view_rotate_sensitivity_turntable'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Turn-table rotation amount per-pixel in radians. Scaled with DPI. </p>
 	 * @see #__DNA__FIELD__view_rotate_sensitivity_turntable
 	 */
@@ -7445,7 +7445,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'view_rotate_sensitivity_trackball'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Track-ball rotation scale. </p>
 	 * @see #__DNA__FIELD__view_rotate_sensitivity_trackball
 	 */
@@ -7462,7 +7462,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'view_rotate_sensitivity_trackball'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Track-ball rotation scale. </p>
 	 * @see #__DNA__FIELD__view_rotate_sensitivity_trackball
 	 */
@@ -7479,7 +7479,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'coba_weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> From texture.h. </p>
 	 * @see #__DNA__FIELD__coba_weight
 	 */
@@ -7496,7 +7496,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'coba_weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> From texture.h. </p>
 	 * @see #__DNA__FIELD__coba_weight
 	 */
@@ -7561,7 +7561,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_new_layer_col'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default color for newly created Grease Pencil layers. </p>
 	 * @see #__DNA__FIELD__gpencil_new_layer_col
 	 */
@@ -7582,7 +7582,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_new_layer_col'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default color for newly created Grease Pencil layers. </p>
 	 * @see #__DNA__FIELD__gpencil_new_layer_col
 	 */
@@ -7607,7 +7607,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'drag_threshold_mouse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Drag pixels (scaled by DPI). </p>
 	 * @see #__DNA__FIELD__drag_threshold_mouse
 	 */
@@ -7624,7 +7624,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'drag_threshold_mouse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Drag pixels (scaled by DPI). </p>
 	 * @see #__DNA__FIELD__drag_threshold_mouse
 	 */
@@ -7805,7 +7805,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'compute_device_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Legacy, for backwards compatibility only. </p>
 	 * @see #__DNA__FIELD__compute_device_type
 	 */
@@ -7822,7 +7822,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'compute_device_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Legacy, for backwards compatibility only. </p>
 	 * @see #__DNA__FIELD__compute_device_type
 	 */
@@ -7839,7 +7839,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'fcu_inactive_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Opacity of inactive F-Curves in F-Curve Editor. </p>
 	 * @see #__DNA__FIELD__fcu_inactive_alpha
 	 */
@@ -7856,7 +7856,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'fcu_inactive_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Opacity of inactive F-Curves in F-Curve Editor. </p>
 	 * @see #__DNA__FIELD__fcu_inactive_alpha
 	 */
@@ -7873,7 +7873,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'pie_tap_timeout'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If keeping a pie menu spawn button pressed after this time, it turns into a drag/release pie menu. </p>
 	 * @see #__DNA__FIELD__pie_tap_timeout
 	 */
@@ -7890,7 +7890,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'pie_tap_timeout'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If keeping a pie menu spawn button pressed after this time, it turns into a drag/release pie menu. </p>
 	 * @see #__DNA__FIELD__pie_tap_timeout
 	 */
@@ -7907,7 +7907,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'pie_initial_timeout'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Direction in the pie menu will always be calculated from the initial position within this time limit. </p>
 	 * @see #__DNA__FIELD__pie_initial_timeout
 	 */
@@ -7924,7 +7924,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'pie_initial_timeout'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Direction in the pie menu will always be calculated from the initial position within this time limit. </p>
 	 * @see #__DNA__FIELD__pie_initial_timeout
 	 */
@@ -7997,7 +7997,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'pie_menu_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pie menu radius. </p>
 	 * @see #__DNA__FIELD__pie_menu_radius
 	 */
@@ -8014,7 +8014,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'pie_menu_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pie menu radius. </p>
 	 * @see #__DNA__FIELD__pie_menu_radius
 	 */
@@ -8031,7 +8031,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'pie_menu_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pie menu distance from center before a direction is set. </p>
 	 * @see #__DNA__FIELD__pie_menu_threshold
 	 */
@@ -8048,7 +8048,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'pie_menu_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pie menu distance from center before a direction is set. </p>
 	 * @see #__DNA__FIELD__pie_menu_threshold
 	 */
@@ -8177,7 +8177,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'render_display_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_RenderDisplayType </p>
 	 * @see #__DNA__FIELD__render_display_type
 	 */
@@ -8194,7 +8194,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'render_display_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_RenderDisplayType </p>
 	 * @see #__DNA__FIELD__render_display_type
 	 */
@@ -8211,7 +8211,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'filebrowser_display_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_TempSpaceDisplayType </p>
 	 * @see #__DNA__FIELD__filebrowser_display_type
 	 */
@@ -8228,7 +8228,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'filebrowser_display_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_TempSpaceDisplayType </p>
 	 * @see #__DNA__FIELD__filebrowser_display_type
 	 */
@@ -8285,7 +8285,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'sequencer_disk_cache_compression'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_DiskCacheCompression </p>
 	 * @see #__DNA__FIELD__sequencer_disk_cache_compression
 	 */
@@ -8302,7 +8302,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'sequencer_disk_cache_compression'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_DiskCacheCompression </p>
 	 * @see #__DNA__FIELD__sequencer_disk_cache_compression
 	 */
@@ -8375,7 +8375,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'sequencer_proxy_setup'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_SeqProxySetup </p>
 	 * @see #__DNA__FIELD__sequencer_proxy_setup
 	 */
@@ -8392,7 +8392,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'sequencer_proxy_setup'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_SeqProxySetup </p>
 	 * @see #__DNA__FIELD__sequencer_proxy_setup
 	 */
@@ -8505,7 +8505,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'file_preview_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_File_Preview_Type </p>
 	 * @see #__DNA__FIELD__file_preview_type
 	 */
@@ -8522,7 +8522,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'file_preview_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_File_Preview_Type </p>
 	 * @see #__DNA__FIELD__file_preview_type
 	 */
@@ -8539,7 +8539,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'statusbar_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_StatusBar_Flag </p>
 	 * @see #__DNA__FIELD__statusbar_flag
 	 */
@@ -8556,7 +8556,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'statusbar_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eUserpref_StatusBar_Flag </p>
 	 * @see #__DNA__FIELD__statusbar_flag
 	 */
@@ -8609,7 +8609,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'space_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The UI for the user preferences. </p>
 	 * @see #__DNA__FIELD__space_data
 	 */
@@ -8626,7 +8626,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'space_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The UI for the user preferences. </p>
 	 * @see #__DNA__FIELD__space_data
 	 */
@@ -8723,7 +8723,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Get method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data (keep last). </p>
 	 * @see #__DNA__FIELD__runtime
 	 */
@@ -8740,7 +8740,7 @@ public class UserDef extends CFacade {
 	/**
 	 * Set method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data (keep last). </p>
 	 * @see #__DNA__FIELD__runtime
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bActionModifier'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Simple uniform modifier structure, assumed it can hold all type info. </p>
  */
 
@@ -134,7 +135,7 @@ public class bActionModifier extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'noisesize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> noise modifier </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -197,7 +198,7 @@ public class bActionModifier extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'no_rot_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> path deform modifier </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -408,7 +409,7 @@ public class bActionModifier extends CFacade {
 	/**
 	 * Get method for struct member 'noisesize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> noise modifier </p>
 	 * @see #__DNA__FIELD__noisesize
 	 */
@@ -425,7 +426,7 @@ public class bActionModifier extends CFacade {
 	/**
 	 * Set method for struct member 'noisesize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> noise modifier </p>
 	 * @see #__DNA__FIELD__noisesize
 	 */
@@ -498,7 +499,7 @@ public class bActionModifier extends CFacade {
 	/**
 	 * Get method for struct member 'no_rot_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> path deform modifier </p>
 	 * @see #__DNA__FIELD__no_rot_axis
 	 */
@@ -515,7 +516,7 @@ public class bActionModifier extends CFacade {
 	/**
 	 * Set method for struct member 'no_rot_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> path deform modifier </p>
 	 * @see #__DNA__FIELD__no_rot_axis
 	 */

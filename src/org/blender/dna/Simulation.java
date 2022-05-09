@@ -53,7 +53,7 @@ public class Simulation extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> animation data (must be immediately after id) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class Simulation extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'nodetree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This nodetree is embedded into the data block. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -183,7 +183,7 @@ public class Simulation extends CFacade {
 	/**
 	 * Get method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> animation data (must be immediately after id) </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -203,7 +203,7 @@ public class Simulation extends CFacade {
 	/**
 	 * Set method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> animation data (must be immediately after id) </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -221,7 +221,7 @@ public class Simulation extends CFacade {
 	/**
 	 * Get method for struct member 'nodetree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This nodetree is embedded into the data block. </p>
 	 * @see #__DNA__FIELD__nodetree
 	 */
@@ -241,7 +241,7 @@ public class Simulation extends CFacade {
 	/**
 	 * Set method for struct member 'nodetree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This nodetree is embedded into the data block. </p>
 	 * @see #__DNA__FIELD__nodetree
 	 */

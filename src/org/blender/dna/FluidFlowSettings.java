@@ -33,7 +33,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  Runtime-only fields (from here on). <ndash/>  For fast RNA access. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,7 +96,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'noise_texture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Texture that controls emission strength
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -119,7 +119,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'verts_old'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Initial velocity. Previous vertex positions in domain space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -162,7 +162,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vel_multi'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiplier for inherited velocity. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -265,7 +265,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'density'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  User-accessible fields (from here on). <ndash/>  Emission. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -328,8 +328,9 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'temperature'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Temperature difference to ambient temperature<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Temperature difference to ambient temperature
+	 * <h4>Blender Source Code</h4>
 	 * <p> Delta temperature (temp - ambient temp). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -352,8 +353,9 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'volume_density'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Controls fluid emission from within the mesh (higher value results in greater emissions from inside the mesh)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Controls fluid emission from within the mesh (higher value results in greater emissions from inside the mesh)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Density emitted within mesh volume. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -376,8 +378,9 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'surface_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Controls fluid emission from the mesh surface (higher value results in emission further away from the mesh surface<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Controls fluid emission from the mesh surface (higher value results in emission further away from the mesh surface
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum emission distance from mesh surface. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -400,7 +403,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'particle_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Particle size in simulation cells
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -423,7 +426,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'subframes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of additional samples to take between frames to improve quality of fast moving flows
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -446,8 +449,9 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'texture_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of texture mapping<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Size of texture mapping
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture control. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -470,7 +474,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'texture_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Z-offset of texture mapping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -513,7 +517,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -556,7 +560,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Smoke, flames, both, outflow, liquid. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -579,7 +583,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'behavior'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inflow, outflow, static. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -662,7 +666,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Absolute emission etc. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -693,7 +697,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  Runtime-only fields (from here on). <ndash/>  For fast RNA access. </p>
 	 * @see #__DNA__FIELD__fmd
 	 */
@@ -713,7 +717,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  Runtime-only fields (from here on). <ndash/>  For fast RNA access. </p>
 	 * @see #__DNA__FIELD__fmd
 	 */
@@ -795,7 +799,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Get method for struct member 'noise_texture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Texture that controls emission strength
 	 * @see #__DNA__FIELD__noise_texture
 	 */
@@ -815,7 +819,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Set method for struct member 'noise_texture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Texture that controls emission strength
 	 * @see #__DNA__FIELD__noise_texture
 	 */
@@ -833,7 +837,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Get method for struct member 'verts_old'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Initial velocity. Previous vertex positions in domain space. </p>
 	 * @see #__DNA__FIELD__verts_old
 	 */
@@ -853,7 +857,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Set method for struct member 'verts_old'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Initial velocity. Previous vertex positions in domain space. </p>
 	 * @see #__DNA__FIELD__verts_old
 	 */
@@ -899,7 +903,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Get method for struct member 'vel_multi'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiplier for inherited velocity. </p>
 	 * @see #__DNA__FIELD__vel_multi
 	 */
@@ -916,7 +920,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Set method for struct member 'vel_multi'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiplier for inherited velocity. </p>
 	 * @see #__DNA__FIELD__vel_multi
 	 */
@@ -1069,7 +1073,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Get method for struct member 'density'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  User-accessible fields (from here on). <ndash/>  Emission. </p>
 	 * @see #__DNA__FIELD__density
 	 */
@@ -1086,7 +1090,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Set method for struct member 'density'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  User-accessible fields (from here on). <ndash/>  Emission. </p>
 	 * @see #__DNA__FIELD__density
 	 */
@@ -1171,8 +1175,9 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Get method for struct member 'temperature'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Temperature difference to ambient temperature<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Temperature difference to ambient temperature
+	 * <h4>Blender Source Code</h4>
 	 * <p> Delta temperature (temp - ambient temp). </p>
 	 * @see #__DNA__FIELD__temperature
 	 */
@@ -1189,8 +1194,9 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Set method for struct member 'temperature'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Temperature difference to ambient temperature<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Temperature difference to ambient temperature
+	 * <h4>Blender Source Code</h4>
 	 * <p> Delta temperature (temp - ambient temp). </p>
 	 * @see #__DNA__FIELD__temperature
 	 */
@@ -1207,8 +1213,9 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Get method for struct member 'volume_density'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Controls fluid emission from within the mesh (higher value results in greater emissions from inside the mesh)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Controls fluid emission from within the mesh (higher value results in greater emissions from inside the mesh)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Density emitted within mesh volume. </p>
 	 * @see #__DNA__FIELD__volume_density
 	 */
@@ -1225,8 +1232,9 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Set method for struct member 'volume_density'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Controls fluid emission from within the mesh (higher value results in greater emissions from inside the mesh)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Controls fluid emission from within the mesh (higher value results in greater emissions from inside the mesh)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Density emitted within mesh volume. </p>
 	 * @see #__DNA__FIELD__volume_density
 	 */
@@ -1243,8 +1251,9 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Get method for struct member 'surface_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Controls fluid emission from the mesh surface (higher value results in emission further away from the mesh surface<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Controls fluid emission from the mesh surface (higher value results in emission further away from the mesh surface
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum emission distance from mesh surface. </p>
 	 * @see #__DNA__FIELD__surface_distance
 	 */
@@ -1261,8 +1270,9 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Set method for struct member 'surface_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Controls fluid emission from the mesh surface (higher value results in emission further away from the mesh surface<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Controls fluid emission from the mesh surface (higher value results in emission further away from the mesh surface
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum emission distance from mesh surface. </p>
 	 * @see #__DNA__FIELD__surface_distance
 	 */
@@ -1279,7 +1289,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Get method for struct member 'particle_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Particle size in simulation cells
 	 * @see #__DNA__FIELD__particle_size
 	 */
@@ -1296,7 +1306,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Set method for struct member 'particle_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Particle size in simulation cells
 	 * @see #__DNA__FIELD__particle_size
 	 */
@@ -1313,7 +1323,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Get method for struct member 'subframes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of additional samples to take between frames to improve quality of fast moving flows
 	 * @see #__DNA__FIELD__subframes
 	 */
@@ -1330,7 +1340,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Set method for struct member 'subframes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of additional samples to take between frames to improve quality of fast moving flows
 	 * @see #__DNA__FIELD__subframes
 	 */
@@ -1347,8 +1357,9 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Get method for struct member 'texture_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of texture mapping<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Size of texture mapping
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture control. </p>
 	 * @see #__DNA__FIELD__texture_size
 	 */
@@ -1365,8 +1376,9 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Set method for struct member 'texture_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of texture mapping<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Size of texture mapping
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture control. </p>
 	 * @see #__DNA__FIELD__texture_size
 	 */
@@ -1383,7 +1395,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Get method for struct member 'texture_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Z-offset of texture mapping
 	 * @see #__DNA__FIELD__texture_offset
 	 */
@@ -1400,7 +1412,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Set method for struct member 'texture_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Z-offset of texture mapping
 	 * @see #__DNA__FIELD__texture_offset
 	 */
@@ -1457,7 +1469,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Get method for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
@@ -1478,7 +1490,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Set method for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
@@ -1531,7 +1543,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Smoke, flames, both, outflow, liquid. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -1548,7 +1560,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Smoke, flames, both, outflow, liquid. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -1565,7 +1577,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Get method for struct member 'behavior'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inflow, outflow, static. </p>
 	 * @see #__DNA__FIELD__behavior
 	 */
@@ -1582,7 +1594,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Set method for struct member 'behavior'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inflow, outflow, static. </p>
 	 * @see #__DNA__FIELD__behavior
 	 */
@@ -1695,7 +1707,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Get method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Absolute emission etc. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -1712,7 +1724,7 @@ public class FluidFlowSettings extends CFacade {
 	/**
 	 * Set method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Absolute emission etc. </p>
 	 * @see #__DNA__FIELD__flags
 	 */

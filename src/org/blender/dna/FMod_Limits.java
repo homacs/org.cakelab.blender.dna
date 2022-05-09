@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FMod_Limits'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> limits modifier data </p>
  */
 
@@ -34,7 +35,7 @@ public class FMod_Limits extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rect defining the min/max values. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +58,7 @@ public class FMod_Limits extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for limiting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -108,7 +109,7 @@ public class FMod_Limits extends CFacade {
 	/**
 	 * Get method for struct member 'rect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rect defining the min/max values. </p>
 	 * @see #__DNA__FIELD__rect
 	 */
@@ -125,7 +126,7 @@ public class FMod_Limits extends CFacade {
 	/**
 	 * Set method for struct member 'rect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rect defining the min/max values. </p>
 	 * @see #__DNA__FIELD__rect
 	 */
@@ -150,7 +151,7 @@ public class FMod_Limits extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for limiting. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -167,7 +168,7 @@ public class FMod_Limits extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for limiting. </p>
 	 * @see #__DNA__FIELD__flag
 	 */

@@ -52,7 +52,7 @@ public class RemeshModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flood-fill option, controls how small components can be before they are removed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,7 +75,7 @@ public class RemeshModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ratio between size of model and grid </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -118,7 +118,7 @@ public class RemeshModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'depth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> octree depth </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -201,7 +201,7 @@ public class RemeshModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'voxel_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenVDB Voxel remesh properties. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -288,7 +288,7 @@ public class RemeshModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flood-fill option, controls how small components can be before they are removed. </p>
 	 * @see #__DNA__FIELD__threshold
 	 */
@@ -305,7 +305,7 @@ public class RemeshModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flood-fill option, controls how small components can be before they are removed. </p>
 	 * @see #__DNA__FIELD__threshold
 	 */
@@ -322,7 +322,7 @@ public class RemeshModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ratio between size of model and grid </p>
 	 * @see #__DNA__FIELD__scale
 	 */
@@ -339,7 +339,7 @@ public class RemeshModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ratio between size of model and grid </p>
 	 * @see #__DNA__FIELD__scale
 	 */
@@ -384,7 +384,7 @@ public class RemeshModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'depth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> octree depth </p>
 	 * @see #__DNA__FIELD__depth
 	 */
@@ -401,7 +401,7 @@ public class RemeshModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'depth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> octree depth </p>
 	 * @see #__DNA__FIELD__depth
 	 */
@@ -502,7 +502,7 @@ public class RemeshModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'voxel_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenVDB Voxel remesh properties. </p>
 	 * @see #__DNA__FIELD__voxel_size
 	 */
@@ -519,7 +519,7 @@ public class RemeshModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'voxel_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenVDB Voxel remesh properties. </p>
 	 * @see #__DNA__FIELD__voxel_size
 	 */

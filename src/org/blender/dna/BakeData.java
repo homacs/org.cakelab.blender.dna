@@ -53,7 +53,7 @@ public class BakeData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -400,7 +400,7 @@ public class BakeData extends CFacade {
 	/**
 	 * Get method for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAX. </p>
 	 * @see #__DNA__FIELD__filepath
 	 */
@@ -421,7 +421,7 @@ public class BakeData extends CFacade {
 	/**
 	 * Set method for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FILE_MAX. </p>
 	 * @see #__DNA__FIELD__filepath
 	 */

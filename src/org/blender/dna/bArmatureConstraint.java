@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bArmatureConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Armature Constraint </p>
  */
 
@@ -34,7 +35,7 @@ public class bArmatureConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General settings/state indicators accessed by bitmapping. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -77,7 +78,7 @@ public class bArmatureConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'targets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A list of targets that this constraint has (bConstraintTarget-s). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -108,7 +109,7 @@ public class bArmatureConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General settings/state indicators accessed by bitmapping. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -125,7 +126,7 @@ public class bArmatureConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General settings/state indicators accessed by bitmapping. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -182,7 +183,7 @@ public class bArmatureConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'targets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A list of targets that this constraint has (bConstraintTarget-s). </p>
 	 * @see #__DNA__FIELD__targets
 	 */
@@ -199,7 +200,7 @@ public class bArmatureConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'targets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A list of targets that this constraint has (bConstraintTarget-s). </p>
 	 * @see #__DNA__FIELD__targets
 	 */

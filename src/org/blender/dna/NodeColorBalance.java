@@ -33,7 +33,7 @@ public class NodeColorBalance extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'slope'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ASC CDL parameters </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -136,7 +136,7 @@ public class NodeColorBalance extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> LGG parameters </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -207,7 +207,7 @@ public class NodeColorBalance extends CFacade {
 	/**
 	 * Get method for struct member 'slope'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ASC CDL parameters </p>
 	 * @see #__DNA__FIELD__slope
 	 */
@@ -228,7 +228,7 @@ public class NodeColorBalance extends CFacade {
 	/**
 	 * Set method for struct member 'slope'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ASC CDL parameters </p>
 	 * @see #__DNA__FIELD__slope
 	 */
@@ -401,7 +401,7 @@ public class NodeColorBalance extends CFacade {
 	/**
 	 * Get method for struct member 'lift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> LGG parameters </p>
 	 * @see #__DNA__FIELD__lift
 	 */
@@ -422,7 +422,7 @@ public class NodeColorBalance extends CFacade {
 	/**
 	 * Set method for struct member 'lift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> LGG parameters </p>
 	 * @see #__DNA__FIELD__lift
 	 */

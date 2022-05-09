@@ -33,7 +33,7 @@ public class EffectorWeights extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only use effectors from this group of objects. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +56,7 @@ public class EffectorWeights extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Effector type specific weights. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -147,7 +147,7 @@ public class EffectorWeights extends CFacade {
 	/**
 	 * Get method for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only use effectors from this group of objects. </p>
 	 * @see #__DNA__FIELD__group
 	 */
@@ -167,7 +167,7 @@ public class EffectorWeights extends CFacade {
 	/**
 	 * Set method for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only use effectors from this group of objects. </p>
 	 * @see #__DNA__FIELD__group
 	 */
@@ -185,7 +185,7 @@ public class EffectorWeights extends CFacade {
 	/**
 	 * Get method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Effector type specific weights. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
@@ -206,7 +206,7 @@ public class EffectorWeights extends CFacade {
 	/**
 	 * Set method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Effector type specific weights. </p>
 	 * @see #__DNA__FIELD__weight
 	 */

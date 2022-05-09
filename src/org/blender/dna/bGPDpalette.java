@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPDpalette'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> palette of colors </p>
  */
 
@@ -74,7 +75,7 @@ public class bGPDpalette extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'colors'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to individual colors. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -97,7 +98,7 @@ public class bGPDpalette extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'info'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Palette}  name. Must be unique. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -232,7 +233,7 @@ public class bGPDpalette extends CFacade {
 	/**
 	 * Get method for struct member 'colors'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to individual colors. </p>
 	 * @see #__DNA__FIELD__colors
 	 */
@@ -249,7 +250,7 @@ public class bGPDpalette extends CFacade {
 	/**
 	 * Set method for struct member 'colors'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to individual colors. </p>
 	 * @see #__DNA__FIELD__colors
 	 */
@@ -274,7 +275,7 @@ public class bGPDpalette extends CFacade {
 	/**
 	 * Get method for struct member 'info'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Palette}  name. Must be unique. </p>
 	 * @see #__DNA__FIELD__info
 	 */
@@ -295,7 +296,7 @@ public class bGPDpalette extends CFacade {
 	/**
 	 * Set method for struct member 'info'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Palette}  name. Must be unique. </p>
 	 * @see #__DNA__FIELD__info
 	 */

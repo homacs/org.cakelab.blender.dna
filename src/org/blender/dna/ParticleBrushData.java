@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ParticleBrushData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  Particle  Edit Settings for a Particle  {@link Editing}  {@link Brush} . </p>
  */
@@ -34,7 +35,7 @@ public class ParticleBrushData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Common setting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +58,7 @@ public class ParticleBrushData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'step'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For specific brushes only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -168,7 +169,7 @@ public class ParticleBrushData extends CFacade {
 	/**
 	 * Get method for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Common setting. </p>
 	 * @see #__DNA__FIELD__size
 	 */
@@ -185,7 +186,7 @@ public class ParticleBrushData extends CFacade {
 	/**
 	 * Set method for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Common setting. </p>
 	 * @see #__DNA__FIELD__size
 	 */
@@ -202,7 +203,7 @@ public class ParticleBrushData extends CFacade {
 	/**
 	 * Get method for struct member 'step'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For specific brushes only. </p>
 	 * @see #__DNA__FIELD__step
 	 */
@@ -219,7 +220,7 @@ public class ParticleBrushData extends CFacade {
 	/**
 	 * Set method for struct member 'step'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For specific brushes only. </p>
 	 * @see #__DNA__FIELD__step
 	 */

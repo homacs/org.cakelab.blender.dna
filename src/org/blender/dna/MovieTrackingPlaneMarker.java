@@ -33,8 +33,9 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'corners'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Array of coordinates which represents UI rectangle corners in frame normalized coordinates<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Array of coordinates which represents UI rectangle corners in frame normalized coordinates
+	 * <h4>Blender Source Code</h4>
 	 * <p> Corners of the plane in the following order: <pre> Y
 	 *  ^
 	 *  | (3) --- (2)
@@ -73,7 +74,7 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'framenr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of frame plane marker is associated with. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,7 +97,7 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Marker's flag (alive, ...). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -127,8 +128,9 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	/**
 	 * Get method for struct member 'corners'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Array of coordinates which represents UI rectangle corners in frame normalized coordinates<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Array of coordinates which represents UI rectangle corners in frame normalized coordinates
+	 * <h4>Blender Source Code</h4>
 	 * <p> Corners of the plane in the following order: <pre> Y
 	 *  ^
 	 *  | (3) --- (2)
@@ -166,8 +168,9 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	/**
 	 * Set method for struct member 'corners'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Array of coordinates which represents UI rectangle corners in frame normalized coordinates<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Array of coordinates which represents UI rectangle corners in frame normalized coordinates
+	 * <h4>Blender Source Code</h4>
 	 * <p> Corners of the plane in the following order: <pre> Y
 	 *  ^
 	 *  | (3) --- (2)
@@ -208,7 +211,7 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	/**
 	 * Get method for struct member 'framenr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of frame plane marker is associated with. </p>
 	 * @see #__DNA__FIELD__framenr
 	 */
@@ -225,7 +228,7 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	/**
 	 * Set method for struct member 'framenr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of frame plane marker is associated with. </p>
 	 * @see #__DNA__FIELD__framenr
 	 */
@@ -242,7 +245,7 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Marker's flag (alive, ...). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -259,7 +262,7 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Marker's flag (alive, ...). </p>
 	 * @see #__DNA__FIELD__flag
 	 */

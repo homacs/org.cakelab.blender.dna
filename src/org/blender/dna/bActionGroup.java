@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bActionGroup'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  Action Groups -----------------------------------<mdash/>  Action-Channel Group (agrp)</p><p> These are stored as a list per-Action, and are only used to group that Action's channels in an Animation Editor.</p><p> Even though all FCurves live in a big list per Action, each group they are in also holds references to the achans within that list which belong to it. Care must be taken to ensure that action-groups never end up being the sole 'owner' of a channel.</p><p> This is also exploited for bone-groups. Bone-Groups are stored per {@link bPose} , and are used primarily to color bones in the 3d-view. There are other benefits too, but those are mostly related to Action-Groups.</p><p> Note that these two uses each have their own RNA 'ActionGroup' and 'BoneGroup'. </p>
  */
@@ -75,7 +76,7 @@ public class bActionGroup extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'channels'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NOTE: this must not be touched by standard listbase functions which would clear links to other channels. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +99,7 @@ public class bActionGroup extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for this action-group. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,7 +122,7 @@ public class bActionGroup extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'customCol'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of custom color set to use when used for bones (0=default - used for all old files, -1=custom set). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -144,7 +145,7 @@ public class bActionGroup extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the group. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -167,7 +168,7 @@ public class bActionGroup extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color set to use when customCol == -1. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -262,7 +263,7 @@ public class bActionGroup extends CFacade {
 	/**
 	 * Get method for struct member 'channels'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NOTE: this must not be touched by standard listbase functions which would clear links to other channels. </p>
 	 * @see #__DNA__FIELD__channels
 	 */
@@ -279,7 +280,7 @@ public class bActionGroup extends CFacade {
 	/**
 	 * Set method for struct member 'channels'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NOTE: this must not be touched by standard listbase functions which would clear links to other channels. </p>
 	 * @see #__DNA__FIELD__channels
 	 */
@@ -304,7 +305,7 @@ public class bActionGroup extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for this action-group. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -321,7 +322,7 @@ public class bActionGroup extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for this action-group. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -338,7 +339,7 @@ public class bActionGroup extends CFacade {
 	/**
 	 * Get method for struct member 'customCol'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of custom color set to use when used for bones (0=default - used for all old files, -1=custom set). </p>
 	 * @see #__DNA__FIELD__customCol
 	 */
@@ -355,7 +356,7 @@ public class bActionGroup extends CFacade {
 	/**
 	 * Set method for struct member 'customCol'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of custom color set to use when used for bones (0=default - used for all old files, -1=custom set). </p>
 	 * @see #__DNA__FIELD__customCol
 	 */
@@ -372,7 +373,7 @@ public class bActionGroup extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the group. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -393,7 +394,7 @@ public class bActionGroup extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the group. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -418,7 +419,7 @@ public class bActionGroup extends CFacade {
 	/**
 	 * Get method for struct member 'cs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color set to use when customCol == -1. </p>
 	 * @see #__DNA__FIELD__cs
 	 */
@@ -435,7 +436,7 @@ public class bActionGroup extends CFacade {
 	/**
 	 * Set method for struct member 'cs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color set to use when customCol == -1. </p>
 	 * @see #__DNA__FIELD__cs
 	 */

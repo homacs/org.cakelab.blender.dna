@@ -32,7 +32,7 @@ public class NodeGeometryCurveSetHandles extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'handle_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeCurveHandleType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +55,7 @@ public class NodeGeometryCurveSetHandles extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeCurveHandleMode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -86,7 +86,7 @@ public class NodeGeometryCurveSetHandles extends CFacade {
 	/**
 	 * Get method for struct member 'handle_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeCurveHandleType. </p>
 	 * @see #__DNA__FIELD__handle_type
 	 */
@@ -103,7 +103,7 @@ public class NodeGeometryCurveSetHandles extends CFacade {
 	/**
 	 * Set method for struct member 'handle_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeCurveHandleType. </p>
 	 * @see #__DNA__FIELD__handle_type
 	 */
@@ -120,7 +120,7 @@ public class NodeGeometryCurveSetHandles extends CFacade {
 	/**
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeCurveHandleMode. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -137,7 +137,7 @@ public class NodeGeometryCurveSetHandles extends CFacade {
 	/**
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeCurveHandleMode. </p>
 	 * @see #__DNA__FIELD__mode
 	 */

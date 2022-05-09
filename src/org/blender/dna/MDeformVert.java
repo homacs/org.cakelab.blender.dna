@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MDeformVert'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Stores all of an element's vertex groups, and their weight values. </p>
  */
 
@@ -33,7 +34,7 @@ public class MDeformVert extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dw'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of weight indices and values.<ul><li><p> There must not be any duplicate #def_nr indices.</p></li><li><p> Groups in the array are unordered.</p></li><li><p> Indices outside the usable range of groups are ignored. </p></li></ul> 
 	 * There must not be any duplicate #def_nr indices.
 	 * Groups in the array are unordered.
@@ -61,7 +62,7 @@ public class MDeformVert extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'totweight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The length of the {@link #getDw()}  array. <h2>Note</h2><p> This is not necessarily the same length as the total number of vertex groups. However, generally it isn't larger. </p> This is not necessarily the same length as the total number of vertex groups. However, generally it isn't larger. 
 	 * 
 	 * </p>
@@ -86,7 +87,7 @@ public class MDeformVert extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag is only in use as a run-time tag at the moment. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -117,7 +118,7 @@ public class MDeformVert extends CFacade {
 	/**
 	 * Get method for struct member 'dw'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of weight indices and values.<ul><li><p> There must not be any duplicate #def_nr indices.</p></li><li><p> Groups in the array are unordered.</p></li><li><p> Indices outside the usable range of groups are ignored. </p></li></ul> 
 	 * There must not be any duplicate #def_nr indices.
 	 * Groups in the array are unordered.
@@ -142,7 +143,7 @@ public class MDeformVert extends CFacade {
 	/**
 	 * Set method for struct member 'dw'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of weight indices and values.<ul><li><p> There must not be any duplicate #def_nr indices.</p></li><li><p> Groups in the array are unordered.</p></li><li><p> Indices outside the usable range of groups are ignored. </p></li></ul> 
 	 * There must not be any duplicate #def_nr indices.
 	 * Groups in the array are unordered.
@@ -165,7 +166,7 @@ public class MDeformVert extends CFacade {
 	/**
 	 * Get method for struct member 'totweight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The length of the {@link #getDw()}  array. <h2>Note</h2><p> This is not necessarily the same length as the total number of vertex groups. However, generally it isn't larger. </p> This is not necessarily the same length as the total number of vertex groups. However, generally it isn't larger. 
 	 * 
 	 * </p>
@@ -184,7 +185,7 @@ public class MDeformVert extends CFacade {
 	/**
 	 * Set method for struct member 'totweight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The length of the {@link #getDw()}  array. <h2>Note</h2><p> This is not necessarily the same length as the total number of vertex groups. However, generally it isn't larger. </p> This is not necessarily the same length as the total number of vertex groups. However, generally it isn't larger. 
 	 * 
 	 * </p>
@@ -203,7 +204,7 @@ public class MDeformVert extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag is only in use as a run-time tag at the moment. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -220,7 +221,7 @@ public class MDeformVert extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag is only in use as a run-time tag at the moment. </p>
 	 * @see #__DNA__FIELD__flag
 	 */

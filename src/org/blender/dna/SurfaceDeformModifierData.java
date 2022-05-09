@@ -73,7 +73,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bind target object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,7 +96,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'verts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex bind data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -375,7 +375,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bind target object. </p>
 	 * @see #__DNA__FIELD__target
 	 */
@@ -395,7 +395,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bind target object. </p>
 	 * @see #__DNA__FIELD__target
 	 */
@@ -413,7 +413,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'verts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex bind data. </p>
 	 * @see #__DNA__FIELD__verts
 	 */
@@ -433,7 +433,7 @@ public class SurfaceDeformModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'verts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex bind data. </p>
 	 * @see #__DNA__FIELD__verts
 	 */

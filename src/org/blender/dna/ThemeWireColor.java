@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ThemeWireColor'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Set of colors for use as a custom color set for Objects/Bones wire drawing. </p>
  */
 
@@ -94,7 +95,7 @@ public class ThemeWireColor extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eWireColor_Flags . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -265,7 +266,7 @@ public class ThemeWireColor extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eWireColor_Flags . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -282,7 +283,7 @@ public class ThemeWireColor extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eWireColor_Flags . </p>
 	 * @see #__DNA__FIELD__flag
 	 */

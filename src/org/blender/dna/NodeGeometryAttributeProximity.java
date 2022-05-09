@@ -32,7 +32,7 @@ public class NodeGeometryAttributeProximity extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'target_geometry_element'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeProximityTargetType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -63,7 +63,7 @@ public class NodeGeometryAttributeProximity extends CFacade {
 	/**
 	 * Get method for struct member 'target_geometry_element'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeProximityTargetType. </p>
 	 * @see #__DNA__FIELD__target_geometry_element
 	 */
@@ -80,7 +80,7 @@ public class NodeGeometryAttributeProximity extends CFacade {
 	/**
 	 * Set method for struct member 'target_geometry_element'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeProximityTargetType. </p>
 	 * @see #__DNA__FIELD__target_geometry_element
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FCurve'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> 'Function-Curve' - defines values over time for a given setting (fcu) </p>
  */
 
@@ -74,7 +75,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'grp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> group Group that F-Curve belongs to. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -97,8 +98,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'driver'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Channel Driver (only set for Driver F-Curves)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Channel Driver (only set for Driver F-Curves)
+	 * <h4>Blender Source Code</h4>
 	 * <p> driver settings Only valid for drivers (i.e. stored in {@link AnimData}  not Actions). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,8 +123,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'modifiers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Modifiers affecting the shape of the F-Curve<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Modifiers affecting the shape of the F-Curve
+	 * <h4>Blender Source Code</h4>
 	 * <p> evaluation settings {@link FCurve}  Modifiers. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -145,7 +148,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> motion data User-editable keyframes (array). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -168,7 +171,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fpt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 'baked/imported' motion samples (array). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -191,7 +194,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of points which define the curve (i.e. size of arrays in FPoints). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -214,7 +217,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'active_keyframe_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of active keyframe in {@link #getBezt()}  for numerical editing in the interface. A value of FCURVE_ACTIVE_KEYFRAME_NONE  indicates that the {@link FCurve}  has no active keyframe.</p><p> Do not access directly, use #BKE_fcurve_active_keyframe_index() and #BKE_fcurve_active_keyframe_set() instead. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -237,7 +240,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> value cache + settings Value stored from last time curve was evaluated (not threadsafe, debug display only!). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -260,7 +263,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-editable settings for this curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -283,7 +286,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'extend'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value-extending mode for this curve (does not cover). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -306,8 +309,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'auto_smoothing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Algorithm used to compute automatic handles<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Algorithm used to compute automatic handles
+	 * <h4>Blender Source Code</h4>
 	 * <p> Auto-handle smoothing mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -350,8 +354,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'array_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Index to the specific property affected by F-Curve if applicable<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Index to the specific property affected by F-Curve if applicable
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  is an array, use this to access the array index.</p><p><h2>Note</h2><p> This may be negative (as it wasn't prevented in 2.91 and older). Currently it silently fails to resolve the data-path in this case. </p> This may be negative (as it wasn't prevented in 2.91 and older). Currently it silently fails to resolve the data-path in this case. 
 	 * 
 	 * </p>
@@ -376,7 +381,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> RNA-path to resolve data-access, see: #RNA_path_resolve_property.</p><p><h2>Note</h2><p> String look-ups for collection and custom-properties are escaped using #BLI_str_escape. </p> String look-ups for collection and custom-properties are escaped using #BLI_str_escape. 
 	 * 
 	 * </p>
@@ -401,8 +406,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'color_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method used to determine color of F-Curve in Graph Editor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Method used to determine color of F-Curve in Graph Editor
+	 * <h4>Blender Source Code</h4>
 	 * <p> curve coloring (for editor) Coloring method to use (eFCurve_Coloring). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -425,8 +431,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Color of the F-Curve in the Graph Editor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Color of the F-Curve in the Graph Editor
+	 * <h4>Blender Source Code</h4>
 	 * <p> The last-color this curve took. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -561,7 +568,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Get method for struct member 'grp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> group Group that F-Curve belongs to. </p>
 	 * @see #__DNA__FIELD__grp
 	 */
@@ -581,7 +588,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Set method for struct member 'grp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> group Group that F-Curve belongs to. </p>
 	 * @see #__DNA__FIELD__grp
 	 */
@@ -599,8 +606,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Get method for struct member 'driver'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Channel Driver (only set for Driver F-Curves)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Channel Driver (only set for Driver F-Curves)
+	 * <h4>Blender Source Code</h4>
 	 * <p> driver settings Only valid for drivers (i.e. stored in {@link AnimData}  not Actions). </p>
 	 * @see #__DNA__FIELD__driver
 	 */
@@ -620,8 +628,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Set method for struct member 'driver'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Channel Driver (only set for Driver F-Curves)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Channel Driver (only set for Driver F-Curves)
+	 * <h4>Blender Source Code</h4>
 	 * <p> driver settings Only valid for drivers (i.e. stored in {@link AnimData}  not Actions). </p>
 	 * @see #__DNA__FIELD__driver
 	 */
@@ -639,8 +648,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Get method for struct member 'modifiers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Modifiers affecting the shape of the F-Curve<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Modifiers affecting the shape of the F-Curve
+	 * <h4>Blender Source Code</h4>
 	 * <p> evaluation settings {@link FCurve}  Modifiers. </p>
 	 * @see #__DNA__FIELD__modifiers
 	 */
@@ -657,8 +667,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Set method for struct member 'modifiers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Modifiers affecting the shape of the F-Curve<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Modifiers affecting the shape of the F-Curve
+	 * <h4>Blender Source Code</h4>
 	 * <p> evaluation settings {@link FCurve}  Modifiers. </p>
 	 * @see #__DNA__FIELD__modifiers
 	 */
@@ -683,7 +694,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Get method for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> motion data User-editable keyframes (array). </p>
 	 * @see #__DNA__FIELD__bezt
 	 */
@@ -703,7 +714,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Set method for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> motion data User-editable keyframes (array). </p>
 	 * @see #__DNA__FIELD__bezt
 	 */
@@ -721,7 +732,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Get method for struct member 'fpt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 'baked/imported' motion samples (array). </p>
 	 * @see #__DNA__FIELD__fpt
 	 */
@@ -741,7 +752,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Set method for struct member 'fpt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 'baked/imported' motion samples (array). </p>
 	 * @see #__DNA__FIELD__fpt
 	 */
@@ -759,7 +770,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Get method for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of points which define the curve (i.e. size of arrays in FPoints). </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
@@ -776,7 +787,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Set method for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of points which define the curve (i.e. size of arrays in FPoints). </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
@@ -793,7 +804,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Get method for struct member 'active_keyframe_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of active keyframe in {@link #getBezt()}  for numerical editing in the interface. A value of FCURVE_ACTIVE_KEYFRAME_NONE  indicates that the {@link FCurve}  has no active keyframe.</p><p> Do not access directly, use #BKE_fcurve_active_keyframe_index() and #BKE_fcurve_active_keyframe_set() instead. </p>
 	 * @see #__DNA__FIELD__active_keyframe_index
 	 */
@@ -810,7 +821,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Set method for struct member 'active_keyframe_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of active keyframe in {@link #getBezt()}  for numerical editing in the interface. A value of FCURVE_ACTIVE_KEYFRAME_NONE  indicates that the {@link FCurve}  has no active keyframe.</p><p> Do not access directly, use #BKE_fcurve_active_keyframe_index() and #BKE_fcurve_active_keyframe_set() instead. </p>
 	 * @see #__DNA__FIELD__active_keyframe_index
 	 */
@@ -827,7 +838,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Get method for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> value cache + settings Value stored from last time curve was evaluated (not threadsafe, debug display only!). </p>
 	 * @see #__DNA__FIELD__curval
 	 */
@@ -844,7 +855,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Set method for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> value cache + settings Value stored from last time curve was evaluated (not threadsafe, debug display only!). </p>
 	 * @see #__DNA__FIELD__curval
 	 */
@@ -861,7 +872,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-editable settings for this curve. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -878,7 +889,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-editable settings for this curve. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -895,7 +906,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Get method for struct member 'extend'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value-extending mode for this curve (does not cover). </p>
 	 * @see #__DNA__FIELD__extend
 	 */
@@ -912,7 +923,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Set method for struct member 'extend'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value-extending mode for this curve (does not cover). </p>
 	 * @see #__DNA__FIELD__extend
 	 */
@@ -929,8 +940,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Get method for struct member 'auto_smoothing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Algorithm used to compute automatic handles<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Algorithm used to compute automatic handles
+	 * <h4>Blender Source Code</h4>
 	 * <p> Auto-handle smoothing mode. </p>
 	 * @see #__DNA__FIELD__auto_smoothing
 	 */
@@ -947,8 +959,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Set method for struct member 'auto_smoothing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Algorithm used to compute automatic handles<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Algorithm used to compute automatic handles
+	 * <h4>Blender Source Code</h4>
 	 * <p> Auto-handle smoothing mode. </p>
 	 * @see #__DNA__FIELD__auto_smoothing
 	 */
@@ -1005,8 +1018,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Get method for struct member 'array_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Index to the specific property affected by F-Curve if applicable<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Index to the specific property affected by F-Curve if applicable
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  is an array, use this to access the array index.</p><p><h2>Note</h2><p> This may be negative (as it wasn't prevented in 2.91 and older). Currently it silently fails to resolve the data-path in this case. </p> This may be negative (as it wasn't prevented in 2.91 and older). Currently it silently fails to resolve the data-path in this case. 
 	 * 
 	 * </p>
@@ -1025,8 +1039,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Set method for struct member 'array_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Index to the specific property affected by F-Curve if applicable<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Index to the specific property affected by F-Curve if applicable
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  is an array, use this to access the array index.</p><p><h2>Note</h2><p> This may be negative (as it wasn't prevented in 2.91 and older). Currently it silently fails to resolve the data-path in this case. </p> This may be negative (as it wasn't prevented in 2.91 and older). Currently it silently fails to resolve the data-path in this case. 
 	 * 
 	 * </p>
@@ -1045,7 +1060,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Get method for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> RNA-path to resolve data-access, see: #RNA_path_resolve_property.</p><p><h2>Note</h2><p> String look-ups for collection and custom-properties are escaped using #BLI_str_escape. </p> String look-ups for collection and custom-properties are escaped using #BLI_str_escape. 
 	 * 
 	 * </p>
@@ -1067,7 +1082,7 @@ public class FCurve extends CFacade {
 	/**
 	 * Set method for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> RNA-path to resolve data-access, see: #RNA_path_resolve_property.</p><p><h2>Note</h2><p> String look-ups for collection and custom-properties are escaped using #BLI_str_escape. </p> String look-ups for collection and custom-properties are escaped using #BLI_str_escape. 
 	 * 
 	 * </p>
@@ -1087,8 +1102,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Get method for struct member 'color_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method used to determine color of F-Curve in Graph Editor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Method used to determine color of F-Curve in Graph Editor
+	 * <h4>Blender Source Code</h4>
 	 * <p> curve coloring (for editor) Coloring method to use (eFCurve_Coloring). </p>
 	 * @see #__DNA__FIELD__color_mode
 	 */
@@ -1105,8 +1121,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Set method for struct member 'color_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method used to determine color of F-Curve in Graph Editor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Method used to determine color of F-Curve in Graph Editor
+	 * <h4>Blender Source Code</h4>
 	 * <p> curve coloring (for editor) Coloring method to use (eFCurve_Coloring). </p>
 	 * @see #__DNA__FIELD__color_mode
 	 */
@@ -1123,8 +1140,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Get method for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Color of the F-Curve in the Graph Editor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Color of the F-Curve in the Graph Editor
+	 * <h4>Blender Source Code</h4>
 	 * <p> The last-color this curve took. </p>
 	 * @see #__DNA__FIELD__color
 	 */
@@ -1145,8 +1163,9 @@ public class FCurve extends CFacade {
 	/**
 	 * Set method for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Color of the F-Curve in the Graph Editor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Color of the F-Curve in the Graph Editor
+	 * <h4>Blender Source Code</h4>
 	 * <p> The last-color this curve took. </p>
 	 * @see #__DNA__FIELD__color
 	 */

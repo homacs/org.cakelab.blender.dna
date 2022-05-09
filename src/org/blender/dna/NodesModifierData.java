@@ -92,7 +92,7 @@ public class NodesModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'runtime_eval_log'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Contains logged information from the last evaluation. This can be used to help the user to debug a node tree. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -247,7 +247,7 @@ public class NodesModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'runtime_eval_log'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Contains logged information from the last evaluation. This can be used to help the user to debug a node tree. </p>
 	 * @see #__DNA__FIELD__runtime_eval_log
 	 */
@@ -267,7 +267,7 @@ public class NodesModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'runtime_eval_log'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Contains logged information from the last evaluation. This can be used to help the user to debug a node tree. </p>
 	 * @see #__DNA__FIELD__runtime_eval_log
 	 */

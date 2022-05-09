@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'WorkSpaceDataRelation'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Generic (and simple/primitive) struct for storing a history of assignments/relations of workspace data to non-workspace data in a listbase inside the workspace.</p><p> Using this we can restore the old state of a workspace if the user switches back to it.</p><p><em></em> . More concretely:<ul><li><p> There are two windows, win1 and win2.</p></li><li><p> Both show workspace ws1, but both also had workspace ws2 activated at some point before.</p></li><li><p> Last time ws2 was active in win1, screen-layout sl1 was activated.</p></li><li><p> Last time ws2 was active in win2, screen-layout sl2 was activated.</p></li><li><p> When changing from ws1 to ws2 in win1, screen-layout sl1 should be activated again.</p></li><li><p> When changing from ws1 to ws2 in win2, screen-layout sl2 should be activated again. So that means we have to store the active screen-layout in a per workspace, per window relation. This struct is used to store an active screen-layout for each window within the workspace. To find the screen-layout to activate for this window-workspace combination, simply lookup the {@link WorkSpaceDataRelation}  with the workspace-hook of the window set as parent. </p></li></ul> 
  * There are two windows, win1 and win2.
  * Both show workspace ws1, but both also had workspace ws2 activated at some point before.
@@ -82,7 +83,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The data used to identify the relation (e.g. to find screen-layout (= value) from/for a hook). NOTE: Now runtime only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -105,7 +106,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'value'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The value for this parent-data/workspace relation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -128,7 +129,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parentid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Reference to the actual parent window, wmWindow->winid. Used in read/write code. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -243,7 +244,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	/**
 	 * Get method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The data used to identify the relation (e.g. to find screen-layout (= value) from/for a hook). NOTE: Now runtime only. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -263,7 +264,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	/**
 	 * Set method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The data used to identify the relation (e.g. to find screen-layout (= value) from/for a hook). NOTE: Now runtime only. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -281,7 +282,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	/**
 	 * Get method for struct member 'value'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The value for this parent-data/workspace relation. </p>
 	 * @see #__DNA__FIELD__value
 	 */
@@ -301,7 +302,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	/**
 	 * Set method for struct member 'value'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The value for this parent-data/workspace relation. </p>
 	 * @see #__DNA__FIELD__value
 	 */
@@ -319,7 +320,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	/**
 	 * Get method for struct member 'parentid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Reference to the actual parent window, wmWindow->winid. Used in read/write code. </p>
 	 * @see #__DNA__FIELD__parentid
 	 */
@@ -336,7 +337,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	/**
 	 * Set method for struct member 'parentid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Reference to the actual parent window, wmWindow->winid. Used in read/write code. </p>
 	 * @see #__DNA__FIELD__parentid
 	 */

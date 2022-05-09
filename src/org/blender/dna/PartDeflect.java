@@ -33,7 +33,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General settings flag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +56,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'deflect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deflection flag - does mesh deflect particles. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +79,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'forcefield'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Force field type, do the vertices attract / repel particles? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -102,7 +102,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fall-off type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -125,7 +125,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shape'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Point, plane or surface. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -148,7 +148,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tex_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture effector. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -171,7 +171,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'kink'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For curve guide. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -234,7 +234,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'f_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Main effector values The strength of the force (+ or - ). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -257,7 +257,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'f_damp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Damping ratio of the harmonic effector. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -280,7 +280,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'f_flow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How much force is converted into "air flow", i.e. force used as the velocity of surrounding medium. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -303,7 +303,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'f_wind_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How much force is reduced when acting parallel to a surface, e.g. cloth. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -346,7 +346,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'f_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Noise size for noise effector, restlength for harmonic effector. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -369,7 +369,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'f_power'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> fall-off The power law - real gravitation is 2 (square). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -392,7 +392,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'maxdist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If indicated, use this maximum. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -415,7 +415,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mindist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If indicated, use this minimum. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -438,7 +438,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'f_power_r'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radial fall-off power. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -461,7 +461,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'maxrad'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radial versions of above. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -504,7 +504,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_damp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> particle collisions Damping factor for particle deflection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -527,7 +527,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_rdamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random element of damping for deflection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -550,7 +550,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_perm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Chance of particle passing through mesh. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -573,7 +573,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_frict'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Friction factor for particle deflection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -596,7 +596,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_rfrict'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random element of friction for deflection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -619,7 +619,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_stickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Surface particle stickiness. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -642,7 +642,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'absorption'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for forces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -665,7 +665,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_sbdamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> softbody collisions Damping factor for softbody deflection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -688,7 +688,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_sbift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inner face thickness for softbody deflection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -711,7 +711,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_sboft'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outer face thickness for softbody deflection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -734,7 +734,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'clump_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> guide curve, same as for particle child effects </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -857,7 +857,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tex_nabla'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> texture effector Used for calculating partial derivatives. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -880,7 +880,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture of the texture effector. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -903,7 +903,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rng'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> effector noise Random noise generator for e.g. wind. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -926,7 +926,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'f_noise'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Noise of force. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -949,7 +949,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'seed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Noise random seed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -972,7 +972,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'drawvec1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display Size Runtime only : start of the curve or draw scale. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -995,7 +995,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'drawvec2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only : end of the curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1018,7 +1018,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'drawvec_falloff_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1061,7 +1061,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'drawvec_falloff_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1104,7 +1104,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'f_source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Force source object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1127,7 +1127,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_cfrict'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Friction of cloth collisions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1178,7 +1178,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General settings flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -1195,7 +1195,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General settings flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -1212,7 +1212,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'deflect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deflection flag - does mesh deflect particles. </p>
 	 * @see #__DNA__FIELD__deflect
 	 */
@@ -1229,7 +1229,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'deflect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deflection flag - does mesh deflect particles. </p>
 	 * @see #__DNA__FIELD__deflect
 	 */
@@ -1246,7 +1246,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'forcefield'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Force field type, do the vertices attract / repel particles? </p>
 	 * @see #__DNA__FIELD__forcefield
 	 */
@@ -1263,7 +1263,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'forcefield'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Force field type, do the vertices attract / repel particles? </p>
 	 * @see #__DNA__FIELD__forcefield
 	 */
@@ -1280,7 +1280,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fall-off type. </p>
 	 * @see #__DNA__FIELD__falloff
 	 */
@@ -1297,7 +1297,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fall-off type. </p>
 	 * @see #__DNA__FIELD__falloff
 	 */
@@ -1314,7 +1314,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'shape'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Point, plane or surface. </p>
 	 * @see #__DNA__FIELD__shape
 	 */
@@ -1331,7 +1331,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'shape'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Point, plane or surface. </p>
 	 * @see #__DNA__FIELD__shape
 	 */
@@ -1348,7 +1348,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'tex_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture effector. </p>
 	 * @see #__DNA__FIELD__tex_mode
 	 */
@@ -1365,7 +1365,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'tex_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture effector. </p>
 	 * @see #__DNA__FIELD__tex_mode
 	 */
@@ -1382,7 +1382,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'kink'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For curve guide. </p>
 	 * @see #__DNA__FIELD__kink
 	 */
@@ -1399,7 +1399,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'kink'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For curve guide. </p>
 	 * @see #__DNA__FIELD__kink
 	 */
@@ -1472,7 +1472,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'f_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Main effector values The strength of the force (+ or - ). </p>
 	 * @see #__DNA__FIELD__f_strength
 	 */
@@ -1489,7 +1489,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'f_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Main effector values The strength of the force (+ or - ). </p>
 	 * @see #__DNA__FIELD__f_strength
 	 */
@@ -1506,7 +1506,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'f_damp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Damping ratio of the harmonic effector. </p>
 	 * @see #__DNA__FIELD__f_damp
 	 */
@@ -1523,7 +1523,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'f_damp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Damping ratio of the harmonic effector. </p>
 	 * @see #__DNA__FIELD__f_damp
 	 */
@@ -1540,7 +1540,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'f_flow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How much force is converted into "air flow", i.e. force used as the velocity of surrounding medium. </p>
 	 * @see #__DNA__FIELD__f_flow
 	 */
@@ -1557,7 +1557,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'f_flow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How much force is converted into "air flow", i.e. force used as the velocity of surrounding medium. </p>
 	 * @see #__DNA__FIELD__f_flow
 	 */
@@ -1574,7 +1574,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'f_wind_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How much force is reduced when acting parallel to a surface, e.g. cloth. </p>
 	 * @see #__DNA__FIELD__f_wind_factor
 	 */
@@ -1591,7 +1591,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'f_wind_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How much force is reduced when acting parallel to a surface, e.g. cloth. </p>
 	 * @see #__DNA__FIELD__f_wind_factor
 	 */
@@ -1648,7 +1648,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'f_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Noise size for noise effector, restlength for harmonic effector. </p>
 	 * @see #__DNA__FIELD__f_size
 	 */
@@ -1665,7 +1665,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'f_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Noise size for noise effector, restlength for harmonic effector. </p>
 	 * @see #__DNA__FIELD__f_size
 	 */
@@ -1682,7 +1682,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'f_power'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> fall-off The power law - real gravitation is 2 (square). </p>
 	 * @see #__DNA__FIELD__f_power
 	 */
@@ -1699,7 +1699,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'f_power'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> fall-off The power law - real gravitation is 2 (square). </p>
 	 * @see #__DNA__FIELD__f_power
 	 */
@@ -1716,7 +1716,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'maxdist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If indicated, use this maximum. </p>
 	 * @see #__DNA__FIELD__maxdist
 	 */
@@ -1733,7 +1733,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'maxdist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If indicated, use this maximum. </p>
 	 * @see #__DNA__FIELD__maxdist
 	 */
@@ -1750,7 +1750,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'mindist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If indicated, use this minimum. </p>
 	 * @see #__DNA__FIELD__mindist
 	 */
@@ -1767,7 +1767,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'mindist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If indicated, use this minimum. </p>
 	 * @see #__DNA__FIELD__mindist
 	 */
@@ -1784,7 +1784,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'f_power_r'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radial fall-off power. </p>
 	 * @see #__DNA__FIELD__f_power_r
 	 */
@@ -1801,7 +1801,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'f_power_r'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radial fall-off power. </p>
 	 * @see #__DNA__FIELD__f_power_r
 	 */
@@ -1818,7 +1818,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'maxrad'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radial versions of above. </p>
 	 * @see #__DNA__FIELD__maxrad
 	 */
@@ -1835,7 +1835,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'maxrad'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radial versions of above. </p>
 	 * @see #__DNA__FIELD__maxrad
 	 */
@@ -1880,7 +1880,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'pdef_damp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> particle collisions Damping factor for particle deflection. </p>
 	 * @see #__DNA__FIELD__pdef_damp
 	 */
@@ -1897,7 +1897,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'pdef_damp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> particle collisions Damping factor for particle deflection. </p>
 	 * @see #__DNA__FIELD__pdef_damp
 	 */
@@ -1914,7 +1914,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'pdef_rdamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random element of damping for deflection. </p>
 	 * @see #__DNA__FIELD__pdef_rdamp
 	 */
@@ -1931,7 +1931,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'pdef_rdamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random element of damping for deflection. </p>
 	 * @see #__DNA__FIELD__pdef_rdamp
 	 */
@@ -1948,7 +1948,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'pdef_perm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Chance of particle passing through mesh. </p>
 	 * @see #__DNA__FIELD__pdef_perm
 	 */
@@ -1965,7 +1965,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'pdef_perm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Chance of particle passing through mesh. </p>
 	 * @see #__DNA__FIELD__pdef_perm
 	 */
@@ -1982,7 +1982,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'pdef_frict'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Friction factor for particle deflection. </p>
 	 * @see #__DNA__FIELD__pdef_frict
 	 */
@@ -1999,7 +1999,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'pdef_frict'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Friction factor for particle deflection. </p>
 	 * @see #__DNA__FIELD__pdef_frict
 	 */
@@ -2016,7 +2016,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'pdef_rfrict'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random element of friction for deflection. </p>
 	 * @see #__DNA__FIELD__pdef_rfrict
 	 */
@@ -2033,7 +2033,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'pdef_rfrict'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random element of friction for deflection. </p>
 	 * @see #__DNA__FIELD__pdef_rfrict
 	 */
@@ -2050,7 +2050,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'pdef_stickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Surface particle stickiness. </p>
 	 * @see #__DNA__FIELD__pdef_stickness
 	 */
@@ -2067,7 +2067,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'pdef_stickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Surface particle stickiness. </p>
 	 * @see #__DNA__FIELD__pdef_stickness
 	 */
@@ -2084,7 +2084,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'absorption'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for forces. </p>
 	 * @see #__DNA__FIELD__absorption
 	 */
@@ -2101,7 +2101,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'absorption'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for forces. </p>
 	 * @see #__DNA__FIELD__absorption
 	 */
@@ -2118,7 +2118,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'pdef_sbdamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> softbody collisions Damping factor for softbody deflection. </p>
 	 * @see #__DNA__FIELD__pdef_sbdamp
 	 */
@@ -2135,7 +2135,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'pdef_sbdamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> softbody collisions Damping factor for softbody deflection. </p>
 	 * @see #__DNA__FIELD__pdef_sbdamp
 	 */
@@ -2152,7 +2152,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'pdef_sbift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inner face thickness for softbody deflection. </p>
 	 * @see #__DNA__FIELD__pdef_sbift
 	 */
@@ -2169,7 +2169,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'pdef_sbift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inner face thickness for softbody deflection. </p>
 	 * @see #__DNA__FIELD__pdef_sbift
 	 */
@@ -2186,7 +2186,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'pdef_sboft'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outer face thickness for softbody deflection. </p>
 	 * @see #__DNA__FIELD__pdef_sboft
 	 */
@@ -2203,7 +2203,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'pdef_sboft'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outer face thickness for softbody deflection. </p>
 	 * @see #__DNA__FIELD__pdef_sboft
 	 */
@@ -2220,7 +2220,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'clump_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> guide curve, same as for particle child effects </p>
 	 * @see #__DNA__FIELD__clump_fac
 	 */
@@ -2237,7 +2237,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'clump_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> guide curve, same as for particle child effects </p>
 	 * @see #__DNA__FIELD__clump_fac
 	 */
@@ -2394,7 +2394,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'tex_nabla'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> texture effector Used for calculating partial derivatives. </p>
 	 * @see #__DNA__FIELD__tex_nabla
 	 */
@@ -2411,7 +2411,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'tex_nabla'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> texture effector Used for calculating partial derivatives. </p>
 	 * @see #__DNA__FIELD__tex_nabla
 	 */
@@ -2428,7 +2428,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'tex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture of the texture effector. </p>
 	 * @see #__DNA__FIELD__tex
 	 */
@@ -2448,7 +2448,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'tex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture of the texture effector. </p>
 	 * @see #__DNA__FIELD__tex
 	 */
@@ -2466,7 +2466,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'rng'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> effector noise Random noise generator for e.g. wind. </p>
 	 * @see #__DNA__FIELD__rng
 	 */
@@ -2486,7 +2486,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'rng'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> effector noise Random noise generator for e.g. wind. </p>
 	 * @see #__DNA__FIELD__rng
 	 */
@@ -2504,7 +2504,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'f_noise'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Noise of force. </p>
 	 * @see #__DNA__FIELD__f_noise
 	 */
@@ -2521,7 +2521,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'f_noise'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Noise of force. </p>
 	 * @see #__DNA__FIELD__f_noise
 	 */
@@ -2538,7 +2538,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'seed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Noise random seed. </p>
 	 * @see #__DNA__FIELD__seed
 	 */
@@ -2555,7 +2555,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'seed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Noise random seed. </p>
 	 * @see #__DNA__FIELD__seed
 	 */
@@ -2572,7 +2572,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'drawvec1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display Size Runtime only : start of the curve or draw scale. </p>
 	 * @see #__DNA__FIELD__drawvec1
 	 */
@@ -2593,7 +2593,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'drawvec1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display Size Runtime only : start of the curve or draw scale. </p>
 	 * @see #__DNA__FIELD__drawvec1
 	 */
@@ -2618,7 +2618,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'drawvec2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only : end of the curve. </p>
 	 * @see #__DNA__FIELD__drawvec2
 	 */
@@ -2639,7 +2639,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'drawvec2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only : end of the curve. </p>
 	 * @see #__DNA__FIELD__drawvec2
 	 */
@@ -2664,7 +2664,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'drawvec_falloff_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only. </p>
 	 * @see #__DNA__FIELD__drawvec_falloff_min
 	 */
@@ -2685,7 +2685,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'drawvec_falloff_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only. </p>
 	 * @see #__DNA__FIELD__drawvec_falloff_min
 	 */
@@ -2750,7 +2750,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'drawvec_falloff_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only. </p>
 	 * @see #__DNA__FIELD__drawvec_falloff_max
 	 */
@@ -2771,7 +2771,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'drawvec_falloff_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only. </p>
 	 * @see #__DNA__FIELD__drawvec_falloff_max
 	 */
@@ -2836,7 +2836,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'f_source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Force source object. </p>
 	 * @see #__DNA__FIELD__f_source
 	 */
@@ -2856,7 +2856,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'f_source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Force source object. </p>
 	 * @see #__DNA__FIELD__f_source
 	 */
@@ -2874,7 +2874,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Get method for struct member 'pdef_cfrict'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Friction of cloth collisions. </p>
 	 * @see #__DNA__FIELD__pdef_cfrict
 	 */
@@ -2891,7 +2891,7 @@ public class PartDeflect extends CFacade {
 	/**
 	 * Set method for struct member 'pdef_cfrict'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Friction of cloth collisions. </p>
 	 * @see #__DNA__FIELD__pdef_cfrict
 	 */

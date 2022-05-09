@@ -73,7 +73,7 @@ public class SpreadsheetRowFilter extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'column_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,7 +96,7 @@ public class SpreadsheetRowFilter extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'operation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpreadsheetFilterOperation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -119,7 +119,7 @@ public class SpreadsheetRowFilter extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_RowFilterFlag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -222,7 +222,7 @@ public class SpreadsheetRowFilter extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How close float values need to be to be equal
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -397,7 +397,7 @@ public class SpreadsheetRowFilter extends CFacade {
 	/**
 	 * Get method for struct member 'column_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__column_name
 	 */
@@ -418,7 +418,7 @@ public class SpreadsheetRowFilter extends CFacade {
 	/**
 	 * Set method for struct member 'column_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__column_name
 	 */
@@ -443,7 +443,7 @@ public class SpreadsheetRowFilter extends CFacade {
 	/**
 	 * Get method for struct member 'operation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpreadsheetFilterOperation. </p>
 	 * @see #__DNA__FIELD__operation
 	 */
@@ -460,7 +460,7 @@ public class SpreadsheetRowFilter extends CFacade {
 	/**
 	 * Set method for struct member 'operation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpreadsheetFilterOperation. </p>
 	 * @see #__DNA__FIELD__operation
 	 */
@@ -477,7 +477,7 @@ public class SpreadsheetRowFilter extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_RowFilterFlag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -494,7 +494,7 @@ public class SpreadsheetRowFilter extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_RowFilterFlag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -639,7 +639,7 @@ public class SpreadsheetRowFilter extends CFacade {
 	/**
 	 * Get method for struct member 'threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How close float values need to be to be equal
 	 * @see #__DNA__FIELD__threshold
 	 */
@@ -656,7 +656,7 @@ public class SpreadsheetRowFilter extends CFacade {
 	/**
 	 * Set method for struct member 'threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How close float values need to be to be equal
 	 * @see #__DNA__FIELD__threshold
 	 */

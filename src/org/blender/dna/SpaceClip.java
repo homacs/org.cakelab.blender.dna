@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpaceClip'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Clip Editor. </p>
  */
 
@@ -74,7 +75,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -157,7 +158,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -180,7 +181,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'xof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined offset, image is centered. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -223,7 +224,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'xlockof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined offset from locked position. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -266,7 +267,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'zoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined zoom level. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -289,7 +290,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'user'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User of clip. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -312,7 +313,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'clip'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Clip data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -335,7 +336,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scopes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Different scoped displayed in space panels. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -358,7 +359,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -381,7 +382,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Editor mode (editing context being displayed). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -404,7 +405,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'view'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of the clip editor view. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -427,7 +428,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'path_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Length of displaying path, in frames. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -450,7 +451,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'loc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> current stabilization data Pre-composed stabilization data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -533,7 +534,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'stabmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Current stabilization matrix and the same matrix in unified space, defined when drawing and used for mouse position calculation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -576,7 +577,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'postproc_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Movie postprocessing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -599,7 +600,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_src'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> grease pencil </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -642,7 +643,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'around'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pivot point for transforms. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -685,7 +686,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mask}  editor 2d cursor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -800,7 +801,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -817,7 +818,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -938,7 +939,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * @see #__DNA__FIELD___pad1
 	 */
@@ -959,7 +960,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * @see #__DNA__FIELD___pad1
 	 */
@@ -984,7 +985,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member 'xof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined offset, image is centered. </p>
 	 * @see #__DNA__FIELD__xof
 	 */
@@ -1001,7 +1002,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member 'xof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined offset, image is centered. </p>
 	 * @see #__DNA__FIELD__xof
 	 */
@@ -1046,7 +1047,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member 'xlockof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined offset from locked position. </p>
 	 * @see #__DNA__FIELD__xlockof
 	 */
@@ -1063,7 +1064,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member 'xlockof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined offset from locked position. </p>
 	 * @see #__DNA__FIELD__xlockof
 	 */
@@ -1108,7 +1109,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member 'zoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined zoom level. </p>
 	 * @see #__DNA__FIELD__zoom
 	 */
@@ -1125,7 +1126,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member 'zoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined zoom level. </p>
 	 * @see #__DNA__FIELD__zoom
 	 */
@@ -1142,7 +1143,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member 'user'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User of clip. </p>
 	 * @see #__DNA__FIELD__user
 	 */
@@ -1159,7 +1160,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member 'user'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User of clip. </p>
 	 * @see #__DNA__FIELD__user
 	 */
@@ -1184,7 +1185,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member 'clip'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Clip data. </p>
 	 * @see #__DNA__FIELD__clip
 	 */
@@ -1204,7 +1205,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member 'clip'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Clip data. </p>
 	 * @see #__DNA__FIELD__clip
 	 */
@@ -1222,7 +1223,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member 'scopes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Different scoped displayed in space panels. </p>
 	 * @see #__DNA__FIELD__scopes
 	 */
@@ -1239,7 +1240,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member 'scopes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Different scoped displayed in space panels. </p>
 	 * @see #__DNA__FIELD__scopes
 	 */
@@ -1264,7 +1265,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -1281,7 +1282,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -1298,7 +1299,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Editor mode (editing context being displayed). </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -1315,7 +1316,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Editor mode (editing context being displayed). </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -1332,7 +1333,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member 'view'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of the clip editor view. </p>
 	 * @see #__DNA__FIELD__view
 	 */
@@ -1349,7 +1350,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member 'view'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of the clip editor view. </p>
 	 * @see #__DNA__FIELD__view
 	 */
@@ -1366,7 +1367,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member 'path_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Length of displaying path, in frames. </p>
 	 * @see #__DNA__FIELD__path_length
 	 */
@@ -1383,7 +1384,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member 'path_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Length of displaying path, in frames. </p>
 	 * @see #__DNA__FIELD__path_length
 	 */
@@ -1400,7 +1401,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member 'loc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> current stabilization data Pre-composed stabilization data. </p>
 	 * @see #__DNA__FIELD__loc
 	 */
@@ -1421,7 +1422,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member 'loc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> current stabilization data Pre-composed stabilization data. </p>
 	 * @see #__DNA__FIELD__loc
 	 */
@@ -1542,7 +1543,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member 'stabmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Current stabilization matrix and the same matrix in unified space, defined when drawing and used for mouse position calculation. </p>
 	 * @see #__DNA__FIELD__stabmat
 	 */
@@ -1564,7 +1565,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member 'stabmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Current stabilization matrix and the same matrix in unified space, defined when drawing and used for mouse position calculation. </p>
 	 * @see #__DNA__FIELD__stabmat
 	 */
@@ -1630,7 +1631,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member 'postproc_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Movie postprocessing. </p>
 	 * @see #__DNA__FIELD__postproc_flag
 	 */
@@ -1647,7 +1648,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member 'postproc_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Movie postprocessing. </p>
 	 * @see #__DNA__FIELD__postproc_flag
 	 */
@@ -1664,7 +1665,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_src'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> grease pencil </p>
 	 * @see #__DNA__FIELD__gpencil_src
 	 */
@@ -1681,7 +1682,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_src'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> grease pencil </p>
 	 * @see #__DNA__FIELD__gpencil_src
 	 */
@@ -1738,7 +1739,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member 'around'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pivot point for transforms. </p>
 	 * @see #__DNA__FIELD__around
 	 */
@@ -1755,7 +1756,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member 'around'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pivot point for transforms. </p>
 	 * @see #__DNA__FIELD__around
 	 */
@@ -1812,7 +1813,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Get method for struct member 'cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mask}  editor 2d cursor. </p>
 	 * @see #__DNA__FIELD__cursor
 	 */
@@ -1833,7 +1834,7 @@ public class SpaceClip extends CFacade {
 	/**
 	 * Set method for struct member 'cursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mask}  editor 2d cursor. </p>
 	 * @see #__DNA__FIELD__cursor
 	 */

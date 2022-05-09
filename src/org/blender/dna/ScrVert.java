@@ -112,7 +112,7 @@ public class ScrVert extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> first one used internally, second one for tools </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -295,7 +295,7 @@ public class ScrVert extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> first one used internally, second one for tools </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -312,7 +312,7 @@ public class ScrVert extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> first one used internally, second one for tools </p>
 	 * @see #__DNA__FIELD__flag
 	 */

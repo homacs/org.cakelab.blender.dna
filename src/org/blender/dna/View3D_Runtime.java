@@ -33,7 +33,7 @@ public class View3D_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'properties_storage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nkey panel stores stuff here. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +56,7 @@ public class View3D_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +99,7 @@ public class View3D_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'local_stats'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only used for overlay stats while in local-view. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -130,7 +130,7 @@ public class View3D_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'properties_storage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nkey panel stores stuff here. </p>
 	 * @see #__DNA__FIELD__properties_storage
 	 */
@@ -150,7 +150,7 @@ public class View3D_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'properties_storage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nkey panel stores stuff here. </p>
 	 * @see #__DNA__FIELD__properties_storage
 	 */
@@ -168,7 +168,7 @@ public class View3D_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -185,7 +185,7 @@ public class View3D_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -242,7 +242,7 @@ public class View3D_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'local_stats'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only used for overlay stats while in local-view. </p>
 	 * @see #__DNA__FIELD__local_stats
 	 */
@@ -262,7 +262,7 @@ public class View3D_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'local_stats'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only used for overlay stats while in local-view. </p>
 	 * @see #__DNA__FIELD__local_stats
 	 */

@@ -33,7 +33,7 @@ public class MaterialLineArt extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eMaterialLineArtFlags </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,8 +76,9 @@ public class MaterialLineArt extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mat_occlusion'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Faces with this material will behave as if it has set number of layers in occlusion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Faces with this material will behave as if it has set number of layers in occlusion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum 255 levels of equivalent occlusion. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -128,7 +129,7 @@ public class MaterialLineArt extends CFacade {
 	/**
 	 * Get method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eMaterialLineArtFlags </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -145,7 +146,7 @@ public class MaterialLineArt extends CFacade {
 	/**
 	 * Set method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eMaterialLineArtFlags </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -190,8 +191,9 @@ public class MaterialLineArt extends CFacade {
 	/**
 	 * Get method for struct member 'mat_occlusion'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Faces with this material will behave as if it has set number of layers in occlusion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Faces with this material will behave as if it has set number of layers in occlusion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum 255 levels of equivalent occlusion. </p>
 	 * @see #__DNA__FIELD__mat_occlusion
 	 */
@@ -208,8 +210,9 @@ public class MaterialLineArt extends CFacade {
 	/**
 	 * Set method for struct member 'mat_occlusion'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Faces with this material will behave as if it has set number of layers in occlusion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Faces with this material will behave as if it has set number of layers in occlusion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum 255 levels of equivalent occlusion. </p>
 	 * @see #__DNA__FIELD__mat_occlusion
 	 */

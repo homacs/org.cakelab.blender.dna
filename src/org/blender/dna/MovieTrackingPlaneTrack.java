@@ -73,8 +73,9 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique name of track<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Unique name of track
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -97,7 +98,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'point_tracks'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of point tracks used to define this plane. Each element is a pointer to {@link MovieTrackingTrack} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -120,7 +121,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'point_tracksnr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of tracks in point_tracks array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -163,8 +164,9 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'markers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of markers in track<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Collection of markers in track
+	 * <h4>Blender Source Code</h4>
 	 * <p> Markers in the plane track. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -187,7 +189,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'markersnr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Count of markers in track (size of markers array). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -210,7 +212,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags (selection, ...). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -233,8 +235,9 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'image'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Image displayed in the track during editing in clip editor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Image displayed in the track during editing in clip editor
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  displaying during editing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -257,8 +260,9 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'image_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Opacity of the image<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Opacity of the image
+	 * <h4>Blender Source Code</h4>
 	 * <p> Opacity of the image. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -281,7 +285,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'last_marker'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data Most recently used marker. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -376,8 +380,9 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique name of track<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Unique name of track
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -398,8 +403,9 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique name of track<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Unique name of track
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -424,7 +430,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Get method for struct member 'point_tracks'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of point tracks used to define this plane. Each element is a pointer to {@link MovieTrackingTrack} . </p>
 	 * @see #__DNA__FIELD__point_tracks
 	 */
@@ -444,7 +450,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Set method for struct member 'point_tracks'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of point tracks used to define this plane. Each element is a pointer to {@link MovieTrackingTrack} . </p>
 	 * @see #__DNA__FIELD__point_tracks
 	 */
@@ -462,7 +468,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Get method for struct member 'point_tracksnr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of tracks in point_tracks array. </p>
 	 * @see #__DNA__FIELD__point_tracksnr
 	 */
@@ -479,7 +485,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Set method for struct member 'point_tracksnr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of tracks in point_tracks array. </p>
 	 * @see #__DNA__FIELD__point_tracksnr
 	 */
@@ -536,8 +542,9 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Get method for struct member 'markers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of markers in track<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Collection of markers in track
+	 * <h4>Blender Source Code</h4>
 	 * <p> Markers in the plane track. </p>
 	 * @see #__DNA__FIELD__markers
 	 */
@@ -557,8 +564,9 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Set method for struct member 'markers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of markers in track<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Collection of markers in track
+	 * <h4>Blender Source Code</h4>
 	 * <p> Markers in the plane track. </p>
 	 * @see #__DNA__FIELD__markers
 	 */
@@ -576,7 +584,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Get method for struct member 'markersnr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Count of markers in track (size of markers array). </p>
 	 * @see #__DNA__FIELD__markersnr
 	 */
@@ -593,7 +601,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Set method for struct member 'markersnr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Count of markers in track (size of markers array). </p>
 	 * @see #__DNA__FIELD__markersnr
 	 */
@@ -610,7 +618,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags (selection, ...). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -627,7 +635,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags (selection, ...). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -644,8 +652,9 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Get method for struct member 'image'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Image displayed in the track during editing in clip editor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Image displayed in the track during editing in clip editor
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  displaying during editing. </p>
 	 * @see #__DNA__FIELD__image
 	 */
@@ -665,8 +674,9 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Set method for struct member 'image'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Image displayed in the track during editing in clip editor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Image displayed in the track during editing in clip editor
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  displaying during editing. </p>
 	 * @see #__DNA__FIELD__image
 	 */
@@ -684,8 +694,9 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Get method for struct member 'image_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Opacity of the image<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Opacity of the image
+	 * <h4>Blender Source Code</h4>
 	 * <p> Opacity of the image. </p>
 	 * @see #__DNA__FIELD__image_opacity
 	 */
@@ -702,8 +713,9 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Set method for struct member 'image_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Opacity of the image<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Opacity of the image
+	 * <h4>Blender Source Code</h4>
 	 * <p> Opacity of the image. </p>
 	 * @see #__DNA__FIELD__image_opacity
 	 */
@@ -720,7 +732,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Get method for struct member 'last_marker'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data Most recently used marker. </p>
 	 * @see #__DNA__FIELD__last_marker
 	 */
@@ -737,7 +749,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	/**
 	 * Set method for struct member 'last_marker'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data Most recently used marker. </p>
 	 * @see #__DNA__FIELD__last_marker
 	 */

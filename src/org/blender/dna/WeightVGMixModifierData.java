@@ -53,7 +53,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name_a'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of vertex group to modify/weight. MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name_b'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of other vertex group to mix in. MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +99,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'default_weight_a'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default weight value for first vgroup. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -122,7 +122,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'default_weight_b'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default weight value to mix in. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -145,7 +145,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mix_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How second vgroups weights affect first ones. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -168,7 +168,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mix_set'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> What vertices to affect. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -211,7 +211,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mask_constant'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Masking options. The global "influence", if no vgroup nor tex is used as mask. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -234,7 +234,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mask_defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of mask vertex group from which to get weight factors. MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -257,7 +257,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_use_channel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture masking. Which channel to use as weightf. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -280,7 +280,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mask_texture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The texture. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -303,7 +303,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_map_obj'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the map object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -326,7 +326,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_map_bone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the map bone. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -349,7 +349,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_mapping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How to map the texture. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -372,7 +372,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_uvlayer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the UV map. MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -415,7 +415,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Padding... </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -482,7 +482,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'defgrp_name_a'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of vertex group to modify/weight. MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name_a
 	 */
@@ -503,7 +503,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'defgrp_name_a'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of vertex group to modify/weight. MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name_a
 	 */
@@ -528,7 +528,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'defgrp_name_b'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of other vertex group to mix in. MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name_b
 	 */
@@ -549,7 +549,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'defgrp_name_b'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of other vertex group to mix in. MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name_b
 	 */
@@ -574,7 +574,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'default_weight_a'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default weight value for first vgroup. </p>
 	 * @see #__DNA__FIELD__default_weight_a
 	 */
@@ -591,7 +591,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'default_weight_a'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default weight value for first vgroup. </p>
 	 * @see #__DNA__FIELD__default_weight_a
 	 */
@@ -608,7 +608,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'default_weight_b'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default weight value to mix in. </p>
 	 * @see #__DNA__FIELD__default_weight_b
 	 */
@@ -625,7 +625,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'default_weight_b'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default weight value to mix in. </p>
 	 * @see #__DNA__FIELD__default_weight_b
 	 */
@@ -642,7 +642,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mix_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How second vgroups weights affect first ones. </p>
 	 * @see #__DNA__FIELD__mix_mode
 	 */
@@ -659,7 +659,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mix_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How second vgroups weights affect first ones. </p>
 	 * @see #__DNA__FIELD__mix_mode
 	 */
@@ -676,7 +676,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mix_set'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> What vertices to affect. </p>
 	 * @see #__DNA__FIELD__mix_set
 	 */
@@ -693,7 +693,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mix_set'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> What vertices to affect. </p>
 	 * @see #__DNA__FIELD__mix_set
 	 */
@@ -750,7 +750,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mask_constant'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Masking options. The global "influence", if no vgroup nor tex is used as mask. </p>
 	 * @see #__DNA__FIELD__mask_constant
 	 */
@@ -767,7 +767,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mask_constant'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Masking options. The global "influence", if no vgroup nor tex is used as mask. </p>
 	 * @see #__DNA__FIELD__mask_constant
 	 */
@@ -784,7 +784,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mask_defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of mask vertex group from which to get weight factors. MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__mask_defgrp_name
 	 */
@@ -805,7 +805,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mask_defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of mask vertex group from which to get weight factors. MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__mask_defgrp_name
 	 */
@@ -830,7 +830,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mask_tex_use_channel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture masking. Which channel to use as weightf. </p>
 	 * @see #__DNA__FIELD__mask_tex_use_channel
 	 */
@@ -847,7 +847,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mask_tex_use_channel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture masking. Which channel to use as weightf. </p>
 	 * @see #__DNA__FIELD__mask_tex_use_channel
 	 */
@@ -864,7 +864,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mask_texture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The texture. </p>
 	 * @see #__DNA__FIELD__mask_texture
 	 */
@@ -884,7 +884,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mask_texture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The texture. </p>
 	 * @see #__DNA__FIELD__mask_texture
 	 */
@@ -902,7 +902,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mask_tex_map_obj'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the map object. </p>
 	 * @see #__DNA__FIELD__mask_tex_map_obj
 	 */
@@ -922,7 +922,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mask_tex_map_obj'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the map object. </p>
 	 * @see #__DNA__FIELD__mask_tex_map_obj
 	 */
@@ -940,7 +940,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mask_tex_map_bone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the map bone. </p>
 	 * @see #__DNA__FIELD__mask_tex_map_bone
 	 */
@@ -961,7 +961,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mask_tex_map_bone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the map bone. </p>
 	 * @see #__DNA__FIELD__mask_tex_map_bone
 	 */
@@ -986,7 +986,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mask_tex_mapping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How to map the texture. </p>
 	 * @see #__DNA__FIELD__mask_tex_mapping
 	 */
@@ -1003,7 +1003,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mask_tex_mapping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How to map the texture. </p>
 	 * @see #__DNA__FIELD__mask_tex_mapping
 	 */
@@ -1020,7 +1020,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mask_tex_uvlayer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the UV map. MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__mask_tex_uvlayer_name
 	 */
@@ -1041,7 +1041,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mask_tex_uvlayer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the UV map. MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__mask_tex_uvlayer_name
 	 */
@@ -1094,7 +1094,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Get method for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Padding... </p>
 	 * @see #__DNA__FIELD___pad1
 	 */
@@ -1115,7 +1115,7 @@ public class WeightVGMixModifierData extends CFacade {
 	/**
 	 * Set method for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Padding... </p>
 	 * @see #__DNA__FIELD___pad1
 	 */

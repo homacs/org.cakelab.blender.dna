@@ -32,7 +32,7 @@ public class NodeGeometryPointInstance extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'instance_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodePointInstanceType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +55,7 @@ public class NodeGeometryPointInstance extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodePointInstanceFlag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -86,7 +86,7 @@ public class NodeGeometryPointInstance extends CFacade {
 	/**
 	 * Get method for struct member 'instance_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodePointInstanceType. </p>
 	 * @see #__DNA__FIELD__instance_type
 	 */
@@ -103,7 +103,7 @@ public class NodeGeometryPointInstance extends CFacade {
 	/**
 	 * Set method for struct member 'instance_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodePointInstanceType. </p>
 	 * @see #__DNA__FIELD__instance_type
 	 */
@@ -120,7 +120,7 @@ public class NodeGeometryPointInstance extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodePointInstanceFlag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -137,7 +137,7 @@ public class NodeGeometryPointInstance extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodePointInstanceFlag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */

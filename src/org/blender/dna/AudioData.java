@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'AudioData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  Audio </p>
  */
@@ -35,7 +36,7 @@ public class AudioData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mixrate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2.5: now in {@link FFMpegCodecData} : audio_mixrate </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -58,7 +59,7 @@ public class AudioData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'main'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2.5: now in {@link FFMpegCodecData} : audio_volume </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -229,7 +230,7 @@ public class AudioData extends CFacade {
 	/**
 	 * Get method for struct member 'mixrate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2.5: now in {@link FFMpegCodecData} : audio_mixrate </p>
 	 * @see #__DNA__FIELD__mixrate
 	 */
@@ -246,7 +247,7 @@ public class AudioData extends CFacade {
 	/**
 	 * Set method for struct member 'mixrate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2.5: now in {@link FFMpegCodecData} : audio_mixrate </p>
 	 * @see #__DNA__FIELD__mixrate
 	 */
@@ -263,7 +264,7 @@ public class AudioData extends CFacade {
 	/**
 	 * Get method for struct member 'main'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2.5: now in {@link FFMpegCodecData} : audio_volume </p>
 	 * @see #__DNA__FIELD__main
 	 */
@@ -280,7 +281,7 @@ public class AudioData extends CFacade {
 	/**
 	 * Set method for struct member 'main'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2.5: now in {@link FFMpegCodecData} : audio_volume </p>
 	 * @see #__DNA__FIELD__main
 	 */

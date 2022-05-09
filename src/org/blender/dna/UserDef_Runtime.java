@@ -33,7 +33,7 @@ public class UserDef_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'is_dirty'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Mark as changed so the preferences are saved on exit. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -84,7 +84,7 @@ public class UserDef_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'is_dirty'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Mark as changed so the preferences are saved on exit. </p>
 	 * @see #__DNA__FIELD__is_dirty
 	 */
@@ -101,7 +101,7 @@ public class UserDef_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'is_dirty'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Mark as changed so the preferences are saved on exit. </p>
 	 * @see #__DNA__FIELD__is_dirty
 	 */

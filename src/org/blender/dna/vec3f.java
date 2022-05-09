@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'vec3f'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> not used at the moment typedef struct vec2i { int x, y; } vec2i;</p><p> typedef struct vec2d { double x, y; } vec2d;</p><p> typedef struct vec3i { int x, y, z; } vec3i; </p>
  */
 

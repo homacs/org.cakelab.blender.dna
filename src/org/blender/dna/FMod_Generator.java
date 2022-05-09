@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FMod_Generator'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  Generator modifier data </p>
  */
@@ -34,7 +35,7 @@ public class FMod_Generator extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'coefficients'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> general generator information Coefficients array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +58,7 @@ public class FMod_Generator extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'arraysize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of the coefficients array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +81,7 @@ public class FMod_Generator extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'poly_order'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Order of polynomial generated (i.e. 1 for linear, 2 for quadratic). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -103,7 +104,7 @@ public class FMod_Generator extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Which 'generator' to use eFMod_Generator_Modes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,7 +127,7 @@ public class FMod_Generator extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -157,7 +158,7 @@ public class FMod_Generator extends CFacade {
 	/**
 	 * Get method for struct member 'coefficients'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> general generator information Coefficients array. </p>
 	 * @see #__DNA__FIELD__coefficients
 	 */
@@ -177,7 +178,7 @@ public class FMod_Generator extends CFacade {
 	/**
 	 * Set method for struct member 'coefficients'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> general generator information Coefficients array. </p>
 	 * @see #__DNA__FIELD__coefficients
 	 */
@@ -195,7 +196,7 @@ public class FMod_Generator extends CFacade {
 	/**
 	 * Get method for struct member 'arraysize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of the coefficients array. </p>
 	 * @see #__DNA__FIELD__arraysize
 	 */
@@ -212,7 +213,7 @@ public class FMod_Generator extends CFacade {
 	/**
 	 * Set method for struct member 'arraysize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size of the coefficients array. </p>
 	 * @see #__DNA__FIELD__arraysize
 	 */
@@ -229,7 +230,7 @@ public class FMod_Generator extends CFacade {
 	/**
 	 * Get method for struct member 'poly_order'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Order of polynomial generated (i.e. 1 for linear, 2 for quadratic). </p>
 	 * @see #__DNA__FIELD__poly_order
 	 */
@@ -246,7 +247,7 @@ public class FMod_Generator extends CFacade {
 	/**
 	 * Set method for struct member 'poly_order'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Order of polynomial generated (i.e. 1 for linear, 2 for quadratic). </p>
 	 * @see #__DNA__FIELD__poly_order
 	 */
@@ -263,7 +264,7 @@ public class FMod_Generator extends CFacade {
 	/**
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Which 'generator' to use eFMod_Generator_Modes. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -280,7 +281,7 @@ public class FMod_Generator extends CFacade {
 	/**
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Which 'generator' to use eFMod_Generator_Modes. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -297,7 +298,7 @@ public class FMod_Generator extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -314,7 +315,7 @@ public class FMod_Generator extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */

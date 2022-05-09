@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'TexPaintSlot'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> WATCH IT: change type? also make changes in ipo.h </p>
  */
 
@@ -33,7 +34,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ima'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  to be painted on. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +57,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom-data index for uv layer, MAX_NAME . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +80,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'valid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Do we have a valid image and UV map. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -102,7 +103,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'interp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Copy of node interpolation setting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -133,7 +134,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Get method for struct member 'ima'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  to be painted on. </p>
 	 * @see #__DNA__FIELD__ima
 	 */
@@ -153,7 +154,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Set method for struct member 'ima'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  to be painted on. </p>
 	 * @see #__DNA__FIELD__ima
 	 */
@@ -171,7 +172,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Get method for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom-data index for uv layer, MAX_NAME . </p>
 	 * @see #__DNA__FIELD__uvname
 	 */
@@ -191,7 +192,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Set method for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom-data index for uv layer, MAX_NAME . </p>
 	 * @see #__DNA__FIELD__uvname
 	 */
@@ -209,7 +210,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Get method for struct member 'valid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Do we have a valid image and UV map. </p>
 	 * @see #__DNA__FIELD__valid
 	 */
@@ -226,7 +227,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Set method for struct member 'valid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Do we have a valid image and UV map. </p>
 	 * @see #__DNA__FIELD__valid
 	 */
@@ -243,7 +244,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Get method for struct member 'interp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Copy of node interpolation setting. </p>
 	 * @see #__DNA__FIELD__interp
 	 */
@@ -260,7 +261,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Set method for struct member 'interp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Copy of node interpolation setting. </p>
 	 * @see #__DNA__FIELD__interp
 	 */

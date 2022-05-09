@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'AnimData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p>{@link AnimData}  ----------------------------------<mdash/>  Animation data for some {@link ID}  block (adt)</p><p> This block of data is used to provide all of the necessary animation data for a data-block. Currently, this data will not be reusable, as there shouldn't be any need to do so.</p><p> This information should be made available for most if not all ID-blocks, which should enable all of its settings to be animatable locally. Animation from 'higher-up' ID-AnimData blocks may override local settings.</p><p> This data-block should be placed immediately after the {@link ID}  block where it is used, so that the code which retrieves this data can do so in an easier manner. See blenkernel/intern/anim_sys.c for details. </p>
  */
 
@@ -34,8 +35,9 @@ public class AnimData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'action'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Active Action for this data-block<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Active Action for this data-block
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active action - acts as the 'tweaking track' for the NLA. Either use BKE_animdata_set_action() to set this, or call BKE_animdata_action_ensure_idroot() after setting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -58,7 +60,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tmpact'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> temp-storage for the 'real' active action (i.e. the one used before the tweaking-action took over to be edited in the Animation Editors) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -81,8 +83,9 @@ public class AnimData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'nla_tracks'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    NLA Tracks (i.e. Animation Layers)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    NLA Tracks (i.e. Animation Layers)
+	 * <h4>Blender Source Code</h4>
 	 * <p> nla-tracks </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -105,7 +108,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'act_track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active NLA-track (only set/used during tweaking, so no need to worry about dangling pointers). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -128,7 +131,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'actstrip'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active NLA-strip (only set/used during tweaking, so no need to worry about dangling pointers). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -151,8 +154,9 @@ public class AnimData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'drivers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    The Drivers/Expressions for this data-block<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    The Drivers/Expressions for this data-block
+	 * <h4>Blender Source Code</h4>
 	 * <p> 'drivers' for this ID-block's settings - FCurves, but are completely separate from those for animation data Standard user-created Drivers/Expressions (used as part of a rig). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -175,7 +179,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'overrides'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp storage ({@link AnimOverride} ) of values for settings that are animated (but the value hasn't been keyframed). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -198,7 +202,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'driver_array'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data, for depsgraph evaluation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -221,7 +225,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> settings for animation evaluation User-defined settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -264,7 +268,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'act_blendmode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> settings for active action evaluation (based on NLA strip settings) Accumulation mode for active action. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -287,7 +291,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'act_extendmode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Extrapolation mode for active action. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -310,7 +314,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'act_influence'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Influence for active action. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -341,8 +345,9 @@ public class AnimData extends CFacade {
 	/**
 	 * Get method for struct member 'action'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Active Action for this data-block<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Active Action for this data-block
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active action - acts as the 'tweaking track' for the NLA. Either use BKE_animdata_set_action() to set this, or call BKE_animdata_action_ensure_idroot() after setting. </p>
 	 * @see #__DNA__FIELD__action
 	 */
@@ -362,8 +367,9 @@ public class AnimData extends CFacade {
 	/**
 	 * Set method for struct member 'action'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Active Action for this data-block<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Active Action for this data-block
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active action - acts as the 'tweaking track' for the NLA. Either use BKE_animdata_set_action() to set this, or call BKE_animdata_action_ensure_idroot() after setting. </p>
 	 * @see #__DNA__FIELD__action
 	 */
@@ -381,7 +387,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Get method for struct member 'tmpact'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> temp-storage for the 'real' active action (i.e. the one used before the tweaking-action took over to be edited in the Animation Editors) </p>
 	 * @see #__DNA__FIELD__tmpact
 	 */
@@ -401,7 +407,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Set method for struct member 'tmpact'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> temp-storage for the 'real' active action (i.e. the one used before the tweaking-action took over to be edited in the Animation Editors) </p>
 	 * @see #__DNA__FIELD__tmpact
 	 */
@@ -419,8 +425,9 @@ public class AnimData extends CFacade {
 	/**
 	 * Get method for struct member 'nla_tracks'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    NLA Tracks (i.e. Animation Layers)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    NLA Tracks (i.e. Animation Layers)
+	 * <h4>Blender Source Code</h4>
 	 * <p> nla-tracks </p>
 	 * @see #__DNA__FIELD__nla_tracks
 	 */
@@ -437,8 +444,9 @@ public class AnimData extends CFacade {
 	/**
 	 * Set method for struct member 'nla_tracks'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    NLA Tracks (i.e. Animation Layers)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    NLA Tracks (i.e. Animation Layers)
+	 * <h4>Blender Source Code</h4>
 	 * <p> nla-tracks </p>
 	 * @see #__DNA__FIELD__nla_tracks
 	 */
@@ -463,7 +471,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Get method for struct member 'act_track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active NLA-track (only set/used during tweaking, so no need to worry about dangling pointers). </p>
 	 * @see #__DNA__FIELD__act_track
 	 */
@@ -483,7 +491,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Set method for struct member 'act_track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active NLA-track (only set/used during tweaking, so no need to worry about dangling pointers). </p>
 	 * @see #__DNA__FIELD__act_track
 	 */
@@ -501,7 +509,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Get method for struct member 'actstrip'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active NLA-strip (only set/used during tweaking, so no need to worry about dangling pointers). </p>
 	 * @see #__DNA__FIELD__actstrip
 	 */
@@ -521,7 +529,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Set method for struct member 'actstrip'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active NLA-strip (only set/used during tweaking, so no need to worry about dangling pointers). </p>
 	 * @see #__DNA__FIELD__actstrip
 	 */
@@ -539,8 +547,9 @@ public class AnimData extends CFacade {
 	/**
 	 * Get method for struct member 'drivers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    The Drivers/Expressions for this data-block<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    The Drivers/Expressions for this data-block
+	 * <h4>Blender Source Code</h4>
 	 * <p> 'drivers' for this ID-block's settings - FCurves, but are completely separate from those for animation data Standard user-created Drivers/Expressions (used as part of a rig). </p>
 	 * @see #__DNA__FIELD__drivers
 	 */
@@ -557,8 +566,9 @@ public class AnimData extends CFacade {
 	/**
 	 * Set method for struct member 'drivers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    The Drivers/Expressions for this data-block<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    The Drivers/Expressions for this data-block
+	 * <h4>Blender Source Code</h4>
 	 * <p> 'drivers' for this ID-block's settings - FCurves, but are completely separate from those for animation data Standard user-created Drivers/Expressions (used as part of a rig). </p>
 	 * @see #__DNA__FIELD__drivers
 	 */
@@ -583,7 +593,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Get method for struct member 'overrides'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp storage ({@link AnimOverride} ) of values for settings that are animated (but the value hasn't been keyframed). </p>
 	 * @see #__DNA__FIELD__overrides
 	 */
@@ -600,7 +610,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Set method for struct member 'overrides'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp storage ({@link AnimOverride} ) of values for settings that are animated (but the value hasn't been keyframed). </p>
 	 * @see #__DNA__FIELD__overrides
 	 */
@@ -625,7 +635,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Get method for struct member 'driver_array'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data, for depsgraph evaluation. </p>
 	 * @see #__DNA__FIELD__driver_array
 	 */
@@ -645,7 +655,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Set method for struct member 'driver_array'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data, for depsgraph evaluation. </p>
 	 * @see #__DNA__FIELD__driver_array
 	 */
@@ -663,7 +673,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> settings for animation evaluation User-defined settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -680,7 +690,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> settings for animation evaluation User-defined settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -737,7 +747,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Get method for struct member 'act_blendmode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> settings for active action evaluation (based on NLA strip settings) Accumulation mode for active action. </p>
 	 * @see #__DNA__FIELD__act_blendmode
 	 */
@@ -754,7 +764,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Set method for struct member 'act_blendmode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> settings for active action evaluation (based on NLA strip settings) Accumulation mode for active action. </p>
 	 * @see #__DNA__FIELD__act_blendmode
 	 */
@@ -771,7 +781,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Get method for struct member 'act_extendmode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Extrapolation mode for active action. </p>
 	 * @see #__DNA__FIELD__act_extendmode
 	 */
@@ -788,7 +798,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Set method for struct member 'act_extendmode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Extrapolation mode for active action. </p>
 	 * @see #__DNA__FIELD__act_extendmode
 	 */
@@ -805,7 +815,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Get method for struct member 'act_influence'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Influence for active action. </p>
 	 * @see #__DNA__FIELD__act_influence
 	 */
@@ -822,7 +832,7 @@ public class AnimData extends CFacade {
 	/**
 	 * Set method for struct member 'act_influence'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Influence for active action. </p>
 	 * @see #__DNA__FIELD__act_influence
 	 */

@@ -32,7 +32,7 @@ public class HairCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'firstpoint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of first point of hair curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +55,7 @@ public class HairCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'numpoints'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of points in hair curve, must be 2 or higher. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -86,7 +86,7 @@ public class HairCurve extends CFacade {
 	/**
 	 * Get method for struct member 'firstpoint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of first point of hair curve. </p>
 	 * @see #__DNA__FIELD__firstpoint
 	 */
@@ -103,7 +103,7 @@ public class HairCurve extends CFacade {
 	/**
 	 * Set method for struct member 'firstpoint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of first point of hair curve. </p>
 	 * @see #__DNA__FIELD__firstpoint
 	 */
@@ -120,7 +120,7 @@ public class HairCurve extends CFacade {
 	/**
 	 * Get method for struct member 'numpoints'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of points in hair curve, must be 2 or higher. </p>
 	 * @see #__DNA__FIELD__numpoints
 	 */
@@ -137,7 +137,7 @@ public class HairCurve extends CFacade {
 	/**
 	 * Set method for struct member 'numpoints'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of points in hair curve, must be 2 or higher. </p>
 	 * @see #__DNA__FIELD__numpoints
 	 */

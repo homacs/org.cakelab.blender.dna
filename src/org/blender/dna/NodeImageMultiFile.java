@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'NodeImageMultiFile'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> XXX: first struct fields should match {@link NodeImageFile}  to ensure forward compatibility. </p>
  */
 
@@ -34,7 +35,7 @@ public class NodeImageMultiFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'base_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -77,7 +78,7 @@ public class NodeImageMultiFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX old frame rand values from {@link NodeImageFile}  for forward compatibility. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -102,7 +103,7 @@ public class NodeImageMultiFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'efra'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -127,7 +128,7 @@ public class NodeImageMultiFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'active_input'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selected input in details view list. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -178,7 +179,7 @@ public class NodeImageMultiFile extends CFacade {
 	/**
 	 * Get method for struct member 'base_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__base_path
 	 */
@@ -199,7 +200,7 @@ public class NodeImageMultiFile extends CFacade {
 	/**
 	 * Set method for struct member 'base_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__base_path
 	 */
@@ -260,7 +261,7 @@ public class NodeImageMultiFile extends CFacade {
 	/**
 	 * Get method for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX old frame rand values from {@link NodeImageFile}  for forward compatibility. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -279,7 +280,7 @@ public class NodeImageMultiFile extends CFacade {
 	/**
 	 * Set method for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX old frame rand values from {@link NodeImageFile}  for forward compatibility. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -298,7 +299,7 @@ public class NodeImageMultiFile extends CFacade {
 	/**
 	 * Get method for struct member 'efra'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -317,7 +318,7 @@ public class NodeImageMultiFile extends CFacade {
 	/**
 	 * Set method for struct member 'efra'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -336,7 +337,7 @@ public class NodeImageMultiFile extends CFacade {
 	/**
 	 * Get method for struct member 'active_input'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selected input in details view list. </p>
 	 * @see #__DNA__FIELD__active_input
 	 */
@@ -353,7 +354,7 @@ public class NodeImageMultiFile extends CFacade {
 	/**
 	 * Set method for struct member 'active_input'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selected input in details view list. </p>
 	 * @see #__DNA__FIELD__active_input
 	 */

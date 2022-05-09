@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'NodeGlare'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> glare node. </p>
  */
 
@@ -94,7 +95,7 @@ public class NodeGlare extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX angle is only kept for backward/forward compatibility, was used for two different things, see T50736. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -411,7 +412,7 @@ public class NodeGlare extends CFacade {
 	/**
 	 * Get method for struct member 'angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX angle is only kept for backward/forward compatibility, was used for two different things, see T50736. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -430,7 +431,7 @@ public class NodeGlare extends CFacade {
 	/**
 	 * Set method for struct member 'angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX angle is only kept for backward/forward compatibility, was used for two different things, see T50736. 
 	 * @deprecated
 	 *  Deprecated</p>

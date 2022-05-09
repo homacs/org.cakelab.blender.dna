@@ -33,7 +33,7 @@ public class PreviewImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'w'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> All values of 2 are really NUM_ICON_SIZES </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -136,7 +136,7 @@ public class PreviewImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gputexture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime-only data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -159,7 +159,7 @@ public class PreviewImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'icon_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used by previews outside of {@link ID}  context. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -182,7 +182,7 @@ public class PreviewImage extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -233,7 +233,7 @@ public class PreviewImage extends CFacade {
 	/**
 	 * Get method for struct member 'w'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> All values of 2 are really NUM_ICON_SIZES </p>
 	 * @see #__DNA__FIELD__w
 	 */
@@ -254,7 +254,7 @@ public class PreviewImage extends CFacade {
 	/**
 	 * Set method for struct member 'w'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> All values of 2 are really NUM_ICON_SIZES </p>
 	 * @see #__DNA__FIELD__w
 	 */
@@ -439,7 +439,7 @@ public class PreviewImage extends CFacade {
 	/**
 	 * Get method for struct member 'gputexture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime-only data. </p>
 	 * @see #__DNA__FIELD__gputexture
 	 */
@@ -460,7 +460,7 @@ public class PreviewImage extends CFacade {
 	/**
 	 * Set method for struct member 'gputexture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime-only data. </p>
 	 * @see #__DNA__FIELD__gputexture
 	 */
@@ -485,7 +485,7 @@ public class PreviewImage extends CFacade {
 	/**
 	 * Get method for struct member 'icon_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used by previews outside of {@link ID}  context. </p>
 	 * @see #__DNA__FIELD__icon_id
 	 */
@@ -502,7 +502,7 @@ public class PreviewImage extends CFacade {
 	/**
 	 * Set method for struct member 'icon_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used by previews outside of {@link ID}  context. </p>
 	 * @see #__DNA__FIELD__icon_id
 	 */
@@ -519,7 +519,7 @@ public class PreviewImage extends CFacade {
 	/**
 	 * Get method for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data. </p>
 	 * @see #__DNA__FIELD__tag
 	 */
@@ -536,7 +536,7 @@ public class PreviewImage extends CFacade {
 	/**
 	 * Set method for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data. </p>
 	 * @see #__DNA__FIELD__tag
 	 */

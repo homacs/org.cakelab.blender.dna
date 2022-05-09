@@ -53,7 +53,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'origin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  to control the origin of modifier space coordinates. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +99,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factors to control simple deforms. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -122,7 +122,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'limit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Lower and upper limit. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -145,7 +145,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deform function. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -168,7 +168,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Lock axis (for taper and stretch). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -191,7 +191,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'deform_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis to perform the deform on (default is X, but can be overridden by origin. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -298,7 +298,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'origin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  to control the origin of modifier space coordinates. </p>
 	 * @see #__DNA__FIELD__origin
 	 */
@@ -318,7 +318,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'origin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  to control the origin of modifier space coordinates. </p>
 	 * @see #__DNA__FIELD__origin
 	 */
@@ -336,7 +336,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'vgroup_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgroup_name
 	 */
@@ -357,7 +357,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'vgroup_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgroup_name
 	 */
@@ -382,7 +382,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factors to control simple deforms. </p>
 	 * @see #__DNA__FIELD__factor
 	 */
@@ -399,7 +399,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factors to control simple deforms. </p>
 	 * @see #__DNA__FIELD__factor
 	 */
@@ -416,7 +416,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'limit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Lower and upper limit. </p>
 	 * @see #__DNA__FIELD__limit
 	 */
@@ -437,7 +437,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'limit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Lower and upper limit. </p>
 	 * @see #__DNA__FIELD__limit
 	 */
@@ -462,7 +462,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deform function. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -479,7 +479,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deform function. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -496,7 +496,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Lock axis (for taper and stretch). </p>
 	 * @see #__DNA__FIELD__axis
 	 */
@@ -513,7 +513,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Lock axis (for taper and stretch). </p>
 	 * @see #__DNA__FIELD__axis
 	 */
@@ -530,7 +530,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'deform_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis to perform the deform on (default is X, but can be overridden by origin. </p>
 	 * @see #__DNA__FIELD__deform_axis
 	 */
@@ -547,7 +547,7 @@ public class SimpleDeformModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'deform_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis to perform the deform on (default is X, but can be overridden by origin. </p>
 	 * @see #__DNA__FIELD__deform_axis
 	 */

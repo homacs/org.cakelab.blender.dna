@@ -112,7 +112,7 @@ public class BuildModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'randomize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (bool) whether order of vertices is randomized - legacy files (for readfile conversion). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -135,7 +135,7 @@ public class BuildModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'seed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (int) random seed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -286,7 +286,7 @@ public class BuildModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'randomize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (bool) whether order of vertices is randomized - legacy files (for readfile conversion). </p>
 	 * @see #__DNA__FIELD__randomize
 	 */
@@ -303,7 +303,7 @@ public class BuildModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'randomize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (bool) whether order of vertices is randomized - legacy files (for readfile conversion). </p>
 	 * @see #__DNA__FIELD__randomize
 	 */
@@ -320,7 +320,7 @@ public class BuildModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'seed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (int) random seed. </p>
 	 * @see #__DNA__FIELD__seed
 	 */
@@ -337,7 +337,7 @@ public class BuildModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'seed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (int) random seed. </p>
 	 * @see #__DNA__FIELD__seed
 	 */

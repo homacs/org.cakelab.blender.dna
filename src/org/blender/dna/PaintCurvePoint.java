@@ -32,7 +32,7 @@ public class PaintCurvePoint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bez'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bezier handle. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +55,7 @@ public class PaintCurvePoint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pressure'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pressure on that point. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -86,7 +86,7 @@ public class PaintCurvePoint extends CFacade {
 	/**
 	 * Get method for struct member 'bez'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bezier handle. </p>
 	 * @see #__DNA__FIELD__bez
 	 */
@@ -103,7 +103,7 @@ public class PaintCurvePoint extends CFacade {
 	/**
 	 * Set method for struct member 'bez'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bezier handle. </p>
 	 * @see #__DNA__FIELD__bez
 	 */
@@ -128,7 +128,7 @@ public class PaintCurvePoint extends CFacade {
 	/**
 	 * Get method for struct member 'pressure'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pressure on that point. </p>
 	 * @see #__DNA__FIELD__pressure
 	 */
@@ -145,7 +145,7 @@ public class PaintCurvePoint extends CFacade {
 	/**
 	 * Set method for struct member 'pressure'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pressure on that point. </p>
 	 * @see #__DNA__FIELD__pressure
 	 */

@@ -153,7 +153,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'color_source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> psys_color_source </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -216,7 +216,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> for '{@link Object} ' or 'Particle  system' type - source object </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -239,7 +239,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'psys'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  in ob.particlesystem, non-ID pointer not allowed </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -262,7 +262,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'psys_cache_space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> cache points in world-space, object space, ... ? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -285,7 +285,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ob_cache_space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> cache points in world-space, object space, ... ? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -308,7 +308,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vertex_attribute_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> vertex attribute layer for color source, MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -331,7 +331,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'point_tree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The acceleration tree containing points. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -354,7 +354,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'point_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dynamically allocated extra for extra information, like particle age. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -557,7 +557,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'coba'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For time -> color </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -580,7 +580,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Falloff density curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -791,7 +791,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Get method for struct member 'color_source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> psys_color_source </p>
 	 * @see #__DNA__FIELD__color_source
 	 */
@@ -808,7 +808,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Set method for struct member 'color_source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> psys_color_source </p>
 	 * @see #__DNA__FIELD__color_source
 	 */
@@ -881,7 +881,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Get method for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> for '{@link Object} ' or 'Particle  system' type - source object </p>
 	 * @see #__DNA__FIELD__object
 	 */
@@ -901,7 +901,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Set method for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> for '{@link Object} ' or 'Particle  system' type - source object </p>
 	 * @see #__DNA__FIELD__object
 	 */
@@ -919,7 +919,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Get method for struct member 'psys'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  in ob.particlesystem, non-ID pointer not allowed </p>
 	 * @see #__DNA__FIELD__psys
 	 */
@@ -936,7 +936,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Set method for struct member 'psys'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  in ob.particlesystem, non-ID pointer not allowed </p>
 	 * @see #__DNA__FIELD__psys
 	 */
@@ -953,7 +953,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Get method for struct member 'psys_cache_space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> cache points in world-space, object space, ... ? </p>
 	 * @see #__DNA__FIELD__psys_cache_space
 	 */
@@ -970,7 +970,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Set method for struct member 'psys_cache_space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> cache points in world-space, object space, ... ? </p>
 	 * @see #__DNA__FIELD__psys_cache_space
 	 */
@@ -987,7 +987,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Get method for struct member 'ob_cache_space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> cache points in world-space, object space, ... ? </p>
 	 * @see #__DNA__FIELD__ob_cache_space
 	 */
@@ -1004,7 +1004,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Set method for struct member 'ob_cache_space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> cache points in world-space, object space, ... ? </p>
 	 * @see #__DNA__FIELD__ob_cache_space
 	 */
@@ -1021,7 +1021,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Get method for struct member 'vertex_attribute_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> vertex attribute layer for color source, MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * @see #__DNA__FIELD__vertex_attribute_name
 	 */
@@ -1042,7 +1042,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Set method for struct member 'vertex_attribute_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> vertex attribute layer for color source, MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * @see #__DNA__FIELD__vertex_attribute_name
 	 */
@@ -1067,7 +1067,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Get method for struct member 'point_tree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The acceleration tree containing points. </p>
 	 * @see #__DNA__FIELD__point_tree
 	 */
@@ -1087,7 +1087,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Set method for struct member 'point_tree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The acceleration tree containing points. </p>
 	 * @see #__DNA__FIELD__point_tree
 	 */
@@ -1105,7 +1105,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Get method for struct member 'point_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dynamically allocated extra for extra information, like particle age. </p>
 	 * @see #__DNA__FIELD__point_data
 	 */
@@ -1125,7 +1125,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Set method for struct member 'point_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dynamically allocated extra for extra information, like particle age. </p>
 	 * @see #__DNA__FIELD__point_data
 	 */
@@ -1419,7 +1419,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Get method for struct member 'coba'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For time -> color </p>
 	 * @see #__DNA__FIELD__coba
 	 */
@@ -1439,7 +1439,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Set method for struct member 'coba'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For time -> color </p>
 	 * @see #__DNA__FIELD__coba
 	 */
@@ -1457,7 +1457,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Get method for struct member 'falloff_curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Falloff density curve. </p>
 	 * @see #__DNA__FIELD__falloff_curve
 	 */
@@ -1477,7 +1477,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Set method for struct member 'falloff_curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Falloff density curve. </p>
 	 * @see #__DNA__FIELD__falloff_curve
 	 */

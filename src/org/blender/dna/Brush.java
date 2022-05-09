@@ -73,8 +73,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Editable falloff curve<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Editable falloff curve
+	 * <h4>Blender Source Code</h4>
 	 * <p> Falloff curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -176,9 +177,6 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -200,8 +198,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gradient'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color gradient. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -224,7 +223,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'paint_curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Active paint curve
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -247,8 +246,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'icon_filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * File path to brush icon<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * File path to brush icon
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -271,7 +271,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'normal_weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much grab will pull vertexes out of surface during a grab
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -294,8 +294,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rake_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How much grab will follow cursor rotation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How much grab will follow cursor rotation
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rake actual data (not texture), used for sculpt. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -318,8 +319,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'blend'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Brush blending mode<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Brush blending mode
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blend mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -342,7 +344,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ob_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eObjectMode : to see if the brush is compatible, use for display only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -365,8 +367,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Vertex weight when brush is applied<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Vertex weight when brush is applied
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Brush}  weight. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -389,8 +392,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of the brush in pixels<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Radius of the brush in pixels
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Brush}  diameter. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -413,7 +417,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General purpose flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -476,7 +480,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mask_pressure'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pressure influence for mask. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -499,8 +503,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'jitter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Jitter the position of the brush while painting<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Jitter the position of the brush while painting
+	 * <h4>Blender Source Code</h4>
 	 * <p> Jitter the position of the brush. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -523,8 +528,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'jitter_absolute'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Jitter the position of the brush in pixels while painting<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Jitter the position of the brush in pixels while painting
+	 * <h4>Blender Source Code</h4>
 	 * <p> Absolute jitter in pixels. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -567,8 +573,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'spacing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Spacing between brush daubs as a percentage of brush diameter<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Spacing between brush daubs as a percentage of brush diameter
+	 * <h4>Blender Source Code</h4>
 	 * <p> Spacing of paint operations. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -591,8 +598,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_stroke_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum distance from last point before stroke continues<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Minimum distance from last point before stroke continues
+	 * <h4>Blender Source Code</h4>
 	 * <p> Turning radius (in pixels) for smooth stroke. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -615,8 +623,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_stroke_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Higher values give a smoother stroke<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Higher values give a smoother stroke
+	 * <h4>Blender Source Code</h4>
 	 * <p> Higher values limit fast changes in the stroke direction. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -639,8 +648,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Interval between paints for Airbrush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Interval between paints for Airbrush
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Paint}  operations / second (airbrush). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -663,7 +673,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rgb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -686,7 +696,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Opacity. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -709,8 +719,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'hardness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How close the brush falloff starts from the edge of the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How close the brush falloff starts from the edge of the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> Hardness </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -733,8 +744,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of paint that is applied per stroke sample<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Amount of paint that is applied per stroke sample
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flow </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -757,8 +769,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'wet_mix'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of paint that is picked from the surface into the brush color<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Amount of paint that is picked from the surface into the brush color
+	 * <h4>Blender Source Code</h4>
 	 * <p> Wet Mix </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -781,7 +794,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'wet_persistence'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of wet paint that stays in the brush after applying paint to the surface
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -804,8 +817,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'density'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of random elements that are going to be affected by the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Amount of random elements that are going to be affected by the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> Density </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -848,8 +862,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tip_roundness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Roundness of the brush tip<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Roundness of the brush tip
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tip Shape Factor that controls the shape of the brush tip by rounding the corners of a square. 0.0 value produces a square, 1.0 produces a circle. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -872,7 +887,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tip_scale_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Scale of the brush tip in the X axis
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -895,7 +910,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'secondary_rgb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Background color. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -918,8 +933,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dash_ratio'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Ratio of samples in a cycle that the brush is enabled<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Ratio of samples in a cycle that the brush is enabled
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rate </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -942,7 +958,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dash_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of a dash cycle measured in stroke samples
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -965,7 +981,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_plane'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The direction of movement for sculpt vertices. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -988,8 +1004,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'plane_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust plane on which the brush acts towards or away from the object surface<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Adjust plane on which the brush acts towards or away from the object surface
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset for plane brushes (clay, flatten, fill, scrape). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1032,7 +1049,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gradient_stroke_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Source for stroke color gradient application. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1055,7 +1072,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gradient_fill_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Source for fill tool color gradient application. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1098,8 +1115,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_shape'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Use projected or spherical falloff<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Use projected or spherical falloff
+	 * <h4>Blender Source Code</h4>
 	 * <p> Projection shape (sphere, circle). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1122,7 +1140,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Paint most on faces pointing towards the view according to this angle
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1145,7 +1163,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active sculpt tool. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1168,7 +1186,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uv_sculpt_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active sculpt tool. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1191,7 +1209,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vertexpaint_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active vertex paint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1214,7 +1232,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'weightpaint_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active weight paint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1237,7 +1255,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'imagepaint_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active image paint tool. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1260,7 +1278,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Enum eBrushMaskTool, only used if sculpt_tool is SCULPT_TOOL_MASK. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1283,7 +1301,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active grease pencil tool. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1306,7 +1324,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_vertex_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active grease pencil vertex tool. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1329,7 +1347,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_sculpt_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active grease pencil sculpt tool. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1352,7 +1370,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_weight_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active grease pencil weight tool. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1415,7 +1433,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tilt_strength_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much the tilt of the pen will affect the brush
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1438,7 +1456,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'topology_rake_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Automatically align edges to the brush direction to generate cleaner topology and define sharp features. Best used on low-poly meshes as it has a performance impact
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1461,7 +1479,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'crease_pinch_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much the crease brush pinches
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1484,7 +1502,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'normal_radius_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Ratio between the brush radius and the radius that is going to be used to sample the normal
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1507,7 +1525,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'area_radius_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Ratio between the brush radius and the radius that is going to be used to sample the area center
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1530,7 +1548,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'wet_paint_radius_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Ratio between the brush radius and the radius that is going to be used to sample the color to blend in wet paint
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1553,7 +1571,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'plane_trim'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * If a vertex is further away from offset plane than this, then it is not affected
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1576,8 +1594,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'height'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Affectable height of brush (layer height for layer tool, i.e.)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Affectable height of brush (layer height for layer tool, i.e.)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Affectable height of brush (layer height for layer tool, i.e.). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1600,7 +1619,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'texture_sample_bias'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Value added to texture samples
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1643,8 +1662,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'disconnected_distance_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum distance to search for disconnected loose parts in the mesh<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Maximum distance to search for disconnected loose parts in the mesh
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum distance to search fake neighbors from a vertex. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1667,7 +1687,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'deform_target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How the deformation of the brush will affect the object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1690,7 +1710,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'automasking_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> automasking </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1713,7 +1733,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'automasking_boundary_edges_propagation_steps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance where boundary edge automasking is going to protect vertices from the fully masked edge
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1736,7 +1756,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'elastic_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Deformation type that is used in the brush
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1759,7 +1779,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'elastic_deform_volume_preservation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Poisson ratio for elastic deformation. Higher values preserve volume more, but also lead to more bulging
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1782,8 +1802,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'snake_hook_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> snake hook </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1806,8 +1827,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pose_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> pose </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1830,7 +1852,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pose_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset of the pose origin in relation to the brush radius
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1853,7 +1875,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pose_smooth_iterations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Smooth iterations applied after calculating the pose factor of each vertex
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1876,7 +1898,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pose_ik_segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of segments of the inverse kinematics chain that will deform the mesh
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1899,7 +1921,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pose_origin_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Method to set the rotation origins for the segments of the brush
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1922,8 +1944,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'boundary_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> boundary </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1946,7 +1969,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'boundary_falloff_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How the brush falloff is applied across the boundary
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1969,7 +1992,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'boundary_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset of the boundary origin in relation to the brush radius
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1992,8 +2015,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cloth_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> cloth </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2016,7 +2040,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cloth_force_falloff_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Shape used in the brush to apply force to the cloth
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2039,7 +2063,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cloth_simulation_area_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Part of the mesh that is going to be simulated when the stroke is active
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2062,7 +2086,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cloth_mass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Mass of each simulation particle
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2085,7 +2109,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cloth_damping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much the applied forces are propagated through the cloth
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2108,7 +2132,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cloth_sim_limit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor added relative to the size of the radius to limit the cloth simulation effects
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2131,7 +2155,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cloth_sim_falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Area to apply deformation falloff to the effects of the simulation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2154,7 +2178,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cloth_constraint_softbody_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much the cloth preserves the original shape, acting as a soft body
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2177,8 +2201,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> smooth </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2201,7 +2226,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'surface_smooth_shape_preservation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much of the original shape is preserved when smoothing
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2224,7 +2249,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'surface_smooth_current_vertex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much the position of each individual vertex influences the final result
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2247,7 +2272,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'surface_smooth_iterations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of smoothing iterations per brush step
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2270,8 +2295,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'multiplane_scrape_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Angle between the planes of the crease<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Angle between the planes of the crease
+	 * <h4>Blender Source Code</h4>
 	 * <p> multiplane scrape </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2294,8 +2320,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'smear_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> smear </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2318,8 +2345,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'slide_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> slide/relax </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2342,7 +2370,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'texture_overlay_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> overlay </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2405,7 +2433,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'unprojected_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Radius of brush in Blender units
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2428,8 +2456,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sharp_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Threshold below which, no sharpening is done<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Threshold below which, no sharpening is done
+	 * <h4>Blender Source Code</h4>
 	 * <p> soften/sharpen </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2452,7 +2481,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'blur_kernel_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Radius of kernel used for soften and sharpen in pixels
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2495,8 +2524,9 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fill_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Threshold above which filling is not propagated<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Threshold above which filling is not propagated
+	 * <h4>Blender Source Code</h4>
 	 * <p> fill tool </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2559,7 +2589,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'stencil_pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Position of stencil in viewport
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2582,7 +2612,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'stencil_dimension'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Dimensions of stencil in viewport
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2605,7 +2635,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mask_stencil_pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Position of mask stencil in viewport
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2628,7 +2658,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mask_stencil_dimension'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Dimensions of mask stencil in viewport
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2651,7 +2681,7 @@ public class Brush extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2754,8 +2784,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Editable falloff curve<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Editable falloff curve
+	 * <h4>Blender Source Code</h4>
 	 * <p> Falloff curve. </p>
 	 * @see #__DNA__FIELD__curve
 	 */
@@ -2775,8 +2806,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Editable falloff curve<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Editable falloff curve
+	 * <h4>Blender Source Code</h4>
 	 * <p> Falloff curve. </p>
 	 * @see #__DNA__FIELD__curve
 	 */
@@ -2929,9 +2961,6 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'preview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -2949,9 +2978,6 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'preview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -2968,8 +2994,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'gradient'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color gradient. </p>
 	 * @see #__DNA__FIELD__gradient
 	 */
@@ -2989,8 +3016,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'gradient'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color gradient. </p>
 	 * @see #__DNA__FIELD__gradient
 	 */
@@ -3008,7 +3036,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'paint_curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Active paint curve
 	 * @see #__DNA__FIELD__paint_curve
 	 */
@@ -3028,7 +3056,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'paint_curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Active paint curve
 	 * @see #__DNA__FIELD__paint_curve
 	 */
@@ -3046,8 +3074,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'icon_filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * File path to brush icon<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * File path to brush icon
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__icon_filepath
 	 */
@@ -3068,8 +3097,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'icon_filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * File path to brush icon<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * File path to brush icon
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__icon_filepath
 	 */
@@ -3094,7 +3124,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'normal_weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much grab will pull vertexes out of surface during a grab
 	 * @see #__DNA__FIELD__normal_weight
 	 */
@@ -3111,7 +3141,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'normal_weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much grab will pull vertexes out of surface during a grab
 	 * @see #__DNA__FIELD__normal_weight
 	 */
@@ -3128,8 +3158,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'rake_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How much grab will follow cursor rotation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How much grab will follow cursor rotation
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rake actual data (not texture), used for sculpt. </p>
 	 * @see #__DNA__FIELD__rake_factor
 	 */
@@ -3146,8 +3177,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'rake_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How much grab will follow cursor rotation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How much grab will follow cursor rotation
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rake actual data (not texture), used for sculpt. </p>
 	 * @see #__DNA__FIELD__rake_factor
 	 */
@@ -3164,8 +3196,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'blend'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Brush blending mode<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Brush blending mode
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blend mode. </p>
 	 * @see #__DNA__FIELD__blend
 	 */
@@ -3182,8 +3215,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'blend'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Brush blending mode<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Brush blending mode
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blend mode. </p>
 	 * @see #__DNA__FIELD__blend
 	 */
@@ -3200,7 +3234,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'ob_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eObjectMode : to see if the brush is compatible, use for display only. </p>
 	 * @see #__DNA__FIELD__ob_mode
 	 */
@@ -3217,7 +3251,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'ob_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eObjectMode : to see if the brush is compatible, use for display only. </p>
 	 * @see #__DNA__FIELD__ob_mode
 	 */
@@ -3234,8 +3268,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Vertex weight when brush is applied<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Vertex weight when brush is applied
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Brush}  weight. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
@@ -3252,8 +3287,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Vertex weight when brush is applied<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Vertex weight when brush is applied
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Brush}  weight. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
@@ -3270,8 +3306,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of the brush in pixels<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Radius of the brush in pixels
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Brush}  diameter. </p>
 	 * @see #__DNA__FIELD__size
 	 */
@@ -3288,8 +3325,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of the brush in pixels<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Radius of the brush in pixels
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Brush}  diameter. </p>
 	 * @see #__DNA__FIELD__size
 	 */
@@ -3306,7 +3344,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General purpose flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -3323,7 +3361,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General purpose flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -3396,7 +3434,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'mask_pressure'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pressure influence for mask. </p>
 	 * @see #__DNA__FIELD__mask_pressure
 	 */
@@ -3413,7 +3451,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'mask_pressure'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pressure influence for mask. </p>
 	 * @see #__DNA__FIELD__mask_pressure
 	 */
@@ -3430,8 +3468,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'jitter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Jitter the position of the brush while painting<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Jitter the position of the brush while painting
+	 * <h4>Blender Source Code</h4>
 	 * <p> Jitter the position of the brush. </p>
 	 * @see #__DNA__FIELD__jitter
 	 */
@@ -3448,8 +3487,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'jitter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Jitter the position of the brush while painting<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Jitter the position of the brush while painting
+	 * <h4>Blender Source Code</h4>
 	 * <p> Jitter the position of the brush. </p>
 	 * @see #__DNA__FIELD__jitter
 	 */
@@ -3466,8 +3506,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'jitter_absolute'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Jitter the position of the brush in pixels while painting<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Jitter the position of the brush in pixels while painting
+	 * <h4>Blender Source Code</h4>
 	 * <p> Absolute jitter in pixels. </p>
 	 * @see #__DNA__FIELD__jitter_absolute
 	 */
@@ -3484,8 +3525,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'jitter_absolute'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Jitter the position of the brush in pixels while painting<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Jitter the position of the brush in pixels while painting
+	 * <h4>Blender Source Code</h4>
 	 * <p> Absolute jitter in pixels. </p>
 	 * @see #__DNA__FIELD__jitter_absolute
 	 */
@@ -3530,8 +3572,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'spacing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Spacing between brush daubs as a percentage of brush diameter<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Spacing between brush daubs as a percentage of brush diameter
+	 * <h4>Blender Source Code</h4>
 	 * <p> Spacing of paint operations. </p>
 	 * @see #__DNA__FIELD__spacing
 	 */
@@ -3548,8 +3591,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'spacing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Spacing between brush daubs as a percentage of brush diameter<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Spacing between brush daubs as a percentage of brush diameter
+	 * <h4>Blender Source Code</h4>
 	 * <p> Spacing of paint operations. </p>
 	 * @see #__DNA__FIELD__spacing
 	 */
@@ -3566,8 +3610,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'smooth_stroke_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum distance from last point before stroke continues<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Minimum distance from last point before stroke continues
+	 * <h4>Blender Source Code</h4>
 	 * <p> Turning radius (in pixels) for smooth stroke. </p>
 	 * @see #__DNA__FIELD__smooth_stroke_radius
 	 */
@@ -3584,8 +3629,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'smooth_stroke_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum distance from last point before stroke continues<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Minimum distance from last point before stroke continues
+	 * <h4>Blender Source Code</h4>
 	 * <p> Turning radius (in pixels) for smooth stroke. </p>
 	 * @see #__DNA__FIELD__smooth_stroke_radius
 	 */
@@ -3602,8 +3648,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'smooth_stroke_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Higher values give a smoother stroke<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Higher values give a smoother stroke
+	 * <h4>Blender Source Code</h4>
 	 * <p> Higher values limit fast changes in the stroke direction. </p>
 	 * @see #__DNA__FIELD__smooth_stroke_factor
 	 */
@@ -3620,8 +3667,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'smooth_stroke_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Higher values give a smoother stroke<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Higher values give a smoother stroke
+	 * <h4>Blender Source Code</h4>
 	 * <p> Higher values limit fast changes in the stroke direction. </p>
 	 * @see #__DNA__FIELD__smooth_stroke_factor
 	 */
@@ -3638,8 +3686,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'rate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Interval between paints for Airbrush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Interval between paints for Airbrush
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Paint}  operations / second (airbrush). </p>
 	 * @see #__DNA__FIELD__rate
 	 */
@@ -3656,8 +3705,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'rate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Interval between paints for Airbrush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Interval between paints for Airbrush
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Paint}  operations / second (airbrush). </p>
 	 * @see #__DNA__FIELD__rate
 	 */
@@ -3674,7 +3724,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'rgb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color. </p>
 	 * @see #__DNA__FIELD__rgb
 	 */
@@ -3695,7 +3745,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'rgb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color. </p>
 	 * @see #__DNA__FIELD__rgb
 	 */
@@ -3720,7 +3770,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Opacity. </p>
 	 * @see #__DNA__FIELD__alpha
 	 */
@@ -3737,7 +3787,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Opacity. </p>
 	 * @see #__DNA__FIELD__alpha
 	 */
@@ -3754,8 +3804,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'hardness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How close the brush falloff starts from the edge of the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How close the brush falloff starts from the edge of the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> Hardness </p>
 	 * @see #__DNA__FIELD__hardness
 	 */
@@ -3772,8 +3823,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'hardness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How close the brush falloff starts from the edge of the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How close the brush falloff starts from the edge of the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> Hardness </p>
 	 * @see #__DNA__FIELD__hardness
 	 */
@@ -3790,8 +3842,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'flow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of paint that is applied per stroke sample<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Amount of paint that is applied per stroke sample
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flow </p>
 	 * @see #__DNA__FIELD__flow
 	 */
@@ -3808,8 +3861,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'flow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of paint that is applied per stroke sample<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Amount of paint that is applied per stroke sample
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flow </p>
 	 * @see #__DNA__FIELD__flow
 	 */
@@ -3826,8 +3880,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'wet_mix'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of paint that is picked from the surface into the brush color<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Amount of paint that is picked from the surface into the brush color
+	 * <h4>Blender Source Code</h4>
 	 * <p> Wet Mix </p>
 	 * @see #__DNA__FIELD__wet_mix
 	 */
@@ -3844,8 +3899,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'wet_mix'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of paint that is picked from the surface into the brush color<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Amount of paint that is picked from the surface into the brush color
+	 * <h4>Blender Source Code</h4>
 	 * <p> Wet Mix </p>
 	 * @see #__DNA__FIELD__wet_mix
 	 */
@@ -3862,7 +3918,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'wet_persistence'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of wet paint that stays in the brush after applying paint to the surface
 	 * @see #__DNA__FIELD__wet_persistence
 	 */
@@ -3879,7 +3935,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'wet_persistence'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of wet paint that stays in the brush after applying paint to the surface
 	 * @see #__DNA__FIELD__wet_persistence
 	 */
@@ -3896,8 +3952,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'density'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of random elements that are going to be affected by the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Amount of random elements that are going to be affected by the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> Density </p>
 	 * @see #__DNA__FIELD__density
 	 */
@@ -3914,8 +3971,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'density'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of random elements that are going to be affected by the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Amount of random elements that are going to be affected by the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> Density </p>
 	 * @see #__DNA__FIELD__density
 	 */
@@ -3960,8 +4018,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'tip_roundness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Roundness of the brush tip<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Roundness of the brush tip
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tip Shape Factor that controls the shape of the brush tip by rounding the corners of a square. 0.0 value produces a square, 1.0 produces a circle. </p>
 	 * @see #__DNA__FIELD__tip_roundness
 	 */
@@ -3978,8 +4037,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'tip_roundness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Roundness of the brush tip<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Roundness of the brush tip
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tip Shape Factor that controls the shape of the brush tip by rounding the corners of a square. 0.0 value produces a square, 1.0 produces a circle. </p>
 	 * @see #__DNA__FIELD__tip_roundness
 	 */
@@ -3996,7 +4056,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'tip_scale_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Scale of the brush tip in the X axis
 	 * @see #__DNA__FIELD__tip_scale_x
 	 */
@@ -4013,7 +4073,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'tip_scale_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Scale of the brush tip in the X axis
 	 * @see #__DNA__FIELD__tip_scale_x
 	 */
@@ -4030,7 +4090,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'secondary_rgb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Background color. </p>
 	 * @see #__DNA__FIELD__secondary_rgb
 	 */
@@ -4051,7 +4111,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'secondary_rgb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Background color. </p>
 	 * @see #__DNA__FIELD__secondary_rgb
 	 */
@@ -4076,8 +4136,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'dash_ratio'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Ratio of samples in a cycle that the brush is enabled<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Ratio of samples in a cycle that the brush is enabled
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rate </p>
 	 * @see #__DNA__FIELD__dash_ratio
 	 */
@@ -4094,8 +4155,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'dash_ratio'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Ratio of samples in a cycle that the brush is enabled<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Ratio of samples in a cycle that the brush is enabled
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rate </p>
 	 * @see #__DNA__FIELD__dash_ratio
 	 */
@@ -4112,7 +4174,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'dash_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of a dash cycle measured in stroke samples
 	 * @see #__DNA__FIELD__dash_samples
 	 */
@@ -4129,7 +4191,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'dash_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of a dash cycle measured in stroke samples
 	 * @see #__DNA__FIELD__dash_samples
 	 */
@@ -4146,7 +4208,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'sculpt_plane'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The direction of movement for sculpt vertices. </p>
 	 * @see #__DNA__FIELD__sculpt_plane
 	 */
@@ -4163,7 +4225,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'sculpt_plane'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The direction of movement for sculpt vertices. </p>
 	 * @see #__DNA__FIELD__sculpt_plane
 	 */
@@ -4180,8 +4242,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'plane_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust plane on which the brush acts towards or away from the object surface<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Adjust plane on which the brush acts towards or away from the object surface
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset for plane brushes (clay, flatten, fill, scrape). </p>
 	 * @see #__DNA__FIELD__plane_offset
 	 */
@@ -4198,8 +4261,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'plane_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust plane on which the brush acts towards or away from the object surface<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Adjust plane on which the brush acts towards or away from the object surface
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset for plane brushes (clay, flatten, fill, scrape). </p>
 	 * @see #__DNA__FIELD__plane_offset
 	 */
@@ -4244,7 +4308,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'gradient_stroke_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Source for stroke color gradient application. </p>
 	 * @see #__DNA__FIELD__gradient_stroke_mode
 	 */
@@ -4261,7 +4325,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'gradient_stroke_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Source for stroke color gradient application. </p>
 	 * @see #__DNA__FIELD__gradient_stroke_mode
 	 */
@@ -4278,7 +4342,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'gradient_fill_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Source for fill tool color gradient application. </p>
 	 * @see #__DNA__FIELD__gradient_fill_mode
 	 */
@@ -4295,7 +4359,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'gradient_fill_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Source for fill tool color gradient application. </p>
 	 * @see #__DNA__FIELD__gradient_fill_mode
 	 */
@@ -4352,8 +4416,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'falloff_shape'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Use projected or spherical falloff<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Use projected or spherical falloff
+	 * <h4>Blender Source Code</h4>
 	 * <p> Projection shape (sphere, circle). </p>
 	 * @see #__DNA__FIELD__falloff_shape
 	 */
@@ -4370,8 +4435,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'falloff_shape'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Use projected or spherical falloff<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Use projected or spherical falloff
+	 * <h4>Blender Source Code</h4>
 	 * <p> Projection shape (sphere, circle). </p>
 	 * @see #__DNA__FIELD__falloff_shape
 	 */
@@ -4388,7 +4454,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'falloff_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Paint most on faces pointing towards the view according to this angle
 	 * @see #__DNA__FIELD__falloff_angle
 	 */
@@ -4405,7 +4471,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'falloff_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Paint most on faces pointing towards the view according to this angle
 	 * @see #__DNA__FIELD__falloff_angle
 	 */
@@ -4422,7 +4488,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'sculpt_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active sculpt tool. </p>
 	 * @see #__DNA__FIELD__sculpt_tool
 	 */
@@ -4439,7 +4505,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'sculpt_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active sculpt tool. </p>
 	 * @see #__DNA__FIELD__sculpt_tool
 	 */
@@ -4456,7 +4522,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'uv_sculpt_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active sculpt tool. </p>
 	 * @see #__DNA__FIELD__uv_sculpt_tool
 	 */
@@ -4473,7 +4539,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'uv_sculpt_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active sculpt tool. </p>
 	 * @see #__DNA__FIELD__uv_sculpt_tool
 	 */
@@ -4490,7 +4556,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'vertexpaint_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active vertex paint. </p>
 	 * @see #__DNA__FIELD__vertexpaint_tool
 	 */
@@ -4507,7 +4573,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'vertexpaint_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active vertex paint. </p>
 	 * @see #__DNA__FIELD__vertexpaint_tool
 	 */
@@ -4524,7 +4590,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'weightpaint_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active weight paint. </p>
 	 * @see #__DNA__FIELD__weightpaint_tool
 	 */
@@ -4541,7 +4607,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'weightpaint_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active weight paint. </p>
 	 * @see #__DNA__FIELD__weightpaint_tool
 	 */
@@ -4558,7 +4624,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'imagepaint_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active image paint tool. </p>
 	 * @see #__DNA__FIELD__imagepaint_tool
 	 */
@@ -4575,7 +4641,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'imagepaint_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active image paint tool. </p>
 	 * @see #__DNA__FIELD__imagepaint_tool
 	 */
@@ -4592,7 +4658,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'mask_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Enum eBrushMaskTool, only used if sculpt_tool is SCULPT_TOOL_MASK. </p>
 	 * @see #__DNA__FIELD__mask_tool
 	 */
@@ -4609,7 +4675,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'mask_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Enum eBrushMaskTool, only used if sculpt_tool is SCULPT_TOOL_MASK. </p>
 	 * @see #__DNA__FIELD__mask_tool
 	 */
@@ -4626,7 +4692,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active grease pencil tool. </p>
 	 * @see #__DNA__FIELD__gpencil_tool
 	 */
@@ -4643,7 +4709,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active grease pencil tool. </p>
 	 * @see #__DNA__FIELD__gpencil_tool
 	 */
@@ -4660,7 +4726,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_vertex_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active grease pencil vertex tool. </p>
 	 * @see #__DNA__FIELD__gpencil_vertex_tool
 	 */
@@ -4677,7 +4743,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_vertex_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active grease pencil vertex tool. </p>
 	 * @see #__DNA__FIELD__gpencil_vertex_tool
 	 */
@@ -4694,7 +4760,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_sculpt_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active grease pencil sculpt tool. </p>
 	 * @see #__DNA__FIELD__gpencil_sculpt_tool
 	 */
@@ -4711,7 +4777,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_sculpt_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active grease pencil sculpt tool. </p>
 	 * @see #__DNA__FIELD__gpencil_sculpt_tool
 	 */
@@ -4728,7 +4794,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_weight_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active grease pencil weight tool. </p>
 	 * @see #__DNA__FIELD__gpencil_weight_tool
 	 */
@@ -4745,7 +4811,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_weight_tool'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active grease pencil weight tool. </p>
 	 * @see #__DNA__FIELD__gpencil_weight_tool
 	 */
@@ -4830,7 +4896,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'tilt_strength_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much the tilt of the pen will affect the brush
 	 * @see #__DNA__FIELD__tilt_strength_factor
 	 */
@@ -4847,7 +4913,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'tilt_strength_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much the tilt of the pen will affect the brush
 	 * @see #__DNA__FIELD__tilt_strength_factor
 	 */
@@ -4864,7 +4930,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'topology_rake_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Automatically align edges to the brush direction to generate cleaner topology and define sharp features. Best used on low-poly meshes as it has a performance impact
 	 * @see #__DNA__FIELD__topology_rake_factor
 	 */
@@ -4881,7 +4947,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'topology_rake_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Automatically align edges to the brush direction to generate cleaner topology and define sharp features. Best used on low-poly meshes as it has a performance impact
 	 * @see #__DNA__FIELD__topology_rake_factor
 	 */
@@ -4898,7 +4964,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'crease_pinch_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much the crease brush pinches
 	 * @see #__DNA__FIELD__crease_pinch_factor
 	 */
@@ -4915,7 +4981,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'crease_pinch_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much the crease brush pinches
 	 * @see #__DNA__FIELD__crease_pinch_factor
 	 */
@@ -4932,7 +4998,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'normal_radius_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Ratio between the brush radius and the radius that is going to be used to sample the normal
 	 * @see #__DNA__FIELD__normal_radius_factor
 	 */
@@ -4949,7 +5015,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'normal_radius_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Ratio between the brush radius and the radius that is going to be used to sample the normal
 	 * @see #__DNA__FIELD__normal_radius_factor
 	 */
@@ -4966,7 +5032,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'area_radius_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Ratio between the brush radius and the radius that is going to be used to sample the area center
 	 * @see #__DNA__FIELD__area_radius_factor
 	 */
@@ -4983,7 +5049,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'area_radius_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Ratio between the brush radius and the radius that is going to be used to sample the area center
 	 * @see #__DNA__FIELD__area_radius_factor
 	 */
@@ -5000,7 +5066,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'wet_paint_radius_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Ratio between the brush radius and the radius that is going to be used to sample the color to blend in wet paint
 	 * @see #__DNA__FIELD__wet_paint_radius_factor
 	 */
@@ -5017,7 +5083,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'wet_paint_radius_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Ratio between the brush radius and the radius that is going to be used to sample the color to blend in wet paint
 	 * @see #__DNA__FIELD__wet_paint_radius_factor
 	 */
@@ -5034,7 +5100,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'plane_trim'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * If a vertex is further away from offset plane than this, then it is not affected
 	 * @see #__DNA__FIELD__plane_trim
 	 */
@@ -5051,7 +5117,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'plane_trim'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * If a vertex is further away from offset plane than this, then it is not affected
 	 * @see #__DNA__FIELD__plane_trim
 	 */
@@ -5068,8 +5134,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'height'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Affectable height of brush (layer height for layer tool, i.e.)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Affectable height of brush (layer height for layer tool, i.e.)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Affectable height of brush (layer height for layer tool, i.e.). </p>
 	 * @see #__DNA__FIELD__height
 	 */
@@ -5086,8 +5153,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'height'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Affectable height of brush (layer height for layer tool, i.e.)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Affectable height of brush (layer height for layer tool, i.e.)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Affectable height of brush (layer height for layer tool, i.e.). </p>
 	 * @see #__DNA__FIELD__height
 	 */
@@ -5104,7 +5172,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'texture_sample_bias'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Value added to texture samples
 	 * @see #__DNA__FIELD__texture_sample_bias
 	 */
@@ -5121,7 +5189,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'texture_sample_bias'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Value added to texture samples
 	 * @see #__DNA__FIELD__texture_sample_bias
 	 */
@@ -5166,8 +5234,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'disconnected_distance_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum distance to search for disconnected loose parts in the mesh<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Maximum distance to search for disconnected loose parts in the mesh
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum distance to search fake neighbors from a vertex. </p>
 	 * @see #__DNA__FIELD__disconnected_distance_max
 	 */
@@ -5184,8 +5253,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'disconnected_distance_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum distance to search for disconnected loose parts in the mesh<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Maximum distance to search for disconnected loose parts in the mesh
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum distance to search fake neighbors from a vertex. </p>
 	 * @see #__DNA__FIELD__disconnected_distance_max
 	 */
@@ -5202,7 +5272,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'deform_target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How the deformation of the brush will affect the object
 	 * @see #__DNA__FIELD__deform_target
 	 */
@@ -5219,7 +5289,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'deform_target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How the deformation of the brush will affect the object
 	 * @see #__DNA__FIELD__deform_target
 	 */
@@ -5236,7 +5306,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'automasking_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> automasking </p>
 	 * @see #__DNA__FIELD__automasking_flags
 	 */
@@ -5253,7 +5323,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'automasking_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> automasking </p>
 	 * @see #__DNA__FIELD__automasking_flags
 	 */
@@ -5270,7 +5340,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'automasking_boundary_edges_propagation_steps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance where boundary edge automasking is going to protect vertices from the fully masked edge
 	 * @see #__DNA__FIELD__automasking_boundary_edges_propagation_steps
 	 */
@@ -5287,7 +5357,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'automasking_boundary_edges_propagation_steps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distance where boundary edge automasking is going to protect vertices from the fully masked edge
 	 * @see #__DNA__FIELD__automasking_boundary_edges_propagation_steps
 	 */
@@ -5304,7 +5374,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'elastic_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Deformation type that is used in the brush
 	 * @see #__DNA__FIELD__elastic_deform_type
 	 */
@@ -5321,7 +5391,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'elastic_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Deformation type that is used in the brush
 	 * @see #__DNA__FIELD__elastic_deform_type
 	 */
@@ -5338,7 +5408,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'elastic_deform_volume_preservation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Poisson ratio for elastic deformation. Higher values preserve volume more, but also lead to more bulging
 	 * @see #__DNA__FIELD__elastic_deform_volume_preservation
 	 */
@@ -5355,7 +5425,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'elastic_deform_volume_preservation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Poisson ratio for elastic deformation. Higher values preserve volume more, but also lead to more bulging
 	 * @see #__DNA__FIELD__elastic_deform_volume_preservation
 	 */
@@ -5372,8 +5442,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'snake_hook_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> snake hook </p>
 	 * @see #__DNA__FIELD__snake_hook_deform_type
 	 */
@@ -5390,8 +5461,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'snake_hook_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> snake hook </p>
 	 * @see #__DNA__FIELD__snake_hook_deform_type
 	 */
@@ -5408,8 +5480,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'pose_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> pose </p>
 	 * @see #__DNA__FIELD__pose_deform_type
 	 */
@@ -5426,8 +5499,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'pose_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> pose </p>
 	 * @see #__DNA__FIELD__pose_deform_type
 	 */
@@ -5444,7 +5518,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'pose_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset of the pose origin in relation to the brush radius
 	 * @see #__DNA__FIELD__pose_offset
 	 */
@@ -5461,7 +5535,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'pose_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset of the pose origin in relation to the brush radius
 	 * @see #__DNA__FIELD__pose_offset
 	 */
@@ -5478,7 +5552,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'pose_smooth_iterations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Smooth iterations applied after calculating the pose factor of each vertex
 	 * @see #__DNA__FIELD__pose_smooth_iterations
 	 */
@@ -5495,7 +5569,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'pose_smooth_iterations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Smooth iterations applied after calculating the pose factor of each vertex
 	 * @see #__DNA__FIELD__pose_smooth_iterations
 	 */
@@ -5512,7 +5586,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'pose_ik_segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of segments of the inverse kinematics chain that will deform the mesh
 	 * @see #__DNA__FIELD__pose_ik_segments
 	 */
@@ -5529,7 +5603,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'pose_ik_segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of segments of the inverse kinematics chain that will deform the mesh
 	 * @see #__DNA__FIELD__pose_ik_segments
 	 */
@@ -5546,7 +5620,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'pose_origin_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Method to set the rotation origins for the segments of the brush
 	 * @see #__DNA__FIELD__pose_origin_type
 	 */
@@ -5563,7 +5637,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'pose_origin_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Method to set the rotation origins for the segments of the brush
 	 * @see #__DNA__FIELD__pose_origin_type
 	 */
@@ -5580,8 +5654,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'boundary_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> boundary </p>
 	 * @see #__DNA__FIELD__boundary_deform_type
 	 */
@@ -5598,8 +5673,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'boundary_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> boundary </p>
 	 * @see #__DNA__FIELD__boundary_deform_type
 	 */
@@ -5616,7 +5692,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'boundary_falloff_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How the brush falloff is applied across the boundary
 	 * @see #__DNA__FIELD__boundary_falloff_type
 	 */
@@ -5633,7 +5709,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'boundary_falloff_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How the brush falloff is applied across the boundary
 	 * @see #__DNA__FIELD__boundary_falloff_type
 	 */
@@ -5650,7 +5726,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'boundary_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset of the boundary origin in relation to the brush radius
 	 * @see #__DNA__FIELD__boundary_offset
 	 */
@@ -5667,7 +5743,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'boundary_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset of the boundary origin in relation to the brush radius
 	 * @see #__DNA__FIELD__boundary_offset
 	 */
@@ -5684,8 +5760,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'cloth_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> cloth </p>
 	 * @see #__DNA__FIELD__cloth_deform_type
 	 */
@@ -5702,8 +5779,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'cloth_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> cloth </p>
 	 * @see #__DNA__FIELD__cloth_deform_type
 	 */
@@ -5720,7 +5798,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'cloth_force_falloff_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Shape used in the brush to apply force to the cloth
 	 * @see #__DNA__FIELD__cloth_force_falloff_type
 	 */
@@ -5737,7 +5815,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'cloth_force_falloff_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Shape used in the brush to apply force to the cloth
 	 * @see #__DNA__FIELD__cloth_force_falloff_type
 	 */
@@ -5754,7 +5832,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'cloth_simulation_area_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Part of the mesh that is going to be simulated when the stroke is active
 	 * @see #__DNA__FIELD__cloth_simulation_area_type
 	 */
@@ -5771,7 +5849,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'cloth_simulation_area_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Part of the mesh that is going to be simulated when the stroke is active
 	 * @see #__DNA__FIELD__cloth_simulation_area_type
 	 */
@@ -5788,7 +5866,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'cloth_mass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Mass of each simulation particle
 	 * @see #__DNA__FIELD__cloth_mass
 	 */
@@ -5805,7 +5883,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'cloth_mass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Mass of each simulation particle
 	 * @see #__DNA__FIELD__cloth_mass
 	 */
@@ -5822,7 +5900,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'cloth_damping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much the applied forces are propagated through the cloth
 	 * @see #__DNA__FIELD__cloth_damping
 	 */
@@ -5839,7 +5917,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'cloth_damping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much the applied forces are propagated through the cloth
 	 * @see #__DNA__FIELD__cloth_damping
 	 */
@@ -5856,7 +5934,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'cloth_sim_limit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor added relative to the size of the radius to limit the cloth simulation effects
 	 * @see #__DNA__FIELD__cloth_sim_limit
 	 */
@@ -5873,7 +5951,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'cloth_sim_limit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Factor added relative to the size of the radius to limit the cloth simulation effects
 	 * @see #__DNA__FIELD__cloth_sim_limit
 	 */
@@ -5890,7 +5968,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'cloth_sim_falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Area to apply deformation falloff to the effects of the simulation
 	 * @see #__DNA__FIELD__cloth_sim_falloff
 	 */
@@ -5907,7 +5985,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'cloth_sim_falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Area to apply deformation falloff to the effects of the simulation
 	 * @see #__DNA__FIELD__cloth_sim_falloff
 	 */
@@ -5924,7 +6002,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'cloth_constraint_softbody_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much the cloth preserves the original shape, acting as a soft body
 	 * @see #__DNA__FIELD__cloth_constraint_softbody_strength
 	 */
@@ -5941,7 +6019,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'cloth_constraint_softbody_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much the cloth preserves the original shape, acting as a soft body
 	 * @see #__DNA__FIELD__cloth_constraint_softbody_strength
 	 */
@@ -5958,8 +6036,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'smooth_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> smooth </p>
 	 * @see #__DNA__FIELD__smooth_deform_type
 	 */
@@ -5976,8 +6055,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'smooth_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> smooth </p>
 	 * @see #__DNA__FIELD__smooth_deform_type
 	 */
@@ -5994,7 +6074,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'surface_smooth_shape_preservation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much of the original shape is preserved when smoothing
 	 * @see #__DNA__FIELD__surface_smooth_shape_preservation
 	 */
@@ -6011,7 +6091,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'surface_smooth_shape_preservation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much of the original shape is preserved when smoothing
 	 * @see #__DNA__FIELD__surface_smooth_shape_preservation
 	 */
@@ -6028,7 +6108,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'surface_smooth_current_vertex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much the position of each individual vertex influences the final result
 	 * @see #__DNA__FIELD__surface_smooth_current_vertex
 	 */
@@ -6045,7 +6125,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'surface_smooth_current_vertex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much the position of each individual vertex influences the final result
 	 * @see #__DNA__FIELD__surface_smooth_current_vertex
 	 */
@@ -6062,7 +6142,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'surface_smooth_iterations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of smoothing iterations per brush step
 	 * @see #__DNA__FIELD__surface_smooth_iterations
 	 */
@@ -6079,7 +6159,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'surface_smooth_iterations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of smoothing iterations per brush step
 	 * @see #__DNA__FIELD__surface_smooth_iterations
 	 */
@@ -6096,8 +6176,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'multiplane_scrape_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Angle between the planes of the crease<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Angle between the planes of the crease
+	 * <h4>Blender Source Code</h4>
 	 * <p> multiplane scrape </p>
 	 * @see #__DNA__FIELD__multiplane_scrape_angle
 	 */
@@ -6114,8 +6195,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'multiplane_scrape_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Angle between the planes of the crease<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Angle between the planes of the crease
+	 * <h4>Blender Source Code</h4>
 	 * <p> multiplane scrape </p>
 	 * @see #__DNA__FIELD__multiplane_scrape_angle
 	 */
@@ -6132,8 +6214,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'smear_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> smear </p>
 	 * @see #__DNA__FIELD__smear_deform_type
 	 */
@@ -6150,8 +6233,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'smear_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> smear </p>
 	 * @see #__DNA__FIELD__smear_deform_type
 	 */
@@ -6168,8 +6252,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'slide_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> slide/relax </p>
 	 * @see #__DNA__FIELD__slide_deform_type
 	 */
@@ -6186,8 +6271,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'slide_deform_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Deformation type that is used in the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> slide/relax </p>
 	 * @see #__DNA__FIELD__slide_deform_type
 	 */
@@ -6204,7 +6290,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'texture_overlay_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> overlay </p>
 	 * @see #__DNA__FIELD__texture_overlay_alpha
 	 */
@@ -6221,7 +6307,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'texture_overlay_alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> overlay </p>
 	 * @see #__DNA__FIELD__texture_overlay_alpha
 	 */
@@ -6294,7 +6380,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'unprojected_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Radius of brush in Blender units
 	 * @see #__DNA__FIELD__unprojected_radius
 	 */
@@ -6311,7 +6397,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'unprojected_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Radius of brush in Blender units
 	 * @see #__DNA__FIELD__unprojected_radius
 	 */
@@ -6328,8 +6414,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'sharp_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Threshold below which, no sharpening is done<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Threshold below which, no sharpening is done
+	 * <h4>Blender Source Code</h4>
 	 * <p> soften/sharpen </p>
 	 * @see #__DNA__FIELD__sharp_threshold
 	 */
@@ -6346,8 +6433,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'sharp_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Threshold below which, no sharpening is done<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Threshold below which, no sharpening is done
+	 * <h4>Blender Source Code</h4>
 	 * <p> soften/sharpen </p>
 	 * @see #__DNA__FIELD__sharp_threshold
 	 */
@@ -6364,7 +6452,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'blur_kernel_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Radius of kernel used for soften and sharpen in pixels
 	 * @see #__DNA__FIELD__blur_kernel_radius
 	 */
@@ -6381,7 +6469,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'blur_kernel_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Radius of kernel used for soften and sharpen in pixels
 	 * @see #__DNA__FIELD__blur_kernel_radius
 	 */
@@ -6426,8 +6514,9 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'fill_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Threshold above which filling is not propagated<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Threshold above which filling is not propagated
+	 * <h4>Blender Source Code</h4>
 	 * <p> fill tool </p>
 	 * @see #__DNA__FIELD__fill_threshold
 	 */
@@ -6444,8 +6533,9 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'fill_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Threshold above which filling is not propagated<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Threshold above which filling is not propagated
+	 * <h4>Blender Source Code</h4>
 	 * <p> fill tool </p>
 	 * @see #__DNA__FIELD__fill_threshold
 	 */
@@ -6542,7 +6632,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'stencil_pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Position of stencil in viewport
 	 * @see #__DNA__FIELD__stencil_pos
 	 */
@@ -6563,7 +6653,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'stencil_pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Position of stencil in viewport
 	 * @see #__DNA__FIELD__stencil_pos
 	 */
@@ -6588,7 +6678,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'stencil_dimension'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Dimensions of stencil in viewport
 	 * @see #__DNA__FIELD__stencil_dimension
 	 */
@@ -6609,7 +6699,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'stencil_dimension'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Dimensions of stencil in viewport
 	 * @see #__DNA__FIELD__stencil_dimension
 	 */
@@ -6634,7 +6724,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'mask_stencil_pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Position of mask stencil in viewport
 	 * @see #__DNA__FIELD__mask_stencil_pos
 	 */
@@ -6655,7 +6745,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'mask_stencil_pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Position of mask stencil in viewport
 	 * @see #__DNA__FIELD__mask_stencil_pos
 	 */
@@ -6680,7 +6770,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'mask_stencil_dimension'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Dimensions of mask stencil in viewport
 	 * @see #__DNA__FIELD__mask_stencil_dimension
 	 */
@@ -6701,7 +6791,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'mask_stencil_dimension'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Dimensions of mask stencil in viewport
 	 * @see #__DNA__FIELD__mask_stencil_dimension
 	 */
@@ -6726,7 +6816,7 @@ public class Brush extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__gpencil_settings
 	 */
@@ -6746,7 +6836,7 @@ public class Brush extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__gpencil_settings
 	 */

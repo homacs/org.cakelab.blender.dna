@@ -33,7 +33,7 @@ public class IDPropertyUIData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'description'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tooltip / property description pointer. Owned by the {@link IDProperty} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +56,7 @@ public class IDPropertyUIData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rna_subtype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> RNA subtype, used for every type except string properties (PropertySubType). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -107,7 +107,7 @@ public class IDPropertyUIData extends CFacade {
 	/**
 	 * Get method for struct member 'description'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tooltip / property description pointer. Owned by the {@link IDProperty} . </p>
 	 * @see #__DNA__FIELD__description
 	 */
@@ -127,7 +127,7 @@ public class IDPropertyUIData extends CFacade {
 	/**
 	 * Set method for struct member 'description'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tooltip / property description pointer. Owned by the {@link IDProperty} . </p>
 	 * @see #__DNA__FIELD__description
 	 */
@@ -145,7 +145,7 @@ public class IDPropertyUIData extends CFacade {
 	/**
 	 * Get method for struct member 'rna_subtype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> RNA subtype, used for every type except string properties (PropertySubType). </p>
 	 * @see #__DNA__FIELD__rna_subtype
 	 */
@@ -162,7 +162,7 @@ public class IDPropertyUIData extends CFacade {
 	/**
 	 * Set method for struct member 'rna_subtype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> RNA subtype, used for every type except string properties (PropertySubType). </p>
 	 * @see #__DNA__FIELD__rna_subtype
 	 */

@@ -33,7 +33,7 @@ public class ThemeStripColor extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Strip Color
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -64,7 +64,7 @@ public class ThemeStripColor extends CFacade {
 	/**
 	 * Get method for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Strip Color
 	 * @see #__DNA__FIELD__color
 	 */
@@ -85,7 +85,7 @@ public class ThemeStripColor extends CFacade {
 	/**
 	 * Set method for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Strip Color
 	 * @see #__DNA__FIELD__color
 	 */

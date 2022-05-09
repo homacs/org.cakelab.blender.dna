@@ -53,7 +53,7 @@ public class StripElem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'orig_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ignore when zeroed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -164,7 +164,7 @@ public class StripElem extends CFacade {
 	/**
 	 * Get method for struct member 'orig_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ignore when zeroed. </p>
 	 * @see #__DNA__FIELD__orig_width
 	 */
@@ -181,7 +181,7 @@ public class StripElem extends CFacade {
 	/**
 	 * Set method for struct member 'orig_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ignore when zeroed. </p>
 	 * @see #__DNA__FIELD__orig_width
 	 */

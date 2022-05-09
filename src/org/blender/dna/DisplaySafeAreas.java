@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'DisplaySafeAreas'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Safe Area options used in {@link Camera}  View & Sequencer. </p>
  */
 
@@ -34,8 +35,9 @@ public class DisplaySafeAreas extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Safe area for text and graphics<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Safe area for text and graphics
+	 * <h4>Blender Source Code</h4>
 	 * <p> each value represents the (x,y) margins as a multiplier. 'center' in this context is just the name for a different kind of safe-area Title Safe. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -58,8 +60,9 @@ public class DisplaySafeAreas extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'action'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Safe area for general elements<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Safe area for general elements
+	 * <h4>Blender Source Code</h4>
 	 * <p> Image/Graphics Safe. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -82,8 +85,9 @@ public class DisplaySafeAreas extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'title_center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Safe area for text and graphics in a different aspect ratio<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Safe area for text and graphics in a different aspect ratio
+	 * <h4>Blender Source Code</h4>
 	 * <p> use for alternate aspect ratio </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -106,7 +110,7 @@ public class DisplaySafeAreas extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'action_center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Safe area for general elements in a different aspect ratio
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -137,8 +141,9 @@ public class DisplaySafeAreas extends CFacade {
 	/**
 	 * Get method for struct member 'title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Safe area for text and graphics<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Safe area for text and graphics
+	 * <h4>Blender Source Code</h4>
 	 * <p> each value represents the (x,y) margins as a multiplier. 'center' in this context is just the name for a different kind of safe-area Title Safe. </p>
 	 * @see #__DNA__FIELD__title
 	 */
@@ -159,8 +164,9 @@ public class DisplaySafeAreas extends CFacade {
 	/**
 	 * Set method for struct member 'title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Safe area for text and graphics<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Safe area for text and graphics
+	 * <h4>Blender Source Code</h4>
 	 * <p> each value represents the (x,y) margins as a multiplier. 'center' in this context is just the name for a different kind of safe-area Title Safe. </p>
 	 * @see #__DNA__FIELD__title
 	 */
@@ -185,8 +191,9 @@ public class DisplaySafeAreas extends CFacade {
 	/**
 	 * Get method for struct member 'action'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Safe area for general elements<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Safe area for general elements
+	 * <h4>Blender Source Code</h4>
 	 * <p> Image/Graphics Safe. </p>
 	 * @see #__DNA__FIELD__action
 	 */
@@ -207,8 +214,9 @@ public class DisplaySafeAreas extends CFacade {
 	/**
 	 * Set method for struct member 'action'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Safe area for general elements<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Safe area for general elements
+	 * <h4>Blender Source Code</h4>
 	 * <p> Image/Graphics Safe. </p>
 	 * @see #__DNA__FIELD__action
 	 */
@@ -233,8 +241,9 @@ public class DisplaySafeAreas extends CFacade {
 	/**
 	 * Get method for struct member 'title_center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Safe area for text and graphics in a different aspect ratio<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Safe area for text and graphics in a different aspect ratio
+	 * <h4>Blender Source Code</h4>
 	 * <p> use for alternate aspect ratio </p>
 	 * @see #__DNA__FIELD__title_center
 	 */
@@ -255,8 +264,9 @@ public class DisplaySafeAreas extends CFacade {
 	/**
 	 * Set method for struct member 'title_center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Safe area for text and graphics in a different aspect ratio<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Safe area for text and graphics in a different aspect ratio
+	 * <h4>Blender Source Code</h4>
 	 * <p> use for alternate aspect ratio </p>
 	 * @see #__DNA__FIELD__title_center
 	 */
@@ -281,7 +291,7 @@ public class DisplaySafeAreas extends CFacade {
 	/**
 	 * Get method for struct member 'action_center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Safe area for general elements in a different aspect ratio
 	 * @see #__DNA__FIELD__action_center
 	 */
@@ -302,7 +312,7 @@ public class DisplaySafeAreas extends CFacade {
 	/**
 	 * Set method for struct member 'action_center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Safe area for general elements in a different aspect ratio
 	 * @see #__DNA__FIELD__action_center
 	 */

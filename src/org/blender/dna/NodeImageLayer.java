@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'NodeImageLayer'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Layer info for image node outputs. </p>
  */
 
@@ -34,7 +35,7 @@ public class NodeImageLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> index in the Image->layers->passes lists 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -59,7 +60,7 @@ public class NodeImageLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pass_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> render pass name Amount defined in openexr_multi.h. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -90,7 +91,7 @@ public class NodeImageLayer extends CFacade {
 	/**
 	 * Get method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> index in the Image->layers->passes lists 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -109,7 +110,7 @@ public class NodeImageLayer extends CFacade {
 	/**
 	 * Set method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> index in the Image->layers->passes lists 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -128,7 +129,7 @@ public class NodeImageLayer extends CFacade {
 	/**
 	 * Get method for struct member 'pass_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> render pass name Amount defined in openexr_multi.h. </p>
 	 * @see #__DNA__FIELD__pass_name
 	 */
@@ -149,7 +150,7 @@ public class NodeImageLayer extends CFacade {
 	/**
 	 * Set method for struct member 'pass_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> render pass name Amount defined in openexr_multi.h. </p>
 	 * @see #__DNA__FIELD__pass_name
 	 */

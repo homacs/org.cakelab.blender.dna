@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'LightCacheTexture'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> These are used as UBO data. They need to be aligned to size of vec4. ---<mdash/>  Eevee Lightcache ----<mdash/>  </p>
  */
 
@@ -54,7 +55,7 @@ public class LightCacheTexture extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Copy of GPU data to create GPUTextures on file read. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -197,7 +198,7 @@ public class LightCacheTexture extends CFacade {
 	/**
 	 * Get method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Copy of GPU data to create GPUTextures on file read. </p>
 	 * @see #__DNA__FIELD__data
 	 */
@@ -217,7 +218,7 @@ public class LightCacheTexture extends CFacade {
 	/**
 	 * Set method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Copy of GPU data to create GPUTextures on file read. </p>
 	 * @see #__DNA__FIELD__data
 	 */

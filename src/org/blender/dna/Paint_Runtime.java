@@ -33,7 +33,7 @@ public class Paint_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tool_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Avoid having to compare with scene pointer everywhere. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -104,7 +104,7 @@ public class Paint_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'tool_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Avoid having to compare with scene pointer everywhere. </p>
 	 * @see #__DNA__FIELD__tool_offset
 	 */
@@ -121,7 +121,7 @@ public class Paint_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'tool_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Avoid having to compare with scene pointer everywhere. </p>
 	 * @see #__DNA__FIELD__tool_offset
 	 */

@@ -53,7 +53,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Target object from which the distance is measured
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the curve mapping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -119,7 +119,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'range_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower bound of the input range the mapping is applied
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -142,7 +142,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'range_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Upper bound of the input range the mapping is applied
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -165,7 +165,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'value_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum output value of the mapping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -188,7 +188,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'value_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum output value of the mapping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -275,7 +275,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Get method for struct member 'target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Target object from which the distance is measured
 	 * @see #__DNA__FIELD__target
 	 */
@@ -295,7 +295,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Set method for struct member 'target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Target object from which the distance is measured
 	 * @see #__DNA__FIELD__target
 	 */
@@ -313,7 +313,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Get method for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the curve mapping
 	 * @see #__DNA__FIELD__curve
 	 */
@@ -333,7 +333,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Set method for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the curve mapping
 	 * @see #__DNA__FIELD__curve
 	 */
@@ -379,7 +379,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Get method for struct member 'range_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower bound of the input range the mapping is applied
 	 * @see #__DNA__FIELD__range_min
 	 */
@@ -396,7 +396,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Set method for struct member 'range_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower bound of the input range the mapping is applied
 	 * @see #__DNA__FIELD__range_min
 	 */
@@ -413,7 +413,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Get method for struct member 'range_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Upper bound of the input range the mapping is applied
 	 * @see #__DNA__FIELD__range_max
 	 */
@@ -430,7 +430,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Set method for struct member 'range_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Upper bound of the input range the mapping is applied
 	 * @see #__DNA__FIELD__range_max
 	 */
@@ -447,7 +447,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Get method for struct member 'value_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum output value of the mapping
 	 * @see #__DNA__FIELD__value_min
 	 */
@@ -464,7 +464,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Set method for struct member 'value_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum output value of the mapping
 	 * @see #__DNA__FIELD__value_min
 	 */
@@ -481,7 +481,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Get method for struct member 'value_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum output value of the mapping
 	 * @see #__DNA__FIELD__value_max
 	 */
@@ -498,7 +498,7 @@ public class LineStyleThicknessModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Set method for struct member 'value_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum output value of the mapping
 	 * @see #__DNA__FIELD__value_max
 	 */

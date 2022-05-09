@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'LightProbeCache'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> ----<mdash/>  Eevee LightProbes ----<mdash/>  Needs to be there because written to file with the light-cache. IMPORTANT Padding in these structs is essential. It must match GLSL struct definition in lightprobe_lib.glsl. Must match CubeData. </p>
  */
 

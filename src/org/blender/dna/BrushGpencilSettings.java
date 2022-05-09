@@ -33,7 +33,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'draw_smoothfac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Amount of smoothing to apply to newly created strokes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,8 +56,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fill_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Factor for fill boundary accuracy, higher values are more accurate but slower<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Factor for fill boundary accuracy, higher values are more accurate but slower
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fill zoom factor </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +81,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'draw_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Amount of alpha strength to apply to newly created strokes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -103,7 +104,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'draw_jitter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Amount of jitter to apply to newly created strokes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,7 +127,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'draw_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angle when the brush has full thickness. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -149,7 +150,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'draw_angle_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to apply when angle change (only 90 degrees). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -172,7 +173,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'draw_random_press'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of randomness for pressure. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -195,7 +196,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'draw_random_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of strength for strength. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -218,7 +219,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'draw_smoothlvl'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of times to apply smooth factor to new strokes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -241,7 +242,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'draw_subdivide'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of times to subdivide new strokes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -264,8 +265,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fill_layer_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Layers used as boundaries<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Layers used as boundaries
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layers used for fill. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -288,7 +290,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fill_direction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Direction of the fill
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -311,8 +313,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fill_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Threshold to consider color transparent for filling<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Threshold to consider color transparent for filling
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor for transparency. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -335,8 +338,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fill_leak'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size in pixels to consider the leak closed<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Size in pixels to consider the leak closed
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of pixel to consider the leak is too small (x 2). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -359,8 +363,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'caps_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The shape of the start and end of the stroke<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * The shape of the start and end of the stroke
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of caps: eGPDstroke_Caps. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -423,7 +428,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fill_simplylvl'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of simplify steps. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -446,8 +451,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fill_draw_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mode to draw boundary limits<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Mode to draw boundary limits
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of control lines drawing mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -470,7 +476,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'icon_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Icon identifier. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -493,8 +499,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'input_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Generate intermediate points for very fast mouse movements. Set to 0 to disable<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Generate intermediate points for very fast mouse movements. Set to 0 to disable
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum distance before generate new point for very fast mouse movements. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -517,8 +524,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uv_random'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Random factor for auto-generated UV rotation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Random factor for auto-generated UV rotation
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random factor for UV rotation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -541,7 +549,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'brush_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Moved to '{@link Brush#getGpencil_tool()} '. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -566,8 +574,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'eraser_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Eraser Mode<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Eraser Mode
+	 * <h4>Blender Source Code</h4>
 	 * <p> Soft, hard or stroke. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -590,7 +599,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'active_smooth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Smooth while drawing factor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -613,7 +622,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'era_strength_f'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to apply to strength for soft eraser. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -636,7 +645,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'era_thickness_f'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to apply to thickness for soft eraser. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -659,7 +668,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Internal grease pencil drawing flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -722,7 +731,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_f'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Simplify adaptive factor </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -745,7 +754,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vertex_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Mix colorfactor </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -768,7 +777,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vertex_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Defines how vertex color affect to the strokes
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -791,7 +800,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eGP_Sculpt_Flag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -814,7 +823,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_mode_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eGP_Sculpt_Mode_Flag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -837,7 +846,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'preset_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Preset type (used to reset brushes - internal). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -860,8 +869,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'brush_draw_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Preselected mode when using this brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Preselected mode when using this brush
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Brush}  preselected mode (Active/Material/Vertex-color). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -884,7 +894,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'random_hue'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Randomness for Hue. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -907,7 +917,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'random_saturation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Randomness for Saturation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -930,7 +940,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'random_value'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Randomness for Value. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -953,7 +963,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fill_extend_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to extend stroke extremes using fill tool. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -976,7 +986,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dilate_pixels'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of pixels to dilate fill area. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -999,7 +1009,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve_sensitivity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the sensitivity
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1022,7 +1032,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the strength
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1045,7 +1055,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve_jitter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the jitter effect
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1188,8 +1198,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Material used for strokes drawn using this brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Material used for strokes drawn using this brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> optional link of material to replace default in context {@link Material} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1220,7 +1231,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'draw_smoothfac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Amount of smoothing to apply to newly created strokes. </p>
 	 * @see #__DNA__FIELD__draw_smoothfac
 	 */
@@ -1237,7 +1248,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'draw_smoothfac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Amount of smoothing to apply to newly created strokes. </p>
 	 * @see #__DNA__FIELD__draw_smoothfac
 	 */
@@ -1254,8 +1265,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fill_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Factor for fill boundary accuracy, higher values are more accurate but slower<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Factor for fill boundary accuracy, higher values are more accurate but slower
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fill zoom factor </p>
 	 * @see #__DNA__FIELD__fill_factor
 	 */
@@ -1272,8 +1284,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fill_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Factor for fill boundary accuracy, higher values are more accurate but slower<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Factor for fill boundary accuracy, higher values are more accurate but slower
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fill zoom factor </p>
 	 * @see #__DNA__FIELD__fill_factor
 	 */
@@ -1290,7 +1303,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'draw_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Amount of alpha strength to apply to newly created strokes. </p>
 	 * @see #__DNA__FIELD__draw_strength
 	 */
@@ -1307,7 +1320,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'draw_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Amount of alpha strength to apply to newly created strokes. </p>
 	 * @see #__DNA__FIELD__draw_strength
 	 */
@@ -1324,7 +1337,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'draw_jitter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Amount of jitter to apply to newly created strokes. </p>
 	 * @see #__DNA__FIELD__draw_jitter
 	 */
@@ -1341,7 +1354,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'draw_jitter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Amount of jitter to apply to newly created strokes. </p>
 	 * @see #__DNA__FIELD__draw_jitter
 	 */
@@ -1358,7 +1371,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'draw_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angle when the brush has full thickness. </p>
 	 * @see #__DNA__FIELD__draw_angle
 	 */
@@ -1375,7 +1388,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'draw_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angle when the brush has full thickness. </p>
 	 * @see #__DNA__FIELD__draw_angle
 	 */
@@ -1392,7 +1405,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'draw_angle_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to apply when angle change (only 90 degrees). </p>
 	 * @see #__DNA__FIELD__draw_angle_factor
 	 */
@@ -1409,7 +1422,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'draw_angle_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to apply when angle change (only 90 degrees). </p>
 	 * @see #__DNA__FIELD__draw_angle_factor
 	 */
@@ -1426,7 +1439,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'draw_random_press'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of randomness for pressure. </p>
 	 * @see #__DNA__FIELD__draw_random_press
 	 */
@@ -1443,7 +1456,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'draw_random_press'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of randomness for pressure. </p>
 	 * @see #__DNA__FIELD__draw_random_press
 	 */
@@ -1460,7 +1473,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'draw_random_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of strength for strength. </p>
 	 * @see #__DNA__FIELD__draw_random_strength
 	 */
@@ -1477,7 +1490,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'draw_random_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of strength for strength. </p>
 	 * @see #__DNA__FIELD__draw_random_strength
 	 */
@@ -1494,7 +1507,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'draw_smoothlvl'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of times to apply smooth factor to new strokes. </p>
 	 * @see #__DNA__FIELD__draw_smoothlvl
 	 */
@@ -1511,7 +1524,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'draw_smoothlvl'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of times to apply smooth factor to new strokes. </p>
 	 * @see #__DNA__FIELD__draw_smoothlvl
 	 */
@@ -1528,7 +1541,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'draw_subdivide'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of times to subdivide new strokes. </p>
 	 * @see #__DNA__FIELD__draw_subdivide
 	 */
@@ -1545,7 +1558,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'draw_subdivide'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of times to subdivide new strokes. </p>
 	 * @see #__DNA__FIELD__draw_subdivide
 	 */
@@ -1562,8 +1575,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fill_layer_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Layers used as boundaries<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Layers used as boundaries
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layers used for fill. </p>
 	 * @see #__DNA__FIELD__fill_layer_mode
 	 */
@@ -1580,8 +1594,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fill_layer_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Layers used as boundaries<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Layers used as boundaries
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layers used for fill. </p>
 	 * @see #__DNA__FIELD__fill_layer_mode
 	 */
@@ -1598,7 +1613,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fill_direction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Direction of the fill
 	 * @see #__DNA__FIELD__fill_direction
 	 */
@@ -1615,7 +1630,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fill_direction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Direction of the fill
 	 * @see #__DNA__FIELD__fill_direction
 	 */
@@ -1632,8 +1647,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fill_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Threshold to consider color transparent for filling<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Threshold to consider color transparent for filling
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor for transparency. </p>
 	 * @see #__DNA__FIELD__fill_threshold
 	 */
@@ -1650,8 +1666,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fill_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Threshold to consider color transparent for filling<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Threshold to consider color transparent for filling
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor for transparency. </p>
 	 * @see #__DNA__FIELD__fill_threshold
 	 */
@@ -1668,8 +1685,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fill_leak'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size in pixels to consider the leak closed<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Size in pixels to consider the leak closed
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of pixel to consider the leak is too small (x 2). </p>
 	 * @see #__DNA__FIELD__fill_leak
 	 */
@@ -1686,8 +1704,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fill_leak'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size in pixels to consider the leak closed<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Size in pixels to consider the leak closed
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of pixel to consider the leak is too small (x 2). </p>
 	 * @see #__DNA__FIELD__fill_leak
 	 */
@@ -1704,8 +1723,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'caps_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The shape of the start and end of the stroke<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * The shape of the start and end of the stroke
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of caps: eGPDstroke_Caps. </p>
 	 * @see #__DNA__FIELD__caps_type
 	 */
@@ -1722,8 +1742,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'caps_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The shape of the start and end of the stroke<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * The shape of the start and end of the stroke
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of caps: eGPDstroke_Caps. </p>
 	 * @see #__DNA__FIELD__caps_type
 	 */
@@ -1796,7 +1817,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fill_simplylvl'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of simplify steps. </p>
 	 * @see #__DNA__FIELD__fill_simplylvl
 	 */
@@ -1813,7 +1834,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fill_simplylvl'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of simplify steps. </p>
 	 * @see #__DNA__FIELD__fill_simplylvl
 	 */
@@ -1830,8 +1851,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fill_draw_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mode to draw boundary limits<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Mode to draw boundary limits
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of control lines drawing mode. </p>
 	 * @see #__DNA__FIELD__fill_draw_mode
 	 */
@@ -1848,8 +1870,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fill_draw_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mode to draw boundary limits<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Mode to draw boundary limits
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of control lines drawing mode. </p>
 	 * @see #__DNA__FIELD__fill_draw_mode
 	 */
@@ -1866,7 +1889,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'icon_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Icon identifier. </p>
 	 * @see #__DNA__FIELD__icon_id
 	 */
@@ -1883,7 +1906,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'icon_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Icon identifier. </p>
 	 * @see #__DNA__FIELD__icon_id
 	 */
@@ -1900,8 +1923,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'input_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Generate intermediate points for very fast mouse movements. Set to 0 to disable<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Generate intermediate points for very fast mouse movements. Set to 0 to disable
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum distance before generate new point for very fast mouse movements. </p>
 	 * @see #__DNA__FIELD__input_samples
 	 */
@@ -1918,8 +1942,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'input_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Generate intermediate points for very fast mouse movements. Set to 0 to disable<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Generate intermediate points for very fast mouse movements. Set to 0 to disable
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum distance before generate new point for very fast mouse movements. </p>
 	 * @see #__DNA__FIELD__input_samples
 	 */
@@ -1936,8 +1961,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'uv_random'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Random factor for auto-generated UV rotation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Random factor for auto-generated UV rotation
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random factor for UV rotation. </p>
 	 * @see #__DNA__FIELD__uv_random
 	 */
@@ -1954,8 +1980,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'uv_random'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Random factor for auto-generated UV rotation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Random factor for auto-generated UV rotation
+	 * <h4>Blender Source Code</h4>
 	 * <p> Random factor for UV rotation. </p>
 	 * @see #__DNA__FIELD__uv_random
 	 */
@@ -1972,7 +1999,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'brush_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Moved to '{@link Brush#getGpencil_tool()} '. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1991,7 +2018,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'brush_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Moved to '{@link Brush#getGpencil_tool()} '. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -2010,8 +2037,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'eraser_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Eraser Mode<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Eraser Mode
+	 * <h4>Blender Source Code</h4>
 	 * <p> Soft, hard or stroke. </p>
 	 * @see #__DNA__FIELD__eraser_mode
 	 */
@@ -2028,8 +2056,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'eraser_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Eraser Mode<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Eraser Mode
+	 * <h4>Blender Source Code</h4>
 	 * <p> Soft, hard or stroke. </p>
 	 * @see #__DNA__FIELD__eraser_mode
 	 */
@@ -2046,7 +2075,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'active_smooth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Smooth while drawing factor. </p>
 	 * @see #__DNA__FIELD__active_smooth
 	 */
@@ -2063,7 +2092,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'active_smooth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Smooth while drawing factor. </p>
 	 * @see #__DNA__FIELD__active_smooth
 	 */
@@ -2080,7 +2109,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'era_strength_f'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to apply to strength for soft eraser. </p>
 	 * @see #__DNA__FIELD__era_strength_f
 	 */
@@ -2097,7 +2126,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'era_strength_f'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to apply to strength for soft eraser. </p>
 	 * @see #__DNA__FIELD__era_strength_f
 	 */
@@ -2114,7 +2143,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'era_thickness_f'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to apply to thickness for soft eraser. </p>
 	 * @see #__DNA__FIELD__era_thickness_f
 	 */
@@ -2131,7 +2160,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'era_thickness_f'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to apply to thickness for soft eraser. </p>
 	 * @see #__DNA__FIELD__era_thickness_f
 	 */
@@ -2148,7 +2177,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Internal grease pencil drawing flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -2165,7 +2194,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Internal grease pencil drawing flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -2250,7 +2279,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'simplify_f'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Simplify adaptive factor </p>
 	 * @see #__DNA__FIELD__simplify_f
 	 */
@@ -2267,7 +2296,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'simplify_f'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Simplify adaptive factor </p>
 	 * @see #__DNA__FIELD__simplify_f
 	 */
@@ -2284,7 +2313,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'vertex_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Mix colorfactor </p>
 	 * @see #__DNA__FIELD__vertex_factor
 	 */
@@ -2301,7 +2330,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'vertex_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Mix colorfactor </p>
 	 * @see #__DNA__FIELD__vertex_factor
 	 */
@@ -2318,7 +2347,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'vertex_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Defines how vertex color affect to the strokes
 	 * @see #__DNA__FIELD__vertex_mode
 	 */
@@ -2335,7 +2364,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'vertex_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Defines how vertex color affect to the strokes
 	 * @see #__DNA__FIELD__vertex_mode
 	 */
@@ -2352,7 +2381,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'sculpt_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eGP_Sculpt_Flag. </p>
 	 * @see #__DNA__FIELD__sculpt_flag
 	 */
@@ -2369,7 +2398,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'sculpt_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eGP_Sculpt_Flag. </p>
 	 * @see #__DNA__FIELD__sculpt_flag
 	 */
@@ -2386,7 +2415,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'sculpt_mode_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eGP_Sculpt_Mode_Flag. </p>
 	 * @see #__DNA__FIELD__sculpt_mode_flag
 	 */
@@ -2403,7 +2432,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'sculpt_mode_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eGP_Sculpt_Mode_Flag. </p>
 	 * @see #__DNA__FIELD__sculpt_mode_flag
 	 */
@@ -2420,7 +2449,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'preset_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Preset type (used to reset brushes - internal). </p>
 	 * @see #__DNA__FIELD__preset_type
 	 */
@@ -2437,7 +2466,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'preset_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Preset type (used to reset brushes - internal). </p>
 	 * @see #__DNA__FIELD__preset_type
 	 */
@@ -2454,8 +2483,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'brush_draw_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Preselected mode when using this brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Preselected mode when using this brush
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Brush}  preselected mode (Active/Material/Vertex-color). </p>
 	 * @see #__DNA__FIELD__brush_draw_mode
 	 */
@@ -2472,8 +2502,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'brush_draw_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Preselected mode when using this brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Preselected mode when using this brush
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Brush}  preselected mode (Active/Material/Vertex-color). </p>
 	 * @see #__DNA__FIELD__brush_draw_mode
 	 */
@@ -2490,7 +2521,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'random_hue'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Randomness for Hue. </p>
 	 * @see #__DNA__FIELD__random_hue
 	 */
@@ -2507,7 +2538,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'random_hue'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Randomness for Hue. </p>
 	 * @see #__DNA__FIELD__random_hue
 	 */
@@ -2524,7 +2555,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'random_saturation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Randomness for Saturation. </p>
 	 * @see #__DNA__FIELD__random_saturation
 	 */
@@ -2541,7 +2572,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'random_saturation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Randomness for Saturation. </p>
 	 * @see #__DNA__FIELD__random_saturation
 	 */
@@ -2558,7 +2589,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'random_value'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Randomness for Value. </p>
 	 * @see #__DNA__FIELD__random_value
 	 */
@@ -2575,7 +2606,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'random_value'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Randomness for Value. </p>
 	 * @see #__DNA__FIELD__random_value
 	 */
@@ -2592,7 +2623,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fill_extend_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to extend stroke extremes using fill tool. </p>
 	 * @see #__DNA__FIELD__fill_extend_fac
 	 */
@@ -2609,7 +2640,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fill_extend_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor to extend stroke extremes using fill tool. </p>
 	 * @see #__DNA__FIELD__fill_extend_fac
 	 */
@@ -2626,7 +2657,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'dilate_pixels'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of pixels to dilate fill area. </p>
 	 * @see #__DNA__FIELD__dilate_pixels
 	 */
@@ -2643,7 +2674,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'dilate_pixels'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of pixels to dilate fill area. </p>
 	 * @see #__DNA__FIELD__dilate_pixels
 	 */
@@ -2660,7 +2691,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'curve_sensitivity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the sensitivity
 	 * @see #__DNA__FIELD__curve_sensitivity
 	 */
@@ -2680,7 +2711,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'curve_sensitivity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the sensitivity
 	 * @see #__DNA__FIELD__curve_sensitivity
 	 */
@@ -2698,7 +2729,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'curve_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the strength
 	 * @see #__DNA__FIELD__curve_strength
 	 */
@@ -2718,7 +2749,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'curve_strength'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the strength
 	 * @see #__DNA__FIELD__curve_strength
 	 */
@@ -2736,7 +2767,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'curve_jitter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the jitter effect
 	 * @see #__DNA__FIELD__curve_jitter
 	 */
@@ -2756,7 +2787,7 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'curve_jitter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Curve used for the jitter effect
 	 * @see #__DNA__FIELD__curve_jitter
 	 */
@@ -2966,8 +2997,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Get method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Material used for strokes drawn using this brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Material used for strokes drawn using this brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> optional link of material to replace default in context {@link Material} . </p>
 	 * @see #__DNA__FIELD__material
 	 */
@@ -2987,8 +3019,9 @@ public class BrushGpencilSettings extends CFacade {
 	/**
 	 * Set method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Material used for strokes drawn using this brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Material used for strokes drawn using this brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> optional link of material to replace default in context {@link Material} . </p>
 	 * @see #__DNA__FIELD__material
 	 */

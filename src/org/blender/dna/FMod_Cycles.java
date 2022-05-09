@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FMod_Cycles'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> cycling/repetition modifier data TODO: we can only do complete cycles. </p>
  */
 
@@ -33,7 +34,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'before_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Extrapolation mode to use before first keyframe. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +57,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'after_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Extrapolation mode to use after last keyframe. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +80,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'before_cycles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of 'cycles' before first keyframe to do. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -102,7 +103,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'after_cycles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of 'cycles' after last keyframe to do. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -133,7 +134,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Get method for struct member 'before_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Extrapolation mode to use before first keyframe. </p>
 	 * @see #__DNA__FIELD__before_mode
 	 */
@@ -150,7 +151,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Set method for struct member 'before_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Extrapolation mode to use before first keyframe. </p>
 	 * @see #__DNA__FIELD__before_mode
 	 */
@@ -167,7 +168,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Get method for struct member 'after_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Extrapolation mode to use after last keyframe. </p>
 	 * @see #__DNA__FIELD__after_mode
 	 */
@@ -184,7 +185,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Set method for struct member 'after_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Extrapolation mode to use after last keyframe. </p>
 	 * @see #__DNA__FIELD__after_mode
 	 */
@@ -201,7 +202,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Get method for struct member 'before_cycles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of 'cycles' before first keyframe to do. </p>
 	 * @see #__DNA__FIELD__before_cycles
 	 */
@@ -218,7 +219,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Set method for struct member 'before_cycles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of 'cycles' before first keyframe to do. </p>
 	 * @see #__DNA__FIELD__before_cycles
 	 */
@@ -235,7 +236,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Get method for struct member 'after_cycles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of 'cycles' after last keyframe to do. </p>
 	 * @see #__DNA__FIELD__after_cycles
 	 */
@@ -252,7 +253,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Set method for struct member 'after_cycles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of 'cycles' after last keyframe to do. </p>
 	 * @see #__DNA__FIELD__after_cycles
 	 */

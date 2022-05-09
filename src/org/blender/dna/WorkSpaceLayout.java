@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'WorkSpaceLayout'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Wrapper for {@link bScreen} . </p><p> #bScreens are IDs and thus stored in a main list-base. We also want to store a list-base of them within the workspace (so each workspace can have its own set of screen-layouts) which would mess with the next/prev pointers. So we use this struct to wrap a {@link bScreen}  pointer with another pair of next/prev pointers. </p>
  */
 
@@ -94,7 +95,7 @@ public class WorkSpaceLayout extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The name of this layout, we override the RNA name of the screen with this (but not {@link ID}  name itself) MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -221,7 +222,7 @@ public class WorkSpaceLayout extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The name of this layout, we override the RNA name of the screen with this (but not {@link ID}  name itself) MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -242,7 +243,7 @@ public class WorkSpaceLayout extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The name of this layout, we override the RNA name of the screen with this (but not {@link ID}  name itself) MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */

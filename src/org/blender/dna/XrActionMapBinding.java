@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'XrActionMapBinding'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  </p>
  */
@@ -75,8 +76,9 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of the action map binding<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of the action map binding
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unique name. MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,8 +101,9 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'profile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * OpenXR interaction profile path<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * OpenXR interaction profile path
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenXR interaction profile path. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -123,8 +126,9 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'component_path0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * OpenXR component path<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * OpenXR component path
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenXR component paths. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -147,7 +151,7 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'component_path1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * OpenXR component path
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -170,7 +174,7 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'float_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Input threshold/region. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -193,7 +197,7 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'axis_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXrAxisFlag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -236,7 +240,7 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pose_location'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pose action properties. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -351,8 +355,9 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of the action map binding<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of the action map binding
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unique name. MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -373,8 +378,9 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of the action map binding<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of the action map binding
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unique name. MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -399,8 +405,9 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Get method for struct member 'profile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * OpenXR interaction profile path<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * OpenXR interaction profile path
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenXR interaction profile path. </p>
 	 * @see #__DNA__FIELD__profile
 	 */
@@ -421,8 +428,9 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Set method for struct member 'profile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * OpenXR interaction profile path<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * OpenXR interaction profile path
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenXR interaction profile path. </p>
 	 * @see #__DNA__FIELD__profile
 	 */
@@ -447,8 +455,9 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Get method for struct member 'component_path0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * OpenXR component path<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * OpenXR component path
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenXR component paths. </p>
 	 * @see #__DNA__FIELD__component_path0
 	 */
@@ -469,8 +478,9 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Set method for struct member 'component_path0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * OpenXR component path<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * OpenXR component path
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenXR component paths. </p>
 	 * @see #__DNA__FIELD__component_path0
 	 */
@@ -495,7 +505,7 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Get method for struct member 'component_path1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * OpenXR component path
 	 * @see #__DNA__FIELD__component_path1
 	 */
@@ -516,7 +526,7 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Set method for struct member 'component_path1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * OpenXR component path
 	 * @see #__DNA__FIELD__component_path1
 	 */
@@ -541,7 +551,7 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Get method for struct member 'float_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Input threshold/region. </p>
 	 * @see #__DNA__FIELD__float_threshold
 	 */
@@ -558,7 +568,7 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Set method for struct member 'float_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Input threshold/region. </p>
 	 * @see #__DNA__FIELD__float_threshold
 	 */
@@ -575,7 +585,7 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Get method for struct member 'axis_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXrAxisFlag </p>
 	 * @see #__DNA__FIELD__axis_flag
 	 */
@@ -592,7 +602,7 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Set method for struct member 'axis_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXrAxisFlag </p>
 	 * @see #__DNA__FIELD__axis_flag
 	 */
@@ -649,7 +659,7 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Get method for struct member 'pose_location'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pose action properties. </p>
 	 * @see #__DNA__FIELD__pose_location
 	 */
@@ -670,7 +680,7 @@ public class XrActionMapBinding extends CFacade {
 	/**
 	 * Set method for struct member 'pose_location'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pose action properties. </p>
 	 * @see #__DNA__FIELD__pose_location
 	 */

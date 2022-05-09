@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'UserDef_FileSpaceData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Storage for UI data that to keep it even after the window was closed. (Similar to {@link UserDef_SpaceData} .) </p>
  */
 
@@ -33,7 +34,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'display_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link FileSelectParams#getDisplay()}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +57,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'thumbnail_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FileSelectParams.thumbnail_size </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +80,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sort_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link FileSelectParams#getSort()}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -102,7 +103,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'details_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link FileSelectParams#getDetails_flags()}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -125,7 +126,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link FileSelectParams#getFlag()}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -168,7 +169,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filter_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link FileSelectParams#getFilter_id()}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -191,7 +192,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'temp_win_sizex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Info used when creating the file browser in a temporary window. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -242,7 +243,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Get method for struct member 'display_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link FileSelectParams#getDisplay()}  </p>
 	 * @see #__DNA__FIELD__display_type
 	 */
@@ -259,7 +260,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Set method for struct member 'display_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link FileSelectParams#getDisplay()}  </p>
 	 * @see #__DNA__FIELD__display_type
 	 */
@@ -276,7 +277,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Get method for struct member 'thumbnail_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FileSelectParams.thumbnail_size </p>
 	 * @see #__DNA__FIELD__thumbnail_size
 	 */
@@ -293,7 +294,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Set method for struct member 'thumbnail_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> FileSelectParams.thumbnail_size </p>
 	 * @see #__DNA__FIELD__thumbnail_size
 	 */
@@ -310,7 +311,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Get method for struct member 'sort_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link FileSelectParams#getSort()}  </p>
 	 * @see #__DNA__FIELD__sort_type
 	 */
@@ -327,7 +328,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Set method for struct member 'sort_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link FileSelectParams#getSort()}  </p>
 	 * @see #__DNA__FIELD__sort_type
 	 */
@@ -344,7 +345,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Get method for struct member 'details_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link FileSelectParams#getDetails_flags()}  </p>
 	 * @see #__DNA__FIELD__details_flags
 	 */
@@ -361,7 +362,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Set method for struct member 'details_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link FileSelectParams#getDetails_flags()}  </p>
 	 * @see #__DNA__FIELD__details_flags
 	 */
@@ -378,7 +379,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link FileSelectParams#getFlag()}  </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -395,7 +396,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link FileSelectParams#getFlag()}  </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -440,7 +441,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Get method for struct member 'filter_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link FileSelectParams#getFilter_id()}  </p>
 	 * @see #__DNA__FIELD__filter_id
 	 */
@@ -457,7 +458,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Set method for struct member 'filter_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link FileSelectParams#getFilter_id()}  </p>
 	 * @see #__DNA__FIELD__filter_id
 	 */
@@ -474,7 +475,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Get method for struct member 'temp_win_sizex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Info used when creating the file browser in a temporary window. </p>
 	 * @see #__DNA__FIELD__temp_win_sizex
 	 */
@@ -491,7 +492,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	/**
 	 * Set method for struct member 'temp_win_sizex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Info used when creating the file browser in a temporary window. </p>
 	 * @see #__DNA__FIELD__temp_win_sizex
 	 */

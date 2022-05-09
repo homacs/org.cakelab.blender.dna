@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FluidsimModifierData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> DEPRECATED: only used for versioning. </p>
  */
 
@@ -53,7 +54,7 @@ public class FluidsimModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fss'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Definition is in DNA_object_fluidsim_types.h . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -140,7 +141,7 @@ public class FluidsimModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'fss'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Definition is in DNA_object_fluidsim_types.h . </p>
 	 * @see #__DNA__FIELD__fss
 	 */
@@ -160,7 +161,7 @@ public class FluidsimModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'fss'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Definition is in DNA_object_fluidsim_types.h . </p>
 	 * @see #__DNA__FIELD__fss
 	 */

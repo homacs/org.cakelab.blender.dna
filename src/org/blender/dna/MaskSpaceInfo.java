@@ -33,7 +33,7 @@ public class MaskSpaceInfo extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> **** mask editing **** </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +56,7 @@ public class MaskSpaceInfo extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'draw_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> draw options </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -147,7 +147,7 @@ public class MaskSpaceInfo extends CFacade {
 	/**
 	 * Get method for struct member 'mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> **** mask editing **** </p>
 	 * @see #__DNA__FIELD__mask
 	 */
@@ -167,7 +167,7 @@ public class MaskSpaceInfo extends CFacade {
 	/**
 	 * Set method for struct member 'mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> **** mask editing **** </p>
 	 * @see #__DNA__FIELD__mask
 	 */
@@ -185,7 +185,7 @@ public class MaskSpaceInfo extends CFacade {
 	/**
 	 * Get method for struct member 'draw_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> draw options </p>
 	 * @see #__DNA__FIELD__draw_flag
 	 */
@@ -202,7 +202,7 @@ public class MaskSpaceInfo extends CFacade {
 	/**
 	 * Set method for struct member 'draw_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> draw options </p>
 	 * @see #__DNA__FIELD__draw_flag
 	 */

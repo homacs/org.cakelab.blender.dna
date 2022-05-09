@@ -113,7 +113,7 @@ public class VFont extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'temp_pf'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> runtime only, holds memory for freetype to read from TODO: replace this with #blf_font_new() style loading. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -284,7 +284,7 @@ public class VFont extends CFacade {
 	/**
 	 * Get method for struct member 'temp_pf'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> runtime only, holds memory for freetype to read from TODO: replace this with #blf_font_new() style loading. </p>
 	 * @see #__DNA__FIELD__temp_pf
 	 */
@@ -304,7 +304,7 @@ public class VFont extends CFacade {
 	/**
 	 * Set method for struct member 'temp_pf'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> runtime only, holds memory for freetype to read from TODO: replace this with #blf_font_new() style loading. </p>
 	 * @see #__DNA__FIELD__temp_pf
 	 */

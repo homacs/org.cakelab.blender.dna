@@ -53,7 +53,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'target_vgname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Target vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +76,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +99,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -122,7 +122,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vgname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup filter name, MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -145,7 +145,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -168,7 +168,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -191,7 +191,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'min_weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimum valid weight (clamp value). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -214,7 +214,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -237,7 +237,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -260,7 +260,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Space (Local/World). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -283,7 +283,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angle </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -350,7 +350,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'target_vgname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Target vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__target_vgname
 	 */
@@ -371,7 +371,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'target_vgname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Target vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__target_vgname
 	 */
@@ -396,7 +396,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
@@ -416,7 +416,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
@@ -434,7 +434,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -455,7 +455,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -480,7 +480,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'vgname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup filter name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgname
 	 */
@@ -501,7 +501,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'vgname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup filter name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgname
 	 */
@@ -526,7 +526,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
@@ -543,7 +543,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
@@ -560,7 +560,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -577,7 +577,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -594,7 +594,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'min_weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimum valid weight (clamp value). </p>
 	 * @see #__DNA__FIELD__min_weight
 	 */
@@ -611,7 +611,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'min_weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimum valid weight (clamp value). </p>
 	 * @see #__DNA__FIELD__min_weight
 	 */
@@ -628,7 +628,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
@@ -645,7 +645,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
@@ -662,7 +662,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis. </p>
 	 * @see #__DNA__FIELD__axis
 	 */
@@ -679,7 +679,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis. </p>
 	 * @see #__DNA__FIELD__axis
 	 */
@@ -696,7 +696,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Space (Local/World). </p>
 	 * @see #__DNA__FIELD__space
 	 */
@@ -713,7 +713,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'space'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Space (Local/World). </p>
 	 * @see #__DNA__FIELD__space
 	 */
@@ -730,7 +730,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angle </p>
 	 * @see #__DNA__FIELD__angle
 	 */
@@ -747,7 +747,7 @@ public class WeightAngleGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angle </p>
 	 * @see #__DNA__FIELD__angle
 	 */

@@ -113,7 +113,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'hasinput'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> When input has link, tagged before executing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -136,7 +136,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'hasoutput'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> When output is linked, tagged before executing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -159,7 +159,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'datatype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of data pointer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -182,7 +182,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sockettype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of socket stack comes from, to remap linking different sockets. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -205,7 +205,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'is_copy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Data is a copy of external data (no freeing). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -228,7 +228,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'external'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Data is used by external nodes (no freeing). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -407,7 +407,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Get method for struct member 'hasinput'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> When input has link, tagged before executing. </p>
 	 * @see #__DNA__FIELD__hasinput
 	 */
@@ -424,7 +424,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Set method for struct member 'hasinput'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> When input has link, tagged before executing. </p>
 	 * @see #__DNA__FIELD__hasinput
 	 */
@@ -441,7 +441,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Get method for struct member 'hasoutput'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> When output is linked, tagged before executing. </p>
 	 * @see #__DNA__FIELD__hasoutput
 	 */
@@ -458,7 +458,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Set method for struct member 'hasoutput'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> When output is linked, tagged before executing. </p>
 	 * @see #__DNA__FIELD__hasoutput
 	 */
@@ -475,7 +475,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Get method for struct member 'datatype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of data pointer. </p>
 	 * @see #__DNA__FIELD__datatype
 	 */
@@ -492,7 +492,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Set method for struct member 'datatype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of data pointer. </p>
 	 * @see #__DNA__FIELD__datatype
 	 */
@@ -509,7 +509,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Get method for struct member 'sockettype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of socket stack comes from, to remap linking different sockets. </p>
 	 * @see #__DNA__FIELD__sockettype
 	 */
@@ -526,7 +526,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Set method for struct member 'sockettype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of socket stack comes from, to remap linking different sockets. </p>
 	 * @see #__DNA__FIELD__sockettype
 	 */
@@ -543,7 +543,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Get method for struct member 'is_copy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Data is a copy of external data (no freeing). </p>
 	 * @see #__DNA__FIELD__is_copy
 	 */
@@ -560,7 +560,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Set method for struct member 'is_copy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Data is a copy of external data (no freeing). </p>
 	 * @see #__DNA__FIELD__is_copy
 	 */
@@ -577,7 +577,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Get method for struct member 'external'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Data is used by external nodes (no freeing). </p>
 	 * @see #__DNA__FIELD__external
 	 */
@@ -594,7 +594,7 @@ public class bNodeStack extends CFacade {
 	/**
 	 * Set method for struct member 'external'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Data is used by external nodes (no freeing). </p>
 	 * @see #__DNA__FIELD__external
 	 */

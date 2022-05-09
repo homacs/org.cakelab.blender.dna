@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'XrActionMapItem'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  </p>
  */
@@ -75,8 +76,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of the action map item<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of the action map item
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unique name. MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,8 +101,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Action type<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Action type
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -123,7 +126,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXrActionType </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -146,8 +149,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'user_path0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * OpenXR user path<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * OpenXR user path
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenXR user paths. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -170,7 +174,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'user_path1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * OpenXR user path
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -193,8 +197,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'op'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Identifier of operator to call on action event<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Identifier of operator to call on action event
+	 * <h4>Blender Source Code</h4>
 	 * <p> Operator to be called on XR events. OP_MAX_TYPENAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -217,8 +222,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'op_properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Properties to set when the operator is called<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Properties to set when the operator is called
+	 * <h4>Blender Source Code</h4>
 	 * <p> Operator properties, assigned to ptr->data and can be written to a file. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -241,7 +247,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'op_properties_ptr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> RNA pointer to access properties. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -264,7 +270,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'op_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXrOpFlag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -287,7 +293,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'action_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXrActionFlag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -310,7 +316,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'haptic_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXrHapticFlag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -333,7 +339,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pose_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pose action properties. eXrPoseFlag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -356,8 +362,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'haptic_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of the haptic action to apply when executing this action<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of the haptic action to apply when executing this action
+	 * <h4>Blender Source Code</h4>
 	 * <p> Haptic properties. MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -380,7 +387,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'haptic_duration'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Haptic duration in seconds. 0.0 is the minimum supported duration
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -403,7 +410,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'haptic_frequency'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Frequency of the haptic vibration in hertz. 0.0 specifies the OpenXR runtime's default frequency
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -426,7 +433,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'haptic_amplitude'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Intensity of the haptic vibration, ranging from 0.0 to 1.0
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -489,8 +496,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bindings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Bindings for the action map item, mapping the action to an XR input<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Bindings for the action map item, mapping the action to an XR input
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link XrActionMapBinding}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -585,8 +593,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of the action map item<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of the action map item
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unique name. MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -607,8 +616,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of the action map item<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of the action map item
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unique name. MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -633,8 +643,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Action type<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Action type
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -651,8 +662,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Action type<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Action type
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -669,7 +681,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Get method for struct member '_pad'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXrActionType </p>
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -690,7 +702,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Set method for struct member '_pad'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXrActionType </p>
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -715,8 +727,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Get method for struct member 'user_path0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * OpenXR user path<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * OpenXR user path
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenXR user paths. </p>
 	 * @see #__DNA__FIELD__user_path0
 	 */
@@ -737,8 +750,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Set method for struct member 'user_path0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * OpenXR user path<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * OpenXR user path
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenXR user paths. </p>
 	 * @see #__DNA__FIELD__user_path0
 	 */
@@ -763,7 +777,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Get method for struct member 'user_path1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * OpenXR user path
 	 * @see #__DNA__FIELD__user_path1
 	 */
@@ -784,7 +798,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Set method for struct member 'user_path1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * OpenXR user path
 	 * @see #__DNA__FIELD__user_path1
 	 */
@@ -809,8 +823,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Get method for struct member 'op'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Identifier of operator to call on action event<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Identifier of operator to call on action event
+	 * <h4>Blender Source Code</h4>
 	 * <p> Operator to be called on XR events. OP_MAX_TYPENAME </p>
 	 * @see #__DNA__FIELD__op
 	 */
@@ -831,8 +846,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Set method for struct member 'op'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Identifier of operator to call on action event<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Identifier of operator to call on action event
+	 * <h4>Blender Source Code</h4>
 	 * <p> Operator to be called on XR events. OP_MAX_TYPENAME </p>
 	 * @see #__DNA__FIELD__op
 	 */
@@ -857,8 +873,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Get method for struct member 'op_properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Properties to set when the operator is called<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Properties to set when the operator is called
+	 * <h4>Blender Source Code</h4>
 	 * <p> Operator properties, assigned to ptr->data and can be written to a file. </p>
 	 * @see #__DNA__FIELD__op_properties
 	 */
@@ -878,8 +895,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Set method for struct member 'op_properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Properties to set when the operator is called<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Properties to set when the operator is called
+	 * <h4>Blender Source Code</h4>
 	 * <p> Operator properties, assigned to ptr->data and can be written to a file. </p>
 	 * @see #__DNA__FIELD__op_properties
 	 */
@@ -897,7 +915,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Get method for struct member 'op_properties_ptr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> RNA pointer to access properties. </p>
 	 * @see #__DNA__FIELD__op_properties_ptr
 	 */
@@ -917,7 +935,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Set method for struct member 'op_properties_ptr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> RNA pointer to access properties. </p>
 	 * @see #__DNA__FIELD__op_properties_ptr
 	 */
@@ -935,7 +953,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Get method for struct member 'op_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXrOpFlag </p>
 	 * @see #__DNA__FIELD__op_flag
 	 */
@@ -952,7 +970,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Set method for struct member 'op_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXrOpFlag </p>
 	 * @see #__DNA__FIELD__op_flag
 	 */
@@ -969,7 +987,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Get method for struct member 'action_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXrActionFlag </p>
 	 * @see #__DNA__FIELD__action_flag
 	 */
@@ -986,7 +1004,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Set method for struct member 'action_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXrActionFlag </p>
 	 * @see #__DNA__FIELD__action_flag
 	 */
@@ -1003,7 +1021,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Get method for struct member 'haptic_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXrHapticFlag </p>
 	 * @see #__DNA__FIELD__haptic_flag
 	 */
@@ -1020,7 +1038,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Set method for struct member 'haptic_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXrHapticFlag </p>
 	 * @see #__DNA__FIELD__haptic_flag
 	 */
@@ -1037,7 +1055,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Get method for struct member 'pose_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pose action properties. eXrPoseFlag </p>
 	 * @see #__DNA__FIELD__pose_flag
 	 */
@@ -1054,7 +1072,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Set method for struct member 'pose_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pose action properties. eXrPoseFlag </p>
 	 * @see #__DNA__FIELD__pose_flag
 	 */
@@ -1071,8 +1089,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Get method for struct member 'haptic_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of the haptic action to apply when executing this action<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of the haptic action to apply when executing this action
+	 * <h4>Blender Source Code</h4>
 	 * <p> Haptic properties. MAX_NAME </p>
 	 * @see #__DNA__FIELD__haptic_name
 	 */
@@ -1093,8 +1112,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Set method for struct member 'haptic_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of the haptic action to apply when executing this action<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of the haptic action to apply when executing this action
+	 * <h4>Blender Source Code</h4>
 	 * <p> Haptic properties. MAX_NAME </p>
 	 * @see #__DNA__FIELD__haptic_name
 	 */
@@ -1119,7 +1139,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Get method for struct member 'haptic_duration'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Haptic duration in seconds. 0.0 is the minimum supported duration
 	 * @see #__DNA__FIELD__haptic_duration
 	 */
@@ -1136,7 +1156,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Set method for struct member 'haptic_duration'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Haptic duration in seconds. 0.0 is the minimum supported duration
 	 * @see #__DNA__FIELD__haptic_duration
 	 */
@@ -1153,7 +1173,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Get method for struct member 'haptic_frequency'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Frequency of the haptic vibration in hertz. 0.0 specifies the OpenXR runtime's default frequency
 	 * @see #__DNA__FIELD__haptic_frequency
 	 */
@@ -1170,7 +1190,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Set method for struct member 'haptic_frequency'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Frequency of the haptic vibration in hertz. 0.0 specifies the OpenXR runtime's default frequency
 	 * @see #__DNA__FIELD__haptic_frequency
 	 */
@@ -1187,7 +1207,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Get method for struct member 'haptic_amplitude'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Intensity of the haptic vibration, ranging from 0.0 to 1.0
 	 * @see #__DNA__FIELD__haptic_amplitude
 	 */
@@ -1204,7 +1224,7 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Set method for struct member 'haptic_amplitude'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Intensity of the haptic vibration, ranging from 0.0 to 1.0
 	 * @see #__DNA__FIELD__haptic_amplitude
 	 */
@@ -1289,8 +1309,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Get method for struct member 'bindings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Bindings for the action map item, mapping the action to an XR input<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Bindings for the action map item, mapping the action to an XR input
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link XrActionMapBinding}  </p>
 	 * @see #__DNA__FIELD__bindings
 	 */
@@ -1307,8 +1328,9 @@ public class XrActionMapItem extends CFacade {
 	/**
 	 * Set method for struct member 'bindings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Bindings for the action map item, mapping the action to an XR input<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Bindings for the action map item, mapping the action to an XR input
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link XrActionMapBinding}  </p>
 	 * @see #__DNA__FIELD__bindings
 	 */

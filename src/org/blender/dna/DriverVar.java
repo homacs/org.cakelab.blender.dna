@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'DriverVar'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Driver Variable (dvar)</p><p> A 'variable' for use as an input for the driver evaluation. Defines a way of accessing some channel to use, that can be referred to in the expression as a variable, thus simplifying expressions and also Depsgraph building. </p>
  */
 
@@ -74,7 +75,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -97,7 +98,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'targets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_DRIVER_TARGETS, target slots. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -120,7 +121,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'num_targets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of targets actually used by this variable. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -143,7 +144,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of driver variable (eDriverVar_Types). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -166,7 +167,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Validation tags, etc. (eDriverVar_Flags). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -189,7 +190,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Result of previous evaluation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -284,7 +285,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -305,7 +306,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -330,7 +331,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Get method for struct member 'targets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_DRIVER_TARGETS, target slots. </p>
 	 * @see #__DNA__FIELD__targets
 	 */
@@ -351,7 +352,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Set method for struct member 'targets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_DRIVER_TARGETS, target slots. </p>
 	 * @see #__DNA__FIELD__targets
 	 */
@@ -376,7 +377,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Get method for struct member 'num_targets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of targets actually used by this variable. </p>
 	 * @see #__DNA__FIELD__num_targets
 	 */
@@ -393,7 +394,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Set method for struct member 'num_targets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of targets actually used by this variable. </p>
 	 * @see #__DNA__FIELD__num_targets
 	 */
@@ -410,7 +411,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of driver variable (eDriverVar_Types). </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -427,7 +428,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of driver variable (eDriverVar_Types). </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -444,7 +445,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Validation tags, etc. (eDriverVar_Flags). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -461,7 +462,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Validation tags, etc. (eDriverVar_Flags). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -478,7 +479,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Get method for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Result of previous evaluation. </p>
 	 * @see #__DNA__FIELD__curval
 	 */
@@ -495,7 +496,7 @@ public class DriverVar extends CFacade {
 	/**
 	 * Set method for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Result of previous evaluation. </p>
 	 * @see #__DNA__FIELD__curval
 	 */

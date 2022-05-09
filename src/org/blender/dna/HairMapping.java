@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'HairMapping'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p>{@link Hair}  attachment to a mesh. TODO: attach to tessellated triangles or polygons? TODO: what type of interpolation to use for uv? </p>
  */
 

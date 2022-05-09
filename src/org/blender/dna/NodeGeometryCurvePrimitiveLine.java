@@ -32,7 +32,7 @@ public class NodeGeometryCurvePrimitiveLine extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeCurvePrimitiveLineMode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -63,7 +63,7 @@ public class NodeGeometryCurvePrimitiveLine extends CFacade {
 	/**
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeCurvePrimitiveLineMode. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -80,7 +80,7 @@ public class NodeGeometryCurvePrimitiveLine extends CFacade {
 	/**
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeCurvePrimitiveLineMode. </p>
 	 * @see #__DNA__FIELD__mode
 	 */

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MLoopTri'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p>{@link MLoopTri} 's are lightweight triangulation data, for functionality that doesn't support ngons ({@link MPoly} ). This is cache data created from ({@link MPoly} , {@link MLoop}  & {@link MVert}  arrays). There is no attempt to maintain this data's validity over time, any changes to the underlying mesh invalidate the {@link MLoopTri}  array, which will need to be re-calculated.</p><p> Users normally access this via #BKE_mesh_runtime_looptri_ensure. In rare cases its calculated directly, with #BKE_mesh_recalc_looptri.</p><p> Typical usage includes:<ul><li><p> OpenGL drawing.</p></li><li><p> #BVHTree creation.</p></li><li><p> Physics/collision detection.</p></li></ul> 
  * OpenGL drawing.
  * #BVHTree creation.

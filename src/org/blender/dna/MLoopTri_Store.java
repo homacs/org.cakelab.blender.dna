@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MLoopTri_Store'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><h2>Warning</h2><p> Typical access is done via #BKE_mesh_runtime_looptri_ensure, #BKE_mesh_runtime_looptri_len. </p> Typical access is done via #BKE_mesh_runtime_looptri_ensure, #BKE_mesh_runtime_looptri_len. 
  * 
  * </p>
@@ -35,7 +36,7 @@ public class MLoopTri_Store extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'array'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> WARNING! swapping between array (ready-to-be-used data) and array_wip (where data is actually computed) shall always be protected by same lock as one used for looptris computing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,7 +127,7 @@ public class MLoopTri_Store extends CFacade {
 	/**
 	 * Get method for struct member 'array'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> WARNING! swapping between array (ready-to-be-used data) and array_wip (where data is actually computed) shall always be protected by same lock as one used for looptris computing. </p>
 	 * @see #__DNA__FIELD__array
 	 */
@@ -146,7 +147,7 @@ public class MLoopTri_Store extends CFacade {
 	/**
 	 * Set method for struct member 'array'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> WARNING! swapping between array (ready-to-be-used data) and array_wip (where data is actually computed) shall always be protected by same lock as one used for looptris computing. </p>
 	 * @see #__DNA__FIELD__array
 	 */

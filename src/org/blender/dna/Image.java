@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Image'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
+ * 
+ * <h4>Java .Blend</h4>
  * Any kind of image referenced (e.g. texture).
  * 					<h3>Animated Images</h3>
  * 					<p>An image can contain multiple frames, that can be used for animated images (movies). 
@@ -59,9 +60,6 @@ public class Image extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique data-block ID name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -83,7 +81,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not written in file. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -106,7 +104,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gputexture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not written in file 3 = TEXTARGET_COUNT, 2 = stereo eyes, 2 = IMA_TEXTURE_RESOLUTION_LEN. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -129,7 +127,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'anims'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> sources from: </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -232,7 +230,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values</h3>
 	 * 				<pre>
 	 * 	IMA_FIELDS              = (1 << 0),
@@ -274,7 +272,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values:</h3>
 	 * 				<pre>
 	 * 	IMA_SRC_CHECK       0
@@ -283,7 +281,8 @@ public class Image extends CFacade {
 	 * 	IMA_SRC_MOVIE       3
 	 * 	IMA_SRC_GENERATED   4
 	 * 	IMA_SRC_VIEWER      5
-	 * 				</pre><h4>Blender Python API:</h4>
+	 * 				</pre>
+	 * <h4>Blender Python API</h4>
 	 * Where the image comes from
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -306,7 +305,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * how to handle/generate it. <h3>Values:</h3>
 	 * 				<pre>
 	 * 	IMA_TYPE_IMAGE      0
@@ -316,7 +315,8 @@ public class Image extends CFacade {
 	 * // viewers
 	 * 	IMA_TYPE_R_RESULT   4
 	 * 	IMA_TYPE_COMPOSITE  5
-	 * 				</pre><h4>Blender Python API:</h4>
+	 * 				</pre>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    How to generate the image
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -359,7 +359,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpuframenr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GPU texture flag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -482,7 +482,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'packedfile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -526,9 +526,6 @@ public class Image extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -550,7 +547,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lastused'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * seconds since 1970.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -573,8 +570,9 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gen_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * For generated images: width<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * For generated images: width
+	 * <h4>Blender Source Code</h4>
 	 * <p> for generated images </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -597,7 +595,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gen_y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * For generated images: height
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -620,7 +618,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gen_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * For generated images: <h3>Values:</h3>
 	 * 				<pre>
 	 * 	IMA_GENTYPE_BLANK = 0,
@@ -648,7 +646,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gen_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * For generated images: <h3>Values:</h3>
 	 * 				<pre>
 	 * 	IMA_GEN_FLOAT		1
@@ -674,7 +672,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gen_depth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * For generated images: number of bits per pixel (e.g. 24 for rgb or 32 for rgba)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -697,7 +695,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gen_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * For generated images: Color used to initialize the generated image (e.g. background)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -720,7 +718,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'aspx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> display aspect - for UV editing images resized for faster openGL display </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -763,8 +761,9 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'colorspace_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Input color space settings<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Input color space settings
+	 * <h4>Blender Source Code</h4>
 	 * <p> color management </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -787,7 +786,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'alpha_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Representation of alpha in the image file, to convert to and from when saving and loading the image
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -830,7 +829,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'eye'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiview For viewer node stereoscopy. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -853,7 +852,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'views_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Mode to load image views
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -876,7 +875,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'active_tile_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ImageTile}  list for UDIMs. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -899,7 +898,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tiles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Tiles of the image
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -922,7 +921,7 @@ public class Image extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'views'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ImageView} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1028,9 +1027,6 @@ public class Image extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique data-block ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -1049,9 +1045,6 @@ public class Image extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique data-block ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -1075,7 +1068,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not written in file. </p>
 	 * @see #__DNA__FIELD__cache
 	 */
@@ -1095,7 +1088,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not written in file. </p>
 	 * @see #__DNA__FIELD__cache
 	 */
@@ -1113,7 +1106,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'gputexture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not written in file 3 = TEXTARGET_COUNT, 2 = stereo eyes, 2 = IMA_TEXTURE_RESOLUTION_LEN. </p>
 	 * @see #__DNA__FIELD__gputexture
 	 */
@@ -1136,7 +1129,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'gputexture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not written in file 3 = TEXTARGET_COUNT, 2 = stereo eyes, 2 = IMA_TEXTURE_RESOLUTION_LEN. </p>
 	 * @see #__DNA__FIELD__gputexture
 	 */
@@ -1161,7 +1154,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'anims'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> sources from: </p>
 	 * @see #__DNA__FIELD__anims
 	 */
@@ -1178,7 +1171,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'anims'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> sources from: </p>
 	 * @see #__DNA__FIELD__anims
 	 */
@@ -1327,7 +1320,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values</h3>
 	 * 				<pre>
 	 * 	IMA_FIELDS              = (1 << 0),
@@ -1363,7 +1356,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values</h3>
 	 * 				<pre>
 	 * 	IMA_FIELDS              = (1 << 0),
@@ -1399,7 +1392,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values:</h3>
 	 * 				<pre>
 	 * 	IMA_SRC_CHECK       0
@@ -1408,7 +1401,8 @@ public class Image extends CFacade {
 	 * 	IMA_SRC_MOVIE       3
 	 * 	IMA_SRC_GENERATED   4
 	 * 	IMA_SRC_VIEWER      5
-	 * 				</pre><h4>Blender Python API:</h4>
+	 * 				</pre>
+	 * <h4>Blender Python API</h4>
 	 * Where the image comes from
 	 * @see #__DNA__FIELD__source
 	 */
@@ -1425,7 +1419,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values:</h3>
 	 * 				<pre>
 	 * 	IMA_SRC_CHECK       0
@@ -1434,7 +1428,8 @@ public class Image extends CFacade {
 	 * 	IMA_SRC_MOVIE       3
 	 * 	IMA_SRC_GENERATED   4
 	 * 	IMA_SRC_VIEWER      5
-	 * 				</pre><h4>Blender Python API:</h4>
+	 * 				</pre>
+	 * <h4>Blender Python API</h4>
 	 * Where the image comes from
 	 * @see #__DNA__FIELD__source
 	 */
@@ -1451,7 +1446,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * how to handle/generate it. <h3>Values:</h3>
 	 * 				<pre>
 	 * 	IMA_TYPE_IMAGE      0
@@ -1461,7 +1456,8 @@ public class Image extends CFacade {
 	 * // viewers
 	 * 	IMA_TYPE_R_RESULT   4
 	 * 	IMA_TYPE_COMPOSITE  5
-	 * 				</pre><h4>Blender Python API:</h4>
+	 * 				</pre>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    How to generate the image
 	 * @see #__DNA__FIELD__type
 	 */
@@ -1478,7 +1474,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * how to handle/generate it. <h3>Values:</h3>
 	 * 				<pre>
 	 * 	IMA_TYPE_IMAGE      0
@@ -1488,7 +1484,8 @@ public class Image extends CFacade {
 	 * // viewers
 	 * 	IMA_TYPE_R_RESULT   4
 	 * 	IMA_TYPE_COMPOSITE  5
-	 * 				</pre><h4>Blender Python API:</h4>
+	 * 				</pre>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    How to generate the image
 	 * @see #__DNA__FIELD__type
 	 */
@@ -1533,7 +1530,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'gpuframenr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GPU texture flag. </p>
 	 * @see #__DNA__FIELD__gpuframenr
 	 */
@@ -1550,7 +1547,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'gpuframenr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GPU texture flag. </p>
 	 * @see #__DNA__FIELD__gpuframenr
 	 */
@@ -1719,7 +1716,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'packedfile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1741,7 +1738,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'packedfile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1796,9 +1793,6 @@ public class Image extends CFacade {
 
 	/**
 	 * Get method for struct member 'preview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -1816,9 +1810,6 @@ public class Image extends CFacade {
 
 	/**
 	 * Set method for struct member 'preview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (always None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -1835,7 +1826,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'lastused'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * seconds since 1970.
 	 * @see #__DNA__FIELD__lastused
 	 */
@@ -1852,7 +1843,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'lastused'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * seconds since 1970.
 	 * @see #__DNA__FIELD__lastused
 	 */
@@ -1869,8 +1860,9 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'gen_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * For generated images: width<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * For generated images: width
+	 * <h4>Blender Source Code</h4>
 	 * <p> for generated images </p>
 	 * @see #__DNA__FIELD__gen_x
 	 */
@@ -1887,8 +1879,9 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'gen_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * For generated images: width<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * For generated images: width
+	 * <h4>Blender Source Code</h4>
 	 * <p> for generated images </p>
 	 * @see #__DNA__FIELD__gen_x
 	 */
@@ -1905,7 +1898,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'gen_y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * For generated images: height
 	 * @see #__DNA__FIELD__gen_y
 	 */
@@ -1922,7 +1915,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'gen_y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * For generated images: height
 	 * @see #__DNA__FIELD__gen_y
 	 */
@@ -1939,7 +1932,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'gen_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * For generated images: <h3>Values:</h3>
 	 * 				<pre>
 	 * 	IMA_GENTYPE_BLANK = 0,
@@ -1961,7 +1954,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'gen_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * For generated images: <h3>Values:</h3>
 	 * 				<pre>
 	 * 	IMA_GENTYPE_BLANK = 0,
@@ -1983,7 +1976,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'gen_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * For generated images: <h3>Values:</h3>
 	 * 				<pre>
 	 * 	IMA_GEN_FLOAT		1
@@ -2003,7 +1996,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'gen_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * For generated images: <h3>Values:</h3>
 	 * 				<pre>
 	 * 	IMA_GEN_FLOAT		1
@@ -2023,7 +2016,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'gen_depth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * For generated images: number of bits per pixel (e.g. 24 for rgb or 32 for rgba)
 	 * @see #__DNA__FIELD__gen_depth
 	 */
@@ -2040,7 +2033,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'gen_depth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * For generated images: number of bits per pixel (e.g. 24 for rgb or 32 for rgba)
 	 * @see #__DNA__FIELD__gen_depth
 	 */
@@ -2057,7 +2050,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'gen_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * For generated images: Color used to initialize the generated image (e.g. background)
 	 * @see #__DNA__FIELD__gen_color
 	 */
@@ -2078,7 +2071,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'gen_color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * For generated images: Color used to initialize the generated image (e.g. background)
 	 * @see #__DNA__FIELD__gen_color
 	 */
@@ -2103,7 +2096,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'aspx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> display aspect - for UV editing images resized for faster openGL display </p>
 	 * @see #__DNA__FIELD__aspx
 	 */
@@ -2120,7 +2113,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'aspx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> display aspect - for UV editing images resized for faster openGL display </p>
 	 * @see #__DNA__FIELD__aspx
 	 */
@@ -2165,8 +2158,9 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'colorspace_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Input color space settings<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Input color space settings
+	 * <h4>Blender Source Code</h4>
 	 * <p> color management </p>
 	 * @see #__DNA__FIELD__colorspace_settings
 	 */
@@ -2183,8 +2177,9 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'colorspace_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Input color space settings<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Input color space settings
+	 * <h4>Blender Source Code</h4>
 	 * <p> color management </p>
 	 * @see #__DNA__FIELD__colorspace_settings
 	 */
@@ -2209,7 +2204,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'alpha_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Representation of alpha in the image file, to convert to and from when saving and loading the image
 	 * @see #__DNA__FIELD__alpha_mode
 	 */
@@ -2226,7 +2221,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'alpha_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Representation of alpha in the image file, to convert to and from when saving and loading the image
 	 * @see #__DNA__FIELD__alpha_mode
 	 */
@@ -2271,7 +2266,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'eye'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiview For viewer node stereoscopy. </p>
 	 * @see #__DNA__FIELD__eye
 	 */
@@ -2288,7 +2283,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'eye'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiview For viewer node stereoscopy. </p>
 	 * @see #__DNA__FIELD__eye
 	 */
@@ -2305,7 +2300,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'views_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Mode to load image views
 	 * @see #__DNA__FIELD__views_format
 	 */
@@ -2322,7 +2317,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'views_format'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Mode to load image views
 	 * @see #__DNA__FIELD__views_format
 	 */
@@ -2339,7 +2334,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'active_tile_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ImageTile}  list for UDIMs. </p>
 	 * @see #__DNA__FIELD__active_tile_index
 	 */
@@ -2356,7 +2351,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'active_tile_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ImageTile}  list for UDIMs. </p>
 	 * @see #__DNA__FIELD__active_tile_index
 	 */
@@ -2373,7 +2368,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'tiles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Tiles of the image
 	 * @see #__DNA__FIELD__tiles
 	 */
@@ -2390,7 +2385,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'tiles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Tiles of the image
 	 * @see #__DNA__FIELD__tiles
 	 */
@@ -2415,7 +2410,7 @@ public class Image extends CFacade {
 	/**
 	 * Get method for struct member 'views'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ImageView} . </p>
 	 * @see #__DNA__FIELD__views
 	 */
@@ -2432,7 +2427,7 @@ public class Image extends CFacade {
 	/**
 	 * Set method for struct member 'views'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ImageView} . </p>
 	 * @see #__DNA__FIELD__views
 	 */

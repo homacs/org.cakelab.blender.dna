@@ -53,7 +53,7 @@ public class ArmatureGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'deformflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eArmature_DeformFlag  use instead of #bArmature.deformflag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -136,7 +136,7 @@ public class ArmatureGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vgname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -203,7 +203,7 @@ public class ArmatureGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'deformflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eArmature_DeformFlag  use instead of #bArmature.deformflag. </p>
 	 * @see #__DNA__FIELD__deformflag
 	 */
@@ -220,7 +220,7 @@ public class ArmatureGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'deformflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>eArmature_DeformFlag  use instead of #bArmature.deformflag. </p>
 	 * @see #__DNA__FIELD__deformflag
 	 */
@@ -325,7 +325,7 @@ public class ArmatureGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'vgname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgname
 	 */
@@ -346,7 +346,7 @@ public class ArmatureGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'vgname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgname
 	 */

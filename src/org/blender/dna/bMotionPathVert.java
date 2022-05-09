@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bMotionPathVert'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  Visualization Motion Paths ---------------------------------<mdash/>  (used for Pose Channels and Objects) Data point for motion path (mpv) </p>
  */
@@ -35,7 +36,7 @@ public class bMotionPathVert extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Coordinates of point in 3D-space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -58,7 +59,7 @@ public class bMotionPathVert extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Quick settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -89,7 +90,7 @@ public class bMotionPathVert extends CFacade {
 	/**
 	 * Get method for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Coordinates of point in 3D-space. </p>
 	 * @see #__DNA__FIELD__co
 	 */
@@ -110,7 +111,7 @@ public class bMotionPathVert extends CFacade {
 	/**
 	 * Set method for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Coordinates of point in 3D-space. </p>
 	 * @see #__DNA__FIELD__co
 	 */
@@ -135,7 +136,7 @@ public class bMotionPathVert extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Quick settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -152,7 +153,7 @@ public class bMotionPathVert extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Quick settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
