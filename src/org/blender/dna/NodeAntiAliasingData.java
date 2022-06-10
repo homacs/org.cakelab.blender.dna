@@ -27,7 +27,7 @@ public class NodeAntiAliasingData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 429;
+	public static final int __DNA__SDNA_INDEX = 435;
 
 	/**
 	 * Field descriptor (offset) for struct member 'threshold'.

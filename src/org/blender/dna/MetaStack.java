@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=24, size64=40)
+@CMetaData(size32=28, size64=48)
 public class MetaStack extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class MetaStack extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 319;
+	public static final int __DNA__SDNA_INDEX = 324;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -91,6 +91,26 @@ public class MetaStack extends CFacade {
 	public static final long[] __DNA__FIELD__oldbasep = new long[]{8, 16};
 
 	/**
+	 * Field descriptor (offset) for struct member 'old_channels'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MetaStack metastack = ...;
+	 * CPointer&lt;Object&gt; p = metastack.__dna__addressof(MetaStack.__DNA__FIELD__old_channels);
+	 * CPointer&lt;CPointer&lt;ListBase&gt;&gt; p_old_channels = p.cast(new Class[]{CPointer.class, ListBase.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'old_channels'</li>
+	 * <li>Signature: 'ListBase*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__old_channels = new long[]{12, 24};
+
+	/**
 	 * Field descriptor (offset) for struct member 'parseq'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -108,7 +128,7 @@ public class MetaStack extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parseq = new long[]{12, 24};
+	public static final long[] __DNA__FIELD__parseq = new long[]{16, 32};
 
 	/**
 	 * Field descriptor (offset) for struct member 'disp_range'.
@@ -131,7 +151,7 @@ public class MetaStack extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__disp_range = new long[]{16, 32};
+	public static final long[] __DNA__FIELD__disp_range = new long[]{20, 40};
 
 	public MetaStack(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -238,6 +258,38 @@ public class MetaStack extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'old_channels'.
+	 * @see #__DNA__FIELD__old_channels
+	 */
+	
+	public CPointer<ListBase> getOld_channels() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 24);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 12);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{ListBase.class};
+		return new CPointer<ListBase>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ListBase.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'old_channels'.
+	 * @see #__DNA__FIELD__old_channels
+	 */
+	
+	public void setOld_channels(CPointer<ListBase> old_channels) throws IOException
+	{
+		long __address = ((old_channels == null) ? 0 : old_channels.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 24, __address);
+		} else {
+			__io__block.writeLong(__io__address + 12, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'parseq'.
 	 * @see #__DNA__FIELD__parseq
 	 */
@@ -246,9 +298,9 @@ public class MetaStack extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 24);
+			__dna__targetAddress = __io__block.readLong(__io__address + 32);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 12);
+			__dna__targetAddress = __io__block.readLong(__io__address + 16);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Sequence.class};
 		return new CPointer<Sequence>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Sequence.__DNA__SDNA_INDEX), __io__blockTable);
@@ -263,9 +315,9 @@ public class MetaStack extends CFacade {
 	{
 		long __address = ((parseq == null) ? 0 : parseq.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 24, __address);
+			__io__block.writeLong(__io__address + 32, __address);
 		} else {
-			__io__block.writeLong(__io__address + 12, __address);
+			__io__block.writeLong(__io__address + 16, __address);
 		}
 	}
 
@@ -284,9 +336,9 @@ public class MetaStack extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -302,9 +354,9 @@ public class MetaStack extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 32;
+			__dna__offset = 40;
 		} else {
-			__dna__offset = 16;
+			__dna__offset = 20;
 		}
 		if (__io__equals(disp_range, __io__address + __dna__offset)) {
 			return;

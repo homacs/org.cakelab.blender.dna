@@ -27,7 +27,7 @@ public class CurvesModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 332;
+	public static final int __DNA__SDNA_INDEX = 338;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

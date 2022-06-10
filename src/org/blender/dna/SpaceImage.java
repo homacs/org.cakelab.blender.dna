@@ -28,7 +28,7 @@ public class SpaceImage extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 246;
+	public static final int __DNA__SDNA_INDEX = 251;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -527,30 +527,10 @@ public class SpaceImage extends CFacade {
 	public static final long[] __DNA__FIELD__dt_uv = new long[]{10509, 10553};
 
 	/**
-	 * Field descriptor (offset) for struct member 'sticky'.
+	 * Field descriptor (offset) for struct member 'dt_uvstretch'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
 	 * <p> Sticky selection type. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceImage spaceimage = ...;
-	 * CPointer&lt;Object&gt; p = spaceimage.__dna__addressof(SpaceImage.__DNA__FIELD__sticky);
-	 * CPointer&lt;Byte&gt; p_sticky = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'sticky'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__sticky = new long[]{10510, 10554};
-
-	/**
-	 * Field descriptor (offset) for struct member 'dt_uvstretch'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -567,7 +547,7 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dt_uvstretch = new long[]{10511, 10555};
+	public static final long[] __DNA__FIELD__dt_uvstretch = new long[]{10510, 10554};
 
 	/**
 	 * Field descriptor (offset) for struct member 'around'.
@@ -587,7 +567,7 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__around = new long[]{10512, 10556};
+	public static final long[] __DNA__FIELD__around = new long[]{10511, 10555};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -603,11 +583,11 @@ public class SpaceImage extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad1'</li>
-	 * <li>Signature: 'char[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{10513, 10557};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{10512, 10556};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -1549,14 +1529,14 @@ public class SpaceImage extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'sticky'.
+	 * Get method for struct member 'dt_uvstretch'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
 	 * <p> Sticky selection type. </p>
-	 * @see #__DNA__FIELD__sticky
+	 * @see #__DNA__FIELD__dt_uvstretch
 	 */
 	
-	public byte getSticky() throws IOException
+	public byte getDt_uvstretch() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 10554);
@@ -1566,47 +1546,19 @@ public class SpaceImage extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'sticky'.
+	 * Set method for struct member 'dt_uvstretch'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
 	 * <p> Sticky selection type. </p>
-	 * @see #__DNA__FIELD__sticky
-	 */
-	
-	public void setSticky(byte sticky) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 10554, sticky);
-		} else {
-			__io__block.writeByte(__io__address + 10510, sticky);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'dt_uvstretch'.
-	 * @see #__DNA__FIELD__dt_uvstretch
-	 */
-	
-	public byte getDt_uvstretch() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 10555);
-		} else {
-			return __io__block.readByte(__io__address + 10511);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'dt_uvstretch'.
 	 * @see #__DNA__FIELD__dt_uvstretch
 	 */
 	
 	public void setDt_uvstretch(byte dt_uvstretch) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 10555, dt_uvstretch);
+			__io__block.writeByte(__io__address + 10554, dt_uvstretch);
 		} else {
-			__io__block.writeByte(__io__address + 10511, dt_uvstretch);
+			__io__block.writeByte(__io__address + 10510, dt_uvstretch);
 		}
 	}
 
@@ -1618,9 +1570,9 @@ public class SpaceImage extends CFacade {
 	public byte getAround() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 10556);
+			return __io__block.readByte(__io__address + 10555);
 		} else {
-			return __io__block.readByte(__io__address + 10512);
+			return __io__block.readByte(__io__address + 10511);
 		}
 	}
 
@@ -1632,9 +1584,9 @@ public class SpaceImage extends CFacade {
 	public void setAround(byte around) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 10556, around);
+			__io__block.writeByte(__io__address + 10555, around);
 		} else {
-			__io__block.writeByte(__io__address + 10512, around);
+			__io__block.writeByte(__io__address + 10511, around);
 		}
 	}
 
@@ -1647,12 +1599,12 @@ public class SpaceImage extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 10557, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 10556, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 10513, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 10512, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1665,9 +1617,9 @@ public class SpaceImage extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 10557;
+			__dna__offset = 10556;
 		} else {
-			__dna__offset = 10513;
+			__dna__offset = 10512;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;

@@ -30,7 +30,7 @@ public class ThemeSpace extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 274;
+	public static final int __DNA__SDNA_INDEX = 279;
 
 	/**
 	 * Field descriptor (offset) for struct member 'back'.

@@ -28,7 +28,7 @@ public class LineStyleThicknessModifier_Tangent extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 742;
+	public static final int __DNA__SDNA_INDEX = 733;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

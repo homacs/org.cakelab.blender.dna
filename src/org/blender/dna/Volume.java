@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1268, size64=1328)
+@CMetaData(size32=1548, size64=1608)
 public class Volume extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class Volume extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 796;
+	public static final int __DNA__SDNA_INDEX = 790;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -45,7 +45,7 @@ public class Volume extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 136/176</li>
+	 * <li>Actual Size (32bit/64bit): 152/192</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -71,7 +71,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__adt = new long[]{152, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filepath'.
@@ -96,7 +96,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filepath = new long[]{140, 184};
+	public static final long[] __DNA__FIELD__filepath = new long[]{156, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'packedfile'.
@@ -116,7 +116,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__packedfile = new long[]{1164, 1208};
+	public static final long[] __DNA__FIELD__packedfile = new long[]{1180, 1224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'is_sequence'.
@@ -141,7 +141,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__is_sequence = new long[]{1168, 1216};
+	public static final long[] __DNA__FIELD__is_sequence = new long[]{1184, 1232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sequence_mode'.
@@ -164,7 +164,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sequence_mode = new long[]{1169, 1217};
+	public static final long[] __DNA__FIELD__sequence_mode = new long[]{1185, 1233};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -184,7 +184,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{1170, 1218};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{1186, 1234};
 
 	/**
 	 * Field descriptor (offset) for struct member 'frame_start'.
@@ -207,7 +207,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__frame_start = new long[]{1172, 1220};
+	public static final long[] __DNA__FIELD__frame_start = new long[]{1188, 1236};
 
 	/**
 	 * Field descriptor (offset) for struct member 'frame_duration'.
@@ -230,7 +230,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__frame_duration = new long[]{1176, 1224};
+	public static final long[] __DNA__FIELD__frame_duration = new long[]{1192, 1240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'frame_offset'.
@@ -253,7 +253,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__frame_offset = new long[]{1180, 1228};
+	public static final long[] __DNA__FIELD__frame_offset = new long[]{1196, 1244};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -276,7 +276,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{1184, 1232};
+	public static final long[] __DNA__FIELD__flag = new long[]{1200, 1248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_grid'.
@@ -299,7 +299,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_grid = new long[]{1188, 1236};
+	public static final long[] __DNA__FIELD__active_grid = new long[]{1204, 1252};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
@@ -322,7 +322,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat = new long[]{1192, 1240};
+	public static final long[] __DNA__FIELD__mat = new long[]{1208, 1256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totcol'.
@@ -342,7 +342,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totcol = new long[]{1196, 1248};
+	public static final long[] __DNA__FIELD__totcol = new long[]{1212, 1264};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -362,7 +362,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{1198, 1250};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{1214, 1266};
 
 	/**
 	 * Field descriptor (offset) for struct member 'render'.
@@ -387,7 +387,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__render = new long[]{1204, 1256};
+	public static final long[] __DNA__FIELD__render = new long[]{1220, 1272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'display'.
@@ -410,7 +410,102 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__display = new long[]{1220, 1272};
+	public static final long[] __DNA__FIELD__display = new long[]{1236, 1288};
+
+	/**
+	 * Field descriptor (offset) for struct member 'velocity_grid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Name of the velocity field, or the base name if the velocity is split into multiple grids
+	 * <h4>Blender Source Code</h4>
+	 * <p> Velocity field name. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Volume volume = ...;
+	 * CPointer&lt;Object&gt; p = volume.__dna__addressof(Volume.__DNA__FIELD__velocity_grid);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_velocity_grid = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'velocity_grid'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__velocity_grid = new long[]{1268, 1320};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad3'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Volume volume = ...;
+	 * CPointer&lt;Object&gt; p = volume.__dna__addressof(Volume.__DNA__FIELD___pad3);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad3 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad3'</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad3 = new long[]{1332, 1384};
+
+	/**
+	 * Field descriptor (offset) for struct member 'velocity_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Define how the velocity vectors are interpreted with regard to time, 'frame' means the delta time is 1 frame, 'second' means the delta time is 1 / FPS
+	 * <h4>Blender Source Code</h4>
+	 * <p> Unit of time the velocity vectors are expressed in. This uses the same enumeration values as #CacheFile.velocity_unit. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Volume volume = ...;
+	 * CPointer&lt;Object&gt; p = volume.__dna__addressof(Volume.__DNA__FIELD__velocity_unit);
+	 * CPointer&lt;Byte&gt; p_velocity_unit = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'velocity_unit'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__velocity_unit = new long[]{1335, 1387};
+
+	/**
+	 * Field descriptor (offset) for struct member 'velocity_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Factor to control the amount of motion blur
+	 * <h4>Blender Source Code</h4>
+	 * <p> Factor for velocity vector for artistic control. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Volume volume = ...;
+	 * CPointer&lt;Object&gt; p = volume.__dna__addressof(Volume.__DNA__FIELD__velocity_scale);
+	 * CPointer&lt;Float&gt; p_velocity_scale = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'velocity_scale'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__velocity_scale = new long[]{1336, 1388};
 
 	/**
 	 * Field descriptor (offset) for struct member 'batch_cache'.
@@ -433,7 +528,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__batch_cache = new long[]{1252, 1304};
+	public static final long[] __DNA__FIELD__batch_cache = new long[]{1340, 1392};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -453,10 +548,10 @@ public class Volume extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'Volume_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 12/16</li>
+	 * <li>Actual Size (32bit/64bit): 204/208</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{1256, 1312};
+	public static final long[] __DNA__FIELD__runtime = new long[]{1344, 1400};
 
 	public Volume(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -514,9 +609,9 @@ public class Volume extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -534,9 +629,9 @@ public class Volume extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		}
 	}
 
@@ -557,9 +652,9 @@ public class Volume extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -577,9 +672,9 @@ public class Volume extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 184;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 140;
+			__dna__offset = 156;
 		}
 		if (__io__equals(filepath, __io__address + __dna__offset)) {
 			return;
@@ -599,9 +694,9 @@ public class Volume extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1224);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1164);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1180);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PackedFile.class};
 		return new CPointer<PackedFile>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PackedFile.__DNA__SDNA_INDEX), __io__blockTable);
@@ -616,9 +711,9 @@ public class Volume extends CFacade {
 	{
 		long __address = ((packedfile == null) ? 0 : packedfile.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1208, __address);
+			__io__block.writeLong(__io__address + 1224, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1164, __address);
+			__io__block.writeLong(__io__address + 1180, __address);
 		}
 	}
 
@@ -635,9 +730,9 @@ public class Volume extends CFacade {
 	public byte getIs_sequence() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1216);
+			return __io__block.readByte(__io__address + 1232);
 		} else {
-			return __io__block.readByte(__io__address + 1168);
+			return __io__block.readByte(__io__address + 1184);
 		}
 	}
 
@@ -654,9 +749,9 @@ public class Volume extends CFacade {
 	public void setIs_sequence(byte is_sequence) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1216, is_sequence);
+			__io__block.writeByte(__io__address + 1232, is_sequence);
 		} else {
-			__io__block.writeByte(__io__address + 1168, is_sequence);
+			__io__block.writeByte(__io__address + 1184, is_sequence);
 		}
 	}
 
@@ -671,9 +766,9 @@ public class Volume extends CFacade {
 	public byte getSequence_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1217);
+			return __io__block.readByte(__io__address + 1233);
 		} else {
-			return __io__block.readByte(__io__address + 1169);
+			return __io__block.readByte(__io__address + 1185);
 		}
 	}
 
@@ -688,9 +783,9 @@ public class Volume extends CFacade {
 	public void setSequence_mode(byte sequence_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1217, sequence_mode);
+			__io__block.writeByte(__io__address + 1233, sequence_mode);
 		} else {
-			__io__block.writeByte(__io__address + 1169, sequence_mode);
+			__io__block.writeByte(__io__address + 1185, sequence_mode);
 		}
 	}
 
@@ -706,9 +801,9 @@ public class Volume extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1218, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1234, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1170, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1186, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -721,9 +816,9 @@ public class Volume extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1218;
+			__dna__offset = 1234;
 		} else {
-			__dna__offset = 1170;
+			__dna__offset = 1186;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -745,9 +840,9 @@ public class Volume extends CFacade {
 	public int getFrame_start() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1220);
+			return __io__block.readInt(__io__address + 1236);
 		} else {
-			return __io__block.readInt(__io__address + 1172);
+			return __io__block.readInt(__io__address + 1188);
 		}
 	}
 
@@ -762,9 +857,9 @@ public class Volume extends CFacade {
 	public void setFrame_start(int frame_start) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1220, frame_start);
+			__io__block.writeInt(__io__address + 1236, frame_start);
 		} else {
-			__io__block.writeInt(__io__address + 1172, frame_start);
+			__io__block.writeInt(__io__address + 1188, frame_start);
 		}
 	}
 
@@ -779,9 +874,9 @@ public class Volume extends CFacade {
 	public int getFrame_duration() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1224);
+			return __io__block.readInt(__io__address + 1240);
 		} else {
-			return __io__block.readInt(__io__address + 1176);
+			return __io__block.readInt(__io__address + 1192);
 		}
 	}
 
@@ -796,9 +891,9 @@ public class Volume extends CFacade {
 	public void setFrame_duration(int frame_duration) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1224, frame_duration);
+			__io__block.writeInt(__io__address + 1240, frame_duration);
 		} else {
-			__io__block.writeInt(__io__address + 1176, frame_duration);
+			__io__block.writeInt(__io__address + 1192, frame_duration);
 		}
 	}
 
@@ -813,9 +908,9 @@ public class Volume extends CFacade {
 	public int getFrame_offset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1228);
+			return __io__block.readInt(__io__address + 1244);
 		} else {
-			return __io__block.readInt(__io__address + 1180);
+			return __io__block.readInt(__io__address + 1196);
 		}
 	}
 
@@ -830,9 +925,9 @@ public class Volume extends CFacade {
 	public void setFrame_offset(int frame_offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1228, frame_offset);
+			__io__block.writeInt(__io__address + 1244, frame_offset);
 		} else {
-			__io__block.writeInt(__io__address + 1180, frame_offset);
+			__io__block.writeInt(__io__address + 1196, frame_offset);
 		}
 	}
 
@@ -847,9 +942,9 @@ public class Volume extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1232);
+			return __io__block.readInt(__io__address + 1248);
 		} else {
-			return __io__block.readInt(__io__address + 1184);
+			return __io__block.readInt(__io__address + 1200);
 		}
 	}
 
@@ -864,9 +959,9 @@ public class Volume extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1232, flag);
+			__io__block.writeInt(__io__address + 1248, flag);
 		} else {
-			__io__block.writeInt(__io__address + 1184, flag);
+			__io__block.writeInt(__io__address + 1200, flag);
 		}
 	}
 
@@ -881,9 +976,9 @@ public class Volume extends CFacade {
 	public int getActive_grid() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1236);
+			return __io__block.readInt(__io__address + 1252);
 		} else {
-			return __io__block.readInt(__io__address + 1188);
+			return __io__block.readInt(__io__address + 1204);
 		}
 	}
 
@@ -898,9 +993,9 @@ public class Volume extends CFacade {
 	public void setActive_grid(int active_grid) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1236, active_grid);
+			__io__block.writeInt(__io__address + 1252, active_grid);
 		} else {
-			__io__block.writeInt(__io__address + 1188, active_grid);
+			__io__block.writeInt(__io__address + 1204, active_grid);
 		}
 	}
 
@@ -916,9 +1011,9 @@ public class Volume extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1240);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1256);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1208);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, Material.class};
 		return new CPointer<CPointer<Material>>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -936,9 +1031,9 @@ public class Volume extends CFacade {
 	{
 		long __address = ((mat == null) ? 0 : mat.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1240, __address);
+			__io__block.writeLong(__io__address + 1256, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1192, __address);
+			__io__block.writeLong(__io__address + 1208, __address);
 		}
 	}
 
@@ -950,9 +1045,9 @@ public class Volume extends CFacade {
 	public short getTotcol() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1248);
+			return __io__block.readShort(__io__address + 1264);
 		} else {
-			return __io__block.readShort(__io__address + 1196);
+			return __io__block.readShort(__io__address + 1212);
 		}
 	}
 
@@ -964,9 +1059,9 @@ public class Volume extends CFacade {
 	public void setTotcol(short totcol) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1248, totcol);
+			__io__block.writeShort(__io__address + 1264, totcol);
 		} else {
-			__io__block.writeShort(__io__address + 1196, totcol);
+			__io__block.writeShort(__io__address + 1212, totcol);
 		}
 	}
 
@@ -982,9 +1077,9 @@ public class Volume extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 1250, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Short>(__io__address + 1266, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 1198, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Short>(__io__address + 1214, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -997,9 +1092,9 @@ public class Volume extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1250;
+			__dna__offset = 1266;
 		} else {
-			__dna__offset = 1198;
+			__dna__offset = 1214;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -1023,9 +1118,9 @@ public class Volume extends CFacade {
 	public VolumeRender getRender() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new VolumeRender(__io__address + 1256, __io__block, __io__blockTable);
+			return new VolumeRender(__io__address + 1272, __io__block, __io__blockTable);
 		} else {
-			return new VolumeRender(__io__address + 1204, __io__block, __io__blockTable);
+			return new VolumeRender(__io__address + 1220, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1043,9 +1138,9 @@ public class Volume extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1256;
+			__dna__offset = 1272;
 		} else {
-			__dna__offset = 1204;
+			__dna__offset = 1220;
 		}
 		if (__io__equals(render, __io__address + __dna__offset)) {
 			return;
@@ -1067,9 +1162,9 @@ public class Volume extends CFacade {
 	public VolumeDisplay getDisplay() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new VolumeDisplay(__io__address + 1272, __io__block, __io__blockTable);
+			return new VolumeDisplay(__io__address + 1288, __io__block, __io__blockTable);
 		} else {
-			return new VolumeDisplay(__io__address + 1220, __io__block, __io__blockTable);
+			return new VolumeDisplay(__io__address + 1236, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1085,9 +1180,9 @@ public class Volume extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1272;
+			__dna__offset = 1288;
 		} else {
-			__dna__offset = 1220;
+			__dna__offset = 1236;
 		}
 		if (__io__equals(display, __io__address + __dna__offset)) {
 			return;
@@ -1095,6 +1190,172 @@ public class Volume extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, display);
 		} else {
 			__io__generic__copy( getDisplay(), display);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'velocity_grid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Name of the velocity field, or the base name if the velocity is split into multiple grids
+	 * <h4>Blender Source Code</h4>
+	 * <p> Velocity field name. </p>
+	 * @see #__DNA__FIELD__velocity_grid
+	 */
+	
+	public CArrayFacade<Byte> getVelocity_grid() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 1320, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 1268, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'velocity_grid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Name of the velocity field, or the base name if the velocity is split into multiple grids
+	 * <h4>Blender Source Code</h4>
+	 * <p> Velocity field name. </p>
+	 * @see #__DNA__FIELD__velocity_grid
+	 */
+	
+	public void setVelocity_grid(CArrayFacade<Byte> velocity_grid) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 1320;
+		} else {
+			__dna__offset = 1268;
+		}
+		if (__io__equals(velocity_grid, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, velocity_grid)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, velocity_grid);
+		} else {
+			__io__generic__copy( getVelocity_grid(), velocity_grid);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public CArrayFacade<Byte> get_pad3() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 1384, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 1332, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public void set_pad3(CArrayFacade<Byte> _pad3) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 1384;
+		} else {
+			__dna__offset = 1332;
+		}
+		if (__io__equals(_pad3, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad3)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad3);
+		} else {
+			__io__generic__copy( get_pad3(), _pad3);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'velocity_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Define how the velocity vectors are interpreted with regard to time, 'frame' means the delta time is 1 frame, 'second' means the delta time is 1 / FPS
+	 * <h4>Blender Source Code</h4>
+	 * <p> Unit of time the velocity vectors are expressed in. This uses the same enumeration values as #CacheFile.velocity_unit. </p>
+	 * @see #__DNA__FIELD__velocity_unit
+	 */
+	
+	public byte getVelocity_unit() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 1387);
+		} else {
+			return __io__block.readByte(__io__address + 1335);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'velocity_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Define how the velocity vectors are interpreted with regard to time, 'frame' means the delta time is 1 frame, 'second' means the delta time is 1 / FPS
+	 * <h4>Blender Source Code</h4>
+	 * <p> Unit of time the velocity vectors are expressed in. This uses the same enumeration values as #CacheFile.velocity_unit. </p>
+	 * @see #__DNA__FIELD__velocity_unit
+	 */
+	
+	public void setVelocity_unit(byte velocity_unit) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 1387, velocity_unit);
+		} else {
+			__io__block.writeByte(__io__address + 1335, velocity_unit);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'velocity_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Factor to control the amount of motion blur
+	 * <h4>Blender Source Code</h4>
+	 * <p> Factor for velocity vector for artistic control. </p>
+	 * @see #__DNA__FIELD__velocity_scale
+	 */
+	
+	public float getVelocity_scale() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 1388);
+		} else {
+			return __io__block.readFloat(__io__address + 1336);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'velocity_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Factor to control the amount of motion blur
+	 * <h4>Blender Source Code</h4>
+	 * <p> Factor for velocity vector for artistic control. </p>
+	 * @see #__DNA__FIELD__velocity_scale
+	 */
+	
+	public void setVelocity_scale(float velocity_scale) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 1388, velocity_scale);
+		} else {
+			__io__block.writeFloat(__io__address + 1336, velocity_scale);
 		}
 	}
 
@@ -1110,9 +1371,9 @@ public class Volume extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1304);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1392);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1252);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1340);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1130,9 +1391,9 @@ public class Volume extends CFacade {
 	{
 		long __address = ((batch_cache == null) ? 0 : batch_cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1304, __address);
+			__io__block.writeLong(__io__address + 1392, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1252, __address);
+			__io__block.writeLong(__io__address + 1340, __address);
 		}
 	}
 
@@ -1147,9 +1408,9 @@ public class Volume extends CFacade {
 	public Volume_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new Volume_Runtime(__io__address + 1312, __io__block, __io__blockTable);
+			return new Volume_Runtime(__io__address + 1400, __io__block, __io__blockTable);
 		} else {
-			return new Volume_Runtime(__io__address + 1256, __io__block, __io__blockTable);
+			return new Volume_Runtime(__io__address + 1344, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1165,9 +1426,9 @@ public class Volume extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1312;
+			__dna__offset = 1400;
 		} else {
-			__dna__offset = 1256;
+			__dna__offset = 1344;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

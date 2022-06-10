@@ -28,7 +28,7 @@ public class ClothModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 119;
+	public static final int __DNA__SDNA_INDEX = 122;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

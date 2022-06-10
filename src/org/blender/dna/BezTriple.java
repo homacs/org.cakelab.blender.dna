@@ -56,7 +56,7 @@ public class BezTriple extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 63;
+	public static final int __DNA__SDNA_INDEX = 65;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vec'.

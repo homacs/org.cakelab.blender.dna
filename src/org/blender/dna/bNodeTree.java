@@ -19,7 +19,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> the basis for a Node tree, all links and nodes reside internal here only re-usable node trees are in the library though, materials and textures allocate own tree struct </p>
  */
 
-@CMetaData(size32=368, size64=504)
+@CMetaData(size32=384, size64=520)
 public class bNodeTree extends CFacade {
 
 	/**
@@ -30,7 +30,7 @@ public class bNodeTree extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 406;
+	public static final int __DNA__SDNA_INDEX = 412;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -47,7 +47,7 @@ public class bNodeTree extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 136/176</li>
+	 * <li>Actual Size (32bit/64bit): 152/192</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -73,7 +73,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__adt = new long[]{152, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'typeinfo'.
@@ -96,7 +96,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__typeinfo = new long[]{140, 184};
+	public static final long[] __DNA__FIELD__typeinfo = new long[]{156, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'idname'.
@@ -119,7 +119,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__idname = new long[]{144, 192};
+	public static final long[] __DNA__FIELD__idname = new long[]{160, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'interface_type'.
@@ -142,7 +142,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__interface_type = new long[]{208, 256};
+	public static final long[] __DNA__FIELD__interface_type = new long[]{224, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
@@ -165,7 +165,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpd = new long[]{212, 264};
+	public static final long[] __DNA__FIELD__gpd = new long[]{228, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'view_center'.
@@ -188,7 +188,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__view_center = new long[]{216, 272};
+	public static final long[] __DNA__FIELD__view_center = new long[]{232, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodes'.
@@ -208,7 +208,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nodes = new long[]{224, 280};
+	public static final long[] __DNA__FIELD__nodes = new long[]{240, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'links'.
@@ -228,7 +228,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__links = new long[]{232, 296};
+	public static final long[] __DNA__FIELD__links = new long[]{248, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'field_inferencing_interface'.
@@ -251,13 +251,10 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__field_inferencing_interface = new long[]{240, 312};
+	public static final long[] __DNA__FIELD__field_inferencing_interface = new long[]{256, 328};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Set init on fileread. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -274,27 +271,50 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{244, 320};
+	public static final long[] __DNA__FIELD__type = new long[]{260, 336};
 
 	/**
-	 * Field descriptor (offset) for struct member 'init'.
+	 * Field descriptor (offset) for struct member 'runtime_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Used to cache run-time information of the node tree. eNodeTreeRuntimeFlag . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bNodeTree bnodetree = ...;
-	 * CPointer&lt;Object&gt; p = bnodetree.__dna__addressof(bNodeTree.__DNA__FIELD__init);
-	 * CPointer&lt;Integer&gt; p_init = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = bnodetree.__dna__addressof(bNodeTree.__DNA__FIELD__runtime_flag);
+	 * CPointer&lt;Byte&gt; p_runtime_flag = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'init'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'runtime_flag'</li>
+	 * <li>Signature: 'uchar'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__init = new long[]{248, 324};
+	public static final long[] __DNA__FIELD__runtime_flag = new long[]{264, 340};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bNodeTree bnodetree = ...;
+	 * CPointer&lt;Object&gt; p = bnodetree.__dna__addressof(bNodeTree.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad1 = new long[]{265, 341};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cur_index'.
@@ -317,7 +337,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cur_index = new long[]{252, 328};
+	public static final long[] __DNA__FIELD__cur_index = new long[]{268, 344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -337,7 +357,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{256, 332};
+	public static final long[] __DNA__FIELD__flag = new long[]{272, 348};
 
 	/**
 	 * Field descriptor (offset) for struct member 'changed_flag'.
@@ -360,7 +380,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__changed_flag = new long[]{260, 336};
+	public static final long[] __DNA__FIELD__changed_flag = new long[]{276, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'is_updating'.
@@ -383,7 +403,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__is_updating = new long[]{264, 340};
+	public static final long[] __DNA__FIELD__is_updating = new long[]{280, 356};
 
 	/**
 	 * Field descriptor (offset) for struct member 'done'.
@@ -406,7 +426,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__done = new long[]{266, 342};
+	public static final long[] __DNA__FIELD__done = new long[]{282, 358};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodetype'.
@@ -431,7 +451,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nodetype = new long[]{268, 344};
+	public static final long[] __DNA__FIELD__nodetype = new long[]{284, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'edit_quality'.
@@ -454,7 +474,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__edit_quality = new long[]{272, 348};
+	public static final long[] __DNA__FIELD__edit_quality = new long[]{288, 364};
 
 	/**
 	 * Field descriptor (offset) for struct member 'render_quality'.
@@ -477,7 +497,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__render_quality = new long[]{274, 350};
+	public static final long[] __DNA__FIELD__render_quality = new long[]{290, 366};
 
 	/**
 	 * Field descriptor (offset) for struct member 'chunksize'.
@@ -500,7 +520,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__chunksize = new long[]{276, 352};
+	public static final long[] __DNA__FIELD__chunksize = new long[]{292, 368};
 
 	/**
 	 * Field descriptor (offset) for struct member 'execution_mode'.
@@ -523,7 +543,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__execution_mode = new long[]{280, 356};
+	public static final long[] __DNA__FIELD__execution_mode = new long[]{296, 372};
 
 	/**
 	 * Field descriptor (offset) for struct member 'viewer_border'.
@@ -543,7 +563,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__viewer_border = new long[]{284, 360};
+	public static final long[] __DNA__FIELD__viewer_border = new long[]{300, 376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'inputs'.
@@ -566,7 +586,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__inputs = new long[]{300, 376};
+	public static final long[] __DNA__FIELD__inputs = new long[]{316, 392};
 
 	/**
 	 * Field descriptor (offset) for struct member 'outputs'.
@@ -586,7 +606,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__outputs = new long[]{308, 392};
+	public static final long[] __DNA__FIELD__outputs = new long[]{324, 408};
 
 	/**
 	 * Field descriptor (offset) for struct member 'previews'.
@@ -609,7 +629,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__previews = new long[]{316, 408};
+	public static final long[] __DNA__FIELD__previews = new long[]{332, 424};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_viewer_key'.
@@ -632,7 +652,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_viewer_key = new long[]{320, 416};
+	public static final long[] __DNA__FIELD__active_viewer_key = new long[]{336, 432};
 
 	/**
 	 * Field descriptor (offset) for struct member 'output_topology_hash'.
@@ -655,7 +675,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__output_topology_hash = new long[]{324, 420};
+	public static final long[] __DNA__FIELD__output_topology_hash = new long[]{340, 436};
 
 	/**
 	 * Field descriptor (offset) for struct member 'execdata'.
@@ -678,7 +698,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__execdata = new long[]{328, 424};
+	public static final long[] __DNA__FIELD__execdata = new long[]{344, 440};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tbh'.
@@ -698,7 +718,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tbh = new long[]{348, 464};
+	public static final long[] __DNA__FIELD__tbh = new long[]{364, 480};
 
 	/**
 	 * Field descriptor (offset) for struct member 'prh'.
@@ -718,7 +738,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__prh = new long[]{352, 472};
+	public static final long[] __DNA__FIELD__prh = new long[]{368, 488};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sdh'.
@@ -738,7 +758,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sdh = new long[]{356, 480};
+	public static final long[] __DNA__FIELD__sdh = new long[]{372, 496};
 
 	/**
 	 * Field descriptor (offset) for struct member 'udh'.
@@ -758,7 +778,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__udh = new long[]{360, 488};
+	public static final long[] __DNA__FIELD__udh = new long[]{376, 504};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
@@ -781,7 +801,7 @@ public class bNodeTree extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview = new long[]{364, 496};
+	public static final long[] __DNA__FIELD__preview = new long[]{380, 512};
 
 	public bNodeTree(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -839,9 +859,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -859,9 +879,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		}
 	}
 
@@ -877,9 +897,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 140);
+			__dna__targetAddress = __io__block.readLong(__io__address + 156);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -897,9 +917,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __address = ((typeinfo == null) ? 0 : typeinfo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 140, __address);
+			__io__block.writeLong(__io__address + 156, __address);
 		}
 	}
 
@@ -918,9 +938,9 @@ public class bNodeTree extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -936,9 +956,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 208;
 		} else {
-			__dna__offset = 144;
+			__dna__offset = 160;
 		}
 		if (__io__equals(idname, __io__address + __dna__offset)) {
 			return;
@@ -961,9 +981,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 272);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 224);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -981,9 +1001,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __address = ((interface_type == null) ? 0 : interface_type.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 272, __address);
 		} else {
-			__io__block.writeLong(__io__address + 208, __address);
+			__io__block.writeLong(__io__address + 224, __address);
 		}
 	}
 
@@ -999,9 +1019,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 264);
+			__dna__targetAddress = __io__block.readLong(__io__address + 280);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 212);
+			__dna__targetAddress = __io__block.readLong(__io__address + 228);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bGPdata.class};
 		return new CPointer<bGPdata>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPdata.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1019,9 +1039,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __address = ((gpd == null) ? 0 : gpd.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 264, __address);
+			__io__block.writeLong(__io__address + 280, __address);
 		} else {
-			__io__block.writeLong(__io__address + 212, __address);
+			__io__block.writeLong(__io__address + 228, __address);
 		}
 	}
 
@@ -1040,9 +1060,9 @@ public class bNodeTree extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 288, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1058,9 +1078,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 272;
+			__dna__offset = 288;
 		} else {
-			__dna__offset = 216;
+			__dna__offset = 232;
 		}
 		if (__io__equals(view_center, __io__address + __dna__offset)) {
 			return;
@@ -1079,9 +1099,9 @@ public class bNodeTree extends CFacade {
 	public ListBase getNodes() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 280, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 296, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 224, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 240, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1094,9 +1114,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 280;
+			__dna__offset = 296;
 		} else {
-			__dna__offset = 224;
+			__dna__offset = 240;
 		}
 		if (__io__equals(nodes, __io__address + __dna__offset)) {
 			return;
@@ -1115,9 +1135,9 @@ public class bNodeTree extends CFacade {
 	public ListBase getLinks() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 296, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 312, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 232, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 248, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1130,9 +1150,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 296;
+			__dna__offset = 312;
 		} else {
-			__dna__offset = 232;
+			__dna__offset = 248;
 		}
 		if (__io__equals(links, __io__address + __dna__offset)) {
 			return;
@@ -1155,9 +1175,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 312);
+			__dna__targetAddress = __io__block.readLong(__io__address + 328);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 240);
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1175,71 +1195,111 @@ public class bNodeTree extends CFacade {
 	{
 		long __address = ((field_inferencing_interface == null) ? 0 : field_inferencing_interface.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 312, __address);
+			__io__block.writeLong(__io__address + 328, __address);
 		} else {
-			__io__block.writeLong(__io__address + 240, __address);
+			__io__block.writeLong(__io__address + 256, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Set init on fileread. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public int getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 320);
+			return __io__block.readInt(__io__address + 336);
 		} else {
-			return __io__block.readInt(__io__address + 244);
+			return __io__block.readInt(__io__address + 260);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Set init on fileread. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public void setType(int type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 320, type);
+			__io__block.writeInt(__io__address + 336, type);
 		} else {
-			__io__block.writeInt(__io__address + 244, type);
+			__io__block.writeInt(__io__address + 260, type);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'init'.
-	 * @see #__DNA__FIELD__init
+	 * Get method for struct member 'runtime_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Used to cache run-time information of the node tree. eNodeTreeRuntimeFlag . </p>
+	 * @see #__DNA__FIELD__runtime_flag
 	 */
 	
-	public int getInit() throws IOException
+	public byte getRuntime_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 324);
+			return __io__block.readByte(__io__address + 340);
 		} else {
-			return __io__block.readInt(__io__address + 248);
+			return __io__block.readByte(__io__address + 264);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'init'.
-	 * @see #__DNA__FIELD__init
+	 * Set method for struct member 'runtime_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Used to cache run-time information of the node tree. eNodeTreeRuntimeFlag . </p>
+	 * @see #__DNA__FIELD__runtime_flag
 	 */
 	
-	public void setInit(int init) throws IOException
+	public void setRuntime_flag(byte runtime_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 324, init);
+			__io__block.writeByte(__io__address + 340, runtime_flag);
 		} else {
-			__io__block.writeInt(__io__address + 248, init);
+			__io__block.writeByte(__io__address + 264, runtime_flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public CArrayFacade<Byte> get_pad1() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 341, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 265, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 341;
+		} else {
+			__dna__offset = 265;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 
@@ -1254,9 +1314,9 @@ public class bNodeTree extends CFacade {
 	public int getCur_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 328);
+			return __io__block.readInt(__io__address + 344);
 		} else {
-			return __io__block.readInt(__io__address + 252);
+			return __io__block.readInt(__io__address + 268);
 		}
 	}
 
@@ -1271,9 +1331,9 @@ public class bNodeTree extends CFacade {
 	public void setCur_index(int cur_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 328, cur_index);
+			__io__block.writeInt(__io__address + 344, cur_index);
 		} else {
-			__io__block.writeInt(__io__address + 252, cur_index);
+			__io__block.writeInt(__io__address + 268, cur_index);
 		}
 	}
 
@@ -1285,9 +1345,9 @@ public class bNodeTree extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 332);
+			return __io__block.readInt(__io__address + 348);
 		} else {
-			return __io__block.readInt(__io__address + 256);
+			return __io__block.readInt(__io__address + 272);
 		}
 	}
 
@@ -1299,9 +1359,9 @@ public class bNodeTree extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 332, flag);
+			__io__block.writeInt(__io__address + 348, flag);
 		} else {
-			__io__block.writeInt(__io__address + 256, flag);
+			__io__block.writeInt(__io__address + 272, flag);
 		}
 	}
 
@@ -1316,9 +1376,9 @@ public class bNodeTree extends CFacade {
 	public int getChanged_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 336);
+			return __io__block.readInt(__io__address + 352);
 		} else {
-			return __io__block.readInt(__io__address + 260);
+			return __io__block.readInt(__io__address + 276);
 		}
 	}
 
@@ -1333,9 +1393,9 @@ public class bNodeTree extends CFacade {
 	public void setChanged_flag(int changed_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 336, changed_flag);
+			__io__block.writeInt(__io__address + 352, changed_flag);
 		} else {
-			__io__block.writeInt(__io__address + 260, changed_flag);
+			__io__block.writeInt(__io__address + 276, changed_flag);
 		}
 	}
 
@@ -1350,9 +1410,9 @@ public class bNodeTree extends CFacade {
 	public short getIs_updating() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 340);
+			return __io__block.readShort(__io__address + 356);
 		} else {
-			return __io__block.readShort(__io__address + 264);
+			return __io__block.readShort(__io__address + 280);
 		}
 	}
 
@@ -1367,9 +1427,9 @@ public class bNodeTree extends CFacade {
 	public void setIs_updating(short is_updating) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 340, is_updating);
+			__io__block.writeShort(__io__address + 356, is_updating);
 		} else {
-			__io__block.writeShort(__io__address + 264, is_updating);
+			__io__block.writeShort(__io__address + 280, is_updating);
 		}
 	}
 
@@ -1384,9 +1444,9 @@ public class bNodeTree extends CFacade {
 	public short getDone() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 342);
+			return __io__block.readShort(__io__address + 358);
 		} else {
-			return __io__block.readShort(__io__address + 266);
+			return __io__block.readShort(__io__address + 282);
 		}
 	}
 
@@ -1401,9 +1461,9 @@ public class bNodeTree extends CFacade {
 	public void setDone(short done) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 342, done);
+			__io__block.writeShort(__io__address + 358, done);
 		} else {
-			__io__block.writeShort(__io__address + 266, done);
+			__io__block.writeShort(__io__address + 282, done);
 		}
 	}
 
@@ -1420,9 +1480,9 @@ public class bNodeTree extends CFacade {
 	public int getNodetype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 344);
+			return __io__block.readInt(__io__address + 360);
 		} else {
-			return __io__block.readInt(__io__address + 268);
+			return __io__block.readInt(__io__address + 284);
 		}
 	}
 
@@ -1439,9 +1499,9 @@ public class bNodeTree extends CFacade {
 	public void setNodetype(int nodetype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 344, nodetype);
+			__io__block.writeInt(__io__address + 360, nodetype);
 		} else {
-			__io__block.writeInt(__io__address + 268, nodetype);
+			__io__block.writeInt(__io__address + 284, nodetype);
 		}
 	}
 
@@ -1456,9 +1516,9 @@ public class bNodeTree extends CFacade {
 	public short getEdit_quality() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 348);
+			return __io__block.readShort(__io__address + 364);
 		} else {
-			return __io__block.readShort(__io__address + 272);
+			return __io__block.readShort(__io__address + 288);
 		}
 	}
 
@@ -1473,9 +1533,9 @@ public class bNodeTree extends CFacade {
 	public void setEdit_quality(short edit_quality) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 348, edit_quality);
+			__io__block.writeShort(__io__address + 364, edit_quality);
 		} else {
-			__io__block.writeShort(__io__address + 272, edit_quality);
+			__io__block.writeShort(__io__address + 288, edit_quality);
 		}
 	}
 
@@ -1490,9 +1550,9 @@ public class bNodeTree extends CFacade {
 	public short getRender_quality() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 350);
+			return __io__block.readShort(__io__address + 366);
 		} else {
-			return __io__block.readShort(__io__address + 274);
+			return __io__block.readShort(__io__address + 290);
 		}
 	}
 
@@ -1507,9 +1567,9 @@ public class bNodeTree extends CFacade {
 	public void setRender_quality(short render_quality) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 350, render_quality);
+			__io__block.writeShort(__io__address + 366, render_quality);
 		} else {
-			__io__block.writeShort(__io__address + 274, render_quality);
+			__io__block.writeShort(__io__address + 290, render_quality);
 		}
 	}
 
@@ -1524,9 +1584,9 @@ public class bNodeTree extends CFacade {
 	public int getChunksize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 352);
+			return __io__block.readInt(__io__address + 368);
 		} else {
-			return __io__block.readInt(__io__address + 276);
+			return __io__block.readInt(__io__address + 292);
 		}
 	}
 
@@ -1541,9 +1601,9 @@ public class bNodeTree extends CFacade {
 	public void setChunksize(int chunksize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 352, chunksize);
+			__io__block.writeInt(__io__address + 368, chunksize);
 		} else {
-			__io__block.writeInt(__io__address + 276, chunksize);
+			__io__block.writeInt(__io__address + 292, chunksize);
 		}
 	}
 
@@ -1558,9 +1618,9 @@ public class bNodeTree extends CFacade {
 	public int getExecution_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 356);
+			return __io__block.readInt(__io__address + 372);
 		} else {
-			return __io__block.readInt(__io__address + 280);
+			return __io__block.readInt(__io__address + 296);
 		}
 	}
 
@@ -1575,9 +1635,9 @@ public class bNodeTree extends CFacade {
 	public void setExecution_mode(int execution_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 356, execution_mode);
+			__io__block.writeInt(__io__address + 372, execution_mode);
 		} else {
-			__io__block.writeInt(__io__address + 280, execution_mode);
+			__io__block.writeInt(__io__address + 296, execution_mode);
 		}
 	}
 
@@ -1589,9 +1649,9 @@ public class bNodeTree extends CFacade {
 	public rctf getViewer_border() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new rctf(__io__address + 360, __io__block, __io__blockTable);
+			return new rctf(__io__address + 376, __io__block, __io__blockTable);
 		} else {
-			return new rctf(__io__address + 284, __io__block, __io__blockTable);
+			return new rctf(__io__address + 300, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1604,9 +1664,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 360;
+			__dna__offset = 376;
 		} else {
-			__dna__offset = 284;
+			__dna__offset = 300;
 		}
 		if (__io__equals(viewer_border, __io__address + __dna__offset)) {
 			return;
@@ -1628,9 +1688,9 @@ public class bNodeTree extends CFacade {
 	public ListBase getInputs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 376, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 392, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 300, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 316, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1646,9 +1706,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 376;
+			__dna__offset = 392;
 		} else {
-			__dna__offset = 300;
+			__dna__offset = 316;
 		}
 		if (__io__equals(inputs, __io__address + __dna__offset)) {
 			return;
@@ -1667,9 +1727,9 @@ public class bNodeTree extends CFacade {
 	public ListBase getOutputs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 392, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 408, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 308, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 324, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1682,9 +1742,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 392;
+			__dna__offset = 408;
 		} else {
-			__dna__offset = 308;
+			__dna__offset = 324;
 		}
 		if (__io__equals(outputs, __io__address + __dna__offset)) {
 			return;
@@ -1707,9 +1767,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 408);
+			__dna__targetAddress = __io__block.readLong(__io__address + 424);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 316);
+			__dna__targetAddress = __io__block.readLong(__io__address + 332);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1727,9 +1787,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __address = ((previews == null) ? 0 : previews.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 408, __address);
+			__io__block.writeLong(__io__address + 424, __address);
 		} else {
-			__io__block.writeLong(__io__address + 316, __address);
+			__io__block.writeLong(__io__address + 332, __address);
 		}
 	}
 
@@ -1744,9 +1804,9 @@ public class bNodeTree extends CFacade {
 	public bNodeInstanceKey getActive_viewer_key() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new bNodeInstanceKey(__io__address + 416, __io__block, __io__blockTable);
+			return new bNodeInstanceKey(__io__address + 432, __io__block, __io__blockTable);
 		} else {
-			return new bNodeInstanceKey(__io__address + 320, __io__block, __io__blockTable);
+			return new bNodeInstanceKey(__io__address + 336, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1762,9 +1822,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 416;
+			__dna__offset = 432;
 		} else {
-			__dna__offset = 320;
+			__dna__offset = 336;
 		}
 		if (__io__equals(active_viewer_key, __io__address + __dna__offset)) {
 			return;
@@ -1786,9 +1846,9 @@ public class bNodeTree extends CFacade {
 	public int getOutput_topology_hash() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 420);
+			return __io__block.readInt(__io__address + 436);
 		} else {
-			return __io__block.readInt(__io__address + 324);
+			return __io__block.readInt(__io__address + 340);
 		}
 	}
 
@@ -1803,9 +1863,9 @@ public class bNodeTree extends CFacade {
 	public void setOutput_topology_hash(int output_topology_hash) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 420, output_topology_hash);
+			__io__block.writeInt(__io__address + 436, output_topology_hash);
 		} else {
-			__io__block.writeInt(__io__address + 324, output_topology_hash);
+			__io__block.writeInt(__io__address + 340, output_topology_hash);
 		}
 	}
 
@@ -1821,9 +1881,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 424);
+			__dna__targetAddress = __io__block.readLong(__io__address + 440);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 328);
+			__dna__targetAddress = __io__block.readLong(__io__address + 344);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1841,9 +1901,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __address = ((execdata == null) ? 0 : execdata.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 424, __address);
+			__io__block.writeLong(__io__address + 440, __address);
 		} else {
-			__io__block.writeLong(__io__address + 328, __address);
+			__io__block.writeLong(__io__address + 344, __address);
 		}
 	}
 
@@ -1856,9 +1916,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 464);
+			__dna__targetAddress = __io__block.readLong(__io__address + 480);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 348);
+			__dna__targetAddress = __io__block.readLong(__io__address + 364);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1873,9 +1933,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __address = ((tbh == null) ? 0 : tbh.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 464, __address);
+			__io__block.writeLong(__io__address + 480, __address);
 		} else {
-			__io__block.writeLong(__io__address + 348, __address);
+			__io__block.writeLong(__io__address + 364, __address);
 		}
 	}
 
@@ -1888,9 +1948,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 472);
+			__dna__targetAddress = __io__block.readLong(__io__address + 488);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 352);
+			__dna__targetAddress = __io__block.readLong(__io__address + 368);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1905,9 +1965,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __address = ((prh == null) ? 0 : prh.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 472, __address);
+			__io__block.writeLong(__io__address + 488, __address);
 		} else {
-			__io__block.writeLong(__io__address + 352, __address);
+			__io__block.writeLong(__io__address + 368, __address);
 		}
 	}
 
@@ -1920,9 +1980,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 480);
+			__dna__targetAddress = __io__block.readLong(__io__address + 496);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 356);
+			__dna__targetAddress = __io__block.readLong(__io__address + 372);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1937,9 +1997,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __address = ((sdh == null) ? 0 : sdh.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 480, __address);
+			__io__block.writeLong(__io__address + 496, __address);
 		} else {
-			__io__block.writeLong(__io__address + 356, __address);
+			__io__block.writeLong(__io__address + 372, __address);
 		}
 	}
 
@@ -1952,9 +2012,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 488);
+			__dna__targetAddress = __io__block.readLong(__io__address + 504);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 360);
+			__dna__targetAddress = __io__block.readLong(__io__address + 376);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1969,9 +2029,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __address = ((udh == null) ? 0 : udh.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 488, __address);
+			__io__block.writeLong(__io__address + 504, __address);
 		} else {
-			__io__block.writeLong(__io__address + 360, __address);
+			__io__block.writeLong(__io__address + 376, __address);
 		}
 	}
 
@@ -1987,9 +2047,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 496);
+			__dna__targetAddress = __io__block.readLong(__io__address + 512);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 364);
+			__dna__targetAddress = __io__block.readLong(__io__address + 380);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PreviewImage.class};
 		return new CPointer<PreviewImage>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PreviewImage.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2007,9 +2067,9 @@ public class bNodeTree extends CFacade {
 	{
 		long __address = ((preview == null) ? 0 : preview.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 496, __address);
+			__io__block.writeLong(__io__address + 512, __address);
 		} else {
-			__io__block.writeLong(__io__address + 364, __address);
+			__io__block.writeLong(__io__address + 380, __address);
 		}
 	}
 

@@ -27,7 +27,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 355;
+	public static final int __DNA__SDNA_INDEX = 361;
 
 	/**
 	 * Field descriptor (offset) for struct member 'session_uuid'.

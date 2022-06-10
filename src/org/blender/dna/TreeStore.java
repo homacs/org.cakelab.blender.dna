@@ -29,7 +29,7 @@ public class TreeStore extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 345;
+	public static final int __DNA__SDNA_INDEX = 351;
 
 	/**
 	 * Field descriptor (offset) for struct member 'totelem'.

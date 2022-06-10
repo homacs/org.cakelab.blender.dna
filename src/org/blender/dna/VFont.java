@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1172, size64=1224)
+@CMetaData(size32=1188, size64=1240)
 public class VFont extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class VFont extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 60;
+	public static final int __DNA__SDNA_INDEX = 62;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -45,7 +45,7 @@ public class VFont extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 136/176</li>
+	 * <li>Actual Size (32bit/64bit): 152/192</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -68,7 +68,7 @@ public class VFont extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__name = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__name = new long[]{152, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
@@ -88,7 +88,7 @@ public class VFont extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__data = new long[]{1160, 1200};
+	public static final long[] __DNA__FIELD__data = new long[]{1176, 1216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'packedfile'.
@@ -108,7 +108,7 @@ public class VFont extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__packedfile = new long[]{1164, 1208};
+	public static final long[] __DNA__FIELD__packedfile = new long[]{1180, 1224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'temp_pf'.
@@ -131,7 +131,7 @@ public class VFont extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__temp_pf = new long[]{1168, 1216};
+	public static final long[] __DNA__FIELD__temp_pf = new long[]{1184, 1232};
 
 	public VFont(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -189,9 +189,9 @@ public class VFont extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -204,9 +204,9 @@ public class VFont extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
+			__dna__offset = 192;
 		} else {
-			__dna__offset = 136;
+			__dna__offset = 152;
 		}
 		if (__io__equals(name, __io__address + __dna__offset)) {
 			return;
@@ -226,9 +226,9 @@ public class VFont extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1216);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1176);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -243,9 +243,9 @@ public class VFont extends CFacade {
 	{
 		long __address = ((data == null) ? 0 : data.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1200, __address);
+			__io__block.writeLong(__io__address + 1216, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1160, __address);
+			__io__block.writeLong(__io__address + 1176, __address);
 		}
 	}
 
@@ -258,9 +258,9 @@ public class VFont extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1224);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1164);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1180);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PackedFile.class};
 		return new CPointer<PackedFile>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PackedFile.__DNA__SDNA_INDEX), __io__blockTable);
@@ -275,9 +275,9 @@ public class VFont extends CFacade {
 	{
 		long __address = ((packedfile == null) ? 0 : packedfile.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1208, __address);
+			__io__block.writeLong(__io__address + 1224, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1164, __address);
+			__io__block.writeLong(__io__address + 1180, __address);
 		}
 	}
 
@@ -293,9 +293,9 @@ public class VFont extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1232);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1184);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PackedFile.class};
 		return new CPointer<PackedFile>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PackedFile.__DNA__SDNA_INDEX), __io__blockTable);
@@ -313,9 +313,9 @@ public class VFont extends CFacade {
 	{
 		long __address = ((temp_pf == null) ? 0 : temp_pf.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1216, __address);
+			__io__block.writeLong(__io__address + 1232, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1168, __address);
+			__io__block.writeLong(__io__address + 1184, __address);
 		}
 	}
 

@@ -28,7 +28,7 @@ public class LineStyleAlphaModifier_Tangent extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 741;
+	public static final int __DNA__SDNA_INDEX = 732;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

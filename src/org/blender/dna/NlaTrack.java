@@ -30,7 +30,7 @@ public class NlaTrack extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 664;
+	public static final int __DNA__SDNA_INDEX = 655;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

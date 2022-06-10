@@ -31,7 +31,7 @@ public class bGPDtriangle extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 586;
+	public static final int __DNA__SDNA_INDEX = 576;
 
 	/**
 	 * Field descriptor (offset) for struct member 'verts'.

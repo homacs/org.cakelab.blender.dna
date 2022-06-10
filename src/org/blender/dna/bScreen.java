@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=208, size64=304)
+@CMetaData(size32=224, size64=320)
 public class bScreen extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bScreen extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 294;
+	public static final int __DNA__SDNA_INDEX = 299;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -45,7 +45,7 @@ public class bScreen extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 136/176</li>
+	 * <li>Actual Size (32bit/64bit): 152/192</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -71,7 +71,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vertbase = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__vertbase = new long[]{152, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'edgebase'.
@@ -91,7 +91,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__edgebase = new long[]{144, 192};
+	public static final long[] __DNA__FIELD__edgebase = new long[]{160, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'areabase'.
@@ -111,7 +111,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__areabase = new long[]{152, 208};
+	public static final long[] __DNA__FIELD__areabase = new long[]{168, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
@@ -134,7 +134,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__regionbase = new long[]{160, 224};
+	public static final long[] __DNA__FIELD__regionbase = new long[]{176, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scene'.
@@ -159,7 +159,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scene = new long[]{168, 240};
+	public static final long[] __DNA__FIELD__scene = new long[]{184, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -182,7 +182,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{172, 248};
+	public static final long[] __DNA__FIELD__flag = new long[]{188, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'winid'.
@@ -205,13 +205,13 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__winid = new long[]{174, 250};
+	public static final long[] __DNA__FIELD__winid = new long[]{190, 266};
 
 	/**
 	 * Field descriptor (offset) for struct member 'redraws_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> User-setting for which editors get redrawn during anim playback. </p>
+	 * <p> User-setting for which editors get redrawn during animation playback. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -228,13 +228,13 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__redraws_flag = new long[]{176, 252};
+	public static final long[] __DNA__FIELD__redraws_flag = new long[]{192, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'temp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Temp screen in a temp window, don't save (like user prefs). </p>
+	 * <p> Temp screen in a temp window, don't save (like user-preferences). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,13 +251,13 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__temp = new long[]{178, 254};
+	public static final long[] __DNA__FIELD__temp = new long[]{194, 270};
 
 	/**
 	 * Field descriptor (offset) for struct member 'state'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Temp screen for image render display or fileselect. </p>
+	 * <p> Temp screen for image render display or file-select. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -274,7 +274,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__state = new long[]{179, 255};
+	public static final long[] __DNA__FIELD__state = new long[]{195, 271};
 
 	/**
 	 * Field descriptor (offset) for struct member 'do_draw'.
@@ -297,7 +297,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__do_draw = new long[]{180, 256};
+	public static final long[] __DNA__FIELD__do_draw = new long[]{196, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'do_refresh'.
@@ -320,7 +320,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__do_refresh = new long[]{181, 257};
+	public static final long[] __DNA__FIELD__do_refresh = new long[]{197, 273};
 
 	/**
 	 * Field descriptor (offset) for struct member 'do_draw_gesture'.
@@ -343,7 +343,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__do_draw_gesture = new long[]{182, 258};
+	public static final long[] __DNA__FIELD__do_draw_gesture = new long[]{198, 274};
 
 	/**
 	 * Field descriptor (offset) for struct member 'do_draw_paintcursor'.
@@ -366,7 +366,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__do_draw_paintcursor = new long[]{183, 259};
+	public static final long[] __DNA__FIELD__do_draw_paintcursor = new long[]{199, 275};
 
 	/**
 	 * Field descriptor (offset) for struct member 'do_draw_drag'.
@@ -389,7 +389,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__do_draw_drag = new long[]{184, 260};
+	public static final long[] __DNA__FIELD__do_draw_drag = new long[]{200, 276};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skip_handling'.
@@ -412,7 +412,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skip_handling = new long[]{185, 261};
+	public static final long[] __DNA__FIELD__skip_handling = new long[]{201, 277};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scrubbing'.
@@ -435,7 +435,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scrubbing = new long[]{186, 262};
+	public static final long[] __DNA__FIELD__scrubbing = new long[]{202, 278};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -455,7 +455,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{187, 263};
+	public static final long[] __DNA__FIELD___pad = new long[]{203, 279};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_region'.
@@ -478,7 +478,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_region = new long[]{188, 264};
+	public static final long[] __DNA__FIELD__active_region = new long[]{204, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'animtimer'.
@@ -501,7 +501,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__animtimer = new long[]{192, 272};
+	public static final long[] __DNA__FIELD__animtimer = new long[]{208, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'context'.
@@ -524,7 +524,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__context = new long[]{196, 280};
+	public static final long[] __DNA__FIELD__context = new long[]{212, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tool_tip'.
@@ -547,7 +547,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tool_tip = new long[]{200, 288};
+	public static final long[] __DNA__FIELD__tool_tip = new long[]{216, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
@@ -567,7 +567,7 @@ public class bScreen extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview = new long[]{204, 296};
+	public static final long[] __DNA__FIELD__preview = new long[]{220, 312};
 
 	public bScreen(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -624,9 +624,9 @@ public class bScreen extends CFacade {
 	public ListBase getVertbase() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 176, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 192, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 136, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 152, __io__block, __io__blockTable);
 		}
 	}
 
@@ -642,9 +642,9 @@ public class bScreen extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
+			__dna__offset = 192;
 		} else {
-			__dna__offset = 136;
+			__dna__offset = 152;
 		}
 		if (__io__equals(vertbase, __io__address + __dna__offset)) {
 			return;
@@ -663,9 +663,9 @@ public class bScreen extends CFacade {
 	public ListBase getEdgebase() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 192, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 208, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 144, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 160, __io__block, __io__blockTable);
 		}
 	}
 
@@ -678,9 +678,9 @@ public class bScreen extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 208;
 		} else {
-			__dna__offset = 144;
+			__dna__offset = 160;
 		}
 		if (__io__equals(edgebase, __io__address + __dna__offset)) {
 			return;
@@ -699,9 +699,9 @@ public class bScreen extends CFacade {
 	public ListBase getAreabase() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 208, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 224, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 152, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 168, __io__block, __io__blockTable);
 		}
 	}
 
@@ -714,9 +714,9 @@ public class bScreen extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 208;
+			__dna__offset = 224;
 		} else {
-			__dna__offset = 152;
+			__dna__offset = 168;
 		}
 		if (__io__equals(areabase, __io__address + __dna__offset)) {
 			return;
@@ -738,9 +738,9 @@ public class bScreen extends CFacade {
 	public ListBase getRegionbase() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 224, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 240, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 160, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 176, __io__block, __io__blockTable);
 		}
 	}
 
@@ -756,9 +756,9 @@ public class bScreen extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 224;
+			__dna__offset = 240;
 		} else {
-			__dna__offset = 160;
+			__dna__offset = 176;
 		}
 		if (__io__equals(regionbase, __io__address + __dna__offset)) {
 			return;
@@ -783,9 +783,9 @@ public class bScreen extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 240);
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 184);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Scene.class};
 		return new CPointer<Scene>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Scene.__DNA__SDNA_INDEX), __io__blockTable);
@@ -805,9 +805,9 @@ public class bScreen extends CFacade {
 	{
 		long __address = ((scene == null) ? 0 : scene.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 240, __address);
+			__io__block.writeLong(__io__address + 256, __address);
 		} else {
-			__io__block.writeLong(__io__address + 168, __address);
+			__io__block.writeLong(__io__address + 184, __address);
 		}
 	}
 
@@ -822,9 +822,9 @@ public class bScreen extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 248);
+			return __io__block.readShort(__io__address + 264);
 		} else {
-			return __io__block.readShort(__io__address + 172);
+			return __io__block.readShort(__io__address + 188);
 		}
 	}
 
@@ -839,9 +839,9 @@ public class bScreen extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 248, flag);
+			__io__block.writeShort(__io__address + 264, flag);
 		} else {
-			__io__block.writeShort(__io__address + 172, flag);
+			__io__block.writeShort(__io__address + 188, flag);
 		}
 	}
 
@@ -856,9 +856,9 @@ public class bScreen extends CFacade {
 	public short getWinid() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 250);
+			return __io__block.readShort(__io__address + 266);
 		} else {
-			return __io__block.readShort(__io__address + 174);
+			return __io__block.readShort(__io__address + 190);
 		}
 	}
 
@@ -873,9 +873,9 @@ public class bScreen extends CFacade {
 	public void setWinid(short winid) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 250, winid);
+			__io__block.writeShort(__io__address + 266, winid);
 		} else {
-			__io__block.writeShort(__io__address + 174, winid);
+			__io__block.writeShort(__io__address + 190, winid);
 		}
 	}
 
@@ -883,16 +883,16 @@ public class bScreen extends CFacade {
 	 * Get method for struct member 'redraws_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> User-setting for which editors get redrawn during anim playback. </p>
+	 * <p> User-setting for which editors get redrawn during animation playback. </p>
 	 * @see #__DNA__FIELD__redraws_flag
 	 */
 	
 	public short getRedraws_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 252);
+			return __io__block.readShort(__io__address + 268);
 		} else {
-			return __io__block.readShort(__io__address + 176);
+			return __io__block.readShort(__io__address + 192);
 		}
 	}
 
@@ -900,16 +900,16 @@ public class bScreen extends CFacade {
 	 * Set method for struct member 'redraws_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> User-setting for which editors get redrawn during anim playback. </p>
+	 * <p> User-setting for which editors get redrawn during animation playback. </p>
 	 * @see #__DNA__FIELD__redraws_flag
 	 */
 	
 	public void setRedraws_flag(short redraws_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 252, redraws_flag);
+			__io__block.writeShort(__io__address + 268, redraws_flag);
 		} else {
-			__io__block.writeShort(__io__address + 176, redraws_flag);
+			__io__block.writeShort(__io__address + 192, redraws_flag);
 		}
 	}
 
@@ -917,16 +917,16 @@ public class bScreen extends CFacade {
 	 * Get method for struct member 'temp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Temp screen in a temp window, don't save (like user prefs). </p>
+	 * <p> Temp screen in a temp window, don't save (like user-preferences). </p>
 	 * @see #__DNA__FIELD__temp
 	 */
 	
 	public byte getTemp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 254);
+			return __io__block.readByte(__io__address + 270);
 		} else {
-			return __io__block.readByte(__io__address + 178);
+			return __io__block.readByte(__io__address + 194);
 		}
 	}
 
@@ -934,16 +934,16 @@ public class bScreen extends CFacade {
 	 * Set method for struct member 'temp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Temp screen in a temp window, don't save (like user prefs). </p>
+	 * <p> Temp screen in a temp window, don't save (like user-preferences). </p>
 	 * @see #__DNA__FIELD__temp
 	 */
 	
 	public void setTemp(byte temp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 254, temp);
+			__io__block.writeByte(__io__address + 270, temp);
 		} else {
-			__io__block.writeByte(__io__address + 178, temp);
+			__io__block.writeByte(__io__address + 194, temp);
 		}
 	}
 
@@ -951,16 +951,16 @@ public class bScreen extends CFacade {
 	 * Get method for struct member 'state'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Temp screen for image render display or fileselect. </p>
+	 * <p> Temp screen for image render display or file-select. </p>
 	 * @see #__DNA__FIELD__state
 	 */
 	
 	public byte getState() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 255);
+			return __io__block.readByte(__io__address + 271);
 		} else {
-			return __io__block.readByte(__io__address + 179);
+			return __io__block.readByte(__io__address + 195);
 		}
 	}
 
@@ -968,16 +968,16 @@ public class bScreen extends CFacade {
 	 * Set method for struct member 'state'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Temp screen for image render display or fileselect. </p>
+	 * <p> Temp screen for image render display or file-select. </p>
 	 * @see #__DNA__FIELD__state
 	 */
 	
 	public void setState(byte state) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 255, state);
+			__io__block.writeByte(__io__address + 271, state);
 		} else {
-			__io__block.writeByte(__io__address + 179, state);
+			__io__block.writeByte(__io__address + 195, state);
 		}
 	}
 
@@ -992,9 +992,9 @@ public class bScreen extends CFacade {
 	public byte getDo_draw() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 256);
+			return __io__block.readByte(__io__address + 272);
 		} else {
-			return __io__block.readByte(__io__address + 180);
+			return __io__block.readByte(__io__address + 196);
 		}
 	}
 
@@ -1009,9 +1009,9 @@ public class bScreen extends CFacade {
 	public void setDo_draw(byte do_draw) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 256, do_draw);
+			__io__block.writeByte(__io__address + 272, do_draw);
 		} else {
-			__io__block.writeByte(__io__address + 180, do_draw);
+			__io__block.writeByte(__io__address + 196, do_draw);
 		}
 	}
 
@@ -1026,9 +1026,9 @@ public class bScreen extends CFacade {
 	public byte getDo_refresh() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 257);
+			return __io__block.readByte(__io__address + 273);
 		} else {
-			return __io__block.readByte(__io__address + 181);
+			return __io__block.readByte(__io__address + 197);
 		}
 	}
 
@@ -1043,9 +1043,9 @@ public class bScreen extends CFacade {
 	public void setDo_refresh(byte do_refresh) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 257, do_refresh);
+			__io__block.writeByte(__io__address + 273, do_refresh);
 		} else {
-			__io__block.writeByte(__io__address + 181, do_refresh);
+			__io__block.writeByte(__io__address + 197, do_refresh);
 		}
 	}
 
@@ -1060,9 +1060,9 @@ public class bScreen extends CFacade {
 	public byte getDo_draw_gesture() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 258);
+			return __io__block.readByte(__io__address + 274);
 		} else {
-			return __io__block.readByte(__io__address + 182);
+			return __io__block.readByte(__io__address + 198);
 		}
 	}
 
@@ -1077,9 +1077,9 @@ public class bScreen extends CFacade {
 	public void setDo_draw_gesture(byte do_draw_gesture) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 258, do_draw_gesture);
+			__io__block.writeByte(__io__address + 274, do_draw_gesture);
 		} else {
-			__io__block.writeByte(__io__address + 182, do_draw_gesture);
+			__io__block.writeByte(__io__address + 198, do_draw_gesture);
 		}
 	}
 
@@ -1094,9 +1094,9 @@ public class bScreen extends CFacade {
 	public byte getDo_draw_paintcursor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 259);
+			return __io__block.readByte(__io__address + 275);
 		} else {
-			return __io__block.readByte(__io__address + 183);
+			return __io__block.readByte(__io__address + 199);
 		}
 	}
 
@@ -1111,9 +1111,9 @@ public class bScreen extends CFacade {
 	public void setDo_draw_paintcursor(byte do_draw_paintcursor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 259, do_draw_paintcursor);
+			__io__block.writeByte(__io__address + 275, do_draw_paintcursor);
 		} else {
-			__io__block.writeByte(__io__address + 183, do_draw_paintcursor);
+			__io__block.writeByte(__io__address + 199, do_draw_paintcursor);
 		}
 	}
 
@@ -1128,9 +1128,9 @@ public class bScreen extends CFacade {
 	public byte getDo_draw_drag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 260);
+			return __io__block.readByte(__io__address + 276);
 		} else {
-			return __io__block.readByte(__io__address + 184);
+			return __io__block.readByte(__io__address + 200);
 		}
 	}
 
@@ -1145,9 +1145,9 @@ public class bScreen extends CFacade {
 	public void setDo_draw_drag(byte do_draw_drag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 260, do_draw_drag);
+			__io__block.writeByte(__io__address + 276, do_draw_drag);
 		} else {
-			__io__block.writeByte(__io__address + 184, do_draw_drag);
+			__io__block.writeByte(__io__address + 200, do_draw_drag);
 		}
 	}
 
@@ -1162,9 +1162,9 @@ public class bScreen extends CFacade {
 	public byte getSkip_handling() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 261);
+			return __io__block.readByte(__io__address + 277);
 		} else {
-			return __io__block.readByte(__io__address + 185);
+			return __io__block.readByte(__io__address + 201);
 		}
 	}
 
@@ -1179,9 +1179,9 @@ public class bScreen extends CFacade {
 	public void setSkip_handling(byte skip_handling) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 261, skip_handling);
+			__io__block.writeByte(__io__address + 277, skip_handling);
 		} else {
-			__io__block.writeByte(__io__address + 185, skip_handling);
+			__io__block.writeByte(__io__address + 201, skip_handling);
 		}
 	}
 
@@ -1196,9 +1196,9 @@ public class bScreen extends CFacade {
 	public byte getScrubbing() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 262);
+			return __io__block.readByte(__io__address + 278);
 		} else {
-			return __io__block.readByte(__io__address + 186);
+			return __io__block.readByte(__io__address + 202);
 		}
 	}
 
@@ -1213,9 +1213,9 @@ public class bScreen extends CFacade {
 	public void setScrubbing(byte scrubbing) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 262, scrubbing);
+			__io__block.writeByte(__io__address + 278, scrubbing);
 		} else {
-			__io__block.writeByte(__io__address + 186, scrubbing);
+			__io__block.writeByte(__io__address + 202, scrubbing);
 		}
 	}
 
@@ -1231,9 +1231,9 @@ public class bScreen extends CFacade {
 			1
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 263, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 279, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 187, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 203, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1246,9 +1246,9 @@ public class bScreen extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 263;
+			__dna__offset = 279;
 		} else {
-			__dna__offset = 187;
+			__dna__offset = 203;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -1271,9 +1271,9 @@ public class bScreen extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 264);
+			__dna__targetAddress = __io__block.readLong(__io__address + 280);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 188);
+			__dna__targetAddress = __io__block.readLong(__io__address + 204);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ARegion.class};
 		return new CPointer<ARegion>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ARegion.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1291,9 +1291,9 @@ public class bScreen extends CFacade {
 	{
 		long __address = ((active_region == null) ? 0 : active_region.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 264, __address);
+			__io__block.writeLong(__io__address + 280, __address);
 		} else {
-			__io__block.writeLong(__io__address + 188, __address);
+			__io__block.writeLong(__io__address + 204, __address);
 		}
 	}
 
@@ -1309,9 +1309,9 @@ public class bScreen extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 288);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1329,9 +1329,9 @@ public class bScreen extends CFacade {
 	{
 		long __address = ((animtimer == null) ? 0 : animtimer.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 272, __address);
+			__io__block.writeLong(__io__address + 288, __address);
 		} else {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		}
 	}
 
@@ -1347,9 +1347,9 @@ public class bScreen extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 280);
+			__dna__targetAddress = __io__block.readLong(__io__address + 296);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 196);
+			__dna__targetAddress = __io__block.readLong(__io__address + 212);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1367,9 +1367,9 @@ public class bScreen extends CFacade {
 	{
 		long __address = ((context == null) ? 0 : context.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 280, __address);
+			__io__block.writeLong(__io__address + 296, __address);
 		} else {
-			__io__block.writeLong(__io__address + 196, __address);
+			__io__block.writeLong(__io__address + 212, __address);
 		}
 	}
 
@@ -1385,9 +1385,9 @@ public class bScreen extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 288);
+			__dna__targetAddress = __io__block.readLong(__io__address + 304);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 216);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1405,9 +1405,9 @@ public class bScreen extends CFacade {
 	{
 		long __address = ((tool_tip == null) ? 0 : tool_tip.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 288, __address);
+			__io__block.writeLong(__io__address + 304, __address);
 		} else {
-			__io__block.writeLong(__io__address + 200, __address);
+			__io__block.writeLong(__io__address + 216, __address);
 		}
 	}
 
@@ -1420,9 +1420,9 @@ public class bScreen extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 296);
+			__dna__targetAddress = __io__block.readLong(__io__address + 312);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 204);
+			__dna__targetAddress = __io__block.readLong(__io__address + 220);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PreviewImage.class};
 		return new CPointer<PreviewImage>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PreviewImage.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1437,9 +1437,9 @@ public class bScreen extends CFacade {
 	{
 		long __address = ((preview == null) ? 0 : preview.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 296, __address);
+			__io__block.writeLong(__io__address + 312, __address);
 		} else {
-			__io__block.writeLong(__io__address + 204, __address);
+			__io__block.writeLong(__io__address + 220, __address);
 		}
 	}
 

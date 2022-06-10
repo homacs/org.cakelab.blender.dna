@@ -27,7 +27,7 @@ public class NodeTexMusgrave extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 458;
+	public static final int __DNA__SDNA_INDEX = 464;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.

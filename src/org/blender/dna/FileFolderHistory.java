@@ -30,7 +30,7 @@ public class FileFolderHistory extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 243;
+	public static final int __DNA__SDNA_INDEX = 248;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

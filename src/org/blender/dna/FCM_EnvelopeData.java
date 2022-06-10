@@ -29,7 +29,7 @@ public class FCM_EnvelopeData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 651;
+	public static final int __DNA__SDNA_INDEX = 642;
 
 	/**
 	 * Field descriptor (offset) for struct member 'min'.

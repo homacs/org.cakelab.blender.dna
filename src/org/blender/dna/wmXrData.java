@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> #ifdef WITH_XR_OPENXR </p>
  */
 
-@CMetaData(size32=984, size64=1000)
+@CMetaData(size32=992, size64=1008)
 public class wmXrData extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class wmXrData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 639;
+	public static final int __DNA__SDNA_INDEX = 630;
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -72,7 +72,7 @@ public class wmXrData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'session_settings'</li>
 	 * <li>Signature: 'XrSessionSettings'</li>
-	 * <li>Actual Size (32bit/64bit): 980/992</li>
+	 * <li>Actual Size (32bit/64bit): 988/1000</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__session_settings = new long[]{4, 8};

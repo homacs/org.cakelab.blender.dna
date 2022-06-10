@@ -30,7 +30,7 @@ public class wmKeyMapItem extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 642;
+	public static final int __DNA__SDNA_INDEX = 633;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -199,22 +199,45 @@ public class wmKeyMapItem extends CFacade {
 	 * <pre>
 	 * wmKeyMapItem wmkeymapitem = ...;
 	 * CPointer&lt;Object&gt; p = wmkeymapitem.__dna__addressof(wmKeyMapItem.__DNA__FIELD__val);
-	 * CPointer&lt;Short&gt; p_val = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_val = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'val'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'int8_t'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__val = new long[]{144, 156};
 
 	/**
+	 * Field descriptor (offset) for struct member 'direction'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p><code></code> . </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * wmKeyMapItem wmkeymapitem = ...;
+	 * CPointer&lt;Object&gt; p = wmkeymapitem.__dna__addressof(wmKeyMapItem.__DNA__FIELD__direction);
+	 * CPointer&lt;Byte&gt; p_direction = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'direction'</li>
+	 * <li>Signature: 'int8_t'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__direction = new long[]{145, 157};
+
+	/**
 	 * Field descriptor (offset) for struct member 'shift'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p><code></code>  also known as apple, windows-key or super, value denotes order of pressed. </p>
+	 * <p><code></code>  also known as apple, windows-key or super. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -708,12 +731,12 @@ public class wmKeyMapItem extends CFacade {
 	 * @see #__DNA__FIELD__val
 	 */
 	
-	public short getVal() throws IOException
+	public byte getVal() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 156);
+			return __io__block.readByte(__io__address + 156);
 		} else {
-			return __io__block.readShort(__io__address + 144);
+			return __io__block.readByte(__io__address + 144);
 		}
 	}
 
@@ -725,12 +748,46 @@ public class wmKeyMapItem extends CFacade {
 	 * @see #__DNA__FIELD__val
 	 */
 	
-	public void setVal(short val) throws IOException
+	public void setVal(byte val) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 156, val);
+			__io__block.writeByte(__io__address + 156, val);
 		} else {
-			__io__block.writeShort(__io__address + 144, val);
+			__io__block.writeByte(__io__address + 144, val);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'direction'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p><code></code> . </p>
+	 * @see #__DNA__FIELD__direction
+	 */
+	
+	public byte getDirection() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 157);
+		} else {
+			return __io__block.readByte(__io__address + 145);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'direction'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p><code></code> . </p>
+	 * @see #__DNA__FIELD__direction
+	 */
+	
+	public void setDirection(byte direction) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 157, direction);
+		} else {
+			__io__block.writeByte(__io__address + 145, direction);
 		}
 	}
 
@@ -738,7 +795,7 @@ public class wmKeyMapItem extends CFacade {
 	 * Get method for struct member 'shift'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p><code></code>  also known as apple, windows-key or super, value denotes order of pressed. </p>
+	 * <p><code></code>  also known as apple, windows-key or super. </p>
 	 * @see #__DNA__FIELD__shift
 	 */
 	
@@ -755,7 +812,7 @@ public class wmKeyMapItem extends CFacade {
 	 * Set method for struct member 'shift'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p><code></code>  also known as apple, windows-key or super, value denotes order of pressed. </p>
+	 * <p><code></code>  also known as apple, windows-key or super. </p>
 	 * @see #__DNA__FIELD__shift
 	 */
 	

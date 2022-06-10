@@ -30,7 +30,7 @@ public class bLockTrackConstraint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 381;
+	public static final int __DNA__SDNA_INDEX = 387;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.

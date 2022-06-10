@@ -27,7 +27,7 @@ public class FreestyleFace extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 92;
+	public static final int __DNA__SDNA_INDEX = 95;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.

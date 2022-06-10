@@ -30,7 +30,7 @@ public class LineStyleGeometryModifier_Sampling extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 746;
+	public static final int __DNA__SDNA_INDEX = 737;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

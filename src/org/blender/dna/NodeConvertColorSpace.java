@@ -28,7 +28,7 @@ public class NodeConvertColorSpace extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 445;
+	public static final int __DNA__SDNA_INDEX = 451;
 
 	/**
 	 * Field descriptor (offset) for struct member 'from_color_space'.

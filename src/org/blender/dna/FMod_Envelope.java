@@ -29,7 +29,7 @@ public class FMod_Envelope extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 652;
+	public static final int __DNA__SDNA_INDEX = 643;
 
 	/**
 	 * Field descriptor (offset) for struct member 'data'.

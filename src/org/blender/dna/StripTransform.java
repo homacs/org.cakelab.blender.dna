@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=28, size64=28)
+@CMetaData(size32=32, size64=32)
 public class StripTransform extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class StripTransform extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 313;
+	public static final int __DNA__SDNA_INDEX = 318;
 
 	/**
 	 * Field descriptor (offset) for struct member 'xofs'.
@@ -39,12 +39,12 @@ public class StripTransform extends CFacade {
 	 * <pre>
 	 * StripTransform striptransform = ...;
 	 * CPointer&lt;Object&gt; p = striptransform.__dna__addressof(StripTransform.__DNA__FIELD__xofs);
-	 * CPointer&lt;Integer&gt; p_xofs = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Float&gt; p_xofs = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'xofs'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
@@ -59,12 +59,12 @@ public class StripTransform extends CFacade {
 	 * <pre>
 	 * StripTransform striptransform = ...;
 	 * CPointer&lt;Object&gt; p = striptransform.__dna__addressof(StripTransform.__DNA__FIELD__yofs);
-	 * CPointer&lt;Integer&gt; p_yofs = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Float&gt; p_yofs = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'yofs'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
@@ -153,6 +153,26 @@ public class StripTransform extends CFacade {
 	 */
 	public static final long[] __DNA__FIELD__origin = new long[]{20, 20};
 
+	/**
+	 * Field descriptor (offset) for struct member 'filter'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * StripTransform striptransform = ...;
+	 * CPointer&lt;Object&gt; p = striptransform.__dna__addressof(StripTransform.__DNA__FIELD__filter);
+	 * CPointer&lt;Integer&gt; p_filter = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'filter'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__filter = new long[]{28, 28};
+
 	public StripTransform(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
 	}
@@ -166,12 +186,12 @@ public class StripTransform extends CFacade {
 	 * @see #__DNA__FIELD__xofs
 	 */
 	
-	public int getXofs() throws IOException
+	public float getXofs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 0);
+			return __io__block.readFloat(__io__address + 0);
 		} else {
-			return __io__block.readInt(__io__address + 0);
+			return __io__block.readFloat(__io__address + 0);
 		}
 	}
 
@@ -180,12 +200,12 @@ public class StripTransform extends CFacade {
 	 * @see #__DNA__FIELD__xofs
 	 */
 	
-	public void setXofs(int xofs) throws IOException
+	public void setXofs(float xofs) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 0, xofs);
+			__io__block.writeFloat(__io__address + 0, xofs);
 		} else {
-			__io__block.writeInt(__io__address + 0, xofs);
+			__io__block.writeFloat(__io__address + 0, xofs);
 		}
 	}
 
@@ -194,12 +214,12 @@ public class StripTransform extends CFacade {
 	 * @see #__DNA__FIELD__yofs
 	 */
 	
-	public int getYofs() throws IOException
+	public float getYofs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 4);
+			return __io__block.readFloat(__io__address + 4);
 		} else {
-			return __io__block.readInt(__io__address + 4);
+			return __io__block.readFloat(__io__address + 4);
 		}
 	}
 
@@ -208,12 +228,12 @@ public class StripTransform extends CFacade {
 	 * @see #__DNA__FIELD__yofs
 	 */
 	
-	public void setYofs(int yofs) throws IOException
+	public void setYofs(float yofs) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 4, yofs);
+			__io__block.writeFloat(__io__address + 4, yofs);
 		} else {
-			__io__block.writeInt(__io__address + 4, yofs);
+			__io__block.writeFloat(__io__address + 4, yofs);
 		}
 	}
 
@@ -344,6 +364,34 @@ public class StripTransform extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, origin);
 		} else {
 			__io__generic__copy( getOrigin(), origin);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'filter'.
+	 * @see #__DNA__FIELD__filter
+	 */
+	
+	public int getFilter() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 28);
+		} else {
+			return __io__block.readInt(__io__address + 28);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'filter'.
+	 * @see #__DNA__FIELD__filter
+	 */
+	
+	public void setFilter(int filter) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 28, filter);
+		} else {
+			__io__block.writeInt(__io__address + 28, filter);
 		}
 	}
 

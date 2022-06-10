@@ -30,7 +30,7 @@ public class View3D extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 227;
+	public static final int __DNA__SDNA_INDEX = 232;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

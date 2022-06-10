@@ -32,7 +32,7 @@ public class ColorBand extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 50;
+	public static final int __DNA__SDNA_INDEX = 52;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tot'.

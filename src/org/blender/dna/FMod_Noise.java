@@ -29,7 +29,7 @@ public class FMod_Noise extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 656;
+	public static final int __DNA__SDNA_INDEX = 647;
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.

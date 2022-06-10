@@ -28,7 +28,7 @@ public class KeyBlock extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 27;
+	public static final int __DNA__SDNA_INDEX = 29;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

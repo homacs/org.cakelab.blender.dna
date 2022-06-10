@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=152, size64=200)
+@CMetaData(size32=168, size64=216)
 public class Palette extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class Palette extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 563;
+	public static final int __DNA__SDNA_INDEX = 553;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -45,7 +45,7 @@ public class Palette extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 136/176</li>
+	 * <li>Actual Size (32bit/64bit): 152/192</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -73,7 +73,7 @@ public class Palette extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__colors = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__colors = new long[]{152, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_color'.
@@ -93,7 +93,7 @@ public class Palette extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_color = new long[]{144, 192};
+	public static final long[] __DNA__FIELD__active_color = new long[]{160, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -113,7 +113,7 @@ public class Palette extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{148, 196};
+	public static final long[] __DNA__FIELD___pad = new long[]{164, 212};
 
 	public Palette(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -172,9 +172,9 @@ public class Palette extends CFacade {
 	public ListBase getColors() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 176, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 192, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 136, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 152, __io__block, __io__blockTable);
 		}
 	}
 
@@ -192,9 +192,9 @@ public class Palette extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
+			__dna__offset = 192;
 		} else {
-			__dna__offset = 136;
+			__dna__offset = 152;
 		}
 		if (__io__equals(colors, __io__address + __dna__offset)) {
 			return;
@@ -213,9 +213,9 @@ public class Palette extends CFacade {
 	public int getActive_color() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 192);
+			return __io__block.readInt(__io__address + 208);
 		} else {
-			return __io__block.readInt(__io__address + 144);
+			return __io__block.readInt(__io__address + 160);
 		}
 	}
 
@@ -227,9 +227,9 @@ public class Palette extends CFacade {
 	public void setActive_color(int active_color) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 192, active_color);
+			__io__block.writeInt(__io__address + 208, active_color);
 		} else {
-			__io__block.writeInt(__io__address + 144, active_color);
+			__io__block.writeInt(__io__address + 160, active_color);
 		}
 	}
 
@@ -245,9 +245,9 @@ public class Palette extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -260,9 +260,9 @@ public class Palette extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 196;
+			__dna__offset = 212;
 		} else {
-			__dna__offset = 148;
+			__dna__offset = 164;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

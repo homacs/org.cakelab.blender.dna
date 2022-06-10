@@ -27,7 +27,7 @@ public class CBData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 49;
+	public static final int __DNA__SDNA_INDEX = 51;
 
 	/**
 	 * Field descriptor (offset) for struct member 'r'.

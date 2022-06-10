@@ -28,7 +28,7 @@ public class Panel_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 298;
+	public static final int __DNA__SDNA_INDEX = 303;
 
 	/**
 	 * Field descriptor (offset) for struct member 'region_ofsx'.

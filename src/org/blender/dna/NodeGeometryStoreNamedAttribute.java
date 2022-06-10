@@ -10,76 +10,76 @@ import org.cakelab.blender.nio.CPointer;
 
 
 /**
- * Generated facet for DNA struct type 'NodeAttributeMapRange'.
+ * Generated facet for DNA struct type 'NodeGeometryStoreNamedAttribute'.
  * 
  * <h3>Class Documentation</h3>
  * 
  */
 
 @CMetaData(size32=2, size64=2)
-public class NodeAttributeMapRange extends CFacade {
+public class NodeGeometryStoreNamedAttribute extends CFacade {
 
 	/**
-	 * This is the sdna index of the struct NodeAttributeMapRange.
+	 * This is the sdna index of the struct NodeGeometryStoreNamedAttribute.
 	 * <p>
-	 * It is required when allocating a new block to store data for NodeAttributeMapRange.
+	 * It is required when allocating a new block to store data for NodeGeometryStoreNamedAttribute.
 	 * </p>
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 487;
+	public static final int __DNA__SDNA_INDEX = 530;
 
 	/**
 	 * Field descriptor (offset) for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> GeometryNodeAttributeDataType </p>
+	 * <p> CustomDataType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
-	 * NodeAttributeMapRange nodeattributemaprange = ...;
-	 * CPointer&lt;Object&gt; p = nodeattributemaprange.__dna__addressof(NodeAttributeMapRange.__DNA__FIELD__data_type);
+	 * NodeGeometryStoreNamedAttribute nodegeometrystorenamedattribute = ...;
+	 * CPointer&lt;Object&gt; p = nodegeometrystorenamedattribute.__dna__addressof(NodeGeometryStoreNamedAttribute.__DNA__FIELD__data_type);
 	 * CPointer&lt;Byte&gt; p_data_type = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'data_type'</li>
-	 * <li>Signature: 'uchar'</li>
+	 * <li>Signature: 'int8_t'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__data_type = new long[]{0, 0};
 
 	/**
-	 * Field descriptor (offset) for struct member 'interpolation_type'.
+	 * Field descriptor (offset) for struct member 'domain'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> NodeMapRangeType. </p>
+	 * <p> AttributeDomain. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
-	 * NodeAttributeMapRange nodeattributemaprange = ...;
-	 * CPointer&lt;Object&gt; p = nodeattributemaprange.__dna__addressof(NodeAttributeMapRange.__DNA__FIELD__interpolation_type);
-	 * CPointer&lt;Byte&gt; p_interpolation_type = p.cast(new Class[]{Byte.class});
+	 * NodeGeometryStoreNamedAttribute nodegeometrystorenamedattribute = ...;
+	 * CPointer&lt;Object&gt; p = nodegeometrystorenamedattribute.__dna__addressof(NodeGeometryStoreNamedAttribute.__DNA__FIELD__domain);
+	 * CPointer&lt;Byte&gt; p_domain = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'interpolation_type'</li>
-	 * <li>Signature: 'uchar'</li>
+	 * <li>Field: 'domain'</li>
+	 * <li>Signature: 'int8_t'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__interpolation_type = new long[]{1, 1};
+	public static final long[] __DNA__FIELD__domain = new long[]{1, 1};
 
-	public NodeAttributeMapRange(long __address, Block __block, BlockTable __blockTable) {
+	public NodeGeometryStoreNamedAttribute(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
 	}
 
-	protected NodeAttributeMapRange(NodeAttributeMapRange that) {
+	protected NodeGeometryStoreNamedAttribute(NodeGeometryStoreNamedAttribute that) {
 		super(that.__io__address, that.__io__block, that.__io__blockTable);
 	}
 
@@ -87,7 +87,7 @@ public class NodeAttributeMapRange extends CFacade {
 	 * Get method for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> GeometryNodeAttributeDataType </p>
+	 * <p> CustomDataType. </p>
 	 * @see #__DNA__FIELD__data_type
 	 */
 	
@@ -104,7 +104,7 @@ public class NodeAttributeMapRange extends CFacade {
 	 * Set method for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> GeometryNodeAttributeDataType </p>
+	 * <p> CustomDataType. </p>
 	 * @see #__DNA__FIELD__data_type
 	 */
 	
@@ -118,14 +118,14 @@ public class NodeAttributeMapRange extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'interpolation_type'.
+	 * Get method for struct member 'domain'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> NodeMapRangeType. </p>
-	 * @see #__DNA__FIELD__interpolation_type
+	 * <p> AttributeDomain. </p>
+	 * @see #__DNA__FIELD__domain
 	 */
 	
-	public byte getInterpolation_type() throws IOException
+	public byte getDomain() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 1);
@@ -135,27 +135,27 @@ public class NodeAttributeMapRange extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'interpolation_type'.
+	 * Set method for struct member 'domain'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> NodeMapRangeType. </p>
-	 * @see #__DNA__FIELD__interpolation_type
+	 * <p> AttributeDomain. </p>
+	 * @see #__DNA__FIELD__domain
 	 */
 	
-	public void setInterpolation_type(byte interpolation_type) throws IOException
+	public void setDomain(byte domain) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1, interpolation_type);
+			__io__block.writeByte(__io__address + 1, domain);
 		} else {
-			__io__block.writeByte(__io__address + 1, interpolation_type);
+			__io__block.writeByte(__io__address + 1, domain);
 		}
 	}
 
 	/**
 	 * Instantiates a pointer on this instance.
 	 */
-	public CPointer<NodeAttributeMapRange> __io__addressof() {
-		return new CPointer<NodeAttributeMapRange>(__io__address, new Class[]{NodeAttributeMapRange.class}, __io__block, __io__blockTable);
+	public CPointer<NodeGeometryStoreNamedAttribute> __io__addressof() {
+		return new CPointer<NodeGeometryStoreNamedAttribute>(__io__address, new Class[]{NodeGeometryStoreNamedAttribute.class}, __io__block, __io__blockTable);
 	}
 
 }

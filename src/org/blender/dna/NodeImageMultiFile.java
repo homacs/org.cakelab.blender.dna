@@ -19,7 +19,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> XXX: first struct fields should match {@link NodeImageFile}  to ensure forward compatibility. </p>
  */
 
-@CMetaData(size32=1288, size64=1296)
+@CMetaData(size32=1360, size64=1368)
 public class NodeImageMultiFile extends CFacade {
 
 	/**
@@ -30,7 +30,7 @@ public class NodeImageMultiFile extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 432;
+	public static final int __DNA__SDNA_INDEX = 438;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base_path'.
@@ -70,7 +70,7 @@ public class NodeImageMultiFile extends CFacade {
 	 * <ul>
 	 * <li>Field: 'format'</li>
 	 * <li>Signature: 'ImageFormatData'</li>
-	 * <li>Actual Size (32bit/64bit): 248/256</li>
+	 * <li>Actual Size (32bit/64bit): 320/328</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__format = new long[]{1024, 1024};
@@ -98,7 +98,7 @@ public class NodeImageMultiFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sfra = new long[]{1272, 1280};
+	public static final long[] __DNA__FIELD__sfra = new long[]{1344, 1352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'efra'.
@@ -123,7 +123,7 @@ public class NodeImageMultiFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__efra = new long[]{1276, 1284};
+	public static final long[] __DNA__FIELD__efra = new long[]{1348, 1356};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_input'.
@@ -146,7 +146,7 @@ public class NodeImageMultiFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_input = new long[]{1280, 1288};
+	public static final long[] __DNA__FIELD__active_input = new long[]{1352, 1360};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -166,7 +166,7 @@ public class NodeImageMultiFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{1284, 1292};
+	public static final long[] __DNA__FIELD___pad = new long[]{1356, 1364};
 
 	public NodeImageMultiFile(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -271,9 +271,9 @@ public class NodeImageMultiFile extends CFacade {
 	public int getSfra() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1280);
+			return __io__block.readInt(__io__address + 1352);
 		} else {
-			return __io__block.readInt(__io__address + 1272);
+			return __io__block.readInt(__io__address + 1344);
 		}
 	}
 
@@ -290,9 +290,9 @@ public class NodeImageMultiFile extends CFacade {
 	public void setSfra(int sfra) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1280, sfra);
+			__io__block.writeInt(__io__address + 1352, sfra);
 		} else {
-			__io__block.writeInt(__io__address + 1272, sfra);
+			__io__block.writeInt(__io__address + 1344, sfra);
 		}
 	}
 
@@ -309,9 +309,9 @@ public class NodeImageMultiFile extends CFacade {
 	public int getEfra() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1284);
+			return __io__block.readInt(__io__address + 1356);
 		} else {
-			return __io__block.readInt(__io__address + 1276);
+			return __io__block.readInt(__io__address + 1348);
 		}
 	}
 
@@ -328,9 +328,9 @@ public class NodeImageMultiFile extends CFacade {
 	public void setEfra(int efra) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1284, efra);
+			__io__block.writeInt(__io__address + 1356, efra);
 		} else {
-			__io__block.writeInt(__io__address + 1276, efra);
+			__io__block.writeInt(__io__address + 1348, efra);
 		}
 	}
 
@@ -345,9 +345,9 @@ public class NodeImageMultiFile extends CFacade {
 	public int getActive_input() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1288);
+			return __io__block.readInt(__io__address + 1360);
 		} else {
-			return __io__block.readInt(__io__address + 1280);
+			return __io__block.readInt(__io__address + 1352);
 		}
 	}
 
@@ -362,9 +362,9 @@ public class NodeImageMultiFile extends CFacade {
 	public void setActive_input(int active_input) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1288, active_input);
+			__io__block.writeInt(__io__address + 1360, active_input);
 		} else {
-			__io__block.writeInt(__io__address + 1280, active_input);
+			__io__block.writeInt(__io__address + 1352, active_input);
 		}
 	}
 
@@ -380,9 +380,9 @@ public class NodeImageMultiFile extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1292, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1364, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1284, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -395,9 +395,9 @@ public class NodeImageMultiFile extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1292;
+			__dna__offset = 1364;
 		} else {
-			__dna__offset = 1284;
+			__dna__offset = 1356;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

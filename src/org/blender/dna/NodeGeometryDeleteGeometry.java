@@ -27,7 +27,7 @@ public class NodeGeometryDeleteGeometry extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 545;
+	public static final int __DNA__SDNA_INDEX = 533;
 
 	/**
 	 * Field descriptor (offset) for struct member 'domain'.

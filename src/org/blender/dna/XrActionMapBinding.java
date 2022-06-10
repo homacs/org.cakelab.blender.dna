@@ -15,12 +15,9 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * 
- * <h4>Blender Source Code</h4>
- * <p><hr/> 
- *  </p>
  */
 
-@CMetaData(size32=744, size64=752)
+@CMetaData(size32=368, size64=384)
 public class XrActionMapBinding extends CFacade {
 
 	/**
@@ -31,7 +28,7 @@ public class XrActionMapBinding extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 786;
+	public static final int __DNA__SDNA_INDEX = 780;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -124,52 +121,29 @@ public class XrActionMapBinding extends CFacade {
 	public static final long[] __DNA__FIELD__profile = new long[]{72, 80};
 
 	/**
-	 * Field descriptor (offset) for struct member 'component_path0'.
+	 * Field descriptor (offset) for struct member 'component_paths'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * OpenXR component path
+	 * (read-only)    OpenXR component paths
 	 * <h4>Blender Source Code</h4>
-	 * <p> OpenXR component paths. </p>
+	 * <p> OpenXR component paths. {@link XrComponentPath}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * XrActionMapBinding xractionmapbinding = ...;
-	 * CPointer&lt;Object&gt; p = xractionmapbinding.__dna__addressof(XrActionMapBinding.__DNA__FIELD__component_path0);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_component_path0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = xractionmapbinding.__dna__addressof(XrActionMapBinding.__DNA__FIELD__component_paths);
+	 * CPointer&lt;ListBase&gt; p_component_paths = p.cast(new Class[]{ListBase.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'component_path0'</li>
-	 * <li>Signature: 'char[192]'</li>
-	 * <li>Actual Size (32bit/64bit): 192/192</li>
+	 * <li>Field: 'component_paths'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__component_path0 = new long[]{328, 336};
-
-	/**
-	 * Field descriptor (offset) for struct member 'component_path1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API</h4>
-	 * OpenXR component path
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * XrActionMapBinding xractionmapbinding = ...;
-	 * CPointer&lt;Object&gt; p = xractionmapbinding.__dna__addressof(XrActionMapBinding.__DNA__FIELD__component_path1);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_component_path1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'component_path1'</li>
-	 * <li>Signature: 'char[192]'</li>
-	 * <li>Actual Size (32bit/64bit): 192/192</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__component_path1 = new long[]{520, 528};
+	public static final long[] __DNA__FIELD__component_paths = new long[]{328, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member 'float_threshold'.
@@ -192,7 +166,7 @@ public class XrActionMapBinding extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__float_threshold = new long[]{712, 720};
+	public static final long[] __DNA__FIELD__float_threshold = new long[]{336, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'axis_flag'.
@@ -215,7 +189,7 @@ public class XrActionMapBinding extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__axis_flag = new long[]{716, 724};
+	public static final long[] __DNA__FIELD__axis_flag = new long[]{340, 356};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -235,7 +209,7 @@ public class XrActionMapBinding extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{718, 726};
+	public static final long[] __DNA__FIELD___pad = new long[]{342, 358};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pose_location'.
@@ -258,7 +232,7 @@ public class XrActionMapBinding extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pose_location = new long[]{720, 728};
+	public static final long[] __DNA__FIELD__pose_location = new long[]{344, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pose_rotation'.
@@ -278,7 +252,7 @@ public class XrActionMapBinding extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pose_rotation = new long[]{732, 740};
+	public static final long[] __DNA__FIELD__pose_rotation = new long[]{356, 372};
 
 	public XrActionMapBinding(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -453,39 +427,35 @@ public class XrActionMapBinding extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'component_path0'.
+	 * Get method for struct member 'component_paths'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * OpenXR component path
+	 * (read-only)    OpenXR component paths
 	 * <h4>Blender Source Code</h4>
-	 * <p> OpenXR component paths. </p>
-	 * @see #__DNA__FIELD__component_path0
+	 * <p> OpenXR component paths. {@link XrComponentPath}  </p>
+	 * @see #__DNA__FIELD__component_paths
 	 */
 	
-	public CArrayFacade<Byte> getComponent_path0() throws IOException
+	public ListBase getComponent_paths() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			192
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 336, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 336, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 328, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 328, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'component_path0'.
+	 * Set method for struct member 'component_paths'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * OpenXR component path
+	 * (read-only)    OpenXR component paths
 	 * <h4>Blender Source Code</h4>
-	 * <p> OpenXR component paths. </p>
-	 * @see #__DNA__FIELD__component_path0
+	 * <p> OpenXR component paths. {@link XrComponentPath}  </p>
+	 * @see #__DNA__FIELD__component_paths
 	 */
 	
-	public void setComponent_path0(CArrayFacade<Byte> component_path0) throws IOException
+	public void setComponent_paths(ListBase component_paths) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -493,58 +463,12 @@ public class XrActionMapBinding extends CFacade {
 		} else {
 			__dna__offset = 328;
 		}
-		if (__io__equals(component_path0, __io__address + __dna__offset)) {
+		if (__io__equals(component_paths, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, component_path0)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, component_path0);
+		} else if (__io__same__encoding(this, component_paths)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, component_paths);
 		} else {
-			__io__generic__copy( getComponent_path0(), component_path0);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'component_path1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API</h4>
-	 * OpenXR component path
-	 * @see #__DNA__FIELD__component_path1
-	 */
-	
-	public CArrayFacade<Byte> getComponent_path1() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			192
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 528, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 520, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'component_path1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API</h4>
-	 * OpenXR component path
-	 * @see #__DNA__FIELD__component_path1
-	 */
-	
-	public void setComponent_path1(CArrayFacade<Byte> component_path1) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 528;
-		} else {
-			__dna__offset = 520;
-		}
-		if (__io__equals(component_path1, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, component_path1)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, component_path1);
-		} else {
-			__io__generic__copy( getComponent_path1(), component_path1);
+			__io__generic__copy( getComponent_paths(), component_paths);
 		}
 	}
 
@@ -559,9 +483,9 @@ public class XrActionMapBinding extends CFacade {
 	public float getFloat_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 720);
+			return __io__block.readFloat(__io__address + 352);
 		} else {
-			return __io__block.readFloat(__io__address + 712);
+			return __io__block.readFloat(__io__address + 336);
 		}
 	}
 
@@ -576,9 +500,9 @@ public class XrActionMapBinding extends CFacade {
 	public void setFloat_threshold(float float_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 720, float_threshold);
+			__io__block.writeFloat(__io__address + 352, float_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 712, float_threshold);
+			__io__block.writeFloat(__io__address + 336, float_threshold);
 		}
 	}
 
@@ -593,9 +517,9 @@ public class XrActionMapBinding extends CFacade {
 	public short getAxis_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 724);
+			return __io__block.readShort(__io__address + 356);
 		} else {
-			return __io__block.readShort(__io__address + 716);
+			return __io__block.readShort(__io__address + 340);
 		}
 	}
 
@@ -610,9 +534,9 @@ public class XrActionMapBinding extends CFacade {
 	public void setAxis_flag(short axis_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 724, axis_flag);
+			__io__block.writeShort(__io__address + 356, axis_flag);
 		} else {
-			__io__block.writeShort(__io__address + 716, axis_flag);
+			__io__block.writeShort(__io__address + 340, axis_flag);
 		}
 	}
 
@@ -628,9 +552,9 @@ public class XrActionMapBinding extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 726, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 358, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 718, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 342, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -643,9 +567,9 @@ public class XrActionMapBinding extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 726;
+			__dna__offset = 358;
 		} else {
-			__dna__offset = 718;
+			__dna__offset = 342;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -671,9 +595,9 @@ public class XrActionMapBinding extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 728, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 360, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 720, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 344, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -689,9 +613,9 @@ public class XrActionMapBinding extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 728;
+			__dna__offset = 360;
 		} else {
-			__dna__offset = 720;
+			__dna__offset = 344;
 		}
 		if (__io__equals(pose_location, __io__address + __dna__offset)) {
 			return;
@@ -714,9 +638,9 @@ public class XrActionMapBinding extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 740, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 372, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 732, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -729,9 +653,9 @@ public class XrActionMapBinding extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 740;
+			__dna__offset = 372;
 		} else {
-			__dna__offset = 732;
+			__dna__offset = 356;
 		}
 		if (__io__equals(pose_rotation, __io__address + __dna__offset)) {
 			return;

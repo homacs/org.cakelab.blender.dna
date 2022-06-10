@@ -30,7 +30,7 @@ public class UserDef_SpaceData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 290;
+	public static final int __DNA__SDNA_INDEX = 295;
 
 	/**
 	 * Field descriptor (offset) for struct member 'section_active'.

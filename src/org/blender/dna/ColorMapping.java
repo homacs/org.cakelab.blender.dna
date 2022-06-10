@@ -28,7 +28,7 @@ public class ColorMapping extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 54;
+	public static final int __DNA__SDNA_INDEX = 56;
 
 	/**
 	 * Field descriptor (offset) for struct member 'coba'.

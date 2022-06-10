@@ -28,7 +28,7 @@ public class PointDensity extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 51;
+	public static final int __DNA__SDNA_INDEX = 53;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.

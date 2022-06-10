@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=232, size64=312)
+@CMetaData(size32=248, size64=328)
 public class MetaBall extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class MetaBall extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 62;
+	public static final int __DNA__SDNA_INDEX = 64;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -45,7 +45,7 @@ public class MetaBall extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 136/176</li>
+	 * <li>Actual Size (32bit/64bit): 152/192</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -68,7 +68,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__adt = new long[]{152, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'elems'.
@@ -88,7 +88,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__elems = new long[]{140, 184};
+	public static final long[] __DNA__FIELD__elems = new long[]{156, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'disp'.
@@ -108,7 +108,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__disp = new long[]{148, 200};
+	public static final long[] __DNA__FIELD__disp = new long[]{164, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'editelems'.
@@ -131,7 +131,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__editelems = new long[]{156, 216};
+	public static final long[] __DNA__FIELD__editelems = new long[]{172, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
@@ -156,7 +156,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipo = new long[]{160, 224};
+	public static final long[] __DNA__FIELD__ipo = new long[]{176, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
@@ -179,7 +179,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat = new long[]{164, 232};
+	public static final long[] __DNA__FIELD__mat = new long[]{180, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -202,7 +202,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{168, 240};
+	public static final long[] __DNA__FIELD__flag = new long[]{184, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag2'.
@@ -222,7 +222,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag2 = new long[]{169, 241};
+	public static final long[] __DNA__FIELD__flag2 = new long[]{185, 257};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totcol'.
@@ -242,7 +242,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totcol = new long[]{170, 242};
+	public static final long[] __DNA__FIELD__totcol = new long[]{186, 258};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texflag'.
@@ -265,7 +265,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texflag = new long[]{172, 244};
+	public static final long[] __DNA__FIELD__texflag = new long[]{188, 260};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -285,7 +285,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{173, 245};
+	public static final long[] __DNA__FIELD___pad = new long[]{189, 261};
 
 	/**
 	 * Field descriptor (offset) for struct member 'needs_flush_to_id'.
@@ -308,7 +308,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__needs_flush_to_id = new long[]{175, 247};
+	public static final long[] __DNA__FIELD__needs_flush_to_id = new long[]{191, 263};
 
 	/**
 	 * Field descriptor (offset) for struct member 'loc'.
@@ -331,7 +331,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__loc = new long[]{176, 248};
+	public static final long[] __DNA__FIELD__loc = new long[]{192, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -351,7 +351,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size = new long[]{188, 260};
+	public static final long[] __DNA__FIELD__size = new long[]{204, 276};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rot'.
@@ -371,7 +371,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rot = new long[]{200, 272};
+	public static final long[] __DNA__FIELD__rot = new long[]{216, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wiresize'.
@@ -394,7 +394,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wiresize = new long[]{212, 284};
+	public static final long[] __DNA__FIELD__wiresize = new long[]{228, 300};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rendersize'.
@@ -414,7 +414,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rendersize = new long[]{216, 288};
+	public static final long[] __DNA__FIELD__rendersize = new long[]{232, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'thresh'.
@@ -437,7 +437,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__thresh = new long[]{220, 292};
+	public static final long[] __DNA__FIELD__thresh = new long[]{236, 308};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lastelem'.
@@ -460,7 +460,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lastelem = new long[]{224, 296};
+	public static final long[] __DNA__FIELD__lastelem = new long[]{240, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'batch_cache'.
@@ -480,7 +480,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__batch_cache = new long[]{228, 304};
+	public static final long[] __DNA__FIELD__batch_cache = new long[]{244, 320};
 
 	public MetaBall(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -535,9 +535,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -552,9 +552,9 @@ public class MetaBall extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		}
 	}
 
@@ -566,9 +566,9 @@ public class MetaBall extends CFacade {
 	public ListBase getElems() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 184, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 200, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 140, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 156, __io__block, __io__blockTable);
 		}
 	}
 
@@ -581,9 +581,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 184;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 140;
+			__dna__offset = 156;
 		}
 		if (__io__equals(elems, __io__address + __dna__offset)) {
 			return;
@@ -602,9 +602,9 @@ public class MetaBall extends CFacade {
 	public ListBase getDisp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 200, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 216, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 148, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 164, __io__block, __io__blockTable);
 		}
 	}
 
@@ -617,9 +617,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 200;
+			__dna__offset = 216;
 		} else {
-			__dna__offset = 148;
+			__dna__offset = 164;
 		}
 		if (__io__equals(disp, __io__address + __dna__offset)) {
 			return;
@@ -642,9 +642,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 232);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 156);
+			__dna__targetAddress = __io__block.readLong(__io__address + 172);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ListBase.class};
 		return new CPointer<ListBase>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ListBase.__DNA__SDNA_INDEX), __io__blockTable);
@@ -662,9 +662,9 @@ public class MetaBall extends CFacade {
 	{
 		long __address = ((editelems == null) ? 0 : editelems.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 216, __address);
+			__io__block.writeLong(__io__address + 232, __address);
 		} else {
-			__io__block.writeLong(__io__address + 156, __address);
+			__io__block.writeLong(__io__address + 172, __address);
 		}
 	}
 
@@ -682,9 +682,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 224);
+			__dna__targetAddress = __io__block.readLong(__io__address + 240);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Ipo.class};
 		return new CPointer<Ipo>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Ipo.__DNA__SDNA_INDEX), __io__blockTable);
@@ -704,9 +704,9 @@ public class MetaBall extends CFacade {
 	{
 		long __address = ((ipo == null) ? 0 : ipo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 224, __address);
+			__io__block.writeLong(__io__address + 240, __address);
 		} else {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		}
 	}
 
@@ -722,9 +722,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 232);
+			__dna__targetAddress = __io__block.readLong(__io__address + 248);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 164);
+			__dna__targetAddress = __io__block.readLong(__io__address + 180);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, Material.class};
 		return new CPointer<CPointer<Material>>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -742,9 +742,9 @@ public class MetaBall extends CFacade {
 	{
 		long __address = ((mat == null) ? 0 : mat.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 232, __address);
+			__io__block.writeLong(__io__address + 248, __address);
 		} else {
-			__io__block.writeLong(__io__address + 164, __address);
+			__io__block.writeLong(__io__address + 180, __address);
 		}
 	}
 
@@ -759,9 +759,9 @@ public class MetaBall extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 240);
+			return __io__block.readByte(__io__address + 256);
 		} else {
-			return __io__block.readByte(__io__address + 168);
+			return __io__block.readByte(__io__address + 184);
 		}
 	}
 
@@ -776,9 +776,9 @@ public class MetaBall extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 240, flag);
+			__io__block.writeByte(__io__address + 256, flag);
 		} else {
-			__io__block.writeByte(__io__address + 168, flag);
+			__io__block.writeByte(__io__address + 184, flag);
 		}
 	}
 
@@ -790,9 +790,9 @@ public class MetaBall extends CFacade {
 	public byte getFlag2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 241);
+			return __io__block.readByte(__io__address + 257);
 		} else {
-			return __io__block.readByte(__io__address + 169);
+			return __io__block.readByte(__io__address + 185);
 		}
 	}
 
@@ -804,9 +804,9 @@ public class MetaBall extends CFacade {
 	public void setFlag2(byte flag2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 241, flag2);
+			__io__block.writeByte(__io__address + 257, flag2);
 		} else {
-			__io__block.writeByte(__io__address + 169, flag2);
+			__io__block.writeByte(__io__address + 185, flag2);
 		}
 	}
 
@@ -818,9 +818,9 @@ public class MetaBall extends CFacade {
 	public short getTotcol() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 242);
+			return __io__block.readShort(__io__address + 258);
 		} else {
-			return __io__block.readShort(__io__address + 170);
+			return __io__block.readShort(__io__address + 186);
 		}
 	}
 
@@ -832,9 +832,9 @@ public class MetaBall extends CFacade {
 	public void setTotcol(short totcol) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 242, totcol);
+			__io__block.writeShort(__io__address + 258, totcol);
 		} else {
-			__io__block.writeShort(__io__address + 170, totcol);
+			__io__block.writeShort(__io__address + 186, totcol);
 		}
 	}
 
@@ -849,9 +849,9 @@ public class MetaBall extends CFacade {
 	public byte getTexflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 244);
+			return __io__block.readByte(__io__address + 260);
 		} else {
-			return __io__block.readByte(__io__address + 172);
+			return __io__block.readByte(__io__address + 188);
 		}
 	}
 
@@ -866,9 +866,9 @@ public class MetaBall extends CFacade {
 	public void setTexflag(byte texflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 244, texflag);
+			__io__block.writeByte(__io__address + 260, texflag);
 		} else {
-			__io__block.writeByte(__io__address + 172, texflag);
+			__io__block.writeByte(__io__address + 188, texflag);
 		}
 	}
 
@@ -884,9 +884,9 @@ public class MetaBall extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 245, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 261, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 173, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 189, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -899,9 +899,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 245;
+			__dna__offset = 261;
 		} else {
-			__dna__offset = 173;
+			__dna__offset = 189;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -923,9 +923,9 @@ public class MetaBall extends CFacade {
 	public byte getNeeds_flush_to_id() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 247);
+			return __io__block.readByte(__io__address + 263);
 		} else {
-			return __io__block.readByte(__io__address + 175);
+			return __io__block.readByte(__io__address + 191);
 		}
 	}
 
@@ -940,9 +940,9 @@ public class MetaBall extends CFacade {
 	public void setNeeds_flush_to_id(byte needs_flush_to_id) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 247, needs_flush_to_id);
+			__io__block.writeByte(__io__address + 263, needs_flush_to_id);
 		} else {
-			__io__block.writeByte(__io__address + 175, needs_flush_to_id);
+			__io__block.writeByte(__io__address + 191, needs_flush_to_id);
 		}
 	}
 
@@ -961,9 +961,9 @@ public class MetaBall extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 248, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 264, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -979,9 +979,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 248;
+			__dna__offset = 264;
 		} else {
-			__dna__offset = 176;
+			__dna__offset = 192;
 		}
 		if (__io__equals(loc, __io__address + __dna__offset)) {
 			return;
@@ -1004,9 +1004,9 @@ public class MetaBall extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 260, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 276, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1019,9 +1019,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 260;
+			__dna__offset = 276;
 		} else {
-			__dna__offset = 188;
+			__dna__offset = 204;
 		}
 		if (__io__equals(size, __io__address + __dna__offset)) {
 			return;
@@ -1044,9 +1044,9 @@ public class MetaBall extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 288, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1059,9 +1059,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 272;
+			__dna__offset = 288;
 		} else {
-			__dna__offset = 200;
+			__dna__offset = 216;
 		}
 		if (__io__equals(rot, __io__address + __dna__offset)) {
 			return;
@@ -1083,9 +1083,9 @@ public class MetaBall extends CFacade {
 	public float getWiresize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 284);
+			return __io__block.readFloat(__io__address + 300);
 		} else {
-			return __io__block.readFloat(__io__address + 212);
+			return __io__block.readFloat(__io__address + 228);
 		}
 	}
 
@@ -1100,9 +1100,9 @@ public class MetaBall extends CFacade {
 	public void setWiresize(float wiresize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 284, wiresize);
+			__io__block.writeFloat(__io__address + 300, wiresize);
 		} else {
-			__io__block.writeFloat(__io__address + 212, wiresize);
+			__io__block.writeFloat(__io__address + 228, wiresize);
 		}
 	}
 
@@ -1114,9 +1114,9 @@ public class MetaBall extends CFacade {
 	public float getRendersize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 288);
+			return __io__block.readFloat(__io__address + 304);
 		} else {
-			return __io__block.readFloat(__io__address + 216);
+			return __io__block.readFloat(__io__address + 232);
 		}
 	}
 
@@ -1128,9 +1128,9 @@ public class MetaBall extends CFacade {
 	public void setRendersize(float rendersize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 288, rendersize);
+			__io__block.writeFloat(__io__address + 304, rendersize);
 		} else {
-			__io__block.writeFloat(__io__address + 216, rendersize);
+			__io__block.writeFloat(__io__address + 232, rendersize);
 		}
 	}
 
@@ -1145,9 +1145,9 @@ public class MetaBall extends CFacade {
 	public float getThresh() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 292);
+			return __io__block.readFloat(__io__address + 308);
 		} else {
-			return __io__block.readFloat(__io__address + 220);
+			return __io__block.readFloat(__io__address + 236);
 		}
 	}
 
@@ -1162,9 +1162,9 @@ public class MetaBall extends CFacade {
 	public void setThresh(float thresh) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 292, thresh);
+			__io__block.writeFloat(__io__address + 308, thresh);
 		} else {
-			__io__block.writeFloat(__io__address + 220, thresh);
+			__io__block.writeFloat(__io__address + 236, thresh);
 		}
 	}
 
@@ -1180,9 +1180,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 296);
+			__dna__targetAddress = __io__block.readLong(__io__address + 312);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 224);
+			__dna__targetAddress = __io__block.readLong(__io__address + 240);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MetaElem.class};
 		return new CPointer<MetaElem>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MetaElem.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1200,9 +1200,9 @@ public class MetaBall extends CFacade {
 	{
 		long __address = ((lastelem == null) ? 0 : lastelem.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 296, __address);
+			__io__block.writeLong(__io__address + 312, __address);
 		} else {
-			__io__block.writeLong(__io__address + 224, __address);
+			__io__block.writeLong(__io__address + 240, __address);
 		}
 	}
 
@@ -1215,9 +1215,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 304);
+			__dna__targetAddress = __io__block.readLong(__io__address + 320);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 228);
+			__dna__targetAddress = __io__block.readLong(__io__address + 244);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1232,9 +1232,9 @@ public class MetaBall extends CFacade {
 	{
 		long __address = ((batch_cache == null) ? 0 : batch_cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 304, __address);
+			__io__block.writeLong(__io__address + 320, __address);
 		} else {
-			__io__block.writeLong(__io__address + 228, __address);
+			__io__block.writeLong(__io__address + 244, __address);
 		}
 	}
 

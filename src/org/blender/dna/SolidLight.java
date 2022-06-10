@@ -28,7 +28,7 @@ public class SolidLight extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 287;
+	public static final int __DNA__SDNA_INDEX = 292;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.

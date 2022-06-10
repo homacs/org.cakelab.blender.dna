@@ -27,7 +27,7 @@ public class SequencerScopes extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 338;
+	public static final int __DNA__SDNA_INDEX = 344;
 
 	/**
 	 * Field descriptor (offset) for struct member 'reference_ibuf'.

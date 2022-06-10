@@ -28,7 +28,7 @@ public class MaskLayer extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 713;
+	public static final int __DNA__SDNA_INDEX = 704;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

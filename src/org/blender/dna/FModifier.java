@@ -31,7 +31,7 @@ public class FModifier extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 648;
+	public static final int __DNA__SDNA_INDEX = 639;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

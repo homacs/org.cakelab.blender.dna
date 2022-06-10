@@ -28,7 +28,7 @@ public class SequencerTimelineOverlay extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 237;
+	public static final int __DNA__SDNA_INDEX = 242;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.

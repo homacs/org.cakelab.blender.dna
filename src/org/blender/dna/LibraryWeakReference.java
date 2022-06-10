@@ -30,7 +30,7 @@ public class LibraryWeakReference extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 22;
+	public static final int __DNA__SDNA_INDEX = 24;
 
 	/**
 	 * Field descriptor (offset) for struct member 'library_filepath'.

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=368, size64=520)
+@CMetaData(size32=384, size64=536)
 public class FreestyleLineStyle extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 761;
+	public static final int __DNA__SDNA_INDEX = 752;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -45,7 +45,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 136/176</li>
+	 * <li>Actual Size (32bit/64bit): 152/192</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -68,7 +68,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__adt = new long[]{152, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'r'.
@@ -88,7 +88,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__r = new long[]{140, 184};
+	public static final long[] __DNA__FIELD__r = new long[]{156, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'g'.
@@ -108,7 +108,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__g = new long[]{144, 188};
+	public static final long[] __DNA__FIELD__g = new long[]{160, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'b'.
@@ -128,7 +128,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__b = new long[]{148, 192};
+	public static final long[] __DNA__FIELD__b = new long[]{164, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
@@ -151,7 +151,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__alpha = new long[]{152, 196};
+	public static final long[] __DNA__FIELD__alpha = new long[]{168, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'thickness'.
@@ -174,7 +174,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__thickness = new long[]{156, 200};
+	public static final long[] __DNA__FIELD__thickness = new long[]{172, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'thickness_position'.
@@ -197,7 +197,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__thickness_position = new long[]{160, 204};
+	public static final long[] __DNA__FIELD__thickness_position = new long[]{176, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'thickness_ratio'.
@@ -220,7 +220,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__thickness_ratio = new long[]{164, 208};
+	public static final long[] __DNA__FIELD__thickness_ratio = new long[]{180, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -240,7 +240,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{168, 212};
+	public static final long[] __DNA__FIELD__flag = new long[]{184, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'caps'.
@@ -263,7 +263,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__caps = new long[]{172, 216};
+	public static final long[] __DNA__FIELD__caps = new long[]{188, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'chaining'.
@@ -286,7 +286,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__chaining = new long[]{176, 220};
+	public static final long[] __DNA__FIELD__chaining = new long[]{192, 236};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rounds'.
@@ -309,7 +309,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rounds = new long[]{180, 224};
+	public static final long[] __DNA__FIELD__rounds = new long[]{196, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'split_length'.
@@ -332,7 +332,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__split_length = new long[]{184, 228};
+	public static final long[] __DNA__FIELD__split_length = new long[]{200, 244};
 
 	/**
 	 * Field descriptor (offset) for struct member 'min_angle'.
@@ -355,7 +355,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__min_angle = new long[]{188, 232};
+	public static final long[] __DNA__FIELD__min_angle = new long[]{204, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'max_angle'.
@@ -375,7 +375,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__max_angle = new long[]{192, 236};
+	public static final long[] __DNA__FIELD__max_angle = new long[]{208, 252};
 
 	/**
 	 * Field descriptor (offset) for struct member 'min_length'.
@@ -395,7 +395,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__min_length = new long[]{196, 240};
+	public static final long[] __DNA__FIELD__min_length = new long[]{212, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'max_length'.
@@ -415,7 +415,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__max_length = new long[]{200, 244};
+	public static final long[] __DNA__FIELD__max_length = new long[]{216, 260};
 
 	/**
 	 * Field descriptor (offset) for struct member 'chain_count'.
@@ -438,7 +438,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__chain_count = new long[]{204, 248};
+	public static final long[] __DNA__FIELD__chain_count = new long[]{220, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'split_dash1'.
@@ -461,7 +461,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__split_dash1 = new long[]{208, 252};
+	public static final long[] __DNA__FIELD__split_dash1 = new long[]{224, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'split_gap1'.
@@ -484,7 +484,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__split_gap1 = new long[]{210, 254};
+	public static final long[] __DNA__FIELD__split_gap1 = new long[]{226, 270};
 
 	/**
 	 * Field descriptor (offset) for struct member 'split_dash2'.
@@ -507,7 +507,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__split_dash2 = new long[]{212, 256};
+	public static final long[] __DNA__FIELD__split_dash2 = new long[]{228, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'split_gap2'.
@@ -530,7 +530,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__split_gap2 = new long[]{214, 258};
+	public static final long[] __DNA__FIELD__split_gap2 = new long[]{230, 274};
 
 	/**
 	 * Field descriptor (offset) for struct member 'split_dash3'.
@@ -553,7 +553,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__split_dash3 = new long[]{216, 260};
+	public static final long[] __DNA__FIELD__split_dash3 = new long[]{232, 276};
 
 	/**
 	 * Field descriptor (offset) for struct member 'split_gap3'.
@@ -576,7 +576,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__split_gap3 = new long[]{218, 262};
+	public static final long[] __DNA__FIELD__split_gap3 = new long[]{234, 278};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sort_key'.
@@ -599,7 +599,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sort_key = new long[]{220, 264};
+	public static final long[] __DNA__FIELD__sort_key = new long[]{236, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'integration_type'.
@@ -622,7 +622,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__integration_type = new long[]{224, 268};
+	public static final long[] __DNA__FIELD__integration_type = new long[]{240, 284};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texstep'.
@@ -642,7 +642,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texstep = new long[]{228, 272};
+	public static final long[] __DNA__FIELD__texstep = new long[]{244, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texact'.
@@ -662,7 +662,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texact = new long[]{232, 276};
+	public static final long[] __DNA__FIELD__texact = new long[]{248, 292};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pr_texture'.
@@ -682,7 +682,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pr_texture = new long[]{234, 278};
+	public static final long[] __DNA__FIELD__pr_texture = new long[]{250, 294};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_nodes'.
@@ -705,7 +705,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_nodes = new long[]{236, 280};
+	public static final long[] __DNA__FIELD__use_nodes = new long[]{252, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -725,7 +725,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{238, 282};
+	public static final long[] __DNA__FIELD___pad = new long[]{254, 298};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dash1'.
@@ -748,7 +748,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dash1 = new long[]{244, 288};
+	public static final long[] __DNA__FIELD__dash1 = new long[]{260, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gap1'.
@@ -771,7 +771,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gap1 = new long[]{246, 290};
+	public static final long[] __DNA__FIELD__gap1 = new long[]{262, 306};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dash2'.
@@ -794,7 +794,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dash2 = new long[]{248, 292};
+	public static final long[] __DNA__FIELD__dash2 = new long[]{264, 308};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gap2'.
@@ -817,7 +817,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gap2 = new long[]{250, 294};
+	public static final long[] __DNA__FIELD__gap2 = new long[]{266, 310};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dash3'.
@@ -840,7 +840,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dash3 = new long[]{252, 296};
+	public static final long[] __DNA__FIELD__dash3 = new long[]{268, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gap3'.
@@ -863,7 +863,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gap3 = new long[]{254, 298};
+	public static final long[] __DNA__FIELD__gap3 = new long[]{270, 314};
 
 	/**
 	 * Field descriptor (offset) for struct member 'panel'.
@@ -888,7 +888,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__panel = new long[]{256, 300};
+	public static final long[] __DNA__FIELD__panel = new long[]{272, 316};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mtex'.
@@ -911,7 +911,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 72/144</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mtex = new long[]{260, 304};
+	public static final long[] __DNA__FIELD__mtex = new long[]{276, 320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodetree'.
@@ -934,7 +934,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nodetree = new long[]{332, 448};
+	public static final long[] __DNA__FIELD__nodetree = new long[]{348, 464};
 
 	/**
 	 * Field descriptor (offset) for struct member 'color_modifiers'.
@@ -957,7 +957,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__color_modifiers = new long[]{336, 456};
+	public static final long[] __DNA__FIELD__color_modifiers = new long[]{352, 472};
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha_modifiers'.
@@ -980,7 +980,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__alpha_modifiers = new long[]{344, 472};
+	public static final long[] __DNA__FIELD__alpha_modifiers = new long[]{360, 488};
 
 	/**
 	 * Field descriptor (offset) for struct member 'thickness_modifiers'.
@@ -1003,7 +1003,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__thickness_modifiers = new long[]{352, 488};
+	public static final long[] __DNA__FIELD__thickness_modifiers = new long[]{368, 504};
 
 	/**
 	 * Field descriptor (offset) for struct member 'geometry_modifiers'.
@@ -1026,7 +1026,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__geometry_modifiers = new long[]{360, 504};
+	public static final long[] __DNA__FIELD__geometry_modifiers = new long[]{376, 520};
 
 	public FreestyleLineStyle(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1081,9 +1081,9 @@ public class FreestyleLineStyle extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1098,9 +1098,9 @@ public class FreestyleLineStyle extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		}
 	}
 
@@ -1112,9 +1112,9 @@ public class FreestyleLineStyle extends CFacade {
 	public float getR() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 184);
+			return __io__block.readFloat(__io__address + 200);
 		} else {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 156);
 		}
 	}
 
@@ -1126,9 +1126,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setR(float r) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 184, r);
+			__io__block.writeFloat(__io__address + 200, r);
 		} else {
-			__io__block.writeFloat(__io__address + 140, r);
+			__io__block.writeFloat(__io__address + 156, r);
 		}
 	}
 
@@ -1140,9 +1140,9 @@ public class FreestyleLineStyle extends CFacade {
 	public float getG() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 188);
+			return __io__block.readFloat(__io__address + 204);
 		} else {
-			return __io__block.readFloat(__io__address + 144);
+			return __io__block.readFloat(__io__address + 160);
 		}
 	}
 
@@ -1154,9 +1154,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setG(float g) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 188, g);
+			__io__block.writeFloat(__io__address + 204, g);
 		} else {
-			__io__block.writeFloat(__io__address + 144, g);
+			__io__block.writeFloat(__io__address + 160, g);
 		}
 	}
 
@@ -1168,9 +1168,9 @@ public class FreestyleLineStyle extends CFacade {
 	public float getB() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 192);
+			return __io__block.readFloat(__io__address + 208);
 		} else {
-			return __io__block.readFloat(__io__address + 148);
+			return __io__block.readFloat(__io__address + 164);
 		}
 	}
 
@@ -1182,9 +1182,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setB(float b) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 192, b);
+			__io__block.writeFloat(__io__address + 208, b);
 		} else {
-			__io__block.writeFloat(__io__address + 148, b);
+			__io__block.writeFloat(__io__address + 164, b);
 		}
 	}
 
@@ -1199,9 +1199,9 @@ public class FreestyleLineStyle extends CFacade {
 	public float getAlpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 196);
+			return __io__block.readFloat(__io__address + 212);
 		} else {
-			return __io__block.readFloat(__io__address + 152);
+			return __io__block.readFloat(__io__address + 168);
 		}
 	}
 
@@ -1216,9 +1216,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setAlpha(float alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 196, alpha);
+			__io__block.writeFloat(__io__address + 212, alpha);
 		} else {
-			__io__block.writeFloat(__io__address + 152, alpha);
+			__io__block.writeFloat(__io__address + 168, alpha);
 		}
 	}
 
@@ -1233,9 +1233,9 @@ public class FreestyleLineStyle extends CFacade {
 	public float getThickness() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 216);
 		} else {
-			return __io__block.readFloat(__io__address + 156);
+			return __io__block.readFloat(__io__address + 172);
 		}
 	}
 
@@ -1250,9 +1250,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setThickness(float thickness) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 200, thickness);
+			__io__block.writeFloat(__io__address + 216, thickness);
 		} else {
-			__io__block.writeFloat(__io__address + 156, thickness);
+			__io__block.writeFloat(__io__address + 172, thickness);
 		}
 	}
 
@@ -1267,9 +1267,9 @@ public class FreestyleLineStyle extends CFacade {
 	public int getThickness_position() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 204);
+			return __io__block.readInt(__io__address + 220);
 		} else {
-			return __io__block.readInt(__io__address + 160);
+			return __io__block.readInt(__io__address + 176);
 		}
 	}
 
@@ -1284,9 +1284,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setThickness_position(int thickness_position) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 204, thickness_position);
+			__io__block.writeInt(__io__address + 220, thickness_position);
 		} else {
-			__io__block.writeInt(__io__address + 160, thickness_position);
+			__io__block.writeInt(__io__address + 176, thickness_position);
 		}
 	}
 
@@ -1301,9 +1301,9 @@ public class FreestyleLineStyle extends CFacade {
 	public float getThickness_ratio() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 208);
+			return __io__block.readFloat(__io__address + 224);
 		} else {
-			return __io__block.readFloat(__io__address + 164);
+			return __io__block.readFloat(__io__address + 180);
 		}
 	}
 
@@ -1318,9 +1318,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setThickness_ratio(float thickness_ratio) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 208, thickness_ratio);
+			__io__block.writeFloat(__io__address + 224, thickness_ratio);
 		} else {
-			__io__block.writeFloat(__io__address + 164, thickness_ratio);
+			__io__block.writeFloat(__io__address + 180, thickness_ratio);
 		}
 	}
 
@@ -1332,9 +1332,9 @@ public class FreestyleLineStyle extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 212);
+			return __io__block.readInt(__io__address + 228);
 		} else {
-			return __io__block.readInt(__io__address + 168);
+			return __io__block.readInt(__io__address + 184);
 		}
 	}
 
@@ -1346,9 +1346,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 212, flag);
+			__io__block.writeInt(__io__address + 228, flag);
 		} else {
-			__io__block.writeInt(__io__address + 168, flag);
+			__io__block.writeInt(__io__address + 184, flag);
 		}
 	}
 
@@ -1363,9 +1363,9 @@ public class FreestyleLineStyle extends CFacade {
 	public int getCaps() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 216);
+			return __io__block.readInt(__io__address + 232);
 		} else {
-			return __io__block.readInt(__io__address + 172);
+			return __io__block.readInt(__io__address + 188);
 		}
 	}
 
@@ -1380,9 +1380,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setCaps(int caps) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 216, caps);
+			__io__block.writeInt(__io__address + 232, caps);
 		} else {
-			__io__block.writeInt(__io__address + 172, caps);
+			__io__block.writeInt(__io__address + 188, caps);
 		}
 	}
 
@@ -1397,9 +1397,9 @@ public class FreestyleLineStyle extends CFacade {
 	public int getChaining() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 220);
+			return __io__block.readInt(__io__address + 236);
 		} else {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 192);
 		}
 	}
 
@@ -1414,9 +1414,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setChaining(int chaining) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 220, chaining);
+			__io__block.writeInt(__io__address + 236, chaining);
 		} else {
-			__io__block.writeInt(__io__address + 176, chaining);
+			__io__block.writeInt(__io__address + 192, chaining);
 		}
 	}
 
@@ -1431,9 +1431,9 @@ public class FreestyleLineStyle extends CFacade {
 	public int getRounds() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 224);
+			return __io__block.readInt(__io__address + 240);
 		} else {
-			return __io__block.readInt(__io__address + 180);
+			return __io__block.readInt(__io__address + 196);
 		}
 	}
 
@@ -1448,9 +1448,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setRounds(int rounds) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 224, rounds);
+			__io__block.writeInt(__io__address + 240, rounds);
 		} else {
-			__io__block.writeInt(__io__address + 180, rounds);
+			__io__block.writeInt(__io__address + 196, rounds);
 		}
 	}
 
@@ -1465,9 +1465,9 @@ public class FreestyleLineStyle extends CFacade {
 	public float getSplit_length() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 228);
+			return __io__block.readFloat(__io__address + 244);
 		} else {
-			return __io__block.readFloat(__io__address + 184);
+			return __io__block.readFloat(__io__address + 200);
 		}
 	}
 
@@ -1482,9 +1482,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setSplit_length(float split_length) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 228, split_length);
+			__io__block.writeFloat(__io__address + 244, split_length);
 		} else {
-			__io__block.writeFloat(__io__address + 184, split_length);
+			__io__block.writeFloat(__io__address + 200, split_length);
 		}
 	}
 
@@ -1499,9 +1499,9 @@ public class FreestyleLineStyle extends CFacade {
 	public float getMin_angle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 232);
+			return __io__block.readFloat(__io__address + 248);
 		} else {
-			return __io__block.readFloat(__io__address + 188);
+			return __io__block.readFloat(__io__address + 204);
 		}
 	}
 
@@ -1516,9 +1516,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setMin_angle(float min_angle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 232, min_angle);
+			__io__block.writeFloat(__io__address + 248, min_angle);
 		} else {
-			__io__block.writeFloat(__io__address + 188, min_angle);
+			__io__block.writeFloat(__io__address + 204, min_angle);
 		}
 	}
 
@@ -1530,9 +1530,9 @@ public class FreestyleLineStyle extends CFacade {
 	public float getMax_angle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 236);
+			return __io__block.readFloat(__io__address + 252);
 		} else {
-			return __io__block.readFloat(__io__address + 192);
+			return __io__block.readFloat(__io__address + 208);
 		}
 	}
 
@@ -1544,9 +1544,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setMax_angle(float max_angle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 236, max_angle);
+			__io__block.writeFloat(__io__address + 252, max_angle);
 		} else {
-			__io__block.writeFloat(__io__address + 192, max_angle);
+			__io__block.writeFloat(__io__address + 208, max_angle);
 		}
 	}
 
@@ -1558,9 +1558,9 @@ public class FreestyleLineStyle extends CFacade {
 	public float getMin_length() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 240);
+			return __io__block.readFloat(__io__address + 256);
 		} else {
-			return __io__block.readFloat(__io__address + 196);
+			return __io__block.readFloat(__io__address + 212);
 		}
 	}
 
@@ -1572,9 +1572,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setMin_length(float min_length) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 240, min_length);
+			__io__block.writeFloat(__io__address + 256, min_length);
 		} else {
-			__io__block.writeFloat(__io__address + 196, min_length);
+			__io__block.writeFloat(__io__address + 212, min_length);
 		}
 	}
 
@@ -1586,9 +1586,9 @@ public class FreestyleLineStyle extends CFacade {
 	public float getMax_length() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 244);
+			return __io__block.readFloat(__io__address + 260);
 		} else {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 216);
 		}
 	}
 
@@ -1600,9 +1600,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setMax_length(float max_length) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 244, max_length);
+			__io__block.writeFloat(__io__address + 260, max_length);
 		} else {
-			__io__block.writeFloat(__io__address + 200, max_length);
+			__io__block.writeFloat(__io__address + 216, max_length);
 		}
 	}
 
@@ -1617,9 +1617,9 @@ public class FreestyleLineStyle extends CFacade {
 	public int getChain_count() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 248);
+			return __io__block.readInt(__io__address + 264);
 		} else {
-			return __io__block.readInt(__io__address + 204);
+			return __io__block.readInt(__io__address + 220);
 		}
 	}
 
@@ -1634,9 +1634,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setChain_count(int chain_count) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 248, chain_count);
+			__io__block.writeInt(__io__address + 264, chain_count);
 		} else {
-			__io__block.writeInt(__io__address + 204, chain_count);
+			__io__block.writeInt(__io__address + 220, chain_count);
 		}
 	}
 
@@ -1651,9 +1651,9 @@ public class FreestyleLineStyle extends CFacade {
 	public short getSplit_dash1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 252);
+			return __io__block.readShort(__io__address + 268);
 		} else {
-			return __io__block.readShort(__io__address + 208);
+			return __io__block.readShort(__io__address + 224);
 		}
 	}
 
@@ -1668,9 +1668,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setSplit_dash1(short split_dash1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 252, split_dash1);
+			__io__block.writeShort(__io__address + 268, split_dash1);
 		} else {
-			__io__block.writeShort(__io__address + 208, split_dash1);
+			__io__block.writeShort(__io__address + 224, split_dash1);
 		}
 	}
 
@@ -1685,9 +1685,9 @@ public class FreestyleLineStyle extends CFacade {
 	public short getSplit_gap1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 254);
+			return __io__block.readShort(__io__address + 270);
 		} else {
-			return __io__block.readShort(__io__address + 210);
+			return __io__block.readShort(__io__address + 226);
 		}
 	}
 
@@ -1702,9 +1702,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setSplit_gap1(short split_gap1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 254, split_gap1);
+			__io__block.writeShort(__io__address + 270, split_gap1);
 		} else {
-			__io__block.writeShort(__io__address + 210, split_gap1);
+			__io__block.writeShort(__io__address + 226, split_gap1);
 		}
 	}
 
@@ -1719,9 +1719,9 @@ public class FreestyleLineStyle extends CFacade {
 	public short getSplit_dash2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 256);
+			return __io__block.readShort(__io__address + 272);
 		} else {
-			return __io__block.readShort(__io__address + 212);
+			return __io__block.readShort(__io__address + 228);
 		}
 	}
 
@@ -1736,9 +1736,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setSplit_dash2(short split_dash2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 256, split_dash2);
+			__io__block.writeShort(__io__address + 272, split_dash2);
 		} else {
-			__io__block.writeShort(__io__address + 212, split_dash2);
+			__io__block.writeShort(__io__address + 228, split_dash2);
 		}
 	}
 
@@ -1753,9 +1753,9 @@ public class FreestyleLineStyle extends CFacade {
 	public short getSplit_gap2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 258);
+			return __io__block.readShort(__io__address + 274);
 		} else {
-			return __io__block.readShort(__io__address + 214);
+			return __io__block.readShort(__io__address + 230);
 		}
 	}
 
@@ -1770,9 +1770,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setSplit_gap2(short split_gap2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 258, split_gap2);
+			__io__block.writeShort(__io__address + 274, split_gap2);
 		} else {
-			__io__block.writeShort(__io__address + 214, split_gap2);
+			__io__block.writeShort(__io__address + 230, split_gap2);
 		}
 	}
 
@@ -1787,9 +1787,9 @@ public class FreestyleLineStyle extends CFacade {
 	public short getSplit_dash3() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 260);
+			return __io__block.readShort(__io__address + 276);
 		} else {
-			return __io__block.readShort(__io__address + 216);
+			return __io__block.readShort(__io__address + 232);
 		}
 	}
 
@@ -1804,9 +1804,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setSplit_dash3(short split_dash3) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 260, split_dash3);
+			__io__block.writeShort(__io__address + 276, split_dash3);
 		} else {
-			__io__block.writeShort(__io__address + 216, split_dash3);
+			__io__block.writeShort(__io__address + 232, split_dash3);
 		}
 	}
 
@@ -1821,9 +1821,9 @@ public class FreestyleLineStyle extends CFacade {
 	public short getSplit_gap3() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 262);
+			return __io__block.readShort(__io__address + 278);
 		} else {
-			return __io__block.readShort(__io__address + 218);
+			return __io__block.readShort(__io__address + 234);
 		}
 	}
 
@@ -1838,9 +1838,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setSplit_gap3(short split_gap3) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 262, split_gap3);
+			__io__block.writeShort(__io__address + 278, split_gap3);
 		} else {
-			__io__block.writeShort(__io__address + 218, split_gap3);
+			__io__block.writeShort(__io__address + 234, split_gap3);
 		}
 	}
 
@@ -1855,9 +1855,9 @@ public class FreestyleLineStyle extends CFacade {
 	public int getSort_key() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 264);
+			return __io__block.readInt(__io__address + 280);
 		} else {
-			return __io__block.readInt(__io__address + 220);
+			return __io__block.readInt(__io__address + 236);
 		}
 	}
 
@@ -1872,9 +1872,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setSort_key(int sort_key) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 264, sort_key);
+			__io__block.writeInt(__io__address + 280, sort_key);
 		} else {
-			__io__block.writeInt(__io__address + 220, sort_key);
+			__io__block.writeInt(__io__address + 236, sort_key);
 		}
 	}
 
@@ -1889,9 +1889,9 @@ public class FreestyleLineStyle extends CFacade {
 	public int getIntegration_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 268);
+			return __io__block.readInt(__io__address + 284);
 		} else {
-			return __io__block.readInt(__io__address + 224);
+			return __io__block.readInt(__io__address + 240);
 		}
 	}
 
@@ -1906,9 +1906,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setIntegration_type(int integration_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 268, integration_type);
+			__io__block.writeInt(__io__address + 284, integration_type);
 		} else {
-			__io__block.writeInt(__io__address + 224, integration_type);
+			__io__block.writeInt(__io__address + 240, integration_type);
 		}
 	}
 
@@ -1920,9 +1920,9 @@ public class FreestyleLineStyle extends CFacade {
 	public float getTexstep() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 272);
+			return __io__block.readFloat(__io__address + 288);
 		} else {
-			return __io__block.readFloat(__io__address + 228);
+			return __io__block.readFloat(__io__address + 244);
 		}
 	}
 
@@ -1934,9 +1934,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setTexstep(float texstep) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 272, texstep);
+			__io__block.writeFloat(__io__address + 288, texstep);
 		} else {
-			__io__block.writeFloat(__io__address + 228, texstep);
+			__io__block.writeFloat(__io__address + 244, texstep);
 		}
 	}
 
@@ -1948,9 +1948,9 @@ public class FreestyleLineStyle extends CFacade {
 	public short getTexact() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 276);
+			return __io__block.readShort(__io__address + 292);
 		} else {
-			return __io__block.readShort(__io__address + 232);
+			return __io__block.readShort(__io__address + 248);
 		}
 	}
 
@@ -1962,9 +1962,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setTexact(short texact) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 276, texact);
+			__io__block.writeShort(__io__address + 292, texact);
 		} else {
-			__io__block.writeShort(__io__address + 232, texact);
+			__io__block.writeShort(__io__address + 248, texact);
 		}
 	}
 
@@ -1976,9 +1976,9 @@ public class FreestyleLineStyle extends CFacade {
 	public short getPr_texture() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 278);
+			return __io__block.readShort(__io__address + 294);
 		} else {
-			return __io__block.readShort(__io__address + 234);
+			return __io__block.readShort(__io__address + 250);
 		}
 	}
 
@@ -1990,9 +1990,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setPr_texture(short pr_texture) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 278, pr_texture);
+			__io__block.writeShort(__io__address + 294, pr_texture);
 		} else {
-			__io__block.writeShort(__io__address + 234, pr_texture);
+			__io__block.writeShort(__io__address + 250, pr_texture);
 		}
 	}
 
@@ -2007,9 +2007,9 @@ public class FreestyleLineStyle extends CFacade {
 	public short getUse_nodes() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 280);
+			return __io__block.readShort(__io__address + 296);
 		} else {
-			return __io__block.readShort(__io__address + 236);
+			return __io__block.readShort(__io__address + 252);
 		}
 	}
 
@@ -2024,9 +2024,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setUse_nodes(short use_nodes) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 280, use_nodes);
+			__io__block.writeShort(__io__address + 296, use_nodes);
 		} else {
-			__io__block.writeShort(__io__address + 236, use_nodes);
+			__io__block.writeShort(__io__address + 252, use_nodes);
 		}
 	}
 
@@ -2042,9 +2042,9 @@ public class FreestyleLineStyle extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 282, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 298, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 238, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 254, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2057,9 +2057,9 @@ public class FreestyleLineStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 282;
+			__dna__offset = 298;
 		} else {
-			__dna__offset = 238;
+			__dna__offset = 254;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -2081,9 +2081,9 @@ public class FreestyleLineStyle extends CFacade {
 	public short getDash1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 288);
+			return __io__block.readShort(__io__address + 304);
 		} else {
-			return __io__block.readShort(__io__address + 244);
+			return __io__block.readShort(__io__address + 260);
 		}
 	}
 
@@ -2098,9 +2098,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setDash1(short dash1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 288, dash1);
+			__io__block.writeShort(__io__address + 304, dash1);
 		} else {
-			__io__block.writeShort(__io__address + 244, dash1);
+			__io__block.writeShort(__io__address + 260, dash1);
 		}
 	}
 
@@ -2115,9 +2115,9 @@ public class FreestyleLineStyle extends CFacade {
 	public short getGap1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 290);
+			return __io__block.readShort(__io__address + 306);
 		} else {
-			return __io__block.readShort(__io__address + 246);
+			return __io__block.readShort(__io__address + 262);
 		}
 	}
 
@@ -2132,9 +2132,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setGap1(short gap1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 290, gap1);
+			__io__block.writeShort(__io__address + 306, gap1);
 		} else {
-			__io__block.writeShort(__io__address + 246, gap1);
+			__io__block.writeShort(__io__address + 262, gap1);
 		}
 	}
 
@@ -2149,9 +2149,9 @@ public class FreestyleLineStyle extends CFacade {
 	public short getDash2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 292);
+			return __io__block.readShort(__io__address + 308);
 		} else {
-			return __io__block.readShort(__io__address + 248);
+			return __io__block.readShort(__io__address + 264);
 		}
 	}
 
@@ -2166,9 +2166,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setDash2(short dash2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 292, dash2);
+			__io__block.writeShort(__io__address + 308, dash2);
 		} else {
-			__io__block.writeShort(__io__address + 248, dash2);
+			__io__block.writeShort(__io__address + 264, dash2);
 		}
 	}
 
@@ -2183,9 +2183,9 @@ public class FreestyleLineStyle extends CFacade {
 	public short getGap2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 294);
+			return __io__block.readShort(__io__address + 310);
 		} else {
-			return __io__block.readShort(__io__address + 250);
+			return __io__block.readShort(__io__address + 266);
 		}
 	}
 
@@ -2200,9 +2200,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setGap2(short gap2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 294, gap2);
+			__io__block.writeShort(__io__address + 310, gap2);
 		} else {
-			__io__block.writeShort(__io__address + 250, gap2);
+			__io__block.writeShort(__io__address + 266, gap2);
 		}
 	}
 
@@ -2217,9 +2217,9 @@ public class FreestyleLineStyle extends CFacade {
 	public short getDash3() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 296);
+			return __io__block.readShort(__io__address + 312);
 		} else {
-			return __io__block.readShort(__io__address + 252);
+			return __io__block.readShort(__io__address + 268);
 		}
 	}
 
@@ -2234,9 +2234,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setDash3(short dash3) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 296, dash3);
+			__io__block.writeShort(__io__address + 312, dash3);
 		} else {
-			__io__block.writeShort(__io__address + 252, dash3);
+			__io__block.writeShort(__io__address + 268, dash3);
 		}
 	}
 
@@ -2251,9 +2251,9 @@ public class FreestyleLineStyle extends CFacade {
 	public short getGap3() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 298);
+			return __io__block.readShort(__io__address + 314);
 		} else {
-			return __io__block.readShort(__io__address + 254);
+			return __io__block.readShort(__io__address + 270);
 		}
 	}
 
@@ -2268,9 +2268,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setGap3(short gap3) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 298, gap3);
+			__io__block.writeShort(__io__address + 314, gap3);
 		} else {
-			__io__block.writeShort(__io__address + 254, gap3);
+			__io__block.writeShort(__io__address + 270, gap3);
 		}
 	}
 
@@ -2287,9 +2287,9 @@ public class FreestyleLineStyle extends CFacade {
 	public int getPanel() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 300);
+			return __io__block.readInt(__io__address + 316);
 		} else {
-			return __io__block.readInt(__io__address + 256);
+			return __io__block.readInt(__io__address + 272);
 		}
 	}
 
@@ -2306,9 +2306,9 @@ public class FreestyleLineStyle extends CFacade {
 	public void setPanel(int panel) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 300, panel);
+			__io__block.writeInt(__io__address + 316, panel);
 		} else {
-			__io__block.writeInt(__io__address + 256, panel);
+			__io__block.writeInt(__io__address + 272, panel);
 		}
 	}
 
@@ -2327,9 +2327,9 @@ public class FreestyleLineStyle extends CFacade {
 			18
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CPointer<MTex>>(__io__address + 304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CPointer<MTex>>(__io__address + 320, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CPointer<MTex>>(__io__address + 260, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CPointer<MTex>>(__io__address + 276, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2345,9 +2345,9 @@ public class FreestyleLineStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 304;
+			__dna__offset = 320;
 		} else {
-			__dna__offset = 260;
+			__dna__offset = 276;
 		}
 		if (__io__equals(mtex, __io__address + __dna__offset)) {
 			return;
@@ -2370,9 +2370,9 @@ public class FreestyleLineStyle extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 448);
+			__dna__targetAddress = __io__block.readLong(__io__address + 464);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 332);
+			__dna__targetAddress = __io__block.readLong(__io__address + 348);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bNodeTree.class};
 		return new CPointer<bNodeTree>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bNodeTree.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2390,9 +2390,9 @@ public class FreestyleLineStyle extends CFacade {
 	{
 		long __address = ((nodetree == null) ? 0 : nodetree.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 448, __address);
+			__io__block.writeLong(__io__address + 464, __address);
 		} else {
-			__io__block.writeLong(__io__address + 332, __address);
+			__io__block.writeLong(__io__address + 348, __address);
 		}
 	}
 
@@ -2407,9 +2407,9 @@ public class FreestyleLineStyle extends CFacade {
 	public ListBase getColor_modifiers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 456, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 472, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 336, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 352, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2425,9 +2425,9 @@ public class FreestyleLineStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 456;
+			__dna__offset = 472;
 		} else {
-			__dna__offset = 336;
+			__dna__offset = 352;
 		}
 		if (__io__equals(color_modifiers, __io__address + __dna__offset)) {
 			return;
@@ -2449,9 +2449,9 @@ public class FreestyleLineStyle extends CFacade {
 	public ListBase getAlpha_modifiers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 472, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 488, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 344, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 360, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2467,9 +2467,9 @@ public class FreestyleLineStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 472;
+			__dna__offset = 488;
 		} else {
-			__dna__offset = 344;
+			__dna__offset = 360;
 		}
 		if (__io__equals(alpha_modifiers, __io__address + __dna__offset)) {
 			return;
@@ -2491,9 +2491,9 @@ public class FreestyleLineStyle extends CFacade {
 	public ListBase getThickness_modifiers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 488, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 504, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 352, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 368, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2509,9 +2509,9 @@ public class FreestyleLineStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 488;
+			__dna__offset = 504;
 		} else {
-			__dna__offset = 352;
+			__dna__offset = 368;
 		}
 		if (__io__equals(thickness_modifiers, __io__address + __dna__offset)) {
 			return;
@@ -2533,9 +2533,9 @@ public class FreestyleLineStyle extends CFacade {
 	public ListBase getGeometry_modifiers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 504, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 520, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 360, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 376, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2551,9 +2551,9 @@ public class FreestyleLineStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 504;
+			__dna__offset = 520;
 		} else {
-			__dna__offset = 360;
+			__dna__offset = 376;
 		}
 		if (__io__equals(geometry_modifiers, __io__address + __dna__offset)) {
 			return;

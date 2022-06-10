@@ -27,7 +27,7 @@ public class SDefVert extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 158;
+	public static final int __DNA__SDNA_INDEX = 161;
 
 	/**
 	 * Field descriptor (offset) for struct member 'binds'.

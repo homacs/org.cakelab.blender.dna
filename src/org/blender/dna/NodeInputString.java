@@ -27,7 +27,7 @@ public class NodeInputString extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 501;
+	public static final int __DNA__SDNA_INDEX = 497;
 
 	/**
 	 * Field descriptor (offset) for struct member 'string'.

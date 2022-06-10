@@ -30,7 +30,7 @@ public class wmWindow extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 641;
+	public static final int __DNA__SDNA_INDEX = 632;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -721,27 +721,27 @@ public class wmWindow extends CFacade {
 	public static final long[] __DNA__FIELD__eventstate = new long[]{156, 216};
 
 	/**
-	 * Field descriptor (offset) for struct member 'tweak'.
+	 * Field descriptor (offset) for struct member 'event_last_handled'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Internal for wm_operators.c. </p>
+	 * <p><code></code>  here (owned and must be freed). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * wmWindow wmwindow = ...;
-	 * CPointer&lt;Object&gt; p = wmwindow.__dna__addressof(wmWindow.__DNA__FIELD__tweak);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_tweak = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;Object&gt; p = wmwindow.__dna__addressof(wmWindow.__DNA__FIELD__event_last_handled);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_event_last_handled = p.cast(new Class[]{CPointer.class, Object.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'tweak'</li>
-	 * <li>Signature: 'wmGesture*'</li>
+	 * <li>Field: 'event_last_handled'</li>
+	 * <li>Signature: 'wmEvent*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tweak = new long[]{160, 224};
+	public static final long[] __DNA__FIELD__event_last_handled = new long[]{160, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ime_data'.
@@ -2012,14 +2012,14 @@ public class wmWindow extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'tweak'.
+	 * Get method for struct member 'event_last_handled'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Internal for wm_operators.c. </p>
-	 * @see #__DNA__FIELD__tweak
+	 * <p><code></code>  here (owned and must be freed). </p>
+	 * @see #__DNA__FIELD__event_last_handled
 	 */
 	
-	public CPointer<Object> getTweak() throws IOException
+	public CPointer<Object> getEvent_last_handled() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -2032,16 +2032,16 @@ public class wmWindow extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'tweak'.
+	 * Set method for struct member 'event_last_handled'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Internal for wm_operators.c. </p>
-	 * @see #__DNA__FIELD__tweak
+	 * <p><code></code>  here (owned and must be freed). </p>
+	 * @see #__DNA__FIELD__event_last_handled
 	 */
 	
-	public void setTweak(CPointer<Object> tweak) throws IOException
+	public void setEvent_last_handled(CPointer<Object> event_last_handled) throws IOException
 	{
-		long __address = ((tweak == null) ? 0 : tweak.getAddress());
+		long __address = ((event_last_handled == null) ? 0 : event_last_handled.getAddress());
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 224, __address);
 		} else {

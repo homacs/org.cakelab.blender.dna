@@ -27,7 +27,7 @@ public class LineStyleGeometryModifier_SpatialNoise extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 749;
+	public static final int __DNA__SDNA_INDEX = 740;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

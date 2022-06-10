@@ -20,7 +20,7 @@ import org.cakelab.blender.nio.CPointer;
  *  Generic image format settings, this is used for {@link NodeImageFile}  and IMAGE_OT_save_as operator too.</p><p> NOTE: its a bit strange that even though this is an image format struct the imtype can still be used to select video formats. RNA ensures these enum's are only selectable for render output. </p>
  */
 
-@CMetaData(size32=248, size64=256)
+@CMetaData(size32=320, size64=328)
 public class ImageFormatData extends CFacade {
 
 	/**
@@ -31,7 +31,7 @@ public class ImageFormatData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 188;
+	public static final int __DNA__SDNA_INDEX = 191;
 
 	/**
 	 * Field descriptor (offset) for struct member 'imtype'.
@@ -409,10 +409,50 @@ public class ImageFormatData extends CFacade {
 	public static final long[] __DNA__FIELD__stereo3d_format = new long[]{24, 24};
 
 	/**
-	 * Field descriptor (offset) for struct member 'view_settings'.
+	 * Field descriptor (offset) for struct member 'color_management'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
 	 * <p> color management </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImageFormatData imageformatdata = ...;
+	 * CPointer&lt;Object&gt; p = imageformatdata.__dna__addressof(ImageFormatData.__DNA__FIELD__color_management);
+	 * CPointer&lt;Byte&gt; p_color_management = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'color_management'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__color_management = new long[]{32, 32};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImageFormatData imageformatdata = ...;
+	 * CPointer&lt;Object&gt; p = imageformatdata.__dna__addressof(ImageFormatData.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad1 = new long[]{33, 33};
+
+	/**
+	 * Field descriptor (offset) for struct member 'view_settings'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -429,7 +469,7 @@ public class ImageFormatData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 152/160</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__view_settings = new long[]{32, 32};
+	public static final long[] __DNA__FIELD__view_settings = new long[]{40, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'display_settings'.
@@ -449,7 +489,27 @@ public class ImageFormatData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__display_settings = new long[]{184, 192};
+	public static final long[] __DNA__FIELD__display_settings = new long[]{192, 200};
+
+	/**
+	 * Field descriptor (offset) for struct member 'linear_colorspace_settings'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImageFormatData imageformatdata = ...;
+	 * CPointer&lt;Object&gt; p = imageformatdata.__dna__addressof(ImageFormatData.__DNA__FIELD__linear_colorspace_settings);
+	 * CPointer&lt;ColorManagedColorspaceSettings&gt; p_linear_colorspace_settings = p.cast(new Class[]{ColorManagedColorspaceSettings.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'linear_colorspace_settings'</li>
+	 * <li>Signature: 'ColorManagedColorspaceSettings'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__linear_colorspace_settings = new long[]{256, 264};
 
 	public ImageFormatData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1026,27 +1086,95 @@ public class ImageFormatData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'view_settings'.
+	 * Get method for struct member 'color_management'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
 	 * <p> color management </p>
+	 * @see #__DNA__FIELD__color_management
+	 */
+	
+	public byte getColor_management() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 32);
+		} else {
+			return __io__block.readByte(__io__address + 32);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'color_management'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> color management </p>
+	 * @see #__DNA__FIELD__color_management
+	 */
+	
+	public void setColor_management(byte color_management) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 32, color_management);
+		} else {
+			__io__block.writeByte(__io__address + 32, color_management);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public CArrayFacade<Byte> get_pad1() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			7
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 33, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 33, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 33;
+		} else {
+			__dna__offset = 33;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'view_settings'.
 	 * @see #__DNA__FIELD__view_settings
 	 */
 	
 	public ColorManagedViewSettings getView_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ColorManagedViewSettings(__io__address + 32, __io__block, __io__blockTable);
+			return new ColorManagedViewSettings(__io__address + 40, __io__block, __io__blockTable);
 		} else {
-			return new ColorManagedViewSettings(__io__address + 32, __io__block, __io__blockTable);
+			return new ColorManagedViewSettings(__io__address + 40, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'view_settings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> color management </p>
 	 * @see #__DNA__FIELD__view_settings
 	 */
 	
@@ -1054,9 +1182,9 @@ public class ImageFormatData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 32;
+			__dna__offset = 40;
 		} else {
-			__dna__offset = 32;
+			__dna__offset = 40;
 		}
 		if (__io__equals(view_settings, __io__address + __dna__offset)) {
 			return;
@@ -1075,9 +1203,9 @@ public class ImageFormatData extends CFacade {
 	public ColorManagedDisplaySettings getDisplay_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ColorManagedDisplaySettings(__io__address + 192, __io__block, __io__blockTable);
+			return new ColorManagedDisplaySettings(__io__address + 200, __io__block, __io__blockTable);
 		} else {
-			return new ColorManagedDisplaySettings(__io__address + 184, __io__block, __io__blockTable);
+			return new ColorManagedDisplaySettings(__io__address + 192, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1090,9 +1218,9 @@ public class ImageFormatData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 184;
+			__dna__offset = 192;
 		}
 		if (__io__equals(display_settings, __io__address + __dna__offset)) {
 			return;
@@ -1100,6 +1228,42 @@ public class ImageFormatData extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, display_settings);
 		} else {
 			__io__generic__copy( getDisplay_settings(), display_settings);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'linear_colorspace_settings'.
+	 * @see #__DNA__FIELD__linear_colorspace_settings
+	 */
+	
+	public ColorManagedColorspaceSettings getLinear_colorspace_settings() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ColorManagedColorspaceSettings(__io__address + 264, __io__block, __io__blockTable);
+		} else {
+			return new ColorManagedColorspaceSettings(__io__address + 256, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'linear_colorspace_settings'.
+	 * @see #__DNA__FIELD__linear_colorspace_settings
+	 */
+	
+	public void setLinear_colorspace_settings(ColorManagedColorspaceSettings linear_colorspace_settings) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 264;
+		} else {
+			__dna__offset = 256;
+		}
+		if (__io__equals(linear_colorspace_settings, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, linear_colorspace_settings)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, linear_colorspace_settings);
+		} else {
+			__io__generic__copy( getLinear_colorspace_settings(), linear_colorspace_settings);
 		}
 	}
 

@@ -28,7 +28,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 616;
+	public static final int __DNA__SDNA_INDEX = 606;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -283,6 +283,29 @@ public class SimplifyGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__length = new long[]{244, 260};
 
 	/**
+	 * Field descriptor (offset) for struct member 'sharp_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Sample sharp threshold </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SimplifyGpencilModifierData simplifygpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = simplifygpencilmodifierdata.__dna__addressof(SimplifyGpencilModifierData.__DNA__FIELD__sharp_threshold);
+	 * CPointer&lt;Float&gt; p_sharp_threshold = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'sharp_threshold'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__sharp_threshold = new long[]{248, 264};
+
+	/**
 	 * Field descriptor (offset) for struct member 'distance'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -303,27 +326,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__distance = new long[]{248, 264};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SimplifyGpencilModifierData simplifygpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = simplifygpencilmodifierdata.__dna__addressof(SimplifyGpencilModifierData.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{252, 268};
+	public static final long[] __DNA__FIELD__distance = new long[]{252, 268};
 
 	public SimplifyGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -742,6 +745,40 @@ public class SimplifyGpencilModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'sharp_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Sample sharp threshold </p>
+	 * @see #__DNA__FIELD__sharp_threshold
+	 */
+	
+	public float getSharp_threshold() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 264);
+		} else {
+			return __io__block.readFloat(__io__address + 248);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'sharp_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Sample sharp threshold </p>
+	 * @see #__DNA__FIELD__sharp_threshold
+	 */
+	
+	public void setSharp_threshold(float sharp_threshold) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 264, sharp_threshold);
+		} else {
+			__io__block.writeFloat(__io__address + 248, sharp_threshold);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'distance'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -752,9 +789,9 @@ public class SimplifyGpencilModifierData extends CFacade {
 	public float getDistance() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 264);
+			return __io__block.readFloat(__io__address + 268);
 		} else {
-			return __io__block.readFloat(__io__address + 248);
+			return __io__block.readFloat(__io__address + 252);
 		}
 	}
 
@@ -769,49 +806,9 @@ public class SimplifyGpencilModifierData extends CFacade {
 	public void setDistance(float distance) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 264, distance);
+			__io__block.writeFloat(__io__address + 268, distance);
 		} else {
-			__io__block.writeFloat(__io__address + 248, distance);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public CArrayFacade<Byte> get_pad() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 268, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 252, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 268;
-		} else {
-			__dna__offset = 252;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeFloat(__io__address + 252, distance);
 		}
 	}
 

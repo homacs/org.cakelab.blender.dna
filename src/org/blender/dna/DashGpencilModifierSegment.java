@@ -28,7 +28,7 @@ public class DashGpencilModifierSegment extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 612;
+	public static final int __DNA__SDNA_INDEX = 602;
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
@@ -189,24 +189,24 @@ public class DashGpencilModifierSegment extends CFacade {
 	public static final long[] __DNA__FIELD__mat_nr = new long[]{84, 88};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * DashGpencilModifierSegment dashgpencilmodifiersegment = ...;
-	 * CPointer&lt;Object&gt; p = dashgpencilmodifiersegment.__dna__addressof(DashGpencilModifierSegment.__DNA__FIELD___pad);
-	 * CPointer&lt;Integer&gt; p__pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = dashgpencilmodifiersegment.__dna__addressof(DashGpencilModifierSegment.__DNA__FIELD__flag);
+	 * CPointer&lt;Integer&gt; p_flag = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
+	 * <li>Field: 'flag'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{88, 92};
+	public static final long[] __DNA__FIELD__flag = new long[]{88, 92};
 
 	public DashGpencilModifierSegment(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -465,11 +465,11 @@ public class DashGpencilModifierSegment extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public int get_pad() throws IOException
+	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 92);
@@ -479,16 +479,16 @@ public class DashGpencilModifierSegment extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public void set_pad(int _pad) throws IOException
+	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 92, _pad);
+			__io__block.writeInt(__io__address + 92, flag);
 		} else {
-			__io__block.writeInt(__io__address + 88, _pad);
+			__io__block.writeInt(__io__address + 88, flag);
 		}
 	}
 

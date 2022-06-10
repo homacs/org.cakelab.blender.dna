@@ -30,7 +30,7 @@ public class ViewLayerEEVEE extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 768;
+	public static final int __DNA__SDNA_INDEX = 759;
 
 	/**
 	 * Field descriptor (offset) for struct member 'render_passes'.

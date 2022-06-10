@@ -28,7 +28,7 @@ public class LineStyleGeometryModifier_GuidingLines extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 755;
+	public static final int __DNA__SDNA_INDEX = 746;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

@@ -27,7 +27,7 @@ public class NodeBokehImage extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 422;
+	public static final int __DNA__SDNA_INDEX = 428;
 
 	/**
 	 * Field descriptor (offset) for struct member 'angle'.

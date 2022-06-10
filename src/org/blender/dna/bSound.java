@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1232, size64=1304)
+@CMetaData(size32=1248, size64=1320)
 public class bSound extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bSound extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 346;
+	public static final int __DNA__SDNA_INDEX = 352;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -45,7 +45,7 @@ public class bSound extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 136/176</li>
+	 * <li>Actual Size (32bit/64bit): 152/192</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -68,7 +68,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__name = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__name = new long[]{152, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'packedfile'.
@@ -91,7 +91,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__packedfile = new long[]{1160, 1200};
+	public static final long[] __DNA__FIELD__packedfile = new long[]{1176, 1216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle'.
@@ -114,7 +114,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle = new long[]{1164, 1208};
+	public static final long[] __DNA__FIELD__handle = new long[]{1180, 1224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'newpackedfile'.
@@ -137,7 +137,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__newpackedfile = new long[]{1168, 1216};
+	public static final long[] __DNA__FIELD__newpackedfile = new long[]{1184, 1232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
@@ -157,7 +157,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipo = new long[]{1172, 1224};
+	public static final long[] __DNA__FIELD__ipo = new long[]{1188, 1240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'volume'.
@@ -177,7 +177,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__volume = new long[]{1176, 1232};
+	public static final long[] __DNA__FIELD__volume = new long[]{1192, 1248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'attenuation'.
@@ -197,7 +197,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__attenuation = new long[]{1180, 1236};
+	public static final long[] __DNA__FIELD__attenuation = new long[]{1196, 1252};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pitch'.
@@ -217,7 +217,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pitch = new long[]{1184, 1240};
+	public static final long[] __DNA__FIELD__pitch = new long[]{1200, 1256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'min_gain'.
@@ -237,7 +237,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__min_gain = new long[]{1188, 1244};
+	public static final long[] __DNA__FIELD__min_gain = new long[]{1204, 1260};
 
 	/**
 	 * Field descriptor (offset) for struct member 'max_gain'.
@@ -257,7 +257,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__max_gain = new long[]{1192, 1248};
+	public static final long[] __DNA__FIELD__max_gain = new long[]{1208, 1264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'distance'.
@@ -277,7 +277,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__distance = new long[]{1196, 1252};
+	public static final long[] __DNA__FIELD__distance = new long[]{1212, 1268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -297,7 +297,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{1200, 1256};
+	public static final long[] __DNA__FIELD__flags = new long[]{1216, 1272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tags'.
@@ -320,7 +320,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tags = new long[]{1202, 1258};
+	public static final long[] __DNA__FIELD__tags = new long[]{1218, 1274};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -340,7 +340,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{1204, 1260};
+	public static final long[] __DNA__FIELD___pad = new long[]{1220, 1276};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset_time'.
@@ -360,7 +360,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset_time = new long[]{1208, 1264};
+	public static final long[] __DNA__FIELD__offset_time = new long[]{1224, 1280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache'.
@@ -383,7 +383,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache = new long[]{1216, 1272};
+	public static final long[] __DNA__FIELD__cache = new long[]{1232, 1288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'waveform'.
@@ -406,7 +406,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__waveform = new long[]{1220, 1280};
+	public static final long[] __DNA__FIELD__waveform = new long[]{1236, 1296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'playback_handle'.
@@ -429,7 +429,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__playback_handle = new long[]{1224, 1288};
+	public static final long[] __DNA__FIELD__playback_handle = new long[]{1240, 1304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'spinlock'.
@@ -452,7 +452,7 @@ public class bSound extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__spinlock = new long[]{1228, 1296};
+	public static final long[] __DNA__FIELD__spinlock = new long[]{1244, 1312};
 
 	public bSound(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -510,9 +510,9 @@ public class bSound extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -525,9 +525,9 @@ public class bSound extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
+			__dna__offset = 192;
 		} else {
-			__dna__offset = 136;
+			__dna__offset = 152;
 		}
 		if (__io__equals(name, __io__address + __dna__offset)) {
 			return;
@@ -550,9 +550,9 @@ public class bSound extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1216);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1176);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PackedFile.class};
 		return new CPointer<PackedFile>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PackedFile.__DNA__SDNA_INDEX), __io__blockTable);
@@ -570,9 +570,9 @@ public class bSound extends CFacade {
 	{
 		long __address = ((packedfile == null) ? 0 : packedfile.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1200, __address);
+			__io__block.writeLong(__io__address + 1216, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1160, __address);
+			__io__block.writeLong(__io__address + 1176, __address);
 		}
 	}
 
@@ -588,9 +588,9 @@ public class bSound extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1224);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1164);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1180);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -608,9 +608,9 @@ public class bSound extends CFacade {
 	{
 		long __address = ((handle == null) ? 0 : handle.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1208, __address);
+			__io__block.writeLong(__io__address + 1224, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1164, __address);
+			__io__block.writeLong(__io__address + 1180, __address);
 		}
 	}
 
@@ -626,9 +626,9 @@ public class bSound extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1232);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1184);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PackedFile.class};
 		return new CPointer<PackedFile>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PackedFile.__DNA__SDNA_INDEX), __io__blockTable);
@@ -646,9 +646,9 @@ public class bSound extends CFacade {
 	{
 		long __address = ((newpackedfile == null) ? 0 : newpackedfile.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1216, __address);
+			__io__block.writeLong(__io__address + 1232, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1168, __address);
+			__io__block.writeLong(__io__address + 1184, __address);
 		}
 	}
 
@@ -661,9 +661,9 @@ public class bSound extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1224);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1240);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1172);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1188);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Ipo.class};
 		return new CPointer<Ipo>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Ipo.__DNA__SDNA_INDEX), __io__blockTable);
@@ -678,9 +678,9 @@ public class bSound extends CFacade {
 	{
 		long __address = ((ipo == null) ? 0 : ipo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1224, __address);
+			__io__block.writeLong(__io__address + 1240, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1172, __address);
+			__io__block.writeLong(__io__address + 1188, __address);
 		}
 	}
 
@@ -692,9 +692,9 @@ public class bSound extends CFacade {
 	public float getVolume() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1232);
+			return __io__block.readFloat(__io__address + 1248);
 		} else {
-			return __io__block.readFloat(__io__address + 1176);
+			return __io__block.readFloat(__io__address + 1192);
 		}
 	}
 
@@ -706,9 +706,9 @@ public class bSound extends CFacade {
 	public void setVolume(float volume) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1232, volume);
+			__io__block.writeFloat(__io__address + 1248, volume);
 		} else {
-			__io__block.writeFloat(__io__address + 1176, volume);
+			__io__block.writeFloat(__io__address + 1192, volume);
 		}
 	}
 
@@ -720,9 +720,9 @@ public class bSound extends CFacade {
 	public float getAttenuation() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1236);
+			return __io__block.readFloat(__io__address + 1252);
 		} else {
-			return __io__block.readFloat(__io__address + 1180);
+			return __io__block.readFloat(__io__address + 1196);
 		}
 	}
 
@@ -734,9 +734,9 @@ public class bSound extends CFacade {
 	public void setAttenuation(float attenuation) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1236, attenuation);
+			__io__block.writeFloat(__io__address + 1252, attenuation);
 		} else {
-			__io__block.writeFloat(__io__address + 1180, attenuation);
+			__io__block.writeFloat(__io__address + 1196, attenuation);
 		}
 	}
 
@@ -748,9 +748,9 @@ public class bSound extends CFacade {
 	public float getPitch() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1240);
+			return __io__block.readFloat(__io__address + 1256);
 		} else {
-			return __io__block.readFloat(__io__address + 1184);
+			return __io__block.readFloat(__io__address + 1200);
 		}
 	}
 
@@ -762,9 +762,9 @@ public class bSound extends CFacade {
 	public void setPitch(float pitch) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1240, pitch);
+			__io__block.writeFloat(__io__address + 1256, pitch);
 		} else {
-			__io__block.writeFloat(__io__address + 1184, pitch);
+			__io__block.writeFloat(__io__address + 1200, pitch);
 		}
 	}
 
@@ -776,9 +776,9 @@ public class bSound extends CFacade {
 	public float getMin_gain() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1244);
+			return __io__block.readFloat(__io__address + 1260);
 		} else {
-			return __io__block.readFloat(__io__address + 1188);
+			return __io__block.readFloat(__io__address + 1204);
 		}
 	}
 
@@ -790,9 +790,9 @@ public class bSound extends CFacade {
 	public void setMin_gain(float min_gain) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1244, min_gain);
+			__io__block.writeFloat(__io__address + 1260, min_gain);
 		} else {
-			__io__block.writeFloat(__io__address + 1188, min_gain);
+			__io__block.writeFloat(__io__address + 1204, min_gain);
 		}
 	}
 
@@ -804,9 +804,9 @@ public class bSound extends CFacade {
 	public float getMax_gain() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1248);
+			return __io__block.readFloat(__io__address + 1264);
 		} else {
-			return __io__block.readFloat(__io__address + 1192);
+			return __io__block.readFloat(__io__address + 1208);
 		}
 	}
 
@@ -818,9 +818,9 @@ public class bSound extends CFacade {
 	public void setMax_gain(float max_gain) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1248, max_gain);
+			__io__block.writeFloat(__io__address + 1264, max_gain);
 		} else {
-			__io__block.writeFloat(__io__address + 1192, max_gain);
+			__io__block.writeFloat(__io__address + 1208, max_gain);
 		}
 	}
 
@@ -832,9 +832,9 @@ public class bSound extends CFacade {
 	public float getDistance() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1252);
+			return __io__block.readFloat(__io__address + 1268);
 		} else {
-			return __io__block.readFloat(__io__address + 1196);
+			return __io__block.readFloat(__io__address + 1212);
 		}
 	}
 
@@ -846,9 +846,9 @@ public class bSound extends CFacade {
 	public void setDistance(float distance) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1252, distance);
+			__io__block.writeFloat(__io__address + 1268, distance);
 		} else {
-			__io__block.writeFloat(__io__address + 1196, distance);
+			__io__block.writeFloat(__io__address + 1212, distance);
 		}
 	}
 
@@ -860,9 +860,9 @@ public class bSound extends CFacade {
 	public short getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1256);
+			return __io__block.readShort(__io__address + 1272);
 		} else {
-			return __io__block.readShort(__io__address + 1200);
+			return __io__block.readShort(__io__address + 1216);
 		}
 	}
 
@@ -874,9 +874,9 @@ public class bSound extends CFacade {
 	public void setFlags(short flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1256, flags);
+			__io__block.writeShort(__io__address + 1272, flags);
 		} else {
-			__io__block.writeShort(__io__address + 1200, flags);
+			__io__block.writeShort(__io__address + 1216, flags);
 		}
 	}
 
@@ -891,9 +891,9 @@ public class bSound extends CFacade {
 	public short getTags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1258);
+			return __io__block.readShort(__io__address + 1274);
 		} else {
-			return __io__block.readShort(__io__address + 1202);
+			return __io__block.readShort(__io__address + 1218);
 		}
 	}
 
@@ -908,9 +908,9 @@ public class bSound extends CFacade {
 	public void setTags(short tags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1258, tags);
+			__io__block.writeShort(__io__address + 1274, tags);
 		} else {
-			__io__block.writeShort(__io__address + 1202, tags);
+			__io__block.writeShort(__io__address + 1218, tags);
 		}
 	}
 
@@ -926,9 +926,9 @@ public class bSound extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1260, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1276, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -941,9 +941,9 @@ public class bSound extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1260;
+			__dna__offset = 1276;
 		} else {
-			__dna__offset = 1204;
+			__dna__offset = 1220;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -962,9 +962,9 @@ public class bSound extends CFacade {
 	public double getOffset_time() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readDouble(__io__address + 1264);
+			return __io__block.readDouble(__io__address + 1280);
 		} else {
-			return __io__block.readDouble(__io__address + 1208);
+			return __io__block.readDouble(__io__address + 1224);
 		}
 	}
 
@@ -976,9 +976,9 @@ public class bSound extends CFacade {
 	public void setOffset_time(double offset_time) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeDouble(__io__address + 1264, offset_time);
+			__io__block.writeDouble(__io__address + 1280, offset_time);
 		} else {
-			__io__block.writeDouble(__io__address + 1208, offset_time);
+			__io__block.writeDouble(__io__address + 1224, offset_time);
 		}
 	}
 
@@ -994,9 +994,9 @@ public class bSound extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1288);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1232);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1014,9 +1014,9 @@ public class bSound extends CFacade {
 	{
 		long __address = ((cache == null) ? 0 : cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1272, __address);
+			__io__block.writeLong(__io__address + 1288, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1216, __address);
+			__io__block.writeLong(__io__address + 1232, __address);
 		}
 	}
 
@@ -1032,9 +1032,9 @@ public class bSound extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1280);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1296);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1220);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1236);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1052,9 +1052,9 @@ public class bSound extends CFacade {
 	{
 		long __address = ((waveform == null) ? 0 : waveform.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1280, __address);
+			__io__block.writeLong(__io__address + 1296, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1220, __address);
+			__io__block.writeLong(__io__address + 1236, __address);
 		}
 	}
 
@@ -1070,9 +1070,9 @@ public class bSound extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1288);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1304);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1224);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1240);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1090,9 +1090,9 @@ public class bSound extends CFacade {
 	{
 		long __address = ((playback_handle == null) ? 0 : playback_handle.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1288, __address);
+			__io__block.writeLong(__io__address + 1304, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1224, __address);
+			__io__block.writeLong(__io__address + 1240, __address);
 		}
 	}
 
@@ -1108,9 +1108,9 @@ public class bSound extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1296);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1312);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1228);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1244);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1128,9 +1128,9 @@ public class bSound extends CFacade {
 	{
 		long __address = ((spinlock == null) ? 0 : spinlock.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1296, __address);
+			__io__block.writeLong(__io__address + 1312, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1228, __address);
+			__io__block.writeLong(__io__address + 1244, __address);
 		}
 	}
 

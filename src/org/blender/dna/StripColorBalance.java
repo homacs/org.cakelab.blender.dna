@@ -28,7 +28,7 @@ public class StripColorBalance extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 314;
+	public static final int __DNA__SDNA_INDEX = 319;
 
 	/**
 	 * Field descriptor (offset) for struct member 'method'.

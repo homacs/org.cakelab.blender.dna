@@ -20,7 +20,7 @@ import org.cakelab.blender.nio.CPointer;
  *  </p>
  */
 
-@CMetaData(size32=980, size64=992)
+@CMetaData(size32=988, size64=1000)
 public class XrSessionSettings extends CFacade {
 
 	/**
@@ -31,7 +31,7 @@ public class XrSessionSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 785;
+	public static final int __DNA__SDNA_INDEX = 778;
 
 	/**
 	 * Field descriptor (offset) for struct member 'shading'.
@@ -332,6 +332,49 @@ public class XrSessionSettings extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__flag = new long[]{976, 988};
+
+	/**
+	 * Field descriptor (offset) for struct member 'object_type_exclude_viewport'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p>{@link Object}  type settings to apply to VR view (unlike shading, not shared with window 3D-View). </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * XrSessionSettings xrsessionsettings = ...;
+	 * CPointer&lt;Object&gt; p = xrsessionsettings.__dna__addressof(XrSessionSettings.__DNA__FIELD__object_type_exclude_viewport);
+	 * CPointer&lt;Integer&gt; p_object_type_exclude_viewport = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'object_type_exclude_viewport'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__object_type_exclude_viewport = new long[]{980, 992};
+
+	/**
+	 * Field descriptor (offset) for struct member 'object_type_exclude_select'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * XrSessionSettings xrsessionsettings = ...;
+	 * CPointer&lt;Object&gt; p = xrsessionsettings.__dna__addressof(XrSessionSettings.__DNA__FIELD__object_type_exclude_select);
+	 * CPointer&lt;Integer&gt; p_object_type_exclude_select = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'object_type_exclude_select'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__object_type_exclude_select = new long[]{984, 996};
 
 	public XrSessionSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -830,6 +873,68 @@ public class XrSessionSettings extends CFacade {
 			__io__block.writeInt(__io__address + 988, flag);
 		} else {
 			__io__block.writeInt(__io__address + 976, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'object_type_exclude_viewport'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p>{@link Object}  type settings to apply to VR view (unlike shading, not shared with window 3D-View). </p>
+	 * @see #__DNA__FIELD__object_type_exclude_viewport
+	 */
+	
+	public int getObject_type_exclude_viewport() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 992);
+		} else {
+			return __io__block.readInt(__io__address + 980);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'object_type_exclude_viewport'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p>{@link Object}  type settings to apply to VR view (unlike shading, not shared with window 3D-View). </p>
+	 * @see #__DNA__FIELD__object_type_exclude_viewport
+	 */
+	
+	public void setObject_type_exclude_viewport(int object_type_exclude_viewport) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 992, object_type_exclude_viewport);
+		} else {
+			__io__block.writeInt(__io__address + 980, object_type_exclude_viewport);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'object_type_exclude_select'.
+	 * @see #__DNA__FIELD__object_type_exclude_select
+	 */
+	
+	public int getObject_type_exclude_select() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 996);
+		} else {
+			return __io__block.readInt(__io__address + 984);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'object_type_exclude_select'.
+	 * @see #__DNA__FIELD__object_type_exclude_select
+	 */
+	
+	public void setObject_type_exclude_select(int object_type_exclude_select) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 996, object_type_exclude_select);
+		} else {
+			__io__block.writeInt(__io__address + 984, object_type_exclude_select);
 		}
 	}
 

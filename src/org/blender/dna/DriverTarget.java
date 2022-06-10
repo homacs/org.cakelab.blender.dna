@@ -30,7 +30,7 @@ public class DriverTarget extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 658;
+	public static final int __DNA__SDNA_INDEX = 649;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=216, size64=280)
+@CMetaData(size32=232, size64=296)
 public class Key extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class Key extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 28;
+	public static final int __DNA__SDNA_INDEX = 30;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -45,7 +45,7 @@ public class Key extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 136/176</li>
+	 * <li>Actual Size (32bit/64bit): 152/192</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -71,7 +71,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__adt = new long[]{152, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'refkey'.
@@ -94,7 +94,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__refkey = new long[]{140, 184};
+	public static final long[] __DNA__FIELD__refkey = new long[]{156, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'elemstr'.
@@ -117,7 +117,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__elemstr = new long[]{144, 192};
+	public static final long[] __DNA__FIELD__elemstr = new long[]{160, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'elemsize'.
@@ -140,7 +140,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__elemsize = new long[]{176, 224};
+	public static final long[] __DNA__FIELD__elemsize = new long[]{192, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -160,7 +160,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{180, 228};
+	public static final long[] __DNA__FIELD___pad = new long[]{196, 244};
 
 	/**
 	 * Field descriptor (offset) for struct member 'block'.
@@ -183,7 +183,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__block = new long[]{184, 232};
+	public static final long[] __DNA__FIELD__block = new long[]{200, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
@@ -208,7 +208,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipo = new long[]{192, 248};
+	public static final long[] __DNA__FIELD__ipo = new long[]{208, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'from'.
@@ -228,7 +228,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__from = new long[]{196, 256};
+	public static final long[] __DNA__FIELD__from = new long[]{212, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totkey'.
@@ -251,7 +251,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totkey = new long[]{200, 264};
+	public static final long[] __DNA__FIELD__totkey = new long[]{216, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -271,7 +271,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{204, 268};
+	public static final long[] __DNA__FIELD__flag = new long[]{220, 284};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -294,7 +294,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{206, 270};
+	public static final long[] __DNA__FIELD__type = new long[]{222, 286};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -314,7 +314,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{207, 271};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{223, 287};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ctime'.
@@ -337,7 +337,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ctime = new long[]{208, 272};
+	public static final long[] __DNA__FIELD__ctime = new long[]{224, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uidgen'.
@@ -360,7 +360,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uidgen = new long[]{212, 276};
+	public static final long[] __DNA__FIELD__uidgen = new long[]{228, 292};
 
 	public Key(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -418,9 +418,9 @@ public class Key extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -438,9 +438,9 @@ public class Key extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		}
 	}
 
@@ -456,9 +456,9 @@ public class Key extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 140);
+			__dna__targetAddress = __io__block.readLong(__io__address + 156);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{KeyBlock.class};
 		return new CPointer<KeyBlock>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, KeyBlock.__DNA__SDNA_INDEX), __io__blockTable);
@@ -476,9 +476,9 @@ public class Key extends CFacade {
 	{
 		long __address = ((refkey == null) ? 0 : refkey.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 140, __address);
+			__io__block.writeLong(__io__address + 156, __address);
 		}
 	}
 
@@ -497,9 +497,9 @@ public class Key extends CFacade {
 			32
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -515,9 +515,9 @@ public class Key extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 208;
 		} else {
-			__dna__offset = 144;
+			__dna__offset = 160;
 		}
 		if (__io__equals(elemstr, __io__address + __dna__offset)) {
 			return;
@@ -539,9 +539,9 @@ public class Key extends CFacade {
 	public int getElemsize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 224);
+			return __io__block.readInt(__io__address + 240);
 		} else {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 192);
 		}
 	}
 
@@ -556,9 +556,9 @@ public class Key extends CFacade {
 	public void setElemsize(int elemsize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 224, elemsize);
+			__io__block.writeInt(__io__address + 240, elemsize);
 		} else {
-			__io__block.writeInt(__io__address + 176, elemsize);
+			__io__block.writeInt(__io__address + 192, elemsize);
 		}
 	}
 
@@ -574,9 +574,9 @@ public class Key extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 228, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 244, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -589,9 +589,9 @@ public class Key extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 228;
+			__dna__offset = 244;
 		} else {
-			__dna__offset = 180;
+			__dna__offset = 196;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -613,9 +613,9 @@ public class Key extends CFacade {
 	public ListBase getBlock() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 232, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 248, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 184, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 200, __io__block, __io__blockTable);
 		}
 	}
 
@@ -631,9 +631,9 @@ public class Key extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 232;
+			__dna__offset = 248;
 		} else {
-			__dna__offset = 184;
+			__dna__offset = 200;
 		}
 		if (__io__equals(block, __io__address + __dna__offset)) {
 			return;
@@ -658,9 +658,9 @@ public class Key extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 248);
+			__dna__targetAddress = __io__block.readLong(__io__address + 264);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Ipo.class};
 		return new CPointer<Ipo>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Ipo.__DNA__SDNA_INDEX), __io__blockTable);
@@ -680,9 +680,9 @@ public class Key extends CFacade {
 	{
 		long __address = ((ipo == null) ? 0 : ipo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 248, __address);
+			__io__block.writeLong(__io__address + 264, __address);
 		} else {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		}
 	}
 
@@ -695,9 +695,9 @@ public class Key extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 272);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 196);
+			__dna__targetAddress = __io__block.readLong(__io__address + 212);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ID.class};
 		return new CPointer<ID>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ID.__DNA__SDNA_INDEX), __io__blockTable);
@@ -712,9 +712,9 @@ public class Key extends CFacade {
 	{
 		long __address = ((from == null) ? 0 : from.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 272, __address);
 		} else {
-			__io__block.writeLong(__io__address + 196, __address);
+			__io__block.writeLong(__io__address + 212, __address);
 		}
 	}
 
@@ -729,9 +729,9 @@ public class Key extends CFacade {
 	public int getTotkey() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 264);
+			return __io__block.readInt(__io__address + 280);
 		} else {
-			return __io__block.readInt(__io__address + 200);
+			return __io__block.readInt(__io__address + 216);
 		}
 	}
 
@@ -746,9 +746,9 @@ public class Key extends CFacade {
 	public void setTotkey(int totkey) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 264, totkey);
+			__io__block.writeInt(__io__address + 280, totkey);
 		} else {
-			__io__block.writeInt(__io__address + 200, totkey);
+			__io__block.writeInt(__io__address + 216, totkey);
 		}
 	}
 
@@ -760,9 +760,9 @@ public class Key extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 268);
+			return __io__block.readShort(__io__address + 284);
 		} else {
-			return __io__block.readShort(__io__address + 204);
+			return __io__block.readShort(__io__address + 220);
 		}
 	}
 
@@ -774,9 +774,9 @@ public class Key extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 268, flag);
+			__io__block.writeShort(__io__address + 284, flag);
 		} else {
-			__io__block.writeShort(__io__address + 204, flag);
+			__io__block.writeShort(__io__address + 220, flag);
 		}
 	}
 
@@ -791,9 +791,9 @@ public class Key extends CFacade {
 	public byte getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 270);
+			return __io__block.readByte(__io__address + 286);
 		} else {
-			return __io__block.readByte(__io__address + 206);
+			return __io__block.readByte(__io__address + 222);
 		}
 	}
 
@@ -808,9 +808,9 @@ public class Key extends CFacade {
 	public void setType(byte type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 270, type);
+			__io__block.writeByte(__io__address + 286, type);
 		} else {
-			__io__block.writeByte(__io__address + 206, type);
+			__io__block.writeByte(__io__address + 222, type);
 		}
 	}
 
@@ -822,9 +822,9 @@ public class Key extends CFacade {
 	public byte get_pad2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 271);
+			return __io__block.readByte(__io__address + 287);
 		} else {
-			return __io__block.readByte(__io__address + 207);
+			return __io__block.readByte(__io__address + 223);
 		}
 	}
 
@@ -836,9 +836,9 @@ public class Key extends CFacade {
 	public void set_pad2(byte _pad2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 271, _pad2);
+			__io__block.writeByte(__io__address + 287, _pad2);
 		} else {
-			__io__block.writeByte(__io__address + 207, _pad2);
+			__io__block.writeByte(__io__address + 223, _pad2);
 		}
 	}
 
@@ -853,9 +853,9 @@ public class Key extends CFacade {
 	public float getCtime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 272);
+			return __io__block.readFloat(__io__address + 288);
 		} else {
-			return __io__block.readFloat(__io__address + 208);
+			return __io__block.readFloat(__io__address + 224);
 		}
 	}
 
@@ -870,9 +870,9 @@ public class Key extends CFacade {
 	public void setCtime(float ctime) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 272, ctime);
+			__io__block.writeFloat(__io__address + 288, ctime);
 		} else {
-			__io__block.writeFloat(__io__address + 208, ctime);
+			__io__block.writeFloat(__io__address + 224, ctime);
 		}
 	}
 
@@ -887,9 +887,9 @@ public class Key extends CFacade {
 	public int getUidgen() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 276);
+			return __io__block.readInt(__io__address + 292);
 		} else {
-			return __io__block.readInt(__io__address + 212);
+			return __io__block.readInt(__io__address + 228);
 		}
 	}
 
@@ -904,9 +904,9 @@ public class Key extends CFacade {
 	public void setUidgen(int uidgen) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 276, uidgen);
+			__io__block.writeInt(__io__address + 292, uidgen);
 		} else {
-			__io__block.writeInt(__io__address + 212, uidgen);
+			__io__block.writeInt(__io__address + 228, uidgen);
 		}
 	}
 

@@ -30,7 +30,7 @@ public class SpaceFile extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 244;
+	public static final int __DNA__SDNA_INDEX = 249;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -397,7 +397,7 @@ public class SpaceFile extends CFacade {
 	 * Field descriptor (offset) for struct member 'op'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> operator that is invoking fileselect op->exec() will be called on the 'Load' button. if operator provides op->cancel(), then this will be invoked on the cancel button. </p>
+	 * <p><code></code>  will be called on the 'Load' button. if operator provides op->cancel(), then this will be invoked on the cancel button. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1178,7 +1178,7 @@ public class SpaceFile extends CFacade {
 	 * Get method for struct member 'op'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> operator that is invoking fileselect op->exec() will be called on the 'Load' button. if operator provides op->cancel(), then this will be invoked on the cancel button. </p>
+	 * <p><code></code>  will be called on the 'Load' button. if operator provides op->cancel(), then this will be invoked on the cancel button. </p>
 	 * @see #__DNA__FIELD__op
 	 */
 	
@@ -1198,7 +1198,7 @@ public class SpaceFile extends CFacade {
 	 * Set method for struct member 'op'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> operator that is invoking fileselect op->exec() will be called on the 'Load' button. if operator provides op->cancel(), then this will be invoked on the cancel button. </p>
+	 * <p><code></code>  will be called on the 'Load' button. if operator provides op->cancel(), then this will be invoked on the cancel button. </p>
 	 * @see #__DNA__FIELD__op
 	 */
 	

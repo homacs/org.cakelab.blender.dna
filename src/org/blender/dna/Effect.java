@@ -28,7 +28,7 @@ public class Effect extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 340;
+	public static final int __DNA__SDNA_INDEX = 346;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

@@ -30,7 +30,7 @@ public class NodeImageLayer extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 425;
+	public static final int __DNA__SDNA_INDEX = 431;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
@@ -61,7 +61,7 @@ public class NodeImageLayer extends CFacade {
 	 * Field descriptor (offset) for struct member 'pass_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> render pass name Amount defined in openexr_multi.h. </p>
+	 * <p> render pass name Amount defined in IMB_openexr.h. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -130,7 +130,7 @@ public class NodeImageLayer extends CFacade {
 	 * Get method for struct member 'pass_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> render pass name Amount defined in openexr_multi.h. </p>
+	 * <p> render pass name Amount defined in IMB_openexr.h. </p>
 	 * @see #__DNA__FIELD__pass_name
 	 */
 	
@@ -151,7 +151,7 @@ public class NodeImageLayer extends CFacade {
 	 * Set method for struct member 'pass_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> render pass name Amount defined in openexr_multi.h. </p>
+	 * <p> render pass name Amount defined in IMB_openexr.h. </p>
 	 * @see #__DNA__FIELD__pass_name
 	 */
 	

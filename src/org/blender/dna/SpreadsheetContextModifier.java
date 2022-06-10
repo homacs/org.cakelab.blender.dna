@@ -27,7 +27,7 @@ public class SpreadsheetContextModifier extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 264;
+	public static final int __DNA__SDNA_INDEX = 269;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.

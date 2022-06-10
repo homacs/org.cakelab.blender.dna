@@ -29,7 +29,7 @@ public class SoftBody_Shared extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 177;
+	public static final int __DNA__SDNA_INDEX = 180;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pointcache'.

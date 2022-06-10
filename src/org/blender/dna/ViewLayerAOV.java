@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * 
  * <h4>Blender Source Code</h4>
- * <p> AOV Renderpass definition. </p>
+ * <p> AOV Render-pass definition. </p>
  */
 
 @CMetaData(size32=80, size64=88)
@@ -30,7 +30,7 @@ public class ViewLayerAOV extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 769;
+	public static final int __DNA__SDNA_INDEX = 760;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

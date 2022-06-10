@@ -27,7 +27,7 @@ public class NodeSetAlpha extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 448;
+	public static final int __DNA__SDNA_INDEX = 454;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.

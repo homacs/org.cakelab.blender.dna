@@ -30,7 +30,7 @@ public class AnimData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 668;
+	public static final int __DNA__SDNA_INDEX = 659;
 
 	/**
 	 * Field descriptor (offset) for struct member 'action'.

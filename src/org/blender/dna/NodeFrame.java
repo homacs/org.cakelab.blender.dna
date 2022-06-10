@@ -27,7 +27,7 @@ public class NodeFrame extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 418;
+	public static final int __DNA__SDNA_INDEX = 424;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.

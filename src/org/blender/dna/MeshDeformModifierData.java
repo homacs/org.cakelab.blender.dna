@@ -28,7 +28,7 @@ public class MeshDeformModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 125;
+	public static final int __DNA__SDNA_INDEX = 128;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -227,9 +227,6 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totvert'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Total vertices in mesh and cage. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -362,9 +359,6 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totinfluence'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Total number of vertex influences. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -838,9 +832,6 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'totvert'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Total vertices in mesh and cage. </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
 	
@@ -855,9 +846,6 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'totvert'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Total vertices in mesh and cage. </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
 	
@@ -1048,9 +1036,6 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'totinfluence'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Total number of vertex influences. </p>
 	 * @see #__DNA__FIELD__totinfluence
 	 */
 	
@@ -1065,9 +1050,6 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'totinfluence'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Total number of vertex influences. </p>
 	 * @see #__DNA__FIELD__totinfluence
 	 */
 	

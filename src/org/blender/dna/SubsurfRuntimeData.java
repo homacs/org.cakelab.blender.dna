@@ -28,7 +28,7 @@ public class SubsurfRuntimeData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 99;
+	public static final int __DNA__SDNA_INDEX = 102;
 
 	/**
 	 * Field descriptor (offset) for struct member 'subdiv'.

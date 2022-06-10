@@ -28,7 +28,7 @@ public class Scopes extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 554;
+	public static final int __DNA__SDNA_INDEX = 543;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ok'.

@@ -30,7 +30,7 @@ public class FluidEffectorSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 681;
+	public static final int __DNA__SDNA_INDEX = 672;
 
 	/**
 	 * Field descriptor (offset) for struct member 'fmd'.

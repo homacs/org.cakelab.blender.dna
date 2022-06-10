@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=256, size64=280)
+@CMetaData(size32=264, size64=288)
 public class DataTransferModifierData extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class DataTransferModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 154;
+	public static final int __DNA__SDNA_INDEX = 157;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -273,8 +273,8 @@ public class DataTransferModifierData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'layers_select_src'</li>
-	 * <li>Signature: 'int[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 16/16</li>
+	 * <li>Signature: 'int[5]'</li>
+	 * <li>Actual Size (32bit/64bit): 20/20</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__layers_select_src = new long[]{144, 164};
@@ -296,11 +296,11 @@ public class DataTransferModifierData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'layers_select_dst'</li>
-	 * <li>Signature: 'int[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 16/16</li>
+	 * <li>Signature: 'int[5]'</li>
+	 * <li>Actual Size (32bit/64bit): 20/20</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layers_select_dst = new long[]{160, 180};
+	public static final long[] __DNA__FIELD__layers_select_dst = new long[]{164, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mix_mode'.
@@ -323,7 +323,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mix_mode = new long[]{176, 196};
+	public static final long[] __DNA__FIELD__mix_mode = new long[]{184, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mix_factor'.
@@ -343,7 +343,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mix_factor = new long[]{180, 200};
+	public static final long[] __DNA__FIELD__mix_factor = new long[]{188, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
@@ -366,7 +366,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{184, 204};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{192, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -386,7 +386,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{248, 268};
+	public static final long[] __DNA__FIELD__flags = new long[]{256, 276};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -406,7 +406,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{252, 272};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{260, 280};
 
 	public DataTransferModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -772,7 +772,7 @@ public class DataTransferModifierData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			5
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Integer>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -818,12 +818,12 @@ public class DataTransferModifierData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			5
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -839,9 +839,9 @@ public class DataTransferModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 180;
+			__dna__offset = 184;
 		} else {
-			__dna__offset = 160;
+			__dna__offset = 164;
 		}
 		if (__io__equals(layers_select_dst, __io__address + __dna__offset)) {
 			return;
@@ -863,9 +863,9 @@ public class DataTransferModifierData extends CFacade {
 	public int getMix_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 196);
+			return __io__block.readInt(__io__address + 204);
 		} else {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 184);
 		}
 	}
 
@@ -880,9 +880,9 @@ public class DataTransferModifierData extends CFacade {
 	public void setMix_mode(int mix_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 196, mix_mode);
+			__io__block.writeInt(__io__address + 204, mix_mode);
 		} else {
-			__io__block.writeInt(__io__address + 176, mix_mode);
+			__io__block.writeInt(__io__address + 184, mix_mode);
 		}
 	}
 
@@ -894,9 +894,9 @@ public class DataTransferModifierData extends CFacade {
 	public float getMix_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 208);
 		} else {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readFloat(__io__address + 188);
 		}
 	}
 
@@ -908,9 +908,9 @@ public class DataTransferModifierData extends CFacade {
 	public void setMix_factor(float mix_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 200, mix_factor);
+			__io__block.writeFloat(__io__address + 208, mix_factor);
 		} else {
-			__io__block.writeFloat(__io__address + 180, mix_factor);
+			__io__block.writeFloat(__io__address + 188, mix_factor);
 		}
 	}
 
@@ -929,9 +929,9 @@ public class DataTransferModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -947,9 +947,9 @@ public class DataTransferModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 204;
+			__dna__offset = 212;
 		} else {
-			__dna__offset = 184;
+			__dna__offset = 192;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -968,9 +968,9 @@ public class DataTransferModifierData extends CFacade {
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 268);
+			return __io__block.readInt(__io__address + 276);
 		} else {
-			return __io__block.readInt(__io__address + 248);
+			return __io__block.readInt(__io__address + 256);
 		}
 	}
 
@@ -982,9 +982,9 @@ public class DataTransferModifierData extends CFacade {
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 268, flags);
+			__io__block.writeInt(__io__address + 276, flags);
 		} else {
-			__io__block.writeInt(__io__address + 248, flags);
+			__io__block.writeInt(__io__address + 256, flags);
 		}
 	}
 
@@ -997,9 +997,9 @@ public class DataTransferModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 280);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 252);
+			__dna__targetAddress = __io__block.readLong(__io__address + 260);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1014,9 +1014,9 @@ public class DataTransferModifierData extends CFacade {
 	{
 		long __address = ((_pad2 == null) ? 0 : _pad2.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 272, __address);
+			__io__block.writeLong(__io__address + 280, __address);
 		} else {
-			__io__block.writeLong(__io__address + 252, __address);
+			__io__block.writeLong(__io__address + 260, __address);
 		}
 	}
 

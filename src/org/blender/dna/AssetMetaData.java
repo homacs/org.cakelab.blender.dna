@@ -32,7 +32,7 @@ public class AssetMetaData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 803;
+	public static final int __DNA__SDNA_INDEX = 797;
 
 	/**
 	 * Field descriptor (offset) for struct member 'local_type_info'.

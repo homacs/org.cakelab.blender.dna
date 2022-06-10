@@ -27,7 +27,7 @@ public class SwirlShaderFxData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 636;
+	public static final int __DNA__SDNA_INDEX = 627;
 
 	/**
 	 * Field descriptor (offset) for struct member 'shaderfx'.

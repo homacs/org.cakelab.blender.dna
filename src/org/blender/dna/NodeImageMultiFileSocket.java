@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1312, size64=1320)
+@CMetaData(size32=1384, size64=1392)
 public class NodeImageMultiFileSocket extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 433;
+	public static final int __DNA__SDNA_INDEX = 439;
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_render_format'.
@@ -156,7 +156,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	 * <ul>
 	 * <li>Field: 'format'</li>
 	 * <li>Signature: 'ImageFormatData'</li>
-	 * <li>Actual Size (32bit/64bit): 248/256</li>
+	 * <li>Actual Size (32bit/64bit): 320/328</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__format = new long[]{1032, 1032};
@@ -182,7 +182,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 30/30</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer = new long[]{1280, 1288};
+	public static final long[] __DNA__FIELD__layer = new long[]{1352, 1360};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -202,7 +202,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{1310, 1318};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{1382, 1390};
 
 	public NodeImageMultiFileSocket(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -449,9 +449,9 @@ public class NodeImageMultiFileSocket extends CFacade {
 			30
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1288, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1360, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1352, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -467,9 +467,9 @@ public class NodeImageMultiFileSocket extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1288;
+			__dna__offset = 1360;
 		} else {
-			__dna__offset = 1280;
+			__dna__offset = 1352;
 		}
 		if (__io__equals(layer, __io__address + __dna__offset)) {
 			return;
@@ -492,9 +492,9 @@ public class NodeImageMultiFileSocket extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1318, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1390, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1310, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1382, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -507,9 +507,9 @@ public class NodeImageMultiFileSocket extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1318;
+			__dna__offset = 1390;
 		} else {
-			__dna__offset = 1310;
+			__dna__offset = 1382;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;

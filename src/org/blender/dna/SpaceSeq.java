@@ -19,7 +19,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Sequencer. </p>
  */
 
-@CMetaData(size32=280, size64=336)
+@CMetaData(size32=288, size64=344)
 public class SpaceSeq extends CFacade {
 
 	/**
@@ -30,7 +30,7 @@ public class SpaceSeq extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 239;
+	public static final int __DNA__SDNA_INDEX = 244;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -634,7 +634,7 @@ public class SpaceSeq extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'SpaceSeqRuntime'</li>
-	 * <li>Actual Size (32bit/64bit): 20/24</li>
+	 * <li>Actual Size (32bit/64bit): 28/32</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__runtime = new long[]{260, 312};

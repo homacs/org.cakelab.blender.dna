@@ -29,7 +29,7 @@ public class FMod_Stepped extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 657;
+	public static final int __DNA__SDNA_INDEX = 648;
 
 	/**
 	 * Field descriptor (offset) for struct member 'step_size'.

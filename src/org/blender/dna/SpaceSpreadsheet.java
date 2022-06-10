@@ -28,7 +28,7 @@ public class SpaceSpreadsheet extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 266;
+	public static final int __DNA__SDNA_INDEX = 271;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

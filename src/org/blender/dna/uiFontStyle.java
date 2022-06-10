@@ -30,7 +30,7 @@ public class uiFontStyle extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 268;
+	public static final int __DNA__SDNA_INDEX = 273;
 
 	/**
 	 * Field descriptor (offset) for struct member 'uifont_id'.

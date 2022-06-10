@@ -28,7 +28,7 @@ public class SequencerPreviewOverlay extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 236;
+	public static final int __DNA__SDNA_INDEX = 241;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.

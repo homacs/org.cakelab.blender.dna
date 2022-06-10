@@ -31,13 +31,13 @@ public class MainLib extends MainLibBase {
 	 * This is the version of blender, the data model was generated from. It's also called Blender file version and is usually equivalent to the versino of the Blender program.
 	 * Implicitly, it is the maximum file version the generated import code can understand.
 	 */
-	public static final short BLENDER_VERSION = 301;
+	public static final short BLENDER_VERSION = 302;
 
 	/**
 	 * This is the subversion of blender, the data model was generated from. It's also called Blender file sub-version, which can differ from the patch-level of the Blender program.
 	 * Implicitly, it is the maximum file sub-version the generated import code can understand.
 	 */
-	public static final short BLENDER_SUBVERSION = 7;
+	public static final short BLENDER_SUBVERSION = 14;
 
 	/**
 	 * This is the minimal Blender file version, the generated data model corresponds to.
@@ -51,21 +51,21 @@ public class MainLib extends MainLibBase {
 	 * Every file with a version lower than this needs conversion.
 	 * @see #BLENDER_SUBVERSION
 	 */
-	public static final short BLENDER_MINSUBVERSION = 42;
+	public static final short BLENDER_MINSUBVERSION = 43;
 
 	/**
 	 * #BLENDER_VERSION and _SUBVERSION as a String.
 	 * @see #BLENDER_VERSION
 	 * @see #BLENDER_SUBVERSION
 	 */
-	public static final String BLENDER_VERSION_STRING = "3.01.7";
+	public static final String BLENDER_VERSION_STRING = "3.02.14";
 
 	/**
 	 * #BLENDER_MINVERSION and _MINSUBVERSION as a String.
 	 * @see #BLENDER_MINVERSION
 	 * @see #BLENDER_MINSUBVERSION
 	 */
-	public static final String BLENDER_MINVERSION_STRING = "3.00.42";
+	public static final String BLENDER_MINVERSION_STRING = "3.00.43";
 
 	/**Linkage between main libraries.
 	 */
@@ -270,9 +270,9 @@ public class MainLib extends MainLibBase {
 	private LightProbe lightProbe;
 
 	/**
-	 * See {@link Hair} for documentation.
+	 * See {@link Curves} for documentation.
 	 */
-	private Hair hair;
+	private Curves curves;
 
 	/**
 	 * See {@link PointCloud} for documentation.
@@ -895,17 +895,17 @@ public class MainLib extends MainLibBase {
 	}
 
 	/**
-	 * See {@link Hair} for documentation.
+	 * See {@link Curves} for documentation.
 	 */
-	public Hair getHair(){
-		return hair;
+	public Curves getCurves(){
+		return curves;
 	}
 
 	/**
-	 * See {@link Hair} for documentation.
+	 * See {@link Curves} for documentation.
 	 */
-	public void setHair(Hair hair) {
-		this.hair = hair;
+	public void setCurves(Curves curves) {
+		this.curves = curves;
 	}
 
 	/**

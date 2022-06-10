@@ -28,7 +28,7 @@ public class MStringProperty extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 81;
+	public static final int __DNA__SDNA_INDEX = 83;
 
 	/**
 	 * Field descriptor (offset) for struct member 's'.

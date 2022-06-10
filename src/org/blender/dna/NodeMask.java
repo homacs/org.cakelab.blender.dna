@@ -27,7 +27,7 @@ public class NodeMask extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 447;
+	public static final int __DNA__SDNA_INDEX = 453;
 
 	/**
 	 * Field descriptor (offset) for struct member 'size_x'.

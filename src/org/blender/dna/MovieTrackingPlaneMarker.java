@@ -28,7 +28,7 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 693;
+	public static final int __DNA__SDNA_INDEX = 684;
 
 	/**
 	 * Field descriptor (offset) for struct member 'corners'.

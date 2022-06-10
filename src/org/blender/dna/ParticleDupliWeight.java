@@ -28,7 +28,7 @@ public class ParticleDupliWeight extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 576;
+	public static final int __DNA__SDNA_INDEX = 566;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

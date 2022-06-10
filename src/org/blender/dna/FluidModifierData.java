@@ -27,7 +27,7 @@ public class FluidModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 109;
+	public static final int __DNA__SDNA_INDEX = 112;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

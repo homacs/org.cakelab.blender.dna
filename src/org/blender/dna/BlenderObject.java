@@ -41,7 +41,7 @@ import org.cakelab.blender.nio.CPointer;
  * 			</p>
  */
 
-@CMetaData(size32=1128, size64=1432)
+@CMetaData(size32=1144, size64=1448)
 public class BlenderObject extends CFacade {
 
 	/**
@@ -52,7 +52,7 @@ public class BlenderObject extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 172;
+	public static final int __DNA__SDNA_INDEX = 175;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -69,7 +69,7 @@ public class BlenderObject extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 136/176</li>
+	 * <li>Actual Size (32bit/64bit): 152/192</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -97,7 +97,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__adt = new long[]{152, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drawdata'.
@@ -120,7 +120,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawdata = new long[]{140, 184};
+	public static final long[] __DNA__FIELD__drawdata = new long[]{156, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt'.
@@ -140,7 +140,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sculpt = new long[]{148, 200};
+	public static final long[] __DNA__FIELD__sculpt = new long[]{164, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -181,7 +181,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{152, 208};
+	public static final long[] __DNA__FIELD__type = new long[]{168, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'partype'.
@@ -215,7 +215,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__partype = new long[]{154, 210};
+	public static final long[] __DNA__FIELD__partype = new long[]{170, 226};
 
 	/**
 	 * Field descriptor (offset) for struct member 'par1'.
@@ -240,7 +240,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__par1 = new long[]{156, 212};
+	public static final long[] __DNA__FIELD__par1 = new long[]{172, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'par2'.
@@ -263,7 +263,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__par2 = new long[]{160, 216};
+	public static final long[] __DNA__FIELD__par2 = new long[]{176, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'par3'.
@@ -286,7 +286,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__par3 = new long[]{164, 220};
+	public static final long[] __DNA__FIELD__par3 = new long[]{180, 236};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parsubstr'.
@@ -311,7 +311,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parsubstr = new long[]{168, 224};
+	public static final long[] __DNA__FIELD__parsubstr = new long[]{184, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
@@ -334,7 +334,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parent = new long[]{232, 288};
+	public static final long[] __DNA__FIELD__parent = new long[]{248, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'track'.
@@ -354,17 +354,17 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__track = new long[]{236, 296};
+	public static final long[] __DNA__FIELD__track = new long[]{252, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proxy'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * if ob->proxy (or proxy_group), this object is proxy for object ob->proxy
-	 * <h4>Blender Python API</h4>
-	 * (read-only)    Library object this proxy object controls
 	 * <h4>Blender Source Code</h4>
-	 * <p><code></code><code></code> . proxy_from is set in target back to the proxy. </p>
+	 * <p> Proxy pointer are deprecated, only kept for conversion to liboverrides. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -381,13 +381,17 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proxy = new long[]{240, 304};
+	public static final long[] __DNA__FIELD__proxy = new long[]{256, 320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proxy_group'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * if ob->proxy (or proxy_group), this object is proxy for object ob->proxy
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -404,13 +408,17 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proxy_group = new long[]{244, 312};
+	public static final long[] __DNA__FIELD__proxy_group = new long[]{260, 328};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proxy_from'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * proxy_from is set in target back to the proxy.
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -427,7 +435,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proxy_from = new long[]{248, 320};
+	public static final long[] __DNA__FIELD__proxy_from = new long[]{264, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
@@ -454,7 +462,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipo = new long[]{252, 328};
+	public static final long[] __DNA__FIELD__ipo = new long[]{268, 344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'action'.
@@ -482,7 +490,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__action = new long[]{256, 336};
+	public static final long[] __DNA__FIELD__action = new long[]{272, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'poselib'.
@@ -502,7 +510,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__poselib = new long[]{260, 344};
+	public static final long[] __DNA__FIELD__poselib = new long[]{276, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pose'.
@@ -529,7 +537,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pose = new long[]{264, 352};
+	public static final long[] __DNA__FIELD__pose = new long[]{280, 368};
 
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
@@ -556,7 +564,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__data = new long[]{268, 360};
+	public static final long[] __DNA__FIELD__data = new long[]{284, 376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
@@ -584,7 +592,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpd = new long[]{272, 368};
+	public static final long[] __DNA__FIELD__gpd = new long[]{288, 384};
 
 	/**
 	 * Field descriptor (offset) for struct member 'avs'.
@@ -609,7 +617,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__avs = new long[]{276, 376};
+	public static final long[] __DNA__FIELD__avs = new long[]{292, 392};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mpath'.
@@ -634,7 +642,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mpath = new long[]{308, 408};
+	public static final long[] __DNA__FIELD__mpath = new long[]{324, 424};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad0'.
@@ -654,7 +662,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{312, 416};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{328, 432};
 
 	/**
 	 * Field descriptor (offset) for struct member 'constraintChannels'.
@@ -682,7 +690,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__constraintChannels = new long[]{316, 424};
+	public static final long[] __DNA__FIELD__constraintChannels = new long[]{332, 440};
 
 	/**
 	 * Field descriptor (offset) for struct member 'effect'.
@@ -710,7 +718,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__effect = new long[]{324, 440};
+	public static final long[] __DNA__FIELD__effect = new long[]{340, 456};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defbase'.
@@ -738,7 +746,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defbase = new long[]{332, 456};
+	public static final long[] __DNA__FIELD__defbase = new long[]{348, 472};
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifiers'.
@@ -765,7 +773,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__modifiers = new long[]{340, 472};
+	public static final long[] __DNA__FIELD__modifiers = new long[]{356, 488};
 
 	/**
 	 * Field descriptor (offset) for struct member 'greasepencil_modifiers'.
@@ -788,7 +796,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__greasepencil_modifiers = new long[]{348, 488};
+	public static final long[] __DNA__FIELD__greasepencil_modifiers = new long[]{364, 504};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fmaps'.
@@ -811,7 +819,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fmaps = new long[]{356, 504};
+	public static final long[] __DNA__FIELD__fmaps = new long[]{372, 520};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shader_fx'.
@@ -834,7 +842,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shader_fx = new long[]{364, 520};
+	public static final long[] __DNA__FIELD__shader_fx = new long[]{380, 536};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
@@ -871,7 +879,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{372, 536};
+	public static final long[] __DNA__FIELD__mode = new long[]{388, 552};
 
 	/**
 	 * Field descriptor (offset) for struct member 'restore_mode'.
@@ -894,7 +902,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__restore_mode = new long[]{376, 540};
+	public static final long[] __DNA__FIELD__restore_mode = new long[]{392, 556};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
@@ -919,7 +927,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat = new long[]{380, 544};
+	public static final long[] __DNA__FIELD__mat = new long[]{396, 560};
 
 	/**
 	 * Field descriptor (offset) for struct member 'matbits'.
@@ -944,7 +952,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__matbits = new long[]{384, 552};
+	public static final long[] __DNA__FIELD__matbits = new long[]{400, 568};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totcol'.
@@ -969,7 +977,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totcol = new long[]{388, 560};
+	public static final long[] __DNA__FIELD__totcol = new long[]{404, 576};
 
 	/**
 	 * Field descriptor (offset) for struct member 'actcol'.
@@ -994,7 +1002,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__actcol = new long[]{392, 564};
+	public static final long[] __DNA__FIELD__actcol = new long[]{408, 580};
 
 	/**
 	 * Field descriptor (offset) for struct member 'loc'.
@@ -1019,7 +1027,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__loc = new long[]{396, 568};
+	public static final long[] __DNA__FIELD__loc = new long[]{412, 584};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dloc'.
@@ -1039,7 +1047,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dloc = new long[]{408, 580};
+	public static final long[] __DNA__FIELD__dloc = new long[]{424, 596};
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -1062,7 +1070,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size = new long[]{420, 592};
+	public static final long[] __DNA__FIELD__size = new long[]{436, 608};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dsize'.
@@ -1089,7 +1097,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dsize = new long[]{432, 604};
+	public static final long[] __DNA__FIELD__dsize = new long[]{448, 620};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dscale'.
@@ -1112,7 +1120,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dscale = new long[]{444, 616};
+	public static final long[] __DNA__FIELD__dscale = new long[]{460, 632};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rot'.
@@ -1137,7 +1145,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rot = new long[]{456, 628};
+	public static final long[] __DNA__FIELD__rot = new long[]{472, 644};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drot'.
@@ -1160,7 +1168,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drot = new long[]{468, 640};
+	public static final long[] __DNA__FIELD__drot = new long[]{484, 656};
 
 	/**
 	 * Field descriptor (offset) for struct member 'quat'.
@@ -1185,7 +1193,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__quat = new long[]{480, 652};
+	public static final long[] __DNA__FIELD__quat = new long[]{496, 668};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dquat'.
@@ -1208,7 +1216,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dquat = new long[]{496, 668};
+	public static final long[] __DNA__FIELD__dquat = new long[]{512, 684};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rotAxis'.
@@ -1233,7 +1241,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rotAxis = new long[]{512, 684};
+	public static final long[] __DNA__FIELD__rotAxis = new long[]{528, 700};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drotAxis'.
@@ -1256,7 +1264,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drotAxis = new long[]{524, 696};
+	public static final long[] __DNA__FIELD__drotAxis = new long[]{540, 712};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rotAngle'.
@@ -1281,7 +1289,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rotAngle = new long[]{536, 708};
+	public static final long[] __DNA__FIELD__rotAngle = new long[]{552, 724};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drotAngle'.
@@ -1304,7 +1312,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drotAngle = new long[]{540, 712};
+	public static final long[] __DNA__FIELD__drotAngle = new long[]{556, 728};
 
 	/**
 	 * Field descriptor (offset) for struct member 'obmat'.
@@ -1329,7 +1337,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__obmat = new long[]{544, 716};
+	public static final long[] __DNA__FIELD__obmat = new long[]{560, 732};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parentinv'.
@@ -1354,7 +1362,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parentinv = new long[]{608, 780};
+	public static final long[] __DNA__FIELD__parentinv = new long[]{624, 796};
 
 	/**
 	 * Field descriptor (offset) for struct member 'constinv'.
@@ -1379,7 +1387,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__constinv = new long[]{672, 844};
+	public static final long[] __DNA__FIELD__constinv = new long[]{688, 860};
 
 	/**
 	 * Field descriptor (offset) for struct member 'imat'.
@@ -1409,7 +1417,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__imat = new long[]{736, 908};
+	public static final long[] __DNA__FIELD__imat = new long[]{752, 924};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lay'.
@@ -1436,7 +1444,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lay = new long[]{800, 972};
+	public static final long[] __DNA__FIELD__lay = new long[]{816, 988};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -1461,7 +1469,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{804, 976};
+	public static final long[] __DNA__FIELD__flag = new long[]{820, 992};
 
 	/**
 	 * Field descriptor (offset) for struct member 'colbits'.
@@ -1488,7 +1496,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__colbits = new long[]{806, 978};
+	public static final long[] __DNA__FIELD__colbits = new long[]{822, 994};
 
 	/**
 	 * Field descriptor (offset) for struct member 'transflag'.
@@ -1529,7 +1537,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__transflag = new long[]{808, 980};
+	public static final long[] __DNA__FIELD__transflag = new long[]{824, 996};
 
 	/**
 	 * Field descriptor (offset) for struct member 'protectflag'.
@@ -1568,7 +1576,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__protectflag = new long[]{810, 982};
+	public static final long[] __DNA__FIELD__protectflag = new long[]{826, 998};
 
 	/**
 	 * Field descriptor (offset) for struct member 'trackflag'.
@@ -1599,7 +1607,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__trackflag = new long[]{812, 984};
+	public static final long[] __DNA__FIELD__trackflag = new long[]{828, 1000};
 
 	/**
 	 * Field descriptor (offset) for struct member 'upflag'.
@@ -1630,7 +1638,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__upflag = new long[]{814, 986};
+	public static final long[] __DNA__FIELD__upflag = new long[]{830, 1002};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nlaflag'.
@@ -1667,7 +1675,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nlaflag = new long[]{816, 988};
+	public static final long[] __DNA__FIELD__nlaflag = new long[]{832, 1004};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -1687,7 +1695,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{818, 990};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{834, 1006};
 
 	/**
 	 * Field descriptor (offset) for struct member 'duplicator_visibility_flag'.
@@ -1707,7 +1715,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__duplicator_visibility_flag = new long[]{819, 991};
+	public static final long[] __DNA__FIELD__duplicator_visibility_flag = new long[]{835, 1007};
 
 	/**
 	 * Field descriptor (offset) for struct member 'base_flag'.
@@ -1730,7 +1738,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__base_flag = new long[]{820, 992};
+	public static final long[] __DNA__FIELD__base_flag = new long[]{836, 1008};
 
 	/**
 	 * Field descriptor (offset) for struct member 'base_local_view_bits'.
@@ -1753,7 +1761,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__base_local_view_bits = new long[]{822, 994};
+	public static final long[] __DNA__FIELD__base_local_view_bits = new long[]{838, 1010};
 
 	/**
 	 * Field descriptor (offset) for struct member 'col_group'.
@@ -1778,7 +1786,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__col_group = new long[]{824, 996};
+	public static final long[] __DNA__FIELD__col_group = new long[]{840, 1012};
 
 	/**
 	 * Field descriptor (offset) for struct member 'col_mask'.
@@ -1801,7 +1809,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__col_mask = new long[]{826, 998};
+	public static final long[] __DNA__FIELD__col_mask = new long[]{842, 1014};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rotmode'.
@@ -1826,7 +1834,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rotmode = new long[]{828, 1000};
+	public static final long[] __DNA__FIELD__rotmode = new long[]{844, 1016};
 
 	/**
 	 * Field descriptor (offset) for struct member 'boundtype'.
@@ -1851,7 +1859,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__boundtype = new long[]{830, 1002};
+	public static final long[] __DNA__FIELD__boundtype = new long[]{846, 1018};
 
 	/**
 	 * Field descriptor (offset) for struct member 'collision_boundtype'.
@@ -1885,7 +1893,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__collision_boundtype = new long[]{831, 1003};
+	public static final long[] __DNA__FIELD__collision_boundtype = new long[]{847, 1019};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dtx'.
@@ -1924,7 +1932,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dtx = new long[]{832, 1004};
+	public static final long[] __DNA__FIELD__dtx = new long[]{848, 1020};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dt'.
@@ -1958,7 +1966,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dt = new long[]{834, 1006};
+	public static final long[] __DNA__FIELD__dt = new long[]{850, 1022};
 
 	/**
 	 * Field descriptor (offset) for struct member 'empty_drawtype'.
@@ -1991,7 +1999,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__empty_drawtype = new long[]{835, 1007};
+	public static final long[] __DNA__FIELD__empty_drawtype = new long[]{851, 1023};
 
 	/**
 	 * Field descriptor (offset) for struct member 'empty_drawsize'.
@@ -2014,7 +2022,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__empty_drawsize = new long[]{836, 1008};
+	public static final long[] __DNA__FIELD__empty_drawsize = new long[]{852, 1024};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dupfacesca'.
@@ -2037,7 +2045,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dupfacesca = new long[]{840, 1012};
+	public static final long[] __DNA__FIELD__dupfacesca = new long[]{856, 1028};
 
 	/**
 	 * Field descriptor (offset) for struct member 'index'.
@@ -2062,7 +2070,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__index = new long[]{844, 1016};
+	public static final long[] __DNA__FIELD__index = new long[]{860, 1032};
 
 	/**
 	 * Field descriptor (offset) for struct member 'actdef'.
@@ -2089,7 +2097,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__actdef = new long[]{846, 1018};
+	public static final long[] __DNA__FIELD__actdef = new long[]{862, 1034};
 
 	/**
 	 * Field descriptor (offset) for struct member 'actfmap'.
@@ -2112,7 +2120,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__actfmap = new long[]{848, 1020};
+	public static final long[] __DNA__FIELD__actfmap = new long[]{864, 1036};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -2132,7 +2140,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{850, 1022};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{866, 1038};
 
 	/**
 	 * Field descriptor (offset) for struct member 'col'.
@@ -2155,7 +2163,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__col = new long[]{852, 1024};
+	public static final long[] __DNA__FIELD__col = new long[]{868, 1040};
 
 	/**
 	 * Field descriptor (offset) for struct member 'softflag'.
@@ -2180,7 +2188,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__softflag = new long[]{868, 1040};
+	public static final long[] __DNA__FIELD__softflag = new long[]{884, 1056};
 
 	/**
 	 * Field descriptor (offset) for struct member 'restrictflag'.
@@ -2203,7 +2211,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__restrictflag = new long[]{870, 1042};
+	public static final long[] __DNA__FIELD__restrictflag = new long[]{886, 1058};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shapenr'.
@@ -2228,7 +2236,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shapenr = new long[]{872, 1044};
+	public static final long[] __DNA__FIELD__shapenr = new long[]{888, 1060};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shapeflag'.
@@ -2253,7 +2261,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shapeflag = new long[]{874, 1046};
+	public static final long[] __DNA__FIELD__shapeflag = new long[]{890, 1062};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad3'.
@@ -2273,7 +2281,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{875, 1047};
+	public static final long[] __DNA__FIELD___pad3 = new long[]{891, 1063};
 
 	/**
 	 * Field descriptor (offset) for struct member 'constraints'.
@@ -2300,7 +2308,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__constraints = new long[]{876, 1048};
+	public static final long[] __DNA__FIELD__constraints = new long[]{892, 1064};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nlastrips'.
@@ -2328,7 +2336,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nlastrips = new long[]{884, 1064};
+	public static final long[] __DNA__FIELD__nlastrips = new long[]{900, 1080};
 
 	/**
 	 * Field descriptor (offset) for struct member 'hooks'.
@@ -2356,7 +2364,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__hooks = new long[]{892, 1080};
+	public static final long[] __DNA__FIELD__hooks = new long[]{908, 1096};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particlesystem'.
@@ -2381,7 +2389,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particlesystem = new long[]{900, 1096};
+	public static final long[] __DNA__FIELD__particlesystem = new long[]{916, 1112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pd'.
@@ -2406,7 +2414,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pd = new long[]{908, 1112};
+	public static final long[] __DNA__FIELD__pd = new long[]{924, 1128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'soft'.
@@ -2431,7 +2439,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__soft = new long[]{912, 1120};
+	public static final long[] __DNA__FIELD__soft = new long[]{928, 1136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dup_group'.
@@ -2454,7 +2462,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dup_group = new long[]{916, 1128};
+	public static final long[] __DNA__FIELD__dup_group = new long[]{932, 1144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fluidsimSettings'.
@@ -2482,7 +2490,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fluidsimSettings = new long[]{920, 1136};
+	public static final long[] __DNA__FIELD__fluidsimSettings = new long[]{936, 1152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pc_ids'.
@@ -2502,7 +2510,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pc_ids = new long[]{924, 1144};
+	public static final long[] __DNA__FIELD__pc_ids = new long[]{940, 1160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rigidbody_object'.
@@ -2527,7 +2535,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rigidbody_object = new long[]{932, 1160};
+	public static final long[] __DNA__FIELD__rigidbody_object = new long[]{948, 1176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rigidbody_constraint'.
@@ -2552,7 +2560,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rigidbody_constraint = new long[]{936, 1168};
+	public static final long[] __DNA__FIELD__rigidbody_constraint = new long[]{952, 1184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ima_ofs'.
@@ -2577,7 +2585,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ima_ofs = new long[]{940, 1176};
+	public static final long[] __DNA__FIELD__ima_ofs = new long[]{956, 1192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'iuser'.
@@ -2600,7 +2608,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__iuser = new long[]{948, 1184};
+	public static final long[] __DNA__FIELD__iuser = new long[]{964, 1200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'empty_image_visibility_flag'.
@@ -2620,7 +2628,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__empty_image_visibility_flag = new long[]{952, 1192};
+	public static final long[] __DNA__FIELD__empty_image_visibility_flag = new long[]{968, 1208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'empty_image_depth'.
@@ -2643,7 +2651,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__empty_image_depth = new long[]{953, 1193};
+	public static final long[] __DNA__FIELD__empty_image_depth = new long[]{969, 1209};
 
 	/**
 	 * Field descriptor (offset) for struct member 'empty_image_flag'.
@@ -2663,7 +2671,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__empty_image_flag = new long[]{954, 1194};
+	public static final long[] __DNA__FIELD__empty_image_flag = new long[]{970, 1210};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad8'.
@@ -2683,7 +2691,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 5/5</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad8 = new long[]{955, 1195};
+	public static final long[] __DNA__FIELD___pad8 = new long[]{971, 1211};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
@@ -2703,7 +2711,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview = new long[]{960, 1200};
+	public static final long[] __DNA__FIELD__preview = new long[]{976, 1216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lineart'.
@@ -2726,33 +2734,38 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lineart = new long[]{964, 1208};
+	public static final long[] __DNA__FIELD__lineart = new long[]{980, 1224};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad9'.
+	 * Field descriptor (offset) for struct member 'lightgroup'.
 	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Lightgroup that the object belongs to
 	 * <h4>Blender Source Code</h4>
-	 * <p> Runtime evaluation data (keep last). </p>
+	 * <p> Lightgroup membership information. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BlenderObject blenderobject = ...;
-	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD___pad9);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad9 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__lightgroup);
+	 * CPointer&lt;CPointer&lt;LightgroupMembership&gt;&gt; p_lightgroup = p.cast(new Class[]{CPointer.class, LightgroupMembership.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad9'</li>
-	 * <li>Signature: 'void*'</li>
+	 * <li>Field: 'lightgroup'</li>
+	 * <li>Signature: 'LightgroupMembership*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad9 = new long[]{972, 1216};
+	public static final long[] __DNA__FIELD__lightgroup = new long[]{988, 1232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Runtime evaluation data (keep last). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2769,7 +2782,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 152/208</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{976, 1224};
+	public static final long[] __DNA__FIELD__runtime = new long[]{992, 1240};
 
 	public BlenderObject(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2829,9 +2842,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2851,9 +2864,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		}
 	}
 
@@ -2868,9 +2881,9 @@ public class BlenderObject extends CFacade {
 	public DrawDataList getDrawdata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new DrawDataList(__io__address + 184, __io__block, __io__blockTable);
+			return new DrawDataList(__io__address + 200, __io__block, __io__blockTable);
 		} else {
-			return new DrawDataList(__io__address + 140, __io__block, __io__blockTable);
+			return new DrawDataList(__io__address + 156, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2886,9 +2899,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 184;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 140;
+			__dna__offset = 156;
 		}
 		if (__io__equals(drawdata, __io__address + __dna__offset)) {
 			return;
@@ -2908,9 +2921,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 216);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 148);
+			__dna__targetAddress = __io__block.readLong(__io__address + 164);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -2925,9 +2938,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((sculpt == null) ? 0 : sculpt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 200, __address);
+			__io__block.writeLong(__io__address + 216, __address);
 		} else {
-			__io__block.writeLong(__io__address + 148, __address);
+			__io__block.writeLong(__io__address + 164, __address);
 		}
 	}
 
@@ -2960,9 +2973,9 @@ public class BlenderObject extends CFacade {
 	public short getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 208);
+			return __io__block.readShort(__io__address + 224);
 		} else {
-			return __io__block.readShort(__io__address + 152);
+			return __io__block.readShort(__io__address + 168);
 		}
 	}
 
@@ -2995,9 +3008,9 @@ public class BlenderObject extends CFacade {
 	public void setType(short type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 208, type);
+			__io__block.writeShort(__io__address + 224, type);
 		} else {
-			__io__block.writeShort(__io__address + 152, type);
+			__io__block.writeShort(__io__address + 168, type);
 		}
 	}
 
@@ -3023,9 +3036,9 @@ public class BlenderObject extends CFacade {
 	public short getPartype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 210);
+			return __io__block.readShort(__io__address + 226);
 		} else {
-			return __io__block.readShort(__io__address + 154);
+			return __io__block.readShort(__io__address + 170);
 		}
 	}
 
@@ -3051,9 +3064,9 @@ public class BlenderObject extends CFacade {
 	public void setPartype(short partype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 210, partype);
+			__io__block.writeShort(__io__address + 226, partype);
 		} else {
-			__io__block.writeShort(__io__address + 154, partype);
+			__io__block.writeShort(__io__address + 170, partype);
 		}
 	}
 
@@ -3070,9 +3083,9 @@ public class BlenderObject extends CFacade {
 	public int getPar1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 212);
+			return __io__block.readInt(__io__address + 228);
 		} else {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 172);
 		}
 	}
 
@@ -3089,9 +3102,9 @@ public class BlenderObject extends CFacade {
 	public void setPar1(int par1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 212, par1);
+			__io__block.writeInt(__io__address + 228, par1);
 		} else {
-			__io__block.writeInt(__io__address + 156, par1);
+			__io__block.writeInt(__io__address + 172, par1);
 		}
 	}
 
@@ -3106,9 +3119,9 @@ public class BlenderObject extends CFacade {
 	public int getPar2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 216);
+			return __io__block.readInt(__io__address + 232);
 		} else {
-			return __io__block.readInt(__io__address + 160);
+			return __io__block.readInt(__io__address + 176);
 		}
 	}
 
@@ -3123,9 +3136,9 @@ public class BlenderObject extends CFacade {
 	public void setPar2(int par2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 216, par2);
+			__io__block.writeInt(__io__address + 232, par2);
 		} else {
-			__io__block.writeInt(__io__address + 160, par2);
+			__io__block.writeInt(__io__address + 176, par2);
 		}
 	}
 
@@ -3140,9 +3153,9 @@ public class BlenderObject extends CFacade {
 	public int getPar3() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 220);
+			return __io__block.readInt(__io__address + 236);
 		} else {
-			return __io__block.readInt(__io__address + 164);
+			return __io__block.readInt(__io__address + 180);
 		}
 	}
 
@@ -3157,9 +3170,9 @@ public class BlenderObject extends CFacade {
 	public void setPar3(int par3) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 220, par3);
+			__io__block.writeInt(__io__address + 236, par3);
 		} else {
-			__io__block.writeInt(__io__address + 164, par3);
+			__io__block.writeInt(__io__address + 180, par3);
 		}
 	}
 
@@ -3180,9 +3193,9 @@ public class BlenderObject extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 224, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3200,9 +3213,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 224;
+			__dna__offset = 240;
 		} else {
-			__dna__offset = 168;
+			__dna__offset = 184;
 		}
 		if (__io__equals(parsubstr, __io__address + __dna__offset)) {
 			return;
@@ -3225,9 +3238,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 288);
+			__dna__targetAddress = __io__block.readLong(__io__address + 304);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 232);
+			__dna__targetAddress = __io__block.readLong(__io__address + 248);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3245,9 +3258,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((parent == null) ? 0 : parent.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 288, __address);
+			__io__block.writeLong(__io__address + 304, __address);
 		} else {
-			__io__block.writeLong(__io__address + 232, __address);
+			__io__block.writeLong(__io__address + 248, __address);
 		}
 	}
 
@@ -3260,9 +3273,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 296);
+			__dna__targetAddress = __io__block.readLong(__io__address + 312);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 236);
+			__dna__targetAddress = __io__block.readLong(__io__address + 252);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3277,9 +3290,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((track == null) ? 0 : track.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 296, __address);
+			__io__block.writeLong(__io__address + 312, __address);
 		} else {
-			__io__block.writeLong(__io__address + 236, __address);
+			__io__block.writeLong(__io__address + 252, __address);
 		}
 	}
 
@@ -3288,10 +3301,10 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * if ob->proxy (or proxy_group), this object is proxy for object ob->proxy
-	 * <h4>Blender Python API</h4>
-	 * (read-only)    Library object this proxy object controls
 	 * <h4>Blender Source Code</h4>
-	 * <p><code></code><code></code> . proxy_from is set in target back to the proxy. </p>
+	 * <p> Proxy pointer are deprecated, only kept for conversion to liboverrides. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__proxy
 	 */
 	
@@ -3299,9 +3312,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 304);
+			__dna__targetAddress = __io__block.readLong(__io__address + 320);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 240);
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3312,10 +3325,10 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * if ob->proxy (or proxy_group), this object is proxy for object ob->proxy
-	 * <h4>Blender Python API</h4>
-	 * (read-only)    Library object this proxy object controls
 	 * <h4>Blender Source Code</h4>
-	 * <p><code></code><code></code> . proxy_from is set in target back to the proxy. </p>
+	 * <p> Proxy pointer are deprecated, only kept for conversion to liboverrides. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__proxy
 	 */
 	
@@ -3323,9 +3336,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((proxy == null) ? 0 : proxy.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 304, __address);
+			__io__block.writeLong(__io__address + 320, __address);
 		} else {
-			__io__block.writeLong(__io__address + 240, __address);
+			__io__block.writeLong(__io__address + 256, __address);
 		}
 	}
 
@@ -3334,6 +3347,10 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * if ob->proxy (or proxy_group), this object is proxy for object ob->proxy
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__proxy_group
 	 */
 	
@@ -3341,9 +3358,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 312);
+			__dna__targetAddress = __io__block.readLong(__io__address + 328);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 244);
+			__dna__targetAddress = __io__block.readLong(__io__address + 260);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3354,6 +3371,10 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * if ob->proxy (or proxy_group), this object is proxy for object ob->proxy
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__proxy_group
 	 */
 	
@@ -3361,9 +3382,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((proxy_group == null) ? 0 : proxy_group.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 312, __address);
+			__io__block.writeLong(__io__address + 328, __address);
 		} else {
-			__io__block.writeLong(__io__address + 244, __address);
+			__io__block.writeLong(__io__address + 260, __address);
 		}
 	}
 
@@ -3372,6 +3393,10 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * proxy_from is set in target back to the proxy.
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__proxy_from
 	 */
 	
@@ -3379,9 +3404,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 320);
+			__dna__targetAddress = __io__block.readLong(__io__address + 336);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 248);
+			__dna__targetAddress = __io__block.readLong(__io__address + 264);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3392,6 +3417,10 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * proxy_from is set in target back to the proxy.
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__proxy_from
 	 */
 	
@@ -3399,9 +3428,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((proxy_from == null) ? 0 : proxy_from.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 320, __address);
+			__io__block.writeLong(__io__address + 336, __address);
 		} else {
-			__io__block.writeLong(__io__address + 248, __address);
+			__io__block.writeLong(__io__address + 264, __address);
 		}
 	}
 
@@ -3421,9 +3450,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 328);
+			__dna__targetAddress = __io__block.readLong(__io__address + 344);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 252);
+			__dna__targetAddress = __io__block.readLong(__io__address + 268);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Ipo.class};
 		return new CPointer<Ipo>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Ipo.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3445,9 +3474,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((ipo == null) ? 0 : ipo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 328, __address);
+			__io__block.writeLong(__io__address + 344, __address);
 		} else {
-			__io__block.writeLong(__io__address + 252, __address);
+			__io__block.writeLong(__io__address + 268, __address);
 		}
 	}
 
@@ -3468,9 +3497,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 336);
+			__dna__targetAddress = __io__block.readLong(__io__address + 352);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 272);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bAction.class};
 		return new CPointer<bAction>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bAction.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3493,9 +3522,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((action == null) ? 0 : action.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 336, __address);
+			__io__block.writeLong(__io__address + 352, __address);
 		} else {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 272, __address);
 		}
 	}
 
@@ -3508,9 +3537,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 344);
+			__dna__targetAddress = __io__block.readLong(__io__address + 360);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 260);
+			__dna__targetAddress = __io__block.readLong(__io__address + 276);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bAction.class};
 		return new CPointer<bAction>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bAction.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3525,9 +3554,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((poselib == null) ? 0 : poselib.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 344, __address);
+			__io__block.writeLong(__io__address + 360, __address);
 		} else {
-			__io__block.writeLong(__io__address + 260, __address);
+			__io__block.writeLong(__io__address + 276, __address);
 		}
 	}
 
@@ -3547,9 +3576,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 352);
+			__dna__targetAddress = __io__block.readLong(__io__address + 368);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 264);
+			__dna__targetAddress = __io__block.readLong(__io__address + 280);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bPose.class};
 		return new CPointer<bPose>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bPose.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3571,9 +3600,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((pose == null) ? 0 : pose.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 352, __address);
+			__io__block.writeLong(__io__address + 368, __address);
 		} else {
-			__io__block.writeLong(__io__address + 264, __address);
+			__io__block.writeLong(__io__address + 280, __address);
 		}
 	}
 
@@ -3593,9 +3622,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 360);
+			__dna__targetAddress = __io__block.readLong(__io__address + 376);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 268);
+			__dna__targetAddress = __io__block.readLong(__io__address + 284);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -3617,9 +3646,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((data == null) ? 0 : data.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 360, __address);
+			__io__block.writeLong(__io__address + 376, __address);
 		} else {
-			__io__block.writeLong(__io__address + 268, __address);
+			__io__block.writeLong(__io__address + 284, __address);
 		}
 	}
 
@@ -3640,9 +3669,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 368);
+			__dna__targetAddress = __io__block.readLong(__io__address + 384);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 288);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bGPdata.class};
 		return new CPointer<bGPdata>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPdata.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3665,9 +3694,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((gpd == null) ? 0 : gpd.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 368, __address);
+			__io__block.writeLong(__io__address + 384, __address);
 		} else {
-			__io__block.writeLong(__io__address + 272, __address);
+			__io__block.writeLong(__io__address + 288, __address);
 		}
 	}
 
@@ -3684,9 +3713,9 @@ public class BlenderObject extends CFacade {
 	public bAnimVizSettings getAvs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new bAnimVizSettings(__io__address + 376, __io__block, __io__blockTable);
+			return new bAnimVizSettings(__io__address + 392, __io__block, __io__blockTable);
 		} else {
-			return new bAnimVizSettings(__io__address + 276, __io__block, __io__blockTable);
+			return new bAnimVizSettings(__io__address + 292, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3704,9 +3733,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 376;
+			__dna__offset = 392;
 		} else {
-			__dna__offset = 276;
+			__dna__offset = 292;
 		}
 		if (__io__equals(avs, __io__address + __dna__offset)) {
 			return;
@@ -3731,9 +3760,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 408);
+			__dna__targetAddress = __io__block.readLong(__io__address + 424);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 308);
+			__dna__targetAddress = __io__block.readLong(__io__address + 324);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bMotionPath.class};
 		return new CPointer<bMotionPath>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bMotionPath.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3753,9 +3782,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((mpath == null) ? 0 : mpath.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 408, __address);
+			__io__block.writeLong(__io__address + 424, __address);
 		} else {
-			__io__block.writeLong(__io__address + 308, __address);
+			__io__block.writeLong(__io__address + 324, __address);
 		}
 	}
 
@@ -3768,9 +3797,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 416);
+			__dna__targetAddress = __io__block.readLong(__io__address + 432);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 312);
+			__dna__targetAddress = __io__block.readLong(__io__address + 328);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -3785,9 +3814,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((_pad0 == null) ? 0 : _pad0.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 416, __address);
+			__io__block.writeLong(__io__address + 432, __address);
 		} else {
-			__io__block.writeLong(__io__address + 312, __address);
+			__io__block.writeLong(__io__address + 328, __address);
 		}
 	}
 
@@ -3807,9 +3836,9 @@ public class BlenderObject extends CFacade {
 	public ListBase getConstraintChannels() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 424, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 440, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 316, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 332, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3830,9 +3859,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 424;
+			__dna__offset = 440;
 		} else {
-			__dna__offset = 316;
+			__dna__offset = 332;
 		}
 		if (__io__equals(constraintChannels, __io__address + __dna__offset)) {
 			return;
@@ -3859,9 +3888,9 @@ public class BlenderObject extends CFacade {
 	public ListBase getEffect() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 440, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 456, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 324, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 340, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3882,9 +3911,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 440;
+			__dna__offset = 456;
 		} else {
-			__dna__offset = 324;
+			__dna__offset = 340;
 		}
 		if (__io__equals(effect, __io__address + __dna__offset)) {
 			return;
@@ -3911,9 +3940,9 @@ public class BlenderObject extends CFacade {
 	public ListBase getDefbase() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 456, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 472, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 332, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 348, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3934,9 +3963,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 456;
+			__dna__offset = 472;
 		} else {
-			__dna__offset = 332;
+			__dna__offset = 348;
 		}
 		if (__io__equals(defbase, __io__address + __dna__offset)) {
 			return;
@@ -3962,9 +3991,9 @@ public class BlenderObject extends CFacade {
 	public ListBase getModifiers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 472, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 488, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 340, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 356, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3984,9 +4013,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 472;
+			__dna__offset = 488;
 		} else {
-			__dna__offset = 340;
+			__dna__offset = 356;
 		}
 		if (__io__equals(modifiers, __io__address + __dna__offset)) {
 			return;
@@ -4008,9 +4037,9 @@ public class BlenderObject extends CFacade {
 	public ListBase getGreasepencil_modifiers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 488, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 504, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 348, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 364, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4026,9 +4055,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 488;
+			__dna__offset = 504;
 		} else {
-			__dna__offset = 348;
+			__dna__offset = 364;
 		}
 		if (__io__equals(greasepencil_modifiers, __io__address + __dna__offset)) {
 			return;
@@ -4050,9 +4079,9 @@ public class BlenderObject extends CFacade {
 	public ListBase getFmaps() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 504, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 520, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 356, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 372, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4068,9 +4097,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 504;
+			__dna__offset = 520;
 		} else {
-			__dna__offset = 356;
+			__dna__offset = 372;
 		}
 		if (__io__equals(fmaps, __io__address + __dna__offset)) {
 			return;
@@ -4092,9 +4121,9 @@ public class BlenderObject extends CFacade {
 	public ListBase getShader_fx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 520, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 536, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 364, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 380, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4110,9 +4139,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 520;
+			__dna__offset = 536;
 		} else {
-			__dna__offset = 364;
+			__dna__offset = 380;
 		}
 		if (__io__equals(shader_fx, __io__address + __dna__offset)) {
 			return;
@@ -4148,9 +4177,9 @@ public class BlenderObject extends CFacade {
 	public int getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 536);
+			return __io__block.readInt(__io__address + 552);
 		} else {
-			return __io__block.readInt(__io__address + 372);
+			return __io__block.readInt(__io__address + 388);
 		}
 	}
 
@@ -4179,9 +4208,9 @@ public class BlenderObject extends CFacade {
 	public void setMode(int mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 536, mode);
+			__io__block.writeInt(__io__address + 552, mode);
 		} else {
-			__io__block.writeInt(__io__address + 372, mode);
+			__io__block.writeInt(__io__address + 388, mode);
 		}
 	}
 
@@ -4196,9 +4225,9 @@ public class BlenderObject extends CFacade {
 	public int getRestore_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 540);
+			return __io__block.readInt(__io__address + 556);
 		} else {
-			return __io__block.readInt(__io__address + 376);
+			return __io__block.readInt(__io__address + 392);
 		}
 	}
 
@@ -4213,9 +4242,9 @@ public class BlenderObject extends CFacade {
 	public void setRestore_mode(int restore_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 540, restore_mode);
+			__io__block.writeInt(__io__address + 556, restore_mode);
 		} else {
-			__io__block.writeInt(__io__address + 376, restore_mode);
+			__io__block.writeInt(__io__address + 392, restore_mode);
 		}
 	}
 
@@ -4233,9 +4262,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 544);
+			__dna__targetAddress = __io__block.readLong(__io__address + 560);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 380);
+			__dna__targetAddress = __io__block.readLong(__io__address + 396);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, Material.class};
 		return new CPointer<CPointer<Material>>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -4255,9 +4284,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((mat == null) ? 0 : mat.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 544, __address);
+			__io__block.writeLong(__io__address + 560, __address);
 		} else {
-			__io__block.writeLong(__io__address + 380, __address);
+			__io__block.writeLong(__io__address + 396, __address);
 		}
 	}
 
@@ -4275,9 +4304,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 552);
+			__dna__targetAddress = __io__block.readLong(__io__address + 568);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 384);
+			__dna__targetAddress = __io__block.readLong(__io__address + 400);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -4297,9 +4326,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((matbits == null) ? 0 : matbits.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 552, __address);
+			__io__block.writeLong(__io__address + 568, __address);
 		} else {
-			__io__block.writeLong(__io__address + 384, __address);
+			__io__block.writeLong(__io__address + 400, __address);
 		}
 	}
 
@@ -4316,9 +4345,9 @@ public class BlenderObject extends CFacade {
 	public int getTotcol() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 560);
+			return __io__block.readInt(__io__address + 576);
 		} else {
-			return __io__block.readInt(__io__address + 388);
+			return __io__block.readInt(__io__address + 404);
 		}
 	}
 
@@ -4335,9 +4364,9 @@ public class BlenderObject extends CFacade {
 	public void setTotcol(int totcol) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 560, totcol);
+			__io__block.writeInt(__io__address + 576, totcol);
 		} else {
-			__io__block.writeInt(__io__address + 388, totcol);
+			__io__block.writeInt(__io__address + 404, totcol);
 		}
 	}
 
@@ -4354,9 +4383,9 @@ public class BlenderObject extends CFacade {
 	public int getActcol() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 564);
+			return __io__block.readInt(__io__address + 580);
 		} else {
-			return __io__block.readInt(__io__address + 392);
+			return __io__block.readInt(__io__address + 408);
 		}
 	}
 
@@ -4373,9 +4402,9 @@ public class BlenderObject extends CFacade {
 	public void setActcol(int actcol) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 564, actcol);
+			__io__block.writeInt(__io__address + 580, actcol);
 		} else {
-			__io__block.writeInt(__io__address + 392, actcol);
+			__io__block.writeInt(__io__address + 408, actcol);
 		}
 	}
 
@@ -4396,9 +4425,9 @@ public class BlenderObject extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 568, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 584, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 396, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 412, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4416,9 +4445,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 568;
+			__dna__offset = 584;
 		} else {
-			__dna__offset = 396;
+			__dna__offset = 412;
 		}
 		if (__io__equals(loc, __io__address + __dna__offset)) {
 			return;
@@ -4441,9 +4470,9 @@ public class BlenderObject extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 580, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 596, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 408, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 424, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4456,9 +4485,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 580;
+			__dna__offset = 596;
 		} else {
-			__dna__offset = 408;
+			__dna__offset = 424;
 		}
 		if (__io__equals(dloc, __io__address + __dna__offset)) {
 			return;
@@ -4484,9 +4513,9 @@ public class BlenderObject extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 592, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 608, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 420, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 436, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4502,9 +4531,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 592;
+			__dna__offset = 608;
 		} else {
-			__dna__offset = 420;
+			__dna__offset = 436;
 		}
 		if (__io__equals(size, __io__address + __dna__offset)) {
 			return;
@@ -4534,9 +4563,9 @@ public class BlenderObject extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 604, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 620, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 432, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 448, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4556,9 +4585,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 604;
+			__dna__offset = 620;
 		} else {
-			__dna__offset = 432;
+			__dna__offset = 448;
 		}
 		if (__io__equals(dsize, __io__address + __dna__offset)) {
 			return;
@@ -4584,9 +4613,9 @@ public class BlenderObject extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 616, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 632, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 444, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 460, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4602,9 +4631,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 616;
+			__dna__offset = 632;
 		} else {
-			__dna__offset = 444;
+			__dna__offset = 460;
 		}
 		if (__io__equals(dscale, __io__address + __dna__offset)) {
 			return;
@@ -4632,9 +4661,9 @@ public class BlenderObject extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 628, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 644, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 456, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 472, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4652,9 +4681,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 628;
+			__dna__offset = 644;
 		} else {
-			__dna__offset = 456;
+			__dna__offset = 472;
 		}
 		if (__io__equals(rot, __io__address + __dna__offset)) {
 			return;
@@ -4680,9 +4709,9 @@ public class BlenderObject extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 640, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 656, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 468, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 484, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4698,9 +4727,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 640;
+			__dna__offset = 656;
 		} else {
-			__dna__offset = 468;
+			__dna__offset = 484;
 		}
 		if (__io__equals(drot, __io__address + __dna__offset)) {
 			return;
@@ -4728,9 +4757,9 @@ public class BlenderObject extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 652, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 668, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 480, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 496, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4748,9 +4777,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 652;
+			__dna__offset = 668;
 		} else {
-			__dna__offset = 480;
+			__dna__offset = 496;
 		}
 		if (__io__equals(quat, __io__address + __dna__offset)) {
 			return;
@@ -4776,9 +4805,9 @@ public class BlenderObject extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 668, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 684, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 496, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 512, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4794,9 +4823,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 668;
+			__dna__offset = 684;
 		} else {
-			__dna__offset = 496;
+			__dna__offset = 512;
 		}
 		if (__io__equals(dquat, __io__address + __dna__offset)) {
 			return;
@@ -4824,9 +4853,9 @@ public class BlenderObject extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 684, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 700, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 512, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 528, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4844,9 +4873,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 684;
+			__dna__offset = 700;
 		} else {
-			__dna__offset = 512;
+			__dna__offset = 528;
 		}
 		if (__io__equals(rotAxis, __io__address + __dna__offset)) {
 			return;
@@ -4872,9 +4901,9 @@ public class BlenderObject extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 696, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 712, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 524, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 540, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4890,9 +4919,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 696;
+			__dna__offset = 712;
 		} else {
-			__dna__offset = 524;
+			__dna__offset = 540;
 		}
 		if (__io__equals(drotAxis, __io__address + __dna__offset)) {
 			return;
@@ -4916,9 +4945,9 @@ public class BlenderObject extends CFacade {
 	public float getRotAngle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 708);
+			return __io__block.readFloat(__io__address + 724);
 		} else {
-			return __io__block.readFloat(__io__address + 536);
+			return __io__block.readFloat(__io__address + 552);
 		}
 	}
 
@@ -4935,9 +4964,9 @@ public class BlenderObject extends CFacade {
 	public void setRotAngle(float rotAngle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 708, rotAngle);
+			__io__block.writeFloat(__io__address + 724, rotAngle);
 		} else {
-			__io__block.writeFloat(__io__address + 536, rotAngle);
+			__io__block.writeFloat(__io__address + 552, rotAngle);
 		}
 	}
 
@@ -4952,9 +4981,9 @@ public class BlenderObject extends CFacade {
 	public float getDrotAngle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 712);
+			return __io__block.readFloat(__io__address + 728);
 		} else {
-			return __io__block.readFloat(__io__address + 540);
+			return __io__block.readFloat(__io__address + 556);
 		}
 	}
 
@@ -4969,9 +4998,9 @@ public class BlenderObject extends CFacade {
 	public void setDrotAngle(float drotAngle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 712, drotAngle);
+			__io__block.writeFloat(__io__address + 728, drotAngle);
 		} else {
-			__io__block.writeFloat(__io__address + 540, drotAngle);
+			__io__block.writeFloat(__io__address + 556, drotAngle);
 		}
 	}
 
@@ -4993,9 +5022,9 @@ public class BlenderObject extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 716, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 732, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 544, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 560, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5013,9 +5042,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 716;
+			__dna__offset = 732;
 		} else {
-			__dna__offset = 544;
+			__dna__offset = 560;
 		}
 		if (__io__equals(obmat, __io__address + __dna__offset)) {
 			return;
@@ -5044,9 +5073,9 @@ public class BlenderObject extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 780, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 796, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 608, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 624, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5064,9 +5093,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 780;
+			__dna__offset = 796;
 		} else {
-			__dna__offset = 608;
+			__dna__offset = 624;
 		}
 		if (__io__equals(parentinv, __io__address + __dna__offset)) {
 			return;
@@ -5095,9 +5124,9 @@ public class BlenderObject extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 844, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 860, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 672, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 688, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5115,9 +5144,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 844;
+			__dna__offset = 860;
 		} else {
-			__dna__offset = 672;
+			__dna__offset = 688;
 		}
 		if (__io__equals(constinv, __io__address + __dna__offset)) {
 			return;
@@ -5151,9 +5180,9 @@ public class BlenderObject extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 908, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 924, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 736, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 752, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5176,9 +5205,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 908;
+			__dna__offset = 924;
 		} else {
-			__dna__offset = 736;
+			__dna__offset = 752;
 		}
 		if (__io__equals(imat, __io__address + __dna__offset)) {
 			return;
@@ -5204,9 +5233,9 @@ public class BlenderObject extends CFacade {
 	public int getLay() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 972);
+			return __io__block.readInt(__io__address + 988);
 		} else {
-			return __io__block.readInt(__io__address + 800);
+			return __io__block.readInt(__io__address + 816);
 		}
 	}
 
@@ -5225,9 +5254,9 @@ public class BlenderObject extends CFacade {
 	public void setLay(int lay) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 972, lay);
+			__io__block.writeInt(__io__address + 988, lay);
 		} else {
-			__io__block.writeInt(__io__address + 800, lay);
+			__io__block.writeInt(__io__address + 816, lay);
 		}
 	}
 
@@ -5244,9 +5273,9 @@ public class BlenderObject extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 976);
+			return __io__block.readShort(__io__address + 992);
 		} else {
-			return __io__block.readShort(__io__address + 804);
+			return __io__block.readShort(__io__address + 820);
 		}
 	}
 
@@ -5263,9 +5292,9 @@ public class BlenderObject extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 976, flag);
+			__io__block.writeShort(__io__address + 992, flag);
 		} else {
-			__io__block.writeShort(__io__address + 804, flag);
+			__io__block.writeShort(__io__address + 820, flag);
 		}
 	}
 
@@ -5284,9 +5313,9 @@ public class BlenderObject extends CFacade {
 	public short getColbits() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 978);
+			return __io__block.readShort(__io__address + 994);
 		} else {
-			return __io__block.readShort(__io__address + 806);
+			return __io__block.readShort(__io__address + 822);
 		}
 	}
 
@@ -5305,9 +5334,9 @@ public class BlenderObject extends CFacade {
 	public void setColbits(short colbits) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 978, colbits);
+			__io__block.writeShort(__io__address + 994, colbits);
 		} else {
-			__io__block.writeShort(__io__address + 806, colbits);
+			__io__block.writeShort(__io__address + 822, colbits);
 		}
 	}
 
@@ -5340,9 +5369,9 @@ public class BlenderObject extends CFacade {
 	public short getTransflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 980);
+			return __io__block.readShort(__io__address + 996);
 		} else {
-			return __io__block.readShort(__io__address + 808);
+			return __io__block.readShort(__io__address + 824);
 		}
 	}
 
@@ -5375,9 +5404,9 @@ public class BlenderObject extends CFacade {
 	public void setTransflag(short transflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 980, transflag);
+			__io__block.writeShort(__io__address + 996, transflag);
 		} else {
-			__io__block.writeShort(__io__address + 808, transflag);
+			__io__block.writeShort(__io__address + 824, transflag);
 		}
 	}
 
@@ -5408,9 +5437,9 @@ public class BlenderObject extends CFacade {
 	public short getProtectflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 982);
+			return __io__block.readShort(__io__address + 998);
 		} else {
-			return __io__block.readShort(__io__address + 810);
+			return __io__block.readShort(__io__address + 826);
 		}
 	}
 
@@ -5441,9 +5470,9 @@ public class BlenderObject extends CFacade {
 	public void setProtectflag(short protectflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 982, protectflag);
+			__io__block.writeShort(__io__address + 998, protectflag);
 		} else {
-			__io__block.writeShort(__io__address + 810, protectflag);
+			__io__block.writeShort(__io__address + 826, protectflag);
 		}
 	}
 
@@ -5466,9 +5495,9 @@ public class BlenderObject extends CFacade {
 	public short getTrackflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 984);
+			return __io__block.readShort(__io__address + 1000);
 		} else {
-			return __io__block.readShort(__io__address + 812);
+			return __io__block.readShort(__io__address + 828);
 		}
 	}
 
@@ -5491,9 +5520,9 @@ public class BlenderObject extends CFacade {
 	public void setTrackflag(short trackflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 984, trackflag);
+			__io__block.writeShort(__io__address + 1000, trackflag);
 		} else {
-			__io__block.writeShort(__io__address + 812, trackflag);
+			__io__block.writeShort(__io__address + 828, trackflag);
 		}
 	}
 
@@ -5516,9 +5545,9 @@ public class BlenderObject extends CFacade {
 	public short getUpflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 986);
+			return __io__block.readShort(__io__address + 1002);
 		} else {
-			return __io__block.readShort(__io__address + 814);
+			return __io__block.readShort(__io__address + 830);
 		}
 	}
 
@@ -5541,9 +5570,9 @@ public class BlenderObject extends CFacade {
 	public void setUpflag(short upflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 986, upflag);
+			__io__block.writeShort(__io__address + 1002, upflag);
 		} else {
-			__io__block.writeShort(__io__address + 814, upflag);
+			__io__block.writeShort(__io__address + 830, upflag);
 		}
 	}
 
@@ -5572,9 +5601,9 @@ public class BlenderObject extends CFacade {
 	public short getNlaflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 988);
+			return __io__block.readShort(__io__address + 1004);
 		} else {
-			return __io__block.readShort(__io__address + 816);
+			return __io__block.readShort(__io__address + 832);
 		}
 	}
 
@@ -5603,9 +5632,9 @@ public class BlenderObject extends CFacade {
 	public void setNlaflag(short nlaflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 988, nlaflag);
+			__io__block.writeShort(__io__address + 1004, nlaflag);
 		} else {
-			__io__block.writeShort(__io__address + 816, nlaflag);
+			__io__block.writeShort(__io__address + 832, nlaflag);
 		}
 	}
 
@@ -5617,9 +5646,9 @@ public class BlenderObject extends CFacade {
 	public byte get_pad1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 990);
+			return __io__block.readByte(__io__address + 1006);
 		} else {
-			return __io__block.readByte(__io__address + 818);
+			return __io__block.readByte(__io__address + 834);
 		}
 	}
 
@@ -5631,9 +5660,9 @@ public class BlenderObject extends CFacade {
 	public void set_pad1(byte _pad1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 990, _pad1);
+			__io__block.writeByte(__io__address + 1006, _pad1);
 		} else {
-			__io__block.writeByte(__io__address + 818, _pad1);
+			__io__block.writeByte(__io__address + 834, _pad1);
 		}
 	}
 
@@ -5645,9 +5674,9 @@ public class BlenderObject extends CFacade {
 	public byte getDuplicator_visibility_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 991);
+			return __io__block.readByte(__io__address + 1007);
 		} else {
-			return __io__block.readByte(__io__address + 819);
+			return __io__block.readByte(__io__address + 835);
 		}
 	}
 
@@ -5659,9 +5688,9 @@ public class BlenderObject extends CFacade {
 	public void setDuplicator_visibility_flag(byte duplicator_visibility_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 991, duplicator_visibility_flag);
+			__io__block.writeByte(__io__address + 1007, duplicator_visibility_flag);
 		} else {
-			__io__block.writeByte(__io__address + 819, duplicator_visibility_flag);
+			__io__block.writeByte(__io__address + 835, duplicator_visibility_flag);
 		}
 	}
 
@@ -5676,9 +5705,9 @@ public class BlenderObject extends CFacade {
 	public short getBase_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 992);
+			return __io__block.readShort(__io__address + 1008);
 		} else {
-			return __io__block.readShort(__io__address + 820);
+			return __io__block.readShort(__io__address + 836);
 		}
 	}
 
@@ -5693,9 +5722,9 @@ public class BlenderObject extends CFacade {
 	public void setBase_flag(short base_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 992, base_flag);
+			__io__block.writeShort(__io__address + 1008, base_flag);
 		} else {
-			__io__block.writeShort(__io__address + 820, base_flag);
+			__io__block.writeShort(__io__address + 836, base_flag);
 		}
 	}
 
@@ -5710,9 +5739,9 @@ public class BlenderObject extends CFacade {
 	public short getBase_local_view_bits() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 994);
+			return __io__block.readShort(__io__address + 1010);
 		} else {
-			return __io__block.readShort(__io__address + 822);
+			return __io__block.readShort(__io__address + 838);
 		}
 	}
 
@@ -5727,9 +5756,9 @@ public class BlenderObject extends CFacade {
 	public void setBase_local_view_bits(short base_local_view_bits) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 994, base_local_view_bits);
+			__io__block.writeShort(__io__address + 1010, base_local_view_bits);
 		} else {
-			__io__block.writeShort(__io__address + 822, base_local_view_bits);
+			__io__block.writeShort(__io__address + 838, base_local_view_bits);
 		}
 	}
 
@@ -5746,9 +5775,9 @@ public class BlenderObject extends CFacade {
 	public short getCol_group() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 996);
+			return __io__block.readShort(__io__address + 1012);
 		} else {
-			return __io__block.readShort(__io__address + 824);
+			return __io__block.readShort(__io__address + 840);
 		}
 	}
 
@@ -5765,9 +5794,9 @@ public class BlenderObject extends CFacade {
 	public void setCol_group(short col_group) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 996, col_group);
+			__io__block.writeShort(__io__address + 1012, col_group);
 		} else {
-			__io__block.writeShort(__io__address + 824, col_group);
+			__io__block.writeShort(__io__address + 840, col_group);
 		}
 	}
 
@@ -5782,9 +5811,9 @@ public class BlenderObject extends CFacade {
 	public short getCol_mask() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 998);
+			return __io__block.readShort(__io__address + 1014);
 		} else {
-			return __io__block.readShort(__io__address + 826);
+			return __io__block.readShort(__io__address + 842);
 		}
 	}
 
@@ -5799,9 +5828,9 @@ public class BlenderObject extends CFacade {
 	public void setCol_mask(short col_mask) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 998, col_mask);
+			__io__block.writeShort(__io__address + 1014, col_mask);
 		} else {
-			__io__block.writeShort(__io__address + 826, col_mask);
+			__io__block.writeShort(__io__address + 842, col_mask);
 		}
 	}
 
@@ -5818,9 +5847,9 @@ public class BlenderObject extends CFacade {
 	public short getRotmode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1000);
+			return __io__block.readShort(__io__address + 1016);
 		} else {
-			return __io__block.readShort(__io__address + 828);
+			return __io__block.readShort(__io__address + 844);
 		}
 	}
 
@@ -5837,9 +5866,9 @@ public class BlenderObject extends CFacade {
 	public void setRotmode(short rotmode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1000, rotmode);
+			__io__block.writeShort(__io__address + 1016, rotmode);
 		} else {
-			__io__block.writeShort(__io__address + 828, rotmode);
+			__io__block.writeShort(__io__address + 844, rotmode);
 		}
 	}
 
@@ -5856,9 +5885,9 @@ public class BlenderObject extends CFacade {
 	public byte getBoundtype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1002);
+			return __io__block.readByte(__io__address + 1018);
 		} else {
-			return __io__block.readByte(__io__address + 830);
+			return __io__block.readByte(__io__address + 846);
 		}
 	}
 
@@ -5875,9 +5904,9 @@ public class BlenderObject extends CFacade {
 	public void setBoundtype(byte boundtype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1002, boundtype);
+			__io__block.writeByte(__io__address + 1018, boundtype);
 		} else {
-			__io__block.writeByte(__io__address + 830, boundtype);
+			__io__block.writeByte(__io__address + 846, boundtype);
 		}
 	}
 
@@ -5903,9 +5932,9 @@ public class BlenderObject extends CFacade {
 	public byte getCollision_boundtype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1003);
+			return __io__block.readByte(__io__address + 1019);
 		} else {
-			return __io__block.readByte(__io__address + 831);
+			return __io__block.readByte(__io__address + 847);
 		}
 	}
 
@@ -5931,9 +5960,9 @@ public class BlenderObject extends CFacade {
 	public void setCollision_boundtype(byte collision_boundtype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1003, collision_boundtype);
+			__io__block.writeByte(__io__address + 1019, collision_boundtype);
 		} else {
-			__io__block.writeByte(__io__address + 831, collision_boundtype);
+			__io__block.writeByte(__io__address + 847, collision_boundtype);
 		}
 	}
 
@@ -5964,9 +5993,9 @@ public class BlenderObject extends CFacade {
 	public short getDtx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1004);
+			return __io__block.readShort(__io__address + 1020);
 		} else {
-			return __io__block.readShort(__io__address + 832);
+			return __io__block.readShort(__io__address + 848);
 		}
 	}
 
@@ -5997,9 +6026,9 @@ public class BlenderObject extends CFacade {
 	public void setDtx(short dtx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1004, dtx);
+			__io__block.writeShort(__io__address + 1020, dtx);
 		} else {
-			__io__block.writeShort(__io__address + 832, dtx);
+			__io__block.writeShort(__io__address + 848, dtx);
 		}
 	}
 
@@ -6025,9 +6054,9 @@ public class BlenderObject extends CFacade {
 	public byte getDt() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1006);
+			return __io__block.readByte(__io__address + 1022);
 		} else {
-			return __io__block.readByte(__io__address + 834);
+			return __io__block.readByte(__io__address + 850);
 		}
 	}
 
@@ -6053,9 +6082,9 @@ public class BlenderObject extends CFacade {
 	public void setDt(byte dt) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1006, dt);
+			__io__block.writeByte(__io__address + 1022, dt);
 		} else {
-			__io__block.writeByte(__io__address + 834, dt);
+			__io__block.writeByte(__io__address + 850, dt);
 		}
 	}
 
@@ -6080,9 +6109,9 @@ public class BlenderObject extends CFacade {
 	public byte getEmpty_drawtype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1007);
+			return __io__block.readByte(__io__address + 1023);
 		} else {
-			return __io__block.readByte(__io__address + 835);
+			return __io__block.readByte(__io__address + 851);
 		}
 	}
 
@@ -6107,9 +6136,9 @@ public class BlenderObject extends CFacade {
 	public void setEmpty_drawtype(byte empty_drawtype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1007, empty_drawtype);
+			__io__block.writeByte(__io__address + 1023, empty_drawtype);
 		} else {
-			__io__block.writeByte(__io__address + 835, empty_drawtype);
+			__io__block.writeByte(__io__address + 851, empty_drawtype);
 		}
 	}
 
@@ -6124,9 +6153,9 @@ public class BlenderObject extends CFacade {
 	public float getEmpty_drawsize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1008);
+			return __io__block.readFloat(__io__address + 1024);
 		} else {
-			return __io__block.readFloat(__io__address + 836);
+			return __io__block.readFloat(__io__address + 852);
 		}
 	}
 
@@ -6141,9 +6170,9 @@ public class BlenderObject extends CFacade {
 	public void setEmpty_drawsize(float empty_drawsize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1008, empty_drawsize);
+			__io__block.writeFloat(__io__address + 1024, empty_drawsize);
 		} else {
-			__io__block.writeFloat(__io__address + 836, empty_drawsize);
+			__io__block.writeFloat(__io__address + 852, empty_drawsize);
 		}
 	}
 
@@ -6158,9 +6187,9 @@ public class BlenderObject extends CFacade {
 	public float getDupfacesca() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1012);
+			return __io__block.readFloat(__io__address + 1028);
 		} else {
-			return __io__block.readFloat(__io__address + 840);
+			return __io__block.readFloat(__io__address + 856);
 		}
 	}
 
@@ -6175,9 +6204,9 @@ public class BlenderObject extends CFacade {
 	public void setDupfacesca(float dupfacesca) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1012, dupfacesca);
+			__io__block.writeFloat(__io__address + 1028, dupfacesca);
 		} else {
-			__io__block.writeFloat(__io__address + 840, dupfacesca);
+			__io__block.writeFloat(__io__address + 856, dupfacesca);
 		}
 	}
 
@@ -6194,9 +6223,9 @@ public class BlenderObject extends CFacade {
 	public short getIndex() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1016);
+			return __io__block.readShort(__io__address + 1032);
 		} else {
-			return __io__block.readShort(__io__address + 844);
+			return __io__block.readShort(__io__address + 860);
 		}
 	}
 
@@ -6213,9 +6242,9 @@ public class BlenderObject extends CFacade {
 	public void setIndex(short index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1016, index);
+			__io__block.writeShort(__io__address + 1032, index);
 		} else {
-			__io__block.writeShort(__io__address + 844, index);
+			__io__block.writeShort(__io__address + 860, index);
 		}
 	}
 
@@ -6234,9 +6263,9 @@ public class BlenderObject extends CFacade {
 	public short getActdef() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1018);
+			return __io__block.readShort(__io__address + 1034);
 		} else {
-			return __io__block.readShort(__io__address + 846);
+			return __io__block.readShort(__io__address + 862);
 		}
 	}
 
@@ -6255,9 +6284,9 @@ public class BlenderObject extends CFacade {
 	public void setActdef(short actdef) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1018, actdef);
+			__io__block.writeShort(__io__address + 1034, actdef);
 		} else {
-			__io__block.writeShort(__io__address + 846, actdef);
+			__io__block.writeShort(__io__address + 862, actdef);
 		}
 	}
 
@@ -6272,9 +6301,9 @@ public class BlenderObject extends CFacade {
 	public short getActfmap() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1020);
+			return __io__block.readShort(__io__address + 1036);
 		} else {
-			return __io__block.readShort(__io__address + 848);
+			return __io__block.readShort(__io__address + 864);
 		}
 	}
 
@@ -6289,9 +6318,9 @@ public class BlenderObject extends CFacade {
 	public void setActfmap(short actfmap) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1020, actfmap);
+			__io__block.writeShort(__io__address + 1036, actfmap);
 		} else {
-			__io__block.writeShort(__io__address + 848, actfmap);
+			__io__block.writeShort(__io__address + 864, actfmap);
 		}
 	}
 
@@ -6307,9 +6336,9 @@ public class BlenderObject extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1022, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1038, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 850, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 866, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6322,9 +6351,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1022;
+			__dna__offset = 1038;
 		} else {
-			__dna__offset = 850;
+			__dna__offset = 866;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -6350,9 +6379,9 @@ public class BlenderObject extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1024, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1040, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 852, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 868, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6368,9 +6397,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1024;
+			__dna__offset = 1040;
 		} else {
-			__dna__offset = 852;
+			__dna__offset = 868;
 		}
 		if (__io__equals(col, __io__address + __dna__offset)) {
 			return;
@@ -6394,9 +6423,9 @@ public class BlenderObject extends CFacade {
 	public short getSoftflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1040);
+			return __io__block.readShort(__io__address + 1056);
 		} else {
-			return __io__block.readShort(__io__address + 868);
+			return __io__block.readShort(__io__address + 884);
 		}
 	}
 
@@ -6413,9 +6442,9 @@ public class BlenderObject extends CFacade {
 	public void setSoftflag(short softflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1040, softflag);
+			__io__block.writeShort(__io__address + 1056, softflag);
 		} else {
-			__io__block.writeShort(__io__address + 868, softflag);
+			__io__block.writeShort(__io__address + 884, softflag);
 		}
 	}
 
@@ -6430,9 +6459,9 @@ public class BlenderObject extends CFacade {
 	public short getRestrictflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1042);
+			return __io__block.readShort(__io__address + 1058);
 		} else {
-			return __io__block.readShort(__io__address + 870);
+			return __io__block.readShort(__io__address + 886);
 		}
 	}
 
@@ -6447,9 +6476,9 @@ public class BlenderObject extends CFacade {
 	public void setRestrictflag(short restrictflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1042, restrictflag);
+			__io__block.writeShort(__io__address + 1058, restrictflag);
 		} else {
-			__io__block.writeShort(__io__address + 870, restrictflag);
+			__io__block.writeShort(__io__address + 886, restrictflag);
 		}
 	}
 
@@ -6466,9 +6495,9 @@ public class BlenderObject extends CFacade {
 	public short getShapenr() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1044);
+			return __io__block.readShort(__io__address + 1060);
 		} else {
-			return __io__block.readShort(__io__address + 872);
+			return __io__block.readShort(__io__address + 888);
 		}
 	}
 
@@ -6485,9 +6514,9 @@ public class BlenderObject extends CFacade {
 	public void setShapenr(short shapenr) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1044, shapenr);
+			__io__block.writeShort(__io__address + 1060, shapenr);
 		} else {
-			__io__block.writeShort(__io__address + 872, shapenr);
+			__io__block.writeShort(__io__address + 888, shapenr);
 		}
 	}
 
@@ -6504,9 +6533,9 @@ public class BlenderObject extends CFacade {
 	public byte getShapeflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1046);
+			return __io__block.readByte(__io__address + 1062);
 		} else {
-			return __io__block.readByte(__io__address + 874);
+			return __io__block.readByte(__io__address + 890);
 		}
 	}
 
@@ -6523,9 +6552,9 @@ public class BlenderObject extends CFacade {
 	public void setShapeflag(byte shapeflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1046, shapeflag);
+			__io__block.writeByte(__io__address + 1062, shapeflag);
 		} else {
-			__io__block.writeByte(__io__address + 874, shapeflag);
+			__io__block.writeByte(__io__address + 890, shapeflag);
 		}
 	}
 
@@ -6541,9 +6570,9 @@ public class BlenderObject extends CFacade {
 			1
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1047, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1063, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 875, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 891, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6556,9 +6585,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1047;
+			__dna__offset = 1063;
 		} else {
-			__dna__offset = 875;
+			__dna__offset = 891;
 		}
 		if (__io__equals(_pad3, __io__address + __dna__offset)) {
 			return;
@@ -6584,9 +6613,9 @@ public class BlenderObject extends CFacade {
 	public ListBase getConstraints() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1048, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1064, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 876, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 892, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6606,9 +6635,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1048;
+			__dna__offset = 1064;
 		} else {
-			__dna__offset = 876;
+			__dna__offset = 892;
 		}
 		if (__io__equals(constraints, __io__address + __dna__offset)) {
 			return;
@@ -6635,9 +6664,9 @@ public class BlenderObject extends CFacade {
 	public ListBase getNlastrips() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1064, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1080, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 884, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 900, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6658,9 +6687,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1064;
+			__dna__offset = 1080;
 		} else {
-			__dna__offset = 884;
+			__dna__offset = 900;
 		}
 		if (__io__equals(nlastrips, __io__address + __dna__offset)) {
 			return;
@@ -6687,9 +6716,9 @@ public class BlenderObject extends CFacade {
 	public ListBase getHooks() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1080, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1096, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 892, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 908, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6710,9 +6739,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1080;
+			__dna__offset = 1096;
 		} else {
-			__dna__offset = 892;
+			__dna__offset = 908;
 		}
 		if (__io__equals(hooks, __io__address + __dna__offset)) {
 			return;
@@ -6736,9 +6765,9 @@ public class BlenderObject extends CFacade {
 	public ListBase getParticlesystem() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1096, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1112, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 900, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 916, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6756,9 +6785,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1096;
+			__dna__offset = 1112;
 		} else {
-			__dna__offset = 900;
+			__dna__offset = 916;
 		}
 		if (__io__equals(particlesystem, __io__address + __dna__offset)) {
 			return;
@@ -6783,9 +6812,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 908);
+			__dna__targetAddress = __io__block.readLong(__io__address + 924);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PartDeflect.class};
 		return new CPointer<PartDeflect>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PartDeflect.__DNA__SDNA_INDEX), __io__blockTable);
@@ -6805,9 +6834,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((pd == null) ? 0 : pd.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1112, __address);
+			__io__block.writeLong(__io__address + 1128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 908, __address);
+			__io__block.writeLong(__io__address + 924, __address);
 		}
 	}
 
@@ -6825,9 +6854,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 912);
+			__dna__targetAddress = __io__block.readLong(__io__address + 928);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{SoftBody.class};
 		return new CPointer<SoftBody>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, SoftBody.__DNA__SDNA_INDEX), __io__blockTable);
@@ -6847,9 +6876,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((soft == null) ? 0 : soft.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1120, __address);
+			__io__block.writeLong(__io__address + 1136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 912, __address);
+			__io__block.writeLong(__io__address + 928, __address);
 		}
 	}
 
@@ -6865,9 +6894,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 916);
+			__dna__targetAddress = __io__block.readLong(__io__address + 932);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Collection.class};
 		return new CPointer<Collection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Collection.__DNA__SDNA_INDEX), __io__blockTable);
@@ -6885,9 +6914,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((dup_group == null) ? 0 : dup_group.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1128, __address);
+			__io__block.writeLong(__io__address + 1144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 916, __address);
+			__io__block.writeLong(__io__address + 932, __address);
 		}
 	}
 
@@ -6908,9 +6937,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 920);
+			__dna__targetAddress = __io__block.readLong(__io__address + 936);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{FluidsimSettings.class};
 		return new CPointer<FluidsimSettings>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, FluidsimSettings.__DNA__SDNA_INDEX), __io__blockTable);
@@ -6933,9 +6962,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((fluidsimSettings == null) ? 0 : fluidsimSettings.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1136, __address);
+			__io__block.writeLong(__io__address + 1152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 920, __address);
+			__io__block.writeLong(__io__address + 936, __address);
 		}
 	}
 
@@ -6947,9 +6976,9 @@ public class BlenderObject extends CFacade {
 	public ListBase getPc_ids() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1144, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1160, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 924, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 940, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6962,9 +6991,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1144;
+			__dna__offset = 1160;
 		} else {
-			__dna__offset = 924;
+			__dna__offset = 940;
 		}
 		if (__io__equals(pc_ids, __io__address + __dna__offset)) {
 			return;
@@ -6989,9 +7018,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1176);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 932);
+			__dna__targetAddress = __io__block.readLong(__io__address + 948);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{RigidBodyOb.class};
 		return new CPointer<RigidBodyOb>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, RigidBodyOb.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7011,9 +7040,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((rigidbody_object == null) ? 0 : rigidbody_object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1160, __address);
+			__io__block.writeLong(__io__address + 1176, __address);
 		} else {
-			__io__block.writeLong(__io__address + 932, __address);
+			__io__block.writeLong(__io__address + 948, __address);
 		}
 	}
 
@@ -7031,9 +7060,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1184);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 936);
+			__dna__targetAddress = __io__block.readLong(__io__address + 952);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{RigidBodyCon.class};
 		return new CPointer<RigidBodyCon>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, RigidBodyCon.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7053,9 +7082,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((rigidbody_constraint == null) ? 0 : rigidbody_constraint.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1168, __address);
+			__io__block.writeLong(__io__address + 1184, __address);
 		} else {
-			__io__block.writeLong(__io__address + 936, __address);
+			__io__block.writeLong(__io__address + 952, __address);
 		}
 	}
 
@@ -7076,9 +7105,9 @@ public class BlenderObject extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 940, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 956, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7096,9 +7125,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1176;
+			__dna__offset = 1192;
 		} else {
-			__dna__offset = 940;
+			__dna__offset = 956;
 		}
 		if (__io__equals(ima_ofs, __io__address + __dna__offset)) {
 			return;
@@ -7121,9 +7150,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 948);
+			__dna__targetAddress = __io__block.readLong(__io__address + 964);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ImageUser.class};
 		return new CPointer<ImageUser>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ImageUser.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7141,9 +7170,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((iuser == null) ? 0 : iuser.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1184, __address);
+			__io__block.writeLong(__io__address + 1200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 948, __address);
+			__io__block.writeLong(__io__address + 964, __address);
 		}
 	}
 
@@ -7155,9 +7184,9 @@ public class BlenderObject extends CFacade {
 	public byte getEmpty_image_visibility_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1192);
+			return __io__block.readByte(__io__address + 1208);
 		} else {
-			return __io__block.readByte(__io__address + 952);
+			return __io__block.readByte(__io__address + 968);
 		}
 	}
 
@@ -7169,9 +7198,9 @@ public class BlenderObject extends CFacade {
 	public void setEmpty_image_visibility_flag(byte empty_image_visibility_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1192, empty_image_visibility_flag);
+			__io__block.writeByte(__io__address + 1208, empty_image_visibility_flag);
 		} else {
-			__io__block.writeByte(__io__address + 952, empty_image_visibility_flag);
+			__io__block.writeByte(__io__address + 968, empty_image_visibility_flag);
 		}
 	}
 
@@ -7186,9 +7215,9 @@ public class BlenderObject extends CFacade {
 	public byte getEmpty_image_depth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1193);
+			return __io__block.readByte(__io__address + 1209);
 		} else {
-			return __io__block.readByte(__io__address + 953);
+			return __io__block.readByte(__io__address + 969);
 		}
 	}
 
@@ -7203,9 +7232,9 @@ public class BlenderObject extends CFacade {
 	public void setEmpty_image_depth(byte empty_image_depth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1193, empty_image_depth);
+			__io__block.writeByte(__io__address + 1209, empty_image_depth);
 		} else {
-			__io__block.writeByte(__io__address + 953, empty_image_depth);
+			__io__block.writeByte(__io__address + 969, empty_image_depth);
 		}
 	}
 
@@ -7217,9 +7246,9 @@ public class BlenderObject extends CFacade {
 	public byte getEmpty_image_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1194);
+			return __io__block.readByte(__io__address + 1210);
 		} else {
-			return __io__block.readByte(__io__address + 954);
+			return __io__block.readByte(__io__address + 970);
 		}
 	}
 
@@ -7231,9 +7260,9 @@ public class BlenderObject extends CFacade {
 	public void setEmpty_image_flag(byte empty_image_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1194, empty_image_flag);
+			__io__block.writeByte(__io__address + 1210, empty_image_flag);
 		} else {
-			__io__block.writeByte(__io__address + 954, empty_image_flag);
+			__io__block.writeByte(__io__address + 970, empty_image_flag);
 		}
 	}
 
@@ -7249,9 +7278,9 @@ public class BlenderObject extends CFacade {
 			5
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1195, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1211, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 955, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 971, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7264,9 +7293,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1195;
+			__dna__offset = 1211;
 		} else {
-			__dna__offset = 955;
+			__dna__offset = 971;
 		}
 		if (__io__equals(_pad8, __io__address + __dna__offset)) {
 			return;
@@ -7286,9 +7315,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1216);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 960);
+			__dna__targetAddress = __io__block.readLong(__io__address + 976);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PreviewImage.class};
 		return new CPointer<PreviewImage>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PreviewImage.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7303,9 +7332,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((preview == null) ? 0 : preview.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1200, __address);
+			__io__block.writeLong(__io__address + 1216, __address);
 		} else {
-			__io__block.writeLong(__io__address + 960, __address);
+			__io__block.writeLong(__io__address + 976, __address);
 		}
 	}
 
@@ -7320,9 +7349,9 @@ public class BlenderObject extends CFacade {
 	public ObjectLineArt getLineart() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ObjectLineArt(__io__address + 1208, __io__block, __io__blockTable);
+			return new ObjectLineArt(__io__address + 1224, __io__block, __io__blockTable);
 		} else {
-			return new ObjectLineArt(__io__address + 964, __io__block, __io__blockTable);
+			return new ObjectLineArt(__io__address + 980, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7338,9 +7367,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1208;
+			__dna__offset = 1224;
 		} else {
-			__dna__offset = 964;
+			__dna__offset = 980;
 		}
 		if (__io__equals(lineart, __io__address + __dna__offset)) {
 			return;
@@ -7352,59 +7381,69 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad9'.
+	 * Get method for struct member 'lightgroup'.
 	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Lightgroup that the object belongs to
 	 * <h4>Blender Source Code</h4>
-	 * <p> Runtime evaluation data (keep last). </p>
-	 * @see #__DNA__FIELD___pad9
+	 * <p> Lightgroup membership information. </p>
+	 * @see #__DNA__FIELD__lightgroup
 	 */
 	
-	public CPointer<Object> get_pad9() throws IOException
+	public CPointer<LightgroupMembership> getLightgroup() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1232);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 972);
+			__dna__targetAddress = __io__block.readLong(__io__address + 988);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{LightgroupMembership.class};
+		return new CPointer<LightgroupMembership>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, LightgroupMembership.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member '_pad9'.
+	 * Set method for struct member 'lightgroup'.
 	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Lightgroup that the object belongs to
 	 * <h4>Blender Source Code</h4>
-	 * <p> Runtime evaluation data (keep last). </p>
-	 * @see #__DNA__FIELD___pad9
+	 * <p> Lightgroup membership information. </p>
+	 * @see #__DNA__FIELD__lightgroup
 	 */
 	
-	public void set_pad9(CPointer<Object> _pad9) throws IOException
+	public void setLightgroup(CPointer<LightgroupMembership> lightgroup) throws IOException
 	{
-		long __address = ((_pad9 == null) ? 0 : _pad9.getAddress());
+		long __address = ((lightgroup == null) ? 0 : lightgroup.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1216, __address);
+			__io__block.writeLong(__io__address + 1232, __address);
 		} else {
-			__io__block.writeLong(__io__address + 972, __address);
+			__io__block.writeLong(__io__address + 988, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'runtime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Runtime evaluation data (keep last). </p>
 	 * @see #__DNA__FIELD__runtime
 	 */
 	
 	public Object_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new Object_Runtime(__io__address + 1224, __io__block, __io__blockTable);
+			return new Object_Runtime(__io__address + 1240, __io__block, __io__blockTable);
 		} else {
-			return new Object_Runtime(__io__address + 976, __io__block, __io__blockTable);
+			return new Object_Runtime(__io__address + 992, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'runtime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Runtime evaluation data (keep last). </p>
 	 * @see #__DNA__FIELD__runtime
 	 */
 	
@@ -7412,9 +7451,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1224;
+			__dna__offset = 1240;
 		} else {
-			__dna__offset = 976;
+			__dna__offset = 992;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

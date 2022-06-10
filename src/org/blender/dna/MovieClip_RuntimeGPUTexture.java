@@ -28,7 +28,7 @@ public class MovieClip_RuntimeGPUTexture extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 685;
+	public static final int __DNA__SDNA_INDEX = 676;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

@@ -32,7 +32,7 @@ public class MVert extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 73;
+	public static final int __DNA__SDNA_INDEX = 75;
 
 	/**
 	 * Field descriptor (offset) for struct member 'co'.

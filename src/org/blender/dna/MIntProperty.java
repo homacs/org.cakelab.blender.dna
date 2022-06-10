@@ -27,7 +27,7 @@ public class MIntProperty extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 80;
+	public static final int __DNA__SDNA_INDEX = 82;
 
 	/**
 	 * Field descriptor (offset) for struct member 'i'.

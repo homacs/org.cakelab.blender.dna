@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=20, size64=24)
+@CMetaData(size32=28, size64=32)
 public class SpaceSeqRuntime extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SpaceSeqRuntime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 238;
+	public static final int __DNA__SDNA_INDEX = 243;
 
 	/**
 	 * Field descriptor (offset) for struct member 'last_thumbnail_area'.
@@ -74,6 +74,46 @@ public class SpaceSeqRuntime extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__last_displayed_thumbnails = new long[]{16, 16};
+
+	/**
+	 * Field descriptor (offset) for struct member 'rename_channel_index'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceSeqRuntime spaceseqruntime = ...;
+	 * CPointer&lt;Object&gt; p = spaceseqruntime.__dna__addressof(SpaceSeqRuntime.__DNA__FIELD__rename_channel_index);
+	 * CPointer&lt;Integer&gt; p_rename_channel_index = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rename_channel_index'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rename_channel_index = new long[]{20, 24};
+
+	/**
+	 * Field descriptor (offset) for struct member 'timeline_clamp_custom_range'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceSeqRuntime spaceseqruntime = ...;
+	 * CPointer&lt;Object&gt; p = spaceseqruntime.__dna__addressof(SpaceSeqRuntime.__DNA__FIELD__timeline_clamp_custom_range);
+	 * CPointer&lt;Float&gt; p_timeline_clamp_custom_range = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'timeline_clamp_custom_range'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__timeline_clamp_custom_range = new long[]{24, 28};
 
 	public SpaceSeqRuntime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -160,6 +200,62 @@ public class SpaceSeqRuntime extends CFacade {
 			__io__block.writeLong(__io__address + 16, __address);
 		} else {
 			__io__block.writeLong(__io__address + 16, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'rename_channel_index'.
+	 * @see #__DNA__FIELD__rename_channel_index
+	 */
+	
+	public int getRename_channel_index() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 24);
+		} else {
+			return __io__block.readInt(__io__address + 20);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rename_channel_index'.
+	 * @see #__DNA__FIELD__rename_channel_index
+	 */
+	
+	public void setRename_channel_index(int rename_channel_index) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 24, rename_channel_index);
+		} else {
+			__io__block.writeInt(__io__address + 20, rename_channel_index);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'timeline_clamp_custom_range'.
+	 * @see #__DNA__FIELD__timeline_clamp_custom_range
+	 */
+	
+	public float getTimeline_clamp_custom_range() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 28);
+		} else {
+			return __io__block.readFloat(__io__address + 24);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'timeline_clamp_custom_range'.
+	 * @see #__DNA__FIELD__timeline_clamp_custom_range
+	 */
+	
+	public void setTimeline_clamp_custom_range(float timeline_clamp_custom_range) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 28, timeline_clamp_custom_range);
+		} else {
+			__io__block.writeFloat(__io__address + 24, timeline_clamp_custom_range);
 		}
 	}
 

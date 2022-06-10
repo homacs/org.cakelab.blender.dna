@@ -28,7 +28,7 @@ public class NodeCryptomatte extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 482;
+	public static final int __DNA__SDNA_INDEX = 488;
 
 	/**
 	 * Field descriptor (offset) for struct member 'iuser'.
@@ -124,9 +124,6 @@ public class NodeCryptomatte extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'num_inputs'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Legacy attributes Number of input sockets. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -363,9 +360,6 @@ public class NodeCryptomatte extends CFacade {
 
 	/**
 	 * Get method for struct member 'num_inputs'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Legacy attributes Number of input sockets. </p>
 	 * @see #__DNA__FIELD__num_inputs
 	 */
 	
@@ -380,9 +374,6 @@ public class NodeCryptomatte extends CFacade {
 
 	/**
 	 * Set method for struct member 'num_inputs'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Legacy attributes Number of input sockets. </p>
 	 * @see #__DNA__FIELD__num_inputs
 	 */
 	

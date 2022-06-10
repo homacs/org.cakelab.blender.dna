@@ -30,7 +30,7 @@ public class bGPDstroke extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 592;
+	public static final int __DNA__SDNA_INDEX = 582;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -633,6 +633,9 @@ public class bGPDstroke extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> NOTE: When adding new members, make sure to add them to BKE_gpencil_stroke_copy_settings as well! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1691,6 +1694,9 @@ public class bGPDstroke extends CFacade {
 
 	/**
 	 * Get method for struct member 'runtime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> NOTE: When adding new members, make sure to add them to BKE_gpencil_stroke_copy_settings as well! </p>
 	 * @see #__DNA__FIELD__runtime
 	 */
 	
@@ -1705,6 +1711,9 @@ public class bGPDstroke extends CFacade {
 
 	/**
 	 * Set method for struct member 'runtime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> NOTE: When adding new members, make sure to add them to BKE_gpencil_stroke_copy_settings as well! </p>
 	 * @see #__DNA__FIELD__runtime
 	 */
 	

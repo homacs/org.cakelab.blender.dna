@@ -28,7 +28,7 @@ public class NoiseGpencilModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 602;
+	public static final int __DNA__SDNA_INDEX = 592;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

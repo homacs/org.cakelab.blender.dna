@@ -4,6 +4,7 @@ import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
 import org.cakelab.blender.io.dna.internal.StructDNA;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -16,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=12, size64=16)
+@CMetaData(size32=204, size64=208)
 public class Volume_Runtime extends CFacade {
 
 	/**
@@ -27,7 +28,7 @@ public class Volume_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 793;
+	public static final int __DNA__SDNA_INDEX = 787;
 
 	/**
 	 * Field descriptor (offset) for struct member 'grids'.
@@ -97,6 +98,69 @@ public class Volume_Runtime extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__default_simplify_level = new long[]{8, 12};
+
+	/**
+	 * Field descriptor (offset) for struct member 'velocity_x_grid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Names for scalar grids which would need to be merged to recompose the velocity grid. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Volume_Runtime volume_runtime = ...;
+	 * CPointer&lt;Object&gt; p = volume_runtime.__dna__addressof(Volume_Runtime.__DNA__FIELD__velocity_x_grid);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_velocity_x_grid = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'velocity_x_grid'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__velocity_x_grid = new long[]{12, 16};
+
+	/**
+	 * Field descriptor (offset) for struct member 'velocity_y_grid'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Volume_Runtime volume_runtime = ...;
+	 * CPointer&lt;Object&gt; p = volume_runtime.__dna__addressof(Volume_Runtime.__DNA__FIELD__velocity_y_grid);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_velocity_y_grid = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'velocity_y_grid'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__velocity_y_grid = new long[]{76, 80};
+
+	/**
+	 * Field descriptor (offset) for struct member 'velocity_z_grid'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Volume_Runtime volume_runtime = ...;
+	 * CPointer&lt;Object&gt; p = volume_runtime.__dna__addressof(Volume_Runtime.__DNA__FIELD__velocity_z_grid);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_velocity_z_grid = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'velocity_z_grid'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__velocity_z_grid = new long[]{140, 144};
 
 	public Volume_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -209,6 +273,132 @@ public class Volume_Runtime extends CFacade {
 			__io__block.writeInt(__io__address + 12, default_simplify_level);
 		} else {
 			__io__block.writeInt(__io__address + 8, default_simplify_level);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'velocity_x_grid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Names for scalar grids which would need to be merged to recompose the velocity grid. </p>
+	 * @see #__DNA__FIELD__velocity_x_grid
+	 */
+	
+	public CArrayFacade<Byte> getVelocity_x_grid() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'velocity_x_grid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Names for scalar grids which would need to be merged to recompose the velocity grid. </p>
+	 * @see #__DNA__FIELD__velocity_x_grid
+	 */
+	
+	public void setVelocity_x_grid(CArrayFacade<Byte> velocity_x_grid) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 16;
+		} else {
+			__dna__offset = 12;
+		}
+		if (__io__equals(velocity_x_grid, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, velocity_x_grid)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, velocity_x_grid);
+		} else {
+			__io__generic__copy( getVelocity_x_grid(), velocity_x_grid);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'velocity_y_grid'.
+	 * @see #__DNA__FIELD__velocity_y_grid
+	 */
+	
+	public CArrayFacade<Byte> getVelocity_y_grid() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 80, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'velocity_y_grid'.
+	 * @see #__DNA__FIELD__velocity_y_grid
+	 */
+	
+	public void setVelocity_y_grid(CArrayFacade<Byte> velocity_y_grid) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 80;
+		} else {
+			__dna__offset = 76;
+		}
+		if (__io__equals(velocity_y_grid, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, velocity_y_grid)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, velocity_y_grid);
+		} else {
+			__io__generic__copy( getVelocity_y_grid(), velocity_y_grid);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'velocity_z_grid'.
+	 * @see #__DNA__FIELD__velocity_z_grid
+	 */
+	
+	public CArrayFacade<Byte> getVelocity_z_grid() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'velocity_z_grid'.
+	 * @see #__DNA__FIELD__velocity_z_grid
+	 */
+	
+	public void setVelocity_z_grid(CArrayFacade<Byte> velocity_z_grid) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 144;
+		} else {
+			__dna__offset = 140;
+		}
+		if (__io__equals(velocity_z_grid, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, velocity_z_grid)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, velocity_z_grid);
+		} else {
+			__io__generic__copy( getVelocity_z_grid(), velocity_z_grid);
 		}
 	}
 

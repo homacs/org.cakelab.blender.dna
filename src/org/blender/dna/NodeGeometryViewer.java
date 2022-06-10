@@ -27,7 +27,7 @@ public class NodeGeometryViewer extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 548;
+	public static final int __DNA__SDNA_INDEX = 537;
 
 	/**
 	 * Field descriptor (offset) for struct member 'data_type'.

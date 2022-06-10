@@ -28,7 +28,7 @@ public class MultiresModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 129;
+	public static final int __DNA__SDNA_INDEX = 132;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

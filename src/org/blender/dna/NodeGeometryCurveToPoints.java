@@ -27,7 +27,7 @@ public class NodeGeometryCurveToPoints extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 536;
+	public static final int __DNA__SDNA_INDEX = 523;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.

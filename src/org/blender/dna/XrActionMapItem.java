@@ -15,12 +15,9 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * 
- * <h4>Blender Source Code</h4>
- * <p><hr/> 
- *  </p>
  */
 
-@CMetaData(size32=376, size64=400)
+@CMetaData(size32=256, size64=288)
 public class XrActionMapItem extends CFacade {
 
 	/**
@@ -31,7 +28,7 @@ public class XrActionMapItem extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 787;
+	public static final int __DNA__SDNA_INDEX = 782;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -147,52 +144,29 @@ public class XrActionMapItem extends CFacade {
 	public static final long[] __DNA__FIELD___pad = new long[]{73, 81};
 
 	/**
-	 * Field descriptor (offset) for struct member 'user_path0'.
+	 * Field descriptor (offset) for struct member 'user_paths'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * OpenXR user path
+	 * (read-only)    OpenXR user paths
 	 * <h4>Blender Source Code</h4>
-	 * <p> OpenXR user paths. </p>
+	 * <p> OpenXR user paths. {@link XrUserPath}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * XrActionMapItem xractionmapitem = ...;
-	 * CPointer&lt;Object&gt; p = xractionmapitem.__dna__addressof(XrActionMapItem.__DNA__FIELD__user_path0);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_user_path0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = xractionmapitem.__dna__addressof(XrActionMapItem.__DNA__FIELD__user_paths);
+	 * CPointer&lt;ListBase&gt; p_user_paths = p.cast(new Class[]{ListBase.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'user_path0'</li>
-	 * <li>Signature: 'char[64]'</li>
-	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * <li>Field: 'user_paths'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__user_path0 = new long[]{80, 88};
-
-	/**
-	 * Field descriptor (offset) for struct member 'user_path1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API</h4>
-	 * OpenXR user path
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * XrActionMapItem xractionmapitem = ...;
-	 * CPointer&lt;Object&gt; p = xractionmapitem.__dna__addressof(XrActionMapItem.__DNA__FIELD__user_path1);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_user_path1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'user_path1'</li>
-	 * <li>Signature: 'char[64]'</li>
-	 * <li>Actual Size (32bit/64bit): 64/64</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__user_path1 = new long[]{144, 152};
+	public static final long[] __DNA__FIELD__user_paths = new long[]{80, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'op'.
@@ -217,7 +191,7 @@ public class XrActionMapItem extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__op = new long[]{208, 216};
+	public static final long[] __DNA__FIELD__op = new long[]{88, 104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'op_properties'.
@@ -242,7 +216,7 @@ public class XrActionMapItem extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__op_properties = new long[]{272, 280};
+	public static final long[] __DNA__FIELD__op_properties = new long[]{152, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'op_properties_ptr'.
@@ -265,7 +239,7 @@ public class XrActionMapItem extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__op_properties_ptr = new long[]{276, 288};
+	public static final long[] __DNA__FIELD__op_properties_ptr = new long[]{156, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'op_flag'.
@@ -288,7 +262,7 @@ public class XrActionMapItem extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__op_flag = new long[]{280, 296};
+	public static final long[] __DNA__FIELD__op_flag = new long[]{160, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'action_flag'.
@@ -311,7 +285,7 @@ public class XrActionMapItem extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__action_flag = new long[]{282, 298};
+	public static final long[] __DNA__FIELD__action_flag = new long[]{162, 186};
 
 	/**
 	 * Field descriptor (offset) for struct member 'haptic_flag'.
@@ -334,7 +308,7 @@ public class XrActionMapItem extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__haptic_flag = new long[]{284, 300};
+	public static final long[] __DNA__FIELD__haptic_flag = new long[]{164, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pose_flag'.
@@ -357,7 +331,7 @@ public class XrActionMapItem extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pose_flag = new long[]{286, 302};
+	public static final long[] __DNA__FIELD__pose_flag = new long[]{166, 190};
 
 	/**
 	 * Field descriptor (offset) for struct member 'haptic_name'.
@@ -382,7 +356,7 @@ public class XrActionMapItem extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__haptic_name = new long[]{288, 304};
+	public static final long[] __DNA__FIELD__haptic_name = new long[]{168, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'haptic_duration'.
@@ -405,7 +379,7 @@ public class XrActionMapItem extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__haptic_duration = new long[]{352, 368};
+	public static final long[] __DNA__FIELD__haptic_duration = new long[]{232, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'haptic_frequency'.
@@ -428,7 +402,7 @@ public class XrActionMapItem extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__haptic_frequency = new long[]{356, 372};
+	public static final long[] __DNA__FIELD__haptic_frequency = new long[]{236, 260};
 
 	/**
 	 * Field descriptor (offset) for struct member 'haptic_amplitude'.
@@ -451,7 +425,7 @@ public class XrActionMapItem extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__haptic_amplitude = new long[]{360, 376};
+	public static final long[] __DNA__FIELD__haptic_amplitude = new long[]{240, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'selbinding'.
@@ -471,7 +445,7 @@ public class XrActionMapItem extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__selbinding = new long[]{364, 380};
+	public static final long[] __DNA__FIELD__selbinding = new long[]{244, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad3'.
@@ -491,7 +465,7 @@ public class XrActionMapItem extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{366, 382};
+	public static final long[] __DNA__FIELD___pad3 = new long[]{246, 270};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bindings'.
@@ -516,7 +490,7 @@ public class XrActionMapItem extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bindings = new long[]{368, 384};
+	public static final long[] __DNA__FIELD__bindings = new long[]{248, 272};
 
 	public XrActionMapItem(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -725,39 +699,35 @@ public class XrActionMapItem extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'user_path0'.
+	 * Get method for struct member 'user_paths'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * OpenXR user path
+	 * (read-only)    OpenXR user paths
 	 * <h4>Blender Source Code</h4>
-	 * <p> OpenXR user paths. </p>
-	 * @see #__DNA__FIELD__user_path0
+	 * <p> OpenXR user paths. {@link XrUserPath}  </p>
+	 * @see #__DNA__FIELD__user_paths
 	 */
 	
-	public CArrayFacade<Byte> getUser_path0() throws IOException
+	public ListBase getUser_paths() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			64
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 88, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 88, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 80, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 80, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'user_path0'.
+	 * Set method for struct member 'user_paths'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * OpenXR user path
+	 * (read-only)    OpenXR user paths
 	 * <h4>Blender Source Code</h4>
-	 * <p> OpenXR user paths. </p>
-	 * @see #__DNA__FIELD__user_path0
+	 * <p> OpenXR user paths. {@link XrUserPath}  </p>
+	 * @see #__DNA__FIELD__user_paths
 	 */
 	
-	public void setUser_path0(CArrayFacade<Byte> user_path0) throws IOException
+	public void setUser_paths(ListBase user_paths) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -765,58 +735,12 @@ public class XrActionMapItem extends CFacade {
 		} else {
 			__dna__offset = 80;
 		}
-		if (__io__equals(user_path0, __io__address + __dna__offset)) {
+		if (__io__equals(user_paths, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, user_path0)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, user_path0);
+		} else if (__io__same__encoding(this, user_paths)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, user_paths);
 		} else {
-			__io__generic__copy( getUser_path0(), user_path0);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'user_path1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API</h4>
-	 * OpenXR user path
-	 * @see #__DNA__FIELD__user_path1
-	 */
-	
-	public CArrayFacade<Byte> getUser_path1() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			64
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'user_path1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API</h4>
-	 * OpenXR user path
-	 * @see #__DNA__FIELD__user_path1
-	 */
-	
-	public void setUser_path1(CArrayFacade<Byte> user_path1) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 152;
-		} else {
-			__dna__offset = 144;
-		}
-		if (__io__equals(user_path1, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, user_path1)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, user_path1);
-		} else {
-			__io__generic__copy( getUser_path1(), user_path1);
+			__io__generic__copy( getUser_paths(), user_paths);
 		}
 	}
 
@@ -837,9 +761,9 @@ public class XrActionMapItem extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 88, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -857,9 +781,9 @@ public class XrActionMapItem extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 216;
+			__dna__offset = 104;
 		} else {
-			__dna__offset = 208;
+			__dna__offset = 88;
 		}
 		if (__io__equals(op, __io__address + __dna__offset)) {
 			return;
@@ -884,9 +808,9 @@ public class XrActionMapItem extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 280);
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{IDProperty.class};
 		return new CPointer<IDProperty>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDProperty.__DNA__SDNA_INDEX), __io__blockTable);
@@ -906,9 +830,9 @@ public class XrActionMapItem extends CFacade {
 	{
 		long __address = ((op_properties == null) ? 0 : op_properties.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 280, __address);
+			__io__block.writeLong(__io__address + 168, __address);
 		} else {
-			__io__block.writeLong(__io__address + 272, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		}
 	}
 
@@ -924,9 +848,9 @@ public class XrActionMapItem extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 288);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 276);
+			__dna__targetAddress = __io__block.readLong(__io__address + 156);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -944,9 +868,9 @@ public class XrActionMapItem extends CFacade {
 	{
 		long __address = ((op_properties_ptr == null) ? 0 : op_properties_ptr.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 288, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		} else {
-			__io__block.writeLong(__io__address + 276, __address);
+			__io__block.writeLong(__io__address + 156, __address);
 		}
 	}
 
@@ -961,9 +885,9 @@ public class XrActionMapItem extends CFacade {
 	public short getOp_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 296);
+			return __io__block.readShort(__io__address + 184);
 		} else {
-			return __io__block.readShort(__io__address + 280);
+			return __io__block.readShort(__io__address + 160);
 		}
 	}
 
@@ -978,9 +902,9 @@ public class XrActionMapItem extends CFacade {
 	public void setOp_flag(short op_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 296, op_flag);
+			__io__block.writeShort(__io__address + 184, op_flag);
 		} else {
-			__io__block.writeShort(__io__address + 280, op_flag);
+			__io__block.writeShort(__io__address + 160, op_flag);
 		}
 	}
 
@@ -995,9 +919,9 @@ public class XrActionMapItem extends CFacade {
 	public short getAction_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 298);
+			return __io__block.readShort(__io__address + 186);
 		} else {
-			return __io__block.readShort(__io__address + 282);
+			return __io__block.readShort(__io__address + 162);
 		}
 	}
 
@@ -1012,9 +936,9 @@ public class XrActionMapItem extends CFacade {
 	public void setAction_flag(short action_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 298, action_flag);
+			__io__block.writeShort(__io__address + 186, action_flag);
 		} else {
-			__io__block.writeShort(__io__address + 282, action_flag);
+			__io__block.writeShort(__io__address + 162, action_flag);
 		}
 	}
 
@@ -1029,9 +953,9 @@ public class XrActionMapItem extends CFacade {
 	public short getHaptic_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 300);
+			return __io__block.readShort(__io__address + 188);
 		} else {
-			return __io__block.readShort(__io__address + 284);
+			return __io__block.readShort(__io__address + 164);
 		}
 	}
 
@@ -1046,9 +970,9 @@ public class XrActionMapItem extends CFacade {
 	public void setHaptic_flag(short haptic_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 300, haptic_flag);
+			__io__block.writeShort(__io__address + 188, haptic_flag);
 		} else {
-			__io__block.writeShort(__io__address + 284, haptic_flag);
+			__io__block.writeShort(__io__address + 164, haptic_flag);
 		}
 	}
 
@@ -1063,9 +987,9 @@ public class XrActionMapItem extends CFacade {
 	public short getPose_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 302);
+			return __io__block.readShort(__io__address + 190);
 		} else {
-			return __io__block.readShort(__io__address + 286);
+			return __io__block.readShort(__io__address + 166);
 		}
 	}
 
@@ -1080,9 +1004,9 @@ public class XrActionMapItem extends CFacade {
 	public void setPose_flag(short pose_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 302, pose_flag);
+			__io__block.writeShort(__io__address + 190, pose_flag);
 		} else {
-			__io__block.writeShort(__io__address + 286, pose_flag);
+			__io__block.writeShort(__io__address + 166, pose_flag);
 		}
 	}
 
@@ -1103,9 +1027,9 @@ public class XrActionMapItem extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 288, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1123,9 +1047,9 @@ public class XrActionMapItem extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 304;
+			__dna__offset = 192;
 		} else {
-			__dna__offset = 288;
+			__dna__offset = 168;
 		}
 		if (__io__equals(haptic_name, __io__address + __dna__offset)) {
 			return;
@@ -1147,9 +1071,9 @@ public class XrActionMapItem extends CFacade {
 	public float getHaptic_duration() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 368);
+			return __io__block.readFloat(__io__address + 256);
 		} else {
-			return __io__block.readFloat(__io__address + 352);
+			return __io__block.readFloat(__io__address + 232);
 		}
 	}
 
@@ -1164,9 +1088,9 @@ public class XrActionMapItem extends CFacade {
 	public void setHaptic_duration(float haptic_duration) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 368, haptic_duration);
+			__io__block.writeFloat(__io__address + 256, haptic_duration);
 		} else {
-			__io__block.writeFloat(__io__address + 352, haptic_duration);
+			__io__block.writeFloat(__io__address + 232, haptic_duration);
 		}
 	}
 
@@ -1181,9 +1105,9 @@ public class XrActionMapItem extends CFacade {
 	public float getHaptic_frequency() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 372);
+			return __io__block.readFloat(__io__address + 260);
 		} else {
-			return __io__block.readFloat(__io__address + 356);
+			return __io__block.readFloat(__io__address + 236);
 		}
 	}
 
@@ -1198,9 +1122,9 @@ public class XrActionMapItem extends CFacade {
 	public void setHaptic_frequency(float haptic_frequency) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 372, haptic_frequency);
+			__io__block.writeFloat(__io__address + 260, haptic_frequency);
 		} else {
-			__io__block.writeFloat(__io__address + 356, haptic_frequency);
+			__io__block.writeFloat(__io__address + 236, haptic_frequency);
 		}
 	}
 
@@ -1215,9 +1139,9 @@ public class XrActionMapItem extends CFacade {
 	public float getHaptic_amplitude() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 376);
+			return __io__block.readFloat(__io__address + 264);
 		} else {
-			return __io__block.readFloat(__io__address + 360);
+			return __io__block.readFloat(__io__address + 240);
 		}
 	}
 
@@ -1232,9 +1156,9 @@ public class XrActionMapItem extends CFacade {
 	public void setHaptic_amplitude(float haptic_amplitude) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 376, haptic_amplitude);
+			__io__block.writeFloat(__io__address + 264, haptic_amplitude);
 		} else {
-			__io__block.writeFloat(__io__address + 360, haptic_amplitude);
+			__io__block.writeFloat(__io__address + 240, haptic_amplitude);
 		}
 	}
 
@@ -1246,9 +1170,9 @@ public class XrActionMapItem extends CFacade {
 	public short getSelbinding() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 380);
+			return __io__block.readShort(__io__address + 268);
 		} else {
-			return __io__block.readShort(__io__address + 364);
+			return __io__block.readShort(__io__address + 244);
 		}
 	}
 
@@ -1260,9 +1184,9 @@ public class XrActionMapItem extends CFacade {
 	public void setSelbinding(short selbinding) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 380, selbinding);
+			__io__block.writeShort(__io__address + 268, selbinding);
 		} else {
-			__io__block.writeShort(__io__address + 364, selbinding);
+			__io__block.writeShort(__io__address + 244, selbinding);
 		}
 	}
 
@@ -1278,9 +1202,9 @@ public class XrActionMapItem extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 382, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 270, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 366, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 246, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1293,9 +1217,9 @@ public class XrActionMapItem extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 382;
+			__dna__offset = 270;
 		} else {
-			__dna__offset = 366;
+			__dna__offset = 246;
 		}
 		if (__io__equals(_pad3, __io__address + __dna__offset)) {
 			return;
@@ -1319,9 +1243,9 @@ public class XrActionMapItem extends CFacade {
 	public ListBase getBindings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 384, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 272, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 368, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 248, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1339,9 +1263,9 @@ public class XrActionMapItem extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 384;
+			__dna__offset = 272;
 		} else {
-			__dna__offset = 368;
+			__dna__offset = 248;
 		}
 		if (__io__equals(bindings, __io__address + __dna__offset)) {
 			return;

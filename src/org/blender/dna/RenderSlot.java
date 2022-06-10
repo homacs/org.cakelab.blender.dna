@@ -28,7 +28,7 @@ public class RenderSlot extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 42;
+	public static final int __DNA__SDNA_INDEX = 44;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

@@ -28,7 +28,7 @@ public class FluidDomainSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 679;
+	public static final int __DNA__SDNA_INDEX = 670;
 
 	/**
 	 * Field descriptor (offset) for struct member 'fmd'.
@@ -3264,7 +3264,7 @@ public class FluidDomainSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'cfl_condition'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * Maximal velocity per cell (higher value results in greater timesteps)
+	 * Maximal velocity per cell (greater CFL numbers will minimize the number of simulation steps and the computation time.)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3825,11 +3825,36 @@ public class FluidDomainSettings extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad10'</li>
-	 * <li>Signature: 'char[7]'</li>
-	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad10 = new long[]{2101, 2193};
+
+	/**
+	 * Field descriptor (offset) for struct member 'velocity_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Factor to control the amount of motion blur
+	 * <h4>Blender Source Code</h4>
+	 * <p> Velocity factor for motion blur rendering. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__velocity_scale);
+	 * CPointer&lt;Float&gt; p_velocity_scale = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'velocity_scale'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__velocity_scale = new long[]{2104, 2196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'openvdb_compression'.
@@ -9315,7 +9340,7 @@ public class FluidDomainSettings extends CFacade {
 	 * Get method for struct member 'cfl_condition'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * Maximal velocity per cell (higher value results in greater timesteps)
+	 * Maximal velocity per cell (greater CFL numbers will minimize the number of simulation steps and the computation time.)
 	 * @see #__DNA__FIELD__cfl_condition
 	 */
 	
@@ -9332,7 +9357,7 @@ public class FluidDomainSettings extends CFacade {
 	 * Set method for struct member 'cfl_condition'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * Maximal velocity per cell (higher value results in greater timesteps)
+	 * Maximal velocity per cell (greater CFL numbers will minimize the number of simulation steps and the computation time.)
 	 * @see #__DNA__FIELD__cfl_condition
 	 */
 	
@@ -10135,7 +10160,7 @@ public class FluidDomainSettings extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			7
+			3
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 2193, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -10166,6 +10191,44 @@ public class FluidDomainSettings extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad10);
 		} else {
 			__io__generic__copy( get_pad10(), _pad10);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'velocity_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Factor to control the amount of motion blur
+	 * <h4>Blender Source Code</h4>
+	 * <p> Velocity factor for motion blur rendering. </p>
+	 * @see #__DNA__FIELD__velocity_scale
+	 */
+	
+	public float getVelocity_scale() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 2196);
+		} else {
+			return __io__block.readFloat(__io__address + 2104);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'velocity_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Factor to control the amount of motion blur
+	 * <h4>Blender Source Code</h4>
+	 * <p> Velocity factor for motion blur rendering. </p>
+	 * @see #__DNA__FIELD__velocity_scale
+	 */
+	
+	public void setVelocity_scale(float velocity_scale) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 2196, velocity_scale);
+		} else {
+			__io__block.writeFloat(__io__address + 2104, velocity_scale);
 		}
 	}
 

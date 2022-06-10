@@ -30,7 +30,7 @@ public class bDeformGroup extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 167;
+	public static final int __DNA__SDNA_INDEX = 170;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

@@ -28,7 +28,7 @@ public class NodeShaderTexIES extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 476;
+	public static final int __DNA__SDNA_INDEX = 482;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.

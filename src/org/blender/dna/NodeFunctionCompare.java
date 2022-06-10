@@ -28,7 +28,7 @@ public class NodeFunctionCompare extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 549;
+	public static final int __DNA__SDNA_INDEX = 538;
 
 	/**
 	 * Field descriptor (offset) for struct member 'operation'.

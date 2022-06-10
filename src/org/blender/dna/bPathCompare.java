@@ -28,7 +28,7 @@ public class bPathCompare extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 280;
+	public static final int __DNA__SDNA_INDEX = 285;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

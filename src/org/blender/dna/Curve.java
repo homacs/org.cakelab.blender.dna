@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=476, size64=600)
+@CMetaData(size32=500, size64=624)
 public class Curve extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class Curve extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 68;
+	public static final int __DNA__SDNA_INDEX = 70;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -45,7 +45,7 @@ public class Curve extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 136/176</li>
+	 * <li>Actual Size (32bit/64bit): 152/192</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -71,7 +71,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__adt = new long[]{152, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nurb'.
@@ -94,7 +94,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nurb = new long[]{140, 184};
+	public static final long[] __DNA__FIELD__nurb = new long[]{156, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'editnurb'.
@@ -117,7 +117,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__editnurb = new long[]{148, 200};
+	public static final long[] __DNA__FIELD__editnurb = new long[]{164, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bevobj'.
@@ -137,7 +137,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bevobj = new long[]{152, 208};
+	public static final long[] __DNA__FIELD__bevobj = new long[]{168, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'taperobj'.
@@ -157,7 +157,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__taperobj = new long[]{156, 216};
+	public static final long[] __DNA__FIELD__taperobj = new long[]{172, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'textoncurve'.
@@ -177,7 +177,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__textoncurve = new long[]{160, 224};
+	public static final long[] __DNA__FIELD__textoncurve = new long[]{176, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
@@ -202,7 +202,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipo = new long[]{164, 232};
+	public static final long[] __DNA__FIELD__ipo = new long[]{180, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'key'.
@@ -222,7 +222,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__key = new long[]{168, 240};
+	public static final long[] __DNA__FIELD__key = new long[]{184, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
@@ -242,7 +242,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat = new long[]{172, 248};
+	public static final long[] __DNA__FIELD__mat = new long[]{188, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bevel_profile'.
@@ -265,7 +265,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bevel_profile = new long[]{176, 256};
+	public static final long[] __DNA__FIELD__bevel_profile = new long[]{192, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'loc'.
@@ -288,7 +288,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__loc = new long[]{180, 264};
+	public static final long[] __DNA__FIELD__loc = new long[]{196, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -308,7 +308,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size = new long[]{192, 276};
+	public static final long[] __DNA__FIELD__size = new long[]{208, 292};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -331,7 +331,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{204, 288};
+	public static final long[] __DNA__FIELD__type = new long[]{220, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texflag'.
@@ -351,7 +351,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texflag = new long[]{206, 290};
+	public static final long[] __DNA__FIELD__texflag = new long[]{222, 306};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad0'.
@@ -371,7 +371,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{207, 291};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{223, 307};
 
 	/**
 	 * Field descriptor (offset) for struct member 'twist_mode'.
@@ -394,7 +394,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__twist_mode = new long[]{214, 298};
+	public static final long[] __DNA__FIELD__twist_mode = new long[]{230, 314};
 
 	/**
 	 * Field descriptor (offset) for struct member 'twist_smooth'.
@@ -417,7 +417,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__twist_smooth = new long[]{216, 300};
+	public static final long[] __DNA__FIELD__twist_smooth = new long[]{232, 316};
 
 	/**
 	 * Field descriptor (offset) for struct member 'smallcaps_scale'.
@@ -437,7 +437,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__smallcaps_scale = new long[]{220, 304};
+	public static final long[] __DNA__FIELD__smallcaps_scale = new long[]{236, 320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pathlen'.
@@ -457,7 +457,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pathlen = new long[]{224, 308};
+	public static final long[] __DNA__FIELD__pathlen = new long[]{240, 324};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bevresol'.
@@ -477,7 +477,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bevresol = new long[]{228, 312};
+	public static final long[] __DNA__FIELD__bevresol = new long[]{244, 328};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totcol'.
@@ -497,7 +497,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totcol = new long[]{230, 314};
+	public static final long[] __DNA__FIELD__totcol = new long[]{246, 330};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -517,7 +517,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{232, 316};
+	public static final long[] __DNA__FIELD__flag = new long[]{248, 332};
 
 	/**
 	 * Field descriptor (offset) for struct member 'width'.
@@ -537,7 +537,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__width = new long[]{236, 320};
+	public static final long[] __DNA__FIELD__width = new long[]{252, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ext1'.
@@ -557,7 +557,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ext1 = new long[]{240, 324};
+	public static final long[] __DNA__FIELD__ext1 = new long[]{256, 340};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ext2'.
@@ -577,7 +577,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ext2 = new long[]{244, 328};
+	public static final long[] __DNA__FIELD__ext2 = new long[]{260, 344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'resolu'.
@@ -600,7 +600,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__resolu = new long[]{248, 332};
+	public static final long[] __DNA__FIELD__resolu = new long[]{264, 348};
 
 	/**
 	 * Field descriptor (offset) for struct member 'resolv'.
@@ -620,7 +620,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__resolv = new long[]{250, 334};
+	public static final long[] __DNA__FIELD__resolv = new long[]{266, 350};
 
 	/**
 	 * Field descriptor (offset) for struct member 'resolu_ren'.
@@ -640,7 +640,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__resolu_ren = new long[]{252, 336};
+	public static final long[] __DNA__FIELD__resolu_ren = new long[]{268, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'resolv_ren'.
@@ -660,7 +660,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__resolv_ren = new long[]{254, 338};
+	public static final long[] __DNA__FIELD__resolv_ren = new long[]{270, 354};
 
 	/**
 	 * Field descriptor (offset) for struct member 'actnu'.
@@ -683,7 +683,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__actnu = new long[]{256, 340};
+	public static final long[] __DNA__FIELD__actnu = new long[]{272, 356};
 
 	/**
 	 * Field descriptor (offset) for struct member 'actvert'.
@@ -706,7 +706,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__actvert = new long[]{260, 344};
+	public static final long[] __DNA__FIELD__actvert = new long[]{276, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'overflow'.
@@ -726,7 +726,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__overflow = new long[]{264, 348};
+	public static final long[] __DNA__FIELD__overflow = new long[]{280, 364};
 
 	/**
 	 * Field descriptor (offset) for struct member 'spacemode'.
@@ -746,7 +746,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__spacemode = new long[]{265, 349};
+	public static final long[] __DNA__FIELD__spacemode = new long[]{281, 365};
 
 	/**
 	 * Field descriptor (offset) for struct member 'align_y'.
@@ -766,7 +766,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__align_y = new long[]{266, 350};
+	public static final long[] __DNA__FIELD__align_y = new long[]{282, 366};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bevel_mode'.
@@ -789,7 +789,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bevel_mode = new long[]{267, 351};
+	public static final long[] __DNA__FIELD__bevel_mode = new long[]{283, 367};
 
 	/**
 	 * Field descriptor (offset) for struct member 'taper_radius_mode'.
@@ -814,7 +814,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__taper_radius_mode = new long[]{268, 352};
+	public static final long[] __DNA__FIELD__taper_radius_mode = new long[]{284, 368};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -834,7 +834,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{269, 353};
+	public static final long[] __DNA__FIELD___pad = new long[]{285, 369};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lines'.
@@ -857,7 +857,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lines = new long[]{270, 354};
+	public static final long[] __DNA__FIELD__lines = new long[]{286, 370};
 
 	/**
 	 * Field descriptor (offset) for struct member 'spacing'.
@@ -877,7 +877,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__spacing = new long[]{272, 356};
+	public static final long[] __DNA__FIELD__spacing = new long[]{288, 372};
 
 	/**
 	 * Field descriptor (offset) for struct member 'linedist'.
@@ -897,7 +897,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__linedist = new long[]{276, 360};
+	public static final long[] __DNA__FIELD__linedist = new long[]{292, 376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shear'.
@@ -917,7 +917,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shear = new long[]{280, 364};
+	public static final long[] __DNA__FIELD__shear = new long[]{296, 380};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fsize'.
@@ -937,7 +937,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fsize = new long[]{284, 368};
+	public static final long[] __DNA__FIELD__fsize = new long[]{300, 384};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wordspace'.
@@ -957,7 +957,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wordspace = new long[]{288, 372};
+	public static final long[] __DNA__FIELD__wordspace = new long[]{304, 388};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ulpos'.
@@ -977,7 +977,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ulpos = new long[]{292, 376};
+	public static final long[] __DNA__FIELD__ulpos = new long[]{308, 392};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ulheight'.
@@ -997,7 +997,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ulheight = new long[]{296, 380};
+	public static final long[] __DNA__FIELD__ulheight = new long[]{312, 396};
 
 	/**
 	 * Field descriptor (offset) for struct member 'xof'.
@@ -1017,7 +1017,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__xof = new long[]{300, 384};
+	public static final long[] __DNA__FIELD__xof = new long[]{316, 400};
 
 	/**
 	 * Field descriptor (offset) for struct member 'yof'.
@@ -1037,7 +1037,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__yof = new long[]{304, 388};
+	public static final long[] __DNA__FIELD__yof = new long[]{320, 404};
 
 	/**
 	 * Field descriptor (offset) for struct member 'linewidth'.
@@ -1057,7 +1057,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__linewidth = new long[]{308, 392};
+	public static final long[] __DNA__FIELD__linewidth = new long[]{324, 408};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pos'.
@@ -1080,7 +1080,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pos = new long[]{312, 396};
+	public static final long[] __DNA__FIELD__pos = new long[]{328, 412};
 
 	/**
 	 * Field descriptor (offset) for struct member 'selstart'.
@@ -1100,7 +1100,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__selstart = new long[]{316, 400};
+	public static final long[] __DNA__FIELD__selstart = new long[]{332, 416};
 
 	/**
 	 * Field descriptor (offset) for struct member 'selend'.
@@ -1120,7 +1120,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__selend = new long[]{320, 404};
+	public static final long[] __DNA__FIELD__selend = new long[]{336, 420};
 
 	/**
 	 * Field descriptor (offset) for struct member 'len_wchar'.
@@ -1140,7 +1140,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__len_wchar = new long[]{324, 408};
+	public static final long[] __DNA__FIELD__len_wchar = new long[]{340, 424};
 
 	/**
 	 * Field descriptor (offset) for struct member 'len'.
@@ -1163,7 +1163,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__len = new long[]{328, 412};
+	public static final long[] __DNA__FIELD__len = new long[]{344, 428};
 
 	/**
 	 * Field descriptor (offset) for struct member 'str'.
@@ -1183,7 +1183,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__str = new long[]{332, 416};
+	public static final long[] __DNA__FIELD__str = new long[]{348, 432};
 
 	/**
 	 * Field descriptor (offset) for struct member 'editfont'.
@@ -1203,7 +1203,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__editfont = new long[]{336, 424};
+	public static final long[] __DNA__FIELD__editfont = new long[]{352, 440};
 
 	/**
 	 * Field descriptor (offset) for struct member 'family'.
@@ -1223,7 +1223,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__family = new long[]{340, 432};
+	public static final long[] __DNA__FIELD__family = new long[]{356, 448};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vfont'.
@@ -1243,7 +1243,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vfont = new long[]{404, 496};
+	public static final long[] __DNA__FIELD__vfont = new long[]{420, 512};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vfontb'.
@@ -1263,7 +1263,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vfontb = new long[]{408, 504};
+	public static final long[] __DNA__FIELD__vfontb = new long[]{424, 520};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vfonti'.
@@ -1283,7 +1283,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vfonti = new long[]{412, 512};
+	public static final long[] __DNA__FIELD__vfonti = new long[]{428, 528};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vfontbi'.
@@ -1303,7 +1303,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vfontbi = new long[]{416, 520};
+	public static final long[] __DNA__FIELD__vfontbi = new long[]{432, 536};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tb'.
@@ -1323,7 +1323,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tb = new long[]{420, 528};
+	public static final long[] __DNA__FIELD__tb = new long[]{436, 544};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totbox'.
@@ -1343,7 +1343,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totbox = new long[]{424, 536};
+	public static final long[] __DNA__FIELD__totbox = new long[]{440, 552};
 
 	/**
 	 * Field descriptor (offset) for struct member 'actbox'.
@@ -1363,7 +1363,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__actbox = new long[]{428, 540};
+	public static final long[] __DNA__FIELD__actbox = new long[]{444, 556};
 
 	/**
 	 * Field descriptor (offset) for struct member 'strinfo'.
@@ -1383,7 +1383,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__strinfo = new long[]{432, 544};
+	public static final long[] __DNA__FIELD__strinfo = new long[]{448, 560};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curinfo'.
@@ -1403,7 +1403,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curinfo = new long[]{436, 552};
+	public static final long[] __DNA__FIELD__curinfo = new long[]{452, 568};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ctime'.
@@ -1426,7 +1426,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ctime = new long[]{444, 560};
+	public static final long[] __DNA__FIELD__ctime = new long[]{460, 576};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bevfac1'.
@@ -1446,7 +1446,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bevfac1 = new long[]{448, 564};
+	public static final long[] __DNA__FIELD__bevfac1 = new long[]{464, 580};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bevfac2'.
@@ -1466,7 +1466,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bevfac2 = new long[]{452, 568};
+	public static final long[] __DNA__FIELD__bevfac2 = new long[]{468, 584};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bevfac1_mapping'.
@@ -1486,7 +1486,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bevfac1_mapping = new long[]{456, 572};
+	public static final long[] __DNA__FIELD__bevfac1_mapping = new long[]{472, 588};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bevfac2_mapping'.
@@ -1506,7 +1506,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bevfac2_mapping = new long[]{457, 573};
+	public static final long[] __DNA__FIELD__bevfac2_mapping = new long[]{473, 589};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -1526,7 +1526,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{458, 574};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{474, 590};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fsize_realtime'.
@@ -1546,7 +1546,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fsize_realtime = new long[]{464, 580};
+	public static final long[] __DNA__FIELD__fsize_realtime = new long[]{480, 596};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_eval'.
@@ -1560,16 +1560,59 @@ public class Curve extends CFacade {
 	 * <pre>
 	 * Curve curve = ...;
 	 * CPointer&lt;Object&gt; p = curve.__dna__addressof(Curve.__DNA__FIELD__curve_eval);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_curve_eval = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;CPointer&lt;Curves&gt;&gt; p_curve_eval = p.cast(new Class[]{CPointer.class, Curves.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'curve_eval'</li>
-	 * <li>Signature: 'CurveEval*'</li>
+	 * <li>Signature: 'Curves*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_eval = new long[]{468, 584};
+	public static final long[] __DNA__FIELD__curve_eval = new long[]{484, 600};
+
+	/**
+	 * Field descriptor (offset) for struct member 'edit_data_from_original'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> If non-zero, the #editfont and {@link #getEditnurb()}  pointers are not owned by this {@link Curve} . That means this curve is a container for the result of object geometry evaluation. This only works because evaluated object data never outlives original data. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Curve curve = ...;
+	 * CPointer&lt;Object&gt; p = curve.__dna__addressof(Curve.__DNA__FIELD__edit_data_from_original);
+	 * CPointer&lt;Byte&gt; p_edit_data_from_original = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'edit_data_from_original'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__edit_data_from_original = new long[]{488, 608};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad3'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Curve curve = ...;
+	 * CPointer&lt;Object&gt; p = curve.__dna__addressof(Curve.__DNA__FIELD___pad3);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad3 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad3'</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad3 = new long[]{489, 609};
 
 	/**
 	 * Field descriptor (offset) for struct member 'batch_cache'.
@@ -1589,7 +1632,7 @@ public class Curve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__batch_cache = new long[]{472, 592};
+	public static final long[] __DNA__FIELD__batch_cache = new long[]{496, 616};
 
 	public Curve(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1647,9 +1690,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1667,9 +1710,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		}
 	}
 
@@ -1684,9 +1727,9 @@ public class Curve extends CFacade {
 	public ListBase getNurb() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 184, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 200, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 140, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 156, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1702,9 +1745,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 184;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 140;
+			__dna__offset = 156;
 		}
 		if (__io__equals(nurb, __io__address + __dna__offset)) {
 			return;
@@ -1727,9 +1770,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 216);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 148);
+			__dna__targetAddress = __io__block.readLong(__io__address + 164);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1747,9 +1790,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((editnurb == null) ? 0 : editnurb.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 200, __address);
+			__io__block.writeLong(__io__address + 216, __address);
 		} else {
-			__io__block.writeLong(__io__address + 148, __address);
+			__io__block.writeLong(__io__address + 164, __address);
 		}
 	}
 
@@ -1762,9 +1805,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 224);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1779,9 +1822,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((bevobj == null) ? 0 : bevobj.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 208, __address);
+			__io__block.writeLong(__io__address + 224, __address);
 		} else {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 168, __address);
 		}
 	}
 
@@ -1794,9 +1837,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 232);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 156);
+			__dna__targetAddress = __io__block.readLong(__io__address + 172);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1811,9 +1854,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((taperobj == null) ? 0 : taperobj.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 216, __address);
+			__io__block.writeLong(__io__address + 232, __address);
 		} else {
-			__io__block.writeLong(__io__address + 156, __address);
+			__io__block.writeLong(__io__address + 172, __address);
 		}
 	}
 
@@ -1826,9 +1869,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 224);
+			__dna__targetAddress = __io__block.readLong(__io__address + 240);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1843,9 +1886,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((textoncurve == null) ? 0 : textoncurve.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 224, __address);
+			__io__block.writeLong(__io__address + 240, __address);
 		} else {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		}
 	}
 
@@ -1863,9 +1906,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 232);
+			__dna__targetAddress = __io__block.readLong(__io__address + 248);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 164);
+			__dna__targetAddress = __io__block.readLong(__io__address + 180);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Ipo.class};
 		return new CPointer<Ipo>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Ipo.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1885,9 +1928,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((ipo == null) ? 0 : ipo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 232, __address);
+			__io__block.writeLong(__io__address + 248, __address);
 		} else {
-			__io__block.writeLong(__io__address + 164, __address);
+			__io__block.writeLong(__io__address + 180, __address);
 		}
 	}
 
@@ -1900,9 +1943,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 240);
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 184);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Key.class};
 		return new CPointer<Key>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Key.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1917,9 +1960,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((key == null) ? 0 : key.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 240, __address);
+			__io__block.writeLong(__io__address + 256, __address);
 		} else {
-			__io__block.writeLong(__io__address + 168, __address);
+			__io__block.writeLong(__io__address + 184, __address);
 		}
 	}
 
@@ -1932,9 +1975,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 248);
+			__dna__targetAddress = __io__block.readLong(__io__address + 264);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 172);
+			__dna__targetAddress = __io__block.readLong(__io__address + 188);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, Material.class};
 		return new CPointer<CPointer<Material>>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -1949,9 +1992,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((mat == null) ? 0 : mat.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 248, __address);
+			__io__block.writeLong(__io__address + 264, __address);
 		} else {
-			__io__block.writeLong(__io__address + 172, __address);
+			__io__block.writeLong(__io__address + 188, __address);
 		}
 	}
 
@@ -1967,9 +2010,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 272);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveProfile.class};
 		return new CPointer<CurveProfile>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveProfile.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1987,9 +2030,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((bevel_profile == null) ? 0 : bevel_profile.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 272, __address);
 		} else {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		}
 	}
 
@@ -2008,9 +2051,9 @@ public class Curve extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 264, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2026,9 +2069,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 264;
+			__dna__offset = 280;
 		} else {
-			__dna__offset = 180;
+			__dna__offset = 196;
 		}
 		if (__io__equals(loc, __io__address + __dna__offset)) {
 			return;
@@ -2051,9 +2094,9 @@ public class Curve extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 276, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 292, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2066,9 +2109,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 276;
+			__dna__offset = 292;
 		} else {
-			__dna__offset = 192;
+			__dna__offset = 208;
 		}
 		if (__io__equals(size, __io__address + __dna__offset)) {
 			return;
@@ -2090,9 +2133,9 @@ public class Curve extends CFacade {
 	public short getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 288);
+			return __io__block.readShort(__io__address + 304);
 		} else {
-			return __io__block.readShort(__io__address + 204);
+			return __io__block.readShort(__io__address + 220);
 		}
 	}
 
@@ -2107,9 +2150,9 @@ public class Curve extends CFacade {
 	public void setType(short type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 288, type);
+			__io__block.writeShort(__io__address + 304, type);
 		} else {
-			__io__block.writeShort(__io__address + 204, type);
+			__io__block.writeShort(__io__address + 220, type);
 		}
 	}
 
@@ -2121,9 +2164,9 @@ public class Curve extends CFacade {
 	public byte getTexflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 290);
+			return __io__block.readByte(__io__address + 306);
 		} else {
-			return __io__block.readByte(__io__address + 206);
+			return __io__block.readByte(__io__address + 222);
 		}
 	}
 
@@ -2135,9 +2178,9 @@ public class Curve extends CFacade {
 	public void setTexflag(byte texflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 290, texflag);
+			__io__block.writeByte(__io__address + 306, texflag);
 		} else {
-			__io__block.writeByte(__io__address + 206, texflag);
+			__io__block.writeByte(__io__address + 222, texflag);
 		}
 	}
 
@@ -2153,9 +2196,9 @@ public class Curve extends CFacade {
 			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 291, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 307, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 207, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 223, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2168,9 +2211,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 291;
+			__dna__offset = 307;
 		} else {
-			__dna__offset = 207;
+			__dna__offset = 223;
 		}
 		if (__io__equals(_pad0, __io__address + __dna__offset)) {
 			return;
@@ -2192,9 +2235,9 @@ public class Curve extends CFacade {
 	public short getTwist_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 298);
+			return __io__block.readShort(__io__address + 314);
 		} else {
-			return __io__block.readShort(__io__address + 214);
+			return __io__block.readShort(__io__address + 230);
 		}
 	}
 
@@ -2209,9 +2252,9 @@ public class Curve extends CFacade {
 	public void setTwist_mode(short twist_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 298, twist_mode);
+			__io__block.writeShort(__io__address + 314, twist_mode);
 		} else {
-			__io__block.writeShort(__io__address + 214, twist_mode);
+			__io__block.writeShort(__io__address + 230, twist_mode);
 		}
 	}
 
@@ -2226,9 +2269,9 @@ public class Curve extends CFacade {
 	public float getTwist_smooth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 300);
+			return __io__block.readFloat(__io__address + 316);
 		} else {
-			return __io__block.readFloat(__io__address + 216);
+			return __io__block.readFloat(__io__address + 232);
 		}
 	}
 
@@ -2243,9 +2286,9 @@ public class Curve extends CFacade {
 	public void setTwist_smooth(float twist_smooth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 300, twist_smooth);
+			__io__block.writeFloat(__io__address + 316, twist_smooth);
 		} else {
-			__io__block.writeFloat(__io__address + 216, twist_smooth);
+			__io__block.writeFloat(__io__address + 232, twist_smooth);
 		}
 	}
 
@@ -2257,9 +2300,9 @@ public class Curve extends CFacade {
 	public float getSmallcaps_scale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 304);
+			return __io__block.readFloat(__io__address + 320);
 		} else {
-			return __io__block.readFloat(__io__address + 220);
+			return __io__block.readFloat(__io__address + 236);
 		}
 	}
 
@@ -2271,9 +2314,9 @@ public class Curve extends CFacade {
 	public void setSmallcaps_scale(float smallcaps_scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 304, smallcaps_scale);
+			__io__block.writeFloat(__io__address + 320, smallcaps_scale);
 		} else {
-			__io__block.writeFloat(__io__address + 220, smallcaps_scale);
+			__io__block.writeFloat(__io__address + 236, smallcaps_scale);
 		}
 	}
 
@@ -2285,9 +2328,9 @@ public class Curve extends CFacade {
 	public int getPathlen() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 308);
+			return __io__block.readInt(__io__address + 324);
 		} else {
-			return __io__block.readInt(__io__address + 224);
+			return __io__block.readInt(__io__address + 240);
 		}
 	}
 
@@ -2299,9 +2342,9 @@ public class Curve extends CFacade {
 	public void setPathlen(int pathlen) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 308, pathlen);
+			__io__block.writeInt(__io__address + 324, pathlen);
 		} else {
-			__io__block.writeInt(__io__address + 224, pathlen);
+			__io__block.writeInt(__io__address + 240, pathlen);
 		}
 	}
 
@@ -2313,9 +2356,9 @@ public class Curve extends CFacade {
 	public short getBevresol() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 312);
+			return __io__block.readShort(__io__address + 328);
 		} else {
-			return __io__block.readShort(__io__address + 228);
+			return __io__block.readShort(__io__address + 244);
 		}
 	}
 
@@ -2327,9 +2370,9 @@ public class Curve extends CFacade {
 	public void setBevresol(short bevresol) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 312, bevresol);
+			__io__block.writeShort(__io__address + 328, bevresol);
 		} else {
-			__io__block.writeShort(__io__address + 228, bevresol);
+			__io__block.writeShort(__io__address + 244, bevresol);
 		}
 	}
 
@@ -2341,9 +2384,9 @@ public class Curve extends CFacade {
 	public short getTotcol() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 314);
+			return __io__block.readShort(__io__address + 330);
 		} else {
-			return __io__block.readShort(__io__address + 230);
+			return __io__block.readShort(__io__address + 246);
 		}
 	}
 
@@ -2355,9 +2398,9 @@ public class Curve extends CFacade {
 	public void setTotcol(short totcol) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 314, totcol);
+			__io__block.writeShort(__io__address + 330, totcol);
 		} else {
-			__io__block.writeShort(__io__address + 230, totcol);
+			__io__block.writeShort(__io__address + 246, totcol);
 		}
 	}
 
@@ -2369,9 +2412,9 @@ public class Curve extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 316);
+			return __io__block.readInt(__io__address + 332);
 		} else {
-			return __io__block.readInt(__io__address + 232);
+			return __io__block.readInt(__io__address + 248);
 		}
 	}
 
@@ -2383,9 +2426,9 @@ public class Curve extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 316, flag);
+			__io__block.writeInt(__io__address + 332, flag);
 		} else {
-			__io__block.writeInt(__io__address + 232, flag);
+			__io__block.writeInt(__io__address + 248, flag);
 		}
 	}
 
@@ -2397,9 +2440,9 @@ public class Curve extends CFacade {
 	public float getWidth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 320);
+			return __io__block.readFloat(__io__address + 336);
 		} else {
-			return __io__block.readFloat(__io__address + 236);
+			return __io__block.readFloat(__io__address + 252);
 		}
 	}
 
@@ -2411,9 +2454,9 @@ public class Curve extends CFacade {
 	public void setWidth(float width) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 320, width);
+			__io__block.writeFloat(__io__address + 336, width);
 		} else {
-			__io__block.writeFloat(__io__address + 236, width);
+			__io__block.writeFloat(__io__address + 252, width);
 		}
 	}
 
@@ -2425,9 +2468,9 @@ public class Curve extends CFacade {
 	public float getExt1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 324);
+			return __io__block.readFloat(__io__address + 340);
 		} else {
-			return __io__block.readFloat(__io__address + 240);
+			return __io__block.readFloat(__io__address + 256);
 		}
 	}
 
@@ -2439,9 +2482,9 @@ public class Curve extends CFacade {
 	public void setExt1(float ext1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 324, ext1);
+			__io__block.writeFloat(__io__address + 340, ext1);
 		} else {
-			__io__block.writeFloat(__io__address + 240, ext1);
+			__io__block.writeFloat(__io__address + 256, ext1);
 		}
 	}
 
@@ -2453,9 +2496,9 @@ public class Curve extends CFacade {
 	public float getExt2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 328);
+			return __io__block.readFloat(__io__address + 344);
 		} else {
-			return __io__block.readFloat(__io__address + 244);
+			return __io__block.readFloat(__io__address + 260);
 		}
 	}
 
@@ -2467,9 +2510,9 @@ public class Curve extends CFacade {
 	public void setExt2(float ext2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 328, ext2);
+			__io__block.writeFloat(__io__address + 344, ext2);
 		} else {
-			__io__block.writeFloat(__io__address + 244, ext2);
+			__io__block.writeFloat(__io__address + 260, ext2);
 		}
 	}
 
@@ -2484,9 +2527,9 @@ public class Curve extends CFacade {
 	public short getResolu() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 332);
+			return __io__block.readShort(__io__address + 348);
 		} else {
-			return __io__block.readShort(__io__address + 248);
+			return __io__block.readShort(__io__address + 264);
 		}
 	}
 
@@ -2501,9 +2544,9 @@ public class Curve extends CFacade {
 	public void setResolu(short resolu) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 332, resolu);
+			__io__block.writeShort(__io__address + 348, resolu);
 		} else {
-			__io__block.writeShort(__io__address + 248, resolu);
+			__io__block.writeShort(__io__address + 264, resolu);
 		}
 	}
 
@@ -2515,9 +2558,9 @@ public class Curve extends CFacade {
 	public short getResolv() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 334);
+			return __io__block.readShort(__io__address + 350);
 		} else {
-			return __io__block.readShort(__io__address + 250);
+			return __io__block.readShort(__io__address + 266);
 		}
 	}
 
@@ -2529,9 +2572,9 @@ public class Curve extends CFacade {
 	public void setResolv(short resolv) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 334, resolv);
+			__io__block.writeShort(__io__address + 350, resolv);
 		} else {
-			__io__block.writeShort(__io__address + 250, resolv);
+			__io__block.writeShort(__io__address + 266, resolv);
 		}
 	}
 
@@ -2543,9 +2586,9 @@ public class Curve extends CFacade {
 	public short getResolu_ren() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 336);
+			return __io__block.readShort(__io__address + 352);
 		} else {
-			return __io__block.readShort(__io__address + 252);
+			return __io__block.readShort(__io__address + 268);
 		}
 	}
 
@@ -2557,9 +2600,9 @@ public class Curve extends CFacade {
 	public void setResolu_ren(short resolu_ren) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 336, resolu_ren);
+			__io__block.writeShort(__io__address + 352, resolu_ren);
 		} else {
-			__io__block.writeShort(__io__address + 252, resolu_ren);
+			__io__block.writeShort(__io__address + 268, resolu_ren);
 		}
 	}
 
@@ -2571,9 +2614,9 @@ public class Curve extends CFacade {
 	public short getResolv_ren() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 338);
+			return __io__block.readShort(__io__address + 354);
 		} else {
-			return __io__block.readShort(__io__address + 254);
+			return __io__block.readShort(__io__address + 270);
 		}
 	}
 
@@ -2585,9 +2628,9 @@ public class Curve extends CFacade {
 	public void setResolv_ren(short resolv_ren) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 338, resolv_ren);
+			__io__block.writeShort(__io__address + 354, resolv_ren);
 		} else {
-			__io__block.writeShort(__io__address + 254, resolv_ren);
+			__io__block.writeShort(__io__address + 270, resolv_ren);
 		}
 	}
 
@@ -2602,9 +2645,9 @@ public class Curve extends CFacade {
 	public int getActnu() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 340);
+			return __io__block.readInt(__io__address + 356);
 		} else {
-			return __io__block.readInt(__io__address + 256);
+			return __io__block.readInt(__io__address + 272);
 		}
 	}
 
@@ -2619,9 +2662,9 @@ public class Curve extends CFacade {
 	public void setActnu(int actnu) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 340, actnu);
+			__io__block.writeInt(__io__address + 356, actnu);
 		} else {
-			__io__block.writeInt(__io__address + 256, actnu);
+			__io__block.writeInt(__io__address + 272, actnu);
 		}
 	}
 
@@ -2636,9 +2679,9 @@ public class Curve extends CFacade {
 	public int getActvert() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 344);
+			return __io__block.readInt(__io__address + 360);
 		} else {
-			return __io__block.readInt(__io__address + 260);
+			return __io__block.readInt(__io__address + 276);
 		}
 	}
 
@@ -2653,9 +2696,9 @@ public class Curve extends CFacade {
 	public void setActvert(int actvert) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 344, actvert);
+			__io__block.writeInt(__io__address + 360, actvert);
 		} else {
-			__io__block.writeInt(__io__address + 260, actvert);
+			__io__block.writeInt(__io__address + 276, actvert);
 		}
 	}
 
@@ -2667,9 +2710,9 @@ public class Curve extends CFacade {
 	public byte getOverflow() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 348);
+			return __io__block.readByte(__io__address + 364);
 		} else {
-			return __io__block.readByte(__io__address + 264);
+			return __io__block.readByte(__io__address + 280);
 		}
 	}
 
@@ -2681,9 +2724,9 @@ public class Curve extends CFacade {
 	public void setOverflow(byte overflow) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 348, overflow);
+			__io__block.writeByte(__io__address + 364, overflow);
 		} else {
-			__io__block.writeByte(__io__address + 264, overflow);
+			__io__block.writeByte(__io__address + 280, overflow);
 		}
 	}
 
@@ -2695,9 +2738,9 @@ public class Curve extends CFacade {
 	public byte getSpacemode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 349);
+			return __io__block.readByte(__io__address + 365);
 		} else {
-			return __io__block.readByte(__io__address + 265);
+			return __io__block.readByte(__io__address + 281);
 		}
 	}
 
@@ -2709,9 +2752,9 @@ public class Curve extends CFacade {
 	public void setSpacemode(byte spacemode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 349, spacemode);
+			__io__block.writeByte(__io__address + 365, spacemode);
 		} else {
-			__io__block.writeByte(__io__address + 265, spacemode);
+			__io__block.writeByte(__io__address + 281, spacemode);
 		}
 	}
 
@@ -2723,9 +2766,9 @@ public class Curve extends CFacade {
 	public byte getAlign_y() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 350);
+			return __io__block.readByte(__io__address + 366);
 		} else {
-			return __io__block.readByte(__io__address + 266);
+			return __io__block.readByte(__io__address + 282);
 		}
 	}
 
@@ -2737,9 +2780,9 @@ public class Curve extends CFacade {
 	public void setAlign_y(byte align_y) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 350, align_y);
+			__io__block.writeByte(__io__address + 366, align_y);
 		} else {
-			__io__block.writeByte(__io__address + 266, align_y);
+			__io__block.writeByte(__io__address + 282, align_y);
 		}
 	}
 
@@ -2754,9 +2797,9 @@ public class Curve extends CFacade {
 	public byte getBevel_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 351);
+			return __io__block.readByte(__io__address + 367);
 		} else {
-			return __io__block.readByte(__io__address + 267);
+			return __io__block.readByte(__io__address + 283);
 		}
 	}
 
@@ -2771,9 +2814,9 @@ public class Curve extends CFacade {
 	public void setBevel_mode(byte bevel_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 351, bevel_mode);
+			__io__block.writeByte(__io__address + 367, bevel_mode);
 		} else {
-			__io__block.writeByte(__io__address + 267, bevel_mode);
+			__io__block.writeByte(__io__address + 283, bevel_mode);
 		}
 	}
 
@@ -2790,9 +2833,9 @@ public class Curve extends CFacade {
 	public byte getTaper_radius_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 352);
+			return __io__block.readByte(__io__address + 368);
 		} else {
-			return __io__block.readByte(__io__address + 268);
+			return __io__block.readByte(__io__address + 284);
 		}
 	}
 
@@ -2809,9 +2852,9 @@ public class Curve extends CFacade {
 	public void setTaper_radius_mode(byte taper_radius_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 352, taper_radius_mode);
+			__io__block.writeByte(__io__address + 368, taper_radius_mode);
 		} else {
-			__io__block.writeByte(__io__address + 268, taper_radius_mode);
+			__io__block.writeByte(__io__address + 284, taper_radius_mode);
 		}
 	}
 
@@ -2823,9 +2866,9 @@ public class Curve extends CFacade {
 	public byte get_pad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 353);
+			return __io__block.readByte(__io__address + 369);
 		} else {
-			return __io__block.readByte(__io__address + 269);
+			return __io__block.readByte(__io__address + 285);
 		}
 	}
 
@@ -2837,9 +2880,9 @@ public class Curve extends CFacade {
 	public void set_pad(byte _pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 353, _pad);
+			__io__block.writeByte(__io__address + 369, _pad);
 		} else {
-			__io__block.writeByte(__io__address + 269, _pad);
+			__io__block.writeByte(__io__address + 285, _pad);
 		}
 	}
 
@@ -2854,9 +2897,9 @@ public class Curve extends CFacade {
 	public short getLines() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 354);
+			return __io__block.readShort(__io__address + 370);
 		} else {
-			return __io__block.readShort(__io__address + 270);
+			return __io__block.readShort(__io__address + 286);
 		}
 	}
 
@@ -2871,9 +2914,9 @@ public class Curve extends CFacade {
 	public void setLines(short lines) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 354, lines);
+			__io__block.writeShort(__io__address + 370, lines);
 		} else {
-			__io__block.writeShort(__io__address + 270, lines);
+			__io__block.writeShort(__io__address + 286, lines);
 		}
 	}
 
@@ -2885,9 +2928,9 @@ public class Curve extends CFacade {
 	public float getSpacing() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 356);
+			return __io__block.readFloat(__io__address + 372);
 		} else {
-			return __io__block.readFloat(__io__address + 272);
+			return __io__block.readFloat(__io__address + 288);
 		}
 	}
 
@@ -2899,9 +2942,9 @@ public class Curve extends CFacade {
 	public void setSpacing(float spacing) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 356, spacing);
+			__io__block.writeFloat(__io__address + 372, spacing);
 		} else {
-			__io__block.writeFloat(__io__address + 272, spacing);
+			__io__block.writeFloat(__io__address + 288, spacing);
 		}
 	}
 
@@ -2913,9 +2956,9 @@ public class Curve extends CFacade {
 	public float getLinedist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 360);
+			return __io__block.readFloat(__io__address + 376);
 		} else {
-			return __io__block.readFloat(__io__address + 276);
+			return __io__block.readFloat(__io__address + 292);
 		}
 	}
 
@@ -2927,9 +2970,9 @@ public class Curve extends CFacade {
 	public void setLinedist(float linedist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 360, linedist);
+			__io__block.writeFloat(__io__address + 376, linedist);
 		} else {
-			__io__block.writeFloat(__io__address + 276, linedist);
+			__io__block.writeFloat(__io__address + 292, linedist);
 		}
 	}
 
@@ -2941,9 +2984,9 @@ public class Curve extends CFacade {
 	public float getShear() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 364);
+			return __io__block.readFloat(__io__address + 380);
 		} else {
-			return __io__block.readFloat(__io__address + 280);
+			return __io__block.readFloat(__io__address + 296);
 		}
 	}
 
@@ -2955,9 +2998,9 @@ public class Curve extends CFacade {
 	public void setShear(float shear) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 364, shear);
+			__io__block.writeFloat(__io__address + 380, shear);
 		} else {
-			__io__block.writeFloat(__io__address + 280, shear);
+			__io__block.writeFloat(__io__address + 296, shear);
 		}
 	}
 
@@ -2969,9 +3012,9 @@ public class Curve extends CFacade {
 	public float getFsize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 368);
+			return __io__block.readFloat(__io__address + 384);
 		} else {
-			return __io__block.readFloat(__io__address + 284);
+			return __io__block.readFloat(__io__address + 300);
 		}
 	}
 
@@ -2983,9 +3026,9 @@ public class Curve extends CFacade {
 	public void setFsize(float fsize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 368, fsize);
+			__io__block.writeFloat(__io__address + 384, fsize);
 		} else {
-			__io__block.writeFloat(__io__address + 284, fsize);
+			__io__block.writeFloat(__io__address + 300, fsize);
 		}
 	}
 
@@ -2997,9 +3040,9 @@ public class Curve extends CFacade {
 	public float getWordspace() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 372);
+			return __io__block.readFloat(__io__address + 388);
 		} else {
-			return __io__block.readFloat(__io__address + 288);
+			return __io__block.readFloat(__io__address + 304);
 		}
 	}
 
@@ -3011,9 +3054,9 @@ public class Curve extends CFacade {
 	public void setWordspace(float wordspace) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 372, wordspace);
+			__io__block.writeFloat(__io__address + 388, wordspace);
 		} else {
-			__io__block.writeFloat(__io__address + 288, wordspace);
+			__io__block.writeFloat(__io__address + 304, wordspace);
 		}
 	}
 
@@ -3025,9 +3068,9 @@ public class Curve extends CFacade {
 	public float getUlpos() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 376);
+			return __io__block.readFloat(__io__address + 392);
 		} else {
-			return __io__block.readFloat(__io__address + 292);
+			return __io__block.readFloat(__io__address + 308);
 		}
 	}
 
@@ -3039,9 +3082,9 @@ public class Curve extends CFacade {
 	public void setUlpos(float ulpos) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 376, ulpos);
+			__io__block.writeFloat(__io__address + 392, ulpos);
 		} else {
-			__io__block.writeFloat(__io__address + 292, ulpos);
+			__io__block.writeFloat(__io__address + 308, ulpos);
 		}
 	}
 
@@ -3053,9 +3096,9 @@ public class Curve extends CFacade {
 	public float getUlheight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 380);
+			return __io__block.readFloat(__io__address + 396);
 		} else {
-			return __io__block.readFloat(__io__address + 296);
+			return __io__block.readFloat(__io__address + 312);
 		}
 	}
 
@@ -3067,9 +3110,9 @@ public class Curve extends CFacade {
 	public void setUlheight(float ulheight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 380, ulheight);
+			__io__block.writeFloat(__io__address + 396, ulheight);
 		} else {
-			__io__block.writeFloat(__io__address + 296, ulheight);
+			__io__block.writeFloat(__io__address + 312, ulheight);
 		}
 	}
 
@@ -3081,9 +3124,9 @@ public class Curve extends CFacade {
 	public float getXof() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 384);
+			return __io__block.readFloat(__io__address + 400);
 		} else {
-			return __io__block.readFloat(__io__address + 300);
+			return __io__block.readFloat(__io__address + 316);
 		}
 	}
 
@@ -3095,9 +3138,9 @@ public class Curve extends CFacade {
 	public void setXof(float xof) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 384, xof);
+			__io__block.writeFloat(__io__address + 400, xof);
 		} else {
-			__io__block.writeFloat(__io__address + 300, xof);
+			__io__block.writeFloat(__io__address + 316, xof);
 		}
 	}
 
@@ -3109,9 +3152,9 @@ public class Curve extends CFacade {
 	public float getYof() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 388);
+			return __io__block.readFloat(__io__address + 404);
 		} else {
-			return __io__block.readFloat(__io__address + 304);
+			return __io__block.readFloat(__io__address + 320);
 		}
 	}
 
@@ -3123,9 +3166,9 @@ public class Curve extends CFacade {
 	public void setYof(float yof) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 388, yof);
+			__io__block.writeFloat(__io__address + 404, yof);
 		} else {
-			__io__block.writeFloat(__io__address + 304, yof);
+			__io__block.writeFloat(__io__address + 320, yof);
 		}
 	}
 
@@ -3137,9 +3180,9 @@ public class Curve extends CFacade {
 	public float getLinewidth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 392);
+			return __io__block.readFloat(__io__address + 408);
 		} else {
-			return __io__block.readFloat(__io__address + 308);
+			return __io__block.readFloat(__io__address + 324);
 		}
 	}
 
@@ -3151,9 +3194,9 @@ public class Curve extends CFacade {
 	public void setLinewidth(float linewidth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 392, linewidth);
+			__io__block.writeFloat(__io__address + 408, linewidth);
 		} else {
-			__io__block.writeFloat(__io__address + 308, linewidth);
+			__io__block.writeFloat(__io__address + 324, linewidth);
 		}
 	}
 
@@ -3168,9 +3211,9 @@ public class Curve extends CFacade {
 	public int getPos() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 396);
+			return __io__block.readInt(__io__address + 412);
 		} else {
-			return __io__block.readInt(__io__address + 312);
+			return __io__block.readInt(__io__address + 328);
 		}
 	}
 
@@ -3185,9 +3228,9 @@ public class Curve extends CFacade {
 	public void setPos(int pos) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 396, pos);
+			__io__block.writeInt(__io__address + 412, pos);
 		} else {
-			__io__block.writeInt(__io__address + 312, pos);
+			__io__block.writeInt(__io__address + 328, pos);
 		}
 	}
 
@@ -3199,9 +3242,9 @@ public class Curve extends CFacade {
 	public int getSelstart() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 400);
+			return __io__block.readInt(__io__address + 416);
 		} else {
-			return __io__block.readInt(__io__address + 316);
+			return __io__block.readInt(__io__address + 332);
 		}
 	}
 
@@ -3213,9 +3256,9 @@ public class Curve extends CFacade {
 	public void setSelstart(int selstart) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 400, selstart);
+			__io__block.writeInt(__io__address + 416, selstart);
 		} else {
-			__io__block.writeInt(__io__address + 316, selstart);
+			__io__block.writeInt(__io__address + 332, selstart);
 		}
 	}
 
@@ -3227,9 +3270,9 @@ public class Curve extends CFacade {
 	public int getSelend() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 404);
+			return __io__block.readInt(__io__address + 420);
 		} else {
-			return __io__block.readInt(__io__address + 320);
+			return __io__block.readInt(__io__address + 336);
 		}
 	}
 
@@ -3241,9 +3284,9 @@ public class Curve extends CFacade {
 	public void setSelend(int selend) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 404, selend);
+			__io__block.writeInt(__io__address + 420, selend);
 		} else {
-			__io__block.writeInt(__io__address + 320, selend);
+			__io__block.writeInt(__io__address + 336, selend);
 		}
 	}
 
@@ -3255,9 +3298,9 @@ public class Curve extends CFacade {
 	public int getLen_wchar() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 408);
+			return __io__block.readInt(__io__address + 424);
 		} else {
-			return __io__block.readInt(__io__address + 324);
+			return __io__block.readInt(__io__address + 340);
 		}
 	}
 
@@ -3269,9 +3312,9 @@ public class Curve extends CFacade {
 	public void setLen_wchar(int len_wchar) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 408, len_wchar);
+			__io__block.writeInt(__io__address + 424, len_wchar);
 		} else {
-			__io__block.writeInt(__io__address + 324, len_wchar);
+			__io__block.writeInt(__io__address + 340, len_wchar);
 		}
 	}
 
@@ -3286,9 +3329,9 @@ public class Curve extends CFacade {
 	public int getLen() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 412);
+			return __io__block.readInt(__io__address + 428);
 		} else {
-			return __io__block.readInt(__io__address + 328);
+			return __io__block.readInt(__io__address + 344);
 		}
 	}
 
@@ -3303,9 +3346,9 @@ public class Curve extends CFacade {
 	public void setLen(int len) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 412, len);
+			__io__block.writeInt(__io__address + 428, len);
 		} else {
-			__io__block.writeInt(__io__address + 328, len);
+			__io__block.writeInt(__io__address + 344, len);
 		}
 	}
 
@@ -3318,9 +3361,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 416);
+			__dna__targetAddress = __io__block.readLong(__io__address + 432);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 332);
+			__dna__targetAddress = __io__block.readLong(__io__address + 348);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -3335,9 +3378,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((str == null) ? 0 : str.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 416, __address);
+			__io__block.writeLong(__io__address + 432, __address);
 		} else {
-			__io__block.writeLong(__io__address + 332, __address);
+			__io__block.writeLong(__io__address + 348, __address);
 		}
 	}
 
@@ -3350,9 +3393,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 424);
+			__dna__targetAddress = __io__block.readLong(__io__address + 440);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 336);
+			__dna__targetAddress = __io__block.readLong(__io__address + 352);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -3367,9 +3410,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((editfont == null) ? 0 : editfont.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 424, __address);
+			__io__block.writeLong(__io__address + 440, __address);
 		} else {
-			__io__block.writeLong(__io__address + 336, __address);
+			__io__block.writeLong(__io__address + 352, __address);
 		}
 	}
 
@@ -3385,9 +3428,9 @@ public class Curve extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 432, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 448, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 340, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3400,9 +3443,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 432;
+			__dna__offset = 448;
 		} else {
-			__dna__offset = 340;
+			__dna__offset = 356;
 		}
 		if (__io__equals(family, __io__address + __dna__offset)) {
 			return;
@@ -3422,9 +3465,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 496);
+			__dna__targetAddress = __io__block.readLong(__io__address + 512);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 404);
+			__dna__targetAddress = __io__block.readLong(__io__address + 420);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{VFont.class};
 		return new CPointer<VFont>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, VFont.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3439,9 +3482,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((vfont == null) ? 0 : vfont.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 496, __address);
+			__io__block.writeLong(__io__address + 512, __address);
 		} else {
-			__io__block.writeLong(__io__address + 404, __address);
+			__io__block.writeLong(__io__address + 420, __address);
 		}
 	}
 
@@ -3454,9 +3497,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 504);
+			__dna__targetAddress = __io__block.readLong(__io__address + 520);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 408);
+			__dna__targetAddress = __io__block.readLong(__io__address + 424);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{VFont.class};
 		return new CPointer<VFont>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, VFont.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3471,9 +3514,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((vfontb == null) ? 0 : vfontb.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 504, __address);
+			__io__block.writeLong(__io__address + 520, __address);
 		} else {
-			__io__block.writeLong(__io__address + 408, __address);
+			__io__block.writeLong(__io__address + 424, __address);
 		}
 	}
 
@@ -3486,9 +3529,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 512);
+			__dna__targetAddress = __io__block.readLong(__io__address + 528);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 412);
+			__dna__targetAddress = __io__block.readLong(__io__address + 428);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{VFont.class};
 		return new CPointer<VFont>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, VFont.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3503,9 +3546,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((vfonti == null) ? 0 : vfonti.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 512, __address);
+			__io__block.writeLong(__io__address + 528, __address);
 		} else {
-			__io__block.writeLong(__io__address + 412, __address);
+			__io__block.writeLong(__io__address + 428, __address);
 		}
 	}
 
@@ -3518,9 +3561,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 520);
+			__dna__targetAddress = __io__block.readLong(__io__address + 536);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 416);
+			__dna__targetAddress = __io__block.readLong(__io__address + 432);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{VFont.class};
 		return new CPointer<VFont>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, VFont.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3535,9 +3578,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((vfontbi == null) ? 0 : vfontbi.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 520, __address);
+			__io__block.writeLong(__io__address + 536, __address);
 		} else {
-			__io__block.writeLong(__io__address + 416, __address);
+			__io__block.writeLong(__io__address + 432, __address);
 		}
 	}
 
@@ -3550,9 +3593,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 528);
+			__dna__targetAddress = __io__block.readLong(__io__address + 544);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 420);
+			__dna__targetAddress = __io__block.readLong(__io__address + 436);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{TextBox.class};
 		return new CPointer<TextBox>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, TextBox.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3567,9 +3610,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((tb == null) ? 0 : tb.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 528, __address);
+			__io__block.writeLong(__io__address + 544, __address);
 		} else {
-			__io__block.writeLong(__io__address + 420, __address);
+			__io__block.writeLong(__io__address + 436, __address);
 		}
 	}
 
@@ -3581,9 +3624,9 @@ public class Curve extends CFacade {
 	public int getTotbox() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 536);
+			return __io__block.readInt(__io__address + 552);
 		} else {
-			return __io__block.readInt(__io__address + 424);
+			return __io__block.readInt(__io__address + 440);
 		}
 	}
 
@@ -3595,9 +3638,9 @@ public class Curve extends CFacade {
 	public void setTotbox(int totbox) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 536, totbox);
+			__io__block.writeInt(__io__address + 552, totbox);
 		} else {
-			__io__block.writeInt(__io__address + 424, totbox);
+			__io__block.writeInt(__io__address + 440, totbox);
 		}
 	}
 
@@ -3609,9 +3652,9 @@ public class Curve extends CFacade {
 	public int getActbox() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 540);
+			return __io__block.readInt(__io__address + 556);
 		} else {
-			return __io__block.readInt(__io__address + 428);
+			return __io__block.readInt(__io__address + 444);
 		}
 	}
 
@@ -3623,9 +3666,9 @@ public class Curve extends CFacade {
 	public void setActbox(int actbox) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 540, actbox);
+			__io__block.writeInt(__io__address + 556, actbox);
 		} else {
-			__io__block.writeInt(__io__address + 428, actbox);
+			__io__block.writeInt(__io__address + 444, actbox);
 		}
 	}
 
@@ -3638,9 +3681,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 544);
+			__dna__targetAddress = __io__block.readLong(__io__address + 560);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 432);
+			__dna__targetAddress = __io__block.readLong(__io__address + 448);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CharInfo.class};
 		return new CPointer<CharInfo>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CharInfo.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3655,9 +3698,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((strinfo == null) ? 0 : strinfo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 544, __address);
+			__io__block.writeLong(__io__address + 560, __address);
 		} else {
-			__io__block.writeLong(__io__address + 432, __address);
+			__io__block.writeLong(__io__address + 448, __address);
 		}
 	}
 
@@ -3669,9 +3712,9 @@ public class Curve extends CFacade {
 	public CharInfo getCurinfo() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CharInfo(__io__address + 552, __io__block, __io__blockTable);
+			return new CharInfo(__io__address + 568, __io__block, __io__blockTable);
 		} else {
-			return new CharInfo(__io__address + 436, __io__block, __io__blockTable);
+			return new CharInfo(__io__address + 452, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3684,9 +3727,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 552;
+			__dna__offset = 568;
 		} else {
-			__dna__offset = 436;
+			__dna__offset = 452;
 		}
 		if (__io__equals(curinfo, __io__address + __dna__offset)) {
 			return;
@@ -3708,9 +3751,9 @@ public class Curve extends CFacade {
 	public float getCtime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 560);
+			return __io__block.readFloat(__io__address + 576);
 		} else {
-			return __io__block.readFloat(__io__address + 444);
+			return __io__block.readFloat(__io__address + 460);
 		}
 	}
 
@@ -3725,9 +3768,9 @@ public class Curve extends CFacade {
 	public void setCtime(float ctime) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 560, ctime);
+			__io__block.writeFloat(__io__address + 576, ctime);
 		} else {
-			__io__block.writeFloat(__io__address + 444, ctime);
+			__io__block.writeFloat(__io__address + 460, ctime);
 		}
 	}
 
@@ -3739,9 +3782,9 @@ public class Curve extends CFacade {
 	public float getBevfac1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 564);
+			return __io__block.readFloat(__io__address + 580);
 		} else {
-			return __io__block.readFloat(__io__address + 448);
+			return __io__block.readFloat(__io__address + 464);
 		}
 	}
 
@@ -3753,9 +3796,9 @@ public class Curve extends CFacade {
 	public void setBevfac1(float bevfac1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 564, bevfac1);
+			__io__block.writeFloat(__io__address + 580, bevfac1);
 		} else {
-			__io__block.writeFloat(__io__address + 448, bevfac1);
+			__io__block.writeFloat(__io__address + 464, bevfac1);
 		}
 	}
 
@@ -3767,9 +3810,9 @@ public class Curve extends CFacade {
 	public float getBevfac2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 568);
+			return __io__block.readFloat(__io__address + 584);
 		} else {
-			return __io__block.readFloat(__io__address + 452);
+			return __io__block.readFloat(__io__address + 468);
 		}
 	}
 
@@ -3781,9 +3824,9 @@ public class Curve extends CFacade {
 	public void setBevfac2(float bevfac2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 568, bevfac2);
+			__io__block.writeFloat(__io__address + 584, bevfac2);
 		} else {
-			__io__block.writeFloat(__io__address + 452, bevfac2);
+			__io__block.writeFloat(__io__address + 468, bevfac2);
 		}
 	}
 
@@ -3795,9 +3838,9 @@ public class Curve extends CFacade {
 	public byte getBevfac1_mapping() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 572);
+			return __io__block.readByte(__io__address + 588);
 		} else {
-			return __io__block.readByte(__io__address + 456);
+			return __io__block.readByte(__io__address + 472);
 		}
 	}
 
@@ -3809,9 +3852,9 @@ public class Curve extends CFacade {
 	public void setBevfac1_mapping(byte bevfac1_mapping) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 572, bevfac1_mapping);
+			__io__block.writeByte(__io__address + 588, bevfac1_mapping);
 		} else {
-			__io__block.writeByte(__io__address + 456, bevfac1_mapping);
+			__io__block.writeByte(__io__address + 472, bevfac1_mapping);
 		}
 	}
 
@@ -3823,9 +3866,9 @@ public class Curve extends CFacade {
 	public byte getBevfac2_mapping() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 573);
+			return __io__block.readByte(__io__address + 589);
 		} else {
-			return __io__block.readByte(__io__address + 457);
+			return __io__block.readByte(__io__address + 473);
 		}
 	}
 
@@ -3837,9 +3880,9 @@ public class Curve extends CFacade {
 	public void setBevfac2_mapping(byte bevfac2_mapping) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 573, bevfac2_mapping);
+			__io__block.writeByte(__io__address + 589, bevfac2_mapping);
 		} else {
-			__io__block.writeByte(__io__address + 457, bevfac2_mapping);
+			__io__block.writeByte(__io__address + 473, bevfac2_mapping);
 		}
 	}
 
@@ -3855,9 +3898,9 @@ public class Curve extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 574, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 590, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 458, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 474, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3870,9 +3913,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 574;
+			__dna__offset = 590;
 		} else {
-			__dna__offset = 458;
+			__dna__offset = 474;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -3891,9 +3934,9 @@ public class Curve extends CFacade {
 	public float getFsize_realtime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 580);
+			return __io__block.readFloat(__io__address + 596);
 		} else {
-			return __io__block.readFloat(__io__address + 464);
+			return __io__block.readFloat(__io__address + 480);
 		}
 	}
 
@@ -3905,9 +3948,9 @@ public class Curve extends CFacade {
 	public void setFsize_realtime(float fsize_realtime) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 580, fsize_realtime);
+			__io__block.writeFloat(__io__address + 596, fsize_realtime);
 		} else {
-			__io__block.writeFloat(__io__address + 464, fsize_realtime);
+			__io__block.writeFloat(__io__address + 480, fsize_realtime);
 		}
 	}
 
@@ -3919,16 +3962,16 @@ public class Curve extends CFacade {
 	 * @see #__DNA__FIELD__curve_eval
 	 */
 	
-	public CPointer<Object> getCurve_eval() throws IOException
+	public CPointer<Curves> getCurve_eval() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 584);
+			__dna__targetAddress = __io__block.readLong(__io__address + 600);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 468);
+			__dna__targetAddress = __io__block.readLong(__io__address + 484);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{Curves.class};
+		return new CPointer<Curves>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Curves.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
@@ -3939,13 +3982,87 @@ public class Curve extends CFacade {
 	 * @see #__DNA__FIELD__curve_eval
 	 */
 	
-	public void setCurve_eval(CPointer<Object> curve_eval) throws IOException
+	public void setCurve_eval(CPointer<Curves> curve_eval) throws IOException
 	{
 		long __address = ((curve_eval == null) ? 0 : curve_eval.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 584, __address);
+			__io__block.writeLong(__io__address + 600, __address);
 		} else {
-			__io__block.writeLong(__io__address + 468, __address);
+			__io__block.writeLong(__io__address + 484, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'edit_data_from_original'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> If non-zero, the #editfont and {@link #getEditnurb()}  pointers are not owned by this {@link Curve} . That means this curve is a container for the result of object geometry evaluation. This only works because evaluated object data never outlives original data. </p>
+	 * @see #__DNA__FIELD__edit_data_from_original
+	 */
+	
+	public byte getEdit_data_from_original() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 608);
+		} else {
+			return __io__block.readByte(__io__address + 488);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'edit_data_from_original'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> If non-zero, the #editfont and {@link #getEditnurb()}  pointers are not owned by this {@link Curve} . That means this curve is a container for the result of object geometry evaluation. This only works because evaluated object data never outlives original data. </p>
+	 * @see #__DNA__FIELD__edit_data_from_original
+	 */
+	
+	public void setEdit_data_from_original(byte edit_data_from_original) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 608, edit_data_from_original);
+		} else {
+			__io__block.writeByte(__io__address + 488, edit_data_from_original);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public CArrayFacade<Byte> get_pad3() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			7
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 609, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 489, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public void set_pad3(CArrayFacade<Byte> _pad3) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 609;
+		} else {
+			__dna__offset = 489;
+		}
+		if (__io__equals(_pad3, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad3)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad3);
+		} else {
+			__io__generic__copy( get_pad3(), _pad3);
 		}
 	}
 
@@ -3958,9 +4075,9 @@ public class Curve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 592);
+			__dna__targetAddress = __io__block.readLong(__io__address + 616);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 472);
+			__dna__targetAddress = __io__block.readLong(__io__address + 496);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -3975,9 +4092,9 @@ public class Curve extends CFacade {
 	{
 		long __address = ((batch_cache == null) ? 0 : batch_cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 592, __address);
+			__io__block.writeLong(__io__address + 616, __address);
 		} else {
-			__io__block.writeLong(__io__address + 472, __address);
+			__io__block.writeLong(__io__address + 496, __address);
 		}
 	}
 

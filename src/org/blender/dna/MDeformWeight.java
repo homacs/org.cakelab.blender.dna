@@ -29,7 +29,7 @@ public class MDeformWeight extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 83;
+	public static final int __DNA__SDNA_INDEX = 86;
 
 	/**
 	 * Field descriptor (offset) for struct member 'def_nr'.

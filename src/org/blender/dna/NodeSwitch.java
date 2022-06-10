@@ -27,7 +27,7 @@ public class NodeSwitch extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 522;
+	public static final int __DNA__SDNA_INDEX = 510;
 
 	/**
 	 * Field descriptor (offset) for struct member 'input_type'.

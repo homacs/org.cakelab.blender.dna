@@ -31,7 +31,7 @@ public class UnifiedPaintSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 209;
+	public static final int __DNA__SDNA_INDEX = 214;
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -576,24 +576,24 @@ public class UnifiedPaintSettings extends CFacade {
 	public static final long[] __DNA__FIELD__initial_pixel_radius = new long[]{124, 124};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'start_pixel_radius'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * UnifiedPaintSettings unifiedpaintsettings = ...;
-	 * CPointer&lt;Object&gt; p = unifiedpaintsettings.__dna__addressof(UnifiedPaintSettings.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = unifiedpaintsettings.__dna__addressof(UnifiedPaintSettings.__DNA__FIELD__start_pixel_radius);
+	 * CPointer&lt;Float&gt; p_start_pixel_radius = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'start_pixel_radius'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{128, 128};
+	public static final long[] __DNA__FIELD__start_pixel_radius = new long[]{128, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'size_pressure_value'.
@@ -1552,42 +1552,30 @@ public class UnifiedPaintSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'start_pixel_radius'.
+	 * @see #__DNA__FIELD__start_pixel_radius
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public float getStart_pixel_radius() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readFloat(__io__address + 128);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readFloat(__io__address + 128);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'start_pixel_radius'.
+	 * @see #__DNA__FIELD__start_pixel_radius
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void setStart_pixel_radius(float start_pixel_radius) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__io__block.writeFloat(__io__address + 128, start_pixel_radius);
 		} else {
-			__dna__offset = 128;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeFloat(__io__address + 128, start_pixel_radius);
 		}
 	}
 

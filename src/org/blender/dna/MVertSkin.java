@@ -28,7 +28,7 @@ public class MVertSkin extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 85;
+	public static final int __DNA__SDNA_INDEX = 88;
 
 	/**
 	 * Field descriptor (offset) for struct member 'radius'.

@@ -28,7 +28,7 @@ public class PartEff extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 342;
+	public static final int __DNA__SDNA_INDEX = 348;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

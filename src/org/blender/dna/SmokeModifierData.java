@@ -29,7 +29,7 @@ public class SmokeModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 131;
+	public static final int __DNA__SDNA_INDEX = 134;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

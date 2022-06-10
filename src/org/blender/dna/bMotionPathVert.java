@@ -31,7 +31,7 @@ public class bMotionPathVert extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 352;
+	public static final int __DNA__SDNA_INDEX = 358;
 
 	/**
 	 * Field descriptor (offset) for struct member 'co'.

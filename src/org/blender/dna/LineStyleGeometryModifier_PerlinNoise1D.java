@@ -28,7 +28,7 @@ public class LineStyleGeometryModifier_PerlinNoise1D extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 750;
+	public static final int __DNA__SDNA_INDEX = 741;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

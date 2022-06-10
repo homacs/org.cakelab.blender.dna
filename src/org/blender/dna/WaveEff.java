@@ -27,7 +27,7 @@ public class WaveEff extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 343;
+	public static final int __DNA__SDNA_INDEX = 349;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

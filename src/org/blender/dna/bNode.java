@@ -19,7 +19,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> TODO: Limit data in {@link bNode}  to what we want to see saved. </p>
  */
 
-@CMetaData(size32=388, size64=448)
+@CMetaData(size32=380, size64=440)
 public class bNode extends CFacade {
 
 	/**
@@ -30,7 +30,7 @@ public class bNode extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 403;
+	public static final int __DNA__SDNA_INDEX = 409;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -951,27 +951,24 @@ public class bNode extends CFacade {
 	public static final long[] __DNA__FIELD__tmp_flag = new long[]{372, 428};
 
 	/**
-	 * Field descriptor (offset) for struct member 'branch_tag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Used at runtime to tag derivatives branches. EEVEE only. </p>
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bNode bnode = ...;
-	 * CPointer&lt;Object&gt; p = bnode.__dna__addressof(bNode.__DNA__FIELD__branch_tag);
-	 * CPointer&lt;Byte&gt; p_branch_tag = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = bnode.__dna__addressof(bNode.__DNA__FIELD___pad0);
+	 * CPointer&lt;Byte&gt; p__pad0 = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'branch_tag'</li>
+	 * <li>Field: '_pad0'</li>
 	 * <li>Signature: 'char'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__branch_tag = new long[]{374, 430};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{374, 430};
 
 	/**
 	 * Field descriptor (offset) for struct member 'iter_flag'.
@@ -997,52 +994,6 @@ public class bNode extends CFacade {
 	public static final long[] __DNA__FIELD__iter_flag = new long[]{375, 431};
 
 	/**
-	 * Field descriptor (offset) for struct member 'ssr_id'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> XXX: eevee only, id of screen space reflection layer, needs to be a float to feed GPU_uniform. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bNode bnode = ...;
-	 * CPointer&lt;Object&gt; p = bnode.__dna__addressof(bNode.__DNA__FIELD__ssr_id);
-	 * CPointer&lt;Float&gt; p_ssr_id = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'ssr_id'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__ssr_id = new long[]{376, 432};
-
-	/**
-	 * Field descriptor (offset) for struct member 'sss_id'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> XXX: eevee only, id of screen subsurface scatter layer, needs to be a float to feed GPU_uniform. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bNode bnode = ...;
-	 * CPointer&lt;Object&gt; p = bnode.__dna__addressof(bNode.__DNA__FIELD__sss_id);
-	 * CPointer&lt;Float&gt; p_sss_id = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'sss_id'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__sss_id = new long[]{380, 436};
-
-	/**
 	 * Field descriptor (offset) for struct member 'declaration'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -1063,7 +1014,7 @@ public class bNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__declaration = new long[]{384, 440};
+	public static final long[] __DNA__FIELD__declaration = new long[]{376, 432};
 
 	public bNode(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2550,14 +2501,11 @@ public class bNode extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'branch_tag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Used at runtime to tag derivatives branches. EEVEE only. </p>
-	 * @see #__DNA__FIELD__branch_tag
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public byte getBranch_tag() throws IOException
+	public byte get_pad0() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 430);
@@ -2567,19 +2515,16 @@ public class bNode extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'branch_tag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Used at runtime to tag derivatives branches. EEVEE only. </p>
-	 * @see #__DNA__FIELD__branch_tag
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setBranch_tag(byte branch_tag) throws IOException
+	public void set_pad0(byte _pad0) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 430, branch_tag);
+			__io__block.writeByte(__io__address + 430, _pad0);
 		} else {
-			__io__block.writeByte(__io__address + 374, branch_tag);
+			__io__block.writeByte(__io__address + 374, _pad0);
 		}
 	}
 
@@ -2618,74 +2563,6 @@ public class bNode extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'ssr_id'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> XXX: eevee only, id of screen space reflection layer, needs to be a float to feed GPU_uniform. </p>
-	 * @see #__DNA__FIELD__ssr_id
-	 */
-	
-	public float getSsr_id() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 432);
-		} else {
-			return __io__block.readFloat(__io__address + 376);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'ssr_id'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> XXX: eevee only, id of screen space reflection layer, needs to be a float to feed GPU_uniform. </p>
-	 * @see #__DNA__FIELD__ssr_id
-	 */
-	
-	public void setSsr_id(float ssr_id) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 432, ssr_id);
-		} else {
-			__io__block.writeFloat(__io__address + 376, ssr_id);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'sss_id'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> XXX: eevee only, id of screen subsurface scatter layer, needs to be a float to feed GPU_uniform. </p>
-	 * @see #__DNA__FIELD__sss_id
-	 */
-	
-	public float getSss_id() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 436);
-		} else {
-			return __io__block.readFloat(__io__address + 380);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'sss_id'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> XXX: eevee only, id of screen subsurface scatter layer, needs to be a float to feed GPU_uniform. </p>
-	 * @see #__DNA__FIELD__sss_id
-	 */
-	
-	public void setSss_id(float sss_id) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 436, sss_id);
-		} else {
-			__io__block.writeFloat(__io__address + 380, sss_id);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'declaration'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -2697,9 +2574,9 @@ public class bNode extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 440);
+			__dna__targetAddress = __io__block.readLong(__io__address + 432);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 384);
+			__dna__targetAddress = __io__block.readLong(__io__address + 376);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -2717,9 +2594,9 @@ public class bNode extends CFacade {
 	{
 		long __address = ((declaration == null) ? 0 : declaration.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 440, __address);
+			__io__block.writeLong(__io__address + 432, __address);
 		} else {
-			__io__block.writeLong(__io__address + 384, __address);
+			__io__block.writeLong(__io__address + 376, __address);
 		}
 	}
 

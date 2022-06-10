@@ -28,7 +28,7 @@ public class PreviewImage extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 23;
+	public static final int __DNA__SDNA_INDEX = 25;
 
 	/**
 	 * Field descriptor (offset) for struct member 'w'.

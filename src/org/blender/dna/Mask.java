@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=172, size64=224)
+@CMetaData(size32=188, size64=240)
 public class Mask extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class Mask extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 707;
+	public static final int __DNA__SDNA_INDEX = 698;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -45,7 +45,7 @@ public class Mask extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 136/176</li>
+	 * <li>Actual Size (32bit/64bit): 152/192</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -68,7 +68,7 @@ public class Mask extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__adt = new long[]{152, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'masklayers'.
@@ -91,7 +91,7 @@ public class Mask extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__masklayers = new long[]{140, 184};
+	public static final long[] __DNA__FIELD__masklayers = new long[]{156, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'masklay_act'.
@@ -114,7 +114,7 @@ public class Mask extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__masklay_act = new long[]{148, 200};
+	public static final long[] __DNA__FIELD__masklay_act = new long[]{164, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'masklay_tot'.
@@ -137,7 +137,7 @@ public class Mask extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__masklay_tot = new long[]{152, 204};
+	public static final long[] __DNA__FIELD__masklay_tot = new long[]{168, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sfra'.
@@ -160,7 +160,7 @@ public class Mask extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sfra = new long[]{156, 208};
+	public static final long[] __DNA__FIELD__sfra = new long[]{172, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'efra'.
@@ -180,7 +180,7 @@ public class Mask extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__efra = new long[]{160, 212};
+	public static final long[] __DNA__FIELD__efra = new long[]{176, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -203,7 +203,7 @@ public class Mask extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{164, 216};
+	public static final long[] __DNA__FIELD__flag = new long[]{180, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -223,7 +223,7 @@ public class Mask extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{168, 220};
+	public static final long[] __DNA__FIELD___pad = new long[]{184, 236};
 
 	public Mask(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -278,9 +278,9 @@ public class Mask extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -295,9 +295,9 @@ public class Mask extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		}
 	}
 
@@ -312,9 +312,9 @@ public class Mask extends CFacade {
 	public ListBase getMasklayers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 184, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 200, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 140, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 156, __io__block, __io__blockTable);
 		}
 	}
 
@@ -330,9 +330,9 @@ public class Mask extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 184;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 140;
+			__dna__offset = 156;
 		}
 		if (__io__equals(masklayers, __io__address + __dna__offset)) {
 			return;
@@ -354,9 +354,9 @@ public class Mask extends CFacade {
 	public int getMasklay_act() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 200);
+			return __io__block.readInt(__io__address + 216);
 		} else {
-			return __io__block.readInt(__io__address + 148);
+			return __io__block.readInt(__io__address + 164);
 		}
 	}
 
@@ -371,9 +371,9 @@ public class Mask extends CFacade {
 	public void setMasklay_act(int masklay_act) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 200, masklay_act);
+			__io__block.writeInt(__io__address + 216, masklay_act);
 		} else {
-			__io__block.writeInt(__io__address + 148, masklay_act);
+			__io__block.writeInt(__io__address + 164, masklay_act);
 		}
 	}
 
@@ -388,9 +388,9 @@ public class Mask extends CFacade {
 	public int getMasklay_tot() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 204);
+			return __io__block.readInt(__io__address + 220);
 		} else {
-			return __io__block.readInt(__io__address + 152);
+			return __io__block.readInt(__io__address + 168);
 		}
 	}
 
@@ -405,9 +405,9 @@ public class Mask extends CFacade {
 	public void setMasklay_tot(int masklay_tot) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 204, masklay_tot);
+			__io__block.writeInt(__io__address + 220, masklay_tot);
 		} else {
-			__io__block.writeInt(__io__address + 152, masklay_tot);
+			__io__block.writeInt(__io__address + 168, masklay_tot);
 		}
 	}
 
@@ -422,9 +422,9 @@ public class Mask extends CFacade {
 	public int getSfra() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 208);
+			return __io__block.readInt(__io__address + 224);
 		} else {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 172);
 		}
 	}
 
@@ -439,9 +439,9 @@ public class Mask extends CFacade {
 	public void setSfra(int sfra) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 208, sfra);
+			__io__block.writeInt(__io__address + 224, sfra);
 		} else {
-			__io__block.writeInt(__io__address + 156, sfra);
+			__io__block.writeInt(__io__address + 172, sfra);
 		}
 	}
 
@@ -453,9 +453,9 @@ public class Mask extends CFacade {
 	public int getEfra() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 212);
+			return __io__block.readInt(__io__address + 228);
 		} else {
-			return __io__block.readInt(__io__address + 160);
+			return __io__block.readInt(__io__address + 176);
 		}
 	}
 
@@ -467,9 +467,9 @@ public class Mask extends CFacade {
 	public void setEfra(int efra) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 212, efra);
+			__io__block.writeInt(__io__address + 228, efra);
 		} else {
-			__io__block.writeInt(__io__address + 160, efra);
+			__io__block.writeInt(__io__address + 176, efra);
 		}
 	}
 
@@ -484,9 +484,9 @@ public class Mask extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 216);
+			return __io__block.readInt(__io__address + 232);
 		} else {
-			return __io__block.readInt(__io__address + 164);
+			return __io__block.readInt(__io__address + 180);
 		}
 	}
 
@@ -501,9 +501,9 @@ public class Mask extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 216, flag);
+			__io__block.writeInt(__io__address + 232, flag);
 		} else {
-			__io__block.writeInt(__io__address + 164, flag);
+			__io__block.writeInt(__io__address + 180, flag);
 		}
 	}
 
@@ -519,9 +519,9 @@ public class Mask extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 236, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -534,9 +534,9 @@ public class Mask extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 220;
+			__dna__offset = 236;
 		} else {
-			__dna__offset = 168;
+			__dna__offset = 184;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

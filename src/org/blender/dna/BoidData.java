@@ -28,7 +28,7 @@ public class BoidData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 676;
+	public static final int __DNA__SDNA_INDEX = 667;
 
 	/**
 	 * Field descriptor (offset) for struct member 'health'.

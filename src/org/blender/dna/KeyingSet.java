@@ -31,7 +31,7 @@ public class KeyingSet extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 666;
+	public static final int __DNA__SDNA_INDEX = 657;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

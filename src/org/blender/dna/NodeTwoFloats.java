@@ -27,7 +27,7 @@ public class NodeTwoFloats extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 436;
+	public static final int __DNA__SDNA_INDEX = 442;
 
 	/**
 	 * Field descriptor (offset) for struct member 'x'.

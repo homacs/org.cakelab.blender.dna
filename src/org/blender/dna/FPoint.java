@@ -30,7 +30,7 @@ public class FPoint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 661;
+	public static final int __DNA__SDNA_INDEX = 652;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vec'.

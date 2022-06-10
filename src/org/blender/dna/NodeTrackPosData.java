@@ -28,7 +28,7 @@ public class NodeTrackPosData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 468;
+	public static final int __DNA__SDNA_INDEX = 474;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tracking_object'.

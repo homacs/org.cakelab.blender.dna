@@ -28,7 +28,7 @@ public class SceneGpencil extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 219;
+	public static final int __DNA__SDNA_INDEX = 224;
 
 	/**
 	 * Field descriptor (offset) for struct member 'smaa_threshold'.

@@ -19,7 +19,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Pose ---------------------------------<mdash/>  Pose-Object.</p><p> It is only found under ob->pose. It is not library data, even though there is a define for it (hack for the outliner). </p>
  */
 
-@CMetaData(size32=176, size64=208)
+@CMetaData(size32=104, size64=136)
 public class bPose extends CFacade {
 
 	/**
@@ -30,7 +30,7 @@ public class bPose extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 357;
+	public static final int __DNA__SDNA_INDEX = 363;
 
 	/**
 	 * Field descriptor (offset) for struct member 'chanbase'.
@@ -142,49 +142,6 @@ public class bPose extends CFacade {
 	public static final long[] __DNA__FIELD___pad = new long[]{18, 34};
 
 	/**
-	 * Field descriptor (offset) for struct member 'proxy_layer'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Proxy layer: copy from armature, gets synced. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bPose bpose = ...;
-	 * CPointer&lt;Object&gt; p = bpose.__dna__addressof(bPose.__DNA__FIELD__proxy_layer);
-	 * CPointer&lt;Integer&gt; p_proxy_layer = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'proxy_layer'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__proxy_layer = new long[]{20, 36};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad1'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bPose bpose = ...;
-	 * CPointer&lt;Object&gt; p = bpose.__dna__addressof(bPose.__DNA__FIELD___pad1);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad1'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{24, 40};
-
-	/**
 	 * Field descriptor (offset) for struct member 'ctime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -205,7 +162,7 @@ public class bPose extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ctime = new long[]{28, 44};
+	public static final long[] __DNA__FIELD__ctime = new long[]{20, 36};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stride_offset'.
@@ -228,7 +185,7 @@ public class bPose extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stride_offset = new long[]{32, 48};
+	public static final long[] __DNA__FIELD__stride_offset = new long[]{24, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cyclic_offset'.
@@ -251,7 +208,7 @@ public class bPose extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cyclic_offset = new long[]{44, 60};
+	public static final long[] __DNA__FIELD__cyclic_offset = new long[]{36, 52};
 
 	/**
 	 * Field descriptor (offset) for struct member 'agroups'.
@@ -274,7 +231,7 @@ public class bPose extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__agroups = new long[]{56, 72};
+	public static final long[] __DNA__FIELD__agroups = new long[]{48, 64};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_group'.
@@ -297,7 +254,7 @@ public class bPose extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_group = new long[]{64, 88};
+	public static final long[] __DNA__FIELD__active_group = new long[]{56, 80};
 
 	/**
 	 * Field descriptor (offset) for struct member 'iksolver'.
@@ -320,7 +277,7 @@ public class bPose extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__iksolver = new long[]{68, 92};
+	public static final long[] __DNA__FIELD__iksolver = new long[]{60, 84};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ikdata'.
@@ -343,7 +300,7 @@ public class bPose extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ikdata = new long[]{72, 96};
+	public static final long[] __DNA__FIELD__ikdata = new long[]{64, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ikparam'.
@@ -366,7 +323,7 @@ public class bPose extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ikparam = new long[]{76, 104};
+	public static final long[] __DNA__FIELD__ikparam = new long[]{68, 96};
 
 	/**
 	 * Field descriptor (offset) for struct member 'avs'.
@@ -389,30 +346,7 @@ public class bPose extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__avs = new long[]{80, 112};
-
-	/**
-	 * Field descriptor (offset) for struct member 'proxy_act_bone'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Proxy active bone name, MAXBONENAME. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bPose bpose = ...;
-	 * CPointer&lt;Object&gt; p = bpose.__dna__addressof(bPose.__DNA__FIELD__proxy_act_bone);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_proxy_act_bone = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'proxy_act_bone'</li>
-	 * <li>Signature: 'char[64]'</li>
-	 * <li>Actual Size (32bit/64bit): 64/64</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__proxy_act_bone = new long[]{112, 144};
+	public static final long[] __DNA__FIELD__avs = new long[]{72, 104};
 
 	public bPose(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -609,80 +543,6 @@ public class bPose extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'proxy_layer'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Proxy layer: copy from armature, gets synced. </p>
-	 * @see #__DNA__FIELD__proxy_layer
-	 */
-	
-	public int getProxy_layer() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 36);
-		} else {
-			return __io__block.readInt(__io__address + 20);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'proxy_layer'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Proxy layer: copy from armature, gets synced. </p>
-	 * @see #__DNA__FIELD__proxy_layer
-	 */
-	
-	public void setProxy_layer(int proxy_layer) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 36, proxy_layer);
-		} else {
-			__io__block.writeInt(__io__address + 20, proxy_layer);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
-	 */
-	
-	public CArrayFacade<Byte> get_pad1() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
-	 */
-	
-	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 40;
-		} else {
-			__dna__offset = 24;
-		}
-		if (__io__equals(_pad1, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad1)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
-		} else {
-			__io__generic__copy( get_pad1(), _pad1);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'ctime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -693,9 +553,9 @@ public class bPose extends CFacade {
 	public float getCtime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 44);
+			return __io__block.readFloat(__io__address + 36);
 		} else {
-			return __io__block.readFloat(__io__address + 28);
+			return __io__block.readFloat(__io__address + 20);
 		}
 	}
 
@@ -710,9 +570,9 @@ public class bPose extends CFacade {
 	public void setCtime(float ctime) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 44, ctime);
+			__io__block.writeFloat(__io__address + 36, ctime);
 		} else {
-			__io__block.writeFloat(__io__address + 28, ctime);
+			__io__block.writeFloat(__io__address + 20, ctime);
 		}
 	}
 
@@ -731,9 +591,9 @@ public class bPose extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -749,9 +609,9 @@ public class bPose extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 48;
+			__dna__offset = 40;
 		} else {
-			__dna__offset = 32;
+			__dna__offset = 24;
 		}
 		if (__io__equals(stride_offset, __io__address + __dna__offset)) {
 			return;
@@ -777,9 +637,9 @@ public class bPose extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -795,9 +655,9 @@ public class bPose extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 60;
+			__dna__offset = 52;
 		} else {
-			__dna__offset = 44;
+			__dna__offset = 36;
 		}
 		if (__io__equals(cyclic_offset, __io__address + __dna__offset)) {
 			return;
@@ -819,9 +679,9 @@ public class bPose extends CFacade {
 	public ListBase getAgroups() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 72, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 64, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 56, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 48, __io__block, __io__blockTable);
 		}
 	}
 
@@ -837,9 +697,9 @@ public class bPose extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 72;
+			__dna__offset = 64;
 		} else {
-			__dna__offset = 56;
+			__dna__offset = 48;
 		}
 		if (__io__equals(agroups, __io__address + __dna__offset)) {
 			return;
@@ -861,9 +721,9 @@ public class bPose extends CFacade {
 	public int getActive_group() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 88);
+			return __io__block.readInt(__io__address + 80);
 		} else {
-			return __io__block.readInt(__io__address + 64);
+			return __io__block.readInt(__io__address + 56);
 		}
 	}
 
@@ -878,9 +738,9 @@ public class bPose extends CFacade {
 	public void setActive_group(int active_group) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 88, active_group);
+			__io__block.writeInt(__io__address + 80, active_group);
 		} else {
-			__io__block.writeInt(__io__address + 64, active_group);
+			__io__block.writeInt(__io__address + 56, active_group);
 		}
 	}
 
@@ -895,9 +755,9 @@ public class bPose extends CFacade {
 	public int getIksolver() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 92);
+			return __io__block.readInt(__io__address + 84);
 		} else {
-			return __io__block.readInt(__io__address + 68);
+			return __io__block.readInt(__io__address + 60);
 		}
 	}
 
@@ -912,9 +772,9 @@ public class bPose extends CFacade {
 	public void setIksolver(int iksolver) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 92, iksolver);
+			__io__block.writeInt(__io__address + 84, iksolver);
 		} else {
-			__io__block.writeInt(__io__address + 68, iksolver);
+			__io__block.writeInt(__io__address + 60, iksolver);
 		}
 	}
 
@@ -930,9 +790,9 @@ public class bPose extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+			__dna__targetAddress = __io__block.readLong(__io__address + 88);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 72);
+			__dna__targetAddress = __io__block.readLong(__io__address + 64);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -950,9 +810,9 @@ public class bPose extends CFacade {
 	{
 		long __address = ((ikdata == null) ? 0 : ikdata.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 96, __address);
+			__io__block.writeLong(__io__address + 88, __address);
 		} else {
-			__io__block.writeLong(__io__address + 72, __address);
+			__io__block.writeLong(__io__address + 64, __address);
 		}
 	}
 
@@ -968,9 +828,9 @@ public class bPose extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 96);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 76);
+			__dna__targetAddress = __io__block.readLong(__io__address + 68);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -988,9 +848,9 @@ public class bPose extends CFacade {
 	{
 		long __address = ((ikparam == null) ? 0 : ikparam.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 104, __address);
+			__io__block.writeLong(__io__address + 96, __address);
 		} else {
-			__io__block.writeLong(__io__address + 76, __address);
+			__io__block.writeLong(__io__address + 68, __address);
 		}
 	}
 
@@ -1005,9 +865,9 @@ public class bPose extends CFacade {
 	public bAnimVizSettings getAvs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new bAnimVizSettings(__io__address + 112, __io__block, __io__blockTable);
+			return new bAnimVizSettings(__io__address + 104, __io__block, __io__blockTable);
 		} else {
-			return new bAnimVizSettings(__io__address + 80, __io__block, __io__blockTable);
+			return new bAnimVizSettings(__io__address + 72, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1023,9 +883,9 @@ public class bPose extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 112;
+			__dna__offset = 104;
 		} else {
-			__dna__offset = 80;
+			__dna__offset = 72;
 		}
 		if (__io__equals(avs, __io__address + __dna__offset)) {
 			return;
@@ -1033,52 +893,6 @@ public class bPose extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, avs);
 		} else {
 			__io__generic__copy( getAvs(), avs);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'proxy_act_bone'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Proxy active bone name, MAXBONENAME. </p>
-	 * @see #__DNA__FIELD__proxy_act_bone
-	 */
-	
-	public CArrayFacade<Byte> getProxy_act_bone() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			64
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'proxy_act_bone'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Proxy active bone name, MAXBONENAME. </p>
-	 * @see #__DNA__FIELD__proxy_act_bone
-	 */
-	
-	public void setProxy_act_bone(CArrayFacade<Byte> proxy_act_bone) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 144;
-		} else {
-			__dna__offset = 112;
-		}
-		if (__io__equals(proxy_act_bone, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, proxy_act_bone)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, proxy_act_bone);
-		} else {
-			__io__generic__copy( getProxy_act_bone(), proxy_act_bone);
 		}
 	}
 

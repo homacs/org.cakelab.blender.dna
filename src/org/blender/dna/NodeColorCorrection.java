@@ -27,7 +27,7 @@ public class NodeColorCorrection extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 421;
+	public static final int __DNA__SDNA_INDEX = 427;
 
 	/**
 	 * Field descriptor (offset) for struct member 'master'.

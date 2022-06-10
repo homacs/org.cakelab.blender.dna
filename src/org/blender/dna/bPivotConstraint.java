@@ -30,7 +30,7 @@ public class bPivotConstraint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 389;
+	public static final int __DNA__SDNA_INDEX = 395;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.

@@ -29,7 +29,7 @@ public class MDisps extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 89;
+	public static final int __DNA__SDNA_INDEX = 92;
 
 	/**
 	 * Field descriptor (offset) for struct member 'totdisp'.

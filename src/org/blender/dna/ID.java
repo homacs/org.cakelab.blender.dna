@@ -25,7 +25,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> There's a nasty circular dependency here.... 'void *' to the rescue! I really wonder why this is needed. </p>
  */
 
-@CMetaData(size32=136, size64=176)
+@CMetaData(size32=152, size64=192)
 public class ID extends CFacade {
 
 	/**
@@ -36,7 +36,7 @@ public class ID extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 20;
+	public static final int __DNA__SDNA_INDEX = 22;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -516,6 +516,26 @@ public class ID extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__library_weak_reference = new long[]{132, 168};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ID id = ...;
+	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD__runtime);
+	 * CPointer&lt;ID_Runtime&gt; p_runtime = p.cast(new Class[]{ID_Runtime.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'ID_Runtime'</li>
+	 * <li>Actual Size (32bit/64bit): 16/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__runtime = new long[]{136, 176};
 
 	public ID(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1304,6 +1324,42 @@ public class ID extends CFacade {
 			__io__block.writeLong(__io__address + 168, __address);
 		} else {
 			__io__block.writeLong(__io__address + 132, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public ID_Runtime getRuntime() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ID_Runtime(__io__address + 176, __io__block, __io__blockTable);
+		} else {
+			return new ID_Runtime(__io__address + 136, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public void setRuntime(ID_Runtime runtime) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 176;
+		} else {
+			__dna__offset = 136;
+		}
+		if (__io__equals(runtime, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, runtime)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, runtime);
+		} else {
+			__io__generic__copy( getRuntime(), runtime);
 		}
 	}
 

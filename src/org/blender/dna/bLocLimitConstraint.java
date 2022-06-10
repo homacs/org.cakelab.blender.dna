@@ -29,7 +29,7 @@ public class bLocLimitConstraint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 390;
+	public static final int __DNA__SDNA_INDEX = 396;
 
 	/**
 	 * Field descriptor (offset) for struct member 'xmin'.

@@ -30,7 +30,7 @@ public class bRotLimitConstraint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 391;
+	public static final int __DNA__SDNA_INDEX = 397;
 
 	/**
 	 * Field descriptor (offset) for struct member 'xmin'.

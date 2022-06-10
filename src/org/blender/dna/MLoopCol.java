@@ -31,7 +31,7 @@ public class MLoopCol extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 87;
+	public static final int __DNA__SDNA_INDEX = 90;
 
 	/**
 	 * Field descriptor (offset) for struct member 'r'.

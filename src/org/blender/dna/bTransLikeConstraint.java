@@ -30,7 +30,7 @@ public class bTransLikeConstraint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 378;
+	public static final int __DNA__SDNA_INDEX = 384;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.

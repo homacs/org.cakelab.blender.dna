@@ -28,7 +28,7 @@ public class Camera_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 36;
+	public static final int __DNA__SDNA_INDEX = 38;
 
 	/**
 	 * Field descriptor (offset) for struct member 'drw_corners'.

@@ -28,7 +28,7 @@ public class SpaceButs extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 231;
+	public static final int __DNA__SDNA_INDEX = 236;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

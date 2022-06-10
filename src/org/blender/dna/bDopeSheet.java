@@ -31,7 +31,7 @@ public class bDopeSheet extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 362;
+	public static final int __DNA__SDNA_INDEX = 368;
 
 	/**
 	 * Field descriptor (offset) for struct member 'source'.

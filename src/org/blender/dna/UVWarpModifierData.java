@@ -28,7 +28,7 @@ public class UVWarpModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 149;
+	public static final int __DNA__SDNA_INDEX = 152;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

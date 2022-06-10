@@ -30,7 +30,7 @@ public class CameraDOFSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 35;
+	public static final int __DNA__SDNA_INDEX = 37;
 
 	/**
 	 * Field descriptor (offset) for struct member 'focus_object'.

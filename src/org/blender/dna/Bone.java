@@ -30,7 +30,7 @@ public class Bone extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 350;
+	public static final int __DNA__SDNA_INDEX = 356;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -459,7 +459,7 @@ public class Bone extends CFacade {
 	 * Field descriptor (offset) for struct member 'xwidth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> The width for block bones.</p><p><h2>Note</h2><p><code></code><code></code>  as offsets. </p> keep in this order for transform code which stores a pointer to xwidth, accessing length and zwidth as offsets. 
+	 * <p> The width for block bones. The final X/Z bone widths are double these values.</p><p><h2>Note</h2><p><code></code><code></code>  as offsets. </p> keep in this order for transform code which stores a pointer to xwidth, accessing length and zwidth as offsets. 
 	 * 
 	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -1822,7 +1822,7 @@ public class Bone extends CFacade {
 	 * Get method for struct member 'xwidth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> The width for block bones.</p><p><h2>Note</h2><p><code></code><code></code>  as offsets. </p> keep in this order for transform code which stores a pointer to xwidth, accessing length and zwidth as offsets. 
+	 * <p> The width for block bones. The final X/Z bone widths are double these values.</p><p><h2>Note</h2><p><code></code><code></code>  as offsets. </p> keep in this order for transform code which stores a pointer to xwidth, accessing length and zwidth as offsets. 
 	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__xwidth
@@ -1841,7 +1841,7 @@ public class Bone extends CFacade {
 	 * Set method for struct member 'xwidth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> The width for block bones.</p><p><h2>Note</h2><p><code></code><code></code>  as offsets. </p> keep in this order for transform code which stores a pointer to xwidth, accessing length and zwidth as offsets. 
+	 * <p> The width for block bones. The final X/Z bone widths are double these values.</p><p><h2>Note</h2><p><code></code><code></code>  as offsets. </p> keep in this order for transform code which stores a pointer to xwidth, accessing length and zwidth as offsets. 
 	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__xwidth

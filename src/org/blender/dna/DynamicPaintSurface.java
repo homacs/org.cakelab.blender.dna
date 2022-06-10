@@ -28,7 +28,7 @@ public class DynamicPaintSurface extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 704;
+	public static final int __DNA__SDNA_INDEX = 695;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

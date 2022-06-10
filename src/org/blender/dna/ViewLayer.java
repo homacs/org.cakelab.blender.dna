@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=216, size64=304)
+@CMetaData(size32=228, size64=328)
 public class ViewLayer extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class ViewLayer extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 770;
+	public static final int __DNA__SDNA_INDEX = 763;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -531,6 +531,54 @@ public class ViewLayer extends CFacade {
 	public static final long[] __DNA__FIELD__active_aov = new long[]{196, 264};
 
 	/**
+	 * Field descriptor (offset) for struct member 'lightgroups'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
+	 * <p> List containing the 'ViewLayerLightgroup`s </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ViewLayer viewlayer = ...;
+	 * CPointer&lt;Object&gt; p = viewlayer.__dna__addressof(ViewLayer.__DNA__FIELD__lightgroups);
+	 * CPointer&lt;ListBase&gt; p_lightgroups = p.cast(new Class[]{ListBase.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'lightgroups'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__lightgroups = new long[]{200, 272};
+
+	/**
+	 * Field descriptor (offset) for struct member 'active_lightgroup'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Active Lightgroup
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ViewLayer viewlayer = ...;
+	 * CPointer&lt;Object&gt; p = viewlayer.__dna__addressof(ViewLayer.__DNA__FIELD__active_lightgroup);
+	 * CPointer&lt;CPointer&lt;ViewLayerLightgroup&gt;&gt; p_active_lightgroup = p.cast(new Class[]{CPointer.class, ViewLayerLightgroup.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'active_lightgroup'</li>
+	 * <li>Signature: 'ViewLayerLightgroup*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__active_lightgroup = new long[]{208, 288};
+
+	/**
 	 * Field descriptor (offset) for struct member 'drawdata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -551,7 +599,7 @@ public class ViewLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawdata = new long[]{200, 272};
+	public static final long[] __DNA__FIELD__drawdata = new long[]{212, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_bases_array'.
@@ -571,7 +619,7 @@ public class ViewLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object_bases_array = new long[]{208, 288};
+	public static final long[] __DNA__FIELD__object_bases_array = new long[]{220, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_bases_hash'.
@@ -591,7 +639,7 @@ public class ViewLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object_bases_hash = new long[]{212, 296};
+	public static final long[] __DNA__FIELD__object_bases_hash = new long[]{224, 320};
 
 	public ViewLayer(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1434,6 +1482,90 @@ public class ViewLayer extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'lightgroups'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
+	 * <p> List containing the 'ViewLayerLightgroup`s </p>
+	 * @see #__DNA__FIELD__lightgroups
+	 */
+	
+	public ListBase getLightgroups() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ListBase(__io__address + 272, __io__block, __io__blockTable);
+		} else {
+			return new ListBase(__io__address + 200, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'lightgroups'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
+	 * <p> List containing the 'ViewLayerLightgroup`s </p>
+	 * @see #__DNA__FIELD__lightgroups
+	 */
+	
+	public void setLightgroups(ListBase lightgroups) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 272;
+		} else {
+			__dna__offset = 200;
+		}
+		if (__io__equals(lightgroups, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, lightgroups)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, lightgroups);
+		} else {
+			__io__generic__copy( getLightgroups(), lightgroups);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'active_lightgroup'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Active Lightgroup
+	 * @see #__DNA__FIELD__active_lightgroup
+	 */
+	
+	public CPointer<ViewLayerLightgroup> getActive_lightgroup() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 288);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{ViewLayerLightgroup.class};
+		return new CPointer<ViewLayerLightgroup>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ViewLayerLightgroup.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'active_lightgroup'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Active Lightgroup
+	 * @see #__DNA__FIELD__active_lightgroup
+	 */
+	
+	public void setActive_lightgroup(CPointer<ViewLayerLightgroup> active_lightgroup) throws IOException
+	{
+		long __address = ((active_lightgroup == null) ? 0 : active_lightgroup.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 288, __address);
+		} else {
+			__io__block.writeLong(__io__address + 208, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'drawdata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -1444,9 +1576,9 @@ public class ViewLayer extends CFacade {
 	public ListBase getDrawdata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 272, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 296, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 200, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 212, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1462,9 +1594,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 272;
+			__dna__offset = 296;
 		} else {
-			__dna__offset = 200;
+			__dna__offset = 212;
 		}
 		if (__io__equals(drawdata, __io__address + __dna__offset)) {
 			return;
@@ -1484,9 +1616,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 288);
+			__dna__targetAddress = __io__block.readLong(__io__address + 312);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 220);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, Base.class};
 		return new CPointer<CPointer<Base>>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -1501,9 +1633,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __address = ((object_bases_array == null) ? 0 : object_bases_array.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 288, __address);
+			__io__block.writeLong(__io__address + 312, __address);
 		} else {
-			__io__block.writeLong(__io__address + 208, __address);
+			__io__block.writeLong(__io__address + 220, __address);
 		}
 	}
 
@@ -1516,9 +1648,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 296);
+			__dna__targetAddress = __io__block.readLong(__io__address + 320);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 212);
+			__dna__targetAddress = __io__block.readLong(__io__address + 224);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1533,9 +1665,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __address = ((object_bases_hash == null) ? 0 : object_bases_hash.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 296, __address);
+			__io__block.writeLong(__io__address + 320, __address);
 		} else {
-			__io__block.writeLong(__io__address + 212, __address);
+			__io__block.writeLong(__io__address + 224, __address);
 		}
 	}
 

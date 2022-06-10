@@ -30,7 +30,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 207;
+	public static final int __DNA__SDNA_INDEX = 212;
 
 	/**
 	 * Field descriptor (offset) for struct member 'paintcursor'.
@@ -148,7 +148,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * Field descriptor (offset) for struct member 'cur_falloff'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Multiframe edit falloff effect by frame. </p>
+	 * <p> Multi-frame edit falloff effect by frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -405,7 +405,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * Get method for struct member 'cur_falloff'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Multiframe edit falloff effect by frame. </p>
+	 * <p> Multi-frame edit falloff effect by frame. </p>
 	 * @see #__DNA__FIELD__cur_falloff
 	 */
 	
@@ -425,7 +425,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * Set method for struct member 'cur_falloff'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Multiframe edit falloff effect by frame. </p>
+	 * <p> Multi-frame edit falloff effect by frame. </p>
 	 * @see #__DNA__FIELD__cur_falloff
 	 */
 	

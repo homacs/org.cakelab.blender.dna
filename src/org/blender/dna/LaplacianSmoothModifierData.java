@@ -28,7 +28,7 @@ public class LaplacianSmoothModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 146;
+	public static final int __DNA__SDNA_INDEX = 149;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

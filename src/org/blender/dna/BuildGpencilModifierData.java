@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=264, size64=280)
+@CMetaData(size32=340, size64=360)
 public class BuildGpencilModifierData extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class BuildGpencilModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 609;
+	public static final int __DNA__SDNA_INDEX = 599;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -346,6 +346,29 @@ public class BuildGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__time_alignment = new long[]{254, 270};
 
 	/**
+	 * Field descriptor (offset) for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Build origin control object. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BuildGpencilModifierData buildgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = buildgpencilmodifierdata.__dna__addressof(BuildGpencilModifierData.__DNA__FIELD__object);
+	 * CPointer&lt;CPointer&lt;BlenderObject&gt;&gt; p_object = p.cast(new Class[]{CPointer.class, BlenderObject.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'object'</li>
+	 * <li>Signature: 'Object*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__object = new long[]{256, 272};
+
+	/**
 	 * Field descriptor (offset) for struct member 'percentage_fac'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -366,27 +389,96 @@ public class BuildGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__percentage_fac = new long[]{256, 272};
+	public static final long[] __DNA__FIELD__percentage_fac = new long[]{260, 280};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'fade_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Weight fading at the end of the stroke. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BuildGpencilModifierData buildgpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = buildgpencilmodifierdata.__dna__addressof(BuildGpencilModifierData.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = buildgpencilmodifierdata.__dna__addressof(BuildGpencilModifierData.__DNA__FIELD__fade_fac);
+	 * CPointer&lt;Float&gt; p_fade_fac = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'fade_fac'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{260, 276};
+	public static final long[] __DNA__FIELD__fade_fac = new long[]{264, 284};
+
+	/**
+	 * Field descriptor (offset) for struct member 'target_vgname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Target vertexgroup name, MAX_VGROUP_NAME. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BuildGpencilModifierData buildgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = buildgpencilmodifierdata.__dna__addressof(BuildGpencilModifierData.__DNA__FIELD__target_vgname);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_target_vgname = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'target_vgname'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__target_vgname = new long[]{268, 288};
+
+	/**
+	 * Field descriptor (offset) for struct member 'fade_opacity_strength'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Fading strength of opacity and thickness </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BuildGpencilModifierData buildgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = buildgpencilmodifierdata.__dna__addressof(BuildGpencilModifierData.__DNA__FIELD__fade_opacity_strength);
+	 * CPointer&lt;Float&gt; p_fade_opacity_strength = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'fade_opacity_strength'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__fade_opacity_strength = new long[]{332, 352};
+
+	/**
+	 * Field descriptor (offset) for struct member 'fade_thickness_strength'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BuildGpencilModifierData buildgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = buildgpencilmodifierdata.__dna__addressof(BuildGpencilModifierData.__DNA__FIELD__fade_thickness_strength);
+	 * CPointer&lt;Float&gt; p_fade_thickness_strength = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'fade_thickness_strength'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__fade_thickness_strength = new long[]{336, 356};
 
 	public BuildGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -895,6 +987,44 @@ public class BuildGpencilModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Build origin control object. </p>
+	 * @see #__DNA__FIELD__object
+	 */
+	
+	public CPointer<BlenderObject> getObject() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 272);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
+		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Build origin control object. </p>
+	 * @see #__DNA__FIELD__object
+	 */
+	
+	public void setObject(CPointer<BlenderObject> object) throws IOException
+	{
+		long __address = ((object == null) ? 0 : object.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 272, __address);
+		} else {
+			__io__block.writeLong(__io__address + 256, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'percentage_fac'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -905,9 +1035,9 @@ public class BuildGpencilModifierData extends CFacade {
 	public float getPercentage_fac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 272);
+			return __io__block.readFloat(__io__address + 280);
 		} else {
-			return __io__block.readFloat(__io__address + 256);
+			return __io__block.readFloat(__io__address + 260);
 		}
 	}
 
@@ -922,49 +1052,151 @@ public class BuildGpencilModifierData extends CFacade {
 	public void setPercentage_fac(float percentage_fac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 272, percentage_fac);
+			__io__block.writeFloat(__io__address + 280, percentage_fac);
 		} else {
-			__io__block.writeFloat(__io__address + 256, percentage_fac);
+			__io__block.writeFloat(__io__address + 260, percentage_fac);
 		}
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'fade_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Weight fading at the end of the stroke. </p>
+	 * @see #__DNA__FIELD__fade_fac
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public float getFade_fac() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 284);
+		} else {
+			return __io__block.readFloat(__io__address + 264);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'fade_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Weight fading at the end of the stroke. </p>
+	 * @see #__DNA__FIELD__fade_fac
+	 */
+	
+	public void setFade_fac(float fade_fac) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 284, fade_fac);
+		} else {
+			__io__block.writeFloat(__io__address + 264, fade_fac);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'target_vgname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Target vertexgroup name, MAX_VGROUP_NAME. </p>
+	 * @see #__DNA__FIELD__target_vgname
+	 */
+	
+	public CArrayFacade<Byte> getTarget_vgname() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 276, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 288, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 260, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 268, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'target_vgname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Target vertexgroup name, MAX_VGROUP_NAME. </p>
+	 * @see #__DNA__FIELD__target_vgname
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void setTarget_vgname(CArrayFacade<Byte> target_vgname) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 276;
+			__dna__offset = 288;
 		} else {
-			__dna__offset = 260;
+			__dna__offset = 268;
 		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
+		if (__io__equals(target_vgname, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else if (__io__same__encoding(this, target_vgname)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, target_vgname);
 		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__generic__copy( getTarget_vgname(), target_vgname);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'fade_opacity_strength'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Fading strength of opacity and thickness </p>
+	 * @see #__DNA__FIELD__fade_opacity_strength
+	 */
+	
+	public float getFade_opacity_strength() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 352);
+		} else {
+			return __io__block.readFloat(__io__address + 332);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'fade_opacity_strength'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Fading strength of opacity and thickness </p>
+	 * @see #__DNA__FIELD__fade_opacity_strength
+	 */
+	
+	public void setFade_opacity_strength(float fade_opacity_strength) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 352, fade_opacity_strength);
+		} else {
+			__io__block.writeFloat(__io__address + 332, fade_opacity_strength);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'fade_thickness_strength'.
+	 * @see #__DNA__FIELD__fade_thickness_strength
+	 */
+	
+	public float getFade_thickness_strength() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 356);
+		} else {
+			return __io__block.readFloat(__io__address + 336);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'fade_thickness_strength'.
+	 * @see #__DNA__FIELD__fade_thickness_strength
+	 */
+	
+	public void setFade_thickness_strength(float fade_thickness_strength) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 356, fade_thickness_strength);
+		} else {
+			__io__block.writeFloat(__io__address + 336, fade_thickness_strength);
 		}
 	}
 

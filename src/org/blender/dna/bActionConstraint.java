@@ -30,7 +30,7 @@ public class bActionConstraint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 380;
+	public static final int __DNA__SDNA_INDEX = 386;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.

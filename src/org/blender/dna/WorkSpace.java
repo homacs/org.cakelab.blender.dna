@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=196, size64=272)
+@CMetaData(size32=212, size64=288)
 public class WorkSpace extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class WorkSpace extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 775;
+	public static final int __DNA__SDNA_INDEX = 768;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -45,7 +45,7 @@ public class WorkSpace extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 136/176</li>
+	 * <li>Actual Size (32bit/64bit): 152/192</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -71,7 +71,7 @@ public class WorkSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layouts = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__layouts = new long[]{152, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'hook_layout_relations'.
@@ -94,7 +94,7 @@ public class WorkSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__hook_layout_relations = new long[]{144, 192};
+	public static final long[] __DNA__FIELD__hook_layout_relations = new long[]{160, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'owner_ids'.
@@ -119,7 +119,7 @@ public class WorkSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__owner_ids = new long[]{152, 208};
+	public static final long[] __DNA__FIELD__owner_ids = new long[]{168, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tools'.
@@ -144,7 +144,7 @@ public class WorkSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tools = new long[]{160, 224};
+	public static final long[] __DNA__FIELD__tools = new long[]{176, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -164,7 +164,7 @@ public class WorkSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{168, 240};
+	public static final long[] __DNA__FIELD___pad = new long[]{184, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_mode'.
@@ -187,7 +187,7 @@ public class WorkSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object_mode = new long[]{172, 244};
+	public static final long[] __DNA__FIELD__object_mode = new long[]{188, 260};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -210,7 +210,7 @@ public class WorkSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{176, 248};
+	public static final long[] __DNA__FIELD__flags = new long[]{192, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'order'.
@@ -233,7 +233,7 @@ public class WorkSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__order = new long[]{180, 252};
+	public static final long[] __DNA__FIELD__order = new long[]{196, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'status_text'.
@@ -256,7 +256,7 @@ public class WorkSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__status_text = new long[]{184, 256};
+	public static final long[] __DNA__FIELD__status_text = new long[]{200, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'asset_library_ref'.
@@ -281,7 +281,7 @@ public class WorkSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__asset_library_ref = new long[]{188, 264};
+	public static final long[] __DNA__FIELD__asset_library_ref = new long[]{204, 280};
 
 	public WorkSpace(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -338,9 +338,9 @@ public class WorkSpace extends CFacade {
 	public ListBase getLayouts() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 176, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 192, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 136, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 152, __io__block, __io__blockTable);
 		}
 	}
 
@@ -356,9 +356,9 @@ public class WorkSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
+			__dna__offset = 192;
 		} else {
-			__dna__offset = 136;
+			__dna__offset = 152;
 		}
 		if (__io__equals(layouts, __io__address + __dna__offset)) {
 			return;
@@ -380,9 +380,9 @@ public class WorkSpace extends CFacade {
 	public ListBase getHook_layout_relations() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 192, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 208, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 144, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 160, __io__block, __io__blockTable);
 		}
 	}
 
@@ -398,9 +398,9 @@ public class WorkSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 208;
 		} else {
-			__dna__offset = 144;
+			__dna__offset = 160;
 		}
 		if (__io__equals(hook_layout_relations, __io__address + __dna__offset)) {
 			return;
@@ -424,9 +424,9 @@ public class WorkSpace extends CFacade {
 	public ListBase getOwner_ids() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 208, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 224, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 152, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 168, __io__block, __io__blockTable);
 		}
 	}
 
@@ -444,9 +444,9 @@ public class WorkSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 208;
+			__dna__offset = 224;
 		} else {
-			__dna__offset = 152;
+			__dna__offset = 168;
 		}
 		if (__io__equals(owner_ids, __io__address + __dna__offset)) {
 			return;
@@ -470,9 +470,9 @@ public class WorkSpace extends CFacade {
 	public ListBase getTools() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 224, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 240, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 160, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 176, __io__block, __io__blockTable);
 		}
 	}
 
@@ -490,9 +490,9 @@ public class WorkSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 224;
+			__dna__offset = 240;
 		} else {
-			__dna__offset = 160;
+			__dna__offset = 176;
 		}
 		if (__io__equals(tools, __io__address + __dna__offset)) {
 			return;
@@ -515,9 +515,9 @@ public class WorkSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 256, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -530,9 +530,9 @@ public class WorkSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 240;
+			__dna__offset = 256;
 		} else {
-			__dna__offset = 168;
+			__dna__offset = 184;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -554,9 +554,9 @@ public class WorkSpace extends CFacade {
 	public int getObject_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 244);
+			return __io__block.readInt(__io__address + 260);
 		} else {
-			return __io__block.readInt(__io__address + 172);
+			return __io__block.readInt(__io__address + 188);
 		}
 	}
 
@@ -571,9 +571,9 @@ public class WorkSpace extends CFacade {
 	public void setObject_mode(int object_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 244, object_mode);
+			__io__block.writeInt(__io__address + 260, object_mode);
 		} else {
-			__io__block.writeInt(__io__address + 172, object_mode);
+			__io__block.writeInt(__io__address + 188, object_mode);
 		}
 	}
 
@@ -588,9 +588,9 @@ public class WorkSpace extends CFacade {
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 248);
+			return __io__block.readInt(__io__address + 264);
 		} else {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 192);
 		}
 	}
 
@@ -605,9 +605,9 @@ public class WorkSpace extends CFacade {
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 248, flags);
+			__io__block.writeInt(__io__address + 264, flags);
 		} else {
-			__io__block.writeInt(__io__address + 176, flags);
+			__io__block.writeInt(__io__address + 192, flags);
 		}
 	}
 
@@ -622,9 +622,9 @@ public class WorkSpace extends CFacade {
 	public int getOrder() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 252);
+			return __io__block.readInt(__io__address + 268);
 		} else {
-			return __io__block.readInt(__io__address + 180);
+			return __io__block.readInt(__io__address + 196);
 		}
 	}
 
@@ -639,9 +639,9 @@ public class WorkSpace extends CFacade {
 	public void setOrder(int order) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 252, order);
+			__io__block.writeInt(__io__address + 268, order);
 		} else {
-			__io__block.writeInt(__io__address + 180, order);
+			__io__block.writeInt(__io__address + 196, order);
 		}
 	}
 
@@ -657,9 +657,9 @@ public class WorkSpace extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 272);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -677,9 +677,9 @@ public class WorkSpace extends CFacade {
 	{
 		long __address = ((status_text == null) ? 0 : status_text.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 272, __address);
 		} else {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		}
 	}
 
@@ -696,9 +696,9 @@ public class WorkSpace extends CFacade {
 	public AssetLibraryReference getAsset_library_ref() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new AssetLibraryReference(__io__address + 264, __io__block, __io__blockTable);
+			return new AssetLibraryReference(__io__address + 280, __io__block, __io__blockTable);
 		} else {
-			return new AssetLibraryReference(__io__address + 188, __io__block, __io__blockTable);
+			return new AssetLibraryReference(__io__address + 204, __io__block, __io__blockTable);
 		}
 	}
 
@@ -716,9 +716,9 @@ public class WorkSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 264;
+			__dna__offset = 280;
 		} else {
-			__dna__offset = 188;
+			__dna__offset = 204;
 		}
 		if (__io__equals(asset_library_ref, __io__address + __dna__offset)) {
 			return;

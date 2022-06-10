@@ -30,7 +30,7 @@ public class Object_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 170;
+	public static final int __DNA__SDNA_INDEX = 173;
 
 	/**
 	 * Field descriptor (offset) for struct member 'last_data_mask'.

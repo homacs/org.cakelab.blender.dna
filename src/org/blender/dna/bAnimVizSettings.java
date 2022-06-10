@@ -30,7 +30,7 @@ public class bAnimVizSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 354;
+	public static final int __DNA__SDNA_INDEX = 360;
 
 	/**
 	 * Field descriptor (offset) for struct member 'recalc'.
@@ -102,6 +102,29 @@ public class bAnimVizSettings extends CFacade {
 	public static final long[] __DNA__FIELD__path_step = new long[]{4, 4};
 
 	/**
+	 * Field descriptor (offset) for struct member 'path_range'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eMotionPath_Ranges . </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bAnimVizSettings banimvizsettings = ...;
+	 * CPointer&lt;Object&gt; p = banimvizsettings.__dna__addressof(bAnimVizSettings.__DNA__FIELD__path_range);
+	 * CPointer&lt;Short&gt; p_path_range = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'path_range'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__path_range = new long[]{6, 6};
+
+	/**
 	 * Field descriptor (offset) for struct member 'path_viewflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -122,7 +145,7 @@ public class bAnimVizSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__path_viewflag = new long[]{6, 6};
+	public static final long[] __DNA__FIELD__path_viewflag = new long[]{8, 8};
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_bakeflag'.
@@ -145,7 +168,7 @@ public class bAnimVizSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__path_bakeflag = new long[]{8, 8};
+	public static final long[] __DNA__FIELD__path_bakeflag = new long[]{10, 10};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -161,11 +184,11 @@ public class bAnimVizSettings extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[6]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{10, 10};
+	public static final long[] __DNA__FIELD___pad = new long[]{12, 12};
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_sf'.
@@ -364,6 +387,40 @@ public class bAnimVizSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'path_range'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eMotionPath_Ranges . </p>
+	 * @see #__DNA__FIELD__path_range
+	 */
+	
+	public short getPath_range() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 6);
+		} else {
+			return __io__block.readShort(__io__address + 6);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'path_range'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eMotionPath_Ranges . </p>
+	 * @see #__DNA__FIELD__path_range
+	 */
+	
+	public void setPath_range(short path_range) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 6, path_range);
+		} else {
+			__io__block.writeShort(__io__address + 6, path_range);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'path_viewflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -374,9 +431,9 @@ public class bAnimVizSettings extends CFacade {
 	public short getPath_viewflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 6);
+			return __io__block.readShort(__io__address + 8);
 		} else {
-			return __io__block.readShort(__io__address + 6);
+			return __io__block.readShort(__io__address + 8);
 		}
 	}
 
@@ -391,9 +448,9 @@ public class bAnimVizSettings extends CFacade {
 	public void setPath_viewflag(short path_viewflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 6, path_viewflag);
+			__io__block.writeShort(__io__address + 8, path_viewflag);
 		} else {
-			__io__block.writeShort(__io__address + 6, path_viewflag);
+			__io__block.writeShort(__io__address + 8, path_viewflag);
 		}
 	}
 
@@ -408,9 +465,9 @@ public class bAnimVizSettings extends CFacade {
 	public short getPath_bakeflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8);
+			return __io__block.readShort(__io__address + 10);
 		} else {
-			return __io__block.readShort(__io__address + 8);
+			return __io__block.readShort(__io__address + 10);
 		}
 	}
 
@@ -425,9 +482,9 @@ public class bAnimVizSettings extends CFacade {
 	public void setPath_bakeflag(short path_bakeflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8, path_bakeflag);
+			__io__block.writeShort(__io__address + 10, path_bakeflag);
 		} else {
-			__io__block.writeShort(__io__address + 8, path_bakeflag);
+			__io__block.writeShort(__io__address + 10, path_bakeflag);
 		}
 	}
 
@@ -440,12 +497,12 @@ public class bAnimVizSettings extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			6
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 10, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 10, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -458,9 +515,9 @@ public class bAnimVizSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 10;
+			__dna__offset = 12;
 		} else {
-			__dna__offset = 10;
+			__dna__offset = 12;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

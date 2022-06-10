@@ -28,7 +28,7 @@ public class LineStyleThicknessModifier_AlongStroke extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 724;
+	public static final int __DNA__SDNA_INDEX = 715;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

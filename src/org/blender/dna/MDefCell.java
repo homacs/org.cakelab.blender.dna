@@ -27,7 +27,7 @@ public class MDefCell extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 124;
+	public static final int __DNA__SDNA_INDEX = 127;
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.

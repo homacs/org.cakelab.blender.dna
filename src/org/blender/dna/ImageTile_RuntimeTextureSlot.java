@@ -28,7 +28,7 @@ public class ImageTile_RuntimeTextureSlot extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 43;
+	public static final int __DNA__SDNA_INDEX = 45;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tilearray_layer'.

@@ -30,7 +30,7 @@ public class FileSelectParams extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 241;
+	public static final int __DNA__SDNA_INDEX = 246;
 
 	/**
 	 * Field descriptor (offset) for struct member 'title'.
@@ -408,7 +408,7 @@ public class FileSelectParams extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> short XXXXX for now store type here, should be moved to the operator. eFileSelectType </p>
+	 * <p> short XXX: for now store type here, should be moved to the operator. eFileSelectType </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -568,7 +568,7 @@ public class FileSelectParams extends CFacade {
 	 * <h4>Blender Python API</h4>
 	 * Numbers of dirtree levels to show simultaneously
 	 * <h4>Blender Source Code</h4>
-	 * <p> Max number of levels in dirtree to show at once, 0 to disable recursion. </p>
+	 * <p> Max number of levels in directory tree to show at once, 0 to disable recursion. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1263,7 +1263,7 @@ public class FileSelectParams extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> short XXXXX for now store type here, should be moved to the operator. eFileSelectType </p>
+	 * <p> short XXX: for now store type here, should be moved to the operator. eFileSelectType </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1280,7 +1280,7 @@ public class FileSelectParams extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> short XXXXX for now store type here, should be moved to the operator. eFileSelectType </p>
+	 * <p> short XXX: for now store type here, should be moved to the operator. eFileSelectType </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1509,7 +1509,7 @@ public class FileSelectParams extends CFacade {
 	 * <h4>Blender Python API</h4>
 	 * Numbers of dirtree levels to show simultaneously
 	 * <h4>Blender Source Code</h4>
-	 * <p> Max number of levels in dirtree to show at once, 0 to disable recursion. </p>
+	 * <p> Max number of levels in directory tree to show at once, 0 to disable recursion. </p>
 	 * @see #__DNA__FIELD__recursion_level
 	 */
 	
@@ -1528,7 +1528,7 @@ public class FileSelectParams extends CFacade {
 	 * <h4>Blender Python API</h4>
 	 * Numbers of dirtree levels to show simultaneously
 	 * <h4>Blender Source Code</h4>
-	 * <p> Max number of levels in dirtree to show at once, 0 to disable recursion. </p>
+	 * <p> Max number of levels in directory tree to show at once, 0 to disable recursion. </p>
 	 * @see #__DNA__FIELD__recursion_level
 	 */
 	

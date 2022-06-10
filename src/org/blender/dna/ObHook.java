@@ -30,7 +30,7 @@ public class ObHook extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 173;
+	public static final int __DNA__SDNA_INDEX = 176;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

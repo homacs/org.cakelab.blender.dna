@@ -27,7 +27,7 @@ public class UvSculpt extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 200;
+	public static final int __DNA__SDNA_INDEX = 205;
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint'.

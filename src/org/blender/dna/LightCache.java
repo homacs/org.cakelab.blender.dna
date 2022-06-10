@@ -28,7 +28,7 @@ public class LightCache extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 782;
+	public static final int __DNA__SDNA_INDEX = 775;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.

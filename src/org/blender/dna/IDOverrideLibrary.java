@@ -83,6 +83,31 @@ public class IDOverrideLibrary extends CFacade {
 	public static final long[] __DNA__FIELD__properties = new long[]{4, 8};
 
 	/**
+	 * Field descriptor (offset) for struct member 'hierarchy_root'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Library override ID used as root of the override hierarchy this ID is a member of
+	 * <h4>Blender Source Code</h4>
+	 * <p> Override hierarchy root {@link ID} . Usually the actual root of the hierarchy, but not always in degenerated cases.</p><p> All liboverrides of a same hierarchy (e.g. a character collection) share the same root. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * IDOverrideLibrary idoverridelibrary = ...;
+	 * CPointer&lt;Object&gt; p = idoverridelibrary.__dna__addressof(IDOverrideLibrary.__DNA__FIELD__hierarchy_root);
+	 * CPointer&lt;CPointer&lt;ID&gt;&gt; p_hierarchy_root = p.cast(new Class[]{CPointer.class, ID.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'hierarchy_root'</li>
+	 * <li>Signature: 'ID*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__hierarchy_root = new long[]{12, 24};
+
+	/**
 	 * Field descriptor (offset) for struct member 'storage'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -103,7 +128,7 @@ public class IDOverrideLibrary extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__storage = new long[]{12, 24};
+	public static final long[] __DNA__FIELD__storage = new long[]{16, 32};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -123,27 +148,7 @@ public class IDOverrideLibrary extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{16, 32};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad_0'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * IDOverrideLibrary idoverridelibrary = ...;
-	 * CPointer&lt;Object&gt; p = idoverridelibrary.__dna__addressof(IDOverrideLibrary.__DNA__FIELD___pad_0);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad_0 = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad_0'</li>
-	 * <li>Signature: 'void*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad_0 = new long[]{20, 40};
+	public static final long[] __DNA__FIELD__runtime = new long[]{20, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -282,6 +287,48 @@ public class IDOverrideLibrary extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'hierarchy_root'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Library override ID used as root of the override hierarchy this ID is a member of
+	 * <h4>Blender Source Code</h4>
+	 * <p> Override hierarchy root {@link ID} . Usually the actual root of the hierarchy, but not always in degenerated cases.</p><p> All liboverrides of a same hierarchy (e.g. a character collection) share the same root. </p>
+	 * @see #__DNA__FIELD__hierarchy_root
+	 */
+	
+	public CPointer<ID> getHierarchy_root() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 24);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 12);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{ID.class};
+		return new CPointer<ID>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ID.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'hierarchy_root'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Library override ID used as root of the override hierarchy this ID is a member of
+	 * <h4>Blender Source Code</h4>
+	 * <p> Override hierarchy root {@link ID} . Usually the actual root of the hierarchy, but not always in degenerated cases.</p><p> All liboverrides of a same hierarchy (e.g. a character collection) share the same root. </p>
+	 * @see #__DNA__FIELD__hierarchy_root
+	 */
+	
+	public void setHierarchy_root(CPointer<ID> hierarchy_root) throws IOException
+	{
+		long __address = ((hierarchy_root == null) ? 0 : hierarchy_root.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 24, __address);
+		} else {
+			__io__block.writeLong(__io__address + 12, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'storage'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -293,9 +340,9 @@ public class IDOverrideLibrary extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 24);
+			__dna__targetAddress = __io__block.readLong(__io__address + 32);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 12);
+			__dna__targetAddress = __io__block.readLong(__io__address + 16);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ID.class};
 		return new CPointer<ID>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ID.__DNA__SDNA_INDEX), __io__blockTable);
@@ -313,9 +360,9 @@ public class IDOverrideLibrary extends CFacade {
 	{
 		long __address = ((storage == null) ? 0 : storage.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 24, __address);
+			__io__block.writeLong(__io__address + 32, __address);
 		} else {
-			__io__block.writeLong(__io__address + 12, __address);
+			__io__block.writeLong(__io__address + 16, __address);
 		}
 	}
 
@@ -328,9 +375,9 @@ public class IDOverrideLibrary extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 32);
+			__dna__targetAddress = __io__block.readLong(__io__address + 40);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 16);
+			__dna__targetAddress = __io__block.readLong(__io__address + 20);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -344,38 +391,6 @@ public class IDOverrideLibrary extends CFacade {
 	public void setRuntime(CPointer<Object> runtime) throws IOException
 	{
 		long __address = ((runtime == null) ? 0 : runtime.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 32, __address);
-		} else {
-			__io__block.writeLong(__io__address + 16, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad_0'.
-	 * @see #__DNA__FIELD___pad_0
-	 */
-	
-	public CPointer<Object> get_pad_0() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 40);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 20);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member '_pad_0'.
-	 * @see #__DNA__FIELD___pad_0
-	 */
-	
-	public void set_pad_0(CPointer<Object> _pad_0) throws IOException
-	{
-		long __address = ((_pad_0 == null) ? 0 : _pad_0.getAddress());
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 40, __address);
 		} else {

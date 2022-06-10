@@ -29,7 +29,7 @@ public class GPUDOFSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 32;
+	public static final int __DNA__SDNA_INDEX = 34;
 
 	/**
 	 * Field descriptor (offset) for struct member 'focus_distance'.

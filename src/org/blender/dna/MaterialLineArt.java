@@ -28,7 +28,7 @@ public class MaterialLineArt extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 58;
+	public static final int __DNA__SDNA_INDEX = 60;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.

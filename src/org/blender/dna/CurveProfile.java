@@ -29,7 +29,7 @@ public class CurveProfile extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 784;
+	public static final int __DNA__SDNA_INDEX = 777;
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_len'.

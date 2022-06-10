@@ -27,7 +27,7 @@ public class NodeGeometryStringToCurves extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 544;
+	public static final int __DNA__SDNA_INDEX = 532;
 
 	/**
 	 * Field descriptor (offset) for struct member 'overflow'.

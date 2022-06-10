@@ -28,7 +28,7 @@ public class SimpleDeformModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 133;
+	public static final int __DNA__SDNA_INDEX = 136;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

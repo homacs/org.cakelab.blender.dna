@@ -20,7 +20,7 @@ import org.cakelab.blender.nio.CPointer;
  *  GP Datablock Runtime temp data for {@link bGPdata}  </p>
  */
 
-@CMetaData(size32=144, size64=176)
+@CMetaData(size32=148, size64=184)
 public class bGPdata_Runtime extends CFacade {
 
 	/**
@@ -31,7 +31,7 @@ public class bGPdata_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 598;
+	public static final int __DNA__SDNA_INDEX = 588;
 
 	/**
 	 * Field descriptor (offset) for struct member 'sbuffer'.
@@ -497,6 +497,26 @@ public class bGPdata_Runtime extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__lineart_cache = new long[]{140, 168};
+
+	/**
+	 * Field descriptor (offset) for struct member 'update_cache'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPdata_Runtime bgpdata_runtime = ...;
+	 * CPointer&lt;Object&gt; p = bgpdata_runtime.__dna__addressof(bGPdata_Runtime.__DNA__FIELD__update_cache);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_update_cache = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'update_cache'</li>
+	 * <li>Signature: 'GPencilUpdateCache*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__update_cache = new long[]{144, 176};
 
 	public bGPdata_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1273,6 +1293,38 @@ public class bGPdata_Runtime extends CFacade {
 			__io__block.writeLong(__io__address + 168, __address);
 		} else {
 			__io__block.writeLong(__io__address + 140, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'update_cache'.
+	 * @see #__DNA__FIELD__update_cache
+	 */
+	
+	public CPointer<Object> getUpdate_cache() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'update_cache'.
+	 * @see #__DNA__FIELD__update_cache
+	 */
+	
+	public void setUpdate_cache(CPointer<Object> update_cache) throws IOException
+	{
+		long __address = ((update_cache == null) ? 0 : update_cache.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 176, __address);
+		} else {
+			__io__block.writeLong(__io__address + 144, __address);
 		}
 	}
 

@@ -28,7 +28,7 @@ public class SpaceTopBar extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 258;
+	public static final int __DNA__SDNA_INDEX = 263;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
