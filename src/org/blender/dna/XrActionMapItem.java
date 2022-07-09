@@ -28,7 +28,7 @@ public class XrActionMapItem extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 782;
+	public static final int __DNA__SDNA_INDEX = 781;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

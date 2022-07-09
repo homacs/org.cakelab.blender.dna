@@ -31,7 +31,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 581;
+	public static final int __DNA__SDNA_INDEX = 580;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tmp_layerinfo'.

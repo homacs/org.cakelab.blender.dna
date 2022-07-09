@@ -27,7 +27,7 @@ public class TransformVars extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 330;
+	public static final int __DNA__SDNA_INDEX = 329;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ScalexIni'.

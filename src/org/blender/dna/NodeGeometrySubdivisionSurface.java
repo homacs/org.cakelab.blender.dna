@@ -27,7 +27,7 @@ public class NodeGeometrySubdivisionSurface extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 504;
+	public static final int __DNA__SDNA_INDEX = 503;
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv_smooth'.

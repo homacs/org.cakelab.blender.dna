@@ -27,7 +27,7 @@ public class ShapeKeyModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 137;
+	public static final int __DNA__SDNA_INDEX = 136;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

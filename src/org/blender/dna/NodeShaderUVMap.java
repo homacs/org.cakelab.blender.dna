@@ -28,7 +28,7 @@ public class NodeShaderUVMap extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 480;
+	public static final int __DNA__SDNA_INDEX = 479;
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv_map'.

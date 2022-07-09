@@ -27,7 +27,7 @@ public class NodeTwoXYs extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 441;
+	public static final int __DNA__SDNA_INDEX = 440;
 
 	/**
 	 * Field descriptor (offset) for struct member 'x1'.

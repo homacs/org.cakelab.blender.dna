@@ -27,7 +27,7 @@ public class ScrAreaMap extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 302;
+	public static final int __DNA__SDNA_INDEX = 301;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vertbase'.

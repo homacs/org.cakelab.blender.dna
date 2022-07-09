@@ -27,7 +27,7 @@ public class NodeRandomValue extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 491;
+	public static final int __DNA__SDNA_INDEX = 490;
 
 	/**
 	 * Field descriptor (offset) for struct member 'data_type'.

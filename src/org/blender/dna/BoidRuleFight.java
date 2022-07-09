@@ -27,7 +27,7 @@ public class BoidRuleFight extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 666;
+	public static final int __DNA__SDNA_INDEX = 665;
 
 	/**
 	 * Field descriptor (offset) for struct member 'rule'.

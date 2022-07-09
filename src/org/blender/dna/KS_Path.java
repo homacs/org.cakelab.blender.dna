@@ -31,7 +31,7 @@ public class KS_Path extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 656;
+	public static final int __DNA__SDNA_INDEX = 655;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

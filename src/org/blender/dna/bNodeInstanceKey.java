@@ -29,7 +29,7 @@ public class bNodeInstanceKey extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 410;
+	public static final int __DNA__SDNA_INDEX = 409;
 
 	/**
 	 * Field descriptor (offset) for struct member 'value'.

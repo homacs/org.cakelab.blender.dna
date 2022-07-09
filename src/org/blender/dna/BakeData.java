@@ -28,7 +28,7 @@ public class BakeData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 192;
+	public static final int __DNA__SDNA_INDEX = 191;
 
 	/**
 	 * Field descriptor (offset) for struct member 'im_format'.

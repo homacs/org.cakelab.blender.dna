@@ -31,7 +31,7 @@ public class TransformOrientationSlot extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 225;
+	public static final int __DNA__SDNA_INDEX = 224;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.

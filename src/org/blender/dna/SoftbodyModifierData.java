@@ -27,7 +27,7 @@ public class SoftbodyModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 121;
+	public static final int __DNA__SDNA_INDEX = 120;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

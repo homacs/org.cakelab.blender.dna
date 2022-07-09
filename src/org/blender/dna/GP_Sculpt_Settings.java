@@ -30,7 +30,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 212;
+	public static final int __DNA__SDNA_INDEX = 211;
 
 	/**
 	 * Field descriptor (offset) for struct member 'paintcursor'.

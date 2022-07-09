@@ -28,7 +28,7 @@ public class LineStyleAlphaModifier_AlongStroke extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 714;
+	public static final int __DNA__SDNA_INDEX = 713;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

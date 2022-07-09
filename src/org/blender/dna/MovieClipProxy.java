@@ -28,7 +28,7 @@ public class MovieClipProxy extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 675;
+	public static final int __DNA__SDNA_INDEX = 674;
 
 	/**
 	 * Field descriptor (offset) for struct member 'dir'.

@@ -27,7 +27,7 @@ public class BrushCurvesSculptSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 549;
+	public static final int __DNA__SDNA_INDEX = 548;
 
 	/**
 	 * Field descriptor (offset) for struct member 'add_amount'.

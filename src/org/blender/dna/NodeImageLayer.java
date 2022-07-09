@@ -30,7 +30,7 @@ public class NodeImageLayer extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 431;
+	public static final int __DNA__SDNA_INDEX = 430;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.

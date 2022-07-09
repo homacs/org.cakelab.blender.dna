@@ -28,7 +28,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 548;
+	public static final int __DNA__SDNA_INDEX = 547;
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_smoothfac'.

@@ -30,7 +30,7 @@ public class GP_Sculpt_Guide extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 211;
+	public static final int __DNA__SDNA_INDEX = 210;
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_guide'.

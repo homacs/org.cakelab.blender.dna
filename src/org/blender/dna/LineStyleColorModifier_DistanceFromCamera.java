@@ -29,7 +29,7 @@ public class LineStyleColorModifier_DistanceFromCamera extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 716;
+	public static final int __DNA__SDNA_INDEX = 715;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

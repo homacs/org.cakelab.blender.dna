@@ -30,7 +30,7 @@ public class CustomData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 558;
+	public static final int __DNA__SDNA_INDEX = 557;
 
 	/**
 	 * Field descriptor (offset) for struct member 'layers'.

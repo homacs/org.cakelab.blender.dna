@@ -27,7 +27,7 @@ public class VolumeRender extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 789;
+	public static final int __DNA__SDNA_INDEX = 788;
 
 	/**
 	 * Field descriptor (offset) for struct member 'precision'.

@@ -30,7 +30,7 @@ public class View3DOverlay extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 230;
+	public static final int __DNA__SDNA_INDEX = 229;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.

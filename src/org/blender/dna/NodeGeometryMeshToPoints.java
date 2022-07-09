@@ -27,7 +27,7 @@ public class NodeGeometryMeshToPoints extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 528;
+	public static final int __DNA__SDNA_INDEX = 527;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.

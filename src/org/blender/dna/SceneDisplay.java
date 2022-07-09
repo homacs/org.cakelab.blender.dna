@@ -30,7 +30,7 @@ public class SceneDisplay extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 222;
+	public static final int __DNA__SDNA_INDEX = 221;
 
 	/**
 	 * Field descriptor (offset) for struct member 'light_direction'.

@@ -30,7 +30,7 @@ public class LineStyleThicknessModifier_Calligraphy extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 751;
+	public static final int __DNA__SDNA_INDEX = 750;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

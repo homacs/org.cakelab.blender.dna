@@ -30,7 +30,7 @@ public class SpaceScript extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 255;
+	public static final int __DNA__SDNA_INDEX = 254;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

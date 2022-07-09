@@ -28,7 +28,7 @@ public class NodeColorBalance extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 449;
+	public static final int __DNA__SDNA_INDEX = 448;
 
 	/**
 	 * Field descriptor (offset) for struct member 'slope'.

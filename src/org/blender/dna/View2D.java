@@ -31,7 +31,7 @@ public class View2D extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 233;
+	public static final int __DNA__SDNA_INDEX = 232;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tot'.

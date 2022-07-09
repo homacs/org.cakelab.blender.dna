@@ -30,7 +30,7 @@ public class uiPreview extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 308;
+	public static final int __DNA__SDNA_INDEX = 307;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

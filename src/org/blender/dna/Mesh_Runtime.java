@@ -19,7 +19,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Runtime data, not saved in files. </p>
  */
 
-@CMetaData(size32=144, size64=200)
+@CMetaData(size32=128, size64=192)
 public class Mesh_Runtime extends CFacade {
 
 	/**
@@ -392,193 +392,53 @@ public class Mesh_Runtime extends CFacade {
 	public static final long[] __DNA__FIELD__wrapper_type_finalize = new long[]{99, 143};
 
 	/**
-	 * Field descriptor (offset) for struct member 'subsurf_session_uuid'.
+	 * Field descriptor (offset) for struct member 'subsurf_runtime_data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Settings for lazily evaluating the subdivision on the CPU if needed. These are set in the modifier when GPU subdivision can be performed. </p>
+	 * <p> Settings for lazily evaluating the subdivision on the CPU if needed. These are set in the modifier when GPU subdivision can be performed, and owned by the by the modifier in the object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__subsurf_session_uuid);
-	 * CPointer&lt;SessionUUID&gt; p_subsurf_session_uuid = p.cast(new Class[]{SessionUUID.class});
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__subsurf_runtime_data);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_subsurf_runtime_data = p.cast(new Class[]{CPointer.class, Object.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'subsurf_session_uuid'</li>
-	 * <li>Signature: 'SessionUUID'</li>
-	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * <li>Field: 'subsurf_runtime_data'</li>
+	 * <li>Signature: 'SubsurfRuntimeData*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subsurf_session_uuid = new long[]{100, 144};
+	public static final long[] __DNA__FIELD__subsurf_runtime_data = new long[]{100, 144};
 
 	/**
-	 * Field descriptor (offset) for struct member 'subsurf_resolution'.
+	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__subsurf_resolution);
-	 * CPointer&lt;Byte&gt; p_subsurf_resolution = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD___pad1);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad1 = p.cast(new Class[]{CPointer.class, Object.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'subsurf_resolution'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subsurf_resolution = new long[]{108, 152};
-
-	/**
-	 * Field descriptor (offset) for struct member 'subsurf_do_loop_normals'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__subsurf_do_loop_normals);
-	 * CPointer&lt;Byte&gt; p_subsurf_do_loop_normals = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'subsurf_do_loop_normals'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__subsurf_do_loop_normals = new long[]{109, 153};
-
-	/**
-	 * Field descriptor (offset) for struct member 'subsurf_apply_render'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__subsurf_apply_render);
-	 * CPointer&lt;Byte&gt; p_subsurf_apply_render = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'subsurf_apply_render'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__subsurf_apply_render = new long[]{110, 154};
-
-	/**
-	 * Field descriptor (offset) for struct member 'subsurf_use_optimal_display'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__subsurf_use_optimal_display);
-	 * CPointer&lt;Byte&gt; p_subsurf_use_optimal_display = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'subsurf_use_optimal_display'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__subsurf_use_optimal_display = new long[]{111, 155};
-
-	/**
-	 * Field descriptor (offset) for struct member 'subsurf_totvert'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Cached from the draw code for stats display. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__subsurf_totvert);
-	 * CPointer&lt;Integer&gt; p_subsurf_totvert = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'subsurf_totvert'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__subsurf_totvert = new long[]{112, 156};
-
-	/**
-	 * Field descriptor (offset) for struct member 'subsurf_totedge'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__subsurf_totedge);
-	 * CPointer&lt;Integer&gt; p_subsurf_totedge = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'subsurf_totedge'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__subsurf_totedge = new long[]{116, 160};
-
-	/**
-	 * Field descriptor (offset) for struct member 'subsurf_totpoly'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__subsurf_totpoly);
-	 * CPointer&lt;Integer&gt; p_subsurf_totpoly = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'subsurf_totpoly'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__subsurf_totpoly = new long[]{120, 164};
-
-	/**
-	 * Field descriptor (offset) for struct member 'subsurf_totloop'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh_Runtime mesh_runtime = ...;
-	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__subsurf_totloop);
-	 * CPointer&lt;Integer&gt; p_subsurf_totloop = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'subsurf_totloop'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__subsurf_totloop = new long[]{124, 168};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{104, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Caches for lazily computed vertex and polygon normals. These are stored here rather than in {@link CustomData}  because they can be calculated on a const mesh, and adding custom data layers on a const mesh is not thread-safe. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -591,17 +451,14 @@ public class Mesh_Runtime extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad2'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{128, 172};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{108, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vert_normals_dirty'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Caches for lazily computed vertex and polygon normals. These are stored here rather than in {@link CustomData}  because they can be calculated on a const mesh, and adding custom data layers on a const mesh is not thread-safe. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -618,7 +475,7 @@ public class Mesh_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vert_normals_dirty = new long[]{130, 174};
+	public static final long[] __DNA__FIELD__vert_normals_dirty = new long[]{114, 166};
 
 	/**
 	 * Field descriptor (offset) for struct member 'poly_normals_dirty'.
@@ -638,7 +495,7 @@ public class Mesh_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__poly_normals_dirty = new long[]{131, 175};
+	public static final long[] __DNA__FIELD__poly_normals_dirty = new long[]{115, 167};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subsurf_face_dot_tags'.
@@ -661,7 +518,7 @@ public class Mesh_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subsurf_face_dot_tags = new long[]{140, 192};
+	public static final long[] __DNA__FIELD__subsurf_face_dot_tags = new long[]{124, 184};
 
 	public Mesh_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1250,279 +1107,80 @@ public class Mesh_Runtime extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'subsurf_session_uuid'.
+	 * Get method for struct member 'subsurf_runtime_data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Settings for lazily evaluating the subdivision on the CPU if needed. These are set in the modifier when GPU subdivision can be performed. </p>
-	 * @see #__DNA__FIELD__subsurf_session_uuid
+	 * <p> Settings for lazily evaluating the subdivision on the CPU if needed. These are set in the modifier when GPU subdivision can be performed, and owned by the by the modifier in the object. </p>
+	 * @see #__DNA__FIELD__subsurf_runtime_data
 	 */
 	
-	public SessionUUID getSubsurf_session_uuid() throws IOException
+	public CPointer<Object> getSubsurf_runtime_data() throws IOException
 	{
+		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			return new SessionUUID(__io__address + 144, __io__block, __io__blockTable);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			return new SessionUUID(__io__address + 100, __io__block, __io__blockTable);
+			__dna__targetAddress = __io__block.readLong(__io__address + 100);
 		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member 'subsurf_session_uuid'.
+	 * Set method for struct member 'subsurf_runtime_data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Settings for lazily evaluating the subdivision on the CPU if needed. These are set in the modifier when GPU subdivision can be performed. </p>
-	 * @see #__DNA__FIELD__subsurf_session_uuid
+	 * <p> Settings for lazily evaluating the subdivision on the CPU if needed. These are set in the modifier when GPU subdivision can be performed, and owned by the by the modifier in the object. </p>
+	 * @see #__DNA__FIELD__subsurf_runtime_data
 	 */
 	
-	public void setSubsurf_session_uuid(SessionUUID subsurf_session_uuid) throws IOException
+	public void setSubsurf_runtime_data(CPointer<Object> subsurf_runtime_data) throws IOException
 	{
-		long __dna__offset;
+		long __address = ((subsurf_runtime_data == null) ? 0 : subsurf_runtime_data.getAddress());
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 144;
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__dna__offset = 100;
-		}
-		if (__io__equals(subsurf_session_uuid, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, subsurf_session_uuid)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, subsurf_session_uuid);
-		} else {
-			__io__generic__copy( getSubsurf_session_uuid(), subsurf_session_uuid);
+			__io__block.writeLong(__io__address + 100, __address);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'subsurf_resolution'.
-	 * @see #__DNA__FIELD__subsurf_resolution
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public byte getSubsurf_resolution() throws IOException
+	public CPointer<Object> get_pad1() throws IOException
 	{
+		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			return __io__block.readByte(__io__address + 108);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member 'subsurf_resolution'.
-	 * @see #__DNA__FIELD__subsurf_resolution
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public void setSubsurf_resolution(byte subsurf_resolution) throws IOException
+	public void set_pad1(CPointer<Object> _pad1) throws IOException
 	{
+		long __address = ((_pad1 == null) ? 0 : _pad1.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 152, subsurf_resolution);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeByte(__io__address + 108, subsurf_resolution);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'subsurf_do_loop_normals'.
-	 * @see #__DNA__FIELD__subsurf_do_loop_normals
-	 */
-	
-	public byte getSubsurf_do_loop_normals() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 153);
-		} else {
-			return __io__block.readByte(__io__address + 109);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'subsurf_do_loop_normals'.
-	 * @see #__DNA__FIELD__subsurf_do_loop_normals
-	 */
-	
-	public void setSubsurf_do_loop_normals(byte subsurf_do_loop_normals) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 153, subsurf_do_loop_normals);
-		} else {
-			__io__block.writeByte(__io__address + 109, subsurf_do_loop_normals);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'subsurf_apply_render'.
-	 * @see #__DNA__FIELD__subsurf_apply_render
-	 */
-	
-	public byte getSubsurf_apply_render() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 154);
-		} else {
-			return __io__block.readByte(__io__address + 110);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'subsurf_apply_render'.
-	 * @see #__DNA__FIELD__subsurf_apply_render
-	 */
-	
-	public void setSubsurf_apply_render(byte subsurf_apply_render) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 154, subsurf_apply_render);
-		} else {
-			__io__block.writeByte(__io__address + 110, subsurf_apply_render);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'subsurf_use_optimal_display'.
-	 * @see #__DNA__FIELD__subsurf_use_optimal_display
-	 */
-	
-	public byte getSubsurf_use_optimal_display() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 155);
-		} else {
-			return __io__block.readByte(__io__address + 111);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'subsurf_use_optimal_display'.
-	 * @see #__DNA__FIELD__subsurf_use_optimal_display
-	 */
-	
-	public void setSubsurf_use_optimal_display(byte subsurf_use_optimal_display) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 155, subsurf_use_optimal_display);
-		} else {
-			__io__block.writeByte(__io__address + 111, subsurf_use_optimal_display);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'subsurf_totvert'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Cached from the draw code for stats display. </p>
-	 * @see #__DNA__FIELD__subsurf_totvert
-	 */
-	
-	public int getSubsurf_totvert() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 156);
-		} else {
-			return __io__block.readInt(__io__address + 112);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'subsurf_totvert'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Cached from the draw code for stats display. </p>
-	 * @see #__DNA__FIELD__subsurf_totvert
-	 */
-	
-	public void setSubsurf_totvert(int subsurf_totvert) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 156, subsurf_totvert);
-		} else {
-			__io__block.writeInt(__io__address + 112, subsurf_totvert);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'subsurf_totedge'.
-	 * @see #__DNA__FIELD__subsurf_totedge
-	 */
-	
-	public int getSubsurf_totedge() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 160);
-		} else {
-			return __io__block.readInt(__io__address + 116);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'subsurf_totedge'.
-	 * @see #__DNA__FIELD__subsurf_totedge
-	 */
-	
-	public void setSubsurf_totedge(int subsurf_totedge) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 160, subsurf_totedge);
-		} else {
-			__io__block.writeInt(__io__address + 116, subsurf_totedge);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'subsurf_totpoly'.
-	 * @see #__DNA__FIELD__subsurf_totpoly
-	 */
-	
-	public int getSubsurf_totpoly() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 164);
-		} else {
-			return __io__block.readInt(__io__address + 120);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'subsurf_totpoly'.
-	 * @see #__DNA__FIELD__subsurf_totpoly
-	 */
-	
-	public void setSubsurf_totpoly(int subsurf_totpoly) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 164, subsurf_totpoly);
-		} else {
-			__io__block.writeInt(__io__address + 120, subsurf_totpoly);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'subsurf_totloop'.
-	 * @see #__DNA__FIELD__subsurf_totloop
-	 */
-	
-	public int getSubsurf_totloop() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 168);
-		} else {
-			return __io__block.readInt(__io__address + 124);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'subsurf_totloop'.
-	 * @see #__DNA__FIELD__subsurf_totloop
-	 */
-	
-	public void setSubsurf_totloop(int subsurf_totloop) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 168, subsurf_totloop);
-		} else {
-			__io__block.writeInt(__io__address + 124, subsurf_totloop);
+			__io__block.writeLong(__io__address + 104, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member '_pad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Caches for lazily computed vertex and polygon normals. These are stored here rather than in {@link CustomData}  because they can be calculated on a const mesh, and adding custom data layers on a const mesh is not thread-safe. </p>
 	 * @see #__DNA__FIELD___pad2
 	 */
 	
@@ -1530,17 +1188,20 @@ public class Mesh_Runtime extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			2
+			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member '_pad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Caches for lazily computed vertex and polygon normals. These are stored here rather than in {@link CustomData}  because they can be calculated on a const mesh, and adding custom data layers on a const mesh is not thread-safe. </p>
 	 * @see #__DNA__FIELD___pad2
 	 */
 	
@@ -1548,9 +1209,9 @@ public class Mesh_Runtime extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 172;
+			__dna__offset = 160;
 		} else {
-			__dna__offset = 128;
+			__dna__offset = 108;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -1563,35 +1224,29 @@ public class Mesh_Runtime extends CFacade {
 
 	/**
 	 * Get method for struct member 'vert_normals_dirty'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Caches for lazily computed vertex and polygon normals. These are stored here rather than in {@link CustomData}  because they can be calculated on a const mesh, and adding custom data layers on a const mesh is not thread-safe. </p>
 	 * @see #__DNA__FIELD__vert_normals_dirty
 	 */
 	
 	public byte getVert_normals_dirty() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 174);
+			return __io__block.readByte(__io__address + 166);
 		} else {
-			return __io__block.readByte(__io__address + 130);
+			return __io__block.readByte(__io__address + 114);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'vert_normals_dirty'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Caches for lazily computed vertex and polygon normals. These are stored here rather than in {@link CustomData}  because they can be calculated on a const mesh, and adding custom data layers on a const mesh is not thread-safe. </p>
 	 * @see #__DNA__FIELD__vert_normals_dirty
 	 */
 	
 	public void setVert_normals_dirty(byte vert_normals_dirty) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 174, vert_normals_dirty);
+			__io__block.writeByte(__io__address + 166, vert_normals_dirty);
 		} else {
-			__io__block.writeByte(__io__address + 130, vert_normals_dirty);
+			__io__block.writeByte(__io__address + 114, vert_normals_dirty);
 		}
 	}
 
@@ -1603,9 +1258,9 @@ public class Mesh_Runtime extends CFacade {
 	public byte getPoly_normals_dirty() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 175);
+			return __io__block.readByte(__io__address + 167);
 		} else {
-			return __io__block.readByte(__io__address + 131);
+			return __io__block.readByte(__io__address + 115);
 		}
 	}
 
@@ -1617,9 +1272,9 @@ public class Mesh_Runtime extends CFacade {
 	public void setPoly_normals_dirty(byte poly_normals_dirty) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 175, poly_normals_dirty);
+			__io__block.writeByte(__io__address + 167, poly_normals_dirty);
 		} else {
-			__io__block.writeByte(__io__address + 131, poly_normals_dirty);
+			__io__block.writeByte(__io__address + 115, poly_normals_dirty);
 		}
 	}
 
@@ -1635,9 +1290,9 @@ public class Mesh_Runtime extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 184);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 140);
+			__dna__targetAddress = __io__block.readLong(__io__address + 124);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
 		return new CPointer<Integer>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -1655,9 +1310,9 @@ public class Mesh_Runtime extends CFacade {
 	{
 		long __address = ((subsurf_face_dot_tags == null) ? 0 : subsurf_face_dot_tags.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 184, __address);
 		} else {
-			__io__block.writeLong(__io__address + 140, __address);
+			__io__block.writeLong(__io__address + 124, __address);
 		}
 	}
 

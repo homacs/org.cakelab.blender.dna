@@ -27,7 +27,7 @@ public class ColorBalanceModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 337;
+	public static final int __DNA__SDNA_INDEX = 336;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

@@ -30,7 +30,7 @@ public class bGPDstroke extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 582;
+	public static final int __DNA__SDNA_INDEX = 581;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

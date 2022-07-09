@@ -31,7 +31,7 @@ public class XrComponentPath extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 779;
+	public static final int __DNA__SDNA_INDEX = 778;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

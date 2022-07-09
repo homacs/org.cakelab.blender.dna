@@ -27,7 +27,7 @@ public class NodeGeometryMeshLine extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 509;
+	public static final int __DNA__SDNA_INDEX = 508;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.

@@ -30,7 +30,7 @@ public class GpWeightPaint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 209;
+	public static final int __DNA__SDNA_INDEX = 208;
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint'.

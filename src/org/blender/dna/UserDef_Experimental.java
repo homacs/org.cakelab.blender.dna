@@ -28,7 +28,7 @@ public class UserDef_Experimental extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 297;
+	public static final int __DNA__SDNA_INDEX = 296;
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_undo_legacy'.

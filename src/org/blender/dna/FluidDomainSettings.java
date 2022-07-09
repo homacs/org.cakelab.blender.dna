@@ -28,7 +28,7 @@ public class FluidDomainSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 670;
+	public static final int __DNA__SDNA_INDEX = 669;
 
 	/**
 	 * Field descriptor (offset) for struct member 'fmd'.

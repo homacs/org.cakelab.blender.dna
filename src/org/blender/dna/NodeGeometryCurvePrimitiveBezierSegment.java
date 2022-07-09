@@ -27,7 +27,7 @@ public class NodeGeometryCurvePrimitiveBezierSegment extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 517;
+	public static final int __DNA__SDNA_INDEX = 516;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.

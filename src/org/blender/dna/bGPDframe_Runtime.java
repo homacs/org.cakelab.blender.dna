@@ -30,7 +30,7 @@ public class bGPDframe_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 583;
+	public static final int __DNA__SDNA_INDEX = 582;
 
 	/**
 	 * Field descriptor (offset) for struct member 'frameid'.

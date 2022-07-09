@@ -27,7 +27,7 @@ public class NodeGeometrySeparateGeometry extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 535;
+	public static final int __DNA__SDNA_INDEX = 534;
 
 	/**
 	 * Field descriptor (offset) for struct member 'domain'.

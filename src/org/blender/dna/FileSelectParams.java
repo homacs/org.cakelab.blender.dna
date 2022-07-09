@@ -30,7 +30,7 @@ public class FileSelectParams extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 246;
+	public static final int __DNA__SDNA_INDEX = 245;
 
 	/**
 	 * Field descriptor (offset) for struct member 'title'.

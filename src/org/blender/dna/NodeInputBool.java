@@ -27,7 +27,7 @@ public class NodeInputBool extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 493;
+	public static final int __DNA__SDNA_INDEX = 492;
 
 	/**
 	 * Field descriptor (offset) for struct member 'boolean'.

@@ -27,7 +27,7 @@ public class CurvePaintSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 215;
+	public static final int __DNA__SDNA_INDEX = 214;
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_type'.

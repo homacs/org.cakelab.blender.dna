@@ -28,7 +28,7 @@ public class NodeVertexCol extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 443;
+	public static final int __DNA__SDNA_INDEX = 442;
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.

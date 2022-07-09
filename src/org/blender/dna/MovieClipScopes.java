@@ -28,7 +28,7 @@ public class MovieClipScopes extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 679;
+	public static final int __DNA__SDNA_INDEX = 678;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ok'.

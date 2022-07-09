@@ -30,7 +30,7 @@ public class ChildParticle extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 564;
+	public static final int __DNA__SDNA_INDEX = 563;
 
 	/**
 	 * Field descriptor (offset) for struct member 'num'.

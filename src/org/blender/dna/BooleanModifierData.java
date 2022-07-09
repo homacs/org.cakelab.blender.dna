@@ -27,7 +27,7 @@ public class BooleanModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 125;
+	public static final int __DNA__SDNA_INDEX = 124;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

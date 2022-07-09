@@ -54,7 +54,7 @@ public class BoundBox extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 172;
+	public static final int __DNA__SDNA_INDEX = 171;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vec'.

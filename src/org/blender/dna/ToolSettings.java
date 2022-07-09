@@ -28,7 +28,7 @@ public class ToolSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 218;
+	public static final int __DNA__SDNA_INDEX = 217;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vpaint'.

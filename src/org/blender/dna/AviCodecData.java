@@ -32,7 +32,7 @@ public class AviCodecData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 185;
+	public static final int __DNA__SDNA_INDEX = 184;
 
 	/**
 	 * Field descriptor (offset) for struct member 'lpFormat'.

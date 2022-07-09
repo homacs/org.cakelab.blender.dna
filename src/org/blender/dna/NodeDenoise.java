@@ -27,7 +27,7 @@ public class NodeDenoise extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 489;
+	public static final int __DNA__SDNA_INDEX = 488;
 
 	/**
 	 * Field descriptor (offset) for struct member 'hdr'.

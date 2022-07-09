@@ -28,7 +28,7 @@ public class uiList extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 306;
+	public static final int __DNA__SDNA_INDEX = 305;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

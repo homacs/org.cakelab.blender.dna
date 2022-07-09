@@ -27,7 +27,7 @@ public class MDefInfluence extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 126;
+	public static final int __DNA__SDNA_INDEX = 125;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vertex'.

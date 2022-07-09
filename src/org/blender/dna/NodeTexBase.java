@@ -27,7 +27,7 @@ public class NodeTexBase extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 455;
+	public static final int __DNA__SDNA_INDEX = 454;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tex_mapping'.

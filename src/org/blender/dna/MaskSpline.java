@@ -27,7 +27,7 @@ public class MaskSpline extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 702;
+	public static final int __DNA__SDNA_INDEX = 701;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

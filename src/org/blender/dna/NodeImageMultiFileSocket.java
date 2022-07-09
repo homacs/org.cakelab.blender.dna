@@ -28,7 +28,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 439;
+	public static final int __DNA__SDNA_INDEX = 438;
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_render_format'.

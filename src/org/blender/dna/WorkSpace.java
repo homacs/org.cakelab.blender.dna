@@ -28,7 +28,7 @@ public class WorkSpace extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 768;
+	public static final int __DNA__SDNA_INDEX = 767;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.

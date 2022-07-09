@@ -27,7 +27,7 @@ public class CollectionObject extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 353;
+	public static final int __DNA__SDNA_INDEX = 352;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

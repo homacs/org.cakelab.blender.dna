@@ -28,7 +28,7 @@ public class bArmature extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 357;
+	public static final int __DNA__SDNA_INDEX = 356;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.

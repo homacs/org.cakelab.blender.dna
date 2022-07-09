@@ -31,7 +31,7 @@ public class MeshStatVis extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 216;
+	public static final int __DNA__SDNA_INDEX = 215;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.

@@ -28,7 +28,7 @@ public class GlowShaderFxData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 623;
+	public static final int __DNA__SDNA_INDEX = 622;
 
 	/**
 	 * Field descriptor (offset) for struct member 'shaderfx'.

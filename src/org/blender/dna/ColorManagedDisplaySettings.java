@@ -28,7 +28,7 @@ public class ColorManagedDisplaySettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 545;
+	public static final int __DNA__SDNA_INDEX = 544;
 
 	/**
 	 * Field descriptor (offset) for struct member 'display_device'.

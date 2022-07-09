@@ -30,7 +30,7 @@ public class bSameVolumeConstraint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 383;
+	public static final int __DNA__SDNA_INDEX = 382;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.

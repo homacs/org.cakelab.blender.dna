@@ -28,7 +28,7 @@ public class bSound extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 352;
+	public static final int __DNA__SDNA_INDEX = 351;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.

@@ -28,7 +28,7 @@ public class ThickGpencilModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 594;
+	public static final int __DNA__SDNA_INDEX = 593;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

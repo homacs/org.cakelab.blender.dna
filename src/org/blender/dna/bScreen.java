@@ -28,7 +28,7 @@ public class bScreen extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 299;
+	public static final int __DNA__SDNA_INDEX = 298;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.

@@ -28,7 +28,7 @@ public class MaskSpaceInfo extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 245;
+	public static final int __DNA__SDNA_INDEX = 244;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask'.

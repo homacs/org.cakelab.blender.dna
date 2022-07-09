@@ -27,7 +27,7 @@ public class SequencerMaskModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 341;
+	public static final int __DNA__SDNA_INDEX = 340;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

@@ -27,7 +27,7 @@ public class NodeGeometryInputNamedAttribute extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 531;
+	public static final int __DNA__SDNA_INDEX = 530;
 
 	/**
 	 * Field descriptor (offset) for struct member 'data_type'.

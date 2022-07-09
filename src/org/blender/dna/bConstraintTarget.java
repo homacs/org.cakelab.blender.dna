@@ -30,7 +30,7 @@ public class bConstraintTarget extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 374;
+	public static final int __DNA__SDNA_INDEX = 373;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

@@ -30,7 +30,7 @@ public class SpaceSeq extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 244;
+	public static final int __DNA__SDNA_INDEX = 243;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

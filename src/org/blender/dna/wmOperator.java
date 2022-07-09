@@ -30,7 +30,7 @@ public class wmOperator extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 638;
+	public static final int __DNA__SDNA_INDEX = 637;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

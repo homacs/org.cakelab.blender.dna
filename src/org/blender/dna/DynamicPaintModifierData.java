@@ -28,7 +28,7 @@ public class DynamicPaintModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 145;
+	public static final int __DNA__SDNA_INDEX = 144;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

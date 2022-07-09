@@ -30,7 +30,7 @@ public class NodeLensDist extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 448;
+	public static final int __DNA__SDNA_INDEX = 447;
 
 	/**
 	 * Field descriptor (offset) for struct member 'jit'.

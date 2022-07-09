@@ -31,7 +31,7 @@ public class bGPDcurve_point extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 579;
+	public static final int __DNA__SDNA_INDEX = 578;
 
 	/**
 	 * Field descriptor (offset) for struct member 'bezt'.

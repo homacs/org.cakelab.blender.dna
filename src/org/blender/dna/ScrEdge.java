@@ -28,7 +28,7 @@ public class ScrEdge extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 301;
+	public static final int __DNA__SDNA_INDEX = 300;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

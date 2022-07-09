@@ -27,7 +27,7 @@ public class BoidRuleGoalAvoid extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 662;
+	public static final int __DNA__SDNA_INDEX = 661;
 
 	/**
 	 * Field descriptor (offset) for struct member 'rule'.

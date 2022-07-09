@@ -30,7 +30,7 @@ public class SpaceLink extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 234;
+	public static final int __DNA__SDNA_INDEX = 233;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

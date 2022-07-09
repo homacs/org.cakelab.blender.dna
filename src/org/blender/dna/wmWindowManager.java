@@ -30,7 +30,7 @@ public class wmWindowManager extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 631;
+	public static final int __DNA__SDNA_INDEX = 630;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.

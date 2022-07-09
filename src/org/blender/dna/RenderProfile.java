@@ -31,7 +31,7 @@ public class RenderProfile extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 194;
+	public static final int __DNA__SDNA_INDEX = 193;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

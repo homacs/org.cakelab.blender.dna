@@ -30,7 +30,7 @@ public class ParticleEditSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 202;
+	public static final int __DNA__SDNA_INDEX = 201;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.

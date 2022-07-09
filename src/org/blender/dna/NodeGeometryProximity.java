@@ -27,7 +27,7 @@ public class NodeGeometryProximity extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 502;
+	public static final int __DNA__SDNA_INDEX = 501;
 
 	/**
 	 * Field descriptor (offset) for struct member 'target_element'.

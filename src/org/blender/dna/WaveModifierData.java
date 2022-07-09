@@ -28,7 +28,7 @@ public class WaveModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 118;
+	public static final int __DNA__SDNA_INDEX = 117;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

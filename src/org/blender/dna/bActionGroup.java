@@ -31,7 +31,7 @@ public class bActionGroup extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 366;
+	public static final int __DNA__SDNA_INDEX = 365;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

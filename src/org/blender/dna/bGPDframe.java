@@ -29,7 +29,7 @@ public class bGPDframe extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 584;
+	public static final int __DNA__SDNA_INDEX = 583;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

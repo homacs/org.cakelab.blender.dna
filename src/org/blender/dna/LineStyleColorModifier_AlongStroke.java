@@ -29,7 +29,7 @@ public class LineStyleColorModifier_AlongStroke extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 713;
+	public static final int __DNA__SDNA_INDEX = 712;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

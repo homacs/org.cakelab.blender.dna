@@ -27,7 +27,7 @@ public class NodeTexBrick extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 459;
+	public static final int __DNA__SDNA_INDEX = 458;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.

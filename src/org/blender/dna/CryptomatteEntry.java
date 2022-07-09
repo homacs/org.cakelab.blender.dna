@@ -28,7 +28,7 @@ public class CryptomatteEntry extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 485;
+	public static final int __DNA__SDNA_INDEX = 484;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

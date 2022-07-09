@@ -27,7 +27,7 @@ public class bNodeLink extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 411;
+	public static final int __DNA__SDNA_INDEX = 410;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

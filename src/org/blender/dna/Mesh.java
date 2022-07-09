@@ -19,7 +19,7 @@ import org.cakelab.blender.nio.CPointer;
  * Wrapper for referencing Objects in a Scene
  */
 
-@CMetaData(size32=1656, size64=1896)
+@CMetaData(size32=1640, size64=1888)
 public class Mesh extends CFacade {
 
 	/**
@@ -1314,7 +1314,7 @@ public class Mesh extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'Mesh_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 144/200</li>
+	 * <li>Actual Size (32bit/64bit): 128/192</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__runtime = new long[]{1512, 1696};

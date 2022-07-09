@@ -27,7 +27,7 @@ public class GlowVars extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 329;
+	public static final int __DNA__SDNA_INDEX = 328;
 
 	/**
 	 * Field descriptor (offset) for struct member 'fMini'.

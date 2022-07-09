@@ -30,7 +30,7 @@ public class bFollowTrackConstraint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 401;
+	public static final int __DNA__SDNA_INDEX = 400;
 
 	/**
 	 * Field descriptor (offset) for struct member 'clip'.
