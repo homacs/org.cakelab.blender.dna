@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,15 +25,15 @@ public class MovieTrackingCamera extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MovieTrackingCamera.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 629;
 
 	/**
 	 * Field descriptor (offset) for struct member 'intrinsics'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Intrinsics handle. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +56,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'distortion_model'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distortion model used for camera lenses
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,8 +99,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sensor_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Width of CCD sensor in millimeters<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Width of CCD sensor in millimeters
+	 * <h4>Blender Source Code</h4>
 	 * <p> Width of CCD sensor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -122,8 +124,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pixel_aspect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Pixel aspect ratio<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Pixel aspect ratio
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pixel aspect ratio. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -146,7 +149,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'focal'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Focal length. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,8 +172,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'units'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Units used for camera focal length<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Units used for camera focal length
+	 * <h4>Blender Source Code</h4>
 	 * <p> Units of focal length user is working with. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -213,8 +217,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'principal'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Optical center of lens<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Optical center of lens
+	 * <h4>Blender Source Code</h4>
 	 * <p> Principal point. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -237,8 +242,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'k1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * First coefficient of third order polynomial radial distortion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * First coefficient of third order polynomial radial distortion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Polynomial distortion Polynomial radial distortion. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -261,7 +267,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'k2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Second coefficient of third order polynomial radial distortion
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -284,7 +290,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'k3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Third coefficient of third order polynomial radial distortion
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -307,8 +313,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'division_k1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * First coefficient of second order division distortion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * First coefficient of second order division distortion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Division distortion model coefficients </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -331,7 +338,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'division_k2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Second coefficient of second order division distortion
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -354,8 +361,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'nuke_k1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * First coefficient of second order Nuke distortion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * First coefficient of second order Nuke distortion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nuke distortion model coefficients </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -378,7 +386,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'nuke_k2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Second coefficient of second order Nuke distortion
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -401,8 +409,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'brown_k1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * First coefficient of fourth order Brown-Conrady radial distortion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * First coefficient of fourth order Brown-Conrady radial distortion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Brown-Conrady distortion model coefficients Brown-Conrady radial distortion </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -425,7 +434,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'brown_k2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Second coefficient of fourth order Brown-Conrady radial distortion
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -448,7 +457,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'brown_k3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Third coefficient of fourth order Brown-Conrady radial distortion
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -471,7 +480,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'brown_k4'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Fourth coefficient of fourth order Brown-Conrady radial distortion
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -494,8 +503,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'brown_p1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * First coefficient of second order Brown-Conrady tangential distortion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * First coefficient of second order Brown-Conrady tangential distortion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Brown-Conrady tangential distortion </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -518,7 +528,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'brown_p2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Second coefficient of second order Brown-Conrady tangential distortion
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -549,7 +559,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'intrinsics'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Intrinsics handle. </p>
 	 * @see #__DNA__FIELD__intrinsics
 	 */
@@ -569,7 +579,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'intrinsics'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Intrinsics handle. </p>
 	 * @see #__DNA__FIELD__intrinsics
 	 */
@@ -587,7 +597,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'distortion_model'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distortion model used for camera lenses
 	 * @see #__DNA__FIELD__distortion_model
 	 */
@@ -604,7 +614,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'distortion_model'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Distortion model used for camera lenses
 	 * @see #__DNA__FIELD__distortion_model
 	 */
@@ -661,8 +671,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'sensor_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Width of CCD sensor in millimeters<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Width of CCD sensor in millimeters
+	 * <h4>Blender Source Code</h4>
 	 * <p> Width of CCD sensor. </p>
 	 * @see #__DNA__FIELD__sensor_width
 	 */
@@ -679,8 +690,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'sensor_width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Width of CCD sensor in millimeters<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Width of CCD sensor in millimeters
+	 * <h4>Blender Source Code</h4>
 	 * <p> Width of CCD sensor. </p>
 	 * @see #__DNA__FIELD__sensor_width
 	 */
@@ -697,8 +709,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'pixel_aspect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Pixel aspect ratio<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Pixel aspect ratio
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pixel aspect ratio. </p>
 	 * @see #__DNA__FIELD__pixel_aspect
 	 */
@@ -715,8 +728,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'pixel_aspect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Pixel aspect ratio<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Pixel aspect ratio
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pixel aspect ratio. </p>
 	 * @see #__DNA__FIELD__pixel_aspect
 	 */
@@ -733,7 +747,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'focal'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Focal length. </p>
 	 * @see #__DNA__FIELD__focal
 	 */
@@ -750,7 +764,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'focal'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Focal length. </p>
 	 * @see #__DNA__FIELD__focal
 	 */
@@ -767,8 +781,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'units'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Units used for camera focal length<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Units used for camera focal length
+	 * <h4>Blender Source Code</h4>
 	 * <p> Units of focal length user is working with. </p>
 	 * @see #__DNA__FIELD__units
 	 */
@@ -785,8 +800,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'units'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Units used for camera focal length<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Units used for camera focal length
+	 * <h4>Blender Source Code</h4>
 	 * <p> Units of focal length user is working with. </p>
 	 * @see #__DNA__FIELD__units
 	 */
@@ -843,8 +859,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'principal'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Optical center of lens<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Optical center of lens
+	 * <h4>Blender Source Code</h4>
 	 * <p> Principal point. </p>
 	 * @see #__DNA__FIELD__principal
 	 */
@@ -865,8 +882,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'principal'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Optical center of lens<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Optical center of lens
+	 * <h4>Blender Source Code</h4>
 	 * <p> Principal point. </p>
 	 * @see #__DNA__FIELD__principal
 	 */
@@ -891,8 +909,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'k1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * First coefficient of third order polynomial radial distortion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * First coefficient of third order polynomial radial distortion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Polynomial distortion Polynomial radial distortion. </p>
 	 * @see #__DNA__FIELD__k1
 	 */
@@ -909,8 +928,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'k1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * First coefficient of third order polynomial radial distortion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * First coefficient of third order polynomial radial distortion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Polynomial distortion Polynomial radial distortion. </p>
 	 * @see #__DNA__FIELD__k1
 	 */
@@ -927,7 +947,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'k2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Second coefficient of third order polynomial radial distortion
 	 * @see #__DNA__FIELD__k2
 	 */
@@ -944,7 +964,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'k2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Second coefficient of third order polynomial radial distortion
 	 * @see #__DNA__FIELD__k2
 	 */
@@ -961,7 +981,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'k3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Third coefficient of third order polynomial radial distortion
 	 * @see #__DNA__FIELD__k3
 	 */
@@ -978,7 +998,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'k3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Third coefficient of third order polynomial radial distortion
 	 * @see #__DNA__FIELD__k3
 	 */
@@ -995,8 +1015,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'division_k1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * First coefficient of second order division distortion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * First coefficient of second order division distortion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Division distortion model coefficients </p>
 	 * @see #__DNA__FIELD__division_k1
 	 */
@@ -1013,8 +1034,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'division_k1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * First coefficient of second order division distortion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * First coefficient of second order division distortion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Division distortion model coefficients </p>
 	 * @see #__DNA__FIELD__division_k1
 	 */
@@ -1031,7 +1053,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'division_k2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Second coefficient of second order division distortion
 	 * @see #__DNA__FIELD__division_k2
 	 */
@@ -1048,7 +1070,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'division_k2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Second coefficient of second order division distortion
 	 * @see #__DNA__FIELD__division_k2
 	 */
@@ -1065,8 +1087,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'nuke_k1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * First coefficient of second order Nuke distortion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * First coefficient of second order Nuke distortion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nuke distortion model coefficients </p>
 	 * @see #__DNA__FIELD__nuke_k1
 	 */
@@ -1083,8 +1106,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'nuke_k1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * First coefficient of second order Nuke distortion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * First coefficient of second order Nuke distortion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nuke distortion model coefficients </p>
 	 * @see #__DNA__FIELD__nuke_k1
 	 */
@@ -1101,7 +1125,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'nuke_k2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Second coefficient of second order Nuke distortion
 	 * @see #__DNA__FIELD__nuke_k2
 	 */
@@ -1118,7 +1142,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'nuke_k2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Second coefficient of second order Nuke distortion
 	 * @see #__DNA__FIELD__nuke_k2
 	 */
@@ -1135,8 +1159,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'brown_k1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * First coefficient of fourth order Brown-Conrady radial distortion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * First coefficient of fourth order Brown-Conrady radial distortion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Brown-Conrady distortion model coefficients Brown-Conrady radial distortion </p>
 	 * @see #__DNA__FIELD__brown_k1
 	 */
@@ -1153,8 +1178,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'brown_k1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * First coefficient of fourth order Brown-Conrady radial distortion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * First coefficient of fourth order Brown-Conrady radial distortion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Brown-Conrady distortion model coefficients Brown-Conrady radial distortion </p>
 	 * @see #__DNA__FIELD__brown_k1
 	 */
@@ -1171,7 +1197,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'brown_k2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Second coefficient of fourth order Brown-Conrady radial distortion
 	 * @see #__DNA__FIELD__brown_k2
 	 */
@@ -1188,7 +1214,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'brown_k2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Second coefficient of fourth order Brown-Conrady radial distortion
 	 * @see #__DNA__FIELD__brown_k2
 	 */
@@ -1205,7 +1231,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'brown_k3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Third coefficient of fourth order Brown-Conrady radial distortion
 	 * @see #__DNA__FIELD__brown_k3
 	 */
@@ -1222,7 +1248,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'brown_k3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Third coefficient of fourth order Brown-Conrady radial distortion
 	 * @see #__DNA__FIELD__brown_k3
 	 */
@@ -1239,7 +1265,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'brown_k4'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Fourth coefficient of fourth order Brown-Conrady radial distortion
 	 * @see #__DNA__FIELD__brown_k4
 	 */
@@ -1256,7 +1282,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'brown_k4'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Fourth coefficient of fourth order Brown-Conrady radial distortion
 	 * @see #__DNA__FIELD__brown_k4
 	 */
@@ -1273,8 +1299,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'brown_p1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * First coefficient of second order Brown-Conrady tangential distortion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * First coefficient of second order Brown-Conrady tangential distortion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Brown-Conrady tangential distortion </p>
 	 * @see #__DNA__FIELD__brown_p1
 	 */
@@ -1291,8 +1318,9 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'brown_p1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * First coefficient of second order Brown-Conrady tangential distortion<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * First coefficient of second order Brown-Conrady tangential distortion
+	 * <h4>Blender Source Code</h4>
 	 * <p> Brown-Conrady tangential distortion </p>
 	 * @see #__DNA__FIELD__brown_p1
 	 */
@@ -1309,7 +1337,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Get method for struct member 'brown_p2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Second coefficient of second order Brown-Conrady tangential distortion
 	 * @see #__DNA__FIELD__brown_p2
 	 */
@@ -1326,7 +1354,7 @@ public class MovieTrackingCamera extends CFacade {
 	/**
 	 * Set method for struct member 'brown_p2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Second coefficient of second order Brown-Conrady tangential distortion
 	 * @see #__DNA__FIELD__brown_p2
 	 */

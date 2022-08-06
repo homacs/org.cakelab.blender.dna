@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MappingInfoModifierData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> not a real modifier </p>
  */
 
@@ -25,8 +27,8 @@ public class MappingInfoModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MappingInfoModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 90;
 
@@ -113,7 +115,7 @@ public class MappingInfoModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -324,7 +326,7 @@ public class MappingInfoModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
@@ -345,7 +347,7 @@ public class MappingInfoModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */

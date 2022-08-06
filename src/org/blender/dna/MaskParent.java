@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,16 +25,17 @@ public class MaskParent extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MaskParent.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 647;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Type of ID-block that can be used<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Type of ID-block that can be used
+	 * <h4>Blender Source Code</h4>
 	 * <p> / int flag; </p><p> Type of parenting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,8 +58,9 @@ public class MaskParent extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Parent Type<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Parent Type
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of parenting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,8 +83,9 @@ public class MaskParent extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * ID-block to which masking element would be parented to or to its property<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * ID-block to which masking element would be parented to or to its property
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ID}  block of entity to which mask/spline is parented to in case of parenting to movie tracking data set to {@link MovieClip}  datablock. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -104,8 +108,9 @@ public class MaskParent extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of parent object in specified data-block to which parenting happens<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of parent object in specified data-block to which parenting happens
+	 * <h4>Blender Source Code</h4>
 	 * <p> Entity of parent to which parenting happened in case of parenting to movie tracking data contains name of layer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -128,8 +133,9 @@ public class MaskParent extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sub_parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of parent sub-object in specified data-block to which parenting happens<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of parent sub-object in specified data-block to which parenting happens
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sub-entity of parent to which parenting happened in case of parenting to movie tracking data contains name of track. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -152,7 +158,7 @@ public class MaskParent extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parent_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Track location at the moment of parenting, stored in mask space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -175,7 +181,7 @@ public class MaskParent extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parent_corners_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original corners of plane track at the moment of parenting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -206,8 +212,9 @@ public class MaskParent extends CFacade {
 	/**
 	 * Get method for struct member 'id_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Type of ID-block that can be used<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Type of ID-block that can be used
+	 * <h4>Blender Source Code</h4>
 	 * <p> / int flag; </p><p> Type of parenting. </p>
 	 * @see #__DNA__FIELD__id_type
 	 */
@@ -224,8 +231,9 @@ public class MaskParent extends CFacade {
 	/**
 	 * Set method for struct member 'id_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Type of ID-block that can be used<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Type of ID-block that can be used
+	 * <h4>Blender Source Code</h4>
 	 * <p> / int flag; </p><p> Type of parenting. </p>
 	 * @see #__DNA__FIELD__id_type
 	 */
@@ -242,8 +250,9 @@ public class MaskParent extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Parent Type<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Parent Type
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of parenting. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -260,8 +269,9 @@ public class MaskParent extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Parent Type<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Parent Type
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of parenting. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -278,8 +288,9 @@ public class MaskParent extends CFacade {
 	/**
 	 * Get method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * ID-block to which masking element would be parented to or to its property<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * ID-block to which masking element would be parented to or to its property
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ID}  block of entity to which mask/spline is parented to in case of parenting to movie tracking data set to {@link MovieClip}  datablock. </p>
 	 * @see #__DNA__FIELD__id
 	 */
@@ -299,8 +310,9 @@ public class MaskParent extends CFacade {
 	/**
 	 * Set method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * ID-block to which masking element would be parented to or to its property<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * ID-block to which masking element would be parented to or to its property
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ID}  block of entity to which mask/spline is parented to in case of parenting to movie tracking data set to {@link MovieClip}  datablock. </p>
 	 * @see #__DNA__FIELD__id
 	 */
@@ -318,8 +330,9 @@ public class MaskParent extends CFacade {
 	/**
 	 * Get method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of parent object in specified data-block to which parenting happens<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of parent object in specified data-block to which parenting happens
+	 * <h4>Blender Source Code</h4>
 	 * <p> Entity of parent to which parenting happened in case of parenting to movie tracking data contains name of layer. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -340,8 +353,9 @@ public class MaskParent extends CFacade {
 	/**
 	 * Set method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of parent object in specified data-block to which parenting happens<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of parent object in specified data-block to which parenting happens
+	 * <h4>Blender Source Code</h4>
 	 * <p> Entity of parent to which parenting happened in case of parenting to movie tracking data contains name of layer. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -366,8 +380,9 @@ public class MaskParent extends CFacade {
 	/**
 	 * Get method for struct member 'sub_parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of parent sub-object in specified data-block to which parenting happens<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of parent sub-object in specified data-block to which parenting happens
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sub-entity of parent to which parenting happened in case of parenting to movie tracking data contains name of track. </p>
 	 * @see #__DNA__FIELD__sub_parent
 	 */
@@ -388,8 +403,9 @@ public class MaskParent extends CFacade {
 	/**
 	 * Set method for struct member 'sub_parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of parent sub-object in specified data-block to which parenting happens<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of parent sub-object in specified data-block to which parenting happens
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sub-entity of parent to which parenting happened in case of parenting to movie tracking data contains name of track. </p>
 	 * @see #__DNA__FIELD__sub_parent
 	 */
@@ -414,7 +430,7 @@ public class MaskParent extends CFacade {
 	/**
 	 * Get method for struct member 'parent_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Track location at the moment of parenting, stored in mask space. </p>
 	 * @see #__DNA__FIELD__parent_orig
 	 */
@@ -435,7 +451,7 @@ public class MaskParent extends CFacade {
 	/**
 	 * Set method for struct member 'parent_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Track location at the moment of parenting, stored in mask space. </p>
 	 * @see #__DNA__FIELD__parent_orig
 	 */
@@ -460,7 +476,7 @@ public class MaskParent extends CFacade {
 	/**
 	 * Get method for struct member 'parent_corners_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original corners of plane track at the moment of parenting. </p>
 	 * @see #__DNA__FIELD__parent_corners_orig
 	 */
@@ -482,7 +498,7 @@ public class MaskParent extends CFacade {
 	/**
 	 * Set method for struct member 'parent_corners_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original corners of plane track at the moment of parenting. </p>
 	 * @see #__DNA__FIELD__parent_corners_orig
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,8 +24,8 @@ public class BoidRuleGoalAvoid extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for BoidRuleGoalAvoid.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 609;
 
@@ -111,7 +112,7 @@ public class BoidRuleGoalAvoid extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'signal_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> signals </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -286,7 +287,7 @@ public class BoidRuleGoalAvoid extends CFacade {
 	/**
 	 * Get method for struct member 'signal_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> signals </p>
 	 * @see #__DNA__FIELD__signal_id
 	 */
@@ -303,7 +304,7 @@ public class BoidRuleGoalAvoid extends CFacade {
 	/**
 	 * Set method for struct member 'signal_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> signals </p>
 	 * @see #__DNA__FIELD__signal_id
 	 */

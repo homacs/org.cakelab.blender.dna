@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,15 +25,15 @@ public class VolumeDisplay extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for VolumeDisplay.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 729;
 
 	/**
 	 * Field descriptor (offset) for struct member 'density'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Thickness of volume display in the viewport
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +56,7 @@ public class VolumeDisplay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'wireframe_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Type of wireframe display
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -78,7 +79,7 @@ public class VolumeDisplay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'wireframe_detail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of detail for wireframe display
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -101,7 +102,7 @@ public class VolumeDisplay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'interpolation_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Interpolation method to use for volumes in solid mode
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -164,7 +165,7 @@ public class VolumeDisplay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'slice_depth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Position of the slice
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -215,7 +216,7 @@ public class VolumeDisplay extends CFacade {
 	/**
 	 * Get method for struct member 'density'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Thickness of volume display in the viewport
 	 * @see #__DNA__FIELD__density
 	 */
@@ -232,7 +233,7 @@ public class VolumeDisplay extends CFacade {
 	/**
 	 * Set method for struct member 'density'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Thickness of volume display in the viewport
 	 * @see #__DNA__FIELD__density
 	 */
@@ -249,7 +250,7 @@ public class VolumeDisplay extends CFacade {
 	/**
 	 * Get method for struct member 'wireframe_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Type of wireframe display
 	 * @see #__DNA__FIELD__wireframe_type
 	 */
@@ -266,7 +267,7 @@ public class VolumeDisplay extends CFacade {
 	/**
 	 * Set method for struct member 'wireframe_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Type of wireframe display
 	 * @see #__DNA__FIELD__wireframe_type
 	 */
@@ -283,7 +284,7 @@ public class VolumeDisplay extends CFacade {
 	/**
 	 * Get method for struct member 'wireframe_detail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of detail for wireframe display
 	 * @see #__DNA__FIELD__wireframe_detail
 	 */
@@ -300,7 +301,7 @@ public class VolumeDisplay extends CFacade {
 	/**
 	 * Set method for struct member 'wireframe_detail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of detail for wireframe display
 	 * @see #__DNA__FIELD__wireframe_detail
 	 */
@@ -317,7 +318,7 @@ public class VolumeDisplay extends CFacade {
 	/**
 	 * Get method for struct member 'interpolation_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Interpolation method to use for volumes in solid mode
 	 * @see #__DNA__FIELD__interpolation_method
 	 */
@@ -334,7 +335,7 @@ public class VolumeDisplay extends CFacade {
 	/**
 	 * Set method for struct member 'interpolation_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Interpolation method to use for volumes in solid mode
 	 * @see #__DNA__FIELD__interpolation_method
 	 */
@@ -407,7 +408,7 @@ public class VolumeDisplay extends CFacade {
 	/**
 	 * Get method for struct member 'slice_depth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Position of the slice
 	 * @see #__DNA__FIELD__slice_depth
 	 */
@@ -424,7 +425,7 @@ public class VolumeDisplay extends CFacade {
 	/**
 	 * Set method for struct member 'slice_depth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Position of the slice
 	 * @see #__DNA__FIELD__slice_depth
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPDstroke'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Grease-Pencil Annotations - 'Stroke' -> A stroke represents a (simplified version) of the curve drawn by the user in one 'mouse-down'->'mouse-up' operation </p>
  */
 
@@ -25,8 +27,8 @@ public class bGPDstroke extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bGPDstroke.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 536;
 
@@ -73,7 +75,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of data-points for stroke. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,7 +98,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'triangles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tessellated triangles for GP Fill. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -119,7 +121,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'totpoints'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of data-points in array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -142,7 +144,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tot_triangles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of triangles in array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -165,7 +167,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Thickness of stroke. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -188,7 +190,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Various settings about this stroke. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -231,7 +233,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'inittime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Init time of stroke. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -254,7 +256,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'colorname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -279,7 +281,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mat_nr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  index. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -302,7 +304,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'caps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Caps mode for each stroke extreme </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -365,7 +367,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fill_opacity_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of opacity for Fill color (used by opacity modifier). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -388,7 +390,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'boundbox_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Min of the bound box used to speedup painting operators. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -411,7 +413,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'boundbox_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Max of the bound box used to speedup painting operators. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -434,7 +436,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uv_rotation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV rotation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -457,7 +459,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uv_translation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV translation (X and Y axis) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -500,7 +502,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'select_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke selection index. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -543,7 +545,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex weight data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -586,7 +588,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vert_color_fill'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex Color for Fill (one for all stroke, A=mix factor). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -609,7 +611,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'editcurve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  used to edit the stroke using Bezier handlers. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -744,7 +746,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of data-points for stroke. </p>
 	 * @see #__DNA__FIELD__points
 	 */
@@ -764,7 +766,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of data-points for stroke. </p>
 	 * @see #__DNA__FIELD__points
 	 */
@@ -782,7 +784,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'triangles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tessellated triangles for GP Fill. </p>
 	 * @see #__DNA__FIELD__triangles
 	 */
@@ -802,7 +804,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'triangles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tessellated triangles for GP Fill. </p>
 	 * @see #__DNA__FIELD__triangles
 	 */
@@ -820,7 +822,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'totpoints'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of data-points in array. </p>
 	 * @see #__DNA__FIELD__totpoints
 	 */
@@ -837,7 +839,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'totpoints'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of data-points in array. </p>
 	 * @see #__DNA__FIELD__totpoints
 	 */
@@ -854,7 +856,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'tot_triangles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of triangles in array. </p>
 	 * @see #__DNA__FIELD__tot_triangles
 	 */
@@ -871,7 +873,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'tot_triangles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of triangles in array. </p>
 	 * @see #__DNA__FIELD__tot_triangles
 	 */
@@ -888,7 +890,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Thickness of stroke. </p>
 	 * @see #__DNA__FIELD__thickness
 	 */
@@ -905,7 +907,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Thickness of stroke. </p>
 	 * @see #__DNA__FIELD__thickness
 	 */
@@ -922,7 +924,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Various settings about this stroke. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -939,7 +941,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Various settings about this stroke. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -996,7 +998,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'inittime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Init time of stroke. </p>
 	 * @see #__DNA__FIELD__inittime
 	 */
@@ -1013,7 +1015,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'inittime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Init time of stroke. </p>
 	 * @see #__DNA__FIELD__inittime
 	 */
@@ -1030,7 +1032,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'colorname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1053,7 +1055,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'colorname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1080,7 +1082,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'mat_nr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  index. </p>
 	 * @see #__DNA__FIELD__mat_nr
 	 */
@@ -1097,7 +1099,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'mat_nr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  index. </p>
 	 * @see #__DNA__FIELD__mat_nr
 	 */
@@ -1114,7 +1116,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'caps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Caps mode for each stroke extreme </p>
 	 * @see #__DNA__FIELD__caps
 	 */
@@ -1135,7 +1137,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'caps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Caps mode for each stroke extreme </p>
 	 * @see #__DNA__FIELD__caps
 	 */
@@ -1228,7 +1230,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'fill_opacity_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of opacity for Fill color (used by opacity modifier). </p>
 	 * @see #__DNA__FIELD__fill_opacity_fac
 	 */
@@ -1245,7 +1247,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'fill_opacity_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of opacity for Fill color (used by opacity modifier). </p>
 	 * @see #__DNA__FIELD__fill_opacity_fac
 	 */
@@ -1262,7 +1264,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'boundbox_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Min of the bound box used to speedup painting operators. </p>
 	 * @see #__DNA__FIELD__boundbox_min
 	 */
@@ -1283,7 +1285,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'boundbox_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Min of the bound box used to speedup painting operators. </p>
 	 * @see #__DNA__FIELD__boundbox_min
 	 */
@@ -1308,7 +1310,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'boundbox_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Max of the bound box used to speedup painting operators. </p>
 	 * @see #__DNA__FIELD__boundbox_max
 	 */
@@ -1329,7 +1331,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'boundbox_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Max of the bound box used to speedup painting operators. </p>
 	 * @see #__DNA__FIELD__boundbox_max
 	 */
@@ -1354,7 +1356,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'uv_rotation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV rotation </p>
 	 * @see #__DNA__FIELD__uv_rotation
 	 */
@@ -1371,7 +1373,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'uv_rotation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV rotation </p>
 	 * @see #__DNA__FIELD__uv_rotation
 	 */
@@ -1388,7 +1390,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'uv_translation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV translation (X and Y axis) </p>
 	 * @see #__DNA__FIELD__uv_translation
 	 */
@@ -1409,7 +1411,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'uv_translation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UV translation (X and Y axis) </p>
 	 * @see #__DNA__FIELD__uv_translation
 	 */
@@ -1462,7 +1464,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'select_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke selection index. </p>
 	 * @see #__DNA__FIELD__select_index
 	 */
@@ -1479,7 +1481,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'select_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stroke selection index. </p>
 	 * @see #__DNA__FIELD__select_index
 	 */
@@ -1536,7 +1538,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'dvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex weight data. </p>
 	 * @see #__DNA__FIELD__dvert
 	 */
@@ -1556,7 +1558,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'dvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex weight data. </p>
 	 * @see #__DNA__FIELD__dvert
 	 */
@@ -1606,7 +1608,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'vert_color_fill'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex Color for Fill (one for all stroke, A=mix factor). </p>
 	 * @see #__DNA__FIELD__vert_color_fill
 	 */
@@ -1627,7 +1629,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'vert_color_fill'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex Color for Fill (one for all stroke, A=mix factor). </p>
 	 * @see #__DNA__FIELD__vert_color_fill
 	 */
@@ -1652,7 +1654,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Get method for struct member 'editcurve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  used to edit the stroke using Bezier handlers. </p>
 	 * @see #__DNA__FIELD__editcurve
 	 */
@@ -1672,7 +1674,7 @@ public class bGPDstroke extends CFacade {
 	/**
 	 * Set method for struct member 'editcurve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  used to edit the stroke using Bezier handlers. </p>
 	 * @see #__DNA__FIELD__editcurve
 	 */

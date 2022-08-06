@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class bSound extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bSound.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 333;
 
@@ -72,7 +73,7 @@ public class bSound extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'packedfile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The packed file. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -95,7 +96,7 @@ public class bSound extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'handle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The handle for audaspace. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -118,7 +119,7 @@ public class bSound extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'newpackedfile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated; used for loading pre 2.5 files. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -301,7 +302,7 @@ public class bSound extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only, always reset in readfile. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -364,7 +365,7 @@ public class bSound extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> int type; struct {@link bSound}  *child_sound; </p><p> Unused currently. The audaspace handle for cache. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -387,7 +388,7 @@ public class bSound extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'waveform'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Waveform display data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -410,7 +411,7 @@ public class bSound extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'playback_handle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The audaspace handle that should actually be played back. Should be cache if cache != NULL; otherwise its handle </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -433,7 +434,7 @@ public class bSound extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'spinlock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Spin-lock for asynchronous loading of sounds. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -540,7 +541,7 @@ public class bSound extends CFacade {
 	/**
 	 * Get method for struct member 'packedfile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The packed file. </p>
 	 * @see #__DNA__FIELD__packedfile
 	 */
@@ -560,7 +561,7 @@ public class bSound extends CFacade {
 	/**
 	 * Set method for struct member 'packedfile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The packed file. </p>
 	 * @see #__DNA__FIELD__packedfile
 	 */
@@ -578,7 +579,7 @@ public class bSound extends CFacade {
 	/**
 	 * Get method for struct member 'handle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The handle for audaspace. </p>
 	 * @see #__DNA__FIELD__handle
 	 */
@@ -598,7 +599,7 @@ public class bSound extends CFacade {
 	/**
 	 * Set method for struct member 'handle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The handle for audaspace. </p>
 	 * @see #__DNA__FIELD__handle
 	 */
@@ -616,7 +617,7 @@ public class bSound extends CFacade {
 	/**
 	 * Get method for struct member 'newpackedfile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated; used for loading pre 2.5 files. </p>
 	 * @see #__DNA__FIELD__newpackedfile
 	 */
@@ -636,7 +637,7 @@ public class bSound extends CFacade {
 	/**
 	 * Set method for struct member 'newpackedfile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated; used for loading pre 2.5 files. </p>
 	 * @see #__DNA__FIELD__newpackedfile
 	 */
@@ -882,7 +883,7 @@ public class bSound extends CFacade {
 	/**
 	 * Get method for struct member 'tags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only, always reset in readfile. </p>
 	 * @see #__DNA__FIELD__tags
 	 */
@@ -899,7 +900,7 @@ public class bSound extends CFacade {
 	/**
 	 * Set method for struct member 'tags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only, always reset in readfile. </p>
 	 * @see #__DNA__FIELD__tags
 	 */
@@ -984,7 +985,7 @@ public class bSound extends CFacade {
 	/**
 	 * Get method for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> int type; struct {@link bSound}  *child_sound; </p><p> Unused currently. The audaspace handle for cache. </p>
 	 * @see #__DNA__FIELD__cache
 	 */
@@ -1004,7 +1005,7 @@ public class bSound extends CFacade {
 	/**
 	 * Set method for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> int type; struct {@link bSound}  *child_sound; </p><p> Unused currently. The audaspace handle for cache. </p>
 	 * @see #__DNA__FIELD__cache
 	 */
@@ -1022,7 +1023,7 @@ public class bSound extends CFacade {
 	/**
 	 * Get method for struct member 'waveform'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Waveform display data. </p>
 	 * @see #__DNA__FIELD__waveform
 	 */
@@ -1042,7 +1043,7 @@ public class bSound extends CFacade {
 	/**
 	 * Set method for struct member 'waveform'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Waveform display data. </p>
 	 * @see #__DNA__FIELD__waveform
 	 */
@@ -1060,7 +1061,7 @@ public class bSound extends CFacade {
 	/**
 	 * Get method for struct member 'playback_handle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The audaspace handle that should actually be played back. Should be cache if cache != NULL; otherwise its handle </p>
 	 * @see #__DNA__FIELD__playback_handle
 	 */
@@ -1080,7 +1081,7 @@ public class bSound extends CFacade {
 	/**
 	 * Set method for struct member 'playback_handle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The audaspace handle that should actually be played back. Should be cache if cache != NULL; otherwise its handle </p>
 	 * @see #__DNA__FIELD__playback_handle
 	 */
@@ -1098,7 +1099,7 @@ public class bSound extends CFacade {
 	/**
 	 * Get method for struct member 'spinlock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Spin-lock for asynchronous loading of sounds. </p>
 	 * @see #__DNA__FIELD__spinlock
 	 */
@@ -1118,7 +1119,7 @@ public class bSound extends CFacade {
 	/**
 	 * Set method for struct member 'spinlock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Spin-lock for asynchronous loading of sounds. </p>
 	 * @see #__DNA__FIELD__spinlock
 	 */

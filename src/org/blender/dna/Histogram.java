@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class Histogram extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for Histogram.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 497;
 
@@ -212,7 +213,7 @@ public class Histogram extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Channels to display in the histogram
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -275,7 +276,7 @@ public class Histogram extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> sample line only image coords src -> dst </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -618,7 +619,7 @@ public class Histogram extends CFacade {
 	/**
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Channels to display in the histogram
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -635,7 +636,7 @@ public class Histogram extends CFacade {
 	/**
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Channels to display in the histogram
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -708,7 +709,7 @@ public class Histogram extends CFacade {
 	/**
 	 * Get method for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> sample line only image coords src -> dst </p>
 	 * @see #__DNA__FIELD__co
 	 */
@@ -730,7 +731,7 @@ public class Histogram extends CFacade {
 	/**
 	 * Set method for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> sample line only image coords src -> dst </p>
 	 * @see #__DNA__FIELD__co
 	 */

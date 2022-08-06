@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'wmKeyConfigPref'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> This is similar to addon-preferences, however unlike add-ons key-config's aren't saved to disk.</p><p>{@link wmKeyConfigPref}  is written to DNA, #wmKeyConfigPrefType_Runtime has the RNA type. </p>
  */
 
@@ -25,8 +27,8 @@ public class wmKeyConfigPref extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for wmKeyConfigPref.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 583;
 
@@ -73,7 +75,7 @@ public class wmKeyConfigPref extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unique name. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -188,7 +190,7 @@ public class wmKeyConfigPref extends CFacade {
 	/**
 	 * Get method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unique name. </p>
 	 * @see #__DNA__FIELD__idname
 	 */
@@ -209,7 +211,7 @@ public class wmKeyConfigPref extends CFacade {
 	/**
 	 * Set method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unique name. </p>
 	 * @see #__DNA__FIELD__idname
 	 */

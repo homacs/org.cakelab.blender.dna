@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FileSelectParams'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Config and Input for File Selector </p>
  */
 
@@ -25,16 +27,17 @@ public class FileSelectParams extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for FileSelectParams.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 231;
 
 	/**
 	 * Field descriptor (offset) for struct member 'title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Title for the file browser<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Title for the file browser
+	 * <h4>Blender Source Code</h4>
 	 * <p> Title, also used for the text of the execute button. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +60,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Directory, FILE_MAX_LIBEXTRA, 1024 + 66, this is for extreme case when 1023 length path needs to be linked in, where foo.blend/Armature need adding </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -140,8 +143,9 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filter_glob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * UNIX shell-like filename patterns matching, supports wildcards ('*') and list of patterns separated by ';'<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * UNIX shell-like filename patterns matching, supports wildcards ('*') and list of patterns separated by ';'
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of filetypes to filter (FILE_MAXFILE). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -164,8 +168,9 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filter_search'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Filter by name, supports '*' wildcard<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Filter by name, supports '*' wildcard
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Text}  items name must match to be shown. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -188,7 +193,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Same as filter, but for {@link ID}  types (aka library groups). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -211,7 +216,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filter_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Which ID types to show/hide, when browsing a library
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -234,7 +239,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'active_file'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active file used for keyboard navigation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -257,7 +262,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'highlight_file'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> File under cursor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -360,7 +365,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> short XXXXX for now store type here, should be moved to the operator. eFileSelectType </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -383,7 +388,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for filter, hiding dots files. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -406,7 +411,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sort'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sort order. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -429,7 +434,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'display'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display mode flag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -452,7 +457,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'details_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Details toggles (file size, creation date, etc.) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -495,7 +500,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Filter when (flags & FILE_FILTER) is true. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -518,8 +523,9 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'recursion_level'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Numbers of dirtree levels to show simultaneously<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Numbers of dirtree levels to show simultaneously
+	 * <h4>Blender Source Code</h4>
 	 * <p> Max number of levels in dirtree to show at once, 0 to disable recursion. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -542,7 +548,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'f_fp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX <mdash/>  still unused <ndash/>  Show font preview. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -565,7 +571,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fp_str'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> String to use for font preview. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -596,8 +602,9 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Title for the file browser<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Title for the file browser
+	 * <h4>Blender Source Code</h4>
 	 * <p> Title, also used for the text of the execute button. </p>
 	 * @see #__DNA__FIELD__title
 	 */
@@ -618,8 +625,9 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Title for the file browser<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Title for the file browser
+	 * <h4>Blender Source Code</h4>
 	 * <p> Title, also used for the text of the execute button. </p>
 	 * @see #__DNA__FIELD__title
 	 */
@@ -644,7 +652,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'dir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Directory, FILE_MAX_LIBEXTRA, 1024 + 66, this is for extreme case when 1023 length path needs to be linked in, where foo.blend/Armature need adding </p>
 	 * @see #__DNA__FIELD__dir
 	 */
@@ -665,7 +673,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'dir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Directory, FILE_MAX_LIBEXTRA, 1024 + 66, this is for extreme case when 1023 length path needs to be linked in, where foo.blend/Armature need adding </p>
 	 * @see #__DNA__FIELD__dir
 	 */
@@ -798,8 +806,9 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'filter_glob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * UNIX shell-like filename patterns matching, supports wildcards ('*') and list of patterns separated by ';'<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * UNIX shell-like filename patterns matching, supports wildcards ('*') and list of patterns separated by ';'
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of filetypes to filter (FILE_MAXFILE). </p>
 	 * @see #__DNA__FIELD__filter_glob
 	 */
@@ -820,8 +829,9 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'filter_glob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * UNIX shell-like filename patterns matching, supports wildcards ('*') and list of patterns separated by ';'<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * UNIX shell-like filename patterns matching, supports wildcards ('*') and list of patterns separated by ';'
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of filetypes to filter (FILE_MAXFILE). </p>
 	 * @see #__DNA__FIELD__filter_glob
 	 */
@@ -846,8 +856,9 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'filter_search'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Filter by name, supports '*' wildcard<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Filter by name, supports '*' wildcard
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Text}  items name must match to be shown. </p>
 	 * @see #__DNA__FIELD__filter_search
 	 */
@@ -868,8 +879,9 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'filter_search'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Filter by name, supports '*' wildcard<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Filter by name, supports '*' wildcard
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Text}  items name must match to be shown. </p>
 	 * @see #__DNA__FIELD__filter_search
 	 */
@@ -894,7 +906,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Get method for struct member '_pad0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Same as filter, but for {@link ID}  types (aka library groups). </p>
 	 * @see #__DNA__FIELD___pad0
 	 */
@@ -911,7 +923,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Set method for struct member '_pad0'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Same as filter, but for {@link ID}  types (aka library groups). </p>
 	 * @see #__DNA__FIELD___pad0
 	 */
@@ -928,7 +940,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'filter_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Which ID types to show/hide, when browsing a library
 	 * @see #__DNA__FIELD__filter_id
 	 */
@@ -945,7 +957,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'filter_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Which ID types to show/hide, when browsing a library
 	 * @see #__DNA__FIELD__filter_id
 	 */
@@ -962,7 +974,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'active_file'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active file used for keyboard navigation. </p>
 	 * @see #__DNA__FIELD__active_file
 	 */
@@ -979,7 +991,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'active_file'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active file used for keyboard navigation. </p>
 	 * @see #__DNA__FIELD__active_file
 	 */
@@ -996,7 +1008,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'highlight_file'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> File under cursor. </p>
 	 * @see #__DNA__FIELD__highlight_file
 	 */
@@ -1013,7 +1025,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'highlight_file'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> File under cursor. </p>
 	 * @see #__DNA__FIELD__highlight_file
 	 */
@@ -1154,7 +1166,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> short XXXXX for now store type here, should be moved to the operator. eFileSelectType </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -1171,7 +1183,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> short XXXXX for now store type here, should be moved to the operator. eFileSelectType </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -1188,7 +1200,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for filter, hiding dots files. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -1205,7 +1217,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for filter, hiding dots files. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -1222,7 +1234,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'sort'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sort order. </p>
 	 * @see #__DNA__FIELD__sort
 	 */
@@ -1239,7 +1251,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'sort'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sort order. </p>
 	 * @see #__DNA__FIELD__sort
 	 */
@@ -1256,7 +1268,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'display'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display mode flag. </p>
 	 * @see #__DNA__FIELD__display
 	 */
@@ -1273,7 +1285,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'display'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display mode flag. </p>
 	 * @see #__DNA__FIELD__display
 	 */
@@ -1290,7 +1302,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'details_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Details toggles (file size, creation date, etc.) </p>
 	 * @see #__DNA__FIELD__details_flags
 	 */
@@ -1307,7 +1319,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'details_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Details toggles (file size, creation date, etc.) </p>
 	 * @see #__DNA__FIELD__details_flags
 	 */
@@ -1364,7 +1376,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'filter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Filter when (flags & FILE_FILTER) is true. </p>
 	 * @see #__DNA__FIELD__filter
 	 */
@@ -1381,7 +1393,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'filter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Filter when (flags & FILE_FILTER) is true. </p>
 	 * @see #__DNA__FIELD__filter
 	 */
@@ -1398,8 +1410,9 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'recursion_level'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Numbers of dirtree levels to show simultaneously<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Numbers of dirtree levels to show simultaneously
+	 * <h4>Blender Source Code</h4>
 	 * <p> Max number of levels in dirtree to show at once, 0 to disable recursion. </p>
 	 * @see #__DNA__FIELD__recursion_level
 	 */
@@ -1416,8 +1429,9 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'recursion_level'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Numbers of dirtree levels to show simultaneously<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Numbers of dirtree levels to show simultaneously
+	 * <h4>Blender Source Code</h4>
 	 * <p> Max number of levels in dirtree to show at once, 0 to disable recursion. </p>
 	 * @see #__DNA__FIELD__recursion_level
 	 */
@@ -1434,7 +1448,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'f_fp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX <mdash/>  still unused <ndash/>  Show font preview. </p>
 	 * @see #__DNA__FIELD__f_fp
 	 */
@@ -1451,7 +1465,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'f_fp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX <mdash/>  still unused <ndash/>  Show font preview. </p>
 	 * @see #__DNA__FIELD__f_fp
 	 */
@@ -1468,7 +1482,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Get method for struct member 'fp_str'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> String to use for font preview. </p>
 	 * @see #__DNA__FIELD__fp_str
 	 */
@@ -1489,7 +1503,7 @@ public class FileSelectParams extends CFacade {
 	/**
 	 * Set method for struct member 'fp_str'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> String to use for font preview. </p>
 	 * @see #__DNA__FIELD__fp_str
 	 */

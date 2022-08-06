@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPDpalettecolor'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  <hr/> 
  *  GP Palettes (Deprecated - 2.78 - 2.79 only) color of palettes </p>
@@ -27,8 +29,8 @@ public class bGPDpalettecolor extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bGPDpalettecolor.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 531;
 
@@ -75,7 +77,7 @@ public class bGPDpalettecolor extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'info'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color name. Must be unique. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -118,7 +120,7 @@ public class bGPDpalettecolor extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fill'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color that should be used for drawing "fills" for strokes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -141,7 +143,7 @@ public class bGPDpalettecolor extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for palette color. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -164,7 +166,7 @@ public class bGPDpalettecolor extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Padding for compiler alignment error. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -259,7 +261,7 @@ public class bGPDpalettecolor extends CFacade {
 	/**
 	 * Get method for struct member 'info'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color name. Must be unique. </p>
 	 * @see #__DNA__FIELD__info
 	 */
@@ -280,7 +282,7 @@ public class bGPDpalettecolor extends CFacade {
 	/**
 	 * Set method for struct member 'info'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color name. Must be unique. </p>
 	 * @see #__DNA__FIELD__info
 	 */
@@ -345,7 +347,7 @@ public class bGPDpalettecolor extends CFacade {
 	/**
 	 * Get method for struct member 'fill'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color that should be used for drawing "fills" for strokes. </p>
 	 * @see #__DNA__FIELD__fill
 	 */
@@ -366,7 +368,7 @@ public class bGPDpalettecolor extends CFacade {
 	/**
 	 * Set method for struct member 'fill'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color that should be used for drawing "fills" for strokes. </p>
 	 * @see #__DNA__FIELD__fill
 	 */
@@ -391,7 +393,7 @@ public class bGPDpalettecolor extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for palette color. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -408,7 +410,7 @@ public class bGPDpalettecolor extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for palette color. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -425,7 +427,7 @@ public class bGPDpalettecolor extends CFacade {
 	/**
 	 * Get method for struct member '_pad'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Padding for compiler alignment error. </p>
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -446,7 +448,7 @@ public class bGPDpalettecolor extends CFacade {
 	/**
 	 * Set method for struct member '_pad'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Padding for compiler alignment error. </p>
 	 * @see #__DNA__FIELD___pad
 	 */

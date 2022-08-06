@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,8 +14,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'AssetMetaData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
- * <p> The meta-data of an asset. By creating and giving this for a data-block ({@link ID.asset_data} ), the data-block becomes an asset. </p><p><h2>Note</h2><p> This struct must be readable without having to read anything but blocks from the {@link ID}  it is attached to! That way, asset information of a file can be read, without reading anything more than that from the file. So pointers to other IDs or {@link ID}  data are strictly forbidden. </p> This struct must be readable without having to read anything but blocks from the ID it is attached to! That way, asset information of a file can be read, without reading anything more than that from the file. So pointers to other IDs or ID data are strictly forbidden. 
+ * 
+ * <h4>Blender Source Code</h4>
+ * <p> The meta-data of an asset. By creating and giving this for a data-block ({@link ID#getAsset_data()} ), the data-block becomes an asset. </p><p><h2>Note</h2><p> This struct must be readable without having to read anything but blocks from the {@link ID}  it is attached to! That way, asset information of a file can be read, without reading anything more than that from the file. So pointers to other IDs or {@link ID}  data are strictly forbidden. </p> This struct must be readable without having to read anything but blocks from the ID it is attached to! That way, asset information of a file can be read, without reading anything more than that from the file. So pointers to other IDs or ID data are strictly forbidden. 
  * 
  * </p>
  */
@@ -27,15 +29,15 @@ public class AssetMetaData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for AssetMetaData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 737;
 
 	/**
 	 * Field descriptor (offset) for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom asset meta-data. Cannot store pointers to IDs (#STRUCT_NO_DATABLOCK_IDPROPERTIES)! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -58,8 +60,9 @@ public class AssetMetaData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'description'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * A description of the asset to be displayed for the user<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * A description of the asset to be displayed for the user
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional description of this asset for display in the UI. Dynamic length. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -82,8 +85,9 @@ public class AssetMetaData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Custom tags (name tokens) for the asset, used for filtering and general asset management<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Custom tags (name tokens) for the asset, used for filtering and general asset management
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined tags for this asset. The asset manager uses these for filtering, but how they function exactly (e.g. how they are registered to provide a list of searchable available tags) is up to the asset-engine. {@link AssetTag}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -106,7 +110,7 @@ public class AssetMetaData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'active_tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Index of the tag set for editing
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -129,7 +133,7 @@ public class AssetMetaData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tot_tags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Store the number of tags to avoid continuous counting. Could be turned into runtime data, we can always reliably reconstruct it from the list. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -180,7 +184,7 @@ public class AssetMetaData extends CFacade {
 	/**
 	 * Get method for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom asset meta-data. Cannot store pointers to IDs (#STRUCT_NO_DATABLOCK_IDPROPERTIES)! </p>
 	 * @see #__DNA__FIELD__properties
 	 */
@@ -200,7 +204,7 @@ public class AssetMetaData extends CFacade {
 	/**
 	 * Set method for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom asset meta-data. Cannot store pointers to IDs (#STRUCT_NO_DATABLOCK_IDPROPERTIES)! </p>
 	 * @see #__DNA__FIELD__properties
 	 */
@@ -218,8 +222,9 @@ public class AssetMetaData extends CFacade {
 	/**
 	 * Get method for struct member 'description'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * A description of the asset to be displayed for the user<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * A description of the asset to be displayed for the user
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional description of this asset for display in the UI. Dynamic length. </p>
 	 * @see #__DNA__FIELD__description
 	 */
@@ -239,8 +244,9 @@ public class AssetMetaData extends CFacade {
 	/**
 	 * Set method for struct member 'description'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * A description of the asset to be displayed for the user<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * A description of the asset to be displayed for the user
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional description of this asset for display in the UI. Dynamic length. </p>
 	 * @see #__DNA__FIELD__description
 	 */
@@ -258,8 +264,9 @@ public class AssetMetaData extends CFacade {
 	/**
 	 * Get method for struct member 'tags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Custom tags (name tokens) for the asset, used for filtering and general asset management<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Custom tags (name tokens) for the asset, used for filtering and general asset management
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined tags for this asset. The asset manager uses these for filtering, but how they function exactly (e.g. how they are registered to provide a list of searchable available tags) is up to the asset-engine. {@link AssetTag}  </p>
 	 * @see #__DNA__FIELD__tags
 	 */
@@ -276,8 +283,9 @@ public class AssetMetaData extends CFacade {
 	/**
 	 * Set method for struct member 'tags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Custom tags (name tokens) for the asset, used for filtering and general asset management<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Custom tags (name tokens) for the asset, used for filtering and general asset management
+	 * <h4>Blender Source Code</h4>
 	 * <p> User defined tags for this asset. The asset manager uses these for filtering, but how they function exactly (e.g. how they are registered to provide a list of searchable available tags) is up to the asset-engine. {@link AssetTag}  </p>
 	 * @see #__DNA__FIELD__tags
 	 */
@@ -302,7 +310,7 @@ public class AssetMetaData extends CFacade {
 	/**
 	 * Get method for struct member 'active_tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Index of the tag set for editing
 	 * @see #__DNA__FIELD__active_tag
 	 */
@@ -319,7 +327,7 @@ public class AssetMetaData extends CFacade {
 	/**
 	 * Set method for struct member 'active_tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Index of the tag set for editing
 	 * @see #__DNA__FIELD__active_tag
 	 */
@@ -336,7 +344,7 @@ public class AssetMetaData extends CFacade {
 	/**
 	 * Get method for struct member 'tot_tags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Store the number of tags to avoid continuous counting. Could be turned into runtime data, we can always reliably reconstruct it from the list. </p>
 	 * @see #__DNA__FIELD__tot_tags
 	 */
@@ -353,7 +361,7 @@ public class AssetMetaData extends CFacade {
 	/**
 	 * Set method for struct member 'tot_tags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Store the number of tags to avoid continuous counting. Could be turned into runtime data, we can always reliably reconstruct it from the list. </p>
 	 * @see #__DNA__FIELD__tot_tags
 	 */

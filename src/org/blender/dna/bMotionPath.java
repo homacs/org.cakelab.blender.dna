@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bMotionPath'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> ........ Motion Path data cache (mpath)<ul><li><p> for elements providing transforms (i.e. Objects or PoseChannels) </p></li></ul> 
  * for elements providing transforms (i.e. Objects or PoseChannels) 
  * 
@@ -28,15 +30,15 @@ public class bMotionPath extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bMotionPath.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 340;
 
 	/**
 	 * Field descriptor (offset) for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Path samples. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -59,7 +61,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The number of cached verts. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -82,7 +84,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'start_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For drawing paths, the start frame number. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -105,7 +107,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'end_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For drawing paths, the end frame number. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -128,7 +130,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional custom color. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -151,7 +153,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'line_thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Line thickness. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -174,7 +176,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Baking settings - eMotionPath_Flag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -197,7 +199,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'points_vbo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for drawing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -288,7 +290,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Get method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Path samples. </p>
 	 * @see #__DNA__FIELD__points
 	 */
@@ -308,7 +310,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Set method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Path samples. </p>
 	 * @see #__DNA__FIELD__points
 	 */
@@ -326,7 +328,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Get method for struct member 'length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The number of cached verts. </p>
 	 * @see #__DNA__FIELD__length
 	 */
@@ -343,7 +345,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Set method for struct member 'length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The number of cached verts. </p>
 	 * @see #__DNA__FIELD__length
 	 */
@@ -360,7 +362,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Get method for struct member 'start_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For drawing paths, the start frame number. </p>
 	 * @see #__DNA__FIELD__start_frame
 	 */
@@ -377,7 +379,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Set method for struct member 'start_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For drawing paths, the start frame number. </p>
 	 * @see #__DNA__FIELD__start_frame
 	 */
@@ -394,7 +396,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Get method for struct member 'end_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For drawing paths, the end frame number. </p>
 	 * @see #__DNA__FIELD__end_frame
 	 */
@@ -411,7 +413,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Set method for struct member 'end_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For drawing paths, the end frame number. </p>
 	 * @see #__DNA__FIELD__end_frame
 	 */
@@ -428,7 +430,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Get method for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional custom color. </p>
 	 * @see #__DNA__FIELD__color
 	 */
@@ -449,7 +451,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Set method for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional custom color. </p>
 	 * @see #__DNA__FIELD__color
 	 */
@@ -474,7 +476,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Get method for struct member 'line_thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Line thickness. </p>
 	 * @see #__DNA__FIELD__line_thickness
 	 */
@@ -491,7 +493,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Set method for struct member 'line_thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Line thickness. </p>
 	 * @see #__DNA__FIELD__line_thickness
 	 */
@@ -508,7 +510,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Baking settings - eMotionPath_Flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -525,7 +527,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Baking settings - eMotionPath_Flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -542,7 +544,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Get method for struct member 'points_vbo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for drawing. </p>
 	 * @see #__DNA__FIELD__points_vbo
 	 */
@@ -562,7 +564,7 @@ public class bMotionPath extends CFacade {
 	/**
 	 * Set method for struct member 'points_vbo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for drawing. </p>
 	 * @see #__DNA__FIELD__points_vbo
 	 */

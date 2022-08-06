@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bDopeSheet'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  Action/Dopesheet Editor Storage for Dopesheet/Grease-Pencil Editor data </p>
  */
@@ -26,15 +28,15 @@ public class bDopeSheet extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bDopeSheet.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 349;
 
 	/**
 	 * Field descriptor (offset) for struct member 'source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Currently ID_SCE (for Dopesheet), and ID_SC (for Grease Pencil). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +59,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'chanbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache for channels (only initialized when pinned). XXX not used! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +82,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filter_grp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  group for option to only include objects that belong to this {@link Collection} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -103,7 +105,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'searchstr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> String to search for in displayed names of F-Curves, or NlaTracks/GP Layers/etc. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,7 +128,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filterflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags to use for filtering data #eAnimFilter_Flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -149,8 +151,8 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filterflag2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eDopeSheet_FilterFlag2}  </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eDopeSheet_FilterFlag2  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -172,7 +174,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Standard flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -195,7 +197,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'renameIndex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  of channel to rename - only gets set by renaming operator. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -226,7 +228,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Get method for struct member 'source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Currently ID_SCE (for Dopesheet), and ID_SC (for Grease Pencil). </p>
 	 * @see #__DNA__FIELD__source
 	 */
@@ -246,7 +248,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Set method for struct member 'source'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Currently ID_SCE (for Dopesheet), and ID_SC (for Grease Pencil). </p>
 	 * @see #__DNA__FIELD__source
 	 */
@@ -264,7 +266,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Get method for struct member 'chanbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache for channels (only initialized when pinned). XXX not used! </p>
 	 * @see #__DNA__FIELD__chanbase
 	 */
@@ -281,7 +283,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Set method for struct member 'chanbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache for channels (only initialized when pinned). XXX not used! </p>
 	 * @see #__DNA__FIELD__chanbase
 	 */
@@ -306,7 +308,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Get method for struct member 'filter_grp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  group for option to only include objects that belong to this {@link Collection} . </p>
 	 * @see #__DNA__FIELD__filter_grp
 	 */
@@ -326,7 +328,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Set method for struct member 'filter_grp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  group for option to only include objects that belong to this {@link Collection} . </p>
 	 * @see #__DNA__FIELD__filter_grp
 	 */
@@ -344,7 +346,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Get method for struct member 'searchstr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> String to search for in displayed names of F-Curves, or NlaTracks/GP Layers/etc. </p>
 	 * @see #__DNA__FIELD__searchstr
 	 */
@@ -365,7 +367,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Set method for struct member 'searchstr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> String to search for in displayed names of F-Curves, or NlaTracks/GP Layers/etc. </p>
 	 * @see #__DNA__FIELD__searchstr
 	 */
@@ -390,7 +392,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Get method for struct member 'filterflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags to use for filtering data #eAnimFilter_Flags. </p>
 	 * @see #__DNA__FIELD__filterflag
 	 */
@@ -407,7 +409,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Set method for struct member 'filterflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags to use for filtering data #eAnimFilter_Flags. </p>
 	 * @see #__DNA__FIELD__filterflag
 	 */
@@ -424,8 +426,8 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Get method for struct member 'filterflag2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eDopeSheet_FilterFlag2}  </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eDopeSheet_FilterFlag2  </p>
 	 * @see #__DNA__FIELD__filterflag2
 	 */
 	
@@ -441,8 +443,8 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Set method for struct member 'filterflag2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eDopeSheet_FilterFlag2}  </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eDopeSheet_FilterFlag2  </p>
 	 * @see #__DNA__FIELD__filterflag2
 	 */
 	
@@ -458,7 +460,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Standard flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -475,7 +477,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Standard flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -492,7 +494,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Get method for struct member 'renameIndex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  of channel to rename - only gets set by renaming operator. </p>
 	 * @see #__DNA__FIELD__renameIndex
 	 */
@@ -509,7 +511,7 @@ public class bDopeSheet extends CFacade {
 	/**
 	 * Set method for struct member 'renameIndex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  of channel to rename - only gets set by renaming operator. </p>
 	 * @see #__DNA__FIELD__renameIndex
 	 */

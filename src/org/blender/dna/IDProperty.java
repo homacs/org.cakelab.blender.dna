@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'IDProperty'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
+ * 
+ * <h4>Java .Blend</h4>
  * ID properties are a generic method to store a linked 
  * 					list of additional information at IDs (see {@link ID}.
  */
@@ -26,15 +28,15 @@ public class IDProperty extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for IDProperty.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 11;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * reference on the next element in linked list
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +59,7 @@ public class IDProperty extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * reference on previous element in linked list
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +82,7 @@ public class IDProperty extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * Type of the property data. One of
 	 * 						<pre>
 	 * 								IDP_STRING		0
@@ -114,7 +116,7 @@ public class IDProperty extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'subtype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * Subtype of the property data. One of
 	 * 						<pre>
 	 * 							IDP_STRING_SUB_UTF8  0 ( default )
@@ -161,8 +163,9 @@ public class IDProperty extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * properties' name<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * properties' name
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_IDPROP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -185,8 +188,9 @@ public class IDProperty extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'saved'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * saved is used to indicate if this struct has been saved yet.<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * saved is used to indicate if this struct has been saved yet.
+	 * <h4>Blender Source Code</h4>
 	 * <p> saved is used to indicate if this struct has been saved yet. seemed like a good idea as a '_pad' var was needed anyway :) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -209,8 +213,9 @@ public class IDProperty extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * properties' data. note, alignment for 64 bits<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * properties' data. note, alignment for 64 bits
+	 * <h4>Blender Source Code</h4>
 	 * <p> Note, alignment for 64 bits. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -233,9 +238,10 @@ public class IDProperty extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * array length, also (this is important!) string length + 1.
-	 * 	          			the idea is to be able to reuse array realloc functions on strings.<h4>Blender Source Code:</h4>
+	 * 	          			the idea is to be able to reuse array realloc functions on strings.
+	 * <h4>Blender Source Code</h4>
 	 * <p> array length, also (this is important!) string length + 1. the idea is to be able to reuse array realloc functions on strings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -258,11 +264,12 @@ public class IDProperty extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'totallen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * totallen is total length of allocated array/string, including a buffer.
 	 * 	 							Note that the buffering is mild; the code comes from python's list 
 	 * 	 							implementation. Strings and arrays are both buffered, though the buffer
-	 * 								isn't saved.<h4>Blender Source Code:</h4>
+	 * 								isn't saved.
+	 * <h4>Blender Source Code</h4>
 	 * <p> Strings and arrays are both buffered, though the buffer isn't saved. totallen is total length of allocated array/string, including a buffer. Note that the buffering is mild; the code comes from python's list implementation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -293,7 +300,7 @@ public class IDProperty extends CFacade {
 	/**
 	 * Get method for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * reference on the next element in linked list
 	 * @see #__DNA__FIELD__next
 	 */
@@ -313,7 +320,7 @@ public class IDProperty extends CFacade {
 	/**
 	 * Set method for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * reference on the next element in linked list
 	 * @see #__DNA__FIELD__next
 	 */
@@ -331,7 +338,7 @@ public class IDProperty extends CFacade {
 	/**
 	 * Get method for struct member 'prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * reference on previous element in linked list
 	 * @see #__DNA__FIELD__prev
 	 */
@@ -351,7 +358,7 @@ public class IDProperty extends CFacade {
 	/**
 	 * Set method for struct member 'prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * reference on previous element in linked list
 	 * @see #__DNA__FIELD__prev
 	 */
@@ -369,7 +376,7 @@ public class IDProperty extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * Type of the property data. One of
 	 * 						<pre>
 	 * 								IDP_STRING		0
@@ -397,7 +404,7 @@ public class IDProperty extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * Type of the property data. One of
 	 * 						<pre>
 	 * 								IDP_STRING		0
@@ -425,7 +432,7 @@ public class IDProperty extends CFacade {
 	/**
 	 * Get method for struct member 'subtype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * Subtype of the property data. One of
 	 * 						<pre>
 	 * 							IDP_STRING_SUB_UTF8  0 ( default )
@@ -446,7 +453,7 @@ public class IDProperty extends CFacade {
 	/**
 	 * Set method for struct member 'subtype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * Subtype of the property data. One of
 	 * 						<pre>
 	 * 							IDP_STRING_SUB_UTF8  0 ( default )
@@ -495,8 +502,9 @@ public class IDProperty extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * properties' name<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * properties' name
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_IDPROP_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -517,8 +525,9 @@ public class IDProperty extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * properties' name<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * properties' name
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_IDPROP_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -543,8 +552,9 @@ public class IDProperty extends CFacade {
 	/**
 	 * Get method for struct member 'saved'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * saved is used to indicate if this struct has been saved yet.<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * saved is used to indicate if this struct has been saved yet.
+	 * <h4>Blender Source Code</h4>
 	 * <p> saved is used to indicate if this struct has been saved yet. seemed like a good idea as a '_pad' var was needed anyway :) </p>
 	 * @see #__DNA__FIELD__saved
 	 */
@@ -561,8 +571,9 @@ public class IDProperty extends CFacade {
 	/**
 	 * Set method for struct member 'saved'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * saved is used to indicate if this struct has been saved yet.<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * saved is used to indicate if this struct has been saved yet.
+	 * <h4>Blender Source Code</h4>
 	 * <p> saved is used to indicate if this struct has been saved yet. seemed like a good idea as a '_pad' var was needed anyway :) </p>
 	 * @see #__DNA__FIELD__saved
 	 */
@@ -579,8 +590,9 @@ public class IDProperty extends CFacade {
 	/**
 	 * Get method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * properties' data. note, alignment for 64 bits<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * properties' data. note, alignment for 64 bits
+	 * <h4>Blender Source Code</h4>
 	 * <p> Note, alignment for 64 bits. </p>
 	 * @see #__DNA__FIELD__data
 	 */
@@ -597,8 +609,9 @@ public class IDProperty extends CFacade {
 	/**
 	 * Set method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * properties' data. note, alignment for 64 bits<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * properties' data. note, alignment for 64 bits
+	 * <h4>Blender Source Code</h4>
 	 * <p> Note, alignment for 64 bits. </p>
 	 * @see #__DNA__FIELD__data
 	 */
@@ -623,9 +636,10 @@ public class IDProperty extends CFacade {
 	/**
 	 * Get method for struct member 'len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * array length, also (this is important!) string length + 1.
-	 * 	          			the idea is to be able to reuse array realloc functions on strings.<h4>Blender Source Code:</h4>
+	 * 	          			the idea is to be able to reuse array realloc functions on strings.
+	 * <h4>Blender Source Code</h4>
 	 * <p> array length, also (this is important!) string length + 1. the idea is to be able to reuse array realloc functions on strings. </p>
 	 * @see #__DNA__FIELD__len
 	 */
@@ -642,9 +656,10 @@ public class IDProperty extends CFacade {
 	/**
 	 * Set method for struct member 'len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * array length, also (this is important!) string length + 1.
-	 * 	          			the idea is to be able to reuse array realloc functions on strings.<h4>Blender Source Code:</h4>
+	 * 	          			the idea is to be able to reuse array realloc functions on strings.
+	 * <h4>Blender Source Code</h4>
 	 * <p> array length, also (this is important!) string length + 1. the idea is to be able to reuse array realloc functions on strings. </p>
 	 * @see #__DNA__FIELD__len
 	 */
@@ -661,11 +676,12 @@ public class IDProperty extends CFacade {
 	/**
 	 * Get method for struct member 'totallen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * totallen is total length of allocated array/string, including a buffer.
 	 * 	 							Note that the buffering is mild; the code comes from python's list 
 	 * 	 							implementation. Strings and arrays are both buffered, though the buffer
-	 * 								isn't saved.<h4>Blender Source Code:</h4>
+	 * 								isn't saved.
+	 * <h4>Blender Source Code</h4>
 	 * <p> Strings and arrays are both buffered, though the buffer isn't saved. totallen is total length of allocated array/string, including a buffer. Note that the buffering is mild; the code comes from python's list implementation. </p>
 	 * @see #__DNA__FIELD__totallen
 	 */
@@ -682,11 +698,12 @@ public class IDProperty extends CFacade {
 	/**
 	 * Set method for struct member 'totallen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * totallen is total length of allocated array/string, including a buffer.
 	 * 	 							Note that the buffering is mild; the code comes from python's list 
 	 * 	 							implementation. Strings and arrays are both buffered, though the buffer
-	 * 								isn't saved.<h4>Blender Source Code:</h4>
+	 * 								isn't saved.
+	 * <h4>Blender Source Code</h4>
 	 * <p> Strings and arrays are both buffered, though the buffer isn't saved. totallen is total length of allocated array/string, including a buffer. Note that the buffering is mild; the code comes from python's list implementation. </p>
 	 * @see #__DNA__FIELD__totallen
 	 */

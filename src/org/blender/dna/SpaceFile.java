@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpaceFile'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> File Browser </p>
  */
 
@@ -25,8 +27,8 @@ public class SpaceFile extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for SpaceFile.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 234;
 
@@ -73,7 +75,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -156,7 +158,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'browse_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. Is this a File Browser or an Asset Browser? eFileBrowse_Mode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -239,7 +241,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'params'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Config and input for file select. One for each browse-mode, to keep them independent. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -302,7 +304,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'files'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the list of files to show. Currently recreated when browse-mode changes. Could be per browse-mode to avoid refreshes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -325,7 +327,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'folders_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  below. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -348,7 +350,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'folders_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  below. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -371,7 +373,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'folder_histories'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This actually owns the prev/next folder-lists above. On browse-mode change, the lists of the new mode get assigned to the above. {@link FileFolderHistory}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -394,7 +396,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'op'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> operator that is invoking fileselect op->exec() will be called on the 'Load' button. if operator provides op->cancel(), then this will be invoked on the cancel button. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -649,7 +651,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -666,7 +668,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -787,7 +789,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Get method for struct member 'browse_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. Is this a File Browser or an Asset Browser? eFileBrowse_Mode </p>
 	 * @see #__DNA__FIELD__browse_mode
 	 */
@@ -804,7 +806,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Set method for struct member 'browse_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. Is this a File Browser or an Asset Browser? eFileBrowse_Mode </p>
 	 * @see #__DNA__FIELD__browse_mode
 	 */
@@ -917,7 +919,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Get method for struct member 'params'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Config and input for file select. One for each browse-mode, to keep them independent. </p>
 	 * @see #__DNA__FIELD__params
 	 */
@@ -937,7 +939,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Set method for struct member 'params'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Config and input for file select. One for each browse-mode, to keep them independent. </p>
 	 * @see #__DNA__FIELD__params
 	 */
@@ -1019,7 +1021,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Get method for struct member 'files'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the list of files to show. Currently recreated when browse-mode changes. Could be per browse-mode to avoid refreshes. </p>
 	 * @see #__DNA__FIELD__files
 	 */
@@ -1039,7 +1041,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Set method for struct member 'files'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the list of files to show. Currently recreated when browse-mode changes. Could be per browse-mode to avoid refreshes. </p>
 	 * @see #__DNA__FIELD__files
 	 */
@@ -1057,7 +1059,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Get method for struct member 'folders_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  below. </p>
 	 * @see #__DNA__FIELD__folders_prev
 	 */
@@ -1077,7 +1079,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Set method for struct member 'folders_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  below. </p>
 	 * @see #__DNA__FIELD__folders_prev
 	 */
@@ -1095,7 +1097,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Get method for struct member 'folders_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  below. </p>
 	 * @see #__DNA__FIELD__folders_next
 	 */
@@ -1115,7 +1117,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Set method for struct member 'folders_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  below. </p>
 	 * @see #__DNA__FIELD__folders_next
 	 */
@@ -1133,7 +1135,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Get method for struct member 'folder_histories'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This actually owns the prev/next folder-lists above. On browse-mode change, the lists of the new mode get assigned to the above. {@link FileFolderHistory}  </p>
 	 * @see #__DNA__FIELD__folder_histories
 	 */
@@ -1150,7 +1152,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Set method for struct member 'folder_histories'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This actually owns the prev/next folder-lists above. On browse-mode change, the lists of the new mode get assigned to the above. {@link FileFolderHistory}  </p>
 	 * @see #__DNA__FIELD__folder_histories
 	 */
@@ -1175,7 +1177,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Get method for struct member 'op'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> operator that is invoking fileselect op->exec() will be called on the 'Load' button. if operator provides op->cancel(), then this will be invoked on the cancel button. </p>
 	 * @see #__DNA__FIELD__op
 	 */
@@ -1195,7 +1197,7 @@ public class SpaceFile extends CFacade {
 	/**
 	 * Set method for struct member 'op'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> operator that is invoking fileselect op->exec() will be called on the 'Load' button. if operator provides op->cancel(), then this will be invoked on the cancel button. </p>
 	 * @see #__DNA__FIELD__op
 	 */

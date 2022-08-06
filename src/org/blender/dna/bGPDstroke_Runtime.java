@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPDstroke_Runtime'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  GP Strokes Runtime temp data for {@link bGPDstroke}  </p>
  */
@@ -26,15 +28,15 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bGPDstroke_Runtime.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 535;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tmp_layerinfo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> temporary layer name only used during copy/paste to put the stroke in the original layer </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +59,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'multi_frame_falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime falloff factor (only for transform). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +82,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'stroke_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex offset in the vbo where this stroke starts. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -103,7 +105,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fill_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Triangle offset in the ibo where this fill starts. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,7 +128,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  Handles offset in the ibo where this handle starts. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -149,7 +151,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gps_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original stroke (used to dereference evaluated data) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -200,7 +202,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'tmp_layerinfo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> temporary layer name only used during copy/paste to put the stroke in the original layer </p>
 	 * @see #__DNA__FIELD__tmp_layerinfo
 	 */
@@ -221,7 +223,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'tmp_layerinfo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> temporary layer name only used during copy/paste to put the stroke in the original layer </p>
 	 * @see #__DNA__FIELD__tmp_layerinfo
 	 */
@@ -246,7 +248,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'multi_frame_falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime falloff factor (only for transform). </p>
 	 * @see #__DNA__FIELD__multi_frame_falloff
 	 */
@@ -263,7 +265,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'multi_frame_falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime falloff factor (only for transform). </p>
 	 * @see #__DNA__FIELD__multi_frame_falloff
 	 */
@@ -280,7 +282,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'stroke_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex offset in the vbo where this stroke starts. </p>
 	 * @see #__DNA__FIELD__stroke_start
 	 */
@@ -297,7 +299,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'stroke_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex offset in the vbo where this stroke starts. </p>
 	 * @see #__DNA__FIELD__stroke_start
 	 */
@@ -314,7 +316,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'fill_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Triangle offset in the ibo where this fill starts. </p>
 	 * @see #__DNA__FIELD__fill_start
 	 */
@@ -331,7 +333,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'fill_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Triangle offset in the ibo where this fill starts. </p>
 	 * @see #__DNA__FIELD__fill_start
 	 */
@@ -348,7 +350,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'curve_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  Handles offset in the ibo where this handle starts. </p>
 	 * @see #__DNA__FIELD__curve_start
 	 */
@@ -365,7 +367,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'curve_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Curve}  Handles offset in the ibo where this handle starts. </p>
 	 * @see #__DNA__FIELD__curve_start
 	 */
@@ -382,7 +384,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'gps_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original stroke (used to dereference evaluated data) </p>
 	 * @see #__DNA__FIELD__gps_orig
 	 */
@@ -402,7 +404,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'gps_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original stroke (used to dereference evaluated data) </p>
 	 * @see #__DNA__FIELD__gps_orig
 	 */

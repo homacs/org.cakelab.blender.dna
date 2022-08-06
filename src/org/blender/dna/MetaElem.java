@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class MetaElem extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MetaElem.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 53;
 
@@ -72,7 +73,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bound Box of {@link MetaElem} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -155,7 +156,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Position of center of {@link MetaElem} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -218,7 +219,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'quat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation of {@link MetaElem}  (MUST be kept normalized). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -241,7 +242,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'expx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dimension parameters, used for some types like cubes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -304,7 +305,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rad'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radius of the meta element. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -327,7 +328,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rad2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp field, used only while processing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -350,7 +351,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 's'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stiffness, how much of the element to fill. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -373,7 +374,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old, only used for backwards compat. use dimensions now. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -396,7 +397,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Matrix and inverted matrix. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -511,7 +512,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Get method for struct member 'bb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bound Box of {@link MetaElem} . </p>
 	 * @see #__DNA__FIELD__bb
 	 */
@@ -531,7 +532,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Set method for struct member 'bb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bound Box of {@link MetaElem} . </p>
 	 * @see #__DNA__FIELD__bb
 	 */
@@ -645,7 +646,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Get method for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Position of center of {@link MetaElem} . </p>
 	 * @see #__DNA__FIELD__x
 	 */
@@ -662,7 +663,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Set method for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Position of center of {@link MetaElem} . </p>
 	 * @see #__DNA__FIELD__x
 	 */
@@ -735,7 +736,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Get method for struct member 'quat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation of {@link MetaElem}  (MUST be kept normalized). </p>
 	 * @see #__DNA__FIELD__quat
 	 */
@@ -756,7 +757,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Set method for struct member 'quat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation of {@link MetaElem}  (MUST be kept normalized). </p>
 	 * @see #__DNA__FIELD__quat
 	 */
@@ -781,7 +782,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Get method for struct member 'expx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dimension parameters, used for some types like cubes. </p>
 	 * @see #__DNA__FIELD__expx
 	 */
@@ -798,7 +799,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Set method for struct member 'expx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dimension parameters, used for some types like cubes. </p>
 	 * @see #__DNA__FIELD__expx
 	 */
@@ -871,7 +872,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Get method for struct member 'rad'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radius of the meta element. </p>
 	 * @see #__DNA__FIELD__rad
 	 */
@@ -888,7 +889,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Set method for struct member 'rad'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radius of the meta element. </p>
 	 * @see #__DNA__FIELD__rad
 	 */
@@ -905,7 +906,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Get method for struct member 'rad2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp field, used only while processing. </p>
 	 * @see #__DNA__FIELD__rad2
 	 */
@@ -922,7 +923,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Set method for struct member 'rad2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp field, used only while processing. </p>
 	 * @see #__DNA__FIELD__rad2
 	 */
@@ -939,7 +940,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Get method for struct member 's'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stiffness, how much of the element to fill. </p>
 	 * @see #__DNA__FIELD__s
 	 */
@@ -956,7 +957,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Set method for struct member 's'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stiffness, how much of the element to fill. </p>
 	 * @see #__DNA__FIELD__s
 	 */
@@ -973,7 +974,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Get method for struct member 'len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old, only used for backwards compat. use dimensions now. </p>
 	 * @see #__DNA__FIELD__len
 	 */
@@ -990,7 +991,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Set method for struct member 'len'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old, only used for backwards compat. use dimensions now. </p>
 	 * @see #__DNA__FIELD__len
 	 */
@@ -1007,7 +1008,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Get method for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Matrix and inverted matrix. </p>
 	 * @see #__DNA__FIELD__mat
 	 */
@@ -1027,7 +1028,7 @@ public class MetaElem extends CFacade {
 	/**
 	 * Set method for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Matrix and inverted matrix. </p>
 	 * @see #__DNA__FIELD__mat
 	 */

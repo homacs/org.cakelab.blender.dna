@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'LineStyleColorModifier_DistanceFromObject'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Distance from {@link Object}  modifiers </p>
  */
 
@@ -24,8 +26,8 @@ public class LineStyleColorModifier_DistanceFromObject extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for LineStyleColorModifier_DistanceFromObject.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 667;
 
@@ -52,7 +54,7 @@ public class LineStyleColorModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Target object from which the distance is measured
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,7 +77,7 @@ public class LineStyleColorModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'color_ramp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Color ramp used to change line color
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +100,7 @@ public class LineStyleColorModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'range_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower bound of the input range the mapping is applied
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,7 +123,7 @@ public class LineStyleColorModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'range_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Upper bound of the input range the mapping is applied
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -188,7 +190,7 @@ public class LineStyleColorModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Get method for struct member 'target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Target object from which the distance is measured
 	 * @see #__DNA__FIELD__target
 	 */
@@ -208,7 +210,7 @@ public class LineStyleColorModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Set method for struct member 'target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Target object from which the distance is measured
 	 * @see #__DNA__FIELD__target
 	 */
@@ -226,7 +228,7 @@ public class LineStyleColorModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Get method for struct member 'color_ramp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Color ramp used to change line color
 	 * @see #__DNA__FIELD__color_ramp
 	 */
@@ -246,7 +248,7 @@ public class LineStyleColorModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Set method for struct member 'color_ramp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Color ramp used to change line color
 	 * @see #__DNA__FIELD__color_ramp
 	 */
@@ -264,7 +266,7 @@ public class LineStyleColorModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Get method for struct member 'range_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower bound of the input range the mapping is applied
 	 * @see #__DNA__FIELD__range_min
 	 */
@@ -281,7 +283,7 @@ public class LineStyleColorModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Set method for struct member 'range_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Lower bound of the input range the mapping is applied
 	 * @see #__DNA__FIELD__range_min
 	 */
@@ -298,7 +300,7 @@ public class LineStyleColorModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Get method for struct member 'range_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Upper bound of the input range the mapping is applied
 	 * @see #__DNA__FIELD__range_max
 	 */
@@ -315,7 +317,7 @@ public class LineStyleColorModifier_DistanceFromObject extends CFacade {
 	/**
 	 * Set method for struct member 'range_max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Upper bound of the input range the mapping is applied
 	 * @see #__DNA__FIELD__range_max
 	 */

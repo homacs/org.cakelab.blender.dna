@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bClampToConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Clamp-To Constraint </p>
  */
 
@@ -24,15 +26,15 @@ public class bClampToConstraint extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bClampToConstraint.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 373;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 'target' must be a curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +57,7 @@ public class bClampToConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Which axis/plane to compare owner's location on . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -78,7 +80,7 @@ public class bClampToConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For legacy reasons, this is flag2. used for any extra settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -109,7 +111,7 @@ public class bClampToConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 'target' must be a curve. </p>
 	 * @see #__DNA__FIELD__tar
 	 */
@@ -129,7 +131,7 @@ public class bClampToConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 'target' must be a curve. </p>
 	 * @see #__DNA__FIELD__tar
 	 */
@@ -147,7 +149,7 @@ public class bClampToConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Which axis/plane to compare owner's location on . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -164,7 +166,7 @@ public class bClampToConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Which axis/plane to compare owner's location on . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -181,7 +183,7 @@ public class bClampToConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'flag2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For legacy reasons, this is flag2. used for any extra settings. </p>
 	 * @see #__DNA__FIELD__flag2
 	 */
@@ -198,7 +200,7 @@ public class bClampToConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'flag2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For legacy reasons, this is flag2. used for any extra settings. </p>
 	 * @see #__DNA__FIELD__flag2
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class View3DCursor extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for View3DCursor.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 215;
 
@@ -52,7 +53,7 @@ public class View3DCursor extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rotation_quaternion'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Rotation in quaternions (keep normalized)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,7 +76,7 @@ public class View3DCursor extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rotation_euler'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * 3D rotation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -226,7 +227,7 @@ public class View3DCursor extends CFacade {
 	/**
 	 * Get method for struct member 'rotation_quaternion'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Rotation in quaternions (keep normalized)
 	 * @see #__DNA__FIELD__rotation_quaternion
 	 */
@@ -247,7 +248,7 @@ public class View3DCursor extends CFacade {
 	/**
 	 * Set method for struct member 'rotation_quaternion'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Rotation in quaternions (keep normalized)
 	 * @see #__DNA__FIELD__rotation_quaternion
 	 */
@@ -272,7 +273,7 @@ public class View3DCursor extends CFacade {
 	/**
 	 * Get method for struct member 'rotation_euler'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * 3D rotation
 	 * @see #__DNA__FIELD__rotation_euler
 	 */
@@ -293,7 +294,7 @@ public class View3DCursor extends CFacade {
 	/**
 	 * Set method for struct member 'rotation_euler'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * 3D rotation
 	 * @see #__DNA__FIELD__rotation_euler
 	 */

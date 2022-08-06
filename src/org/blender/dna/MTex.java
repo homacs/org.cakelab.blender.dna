@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class MTex extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MTex.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 40;
 
@@ -152,7 +153,7 @@ public class MTex extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -635,7 +636,7 @@ public class MTex extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'colfac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> common </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -678,7 +679,7 @@ public class MTex extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'norfac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> material </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1061,7 +1062,7 @@ public class MTex extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'timefac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> particles </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1344,7 +1345,7 @@ public class MTex extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shadowfac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> light </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1367,7 +1368,7 @@ public class MTex extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'zenupfac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> world </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1614,7 +1615,7 @@ public class MTex extends CFacade {
 	/**
 	 * Get method for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvname
 	 */
@@ -1635,7 +1636,7 @@ public class MTex extends CFacade {
 	/**
 	 * Set method for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvname
 	 */
@@ -2352,7 +2353,7 @@ public class MTex extends CFacade {
 	/**
 	 * Get method for struct member 'colfac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> common </p>
 	 * @see #__DNA__FIELD__colfac
 	 */
@@ -2369,7 +2370,7 @@ public class MTex extends CFacade {
 	/**
 	 * Set method for struct member 'colfac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> common </p>
 	 * @see #__DNA__FIELD__colfac
 	 */
@@ -2414,7 +2415,7 @@ public class MTex extends CFacade {
 	/**
 	 * Get method for struct member 'norfac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> material </p>
 	 * @see #__DNA__FIELD__norfac
 	 */
@@ -2431,7 +2432,7 @@ public class MTex extends CFacade {
 	/**
 	 * Set method for struct member 'norfac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> material </p>
 	 * @see #__DNA__FIELD__norfac
 	 */
@@ -2952,7 +2953,7 @@ public class MTex extends CFacade {
 	/**
 	 * Get method for struct member 'timefac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> particles </p>
 	 * @see #__DNA__FIELD__timefac
 	 */
@@ -2969,7 +2970,7 @@ public class MTex extends CFacade {
 	/**
 	 * Set method for struct member 'timefac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> particles </p>
 	 * @see #__DNA__FIELD__timefac
 	 */
@@ -3350,7 +3351,7 @@ public class MTex extends CFacade {
 	/**
 	 * Get method for struct member 'shadowfac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> light </p>
 	 * @see #__DNA__FIELD__shadowfac
 	 */
@@ -3367,7 +3368,7 @@ public class MTex extends CFacade {
 	/**
 	 * Set method for struct member 'shadowfac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> light </p>
 	 * @see #__DNA__FIELD__shadowfac
 	 */
@@ -3384,7 +3385,7 @@ public class MTex extends CFacade {
 	/**
 	 * Get method for struct member 'zenupfac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> world </p>
 	 * @see #__DNA__FIELD__zenupfac
 	 */
@@ -3401,7 +3402,7 @@ public class MTex extends CFacade {
 	/**
 	 * Set method for struct member 'zenupfac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> world </p>
 	 * @see #__DNA__FIELD__zenupfac
 	 */

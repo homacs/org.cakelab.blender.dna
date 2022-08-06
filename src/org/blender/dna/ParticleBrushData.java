@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,9 +13,10 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ParticleBrushData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
- *  {@link Particle}  Edit Settings for a {@link Particle}  {@link Editing}  {@link Brush}  </p>
+ *  Particle  Edit Settings for a Particle  {@link Editing}  {@link Brush}  </p>
  */
 
 @CMetaData(size32=16, size64=16)
@@ -25,15 +27,15 @@ public class ParticleBrushData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ParticleBrushData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 189;
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Common setting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +58,7 @@ public class ParticleBrushData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'step'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For specific brushes only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -167,7 +169,7 @@ public class ParticleBrushData extends CFacade {
 	/**
 	 * Get method for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Common setting. </p>
 	 * @see #__DNA__FIELD__size
 	 */
@@ -184,7 +186,7 @@ public class ParticleBrushData extends CFacade {
 	/**
 	 * Set method for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Common setting. </p>
 	 * @see #__DNA__FIELD__size
 	 */
@@ -201,7 +203,7 @@ public class ParticleBrushData extends CFacade {
 	/**
 	 * Get method for struct member 'step'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For specific brushes only. </p>
 	 * @see #__DNA__FIELD__step
 	 */
@@ -218,7 +220,7 @@ public class ParticleBrushData extends CFacade {
 	/**
 	 * Set method for struct member 'step'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For specific brushes only. </p>
 	 * @see #__DNA__FIELD__step
 	 */

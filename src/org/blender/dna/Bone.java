@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Bone'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> this system works on different transformation space levels;</p><p> 1) {@link Bone}  Space; with each {@link Bone}  having own (0,0,0) origin 2) Armature Space; the rest position, in {@link Object}  space, Bones Spaces are applied hierarchical 3) Pose Space; the animation position, in {@link Object}  space 4) {@link World}  Space; {@link Object}  matrix applied to Pose or Armature space </p>
  */
 
@@ -25,15 +27,15 @@ public class Bone extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for Bone.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 337;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Next/previous elements within this list. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +78,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-Defined Properties on this {@link Bone} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,8 +101,9 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Parent bone (in same Armature)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Parent bone (in same Armature)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parent (IK parent if appropriate flag is set). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -123,7 +126,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'childbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Children. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -146,7 +149,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the bone - must be unique within the armature, MAXBONENAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,7 +172,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'roll'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Roll is input for edit-mode, length calculated. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -192,7 +195,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'head'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Location of head end of the bone relative to its parent
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -215,8 +218,9 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Location of tail end of the bone relative to its parent<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Location of tail end of the bone relative to its parent
+	 * <h4>Blender Source Code</h4>
 	 * <p> Head/tail and roll in {@link Bone}  Space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -239,7 +243,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bone_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation derived from head/tail/roll. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -342,7 +346,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'arm_tail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Head/tail in Armature Space (rest pose). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -365,7 +369,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'arm_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> , rest pose. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -388,7 +392,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'arm_roll'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Roll in Armature Space (rest pose). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -411,7 +415,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> dist, weight: for non-deformgroup deforms. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -454,7 +458,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'xwidth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> width: for block bones. keep in this order, transform!. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -477,7 +481,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Length of the bone
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -520,7 +524,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rad_head'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -563,7 +567,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'roll1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Curved bones settings - these define the "rest-pose" for a curved bone. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -686,7 +690,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ease1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Length of bezier handles. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -809,7 +813,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Patch for upward compatibility, UNUSED! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -832,7 +836,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layers that bone appears on. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -855,7 +859,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For B-bones. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -878,7 +882,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_prev_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of next/prev bone handles. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -921,7 +925,7 @@ public class Bone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Next/prev bones to use as handle references when calculating bbones (optional). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -972,7 +976,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Next/previous elements within this list. </p>
 	 * @see #__DNA__FIELD__next
 	 */
@@ -992,7 +996,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Next/previous elements within this list. </p>
 	 * @see #__DNA__FIELD__next
 	 */
@@ -1042,7 +1046,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-Defined Properties on this {@link Bone} . </p>
 	 * @see #__DNA__FIELD__prop
 	 */
@@ -1062,7 +1066,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-Defined Properties on this {@link Bone} . </p>
 	 * @see #__DNA__FIELD__prop
 	 */
@@ -1080,8 +1084,9 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Parent bone (in same Armature)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Parent bone (in same Armature)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parent (IK parent if appropriate flag is set). </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -1101,8 +1106,9 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Parent bone (in same Armature)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Parent bone (in same Armature)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parent (IK parent if appropriate flag is set). </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -1120,7 +1126,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'childbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Children. </p>
 	 * @see #__DNA__FIELD__childbase
 	 */
@@ -1137,7 +1143,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'childbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Children. </p>
 	 * @see #__DNA__FIELD__childbase
 	 */
@@ -1162,7 +1168,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the bone - must be unique within the armature, MAXBONENAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -1183,7 +1189,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the bone - must be unique within the armature, MAXBONENAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -1208,7 +1214,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'roll'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Roll is input for edit-mode, length calculated. </p>
 	 * @see #__DNA__FIELD__roll
 	 */
@@ -1225,7 +1231,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'roll'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Roll is input for edit-mode, length calculated. </p>
 	 * @see #__DNA__FIELD__roll
 	 */
@@ -1242,7 +1248,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'head'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Location of head end of the bone relative to its parent
 	 * @see #__DNA__FIELD__head
 	 */
@@ -1263,7 +1269,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'head'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Location of head end of the bone relative to its parent
 	 * @see #__DNA__FIELD__head
 	 */
@@ -1288,8 +1294,9 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'tail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Location of tail end of the bone relative to its parent<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Location of tail end of the bone relative to its parent
+	 * <h4>Blender Source Code</h4>
 	 * <p> Head/tail and roll in {@link Bone}  Space. </p>
 	 * @see #__DNA__FIELD__tail
 	 */
@@ -1310,8 +1317,9 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'tail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Location of tail end of the bone relative to its parent<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Location of tail end of the bone relative to its parent
+	 * <h4>Blender Source Code</h4>
 	 * <p> Head/tail and roll in {@link Bone}  Space. </p>
 	 * @see #__DNA__FIELD__tail
 	 */
@@ -1336,7 +1344,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'bone_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation derived from head/tail/roll. </p>
 	 * @see #__DNA__FIELD__bone_mat
 	 */
@@ -1358,7 +1366,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'bone_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation derived from head/tail/roll. </p>
 	 * @see #__DNA__FIELD__bone_mat
 	 */
@@ -1519,7 +1527,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'arm_tail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Head/tail in Armature Space (rest pose). </p>
 	 * @see #__DNA__FIELD__arm_tail
 	 */
@@ -1540,7 +1548,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'arm_tail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Head/tail in Armature Space (rest pose). </p>
 	 * @see #__DNA__FIELD__arm_tail
 	 */
@@ -1565,7 +1573,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'arm_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> , rest pose. </p>
 	 * @see #__DNA__FIELD__arm_mat
 	 */
@@ -1587,7 +1595,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'arm_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> , rest pose. </p>
 	 * @see #__DNA__FIELD__arm_mat
 	 */
@@ -1612,7 +1620,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'arm_roll'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Roll in Armature Space (rest pose). </p>
 	 * @see #__DNA__FIELD__arm_roll
 	 */
@@ -1629,7 +1637,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'arm_roll'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Roll in Armature Space (rest pose). </p>
 	 * @see #__DNA__FIELD__arm_roll
 	 */
@@ -1646,7 +1654,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'dist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> dist, weight: for non-deformgroup deforms. </p>
 	 * @see #__DNA__FIELD__dist
 	 */
@@ -1663,7 +1671,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'dist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> dist, weight: for non-deformgroup deforms. </p>
 	 * @see #__DNA__FIELD__dist
 	 */
@@ -1708,7 +1716,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'xwidth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> width: for block bones. keep in this order, transform!. </p>
 	 * @see #__DNA__FIELD__xwidth
 	 */
@@ -1725,7 +1733,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'xwidth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> width: for block bones. keep in this order, transform!. </p>
 	 * @see #__DNA__FIELD__xwidth
 	 */
@@ -1742,7 +1750,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Length of the bone
 	 * @see #__DNA__FIELD__length
 	 */
@@ -1759,7 +1767,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Length of the bone
 	 * @see #__DNA__FIELD__length
 	 */
@@ -1804,7 +1812,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'rad_head'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code> . </p>
 	 * @see #__DNA__FIELD__rad_head
 	 */
@@ -1821,7 +1829,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'rad_head'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code><code></code> . </p>
 	 * @see #__DNA__FIELD__rad_head
 	 */
@@ -1866,7 +1874,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'roll1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Curved bones settings - these define the "rest-pose" for a curved bone. </p>
 	 * @see #__DNA__FIELD__roll1
 	 */
@@ -1883,7 +1891,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'roll1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Curved bones settings - these define the "rest-pose" for a curved bone. </p>
 	 * @see #__DNA__FIELD__roll1
 	 */
@@ -2040,7 +2048,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'ease1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Length of bezier handles. </p>
 	 * @see #__DNA__FIELD__ease1
 	 */
@@ -2057,7 +2065,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'ease1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Length of bezier handles. </p>
 	 * @see #__DNA__FIELD__ease1
 	 */
@@ -2214,7 +2222,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Patch for upward compatibility, UNUSED! </p>
 	 * @see #__DNA__FIELD__size
 	 */
@@ -2235,7 +2243,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Patch for upward compatibility, UNUSED! </p>
 	 * @see #__DNA__FIELD__size
 	 */
@@ -2260,7 +2268,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layers that bone appears on. </p>
 	 * @see #__DNA__FIELD__layer
 	 */
@@ -2277,7 +2285,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layers that bone appears on. </p>
 	 * @see #__DNA__FIELD__layer
 	 */
@@ -2294,7 +2302,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For B-bones. </p>
 	 * @see #__DNA__FIELD__segments
 	 */
@@ -2311,7 +2319,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For B-bones. </p>
 	 * @see #__DNA__FIELD__segments
 	 */
@@ -2328,7 +2336,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'bbone_prev_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of next/prev bone handles. </p>
 	 * @see #__DNA__FIELD__bbone_prev_type
 	 */
@@ -2345,7 +2353,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'bbone_prev_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of next/prev bone handles. </p>
 	 * @see #__DNA__FIELD__bbone_prev_type
 	 */
@@ -2390,7 +2398,7 @@ public class Bone extends CFacade {
 	/**
 	 * Get method for struct member 'bbone_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Next/prev bones to use as handle references when calculating bbones (optional). </p>
 	 * @see #__DNA__FIELD__bbone_prev
 	 */
@@ -2410,7 +2418,7 @@ public class Bone extends CFacade {
 	/**
 	 * Set method for struct member 'bbone_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Next/prev bones to use as handle references when calculating bbones (optional). </p>
 	 * @see #__DNA__FIELD__bbone_prev
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,15 +25,15 @@ public class View3D_Runtime extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for View3D_Runtime.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 218;
 
 	/**
 	 * Field descriptor (offset) for struct member 'properties_storage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nkey panel stores stuff here. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +56,7 @@ public class View3D_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -106,7 +107,7 @@ public class View3D_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'properties_storage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nkey panel stores stuff here. </p>
 	 * @see #__DNA__FIELD__properties_storage
 	 */
@@ -126,7 +127,7 @@ public class View3D_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'properties_storage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nkey panel stores stuff here. </p>
 	 * @see #__DNA__FIELD__properties_storage
 	 */
@@ -144,7 +145,7 @@ public class View3D_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -161,7 +162,7 @@ public class View3D_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */

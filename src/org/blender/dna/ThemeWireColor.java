@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ThemeWireColor'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> set of colors for use as a custom color set for Objects/Bones wire drawing </p>
  */
 
@@ -25,8 +27,8 @@ public class ThemeWireColor extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ThemeWireColor.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 264;
 
@@ -93,8 +95,8 @@ public class ThemeWireColor extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eWireColor_Flags} . </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eWireColor_Flags . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -264,8 +266,8 @@ public class ThemeWireColor extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eWireColor_Flags} . </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eWireColor_Flags . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -281,8 +283,8 @@ public class ThemeWireColor extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eWireColor_Flags} . </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eWireColor_Flags . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

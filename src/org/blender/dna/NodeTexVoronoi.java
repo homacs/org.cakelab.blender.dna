@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,8 +24,8 @@ public class NodeTexVoronoi extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for NodeTexVoronoi.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 441;
 
@@ -111,7 +112,7 @@ public class NodeTexVoronoi extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'coloring'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -264,7 +265,7 @@ public class NodeTexVoronoi extends CFacade {
 	/**
 	 * Get method for struct member 'coloring'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -283,7 +284,7 @@ public class NodeTexVoronoi extends CFacade {
 	/**
 	 * Set method for struct member 'coloring'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>

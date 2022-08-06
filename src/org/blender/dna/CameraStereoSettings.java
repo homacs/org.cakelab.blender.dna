@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'CameraStereoSettings'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  Stereo Settings </p>
  */
@@ -26,8 +28,8 @@ public class CameraStereoSettings extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for CameraStereoSettings.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 27;
 
@@ -154,7 +156,7 @@ public class CameraStereoSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pole_merge_angle_from'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cut-off angle at which interocular distance start to fade down. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -177,7 +179,7 @@ public class CameraStereoSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pole_merge_angle_to'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cut-off angle at which interocular distance stops to fade down. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -388,7 +390,7 @@ public class CameraStereoSettings extends CFacade {
 	/**
 	 * Get method for struct member 'pole_merge_angle_from'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cut-off angle at which interocular distance start to fade down. </p>
 	 * @see #__DNA__FIELD__pole_merge_angle_from
 	 */
@@ -405,7 +407,7 @@ public class CameraStereoSettings extends CFacade {
 	/**
 	 * Set method for struct member 'pole_merge_angle_from'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cut-off angle at which interocular distance start to fade down. </p>
 	 * @see #__DNA__FIELD__pole_merge_angle_from
 	 */
@@ -422,7 +424,7 @@ public class CameraStereoSettings extends CFacade {
 	/**
 	 * Get method for struct member 'pole_merge_angle_to'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cut-off angle at which interocular distance stops to fade down. </p>
 	 * @see #__DNA__FIELD__pole_merge_angle_to
 	 */
@@ -439,7 +441,7 @@ public class CameraStereoSettings extends CFacade {
 	/**
 	 * Set method for struct member 'pole_merge_angle_to'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cut-off angle at which interocular distance stops to fade down. </p>
 	 * @see #__DNA__FIELD__pole_merge_angle_to
 	 */

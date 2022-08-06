@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,16 +25,16 @@ public class SpaceGraph_Runtime extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for SpaceGraph_Runtime.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 225;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eGraphEdit_Runtime_Flag}  </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eGraphEdit_Runtime_Flag  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -75,7 +76,7 @@ public class SpaceGraph_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ghost_curves'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sampled snapshots of F-Curves used as in-session guides </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -106,8 +107,8 @@ public class SpaceGraph_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eGraphEdit_Runtime_Flag}  </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eGraphEdit_Runtime_Flag  </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -123,8 +124,8 @@ public class SpaceGraph_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eGraphEdit_Runtime_Flag}  </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eGraphEdit_Runtime_Flag  </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -180,7 +181,7 @@ public class SpaceGraph_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'ghost_curves'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sampled snapshots of F-Curves used as in-session guides </p>
 	 * @see #__DNA__FIELD__ghost_curves
 	 */
@@ -197,7 +198,7 @@ public class SpaceGraph_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'ghost_curves'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sampled snapshots of F-Curves used as in-session guides </p>
 	 * @see #__DNA__FIELD__ghost_curves
 	 */

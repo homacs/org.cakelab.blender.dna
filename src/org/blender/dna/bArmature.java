@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class bArmature extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bArmature.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 338;
 
@@ -92,7 +93,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bonehash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ghash for quicker lookups of bones by name. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -135,7 +136,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'edbo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Editbone listbase, we use pointer so we can check state. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -158,7 +159,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'act_bone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> active bones should work like active object where possible<ul><li><p> active and selection are unrelated</p></li><li><p> active & hidden is not allowed</p></li><li><p> from the user perspective active == last selected</p></li><li><p> active should be ignored when not visible (hidden layer) Active bone. </p></li></ul> 
 	 * active and selection are unrelated
 	 * active & hidden is not allowed
@@ -187,7 +188,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'act_edbone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active edit-bone (in edit-mode). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -210,7 +211,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'needs_flush_to_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ID}  data is older than edit-mode data (TODO: move to edit-mode struct). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -333,7 +334,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer_used'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For UI, to show which layers are there. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -356,7 +357,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For buttons to work, both variables in this order together. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -399,7 +400,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'axes_position'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Relative position of the axes on the bone, from head (0.0f) to tail (1.0f). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -534,7 +535,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Get method for struct member 'bonehash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ghash for quicker lookups of bones by name. </p>
 	 * @see #__DNA__FIELD__bonehash
 	 */
@@ -554,7 +555,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Set method for struct member 'bonehash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ghash for quicker lookups of bones by name. </p>
 	 * @see #__DNA__FIELD__bonehash
 	 */
@@ -604,7 +605,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Get method for struct member 'edbo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Editbone listbase, we use pointer so we can check state. </p>
 	 * @see #__DNA__FIELD__edbo
 	 */
@@ -624,7 +625,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Set method for struct member 'edbo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Editbone listbase, we use pointer so we can check state. </p>
 	 * @see #__DNA__FIELD__edbo
 	 */
@@ -642,7 +643,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Get method for struct member 'act_bone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> active bones should work like active object where possible<ul><li><p> active and selection are unrelated</p></li><li><p> active & hidden is not allowed</p></li><li><p> from the user perspective active == last selected</p></li><li><p> active should be ignored when not visible (hidden layer) Active bone. </p></li></ul> 
 	 * active and selection are unrelated
 	 * active & hidden is not allowed
@@ -668,7 +669,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Set method for struct member 'act_bone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> active bones should work like active object where possible<ul><li><p> active and selection are unrelated</p></li><li><p> active & hidden is not allowed</p></li><li><p> from the user perspective active == last selected</p></li><li><p> active should be ignored when not visible (hidden layer) Active bone. </p></li></ul> 
 	 * active and selection are unrelated
 	 * active & hidden is not allowed
@@ -692,7 +693,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Get method for struct member 'act_edbone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active edit-bone (in edit-mode). </p>
 	 * @see #__DNA__FIELD__act_edbone
 	 */
@@ -712,7 +713,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Set method for struct member 'act_edbone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active edit-bone (in edit-mode). </p>
 	 * @see #__DNA__FIELD__act_edbone
 	 */
@@ -730,7 +731,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Get method for struct member 'needs_flush_to_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ID}  data is older than edit-mode data (TODO: move to edit-mode struct). </p>
 	 * @see #__DNA__FIELD__needs_flush_to_id
 	 */
@@ -747,7 +748,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Set method for struct member 'needs_flush_to_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ID}  data is older than edit-mode data (TODO: move to edit-mode struct). </p>
 	 * @see #__DNA__FIELD__needs_flush_to_id
 	 */
@@ -916,7 +917,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Get method for struct member 'layer_used'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For UI, to show which layers are there. </p>
 	 * @see #__DNA__FIELD__layer_used
 	 */
@@ -933,7 +934,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Set method for struct member 'layer_used'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For UI, to show which layers are there. </p>
 	 * @see #__DNA__FIELD__layer_used
 	 */
@@ -950,7 +951,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Get method for struct member 'layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For buttons to work, both variables in this order together. </p>
 	 * @see #__DNA__FIELD__layer
 	 */
@@ -967,7 +968,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Set method for struct member 'layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For buttons to work, both variables in this order together. </p>
 	 * @see #__DNA__FIELD__layer
 	 */
@@ -1012,7 +1013,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Get method for struct member 'axes_position'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Relative position of the axes on the bone, from head (0.0f) to tail (1.0f). </p>
 	 * @see #__DNA__FIELD__axes_position
 	 */
@@ -1029,7 +1030,7 @@ public class bArmature extends CFacade {
 	/**
 	 * Set method for struct member 'axes_position'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Relative position of the axes on the bone, from head (0.0f) to tail (1.0f). </p>
 	 * @see #__DNA__FIELD__axes_position
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,8 +14,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FileFolderHistory'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
- * <p> A wrapper to store previous and next folder lists (#FolderList) for a specific browse mode ({@link eFileBrowse_Mode} ). </p>
+ * 
+ * <h4>Blender Source Code</h4>
+ * <p> A wrapper to store previous and next folder lists (#FolderList) for a specific browse mode (eFileBrowse_Mode ). </p>
  */
 
 @CMetaData(size32=32, size64=56)
@@ -25,8 +27,8 @@ public class FileFolderHistory extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for FileFolderHistory.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 233;
 
@@ -73,7 +75,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'browse_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The browse mode this prev/next folder-lists are created for. eFileBrowse_Mode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -116,7 +118,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'folders_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the list of previous directories to show. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -139,7 +141,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'folders_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the list of next directories (pushed from previous) to show. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -234,7 +236,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Get method for struct member 'browse_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The browse mode this prev/next folder-lists are created for. eFileBrowse_Mode </p>
 	 * @see #__DNA__FIELD__browse_mode
 	 */
@@ -251,7 +253,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Set method for struct member 'browse_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The browse mode this prev/next folder-lists are created for. eFileBrowse_Mode </p>
 	 * @see #__DNA__FIELD__browse_mode
 	 */
@@ -308,7 +310,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Get method for struct member 'folders_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the list of previous directories to show. </p>
 	 * @see #__DNA__FIELD__folders_prev
 	 */
@@ -325,7 +327,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Set method for struct member 'folders_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the list of previous directories to show. </p>
 	 * @see #__DNA__FIELD__folders_prev
 	 */
@@ -350,7 +352,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Get method for struct member 'folders_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the list of next directories (pushed from previous) to show. </p>
 	 * @see #__DNA__FIELD__folders_next
 	 */
@@ -367,7 +369,7 @@ public class FileFolderHistory extends CFacade {
 	/**
 	 * Set method for struct member 'folders_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Holds the list of next directories (pushed from previous) to show. </p>
 	 * @see #__DNA__FIELD__folders_next
 	 */

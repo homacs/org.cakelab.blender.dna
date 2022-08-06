@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,15 +25,15 @@ public class ScrGlobalAreaData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ScrGlobalAreaData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 292;
 
 	/**
 	 * Field descriptor (offset) for struct member 'cur_fixed_height'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Global areas have a non-dynamic size. That means, changing the window size doesn't affect their size at all. However, they can still be 'collapsed', by changing this value. Ignores DPI (ED_area_global_size_y and winx/winy don't) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +56,7 @@ public class ScrGlobalAreaData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'size_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For global areas, this is the min and max size they can use depending on if they are 'collapsed' or not. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +99,7 @@ public class ScrGlobalAreaData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'align'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GlobalAreaAlign. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,7 +122,7 @@ public class ScrGlobalAreaData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GlobalAreaFlag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -172,7 +173,7 @@ public class ScrGlobalAreaData extends CFacade {
 	/**
 	 * Get method for struct member 'cur_fixed_height'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Global areas have a non-dynamic size. That means, changing the window size doesn't affect their size at all. However, they can still be 'collapsed', by changing this value. Ignores DPI (ED_area_global_size_y and winx/winy don't) </p>
 	 * @see #__DNA__FIELD__cur_fixed_height
 	 */
@@ -189,7 +190,7 @@ public class ScrGlobalAreaData extends CFacade {
 	/**
 	 * Set method for struct member 'cur_fixed_height'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Global areas have a non-dynamic size. That means, changing the window size doesn't affect their size at all. However, they can still be 'collapsed', by changing this value. Ignores DPI (ED_area_global_size_y and winx/winy don't) </p>
 	 * @see #__DNA__FIELD__cur_fixed_height
 	 */
@@ -206,7 +207,7 @@ public class ScrGlobalAreaData extends CFacade {
 	/**
 	 * Get method for struct member 'size_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For global areas, this is the min and max size they can use depending on if they are 'collapsed' or not. </p>
 	 * @see #__DNA__FIELD__size_min
 	 */
@@ -223,7 +224,7 @@ public class ScrGlobalAreaData extends CFacade {
 	/**
 	 * Set method for struct member 'size_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For global areas, this is the min and max size they can use depending on if they are 'collapsed' or not. </p>
 	 * @see #__DNA__FIELD__size_min
 	 */
@@ -268,7 +269,7 @@ public class ScrGlobalAreaData extends CFacade {
 	/**
 	 * Get method for struct member 'align'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GlobalAreaAlign. </p>
 	 * @see #__DNA__FIELD__align
 	 */
@@ -285,7 +286,7 @@ public class ScrGlobalAreaData extends CFacade {
 	/**
 	 * Set method for struct member 'align'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GlobalAreaAlign. </p>
 	 * @see #__DNA__FIELD__align
 	 */
@@ -302,7 +303,7 @@ public class ScrGlobalAreaData extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GlobalAreaFlag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -319,7 +320,7 @@ public class ScrGlobalAreaData extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GlobalAreaFlag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */

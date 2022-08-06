@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,15 +25,15 @@ public class ColorManagedDisplaySettings extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ColorManagedDisplaySettings.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 500;
 
 	/**
 	 * Field descriptor (offset) for struct member 'display_device'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Display device name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -63,7 +64,7 @@ public class ColorManagedDisplaySettings extends CFacade {
 	/**
 	 * Get method for struct member 'display_device'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Display device name
 	 * @see #__DNA__FIELD__display_device
 	 */
@@ -84,7 +85,7 @@ public class ColorManagedDisplaySettings extends CFacade {
 	/**
 	 * Set method for struct member 'display_device'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Display device name
 	 * @see #__DNA__FIELD__display_device
 	 */

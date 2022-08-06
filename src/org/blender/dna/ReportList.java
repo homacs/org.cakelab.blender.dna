@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ReportList'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> saved in the wm, don't remove </p>
  */
 
@@ -25,8 +27,8 @@ public class ReportList extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ReportList.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 576;
 
@@ -53,7 +55,7 @@ public class ReportList extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'printlevel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ReportType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +78,7 @@ public class ReportList extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'storelevel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ReportType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -203,7 +205,7 @@ public class ReportList extends CFacade {
 	/**
 	 * Get method for struct member 'printlevel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ReportType. </p>
 	 * @see #__DNA__FIELD__printlevel
 	 */
@@ -220,7 +222,7 @@ public class ReportList extends CFacade {
 	/**
 	 * Set method for struct member 'printlevel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ReportType. </p>
 	 * @see #__DNA__FIELD__printlevel
 	 */
@@ -237,7 +239,7 @@ public class ReportList extends CFacade {
 	/**
 	 * Get method for struct member 'storelevel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ReportType. </p>
 	 * @see #__DNA__FIELD__storelevel
 	 */
@@ -254,7 +256,7 @@ public class ReportList extends CFacade {
 	/**
 	 * Set method for struct member 'storelevel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ReportType. </p>
 	 * @see #__DNA__FIELD__storelevel
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,8 +24,8 @@ public class PaintCurve extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for PaintCurve.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 509;
 
@@ -51,7 +52,7 @@ public class PaintCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Points of curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -94,7 +95,7 @@ public class PaintCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'add_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index where next point will be added. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -161,7 +162,7 @@ public class PaintCurve extends CFacade {
 	/**
 	 * Get method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Points of curve. </p>
 	 * @see #__DNA__FIELD__points
 	 */
@@ -181,7 +182,7 @@ public class PaintCurve extends CFacade {
 	/**
 	 * Set method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Points of curve. </p>
 	 * @see #__DNA__FIELD__points
 	 */
@@ -227,7 +228,7 @@ public class PaintCurve extends CFacade {
 	/**
 	 * Get method for struct member 'add_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index where next point will be added. </p>
 	 * @see #__DNA__FIELD__add_index
 	 */
@@ -244,7 +245,7 @@ public class PaintCurve extends CFacade {
 	/**
 	 * Set method for struct member 'add_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index where next point will be added. </p>
 	 * @see #__DNA__FIELD__add_index
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class MetaBall extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MetaBall.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 54;
 
@@ -112,7 +113,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'editelems'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not saved in files, note we use pointer for editmode check. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -135,7 +136,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -160,7 +161,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> material of the mother ball will define the material used of all others </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -183,7 +184,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag is enum for updates, flag2 is bitflags for settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -246,7 +247,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'texflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used to store MB_AUTOSPACE. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -289,7 +290,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'needs_flush_to_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ID}  data is older than edit-mode data (TODO: move to edit-mode struct). Set #Main.is_memfile_undo_flush_needed when enabling. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -312,7 +313,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'loc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> texture space, copied as one block in editobject.c </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -375,7 +376,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'wiresize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display and render res. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -418,7 +419,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'thresh'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> bias elements to have an offset volume. mother ball changes will effect other objects thresholds, but these may also have their own thresh as an offset </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -441,7 +442,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lastelem'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> used in editmode {@link ListBase}  edit_elems; </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -632,7 +633,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Get method for struct member 'editelems'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not saved in files, note we use pointer for editmode check. </p>
 	 * @see #__DNA__FIELD__editelems
 	 */
@@ -652,7 +653,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Set method for struct member 'editelems'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Not saved in files, note we use pointer for editmode check. </p>
 	 * @see #__DNA__FIELD__editelems
 	 */
@@ -670,7 +671,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Get method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -692,7 +693,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Set method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -712,7 +713,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Get method for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> material of the mother ball will define the material used of all others </p>
 	 * @see #__DNA__FIELD__mat
 	 */
@@ -732,7 +733,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Set method for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> material of the mother ball will define the material used of all others </p>
 	 * @see #__DNA__FIELD__mat
 	 */
@@ -750,7 +751,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag is enum for updates, flag2 is bitflags for settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -767,7 +768,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag is enum for updates, flag2 is bitflags for settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -840,7 +841,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Get method for struct member 'texflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used to store MB_AUTOSPACE. </p>
 	 * @see #__DNA__FIELD__texflag
 	 */
@@ -857,7 +858,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Set method for struct member 'texflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used to store MB_AUTOSPACE. </p>
 	 * @see #__DNA__FIELD__texflag
 	 */
@@ -914,7 +915,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Get method for struct member 'needs_flush_to_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ID}  data is older than edit-mode data (TODO: move to edit-mode struct). Set #Main.is_memfile_undo_flush_needed when enabling. </p>
 	 * @see #__DNA__FIELD__needs_flush_to_id
 	 */
@@ -931,7 +932,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Set method for struct member 'needs_flush_to_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ID}  data is older than edit-mode data (TODO: move to edit-mode struct). Set #Main.is_memfile_undo_flush_needed when enabling. </p>
 	 * @see #__DNA__FIELD__needs_flush_to_id
 	 */
@@ -948,7 +949,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Get method for struct member 'loc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> texture space, copied as one block in editobject.c </p>
 	 * @see #__DNA__FIELD__loc
 	 */
@@ -969,7 +970,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Set method for struct member 'loc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> texture space, copied as one block in editobject.c </p>
 	 * @see #__DNA__FIELD__loc
 	 */
@@ -1074,7 +1075,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Get method for struct member 'wiresize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display and render res. </p>
 	 * @see #__DNA__FIELD__wiresize
 	 */
@@ -1091,7 +1092,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Set method for struct member 'wiresize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Display and render res. </p>
 	 * @see #__DNA__FIELD__wiresize
 	 */
@@ -1136,7 +1137,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Get method for struct member 'thresh'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> bias elements to have an offset volume. mother ball changes will effect other objects thresholds, but these may also have their own thresh as an offset </p>
 	 * @see #__DNA__FIELD__thresh
 	 */
@@ -1153,7 +1154,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Set method for struct member 'thresh'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> bias elements to have an offset volume. mother ball changes will effect other objects thresholds, but these may also have their own thresh as an offset </p>
 	 * @see #__DNA__FIELD__thresh
 	 */
@@ -1170,7 +1171,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Get method for struct member 'lastelem'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> used in editmode {@link ListBase}  edit_elems; </p>
 	 * @see #__DNA__FIELD__lastelem
 	 */
@@ -1190,7 +1191,7 @@ public class MetaBall extends CFacade {
 	/**
 	 * Set method for struct member 'lastelem'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> used in editmode {@link ListBase}  edit_elems; </p>
 	 * @see #__DNA__FIELD__lastelem
 	 */

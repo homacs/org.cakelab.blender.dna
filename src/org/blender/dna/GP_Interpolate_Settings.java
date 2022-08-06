@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'GP_Interpolate_Settings'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Settings for GP Interpolation Operators </p>
  */
 
@@ -24,15 +26,15 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for GP_Interpolate_Settings.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 200;
 
 	/**
 	 * Field descriptor (offset) for struct member 'custom_ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom interpolation curve (for use with GP_IPO_CURVEMAP). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -63,7 +65,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	/**
 	 * Get method for struct member 'custom_ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom interpolation curve (for use with GP_IPO_CURVEMAP). </p>
 	 * @see #__DNA__FIELD__custom_ipo
 	 */
@@ -83,7 +85,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	/**
 	 * Set method for struct member 'custom_ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom interpolation curve (for use with GP_IPO_CURVEMAP). </p>
 	 * @see #__DNA__FIELD__custom_ipo
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,15 +24,15 @@ public class NodeAttributeClamp extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for NodeAttributeClamp.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 467;
 
 	/**
 	 * Field descriptor (offset) for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CustomDataType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -54,7 +55,7 @@ public class NodeAttributeClamp extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'operation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NodeClampOperation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -85,7 +86,7 @@ public class NodeAttributeClamp extends CFacade {
 	/**
 	 * Get method for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CustomDataType. </p>
 	 * @see #__DNA__FIELD__data_type
 	 */
@@ -102,7 +103,7 @@ public class NodeAttributeClamp extends CFacade {
 	/**
 	 * Set method for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CustomDataType. </p>
 	 * @see #__DNA__FIELD__data_type
 	 */
@@ -119,7 +120,7 @@ public class NodeAttributeClamp extends CFacade {
 	/**
 	 * Get method for struct member 'operation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NodeClampOperation. </p>
 	 * @see #__DNA__FIELD__operation
 	 */
@@ -136,7 +137,7 @@ public class NodeAttributeClamp extends CFacade {
 	/**
 	 * Set method for struct member 'operation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NodeClampOperation. </p>
 	 * @see #__DNA__FIELD__operation
 	 */

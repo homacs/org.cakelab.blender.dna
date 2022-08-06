@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,9 +14,11 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MVert'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
- * A single vertex with coordinates and normal vector.<h4>Blender Source Code:</h4>
- * <p>{@link Mesh}  Vertices.</p><p> Typically accessed from {@link Mesh.mvert}  </p>
+ * 
+ * <h4>Java .Blend</h4>
+ * A single vertex with coordinates and normal vector.
+ * <h4>Blender Source Code</h4>
+ * <p>{@link Mesh}  Vertices.</p><p> Typically accessed from {@link Mesh#getMvert()}  </p>
  */
 
 @CMetaData(size32=20, size64=20)
@@ -26,15 +29,15 @@ public class MVert extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MVert.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 65;
 
 	/**
 	 * Field descriptor (offset) for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * XYZ coordinates.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,8 +60,9 @@ public class MVert extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'no'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Normal vector.<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * Normal vector.
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache the normal, can always be recalculated from surrounding faces. See #CD_CUSTOMLOOPNORMAL for custom normals. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -81,7 +85,7 @@ public class MVert extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values</h3>
 	 * 				<pre>
 	 * 	SELECT				= 1
@@ -139,7 +143,7 @@ public class MVert extends CFacade {
 	/**
 	 * Get method for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * XYZ coordinates.
 	 * @see #__DNA__FIELD__co
 	 */
@@ -160,7 +164,7 @@ public class MVert extends CFacade {
 	/**
 	 * Set method for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * XYZ coordinates.
 	 * @see #__DNA__FIELD__co
 	 */
@@ -185,8 +189,9 @@ public class MVert extends CFacade {
 	/**
 	 * Get method for struct member 'no'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Normal vector.<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * Normal vector.
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache the normal, can always be recalculated from surrounding faces. See #CD_CUSTOMLOOPNORMAL for custom normals. </p>
 	 * @see #__DNA__FIELD__no
 	 */
@@ -207,8 +212,9 @@ public class MVert extends CFacade {
 	/**
 	 * Set method for struct member 'no'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Normal vector.<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * Normal vector.
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache the normal, can always be recalculated from surrounding faces. See #CD_CUSTOMLOOPNORMAL for custom normals. </p>
 	 * @see #__DNA__FIELD__no
 	 */
@@ -233,7 +239,7 @@ public class MVert extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values</h3>
 	 * 				<pre>
 	 * 	SELECT				= 1
@@ -257,7 +263,7 @@ public class MVert extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values</h3>
 	 * 				<pre>
 	 * 	SELECT				= 1

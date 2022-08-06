@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,16 +25,17 @@ public class XrSessionSettings extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for XrSessionSettings.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 723;
 
 	/**
 	 * Field descriptor (offset) for struct member 'shading'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shading settings, struct shared with 3D-View so settings are the same. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,8 +78,9 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'base_pose_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Define where the location and rotation for the VR view come from, to which translation and rotation deltas from the VR headset will be applied to<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Define where the location and rotation for the VR view come from, to which translation and rotation deltas from the VR headset will be applied to
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXRSessionBasePoseType </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -100,8 +103,9 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'base_pose_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Object to take the location and rotation to which translation and rotation deltas from the VR headset will be applied to<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Object to take the location and rotation to which translation and rotation deltas from the VR headset will be applied to
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  to take the location and rotation as base position from. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -124,7 +128,7 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'base_pose_location'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Coordinates to apply translation deltas from the VR headset to
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -147,7 +151,7 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'base_pose_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Rotation angle around the Z-Axis to apply the rotation deltas from the VR headset to
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -170,7 +174,7 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'draw_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link View3D}  draw flags (V3D_OFSDRAW_NONE, V3D_OFSDRAW_SHOW_ANNOTATION, ...). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -213,8 +217,9 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'clip_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * VR viewport near clipping distance<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * VR viewport near clipping distance
+	 * <h4>Blender Source Code</h4>
 	 * <p> Clipping distance. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -237,7 +242,7 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'clip_end'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * VR viewport far clipping distance
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -288,8 +293,9 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Get method for struct member 'shading'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shading settings, struct shared with 3D-View so settings are the same. </p>
 	 * @see #__DNA__FIELD__shading
 	 */
@@ -306,8 +312,9 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Set method for struct member 'shading'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shading settings, struct shared with 3D-View so settings are the same. </p>
 	 * @see #__DNA__FIELD__shading
 	 */
@@ -372,8 +379,9 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Get method for struct member 'base_pose_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Define where the location and rotation for the VR view come from, to which translation and rotation deltas from the VR headset will be applied to<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Define where the location and rotation for the VR view come from, to which translation and rotation deltas from the VR headset will be applied to
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXRSessionBasePoseType </p>
 	 * @see #__DNA__FIELD__base_pose_type
 	 */
@@ -390,8 +398,9 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Set method for struct member 'base_pose_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Define where the location and rotation for the VR view come from, to which translation and rotation deltas from the VR headset will be applied to<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Define where the location and rotation for the VR view come from, to which translation and rotation deltas from the VR headset will be applied to
+	 * <h4>Blender Source Code</h4>
 	 * <p> eXRSessionBasePoseType </p>
 	 * @see #__DNA__FIELD__base_pose_type
 	 */
@@ -408,8 +417,9 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Get method for struct member 'base_pose_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Object to take the location and rotation to which translation and rotation deltas from the VR headset will be applied to<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Object to take the location and rotation to which translation and rotation deltas from the VR headset will be applied to
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  to take the location and rotation as base position from. </p>
 	 * @see #__DNA__FIELD__base_pose_object
 	 */
@@ -429,8 +439,9 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Set method for struct member 'base_pose_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Object to take the location and rotation to which translation and rotation deltas from the VR headset will be applied to<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Object to take the location and rotation to which translation and rotation deltas from the VR headset will be applied to
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  to take the location and rotation as base position from. </p>
 	 * @see #__DNA__FIELD__base_pose_object
 	 */
@@ -448,7 +459,7 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Get method for struct member 'base_pose_location'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Coordinates to apply translation deltas from the VR headset to
 	 * @see #__DNA__FIELD__base_pose_location
 	 */
@@ -469,7 +480,7 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Set method for struct member 'base_pose_location'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Coordinates to apply translation deltas from the VR headset to
 	 * @see #__DNA__FIELD__base_pose_location
 	 */
@@ -494,7 +505,7 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Get method for struct member 'base_pose_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Rotation angle around the Z-Axis to apply the rotation deltas from the VR headset to
 	 * @see #__DNA__FIELD__base_pose_angle
 	 */
@@ -511,7 +522,7 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Set method for struct member 'base_pose_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Rotation angle around the Z-Axis to apply the rotation deltas from the VR headset to
 	 * @see #__DNA__FIELD__base_pose_angle
 	 */
@@ -528,7 +539,7 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Get method for struct member 'draw_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link View3D}  draw flags (V3D_OFSDRAW_NONE, V3D_OFSDRAW_SHOW_ANNOTATION, ...). </p>
 	 * @see #__DNA__FIELD__draw_flags
 	 */
@@ -545,7 +556,7 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Set method for struct member 'draw_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link View3D}  draw flags (V3D_OFSDRAW_NONE, V3D_OFSDRAW_SHOW_ANNOTATION, ...). </p>
 	 * @see #__DNA__FIELD__draw_flags
 	 */
@@ -602,8 +613,9 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Get method for struct member 'clip_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * VR viewport near clipping distance<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * VR viewport near clipping distance
+	 * <h4>Blender Source Code</h4>
 	 * <p> Clipping distance. </p>
 	 * @see #__DNA__FIELD__clip_start
 	 */
@@ -620,8 +632,9 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Set method for struct member 'clip_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * VR viewport near clipping distance<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * VR viewport near clipping distance
+	 * <h4>Blender Source Code</h4>
 	 * <p> Clipping distance. </p>
 	 * @see #__DNA__FIELD__clip_start
 	 */
@@ -638,7 +651,7 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Get method for struct member 'clip_end'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * VR viewport far clipping distance
 	 * @see #__DNA__FIELD__clip_end
 	 */
@@ -655,7 +668,7 @@ public class XrSessionSettings extends CFacade {
 	/**
 	 * Set method for struct member 'clip_end'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * VR viewport far clipping distance
 	 * @see #__DNA__FIELD__clip_end
 	 */

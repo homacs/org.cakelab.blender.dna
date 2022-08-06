@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPDframe_Runtime'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  GP Frame Runtime temp data for {@link bGPDframe}  </p>
  */
@@ -25,15 +27,15 @@ public class bGPDframe_Runtime extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bGPDframe_Runtime.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 537;
 
 	/**
 	 * Field descriptor (offset) for struct member 'frameid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of this frame in the listbase of frames. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +58,7 @@ public class bGPDframe_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'onion_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Onion offset from active frame. 0 if not onion. INT_MAX to bypass frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +81,7 @@ public class bGPDframe_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpf_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original frame (used to dereference evaluated data) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -110,7 +112,7 @@ public class bGPDframe_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'frameid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of this frame in the listbase of frames. </p>
 	 * @see #__DNA__FIELD__frameid
 	 */
@@ -127,7 +129,7 @@ public class bGPDframe_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'frameid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of this frame in the listbase of frames. </p>
 	 * @see #__DNA__FIELD__frameid
 	 */
@@ -144,7 +146,7 @@ public class bGPDframe_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'onion_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Onion offset from active frame. 0 if not onion. INT_MAX to bypass frame. </p>
 	 * @see #__DNA__FIELD__onion_id
 	 */
@@ -161,7 +163,7 @@ public class bGPDframe_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'onion_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Onion offset from active frame. 0 if not onion. INT_MAX to bypass frame. </p>
 	 * @see #__DNA__FIELD__onion_id
 	 */
@@ -178,7 +180,7 @@ public class bGPDframe_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'gpf_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original frame (used to dereference evaluated data) </p>
 	 * @see #__DNA__FIELD__gpf_orig
 	 */
@@ -198,7 +200,7 @@ public class bGPDframe_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'gpf_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original frame (used to dereference evaluated data) </p>
 	 * @see #__DNA__FIELD__gpf_orig
 	 */

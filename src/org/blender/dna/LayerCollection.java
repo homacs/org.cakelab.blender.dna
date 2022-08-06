@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class LayerCollection extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for LayerCollection.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 705;
 
@@ -72,7 +73,7 @@ public class LayerCollection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Collection this layer collection is wrapping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -95,7 +96,7 @@ public class LayerCollection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scene_collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -180,7 +181,7 @@ public class LayerCollection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer_collections'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Synced with collection->children. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -315,7 +316,7 @@ public class LayerCollection extends CFacade {
 	/**
 	 * Get method for struct member 'collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Collection this layer collection is wrapping
 	 * @see #__DNA__FIELD__collection
 	 */
@@ -335,7 +336,7 @@ public class LayerCollection extends CFacade {
 	/**
 	 * Set method for struct member 'collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Collection this layer collection is wrapping
 	 * @see #__DNA__FIELD__collection
 	 */
@@ -353,7 +354,7 @@ public class LayerCollection extends CFacade {
 	/**
 	 * Get method for struct member 'scene_collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -375,7 +376,7 @@ public class LayerCollection extends CFacade {
 	/**
 	 * Set method for struct member 'scene_collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -491,7 +492,7 @@ public class LayerCollection extends CFacade {
 	/**
 	 * Get method for struct member 'layer_collections'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Synced with collection->children. </p>
 	 * @see #__DNA__FIELD__layer_collections
 	 */
@@ -508,7 +509,7 @@ public class LayerCollection extends CFacade {
 	/**
 	 * Set method for struct member 'layer_collections'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Synced with collection->children. </p>
 	 * @see #__DNA__FIELD__layer_collections
 	 */

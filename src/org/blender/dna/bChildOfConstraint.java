@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bChildOfConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Child Of Constraint </p>
  */
 
@@ -25,15 +27,15 @@ public class bChildOfConstraint extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bChildOfConstraint.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 374;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  which will act as parent (or target comes from). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +58,7 @@ public class bChildOfConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +101,7 @@ public class bChildOfConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'invmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parent-inverse matrix to use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -122,7 +124,7 @@ public class bChildOfConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> String to specify a subobject target, MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -153,7 +155,7 @@ public class bChildOfConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  which will act as parent (or target comes from). </p>
 	 * @see #__DNA__FIELD__tar
 	 */
@@ -173,7 +175,7 @@ public class bChildOfConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  which will act as parent (or target comes from). </p>
 	 * @see #__DNA__FIELD__tar
 	 */
@@ -191,7 +193,7 @@ public class bChildOfConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -208,7 +210,7 @@ public class bChildOfConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -265,7 +267,7 @@ public class bChildOfConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'invmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parent-inverse matrix to use. </p>
 	 * @see #__DNA__FIELD__invmat
 	 */
@@ -287,7 +289,7 @@ public class bChildOfConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'invmat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parent-inverse matrix to use. </p>
 	 * @see #__DNA__FIELD__invmat
 	 */
@@ -312,7 +314,7 @@ public class bChildOfConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> String to specify a subobject target, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
@@ -333,7 +335,7 @@ public class bChildOfConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> String to specify a subobject target, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */

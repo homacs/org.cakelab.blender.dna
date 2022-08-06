@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,8 +14,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FileSelectAssetLibraryUID'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
- * <p> Information to identify a asset library. May be either one of the predefined types (current 'Main', builtin library, project library), or a custom type as defined in the Preferences.</p><p> If the type is set to {@link FILE_ASSET_LIBRARY_CUSTOM} , idname must have the name to identify the custom library. Otherwise idname is not used. </p>
+ * 
+ * <h4>Blender Source Code</h4>
+ * <p> Information to identify a asset library. May be either one of the predefined types (current 'Main', builtin library, project library), or a custom type as defined in the Preferences.</p><p> If the type is set to FILE_ASSET_LIBRARY_CUSTOM , idname must have the name to identify the custom library. Otherwise idname is not used. </p>
  */
 
 @CMetaData(size32=8, size64=8)
@@ -25,15 +27,15 @@ public class FileSelectAssetLibraryUID extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for FileSelectAssetLibraryUID.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 230;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eFileAssetLibrary_Type </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,8 +78,8 @@ public class FileSelectAssetLibraryUID extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'custom_library_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> If showing a custom asset library ({@link FILE_ASSET_LIBRARY_CUSTOM} ), this is the index of the {@link bUserAssetLibrary}  within {@link UserDef.asset_libraries} . Should be ignored otherwise (but better set to -1 then, for sanity and debugging). </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> If showing a custom asset library (FILE_ASSET_LIBRARY_CUSTOM ), this is the index of the {@link bUserAssetLibrary}  within {@link UserDef#getAsset_libraries()} . Should be ignored otherwise (but better set to -1 then, for sanity and debugging). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -107,7 +109,7 @@ public class FileSelectAssetLibraryUID extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eFileAssetLibrary_Type </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -124,7 +126,7 @@ public class FileSelectAssetLibraryUID extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eFileAssetLibrary_Type </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -181,8 +183,8 @@ public class FileSelectAssetLibraryUID extends CFacade {
 	/**
 	 * Get method for struct member 'custom_library_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> If showing a custom asset library ({@link FILE_ASSET_LIBRARY_CUSTOM} ), this is the index of the {@link bUserAssetLibrary}  within {@link UserDef.asset_libraries} . Should be ignored otherwise (but better set to -1 then, for sanity and debugging). </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> If showing a custom asset library (FILE_ASSET_LIBRARY_CUSTOM ), this is the index of the {@link bUserAssetLibrary}  within {@link UserDef#getAsset_libraries()} . Should be ignored otherwise (but better set to -1 then, for sanity and debugging). </p>
 	 * @see #__DNA__FIELD__custom_library_index
 	 */
 	
@@ -198,8 +200,8 @@ public class FileSelectAssetLibraryUID extends CFacade {
 	/**
 	 * Set method for struct member 'custom_library_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> If showing a custom asset library ({@link FILE_ASSET_LIBRARY_CUSTOM} ), this is the index of the {@link bUserAssetLibrary}  within {@link UserDef.asset_libraries} . Should be ignored otherwise (but better set to -1 then, for sanity and debugging). </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> If showing a custom asset library (FILE_ASSET_LIBRARY_CUSTOM ), this is the index of the {@link bUserAssetLibrary}  within {@link UserDef#getAsset_libraries()} . Should be ignored otherwise (but better set to -1 then, for sanity and debugging). </p>
 	 * @see #__DNA__FIELD__custom_library_index
 	 */
 	

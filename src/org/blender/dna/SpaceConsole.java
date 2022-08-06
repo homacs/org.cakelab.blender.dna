@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpaceConsole'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Console View </p>
  */
 
@@ -25,8 +27,8 @@ public class SpaceConsole extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for SpaceConsole.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 244;
 
@@ -73,7 +75,7 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -156,7 +158,7 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lheight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. space vars </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -199,8 +201,9 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scrollback'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Command output<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Command output
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ConsoleLine} ; output. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -223,8 +226,9 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'history'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Command history<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Command history
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ConsoleLine} ; command history, current edited line is the first. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -247,7 +251,7 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'prompt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Command line prompt
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -270,8 +274,9 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'language'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Command line prompt language<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Command line prompt language
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiple consoles are possible, not just python. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -294,7 +299,7 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sel_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selection offset in bytes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -409,7 +414,7 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -426,7 +431,7 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -547,7 +552,7 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Get method for struct member 'lheight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. space vars </p>
 	 * @see #__DNA__FIELD__lheight
 	 */
@@ -564,7 +569,7 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Set method for struct member 'lheight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. space vars </p>
 	 * @see #__DNA__FIELD__lheight
 	 */
@@ -621,8 +626,9 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Get method for struct member 'scrollback'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Command output<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Command output
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ConsoleLine} ; output. </p>
 	 * @see #__DNA__FIELD__scrollback
 	 */
@@ -639,8 +645,9 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Set method for struct member 'scrollback'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Command output<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Command output
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ConsoleLine} ; output. </p>
 	 * @see #__DNA__FIELD__scrollback
 	 */
@@ -665,8 +672,9 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Get method for struct member 'history'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Command history<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Command history
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ConsoleLine} ; command history, current edited line is the first. </p>
 	 * @see #__DNA__FIELD__history
 	 */
@@ -683,8 +691,9 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Set method for struct member 'history'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Command history<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Command history
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link ConsoleLine} ; command history, current edited line is the first. </p>
 	 * @see #__DNA__FIELD__history
 	 */
@@ -709,7 +718,7 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Get method for struct member 'prompt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Command line prompt
 	 * @see #__DNA__FIELD__prompt
 	 */
@@ -730,7 +739,7 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Set method for struct member 'prompt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Command line prompt
 	 * @see #__DNA__FIELD__prompt
 	 */
@@ -755,8 +764,9 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Get method for struct member 'language'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Command line prompt language<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Command line prompt language
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiple consoles are possible, not just python. </p>
 	 * @see #__DNA__FIELD__language
 	 */
@@ -777,8 +787,9 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Set method for struct member 'language'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Command line prompt language<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Command line prompt language
+	 * <h4>Blender Source Code</h4>
 	 * <p> Multiple consoles are possible, not just python. </p>
 	 * @see #__DNA__FIELD__language
 	 */
@@ -803,7 +814,7 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Get method for struct member 'sel_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selection offset in bytes. </p>
 	 * @see #__DNA__FIELD__sel_start
 	 */
@@ -820,7 +831,7 @@ public class SpaceConsole extends CFacade {
 	/**
 	 * Set method for struct member 'sel_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selection offset in bytes. </p>
 	 * @see #__DNA__FIELD__sel_start
 	 */

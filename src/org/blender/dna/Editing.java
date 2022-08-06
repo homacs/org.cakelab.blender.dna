@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,15 +25,15 @@ public class Editing extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for Editing.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 308;
 
 	/**
 	 * Field descriptor (offset) for struct member 'seqbasep'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to the current list of seq's being edited (can be within a meta strip). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +56,7 @@ public class Editing extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'seqbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to the top-most seq's. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +99,7 @@ public class Editing extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'act_seq'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Context vars, used to be static </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,7 +122,7 @@ public class Editing extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'act_imagedir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -144,7 +145,7 @@ public class Editing extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'act_sounddir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -167,7 +168,7 @@ public class Editing extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'proxy_dir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -310,7 +311,7 @@ public class Editing extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'recycle_max_cost'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache control UNUSED only for versioning. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -373,7 +374,7 @@ public class Editing extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'disk_cache_timestamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Must be initialized only by seq_cache_create() </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -404,7 +405,7 @@ public class Editing extends CFacade {
 	/**
 	 * Get method for struct member 'seqbasep'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to the current list of seq's being edited (can be within a meta strip). </p>
 	 * @see #__DNA__FIELD__seqbasep
 	 */
@@ -424,7 +425,7 @@ public class Editing extends CFacade {
 	/**
 	 * Set method for struct member 'seqbasep'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to the current list of seq's being edited (can be within a meta strip). </p>
 	 * @see #__DNA__FIELD__seqbasep
 	 */
@@ -442,7 +443,7 @@ public class Editing extends CFacade {
 	/**
 	 * Get method for struct member 'seqbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to the top-most seq's. </p>
 	 * @see #__DNA__FIELD__seqbase
 	 */
@@ -459,7 +460,7 @@ public class Editing extends CFacade {
 	/**
 	 * Set method for struct member 'seqbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to the top-most seq's. </p>
 	 * @see #__DNA__FIELD__seqbase
 	 */
@@ -520,7 +521,7 @@ public class Editing extends CFacade {
 	/**
 	 * Get method for struct member 'act_seq'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Context vars, used to be static </p>
 	 * @see #__DNA__FIELD__act_seq
 	 */
@@ -540,7 +541,7 @@ public class Editing extends CFacade {
 	/**
 	 * Set method for struct member 'act_seq'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Context vars, used to be static </p>
 	 * @see #__DNA__FIELD__act_seq
 	 */
@@ -558,7 +559,7 @@ public class Editing extends CFacade {
 	/**
 	 * Get method for struct member 'act_imagedir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__act_imagedir
 	 */
@@ -579,7 +580,7 @@ public class Editing extends CFacade {
 	/**
 	 * Set method for struct member 'act_imagedir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__act_imagedir
 	 */
@@ -604,7 +605,7 @@ public class Editing extends CFacade {
 	/**
 	 * Get method for struct member 'act_sounddir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__act_sounddir
 	 */
@@ -625,7 +626,7 @@ public class Editing extends CFacade {
 	/**
 	 * Set method for struct member 'act_sounddir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__act_sounddir
 	 */
@@ -650,7 +651,7 @@ public class Editing extends CFacade {
 	/**
 	 * Get method for struct member 'proxy_dir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__proxy_dir
 	 */
@@ -671,7 +672,7 @@ public class Editing extends CFacade {
 	/**
 	 * Set method for struct member 'proxy_dir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__proxy_dir
 	 */
@@ -876,7 +877,7 @@ public class Editing extends CFacade {
 	/**
 	 * Get method for struct member 'recycle_max_cost'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache control UNUSED only for versioning. </p>
 	 * @see #__DNA__FIELD__recycle_max_cost
 	 */
@@ -893,7 +894,7 @@ public class Editing extends CFacade {
 	/**
 	 * Set method for struct member 'recycle_max_cost'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cache control UNUSED only for versioning. </p>
 	 * @see #__DNA__FIELD__recycle_max_cost
 	 */
@@ -970,7 +971,7 @@ public class Editing extends CFacade {
 	/**
 	 * Get method for struct member 'disk_cache_timestamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Must be initialized only by seq_cache_create() </p>
 	 * @see #__DNA__FIELD__disk_cache_timestamp
 	 */
@@ -987,7 +988,7 @@ public class Editing extends CFacade {
 	/**
 	 * Set method for struct member 'disk_cache_timestamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Must be initialized only by seq_cache_create() </p>
 	 * @see #__DNA__FIELD__disk_cache_timestamp
 	 */

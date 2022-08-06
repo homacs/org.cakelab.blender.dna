@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'wmXrData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> #ifdef WITH_XR_OPENXR </p>
  */
 
@@ -24,15 +26,15 @@ public class wmXrData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for wmXrData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 577;
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime information for managing Blender specific behaviors. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +57,7 @@ public class wmXrData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'session_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Permanent session settings (draw mode, feature toggles, etc). Stored in files and accessible even before the session runs. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -86,7 +88,7 @@ public class wmXrData extends CFacade {
 	/**
 	 * Get method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime information for managing Blender specific behaviors. </p>
 	 * @see #__DNA__FIELD__runtime
 	 */
@@ -106,7 +108,7 @@ public class wmXrData extends CFacade {
 	/**
 	 * Set method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime information for managing Blender specific behaviors. </p>
 	 * @see #__DNA__FIELD__runtime
 	 */
@@ -124,7 +126,7 @@ public class wmXrData extends CFacade {
 	/**
 	 * Get method for struct member 'session_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Permanent session settings (draw mode, feature toggles, etc). Stored in files and accessible even before the session runs. </p>
 	 * @see #__DNA__FIELD__session_settings
 	 */
@@ -141,7 +143,7 @@ public class wmXrData extends CFacade {
 	/**
 	 * Set method for struct member 'session_settings'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Permanent session settings (draw mode, feature toggles, etc). Stored in files and accessible even before the session runs. </p>
 	 * @see #__DNA__FIELD__session_settings
 	 */

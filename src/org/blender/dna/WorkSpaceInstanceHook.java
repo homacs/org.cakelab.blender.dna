@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'WorkSpaceInstanceHook'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Little wrapper to store data that is going to be per window, but coming from the workspace. It allows us to keep workspace and window data completely separate. </p>
  */
 
@@ -24,8 +26,8 @@ public class WorkSpaceInstanceHook extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for WorkSpaceInstanceHook.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 715;
 
@@ -72,7 +74,7 @@ public class WorkSpaceInstanceHook extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'temp_workspace_store'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Needed because we can't change workspaces/layouts in running handler loop, it would break context. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -187,7 +189,7 @@ public class WorkSpaceInstanceHook extends CFacade {
 	/**
 	 * Get method for struct member 'temp_workspace_store'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Needed because we can't change workspaces/layouts in running handler loop, it would break context. </p>
 	 * @see #__DNA__FIELD__temp_workspace_store
 	 */
@@ -207,7 +209,7 @@ public class WorkSpaceInstanceHook extends CFacade {
 	/**
 	 * Set method for struct member 'temp_workspace_store'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Needed because we can't change workspaces/layouts in running handler loop, it would break context. </p>
 	 * @see #__DNA__FIELD__temp_workspace_store
 	 */

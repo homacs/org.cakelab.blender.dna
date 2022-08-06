@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class WarpModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for WarpModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 129;
 
@@ -52,7 +53,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -115,7 +116,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -178,7 +179,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object_from'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> end {@link MappingInfoModifierData}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -221,7 +222,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bone_from'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -244,7 +245,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bone_to'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -287,7 +288,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -474,7 +475,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
 	 * @see #__DNA__FIELD__texture
 	 */
@@ -494,7 +495,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'texture'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
 	 * @see #__DNA__FIELD__texture
 	 */
@@ -584,7 +585,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
@@ -605,7 +606,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
@@ -686,7 +687,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'object_from'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> end {@link MappingInfoModifierData}  </p>
 	 * @see #__DNA__FIELD__object_from
 	 */
@@ -706,7 +707,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'object_from'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> end {@link MappingInfoModifierData}  </p>
 	 * @see #__DNA__FIELD__object_from
 	 */
@@ -756,7 +757,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'bone_from'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__bone_from
 	 */
@@ -777,7 +778,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'bone_from'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__bone_from
 	 */
@@ -802,7 +803,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'bone_to'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__bone_to
 	 */
@@ -823,7 +824,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'bone_to'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__bone_to
 	 */
@@ -880,7 +881,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
@@ -901,7 +902,7 @@ public class WarpModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */

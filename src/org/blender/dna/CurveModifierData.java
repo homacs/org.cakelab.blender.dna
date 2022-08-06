@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class CurveModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for CurveModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 93;
 
@@ -72,7 +73,7 @@ public class CurveModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -95,7 +96,7 @@ public class CurveModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'defaxis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis along which curve deforms. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -254,7 +255,7 @@ public class CurveModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -275,7 +276,7 @@ public class CurveModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -300,7 +301,7 @@ public class CurveModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'defaxis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis along which curve deforms. </p>
 	 * @see #__DNA__FIELD__defaxis
 	 */
@@ -317,7 +318,7 @@ public class CurveModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'defaxis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis along which curve deforms. </p>
 	 * @see #__DNA__FIELD__defaxis
 	 */

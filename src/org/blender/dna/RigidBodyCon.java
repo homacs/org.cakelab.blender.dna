@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'RigidBodyCon'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  RigidBody Constraint RigidBodyConstraint (rbc)</p><p> Represents an constraint connecting two rigid bodies. </p>
  */
@@ -26,15 +28,15 @@ public class RigidBodyCon extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for RigidBodyCon.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 656;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ob1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> First object influenced by the constraint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +59,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ob2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Second object influenced by the constraint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +82,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General Settings for this {@link RigidBodyCon}  (eRigidBodyCon_Type) role of RigidBody in sim . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -103,7 +105,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'num_solver_iterations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of constraint solver iterations made per simulation step. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,7 +128,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eRigidBodyCon_Flag). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -149,7 +151,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'breaking_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Breaking impulse threshold. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -172,7 +174,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'spring_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Spring implementation to use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -215,7 +217,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'limit_lin_x_lower'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> limits translation limits </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -338,7 +340,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'limit_ang_x_lower'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> rotation limits </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -461,7 +463,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'spring_stiffness_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> spring settings resistance to deformation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -584,7 +586,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'spring_damping_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> amount of velocity lost over time </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -707,7 +709,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'motor_lin_target_velocity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> motor settings Linear velocity the motor tries to hold. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -730,7 +732,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'motor_ang_target_velocity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angular velocity the motor tries to hold. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -753,7 +755,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'motor_lin_max_impulse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum force used to reach linear target velocity. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -776,7 +778,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'motor_ang_max_impulse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum force used to reach angular target velocity. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -799,7 +801,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'physics_constraint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> References to Physics Sim object. Exist at runtime only Physics object representation (i.e. btTypedConstraint). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -830,7 +832,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Get method for struct member 'ob1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> First object influenced by the constraint. </p>
 	 * @see #__DNA__FIELD__ob1
 	 */
@@ -850,7 +852,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Set method for struct member 'ob1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> First object influenced by the constraint. </p>
 	 * @see #__DNA__FIELD__ob1
 	 */
@@ -868,7 +870,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Get method for struct member 'ob2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Second object influenced by the constraint. </p>
 	 * @see #__DNA__FIELD__ob2
 	 */
@@ -888,7 +890,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Set method for struct member 'ob2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Second object influenced by the constraint. </p>
 	 * @see #__DNA__FIELD__ob2
 	 */
@@ -906,7 +908,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General Settings for this {@link RigidBodyCon}  (eRigidBodyCon_Type) role of RigidBody in sim . </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -923,7 +925,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General Settings for this {@link RigidBodyCon}  (eRigidBodyCon_Type) role of RigidBody in sim . </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -940,7 +942,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Get method for struct member 'num_solver_iterations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of constraint solver iterations made per simulation step. </p>
 	 * @see #__DNA__FIELD__num_solver_iterations
 	 */
@@ -957,7 +959,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Set method for struct member 'num_solver_iterations'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of constraint solver iterations made per simulation step. </p>
 	 * @see #__DNA__FIELD__num_solver_iterations
 	 */
@@ -974,7 +976,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eRigidBodyCon_Flag). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -991,7 +993,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eRigidBodyCon_Flag). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -1008,7 +1010,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Get method for struct member 'breaking_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Breaking impulse threshold. </p>
 	 * @see #__DNA__FIELD__breaking_threshold
 	 */
@@ -1025,7 +1027,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Set method for struct member 'breaking_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Breaking impulse threshold. </p>
 	 * @see #__DNA__FIELD__breaking_threshold
 	 */
@@ -1042,7 +1044,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Get method for struct member 'spring_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Spring implementation to use. </p>
 	 * @see #__DNA__FIELD__spring_type
 	 */
@@ -1059,7 +1061,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Set method for struct member 'spring_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Spring implementation to use. </p>
 	 * @see #__DNA__FIELD__spring_type
 	 */
@@ -1116,7 +1118,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Get method for struct member 'limit_lin_x_lower'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> limits translation limits </p>
 	 * @see #__DNA__FIELD__limit_lin_x_lower
 	 */
@@ -1133,7 +1135,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Set method for struct member 'limit_lin_x_lower'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> limits translation limits </p>
 	 * @see #__DNA__FIELD__limit_lin_x_lower
 	 */
@@ -1290,7 +1292,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Get method for struct member 'limit_ang_x_lower'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> rotation limits </p>
 	 * @see #__DNA__FIELD__limit_ang_x_lower
 	 */
@@ -1307,7 +1309,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Set method for struct member 'limit_ang_x_lower'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> rotation limits </p>
 	 * @see #__DNA__FIELD__limit_ang_x_lower
 	 */
@@ -1464,7 +1466,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Get method for struct member 'spring_stiffness_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> spring settings resistance to deformation </p>
 	 * @see #__DNA__FIELD__spring_stiffness_x
 	 */
@@ -1481,7 +1483,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Set method for struct member 'spring_stiffness_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> spring settings resistance to deformation </p>
 	 * @see #__DNA__FIELD__spring_stiffness_x
 	 */
@@ -1638,7 +1640,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Get method for struct member 'spring_damping_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> amount of velocity lost over time </p>
 	 * @see #__DNA__FIELD__spring_damping_x
 	 */
@@ -1655,7 +1657,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Set method for struct member 'spring_damping_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> amount of velocity lost over time </p>
 	 * @see #__DNA__FIELD__spring_damping_x
 	 */
@@ -1812,7 +1814,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Get method for struct member 'motor_lin_target_velocity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> motor settings Linear velocity the motor tries to hold. </p>
 	 * @see #__DNA__FIELD__motor_lin_target_velocity
 	 */
@@ -1829,7 +1831,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Set method for struct member 'motor_lin_target_velocity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> motor settings Linear velocity the motor tries to hold. </p>
 	 * @see #__DNA__FIELD__motor_lin_target_velocity
 	 */
@@ -1846,7 +1848,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Get method for struct member 'motor_ang_target_velocity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angular velocity the motor tries to hold. </p>
 	 * @see #__DNA__FIELD__motor_ang_target_velocity
 	 */
@@ -1863,7 +1865,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Set method for struct member 'motor_ang_target_velocity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angular velocity the motor tries to hold. </p>
 	 * @see #__DNA__FIELD__motor_ang_target_velocity
 	 */
@@ -1880,7 +1882,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Get method for struct member 'motor_lin_max_impulse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum force used to reach linear target velocity. </p>
 	 * @see #__DNA__FIELD__motor_lin_max_impulse
 	 */
@@ -1897,7 +1899,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Set method for struct member 'motor_lin_max_impulse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum force used to reach linear target velocity. </p>
 	 * @see #__DNA__FIELD__motor_lin_max_impulse
 	 */
@@ -1914,7 +1916,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Get method for struct member 'motor_ang_max_impulse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum force used to reach angular target velocity. </p>
 	 * @see #__DNA__FIELD__motor_ang_max_impulse
 	 */
@@ -1931,7 +1933,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Set method for struct member 'motor_ang_max_impulse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Maximum force used to reach angular target velocity. </p>
 	 * @see #__DNA__FIELD__motor_ang_max_impulse
 	 */
@@ -1948,7 +1950,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Get method for struct member 'physics_constraint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> References to Physics Sim object. Exist at runtime only Physics object representation (i.e. btTypedConstraint). </p>
 	 * @see #__DNA__FIELD__physics_constraint
 	 */
@@ -1968,7 +1970,7 @@ public class RigidBodyCon extends CFacade {
 	/**
 	 * Set method for struct member 'physics_constraint'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> References to Physics Sim object. Exist at runtime only Physics object representation (i.e. btTypedConstraint). </p>
 	 * @see #__DNA__FIELD__physics_constraint
 	 */

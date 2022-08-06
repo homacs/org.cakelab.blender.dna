@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SceneDisplay'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  {@link Scene}  Display - used for store scene specific display settings for the 3d view </p>
  */
@@ -26,17 +28,18 @@ public class SceneDisplay extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for SceneDisplay.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 209;
 
 	/**
 	 * Field descriptor (offset) for struct member 'light_direction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Direction of the light for shadows and highlights<h4>Blender Source Code:</h4>
-	 * <p>{@link Light}  direction for shadows/highlight. </p>
+	 * <h4>Blender Python API</h4>
+	 * Direction of the light for shadows and highlights
+	 * <h4>Blender Source Code</h4>
+	 * <p>Light  direction for shadows/highlight. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -58,7 +61,7 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shadow_shift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Shadow termination angle
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -81,7 +84,7 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shadow_focus'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Shadow factor hardness
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -104,8 +107,9 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'matcap_ssao_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Distance of object that contribute to the Cavity/Edge effect<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Distance of object that contribute to the Cavity/Edge effect
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for Cavity Shader. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -128,7 +132,7 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'matcap_ssao_attenuation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Attenuation constant
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -151,7 +155,7 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'matcap_ssao_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -174,8 +178,9 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'viewport_aa'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method of anti-aliasing when rendering 3d viewport<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Method of anti-aliasing when rendering 3d viewport
+	 * <h4>Blender Source Code</h4>
 	 * <p> Method of AA for viewport rendering and image rendering </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -198,7 +203,7 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'render_aa'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Method of anti-aliasing when rendering final image
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -241,8 +246,9 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shading'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Shading settings for OpenGL render engine<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Shading settings for OpenGL render engine
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenGL render engine settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -273,9 +279,10 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Get method for struct member 'light_direction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Direction of the light for shadows and highlights<h4>Blender Source Code:</h4>
-	 * <p>{@link Light}  direction for shadows/highlight. </p>
+	 * <h4>Blender Python API</h4>
+	 * Direction of the light for shadows and highlights
+	 * <h4>Blender Source Code</h4>
+	 * <p>Light  direction for shadows/highlight. </p>
 	 * @see #__DNA__FIELD__light_direction
 	 */
 	
@@ -295,9 +302,10 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Set method for struct member 'light_direction'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Direction of the light for shadows and highlights<h4>Blender Source Code:</h4>
-	 * <p>{@link Light}  direction for shadows/highlight. </p>
+	 * <h4>Blender Python API</h4>
+	 * Direction of the light for shadows and highlights
+	 * <h4>Blender Source Code</h4>
+	 * <p>Light  direction for shadows/highlight. </p>
 	 * @see #__DNA__FIELD__light_direction
 	 */
 	
@@ -321,7 +329,7 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Get method for struct member 'shadow_shift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Shadow termination angle
 	 * @see #__DNA__FIELD__shadow_shift
 	 */
@@ -338,7 +346,7 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Set method for struct member 'shadow_shift'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Shadow termination angle
 	 * @see #__DNA__FIELD__shadow_shift
 	 */
@@ -355,7 +363,7 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Get method for struct member 'shadow_focus'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Shadow factor hardness
 	 * @see #__DNA__FIELD__shadow_focus
 	 */
@@ -372,7 +380,7 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Set method for struct member 'shadow_focus'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Shadow factor hardness
 	 * @see #__DNA__FIELD__shadow_focus
 	 */
@@ -389,8 +397,9 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Get method for struct member 'matcap_ssao_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Distance of object that contribute to the Cavity/Edge effect<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Distance of object that contribute to the Cavity/Edge effect
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for Cavity Shader. </p>
 	 * @see #__DNA__FIELD__matcap_ssao_distance
 	 */
@@ -407,8 +416,9 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Set method for struct member 'matcap_ssao_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Distance of object that contribute to the Cavity/Edge effect<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Distance of object that contribute to the Cavity/Edge effect
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for Cavity Shader. </p>
 	 * @see #__DNA__FIELD__matcap_ssao_distance
 	 */
@@ -425,7 +435,7 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Get method for struct member 'matcap_ssao_attenuation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Attenuation constant
 	 * @see #__DNA__FIELD__matcap_ssao_attenuation
 	 */
@@ -442,7 +452,7 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Set method for struct member 'matcap_ssao_attenuation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Attenuation constant
 	 * @see #__DNA__FIELD__matcap_ssao_attenuation
 	 */
@@ -459,7 +469,7 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Get method for struct member 'matcap_ssao_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples
 	 * @see #__DNA__FIELD__matcap_ssao_samples
 	 */
@@ -476,7 +486,7 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Set method for struct member 'matcap_ssao_samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of samples
 	 * @see #__DNA__FIELD__matcap_ssao_samples
 	 */
@@ -493,8 +503,9 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Get method for struct member 'viewport_aa'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method of anti-aliasing when rendering 3d viewport<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Method of anti-aliasing when rendering 3d viewport
+	 * <h4>Blender Source Code</h4>
 	 * <p> Method of AA for viewport rendering and image rendering </p>
 	 * @see #__DNA__FIELD__viewport_aa
 	 */
@@ -511,8 +522,9 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Set method for struct member 'viewport_aa'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method of anti-aliasing when rendering 3d viewport<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Method of anti-aliasing when rendering 3d viewport
+	 * <h4>Blender Source Code</h4>
 	 * <p> Method of AA for viewport rendering and image rendering </p>
 	 * @see #__DNA__FIELD__viewport_aa
 	 */
@@ -529,7 +541,7 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Get method for struct member 'render_aa'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Method of anti-aliasing when rendering final image
 	 * @see #__DNA__FIELD__render_aa
 	 */
@@ -546,7 +558,7 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Set method for struct member 'render_aa'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Method of anti-aliasing when rendering final image
 	 * @see #__DNA__FIELD__render_aa
 	 */
@@ -603,8 +615,9 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Get method for struct member 'shading'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Shading settings for OpenGL render engine<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Shading settings for OpenGL render engine
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenGL render engine settings. </p>
 	 * @see #__DNA__FIELD__shading
 	 */
@@ -621,8 +634,9 @@ public class SceneDisplay extends CFacade {
 	/**
 	 * Set method for struct member 'shading'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Shading settings for OpenGL render engine<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Shading settings for OpenGL render engine
+	 * <h4>Blender Source Code</h4>
 	 * <p> OpenGL render engine settings. </p>
 	 * @see #__DNA__FIELD__shading
 	 */

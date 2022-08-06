@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,8 +24,8 @@ public class FreestyleConfig extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for FreestyleConfig.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 659;
 
@@ -51,7 +52,7 @@ public class FreestyleConfig extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Scripting, editor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -74,7 +75,7 @@ public class FreestyleConfig extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'raycasting_algorithm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -99,7 +100,7 @@ public class FreestyleConfig extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Suggestive contours, ridges/valleys, material boundaries. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -162,7 +163,7 @@ public class FreestyleConfig extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'crease_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In radians!. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -249,7 +250,7 @@ public class FreestyleConfig extends CFacade {
 	/**
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Scripting, editor. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -266,7 +267,7 @@ public class FreestyleConfig extends CFacade {
 	/**
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Scripting, editor. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -283,7 +284,7 @@ public class FreestyleConfig extends CFacade {
 	/**
 	 * Get method for struct member 'raycasting_algorithm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -302,7 +303,7 @@ public class FreestyleConfig extends CFacade {
 	/**
 	 * Set method for struct member 'raycasting_algorithm'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -321,7 +322,7 @@ public class FreestyleConfig extends CFacade {
 	/**
 	 * Get method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Suggestive contours, ridges/valleys, material boundaries. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -338,7 +339,7 @@ public class FreestyleConfig extends CFacade {
 	/**
 	 * Set method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Suggestive contours, ridges/valleys, material boundaries. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -411,7 +412,7 @@ public class FreestyleConfig extends CFacade {
 	/**
 	 * Get method for struct member 'crease_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In radians!. </p>
 	 * @see #__DNA__FIELD__crease_angle
 	 */
@@ -428,7 +429,7 @@ public class FreestyleConfig extends CFacade {
 	/**
 	 * Set method for struct member 'crease_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In radians!. </p>
 	 * @see #__DNA__FIELD__crease_angle
 	 */

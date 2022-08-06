@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,15 +25,15 @@ public class ParticleKey extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ParticleKey.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 515;
 
 	/**
 	 * Field descriptor (offset) for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> when changed update size of struct to copy_particleKey()!! Location. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +56,7 @@ public class ParticleKey extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Velocity. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -78,7 +79,7 @@ public class ParticleKey extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation quaternion. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -101,7 +102,7 @@ public class ParticleKey extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ave'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angular velocity. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -124,8 +125,9 @@ public class ParticleKey extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'time'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Time of key over the simulation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Time of key over the simulation
+	 * <h4>Blender Source Code</h4>
 	 * <p> When this key happens. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -156,7 +158,7 @@ public class ParticleKey extends CFacade {
 	/**
 	 * Get method for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> when changed update size of struct to copy_particleKey()!! Location. </p>
 	 * @see #__DNA__FIELD__co
 	 */
@@ -177,7 +179,7 @@ public class ParticleKey extends CFacade {
 	/**
 	 * Set method for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> when changed update size of struct to copy_particleKey()!! Location. </p>
 	 * @see #__DNA__FIELD__co
 	 */
@@ -202,7 +204,7 @@ public class ParticleKey extends CFacade {
 	/**
 	 * Get method for struct member 'vel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Velocity. </p>
 	 * @see #__DNA__FIELD__vel
 	 */
@@ -223,7 +225,7 @@ public class ParticleKey extends CFacade {
 	/**
 	 * Set method for struct member 'vel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Velocity. </p>
 	 * @see #__DNA__FIELD__vel
 	 */
@@ -248,7 +250,7 @@ public class ParticleKey extends CFacade {
 	/**
 	 * Get method for struct member 'rot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation quaternion. </p>
 	 * @see #__DNA__FIELD__rot
 	 */
@@ -269,7 +271,7 @@ public class ParticleKey extends CFacade {
 	/**
 	 * Set method for struct member 'rot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotation quaternion. </p>
 	 * @see #__DNA__FIELD__rot
 	 */
@@ -294,7 +296,7 @@ public class ParticleKey extends CFacade {
 	/**
 	 * Get method for struct member 'ave'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angular velocity. </p>
 	 * @see #__DNA__FIELD__ave
 	 */
@@ -315,7 +317,7 @@ public class ParticleKey extends CFacade {
 	/**
 	 * Set method for struct member 'ave'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angular velocity. </p>
 	 * @see #__DNA__FIELD__ave
 	 */
@@ -340,8 +342,9 @@ public class ParticleKey extends CFacade {
 	/**
 	 * Get method for struct member 'time'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Time of key over the simulation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Time of key over the simulation
+	 * <h4>Blender Source Code</h4>
 	 * <p> When this key happens. </p>
 	 * @see #__DNA__FIELD__time
 	 */
@@ -358,8 +361,9 @@ public class ParticleKey extends CFacade {
 	/**
 	 * Set method for struct member 'time'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Time of key over the simulation<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Time of key over the simulation
+	 * <h4>Blender Source Code</h4>
 	 * <p> When this key happens. </p>
 	 * @see #__DNA__FIELD__time
 	 */

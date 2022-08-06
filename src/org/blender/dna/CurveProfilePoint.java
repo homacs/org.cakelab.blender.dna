@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'CurveProfilePoint'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Each control point that makes up the profile. <h2>Note</h2><p> The flags use the same enum as Bezier curves, but they aren't guaranteed to have identical functionality, and all types aren't implemented. </p> The flags use the same enum as Bezier curves, but they aren't guaranteed to have identical functionality, and all types aren't implemented. 
  * 
  * </p>
@@ -27,15 +29,15 @@ public class CurveProfilePoint extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for CurveProfilePoint.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 721;
 
 	/**
 	 * Field descriptor (offset) for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Location of the point, keep together. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -78,7 +80,7 @@ public class CurveProfilePoint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag selection state and others. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -101,7 +103,7 @@ public class CurveProfilePoint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'h1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags for both handle's type (eBezTriple_Handle auto, vect, free, and aligned supported). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -144,7 +146,7 @@ public class CurveProfilePoint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'h1_loc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Handle locations, keep together. <h2>Note</h2><p> For now the two handle types are set to the same type in RNA. </p> For now the two handle types are set to the same type in RNA. 
 	 * 
 	 * </p>
@@ -209,7 +211,7 @@ public class CurveProfilePoint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'profile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime pointer to the point's profile for updating the curve with no direct reference. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -240,7 +242,7 @@ public class CurveProfilePoint extends CFacade {
 	/**
 	 * Get method for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Location of the point, keep together. </p>
 	 * @see #__DNA__FIELD__x
 	 */
@@ -257,7 +259,7 @@ public class CurveProfilePoint extends CFacade {
 	/**
 	 * Set method for struct member 'x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Location of the point, keep together. </p>
 	 * @see #__DNA__FIELD__x
 	 */
@@ -302,7 +304,7 @@ public class CurveProfilePoint extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag selection state and others. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -319,7 +321,7 @@ public class CurveProfilePoint extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag selection state and others. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -336,7 +338,7 @@ public class CurveProfilePoint extends CFacade {
 	/**
 	 * Get method for struct member 'h1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags for both handle's type (eBezTriple_Handle auto, vect, free, and aligned supported). </p>
 	 * @see #__DNA__FIELD__h1
 	 */
@@ -353,7 +355,7 @@ public class CurveProfilePoint extends CFacade {
 	/**
 	 * Set method for struct member 'h1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags for both handle's type (eBezTriple_Handle auto, vect, free, and aligned supported). </p>
 	 * @see #__DNA__FIELD__h1
 	 */
@@ -398,7 +400,7 @@ public class CurveProfilePoint extends CFacade {
 	/**
 	 * Get method for struct member 'h1_loc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Handle locations, keep together. <h2>Note</h2><p> For now the two handle types are set to the same type in RNA. </p> For now the two handle types are set to the same type in RNA. 
 	 * 
 	 * </p>
@@ -421,7 +423,7 @@ public class CurveProfilePoint extends CFacade {
 	/**
 	 * Set method for struct member 'h1_loc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Handle locations, keep together. <h2>Note</h2><p> For now the two handle types are set to the same type in RNA. </p> For now the two handle types are set to the same type in RNA. 
 	 * 
 	 * </p>
@@ -528,7 +530,7 @@ public class CurveProfilePoint extends CFacade {
 	/**
 	 * Get method for struct member 'profile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime pointer to the point's profile for updating the curve with no direct reference. </p>
 	 * @see #__DNA__FIELD__profile
 	 */
@@ -548,7 +550,7 @@ public class CurveProfilePoint extends CFacade {
 	/**
 	 * Set method for struct member 'profile'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime pointer to the point's profile for updating the curve with no direct reference. </p>
 	 * @see #__DNA__FIELD__profile
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'GPUDOFSettings'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Keep for '{@link Camera} ' versioning. Properties for dof effect. </p>
  */
 
@@ -24,15 +26,15 @@ public class GPUDOFSettings extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for GPUDOFSettings.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 26;
 
 	/**
 	 * Field descriptor (offset) for struct member 'focus_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Focal distance for depth of field. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -203,7 +205,7 @@ public class GPUDOFSettings extends CFacade {
 	/**
 	 * Get method for struct member 'focus_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Focal distance for depth of field. </p>
 	 * @see #__DNA__FIELD__focus_distance
 	 */
@@ -220,7 +222,7 @@ public class GPUDOFSettings extends CFacade {
 	/**
 	 * Set method for struct member 'focus_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Focal distance for depth of field. </p>
 	 * @see #__DNA__FIELD__focus_distance
 	 */

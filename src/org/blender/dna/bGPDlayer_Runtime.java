@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPDlayer_Runtime'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Runtime temp data for {@link bGPDlayer}  </p>
  */
 
@@ -25,15 +27,15 @@ public class bGPDlayer_Runtime extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bGPDlayer_Runtime.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 540;
 
 	/**
 	 * Field descriptor (offset) for struct member 'icon_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Id for dynamic icon used to show annotation color preview for layer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +78,7 @@ public class bGPDlayer_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpl_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original layer (used to dereference evaluated data) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -107,7 +109,7 @@ public class bGPDlayer_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'icon_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Id for dynamic icon used to show annotation color preview for layer. </p>
 	 * @see #__DNA__FIELD__icon_id
 	 */
@@ -124,7 +126,7 @@ public class bGPDlayer_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'icon_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Id for dynamic icon used to show annotation color preview for layer. </p>
 	 * @see #__DNA__FIELD__icon_id
 	 */
@@ -181,7 +183,7 @@ public class bGPDlayer_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'gpl_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original layer (used to dereference evaluated data) </p>
 	 * @see #__DNA__FIELD__gpl_orig
 	 */
@@ -201,7 +203,7 @@ public class bGPDlayer_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'gpl_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original layer (used to dereference evaluated data) </p>
 	 * @see #__DNA__FIELD__gpl_orig
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class MovieTrackingStabilization extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MovieTrackingStabilization.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 635;
 
@@ -52,7 +53,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tot_track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of translation tracks and index of active track in list. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -95,7 +96,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tot_rot_track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of rotation tracks and index of active track in list. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -138,7 +139,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'maxscale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2d stabilization Max auto-scale factor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -161,7 +162,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rot_track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use TRACK_USE_2D_STAB_ROT on individual tracks instead. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -186,8 +187,9 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'anchor_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Reference point to anchor stabilization (other frames will be adjusted relative to this frame's position)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Reference point to anchor stabilization (other frames will be adjusted relative to this frame's position)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Reference point to anchor stabilization offset. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -210,7 +212,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'target_pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Expected target position of frame after raw stabilization, will be subtracted. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -233,7 +235,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'target_rot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Expected target rotation of frame after raw stabilization, will be compensated. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -256,7 +258,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Zoom factor known to be present on original footage. Also used for auto-scale. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -279,7 +281,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'locinf'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Influence on location, scale and rotation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -342,7 +344,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Filter used for pixel interpolation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -365,7 +367,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ok'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> initialization and run-time data Without effect now, we initialize on every frame. Formerly used for caching of init values. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -426,7 +428,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Get method for struct member 'tot_track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of translation tracks and index of active track in list. </p>
 	 * @see #__DNA__FIELD__tot_track
 	 */
@@ -443,7 +445,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Set method for struct member 'tot_track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of translation tracks and index of active track in list. </p>
 	 * @see #__DNA__FIELD__tot_track
 	 */
@@ -488,7 +490,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Get method for struct member 'tot_rot_track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of rotation tracks and index of active track in list. </p>
 	 * @see #__DNA__FIELD__tot_rot_track
 	 */
@@ -505,7 +507,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Set method for struct member 'tot_rot_track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of rotation tracks and index of active track in list. </p>
 	 * @see #__DNA__FIELD__tot_rot_track
 	 */
@@ -550,7 +552,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Get method for struct member 'maxscale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2d stabilization Max auto-scale factor. </p>
 	 * @see #__DNA__FIELD__maxscale
 	 */
@@ -567,7 +569,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Set method for struct member 'maxscale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2d stabilization Max auto-scale factor. </p>
 	 * @see #__DNA__FIELD__maxscale
 	 */
@@ -584,7 +586,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Get method for struct member 'rot_track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use TRACK_USE_2D_STAB_ROT on individual tracks instead. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -606,7 +608,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Set method for struct member 'rot_track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use TRACK_USE_2D_STAB_ROT on individual tracks instead. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -626,8 +628,9 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Get method for struct member 'anchor_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Reference point to anchor stabilization (other frames will be adjusted relative to this frame's position)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Reference point to anchor stabilization (other frames will be adjusted relative to this frame's position)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Reference point to anchor stabilization offset. </p>
 	 * @see #__DNA__FIELD__anchor_frame
 	 */
@@ -644,8 +647,9 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Set method for struct member 'anchor_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Reference point to anchor stabilization (other frames will be adjusted relative to this frame's position)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Reference point to anchor stabilization (other frames will be adjusted relative to this frame's position)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Reference point to anchor stabilization offset. </p>
 	 * @see #__DNA__FIELD__anchor_frame
 	 */
@@ -662,7 +666,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Get method for struct member 'target_pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Expected target position of frame after raw stabilization, will be subtracted. </p>
 	 * @see #__DNA__FIELD__target_pos
 	 */
@@ -683,7 +687,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Set method for struct member 'target_pos'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Expected target position of frame after raw stabilization, will be subtracted. </p>
 	 * @see #__DNA__FIELD__target_pos
 	 */
@@ -708,7 +712,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Get method for struct member 'target_rot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Expected target rotation of frame after raw stabilization, will be compensated. </p>
 	 * @see #__DNA__FIELD__target_rot
 	 */
@@ -725,7 +729,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Set method for struct member 'target_rot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Expected target rotation of frame after raw stabilization, will be compensated. </p>
 	 * @see #__DNA__FIELD__target_rot
 	 */
@@ -742,7 +746,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Get method for struct member 'scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Zoom factor known to be present on original footage. Also used for auto-scale. </p>
 	 * @see #__DNA__FIELD__scale
 	 */
@@ -759,7 +763,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Set method for struct member 'scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Zoom factor known to be present on original footage. Also used for auto-scale. </p>
 	 * @see #__DNA__FIELD__scale
 	 */
@@ -776,7 +780,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Get method for struct member 'locinf'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Influence on location, scale and rotation. </p>
 	 * @see #__DNA__FIELD__locinf
 	 */
@@ -793,7 +797,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Set method for struct member 'locinf'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Influence on location, scale and rotation. </p>
 	 * @see #__DNA__FIELD__locinf
 	 */
@@ -866,7 +870,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Get method for struct member 'filter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Filter used for pixel interpolation. </p>
 	 * @see #__DNA__FIELD__filter
 	 */
@@ -883,7 +887,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Set method for struct member 'filter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Filter used for pixel interpolation. </p>
 	 * @see #__DNA__FIELD__filter
 	 */
@@ -900,7 +904,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Get method for struct member 'ok'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> initialization and run-time data Without effect now, we initialize on every frame. Formerly used for caching of init values. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -919,7 +923,7 @@ public class MovieTrackingStabilization extends CFacade {
 	/**
 	 * Set method for struct member 'ok'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> initialization and run-time data Without effect now, we initialize on every frame. Formerly used for caching of init values. 
 	 * @deprecated
 	 *  Deprecated</p>

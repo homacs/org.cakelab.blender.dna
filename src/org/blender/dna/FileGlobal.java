@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,8 +14,10 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FileGlobal'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
- * FileGlobal stores a part of the current user-interface settings at the moment of saving, and the file-specific settings.<h4>Blender Source Code:</h4>
+ * 
+ * <h4>Java .Blend</h4>
+ * FileGlobal stores a part of the current user-interface settings at the moment of saving, and the file-specific settings.
+ * <h4>Blender Source Code</h4>
  * <p>{@link FileGlobal}  stores a part of the current user-interface settings at the moment of saving, and the file-specific settings. </p>
  */
 
@@ -26,15 +29,15 @@ public class FileGlobal extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for FileGlobal.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 297;
 
 	/**
 	 * Field descriptor (offset) for struct member 'subvstr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Needs to be here, for human fileformat recognition (keep first!). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -217,7 +220,7 @@ public class FileGlobal extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fileflags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values</h3><ul>
 	 * 				           <li> G_AUTOPACK               (1 << 0)</li>
 	 * 				           <li> G_FILE_COMPRESS          (1 << 1)</li>
@@ -284,8 +287,9 @@ public class FileGlobal extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'build_commit_timestamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * time when code of the blender binary was commit. Provides more detail to version info.<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * time when code of the blender binary was commit. Provides more detail to version info.
+	 * <h4>Blender Source Code</h4>
 	 * <p> Commit timestamp from buildinfo. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -308,8 +312,9 @@ public class FileGlobal extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'build_hash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * unique identifier from build info<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * unique identifier from build info
+	 * <h4>Blender Source Code</h4>
 	 * <p> Hash from buildinfo. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -332,7 +337,7 @@ public class FileGlobal extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filename'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> File path where this was saved, for recover (1024 = FILE_MAX). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -363,7 +368,7 @@ public class FileGlobal extends CFacade {
 	/**
 	 * Get method for struct member 'subvstr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Needs to be here, for human fileformat recognition (keep first!). </p>
 	 * @see #__DNA__FIELD__subvstr
 	 */
@@ -384,7 +389,7 @@ public class FileGlobal extends CFacade {
 	/**
 	 * Set method for struct member 'subvstr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Needs to be here, for human fileformat recognition (keep first!). </p>
 	 * @see #__DNA__FIELD__subvstr
 	 */
@@ -661,7 +666,7 @@ public class FileGlobal extends CFacade {
 	/**
 	 * Get method for struct member 'fileflags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values</h3><ul>
 	 * 				           <li> G_AUTOPACK               (1 << 0)</li>
 	 * 				           <li> G_FILE_COMPRESS          (1 << 1)</li>
@@ -702,7 +707,7 @@ public class FileGlobal extends CFacade {
 	/**
 	 * Set method for struct member 'fileflags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values</h3><ul>
 	 * 				           <li> G_AUTOPACK               (1 << 0)</li>
 	 * 				           <li> G_FILE_COMPRESS          (1 << 1)</li>
@@ -771,8 +776,9 @@ public class FileGlobal extends CFacade {
 	/**
 	 * Get method for struct member 'build_commit_timestamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * time when code of the blender binary was commit. Provides more detail to version info.<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * time when code of the blender binary was commit. Provides more detail to version info.
+	 * <h4>Blender Source Code</h4>
 	 * <p> Commit timestamp from buildinfo. </p>
 	 * @see #__DNA__FIELD__build_commit_timestamp
 	 */
@@ -789,8 +795,9 @@ public class FileGlobal extends CFacade {
 	/**
 	 * Set method for struct member 'build_commit_timestamp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * time when code of the blender binary was commit. Provides more detail to version info.<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * time when code of the blender binary was commit. Provides more detail to version info.
+	 * <h4>Blender Source Code</h4>
 	 * <p> Commit timestamp from buildinfo. </p>
 	 * @see #__DNA__FIELD__build_commit_timestamp
 	 */
@@ -807,8 +814,9 @@ public class FileGlobal extends CFacade {
 	/**
 	 * Get method for struct member 'build_hash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * unique identifier from build info<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * unique identifier from build info
+	 * <h4>Blender Source Code</h4>
 	 * <p> Hash from buildinfo. </p>
 	 * @see #__DNA__FIELD__build_hash
 	 */
@@ -829,8 +837,9 @@ public class FileGlobal extends CFacade {
 	/**
 	 * Set method for struct member 'build_hash'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * unique identifier from build info<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * unique identifier from build info
+	 * <h4>Blender Source Code</h4>
 	 * <p> Hash from buildinfo. </p>
 	 * @see #__DNA__FIELD__build_hash
 	 */
@@ -855,7 +864,7 @@ public class FileGlobal extends CFacade {
 	/**
 	 * Get method for struct member 'filename'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> File path where this was saved, for recover (1024 = FILE_MAX). </p>
 	 * @see #__DNA__FIELD__filename
 	 */
@@ -876,7 +885,7 @@ public class FileGlobal extends CFacade {
 	/**
 	 * Set method for struct member 'filename'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> File path where this was saved, for recover (1024 = FILE_MAX). </p>
 	 * @see #__DNA__FIELD__filename
 	 */

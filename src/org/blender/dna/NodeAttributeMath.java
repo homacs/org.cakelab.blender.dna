@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,15 +24,15 @@ public class NodeAttributeMath extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for NodeAttributeMath.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 470;
 
 	/**
 	 * Field descriptor (offset) for struct member 'operation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NodeMathOperation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -54,7 +55,7 @@ public class NodeAttributeMath extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'input_type_a'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeInputMode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -125,7 +126,7 @@ public class NodeAttributeMath extends CFacade {
 	/**
 	 * Get method for struct member 'operation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NodeMathOperation. </p>
 	 * @see #__DNA__FIELD__operation
 	 */
@@ -142,7 +143,7 @@ public class NodeAttributeMath extends CFacade {
 	/**
 	 * Set method for struct member 'operation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NodeMathOperation. </p>
 	 * @see #__DNA__FIELD__operation
 	 */
@@ -159,7 +160,7 @@ public class NodeAttributeMath extends CFacade {
 	/**
 	 * Get method for struct member 'input_type_a'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeInputMode </p>
 	 * @see #__DNA__FIELD__input_type_a
 	 */
@@ -176,7 +177,7 @@ public class NodeAttributeMath extends CFacade {
 	/**
 	 * Set method for struct member 'input_type_a'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeInputMode </p>
 	 * @see #__DNA__FIELD__input_type_a
 	 */

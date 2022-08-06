@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MDisps'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Multi-Resolution loop data. </p>
  */
 
@@ -24,16 +26,16 @@ public class MDisps extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MDisps.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 81;
 
 	/**
 	 * Field descriptor (offset) for struct member 'totdisp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Strange bug in {@link SDNA} : if disps pointer comes first, it fails to see totdisp </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Strange bug in SDNA : if disps pointer comes first, it fails to see totdisp </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -75,7 +77,7 @@ public class MDisps extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'hidden'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for hiding parts of a multires mesh. Essentially the multires equivalent of #MVert.flag's ME_HIDE bit.</p><p><h2>Note</h2><p> This is a bitmap, keep in sync with type used in BLI_bitmap.h </p> This is a bitmap, keep in sync with type used in BLI_bitmap.h 
 	 * 
 	 * </p>
@@ -108,8 +110,8 @@ public class MDisps extends CFacade {
 	/**
 	 * Get method for struct member 'totdisp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Strange bug in {@link SDNA} : if disps pointer comes first, it fails to see totdisp </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Strange bug in SDNA : if disps pointer comes first, it fails to see totdisp </p>
 	 * @see #__DNA__FIELD__totdisp
 	 */
 	
@@ -125,8 +127,8 @@ public class MDisps extends CFacade {
 	/**
 	 * Set method for struct member 'totdisp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Strange bug in {@link SDNA} : if disps pointer comes first, it fails to see totdisp </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Strange bug in SDNA : if disps pointer comes first, it fails to see totdisp </p>
 	 * @see #__DNA__FIELD__totdisp
 	 */
 	
@@ -170,7 +172,7 @@ public class MDisps extends CFacade {
 	/**
 	 * Get method for struct member 'hidden'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for hiding parts of a multires mesh. Essentially the multires equivalent of #MVert.flag's ME_HIDE bit.</p><p><h2>Note</h2><p> This is a bitmap, keep in sync with type used in BLI_bitmap.h </p> This is a bitmap, keep in sync with type used in BLI_bitmap.h 
 	 * 
 	 * </p>
@@ -192,7 +194,7 @@ public class MDisps extends CFacade {
 	/**
 	 * Set method for struct member 'hidden'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for hiding parts of a multires mesh. Essentially the multires equivalent of #MVert.flag's ME_HIDE bit.</p><p><h2>Note</h2><p> This is a bitmap, keep in sync with type used in BLI_bitmap.h </p> This is a bitmap, keep in sync with type used in BLI_bitmap.h 
 	 * 
 	 * </p>

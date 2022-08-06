@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for LineartGpencilModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 564;
 
@@ -72,7 +73,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'source_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  or {@link Collection} , from eLineartGpencilModifierSource </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -235,7 +236,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'source_vertex_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  specifies which vertex groups our strokes from source_vertex_group will go to. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -318,7 +319,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'transparency_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eLineartGpencilTransparencyFlags </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -361,7 +362,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'crease_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  range for cosine angle </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -384,7 +385,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'angle_splitting_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  angle, for splitting strokes at sharp points. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -407,7 +408,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'chaining_image_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CPU mode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -450,7 +451,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'calculation_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ported from SceneLineArt flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -473,7 +474,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Additional Switches. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -496,7 +497,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'render_buffer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -591,7 +592,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'source_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  or {@link Collection} , from eLineartGpencilModifierSource </p>
 	 * @see #__DNA__FIELD__source_type
 	 */
@@ -608,7 +609,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'source_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  or {@link Collection} , from eLineartGpencilModifierSource </p>
 	 * @see #__DNA__FIELD__source_type
 	 */
@@ -845,7 +846,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'source_vertex_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  specifies which vertex groups our strokes from source_vertex_group will go to. </p>
 	 * @see #__DNA__FIELD__source_vertex_group
 	 */
@@ -866,7 +867,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'source_vertex_group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  specifies which vertex groups our strokes from source_vertex_group will go to. </p>
 	 * @see #__DNA__FIELD__source_vertex_group
 	 */
@@ -987,7 +988,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'transparency_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eLineartGpencilTransparencyFlags </p>
 	 * @see #__DNA__FIELD__transparency_flags
 	 */
@@ -1004,7 +1005,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'transparency_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> eLineartGpencilTransparencyFlags </p>
 	 * @see #__DNA__FIELD__transparency_flags
 	 */
@@ -1049,7 +1050,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'crease_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  range for cosine angle </p>
 	 * @see #__DNA__FIELD__crease_threshold
 	 */
@@ -1066,7 +1067,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'crease_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  range for cosine angle </p>
 	 * @see #__DNA__FIELD__crease_threshold
 	 */
@@ -1083,7 +1084,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'angle_splitting_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  angle, for splitting strokes at sharp points. </p>
 	 * @see #__DNA__FIELD__angle_splitting_threshold
 	 */
@@ -1100,7 +1101,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'angle_splitting_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  angle, for splitting strokes at sharp points. </p>
 	 * @see #__DNA__FIELD__angle_splitting_threshold
 	 */
@@ -1117,7 +1118,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'chaining_image_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CPU mode </p>
 	 * @see #__DNA__FIELD__chaining_image_threshold
 	 */
@@ -1134,7 +1135,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'chaining_image_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> CPU mode </p>
 	 * @see #__DNA__FIELD__chaining_image_threshold
 	 */
@@ -1179,7 +1180,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'calculation_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ported from SceneLineArt flags. </p>
 	 * @see #__DNA__FIELD__calculation_flags
 	 */
@@ -1196,7 +1197,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'calculation_flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ported from SceneLineArt flags. </p>
 	 * @see #__DNA__FIELD__calculation_flags
 	 */
@@ -1213,7 +1214,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Additional Switches. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -1230,7 +1231,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Additional Switches. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -1247,7 +1248,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'render_buffer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only. </p>
 	 * @see #__DNA__FIELD__render_buffer
 	 */
@@ -1267,7 +1268,7 @@ public class LineartGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'render_buffer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime only. </p>
 	 * @see #__DNA__FIELD__render_buffer
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'TexPaintSlot'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> WATCH IT: change type? also make changes in ipo.h <br/> 
  *  </p>
  */
@@ -25,15 +27,15 @@ public class TexPaintSlot extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for TexPaintSlot.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 48;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ima'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  to be painted on. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,8 +58,8 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Custom-data index for uv layer, {@link MAX_NAME} . </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Custom-data index for uv layer, MAX_NAME . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -79,7 +81,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'valid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Do we have a valid image and UV map. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -102,7 +104,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'interp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Copy of node interpolation setting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -133,7 +135,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Get method for struct member 'ima'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  to be painted on. </p>
 	 * @see #__DNA__FIELD__ima
 	 */
@@ -153,7 +155,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Set method for struct member 'ima'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  to be painted on. </p>
 	 * @see #__DNA__FIELD__ima
 	 */
@@ -171,8 +173,8 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Get method for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Custom-data index for uv layer, {@link MAX_NAME} . </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Custom-data index for uv layer, MAX_NAME . </p>
 	 * @see #__DNA__FIELD__uvname
 	 */
 	
@@ -191,8 +193,8 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Set method for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Custom-data index for uv layer, {@link MAX_NAME} . </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Custom-data index for uv layer, MAX_NAME . </p>
 	 * @see #__DNA__FIELD__uvname
 	 */
 	
@@ -209,7 +211,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Get method for struct member 'valid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Do we have a valid image and UV map. </p>
 	 * @see #__DNA__FIELD__valid
 	 */
@@ -226,7 +228,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Set method for struct member 'valid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Do we have a valid image and UV map. </p>
 	 * @see #__DNA__FIELD__valid
 	 */
@@ -243,7 +245,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Get method for struct member 'interp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Copy of node interpolation setting. </p>
 	 * @see #__DNA__FIELD__interp
 	 */
@@ -260,7 +262,7 @@ public class TexPaintSlot extends CFacade {
 	/**
 	 * Set method for struct member 'interp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Copy of node interpolation setting. </p>
 	 * @see #__DNA__FIELD__interp
 	 */

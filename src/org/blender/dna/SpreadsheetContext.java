@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,8 +14,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpreadsheetContext'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
- * <p> An item in {@link SpaceSpreadsheet.context_path} . This is a bases struct for the structs below. </p>
+ * 
+ * <h4>Blender Source Code</h4>
+ * <p> An item in {@link SpaceSpreadsheet#getContext_path()} . This is a bases struct for the structs below. </p>
  */
 
 @CMetaData(size32=16, size64=24)
@@ -25,8 +27,8 @@ public class SpreadsheetContext extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for SpreadsheetContext.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 251;
 
@@ -73,8 +75,9 @@ public class SpreadsheetContext extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Type of the context<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Type of the context
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_ContextType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -189,8 +192,9 @@ public class SpreadsheetContext extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Type of the context<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Type of the context
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_ContextType. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -207,8 +211,9 @@ public class SpreadsheetContext extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Type of the context<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Type of the context
+	 * <h4>Blender Source Code</h4>
 	 * <p> eSpaceSpreadsheet_ContextType. </p>
 	 * @see #__DNA__FIELD__type
 	 */

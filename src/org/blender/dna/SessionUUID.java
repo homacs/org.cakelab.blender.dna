@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SessionUUID'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Is a structure because of the following considerations:</p><p><ul><li><p> It is not possible to use custom types in DNA members: makesdna does not recognize them.</p></li><li><p> It allows to add more bits, more than standard fixed-size types can store. For example, if we ever need to go 128 bits, it is as simple as adding extra 64bit field. </p></li></ul> 
  * It is not possible to use custom types in DNA members: makesdna does not recognize them.
  * It allows to add more bits, more than standard fixed-size types can store. For example, if we ever need to go 128 bits, it is as simple as adding extra 64bit field. 
@@ -28,15 +30,15 @@ public class SessionUUID extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for SessionUUID.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 326;
 
 	/**
 	 * Field descriptor (offset) for struct member 'uuid_'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Never access directly, as it might cause a headache when more bits are needed: if the field is used directly it will not be easy to find all places where partial access is used. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -67,7 +69,7 @@ public class SessionUUID extends CFacade {
 	/**
 	 * Get method for struct member 'uuid_'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Never access directly, as it might cause a headache when more bits are needed: if the field is used directly it will not be easy to find all places where partial access is used. </p>
 	 * @see #__DNA__FIELD__uuid_
 	 */
@@ -84,7 +86,7 @@ public class SessionUUID extends CFacade {
 	/**
 	 * Set method for struct member 'uuid_'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Never access directly, as it might cause a headache when more bits are needed: if the field is used directly it will not be easy to find all places where partial access is used. </p>
 	 * @see #__DNA__FIELD__uuid_
 	 */

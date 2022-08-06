@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class BuildGpencilModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for BuildGpencilModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 553;
 
@@ -52,7 +53,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,7 +76,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If set, restrict modifier to operating on this layer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -118,7 +119,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -143,7 +144,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -166,7 +167,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'start_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If GP_BUILD_RESTRICT_TIME is set, the defines the frame range where GP frames are considered. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -209,7 +210,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'start_delay'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For each pair of gp keys, number of frames before strokes start appearing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -232,7 +233,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For each pair of gp keys, number of frames that build effect must be completed within. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -255,7 +256,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eGpencilBuild_Flag) Options for controlling modifier behavior. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -278,7 +279,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eGpencilBuild_Mode) How are strokes ordered. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -301,7 +302,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'transition'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eGpencilBuild_Transition) In what order do stroke points appear/disappear. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -324,7 +325,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'time_alignment'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eGpencilBuild_TimeAlignment) For the "Concurrent" mode, when should "shorter" strips start/end. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -347,7 +348,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'percentage_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of the stroke (used instead of frame evaluation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -434,7 +435,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
@@ -454,7 +455,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
@@ -472,7 +473,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If set, restrict modifier to operating on this layer. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -493,7 +494,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If set, restrict modifier to operating on this layer. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -546,7 +547,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -569,7 +570,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -596,7 +597,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
@@ -613,7 +614,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
@@ -630,7 +631,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'start_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If GP_BUILD_RESTRICT_TIME is set, the defines the frame range where GP frames are considered. </p>
 	 * @see #__DNA__FIELD__start_frame
 	 */
@@ -647,7 +648,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'start_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If GP_BUILD_RESTRICT_TIME is set, the defines the frame range where GP frames are considered. </p>
 	 * @see #__DNA__FIELD__start_frame
 	 */
@@ -692,7 +693,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'start_delay'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For each pair of gp keys, number of frames before strokes start appearing. </p>
 	 * @see #__DNA__FIELD__start_delay
 	 */
@@ -709,7 +710,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'start_delay'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For each pair of gp keys, number of frames before strokes start appearing. </p>
 	 * @see #__DNA__FIELD__start_delay
 	 */
@@ -726,7 +727,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For each pair of gp keys, number of frames that build effect must be completed within. </p>
 	 * @see #__DNA__FIELD__length
 	 */
@@ -743,7 +744,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For each pair of gp keys, number of frames that build effect must be completed within. </p>
 	 * @see #__DNA__FIELD__length
 	 */
@@ -760,7 +761,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eGpencilBuild_Flag) Options for controlling modifier behavior. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -777,7 +778,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eGpencilBuild_Flag) Options for controlling modifier behavior. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -794,7 +795,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eGpencilBuild_Mode) How are strokes ordered. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -811,7 +812,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eGpencilBuild_Mode) How are strokes ordered. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -828,7 +829,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'transition'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eGpencilBuild_Transition) In what order do stroke points appear/disappear. </p>
 	 * @see #__DNA__FIELD__transition
 	 */
@@ -845,7 +846,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'transition'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eGpencilBuild_Transition) In what order do stroke points appear/disappear. </p>
 	 * @see #__DNA__FIELD__transition
 	 */
@@ -862,7 +863,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'time_alignment'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eGpencilBuild_TimeAlignment) For the "Concurrent" mode, when should "shorter" strips start/end. </p>
 	 * @see #__DNA__FIELD__time_alignment
 	 */
@@ -879,7 +880,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'time_alignment'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eGpencilBuild_TimeAlignment) For the "Concurrent" mode, when should "shorter" strips start/end. </p>
 	 * @see #__DNA__FIELD__time_alignment
 	 */
@@ -896,7 +897,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'percentage_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of the stroke (used instead of frame evaluation. </p>
 	 * @see #__DNA__FIELD__percentage_fac
 	 */
@@ -913,7 +914,7 @@ public class BuildGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'percentage_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of the stroke (used instead of frame evaluation. </p>
 	 * @see #__DNA__FIELD__percentage_fac
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class DecimateModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for DecimateModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 103;
 
@@ -52,7 +53,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'percent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,7 +76,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'iter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (mode == MOD_DECIM_MODE_UNSUBDIV). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +99,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'delimit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,7 +122,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'symmetry_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -144,7 +145,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -167,7 +168,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -250,7 +251,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'face_count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> runtime only </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -317,7 +318,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'percent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE). </p>
 	 * @see #__DNA__FIELD__percent
 	 */
@@ -334,7 +335,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'percent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE). </p>
 	 * @see #__DNA__FIELD__percent
 	 */
@@ -351,7 +352,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'iter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (mode == MOD_DECIM_MODE_UNSUBDIV). </p>
 	 * @see #__DNA__FIELD__iter
 	 */
@@ -368,7 +369,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'iter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (mode == MOD_DECIM_MODE_UNSUBDIV). </p>
 	 * @see #__DNA__FIELD__iter
 	 */
@@ -385,7 +386,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'delimit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE). </p>
 	 * @see #__DNA__FIELD__delimit
 	 */
@@ -402,7 +403,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'delimit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE). </p>
 	 * @see #__DNA__FIELD__delimit
 	 */
@@ -419,7 +420,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'symmetry_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE). </p>
 	 * @see #__DNA__FIELD__symmetry_axis
 	 */
@@ -436,7 +437,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'symmetry_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE). </p>
 	 * @see #__DNA__FIELD__symmetry_axis
 	 */
@@ -453,7 +454,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE). </p>
 	 * @see #__DNA__FIELD__angle
 	 */
@@ -470,7 +471,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE). </p>
 	 * @see #__DNA__FIELD__angle
 	 */
@@ -487,7 +488,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
@@ -508,7 +509,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
@@ -617,7 +618,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'face_count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> runtime only </p>
 	 * @see #__DNA__FIELD__face_count
 	 */
@@ -634,7 +635,7 @@ public class DecimateModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'face_count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> runtime only </p>
 	 * @see #__DNA__FIELD__face_count
 	 */

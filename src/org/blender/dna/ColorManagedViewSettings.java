@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ColorManagedViewSettings.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 499;
 
@@ -72,8 +73,9 @@ public class ColorManagedViewSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'look'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Additional transform applied before view transform for artistic needs<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Additional transform applied before view transform for artistic needs
+	 * <h4>Blender Source Code</h4>
 	 * <p> Look which is being applied when displaying buffer on the screen (prior to view transform). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,8 +98,9 @@ public class ColorManagedViewSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'view_transform'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * View used when converting image to a display space<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * View used when converting image to a display space
+	 * <h4>Blender Source Code</h4>
 	 * <p> View transform which is being applied when displaying buffer on the screen. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -120,8 +123,9 @@ public class ColorManagedViewSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'exposure'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Exposure (stops) applied before display transform<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Exposure (stops) applied before display transform
+	 * <h4>Blender Source Code</h4>
 	 * <p> F-stop exposure. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -144,8 +148,9 @@ public class ColorManagedViewSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gamma'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of gamma modification applied after display transform<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Amount of gamma modification applied after display transform
+	 * <h4>Blender Source Code</h4>
 	 * <p> Post-display gamma transform. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -168,8 +173,9 @@ public class ColorManagedViewSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve_mapping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Color curve mapping applied before display transform<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Color curve mapping applied before display transform
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pre-display RGB curves transform. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -288,8 +294,9 @@ public class ColorManagedViewSettings extends CFacade {
 	/**
 	 * Get method for struct member 'look'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Additional transform applied before view transform for artistic needs<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Additional transform applied before view transform for artistic needs
+	 * <h4>Blender Source Code</h4>
 	 * <p> Look which is being applied when displaying buffer on the screen (prior to view transform). </p>
 	 * @see #__DNA__FIELD__look
 	 */
@@ -310,8 +317,9 @@ public class ColorManagedViewSettings extends CFacade {
 	/**
 	 * Set method for struct member 'look'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Additional transform applied before view transform for artistic needs<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Additional transform applied before view transform for artistic needs
+	 * <h4>Blender Source Code</h4>
 	 * <p> Look which is being applied when displaying buffer on the screen (prior to view transform). </p>
 	 * @see #__DNA__FIELD__look
 	 */
@@ -336,8 +344,9 @@ public class ColorManagedViewSettings extends CFacade {
 	/**
 	 * Get method for struct member 'view_transform'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * View used when converting image to a display space<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * View used when converting image to a display space
+	 * <h4>Blender Source Code</h4>
 	 * <p> View transform which is being applied when displaying buffer on the screen. </p>
 	 * @see #__DNA__FIELD__view_transform
 	 */
@@ -358,8 +367,9 @@ public class ColorManagedViewSettings extends CFacade {
 	/**
 	 * Set method for struct member 'view_transform'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * View used when converting image to a display space<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * View used when converting image to a display space
+	 * <h4>Blender Source Code</h4>
 	 * <p> View transform which is being applied when displaying buffer on the screen. </p>
 	 * @see #__DNA__FIELD__view_transform
 	 */
@@ -384,8 +394,9 @@ public class ColorManagedViewSettings extends CFacade {
 	/**
 	 * Get method for struct member 'exposure'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Exposure (stops) applied before display transform<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Exposure (stops) applied before display transform
+	 * <h4>Blender Source Code</h4>
 	 * <p> F-stop exposure. </p>
 	 * @see #__DNA__FIELD__exposure
 	 */
@@ -402,8 +413,9 @@ public class ColorManagedViewSettings extends CFacade {
 	/**
 	 * Set method for struct member 'exposure'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Exposure (stops) applied before display transform<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Exposure (stops) applied before display transform
+	 * <h4>Blender Source Code</h4>
 	 * <p> F-stop exposure. </p>
 	 * @see #__DNA__FIELD__exposure
 	 */
@@ -420,8 +432,9 @@ public class ColorManagedViewSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gamma'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of gamma modification applied after display transform<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Amount of gamma modification applied after display transform
+	 * <h4>Blender Source Code</h4>
 	 * <p> Post-display gamma transform. </p>
 	 * @see #__DNA__FIELD__gamma
 	 */
@@ -438,8 +451,9 @@ public class ColorManagedViewSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gamma'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of gamma modification applied after display transform<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Amount of gamma modification applied after display transform
+	 * <h4>Blender Source Code</h4>
 	 * <p> Post-display gamma transform. </p>
 	 * @see #__DNA__FIELD__gamma
 	 */
@@ -456,8 +470,9 @@ public class ColorManagedViewSettings extends CFacade {
 	/**
 	 * Get method for struct member 'curve_mapping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Color curve mapping applied before display transform<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Color curve mapping applied before display transform
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pre-display RGB curves transform. </p>
 	 * @see #__DNA__FIELD__curve_mapping
 	 */
@@ -477,8 +492,9 @@ public class ColorManagedViewSettings extends CFacade {
 	/**
 	 * Set method for struct member 'curve_mapping'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Color curve mapping applied before display transform<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Color curve mapping applied before display transform
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pre-display RGB curves transform. </p>
 	 * @see #__DNA__FIELD__curve_mapping
 	 */

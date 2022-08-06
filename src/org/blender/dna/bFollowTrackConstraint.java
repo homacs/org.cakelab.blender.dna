@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bFollowTrackConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Follow Track constraints </p>
  */
 
@@ -25,8 +27,8 @@ public class bFollowTrackConstraint extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bFollowTrackConstraint.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 382;
 
@@ -53,7 +55,7 @@ public class bFollowTrackConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -116,7 +118,7 @@ public class bFollowTrackConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -219,7 +221,7 @@ public class bFollowTrackConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__track
 	 */
@@ -240,7 +242,7 @@ public class bFollowTrackConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__track
 	 */
@@ -321,7 +323,7 @@ public class bFollowTrackConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__object
 	 */
@@ -342,7 +344,7 @@ public class bFollowTrackConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__object
 	 */

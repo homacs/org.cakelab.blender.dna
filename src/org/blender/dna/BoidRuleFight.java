@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,8 +24,8 @@ public class BoidRuleFight extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for BoidRuleFight.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 613;
 
@@ -51,7 +52,7 @@ public class BoidRuleFight extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Attack boids at max this distance
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -74,7 +75,7 @@ public class BoidRuleFight extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flee_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Flee to this distance
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -141,7 +142,7 @@ public class BoidRuleFight extends CFacade {
 	/**
 	 * Get method for struct member 'distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Attack boids at max this distance
 	 * @see #__DNA__FIELD__distance
 	 */
@@ -158,7 +159,7 @@ public class BoidRuleFight extends CFacade {
 	/**
 	 * Set method for struct member 'distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Attack boids at max this distance
 	 * @see #__DNA__FIELD__distance
 	 */
@@ -175,7 +176,7 @@ public class BoidRuleFight extends CFacade {
 	/**
 	 * Get method for struct member 'flee_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Flee to this distance
 	 * @see #__DNA__FIELD__flee_distance
 	 */
@@ -192,7 +193,7 @@ public class BoidRuleFight extends CFacade {
 	/**
 	 * Set method for struct member 'flee_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Flee to this distance
 	 * @see #__DNA__FIELD__flee_distance
 	 */

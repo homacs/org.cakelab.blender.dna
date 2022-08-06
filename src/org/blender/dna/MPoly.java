@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,9 +13,11 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MPoly'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
- * Defines a polygon based on a subset of the loop entries of the {@link Mesh}.<h4>Blender Source Code:</h4>
- * <p>{@link Mesh}  Faces This only stores the polygon size & flags, the vertex & edge indices are stored in the {@link MLoop} .</p><p> Typically accessed from {@link Mesh.mpoly} . </p>
+ * 
+ * <h4>Java .Blend</h4>
+ * Defines a polygon based on a subset of the loop entries of the {@link Mesh}.
+ * <h4>Blender Source Code</h4>
+ * <p>{@link Mesh}  Faces This only stores the polygon size & flags, the vertex & edge indices are stored in the {@link MLoop} .</p><p> Typically accessed from {@link Mesh#getMpoly()} . </p>
  */
 
 @CMetaData(size32=12, size64=12)
@@ -25,16 +28,17 @@ public class MPoly extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MPoly.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 67;
 
 	/**
 	 * Field descriptor (offset) for struct member 'loopstart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * offset in loop array ({@link #getMLoop})<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * offset in loop array ({@link #getMLoop})
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset into loop array and number of loops in the face. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,8 +61,9 @@ public class MPoly extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'totloop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Number of loop entries from loopstart<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * Number of loop entries from loopstart
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keep signed since we need to subtract when getting the previous loop. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -101,7 +106,7 @@ public class MPoly extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values:</h3>
 	 * 				<pre>
 	 * 	ME_SMOOTH   = (1 << 0),
@@ -157,8 +162,9 @@ public class MPoly extends CFacade {
 	/**
 	 * Get method for struct member 'loopstart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * offset in loop array ({@link #getMLoop})<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * offset in loop array ({@link #getMLoop})
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset into loop array and number of loops in the face. </p>
 	 * @see #__DNA__FIELD__loopstart
 	 */
@@ -175,8 +181,9 @@ public class MPoly extends CFacade {
 	/**
 	 * Set method for struct member 'loopstart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * offset in loop array ({@link #getMLoop})<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * offset in loop array ({@link #getMLoop})
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset into loop array and number of loops in the face. </p>
 	 * @see #__DNA__FIELD__loopstart
 	 */
@@ -193,8 +200,9 @@ public class MPoly extends CFacade {
 	/**
 	 * Get method for struct member 'totloop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Number of loop entries from loopstart<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * Number of loop entries from loopstart
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keep signed since we need to subtract when getting the previous loop. </p>
 	 * @see #__DNA__FIELD__totloop
 	 */
@@ -211,8 +219,9 @@ public class MPoly extends CFacade {
 	/**
 	 * Set method for struct member 'totloop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Number of loop entries from loopstart<h4>Blender Source Code:</h4>
+	 * <h4>Java .Blend</h4>
+	 * Number of loop entries from loopstart
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keep signed since we need to subtract when getting the previous loop. </p>
 	 * @see #__DNA__FIELD__totloop
 	 */
@@ -257,7 +266,7 @@ public class MPoly extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values:</h3>
 	 * 				<pre>
 	 * 	ME_SMOOTH   = (1 << 0),
@@ -279,7 +288,7 @@ public class MPoly extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values:</h3>
 	 * 				<pre>
 	 * 	ME_SMOOTH   = (1 << 0),

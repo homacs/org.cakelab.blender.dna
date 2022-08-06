@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class LineStyleGeometryModifier_GuidingLines extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for LineStyleGeometryModifier_GuidingLines.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 694;
 
@@ -52,7 +53,7 @@ public class LineStyleGeometryModifier_GuidingLines extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied to the main direction line along its normal
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -139,7 +140,7 @@ public class LineStyleGeometryModifier_GuidingLines extends CFacade {
 	/**
 	 * Get method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied to the main direction line along its normal
 	 * @see #__DNA__FIELD__offset
 	 */
@@ -156,7 +157,7 @@ public class LineStyleGeometryModifier_GuidingLines extends CFacade {
 	/**
 	 * Set method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Displacement that is applied to the main direction line along its normal
 	 * @see #__DNA__FIELD__offset
 	 */

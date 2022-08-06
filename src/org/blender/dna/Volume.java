@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class Volume extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for Volume.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 731;
 
@@ -52,7 +53,7 @@ public class Volume extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> animation data (must be immediately after id) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,8 +76,9 @@ public class Volume extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Volume file used by this Volume data-block<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Volume file used by this Volume data-block
+	 * <h4>Blender Source Code</h4>
 	 * <p> File FILE_MAX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -119,8 +121,9 @@ public class Volume extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'is_sequence'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Whether the cache is separated in a series of files<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Whether the cache is separated in a series of files
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Sequence}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -143,7 +146,7 @@ public class Volume extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sequence_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Sequence playback mode
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -186,7 +189,7 @@ public class Volume extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'frame_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Global starting frame of the sequence, assuming first has a #1
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -209,7 +212,7 @@ public class Volume extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'frame_duration'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of frames of the sequence to use
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -232,7 +235,7 @@ public class Volume extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'frame_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset the number of the frame to use in the animation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -255,7 +258,7 @@ public class Volume extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -278,7 +281,7 @@ public class Volume extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'active_grid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grids </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -301,7 +304,7 @@ public class Volume extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -364,8 +367,9 @@ public class Volume extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'render'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Volume render settings for 3D viewport<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Volume render settings for 3D viewport
+	 * <h4>Blender Source Code</h4>
 	 * <p> Render & Display Settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -388,7 +392,7 @@ public class Volume extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'display'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Volume display settings for 3D viewport
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -411,7 +415,7 @@ public class Volume extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'batch_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Draw Cache </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -434,7 +438,7 @@ public class Volume extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime Data </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -501,7 +505,7 @@ public class Volume extends CFacade {
 	/**
 	 * Get method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> animation data (must be immediately after id) </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -521,7 +525,7 @@ public class Volume extends CFacade {
 	/**
 	 * Set method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> animation data (must be immediately after id) </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -539,8 +543,9 @@ public class Volume extends CFacade {
 	/**
 	 * Get method for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Volume file used by this Volume data-block<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Volume file used by this Volume data-block
+	 * <h4>Blender Source Code</h4>
 	 * <p> File FILE_MAX </p>
 	 * @see #__DNA__FIELD__filepath
 	 */
@@ -561,8 +566,9 @@ public class Volume extends CFacade {
 	/**
 	 * Set method for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Volume file used by this Volume data-block<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Volume file used by this Volume data-block
+	 * <h4>Blender Source Code</h4>
 	 * <p> File FILE_MAX </p>
 	 * @see #__DNA__FIELD__filepath
 	 */
@@ -619,8 +625,9 @@ public class Volume extends CFacade {
 	/**
 	 * Get method for struct member 'is_sequence'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Whether the cache is separated in a series of files<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Whether the cache is separated in a series of files
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Sequence}  </p>
 	 * @see #__DNA__FIELD__is_sequence
 	 */
@@ -637,8 +644,9 @@ public class Volume extends CFacade {
 	/**
 	 * Set method for struct member 'is_sequence'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Whether the cache is separated in a series of files<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Whether the cache is separated in a series of files
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Sequence}  </p>
 	 * @see #__DNA__FIELD__is_sequence
 	 */
@@ -655,7 +663,7 @@ public class Volume extends CFacade {
 	/**
 	 * Get method for struct member 'sequence_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Sequence playback mode
 	 * @see #__DNA__FIELD__sequence_mode
 	 */
@@ -672,7 +680,7 @@ public class Volume extends CFacade {
 	/**
 	 * Set method for struct member 'sequence_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Sequence playback mode
 	 * @see #__DNA__FIELD__sequence_mode
 	 */
@@ -729,7 +737,7 @@ public class Volume extends CFacade {
 	/**
 	 * Get method for struct member 'frame_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Global starting frame of the sequence, assuming first has a #1
 	 * @see #__DNA__FIELD__frame_start
 	 */
@@ -746,7 +754,7 @@ public class Volume extends CFacade {
 	/**
 	 * Set method for struct member 'frame_start'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Global starting frame of the sequence, assuming first has a #1
 	 * @see #__DNA__FIELD__frame_start
 	 */
@@ -763,7 +771,7 @@ public class Volume extends CFacade {
 	/**
 	 * Get method for struct member 'frame_duration'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of frames of the sequence to use
 	 * @see #__DNA__FIELD__frame_duration
 	 */
@@ -780,7 +788,7 @@ public class Volume extends CFacade {
 	/**
 	 * Set method for struct member 'frame_duration'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of frames of the sequence to use
 	 * @see #__DNA__FIELD__frame_duration
 	 */
@@ -797,7 +805,7 @@ public class Volume extends CFacade {
 	/**
 	 * Get method for struct member 'frame_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset the number of the frame to use in the animation
 	 * @see #__DNA__FIELD__frame_offset
 	 */
@@ -814,7 +822,7 @@ public class Volume extends CFacade {
 	/**
 	 * Set method for struct member 'frame_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Offset the number of the frame to use in the animation
 	 * @see #__DNA__FIELD__frame_offset
 	 */
@@ -831,7 +839,7 @@ public class Volume extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -848,7 +856,7 @@ public class Volume extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -865,7 +873,7 @@ public class Volume extends CFacade {
 	/**
 	 * Get method for struct member 'active_grid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grids </p>
 	 * @see #__DNA__FIELD__active_grid
 	 */
@@ -882,7 +890,7 @@ public class Volume extends CFacade {
 	/**
 	 * Set method for struct member 'active_grid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grids </p>
 	 * @see #__DNA__FIELD__active_grid
 	 */
@@ -899,7 +907,7 @@ public class Volume extends CFacade {
 	/**
 	 * Get method for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  </p>
 	 * @see #__DNA__FIELD__mat
 	 */
@@ -919,7 +927,7 @@ public class Volume extends CFacade {
 	/**
 	 * Set method for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  </p>
 	 * @see #__DNA__FIELD__mat
 	 */
@@ -1005,8 +1013,9 @@ public class Volume extends CFacade {
 	/**
 	 * Get method for struct member 'render'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Volume render settings for 3D viewport<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Volume render settings for 3D viewport
+	 * <h4>Blender Source Code</h4>
 	 * <p> Render & Display Settings </p>
 	 * @see #__DNA__FIELD__render
 	 */
@@ -1023,8 +1032,9 @@ public class Volume extends CFacade {
 	/**
 	 * Set method for struct member 'render'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Volume render settings for 3D viewport<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Volume render settings for 3D viewport
+	 * <h4>Blender Source Code</h4>
 	 * <p> Render & Display Settings </p>
 	 * @see #__DNA__FIELD__render
 	 */
@@ -1049,7 +1059,7 @@ public class Volume extends CFacade {
 	/**
 	 * Get method for struct member 'display'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Volume display settings for 3D viewport
 	 * @see #__DNA__FIELD__display
 	 */
@@ -1066,7 +1076,7 @@ public class Volume extends CFacade {
 	/**
 	 * Set method for struct member 'display'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Volume display settings for 3D viewport
 	 * @see #__DNA__FIELD__display
 	 */
@@ -1091,7 +1101,7 @@ public class Volume extends CFacade {
 	/**
 	 * Get method for struct member 'batch_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Draw Cache </p>
 	 * @see #__DNA__FIELD__batch_cache
 	 */
@@ -1111,7 +1121,7 @@ public class Volume extends CFacade {
 	/**
 	 * Set method for struct member 'batch_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Draw Cache </p>
 	 * @see #__DNA__FIELD__batch_cache
 	 */
@@ -1129,7 +1139,7 @@ public class Volume extends CFacade {
 	/**
 	 * Get method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime Data </p>
 	 * @see #__DNA__FIELD__runtime
 	 */
@@ -1146,7 +1156,7 @@ public class Volume extends CFacade {
 	/**
 	 * Set method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime Data </p>
 	 * @see #__DNA__FIELD__runtime
 	 */

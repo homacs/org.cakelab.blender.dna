@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ThemeSpace'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> try to put them all in one, if needed a special struct can be created as well for example later on, when we introduce wire colors for ob types or so... </p>
  */
 
@@ -25,15 +27,15 @@ public class ThemeSpace extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ThemeSpace.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 263;
 
 	/**
 	 * Field descriptor (offset) for struct member 'back'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> main window colors </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -116,7 +118,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  title. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -179,7 +181,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'header'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> header colors Region background. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -202,7 +204,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'header_title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -265,7 +267,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tab_active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> region tabs </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -348,7 +350,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'button'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> button/tool regions Region background. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -371,7 +373,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'button_title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  title. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -434,7 +436,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'list'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> listview regions Region background. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -457,7 +459,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'list_title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  title. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -520,7 +522,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'navigation_bar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> navigation bar regions Region background. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -543,7 +545,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'execution_buts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Region background. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -566,7 +568,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'panelcolors'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> note, cannot use name 'panel' because of DNA mapping old files </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1149,7 +1151,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'face'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Solid faces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1232,7 +1234,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'face_dot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selected color. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1995,7 +1997,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ds_channel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dopesheet. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2058,7 +2060,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'keytype_keyframe'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keytypes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2161,7 +2163,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'keytype_keyframe_select'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keytypes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2564,7 +2566,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'syntaxl'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> syntax for textwindow and nodes </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2587,7 +2589,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'syntaxs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> in nodespace used for backdrop matte </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2630,7 +2632,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'syntaxn'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> in nodespace used for color input </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2673,7 +2675,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'syntaxc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> in nodespace used for converter group </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2716,7 +2718,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'syntaxr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> in nodespace used for distort </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2979,7 +2981,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'movie'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For sequence editor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3242,7 +3244,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'keyframe_scale_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For dopesheet - scale factor for size of keyframes (i.e. height of channels). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3825,7 +3827,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uv_shadow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Two uses, for uvs with modifier applied on mesh and uvs during painting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3848,7 +3850,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'match'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Search filter match, used for property search and in the outliner. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3871,7 +3873,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'selected_highlight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outliner - selected item. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3894,7 +3896,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'selected_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outliner - selected object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3917,7 +3919,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'active_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outliner - active object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3940,7 +3942,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'edited_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outliner - edited object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3963,7 +3965,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'row_alternate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outliner - row color difference. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3986,7 +3988,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'skin_root'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Skin modifier root color. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -4009,7 +4011,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'anim_active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA Active Action + Summary Channel. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -4032,7 +4034,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'anim_non_active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active Action = NULL. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -4055,7 +4057,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'anim_preview_range'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Preview range overlay. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -4078,7 +4080,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'nla_tweaking'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA 'Tweaking' action/strip. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -4101,7 +4103,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'nla_tweakdupli'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA - warning color for duplicate instances of tweaking strip. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -4124,7 +4126,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'nla_track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA "Track" </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -4147,7 +4149,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'nla_transition'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA "Transition" strips. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -4190,7 +4192,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'nla_meta'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA "Meta" strips. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -4233,7 +4235,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'nla_sound'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA "Sound" strips. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -4276,7 +4278,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'info_selected'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> info </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -4647,7 +4649,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'back'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> main window colors </p>
 	 * @see #__DNA__FIELD__back
 	 */
@@ -4668,7 +4670,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'back'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> main window colors </p>
 	 * @see #__DNA__FIELD__back
 	 */
@@ -4801,7 +4803,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  title. </p>
 	 * @see #__DNA__FIELD__title
 	 */
@@ -4822,7 +4824,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  title. </p>
 	 * @see #__DNA__FIELD__title
 	 */
@@ -4927,7 +4929,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'header'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> header colors Region background. </p>
 	 * @see #__DNA__FIELD__header
 	 */
@@ -4948,7 +4950,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'header'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> header colors Region background. </p>
 	 * @see #__DNA__FIELD__header
 	 */
@@ -4973,7 +4975,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'header_title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD__header_title
 	 */
@@ -4994,7 +4996,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'header_title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD__header_title
 	 */
@@ -5099,7 +5101,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'tab_active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> region tabs </p>
 	 * @see #__DNA__FIELD__tab_active
 	 */
@@ -5120,7 +5122,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'tab_active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> region tabs </p>
 	 * @see #__DNA__FIELD__tab_active
 	 */
@@ -5265,7 +5267,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'button'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> button/tool regions Region background. </p>
 	 * @see #__DNA__FIELD__button
 	 */
@@ -5286,7 +5288,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'button'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> button/tool regions Region background. </p>
 	 * @see #__DNA__FIELD__button
 	 */
@@ -5311,7 +5313,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'button_title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  title. </p>
 	 * @see #__DNA__FIELD__button_title
 	 */
@@ -5332,7 +5334,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'button_title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  title. </p>
 	 * @see #__DNA__FIELD__button_title
 	 */
@@ -5437,7 +5439,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'list'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> listview regions Region background. </p>
 	 * @see #__DNA__FIELD__list
 	 */
@@ -5458,7 +5460,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'list'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> listview regions Region background. </p>
 	 * @see #__DNA__FIELD__list
 	 */
@@ -5483,7 +5485,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'list_title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  title. </p>
 	 * @see #__DNA__FIELD__list_title
 	 */
@@ -5504,7 +5506,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'list_title'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  title. </p>
 	 * @see #__DNA__FIELD__list_title
 	 */
@@ -5609,7 +5611,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'navigation_bar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> navigation bar regions Region background. </p>
 	 * @see #__DNA__FIELD__navigation_bar
 	 */
@@ -5630,7 +5632,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'navigation_bar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> navigation bar regions Region background. </p>
 	 * @see #__DNA__FIELD__navigation_bar
 	 */
@@ -5655,7 +5657,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'execution_buts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Region background. </p>
 	 * @see #__DNA__FIELD__execution_buts
 	 */
@@ -5676,7 +5678,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'execution_buts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Region background. </p>
 	 * @see #__DNA__FIELD__execution_buts
 	 */
@@ -5701,7 +5703,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'panelcolors'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> note, cannot use name 'panel' because of DNA mapping old files </p>
 	 * @see #__DNA__FIELD__panelcolors
 	 */
@@ -5718,7 +5720,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'panelcolors'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> note, cannot use name 'panel' because of DNA mapping old files </p>
 	 * @see #__DNA__FIELD__panelcolors
 	 */
@@ -6863,7 +6865,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'face'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Solid faces. </p>
 	 * @see #__DNA__FIELD__face
 	 */
@@ -6884,7 +6886,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'face'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Solid faces. </p>
 	 * @see #__DNA__FIELD__face
 	 */
@@ -7029,7 +7031,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'face_dot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selected color. </p>
 	 * @see #__DNA__FIELD__face_dot
 	 */
@@ -7050,7 +7052,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'face_dot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selected color. </p>
 	 * @see #__DNA__FIELD__face_dot
 	 */
@@ -8555,7 +8557,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'ds_channel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dopesheet. </p>
 	 * @see #__DNA__FIELD__ds_channel
 	 */
@@ -8576,7 +8578,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'ds_channel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dopesheet. </p>
 	 * @see #__DNA__FIELD__ds_channel
 	 */
@@ -8681,7 +8683,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'keytype_keyframe'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keytypes. </p>
 	 * @see #__DNA__FIELD__keytype_keyframe
 	 */
@@ -8702,7 +8704,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'keytype_keyframe'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keytypes. </p>
 	 * @see #__DNA__FIELD__keytype_keyframe
 	 */
@@ -8887,7 +8889,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'keytype_keyframe_select'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keytypes. </p>
 	 * @see #__DNA__FIELD__keytype_keyframe_select
 	 */
@@ -8908,7 +8910,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'keytype_keyframe_select'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keytypes. </p>
 	 * @see #__DNA__FIELD__keytype_keyframe_select
 	 */
@@ -9621,7 +9623,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'syntaxl'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> syntax for textwindow and nodes </p>
 	 * @see #__DNA__FIELD__syntaxl
 	 */
@@ -9642,7 +9644,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'syntaxl'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> syntax for textwindow and nodes </p>
 	 * @see #__DNA__FIELD__syntaxl
 	 */
@@ -9667,7 +9669,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'syntaxs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> in nodespace used for backdrop matte </p>
 	 * @see #__DNA__FIELD__syntaxs
 	 */
@@ -9688,7 +9690,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'syntaxs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> in nodespace used for backdrop matte </p>
 	 * @see #__DNA__FIELD__syntaxs
 	 */
@@ -9753,7 +9755,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'syntaxn'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> in nodespace used for color input </p>
 	 * @see #__DNA__FIELD__syntaxn
 	 */
@@ -9774,7 +9776,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'syntaxn'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> in nodespace used for color input </p>
 	 * @see #__DNA__FIELD__syntaxn
 	 */
@@ -9839,7 +9841,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'syntaxc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> in nodespace used for converter group </p>
 	 * @see #__DNA__FIELD__syntaxc
 	 */
@@ -9860,7 +9862,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'syntaxc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> in nodespace used for converter group </p>
 	 * @see #__DNA__FIELD__syntaxc
 	 */
@@ -9925,7 +9927,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'syntaxr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> in nodespace used for distort </p>
 	 * @see #__DNA__FIELD__syntaxr
 	 */
@@ -9946,7 +9948,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'syntaxr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> in nodespace used for distort </p>
 	 * @see #__DNA__FIELD__syntaxr
 	 */
@@ -10451,7 +10453,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'movie'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For sequence editor. </p>
 	 * @see #__DNA__FIELD__movie
 	 */
@@ -10472,7 +10474,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'movie'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For sequence editor. </p>
 	 * @see #__DNA__FIELD__movie
 	 */
@@ -10977,7 +10979,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'keyframe_scale_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For dopesheet - scale factor for size of keyframes (i.e. height of channels). </p>
 	 * @see #__DNA__FIELD__keyframe_scale_fac
 	 */
@@ -10994,7 +10996,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'keyframe_scale_fac'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For dopesheet - scale factor for size of keyframes (i.e. height of channels). </p>
 	 * @see #__DNA__FIELD__keyframe_scale_fac
 	 */
@@ -12107,7 +12109,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'uv_shadow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Two uses, for uvs with modifier applied on mesh and uvs during painting. </p>
 	 * @see #__DNA__FIELD__uv_shadow
 	 */
@@ -12128,7 +12130,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'uv_shadow'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Two uses, for uvs with modifier applied on mesh and uvs during painting. </p>
 	 * @see #__DNA__FIELD__uv_shadow
 	 */
@@ -12153,7 +12155,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'match'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Search filter match, used for property search and in the outliner. </p>
 	 * @see #__DNA__FIELD__match
 	 */
@@ -12174,7 +12176,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'match'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Search filter match, used for property search and in the outliner. </p>
 	 * @see #__DNA__FIELD__match
 	 */
@@ -12199,7 +12201,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'selected_highlight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outliner - selected item. </p>
 	 * @see #__DNA__FIELD__selected_highlight
 	 */
@@ -12220,7 +12222,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'selected_highlight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outliner - selected item. </p>
 	 * @see #__DNA__FIELD__selected_highlight
 	 */
@@ -12245,7 +12247,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'selected_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outliner - selected object. </p>
 	 * @see #__DNA__FIELD__selected_object
 	 */
@@ -12266,7 +12268,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'selected_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outliner - selected object. </p>
 	 * @see #__DNA__FIELD__selected_object
 	 */
@@ -12291,7 +12293,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'active_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outliner - active object. </p>
 	 * @see #__DNA__FIELD__active_object
 	 */
@@ -12312,7 +12314,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'active_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outliner - active object. </p>
 	 * @see #__DNA__FIELD__active_object
 	 */
@@ -12337,7 +12339,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'edited_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outliner - edited object. </p>
 	 * @see #__DNA__FIELD__edited_object
 	 */
@@ -12358,7 +12360,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'edited_object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outliner - edited object. </p>
 	 * @see #__DNA__FIELD__edited_object
 	 */
@@ -12383,7 +12385,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'row_alternate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outliner - row color difference. </p>
 	 * @see #__DNA__FIELD__row_alternate
 	 */
@@ -12404,7 +12406,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'row_alternate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Outliner - row color difference. </p>
 	 * @see #__DNA__FIELD__row_alternate
 	 */
@@ -12429,7 +12431,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'skin_root'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Skin modifier root color. </p>
 	 * @see #__DNA__FIELD__skin_root
 	 */
@@ -12450,7 +12452,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'skin_root'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Skin modifier root color. </p>
 	 * @see #__DNA__FIELD__skin_root
 	 */
@@ -12475,7 +12477,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'anim_active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA Active Action + Summary Channel. </p>
 	 * @see #__DNA__FIELD__anim_active
 	 */
@@ -12496,7 +12498,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'anim_active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA Active Action + Summary Channel. </p>
 	 * @see #__DNA__FIELD__anim_active
 	 */
@@ -12521,7 +12523,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'anim_non_active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active Action = NULL. </p>
 	 * @see #__DNA__FIELD__anim_non_active
 	 */
@@ -12542,7 +12544,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'anim_non_active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active Action = NULL. </p>
 	 * @see #__DNA__FIELD__anim_non_active
 	 */
@@ -12567,7 +12569,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'anim_preview_range'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Preview range overlay. </p>
 	 * @see #__DNA__FIELD__anim_preview_range
 	 */
@@ -12588,7 +12590,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'anim_preview_range'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Preview range overlay. </p>
 	 * @see #__DNA__FIELD__anim_preview_range
 	 */
@@ -12613,7 +12615,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'nla_tweaking'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA 'Tweaking' action/strip. </p>
 	 * @see #__DNA__FIELD__nla_tweaking
 	 */
@@ -12634,7 +12636,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'nla_tweaking'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA 'Tweaking' action/strip. </p>
 	 * @see #__DNA__FIELD__nla_tweaking
 	 */
@@ -12659,7 +12661,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'nla_tweakdupli'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA - warning color for duplicate instances of tweaking strip. </p>
 	 * @see #__DNA__FIELD__nla_tweakdupli
 	 */
@@ -12680,7 +12682,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'nla_tweakdupli'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA - warning color for duplicate instances of tweaking strip. </p>
 	 * @see #__DNA__FIELD__nla_tweakdupli
 	 */
@@ -12705,7 +12707,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'nla_track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA "Track" </p>
 	 * @see #__DNA__FIELD__nla_track
 	 */
@@ -12726,7 +12728,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'nla_track'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA "Track" </p>
 	 * @see #__DNA__FIELD__nla_track
 	 */
@@ -12751,7 +12753,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'nla_transition'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA "Transition" strips. </p>
 	 * @see #__DNA__FIELD__nla_transition
 	 */
@@ -12772,7 +12774,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'nla_transition'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA "Transition" strips. </p>
 	 * @see #__DNA__FIELD__nla_transition
 	 */
@@ -12837,7 +12839,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'nla_meta'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA "Meta" strips. </p>
 	 * @see #__DNA__FIELD__nla_meta
 	 */
@@ -12858,7 +12860,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'nla_meta'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA "Meta" strips. </p>
 	 * @see #__DNA__FIELD__nla_meta
 	 */
@@ -12923,7 +12925,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'nla_sound'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA "Sound" strips. </p>
 	 * @see #__DNA__FIELD__nla_sound
 	 */
@@ -12944,7 +12946,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'nla_sound'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> NLA "Sound" strips. </p>
 	 * @see #__DNA__FIELD__nla_sound
 	 */
@@ -13009,7 +13011,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Get method for struct member 'info_selected'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> info </p>
 	 * @see #__DNA__FIELD__info_selected
 	 */
@@ -13030,7 +13032,7 @@ public class ThemeSpace extends CFacade {
 	/**
 	 * Set method for struct member 'info_selected'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> info </p>
 	 * @see #__DNA__FIELD__info_selected
 	 */

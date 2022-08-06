@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'LineStyleGeometryModifier_Sampling'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Geometry modifiers </p>
  */
 
@@ -25,8 +27,8 @@ public class LineStyleGeometryModifier_Sampling extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for LineStyleGeometryModifier_Sampling.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 685;
 
@@ -53,7 +55,7 @@ public class LineStyleGeometryModifier_Sampling extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sampling'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * New sampling value to be used for subsequent modifiers
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -140,7 +142,7 @@ public class LineStyleGeometryModifier_Sampling extends CFacade {
 	/**
 	 * Get method for struct member 'sampling'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * New sampling value to be used for subsequent modifiers
 	 * @see #__DNA__FIELD__sampling
 	 */
@@ -157,7 +159,7 @@ public class LineStyleGeometryModifier_Sampling extends CFacade {
 	/**
 	 * Set method for struct member 'sampling'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * New sampling value to be used for subsequent modifiers
 	 * @see #__DNA__FIELD__sampling
 	 */

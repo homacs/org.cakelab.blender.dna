@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class ParticleSystemModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ParticleSystemModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 117;
 
@@ -52,7 +53,7 @@ public class ParticleSystemModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'psys'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><h2>Note</h2><p><code></code><code></code> . </p> Storing the particle system pointer here is very weak, as it prevents modifiers' data copying to be self-sufficient (extra external code needs to ensure the pointer remains valid when the modifier data is copied from one object to another). See e.g. BKE_object_copy_particlesystems or BKE_object_copy_modifier. 
 	 * 
 	 * </p>
@@ -77,7 +78,7 @@ public class ParticleSystemModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_final'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Final {@link Mesh}  - its topology may differ from orig mesh. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -100,7 +101,7 @@ public class ParticleSystemModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_original'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original mesh that particles are attached to. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -287,7 +288,7 @@ public class ParticleSystemModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'psys'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><h2>Note</h2><p><code></code><code></code> . </p> Storing the particle system pointer here is very weak, as it prevents modifiers' data copying to be self-sufficient (extra external code needs to ensure the pointer remains valid when the modifier data is copied from one object to another). See e.g. BKE_object_copy_particlesystems or BKE_object_copy_modifier. 
 	 * 
 	 * </p>
@@ -309,7 +310,7 @@ public class ParticleSystemModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'psys'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><h2>Note</h2><p><code></code><code></code> . </p> Storing the particle system pointer here is very weak, as it prevents modifiers' data copying to be self-sufficient (extra external code needs to ensure the pointer remains valid when the modifier data is copied from one object to another). See e.g. BKE_object_copy_particlesystems or BKE_object_copy_modifier. 
 	 * 
 	 * </p>
@@ -329,7 +330,7 @@ public class ParticleSystemModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mesh_final'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Final {@link Mesh}  - its topology may differ from orig mesh. </p>
 	 * @see #__DNA__FIELD__mesh_final
 	 */
@@ -349,7 +350,7 @@ public class ParticleSystemModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mesh_final'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Final {@link Mesh}  - its topology may differ from orig mesh. </p>
 	 * @see #__DNA__FIELD__mesh_final
 	 */
@@ -367,7 +368,7 @@ public class ParticleSystemModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mesh_original'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original mesh that particles are attached to. </p>
 	 * @see #__DNA__FIELD__mesh_original
 	 */
@@ -387,7 +388,7 @@ public class ParticleSystemModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mesh_original'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original mesh that particles are attached to. </p>
 	 * @see #__DNA__FIELD__mesh_original
 	 */

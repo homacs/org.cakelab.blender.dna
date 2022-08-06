@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FMod_Cycles'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> TODO: we can only do complete cycles... </p><p> cycling/repetition modifier data </p>
  */
 
@@ -24,15 +26,15 @@ public class FMod_Cycles extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for FMod_Cycles.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 591;
 
 	/**
 	 * Field descriptor (offset) for struct member 'before_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Extrapolation mode to use before first keyframe. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +57,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'after_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Extrapolation mode to use after last keyframe. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -78,7 +80,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'before_cycles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of 'cycles' before first keyframe to do. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -101,7 +103,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'after_cycles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of 'cycles' after last keyframe to do. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -132,7 +134,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Get method for struct member 'before_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Extrapolation mode to use before first keyframe. </p>
 	 * @see #__DNA__FIELD__before_mode
 	 */
@@ -149,7 +151,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Set method for struct member 'before_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Extrapolation mode to use before first keyframe. </p>
 	 * @see #__DNA__FIELD__before_mode
 	 */
@@ -166,7 +168,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Get method for struct member 'after_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Extrapolation mode to use after last keyframe. </p>
 	 * @see #__DNA__FIELD__after_mode
 	 */
@@ -183,7 +185,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Set method for struct member 'after_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Extrapolation mode to use after last keyframe. </p>
 	 * @see #__DNA__FIELD__after_mode
 	 */
@@ -200,7 +202,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Get method for struct member 'before_cycles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of 'cycles' before first keyframe to do. </p>
 	 * @see #__DNA__FIELD__before_cycles
 	 */
@@ -217,7 +219,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Set method for struct member 'before_cycles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of 'cycles' before first keyframe to do. </p>
 	 * @see #__DNA__FIELD__before_cycles
 	 */
@@ -234,7 +236,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Get method for struct member 'after_cycles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of 'cycles' after last keyframe to do. </p>
 	 * @see #__DNA__FIELD__after_cycles
 	 */
@@ -251,7 +253,7 @@ public class FMod_Cycles extends CFacade {
 	/**
 	 * Set method for struct member 'after_cycles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of 'cycles' after last keyframe to do. </p>
 	 * @see #__DNA__FIELD__after_cycles
 	 */

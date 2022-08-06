@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FluidsimModifierData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> DEPRECATED, only used for versioning. </p>
  */
 
@@ -24,8 +26,8 @@ public class FluidsimModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for FluidsimModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 121;
 
@@ -52,8 +54,8 @@ public class FluidsimModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fss'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Definition is in {@link DNA_object_fluidsim_types.h} . </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Definition is in DNA_object_fluidsim_types.h . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -139,8 +141,8 @@ public class FluidsimModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'fss'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Definition is in {@link DNA_object_fluidsim_types.h} . </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Definition is in DNA_object_fluidsim_types.h . </p>
 	 * @see #__DNA__FIELD__fss
 	 */
 	
@@ -159,8 +161,8 @@ public class FluidsimModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'fss'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Definition is in {@link DNA_object_fluidsim_types.h} . </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Definition is in DNA_object_fluidsim_types.h . </p>
 	 * @see #__DNA__FIELD__fss
 	 */
 	

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for CorrectiveSmoothModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 139;
 
@@ -52,7 +53,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bind_coords_num'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> note: -1 is used to bind </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -215,7 +216,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -238,7 +239,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'delta_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> runtime-only cache </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -305,7 +306,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'bind_coords_num'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> note: -1 is used to bind </p>
 	 * @see #__DNA__FIELD__bind_coords_num
 	 */
@@ -322,7 +323,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'bind_coords_num'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> note: -1 is used to bind </p>
 	 * @see #__DNA__FIELD__bind_coords_num
 	 */
@@ -547,7 +548,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
@@ -568,7 +569,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
@@ -593,7 +594,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'delta_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> runtime-only cache </p>
 	 * @see #__DNA__FIELD__delta_cache
 	 */
@@ -610,7 +611,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'delta_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> runtime-only cache </p>
 	 * @see #__DNA__FIELD__delta_cache
 	 */

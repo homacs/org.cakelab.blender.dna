@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,8 +24,8 @@ public class EdgeSplitModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for EdgeSplitModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 98;
 
@@ -51,7 +52,7 @@ public class EdgeSplitModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'split_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angle above which edges should be split. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -138,7 +139,7 @@ public class EdgeSplitModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'split_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angle above which edges should be split. </p>
 	 * @see #__DNA__FIELD__split_angle
 	 */
@@ -155,7 +156,7 @@ public class EdgeSplitModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'split_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Angle above which edges should be split. </p>
 	 * @see #__DNA__FIELD__split_angle
 	 */

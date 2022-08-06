@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,15 +25,15 @@ public class FluidsimSettings extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for FluidsimSettings.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 172;
 
 	/**
 	 * Field descriptor (offset) for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For fast RNA access. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +56,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'threads'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> threadcont the calculation is done with </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +99,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> domain, fluid or obstacle </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,7 +122,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'show_advancedoptions'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> display advanced options in fluid sim tab (on=1, off=0) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -144,7 +145,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'resolutionxyz'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> domain object settings resolutions </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -187,7 +188,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'realsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> size of the domain in real units (meters along largest resolution x, y, z extent) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -210,7 +211,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'guiDisplayMode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> show original meshes, preview or final sim </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -253,7 +254,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'viscosityValue'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> fluid properties </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -276,7 +277,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'viscosityMode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -321,7 +322,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'grav'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> gravity strength </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -344,7 +345,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'animStart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> anim start end time (in seconds) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -387,7 +388,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bakeStart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> bake start end time (in blender frames) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -430,7 +431,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'frameOffset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> offset for baked frames </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -473,7 +474,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gstar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> g star param (LBM compressibility) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -496,7 +497,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'maxRefine'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> activate refinement? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -519,7 +520,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'iniVelx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> fluid object type settings gravity strength </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -582,7 +583,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'surfdataPath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> store output path, and file prefix for baked fluid surface strlens; 256= FILE_MAXFILE, 768= FILE_MAXDIR </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -605,7 +606,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bbStart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> store start coords of axis aligned bounding box together with size values are inited during derived mesh display </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -648,7 +649,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> animated params </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -671,7 +672,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'typeFlags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> additional flags depending on the type, lower short contains flags to check validity, higher short additional flags </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -694,7 +695,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'domainNovecgen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Switch off velocity generation, volume init type for fluid/obstacles (volume=1, shell=2, both=3). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -737,7 +738,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'partSlipValue'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> boundary "stickiness" for part slip values </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -760,7 +761,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'generateTracers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> number of tracers to generate </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -783,7 +784,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'generateParticles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> particle generation - on if >0, then determines amount (experimental...) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -806,7 +807,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'surfaceSmoothing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> smooth fluid surface? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -829,7 +830,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'surfaceSubdivs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of surface subdivisions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -852,7 +853,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GUI flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -875,8 +876,8 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'particleInfSize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  display - size scaling, and alpha influence. </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>Particle  display - size scaling, and alpha influence. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -918,7 +919,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'farFieldSize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> testing vars </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -941,7 +942,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'meshVelocities'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex velocities of simulated fluid mesh. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -964,7 +965,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of vertices in simulated fluid mesh. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -987,7 +988,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cpsTimeStart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fluid control settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1150,7 +1151,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'animRate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Simulation/flow rate control (i.e. old "Fac-Time"). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1181,7 +1182,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For fast RNA access. </p>
 	 * @see #__DNA__FIELD__fmd
 	 */
@@ -1201,7 +1202,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For fast RNA access. </p>
 	 * @see #__DNA__FIELD__fmd
 	 */
@@ -1219,7 +1220,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'threads'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> threadcont the calculation is done with </p>
 	 * @see #__DNA__FIELD__threads
 	 */
@@ -1236,7 +1237,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'threads'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> threadcont the calculation is done with </p>
 	 * @see #__DNA__FIELD__threads
 	 */
@@ -1293,7 +1294,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> domain, fluid or obstacle </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -1310,7 +1311,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> domain, fluid or obstacle </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -1327,7 +1328,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'show_advancedoptions'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> display advanced options in fluid sim tab (on=1, off=0) </p>
 	 * @see #__DNA__FIELD__show_advancedoptions
 	 */
@@ -1344,7 +1345,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'show_advancedoptions'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> display advanced options in fluid sim tab (on=1, off=0) </p>
 	 * @see #__DNA__FIELD__show_advancedoptions
 	 */
@@ -1361,7 +1362,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'resolutionxyz'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> domain object settings resolutions </p>
 	 * @see #__DNA__FIELD__resolutionxyz
 	 */
@@ -1378,7 +1379,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'resolutionxyz'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> domain object settings resolutions </p>
 	 * @see #__DNA__FIELD__resolutionxyz
 	 */
@@ -1423,7 +1424,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'realsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> size of the domain in real units (meters along largest resolution x, y, z extent) </p>
 	 * @see #__DNA__FIELD__realsize
 	 */
@@ -1440,7 +1441,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'realsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> size of the domain in real units (meters along largest resolution x, y, z extent) </p>
 	 * @see #__DNA__FIELD__realsize
 	 */
@@ -1457,7 +1458,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'guiDisplayMode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> show original meshes, preview or final sim </p>
 	 * @see #__DNA__FIELD__guiDisplayMode
 	 */
@@ -1474,7 +1475,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'guiDisplayMode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> show original meshes, preview or final sim </p>
 	 * @see #__DNA__FIELD__guiDisplayMode
 	 */
@@ -1519,7 +1520,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'viscosityValue'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> fluid properties </p>
 	 * @see #__DNA__FIELD__viscosityValue
 	 */
@@ -1536,7 +1537,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'viscosityValue'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> fluid properties </p>
 	 * @see #__DNA__FIELD__viscosityValue
 	 */
@@ -1553,7 +1554,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'viscosityMode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1572,7 +1573,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'viscosityMode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1619,7 +1620,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'grav'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> gravity strength </p>
 	 * @see #__DNA__FIELD__grav
 	 */
@@ -1640,7 +1641,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'grav'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> gravity strength </p>
 	 * @see #__DNA__FIELD__grav
 	 */
@@ -1665,7 +1666,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'animStart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> anim start end time (in seconds) </p>
 	 * @see #__DNA__FIELD__animStart
 	 */
@@ -1682,7 +1683,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'animStart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> anim start end time (in seconds) </p>
 	 * @see #__DNA__FIELD__animStart
 	 */
@@ -1727,7 +1728,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'bakeStart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> bake start end time (in blender frames) </p>
 	 * @see #__DNA__FIELD__bakeStart
 	 */
@@ -1744,7 +1745,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'bakeStart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> bake start end time (in blender frames) </p>
 	 * @see #__DNA__FIELD__bakeStart
 	 */
@@ -1789,7 +1790,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'frameOffset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> offset for baked frames </p>
 	 * @see #__DNA__FIELD__frameOffset
 	 */
@@ -1806,7 +1807,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'frameOffset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> offset for baked frames </p>
 	 * @see #__DNA__FIELD__frameOffset
 	 */
@@ -1863,7 +1864,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'gstar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> g star param (LBM compressibility) </p>
 	 * @see #__DNA__FIELD__gstar
 	 */
@@ -1880,7 +1881,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'gstar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> g star param (LBM compressibility) </p>
 	 * @see #__DNA__FIELD__gstar
 	 */
@@ -1897,7 +1898,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'maxRefine'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> activate refinement? </p>
 	 * @see #__DNA__FIELD__maxRefine
 	 */
@@ -1914,7 +1915,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'maxRefine'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> activate refinement? </p>
 	 * @see #__DNA__FIELD__maxRefine
 	 */
@@ -1931,7 +1932,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'iniVelx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> fluid object type settings gravity strength </p>
 	 * @see #__DNA__FIELD__iniVelx
 	 */
@@ -1948,7 +1949,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'iniVelx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> fluid object type settings gravity strength </p>
 	 * @see #__DNA__FIELD__iniVelx
 	 */
@@ -2021,7 +2022,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'surfdataPath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> store output path, and file prefix for baked fluid surface strlens; 256= FILE_MAXFILE, 768= FILE_MAXDIR </p>
 	 * @see #__DNA__FIELD__surfdataPath
 	 */
@@ -2042,7 +2043,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'surfdataPath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> store output path, and file prefix for baked fluid surface strlens; 256= FILE_MAXFILE, 768= FILE_MAXDIR </p>
 	 * @see #__DNA__FIELD__surfdataPath
 	 */
@@ -2067,7 +2068,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'bbStart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> store start coords of axis aligned bounding box together with size values are inited during derived mesh display </p>
 	 * @see #__DNA__FIELD__bbStart
 	 */
@@ -2088,7 +2089,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'bbStart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> store start coords of axis aligned bounding box together with size values are inited during derived mesh display </p>
 	 * @see #__DNA__FIELD__bbStart
 	 */
@@ -2153,7 +2154,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> animated params </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
@@ -2173,7 +2174,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> animated params </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
@@ -2191,7 +2192,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'typeFlags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> additional flags depending on the type, lower short contains flags to check validity, higher short additional flags </p>
 	 * @see #__DNA__FIELD__typeFlags
 	 */
@@ -2208,7 +2209,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'typeFlags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> additional flags depending on the type, lower short contains flags to check validity, higher short additional flags </p>
 	 * @see #__DNA__FIELD__typeFlags
 	 */
@@ -2225,7 +2226,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'domainNovecgen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Switch off velocity generation, volume init type for fluid/obstacles (volume=1, shell=2, both=3). </p>
 	 * @see #__DNA__FIELD__domainNovecgen
 	 */
@@ -2242,7 +2243,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'domainNovecgen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Switch off velocity generation, volume init type for fluid/obstacles (volume=1, shell=2, both=3). </p>
 	 * @see #__DNA__FIELD__domainNovecgen
 	 */
@@ -2287,7 +2288,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'partSlipValue'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> boundary "stickiness" for part slip values </p>
 	 * @see #__DNA__FIELD__partSlipValue
 	 */
@@ -2304,7 +2305,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'partSlipValue'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> boundary "stickiness" for part slip values </p>
 	 * @see #__DNA__FIELD__partSlipValue
 	 */
@@ -2321,7 +2322,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'generateTracers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> number of tracers to generate </p>
 	 * @see #__DNA__FIELD__generateTracers
 	 */
@@ -2338,7 +2339,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'generateTracers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> number of tracers to generate </p>
 	 * @see #__DNA__FIELD__generateTracers
 	 */
@@ -2355,7 +2356,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'generateParticles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> particle generation - on if >0, then determines amount (experimental...) </p>
 	 * @see #__DNA__FIELD__generateParticles
 	 */
@@ -2372,7 +2373,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'generateParticles'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> particle generation - on if >0, then determines amount (experimental...) </p>
 	 * @see #__DNA__FIELD__generateParticles
 	 */
@@ -2389,7 +2390,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'surfaceSmoothing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> smooth fluid surface? </p>
 	 * @see #__DNA__FIELD__surfaceSmoothing
 	 */
@@ -2406,7 +2407,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'surfaceSmoothing'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> smooth fluid surface? </p>
 	 * @see #__DNA__FIELD__surfaceSmoothing
 	 */
@@ -2423,7 +2424,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'surfaceSubdivs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of surface subdivisions. </p>
 	 * @see #__DNA__FIELD__surfaceSubdivs
 	 */
@@ -2440,7 +2441,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'surfaceSubdivs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of surface subdivisions. </p>
 	 * @see #__DNA__FIELD__surfaceSubdivs
 	 */
@@ -2457,7 +2458,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GUI flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -2474,7 +2475,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GUI flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -2491,8 +2492,8 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'particleInfSize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  display - size scaling, and alpha influence. </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>Particle  display - size scaling, and alpha influence. </p>
 	 * @see #__DNA__FIELD__particleInfSize
 	 */
 	
@@ -2508,8 +2509,8 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'particleInfSize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Particle}  display - size scaling, and alpha influence. </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>Particle  display - size scaling, and alpha influence. </p>
 	 * @see #__DNA__FIELD__particleInfSize
 	 */
 	
@@ -2553,7 +2554,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'farFieldSize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> testing vars </p>
 	 * @see #__DNA__FIELD__farFieldSize
 	 */
@@ -2570,7 +2571,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'farFieldSize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> testing vars </p>
 	 * @see #__DNA__FIELD__farFieldSize
 	 */
@@ -2587,7 +2588,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'meshVelocities'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex velocities of simulated fluid mesh. </p>
 	 * @see #__DNA__FIELD__meshVelocities
 	 */
@@ -2607,7 +2608,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'meshVelocities'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex velocities of simulated fluid mesh. </p>
 	 * @see #__DNA__FIELD__meshVelocities
 	 */
@@ -2625,7 +2626,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of vertices in simulated fluid mesh. </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
@@ -2642,7 +2643,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of vertices in simulated fluid mesh. </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
@@ -2659,7 +2660,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'cpsTimeStart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fluid control settings </p>
 	 * @see #__DNA__FIELD__cpsTimeStart
 	 */
@@ -2676,7 +2677,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'cpsTimeStart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fluid control settings </p>
 	 * @see #__DNA__FIELD__cpsTimeStart
 	 */
@@ -2889,7 +2890,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Get method for struct member 'animRate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Simulation/flow rate control (i.e. old "Fac-Time"). </p>
 	 * @see #__DNA__FIELD__animRate
 	 */
@@ -2906,7 +2907,7 @@ public class FluidsimSettings extends CFacade {
 	/**
 	 * Set method for struct member 'animRate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Simulation/flow rate control (i.e. old "Fac-Time"). </p>
 	 * @see #__DNA__FIELD__animRate
 	 */

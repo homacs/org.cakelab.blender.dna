@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,8 +14,10 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MLoopUV'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
- * Elements of the UV map. Each element contains the UV coordinates for a point of the corresponding loop entry. Thus for each loopuv entry there exists a loop entry with the same index.<h4>Blender Source Code:</h4>
+ * 
+ * <h4>Java .Blend</h4>
+ * Elements of the UV map. Each element contains the UV coordinates for a point of the corresponding loop entry. Thus for each loopuv entry there exists a loop entry with the same index.
+ * <h4>Blender Source Code</h4>
  * <p> UV coordinate for a polygon face & flag for selection & other options. </p>
  */
 
@@ -26,15 +29,15 @@ public class MLoopUV extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MLoopUV.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 78;
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * The 2D UV coordinates.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +60,7 @@ public class MLoopUV extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values:</h3>
 	 * 				<pre>
 	 * 	MLOOPUV_EDGESEL = (1 << 0),
@@ -93,7 +96,7 @@ public class MLoopUV extends CFacade {
 	/**
 	 * Get method for struct member 'uv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * The 2D UV coordinates.
 	 * @see #__DNA__FIELD__uv
 	 */
@@ -114,7 +117,7 @@ public class MLoopUV extends CFacade {
 	/**
 	 * Set method for struct member 'uv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * The 2D UV coordinates.
 	 * @see #__DNA__FIELD__uv
 	 */
@@ -139,7 +142,7 @@ public class MLoopUV extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values:</h3>
 	 * 				<pre>
 	 * 	MLOOPUV_EDGESEL = (1 << 0),
@@ -161,7 +164,7 @@ public class MLoopUV extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * <h3>Values:</h3>
 	 * 				<pre>
 	 * 	MLOOPUV_EDGESEL = (1 << 0),

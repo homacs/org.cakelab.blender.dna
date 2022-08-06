@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'uiStyle'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> this is fed to the layout engine and widget code </p>
  */
 
@@ -25,8 +27,8 @@ public class uiStyle extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for uiStyle.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 258;
 
@@ -73,7 +75,7 @@ public class uiStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_STYLE_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -196,7 +198,7 @@ public class uiStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'minlabelchars'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In characters. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -219,7 +221,7 @@ public class uiStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'minwidgetchars'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In characters. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -474,7 +476,7 @@ public class uiStyle extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_STYLE_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -495,7 +497,7 @@ public class uiStyle extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_STYLE_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -692,7 +694,7 @@ public class uiStyle extends CFacade {
 	/**
 	 * Get method for struct member 'minlabelchars'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In characters. </p>
 	 * @see #__DNA__FIELD__minlabelchars
 	 */
@@ -709,7 +711,7 @@ public class uiStyle extends CFacade {
 	/**
 	 * Set method for struct member 'minlabelchars'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In characters. </p>
 	 * @see #__DNA__FIELD__minlabelchars
 	 */
@@ -726,7 +728,7 @@ public class uiStyle extends CFacade {
 	/**
 	 * Get method for struct member 'minwidgetchars'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In characters. </p>
 	 * @see #__DNA__FIELD__minwidgetchars
 	 */
@@ -743,7 +745,7 @@ public class uiStyle extends CFacade {
 	/**
 	 * Set method for struct member 'minwidgetchars'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In characters. </p>
 	 * @see #__DNA__FIELD__minwidgetchars
 	 */

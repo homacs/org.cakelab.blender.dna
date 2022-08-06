@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class VFont extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for VFont.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 52;
 
@@ -112,7 +113,7 @@ public class VFont extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'temp_pf'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> runtime only, holds memory for freetype to read from TODO, replace this with blf_font_new() style loading </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -283,7 +284,7 @@ public class VFont extends CFacade {
 	/**
 	 * Get method for struct member 'temp_pf'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> runtime only, holds memory for freetype to read from TODO, replace this with blf_font_new() style loading </p>
 	 * @see #__DNA__FIELD__temp_pf
 	 */
@@ -303,7 +304,7 @@ public class VFont extends CFacade {
 	/**
 	 * Set method for struct member 'temp_pf'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> runtime only, holds memory for freetype to read from TODO, replace this with blf_font_new() style loading </p>
 	 * @see #__DNA__FIELD__temp_pf
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'RigidBodyWorld_Shared'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  RigidBody {@link World}  Container for data shared by original and evaluated copies of {@link RigidBodyWorld}  </p>
  */
@@ -25,15 +27,15 @@ public class RigidBodyWorld_Shared extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for RigidBodyWorld_Shared.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 653;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pointcache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> cache </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +78,7 @@ public class RigidBodyWorld_Shared extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'physics_world'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> References to Physics Sim objects. Exist at runtime only -------------------<mdash/>  Physics sim world (i.e. #btDiscreteDynamicsWorld). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -107,7 +109,7 @@ public class RigidBodyWorld_Shared extends CFacade {
 	/**
 	 * Get method for struct member 'pointcache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> cache </p>
 	 * @see #__DNA__FIELD__pointcache
 	 */
@@ -127,7 +129,7 @@ public class RigidBodyWorld_Shared extends CFacade {
 	/**
 	 * Set method for struct member 'pointcache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> cache </p>
 	 * @see #__DNA__FIELD__pointcache
 	 */
@@ -181,7 +183,7 @@ public class RigidBodyWorld_Shared extends CFacade {
 	/**
 	 * Get method for struct member 'physics_world'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> References to Physics Sim objects. Exist at runtime only -------------------<mdash/>  Physics sim world (i.e. #btDiscreteDynamicsWorld). </p>
 	 * @see #__DNA__FIELD__physics_world
 	 */
@@ -201,7 +203,7 @@ public class RigidBodyWorld_Shared extends CFacade {
 	/**
 	 * Set method for struct member 'physics_world'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> References to Physics Sim objects. Exist at runtime only -------------------<mdash/>  Physics sim world (i.e. #btDiscreteDynamicsWorld). </p>
 	 * @see #__DNA__FIELD__physics_world
 	 */

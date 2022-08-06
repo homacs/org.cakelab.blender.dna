@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class FreestyleLineStyle extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for FreestyleLineStyle.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 700;
 
@@ -132,7 +133,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Base alpha transparency, possibly modified by alpha transparency modifiers
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -155,7 +156,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Base line thickness, possibly modified by line thickness modifiers
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -178,7 +179,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'thickness_position'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Thickness position of silhouettes and border edges (applicable when plain chaining is used with the Same Object option)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -201,7 +202,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'thickness_ratio'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * A number between 0 (inside) and 1 (outside) specifying the relative position of stroke thickness
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -244,7 +245,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'caps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the shape of both ends of strokes
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -267,7 +268,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'chaining'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the way how feature edges are jointed to form chains
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -290,7 +291,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rounds'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of rounds in a sketchy multiple touch
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -313,7 +314,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'split_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Curvilinear 2D length for chain splitting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -336,7 +337,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'min_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In radians, for splitting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -419,7 +420,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'chain_count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Chain count for the selection of first N chains
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -442,7 +443,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'split_dash1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 1st dash for splitting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -465,7 +466,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'split_gap1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 1st gap for splitting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -488,7 +489,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'split_dash2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 2nd dash for splitting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -511,7 +512,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'split_gap2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 2nd gap for splitting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -534,7 +535,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'split_dash3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 3rd dash for splitting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -557,7 +558,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'split_gap3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 3rd gap for splitting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -580,7 +581,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sort_key'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the sort key to determine the stacking order of chains
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -603,7 +604,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'integration_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the way how the sort key is computed for each chain
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -686,7 +687,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'use_nodes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Use shader nodes for the line style
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -729,7 +730,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dash1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 1st dash for dashed lines
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -752,7 +753,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gap1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 1st gap for dashed lines
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -775,7 +776,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dash2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 2nd dash for dashed lines
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -798,7 +799,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gap2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 2nd gap for dashed lines
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -821,7 +822,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dash3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 3rd dash for dashed lines
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -844,7 +845,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gap3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 3rd gap for dashed lines
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -867,8 +868,9 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'panel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select the property panel to be shown<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Select the property panel to be shown
+	 * <h4>Blender Source Code</h4>
 	 * <p> For UI. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -891,7 +893,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mtex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_MTEX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -914,7 +916,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'nodetree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> nodes </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -937,7 +939,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'color_modifiers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    List of line color modifiers
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -960,7 +962,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'alpha_modifiers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    List of alpha transparency modifiers
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -983,7 +985,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'thickness_modifiers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    List of line thickness modifiers
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1006,7 +1008,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'geometry_modifiers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    List of stroke geometry modifiers
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1189,7 +1191,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Base alpha transparency, possibly modified by alpha transparency modifiers
 	 * @see #__DNA__FIELD__alpha
 	 */
@@ -1206,7 +1208,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Base alpha transparency, possibly modified by alpha transparency modifiers
 	 * @see #__DNA__FIELD__alpha
 	 */
@@ -1223,7 +1225,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Base line thickness, possibly modified by line thickness modifiers
 	 * @see #__DNA__FIELD__thickness
 	 */
@@ -1240,7 +1242,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Base line thickness, possibly modified by line thickness modifiers
 	 * @see #__DNA__FIELD__thickness
 	 */
@@ -1257,7 +1259,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'thickness_position'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Thickness position of silhouettes and border edges (applicable when plain chaining is used with the Same Object option)
 	 * @see #__DNA__FIELD__thickness_position
 	 */
@@ -1274,7 +1276,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'thickness_position'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Thickness position of silhouettes and border edges (applicable when plain chaining is used with the Same Object option)
 	 * @see #__DNA__FIELD__thickness_position
 	 */
@@ -1291,7 +1293,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'thickness_ratio'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * A number between 0 (inside) and 1 (outside) specifying the relative position of stroke thickness
 	 * @see #__DNA__FIELD__thickness_ratio
 	 */
@@ -1308,7 +1310,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'thickness_ratio'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * A number between 0 (inside) and 1 (outside) specifying the relative position of stroke thickness
 	 * @see #__DNA__FIELD__thickness_ratio
 	 */
@@ -1353,7 +1355,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'caps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the shape of both ends of strokes
 	 * @see #__DNA__FIELD__caps
 	 */
@@ -1370,7 +1372,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'caps'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the shape of both ends of strokes
 	 * @see #__DNA__FIELD__caps
 	 */
@@ -1387,7 +1389,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'chaining'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the way how feature edges are jointed to form chains
 	 * @see #__DNA__FIELD__chaining
 	 */
@@ -1404,7 +1406,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'chaining'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the way how feature edges are jointed to form chains
 	 * @see #__DNA__FIELD__chaining
 	 */
@@ -1421,7 +1423,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'rounds'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of rounds in a sketchy multiple touch
 	 * @see #__DNA__FIELD__rounds
 	 */
@@ -1438,7 +1440,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'rounds'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of rounds in a sketchy multiple touch
 	 * @see #__DNA__FIELD__rounds
 	 */
@@ -1455,7 +1457,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'split_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Curvilinear 2D length for chain splitting
 	 * @see #__DNA__FIELD__split_length
 	 */
@@ -1472,7 +1474,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'split_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Curvilinear 2D length for chain splitting
 	 * @see #__DNA__FIELD__split_length
 	 */
@@ -1489,7 +1491,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'min_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In radians, for splitting. </p>
 	 * @see #__DNA__FIELD__min_angle
 	 */
@@ -1506,7 +1508,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'min_angle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> In radians, for splitting. </p>
 	 * @see #__DNA__FIELD__min_angle
 	 */
@@ -1607,7 +1609,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'chain_count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Chain count for the selection of first N chains
 	 * @see #__DNA__FIELD__chain_count
 	 */
@@ -1624,7 +1626,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'chain_count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Chain count for the selection of first N chains
 	 * @see #__DNA__FIELD__chain_count
 	 */
@@ -1641,7 +1643,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'split_dash1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 1st dash for splitting
 	 * @see #__DNA__FIELD__split_dash1
 	 */
@@ -1658,7 +1660,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'split_dash1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 1st dash for splitting
 	 * @see #__DNA__FIELD__split_dash1
 	 */
@@ -1675,7 +1677,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'split_gap1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 1st gap for splitting
 	 * @see #__DNA__FIELD__split_gap1
 	 */
@@ -1692,7 +1694,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'split_gap1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 1st gap for splitting
 	 * @see #__DNA__FIELD__split_gap1
 	 */
@@ -1709,7 +1711,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'split_dash2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 2nd dash for splitting
 	 * @see #__DNA__FIELD__split_dash2
 	 */
@@ -1726,7 +1728,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'split_dash2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 2nd dash for splitting
 	 * @see #__DNA__FIELD__split_dash2
 	 */
@@ -1743,7 +1745,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'split_gap2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 2nd gap for splitting
 	 * @see #__DNA__FIELD__split_gap2
 	 */
@@ -1760,7 +1762,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'split_gap2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 2nd gap for splitting
 	 * @see #__DNA__FIELD__split_gap2
 	 */
@@ -1777,7 +1779,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'split_dash3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 3rd dash for splitting
 	 * @see #__DNA__FIELD__split_dash3
 	 */
@@ -1794,7 +1796,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'split_dash3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 3rd dash for splitting
 	 * @see #__DNA__FIELD__split_dash3
 	 */
@@ -1811,7 +1813,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'split_gap3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 3rd gap for splitting
 	 * @see #__DNA__FIELD__split_gap3
 	 */
@@ -1828,7 +1830,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'split_gap3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 3rd gap for splitting
 	 * @see #__DNA__FIELD__split_gap3
 	 */
@@ -1845,7 +1847,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'sort_key'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the sort key to determine the stacking order of chains
 	 * @see #__DNA__FIELD__sort_key
 	 */
@@ -1862,7 +1864,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'sort_key'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the sort key to determine the stacking order of chains
 	 * @see #__DNA__FIELD__sort_key
 	 */
@@ -1879,7 +1881,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'integration_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the way how the sort key is computed for each chain
 	 * @see #__DNA__FIELD__integration_type
 	 */
@@ -1896,7 +1898,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'integration_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Select the way how the sort key is computed for each chain
 	 * @see #__DNA__FIELD__integration_type
 	 */
@@ -1997,7 +1999,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'use_nodes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Use shader nodes for the line style
 	 * @see #__DNA__FIELD__use_nodes
 	 */
@@ -2014,7 +2016,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'use_nodes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Use shader nodes for the line style
 	 * @see #__DNA__FIELD__use_nodes
 	 */
@@ -2071,7 +2073,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'dash1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 1st dash for dashed lines
 	 * @see #__DNA__FIELD__dash1
 	 */
@@ -2088,7 +2090,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'dash1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 1st dash for dashed lines
 	 * @see #__DNA__FIELD__dash1
 	 */
@@ -2105,7 +2107,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'gap1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 1st gap for dashed lines
 	 * @see #__DNA__FIELD__gap1
 	 */
@@ -2122,7 +2124,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'gap1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 1st gap for dashed lines
 	 * @see #__DNA__FIELD__gap1
 	 */
@@ -2139,7 +2141,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'dash2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 2nd dash for dashed lines
 	 * @see #__DNA__FIELD__dash2
 	 */
@@ -2156,7 +2158,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'dash2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 2nd dash for dashed lines
 	 * @see #__DNA__FIELD__dash2
 	 */
@@ -2173,7 +2175,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'gap2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 2nd gap for dashed lines
 	 * @see #__DNA__FIELD__gap2
 	 */
@@ -2190,7 +2192,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'gap2'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 2nd gap for dashed lines
 	 * @see #__DNA__FIELD__gap2
 	 */
@@ -2207,7 +2209,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'dash3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 3rd dash for dashed lines
 	 * @see #__DNA__FIELD__dash3
 	 */
@@ -2224,7 +2226,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'dash3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 3rd dash for dashed lines
 	 * @see #__DNA__FIELD__dash3
 	 */
@@ -2241,7 +2243,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'gap3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 3rd gap for dashed lines
 	 * @see #__DNA__FIELD__gap3
 	 */
@@ -2258,7 +2260,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'gap3'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Length of the 3rd gap for dashed lines
 	 * @see #__DNA__FIELD__gap3
 	 */
@@ -2275,8 +2277,9 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'panel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select the property panel to be shown<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Select the property panel to be shown
+	 * <h4>Blender Source Code</h4>
 	 * <p> For UI. </p>
 	 * @see #__DNA__FIELD__panel
 	 */
@@ -2293,8 +2296,9 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'panel'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select the property panel to be shown<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Select the property panel to be shown
+	 * <h4>Blender Source Code</h4>
 	 * <p> For UI. </p>
 	 * @see #__DNA__FIELD__panel
 	 */
@@ -2311,7 +2315,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'mtex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_MTEX. </p>
 	 * @see #__DNA__FIELD__mtex
 	 */
@@ -2332,7 +2336,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'mtex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_MTEX. </p>
 	 * @see #__DNA__FIELD__mtex
 	 */
@@ -2357,7 +2361,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'nodetree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> nodes </p>
 	 * @see #__DNA__FIELD__nodetree
 	 */
@@ -2377,7 +2381,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'nodetree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> nodes </p>
 	 * @see #__DNA__FIELD__nodetree
 	 */
@@ -2395,7 +2399,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'color_modifiers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    List of line color modifiers
 	 * @see #__DNA__FIELD__color_modifiers
 	 */
@@ -2412,7 +2416,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'color_modifiers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    List of line color modifiers
 	 * @see #__DNA__FIELD__color_modifiers
 	 */
@@ -2437,7 +2441,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'alpha_modifiers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    List of alpha transparency modifiers
 	 * @see #__DNA__FIELD__alpha_modifiers
 	 */
@@ -2454,7 +2458,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'alpha_modifiers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    List of alpha transparency modifiers
 	 * @see #__DNA__FIELD__alpha_modifiers
 	 */
@@ -2479,7 +2483,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'thickness_modifiers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    List of line thickness modifiers
 	 * @see #__DNA__FIELD__thickness_modifiers
 	 */
@@ -2496,7 +2500,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'thickness_modifiers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    List of line thickness modifiers
 	 * @see #__DNA__FIELD__thickness_modifiers
 	 */
@@ -2521,7 +2525,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Get method for struct member 'geometry_modifiers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    List of stroke geometry modifiers
 	 * @see #__DNA__FIELD__geometry_modifiers
 	 */
@@ -2538,7 +2542,7 @@ public class FreestyleLineStyle extends CFacade {
 	/**
 	 * Set method for struct member 'geometry_modifiers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    List of stroke geometry modifiers
 	 * @see #__DNA__FIELD__geometry_modifiers
 	 */

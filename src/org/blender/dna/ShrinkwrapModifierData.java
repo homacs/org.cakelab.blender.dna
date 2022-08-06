@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ShrinkwrapModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 123;
 
@@ -52,7 +53,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shrink target. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,7 +76,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'auxTarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Additional shrink target. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +99,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,7 +122,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'keepDist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Distance offset to keep from mesh/projection point. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -144,7 +145,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shrinkType'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shrink type projection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -167,7 +168,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shrinkOpts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shrink options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -190,7 +191,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shrinkMode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shrink to surface mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -213,7 +214,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'projLimit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Limit the projection ray cast. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -236,7 +237,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'projAxis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis to project over. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -259,7 +260,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'subsurfLevels'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If using projection over vertex normal this controls the level of subsurface that must be done before getting the vertex coordinates and normal </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -346,7 +347,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shrink target. </p>
 	 * @see #__DNA__FIELD__target
 	 */
@@ -366,7 +367,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'target'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shrink target. </p>
 	 * @see #__DNA__FIELD__target
 	 */
@@ -384,7 +385,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'auxTarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Additional shrink target. </p>
 	 * @see #__DNA__FIELD__auxTarget
 	 */
@@ -404,7 +405,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'auxTarget'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Additional shrink target. </p>
 	 * @see #__DNA__FIELD__auxTarget
 	 */
@@ -422,7 +423,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'vgroup_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgroup_name
 	 */
@@ -443,7 +444,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'vgroup_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgroup_name
 	 */
@@ -468,7 +469,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'keepDist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Distance offset to keep from mesh/projection point. </p>
 	 * @see #__DNA__FIELD__keepDist
 	 */
@@ -485,7 +486,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'keepDist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Distance offset to keep from mesh/projection point. </p>
 	 * @see #__DNA__FIELD__keepDist
 	 */
@@ -502,7 +503,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'shrinkType'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shrink type projection. </p>
 	 * @see #__DNA__FIELD__shrinkType
 	 */
@@ -519,7 +520,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'shrinkType'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shrink type projection. </p>
 	 * @see #__DNA__FIELD__shrinkType
 	 */
@@ -536,7 +537,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'shrinkOpts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shrink options. </p>
 	 * @see #__DNA__FIELD__shrinkOpts
 	 */
@@ -553,7 +554,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'shrinkOpts'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shrink options. </p>
 	 * @see #__DNA__FIELD__shrinkOpts
 	 */
@@ -570,7 +571,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'shrinkMode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shrink to surface mode. </p>
 	 * @see #__DNA__FIELD__shrinkMode
 	 */
@@ -587,7 +588,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'shrinkMode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shrink to surface mode. </p>
 	 * @see #__DNA__FIELD__shrinkMode
 	 */
@@ -604,7 +605,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'projLimit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Limit the projection ray cast. </p>
 	 * @see #__DNA__FIELD__projLimit
 	 */
@@ -621,7 +622,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'projLimit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Limit the projection ray cast. </p>
 	 * @see #__DNA__FIELD__projLimit
 	 */
@@ -638,7 +639,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'projAxis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis to project over. </p>
 	 * @see #__DNA__FIELD__projAxis
 	 */
@@ -655,7 +656,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'projAxis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis to project over. </p>
 	 * @see #__DNA__FIELD__projAxis
 	 */
@@ -672,7 +673,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'subsurfLevels'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If using projection over vertex normal this controls the level of subsurface that must be done before getting the vertex coordinates and normal </p>
 	 * @see #__DNA__FIELD__subsurfLevels
 	 */
@@ -689,7 +690,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'subsurfLevels'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> If using projection over vertex normal this controls the level of subsurface that must be done before getting the vertex coordinates and normal </p>
 	 * @see #__DNA__FIELD__subsurfLevels
 	 */

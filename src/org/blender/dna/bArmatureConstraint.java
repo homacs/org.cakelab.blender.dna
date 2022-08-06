@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bArmatureConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Armature Constraint </p>
  */
 
@@ -25,15 +27,15 @@ public class bArmatureConstraint extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bArmatureConstraint.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 359;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General settings/state indicators accessed by bitmapping. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +78,7 @@ public class bArmatureConstraint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'targets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A list of targets that this constraint has (bConstraintTarget-s). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -107,7 +109,7 @@ public class bArmatureConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General settings/state indicators accessed by bitmapping. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -124,7 +126,7 @@ public class bArmatureConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General settings/state indicators accessed by bitmapping. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -181,7 +183,7 @@ public class bArmatureConstraint extends CFacade {
 	/**
 	 * Get method for struct member 'targets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A list of targets that this constraint has (bConstraintTarget-s). </p>
 	 * @see #__DNA__FIELD__targets
 	 */
@@ -198,7 +200,7 @@ public class bArmatureConstraint extends CFacade {
 	/**
 	 * Set method for struct member 'targets'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A list of targets that this constraint has (bConstraintTarget-s). </p>
 	 * @see #__DNA__FIELD__targets
 	 */

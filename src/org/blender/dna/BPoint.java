@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,8 +14,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'BPoint'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
- * <p><h2>Note</h2><p>{@link BPoint.tilt}  location in struct is abused by {@link Key}  system. </p> BPoint.tilt location in struct is abused by Key system. 
+ * 
+ * <h4>Blender Source Code</h4>
+ * <p><h2>Note</h2><p>BPoint.tilt  location in struct is abused by {@link Key}  system. </p> BPoint.tilt location in struct is abused by Key system. 
  * 
  * </p>
  */
@@ -27,8 +29,8 @@ public class BPoint extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for BPoint.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 56;
 
@@ -75,7 +77,7 @@ public class BPoint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for softbody goal weight. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +100,7 @@ public class BPoint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'f1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> F1: selection status, hide: is point hidden or not. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -161,7 +163,7 @@ public class BPoint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-set radius per point for beveling etc. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -280,7 +282,7 @@ public class BPoint extends CFacade {
 	/**
 	 * Get method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for softbody goal weight. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
@@ -297,7 +299,7 @@ public class BPoint extends CFacade {
 	/**
 	 * Set method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used for softbody goal weight. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
@@ -314,7 +316,7 @@ public class BPoint extends CFacade {
 	/**
 	 * Get method for struct member 'f1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> F1: selection status, hide: is point hidden or not. </p>
 	 * @see #__DNA__FIELD__f1
 	 */
@@ -331,7 +333,7 @@ public class BPoint extends CFacade {
 	/**
 	 * Set method for struct member 'f1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> F1: selection status, hide: is point hidden or not. </p>
 	 * @see #__DNA__FIELD__f1
 	 */
@@ -416,7 +418,7 @@ public class BPoint extends CFacade {
 	/**
 	 * Get method for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-set radius per point for beveling etc. </p>
 	 * @see #__DNA__FIELD__radius
 	 */
@@ -433,7 +435,7 @@ public class BPoint extends CFacade {
 	/**
 	 * Set method for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-set radius per point for beveling etc. </p>
 	 * @see #__DNA__FIELD__radius
 	 */

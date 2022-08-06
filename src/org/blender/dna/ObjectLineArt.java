@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,15 +24,15 @@ public class ObjectLineArt extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ObjectLineArt.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 163;
 
 	/**
 	 * Field descriptor (offset) for struct member 'usage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How to use this object in line art calculation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -74,8 +75,9 @@ public class ObjectLineArt extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'crease_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Angles smaller than this will be treated as creases<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Angles smaller than this will be treated as creases
+	 * <h4>Blender Source Code</h4>
 	 * <p> if OBJECT_LRT_OWN_CREASE is set </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -106,7 +108,7 @@ public class ObjectLineArt extends CFacade {
 	/**
 	 * Get method for struct member 'usage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How to use this object in line art calculation
 	 * @see #__DNA__FIELD__usage
 	 */
@@ -123,7 +125,7 @@ public class ObjectLineArt extends CFacade {
 	/**
 	 * Set method for struct member 'usage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How to use this object in line art calculation
 	 * @see #__DNA__FIELD__usage
 	 */
@@ -168,8 +170,9 @@ public class ObjectLineArt extends CFacade {
 	/**
 	 * Get method for struct member 'crease_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Angles smaller than this will be treated as creases<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Angles smaller than this will be treated as creases
+	 * <h4>Blender Source Code</h4>
 	 * <p> if OBJECT_LRT_OWN_CREASE is set </p>
 	 * @see #__DNA__FIELD__crease_threshold
 	 */
@@ -186,8 +189,9 @@ public class ObjectLineArt extends CFacade {
 	/**
 	 * Set method for struct member 'crease_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Angles smaller than this will be treated as creases<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Angles smaller than this will be treated as creases
+	 * <h4>Blender Source Code</h4>
 	 * <p> if OBJECT_LRT_OWN_CREASE is set </p>
 	 * @see #__DNA__FIELD__crease_threshold
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,8 +24,8 @@ public class IDPropertyData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for IDPropertyData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 10;
 
@@ -71,7 +72,7 @@ public class IDPropertyData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'val'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Note, we actually fit a double into these two ints. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -190,7 +191,7 @@ public class IDPropertyData extends CFacade {
 	/**
 	 * Get method for struct member 'val'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Note, we actually fit a double into these two ints. </p>
 	 * @see #__DNA__FIELD__val
 	 */
@@ -207,7 +208,7 @@ public class IDPropertyData extends CFacade {
 	/**
 	 * Set method for struct member 'val'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Note, we actually fit a double into these two ints. </p>
 	 * @see #__DNA__FIELD__val
 	 */

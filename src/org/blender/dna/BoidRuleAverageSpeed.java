@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,8 +24,8 @@ public class BoidRuleAverageSpeed extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for BoidRuleAverageSpeed.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 612;
 
@@ -51,7 +52,7 @@ public class BoidRuleAverageSpeed extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'wander'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How fast velocity's direction is randomized
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -74,7 +75,7 @@ public class BoidRuleAverageSpeed extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'level'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much velocity's z-component is kept constant
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -97,7 +98,7 @@ public class BoidRuleAverageSpeed extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'speed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Percentage of maximum speed
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -184,7 +185,7 @@ public class BoidRuleAverageSpeed extends CFacade {
 	/**
 	 * Get method for struct member 'wander'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How fast velocity's direction is randomized
 	 * @see #__DNA__FIELD__wander
 	 */
@@ -201,7 +202,7 @@ public class BoidRuleAverageSpeed extends CFacade {
 	/**
 	 * Set method for struct member 'wander'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How fast velocity's direction is randomized
 	 * @see #__DNA__FIELD__wander
 	 */
@@ -218,7 +219,7 @@ public class BoidRuleAverageSpeed extends CFacade {
 	/**
 	 * Get method for struct member 'level'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much velocity's z-component is kept constant
 	 * @see #__DNA__FIELD__level
 	 */
@@ -235,7 +236,7 @@ public class BoidRuleAverageSpeed extends CFacade {
 	/**
 	 * Set method for struct member 'level'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * How much velocity's z-component is kept constant
 	 * @see #__DNA__FIELD__level
 	 */
@@ -252,7 +253,7 @@ public class BoidRuleAverageSpeed extends CFacade {
 	/**
 	 * Get method for struct member 'speed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Percentage of maximum speed
 	 * @see #__DNA__FIELD__speed
 	 */
@@ -269,7 +270,7 @@ public class BoidRuleAverageSpeed extends CFacade {
 	/**
 	 * Set method for struct member 'speed'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Percentage of maximum speed
 	 * @see #__DNA__FIELD__speed
 	 */

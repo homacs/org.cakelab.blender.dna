@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,15 +24,15 @@ public class GlowVars extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for GlowVars.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 310;
 
 	/**
 	 * Field descriptor (offset) for struct member 'fMini'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimum intensity to trigger a glow. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -74,7 +75,7 @@ public class GlowVars extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fBoost'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Amount to multiply glow intensity. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -97,7 +98,7 @@ public class GlowVars extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dDist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radius of glow blurring. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -140,7 +141,7 @@ public class GlowVars extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bNoComp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> SHOW/HIDE glow buffer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -171,7 +172,7 @@ public class GlowVars extends CFacade {
 	/**
 	 * Get method for struct member 'fMini'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimum intensity to trigger a glow. </p>
 	 * @see #__DNA__FIELD__fMini
 	 */
@@ -188,7 +189,7 @@ public class GlowVars extends CFacade {
 	/**
 	 * Set method for struct member 'fMini'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimum intensity to trigger a glow. </p>
 	 * @see #__DNA__FIELD__fMini
 	 */
@@ -233,7 +234,7 @@ public class GlowVars extends CFacade {
 	/**
 	 * Get method for struct member 'fBoost'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Amount to multiply glow intensity. </p>
 	 * @see #__DNA__FIELD__fBoost
 	 */
@@ -250,7 +251,7 @@ public class GlowVars extends CFacade {
 	/**
 	 * Set method for struct member 'fBoost'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Amount to multiply glow intensity. </p>
 	 * @see #__DNA__FIELD__fBoost
 	 */
@@ -267,7 +268,7 @@ public class GlowVars extends CFacade {
 	/**
 	 * Get method for struct member 'dDist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radius of glow blurring. </p>
 	 * @see #__DNA__FIELD__dDist
 	 */
@@ -284,7 +285,7 @@ public class GlowVars extends CFacade {
 	/**
 	 * Set method for struct member 'dDist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Radius of glow blurring. </p>
 	 * @see #__DNA__FIELD__dDist
 	 */
@@ -329,7 +330,7 @@ public class GlowVars extends CFacade {
 	/**
 	 * Get method for struct member 'bNoComp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> SHOW/HIDE glow buffer. </p>
 	 * @see #__DNA__FIELD__bNoComp
 	 */
@@ -346,7 +347,7 @@ public class GlowVars extends CFacade {
 	/**
 	 * Set method for struct member 'bNoComp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> SHOW/HIDE glow buffer. </p>
 	 * @see #__DNA__FIELD__bNoComp
 	 */

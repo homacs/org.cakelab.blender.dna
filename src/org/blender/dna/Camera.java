@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class Camera extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for Camera.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 31;
 
@@ -52,7 +53,7 @@ public class Camera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,8 +76,9 @@ public class Camera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Camera types<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Camera types
+	 * <h4>Blender Source Code</h4>
 	 * <p> CAM_PERSP, CAM_ORTHO or CAM_PANO. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +101,7 @@ public class Camera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dtx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Draw type extra. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -202,7 +204,7 @@ public class Camera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lens'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Perspective Camera lens value in millimeters
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -225,7 +227,7 @@ public class Camera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ortho_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Orthographic Camera scale (similar to zoom)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -368,7 +370,7 @@ public class Camera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -393,7 +395,7 @@ public class Camera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dof_ob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -418,7 +420,7 @@ public class Camera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpu_dof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -443,7 +445,7 @@ public class Camera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -466,7 +468,7 @@ public class Camera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bg_images'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link CameraBGImage}  reference images </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -489,7 +491,7 @@ public class Camera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sensor_fit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Method to fit image and field of view angle inside the sensor
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -532,8 +534,9 @@ public class Camera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'stereo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stereo settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -556,7 +559,7 @@ public class Camera extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data (keep last). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -623,7 +626,7 @@ public class Camera extends CFacade {
 	/**
 	 * Get method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -643,7 +646,7 @@ public class Camera extends CFacade {
 	/**
 	 * Set method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -661,8 +664,9 @@ public class Camera extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Camera types<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Camera types
+	 * <h4>Blender Source Code</h4>
 	 * <p> CAM_PERSP, CAM_ORTHO or CAM_PANO. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -679,8 +683,9 @@ public class Camera extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Camera types<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Camera types
+	 * <h4>Blender Source Code</h4>
 	 * <p> CAM_PERSP, CAM_ORTHO or CAM_PANO. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -697,7 +702,7 @@ public class Camera extends CFacade {
 	/**
 	 * Get method for struct member 'dtx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Draw type extra. </p>
 	 * @see #__DNA__FIELD__dtx
 	 */
@@ -714,7 +719,7 @@ public class Camera extends CFacade {
 	/**
 	 * Set method for struct member 'dtx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Draw type extra. </p>
 	 * @see #__DNA__FIELD__dtx
 	 */
@@ -843,7 +848,7 @@ public class Camera extends CFacade {
 	/**
 	 * Get method for struct member 'lens'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Perspective Camera lens value in millimeters
 	 * @see #__DNA__FIELD__lens
 	 */
@@ -860,7 +865,7 @@ public class Camera extends CFacade {
 	/**
 	 * Set method for struct member 'lens'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Perspective Camera lens value in millimeters
 	 * @see #__DNA__FIELD__lens
 	 */
@@ -877,7 +882,7 @@ public class Camera extends CFacade {
 	/**
 	 * Get method for struct member 'ortho_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Orthographic Camera scale (similar to zoom)
 	 * @see #__DNA__FIELD__ortho_scale
 	 */
@@ -894,7 +899,7 @@ public class Camera extends CFacade {
 	/**
 	 * Set method for struct member 'ortho_scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Orthographic Camera scale (similar to zoom)
 	 * @see #__DNA__FIELD__ortho_scale
 	 */
@@ -1079,7 +1084,7 @@ public class Camera extends CFacade {
 	/**
 	 * Get method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1101,7 +1106,7 @@ public class Camera extends CFacade {
 	/**
 	 * Set method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1121,7 +1126,7 @@ public class Camera extends CFacade {
 	/**
 	 * Get method for struct member 'dof_ob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1143,7 +1148,7 @@ public class Camera extends CFacade {
 	/**
 	 * Set method for struct member 'dof_ob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1163,7 +1168,7 @@ public class Camera extends CFacade {
 	/**
 	 * Get method for struct member 'gpu_dof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1182,7 +1187,7 @@ public class Camera extends CFacade {
 	/**
 	 * Set method for struct member 'gpu_dof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1209,7 +1214,7 @@ public class Camera extends CFacade {
 	/**
 	 * Get method for struct member 'dof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__dof
 	 */
@@ -1226,7 +1231,7 @@ public class Camera extends CFacade {
 	/**
 	 * Set method for struct member 'dof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * @see #__DNA__FIELD__dof
 	 */
@@ -1251,7 +1256,7 @@ public class Camera extends CFacade {
 	/**
 	 * Get method for struct member 'bg_images'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link CameraBGImage}  reference images </p>
 	 * @see #__DNA__FIELD__bg_images
 	 */
@@ -1268,7 +1273,7 @@ public class Camera extends CFacade {
 	/**
 	 * Set method for struct member 'bg_images'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link CameraBGImage}  reference images </p>
 	 * @see #__DNA__FIELD__bg_images
 	 */
@@ -1293,7 +1298,7 @@ public class Camera extends CFacade {
 	/**
 	 * Get method for struct member 'sensor_fit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Method to fit image and field of view angle inside the sensor
 	 * @see #__DNA__FIELD__sensor_fit
 	 */
@@ -1310,7 +1315,7 @@ public class Camera extends CFacade {
 	/**
 	 * Set method for struct member 'sensor_fit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Method to fit image and field of view angle inside the sensor
 	 * @see #__DNA__FIELD__sensor_fit
 	 */
@@ -1367,8 +1372,9 @@ public class Camera extends CFacade {
 	/**
 	 * Get method for struct member 'stereo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stereo settings </p>
 	 * @see #__DNA__FIELD__stereo
 	 */
@@ -1385,8 +1391,9 @@ public class Camera extends CFacade {
 	/**
 	 * Set method for struct member 'stereo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stereo settings </p>
 	 * @see #__DNA__FIELD__stereo
 	 */
@@ -1411,7 +1418,7 @@ public class Camera extends CFacade {
 	/**
 	 * Get method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data (keep last). </p>
 	 * @see #__DNA__FIELD__runtime
 	 */
@@ -1428,7 +1435,7 @@ public class Camera extends CFacade {
 	/**
 	 * Set method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data (keep last). </p>
 	 * @see #__DNA__FIELD__runtime
 	 */

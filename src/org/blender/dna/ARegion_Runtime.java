@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,15 +24,15 @@ public class ARegion_Runtime extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ARegion_Runtime.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 295;
 
 	/**
 	 * Field descriptor (offset) for struct member 'category'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  category to use between 'layout' and 'draw'. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -54,8 +55,8 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'visible_rect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion.winrct}  x/y min. </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion#getWinrct()}  x/y min. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -77,7 +78,7 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'offset_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The offset needed to not overlap with window scrollbars. Only used by HUD regions for now. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -128,7 +129,7 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'category'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  category to use between 'layout' and 'draw'. </p>
 	 * @see #__DNA__FIELD__category
 	 */
@@ -148,7 +149,7 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'category'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  category to use between 'layout' and 'draw'. </p>
 	 * @see #__DNA__FIELD__category
 	 */
@@ -166,8 +167,8 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'visible_rect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion.winrct}  x/y min. </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion#getWinrct()}  x/y min. </p>
 	 * @see #__DNA__FIELD__visible_rect
 	 */
 	
@@ -183,8 +184,8 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'visible_rect'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion.winrct}  x/y min. </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion#getWinrct()}  x/y min. </p>
 	 * @see #__DNA__FIELD__visible_rect
 	 */
 	
@@ -208,7 +209,7 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'offset_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The offset needed to not overlap with window scrollbars. Only used by HUD regions for now. </p>
 	 * @see #__DNA__FIELD__offset_x
 	 */
@@ -225,7 +226,7 @@ public class ARegion_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'offset_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The offset needed to not overlap with window scrollbars. Only used by HUD regions for now. </p>
 	 * @see #__DNA__FIELD__offset_x
 	 */

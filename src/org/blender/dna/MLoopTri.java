@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MLoopTri'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p>{@link MLoopTri} 's are lightweight triangulation data, for functionality that doesn't support ngons ({@link MPoly} ). This is cache data created from ({@link MPoly} , {@link MLoop}  & {@link MVert}  arrays). There is no attempt to maintain this data's validity over time, any changes to the underlying mesh invalidate the {@link MLoopTri}  array, which will need to be re-calculated.</p><p> Users normally access this via #BKE_mesh_runtime_looptri_ensure. In rare cases its calculated directly, with #BKE_mesh_recalc_looptri.</p><p> Typical usage includes:<ul><li><p> OpenGL drawing.</p></li><li><p> #BVHTree creation.</p></li><li><p> Physics/collision detection.</p></li></ul> 
  * OpenGL drawing.
  * #BVHTree creation.
@@ -53,10 +55,10 @@ import org.cakelab.blender.nio.CPointer;
  * mloopuv[lt->tri[1]].uv,
  * mloopuv[lt->tri[2]].uv,
  * };
- * </p><p>{@link MLoopTri} 's are allocated in an array, where each polygon's {@link MLoopTri} 's are stored contiguously, the number of triangles for each polygon is guaranteed to be ({@link MPoly.totloop}  - 2), even for degenerate geometry. See {@link ME_POLY_TRI_TOT}  macro.</p><p> It's also possible to perform a reverse lookup (find all {@link MLoopTri} 's for any given {@link MPoly} ).</p><p><code>                   i ///loopoveralllooptri'sforagivenpolygon:i
+ * </p><p>{@link MLoopTri} 's are allocated in an array, where each polygon's {@link MLoopTri} 's are stored contiguously, the number of triangles for each polygon is guaranteed to be ({@link MPoly#getTotloop()}  - 2), even for degenerate geometry. See ME_POLY_TRI_TOT  macro.</p><p> It's also possible to perform a reverse lookup (find all {@link MLoopTri} 's for any given {@link MPoly} ).</p><p><code>                   i ///loopoveralllooptri'sforagivenpolygon:i
  * {@link MPoly}       &mpoly[i]; *mp=&mpoly[i];
- * {@link MLoopTri}         mp->{@link loopstart} )]; MLoopTri*lt=&looptri[poly_to_tri_count(i,mp->loopstart)];
- *  int int        {@link ME_POLY_TRI_TOT} (mp); j,lt_tot=ME_POLY_TRI_TOT(mp);
+ * {@link MLoopTri}         mp->loopstart )]; MLoopTri*lt=&looptri[poly_to_tri_count(i,mp->loopstart)];
+ *  int int        ME_POLY_TRI_TOT (mp); j,lt_tot=ME_POLY_TRI_TOT(mp);
  * 
  *  for for                   { (j=0;j<lt_tot;j++,lt++){
  *          unsigned unsigned   int int       { vtri[3]={
@@ -79,14 +81,14 @@ import org.cakelab.blender.nio.CPointer;
  * };
  * printf("tri%u%u%u\n",vtri[0],vtri[1],vtri[2]);
  * };
- * </p><p> It may also be useful to check whether or not two vertices of a triangle form an edge in the underlying mesh.</p><p> This can be done by checking the edge of the referenced loop ({@link MLoop.e} ), the winding of the {@link MLoopTri}  and the {@link MLoop} 's will always match, however the order of vertices in the edge is undefined.</p><p><code>               lt ///printrealedgesfromanMLoopTri:lt
+ * </p><p> It may also be useful to check whether or not two vertices of a triangle form an edge in the underlying mesh.</p><p> This can be done by checking the edge of the referenced loop ({@link MLoop#getE()} ), the winding of the {@link MLoopTri}  and the {@link MLoop} 's will always match, however the order of vertices in the edge is undefined.</p><p><code>               lt ///printrealedgesfromanMLoopTri:lt
  *  int int     j_next; j,j_next;
  *  for for                           { (j=2,j_next=0;j_next<3;j=j_next++){
  *         {@link MEdge}       &medge[mloop[lt->tri[j]].e]; *ed=&medge[mloop[lt->tri[j]].e];
  *          unsigned unsigned   int int           mloop[lt->tri[j_next]].v}; tri_edge[2]={mloop[lt->tri[j]].v,mloop[lt->tri[j_next]].v};
  * 
- *          if if   (((ed->{@link v1}               || (((ed->v1==tri_edge[0])&&(ed->v2==tri_edge[1]))||
- *                  ((ed->{@link v1}             tri_edge[0]))) ((ed->v1==tri_edge[1])&&(ed->v2==tri_edge[0])))
+ *          if if   (((ed->v1               || (((ed->v1==tri_edge[0])&&(ed->v2==tri_edge[1]))||
+ *                  ((ed->v1             tri_edge[0]))) ((ed->v1==tri_edge[1])&&(ed->v2==tri_edge[0])))
  *          { {
  *                  printf( printf(         %u\n" "realedgefound%u%u\n"     tri_edge[1]); ,tri_edge[0],tri_edge[1]);
  *          } }
@@ -116,8 +118,8 @@ public class MLoopTri extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MLoopTri.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 70;
 

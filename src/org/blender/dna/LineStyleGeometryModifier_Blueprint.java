@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,8 +24,8 @@ public class LineStyleGeometryModifier_Blueprint extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for LineStyleGeometryModifier_Blueprint.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 695;
 
@@ -71,7 +72,7 @@ public class LineStyleGeometryModifier_Blueprint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rounds'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of rounds in contour strokes
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -94,7 +95,7 @@ public class LineStyleGeometryModifier_Blueprint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'backbone_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of backbone stretching
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -117,7 +118,7 @@ public class LineStyleGeometryModifier_Blueprint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'random_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Randomness of the radius
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -140,7 +141,7 @@ public class LineStyleGeometryModifier_Blueprint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'random_center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Randomness of the center
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -163,7 +164,7 @@ public class LineStyleGeometryModifier_Blueprint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'random_backbone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Randomness of the backbone stretching
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -258,7 +259,7 @@ public class LineStyleGeometryModifier_Blueprint extends CFacade {
 	/**
 	 * Get method for struct member 'rounds'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of rounds in contour strokes
 	 * @see #__DNA__FIELD__rounds
 	 */
@@ -275,7 +276,7 @@ public class LineStyleGeometryModifier_Blueprint extends CFacade {
 	/**
 	 * Set method for struct member 'rounds'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of rounds in contour strokes
 	 * @see #__DNA__FIELD__rounds
 	 */
@@ -292,7 +293,7 @@ public class LineStyleGeometryModifier_Blueprint extends CFacade {
 	/**
 	 * Get method for struct member 'backbone_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of backbone stretching
 	 * @see #__DNA__FIELD__backbone_length
 	 */
@@ -309,7 +310,7 @@ public class LineStyleGeometryModifier_Blueprint extends CFacade {
 	/**
 	 * Set method for struct member 'backbone_length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of backbone stretching
 	 * @see #__DNA__FIELD__backbone_length
 	 */
@@ -326,7 +327,7 @@ public class LineStyleGeometryModifier_Blueprint extends CFacade {
 	/**
 	 * Get method for struct member 'random_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Randomness of the radius
 	 * @see #__DNA__FIELD__random_radius
 	 */
@@ -343,7 +344,7 @@ public class LineStyleGeometryModifier_Blueprint extends CFacade {
 	/**
 	 * Set method for struct member 'random_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Randomness of the radius
 	 * @see #__DNA__FIELD__random_radius
 	 */
@@ -360,7 +361,7 @@ public class LineStyleGeometryModifier_Blueprint extends CFacade {
 	/**
 	 * Get method for struct member 'random_center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Randomness of the center
 	 * @see #__DNA__FIELD__random_center
 	 */
@@ -377,7 +378,7 @@ public class LineStyleGeometryModifier_Blueprint extends CFacade {
 	/**
 	 * Set method for struct member 'random_center'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Randomness of the center
 	 * @see #__DNA__FIELD__random_center
 	 */
@@ -394,7 +395,7 @@ public class LineStyleGeometryModifier_Blueprint extends CFacade {
 	/**
 	 * Get method for struct member 'random_backbone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Randomness of the backbone stretching
 	 * @see #__DNA__FIELD__random_backbone
 	 */
@@ -411,7 +412,7 @@ public class LineStyleGeometryModifier_Blueprint extends CFacade {
 	/**
 	 * Set method for struct member 'random_backbone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Randomness of the backbone stretching
 	 * @see #__DNA__FIELD__random_backbone
 	 */

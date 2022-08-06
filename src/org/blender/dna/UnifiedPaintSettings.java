@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'UnifiedPaintSettings'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  Unified {@link Paint}  Settings These settings can override the equivalent fields in the active {@link Brush}  for any paint mode; the flag field controls whether these values are used </p>
  */
@@ -26,16 +28,17 @@ public class UnifiedPaintSettings extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for UnifiedPaintSettings.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 201;
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Radius of the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified radius of brush in pixels </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -58,8 +61,9 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'unprojected_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of brush in Blender units<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Radius of brush in Blender units
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified radius of brush in Blender units </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -82,7 +86,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified strength of brush </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -105,8 +109,9 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Weight to assign in vertex groups<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Weight to assign in vertex groups
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified brush weight, [0, 1] </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -129,7 +134,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rgb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified brush color </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -152,7 +157,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'secondary_rgb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified brush secondary color </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -175,7 +180,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> user preferences for sculpt and paint </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -198,7 +203,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'last_rake'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> rake rotation record movement of mouse so that rake can start at an intuitive angle </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -361,7 +366,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'overlap_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Normalization factor due to accumulated value of curve along spacing. Calculated when brush spacing changes to dampen strength of stroke if space attenuation is used. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -404,7 +409,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'stroke_active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> check is there an ongoing stroke right now </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -467,7 +472,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'last_location'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> store last location of stroke or whether the mesh was hit. Valid only while stroke is active </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -530,7 +535,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pixel_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> radius of brush, premultiplied with pressure. In case of anchored brushes contains the anchored radius </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -593,7 +598,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'size_pressure_value'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> drawing pressure </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -616,7 +621,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tex_mouse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> position of mouse, used to sample the texture </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -639,7 +644,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_mouse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> position of mouse, used to sample the mask texture </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -662,7 +667,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'colorspace'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ColorSpace cache to avoid locking up during sampling </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -693,8 +698,9 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Radius of the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified radius of brush in pixels </p>
 	 * @see #__DNA__FIELD__size
 	 */
@@ -711,8 +717,9 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of the brush<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Radius of the brush
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified radius of brush in pixels </p>
 	 * @see #__DNA__FIELD__size
 	 */
@@ -729,8 +736,9 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'unprojected_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of brush in Blender units<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Radius of brush in Blender units
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified radius of brush in Blender units </p>
 	 * @see #__DNA__FIELD__unprojected_radius
 	 */
@@ -747,8 +755,9 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'unprojected_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of brush in Blender units<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Radius of brush in Blender units
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified radius of brush in Blender units </p>
 	 * @see #__DNA__FIELD__unprojected_radius
 	 */
@@ -765,7 +774,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified strength of brush </p>
 	 * @see #__DNA__FIELD__alpha
 	 */
@@ -782,7 +791,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified strength of brush </p>
 	 * @see #__DNA__FIELD__alpha
 	 */
@@ -799,8 +808,9 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Weight to assign in vertex groups<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Weight to assign in vertex groups
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified brush weight, [0, 1] </p>
 	 * @see #__DNA__FIELD__weight
 	 */
@@ -817,8 +827,9 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Weight to assign in vertex groups<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Weight to assign in vertex groups
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified brush weight, [0, 1] </p>
 	 * @see #__DNA__FIELD__weight
 	 */
@@ -835,7 +846,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'rgb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified brush color </p>
 	 * @see #__DNA__FIELD__rgb
 	 */
@@ -856,7 +867,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'rgb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified brush color </p>
 	 * @see #__DNA__FIELD__rgb
 	 */
@@ -881,7 +892,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'secondary_rgb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified brush secondary color </p>
 	 * @see #__DNA__FIELD__secondary_rgb
 	 */
@@ -902,7 +913,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'secondary_rgb'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> unified brush secondary color </p>
 	 * @see #__DNA__FIELD__secondary_rgb
 	 */
@@ -927,7 +938,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> user preferences for sculpt and paint </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -944,7 +955,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> user preferences for sculpt and paint </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -961,7 +972,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'last_rake'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> rake rotation record movement of mouse so that rake can start at an intuitive angle </p>
 	 * @see #__DNA__FIELD__last_rake
 	 */
@@ -982,7 +993,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'last_rake'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> rake rotation record movement of mouse so that rake can start at an intuitive angle </p>
 	 * @see #__DNA__FIELD__last_rake
 	 */
@@ -1215,7 +1226,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'overlap_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Normalization factor due to accumulated value of curve along spacing. Calculated when brush spacing changes to dampen strength of stroke if space attenuation is used. </p>
 	 * @see #__DNA__FIELD__overlap_factor
 	 */
@@ -1232,7 +1243,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'overlap_factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Normalization factor due to accumulated value of curve along spacing. Calculated when brush spacing changes to dampen strength of stroke if space attenuation is used. </p>
 	 * @see #__DNA__FIELD__overlap_factor
 	 */
@@ -1277,7 +1288,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'stroke_active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> check is there an ongoing stroke right now </p>
 	 * @see #__DNA__FIELD__stroke_active
 	 */
@@ -1294,7 +1305,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'stroke_active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> check is there an ongoing stroke right now </p>
 	 * @see #__DNA__FIELD__stroke_active
 	 */
@@ -1367,7 +1378,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'last_location'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> store last location of stroke or whether the mesh was hit. Valid only while stroke is active </p>
 	 * @see #__DNA__FIELD__last_location
 	 */
@@ -1388,7 +1399,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'last_location'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> store last location of stroke or whether the mesh was hit. Valid only while stroke is active </p>
 	 * @see #__DNA__FIELD__last_location
 	 */
@@ -1481,7 +1492,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'pixel_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> radius of brush, premultiplied with pressure. In case of anchored brushes contains the anchored radius </p>
 	 * @see #__DNA__FIELD__pixel_radius
 	 */
@@ -1498,7 +1509,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'pixel_radius'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> radius of brush, premultiplied with pressure. In case of anchored brushes contains the anchored radius </p>
 	 * @see #__DNA__FIELD__pixel_radius
 	 */
@@ -1583,7 +1594,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'size_pressure_value'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> drawing pressure </p>
 	 * @see #__DNA__FIELD__size_pressure_value
 	 */
@@ -1600,7 +1611,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'size_pressure_value'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> drawing pressure </p>
 	 * @see #__DNA__FIELD__size_pressure_value
 	 */
@@ -1617,7 +1628,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'tex_mouse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> position of mouse, used to sample the texture </p>
 	 * @see #__DNA__FIELD__tex_mouse
 	 */
@@ -1638,7 +1649,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'tex_mouse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> position of mouse, used to sample the texture </p>
 	 * @see #__DNA__FIELD__tex_mouse
 	 */
@@ -1663,7 +1674,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'mask_tex_mouse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> position of mouse, used to sample the mask texture </p>
 	 * @see #__DNA__FIELD__mask_tex_mouse
 	 */
@@ -1684,7 +1695,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'mask_tex_mouse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> position of mouse, used to sample the mask texture </p>
 	 * @see #__DNA__FIELD__mask_tex_mouse
 	 */
@@ -1709,7 +1720,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Get method for struct member 'colorspace'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ColorSpace cache to avoid locking up during sampling </p>
 	 * @see #__DNA__FIELD__colorspace
 	 */
@@ -1729,7 +1740,7 @@ public class UnifiedPaintSettings extends CFacade {
 	/**
 	 * Set method for struct member 'colorspace'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ColorSpace cache to avoid locking up during sampling </p>
 	 * @see #__DNA__FIELD__colorspace
 	 */

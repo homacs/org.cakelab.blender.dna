@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class Material extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for Material.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 51;
 
@@ -52,7 +53,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -115,7 +116,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'r'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Colors from Blender Internal that we are still using. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -258,7 +259,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -283,7 +284,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ray_mirror'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -328,7 +329,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gloss_mir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Renamed and inversed to roughness. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -353,7 +354,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'roughness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Roughness of the material
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -376,7 +377,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'metallic'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of mirror reflection for raytrace
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -399,8 +400,9 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'use_nodes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Use shader nodes to render the material<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Use shader nodes to render the material
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nodes </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -423,7 +425,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pr_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Preview render. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -486,7 +488,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index for render passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -529,7 +531,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -553,9 +555,6 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -577,7 +576,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'line_col'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Freestyle line settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -600,7 +599,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'line_priority'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The line color of a higher priority is used at material boundaries
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -643,8 +642,9 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'paint_active_slot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Index of active texture paint slot<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Index of active texture paint slot
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture painting slots. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -667,7 +667,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'paint_clone_slot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Index of clone texture paint slot
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -730,8 +730,9 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'alpha_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * A pixel is rendered only if its alpha value is above this threshold<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * A pixel is rendered only if its alpha value is above this threshold
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transparency. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -774,7 +775,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'blend_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Blend Mode for Transparent Faces
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -857,7 +858,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'texpaintslot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cached slots for texture painting, must be refreshed in refresh_texpaint_image_cache before using. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -880,7 +881,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpumaterial'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime cache for GLSL materials. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -903,7 +904,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gp_style'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease pencil color. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -926,7 +927,7 @@ public class Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lineart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Line art settings for material
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -993,7 +994,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -1013,7 +1014,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -1099,7 +1100,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'r'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Colors from Blender Internal that we are still using. </p>
 	 * @see #__DNA__FIELD__r
 	 */
@@ -1116,7 +1117,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'r'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Colors from Blender Internal that we are still using. </p>
 	 * @see #__DNA__FIELD__r
 	 */
@@ -1301,7 +1302,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1320,7 +1321,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1339,7 +1340,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'ray_mirror'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1358,7 +1359,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'ray_mirror'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1405,7 +1406,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'gloss_mir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Renamed and inversed to roughness. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1424,7 +1425,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'gloss_mir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Renamed and inversed to roughness. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1443,7 +1444,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'roughness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Roughness of the material
 	 * @see #__DNA__FIELD__roughness
 	 */
@@ -1460,7 +1461,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'roughness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Roughness of the material
 	 * @see #__DNA__FIELD__roughness
 	 */
@@ -1477,7 +1478,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'metallic'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of mirror reflection for raytrace
 	 * @see #__DNA__FIELD__metallic
 	 */
@@ -1494,7 +1495,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'metallic'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Amount of mirror reflection for raytrace
 	 * @see #__DNA__FIELD__metallic
 	 */
@@ -1511,8 +1512,9 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'use_nodes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Use shader nodes to render the material<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Use shader nodes to render the material
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nodes </p>
 	 * @see #__DNA__FIELD__use_nodes
 	 */
@@ -1529,8 +1531,9 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'use_nodes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Use shader nodes to render the material<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Use shader nodes to render the material
+	 * <h4>Blender Source Code</h4>
 	 * <p> Nodes </p>
 	 * @see #__DNA__FIELD__use_nodes
 	 */
@@ -1547,7 +1550,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'pr_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Preview render. </p>
 	 * @see #__DNA__FIELD__pr_type
 	 */
@@ -1564,7 +1567,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'pr_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Preview render. </p>
 	 * @see #__DNA__FIELD__pr_type
 	 */
@@ -1637,7 +1640,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index for render passes. </p>
 	 * @see #__DNA__FIELD__index
 	 */
@@ -1654,7 +1657,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index for render passes. </p>
 	 * @see #__DNA__FIELD__index
 	 */
@@ -1703,7 +1706,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1725,7 +1728,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1744,9 +1747,6 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'preview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -1764,9 +1764,6 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'preview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -1783,7 +1780,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'line_col'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Freestyle line settings. </p>
 	 * @see #__DNA__FIELD__line_col
 	 */
@@ -1804,7 +1801,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'line_col'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Freestyle line settings. </p>
 	 * @see #__DNA__FIELD__line_col
 	 */
@@ -1829,7 +1826,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'line_priority'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The line color of a higher priority is used at material boundaries
 	 * @see #__DNA__FIELD__line_priority
 	 */
@@ -1846,7 +1843,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'line_priority'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The line color of a higher priority is used at material boundaries
 	 * @see #__DNA__FIELD__line_priority
 	 */
@@ -1891,8 +1888,9 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'paint_active_slot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Index of active texture paint slot<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Index of active texture paint slot
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture painting slots. </p>
 	 * @see #__DNA__FIELD__paint_active_slot
 	 */
@@ -1909,8 +1907,9 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'paint_active_slot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Index of active texture paint slot<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Index of active texture paint slot
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texture painting slots. </p>
 	 * @see #__DNA__FIELD__paint_active_slot
 	 */
@@ -1927,7 +1926,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'paint_clone_slot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Index of clone texture paint slot
 	 * @see #__DNA__FIELD__paint_clone_slot
 	 */
@@ -1944,7 +1943,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'paint_clone_slot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Index of clone texture paint slot
 	 * @see #__DNA__FIELD__paint_clone_slot
 	 */
@@ -2029,8 +2028,9 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'alpha_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * A pixel is rendered only if its alpha value is above this threshold<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * A pixel is rendered only if its alpha value is above this threshold
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transparency. </p>
 	 * @see #__DNA__FIELD__alpha_threshold
 	 */
@@ -2047,8 +2047,9 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'alpha_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * A pixel is rendered only if its alpha value is above this threshold<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * A pixel is rendered only if its alpha value is above this threshold
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transparency. </p>
 	 * @see #__DNA__FIELD__alpha_threshold
 	 */
@@ -2093,7 +2094,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'blend_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Blend Mode for Transparent Faces
 	 * @see #__DNA__FIELD__blend_method
 	 */
@@ -2110,7 +2111,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'blend_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Blend Mode for Transparent Faces
 	 * @see #__DNA__FIELD__blend_method
 	 */
@@ -2223,7 +2224,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'texpaintslot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cached slots for texture painting, must be refreshed in refresh_texpaint_image_cache before using. </p>
 	 * @see #__DNA__FIELD__texpaintslot
 	 */
@@ -2243,7 +2244,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'texpaintslot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cached slots for texture painting, must be refreshed in refresh_texpaint_image_cache before using. </p>
 	 * @see #__DNA__FIELD__texpaintslot
 	 */
@@ -2261,7 +2262,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'gpumaterial'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime cache for GLSL materials. </p>
 	 * @see #__DNA__FIELD__gpumaterial
 	 */
@@ -2278,7 +2279,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'gpumaterial'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime cache for GLSL materials. </p>
 	 * @see #__DNA__FIELD__gpumaterial
 	 */
@@ -2303,7 +2304,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'gp_style'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease pencil color. </p>
 	 * @see #__DNA__FIELD__gp_style
 	 */
@@ -2323,7 +2324,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'gp_style'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease pencil color. </p>
 	 * @see #__DNA__FIELD__gp_style
 	 */
@@ -2341,7 +2342,7 @@ public class Material extends CFacade {
 	/**
 	 * Get method for struct member 'lineart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Line art settings for material
 	 * @see #__DNA__FIELD__lineart
 	 */
@@ -2358,7 +2359,7 @@ public class Material extends CFacade {
 	/**
 	 * Set method for struct member 'lineart'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Line art settings for material
 	 * @see #__DNA__FIELD__lineart
 	 */

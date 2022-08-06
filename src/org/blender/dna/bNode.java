@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bNode'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> limit data in {@link bNode}  to what we want to see saved? </p>
  */
 
@@ -25,8 +27,8 @@ public class bNode extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bNode.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 390;
 
@@ -93,7 +95,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-defined properties. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -116,7 +118,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'typeinfo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type information. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -139,7 +141,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type identifier. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -162,7 +164,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -225,7 +227,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'done'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Both for dependency and sorting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -268,7 +270,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'need_exec'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used as a boolean for execution. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -311,7 +313,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom user-defined color. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -374,7 +376,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parent node. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -397,7 +399,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional link to libdata. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -420,7 +422,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'storage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom data, must be struct, for storage in file. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -443,7 +445,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'original'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The original node in the tree (for localized tree). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -466,7 +468,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'internal_links'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of cached internal links (input to output), for muted nodes and operators. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -489,7 +491,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'locx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Root offset for drawing (parent space). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -532,7 +534,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Node custom width and height. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -575,7 +577,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'miniwidth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Node width if hidden. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -598,7 +600,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'offsetx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Additional offset from loc. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -641,7 +643,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'anim_init_locx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Initial locx for insert offset animation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -664,7 +666,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'anim_ofsx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset that will be added to locx for insert offset animation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -687,7 +689,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'update'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Update flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -710,7 +712,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'label'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom user-defined label, MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -733,7 +735,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'custom1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> To be abused for buttons. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -836,7 +838,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'totr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Entire boundbox (worldspace). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -859,7 +861,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'butr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional buttons area. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -882,7 +884,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'prvr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional preview area. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -905,8 +907,8 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'preview_xsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX TODO Node totr size depends on the prvr size, which in turn is determined from preview size. In earlier versions {@link bNodePreview}  was stored directly in nodes, but since now there can be multiple instances using different preview images it is possible that required node size varies between instances. preview_xsize, preview_ysize defines a common reserved size for preview rect for now, could be replaced by more accurate node instance drawing, but that requires removing totr from DNA and replacing all uses with per-instance data. Reserved size of the preview rect. </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> XXX TODO Node totr size depends on the prvr size, which in turn is determined from preview size. In earlier versions bNodePreview  was stored directly in nodes, but since now there can be multiple instances using different preview images it is possible that required node size varies between instances. preview_xsize, preview_ysize defines a common reserved size for preview rect for now, could be replaced by more accurate node instance drawing, but that requires removing totr from DNA and replacing all uses with per-instance data. Reserved size of the preview rect. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -948,7 +950,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tmp_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used at runtime when going through the tree. Initialize before use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -971,7 +973,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'branch_tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used at runtime to tag derivatives branches. EEVEE only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -994,7 +996,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'iter_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used at runtime when iterating over node branches. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1017,7 +1019,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'block'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime during drawing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1040,7 +1042,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ssr_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX: eevee only, id of screen space reflection layer, needs to be a float to feed GPU_uniform. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1063,7 +1065,7 @@ public class bNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sss_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX: eevee only, id of screen subsurface scatter layer, needs to be a float to feed GPU_uniform. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1190,7 +1192,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-defined properties. </p>
 	 * @see #__DNA__FIELD__prop
 	 */
@@ -1210,7 +1212,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-defined properties. </p>
 	 * @see #__DNA__FIELD__prop
 	 */
@@ -1228,7 +1230,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'typeinfo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type information. </p>
 	 * @see #__DNA__FIELD__typeinfo
 	 */
@@ -1248,7 +1250,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'typeinfo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type information. </p>
 	 * @see #__DNA__FIELD__typeinfo
 	 */
@@ -1266,7 +1268,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type identifier. </p>
 	 * @see #__DNA__FIELD__idname
 	 */
@@ -1287,7 +1289,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type identifier. </p>
 	 * @see #__DNA__FIELD__idname
 	 */
@@ -1312,7 +1314,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -1333,7 +1335,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -1414,7 +1416,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'done'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Both for dependency and sorting. </p>
 	 * @see #__DNA__FIELD__done
 	 */
@@ -1431,7 +1433,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'done'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Both for dependency and sorting. </p>
 	 * @see #__DNA__FIELD__done
 	 */
@@ -1476,7 +1478,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'need_exec'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used as a boolean for execution. </p>
 	 * @see #__DNA__FIELD__need_exec
 	 */
@@ -1493,7 +1495,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'need_exec'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used as a boolean for execution. </p>
 	 * @see #__DNA__FIELD__need_exec
 	 */
@@ -1550,7 +1552,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom user-defined color. </p>
 	 * @see #__DNA__FIELD__color
 	 */
@@ -1571,7 +1573,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom user-defined color. </p>
 	 * @see #__DNA__FIELD__color
 	 */
@@ -1668,7 +1670,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parent node. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -1688,7 +1690,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parent node. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -1706,7 +1708,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional link to libdata. </p>
 	 * @see #__DNA__FIELD__id
 	 */
@@ -1726,7 +1728,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional link to libdata. </p>
 	 * @see #__DNA__FIELD__id
 	 */
@@ -1744,7 +1746,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'storage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom data, must be struct, for storage in file. </p>
 	 * @see #__DNA__FIELD__storage
 	 */
@@ -1764,7 +1766,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'storage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom data, must be struct, for storage in file. </p>
 	 * @see #__DNA__FIELD__storage
 	 */
@@ -1782,7 +1784,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'original'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The original node in the tree (for localized tree). </p>
 	 * @see #__DNA__FIELD__original
 	 */
@@ -1802,7 +1804,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'original'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The original node in the tree (for localized tree). </p>
 	 * @see #__DNA__FIELD__original
 	 */
@@ -1820,7 +1822,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'internal_links'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of cached internal links (input to output), for muted nodes and operators. </p>
 	 * @see #__DNA__FIELD__internal_links
 	 */
@@ -1837,7 +1839,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'internal_links'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of cached internal links (input to output), for muted nodes and operators. </p>
 	 * @see #__DNA__FIELD__internal_links
 	 */
@@ -1862,7 +1864,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'locx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Root offset for drawing (parent space). </p>
 	 * @see #__DNA__FIELD__locx
 	 */
@@ -1879,7 +1881,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'locx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Root offset for drawing (parent space). </p>
 	 * @see #__DNA__FIELD__locx
 	 */
@@ -1924,7 +1926,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Node custom width and height. </p>
 	 * @see #__DNA__FIELD__width
 	 */
@@ -1941,7 +1943,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'width'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Node custom width and height. </p>
 	 * @see #__DNA__FIELD__width
 	 */
@@ -1986,7 +1988,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'miniwidth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Node width if hidden. </p>
 	 * @see #__DNA__FIELD__miniwidth
 	 */
@@ -2003,7 +2005,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'miniwidth'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Node width if hidden. </p>
 	 * @see #__DNA__FIELD__miniwidth
 	 */
@@ -2020,7 +2022,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'offsetx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Additional offset from loc. </p>
 	 * @see #__DNA__FIELD__offsetx
 	 */
@@ -2037,7 +2039,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'offsetx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Additional offset from loc. </p>
 	 * @see #__DNA__FIELD__offsetx
 	 */
@@ -2082,7 +2084,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'anim_init_locx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Initial locx for insert offset animation. </p>
 	 * @see #__DNA__FIELD__anim_init_locx
 	 */
@@ -2099,7 +2101,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'anim_init_locx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Initial locx for insert offset animation. </p>
 	 * @see #__DNA__FIELD__anim_init_locx
 	 */
@@ -2116,7 +2118,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'anim_ofsx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset that will be added to locx for insert offset animation. </p>
 	 * @see #__DNA__FIELD__anim_ofsx
 	 */
@@ -2133,7 +2135,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'anim_ofsx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset that will be added to locx for insert offset animation. </p>
 	 * @see #__DNA__FIELD__anim_ofsx
 	 */
@@ -2150,7 +2152,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'update'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Update flags. </p>
 	 * @see #__DNA__FIELD__update
 	 */
@@ -2167,7 +2169,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'update'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Update flags. </p>
 	 * @see #__DNA__FIELD__update
 	 */
@@ -2184,7 +2186,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'label'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom user-defined label, MAX_NAME. </p>
 	 * @see #__DNA__FIELD__label
 	 */
@@ -2205,7 +2207,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'label'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom user-defined label, MAX_NAME. </p>
 	 * @see #__DNA__FIELD__label
 	 */
@@ -2230,7 +2232,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'custom1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> To be abused for buttons. </p>
 	 * @see #__DNA__FIELD__custom1
 	 */
@@ -2247,7 +2249,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'custom1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> To be abused for buttons. </p>
 	 * @see #__DNA__FIELD__custom1
 	 */
@@ -2388,7 +2390,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'totr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Entire boundbox (worldspace). </p>
 	 * @see #__DNA__FIELD__totr
 	 */
@@ -2405,7 +2407,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'totr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Entire boundbox (worldspace). </p>
 	 * @see #__DNA__FIELD__totr
 	 */
@@ -2430,7 +2432,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'butr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional buttons area. </p>
 	 * @see #__DNA__FIELD__butr
 	 */
@@ -2447,7 +2449,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'butr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional buttons area. </p>
 	 * @see #__DNA__FIELD__butr
 	 */
@@ -2472,7 +2474,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'prvr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional preview area. </p>
 	 * @see #__DNA__FIELD__prvr
 	 */
@@ -2489,7 +2491,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'prvr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Optional preview area. </p>
 	 * @see #__DNA__FIELD__prvr
 	 */
@@ -2514,8 +2516,8 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'preview_xsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX TODO Node totr size depends on the prvr size, which in turn is determined from preview size. In earlier versions {@link bNodePreview}  was stored directly in nodes, but since now there can be multiple instances using different preview images it is possible that required node size varies between instances. preview_xsize, preview_ysize defines a common reserved size for preview rect for now, could be replaced by more accurate node instance drawing, but that requires removing totr from DNA and replacing all uses with per-instance data. Reserved size of the preview rect. </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> XXX TODO Node totr size depends on the prvr size, which in turn is determined from preview size. In earlier versions bNodePreview  was stored directly in nodes, but since now there can be multiple instances using different preview images it is possible that required node size varies between instances. preview_xsize, preview_ysize defines a common reserved size for preview rect for now, could be replaced by more accurate node instance drawing, but that requires removing totr from DNA and replacing all uses with per-instance data. Reserved size of the preview rect. </p>
 	 * @see #__DNA__FIELD__preview_xsize
 	 */
 	
@@ -2531,8 +2533,8 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'preview_xsize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX TODO Node totr size depends on the prvr size, which in turn is determined from preview size. In earlier versions {@link bNodePreview}  was stored directly in nodes, but since now there can be multiple instances using different preview images it is possible that required node size varies between instances. preview_xsize, preview_ysize defines a common reserved size for preview rect for now, could be replaced by more accurate node instance drawing, but that requires removing totr from DNA and replacing all uses with per-instance data. Reserved size of the preview rect. </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p> XXX TODO Node totr size depends on the prvr size, which in turn is determined from preview size. In earlier versions bNodePreview  was stored directly in nodes, but since now there can be multiple instances using different preview images it is possible that required node size varies between instances. preview_xsize, preview_ysize defines a common reserved size for preview rect for now, could be replaced by more accurate node instance drawing, but that requires removing totr from DNA and replacing all uses with per-instance data. Reserved size of the preview rect. </p>
 	 * @see #__DNA__FIELD__preview_xsize
 	 */
 	
@@ -2576,7 +2578,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'tmp_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used at runtime when going through the tree. Initialize before use. </p>
 	 * @see #__DNA__FIELD__tmp_flag
 	 */
@@ -2593,7 +2595,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'tmp_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used at runtime when going through the tree. Initialize before use. </p>
 	 * @see #__DNA__FIELD__tmp_flag
 	 */
@@ -2610,7 +2612,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'branch_tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used at runtime to tag derivatives branches. EEVEE only. </p>
 	 * @see #__DNA__FIELD__branch_tag
 	 */
@@ -2627,7 +2629,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'branch_tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used at runtime to tag derivatives branches. EEVEE only. </p>
 	 * @see #__DNA__FIELD__branch_tag
 	 */
@@ -2644,7 +2646,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'iter_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used at runtime when iterating over node branches. </p>
 	 * @see #__DNA__FIELD__iter_flag
 	 */
@@ -2661,7 +2663,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'iter_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used at runtime when iterating over node branches. </p>
 	 * @see #__DNA__FIELD__iter_flag
 	 */
@@ -2678,7 +2680,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'block'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime during drawing. </p>
 	 * @see #__DNA__FIELD__block
 	 */
@@ -2698,7 +2700,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'block'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime during drawing. </p>
 	 * @see #__DNA__FIELD__block
 	 */
@@ -2716,7 +2718,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'ssr_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX: eevee only, id of screen space reflection layer, needs to be a float to feed GPU_uniform. </p>
 	 * @see #__DNA__FIELD__ssr_id
 	 */
@@ -2733,7 +2735,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'ssr_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX: eevee only, id of screen space reflection layer, needs to be a float to feed GPU_uniform. </p>
 	 * @see #__DNA__FIELD__ssr_id
 	 */
@@ -2750,7 +2752,7 @@ public class bNode extends CFacade {
 	/**
 	 * Get method for struct member 'sss_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX: eevee only, id of screen subsurface scatter layer, needs to be a float to feed GPU_uniform. </p>
 	 * @see #__DNA__FIELD__sss_id
 	 */
@@ -2767,7 +2769,7 @@ public class bNode extends CFacade {
 	/**
 	 * Set method for struct member 'sss_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX: eevee only, id of screen subsurface scatter layer, needs to be a float to feed GPU_uniform. </p>
 	 * @see #__DNA__FIELD__sss_id
 	 */

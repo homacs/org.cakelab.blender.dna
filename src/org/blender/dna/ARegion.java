@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,8 +24,8 @@ public class ARegion extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ARegion.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 296;
 
@@ -71,7 +72,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2D-View scrolling/zoom info (most regions are 2d anyways). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -94,7 +95,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'winrct'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Coordinates of region. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -117,7 +118,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'drawrct'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime for partial redraw, same or smaller than winrct. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -140,7 +141,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'winx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -183,7 +184,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'visible'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Region is currently visible on screen. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -206,7 +207,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'regiontype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Window, header, etc. identifier for drawing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -229,7 +230,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'alignment'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How it should split. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -252,7 +253,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Hide, .... </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -275,7 +276,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sizex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . However to get the current region size, you should usually use winx/winy from above, not this! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -318,7 +319,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'do_draw'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Private, cached notifier events. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -341,7 +342,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'do_draw_paintcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Private, cached notifier events. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -364,7 +365,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'overlap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Private, set for indicate drawing overlapped. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -387,7 +388,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flagfullscreen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temporary copy of flag settings for clean fullscreen. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -410,7 +411,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Callbacks for this region type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -433,7 +434,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uiblocks'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> #uiBlock. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -456,7 +457,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'panels'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -479,7 +480,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'panels_category_active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stack of panel categories. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -502,7 +503,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ui_lists'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link uiList} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -525,7 +526,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ui_previews'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link uiPreview} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -548,7 +549,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'handlers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> #wmEventHandler. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -571,7 +572,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'panels_category'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  categories runtime. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -594,7 +595,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gizmo_map'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gizmo-map of this region. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -617,7 +618,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'regiontimer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blend in/out. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -660,7 +661,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'headerstr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use this string to draw info. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -683,7 +684,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'regiondata'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX 2.50, need spacedata equivalent?. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -798,7 +799,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2D-View scrolling/zoom info (most regions are 2d anyways). </p>
 	 * @see #__DNA__FIELD__v2d
 	 */
@@ -815,7 +816,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2D-View scrolling/zoom info (most regions are 2d anyways). </p>
 	 * @see #__DNA__FIELD__v2d
 	 */
@@ -840,7 +841,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'winrct'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Coordinates of region. </p>
 	 * @see #__DNA__FIELD__winrct
 	 */
@@ -857,7 +858,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'winrct'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Coordinates of region. </p>
 	 * @see #__DNA__FIELD__winrct
 	 */
@@ -882,7 +883,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'drawrct'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime for partial redraw, same or smaller than winrct. </p>
 	 * @see #__DNA__FIELD__drawrct
 	 */
@@ -899,7 +900,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'drawrct'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime for partial redraw, same or smaller than winrct. </p>
 	 * @see #__DNA__FIELD__drawrct
 	 */
@@ -924,7 +925,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'winx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size. </p>
 	 * @see #__DNA__FIELD__winx
 	 */
@@ -941,7 +942,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'winx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Size. </p>
 	 * @see #__DNA__FIELD__winx
 	 */
@@ -986,7 +987,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'visible'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Region is currently visible on screen. </p>
 	 * @see #__DNA__FIELD__visible
 	 */
@@ -1003,7 +1004,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'visible'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Region is currently visible on screen. </p>
 	 * @see #__DNA__FIELD__visible
 	 */
@@ -1020,7 +1021,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'regiontype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Window, header, etc. identifier for drawing. </p>
 	 * @see #__DNA__FIELD__regiontype
 	 */
@@ -1037,7 +1038,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'regiontype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Window, header, etc. identifier for drawing. </p>
 	 * @see #__DNA__FIELD__regiontype
 	 */
@@ -1054,7 +1055,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'alignment'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How it should split. </p>
 	 * @see #__DNA__FIELD__alignment
 	 */
@@ -1071,7 +1072,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'alignment'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How it should split. </p>
 	 * @see #__DNA__FIELD__alignment
 	 */
@@ -1088,7 +1089,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Hide, .... </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -1105,7 +1106,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Hide, .... </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -1122,7 +1123,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'sizex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . However to get the current region size, you should usually use winx/winy from above, not this! </p>
 	 * @see #__DNA__FIELD__sizex
 	 */
@@ -1139,7 +1140,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'sizex'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . However to get the current region size, you should usually use winx/winy from above, not this! </p>
 	 * @see #__DNA__FIELD__sizex
 	 */
@@ -1184,7 +1185,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'do_draw'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Private, cached notifier events. </p>
 	 * @see #__DNA__FIELD__do_draw
 	 */
@@ -1201,7 +1202,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'do_draw'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Private, cached notifier events. </p>
 	 * @see #__DNA__FIELD__do_draw
 	 */
@@ -1218,7 +1219,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'do_draw_paintcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Private, cached notifier events. </p>
 	 * @see #__DNA__FIELD__do_draw_paintcursor
 	 */
@@ -1235,7 +1236,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'do_draw_paintcursor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Private, cached notifier events. </p>
 	 * @see #__DNA__FIELD__do_draw_paintcursor
 	 */
@@ -1252,7 +1253,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'overlap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Private, set for indicate drawing overlapped. </p>
 	 * @see #__DNA__FIELD__overlap
 	 */
@@ -1269,7 +1270,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'overlap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Private, set for indicate drawing overlapped. </p>
 	 * @see #__DNA__FIELD__overlap
 	 */
@@ -1286,7 +1287,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'flagfullscreen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temporary copy of flag settings for clean fullscreen. </p>
 	 * @see #__DNA__FIELD__flagfullscreen
 	 */
@@ -1303,7 +1304,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'flagfullscreen'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temporary copy of flag settings for clean fullscreen. </p>
 	 * @see #__DNA__FIELD__flagfullscreen
 	 */
@@ -1320,7 +1321,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Callbacks for this region type. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -1340,7 +1341,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Callbacks for this region type. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -1358,7 +1359,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'uiblocks'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> #uiBlock. </p>
 	 * @see #__DNA__FIELD__uiblocks
 	 */
@@ -1375,7 +1376,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'uiblocks'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> #uiBlock. </p>
 	 * @see #__DNA__FIELD__uiblocks
 	 */
@@ -1400,7 +1401,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'panels'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel} . </p>
 	 * @see #__DNA__FIELD__panels
 	 */
@@ -1417,7 +1418,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'panels'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel} . </p>
 	 * @see #__DNA__FIELD__panels
 	 */
@@ -1442,7 +1443,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'panels_category_active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stack of panel categories. </p>
 	 * @see #__DNA__FIELD__panels_category_active
 	 */
@@ -1459,7 +1460,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'panels_category_active'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Stack of panel categories. </p>
 	 * @see #__DNA__FIELD__panels_category_active
 	 */
@@ -1484,7 +1485,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'ui_lists'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link uiList} . </p>
 	 * @see #__DNA__FIELD__ui_lists
 	 */
@@ -1501,7 +1502,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'ui_lists'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link uiList} . </p>
 	 * @see #__DNA__FIELD__ui_lists
 	 */
@@ -1526,7 +1527,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'ui_previews'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link uiPreview} . </p>
 	 * @see #__DNA__FIELD__ui_previews
 	 */
@@ -1543,7 +1544,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'ui_previews'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link uiPreview} . </p>
 	 * @see #__DNA__FIELD__ui_previews
 	 */
@@ -1568,7 +1569,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'handlers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> #wmEventHandler. </p>
 	 * @see #__DNA__FIELD__handlers
 	 */
@@ -1585,7 +1586,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'handlers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> #wmEventHandler. </p>
 	 * @see #__DNA__FIELD__handlers
 	 */
@@ -1610,7 +1611,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'panels_category'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  categories runtime. </p>
 	 * @see #__DNA__FIELD__panels_category
 	 */
@@ -1627,7 +1628,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'panels_category'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Panel}  categories runtime. </p>
 	 * @see #__DNA__FIELD__panels_category
 	 */
@@ -1652,7 +1653,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'gizmo_map'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gizmo-map of this region. </p>
 	 * @see #__DNA__FIELD__gizmo_map
 	 */
@@ -1672,7 +1673,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'gizmo_map'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Gizmo-map of this region. </p>
 	 * @see #__DNA__FIELD__gizmo_map
 	 */
@@ -1690,7 +1691,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'regiontimer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blend in/out. </p>
 	 * @see #__DNA__FIELD__regiontimer
 	 */
@@ -1710,7 +1711,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'regiontimer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blend in/out. </p>
 	 * @see #__DNA__FIELD__regiontimer
 	 */
@@ -1760,7 +1761,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'headerstr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use this string to draw info. </p>
 	 * @see #__DNA__FIELD__headerstr
 	 */
@@ -1780,7 +1781,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'headerstr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use this string to draw info. </p>
 	 * @see #__DNA__FIELD__headerstr
 	 */
@@ -1798,7 +1799,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Get method for struct member 'regiondata'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX 2.50, need spacedata equivalent?. </p>
 	 * @see #__DNA__FIELD__regiondata
 	 */
@@ -1818,7 +1819,7 @@ public class ARegion extends CFacade {
 	/**
 	 * Set method for struct member 'regiondata'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX 2.50, need spacedata equivalent?. </p>
 	 * @see #__DNA__FIELD__regiondata
 	 */

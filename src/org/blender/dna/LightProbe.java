@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class LightProbe extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for LightProbe.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 716;
 
@@ -52,7 +53,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,8 +76,9 @@ public class LightProbe extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Type of light probe<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Type of light probe
+	 * <h4>Blender Source Code</h4>
 	 * <p> For realtime probe objects. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +101,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General purpose flags for probes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -122,7 +124,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'attenuation_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Attenuation type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -145,8 +147,9 @@ public class LightProbe extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parallax_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Type of parallax volume<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Type of parallax volume
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parallax type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,7 +172,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'distinf'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Influence Radius. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -192,7 +195,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'distpar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parallax Radius. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -215,8 +218,9 @@ public class LightProbe extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Control how fast the probe influence decreases<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Control how fast the probe influence decreases
+	 * <h4>Blender Source Code</h4>
 	 * <p> Influence falloff. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -279,7 +283,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vis_bias'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> VSM visibility biases. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -342,8 +346,9 @@ public class LightProbe extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Modify the intensity of the lighting captured by this probe<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Modify the intensity of the lighting captured by this probe
+	 * <h4>Blender Source Code</h4>
 	 * <p> Intensity multiplier. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -366,8 +371,9 @@ public class LightProbe extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'grid_resolution_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of sample along the x axis of the volume<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Number of sample along the x axis of the volume
+	 * <h4>Blender Source Code</h4>
 	 * <p> Irradiance grid resolution. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -390,7 +396,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'grid_resolution_y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of sample along the y axis of the volume
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -413,7 +419,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'grid_resolution_z'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of sample along the z axis of the volume
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -456,7 +462,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parallax_ob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  to use as a parallax origin. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -479,7 +485,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'image'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  to use on as lighting data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -502,7 +508,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'visibility_grp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  visibility group, inclusive or exclusive. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -525,7 +531,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'distfalloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime display data </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -632,7 +638,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Get method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -652,7 +658,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Set method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
@@ -670,8 +676,9 @@ public class LightProbe extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Type of light probe<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Type of light probe
+	 * <h4>Blender Source Code</h4>
 	 * <p> For realtime probe objects. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -688,8 +695,9 @@ public class LightProbe extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Type of light probe<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Type of light probe
+	 * <h4>Blender Source Code</h4>
 	 * <p> For realtime probe objects. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -706,7 +714,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General purpose flags for probes. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -723,7 +731,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General purpose flags for probes. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -740,7 +748,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Get method for struct member 'attenuation_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Attenuation type. </p>
 	 * @see #__DNA__FIELD__attenuation_type
 	 */
@@ -757,7 +765,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Set method for struct member 'attenuation_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Attenuation type. </p>
 	 * @see #__DNA__FIELD__attenuation_type
 	 */
@@ -774,8 +782,9 @@ public class LightProbe extends CFacade {
 	/**
 	 * Get method for struct member 'parallax_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Type of parallax volume<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Type of parallax volume
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parallax type. </p>
 	 * @see #__DNA__FIELD__parallax_type
 	 */
@@ -792,8 +801,9 @@ public class LightProbe extends CFacade {
 	/**
 	 * Set method for struct member 'parallax_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Type of parallax volume<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Type of parallax volume
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parallax type. </p>
 	 * @see #__DNA__FIELD__parallax_type
 	 */
@@ -810,7 +820,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Get method for struct member 'distinf'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Influence Radius. </p>
 	 * @see #__DNA__FIELD__distinf
 	 */
@@ -827,7 +837,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Set method for struct member 'distinf'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Influence Radius. </p>
 	 * @see #__DNA__FIELD__distinf
 	 */
@@ -844,7 +854,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Get method for struct member 'distpar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parallax Radius. </p>
 	 * @see #__DNA__FIELD__distpar
 	 */
@@ -861,7 +871,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Set method for struct member 'distpar'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parallax Radius. </p>
 	 * @see #__DNA__FIELD__distpar
 	 */
@@ -878,8 +888,9 @@ public class LightProbe extends CFacade {
 	/**
 	 * Get method for struct member 'falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Control how fast the probe influence decreases<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Control how fast the probe influence decreases
+	 * <h4>Blender Source Code</h4>
 	 * <p> Influence falloff. </p>
 	 * @see #__DNA__FIELD__falloff
 	 */
@@ -896,8 +907,9 @@ public class LightProbe extends CFacade {
 	/**
 	 * Set method for struct member 'falloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Control how fast the probe influence decreases<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Control how fast the probe influence decreases
+	 * <h4>Blender Source Code</h4>
 	 * <p> Influence falloff. </p>
 	 * @see #__DNA__FIELD__falloff
 	 */
@@ -970,7 +982,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Get method for struct member 'vis_bias'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> VSM visibility biases. </p>
 	 * @see #__DNA__FIELD__vis_bias
 	 */
@@ -987,7 +999,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Set method for struct member 'vis_bias'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> VSM visibility biases. </p>
 	 * @see #__DNA__FIELD__vis_bias
 	 */
@@ -1060,8 +1072,9 @@ public class LightProbe extends CFacade {
 	/**
 	 * Get method for struct member 'intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Modify the intensity of the lighting captured by this probe<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Modify the intensity of the lighting captured by this probe
+	 * <h4>Blender Source Code</h4>
 	 * <p> Intensity multiplier. </p>
 	 * @see #__DNA__FIELD__intensity
 	 */
@@ -1078,8 +1091,9 @@ public class LightProbe extends CFacade {
 	/**
 	 * Set method for struct member 'intensity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Modify the intensity of the lighting captured by this probe<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Modify the intensity of the lighting captured by this probe
+	 * <h4>Blender Source Code</h4>
 	 * <p> Intensity multiplier. </p>
 	 * @see #__DNA__FIELD__intensity
 	 */
@@ -1096,8 +1110,9 @@ public class LightProbe extends CFacade {
 	/**
 	 * Get method for struct member 'grid_resolution_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of sample along the x axis of the volume<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Number of sample along the x axis of the volume
+	 * <h4>Blender Source Code</h4>
 	 * <p> Irradiance grid resolution. </p>
 	 * @see #__DNA__FIELD__grid_resolution_x
 	 */
@@ -1114,8 +1129,9 @@ public class LightProbe extends CFacade {
 	/**
 	 * Set method for struct member 'grid_resolution_x'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of sample along the x axis of the volume<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Number of sample along the x axis of the volume
+	 * <h4>Blender Source Code</h4>
 	 * <p> Irradiance grid resolution. </p>
 	 * @see #__DNA__FIELD__grid_resolution_x
 	 */
@@ -1132,7 +1148,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Get method for struct member 'grid_resolution_y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of sample along the y axis of the volume
 	 * @see #__DNA__FIELD__grid_resolution_y
 	 */
@@ -1149,7 +1165,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Set method for struct member 'grid_resolution_y'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of sample along the y axis of the volume
 	 * @see #__DNA__FIELD__grid_resolution_y
 	 */
@@ -1166,7 +1182,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Get method for struct member 'grid_resolution_z'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of sample along the z axis of the volume
 	 * @see #__DNA__FIELD__grid_resolution_z
 	 */
@@ -1183,7 +1199,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Set method for struct member 'grid_resolution_z'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of sample along the z axis of the volume
 	 * @see #__DNA__FIELD__grid_resolution_z
 	 */
@@ -1240,7 +1256,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Get method for struct member 'parallax_ob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  to use as a parallax origin. </p>
 	 * @see #__DNA__FIELD__parallax_ob
 	 */
@@ -1260,7 +1276,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Set method for struct member 'parallax_ob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  to use as a parallax origin. </p>
 	 * @see #__DNA__FIELD__parallax_ob
 	 */
@@ -1278,7 +1294,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Get method for struct member 'image'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  to use on as lighting data. </p>
 	 * @see #__DNA__FIELD__image
 	 */
@@ -1298,7 +1314,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Set method for struct member 'image'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  to use on as lighting data. </p>
 	 * @see #__DNA__FIELD__image
 	 */
@@ -1316,7 +1332,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Get method for struct member 'visibility_grp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  visibility group, inclusive or exclusive. </p>
 	 * @see #__DNA__FIELD__visibility_grp
 	 */
@@ -1336,7 +1352,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Set method for struct member 'visibility_grp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Object}  visibility group, inclusive or exclusive. </p>
 	 * @see #__DNA__FIELD__visibility_grp
 	 */
@@ -1354,7 +1370,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Get method for struct member 'distfalloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime display data </p>
 	 * @see #__DNA__FIELD__distfalloff
 	 */
@@ -1371,7 +1387,7 @@ public class LightProbe extends CFacade {
 	/**
 	 * Set method for struct member 'distfalloff'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime display data </p>
 	 * @see #__DNA__FIELD__distfalloff
 	 */

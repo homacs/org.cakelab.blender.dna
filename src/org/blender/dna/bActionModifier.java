@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bActionModifier'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> simple uniform modifier structure, assumed it can hold all type info </p>
  */
 
@@ -25,8 +27,8 @@ public class bActionModifier extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bActionModifier.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 386;
 
@@ -133,7 +135,7 @@ public class bActionModifier extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'noisesize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> noise modifier </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -196,7 +198,7 @@ public class bActionModifier extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'no_rot_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> path deform modifier </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -407,7 +409,7 @@ public class bActionModifier extends CFacade {
 	/**
 	 * Get method for struct member 'noisesize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> noise modifier </p>
 	 * @see #__DNA__FIELD__noisesize
 	 */
@@ -424,7 +426,7 @@ public class bActionModifier extends CFacade {
 	/**
 	 * Set method for struct member 'noisesize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> noise modifier </p>
 	 * @see #__DNA__FIELD__noisesize
 	 */
@@ -497,7 +499,7 @@ public class bActionModifier extends CFacade {
 	/**
 	 * Get method for struct member 'no_rot_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> path deform modifier </p>
 	 * @see #__DNA__FIELD__no_rot_axis
 	 */
@@ -514,7 +516,7 @@ public class bActionModifier extends CFacade {
 	/**
 	 * Set method for struct member 'no_rot_axis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> path deform modifier </p>
 	 * @see #__DNA__FIELD__no_rot_axis
 	 */

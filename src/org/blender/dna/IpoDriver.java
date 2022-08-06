@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'IpoDriver'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> -----------------------<mdash/>  Type Defines ------------------------<mdash/>  <mdash/>  IPO {@link Curve}  Driver <mdash/>  IPO {@link Curve}  Driver </p>
  */
 
@@ -25,15 +27,15 @@ public class IpoDriver extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for IpoDriver.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 18;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Target/driver ob. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +58,7 @@ public class IpoDriver extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'blocktype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sub-channel to use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +101,7 @@ public class IpoDriver extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Driver settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -142,7 +144,7 @@ public class IpoDriver extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Bone} , or python expression here. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -173,7 +175,7 @@ public class IpoDriver extends CFacade {
 	/**
 	 * Get method for struct member 'ob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Target/driver ob. </p>
 	 * @see #__DNA__FIELD__ob
 	 */
@@ -193,7 +195,7 @@ public class IpoDriver extends CFacade {
 	/**
 	 * Set method for struct member 'ob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Target/driver ob. </p>
 	 * @see #__DNA__FIELD__ob
 	 */
@@ -211,7 +213,7 @@ public class IpoDriver extends CFacade {
 	/**
 	 * Get method for struct member 'blocktype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sub-channel to use. </p>
 	 * @see #__DNA__FIELD__blocktype
 	 */
@@ -228,7 +230,7 @@ public class IpoDriver extends CFacade {
 	/**
 	 * Set method for struct member 'blocktype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sub-channel to use. </p>
 	 * @see #__DNA__FIELD__blocktype
 	 */
@@ -273,7 +275,7 @@ public class IpoDriver extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Driver settings. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -290,7 +292,7 @@ public class IpoDriver extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Driver settings. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -335,7 +337,7 @@ public class IpoDriver extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Bone} , or python expression here. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -356,7 +358,7 @@ public class IpoDriver extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Bone} , or python expression here. </p>
 	 * @see #__DNA__FIELD__name
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class SpaceUserPref extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for SpaceUserPref.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 245;
 
@@ -72,7 +73,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -155,7 +156,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -198,7 +199,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Search term for filtering in the UI. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -293,7 +294,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -310,7 +311,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -431,7 +432,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Get method for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * @see #__DNA__FIELD___pad1
 	 */
@@ -452,7 +453,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Set method for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * @see #__DNA__FIELD___pad1
 	 */
@@ -505,7 +506,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Get method for struct member 'filter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Search term for filtering in the UI. </p>
 	 * @see #__DNA__FIELD__filter
 	 */
@@ -526,7 +527,7 @@ public class SpaceUserPref extends CFacade {
 	/**
 	 * Set method for struct member 'filter'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Search term for filtering in the UI. </p>
 	 * @see #__DNA__FIELD__filter
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MDeformWeight'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Vertex group index and weight for #MDeformVert.dw </p>
  */
 
@@ -24,15 +26,15 @@ public class MDeformWeight extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MDeformWeight.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 75;
 
 	/**
 	 * Field descriptor (offset) for struct member 'def_nr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><em></em>  be unique when in an array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +57,7 @@ public class MDeformWeight extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weight between 0.0 and 1.0. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -86,7 +88,7 @@ public class MDeformWeight extends CFacade {
 	/**
 	 * Get method for struct member 'def_nr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><em></em>  be unique when in an array. </p>
 	 * @see #__DNA__FIELD__def_nr
 	 */
@@ -103,7 +105,7 @@ public class MDeformWeight extends CFacade {
 	/**
 	 * Set method for struct member 'def_nr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><em></em>  be unique when in an array. </p>
 	 * @see #__DNA__FIELD__def_nr
 	 */
@@ -120,7 +122,7 @@ public class MDeformWeight extends CFacade {
 	/**
 	 * Get method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weight between 0.0 and 1.0. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
@@ -137,7 +139,7 @@ public class MDeformWeight extends CFacade {
 	/**
 	 * Set method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weight between 0.0 and 1.0. </p>
 	 * @see #__DNA__FIELD__weight
 	 */

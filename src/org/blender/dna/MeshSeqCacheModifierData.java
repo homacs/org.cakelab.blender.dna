@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class MeshSeqCacheModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MeshSeqCacheModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 148;
 
@@ -72,7 +73,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -155,7 +156,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'reader'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -198,7 +199,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vertex_velocities'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex velocities read from the cache. The velocities are not automatically read during modifier execution, and therefore have to manually be read when needed. This is only used through the RNA for now. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -221,7 +222,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'num_vertices'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The number of vertices of the Alembic mesh, set when the modifier is executed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -244,7 +245,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'velocity_delta'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Time (in frames or seconds) between two velocity samples. Automatically computed to scale the velocity vectors at render time for generating proper motion blur data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -267,7 +268,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'last_lookup_time'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Caches the scene time (in seconds) used to lookup data in the Alembic archive when the modifier was last executed. Used to access Alembic samples through the RNA. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -406,7 +407,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'object_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__object_path
 	 */
@@ -427,7 +428,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'object_path'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__object_path
 	 */
@@ -548,7 +549,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'reader'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. </p>
 	 * @see #__DNA__FIELD__reader
 	 */
@@ -568,7 +569,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'reader'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. </p>
 	 * @see #__DNA__FIELD__reader
 	 */
@@ -626,7 +627,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'vertex_velocities'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex velocities read from the cache. The velocities are not automatically read during modifier execution, and therefore have to manually be read when needed. This is only used through the RNA for now. </p>
 	 * @see #__DNA__FIELD__vertex_velocities
 	 */
@@ -646,7 +647,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'vertex_velocities'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex velocities read from the cache. The velocities are not automatically read during modifier execution, and therefore have to manually be read when needed. This is only used through the RNA for now. </p>
 	 * @see #__DNA__FIELD__vertex_velocities
 	 */
@@ -664,7 +665,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'num_vertices'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The number of vertices of the Alembic mesh, set when the modifier is executed. </p>
 	 * @see #__DNA__FIELD__num_vertices
 	 */
@@ -681,7 +682,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'num_vertices'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The number of vertices of the Alembic mesh, set when the modifier is executed. </p>
 	 * @see #__DNA__FIELD__num_vertices
 	 */
@@ -698,7 +699,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'velocity_delta'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Time (in frames or seconds) between two velocity samples. Automatically computed to scale the velocity vectors at render time for generating proper motion blur data. </p>
 	 * @see #__DNA__FIELD__velocity_delta
 	 */
@@ -715,7 +716,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'velocity_delta'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Time (in frames or seconds) between two velocity samples. Automatically computed to scale the velocity vectors at render time for generating proper motion blur data. </p>
 	 * @see #__DNA__FIELD__velocity_delta
 	 */
@@ -732,7 +733,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'last_lookup_time'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Caches the scene time (in seconds) used to lookup data in the Alembic archive when the modifier was last executed. Used to access Alembic samples through the RNA. </p>
 	 * @see #__DNA__FIELD__last_lookup_time
 	 */
@@ -749,7 +750,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'last_lookup_time'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Caches the scene time (in seconds) used to lookup data in the Alembic archive when the modifier was last executed. Used to access Alembic samples through the RNA. </p>
 	 * @see #__DNA__FIELD__last_lookup_time
 	 */

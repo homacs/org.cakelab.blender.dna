@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,8 +24,8 @@ public class LineStyleColorModifier_Material extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for LineStyleColorModifier_Material.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 682;
 
@@ -51,7 +52,7 @@ public class LineStyleColorModifier_Material extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'color_ramp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Color ramp used to change line color
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -158,7 +159,7 @@ public class LineStyleColorModifier_Material extends CFacade {
 	/**
 	 * Get method for struct member 'color_ramp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Color ramp used to change line color
 	 * @see #__DNA__FIELD__color_ramp
 	 */
@@ -178,7 +179,7 @@ public class LineStyleColorModifier_Material extends CFacade {
 	/**
 	 * Set method for struct member 'color_ramp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Color ramp used to change line color
 	 * @see #__DNA__FIELD__color_ramp
 	 */

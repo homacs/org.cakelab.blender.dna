@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,8 +24,8 @@ public class SpreadsheetColumn extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for SpreadsheetColumn.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 250;
 
@@ -71,7 +72,7 @@ public class SpreadsheetColumn extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Identifies the data in the column. This is a pointer instead of a struct to make it easier if we want to "subclass" {@link SpreadsheetColumnID}  in the future for different kinds of ids. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -166,7 +167,7 @@ public class SpreadsheetColumn extends CFacade {
 	/**
 	 * Get method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Identifies the data in the column. This is a pointer instead of a struct to make it easier if we want to "subclass" {@link SpreadsheetColumnID}  in the future for different kinds of ids. </p>
 	 * @see #__DNA__FIELD__id
 	 */
@@ -186,7 +187,7 @@ public class SpreadsheetColumn extends CFacade {
 	/**
 	 * Set method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Identifies the data in the column. This is a pointer instead of a struct to make it easier if we want to "subclass" {@link SpreadsheetColumnID}  in the future for different kinds of ids. </p>
 	 * @see #__DNA__FIELD__id
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class Scopes extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for Scopes.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 498;
 
@@ -92,7 +93,7 @@ public class Scopes extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'accuracy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Proportion of original image source pixel lines to sample
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -487,7 +488,7 @@ public class Scopes extends CFacade {
 	/**
 	 * Get method for struct member 'accuracy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Proportion of original image source pixel lines to sample
 	 * @see #__DNA__FIELD__accuracy
 	 */
@@ -504,7 +505,7 @@ public class Scopes extends CFacade {
 	/**
 	 * Set method for struct member 'accuracy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Proportion of original image source pixel lines to sample
 	 * @see #__DNA__FIELD__accuracy
 	 */

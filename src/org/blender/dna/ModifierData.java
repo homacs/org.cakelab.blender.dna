@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class ModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 89;
 
@@ -152,7 +153,7 @@ public class ModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ui_expand_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> An "expand" bit for each of the modifier's (sub)panels (uiPanelDataExpansion). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -175,7 +176,7 @@ public class ModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -218,7 +219,7 @@ public class ModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'orig_modifier_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to a {@link ModifierData}  in the original domain. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -241,7 +242,7 @@ public class ModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'session_uuid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime field which contains unique identifier of the modifier. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -264,7 +265,7 @@ public class ModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime field which contains runtime data which is specific to a modifier type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -503,7 +504,7 @@ public class ModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'ui_expand_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> An "expand" bit for each of the modifier's (sub)panels (uiPanelDataExpansion). </p>
 	 * @see #__DNA__FIELD__ui_expand_flag
 	 */
@@ -520,7 +521,7 @@ public class ModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'ui_expand_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> An "expand" bit for each of the modifier's (sub)panels (uiPanelDataExpansion). </p>
 	 * @see #__DNA__FIELD__ui_expand_flag
 	 */
@@ -537,7 +538,7 @@ public class ModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -558,7 +559,7 @@ public class ModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -615,7 +616,7 @@ public class ModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'orig_modifier_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to a {@link ModifierData}  in the original domain. </p>
 	 * @see #__DNA__FIELD__orig_modifier_data
 	 */
@@ -635,7 +636,7 @@ public class ModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'orig_modifier_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to a {@link ModifierData}  in the original domain. </p>
 	 * @see #__DNA__FIELD__orig_modifier_data
 	 */
@@ -653,7 +654,7 @@ public class ModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'session_uuid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime field which contains unique identifier of the modifier. </p>
 	 * @see #__DNA__FIELD__session_uuid
 	 */
@@ -670,7 +671,7 @@ public class ModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'session_uuid'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime field which contains unique identifier of the modifier. </p>
 	 * @see #__DNA__FIELD__session_uuid
 	 */
@@ -695,7 +696,7 @@ public class ModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime field which contains runtime data which is specific to a modifier type. </p>
 	 * @see #__DNA__FIELD__runtime
 	 */
@@ -715,7 +716,7 @@ public class ModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime field which contains runtime data which is specific to a modifier type. </p>
 	 * @see #__DNA__FIELD__runtime
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,15 +24,15 @@ public class NodeGeometryAttributeProximity extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for NodeGeometryAttributeProximity.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 485;
 
 	/**
 	 * Field descriptor (offset) for struct member 'target_geometry_element'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeProximityTargetType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -62,7 +63,7 @@ public class NodeGeometryAttributeProximity extends CFacade {
 	/**
 	 * Get method for struct member 'target_geometry_element'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeProximityTargetType. </p>
 	 * @see #__DNA__FIELD__target_geometry_element
 	 */
@@ -79,7 +80,7 @@ public class NodeGeometryAttributeProximity extends CFacade {
 	/**
 	 * Set method for struct member 'target_geometry_element'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> GeometryNodeAttributeProximityTargetType. </p>
 	 * @see #__DNA__FIELD__target_geometry_element
 	 */

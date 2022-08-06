@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,15 +25,15 @@ public class NodeCryptomatte_Runtime extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for NodeCryptomatte_Runtime.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 464;
 
 	/**
 	 * Field descriptor (offset) for struct member 'layers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code> Contains {@link CryptomatteLayer}</code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +56,7 @@ public class NodeCryptomatte_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'add'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp storage for the cryptomatte picker. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -106,7 +107,7 @@ public class NodeCryptomatte_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'layers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code> Contains {@link CryptomatteLayer}</code> . </p>
 	 * @see #__DNA__FIELD__layers
 	 */
@@ -123,7 +124,7 @@ public class NodeCryptomatte_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'layers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code> Contains {@link CryptomatteLayer}</code> . </p>
 	 * @see #__DNA__FIELD__layers
 	 */
@@ -148,7 +149,7 @@ public class NodeCryptomatte_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'add'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp storage for the cryptomatte picker. </p>
 	 * @see #__DNA__FIELD__add
 	 */
@@ -169,7 +170,7 @@ public class NodeCryptomatte_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'add'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Temp storage for the cryptomatte picker. </p>
 	 * @see #__DNA__FIELD__add
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class LineStyleGeometryModifier_Polygonalization extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for LineStyleGeometryModifier_Polygonalization.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 693;
 
@@ -52,7 +53,7 @@ public class LineStyleGeometryModifier_Polygonalization extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum distance between the original stroke and its polygonal approximation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -139,7 +140,7 @@ public class LineStyleGeometryModifier_Polygonalization extends CFacade {
 	/**
 	 * Get method for struct member 'error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum distance between the original stroke and its polygonal approximation
 	 * @see #__DNA__FIELD__error
 	 */
@@ -156,7 +157,7 @@ public class LineStyleGeometryModifier_Polygonalization extends CFacade {
 	/**
 	 * Set method for struct member 'error'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum distance between the original stroke and its polygonal approximation
 	 * @see #__DNA__FIELD__error
 	 */

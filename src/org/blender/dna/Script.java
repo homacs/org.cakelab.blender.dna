@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Script'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p>{@link Script}  Runtime Data - Obsolete (pre 2.5) </p>
  */
 
@@ -25,8 +27,8 @@ public class Script extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for Script.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 239;
 
@@ -193,7 +195,7 @@ public class Script extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scriptname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Store the script file here so we can re-run it on loading blender, if "Enable Scripts" is on 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -216,7 +218,7 @@ public class Script extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scriptarg'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -499,7 +501,7 @@ public class Script extends CFacade {
 	/**
 	 * Get method for struct member 'scriptname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Store the script file here so we can re-run it on loading blender, if "Enable Scripts" is on 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__scriptname
 	 */
@@ -520,7 +522,7 @@ public class Script extends CFacade {
 	/**
 	 * Set method for struct member 'scriptname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Store the script file here so we can re-run it on loading blender, if "Enable Scripts" is on 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__scriptname
 	 */
@@ -545,7 +547,7 @@ public class Script extends CFacade {
 	/**
 	 * Get method for struct member 'scriptarg'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__scriptarg
 	 */
@@ -566,7 +568,7 @@ public class Script extends CFacade {
 	/**
 	 * Set method for struct member 'scriptarg'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__scriptarg
 	 */

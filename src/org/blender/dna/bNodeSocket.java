@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class bNodeSocket extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bNodeSocket.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 389;
 
@@ -92,7 +93,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-defined properties. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -115,7 +116,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'identifier'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unique identifier for mapping. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -138,7 +139,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -161,7 +162,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'storage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX deprecated, only used for the {@link Image}  and OutputFile nodes, should be removed at some point. Custom storage. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -224,7 +225,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'limit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Max. number of links. Read via nodeSocketLinkLimit, because the limit might be defined on the socket type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -247,7 +248,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'in_out'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Input/output type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -270,7 +271,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'typeinfo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type information. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -293,7 +294,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type identifier. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -356,7 +357,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'default_value'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default input value used for unlinked sockets. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -379,7 +380,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'stack_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> execution data Local stack index. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -402,7 +403,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'stack_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX deprecated, kept for forward compatibility 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -467,7 +468,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'total_inputs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime-only cache of the number of input links, for multi-input sockets. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -490,7 +491,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'label'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom dynamic defined label, MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -533,7 +534,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cached data from execution. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -556,7 +557,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'own_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> internal data to retrieve relations and groups DEPRECATED, now uses the generic identifier string instead Group socket identifiers, to find matching pairs after reading files. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -581,7 +582,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'to_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX deprecated, only used for restoring old group node links 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -606,7 +607,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'groupsock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX deprecated, still forward compatible since verification restores pointer from matching own_index. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -631,7 +632,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'link'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A link pointer, set in ntreeUpdateTree. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -654,7 +655,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ns'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX deprecated, socket input values are stored in default_value now. kept for forward compatibility Custom data for inputs, only UI writes in this. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -783,7 +784,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-defined properties. </p>
 	 * @see #__DNA__FIELD__prop
 	 */
@@ -803,7 +804,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-defined properties. </p>
 	 * @see #__DNA__FIELD__prop
 	 */
@@ -821,7 +822,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'identifier'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unique identifier for mapping. </p>
 	 * @see #__DNA__FIELD__identifier
 	 */
@@ -842,7 +843,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'identifier'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Unique identifier for mapping. </p>
 	 * @see #__DNA__FIELD__identifier
 	 */
@@ -867,7 +868,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -888,7 +889,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -913,7 +914,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'storage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX deprecated, only used for the {@link Image}  and OutputFile nodes, should be removed at some point. Custom storage. </p>
 	 * @see #__DNA__FIELD__storage
 	 */
@@ -933,7 +934,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'storage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX deprecated, only used for the {@link Image}  and OutputFile nodes, should be removed at some point. Custom storage. </p>
 	 * @see #__DNA__FIELD__storage
 	 */
@@ -1007,7 +1008,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'limit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Max. number of links. Read via nodeSocketLinkLimit, because the limit might be defined on the socket type. </p>
 	 * @see #__DNA__FIELD__limit
 	 */
@@ -1024,7 +1025,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'limit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Max. number of links. Read via nodeSocketLinkLimit, because the limit might be defined on the socket type. </p>
 	 * @see #__DNA__FIELD__limit
 	 */
@@ -1041,7 +1042,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'in_out'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Input/output type. </p>
 	 * @see #__DNA__FIELD__in_out
 	 */
@@ -1058,7 +1059,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'in_out'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Input/output type. </p>
 	 * @see #__DNA__FIELD__in_out
 	 */
@@ -1075,7 +1076,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'typeinfo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type information. </p>
 	 * @see #__DNA__FIELD__typeinfo
 	 */
@@ -1095,7 +1096,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'typeinfo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type information. </p>
 	 * @see #__DNA__FIELD__typeinfo
 	 */
@@ -1113,7 +1114,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type identifier. </p>
 	 * @see #__DNA__FIELD__idname
 	 */
@@ -1134,7 +1135,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime type identifier. </p>
 	 * @see #__DNA__FIELD__idname
 	 */
@@ -1215,7 +1216,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'default_value'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default input value used for unlinked sockets. </p>
 	 * @see #__DNA__FIELD__default_value
 	 */
@@ -1235,7 +1236,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'default_value'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Default input value used for unlinked sockets. </p>
 	 * @see #__DNA__FIELD__default_value
 	 */
@@ -1253,7 +1254,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'stack_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> execution data Local stack index. </p>
 	 * @see #__DNA__FIELD__stack_index
 	 */
@@ -1270,7 +1271,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'stack_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> execution data Local stack index. </p>
 	 * @see #__DNA__FIELD__stack_index
 	 */
@@ -1287,7 +1288,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'stack_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX deprecated, kept for forward compatibility 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1306,7 +1307,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'stack_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX deprecated, kept for forward compatibility 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1393,7 +1394,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'total_inputs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime-only cache of the number of input links, for multi-input sockets. </p>
 	 * @see #__DNA__FIELD__total_inputs
 	 */
@@ -1410,7 +1411,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'total_inputs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime-only cache of the number of input links, for multi-input sockets. </p>
 	 * @see #__DNA__FIELD__total_inputs
 	 */
@@ -1427,7 +1428,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'label'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom dynamic defined label, MAX_NAME. </p>
 	 * @see #__DNA__FIELD__label
 	 */
@@ -1448,7 +1449,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'label'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom dynamic defined label, MAX_NAME. </p>
 	 * @see #__DNA__FIELD__label
 	 */
@@ -1513,7 +1514,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cached data from execution. </p>
 	 * @see #__DNA__FIELD__cache
 	 */
@@ -1533,7 +1534,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cached data from execution. </p>
 	 * @see #__DNA__FIELD__cache
 	 */
@@ -1551,7 +1552,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'own_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> internal data to retrieve relations and groups DEPRECATED, now uses the generic identifier string instead Group socket identifiers, to find matching pairs after reading files. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1570,7 +1571,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'own_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> internal data to retrieve relations and groups DEPRECATED, now uses the generic identifier string instead Group socket identifiers, to find matching pairs after reading files. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1589,7 +1590,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'to_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX deprecated, only used for restoring old group node links 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1608,7 +1609,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'to_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX deprecated, only used for restoring old group node links 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1627,7 +1628,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'groupsock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX deprecated, still forward compatible since verification restores pointer from matching own_index. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1649,7 +1650,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'groupsock'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX deprecated, still forward compatible since verification restores pointer from matching own_index. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1669,7 +1670,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'link'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A link pointer, set in ntreeUpdateTree. </p>
 	 * @see #__DNA__FIELD__link
 	 */
@@ -1689,7 +1690,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'link'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A link pointer, set in ntreeUpdateTree. </p>
 	 * @see #__DNA__FIELD__link
 	 */
@@ -1707,7 +1708,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Get method for struct member 'ns'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX deprecated, socket input values are stored in default_value now. kept for forward compatibility Custom data for inputs, only UI writes in this. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1726,7 +1727,7 @@ public class bNodeSocket extends CFacade {
 	/**
 	 * Set method for struct member 'ns'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX deprecated, socket input values are stored in default_value now. kept for forward compatibility Custom data for inputs, only UI writes in this. 
 	 * @deprecated
 	 *  Deprecated</p>

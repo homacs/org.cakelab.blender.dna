@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,15 +25,15 @@ public class uiList extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for uiList.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 289;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> some list UI data need to be saved in file </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,7 +76,7 @@ public class uiList extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +99,7 @@ public class uiList extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'list_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Defined as UI_MAX_NAME_STR. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,7 +122,7 @@ public class uiList extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layout_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How items are laid out in the list. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -244,7 +245,7 @@ public class uiList extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filter_byname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Filtering data. Defined as UI_MAX_NAME_STR. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -307,7 +308,7 @@ public class uiList extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom sub-classes properties. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -330,7 +331,7 @@ public class uiList extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'dyn_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dynamic data (runtime). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -361,7 +362,7 @@ public class uiList extends CFacade {
 	/**
 	 * Get method for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> some list UI data need to be saved in file </p>
 	 * @see #__DNA__FIELD__next
 	 */
@@ -381,7 +382,7 @@ public class uiList extends CFacade {
 	/**
 	 * Set method for struct member 'next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> some list UI data need to be saved in file </p>
 	 * @see #__DNA__FIELD__next
 	 */
@@ -431,7 +432,7 @@ public class uiList extends CFacade {
 	/**
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -451,7 +452,7 @@ public class uiList extends CFacade {
 	/**
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. </p>
 	 * @see #__DNA__FIELD__type
 	 */
@@ -469,7 +470,7 @@ public class uiList extends CFacade {
 	/**
 	 * Get method for struct member 'list_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Defined as UI_MAX_NAME_STR. </p>
 	 * @see #__DNA__FIELD__list_id
 	 */
@@ -490,7 +491,7 @@ public class uiList extends CFacade {
 	/**
 	 * Set method for struct member 'list_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Defined as UI_MAX_NAME_STR. </p>
 	 * @see #__DNA__FIELD__list_id
 	 */
@@ -515,7 +516,7 @@ public class uiList extends CFacade {
 	/**
 	 * Get method for struct member 'layout_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How items are laid out in the list. </p>
 	 * @see #__DNA__FIELD__layout_type
 	 */
@@ -532,7 +533,7 @@ public class uiList extends CFacade {
 	/**
 	 * Set method for struct member 'layout_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> How items are laid out in the list. </p>
 	 * @see #__DNA__FIELD__layout_type
 	 */
@@ -689,7 +690,7 @@ public class uiList extends CFacade {
 	/**
 	 * Get method for struct member 'filter_byname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Filtering data. Defined as UI_MAX_NAME_STR. </p>
 	 * @see #__DNA__FIELD__filter_byname
 	 */
@@ -710,7 +711,7 @@ public class uiList extends CFacade {
 	/**
 	 * Set method for struct member 'filter_byname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Filtering data. Defined as UI_MAX_NAME_STR. </p>
 	 * @see #__DNA__FIELD__filter_byname
 	 */
@@ -791,7 +792,7 @@ public class uiList extends CFacade {
 	/**
 	 * Get method for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom sub-classes properties. </p>
 	 * @see #__DNA__FIELD__properties
 	 */
@@ -811,7 +812,7 @@ public class uiList extends CFacade {
 	/**
 	 * Set method for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom sub-classes properties. </p>
 	 * @see #__DNA__FIELD__properties
 	 */
@@ -829,7 +830,7 @@ public class uiList extends CFacade {
 	/**
 	 * Get method for struct member 'dyn_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dynamic data (runtime). </p>
 	 * @see #__DNA__FIELD__dyn_data
 	 */
@@ -849,7 +850,7 @@ public class uiList extends CFacade {
 	/**
 	 * Set method for struct member 'dyn_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dynamic data (runtime). </p>
 	 * @see #__DNA__FIELD__dyn_data
 	 */

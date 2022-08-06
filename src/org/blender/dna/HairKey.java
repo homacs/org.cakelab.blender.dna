@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,15 +25,15 @@ public class HairKey extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for HairKey.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 514;
 
 	/**
 	 * Field descriptor (offset) for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Location of hair vertex. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +56,7 @@ public class HairKey extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'time'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Time along hair, default 0-100. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -78,7 +79,7 @@ public class HairKey extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Softbody weight. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -101,7 +102,7 @@ public class HairKey extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'editflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Saved particled edit mode flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -172,7 +173,7 @@ public class HairKey extends CFacade {
 	/**
 	 * Get method for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Location of hair vertex. </p>
 	 * @see #__DNA__FIELD__co
 	 */
@@ -193,7 +194,7 @@ public class HairKey extends CFacade {
 	/**
 	 * Set method for struct member 'co'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Location of hair vertex. </p>
 	 * @see #__DNA__FIELD__co
 	 */
@@ -218,7 +219,7 @@ public class HairKey extends CFacade {
 	/**
 	 * Get method for struct member 'time'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Time along hair, default 0-100. </p>
 	 * @see #__DNA__FIELD__time
 	 */
@@ -235,7 +236,7 @@ public class HairKey extends CFacade {
 	/**
 	 * Set method for struct member 'time'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Time along hair, default 0-100. </p>
 	 * @see #__DNA__FIELD__time
 	 */
@@ -252,7 +253,7 @@ public class HairKey extends CFacade {
 	/**
 	 * Get method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Softbody weight. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
@@ -269,7 +270,7 @@ public class HairKey extends CFacade {
 	/**
 	 * Set method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Softbody weight. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
@@ -286,7 +287,7 @@ public class HairKey extends CFacade {
 	/**
 	 * Get method for struct member 'editflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Saved particled edit mode flags. </p>
 	 * @see #__DNA__FIELD__editflag
 	 */
@@ -303,7 +304,7 @@ public class HairKey extends CFacade {
 	/**
 	 * Set method for struct member 'editflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Saved particled edit mode flags. </p>
 	 * @see #__DNA__FIELD__editflag
 	 */

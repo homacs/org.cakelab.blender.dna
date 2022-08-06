@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,8 +24,8 @@ public class NodeFrame extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for NodeFrame.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 403;
 
@@ -51,7 +52,7 @@ public class NodeFrame extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'label_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Font size to use for displaying the label
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -110,7 +111,7 @@ public class NodeFrame extends CFacade {
 	/**
 	 * Get method for struct member 'label_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Font size to use for displaying the label
 	 * @see #__DNA__FIELD__label_size
 	 */
@@ -127,7 +128,7 @@ public class NodeFrame extends CFacade {
 	/**
 	 * Set method for struct member 'label_size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Font size to use for displaying the label
 	 * @see #__DNA__FIELD__label_size
 	 */

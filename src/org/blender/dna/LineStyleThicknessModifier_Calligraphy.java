@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'LineStyleThicknessModifier_Calligraphy'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Calligraphic thickness modifier </p>
  */
 
@@ -25,8 +27,8 @@ public class LineStyleThicknessModifier_Calligraphy extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for LineStyleThicknessModifier_Calligraphy.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 699;
 
@@ -93,8 +95,9 @@ public class LineStyleThicknessModifier_Calligraphy extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'orientation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Angle of the main direction<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Angle of the main direction
+	 * <h4>Blender Source Code</h4>
 	 * <p> In radians!. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -237,8 +240,9 @@ public class LineStyleThicknessModifier_Calligraphy extends CFacade {
 	/**
 	 * Get method for struct member 'orientation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Angle of the main direction<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Angle of the main direction
+	 * <h4>Blender Source Code</h4>
 	 * <p> In radians!. </p>
 	 * @see #__DNA__FIELD__orientation
 	 */
@@ -255,8 +259,9 @@ public class LineStyleThicknessModifier_Calligraphy extends CFacade {
 	/**
 	 * Set method for struct member 'orientation'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Angle of the main direction<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Angle of the main direction
+	 * <h4>Blender Source Code</h4>
 	 * <p> In radians!. </p>
 	 * @see #__DNA__FIELD__orientation
 	 */

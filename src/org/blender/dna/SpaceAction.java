@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,8 +14,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpaceAction'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
- * <p> Action Editor Space. This is defined here instead of in {@link DNA_space_types.h}  </p>
+ * 
+ * <h4>Blender Source Code</h4>
+ * <p> Action Editor Space. This is defined here instead of in DNA_space_types.h  </p>
  */
 
 @CMetaData(size32=292, size64=336)
@@ -25,8 +27,8 @@ public class SpaceAction extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for SpaceAction.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 351;
 
@@ -73,7 +75,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -156,7 +158,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. Copied to region. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -181,7 +183,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'action'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The currently active action. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -204,7 +206,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ads'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The currently active context (when not showing action). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -227,7 +229,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'timeslide'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For Time-Slide transform mode drawing - current frame?. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -270,7 +272,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Editing}  context </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -293,7 +295,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage for sub-space types. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -316,7 +318,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'autosnap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Automatic keyframe snapping mode . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -339,7 +341,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cache_display'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eTimeline_Cache_Flag). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -474,7 +476,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -491,7 +493,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -612,7 +614,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Get method for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. Copied to region. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -631,7 +633,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Set method for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. Copied to region. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -658,7 +660,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Get method for struct member 'action'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The currently active action. </p>
 	 * @see #__DNA__FIELD__action
 	 */
@@ -678,7 +680,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Set method for struct member 'action'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The currently active action. </p>
 	 * @see #__DNA__FIELD__action
 	 */
@@ -696,7 +698,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Get method for struct member 'ads'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The currently active context (when not showing action). </p>
 	 * @see #__DNA__FIELD__ads
 	 */
@@ -713,7 +715,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Set method for struct member 'ads'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The currently active context (when not showing action). </p>
 	 * @see #__DNA__FIELD__ads
 	 */
@@ -738,7 +740,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Get method for struct member 'timeslide'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For Time-Slide transform mode drawing - current frame?. </p>
 	 * @see #__DNA__FIELD__timeslide
 	 */
@@ -755,7 +757,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Set method for struct member 'timeslide'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For Time-Slide transform mode drawing - current frame?. </p>
 	 * @see #__DNA__FIELD__timeslide
 	 */
@@ -800,7 +802,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Editing}  context </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -817,7 +819,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Editing}  context </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -834,7 +836,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Get method for struct member 'mode_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage for sub-space types. </p>
 	 * @see #__DNA__FIELD__mode_prev
 	 */
@@ -851,7 +853,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Set method for struct member 'mode_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage for sub-space types. </p>
 	 * @see #__DNA__FIELD__mode_prev
 	 */
@@ -868,7 +870,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Get method for struct member 'autosnap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Automatic keyframe snapping mode . </p>
 	 * @see #__DNA__FIELD__autosnap
 	 */
@@ -885,7 +887,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Set method for struct member 'autosnap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Automatic keyframe snapping mode . </p>
 	 * @see #__DNA__FIELD__autosnap
 	 */
@@ -902,7 +904,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Get method for struct member 'cache_display'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eTimeline_Cache_Flag). </p>
 	 * @see #__DNA__FIELD__cache_display
 	 */
@@ -919,7 +921,7 @@ public class SpaceAction extends CFacade {
 	/**
 	 * Set method for struct member 'cache_display'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> (eTimeline_Cache_Flag). </p>
 	 * @see #__DNA__FIELD__cache_display
 	 */

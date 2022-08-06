@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPDlayer'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Grease-Pencil Annotations - 'Layer' </p>
  */
 
@@ -25,8 +27,8 @@ public class bGPDlayer extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bGPDlayer.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 541;
 
@@ -73,7 +75,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'frames'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of annotations to display for frames ({@link bGPDframe}  list). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,7 +98,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'actframe'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active frame (should be the frame that is currently being displayed). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -119,7 +121,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for layer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -142,7 +144,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'onion_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Per-layer onion-skinning flags (eGPDlayer_OnionFlag). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -165,7 +167,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color for strokes in layers. Used for annotations, and for ruler (which uses GPencil internally). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -188,7 +190,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fill'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fill color for strokes in layers. Not used anymore (was only for). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -211,7 +213,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'info'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name/reference info for this layer (i.e. "director's comments, 12/.3") needs to be kept unique, as it's used as the layer identifier </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -234,7 +236,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Thickness to apply to strokes (Annotations). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -257,7 +259,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used to filter groups of layers in modifiers. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -280,7 +282,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parent object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -303,7 +305,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'inverse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inverse matrix (only used if parented). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -326,7 +328,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parsubstr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> String describing subobject info, MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -369,7 +371,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'line_change'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Thickness adjustment. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -392,7 +394,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tintcolor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color used to tint layer, alpha value is used as factor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -415,7 +417,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Opacity of the layer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -438,7 +440,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'viewlayername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the layer used to filter render output. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -461,7 +463,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'blend_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blend modes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -484,7 +486,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vertex_paint_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex {@link Paint}  opacity by Layer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -507,7 +509,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gstep'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> annotation onion skin Ghosts Before: max number of ghost frames to show between active frame and the one before it (0 = only the ghost itself). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -530,7 +532,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gstep_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ghosts After: max number of ghost frames to show after active frame and the following it (0 = only the ghost itself). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -553,7 +555,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gcolor_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color for ghosts before the active frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -576,7 +578,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gcolor_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color for ghosts after the active frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -619,7 +621,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mask_layers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mask}  list ({@link bGPDlayer_Mask} ). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -642,7 +644,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'act_mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Current {@link Mask}  index (noted base 1). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -685,7 +687,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'location'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer transforms. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -900,7 +902,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'frames'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of annotations to display for frames ({@link bGPDframe}  list). </p>
 	 * @see #__DNA__FIELD__frames
 	 */
@@ -917,7 +919,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'frames'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of annotations to display for frames ({@link bGPDframe}  list). </p>
 	 * @see #__DNA__FIELD__frames
 	 */
@@ -942,7 +944,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'actframe'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active frame (should be the frame that is currently being displayed). </p>
 	 * @see #__DNA__FIELD__actframe
 	 */
@@ -962,7 +964,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'actframe'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Active frame (should be the frame that is currently being displayed). </p>
 	 * @see #__DNA__FIELD__actframe
 	 */
@@ -980,7 +982,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for layer. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -997,7 +999,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for layer. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -1014,7 +1016,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'onion_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Per-layer onion-skinning flags (eGPDlayer_OnionFlag). </p>
 	 * @see #__DNA__FIELD__onion_flag
 	 */
@@ -1031,7 +1033,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'onion_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Per-layer onion-skinning flags (eGPDlayer_OnionFlag). </p>
 	 * @see #__DNA__FIELD__onion_flag
 	 */
@@ -1048,7 +1050,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color for strokes in layers. Used for annotations, and for ruler (which uses GPencil internally). </p>
 	 * @see #__DNA__FIELD__color
 	 */
@@ -1069,7 +1071,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'color'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color for strokes in layers. Used for annotations, and for ruler (which uses GPencil internally). </p>
 	 * @see #__DNA__FIELD__color
 	 */
@@ -1094,7 +1096,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'fill'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fill color for strokes in layers. Not used anymore (was only for). </p>
 	 * @see #__DNA__FIELD__fill
 	 */
@@ -1115,7 +1117,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'fill'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fill color for strokes in layers. Not used anymore (was only for). </p>
 	 * @see #__DNA__FIELD__fill
 	 */
@@ -1140,7 +1142,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'info'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name/reference info for this layer (i.e. "director's comments, 12/.3") needs to be kept unique, as it's used as the layer identifier </p>
 	 * @see #__DNA__FIELD__info
 	 */
@@ -1161,7 +1163,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'info'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name/reference info for this layer (i.e. "director's comments, 12/.3") needs to be kept unique, as it's used as the layer identifier </p>
 	 * @see #__DNA__FIELD__info
 	 */
@@ -1186,7 +1188,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Thickness to apply to strokes (Annotations). </p>
 	 * @see #__DNA__FIELD__thickness
 	 */
@@ -1203,7 +1205,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'thickness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Thickness to apply to strokes (Annotations). </p>
 	 * @see #__DNA__FIELD__thickness
 	 */
@@ -1220,7 +1222,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used to filter groups of layers in modifiers. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
@@ -1237,7 +1239,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Used to filter groups of layers in modifiers. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
@@ -1254,7 +1256,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parent object. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -1274,7 +1276,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parent object. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -1292,7 +1294,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'inverse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inverse matrix (only used if parented). </p>
 	 * @see #__DNA__FIELD__inverse
 	 */
@@ -1314,7 +1316,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'inverse'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inverse matrix (only used if parented). </p>
 	 * @see #__DNA__FIELD__inverse
 	 */
@@ -1339,7 +1341,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'parsubstr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> String describing subobject info, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__parsubstr
 	 */
@@ -1360,7 +1362,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'parsubstr'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> String describing subobject info, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__parsubstr
 	 */
@@ -1413,7 +1415,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'line_change'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Thickness adjustment. </p>
 	 * @see #__DNA__FIELD__line_change
 	 */
@@ -1430,7 +1432,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'line_change'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Thickness adjustment. </p>
 	 * @see #__DNA__FIELD__line_change
 	 */
@@ -1447,7 +1449,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'tintcolor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color used to tint layer, alpha value is used as factor. </p>
 	 * @see #__DNA__FIELD__tintcolor
 	 */
@@ -1468,7 +1470,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'tintcolor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color used to tint layer, alpha value is used as factor. </p>
 	 * @see #__DNA__FIELD__tintcolor
 	 */
@@ -1493,7 +1495,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Opacity of the layer. </p>
 	 * @see #__DNA__FIELD__opacity
 	 */
@@ -1510,7 +1512,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Opacity of the layer. </p>
 	 * @see #__DNA__FIELD__opacity
 	 */
@@ -1527,7 +1529,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'viewlayername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the layer used to filter render output. </p>
 	 * @see #__DNA__FIELD__viewlayername
 	 */
@@ -1548,7 +1550,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'viewlayername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the layer used to filter render output. </p>
 	 * @see #__DNA__FIELD__viewlayername
 	 */
@@ -1573,7 +1575,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'blend_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blend modes. </p>
 	 * @see #__DNA__FIELD__blend_mode
 	 */
@@ -1590,7 +1592,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'blend_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blend modes. </p>
 	 * @see #__DNA__FIELD__blend_mode
 	 */
@@ -1607,7 +1609,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'vertex_paint_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex {@link Paint}  opacity by Layer. </p>
 	 * @see #__DNA__FIELD__vertex_paint_opacity
 	 */
@@ -1624,7 +1626,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'vertex_paint_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vertex {@link Paint}  opacity by Layer. </p>
 	 * @see #__DNA__FIELD__vertex_paint_opacity
 	 */
@@ -1641,7 +1643,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'gstep'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> annotation onion skin Ghosts Before: max number of ghost frames to show between active frame and the one before it (0 = only the ghost itself). </p>
 	 * @see #__DNA__FIELD__gstep
 	 */
@@ -1658,7 +1660,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'gstep'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> annotation onion skin Ghosts Before: max number of ghost frames to show between active frame and the one before it (0 = only the ghost itself). </p>
 	 * @see #__DNA__FIELD__gstep
 	 */
@@ -1675,7 +1677,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'gstep_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ghosts After: max number of ghost frames to show after active frame and the following it (0 = only the ghost itself). </p>
 	 * @see #__DNA__FIELD__gstep_next
 	 */
@@ -1692,7 +1694,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'gstep_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Ghosts After: max number of ghost frames to show after active frame and the following it (0 = only the ghost itself). </p>
 	 * @see #__DNA__FIELD__gstep_next
 	 */
@@ -1709,7 +1711,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'gcolor_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color for ghosts before the active frame. </p>
 	 * @see #__DNA__FIELD__gcolor_prev
 	 */
@@ -1730,7 +1732,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'gcolor_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color for ghosts before the active frame. </p>
 	 * @see #__DNA__FIELD__gcolor_prev
 	 */
@@ -1755,7 +1757,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'gcolor_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color for ghosts after the active frame. </p>
 	 * @see #__DNA__FIELD__gcolor_next
 	 */
@@ -1776,7 +1778,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'gcolor_next'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Color for ghosts after the active frame. </p>
 	 * @see #__DNA__FIELD__gcolor_next
 	 */
@@ -1841,7 +1843,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'mask_layers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mask}  list ({@link bGPDlayer_Mask} ). </p>
 	 * @see #__DNA__FIELD__mask_layers
 	 */
@@ -1858,7 +1860,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'mask_layers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mask}  list ({@link bGPDlayer_Mask} ). </p>
 	 * @see #__DNA__FIELD__mask_layers
 	 */
@@ -1883,7 +1885,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'act_mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Current {@link Mask}  index (noted base 1). </p>
 	 * @see #__DNA__FIELD__act_mask
 	 */
@@ -1900,7 +1902,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'act_mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Current {@link Mask}  index (noted base 1). </p>
 	 * @see #__DNA__FIELD__act_mask
 	 */
@@ -1957,7 +1959,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Get method for struct member 'location'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer transforms. </p>
 	 * @see #__DNA__FIELD__location
 	 */
@@ -1978,7 +1980,7 @@ public class bGPDlayer extends CFacade {
 	/**
 	 * Set method for struct member 'location'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer transforms. </p>
 	 * @see #__DNA__FIELD__location
 	 */

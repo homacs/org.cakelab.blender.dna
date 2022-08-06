@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class VolumeToMeshModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for VolumeToMeshModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 157;
 
@@ -52,7 +53,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This is the volume object that is supposed to be converted to a mesh. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -115,7 +116,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> VolumeToMeshFlag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -138,7 +139,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'resolution_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> VolumeToMeshResolutionMode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -201,7 +202,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'grid_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -288,7 +289,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This is the volume object that is supposed to be converted to a mesh. </p>
 	 * @see #__DNA__FIELD__object
 	 */
@@ -308,7 +309,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> This is the volume object that is supposed to be converted to a mesh. </p>
 	 * @see #__DNA__FIELD__object
 	 */
@@ -382,7 +383,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> VolumeToMeshFlag </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -399,7 +400,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> VolumeToMeshFlag </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -416,7 +417,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'resolution_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> VolumeToMeshResolutionMode </p>
 	 * @see #__DNA__FIELD__resolution_mode
 	 */
@@ -433,7 +434,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'resolution_mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> VolumeToMeshResolutionMode </p>
 	 * @see #__DNA__FIELD__resolution_mode
 	 */
@@ -506,7 +507,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'grid_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__grid_name
 	 */
@@ -527,7 +528,7 @@ public class VolumeToMeshModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'grid_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__grid_name
 	 */

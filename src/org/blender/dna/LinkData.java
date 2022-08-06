@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,8 +13,10 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'LinkData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
- * simple subclass of Link -- use this when it is not worth defining a custom one...<h4>Blender Source Code:</h4>
+ * 
+ * <h4>Java .Blend</h4>
+ * simple subclass of Link -- use this when it is not worth defining a custom one...
+ * <h4>Blender Source Code</h4>
  * <p> Simple subclass of {@link Link} . Use this when it is not worth defining a custom one. </p>
  */
 
@@ -25,16 +28,13 @@ public class LinkData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for LinkData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 1;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on the next element in linked list
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -55,9 +55,6 @@ public class LinkData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'prev'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on previous element in linked list
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -79,7 +76,7 @@ public class LinkData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * byte stream of arbitrary data.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -109,9 +106,6 @@ public class LinkData extends CFacade {
 
 	/**
 	 * Get method for struct member 'next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on the next element in linked list
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -129,9 +123,6 @@ public class LinkData extends CFacade {
 
 	/**
 	 * Set method for struct member 'next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on the next element in linked list
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -147,9 +138,6 @@ public class LinkData extends CFacade {
 
 	/**
 	 * Get method for struct member 'prev'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on previous element in linked list
 	 * @see #__DNA__FIELD__prev
 	 */
 	
@@ -167,9 +155,6 @@ public class LinkData extends CFacade {
 
 	/**
 	 * Set method for struct member 'prev'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on previous element in linked list
 	 * @see #__DNA__FIELD__prev
 	 */
 	
@@ -186,7 +171,7 @@ public class LinkData extends CFacade {
 	/**
 	 * Get method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * byte stream of arbitrary data.
 	 * @see #__DNA__FIELD__data
 	 */
@@ -206,7 +191,7 @@ public class LinkData extends CFacade {
 	/**
 	 * Set method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * byte stream of arbitrary data.
 	 * @see #__DNA__FIELD__data
 	 */

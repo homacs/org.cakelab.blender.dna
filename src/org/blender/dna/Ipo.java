@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Ipo'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><mdash/>  ID-Datablock <mdash/>  IPO Data-Block </p>
  */
 
@@ -25,8 +27,8 @@ public class Ipo extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for Ipo.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 20;
 
@@ -53,7 +55,7 @@ public class Ipo extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A list of {@link IpoCurve}  structs in a linked list. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -76,7 +78,7 @@ public class Ipo extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cur'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rect defining extents of keyframes?. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -99,7 +101,7 @@ public class Ipo extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'blocktype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blocktype: self-explanatory; showkey: either 0 or 1 (show vertical yellow lines for editing). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -142,7 +144,7 @@ public class Ipo extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'muteipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Muteipo: either 0 or 1 (whether ipo block is muted). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -229,7 +231,7 @@ public class Ipo extends CFacade {
 	/**
 	 * Get method for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A list of {@link IpoCurve}  structs in a linked list. </p>
 	 * @see #__DNA__FIELD__curve
 	 */
@@ -246,7 +248,7 @@ public class Ipo extends CFacade {
 	/**
 	 * Set method for struct member 'curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A list of {@link IpoCurve}  structs in a linked list. </p>
 	 * @see #__DNA__FIELD__curve
 	 */
@@ -271,7 +273,7 @@ public class Ipo extends CFacade {
 	/**
 	 * Get method for struct member 'cur'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rect defining extents of keyframes?. </p>
 	 * @see #__DNA__FIELD__cur
 	 */
@@ -288,7 +290,7 @@ public class Ipo extends CFacade {
 	/**
 	 * Set method for struct member 'cur'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rect defining extents of keyframes?. </p>
 	 * @see #__DNA__FIELD__cur
 	 */
@@ -313,7 +315,7 @@ public class Ipo extends CFacade {
 	/**
 	 * Get method for struct member 'blocktype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blocktype: self-explanatory; showkey: either 0 or 1 (show vertical yellow lines for editing). </p>
 	 * @see #__DNA__FIELD__blocktype
 	 */
@@ -330,7 +332,7 @@ public class Ipo extends CFacade {
 	/**
 	 * Set method for struct member 'blocktype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blocktype: self-explanatory; showkey: either 0 or 1 (show vertical yellow lines for editing). </p>
 	 * @see #__DNA__FIELD__blocktype
 	 */
@@ -375,7 +377,7 @@ public class Ipo extends CFacade {
 	/**
 	 * Get method for struct member 'muteipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Muteipo: either 0 or 1 (whether ipo block is muted). </p>
 	 * @see #__DNA__FIELD__muteipo
 	 */
@@ -392,7 +394,7 @@ public class Ipo extends CFacade {
 	/**
 	 * Set method for struct member 'muteipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Muteipo: either 0 or 1 (whether ipo block is muted). </p>
 	 * @see #__DNA__FIELD__muteipo
 	 */

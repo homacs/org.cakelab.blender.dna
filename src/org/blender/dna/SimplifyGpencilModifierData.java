@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class SimplifyGpencilModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for SimplifyGpencilModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 557;
 
@@ -52,7 +53,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,7 +76,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +99,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -123,7 +124,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -146,7 +147,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,7 +170,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of simplify. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -192,7 +193,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of simplify. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -215,7 +216,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'step'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Every n vertex to keep. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -238,7 +239,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -261,7 +262,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sample length </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -284,7 +285,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Merge distance </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -371,7 +372,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
@@ -391,7 +392,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'material'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  for filtering. </p>
 	 * @see #__DNA__FIELD__material
 	 */
@@ -409,7 +410,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -430,7 +431,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Layer name. </p>
 	 * @see #__DNA__FIELD__layername
 	 */
@@ -455,7 +456,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -478,7 +479,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Material}  name. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -505,7 +506,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
@@ -522,7 +523,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
@@ -539,7 +540,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -556,7 +557,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -573,7 +574,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of simplify. </p>
 	 * @see #__DNA__FIELD__factor
 	 */
@@ -590,7 +591,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'factor'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Factor of simplify. </p>
 	 * @see #__DNA__FIELD__factor
 	 */
@@ -607,7 +608,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of simplify. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -624,7 +625,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of simplify. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -641,7 +642,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'step'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Every n vertex to keep. </p>
 	 * @see #__DNA__FIELD__step
 	 */
@@ -658,7 +659,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'step'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Every n vertex to keep. </p>
 	 * @see #__DNA__FIELD__step
 	 */
@@ -675,7 +676,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
@@ -692,7 +693,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'layer_pass'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Custom index for passes. </p>
 	 * @see #__DNA__FIELD__layer_pass
 	 */
@@ -709,7 +710,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sample length </p>
 	 * @see #__DNA__FIELD__length
 	 */
@@ -726,7 +727,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Sample length </p>
 	 * @see #__DNA__FIELD__length
 	 */
@@ -743,7 +744,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Merge distance </p>
 	 * @see #__DNA__FIELD__distance
 	 */
@@ -760,7 +761,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Merge distance </p>
 	 * @see #__DNA__FIELD__distance
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class Collection extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for Collection.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 336;
 
@@ -52,7 +53,7 @@ public class Collection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gobject'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link CollectionObject} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,8 +76,9 @@ public class Collection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'children'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collections that are immediate children of this collection<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Collections that are immediate children of this collection
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link CollectionChild} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,9 +100,6 @@ public class Collection extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -122,7 +121,7 @@ public class Collection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -187,8 +186,7 @@ public class Collection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Tools can use this to tag data for their own purposes (initial state is undefined)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime-only, always cleared on file load. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -211,8 +209,9 @@ public class Collection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'lineart_usage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How to use this collection in line art<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How to use this collection in line art
+	 * <h4>Blender Source Code</h4>
 	 * <p> Line Art engine specific </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -235,7 +234,7 @@ public class Collection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'color_tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color tag for a collection
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -258,7 +257,7 @@ public class Collection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. Cache of objects in this collection and all its children. This is created on demand when e.g. some physics simulation needs it, we don't want to have it for every collections due to memory usage reasons. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -281,7 +280,7 @@ public class Collection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object_cache_instanced'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Need this for line art sub-collection selections. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -304,7 +303,7 @@ public class Collection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parents'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. List of collections that are a parent of this datablock. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -327,7 +326,7 @@ public class Collection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -352,7 +351,7 @@ public class Collection extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'view_layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -421,7 +420,7 @@ public class Collection extends CFacade {
 	/**
 	 * Get method for struct member 'gobject'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link CollectionObject} . </p>
 	 * @see #__DNA__FIELD__gobject
 	 */
@@ -438,7 +437,7 @@ public class Collection extends CFacade {
 	/**
 	 * Set method for struct member 'gobject'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link CollectionObject} . </p>
 	 * @see #__DNA__FIELD__gobject
 	 */
@@ -463,8 +462,9 @@ public class Collection extends CFacade {
 	/**
 	 * Get method for struct member 'children'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collections that are immediate children of this collection<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Collections that are immediate children of this collection
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link CollectionChild} . </p>
 	 * @see #__DNA__FIELD__children
 	 */
@@ -481,8 +481,9 @@ public class Collection extends CFacade {
 	/**
 	 * Set method for struct member 'children'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collections that are immediate children of this collection<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Collections that are immediate children of this collection
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link CollectionChild} . </p>
 	 * @see #__DNA__FIELD__children
 	 */
@@ -506,9 +507,6 @@ public class Collection extends CFacade {
 
 	/**
 	 * Get method for struct member 'preview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -526,9 +524,6 @@ public class Collection extends CFacade {
 
 	/**
 	 * Set method for struct member 'preview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -545,7 +540,7 @@ public class Collection extends CFacade {
 	/**
 	 * Get method for struct member 'layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -564,7 +559,7 @@ public class Collection extends CFacade {
 	/**
 	 * Set method for struct member 'layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -651,8 +646,7 @@ public class Collection extends CFacade {
 	/**
 	 * Get method for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Tools can use this to tag data for their own purposes (initial state is undefined)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime-only, always cleared on file load. </p>
 	 * @see #__DNA__FIELD__tag
 	 */
@@ -669,8 +663,7 @@ public class Collection extends CFacade {
 	/**
 	 * Set method for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Tools can use this to tag data for their own purposes (initial state is undefined)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime-only, always cleared on file load. </p>
 	 * @see #__DNA__FIELD__tag
 	 */
@@ -687,8 +680,9 @@ public class Collection extends CFacade {
 	/**
 	 * Get method for struct member 'lineart_usage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How to use this collection in line art<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How to use this collection in line art
+	 * <h4>Blender Source Code</h4>
 	 * <p> Line Art engine specific </p>
 	 * @see #__DNA__FIELD__lineart_usage
 	 */
@@ -705,8 +699,9 @@ public class Collection extends CFacade {
 	/**
 	 * Set method for struct member 'lineart_usage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How to use this collection in line art<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * How to use this collection in line art
+	 * <h4>Blender Source Code</h4>
 	 * <p> Line Art engine specific </p>
 	 * @see #__DNA__FIELD__lineart_usage
 	 */
@@ -723,7 +718,7 @@ public class Collection extends CFacade {
 	/**
 	 * Get method for struct member 'color_tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color tag for a collection
 	 * @see #__DNA__FIELD__color_tag
 	 */
@@ -740,7 +735,7 @@ public class Collection extends CFacade {
 	/**
 	 * Set method for struct member 'color_tag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Color tag for a collection
 	 * @see #__DNA__FIELD__color_tag
 	 */
@@ -757,7 +752,7 @@ public class Collection extends CFacade {
 	/**
 	 * Get method for struct member 'object_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. Cache of objects in this collection and all its children. This is created on demand when e.g. some physics simulation needs it, we don't want to have it for every collections due to memory usage reasons. </p>
 	 * @see #__DNA__FIELD__object_cache
 	 */
@@ -774,7 +769,7 @@ public class Collection extends CFacade {
 	/**
 	 * Set method for struct member 'object_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. Cache of objects in this collection and all its children. This is created on demand when e.g. some physics simulation needs it, we don't want to have it for every collections due to memory usage reasons. </p>
 	 * @see #__DNA__FIELD__object_cache
 	 */
@@ -799,7 +794,7 @@ public class Collection extends CFacade {
 	/**
 	 * Get method for struct member 'object_cache_instanced'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Need this for line art sub-collection selections. </p>
 	 * @see #__DNA__FIELD__object_cache_instanced
 	 */
@@ -816,7 +811,7 @@ public class Collection extends CFacade {
 	/**
 	 * Set method for struct member 'object_cache_instanced'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Need this for line art sub-collection selections. </p>
 	 * @see #__DNA__FIELD__object_cache_instanced
 	 */
@@ -841,7 +836,7 @@ public class Collection extends CFacade {
 	/**
 	 * Get method for struct member 'parents'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. List of collections that are a parent of this datablock. </p>
 	 * @see #__DNA__FIELD__parents
 	 */
@@ -858,7 +853,7 @@ public class Collection extends CFacade {
 	/**
 	 * Set method for struct member 'parents'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime. List of collections that are a parent of this datablock. </p>
 	 * @see #__DNA__FIELD__parents
 	 */
@@ -883,7 +878,7 @@ public class Collection extends CFacade {
 	/**
 	 * Get method for struct member 'collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -905,7 +900,7 @@ public class Collection extends CFacade {
 	/**
 	 * Set method for struct member 'collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Deprecated 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -925,7 +920,7 @@ public class Collection extends CFacade {
 	/**
 	 * Get method for struct member 'view_layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -947,7 +942,7 @@ public class Collection extends CFacade {
 	/**
 	 * Set method for struct member 'view_layer'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>

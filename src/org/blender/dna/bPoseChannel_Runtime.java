@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,8 +24,8 @@ public class bPoseChannel_Runtime extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bPoseChannel_Runtime.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 342;
 
@@ -51,7 +52,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'deform_dual_quat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cached dual quaternion for deformation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -74,7 +75,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> B-Bone shape data: copy of the segment count for validation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -97,7 +98,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_rest_mats'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rest and posed matrices for segments. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -140,7 +141,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_deform_mats'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Delta from rest to pose in matrix and {@link DualQuat}  form. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -227,7 +228,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'deform_dual_quat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cached dual quaternion for deformation. </p>
 	 * @see #__DNA__FIELD__deform_dual_quat
 	 */
@@ -244,7 +245,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'deform_dual_quat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Cached dual quaternion for deformation. </p>
 	 * @see #__DNA__FIELD__deform_dual_quat
 	 */
@@ -269,7 +270,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'bbone_segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> B-Bone shape data: copy of the segment count for validation. </p>
 	 * @see #__DNA__FIELD__bbone_segments
 	 */
@@ -286,7 +287,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'bbone_segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> B-Bone shape data: copy of the segment count for validation. </p>
 	 * @see #__DNA__FIELD__bbone_segments
 	 */
@@ -303,7 +304,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'bbone_rest_mats'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rest and posed matrices for segments. </p>
 	 * @see #__DNA__FIELD__bbone_rest_mats
 	 */
@@ -323,7 +324,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'bbone_rest_mats'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rest and posed matrices for segments. </p>
 	 * @see #__DNA__FIELD__bbone_rest_mats
 	 */
@@ -373,7 +374,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'bbone_deform_mats'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Delta from rest to pose in matrix and {@link DualQuat}  form. </p>
 	 * @see #__DNA__FIELD__bbone_deform_mats
 	 */
@@ -393,7 +394,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'bbone_deform_mats'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Delta from rest to pose in matrix and {@link DualQuat}  form. </p>
 	 * @see #__DNA__FIELD__bbone_deform_mats
 	 */

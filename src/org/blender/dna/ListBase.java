@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,10 +13,12 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ListBase'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
+ * 
+ * <h4>Java .Blend</h4>
  * This is the entry point to work with linked lists. It is for 
  * 			example used in libraries {@link Library}, to provide a reference 
- * 			to the first and the last element of a linked list of library objects.<h4>Blender Source Code:</h4>
+ * 			to the first and the last element of a linked list of library objects.
+ * <h4>Blender Source Code</h4>
  * <p> Never change the size of this! dna_genfile.c detects pointer_size with it. </p>
  */
 
@@ -27,15 +30,15 @@ public class ListBase extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ListBase.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 2;
 
 	/**
 	 * Field descriptor (offset) for struct member 'first'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * first element in the list
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -58,7 +61,7 @@ public class ListBase extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'last'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * last element in the list
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -89,7 +92,7 @@ public class ListBase extends CFacade {
 	/**
 	 * Get method for struct member 'first'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * first element in the list
 	 * @see #__DNA__FIELD__first
 	 */
@@ -109,7 +112,7 @@ public class ListBase extends CFacade {
 	/**
 	 * Set method for struct member 'first'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * first element in the list
 	 * @see #__DNA__FIELD__first
 	 */
@@ -127,7 +130,7 @@ public class ListBase extends CFacade {
 	/**
 	 * Get method for struct member 'last'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * last element in the list
 	 * @see #__DNA__FIELD__last
 	 */
@@ -147,7 +150,7 @@ public class ListBase extends CFacade {
 	/**
 	 * Set method for struct member 'last'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
+	 * <h4>Java .Blend</h4>
 	 * last element in the list
 	 * @see #__DNA__FIELD__last
 	 */

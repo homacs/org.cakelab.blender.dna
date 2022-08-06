@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,15 +25,15 @@ public class MaskSplinePoint extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MaskSplinePoint.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 649;
 
 	/**
 	 * Field descriptor (offset) for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Actual point coordinates and its handles . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -75,7 +76,7 @@ public class MaskSplinePoint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tot_uw'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of uv feather values. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -98,7 +99,7 @@ public class MaskSplinePoint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uw'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Feather UV values. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -121,8 +122,9 @@ public class MaskSplinePoint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parenting information of particular spline point. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -153,7 +155,7 @@ public class MaskSplinePoint extends CFacade {
 	/**
 	 * Get method for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Actual point coordinates and its handles . </p>
 	 * @see #__DNA__FIELD__bezt
 	 */
@@ -170,7 +172,7 @@ public class MaskSplinePoint extends CFacade {
 	/**
 	 * Set method for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Actual point coordinates and its handles . </p>
 	 * @see #__DNA__FIELD__bezt
 	 */
@@ -235,7 +237,7 @@ public class MaskSplinePoint extends CFacade {
 	/**
 	 * Get method for struct member 'tot_uw'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of uv feather values. </p>
 	 * @see #__DNA__FIELD__tot_uw
 	 */
@@ -252,7 +254,7 @@ public class MaskSplinePoint extends CFacade {
 	/**
 	 * Set method for struct member 'tot_uw'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Number of uv feather values. </p>
 	 * @see #__DNA__FIELD__tot_uw
 	 */
@@ -269,7 +271,7 @@ public class MaskSplinePoint extends CFacade {
 	/**
 	 * Get method for struct member 'uw'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Feather UV values. </p>
 	 * @see #__DNA__FIELD__uw
 	 */
@@ -289,7 +291,7 @@ public class MaskSplinePoint extends CFacade {
 	/**
 	 * Set method for struct member 'uw'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Feather UV values. </p>
 	 * @see #__DNA__FIELD__uw
 	 */
@@ -307,8 +309,9 @@ public class MaskSplinePoint extends CFacade {
 	/**
 	 * Get method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parenting information of particular spline point. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -325,8 +328,9 @@ public class MaskSplinePoint extends CFacade {
 	/**
 	 * Set method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
 	 * <p> Parenting information of particular spline point. </p>
 	 * @see #__DNA__FIELD__parent
 	 */

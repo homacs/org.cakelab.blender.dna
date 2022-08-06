@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,15 +25,15 @@ public class UserDef_Experimental extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for UserDef_Experimental.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 280;
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_undo_legacy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Debug options, always available. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -115,7 +116,7 @@ public class UserDef_Experimental extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'use_new_hair_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The following options are automatically sanitized (set to 0) when the release cycle is not alpha. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -266,7 +267,7 @@ public class UserDef_Experimental extends CFacade {
 	/**
 	 * Get method for struct member 'use_undo_legacy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Debug options, always available. </p>
 	 * @see #__DNA__FIELD__use_undo_legacy
 	 */
@@ -283,7 +284,7 @@ public class UserDef_Experimental extends CFacade {
 	/**
 	 * Set method for struct member 'use_undo_legacy'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Debug options, always available. </p>
 	 * @see #__DNA__FIELD__use_undo_legacy
 	 */
@@ -384,7 +385,7 @@ public class UserDef_Experimental extends CFacade {
 	/**
 	 * Get method for struct member 'use_new_hair_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The following options are automatically sanitized (set to 0) when the release cycle is not alpha. </p>
 	 * @see #__DNA__FIELD__use_new_hair_type
 	 */
@@ -401,7 +402,7 @@ public class UserDef_Experimental extends CFacade {
 	/**
 	 * Set method for struct member 'use_new_hair_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The following options are automatically sanitized (set to 0) when the release cycle is not alpha. </p>
 	 * @see #__DNA__FIELD__use_new_hair_type
 	 */

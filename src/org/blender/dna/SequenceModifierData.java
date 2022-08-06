@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SequenceModifierData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> ***************** {@link Sequence}  modifiers ****************** </p>
  */
 
@@ -25,8 +27,8 @@ public class SequenceModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for SequenceModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 317;
 
@@ -113,7 +115,7 @@ public class SequenceModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -136,7 +138,7 @@ public class SequenceModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mask_input_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> mask input, either sequence or mask {@link ID}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -347,7 +349,7 @@ public class SequenceModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -368,7 +370,7 @@ public class SequenceModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -393,7 +395,7 @@ public class SequenceModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'mask_input_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> mask input, either sequence or mask {@link ID}  </p>
 	 * @see #__DNA__FIELD__mask_input_type
 	 */
@@ -410,7 +412,7 @@ public class SequenceModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'mask_input_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> mask input, either sequence or mask {@link ID}  </p>
 	 * @see #__DNA__FIELD__mask_input_type
 	 */

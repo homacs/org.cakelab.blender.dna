@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,15 +24,15 @@ public class PackedFile extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for PackedFile.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 25;
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Size of packed file in bytes
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -74,7 +75,7 @@ public class PackedFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Raw data (bytes, exact content of the embedded file)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -105,7 +106,7 @@ public class PackedFile extends CFacade {
 	/**
 	 * Get method for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Size of packed file in bytes
 	 * @see #__DNA__FIELD__size
 	 */
@@ -122,7 +123,7 @@ public class PackedFile extends CFacade {
 	/**
 	 * Set method for struct member 'size'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Size of packed file in bytes
 	 * @see #__DNA__FIELD__size
 	 */
@@ -167,7 +168,7 @@ public class PackedFile extends CFacade {
 	/**
 	 * Get method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Raw data (bytes, exact content of the embedded file)
 	 * @see #__DNA__FIELD__data
 	 */
@@ -187,7 +188,7 @@ public class PackedFile extends CFacade {
 	/**
 	 * Set method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * (read-only)    Raw data (bytes, exact content of the embedded file)
 	 * @see #__DNA__FIELD__data
 	 */

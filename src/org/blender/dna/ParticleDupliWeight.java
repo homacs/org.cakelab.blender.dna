@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -23,8 +24,8 @@ public class ParticleDupliWeight extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ParticleDupliWeight.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 520;
 
@@ -91,7 +92,7 @@ public class ParticleDupliWeight extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The number of times this object is repeated with respect to other objects
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -134,7 +135,7 @@ public class ParticleDupliWeight extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only updated on file save and used on file load. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -281,7 +282,7 @@ public class ParticleDupliWeight extends CFacade {
 	/**
 	 * Get method for struct member 'count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The number of times this object is repeated with respect to other objects
 	 * @see #__DNA__FIELD__count
 	 */
@@ -298,7 +299,7 @@ public class ParticleDupliWeight extends CFacade {
 	/**
 	 * Set method for struct member 'count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * The number of times this object is repeated with respect to other objects
 	 * @see #__DNA__FIELD__count
 	 */
@@ -343,7 +344,7 @@ public class ParticleDupliWeight extends CFacade {
 	/**
 	 * Get method for struct member 'index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only updated on file save and used on file load. </p>
 	 * @see #__DNA__FIELD__index
 	 */
@@ -360,7 +361,7 @@ public class ParticleDupliWeight extends CFacade {
 	/**
 	 * Set method for struct member 'index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Only updated on file save and used on file load. </p>
 	 * @see #__DNA__FIELD__index
 	 */

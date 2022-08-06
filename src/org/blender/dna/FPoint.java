@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FPoint'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p>{@link FPoint}  (fpt)</p><p> This is the bare-minimum data required storing motion samples. Should be more efficient than using BPoints, which contain a lot of other unnecessary data... </p>
  */
 
@@ -25,15 +27,15 @@ public class FPoint extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for FPoint.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 599;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vec'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Time + value. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +58,7 @@ public class FPoint extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selection info. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -107,7 +109,7 @@ public class FPoint extends CFacade {
 	/**
 	 * Get method for struct member 'vec'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Time + value. </p>
 	 * @see #__DNA__FIELD__vec
 	 */
@@ -128,7 +130,7 @@ public class FPoint extends CFacade {
 	/**
 	 * Set method for struct member 'vec'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Time + value. </p>
 	 * @see #__DNA__FIELD__vec
 	 */
@@ -153,7 +155,7 @@ public class FPoint extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selection info. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -170,7 +172,7 @@ public class FPoint extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Selection info. </p>
 	 * @see #__DNA__FIELD__flag
 	 */

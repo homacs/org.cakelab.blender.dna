@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MaskLayerShape'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> one per frame </p>
  */
 
@@ -25,8 +27,8 @@ public class MaskLayerShape extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MaskLayerShape.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 651;
 
@@ -73,7 +75,7 @@ public class MaskLayerShape extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> U coordinate along spline segment and weight of this point. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,7 +98,7 @@ public class MaskLayerShape extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tot_vert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -119,7 +121,7 @@ public class MaskLayerShape extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Different flags of this point. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -142,7 +144,7 @@ public class MaskLayerShape extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation flag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -257,7 +259,7 @@ public class MaskLayerShape extends CFacade {
 	/**
 	 * Get method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> U coordinate along spline segment and weight of this point. </p>
 	 * @see #__DNA__FIELD__data
 	 */
@@ -277,7 +279,7 @@ public class MaskLayerShape extends CFacade {
 	/**
 	 * Set method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> U coordinate along spline segment and weight of this point. </p>
 	 * @see #__DNA__FIELD__data
 	 */
@@ -295,7 +297,7 @@ public class MaskLayerShape extends CFacade {
 	/**
 	 * Get method for struct member 'tot_vert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__tot_vert
 	 */
@@ -312,7 +314,7 @@ public class MaskLayerShape extends CFacade {
 	/**
 	 * Set method for struct member 'tot_vert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__tot_vert
 	 */
@@ -329,7 +331,7 @@ public class MaskLayerShape extends CFacade {
 	/**
 	 * Get method for struct member 'frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Different flags of this point. </p>
 	 * @see #__DNA__FIELD__frame
 	 */
@@ -346,7 +348,7 @@ public class MaskLayerShape extends CFacade {
 	/**
 	 * Set method for struct member 'frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Different flags of this point. </p>
 	 * @see #__DNA__FIELD__frame
 	 */
@@ -363,7 +365,7 @@ public class MaskLayerShape extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -380,7 +382,7 @@ public class MaskLayerShape extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */

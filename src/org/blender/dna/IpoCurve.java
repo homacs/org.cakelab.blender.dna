@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'IpoCurve'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><mdash/>  IPO {@link Curve}  <mdash/>  IPO {@link Curve}  </p>
  */
 
@@ -24,8 +26,8 @@ public class IpoCurve extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for IpoCurve.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 19;
 
@@ -72,7 +74,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of BPoints (sizeof(BPoint) * totvert) - i.e. baked/imported data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -95,7 +97,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of BezTriples (sizeof(BezTriple) * totvert) - i.e. user-editable keyframes . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -118,7 +120,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'maxrct'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bounding boxes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -161,7 +163,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'blocktype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blocktype= ipo-blocktype; adrcode= type of ipo-curve; vartype= 'format' of data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -224,7 +226,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of BezTriples (i.e. keyframes) on curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -247,7 +249,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Interpolation and extrapolation modes . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -290,7 +292,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag= settings; rt= ???. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -333,7 +335,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ymin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimum/maximum y-extents for curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -376,7 +378,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bitmask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ???. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -399,7 +401,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'slide_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimum/maximum values for sliders (in action editor). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -442,7 +444,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value of ipo-curve for current frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -465,7 +467,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'driver'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to ipo-driver for this curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -560,7 +562,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Get method for struct member 'bp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of BPoints (sizeof(BPoint) * totvert) - i.e. baked/imported data. </p>
 	 * @see #__DNA__FIELD__bp
 	 */
@@ -580,7 +582,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Set method for struct member 'bp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of BPoints (sizeof(BPoint) * totvert) - i.e. baked/imported data. </p>
 	 * @see #__DNA__FIELD__bp
 	 */
@@ -598,7 +600,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Get method for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of BezTriples (sizeof(BezTriple) * totvert) - i.e. user-editable keyframes . </p>
 	 * @see #__DNA__FIELD__bezt
 	 */
@@ -618,7 +620,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Set method for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of BezTriples (sizeof(BezTriple) * totvert) - i.e. user-editable keyframes . </p>
 	 * @see #__DNA__FIELD__bezt
 	 */
@@ -636,7 +638,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Get method for struct member 'maxrct'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bounding boxes. </p>
 	 * @see #__DNA__FIELD__maxrct
 	 */
@@ -653,7 +655,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Set method for struct member 'maxrct'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Bounding boxes. </p>
 	 * @see #__DNA__FIELD__maxrct
 	 */
@@ -714,7 +716,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Get method for struct member 'blocktype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blocktype= ipo-blocktype; adrcode= type of ipo-curve; vartype= 'format' of data. </p>
 	 * @see #__DNA__FIELD__blocktype
 	 */
@@ -731,7 +733,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Set method for struct member 'blocktype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Blocktype= ipo-blocktype; adrcode= type of ipo-curve; vartype= 'format' of data. </p>
 	 * @see #__DNA__FIELD__blocktype
 	 */
@@ -804,7 +806,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Get method for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of BezTriples (i.e. keyframes) on curve. </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
@@ -821,7 +823,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Set method for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of BezTriples (i.e. keyframes) on curve. </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
@@ -838,7 +840,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Get method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Interpolation and extrapolation modes . </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
@@ -855,7 +857,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Set method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Interpolation and extrapolation modes . </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
@@ -900,7 +902,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag= settings; rt= ???. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -917,7 +919,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag= settings; rt= ???. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -962,7 +964,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Get method for struct member 'ymin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimum/maximum y-extents for curve. </p>
 	 * @see #__DNA__FIELD__ymin
 	 */
@@ -979,7 +981,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Set method for struct member 'ymin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimum/maximum y-extents for curve. </p>
 	 * @see #__DNA__FIELD__ymin
 	 */
@@ -1024,7 +1026,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Get method for struct member 'bitmask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ???. </p>
 	 * @see #__DNA__FIELD__bitmask
 	 */
@@ -1041,7 +1043,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Set method for struct member 'bitmask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ???. </p>
 	 * @see #__DNA__FIELD__bitmask
 	 */
@@ -1058,7 +1060,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Get method for struct member 'slide_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimum/maximum values for sliders (in action editor). </p>
 	 * @see #__DNA__FIELD__slide_min
 	 */
@@ -1075,7 +1077,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Set method for struct member 'slide_min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Minimum/maximum values for sliders (in action editor). </p>
 	 * @see #__DNA__FIELD__slide_min
 	 */
@@ -1120,7 +1122,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Get method for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value of ipo-curve for current frame. </p>
 	 * @see #__DNA__FIELD__curval
 	 */
@@ -1137,7 +1139,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Set method for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Value of ipo-curve for current frame. </p>
 	 * @see #__DNA__FIELD__curval
 	 */
@@ -1154,7 +1156,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Get method for struct member 'driver'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to ipo-driver for this curve. </p>
 	 * @see #__DNA__FIELD__driver
 	 */
@@ -1174,7 +1176,7 @@ public class IpoCurve extends CFacade {
 	/**
 	 * Set method for struct member 'driver'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pointer to ipo-driver for this curve. </p>
 	 * @see #__DNA__FIELD__driver
 	 */

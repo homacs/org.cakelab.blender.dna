@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'TexMapping'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> used for mapping and texture nodes. note: rot is now in radians </p>
  */
 
@@ -25,8 +27,8 @@ public class TexMapping extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for TexMapping.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 45;
 
@@ -233,7 +235,7 @@ public class TexMapping extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum value for clipping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -256,7 +258,7 @@ public class TexMapping extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum value for clipping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -636,7 +638,7 @@ public class TexMapping extends CFacade {
 	/**
 	 * Get method for struct member 'min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum value for clipping
 	 * @see #__DNA__FIELD__min
 	 */
@@ -657,7 +659,7 @@ public class TexMapping extends CFacade {
 	/**
 	 * Set method for struct member 'min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Minimum value for clipping
 	 * @see #__DNA__FIELD__min
 	 */
@@ -682,7 +684,7 @@ public class TexMapping extends CFacade {
 	/**
 	 * Get method for struct member 'max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum value for clipping
 	 * @see #__DNA__FIELD__max
 	 */
@@ -703,7 +705,7 @@ public class TexMapping extends CFacade {
 	/**
 	 * Set method for struct member 'max'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Maximum value for clipping
 	 * @see #__DNA__FIELD__max
 	 */

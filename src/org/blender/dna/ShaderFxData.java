@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class ShaderFxData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ShaderFxData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 565;
 
@@ -152,7 +153,7 @@ public class ShaderFxData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ui_expand_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> An "expand" bit for each of the constraint's (sub)panels (uiPanelDataExpansion). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -175,7 +176,7 @@ public class ShaderFxData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -414,7 +415,7 @@ public class ShaderFxData extends CFacade {
 	/**
 	 * Get method for struct member 'ui_expand_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> An "expand" bit for each of the constraint's (sub)panels (uiPanelDataExpansion). </p>
 	 * @see #__DNA__FIELD__ui_expand_flag
 	 */
@@ -431,7 +432,7 @@ public class ShaderFxData extends CFacade {
 	/**
 	 * Set method for struct member 'ui_expand_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> An "expand" bit for each of the constraint's (sub)panels (uiPanelDataExpansion). </p>
 	 * @see #__DNA__FIELD__ui_expand_flag
 	 */
@@ -448,7 +449,7 @@ public class ShaderFxData extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -469,7 +470,7 @@ public class ShaderFxData extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */

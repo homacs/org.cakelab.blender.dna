@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'uiFont'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> default fonts to load/initialize first font is the default (index 0), others optional </p>
  */
 
@@ -25,8 +27,8 @@ public class uiFont extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for uiFont.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 256;
 
@@ -73,7 +75,7 @@ public class uiFont extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filename'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,7 +98,7 @@ public class uiFont extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'blf_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> From blfont lib. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -119,7 +121,7 @@ public class uiFont extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'uifont_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Own id (eUIFont_ID). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -142,7 +144,7 @@ public class uiFont extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'r_to_l'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fonts that read from left to right. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -257,7 +259,7 @@ public class uiFont extends CFacade {
 	/**
 	 * Get method for struct member 'filename'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__filename
 	 */
@@ -278,7 +280,7 @@ public class uiFont extends CFacade {
 	/**
 	 * Set method for struct member 'filename'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__filename
 	 */
@@ -303,7 +305,7 @@ public class uiFont extends CFacade {
 	/**
 	 * Get method for struct member 'blf_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> From blfont lib. </p>
 	 * @see #__DNA__FIELD__blf_id
 	 */
@@ -320,7 +322,7 @@ public class uiFont extends CFacade {
 	/**
 	 * Set method for struct member 'blf_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> From blfont lib. </p>
 	 * @see #__DNA__FIELD__blf_id
 	 */
@@ -337,7 +339,7 @@ public class uiFont extends CFacade {
 	/**
 	 * Get method for struct member 'uifont_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Own id (eUIFont_ID). </p>
 	 * @see #__DNA__FIELD__uifont_id
 	 */
@@ -354,7 +356,7 @@ public class uiFont extends CFacade {
 	/**
 	 * Set method for struct member 'uifont_id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Own id (eUIFont_ID). </p>
 	 * @see #__DNA__FIELD__uifont_id
 	 */
@@ -371,7 +373,7 @@ public class uiFont extends CFacade {
 	/**
 	 * Get method for struct member 'r_to_l'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fonts that read from left to right. </p>
 	 * @see #__DNA__FIELD__r_to_l
 	 */
@@ -388,7 +390,7 @@ public class uiFont extends CFacade {
 	/**
 	 * Set method for struct member 'r_to_l'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Fonts that read from left to right. </p>
 	 * @see #__DNA__FIELD__r_to_l
 	 */

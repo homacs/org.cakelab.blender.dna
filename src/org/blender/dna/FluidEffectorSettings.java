@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FluidEffectorSettings'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Collision objects (filled with smoke). </p>
  */
 
@@ -25,15 +27,15 @@ public class FluidEffectorSettings extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for FluidEffectorSettings.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 620;
 
 	/**
 	 * Field descriptor (offset) for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  Runtime-only fields (from here on). <ndash/>  For fast RNA access. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -116,8 +118,9 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'surface_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Additional distance around mesh surface to consider as effector<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Additional distance around mesh surface to consider as effector
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  User-accesible fields (from here on). <ndash/>  Thickness of mesh surface, used in obstacle sdf. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -160,7 +163,7 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'subframes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of additional samples to take between frames to improve quality of fast moving effector objects
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -223,7 +226,7 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vel_multi'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Guiding options. Multiplier for object velocity. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -294,7 +297,7 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Get method for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  Runtime-only fields (from here on). <ndash/>  For fast RNA access. </p>
 	 * @see #__DNA__FIELD__fmd
 	 */
@@ -314,7 +317,7 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Set method for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  Runtime-only fields (from here on). <ndash/>  For fast RNA access. </p>
 	 * @see #__DNA__FIELD__fmd
 	 */
@@ -424,8 +427,9 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Get method for struct member 'surface_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Additional distance around mesh surface to consider as effector<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Additional distance around mesh surface to consider as effector
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  User-accesible fields (from here on). <ndash/>  Thickness of mesh surface, used in obstacle sdf. </p>
 	 * @see #__DNA__FIELD__surface_distance
 	 */
@@ -442,8 +446,9 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Set method for struct member 'surface_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Additional distance around mesh surface to consider as effector<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Additional distance around mesh surface to consider as effector
+	 * <h4>Blender Source Code</h4>
 	 * <p><ndash/>  User-accesible fields (from here on). <ndash/>  Thickness of mesh surface, used in obstacle sdf. </p>
 	 * @see #__DNA__FIELD__surface_distance
 	 */
@@ -488,7 +493,7 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Get method for struct member 'subframes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of additional samples to take between frames to improve quality of fast moving effector objects
 	 * @see #__DNA__FIELD__subframes
 	 */
@@ -505,7 +510,7 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Set method for struct member 'subframes'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Number of additional samples to take between frames to improve quality of fast moving effector objects
 	 * @see #__DNA__FIELD__subframes
 	 */
@@ -590,7 +595,7 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Get method for struct member 'vel_multi'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Guiding options. Multiplier for object velocity. </p>
 	 * @see #__DNA__FIELD__vel_multi
 	 */
@@ -607,7 +612,7 @@ public class FluidEffectorSettings extends CFacade {
 	/**
 	 * Set method for struct member 'vel_multi'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Guiding options. Multiplier for object velocity. </p>
 	 * @see #__DNA__FIELD__vel_multi
 	 */

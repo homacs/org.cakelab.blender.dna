@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class SpaceNode extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for SpaceNode.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 242;
 
@@ -72,7 +73,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -155,7 +156,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. Deprecated, copied to region. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -180,7 +181,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Context, no need to save in file? well... pinning... </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -243,7 +244,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'insert_ofs_dir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Direction for offsetting nodes on insertion. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -286,7 +287,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'xof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset for drawing the backdrop. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -329,7 +330,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'zoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Zoom for backdrop. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -352,7 +353,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'treepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX nodetree pointer info is all in the path stack now, remove later on and use {@link bNodeTreePath}  instead. For now these variables are set when pushing/popping from path stack, to avoid having to update all the functions and operators. Can be done when design is accepted and everything is properly tested. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -375,7 +376,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'edittree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The tree farthest down in the group hierarchy. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -418,7 +419,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tree_idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> tree type for the current node tree </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -441,7 +442,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'treetype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Treetype: as same nodetree->type. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -466,7 +467,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'texfrom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texfrom object, world or brush. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -489,7 +490,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shaderfrom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shader from object or world. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -512,7 +513,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease-pencil data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -627,7 +628,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -644,7 +645,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
@@ -765,7 +766,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Get method for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. Deprecated, copied to region. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -784,7 +785,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Set method for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> End '{@link SpaceLink} ' header. Deprecated, copied to region. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -811,7 +812,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Get method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Context, no need to save in file? well... pinning... </p>
 	 * @see #__DNA__FIELD__id
 	 */
@@ -831,7 +832,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Set method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Context, no need to save in file? well... pinning... </p>
 	 * @see #__DNA__FIELD__id
 	 */
@@ -909,7 +910,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Get method for struct member 'insert_ofs_dir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Direction for offsetting nodes on insertion. </p>
 	 * @see #__DNA__FIELD__insert_ofs_dir
 	 */
@@ -926,7 +927,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Set method for struct member 'insert_ofs_dir'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Direction for offsetting nodes on insertion. </p>
 	 * @see #__DNA__FIELD__insert_ofs_dir
 	 */
@@ -971,7 +972,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Get method for struct member 'xof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset for drawing the backdrop. </p>
 	 * @see #__DNA__FIELD__xof
 	 */
@@ -988,7 +989,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Set method for struct member 'xof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset for drawing the backdrop. </p>
 	 * @see #__DNA__FIELD__xof
 	 */
@@ -1033,7 +1034,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Get method for struct member 'zoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Zoom for backdrop. </p>
 	 * @see #__DNA__FIELD__zoom
 	 */
@@ -1050,7 +1051,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Set method for struct member 'zoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Zoom for backdrop. </p>
 	 * @see #__DNA__FIELD__zoom
 	 */
@@ -1067,7 +1068,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Get method for struct member 'treepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX nodetree pointer info is all in the path stack now, remove later on and use {@link bNodeTreePath}  instead. For now these variables are set when pushing/popping from path stack, to avoid having to update all the functions and operators. Can be done when design is accepted and everything is properly tested. </p>
 	 * @see #__DNA__FIELD__treepath
 	 */
@@ -1084,7 +1085,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Set method for struct member 'treepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> XXX nodetree pointer info is all in the path stack now, remove later on and use {@link bNodeTreePath}  instead. For now these variables are set when pushing/popping from path stack, to avoid having to update all the functions and operators. Can be done when design is accepted and everything is properly tested. </p>
 	 * @see #__DNA__FIELD__treepath
 	 */
@@ -1109,7 +1110,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Get method for struct member 'edittree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The tree farthest down in the group hierarchy. </p>
 	 * @see #__DNA__FIELD__edittree
 	 */
@@ -1129,7 +1130,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Set method for struct member 'edittree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> The tree farthest down in the group hierarchy. </p>
 	 * @see #__DNA__FIELD__edittree
 	 */
@@ -1179,7 +1180,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Get method for struct member 'tree_idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> tree type for the current node tree </p>
 	 * @see #__DNA__FIELD__tree_idname
 	 */
@@ -1200,7 +1201,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Set method for struct member 'tree_idname'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> tree type for the current node tree </p>
 	 * @see #__DNA__FIELD__tree_idname
 	 */
@@ -1225,7 +1226,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Get method for struct member 'treetype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Treetype: as same nodetree->type. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1244,7 +1245,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Set method for struct member 'treetype'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Treetype: as same nodetree->type. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1263,7 +1264,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Get method for struct member 'texfrom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texfrom object, world or brush. </p>
 	 * @see #__DNA__FIELD__texfrom
 	 */
@@ -1280,7 +1281,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Set method for struct member 'texfrom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Texfrom object, world or brush. </p>
 	 * @see #__DNA__FIELD__texfrom
 	 */
@@ -1297,7 +1298,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Get method for struct member 'shaderfrom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shader from object or world. </p>
 	 * @see #__DNA__FIELD__shaderfrom
 	 */
@@ -1314,7 +1315,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Set method for struct member 'shaderfrom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Shader from object or world. </p>
 	 * @see #__DNA__FIELD__shaderfrom
 	 */
@@ -1331,7 +1332,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Get method for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease-pencil data. </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
@@ -1351,7 +1352,7 @@ public class SpaceNode extends CFacade {
 	/**
 	 * Set method for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Grease-pencil data. </p>
 	 * @see #__DNA__FIELD__gpd
 	 */

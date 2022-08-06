@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPDlayer_Mask'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  GP Layer List of masking layers. </p>
  */
@@ -26,8 +28,8 @@ public class bGPDlayer_Mask extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bGPDlayer_Mask.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 539;
 
@@ -114,7 +116,7 @@ public class bGPDlayer_Mask extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sort_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index for sorting. Only valid while sorting algorithm is running. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -297,7 +299,7 @@ public class bGPDlayer_Mask extends CFacade {
 	/**
 	 * Get method for struct member 'sort_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index for sorting. Only valid while sorting algorithm is running. </p>
 	 * @see #__DNA__FIELD__sort_index
 	 */
@@ -314,7 +316,7 @@ public class bGPDlayer_Mask extends CFacade {
 	/**
 	 * Set method for struct member 'sort_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index for sorting. Only valid while sorting algorithm is running. </p>
 	 * @see #__DNA__FIELD__sort_index
 	 */

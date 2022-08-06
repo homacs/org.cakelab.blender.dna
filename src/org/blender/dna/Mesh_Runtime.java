@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Mesh_Runtime'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> not saved in file! </p>
  */
 
@@ -25,15 +27,15 @@ public class Mesh_Runtime extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for Mesh_Runtime.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 62;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Evaluated mesh for objects which do not have effective modifiers. This mesh is used as a result of modifier stack evaluation. Since modifier stack evaluation is threaded on object level we need some synchronization. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -296,7 +298,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bvh_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  defined in 'BKE_bvhutil.c' </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -319,7 +321,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'shrinkwrap_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Non-manifold boundary data for Shrinkwrap Target Project. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -342,7 +344,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'deformed_only'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set by modifier stack if only deformed from original. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -365,7 +367,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'is_original'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Copied from edit-mesh (hint, draw with edit-mesh data when true).</p><p> Modifiers that edit the mesh data in-place must set this to false (most #eModifierTypeType_NonGeometrical modifiers). Otherwise the edit-mesh data will be used for drawing, missing changes from modifiers. See T79517. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -388,8 +390,8 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'wrapper_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eMeshWrapperType}  and others. </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eMeshWrapperType  and others. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,7 +413,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'wrapper_type_finalize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A type mask from wrapper_type, in case there are differences in finalizing logic between types. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -454,7 +456,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'cd_mask_extra'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Needed in case we need to lazily initialize the mesh. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -485,7 +487,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'mesh_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Evaluated mesh for objects which do not have effective modifiers. This mesh is used as a result of modifier stack evaluation. Since modifier stack evaluation is threaded on object level we need some synchronization. </p>
 	 * @see #__DNA__FIELD__mesh_eval
 	 */
@@ -505,7 +507,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'mesh_eval'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Evaluated mesh for objects which do not have effective modifiers. This mesh is used as a result of modifier stack evaluation. Since modifier stack evaluation is threaded on object level we need some synchronization. </p>
 	 * @see #__DNA__FIELD__mesh_eval
 	 */
@@ -899,7 +901,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'bvh_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  defined in 'BKE_bvhutil.c' </p>
 	 * @see #__DNA__FIELD__bvh_cache
 	 */
@@ -919,7 +921,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'bvh_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  defined in 'BKE_bvhutil.c' </p>
 	 * @see #__DNA__FIELD__bvh_cache
 	 */
@@ -937,7 +939,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'shrinkwrap_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Non-manifold boundary data for Shrinkwrap Target Project. </p>
 	 * @see #__DNA__FIELD__shrinkwrap_data
 	 */
@@ -957,7 +959,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'shrinkwrap_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Non-manifold boundary data for Shrinkwrap Target Project. </p>
 	 * @see #__DNA__FIELD__shrinkwrap_data
 	 */
@@ -975,7 +977,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'deformed_only'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set by modifier stack if only deformed from original. </p>
 	 * @see #__DNA__FIELD__deformed_only
 	 */
@@ -992,7 +994,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'deformed_only'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set by modifier stack if only deformed from original. </p>
 	 * @see #__DNA__FIELD__deformed_only
 	 */
@@ -1009,7 +1011,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'is_original'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Copied from edit-mesh (hint, draw with edit-mesh data when true).</p><p> Modifiers that edit the mesh data in-place must set this to false (most #eModifierTypeType_NonGeometrical modifiers). Otherwise the edit-mesh data will be used for drawing, missing changes from modifiers. See T79517. </p>
 	 * @see #__DNA__FIELD__is_original
 	 */
@@ -1026,7 +1028,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'is_original'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Copied from edit-mesh (hint, draw with edit-mesh data when true).</p><p> Modifiers that edit the mesh data in-place must set this to false (most #eModifierTypeType_NonGeometrical modifiers). Otherwise the edit-mesh data will be used for drawing, missing changes from modifiers. See T79517. </p>
 	 * @see #__DNA__FIELD__is_original
 	 */
@@ -1043,8 +1045,8 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'wrapper_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eMeshWrapperType}  and others. </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eMeshWrapperType  and others. </p>
 	 * @see #__DNA__FIELD__wrapper_type
 	 */
 	
@@ -1060,8 +1062,8 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'wrapper_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eMeshWrapperType}  and others. </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eMeshWrapperType  and others. </p>
 	 * @see #__DNA__FIELD__wrapper_type
 	 */
 	
@@ -1077,7 +1079,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'wrapper_type_finalize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A type mask from wrapper_type, in case there are differences in finalizing logic between types. </p>
 	 * @see #__DNA__FIELD__wrapper_type_finalize
 	 */
@@ -1094,7 +1096,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'wrapper_type_finalize'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> A type mask from wrapper_type, in case there are differences in finalizing logic between types. </p>
 	 * @see #__DNA__FIELD__wrapper_type_finalize
 	 */
@@ -1151,7 +1153,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'cd_mask_extra'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Needed in case we need to lazily initialize the mesh. </p>
 	 * @see #__DNA__FIELD__cd_mask_extra
 	 */
@@ -1168,7 +1170,7 @@ public class Mesh_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'cd_mask_extra'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Needed in case we need to lazily initialize the mesh. </p>
 	 * @see #__DNA__FIELD__cd_mask_extra
 	 */

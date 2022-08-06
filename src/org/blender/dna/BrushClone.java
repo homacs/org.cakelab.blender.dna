@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,15 +25,15 @@ public class BrushClone extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for BrushClone.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 502;
 
 	/**
 	 * Field descriptor (offset) for struct member 'image'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  for clone tool. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +56,7 @@ public class BrushClone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset of clone image from canvas. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -78,7 +79,7 @@ public class BrushClone extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transparency for drawing of clone image. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -129,7 +130,7 @@ public class BrushClone extends CFacade {
 	/**
 	 * Get method for struct member 'image'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  for clone tool. </p>
 	 * @see #__DNA__FIELD__image
 	 */
@@ -149,7 +150,7 @@ public class BrushClone extends CFacade {
 	/**
 	 * Set method for struct member 'image'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Image}  for clone tool. </p>
 	 * @see #__DNA__FIELD__image
 	 */
@@ -167,7 +168,7 @@ public class BrushClone extends CFacade {
 	/**
 	 * Get method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset of clone image from canvas. </p>
 	 * @see #__DNA__FIELD__offset
 	 */
@@ -188,7 +189,7 @@ public class BrushClone extends CFacade {
 	/**
 	 * Set method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Offset of clone image from canvas. </p>
 	 * @see #__DNA__FIELD__offset
 	 */
@@ -213,7 +214,7 @@ public class BrushClone extends CFacade {
 	/**
 	 * Get method for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transparency for drawing of clone image. </p>
 	 * @see #__DNA__FIELD__alpha
 	 */
@@ -230,7 +231,7 @@ public class BrushClone extends CFacade {
 	/**
 	 * Set method for struct member 'alpha'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transparency for drawing of clone image. </p>
 	 * @see #__DNA__FIELD__alpha
 	 */

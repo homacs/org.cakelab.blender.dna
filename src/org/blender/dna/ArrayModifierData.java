@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class ArrayModifierData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for ArrayModifierData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 96;
 
@@ -52,7 +53,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'start_cap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the object with which to cap the start of the array <br/> 
 	 *  </p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -76,7 +77,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'end_cap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the object with which to cap the end of the array <br/> 
 	 *  </p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -100,7 +101,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curve_ob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the curve object to use for MOD_ARR_FITCURVE </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -123,7 +124,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'offset_ob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the object to use for object offset </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -146,7 +147,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> a constant duplicate offset; 1 means the duplicates are 1 unit apart </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,7 +170,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> a scaled factor for duplicate offsets; 1 means the duplicates are 1 object-width apart </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -192,7 +193,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the length over which to distribute the duplicates </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -215,7 +216,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'merge_dist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the limit below which to merge vertices in adjacent duplicates </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -238,7 +239,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'fit_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> determines how duplicate count is calculated; one of:<ul><li><p> MOD_ARR_FIXEDCOUNT -> fixed</p></li><li><p> MOD_ARR_FITLENGTH -> calculated to fit a set length</p></li><li><p> MOD_ARR_FITCURVE -> calculated to fit the length of a {@link Curve}  object </p></li></ul> 
 	 * MOD_ARR_FIXEDCOUNT -> fixed
 	 * MOD_ARR_FITLENGTH -> calculated to fit a set length
@@ -266,7 +267,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'offset_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> flags specifying how total offset is calculated; binary OR of:<ul><li><p> MOD_ARR_OFF_CONST -> total offset += offset</p></li><li><p> MOD_ARR_OFF_RELATIVE -> total offset += relative * object width</p></li><li><p> MOD_ARR_OFF_OBJ -> total offset += offset_ob's matrix total offset is the sum of the individual enabled offsets </p></li></ul> 
 	 * MOD_ARR_OFF_CONST -> total offset += offset
 	 * MOD_ARR_OFF_RELATIVE -> total offset += relative * object width
@@ -294,7 +295,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> general flags: MOD_ARR_MERGE -> merge vertices in adjacent duplicates </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -317,7 +318,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the number of duplicates to generate for MOD_ARR_FIXEDCOUNT </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -404,7 +405,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'start_cap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the object with which to cap the start of the array <br/> 
 	 *  </p>
 	 * @see #__DNA__FIELD__start_cap
@@ -425,7 +426,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'start_cap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the object with which to cap the start of the array <br/> 
 	 *  </p>
 	 * @see #__DNA__FIELD__start_cap
@@ -444,7 +445,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'end_cap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the object with which to cap the end of the array <br/> 
 	 *  </p>
 	 * @see #__DNA__FIELD__end_cap
@@ -465,7 +466,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'end_cap'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the object with which to cap the end of the array <br/> 
 	 *  </p>
 	 * @see #__DNA__FIELD__end_cap
@@ -484,7 +485,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'curve_ob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the curve object to use for MOD_ARR_FITCURVE </p>
 	 * @see #__DNA__FIELD__curve_ob
 	 */
@@ -504,7 +505,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'curve_ob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the curve object to use for MOD_ARR_FITCURVE </p>
 	 * @see #__DNA__FIELD__curve_ob
 	 */
@@ -522,7 +523,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'offset_ob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the object to use for object offset </p>
 	 * @see #__DNA__FIELD__offset_ob
 	 */
@@ -542,7 +543,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'offset_ob'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the object to use for object offset </p>
 	 * @see #__DNA__FIELD__offset_ob
 	 */
@@ -560,7 +561,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> a constant duplicate offset; 1 means the duplicates are 1 unit apart </p>
 	 * @see #__DNA__FIELD__offset
 	 */
@@ -581,7 +582,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> a constant duplicate offset; 1 means the duplicates are 1 unit apart </p>
 	 * @see #__DNA__FIELD__offset
 	 */
@@ -606,7 +607,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> a scaled factor for duplicate offsets; 1 means the duplicates are 1 object-width apart </p>
 	 * @see #__DNA__FIELD__scale
 	 */
@@ -627,7 +628,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> a scaled factor for duplicate offsets; 1 means the duplicates are 1 object-width apart </p>
 	 * @see #__DNA__FIELD__scale
 	 */
@@ -652,7 +653,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the length over which to distribute the duplicates </p>
 	 * @see #__DNA__FIELD__length
 	 */
@@ -669,7 +670,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'length'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the length over which to distribute the duplicates </p>
 	 * @see #__DNA__FIELD__length
 	 */
@@ -686,7 +687,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'merge_dist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the limit below which to merge vertices in adjacent duplicates </p>
 	 * @see #__DNA__FIELD__merge_dist
 	 */
@@ -703,7 +704,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'merge_dist'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the limit below which to merge vertices in adjacent duplicates </p>
 	 * @see #__DNA__FIELD__merge_dist
 	 */
@@ -720,7 +721,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'fit_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> determines how duplicate count is calculated; one of:<ul><li><p> MOD_ARR_FIXEDCOUNT -> fixed</p></li><li><p> MOD_ARR_FITLENGTH -> calculated to fit a set length</p></li><li><p> MOD_ARR_FITCURVE -> calculated to fit the length of a {@link Curve}  object </p></li></ul> 
 	 * MOD_ARR_FIXEDCOUNT -> fixed
 	 * MOD_ARR_FITLENGTH -> calculated to fit a set length
@@ -742,7 +743,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'fit_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> determines how duplicate count is calculated; one of:<ul><li><p> MOD_ARR_FIXEDCOUNT -> fixed</p></li><li><p> MOD_ARR_FITLENGTH -> calculated to fit a set length</p></li><li><p> MOD_ARR_FITCURVE -> calculated to fit the length of a {@link Curve}  object </p></li></ul> 
 	 * MOD_ARR_FIXEDCOUNT -> fixed
 	 * MOD_ARR_FITLENGTH -> calculated to fit a set length
@@ -764,7 +765,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'offset_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> flags specifying how total offset is calculated; binary OR of:<ul><li><p> MOD_ARR_OFF_CONST -> total offset += offset</p></li><li><p> MOD_ARR_OFF_RELATIVE -> total offset += relative * object width</p></li><li><p> MOD_ARR_OFF_OBJ -> total offset += offset_ob's matrix total offset is the sum of the individual enabled offsets </p></li></ul> 
 	 * MOD_ARR_OFF_CONST -> total offset += offset
 	 * MOD_ARR_OFF_RELATIVE -> total offset += relative * object width
@@ -786,7 +787,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'offset_type'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> flags specifying how total offset is calculated; binary OR of:<ul><li><p> MOD_ARR_OFF_CONST -> total offset += offset</p></li><li><p> MOD_ARR_OFF_RELATIVE -> total offset += relative * object width</p></li><li><p> MOD_ARR_OFF_OBJ -> total offset += offset_ob's matrix total offset is the sum of the individual enabled offsets </p></li></ul> 
 	 * MOD_ARR_OFF_CONST -> total offset += offset
 	 * MOD_ARR_OFF_RELATIVE -> total offset += relative * object width
@@ -808,7 +809,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> general flags: MOD_ARR_MERGE -> merge vertices in adjacent duplicates </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -825,7 +826,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> general flags: MOD_ARR_MERGE -> merge vertices in adjacent duplicates </p>
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -842,7 +843,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Get method for struct member 'count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the number of duplicates to generate for MOD_ARR_FIXEDCOUNT </p>
 	 * @see #__DNA__FIELD__count
 	 */
@@ -859,7 +860,7 @@ public class ArrayModifierData extends CFacade {
 	/**
 	 * Set method for struct member 'count'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> the number of duplicates to generate for MOD_ARR_FIXEDCOUNT </p>
 	 * @see #__DNA__FIELD__count
 	 */

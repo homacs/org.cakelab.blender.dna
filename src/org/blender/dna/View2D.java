@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'View2D'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  View 2D data - stored per region </p>
  */
@@ -26,15 +28,15 @@ public class View2D extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for View2D.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 220;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tot - area that data can be drawn in; cur - region of tot that is visible in viewport. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -77,7 +79,7 @@ public class View2D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vert - vertical scrollbar region; hor - horizontal scrollbar region. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -120,7 +122,7 @@ public class View2D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mask}  - region (in screenspace) within which 'cur' can be viewed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -143,7 +145,7 @@ public class View2D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Min/max sizes of 'cur' rect (only when keepzoom not set). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -186,7 +188,7 @@ public class View2D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'minzoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Allowable zoom factor range (only when (keepzoom & V2D_LIMITZOOM)) is set. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -229,7 +231,7 @@ public class View2D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scroll'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Scroll - scrollbars to display (bitflag). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -252,7 +254,7 @@ public class View2D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scroll_ui'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Scroll_ui - temp settings used for UI drawing of scrollers. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -275,7 +277,7 @@ public class View2D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'keeptot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keeptot - 'cur' rect cannot move outside the 'tot' rect?. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -298,7 +300,7 @@ public class View2D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'keepzoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keepzoom - axes that zooming cannot occur on, and also clamp within zoom-limits. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -321,7 +323,7 @@ public class View2D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'keepofs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keepofs - axes that translation is not allowed to occur on. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -344,7 +346,7 @@ public class View2D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -367,7 +369,7 @@ public class View2D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'align'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Alignment of content in totrect. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -390,7 +392,7 @@ public class View2D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'winx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of current winx/winy values, set in UI_view2d_size_update. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -433,7 +435,7 @@ public class View2D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'oldwinx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of previous winx/winy values encountered by UI_view2d_curRect_validate(), for keepaspect. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -476,7 +478,7 @@ public class View2D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'around'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pivot point for transforms (rotate and scale). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -499,7 +501,7 @@ public class View2D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'alpha_vert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Usually set externally (as in, not in view2d files). Alpha of vertical and horizontal scrollbars (range is [0, 255]). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -562,7 +564,7 @@ public class View2D extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sms'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> animated smooth view </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -613,7 +615,7 @@ public class View2D extends CFacade {
 	/**
 	 * Get method for struct member 'tot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tot - area that data can be drawn in; cur - region of tot that is visible in viewport. </p>
 	 * @see #__DNA__FIELD__tot
 	 */
@@ -630,7 +632,7 @@ public class View2D extends CFacade {
 	/**
 	 * Set method for struct member 'tot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Tot - area that data can be drawn in; cur - region of tot that is visible in viewport. </p>
 	 * @see #__DNA__FIELD__tot
 	 */
@@ -691,7 +693,7 @@ public class View2D extends CFacade {
 	/**
 	 * Get method for struct member 'vert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vert - vertical scrollbar region; hor - horizontal scrollbar region. </p>
 	 * @see #__DNA__FIELD__vert
 	 */
@@ -708,7 +710,7 @@ public class View2D extends CFacade {
 	/**
 	 * Set method for struct member 'vert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Vert - vertical scrollbar region; hor - horizontal scrollbar region. </p>
 	 * @see #__DNA__FIELD__vert
 	 */
@@ -769,7 +771,7 @@ public class View2D extends CFacade {
 	/**
 	 * Get method for struct member 'mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mask}  - region (in screenspace) within which 'cur' can be viewed. </p>
 	 * @see #__DNA__FIELD__mask
 	 */
@@ -786,7 +788,7 @@ public class View2D extends CFacade {
 	/**
 	 * Set method for struct member 'mask'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>{@link Mask}  - region (in screenspace) within which 'cur' can be viewed. </p>
 	 * @see #__DNA__FIELD__mask
 	 */
@@ -811,7 +813,7 @@ public class View2D extends CFacade {
 	/**
 	 * Get method for struct member 'min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Min/max sizes of 'cur' rect (only when keepzoom not set). </p>
 	 * @see #__DNA__FIELD__min
 	 */
@@ -832,7 +834,7 @@ public class View2D extends CFacade {
 	/**
 	 * Set method for struct member 'min'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Min/max sizes of 'cur' rect (only when keepzoom not set). </p>
 	 * @see #__DNA__FIELD__min
 	 */
@@ -897,7 +899,7 @@ public class View2D extends CFacade {
 	/**
 	 * Get method for struct member 'minzoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Allowable zoom factor range (only when (keepzoom & V2D_LIMITZOOM)) is set. </p>
 	 * @see #__DNA__FIELD__minzoom
 	 */
@@ -914,7 +916,7 @@ public class View2D extends CFacade {
 	/**
 	 * Set method for struct member 'minzoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Allowable zoom factor range (only when (keepzoom & V2D_LIMITZOOM)) is set. </p>
 	 * @see #__DNA__FIELD__minzoom
 	 */
@@ -959,7 +961,7 @@ public class View2D extends CFacade {
 	/**
 	 * Get method for struct member 'scroll'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Scroll - scrollbars to display (bitflag). </p>
 	 * @see #__DNA__FIELD__scroll
 	 */
@@ -976,7 +978,7 @@ public class View2D extends CFacade {
 	/**
 	 * Set method for struct member 'scroll'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Scroll - scrollbars to display (bitflag). </p>
 	 * @see #__DNA__FIELD__scroll
 	 */
@@ -993,7 +995,7 @@ public class View2D extends CFacade {
 	/**
 	 * Get method for struct member 'scroll_ui'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Scroll_ui - temp settings used for UI drawing of scrollers. </p>
 	 * @see #__DNA__FIELD__scroll_ui
 	 */
@@ -1010,7 +1012,7 @@ public class View2D extends CFacade {
 	/**
 	 * Set method for struct member 'scroll_ui'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Scroll_ui - temp settings used for UI drawing of scrollers. </p>
 	 * @see #__DNA__FIELD__scroll_ui
 	 */
@@ -1027,7 +1029,7 @@ public class View2D extends CFacade {
 	/**
 	 * Get method for struct member 'keeptot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keeptot - 'cur' rect cannot move outside the 'tot' rect?. </p>
 	 * @see #__DNA__FIELD__keeptot
 	 */
@@ -1044,7 +1046,7 @@ public class View2D extends CFacade {
 	/**
 	 * Set method for struct member 'keeptot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keeptot - 'cur' rect cannot move outside the 'tot' rect?. </p>
 	 * @see #__DNA__FIELD__keeptot
 	 */
@@ -1061,7 +1063,7 @@ public class View2D extends CFacade {
 	/**
 	 * Get method for struct member 'keepzoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keepzoom - axes that zooming cannot occur on, and also clamp within zoom-limits. </p>
 	 * @see #__DNA__FIELD__keepzoom
 	 */
@@ -1078,7 +1080,7 @@ public class View2D extends CFacade {
 	/**
 	 * Set method for struct member 'keepzoom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keepzoom - axes that zooming cannot occur on, and also clamp within zoom-limits. </p>
 	 * @see #__DNA__FIELD__keepzoom
 	 */
@@ -1095,7 +1097,7 @@ public class View2D extends CFacade {
 	/**
 	 * Get method for struct member 'keepofs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keepofs - axes that translation is not allowed to occur on. </p>
 	 * @see #__DNA__FIELD__keepofs
 	 */
@@ -1112,7 +1114,7 @@ public class View2D extends CFacade {
 	/**
 	 * Set method for struct member 'keepofs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Keepofs - axes that translation is not allowed to occur on. </p>
 	 * @see #__DNA__FIELD__keepofs
 	 */
@@ -1129,7 +1131,7 @@ public class View2D extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -1146,7 +1148,7 @@ public class View2D extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -1163,7 +1165,7 @@ public class View2D extends CFacade {
 	/**
 	 * Get method for struct member 'align'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Alignment of content in totrect. </p>
 	 * @see #__DNA__FIELD__align
 	 */
@@ -1180,7 +1182,7 @@ public class View2D extends CFacade {
 	/**
 	 * Set method for struct member 'align'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Alignment of content in totrect. </p>
 	 * @see #__DNA__FIELD__align
 	 */
@@ -1197,7 +1199,7 @@ public class View2D extends CFacade {
 	/**
 	 * Get method for struct member 'winx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of current winx/winy values, set in UI_view2d_size_update. </p>
 	 * @see #__DNA__FIELD__winx
 	 */
@@ -1214,7 +1216,7 @@ public class View2D extends CFacade {
 	/**
 	 * Set method for struct member 'winx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of current winx/winy values, set in UI_view2d_size_update. </p>
 	 * @see #__DNA__FIELD__winx
 	 */
@@ -1259,7 +1261,7 @@ public class View2D extends CFacade {
 	/**
 	 * Get method for struct member 'oldwinx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of previous winx/winy values encountered by UI_view2d_curRect_validate(), for keepaspect. </p>
 	 * @see #__DNA__FIELD__oldwinx
 	 */
@@ -1276,7 +1278,7 @@ public class View2D extends CFacade {
 	/**
 	 * Set method for struct member 'oldwinx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Storage of previous winx/winy values encountered by UI_view2d_curRect_validate(), for keepaspect. </p>
 	 * @see #__DNA__FIELD__oldwinx
 	 */
@@ -1321,7 +1323,7 @@ public class View2D extends CFacade {
 	/**
 	 * Get method for struct member 'around'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pivot point for transforms (rotate and scale). </p>
 	 * @see #__DNA__FIELD__around
 	 */
@@ -1338,7 +1340,7 @@ public class View2D extends CFacade {
 	/**
 	 * Set method for struct member 'around'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Pivot point for transforms (rotate and scale). </p>
 	 * @see #__DNA__FIELD__around
 	 */
@@ -1355,7 +1357,7 @@ public class View2D extends CFacade {
 	/**
 	 * Get method for struct member 'alpha_vert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Usually set externally (as in, not in view2d files). Alpha of vertical and horizontal scrollbars (range is [0, 255]). </p>
 	 * @see #__DNA__FIELD__alpha_vert
 	 */
@@ -1372,7 +1374,7 @@ public class View2D extends CFacade {
 	/**
 	 * Set method for struct member 'alpha_vert'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Usually set externally (as in, not in view2d files). Alpha of vertical and horizontal scrollbars (range is [0, 255]). </p>
 	 * @see #__DNA__FIELD__alpha_vert
 	 */
@@ -1457,7 +1459,7 @@ public class View2D extends CFacade {
 	/**
 	 * Get method for struct member 'sms'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> animated smooth view </p>
 	 * @see #__DNA__FIELD__sms
 	 */
@@ -1477,7 +1479,7 @@ public class View2D extends CFacade {
 	/**
 	 * Set method for struct member 'sms'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> animated smooth view </p>
 	 * @see #__DNA__FIELD__sms
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bPoseChannel'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  Poses PoseChannel ---------------------------------<mdash/>  PoseChannel</p><p> A {@link bPoseChannel}  stores the results of Actions and transform information with respect to the rest-position of {@link bArmature}  bones. </p>
  */
@@ -26,8 +28,8 @@ public class bPoseChannel extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bPoseChannel.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 343;
 
@@ -74,7 +76,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-Defined Properties on this PoseChannel. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -97,7 +99,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'constraints'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Constraints that act on this PoseChannel. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -120,7 +122,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Need to match bone name length: MAXBONENAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -143,7 +145,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dynamic, for detecting transform changes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -166,7 +168,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ikflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for IK bones. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -189,7 +191,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'protectflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Protect channels from being transformed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -212,7 +214,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'agrp_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of action-group this bone belongs to (0 = default/no group). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -235,7 +237,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'constflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For quick detecting which constraints affect this channel. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -258,7 +260,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'selectflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Copy of bone flag, so you can work with library armatures, not for runtime use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -301,7 +303,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bboneflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -346,7 +348,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set on read file or rebuild pose. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -369,7 +371,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set on read file or rebuild pose. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -392,7 +394,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'child'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set on read file or rebuild pose, the 'ik' child, for b-bones. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -415,7 +417,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'iktree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> "IK trees" - only while evaluating pose. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -438,7 +440,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'siktree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Spline-IK "trees" - only while evaluating pose. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -461,7 +463,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'mpath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Motion path cache for this bone. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -484,7 +486,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'custom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Draws custom object instead of default bone shape. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -507,7 +509,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'custom_tx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Odd feature, display with another bones transform. needed in rare cases for advanced rigs, since the alternative is highly complicated - campbell </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -570,7 +572,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'loc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transforms - written in by actions or transform. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -613,7 +615,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'eul'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotations - written in by actions or transform (but only one representation gets used at any time) Euler rotation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -636,7 +638,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'quat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Quaternion rotation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -659,7 +661,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rotAxis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis-angle rotation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -702,8 +704,8 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'rotmode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eRotationModes}  - rotation representation to use. </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eRotationModes  - rotation representation to use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -745,8 +747,8 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'chan_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p><code></code>  (without {@link Bone.arm_mat} ). </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p><code></code>  (without {@link Bone#getArm_mat()} ). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -768,7 +770,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pose_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  this matrix is object space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -791,7 +793,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'disp_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For display, pose_mat with bone length applied. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -814,7 +816,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'disp_tail_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For display, pose_mat with bone length applied and translated to tail. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -837,7 +839,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'constinv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inverse result of constraints. doesn't include effect of rest-position, parent, and local transform. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -860,7 +862,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pose_head'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Actually pose_mat[3]. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -883,7 +885,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'pose_tail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Also used for drawing help lines. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -906,7 +908,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'limitmin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> DOF constraint, note! - these are stored in degrees, not radians. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -949,7 +951,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'stiffness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> DOF stiffness. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -992,7 +994,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'ikrotweight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weight of joint rotation constraint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1015,7 +1017,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'iklinweight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weight of joint stretch constraint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1038,7 +1040,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'roll1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Curved bones settings - these are for animating, and are applied on top of the copies in pchan->bone </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1281,7 +1283,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> B-Bone custom handles; set on read file or rebuild pose based on pchan->bone data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1324,7 +1326,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'temp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use for outliner. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1347,7 +1349,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'draw_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data for color and bbone segment matrix. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1370,7 +1372,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'orig_pchan'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Points to an original pose channel. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1393,7 +1395,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data (keep last). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1488,7 +1490,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-Defined Properties on this PoseChannel. </p>
 	 * @see #__DNA__FIELD__prop
 	 */
@@ -1508,7 +1510,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> User-Defined Properties on this PoseChannel. </p>
 	 * @see #__DNA__FIELD__prop
 	 */
@@ -1526,7 +1528,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'constraints'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Constraints that act on this PoseChannel. </p>
 	 * @see #__DNA__FIELD__constraints
 	 */
@@ -1543,7 +1545,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'constraints'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Constraints that act on this PoseChannel. </p>
 	 * @see #__DNA__FIELD__constraints
 	 */
@@ -1568,7 +1570,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Need to match bone name length: MAXBONENAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -1589,7 +1591,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Need to match bone name length: MAXBONENAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -1614,7 +1616,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dynamic, for detecting transform changes. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -1631,7 +1633,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dynamic, for detecting transform changes. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -1648,7 +1650,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'ikflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for IK bones. </p>
 	 * @see #__DNA__FIELD__ikflag
 	 */
@@ -1665,7 +1667,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'ikflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for IK bones. </p>
 	 * @see #__DNA__FIELD__ikflag
 	 */
@@ -1682,7 +1684,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'protectflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Protect channels from being transformed. </p>
 	 * @see #__DNA__FIELD__protectflag
 	 */
@@ -1699,7 +1701,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'protectflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Protect channels from being transformed. </p>
 	 * @see #__DNA__FIELD__protectflag
 	 */
@@ -1716,7 +1718,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'agrp_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of action-group this bone belongs to (0 = default/no group). </p>
 	 * @see #__DNA__FIELD__agrp_index
 	 */
@@ -1733,7 +1735,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'agrp_index'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of action-group this bone belongs to (0 = default/no group). </p>
 	 * @see #__DNA__FIELD__agrp_index
 	 */
@@ -1750,7 +1752,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'constflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For quick detecting which constraints affect this channel. </p>
 	 * @see #__DNA__FIELD__constflag
 	 */
@@ -1767,7 +1769,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'constflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For quick detecting which constraints affect this channel. </p>
 	 * @see #__DNA__FIELD__constflag
 	 */
@@ -1784,7 +1786,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'selectflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Copy of bone flag, so you can work with library armatures, not for runtime use. </p>
 	 * @see #__DNA__FIELD__selectflag
 	 */
@@ -1801,7 +1803,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'selectflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Copy of bone flag, so you can work with library armatures, not for runtime use. </p>
 	 * @see #__DNA__FIELD__selectflag
 	 */
@@ -1846,7 +1848,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'bboneflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1865,7 +1867,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'bboneflag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p>
 	 * @deprecated
 	 *  Deprecated</p>
@@ -1924,7 +1926,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'bone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set on read file or rebuild pose. </p>
 	 * @see #__DNA__FIELD__bone
 	 */
@@ -1944,7 +1946,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'bone'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set on read file or rebuild pose. </p>
 	 * @see #__DNA__FIELD__bone
 	 */
@@ -1962,7 +1964,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set on read file or rebuild pose. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -1982,7 +1984,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set on read file or rebuild pose. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -2000,7 +2002,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'child'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set on read file or rebuild pose, the 'ik' child, for b-bones. </p>
 	 * @see #__DNA__FIELD__child
 	 */
@@ -2020,7 +2022,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'child'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Set on read file or rebuild pose, the 'ik' child, for b-bones. </p>
 	 * @see #__DNA__FIELD__child
 	 */
@@ -2038,7 +2040,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'iktree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> "IK trees" - only while evaluating pose. </p>
 	 * @see #__DNA__FIELD__iktree
 	 */
@@ -2055,7 +2057,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'iktree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> "IK trees" - only while evaluating pose. </p>
 	 * @see #__DNA__FIELD__iktree
 	 */
@@ -2080,7 +2082,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'siktree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Spline-IK "trees" - only while evaluating pose. </p>
 	 * @see #__DNA__FIELD__siktree
 	 */
@@ -2097,7 +2099,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'siktree'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Spline-IK "trees" - only while evaluating pose. </p>
 	 * @see #__DNA__FIELD__siktree
 	 */
@@ -2122,7 +2124,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'mpath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Motion path cache for this bone. </p>
 	 * @see #__DNA__FIELD__mpath
 	 */
@@ -2142,7 +2144,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'mpath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Motion path cache for this bone. </p>
 	 * @see #__DNA__FIELD__mpath
 	 */
@@ -2160,7 +2162,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'custom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Draws custom object instead of default bone shape. </p>
 	 * @see #__DNA__FIELD__custom
 	 */
@@ -2180,7 +2182,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'custom'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Draws custom object instead of default bone shape. </p>
 	 * @see #__DNA__FIELD__custom
 	 */
@@ -2198,7 +2200,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'custom_tx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Odd feature, display with another bones transform. needed in rare cases for advanced rigs, since the alternative is highly complicated - campbell </p>
 	 * @see #__DNA__FIELD__custom_tx
 	 */
@@ -2218,7 +2220,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'custom_tx'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Odd feature, display with another bones transform. needed in rare cases for advanced rigs, since the alternative is highly complicated - campbell </p>
 	 * @see #__DNA__FIELD__custom_tx
 	 */
@@ -2304,7 +2306,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'loc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transforms - written in by actions or transform. </p>
 	 * @see #__DNA__FIELD__loc
 	 */
@@ -2325,7 +2327,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'loc'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Transforms - written in by actions or transform. </p>
 	 * @see #__DNA__FIELD__loc
 	 */
@@ -2390,7 +2392,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'eul'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotations - written in by actions or transform (but only one representation gets used at any time) Euler rotation. </p>
 	 * @see #__DNA__FIELD__eul
 	 */
@@ -2411,7 +2413,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'eul'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Rotations - written in by actions or transform (but only one representation gets used at any time) Euler rotation. </p>
 	 * @see #__DNA__FIELD__eul
 	 */
@@ -2436,7 +2438,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'quat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Quaternion rotation. </p>
 	 * @see #__DNA__FIELD__quat
 	 */
@@ -2457,7 +2459,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'quat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Quaternion rotation. </p>
 	 * @see #__DNA__FIELD__quat
 	 */
@@ -2482,7 +2484,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'rotAxis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis-angle rotation. </p>
 	 * @see #__DNA__FIELD__rotAxis
 	 */
@@ -2503,7 +2505,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'rotAxis'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Axis-angle rotation. </p>
 	 * @see #__DNA__FIELD__rotAxis
 	 */
@@ -2556,8 +2558,8 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'rotmode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eRotationModes}  - rotation representation to use. </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eRotationModes  - rotation representation to use. </p>
 	 * @see #__DNA__FIELD__rotmode
 	 */
 	
@@ -2573,8 +2575,8 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'rotmode'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eRotationModes}  - rotation representation to use. </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p>eRotationModes  - rotation representation to use. </p>
 	 * @see #__DNA__FIELD__rotmode
 	 */
 	
@@ -2630,8 +2632,8 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'chan_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p><code></code>  (without {@link Bone.arm_mat} ). </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p><code></code>  (without {@link Bone#getArm_mat()} ). </p>
 	 * @see #__DNA__FIELD__chan_mat
 	 */
 	
@@ -2652,8 +2654,8 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'chan_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p><code></code>  (without {@link Bone.arm_mat} ). </p>
+	 * <h4>Blender Source Code</h4>
+	 * <p><code></code>  (without {@link Bone#getArm_mat()} ). </p>
 	 * @see #__DNA__FIELD__chan_mat
 	 */
 	
@@ -2677,7 +2679,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'pose_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  this matrix is object space. </p>
 	 * @see #__DNA__FIELD__pose_mat
 	 */
@@ -2699,7 +2701,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'pose_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p><code></code>  this matrix is object space. </p>
 	 * @see #__DNA__FIELD__pose_mat
 	 */
@@ -2724,7 +2726,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'disp_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For display, pose_mat with bone length applied. </p>
 	 * @see #__DNA__FIELD__disp_mat
 	 */
@@ -2746,7 +2748,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'disp_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For display, pose_mat with bone length applied. </p>
 	 * @see #__DNA__FIELD__disp_mat
 	 */
@@ -2771,7 +2773,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'disp_tail_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For display, pose_mat with bone length applied and translated to tail. </p>
 	 * @see #__DNA__FIELD__disp_tail_mat
 	 */
@@ -2793,7 +2795,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'disp_tail_mat'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> For display, pose_mat with bone length applied and translated to tail. </p>
 	 * @see #__DNA__FIELD__disp_tail_mat
 	 */
@@ -2818,7 +2820,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'constinv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inverse result of constraints. doesn't include effect of rest-position, parent, and local transform. </p>
 	 * @see #__DNA__FIELD__constinv
 	 */
@@ -2840,7 +2842,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'constinv'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Inverse result of constraints. doesn't include effect of rest-position, parent, and local transform. </p>
 	 * @see #__DNA__FIELD__constinv
 	 */
@@ -2865,7 +2867,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'pose_head'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Actually pose_mat[3]. </p>
 	 * @see #__DNA__FIELD__pose_head
 	 */
@@ -2886,7 +2888,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'pose_head'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Actually pose_mat[3]. </p>
 	 * @see #__DNA__FIELD__pose_head
 	 */
@@ -2911,7 +2913,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'pose_tail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Also used for drawing help lines. </p>
 	 * @see #__DNA__FIELD__pose_tail
 	 */
@@ -2932,7 +2934,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'pose_tail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Also used for drawing help lines. </p>
 	 * @see #__DNA__FIELD__pose_tail
 	 */
@@ -2957,7 +2959,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'limitmin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> DOF constraint, note! - these are stored in degrees, not radians. </p>
 	 * @see #__DNA__FIELD__limitmin
 	 */
@@ -2978,7 +2980,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'limitmin'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> DOF constraint, note! - these are stored in degrees, not radians. </p>
 	 * @see #__DNA__FIELD__limitmin
 	 */
@@ -3043,7 +3045,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'stiffness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> DOF stiffness. </p>
 	 * @see #__DNA__FIELD__stiffness
 	 */
@@ -3064,7 +3066,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'stiffness'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> DOF stiffness. </p>
 	 * @see #__DNA__FIELD__stiffness
 	 */
@@ -3117,7 +3119,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'ikrotweight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weight of joint rotation constraint. </p>
 	 * @see #__DNA__FIELD__ikrotweight
 	 */
@@ -3134,7 +3136,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'ikrotweight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weight of joint rotation constraint. </p>
 	 * @see #__DNA__FIELD__ikrotweight
 	 */
@@ -3151,7 +3153,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'iklinweight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weight of joint stretch constraint. </p>
 	 * @see #__DNA__FIELD__iklinweight
 	 */
@@ -3168,7 +3170,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'iklinweight'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Weight of joint stretch constraint. </p>
 	 * @see #__DNA__FIELD__iklinweight
 	 */
@@ -3185,7 +3187,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'roll1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Curved bones settings - these are for animating, and are applied on top of the copies in pchan->bone </p>
 	 * @see #__DNA__FIELD__roll1
 	 */
@@ -3202,7 +3204,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'roll1'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Curved bones settings - these are for animating, and are applied on top of the copies in pchan->bone </p>
 	 * @see #__DNA__FIELD__roll1
 	 */
@@ -3527,7 +3529,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'bbone_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> B-Bone custom handles; set on read file or rebuild pose based on pchan->bone data. </p>
 	 * @see #__DNA__FIELD__bbone_prev
 	 */
@@ -3547,7 +3549,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'bbone_prev'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> B-Bone custom handles; set on read file or rebuild pose based on pchan->bone data. </p>
 	 * @see #__DNA__FIELD__bbone_prev
 	 */
@@ -3597,7 +3599,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'temp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use for outliner. </p>
 	 * @see #__DNA__FIELD__temp
 	 */
@@ -3617,7 +3619,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'temp'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Use for outliner. </p>
 	 * @see #__DNA__FIELD__temp
 	 */
@@ -3635,7 +3637,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'draw_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data for color and bbone segment matrix. </p>
 	 * @see #__DNA__FIELD__draw_data
 	 */
@@ -3655,7 +3657,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'draw_data'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data for color and bbone segment matrix. </p>
 	 * @see #__DNA__FIELD__draw_data
 	 */
@@ -3673,7 +3675,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'orig_pchan'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Points to an original pose channel. </p>
 	 * @see #__DNA__FIELD__orig_pchan
 	 */
@@ -3693,7 +3695,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'orig_pchan'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Points to an original pose channel. </p>
 	 * @see #__DNA__FIELD__orig_pchan
 	 */
@@ -3711,7 +3713,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Get method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data (keep last). </p>
 	 * @see #__DNA__FIELD__runtime
 	 */
@@ -3728,7 +3730,7 @@ public class bPoseChannel extends CFacade {
 	/**
 	 * Set method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime data (keep last). </p>
 	 * @see #__DNA__FIELD__runtime
 	 */

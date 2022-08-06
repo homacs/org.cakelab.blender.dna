@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'IDOverrideLibrary'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Main container for all overriding data info of a data-block. </p>
  */
 
@@ -24,16 +26,17 @@ public class IDOverrideLibrary extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for IDOverrideLibrary.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 14;
 
 	/**
 	 * Field descriptor (offset) for struct member 'reference'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Linked ID used as reference by this override<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Linked ID used as reference by this override
+	 * <h4>Blender Source Code</h4>
 	 * <p> Reference linked {@link ID}  which this one overrides. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,8 +59,9 @@ public class IDOverrideLibrary extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of overridden properties<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    List of overridden properties
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of {@link IDOverrideLibraryProperty}  structs. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +84,7 @@ public class IDOverrideLibrary extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'storage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Read/write data. Temp {@link ID}  storing extra override data (used for differential operations only currently). Always NULL outside of read/write context. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -131,8 +135,9 @@ public class IDOverrideLibrary extends CFacade {
 	/**
 	 * Get method for struct member 'reference'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Linked ID used as reference by this override<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Linked ID used as reference by this override
+	 * <h4>Blender Source Code</h4>
 	 * <p> Reference linked {@link ID}  which this one overrides. </p>
 	 * @see #__DNA__FIELD__reference
 	 */
@@ -152,8 +157,9 @@ public class IDOverrideLibrary extends CFacade {
 	/**
 	 * Set method for struct member 'reference'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Linked ID used as reference by this override<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Linked ID used as reference by this override
+	 * <h4>Blender Source Code</h4>
 	 * <p> Reference linked {@link ID}  which this one overrides. </p>
 	 * @see #__DNA__FIELD__reference
 	 */
@@ -171,8 +177,9 @@ public class IDOverrideLibrary extends CFacade {
 	/**
 	 * Get method for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of overridden properties<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    List of overridden properties
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of {@link IDOverrideLibraryProperty}  structs. </p>
 	 * @see #__DNA__FIELD__properties
 	 */
@@ -189,8 +196,9 @@ public class IDOverrideLibrary extends CFacade {
 	/**
 	 * Set method for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of overridden properties<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    List of overridden properties
+	 * <h4>Blender Source Code</h4>
 	 * <p> List of {@link IDOverrideLibraryProperty}  structs. </p>
 	 * @see #__DNA__FIELD__properties
 	 */
@@ -215,7 +223,7 @@ public class IDOverrideLibrary extends CFacade {
 	/**
 	 * Get method for struct member 'storage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Read/write data. Temp {@link ID}  storing extra override data (used for differential operations only currently). Always NULL outside of read/write context. </p>
 	 * @see #__DNA__FIELD__storage
 	 */
@@ -235,7 +243,7 @@ public class IDOverrideLibrary extends CFacade {
 	/**
 	 * Set method for struct member 'storage'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Read/write data. Temp {@link ID}  storing extra override data (used for differential operations only currently). Always NULL outside of read/write context. </p>
 	 * @see #__DNA__FIELD__storage
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,8 +25,8 @@ public class CacheFile extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for CacheFile.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 702;
 
@@ -72,8 +73,9 @@ public class CacheFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object_paths'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Paths of the objects inside the Alembic archive<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Paths of the objects inside the Alembic archive
+	 * <h4>Blender Source Code</h4>
 	 * <p> Paths of the objects inside of the Alembic archive referenced by this {@link CacheFile} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -96,8 +98,9 @@ public class CacheFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Path to external displacements file<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Path to external displacements file
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -120,7 +123,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'is_sequence'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Whether the cache is separated in a series of files
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -183,7 +186,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'override_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Whether to use a custom frame for looking up data in the cache file, instead of using the current scene frame
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -206,7 +209,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Value by which to enlarge or shrink the object with respect to the world's origin (only applicable through a Transform Cache constraint)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -229,8 +232,9 @@ public class CacheFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The time to use for looking up the data in the cache file, or to determine which file to use in a file sequence<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * The time to use for looking up the data in the cache file, or to determine which file to use in a file sequence
+	 * <h4>Blender Source Code</h4>
 	 * <p> The frame/time to lookup in the cache file. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -253,8 +257,9 @@ public class CacheFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'frame_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Subtracted from the current frame to use for looking up the data in the cache file, or to determine which file to use in a file sequence<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Subtracted from the current frame to use for looking up the data in the cache file, or to determine which file to use in a file sequence
+	 * <h4>Blender Source Code</h4>
 	 * <p> The frame offset to subtract. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -277,7 +282,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation flag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -300,7 +305,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'draw_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UNUSED </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -343,7 +348,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'velocity_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Define how the velocity vectors are interpreted with regard to time, 'frame' means the delta time is 1 frame, 'second' means the delta time is 1 / FPS
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -366,8 +371,9 @@ public class CacheFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'velocity_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of the Alembic attribute used for generating motion blur data<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of the Alembic attribute used for generating motion blur data
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the velocity property in the Alembic file. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -390,7 +396,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'handle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -529,8 +535,9 @@ public class CacheFile extends CFacade {
 	/**
 	 * Get method for struct member 'object_paths'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Paths of the objects inside the Alembic archive<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Paths of the objects inside the Alembic archive
+	 * <h4>Blender Source Code</h4>
 	 * <p> Paths of the objects inside of the Alembic archive referenced by this {@link CacheFile} . </p>
 	 * @see #__DNA__FIELD__object_paths
 	 */
@@ -547,8 +554,9 @@ public class CacheFile extends CFacade {
 	/**
 	 * Set method for struct member 'object_paths'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Paths of the objects inside the Alembic archive<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Paths of the objects inside the Alembic archive
+	 * <h4>Blender Source Code</h4>
 	 * <p> Paths of the objects inside of the Alembic archive referenced by this {@link CacheFile} . </p>
 	 * @see #__DNA__FIELD__object_paths
 	 */
@@ -573,8 +581,9 @@ public class CacheFile extends CFacade {
 	/**
 	 * Get method for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Path to external displacements file<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Path to external displacements file
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__filepath
 	 */
@@ -595,8 +604,9 @@ public class CacheFile extends CFacade {
 	/**
 	 * Set method for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Path to external displacements file<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Path to external displacements file
+	 * <h4>Blender Source Code</h4>
 	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__filepath
 	 */
@@ -621,7 +631,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Get method for struct member 'is_sequence'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Whether the cache is separated in a series of files
 	 * @see #__DNA__FIELD__is_sequence
 	 */
@@ -638,7 +648,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Set method for struct member 'is_sequence'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Whether the cache is separated in a series of files
 	 * @see #__DNA__FIELD__is_sequence
 	 */
@@ -711,7 +721,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Get method for struct member 'override_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Whether to use a custom frame for looking up data in the cache file, instead of using the current scene frame
 	 * @see #__DNA__FIELD__override_frame
 	 */
@@ -728,7 +738,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Set method for struct member 'override_frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Whether to use a custom frame for looking up data in the cache file, instead of using the current scene frame
 	 * @see #__DNA__FIELD__override_frame
 	 */
@@ -745,7 +755,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Get method for struct member 'scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Value by which to enlarge or shrink the object with respect to the world's origin (only applicable through a Transform Cache constraint)
 	 * @see #__DNA__FIELD__scale
 	 */
@@ -762,7 +772,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Set method for struct member 'scale'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Value by which to enlarge or shrink the object with respect to the world's origin (only applicable through a Transform Cache constraint)
 	 * @see #__DNA__FIELD__scale
 	 */
@@ -779,8 +789,9 @@ public class CacheFile extends CFacade {
 	/**
 	 * Get method for struct member 'frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The time to use for looking up the data in the cache file, or to determine which file to use in a file sequence<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * The time to use for looking up the data in the cache file, or to determine which file to use in a file sequence
+	 * <h4>Blender Source Code</h4>
 	 * <p> The frame/time to lookup in the cache file. </p>
 	 * @see #__DNA__FIELD__frame
 	 */
@@ -797,8 +808,9 @@ public class CacheFile extends CFacade {
 	/**
 	 * Set method for struct member 'frame'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The time to use for looking up the data in the cache file, or to determine which file to use in a file sequence<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * The time to use for looking up the data in the cache file, or to determine which file to use in a file sequence
+	 * <h4>Blender Source Code</h4>
 	 * <p> The frame/time to lookup in the cache file. </p>
 	 * @see #__DNA__FIELD__frame
 	 */
@@ -815,8 +827,9 @@ public class CacheFile extends CFacade {
 	/**
 	 * Get method for struct member 'frame_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Subtracted from the current frame to use for looking up the data in the cache file, or to determine which file to use in a file sequence<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Subtracted from the current frame to use for looking up the data in the cache file, or to determine which file to use in a file sequence
+	 * <h4>Blender Source Code</h4>
 	 * <p> The frame offset to subtract. </p>
 	 * @see #__DNA__FIELD__frame_offset
 	 */
@@ -833,8 +846,9 @@ public class CacheFile extends CFacade {
 	/**
 	 * Set method for struct member 'frame_offset'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Subtracted from the current frame to use for looking up the data in the cache file, or to determine which file to use in a file sequence<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Subtracted from the current frame to use for looking up the data in the cache file, or to determine which file to use in a file sequence
+	 * <h4>Blender Source Code</h4>
 	 * <p> The frame offset to subtract. </p>
 	 * @see #__DNA__FIELD__frame_offset
 	 */
@@ -851,7 +865,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -868,7 +882,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Animation flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -885,7 +899,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Get method for struct member 'draw_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UNUSED </p>
 	 * @see #__DNA__FIELD__draw_flag
 	 */
@@ -902,7 +916,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Set method for struct member 'draw_flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> UNUSED </p>
 	 * @see #__DNA__FIELD__draw_flag
 	 */
@@ -959,7 +973,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Get method for struct member 'velocity_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Define how the velocity vectors are interpreted with regard to time, 'frame' means the delta time is 1 frame, 'second' means the delta time is 1 / FPS
 	 * @see #__DNA__FIELD__velocity_unit
 	 */
@@ -976,7 +990,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Set method for struct member 'velocity_unit'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
+	 * <h4>Blender Python API</h4>
 	 * Define how the velocity vectors are interpreted with regard to time, 'frame' means the delta time is 1 frame, 'second' means the delta time is 1 / FPS
 	 * @see #__DNA__FIELD__velocity_unit
 	 */
@@ -993,8 +1007,9 @@ public class CacheFile extends CFacade {
 	/**
 	 * Get method for struct member 'velocity_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of the Alembic attribute used for generating motion blur data<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of the Alembic attribute used for generating motion blur data
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the velocity property in the Alembic file. </p>
 	 * @see #__DNA__FIELD__velocity_name
 	 */
@@ -1015,8 +1030,9 @@ public class CacheFile extends CFacade {
 	/**
 	 * Set method for struct member 'velocity_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Name of the Alembic attribute used for generating motion blur data<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Name of the Alembic attribute used for generating motion blur data
+	 * <h4>Blender Source Code</h4>
 	 * <p> Name of the velocity property in the Alembic file. </p>
 	 * @see #__DNA__FIELD__velocity_name
 	 */
@@ -1041,7 +1057,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Get method for struct member 'handle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime </p>
 	 * @see #__DNA__FIELD__handle
 	 */
@@ -1061,7 +1077,7 @@ public class CacheFile extends CFacade {
 	/**
 	 * Set method for struct member 'handle'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Runtime </p>
 	 * @see #__DNA__FIELD__handle
 	 */

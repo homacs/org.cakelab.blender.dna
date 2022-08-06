@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'AssetTag'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> User defined tag. Currently only used by assets, could be used more often at some point. Maybe add a custom icon and color to these in future? </p>
  */
 
@@ -25,8 +27,8 @@ public class AssetTag extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for AssetTag.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 736;
 
@@ -73,8 +75,9 @@ public class AssetTag extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The identifier that makes up this tag<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * The identifier that makes up this tag
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,8 +172,9 @@ public class AssetTag extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The identifier that makes up this tag<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * The identifier that makes up this tag
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
@@ -191,8 +195,9 @@ public class AssetTag extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The identifier that makes up this tag<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * The identifier that makes up this tag
+	 * <h4>Blender Source Code</h4>
 	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */

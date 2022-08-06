@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,15 +25,15 @@ public class MovieTrackingDopesheet extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for MovieTrackingDopesheet.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 641;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ok'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag if dopesheet information is still relevant. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,8 +56,9 @@ public class MovieTrackingDopesheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'sort_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method to be used to sort channels in dopesheet view<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Method to be used to sort channels in dopesheet view
+	 * <h4>Blender Source Code</h4>
 	 * <p> Method to be used to sort tracks. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +81,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dopesheet building flag such as inverted order of sort. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -102,7 +104,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'coverage_segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** runtime stuff ** summary </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -125,7 +127,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'channels'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> detailed </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -196,7 +198,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	/**
 	 * Get method for struct member 'ok'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag if dopesheet information is still relevant. </p>
 	 * @see #__DNA__FIELD__ok
 	 */
@@ -213,7 +215,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	/**
 	 * Set method for struct member 'ok'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Flag if dopesheet information is still relevant. </p>
 	 * @see #__DNA__FIELD__ok
 	 */
@@ -230,8 +232,9 @@ public class MovieTrackingDopesheet extends CFacade {
 	/**
 	 * Get method for struct member 'sort_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method to be used to sort channels in dopesheet view<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Method to be used to sort channels in dopesheet view
+	 * <h4>Blender Source Code</h4>
 	 * <p> Method to be used to sort tracks. </p>
 	 * @see #__DNA__FIELD__sort_method
 	 */
@@ -248,8 +251,9 @@ public class MovieTrackingDopesheet extends CFacade {
 	/**
 	 * Set method for struct member 'sort_method'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method to be used to sort channels in dopesheet view<h4>Blender Source Code:</h4>
+	 * <h4>Blender Python API</h4>
+	 * Method to be used to sort channels in dopesheet view
+	 * <h4>Blender Source Code</h4>
 	 * <p> Method to be used to sort tracks. </p>
 	 * @see #__DNA__FIELD__sort_method
 	 */
@@ -266,7 +270,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dopesheet building flag such as inverted order of sort. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -283,7 +287,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Dopesheet building flag such as inverted order of sort. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -300,7 +304,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	/**
 	 * Get method for struct member 'coverage_segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** runtime stuff ** summary </p>
 	 * @see #__DNA__FIELD__coverage_segments
 	 */
@@ -317,7 +321,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	/**
 	 * Set method for struct member 'coverage_segments'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> ** runtime stuff ** summary </p>
 	 * @see #__DNA__FIELD__coverage_segments
 	 */
@@ -342,7 +346,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	/**
 	 * Get method for struct member 'channels'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> detailed </p>
 	 * @see #__DNA__FIELD__channels
 	 */
@@ -359,7 +363,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	/**
 	 * Set method for struct member 'channels'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> detailed </p>
 	 * @see #__DNA__FIELD__channels
 	 */

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'AudioData'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  Audio </p>
  */
@@ -26,15 +28,15 @@ public class AudioData extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for AudioData.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 176;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mixrate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2.5: now in {@link FFMpegCodecData} : audio_mixrate </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +59,7 @@ public class AudioData extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'main'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2.5: now in {@link FFMpegCodecData} : audio_volume </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -228,7 +230,7 @@ public class AudioData extends CFacade {
 	/**
 	 * Get method for struct member 'mixrate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2.5: now in {@link FFMpegCodecData} : audio_mixrate </p>
 	 * @see #__DNA__FIELD__mixrate
 	 */
@@ -245,7 +247,7 @@ public class AudioData extends CFacade {
 	/**
 	 * Set method for struct member 'mixrate'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2.5: now in {@link FFMpegCodecData} : audio_mixrate </p>
 	 * @see #__DNA__FIELD__mixrate
 	 */
@@ -262,7 +264,7 @@ public class AudioData extends CFacade {
 	/**
 	 * Get method for struct member 'main'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2.5: now in {@link FFMpegCodecData} : audio_volume </p>
 	 * @see #__DNA__FIELD__main
 	 */
@@ -279,7 +281,7 @@ public class AudioData extends CFacade {
 	/**
 	 * Set method for struct member 'main'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> 2.5: now in {@link FFMpegCodecData} : audio_volume </p>
 	 * @see #__DNA__FIELD__main
 	 */

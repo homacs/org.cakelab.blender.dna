@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPDcurve'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p><hr/> 
  *  GP {@link Curve}  {@link Curve}  for Bezier {@link Editing} . </p>
  */
@@ -26,15 +28,15 @@ public class bGPDcurve extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bGPDcurve.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 534;
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of {@link BezTriple} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -57,7 +59,7 @@ public class bGPDcurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'tot_curve_points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of curve points. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -80,7 +82,7 @@ public class bGPDcurve extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General flag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -131,7 +133,7 @@ public class bGPDcurve extends CFacade {
 	/**
 	 * Get method for struct member 'curve_points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of {@link BezTriple} . </p>
 	 * @see #__DNA__FIELD__curve_points
 	 */
@@ -151,7 +153,7 @@ public class bGPDcurve extends CFacade {
 	/**
 	 * Set method for struct member 'curve_points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Array of {@link BezTriple} . </p>
 	 * @see #__DNA__FIELD__curve_points
 	 */
@@ -169,7 +171,7 @@ public class bGPDcurve extends CFacade {
 	/**
 	 * Get method for struct member 'tot_curve_points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of curve points. </p>
 	 * @see #__DNA__FIELD__tot_curve_points
 	 */
@@ -186,7 +188,7 @@ public class bGPDcurve extends CFacade {
 	/**
 	 * Set method for struct member 'tot_curve_points'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Total number of curve points. </p>
 	 * @see #__DNA__FIELD__tot_curve_points
 	 */
@@ -203,7 +205,7 @@ public class bGPDcurve extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -220,7 +222,7 @@ public class bGPDcurve extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> General flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */

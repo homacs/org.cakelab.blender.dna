@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -13,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bAction'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
+ * 
+ * <h4>Blender Source Code</h4>
  * <p> Actions -----------------------------------<mdash/>  Action - reusable F-Curve 'bag' (act)</p><p> This contains F-Curves that may affect settings from more than one {@link ID}  blocktype and/or datablock (i.e. sub-data linked/used directly to the {@link ID}  block that the animation data is linked to), but with the restriction that the other unrelated data (i.e. data that is not directly used or linked to by the source {@link ID}  block).</p><p> It serves as a 'unit' of reusable animation information (i.e. keyframes/motion data), that affects a group of related settings (as defined by the user). </p>
  */
 
@@ -25,15 +27,15 @@ public class bAction extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bAction.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 348;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> -serialization for relinking. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -56,7 +58,7 @@ public class bAction extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'curves'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Function-curves ({@link FCurve} ). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -79,7 +81,7 @@ public class bAction extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'chanbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Legacy data - Action Channels ({@link bActionChannel} ) in pre-2.5 animation system. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -104,7 +106,7 @@ public class bAction extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'groups'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Groups of function-curves ({@link bActionGroup} ). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -127,7 +129,7 @@ public class bAction extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'markers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Markers local to the Action (used to provide Pose-Libraries). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -150,7 +152,7 @@ public class bAction extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for this action. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -173,7 +175,7 @@ public class bAction extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'active_marker'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of the active marker. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -196,7 +198,7 @@ public class bAction extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'idroot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of ID-blocks that action can be assigned to (if 0, will be set to whatever {@link ID}  first evaluates it). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -267,7 +269,7 @@ public class bAction extends CFacade {
 	/**
 	 * Get method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> -serialization for relinking. </p>
 	 * @see #__DNA__FIELD__id
 	 */
@@ -284,7 +286,7 @@ public class bAction extends CFacade {
 	/**
 	 * Set method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> -serialization for relinking. </p>
 	 * @see #__DNA__FIELD__id
 	 */
@@ -309,7 +311,7 @@ public class bAction extends CFacade {
 	/**
 	 * Get method for struct member 'curves'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Function-curves ({@link FCurve} ). </p>
 	 * @see #__DNA__FIELD__curves
 	 */
@@ -326,7 +328,7 @@ public class bAction extends CFacade {
 	/**
 	 * Set method for struct member 'curves'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Function-curves ({@link FCurve} ). </p>
 	 * @see #__DNA__FIELD__curves
 	 */
@@ -351,7 +353,7 @@ public class bAction extends CFacade {
 	/**
 	 * Get method for struct member 'chanbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Legacy data - Action Channels ({@link bActionChannel} ) in pre-2.5 animation system. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -370,7 +372,7 @@ public class bAction extends CFacade {
 	/**
 	 * Set method for struct member 'chanbase'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Legacy data - Action Channels ({@link bActionChannel} ) in pre-2.5 animation system. 
 	 * @deprecated
 	 *  Deprecated</p>
@@ -397,7 +399,7 @@ public class bAction extends CFacade {
 	/**
 	 * Get method for struct member 'groups'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Groups of function-curves ({@link bActionGroup} ). </p>
 	 * @see #__DNA__FIELD__groups
 	 */
@@ -414,7 +416,7 @@ public class bAction extends CFacade {
 	/**
 	 * Set method for struct member 'groups'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Groups of function-curves ({@link bActionGroup} ). </p>
 	 * @see #__DNA__FIELD__groups
 	 */
@@ -439,7 +441,7 @@ public class bAction extends CFacade {
 	/**
 	 * Get method for struct member 'markers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Markers local to the Action (used to provide Pose-Libraries). </p>
 	 * @see #__DNA__FIELD__markers
 	 */
@@ -456,7 +458,7 @@ public class bAction extends CFacade {
 	/**
 	 * Set method for struct member 'markers'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Markers local to the Action (used to provide Pose-Libraries). </p>
 	 * @see #__DNA__FIELD__markers
 	 */
@@ -481,7 +483,7 @@ public class bAction extends CFacade {
 	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for this action. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -498,7 +500,7 @@ public class bAction extends CFacade {
 	/**
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Settings for this action. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -515,7 +517,7 @@ public class bAction extends CFacade {
 	/**
 	 * Get method for struct member 'active_marker'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of the active marker. </p>
 	 * @see #__DNA__FIELD__active_marker
 	 */
@@ -532,7 +534,7 @@ public class bAction extends CFacade {
 	/**
 	 * Set method for struct member 'active_marker'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Index of the active marker. </p>
 	 * @see #__DNA__FIELD__active_marker
 	 */
@@ -549,7 +551,7 @@ public class bAction extends CFacade {
 	/**
 	 * Get method for struct member 'idroot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of ID-blocks that action can be assigned to (if 0, will be set to whatever {@link ID}  first evaluates it). </p>
 	 * @see #__DNA__FIELD__idroot
 	 */
@@ -566,7 +568,7 @@ public class bAction extends CFacade {
 	/**
 	 * Set method for struct member 'idroot'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Type of ID-blocks that action can be assigned to (if 0, will be set to whatever {@link ID}  first evaluates it). </p>
 	 * @see #__DNA__FIELD__idroot
 	 */

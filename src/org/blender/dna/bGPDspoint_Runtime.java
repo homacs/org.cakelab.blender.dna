@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.io.dna.internal.StructDNA;
 import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
@@ -24,15 +25,15 @@ public class bGPDspoint_Runtime extends CFacade {
 	 * <p>
 	 * It is required when allocating a new block to store data for bGPDspoint_Runtime.
 	 * </p>
-	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
-	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
+	 * @see StructDNA
+	 * @see BlockTable
 	 */
 	public static final int __DNA__SDNA_INDEX = 528;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pt_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original point (used to dereference evaluated data) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -55,7 +56,7 @@ public class bGPDspoint_Runtime extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'idx_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original index array position </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -106,7 +107,7 @@ public class bGPDspoint_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'pt_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original point (used to dereference evaluated data) </p>
 	 * @see #__DNA__FIELD__pt_orig
 	 */
@@ -126,7 +127,7 @@ public class bGPDspoint_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'pt_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original point (used to dereference evaluated data) </p>
 	 * @see #__DNA__FIELD__pt_orig
 	 */
@@ -144,7 +145,7 @@ public class bGPDspoint_Runtime extends CFacade {
 	/**
 	 * Get method for struct member 'idx_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original index array position </p>
 	 * @see #__DNA__FIELD__idx_orig
 	 */
@@ -161,7 +162,7 @@ public class bGPDspoint_Runtime extends CFacade {
 	/**
 	 * Set method for struct member 'idx_orig'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code</h4>
 	 * <p> Original index array position </p>
 	 * @see #__DNA__FIELD__idx_orig
 	 */
