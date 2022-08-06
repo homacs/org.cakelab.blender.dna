@@ -487,7 +487,9 @@ public class bPoseChannel extends CFacade {
 	 * Field descriptor (offset) for struct member 'custom'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Draws custom object instead of default bone shape. </p>
+	 * <p> Draws custom object instead of default bone shape.</p><p><h2>Note</h2><p> For the purpose of user interaction (selection, display etc), it's important this value is treated as NULL when ARM_NO_CUSTOM  is set. </p> For the purpose of user interaction (selection, display etc), it's important this value is treated as NULL when ARM_NO_CUSTOM is set. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -510,7 +512,9 @@ public class bPoseChannel extends CFacade {
 	 * Field descriptor (offset) for struct member 'custom_tx'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Odd feature, display with another bones transform. needed in rare cases for advanced rigs, since the alternative is highly complicated - campbell </p>
+	 * <p> This is a specific feature to display with another bones transform. Needed in rare cases for advanced rigs, since alternative solutions are highly complicated.</p><p><h2>Note</h2><p> This depends {@link bPoseChannel#getCustom()}  being set and the ARM_NO_CUSTOM  flag being unset. </p> This depends bPoseChannel.custom being set and the ARM_NO_CUSTOM flag being unset. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2246,7 +2250,9 @@ public class bPoseChannel extends CFacade {
 	 * Get method for struct member 'custom'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Draws custom object instead of default bone shape. </p>
+	 * <p> Draws custom object instead of default bone shape.</p><p><h2>Note</h2><p> For the purpose of user interaction (selection, display etc), it's important this value is treated as NULL when ARM_NO_CUSTOM  is set. </p> For the purpose of user interaction (selection, display etc), it's important this value is treated as NULL when ARM_NO_CUSTOM is set. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__custom
 	 */
 	
@@ -2266,7 +2272,9 @@ public class bPoseChannel extends CFacade {
 	 * Set method for struct member 'custom'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Draws custom object instead of default bone shape. </p>
+	 * <p> Draws custom object instead of default bone shape.</p><p><h2>Note</h2><p> For the purpose of user interaction (selection, display etc), it's important this value is treated as NULL when ARM_NO_CUSTOM  is set. </p> For the purpose of user interaction (selection, display etc), it's important this value is treated as NULL when ARM_NO_CUSTOM is set. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__custom
 	 */
 	
@@ -2284,7 +2292,9 @@ public class bPoseChannel extends CFacade {
 	 * Get method for struct member 'custom_tx'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Odd feature, display with another bones transform. needed in rare cases for advanced rigs, since the alternative is highly complicated - campbell </p>
+	 * <p> This is a specific feature to display with another bones transform. Needed in rare cases for advanced rigs, since alternative solutions are highly complicated.</p><p><h2>Note</h2><p> This depends {@link bPoseChannel#getCustom()}  being set and the ARM_NO_CUSTOM  flag being unset. </p> This depends bPoseChannel.custom being set and the ARM_NO_CUSTOM flag being unset. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__custom_tx
 	 */
 	
@@ -2304,7 +2314,9 @@ public class bPoseChannel extends CFacade {
 	 * Set method for struct member 'custom_tx'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Odd feature, display with another bones transform. needed in rare cases for advanced rigs, since the alternative is highly complicated - campbell </p>
+	 * <p> This is a specific feature to display with another bones transform. Needed in rare cases for advanced rigs, since alternative solutions are highly complicated.</p><p><h2>Note</h2><p> This depends {@link bPoseChannel#getCustom()}  being set and the ARM_NO_CUSTOM  flag being unset. </p> This depends bPoseChannel.custom being set and the ARM_NO_CUSTOM flag being unset. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__custom_tx
 	 */
 	
