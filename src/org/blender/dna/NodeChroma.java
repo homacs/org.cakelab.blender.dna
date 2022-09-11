@@ -28,7 +28,7 @@ public class NodeChroma extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 439;
+	public static final int __DNA__SDNA_INDEX = 430;
 
 	/**
 	 * Field descriptor (offset) for struct member 't1'.

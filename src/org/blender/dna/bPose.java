@@ -30,7 +30,7 @@ public class bPose extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 362;
+	public static final int __DNA__SDNA_INDEX = 23;
 
 	/**
 	 * Field descriptor (offset) for struct member 'chanbase'.

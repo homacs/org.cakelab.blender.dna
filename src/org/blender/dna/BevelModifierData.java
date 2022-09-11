@@ -28,7 +28,7 @@ public class BevelModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 110;
+	public static final int __DNA__SDNA_INDEX = 331;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

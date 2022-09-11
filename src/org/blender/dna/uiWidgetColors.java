@@ -28,7 +28,7 @@ public class uiWidgetColors extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 274;
+	public static final int __DNA__SDNA_INDEX = 736;
 
 	/**
 	 * Field descriptor (offset) for struct member 'outline'.

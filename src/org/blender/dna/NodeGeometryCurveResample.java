@@ -27,7 +27,7 @@ public class NodeGeometryCurveResample extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 519;
+	public static final int __DNA__SDNA_INDEX = 512;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.

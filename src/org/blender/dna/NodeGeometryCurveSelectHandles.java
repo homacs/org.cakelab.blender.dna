@@ -27,7 +27,7 @@ public class NodeGeometryCurveSelectHandles extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 513;
+	public static final int __DNA__SDNA_INDEX = 506;
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle_type'.

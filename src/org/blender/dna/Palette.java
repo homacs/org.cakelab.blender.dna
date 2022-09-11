@@ -28,7 +28,7 @@ public class Palette extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 552;
+	public static final int __DNA__SDNA_INDEX = 74;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.

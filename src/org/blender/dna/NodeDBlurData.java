@@ -27,7 +27,7 @@ public class NodeDBlurData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 432;
+	public static final int __DNA__SDNA_INDEX = 423;
 
 	/**
 	 * Field descriptor (offset) for struct member 'center_x'.

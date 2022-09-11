@@ -27,7 +27,7 @@ public class Image_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 48;
+	public static final int __DNA__SDNA_INDEX = 212;
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_mutex'.

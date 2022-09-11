@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=684, size64=784)
+@CMetaData(size32=676, size64=768)
 public class Curves extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class Curves extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 784;
+	public static final int __DNA__SDNA_INDEX = 140;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -88,7 +88,7 @@ public class Curves extends CFacade {
 	 * <ul>
 	 * <li>Field: 'geometry'</li>
 	 * <li>Signature: 'CurvesGeometry'</li>
-	 * <li>Actual Size (32bit/64bit): 500/544</li>
+	 * <li>Actual Size (32bit/64bit): 488/520</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__geometry = new long[]{156, 200};
@@ -111,7 +111,7 @@ public class Curves extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{656, 744};
+	public static final long[] __DNA__FIELD__flag = new long[]{644, 720};
 
 	/**
 	 * Field descriptor (offset) for struct member 'attributes_active_index'.
@@ -131,7 +131,7 @@ public class Curves extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__attributes_active_index = new long[]{660, 748};
+	public static final long[] __DNA__FIELD__attributes_active_index = new long[]{648, 724};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
@@ -154,7 +154,7 @@ public class Curves extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat = new long[]{664, 752};
+	public static final long[] __DNA__FIELD__mat = new long[]{652, 728};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totcol'.
@@ -174,31 +174,79 @@ public class Curves extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totcol = new long[]{668, 760};
+	public static final long[] __DNA__FIELD__totcol = new long[]{656, 736};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad2'.
+	 * Field descriptor (offset) for struct member 'symmetry'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> User-defined symmetry flag (eCurvesSymmetryType ) that causes editing operations to maintain symmetrical geometry. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Curves curves = ...;
-	 * CPointer&lt;Object&gt; p = curves.__dna__addressof(Curves.__DNA__FIELD___pad2);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * CPointer&lt;Object&gt; p = curves.__dna__addressof(Curves.__DNA__FIELD__symmetry);
+	 * CPointer&lt;Byte&gt; p_symmetry = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad2'</li>
-	 * <li>Signature: 'short[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * <li>Field: 'symmetry'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{670, 762};
+	public static final long[] __DNA__FIELD__symmetry = new long[]{658, 738};
+
+	/**
+	 * Field descriptor (offset) for struct member 'selection_domain'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> #eAttrDomain. The active selection mode domain. At most one selection mode can be active at a time. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Curves curves = ...;
+	 * CPointer&lt;Object&gt; p = curves.__dna__addressof(Curves.__DNA__FIELD__selection_domain);
+	 * CPointer&lt;Byte&gt; p_selection_domain = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'selection_domain'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__selection_domain = new long[]{659, 739};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Curves curves = ...;
+	 * CPointer&lt;Object&gt; p = curves.__dna__addressof(Curves.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{660, 740};
 
 	/**
 	 * Field descriptor (offset) for struct member 'surface'.
 	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Mesh object that the curves can be attached to
 	 * <h4>Blender Source Code</h4>
 	 * <p> Used as base mesh when curves represent e.g. hair or fur. This surface is used in edit modes. When set, the curves will have attributes that indicate a position on this surface. This is used for deforming the curves when the surface is deformed dynamically.</p><p> This is expected to be a mesh object. </p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -217,7 +265,32 @@ public class Curves extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__surface = new long[]{676, 768};
+	public static final long[] __DNA__FIELD__surface = new long[]{664, 744};
+
+	/**
+	 * Field descriptor (offset) for struct member 'surface_uv_map'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The name of the attribute on the surface mesh used to define the attachment of each curve
+	 * <h4>Blender Source Code</h4>
+	 * <p> The name of the attribute on the surface {@link Mesh}  used to give meaning to the UV attachment coordinates stored on each curve. Expected to be a 2D vector attribute on the face corner domain. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Curves curves = ...;
+	 * CPointer&lt;Object&gt; p = curves.__dna__addressof(Curves.__DNA__FIELD__surface_uv_map);
+	 * CPointer&lt;CPointer&lt;Byte&gt;&gt; p_surface_uv_map = p.cast(new Class[]{CPointer.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'surface_uv_map'</li>
+	 * <li>Signature: 'char*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__surface_uv_map = new long[]{668, 752};
 
 	/**
 	 * Field descriptor (offset) for struct member 'batch_cache'.
@@ -240,7 +313,7 @@ public class Curves extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__batch_cache = new long[]{680, 776};
+	public static final long[] __DNA__FIELD__batch_cache = new long[]{672, 760};
 
 	public Curves(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -368,9 +441,9 @@ public class Curves extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 744);
+			return __io__block.readInt(__io__address + 720);
 		} else {
-			return __io__block.readInt(__io__address + 656);
+			return __io__block.readInt(__io__address + 644);
 		}
 	}
 
@@ -382,9 +455,9 @@ public class Curves extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 744, flag);
+			__io__block.writeInt(__io__address + 720, flag);
 		} else {
-			__io__block.writeInt(__io__address + 656, flag);
+			__io__block.writeInt(__io__address + 644, flag);
 		}
 	}
 
@@ -396,9 +469,9 @@ public class Curves extends CFacade {
 	public int getAttributes_active_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 748);
+			return __io__block.readInt(__io__address + 724);
 		} else {
-			return __io__block.readInt(__io__address + 660);
+			return __io__block.readInt(__io__address + 648);
 		}
 	}
 
@@ -410,9 +483,9 @@ public class Curves extends CFacade {
 	public void setAttributes_active_index(int attributes_active_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 748, attributes_active_index);
+			__io__block.writeInt(__io__address + 724, attributes_active_index);
 		} else {
-			__io__block.writeInt(__io__address + 660, attributes_active_index);
+			__io__block.writeInt(__io__address + 648, attributes_active_index);
 		}
 	}
 
@@ -428,9 +501,9 @@ public class Curves extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 752);
+			__dna__targetAddress = __io__block.readLong(__io__address + 728);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 664);
+			__dna__targetAddress = __io__block.readLong(__io__address + 652);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, Material.class};
 		return new CPointer<CPointer<Material>>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -448,9 +521,9 @@ public class Curves extends CFacade {
 	{
 		long __address = ((mat == null) ? 0 : mat.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 752, __address);
+			__io__block.writeLong(__io__address + 728, __address);
 		} else {
-			__io__block.writeLong(__io__address + 664, __address);
+			__io__block.writeLong(__io__address + 652, __address);
 		}
 	}
 
@@ -462,9 +535,9 @@ public class Curves extends CFacade {
 	public short getTotcol() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 760);
+			return __io__block.readShort(__io__address + 736);
 		} else {
-			return __io__block.readShort(__io__address + 668);
+			return __io__block.readShort(__io__address + 656);
 		}
 	}
 
@@ -476,55 +549,125 @@ public class Curves extends CFacade {
 	public void setTotcol(short totcol) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 760, totcol);
+			__io__block.writeShort(__io__address + 736, totcol);
 		} else {
-			__io__block.writeShort(__io__address + 668, totcol);
+			__io__block.writeShort(__io__address + 656, totcol);
 		}
 	}
 
 	/**
-	 * Get method for struct member '_pad2'.
-	 * @see #__DNA__FIELD___pad2
+	 * Get method for struct member 'symmetry'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> User-defined symmetry flag (eCurvesSymmetryType ) that causes editing operations to maintain symmetrical geometry. </p>
+	 * @see #__DNA__FIELD__symmetry
 	 */
 	
-	public CArrayFacade<Short> get_pad2() throws IOException
+	public byte getSymmetry() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 738);
+		} else {
+			return __io__block.readByte(__io__address + 658);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'symmetry'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> User-defined symmetry flag (eCurvesSymmetryType ) that causes editing operations to maintain symmetrical geometry. </p>
+	 * @see #__DNA__FIELD__symmetry
+	 */
+	
+	public void setSymmetry(byte symmetry) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 738, symmetry);
+		} else {
+			__io__block.writeByte(__io__address + 658, symmetry);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'selection_domain'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> #eAttrDomain. The active selection mode domain. At most one selection mode can be active at a time. </p>
+	 * @see #__DNA__FIELD__selection_domain
+	 */
+	
+	public byte getSelection_domain() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 739);
+		} else {
+			return __io__block.readByte(__io__address + 659);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'selection_domain'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> #eAttrDomain. The active selection mode domain. At most one selection mode can be active at a time. </p>
+	 * @see #__DNA__FIELD__selection_domain
+	 */
+	
+	public void setSelection_domain(byte selection_domain) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 739, selection_domain);
+		} else {
+			__io__block.writeByte(__io__address + 659, selection_domain);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 762, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 740, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 670, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 660, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad2'.
-	 * @see #__DNA__FIELD___pad2
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void set_pad2(CArrayFacade<Short> _pad2) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 762;
+			__dna__offset = 740;
 		} else {
-			__dna__offset = 670;
+			__dna__offset = 660;
 		}
-		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, _pad2)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( get_pad2(), _pad2);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'surface'.
 	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Mesh object that the curves can be attached to
 	 * <h4>Blender Source Code</h4>
 	 * <p> Used as base mesh when curves represent e.g. hair or fur. This surface is used in edit modes. When set, the curves will have attributes that indicate a position on this surface. This is used for deforming the curves when the surface is deformed dynamically.</p><p> This is expected to be a mesh object. </p>
 	 * @see #__DNA__FIELD__surface
@@ -534,9 +677,9 @@ public class Curves extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 768);
+			__dna__targetAddress = __io__block.readLong(__io__address + 744);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 676);
+			__dna__targetAddress = __io__block.readLong(__io__address + 664);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -545,6 +688,8 @@ public class Curves extends CFacade {
 	/**
 	 * Set method for struct member 'surface'.
 	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Mesh object that the curves can be attached to
 	 * <h4>Blender Source Code</h4>
 	 * <p> Used as base mesh when curves represent e.g. hair or fur. This surface is used in edit modes. When set, the curves will have attributes that indicate a position on this surface. This is used for deforming the curves when the surface is deformed dynamically.</p><p> This is expected to be a mesh object. </p>
 	 * @see #__DNA__FIELD__surface
@@ -554,9 +699,51 @@ public class Curves extends CFacade {
 	{
 		long __address = ((surface == null) ? 0 : surface.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 768, __address);
+			__io__block.writeLong(__io__address + 744, __address);
 		} else {
-			__io__block.writeLong(__io__address + 676, __address);
+			__io__block.writeLong(__io__address + 664, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'surface_uv_map'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The name of the attribute on the surface mesh used to define the attachment of each curve
+	 * <h4>Blender Source Code</h4>
+	 * <p> The name of the attribute on the surface {@link Mesh}  used to give meaning to the UV attachment coordinates stored on each curve. Expected to be a 2D vector attribute on the face corner domain. </p>
+	 * @see #__DNA__FIELD__surface_uv_map
+	 */
+	
+	public CPointer<Byte> getSurface_uv_map() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 752);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 668);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'surface_uv_map'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The name of the attribute on the surface mesh used to define the attachment of each curve
+	 * <h4>Blender Source Code</h4>
+	 * <p> The name of the attribute on the surface {@link Mesh}  used to give meaning to the UV attachment coordinates stored on each curve. Expected to be a 2D vector attribute on the face corner domain. </p>
+	 * @see #__DNA__FIELD__surface_uv_map
+	 */
+	
+	public void setSurface_uv_map(CPointer<Byte> surface_uv_map) throws IOException
+	{
+		long __address = ((surface_uv_map == null) ? 0 : surface_uv_map.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 752, __address);
+		} else {
+			__io__block.writeLong(__io__address + 668, __address);
 		}
 	}
 
@@ -572,9 +759,9 @@ public class Curves extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 776);
+			__dna__targetAddress = __io__block.readLong(__io__address + 760);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 680);
+			__dna__targetAddress = __io__block.readLong(__io__address + 672);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -592,9 +779,9 @@ public class Curves extends CFacade {
 	{
 		long __address = ((batch_cache == null) ? 0 : batch_cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 776, __address);
+			__io__block.writeLong(__io__address + 760, __address);
 		} else {
-			__io__block.writeLong(__io__address + 680, __address);
+			__io__block.writeLong(__io__address + 672, __address);
 		}
 	}
 

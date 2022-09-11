@@ -29,7 +29,7 @@ public class MFloatProperty extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 81;
+	public static final int __DNA__SDNA_INDEX = 300;
 
 	/**
 	 * Field descriptor (offset) for struct member 'f'.

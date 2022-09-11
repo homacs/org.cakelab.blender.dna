@@ -27,7 +27,7 @@ public class MBoolProperty extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 84;
+	public static final int __DNA__SDNA_INDEX = 303;
 
 	/**
 	 * Field descriptor (offset) for struct member 'b'.

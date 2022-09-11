@@ -31,7 +31,7 @@ public class LinkData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 1;
+	public static final int __DNA__SDNA_INDEX = 277;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

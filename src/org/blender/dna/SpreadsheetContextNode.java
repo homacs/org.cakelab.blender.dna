@@ -27,7 +27,7 @@ public class SpreadsheetContextNode extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 269;
+	public static final int __DNA__SDNA_INDEX = 706;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.

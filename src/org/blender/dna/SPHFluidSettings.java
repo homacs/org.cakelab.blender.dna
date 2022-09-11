@@ -28,7 +28,7 @@ public class SPHFluidSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 567;
+	public static final int __DNA__SDNA_INDEX = 558;
 
 	/**
 	 * Field descriptor (offset) for struct member 'radius'.

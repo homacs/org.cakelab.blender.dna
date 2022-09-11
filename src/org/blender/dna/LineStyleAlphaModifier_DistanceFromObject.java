@@ -28,7 +28,7 @@ public class LineStyleAlphaModifier_DistanceFromObject extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 719;
+	public static final int __DNA__SDNA_INDEX = 243;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

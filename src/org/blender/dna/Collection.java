@@ -28,7 +28,7 @@ public class Collection extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 354;
+	public static final int __DNA__SDNA_INDEX = 89;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -278,6 +278,29 @@ public class Collection extends CFacade {
 	public static final long[] __DNA__FIELD__lineart_intersection_mask = new long[]{195, 255};
 
 	/**
+	 * Field descriptor (offset) for struct member 'lineart_intersection_priority'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The intersection line will be included into the object with the higher intersection priority value
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Collection collection = ...;
+	 * CPointer&lt;Object&gt; p = collection.__dna__addressof(Collection.__DNA__FIELD__lineart_intersection_priority);
+	 * CPointer&lt;Byte&gt; p_lineart_intersection_priority = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'lineart_intersection_priority'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__lineart_intersection_priority = new long[]{196, 256};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -291,11 +314,11 @@ public class Collection extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[6]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * <li>Signature: 'char[5]'</li>
+	 * <li>Actual Size (32bit/64bit): 5/5</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{196, 256};
+	public static final long[] __DNA__FIELD___pad = new long[]{197, 257};
 
 	/**
 	 * Field descriptor (offset) for struct member 'color_tag'.
@@ -850,6 +873,40 @@ public class Collection extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'lineart_intersection_priority'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The intersection line will be included into the object with the higher intersection priority value
+	 * @see #__DNA__FIELD__lineart_intersection_priority
+	 */
+	
+	public byte getLineart_intersection_priority() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 256);
+		} else {
+			return __io__block.readByte(__io__address + 196);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'lineart_intersection_priority'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The intersection line will be included into the object with the higher intersection priority value
+	 * @see #__DNA__FIELD__lineart_intersection_priority
+	 */
+	
+	public void setLineart_intersection_priority(byte lineart_intersection_priority) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 256, lineart_intersection_priority);
+		} else {
+			__io__block.writeByte(__io__address + 196, lineart_intersection_priority);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -858,12 +915,12 @@ public class Collection extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			6
+			5
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 256, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 257, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 197, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -876,9 +933,9 @@ public class Collection extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 256;
+			__dna__offset = 257;
 		} else {
-			__dna__offset = 196;
+			__dna__offset = 197;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

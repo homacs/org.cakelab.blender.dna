@@ -30,7 +30,7 @@ public class FMod_Limits extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 645;
+	public static final int __DNA__SDNA_INDEX = 39;
 
 	/**
 	 * Field descriptor (offset) for struct member 'rect'.

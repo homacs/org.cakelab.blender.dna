@@ -28,7 +28,7 @@ public class Volume extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 789;
+	public static final int __DNA__SDNA_INDEX = 778;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.

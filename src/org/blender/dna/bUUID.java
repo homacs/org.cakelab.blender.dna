@@ -30,7 +30,7 @@ public class bUUID extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 794;
+	public static final int __DNA__SDNA_INDEX = 760;
 
 	/**
 	 * Field descriptor (offset) for struct member 'time_low'.

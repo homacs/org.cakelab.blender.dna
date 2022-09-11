@@ -28,7 +28,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 547;
+	public static final int __DNA__SDNA_INDEX = 69;
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_smoothfac'.
@@ -755,7 +755,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'vertex_factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Mix colorfactor </p>
+	 * <p> Mix color-factor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2314,7 +2314,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * Get method for struct member 'vertex_factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Mix colorfactor </p>
+	 * <p> Mix color-factor. </p>
 	 * @see #__DNA__FIELD__vertex_factor
 	 */
 	
@@ -2331,7 +2331,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * Set method for struct member 'vertex_factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Mix colorfactor </p>
+	 * <p> Mix color-factor. </p>
 	 * @see #__DNA__FIELD__vertex_factor
 	 */
 	

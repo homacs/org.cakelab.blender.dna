@@ -28,7 +28,7 @@ public class ShrinkwrapGpencilModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 615;
+	public static final int __DNA__SDNA_INDEX = 184;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

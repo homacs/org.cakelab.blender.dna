@@ -30,7 +30,7 @@ public class bConstraintChannel extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 371;
+	public static final int __DNA__SDNA_INDEX = 98;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

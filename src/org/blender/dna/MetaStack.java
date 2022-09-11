@@ -28,7 +28,7 @@ public class MetaStack extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 323;
+	public static final int __DNA__SDNA_INDEX = 635;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

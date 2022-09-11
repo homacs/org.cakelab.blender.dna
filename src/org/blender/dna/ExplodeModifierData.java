@@ -28,7 +28,7 @@ public class ExplodeModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 130;
+	public static final int __DNA__SDNA_INDEX = 351;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

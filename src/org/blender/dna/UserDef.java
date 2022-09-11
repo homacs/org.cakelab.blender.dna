@@ -28,7 +28,7 @@ public class UserDef extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 297;
+	public static final int __DNA__SDNA_INDEX = 759;
 
 	/**
 	 * Field descriptor (offset) for struct member 'versionfile'.
@@ -2441,7 +2441,7 @@ public class UserDef extends CFacade {
 	 * Field descriptor (offset) for struct member 'autokey_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p>eAutokey_Mode , autokeying mode. </p>
+	 * <p>eAutokey_Mode , auto-keying mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2963,26 +2963,6 @@ public class UserDef extends CFacade {
 	public static final long[] __DNA__FIELD__pie_menu_threshold = new long[]{12050, 12122};
 
 	/**
-	 * Field descriptor (offset) for struct member 'opensubdiv_compute_type'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * UserDef userdef = ...;
-	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD__opensubdiv_compute_type);
-	 * CPointer&lt;Short&gt; p_opensubdiv_compute_type = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'opensubdiv_compute_type'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__opensubdiv_compute_type = new long[]{12052, 12124};
-
-	/**
 	 * Field descriptor (offset) for struct member '_pad6'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2991,16 +2971,16 @@ public class UserDef extends CFacade {
 	 * <pre>
 	 * UserDef userdef = ...;
 	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD___pad6);
-	 * CPointer&lt;Short&gt; p__pad6 = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p__pad6 = p.cast(new Class[]{CArrayFacade.class, Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad6'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'short[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad6 = new long[]{12054, 12126};
+	public static final long[] __DNA__FIELD___pad6 = new long[]{12052, 12124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'factor_display_type'.
@@ -7248,7 +7228,7 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'autokey_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p>eAutokey_Mode , autokeying mode. </p>
+	 * <p>eAutokey_Mode , auto-keying mode. </p>
 	 * @see #__DNA__FIELD__autokey_mode
 	 */
 	
@@ -7265,7 +7245,7 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'autokey_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p>eAutokey_Mode , autokeying mode. </p>
+	 * <p>eAutokey_Mode , auto-keying mode. </p>
 	 * @see #__DNA__FIELD__autokey_mode
 	 */
 	
@@ -8063,44 +8043,20 @@ public class UserDef extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'opensubdiv_compute_type'.
-	 * @see #__DNA__FIELD__opensubdiv_compute_type
-	 */
-	
-	public short getOpensubdiv_compute_type() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 12124);
-		} else {
-			return __io__block.readShort(__io__address + 12052);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'opensubdiv_compute_type'.
-	 * @see #__DNA__FIELD__opensubdiv_compute_type
-	 */
-	
-	public void setOpensubdiv_compute_type(short opensubdiv_compute_type) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 12124, opensubdiv_compute_type);
-		} else {
-			__io__block.writeShort(__io__address + 12052, opensubdiv_compute_type);
-		}
-	}
-
-	/**
 	 * Get method for struct member '_pad6'.
 	 * @see #__DNA__FIELD___pad6
 	 */
 	
-	public short get_pad6() throws IOException
+	public CArrayFacade<Short> get_pad6() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 12126);
+			return new CArrayFacade<Short>(__io__address + 12124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 12054);
+			return new CArrayFacade<Short>(__io__address + 12052, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8109,12 +8065,20 @@ public class UserDef extends CFacade {
 	 * @see #__DNA__FIELD___pad6
 	 */
 	
-	public void set_pad6(short _pad6) throws IOException
+	public void set_pad6(CArrayFacade<Short> _pad6) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 12126, _pad6);
+			__dna__offset = 12124;
 		} else {
-			__io__block.writeShort(__io__address + 12054, _pad6);
+			__dna__offset = 12052;
+		}
+		if (__io__equals(_pad6, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad6)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad6);
+		} else {
+			__io__generic__copy( get_pad6(), _pad6);
 		}
 	}
 

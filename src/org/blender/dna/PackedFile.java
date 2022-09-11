@@ -27,7 +27,7 @@ public class PackedFile extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 33;
+	public static final int __DNA__SDNA_INDEX = 549;
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.

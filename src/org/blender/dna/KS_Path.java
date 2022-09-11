@@ -31,7 +31,7 @@ public class KS_Path extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 655;
+	public static final int __DNA__SDNA_INDEX = 49;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -238,7 +238,7 @@ public class KS_Path extends CFacade {
 	 * Field descriptor (offset) for struct member 'keyingflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> (eInsertKeyFlags) settings to supply insertkey() with. </p>
+	 * <p> (eInsertKeyFlags ) settings to supply insert-key() with. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -261,7 +261,7 @@ public class KS_Path extends CFacade {
 	 * Field descriptor (offset) for struct member 'keyingoverride'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> (eInsertKeyFlags) for each flag set, the relevant keyingflag bit overrides the default. </p>
+	 * <p> (eInsertKeyFlags ) for each flag set, the relevant keying-flag bit overrides the default. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -614,7 +614,7 @@ public class KS_Path extends CFacade {
 	 * Get method for struct member 'keyingflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> (eInsertKeyFlags) settings to supply insertkey() with. </p>
+	 * <p> (eInsertKeyFlags ) settings to supply insert-key() with. </p>
 	 * @see #__DNA__FIELD__keyingflag
 	 */
 	
@@ -631,7 +631,7 @@ public class KS_Path extends CFacade {
 	 * Set method for struct member 'keyingflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> (eInsertKeyFlags) settings to supply insertkey() with. </p>
+	 * <p> (eInsertKeyFlags ) settings to supply insert-key() with. </p>
 	 * @see #__DNA__FIELD__keyingflag
 	 */
 	
@@ -648,7 +648,7 @@ public class KS_Path extends CFacade {
 	 * Get method for struct member 'keyingoverride'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> (eInsertKeyFlags) for each flag set, the relevant keyingflag bit overrides the default. </p>
+	 * <p> (eInsertKeyFlags ) for each flag set, the relevant keying-flag bit overrides the default. </p>
 	 * @see #__DNA__FIELD__keyingoverride
 	 */
 	
@@ -665,7 +665,7 @@ public class KS_Path extends CFacade {
 	 * Set method for struct member 'keyingoverride'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> (eInsertKeyFlags) for each flag set, the relevant keyingflag bit overrides the default. </p>
+	 * <p> (eInsertKeyFlags ) for each flag set, the relevant keying-flag bit overrides the default. </p>
 	 * @see #__DNA__FIELD__keyingoverride
 	 */
 	

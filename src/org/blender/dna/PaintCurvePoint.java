@@ -27,7 +27,7 @@ public class PaintCurvePoint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 553;
+	public static final int __DNA__SDNA_INDEX = 75;
 
 	/**
 	 * Field descriptor (offset) for struct member 'bez'.

@@ -28,7 +28,7 @@ public class SpaceImage extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 250;
+	public static final int __DNA__SDNA_INDEX = 687;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -570,6 +570,26 @@ public class SpaceImage extends CFacade {
 	public static final long[] __DNA__FIELD__around = new long[]{10511, 10555};
 
 	/**
+	 * Field descriptor (offset) for struct member 'gizmo_flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceImage spaceimage = ...;
+	 * CPointer&lt;Object&gt; p = spaceimage.__dna__addressof(SpaceImage.__DNA__FIELD__gizmo_flag);
+	 * CPointer&lt;Byte&gt; p_gizmo_flag = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gizmo_flag'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gizmo_flag = new long[]{10512, 10556};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -583,11 +603,11 @@ public class SpaceImage extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad1'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{10512, 10556};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{10513, 10557};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -1591,6 +1611,34 @@ public class SpaceImage extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'gizmo_flag'.
+	 * @see #__DNA__FIELD__gizmo_flag
+	 */
+	
+	public byte getGizmo_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 10556);
+		} else {
+			return __io__block.readByte(__io__address + 10512);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gizmo_flag'.
+	 * @see #__DNA__FIELD__gizmo_flag
+	 */
+	
+	public void setGizmo_flag(byte gizmo_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 10556, gizmo_flag);
+		} else {
+			__io__block.writeByte(__io__address + 10512, gizmo_flag);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad1'.
 	 * @see #__DNA__FIELD___pad1
 	 */
@@ -1599,12 +1647,12 @@ public class SpaceImage extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 10556, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 10557, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 10512, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 10513, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1617,9 +1665,9 @@ public class SpaceImage extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 10556;
+			__dna__offset = 10557;
 		} else {
-			__dna__offset = 10512;
+			__dna__offset = 10513;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;

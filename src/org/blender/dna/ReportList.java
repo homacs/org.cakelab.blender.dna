@@ -32,7 +32,7 @@ public class ReportList extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 628;
+	public static final int __DNA__SDNA_INDEX = 779;
 
 	/**
 	 * Field descriptor (offset) for struct member 'list'.

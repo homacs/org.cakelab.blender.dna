@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=48, size64=48)
+@CMetaData(size32=24, size64=24)
 public class ImageTile_Runtime extends CFacade {
 
 	/**
@@ -28,30 +28,87 @@ public class ImageTile_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 46;
+	public static final int __DNA__SDNA_INDEX = 210;
 
 	/**
-	 * Field descriptor (offset) for struct member 'slots'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p><code></code><code></code>  </p>
+	 * Field descriptor (offset) for struct member 'tilearray_layer'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ImageTile_Runtime imagetile_runtime = ...;
-	 * CPointer&lt;Object&gt; p = imagetile_runtime.__dna__addressof(ImageTile_Runtime.__DNA__FIELD__slots);
-	 * CPointer&lt;CArrayFacade&lt;ImageTile_RuntimeTextureSlot&gt;&gt; p_slots = p.cast(new Class[]{CArrayFacade.class, ImageTile_RuntimeTextureSlot.class});
+	 * CPointer&lt;Object&gt; p = imagetile_runtime.__dna__addressof(ImageTile_Runtime.__DNA__FIELD__tilearray_layer);
+	 * CPointer&lt;Integer&gt; p_tilearray_layer = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'slots'</li>
-	 * <li>Signature: 'ImageTile_RuntimeTextureSlot[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 48/48</li>
+	 * <li>Field: 'tilearray_layer'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__slots = new long[]{0, 0};
+	public static final long[] __DNA__FIELD__tilearray_layer = new long[]{0, 0};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImageTile_Runtime imagetile_runtime = ...;
+	 * CPointer&lt;Object&gt; p = imagetile_runtime.__dna__addressof(ImageTile_Runtime.__DNA__FIELD___pad);
+	 * CPointer&lt;Integer&gt; p__pad = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{4, 4};
+
+	/**
+	 * Field descriptor (offset) for struct member 'tilearray_offset'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImageTile_Runtime imagetile_runtime = ...;
+	 * CPointer&lt;Object&gt; p = imagetile_runtime.__dna__addressof(ImageTile_Runtime.__DNA__FIELD__tilearray_offset);
+	 * CPointer&lt;CArrayFacade&lt;Integer&gt;&gt; p_tilearray_offset = p.cast(new Class[]{CArrayFacade.class, Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tilearray_offset'</li>
+	 * <li>Signature: 'int[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tilearray_offset = new long[]{8, 8};
+
+	/**
+	 * Field descriptor (offset) for struct member 'tilearray_size'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImageTile_Runtime imagetile_runtime = ...;
+	 * CPointer&lt;Object&gt; p = imagetile_runtime.__dna__addressof(ImageTile_Runtime.__DNA__FIELD__tilearray_size);
+	 * CPointer&lt;CArrayFacade&lt;Integer&gt;&gt; p_tilearray_size = p.cast(new Class[]{CArrayFacade.class, Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tilearray_size'</li>
+	 * <li>Signature: 'int[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tilearray_size = new long[]{16, 16};
 
 	public ImageTile_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -62,48 +119,138 @@ public class ImageTile_Runtime extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'slots'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p><code></code><code></code>  </p>
-	 * @see #__DNA__FIELD__slots
+	 * Get method for struct member 'tilearray_layer'.
+	 * @see #__DNA__FIELD__tilearray_layer
 	 */
 	
-	public CArrayFacade<ImageTile_RuntimeTextureSlot> getSlots() throws IOException
+	public int getTilearray_layer() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{ImageTile_RuntimeTextureSlot.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<ImageTile_RuntimeTextureSlot>(__io__address + 0, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 0);
 		} else {
-			return new CArrayFacade<ImageTile_RuntimeTextureSlot>(__io__address + 0, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 0);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'slots'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p><code></code><code></code>  </p>
-	 * @see #__DNA__FIELD__slots
+	 * Set method for struct member 'tilearray_layer'.
+	 * @see #__DNA__FIELD__tilearray_layer
 	 */
 	
-	public void setSlots(CArrayFacade<ImageTile_RuntimeTextureSlot> slots) throws IOException
+	public void setTilearray_layer(int tilearray_layer) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 0, tilearray_layer);
+		} else {
+			__io__block.writeInt(__io__address + 0, tilearray_layer);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public int get_pad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 4);
+		} else {
+			return __io__block.readInt(__io__address + 4);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(int _pad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 4, _pad);
+		} else {
+			__io__block.writeInt(__io__address + 4, _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'tilearray_offset'.
+	 * @see #__DNA__FIELD__tilearray_offset
+	 */
+	
+	public CArrayFacade<Integer> getTilearray_offset() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Integer>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Integer>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'tilearray_offset'.
+	 * @see #__DNA__FIELD__tilearray_offset
+	 */
+	
+	public void setTilearray_offset(CArrayFacade<Integer> tilearray_offset) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 0;
+			__dna__offset = 8;
 		} else {
-			__dna__offset = 0;
+			__dna__offset = 8;
 		}
-		if (__io__equals(slots, __io__address + __dna__offset)) {
+		if (__io__equals(tilearray_offset, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, slots)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, slots);
+		} else if (__io__same__encoding(this, tilearray_offset)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, tilearray_offset);
 		} else {
-			__io__generic__copy( getSlots(), slots);
+			__io__generic__copy( getTilearray_offset(), tilearray_offset);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'tilearray_size'.
+	 * @see #__DNA__FIELD__tilearray_size
+	 */
+	
+	public CArrayFacade<Integer> getTilearray_size() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Integer>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Integer>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'tilearray_size'.
+	 * @see #__DNA__FIELD__tilearray_size
+	 */
+	
+	public void setTilearray_size(CArrayFacade<Integer> tilearray_size) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 16;
+		} else {
+			__dna__offset = 16;
+		}
+		if (__io__equals(tilearray_size, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, tilearray_size)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, tilearray_size);
+		} else {
+			__io__generic__copy( getTilearray_size(), tilearray_size);
 		}
 	}
 

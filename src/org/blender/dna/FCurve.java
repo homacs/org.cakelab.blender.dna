@@ -30,7 +30,7 @@ public class FCurve extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 652;
+	public static final int __DNA__SDNA_INDEX = 46;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

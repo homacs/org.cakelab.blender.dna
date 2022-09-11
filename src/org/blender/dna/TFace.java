@@ -28,7 +28,7 @@ public class TFace extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 74;
+	public static final int __DNA__SDNA_INDEX = 293;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tpage'.

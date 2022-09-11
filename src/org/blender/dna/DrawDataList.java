@@ -27,7 +27,7 @@ public class DrawDataList extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 9;
+	public static final int __DNA__SDNA_INDEX = 0;
 
 	/**
 	 * Field descriptor (offset) for struct member 'first'.

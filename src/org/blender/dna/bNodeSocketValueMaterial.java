@@ -27,7 +27,7 @@ public class bNodeSocketValueMaterial extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 422;
+	public static final int __DNA__SDNA_INDEX = 413;
 
 	/**
 	 * Field descriptor (offset) for struct member 'value'.

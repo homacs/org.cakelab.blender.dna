@@ -28,7 +28,7 @@ public class ColorizeShaderFxData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 620;
+	public static final int __DNA__SDNA_INDEX = 660;
 
 	/**
 	 * Field descriptor (offset) for struct member 'shaderfx'.

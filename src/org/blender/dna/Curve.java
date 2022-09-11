@@ -28,7 +28,7 @@ public class Curve extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 70;
+	public static final int __DNA__SDNA_INDEX = 136;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.

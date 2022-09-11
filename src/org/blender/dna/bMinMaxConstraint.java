@@ -30,7 +30,7 @@ public class bMinMaxConstraint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 384;
+	public static final int __DNA__SDNA_INDEX = 111;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.

@@ -28,7 +28,7 @@ public class LineStyleGeometryModifier_BezierCurve extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 737;
+	public static final int __DNA__SDNA_INDEX = 261;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

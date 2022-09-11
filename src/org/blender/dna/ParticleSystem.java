@@ -28,7 +28,7 @@ public class ParticleSystem extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 569;
+	public static final int __DNA__SDNA_INDEX = 560;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

@@ -28,7 +28,7 @@ public class uiWidgetStateColors extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 275;
+	public static final int __DNA__SDNA_INDEX = 737;
 
 	/**
 	 * Field descriptor (offset) for struct member 'inner_anim'.

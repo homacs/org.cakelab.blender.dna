@@ -28,7 +28,7 @@ public class NoiseGpencilModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 591;
+	public static final int __DNA__SDNA_INDEX = 160;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -317,6 +317,26 @@ public class NoiseGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__noise_offset = new long[]{316, 332};
 
 	/**
+	 * Field descriptor (offset) for struct member 'noise_mode'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NoiseGpencilModifierData noisegpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = noisegpencilmodifierdata.__dna__addressof(NoiseGpencilModifierData.__DNA__FIELD__noise_mode);
+	 * CPointer&lt;Short&gt; p_noise_mode = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'noise_mode'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__noise_mode = new long[]{320, 336};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -330,11 +350,11 @@ public class NoiseGpencilModifierData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{320, 336};
+	public static final long[] __DNA__FIELD___pad = new long[]{322, 338};
 
 	/**
 	 * Field descriptor (offset) for struct member 'step'.
@@ -898,6 +918,34 @@ public class NoiseGpencilModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'noise_mode'.
+	 * @see #__DNA__FIELD__noise_mode
+	 */
+	
+	public short getNoise_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 336);
+		} else {
+			return __io__block.readShort(__io__address + 320);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'noise_mode'.
+	 * @see #__DNA__FIELD__noise_mode
+	 */
+	
+	public void setNoise_mode(short noise_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 336, noise_mode);
+		} else {
+			__io__block.writeShort(__io__address + 320, noise_mode);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -906,12 +954,12 @@ public class NoiseGpencilModifierData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 336, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 338, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 320, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 322, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -924,9 +972,9 @@ public class NoiseGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 336;
+			__dna__offset = 338;
 		} else {
-			__dna__offset = 320;
+			__dna__offset = 322;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

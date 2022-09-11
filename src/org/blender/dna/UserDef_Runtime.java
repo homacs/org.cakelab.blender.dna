@@ -28,7 +28,7 @@ public class UserDef_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 293;
+	public static final int __DNA__SDNA_INDEX = 755;
 
 	/**
 	 * Field descriptor (offset) for struct member 'is_dirty'.

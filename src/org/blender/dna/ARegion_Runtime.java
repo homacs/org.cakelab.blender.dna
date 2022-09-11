@@ -27,7 +27,7 @@ public class ARegion_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 311;
+	public static final int __DNA__SDNA_INDEX = 624;
 
 	/**
 	 * Field descriptor (offset) for struct member 'category'.

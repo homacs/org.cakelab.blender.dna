@@ -28,7 +28,7 @@ public class NodeKeyingScreenData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 471;
+	public static final int __DNA__SDNA_INDEX = 463;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tracking_object'.

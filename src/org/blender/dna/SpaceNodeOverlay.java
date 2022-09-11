@@ -27,7 +27,7 @@ public class SpaceNodeOverlay extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 256;
+	public static final int __DNA__SDNA_INDEX = 693;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.

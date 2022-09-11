@@ -32,7 +32,7 @@ public class CurveProfilePoint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 775;
+	public static final int __DNA__SDNA_INDEX = 137;
 
 	/**
 	 * Field descriptor (offset) for struct member 'x'.

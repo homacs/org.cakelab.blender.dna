@@ -30,7 +30,7 @@ public class SpaceText extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 252;
+	public static final int __DNA__SDNA_INDEX = 689;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

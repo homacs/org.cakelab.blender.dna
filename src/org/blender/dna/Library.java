@@ -19,7 +19,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> For each library file used, a {@link Library}  struct is added to Main WARNING: readfile.c, expand_doit() reads this struct without DNA check! </p>
  */
 
-@CMetaData(size32=2228, size64=2280)
+@CMetaData(size32=2232, size64=2288)
 public class Library extends CFacade {
 
 	/**
@@ -30,7 +30,7 @@ public class Library extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 23;
+	public static final int __DNA__SDNA_INDEX = 15;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -204,7 +204,7 @@ public class Library extends CFacade {
 	 * Field descriptor (offset) for struct member 'temp_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Temp data needed by read/write code, and liboverride recursive resync. </p>
+	 * <p> Temp data needed by read/write code, and lib-override recursive re-synchronized. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -265,6 +265,26 @@ public class Library extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__subversionfile = new long[]{2226, 2278};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Library library = ...;
+	 * CPointer&lt;Object&gt; p = library.__dna__addressof(Library.__DNA__FIELD__runtime);
+	 * CPointer&lt;Library_Runtime&gt; p_runtime = p.cast(new Class[]{Library_Runtime.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'Library_Runtime'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__runtime = new long[]{2228, 2280};
 
 	public Library(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -574,7 +594,7 @@ public class Library extends CFacade {
 	 * Get method for struct member 'temp_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Temp data needed by read/write code, and liboverride recursive resync. </p>
+	 * <p> Temp data needed by read/write code, and lib-override recursive re-synchronized. </p>
 	 * @see #__DNA__FIELD__temp_index
 	 */
 	
@@ -591,7 +611,7 @@ public class Library extends CFacade {
 	 * Set method for struct member 'temp_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Temp data needed by read/write code, and liboverride recursive resync. </p>
+	 * <p> Temp data needed by read/write code, and lib-override recursive re-synchronized. </p>
 	 * @see #__DNA__FIELD__temp_index
 	 */
 	
@@ -663,6 +683,42 @@ public class Library extends CFacade {
 			__io__block.writeShort(__io__address + 2278, subversionfile);
 		} else {
 			__io__block.writeShort(__io__address + 2226, subversionfile);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public Library_Runtime getRuntime() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new Library_Runtime(__io__address + 2280, __io__block, __io__blockTable);
+		} else {
+			return new Library_Runtime(__io__address + 2228, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public void setRuntime(Library_Runtime runtime) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 2280;
+		} else {
+			__dna__offset = 2228;
+		}
+		if (__io__equals(runtime, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, runtime)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, runtime);
+		} else {
+			__io__generic__copy( getRuntime(), runtime);
 		}
 	}
 

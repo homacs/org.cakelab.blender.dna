@@ -28,7 +28,7 @@ public class ThemeStripColor extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 281;
+	public static final int __DNA__SDNA_INDEX = 743;
 
 	/**
 	 * Field descriptor (offset) for struct member 'color'.

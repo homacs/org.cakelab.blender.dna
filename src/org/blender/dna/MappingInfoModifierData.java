@@ -32,7 +32,7 @@ public class MappingInfoModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 101;
+	public static final int __DNA__SDNA_INDEX = 322;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

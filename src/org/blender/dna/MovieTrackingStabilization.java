@@ -28,7 +28,7 @@ public class MovieTrackingStabilization extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 686;
+	public static final int __DNA__SDNA_INDEX = 726;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.

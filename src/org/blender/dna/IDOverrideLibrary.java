@@ -30,7 +30,7 @@ public class IDOverrideLibrary extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 19;
+	public static final int __DNA__SDNA_INDEX = 10;
 
 	/**
 	 * Field descriptor (offset) for struct member 'reference'.

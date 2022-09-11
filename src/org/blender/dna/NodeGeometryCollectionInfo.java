@@ -27,7 +27,7 @@ public class NodeGeometryCollectionInfo extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 500;
+	public static final int __DNA__SDNA_INDEX = 492;
 
 	/**
 	 * Field descriptor (offset) for struct member 'transform_space'.

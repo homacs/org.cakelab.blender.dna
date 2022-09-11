@@ -29,7 +29,7 @@ public class rctf extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 7;
+	public static final int __DNA__SDNA_INDEX = 765;
 
 	/**
 	 * Field descriptor (offset) for struct member 'xmin'.

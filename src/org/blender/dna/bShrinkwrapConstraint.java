@@ -29,7 +29,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 399;
+	public static final int __DNA__SDNA_INDEX = 126;
 
 	/**
 	 * Field descriptor (offset) for struct member 'target'.

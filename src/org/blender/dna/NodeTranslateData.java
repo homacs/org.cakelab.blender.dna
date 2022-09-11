@@ -27,7 +27,7 @@ public class NodeTranslateData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 474;
+	public static final int __DNA__SDNA_INDEX = 466;
 
 	/**
 	 * Field descriptor (offset) for struct member 'wrap_axis'.

@@ -28,7 +28,7 @@ public class FluidsimSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 182;
+	public static final int __DNA__SDNA_INDEX = 534;
 
 	/**
 	 * Field descriptor (offset) for struct member 'fmd'.

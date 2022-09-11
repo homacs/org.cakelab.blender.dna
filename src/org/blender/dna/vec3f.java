@@ -29,7 +29,7 @@ public class vec3f extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 5;
+	public static final int __DNA__SDNA_INDEX = 763;
 
 	/**
 	 * Field descriptor (offset) for struct member 'x'.

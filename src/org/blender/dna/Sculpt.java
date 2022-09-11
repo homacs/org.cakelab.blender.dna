@@ -20,7 +20,7 @@ import org.cakelab.blender.nio.CPointer;
  *  {@link Sculpt}  {@link Sculpt} . </p>
  */
 
-@CMetaData(size32=112, size64=136)
+@CMetaData(size32=120, size64=144)
 public class Sculpt extends CFacade {
 
 	/**
@@ -31,7 +31,7 @@ public class Sculpt extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 202;
+	public static final int __DNA__SDNA_INDEX = 587;
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint'.
@@ -77,6 +77,31 @@ public class Sculpt extends CFacade {
 	public static final long[] __DNA__FIELD__flags = new long[]{68, 88};
 
 	/**
+	 * Field descriptor (offset) for struct member 'transform_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * How the transformation is going to be applied to the target
+	 * <h4>Blender Source Code</h4>
+	 * <p> Transform tool. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sculpt sculpt = ...;
+	 * CPointer&lt;Object&gt; p = sculpt.__dna__addressof(Sculpt.__DNA__FIELD__transform_mode);
+	 * CPointer&lt;Integer&gt; p_transform_mode = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'transform_mode'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__transform_mode = new long[]{72, 92};
+
+	/**
 	 * Field descriptor (offset) for struct member 'automasking_flags'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -94,7 +119,7 @@ public class Sculpt extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__automasking_flags = new long[]{72, 92};
+	public static final long[] __DNA__FIELD__automasking_flags = new long[]{76, 96};
 
 	/**
 	 * Field descriptor (offset) for struct member 'radial_symm'.
@@ -117,7 +142,7 @@ public class Sculpt extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__radial_symm = new long[]{76, 96};
+	public static final long[] __DNA__FIELD__radial_symm = new long[]{80, 100};
 
 	/**
 	 * Field descriptor (offset) for struct member 'detail_size'.
@@ -142,7 +167,7 @@ public class Sculpt extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__detail_size = new long[]{88, 108};
+	public static final long[] __DNA__FIELD__detail_size = new long[]{92, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'symmetrize_direction'.
@@ -167,7 +192,7 @@ public class Sculpt extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__symmetrize_direction = new long[]{92, 112};
+	public static final long[] __DNA__FIELD__symmetrize_direction = new long[]{96, 116};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gravity_factor'.
@@ -190,7 +215,7 @@ public class Sculpt extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gravity_factor = new long[]{96, 116};
+	public static final long[] __DNA__FIELD__gravity_factor = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'constant_detail'.
@@ -213,7 +238,7 @@ public class Sculpt extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__constant_detail = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__constant_detail = new long[]{104, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'detail_percent'.
@@ -236,7 +261,27 @@ public class Sculpt extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__detail_percent = new long[]{104, 124};
+	public static final long[] __DNA__FIELD__detail_percent = new long[]{108, 128};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sculpt sculpt = ...;
+	 * CPointer&lt;Object&gt; p = sculpt.__dna__addressof(Sculpt.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{112, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gravity_object'.
@@ -259,7 +304,7 @@ public class Sculpt extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gravity_object = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__gravity_object = new long[]{116, 136};
 
 	public Sculpt(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -340,6 +385,44 @@ public class Sculpt extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'transform_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * How the transformation is going to be applied to the target
+	 * <h4>Blender Source Code</h4>
+	 * <p> Transform tool. </p>
+	 * @see #__DNA__FIELD__transform_mode
+	 */
+	
+	public int getTransform_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 92);
+		} else {
+			return __io__block.readInt(__io__address + 72);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'transform_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * How the transformation is going to be applied to the target
+	 * <h4>Blender Source Code</h4>
+	 * <p> Transform tool. </p>
+	 * @see #__DNA__FIELD__transform_mode
+	 */
+	
+	public void setTransform_mode(int transform_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 92, transform_mode);
+		} else {
+			__io__block.writeInt(__io__address + 72, transform_mode);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'automasking_flags'.
 	 * @see #__DNA__FIELD__automasking_flags
 	 */
@@ -347,9 +430,9 @@ public class Sculpt extends CFacade {
 	public int getAutomasking_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 92);
+			return __io__block.readInt(__io__address + 96);
 		} else {
-			return __io__block.readInt(__io__address + 72);
+			return __io__block.readInt(__io__address + 76);
 		}
 	}
 
@@ -361,9 +444,9 @@ public class Sculpt extends CFacade {
 	public void setAutomasking_flags(int automasking_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 92, automasking_flags);
+			__io__block.writeInt(__io__address + 96, automasking_flags);
 		} else {
-			__io__block.writeInt(__io__address + 72, automasking_flags);
+			__io__block.writeInt(__io__address + 76, automasking_flags);
 		}
 	}
 
@@ -382,9 +465,9 @@ public class Sculpt extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 80, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -400,9 +483,9 @@ public class Sculpt extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 96;
+			__dna__offset = 100;
 		} else {
-			__dna__offset = 76;
+			__dna__offset = 80;
 		}
 		if (__io__equals(radial_symm, __io__address + __dna__offset)) {
 			return;
@@ -426,9 +509,9 @@ public class Sculpt extends CFacade {
 	public float getDetail_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 112);
 		} else {
-			return __io__block.readFloat(__io__address + 88);
+			return __io__block.readFloat(__io__address + 92);
 		}
 	}
 
@@ -445,9 +528,9 @@ public class Sculpt extends CFacade {
 	public void setDetail_size(float detail_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 108, detail_size);
+			__io__block.writeFloat(__io__address + 112, detail_size);
 		} else {
-			__io__block.writeFloat(__io__address + 88, detail_size);
+			__io__block.writeFloat(__io__address + 92, detail_size);
 		}
 	}
 
@@ -464,9 +547,9 @@ public class Sculpt extends CFacade {
 	public int getSymmetrize_direction() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 112);
+			return __io__block.readInt(__io__address + 116);
 		} else {
-			return __io__block.readInt(__io__address + 92);
+			return __io__block.readInt(__io__address + 96);
 		}
 	}
 
@@ -483,9 +566,9 @@ public class Sculpt extends CFacade {
 	public void setSymmetrize_direction(int symmetrize_direction) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 112, symmetrize_direction);
+			__io__block.writeInt(__io__address + 116, symmetrize_direction);
 		} else {
-			__io__block.writeInt(__io__address + 92, symmetrize_direction);
+			__io__block.writeInt(__io__address + 96, symmetrize_direction);
 		}
 	}
 
@@ -500,9 +583,9 @@ public class Sculpt extends CFacade {
 	public float getGravity_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 120);
 		} else {
-			return __io__block.readFloat(__io__address + 96);
+			return __io__block.readFloat(__io__address + 100);
 		}
 	}
 
@@ -517,9 +600,9 @@ public class Sculpt extends CFacade {
 	public void setGravity_factor(float gravity_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 116, gravity_factor);
+			__io__block.writeFloat(__io__address + 120, gravity_factor);
 		} else {
-			__io__block.writeFloat(__io__address + 96, gravity_factor);
+			__io__block.writeFloat(__io__address + 100, gravity_factor);
 		}
 	}
 
@@ -534,9 +617,9 @@ public class Sculpt extends CFacade {
 	public float getConstant_detail() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 120);
+			return __io__block.readFloat(__io__address + 124);
 		} else {
-			return __io__block.readFloat(__io__address + 100);
+			return __io__block.readFloat(__io__address + 104);
 		}
 	}
 
@@ -551,9 +634,9 @@ public class Sculpt extends CFacade {
 	public void setConstant_detail(float constant_detail) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 120, constant_detail);
+			__io__block.writeFloat(__io__address + 124, constant_detail);
 		} else {
-			__io__block.writeFloat(__io__address + 100, constant_detail);
+			__io__block.writeFloat(__io__address + 104, constant_detail);
 		}
 	}
 
@@ -568,9 +651,9 @@ public class Sculpt extends CFacade {
 	public float getDetail_percent() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 124);
+			return __io__block.readFloat(__io__address + 128);
 		} else {
-			return __io__block.readFloat(__io__address + 104);
+			return __io__block.readFloat(__io__address + 108);
 		}
 	}
 
@@ -585,9 +668,49 @@ public class Sculpt extends CFacade {
 	public void setDetail_percent(float detail_percent) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 124, detail_percent);
+			__io__block.writeFloat(__io__address + 128, detail_percent);
 		} else {
-			__io__block.writeFloat(__io__address + 104, detail_percent);
+			__io__block.writeFloat(__io__address + 108, detail_percent);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 132;
+		} else {
+			__dna__offset = 112;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -603,9 +726,9 @@ public class Sculpt extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 108);
+			__dna__targetAddress = __io__block.readLong(__io__address + 116);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -623,9 +746,9 @@ public class Sculpt extends CFacade {
 	{
 		long __address = ((gravity_object == null) ? 0 : gravity_object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 108, __address);
+			__io__block.writeLong(__io__address + 116, __address);
 		}
 	}
 

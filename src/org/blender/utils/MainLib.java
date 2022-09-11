@@ -31,13 +31,13 @@ public class MainLib extends MainLibBase {
 	 * This is the version of blender, the data model was generated from. It's also called Blender file version and is usually equivalent to the versino of the Blender program.
 	 * Implicitly, it is the maximum file version the generated import code can understand.
 	 */
-	public static final short BLENDER_VERSION = 302;
+	public static final short BLENDER_VERSION = 303;
 
 	/**
 	 * This is the subversion of blender, the data model was generated from. It's also called Blender file sub-version, which can differ from the patch-level of the Blender program.
 	 * Implicitly, it is the maximum file sub-version the generated import code can understand.
 	 */
-	public static final short BLENDER_SUBVERSION = 14;
+	public static final short BLENDER_SUBVERSION = 6;
 
 	/**
 	 * This is the minimal Blender file version, the generated data model corresponds to.
@@ -58,7 +58,7 @@ public class MainLib extends MainLibBase {
 	 * @see #BLENDER_VERSION
 	 * @see #BLENDER_SUBVERSION
 	 */
-	public static final String BLENDER_VERSION_STRING = "3.02.14";
+	public static final String BLENDER_VERSION_STRING = "3.03.6";
 
 	/**
 	 * #BLENDER_MINVERSION and _MINSUBVERSION as a String.
@@ -85,119 +85,19 @@ public class MainLib extends MainLibBase {
 	private Library library;
 
 	/**
-	 * See {@link Ipo} for documentation.
-	 */
-	private Ipo ipo;
-
-	/**
-	 * See {@link Key} for documentation.
-	 */
-	private Key key;
-
-	/**
-	 * See {@link Text} for documentation.
-	 */
-	private Text text;
-
-	/**
-	 * See {@link Camera} for documentation.
-	 */
-	private Camera camera;
-
-	/**
-	 * See {@link Image} for documentation.
-	 */
-	private Image image;
-
-	/**
-	 * See {@link Tex} for documentation.
-	 */
-	private Tex tex;
-
-	/**
-	 * See {@link Lamp} for documentation.
-	 */
-	private Lamp lamp;
-
-	/**
-	 * See {@link Material} for documentation.
-	 */
-	private Material material;
-
-	/**
-	 * See {@link VFont} for documentation.
-	 */
-	private VFont vFont;
-
-	/**
-	 * See {@link MetaBall} for documentation.
-	 */
-	private MetaBall metaBall;
-
-	/**
-	 * See {@link Curve} for documentation.
-	 */
-	private Curve curve;
-
-	/**
-	 * See {@link Mesh} for documentation.
-	 */
-	private Mesh mesh;
-
-	/**
-	 * See {@link Lattice} for documentation.
-	 */
-	private Lattice lattice;
-
-	/**
-	 * See {@link BlenderObject} for documentation.
-	 */
-	private BlenderObject object;
-
-	/**
-	 * See {@link World} for documentation.
-	 */
-	private World world;
-
-	/**
-	 * See {@link Scene} for documentation.
-	 */
-	private Scene scene;
-
-	/**
-	 * See {@link Script} for documentation.
-	 */
-	private Script script;
-
-	/**
-	 * See {@link bScreen} for documentation.
-	 */
-	private bScreen bScreen;
-
-	/**
-	 * See {@link bSound} for documentation.
-	 */
-	private bSound bSound;
-
-	/**
-	 * See {@link Collection} for documentation.
-	 */
-	private Collection collection;
-
-	/**
-	 * See {@link bArmature} for documentation.
-	 */
-	private bArmature bArmature;
-
-	/**
 	 * See {@link bAction} for documentation.
 	 */
 	private bAction bAction;
 
 	/**
-	 * See {@link bNodeTree} for documentation.
+	 * See {@link IdAdtTemplate} for documentation.
 	 */
-	private bNodeTree bNodeTree;
+	private IdAdtTemplate idAdtTemplate;
+
+	/**
+	 * See {@link bArmature} for documentation.
+	 */
+	private bArmature bArmature;
 
 	/**
 	 * See {@link Brush} for documentation.
@@ -215,59 +115,24 @@ public class MainLib extends MainLibBase {
 	private PaintCurve paintCurve;
 
 	/**
-	 * See {@link ParticleSettings} for documentation.
-	 */
-	private ParticleSettings particleSettings;
-
-	/**
-	 * See {@link bGPdata} for documentation.
-	 */
-	private bGPdata bGPdata;
-
-	/**
-	 * See {@link wmWindowManager} for documentation.
-	 */
-	private wmWindowManager wmWindowManager;
-
-	/**
-	 * See {@link IdAdtTemplate} for documentation.
-	 */
-	private IdAdtTemplate idAdtTemplate;
-
-	/**
-	 * See {@link Speaker} for documentation.
-	 */
-	private Speaker speaker;
-
-	/**
-	 * See {@link MovieClip} for documentation.
-	 */
-	private MovieClip movieClip;
-
-	/**
-	 * See {@link Mask} for documentation.
-	 */
-	private Mask mask;
-
-	/**
-	 * See {@link FreestyleLineStyle} for documentation.
-	 */
-	private FreestyleLineStyle freestyleLineStyle;
-
-	/**
 	 * See {@link CacheFile} for documentation.
 	 */
 	private CacheFile cacheFile;
 
 	/**
-	 * See {@link WorkSpace} for documentation.
+	 * See {@link Camera} for documentation.
 	 */
-	private WorkSpace workSpace;
+	private Camera camera;
 
 	/**
-	 * See {@link LightProbe} for documentation.
+	 * See {@link Collection} for documentation.
 	 */
-	private LightProbe lightProbe;
+	private Collection collection;
+
+	/**
+	 * See {@link Curve} for documentation.
+	 */
+	private Curve curve;
 
 	/**
 	 * See {@link Curves} for documentation.
@@ -275,9 +140,134 @@ public class MainLib extends MainLibBase {
 	private Curves curves;
 
 	/**
+	 * See {@link bGPdata} for documentation.
+	 */
+	private bGPdata bGPdata;
+
+	/**
+	 * See {@link Image} for documentation.
+	 */
+	private Image image;
+
+	/**
+	 * See {@link Ipo} for documentation.
+	 */
+	private Ipo ipo;
+
+	/**
+	 * See {@link Key} for documentation.
+	 */
+	private Key key;
+
+	/**
+	 * See {@link Lattice} for documentation.
+	 */
+	private Lattice lattice;
+
+	/**
+	 * See {@link Lamp} for documentation.
+	 */
+	private Lamp lamp;
+
+	/**
+	 * See {@link LightProbe} for documentation.
+	 */
+	private LightProbe lightProbe;
+
+	/**
+	 * See {@link FreestyleLineStyle} for documentation.
+	 */
+	private FreestyleLineStyle freestyleLineStyle;
+
+	/**
+	 * See {@link Mask} for documentation.
+	 */
+	private Mask mask;
+
+	/**
+	 * See {@link Material} for documentation.
+	 */
+	private Material material;
+
+	/**
+	 * See {@link Mesh} for documentation.
+	 */
+	private Mesh mesh;
+
+	/**
+	 * See {@link MetaBall} for documentation.
+	 */
+	private MetaBall metaBall;
+
+	/**
+	 * See {@link MovieClip} for documentation.
+	 */
+	private MovieClip movieClip;
+
+	/**
+	 * See {@link bNodeTree} for documentation.
+	 */
+	private bNodeTree bNodeTree;
+
+	/**
+	 * See {@link BlenderObject} for documentation.
+	 */
+	private BlenderObject object;
+
+	/**
+	 * See {@link ParticleSettings} for documentation.
+	 */
+	private ParticleSettings particleSettings;
+
+	/**
 	 * See {@link PointCloud} for documentation.
 	 */
 	private PointCloud pointCloud;
+
+	/**
+	 * See {@link Scene} for documentation.
+	 */
+	private Scene scene;
+
+	/**
+	 * See {@link bScreen} for documentation.
+	 */
+	private bScreen bScreen;
+
+	/**
+	 * See {@link Simulation} for documentation.
+	 */
+	private Simulation simulation;
+
+	/**
+	 * See {@link bSound} for documentation.
+	 */
+	private bSound bSound;
+
+	/**
+	 * See {@link Script} for documentation.
+	 */
+	private Script script;
+
+	/**
+	 * See {@link Speaker} for documentation.
+	 */
+	private Speaker speaker;
+
+	/**
+	 * See {@link Text} for documentation.
+	 */
+	private Text text;
+
+	/**
+	 * See {@link Tex} for documentation.
+	 */
+	private Tex tex;
+
+	/**
+	 * See {@link VFont} for documentation.
+	 */
+	private VFont vFont;
 
 	/**
 	 * See {@link Volume} for documentation.
@@ -285,9 +275,19 @@ public class MainLib extends MainLibBase {
 	private Volume volume;
 
 	/**
-	 * See {@link Simulation} for documentation.
+	 * See {@link wmWindowManager} for documentation.
 	 */
-	private Simulation simulation;
+	private wmWindowManager wmWindowManager;
+
+	/**
+	 * See {@link WorkSpace} for documentation.
+	 */
+	private WorkSpace workSpace;
+
+	/**
+	 * See {@link World} for documentation.
+	 */
+	private World world;
 
 
 	public MainLib(BlenderFile blendFile) throws IOException{
@@ -377,300 +377,6 @@ public class MainLib extends MainLibBase {
 	}
 
 	/**
-	 * See {@link Ipo} for documentation.
-	 */
-	public Ipo getIpo(){
-		return ipo;
-	}
-
-	/**
-	 * See {@link Ipo} for documentation.
-	 */
-	public void setIpo(Ipo ipo) {
-		this.ipo = ipo;
-	}
-
-	/**
-	 * See {@link Key} for documentation.
-	 */
-	public Key getKey(){
-		return key;
-	}
-
-	/**
-	 * See {@link Key} for documentation.
-	 */
-	public void setKey(Key key) {
-		this.key = key;
-	}
-
-	/**
-	 * See {@link Text} for documentation.
-	 */
-	public Text getText(){
-		return text;
-	}
-
-	/**
-	 * See {@link Text} for documentation.
-	 */
-	public void setText(Text text) {
-		this.text = text;
-	}
-
-	/**
-	 * See {@link Camera} for documentation.
-	 */
-	public Camera getCamera(){
-		return camera;
-	}
-
-	/**
-	 * See {@link Camera} for documentation.
-	 */
-	public void setCamera(Camera camera) {
-		this.camera = camera;
-	}
-
-	/**
-	 * See {@link Image} for documentation.
-	 */
-	public Image getImage(){
-		return image;
-	}
-
-	/**
-	 * See {@link Image} for documentation.
-	 */
-	public void setImage(Image image) {
-		this.image = image;
-	}
-
-	/**
-	 * See {@link Tex} for documentation.
-	 */
-	public Tex getTex(){
-		return tex;
-	}
-
-	/**
-	 * See {@link Tex} for documentation.
-	 */
-	public void setTex(Tex tex) {
-		this.tex = tex;
-	}
-
-	/**
-	 * See {@link Lamp} for documentation.
-	 */
-	public Lamp getLamp(){
-		return lamp;
-	}
-
-	/**
-	 * See {@link Lamp} for documentation.
-	 */
-	public void setLamp(Lamp lamp) {
-		this.lamp = lamp;
-	}
-
-	/**
-	 * See {@link Material} for documentation.
-	 */
-	public Material getMaterial(){
-		return material;
-	}
-
-	/**
-	 * See {@link Material} for documentation.
-	 */
-	public void setMaterial(Material material) {
-		this.material = material;
-	}
-
-	/**
-	 * See {@link VFont} for documentation.
-	 */
-	public VFont getVFont(){
-		return vFont;
-	}
-
-	/**
-	 * See {@link VFont} for documentation.
-	 */
-	public void setVFont(VFont vFont) {
-		this.vFont = vFont;
-	}
-
-	/**
-	 * See {@link MetaBall} for documentation.
-	 */
-	public MetaBall getMetaBall(){
-		return metaBall;
-	}
-
-	/**
-	 * See {@link MetaBall} for documentation.
-	 */
-	public void setMetaBall(MetaBall metaBall) {
-		this.metaBall = metaBall;
-	}
-
-	/**
-	 * See {@link Curve} for documentation.
-	 */
-	public Curve getCurve(){
-		return curve;
-	}
-
-	/**
-	 * See {@link Curve} for documentation.
-	 */
-	public void setCurve(Curve curve) {
-		this.curve = curve;
-	}
-
-	/**
-	 * See {@link Mesh} for documentation.
-	 */
-	public Mesh getMesh(){
-		return mesh;
-	}
-
-	/**
-	 * See {@link Mesh} for documentation.
-	 */
-	public void setMesh(Mesh mesh) {
-		this.mesh = mesh;
-	}
-
-	/**
-	 * See {@link Lattice} for documentation.
-	 */
-	public Lattice getLattice(){
-		return lattice;
-	}
-
-	/**
-	 * See {@link Lattice} for documentation.
-	 */
-	public void setLattice(Lattice lattice) {
-		this.lattice = lattice;
-	}
-
-	/**
-	 * See {@link BlenderObject} for documentation.
-	 */
-	public BlenderObject getObject(){
-		return object;
-	}
-
-	/**
-	 * See {@link BlenderObject} for documentation.
-	 */
-	public void setObject(BlenderObject object) {
-		this.object = object;
-	}
-
-	/**
-	 * See {@link World} for documentation.
-	 */
-	public World getWorld(){
-		return world;
-	}
-
-	/**
-	 * See {@link World} for documentation.
-	 */
-	public void setWorld(World world) {
-		this.world = world;
-	}
-
-	/**
-	 * See {@link Scene} for documentation.
-	 */
-	public Scene getScene(){
-		return scene;
-	}
-
-	/**
-	 * See {@link Scene} for documentation.
-	 */
-	public void setScene(Scene scene) {
-		this.scene = scene;
-	}
-
-	/**
-	 * See {@link Script} for documentation.
-	 */
-	public Script getScript(){
-		return script;
-	}
-
-	/**
-	 * See {@link Script} for documentation.
-	 */
-	public void setScript(Script script) {
-		this.script = script;
-	}
-
-	/**
-	 * See {@link bScreen} for documentation.
-	 */
-	public bScreen getBScreen(){
-		return bScreen;
-	}
-
-	/**
-	 * See {@link bScreen} for documentation.
-	 */
-	public void setBScreen(bScreen bScreen) {
-		this.bScreen = bScreen;
-	}
-
-	/**
-	 * See {@link bSound} for documentation.
-	 */
-	public bSound getBSound(){
-		return bSound;
-	}
-
-	/**
-	 * See {@link bSound} for documentation.
-	 */
-	public void setBSound(bSound bSound) {
-		this.bSound = bSound;
-	}
-
-	/**
-	 * See {@link Collection} for documentation.
-	 */
-	public Collection getCollection(){
-		return collection;
-	}
-
-	/**
-	 * See {@link Collection} for documentation.
-	 */
-	public void setCollection(Collection collection) {
-		this.collection = collection;
-	}
-
-	/**
-	 * See {@link bArmature} for documentation.
-	 */
-	public bArmature getBArmature(){
-		return bArmature;
-	}
-
-	/**
-	 * See {@link bArmature} for documentation.
-	 */
-	public void setBArmature(bArmature bArmature) {
-		this.bArmature = bArmature;
-	}
-
-	/**
 	 * See {@link bAction} for documentation.
 	 */
 	public bAction getBAction(){
@@ -685,17 +391,31 @@ public class MainLib extends MainLibBase {
 	}
 
 	/**
-	 * See {@link bNodeTree} for documentation.
+	 * See {@link IdAdtTemplate} for documentation.
 	 */
-	public bNodeTree getBNodeTree(){
-		return bNodeTree;
+	public IdAdtTemplate getIdAdtTemplate(){
+		return idAdtTemplate;
 	}
 
 	/**
-	 * See {@link bNodeTree} for documentation.
+	 * See {@link IdAdtTemplate} for documentation.
 	 */
-	public void setBNodeTree(bNodeTree bNodeTree) {
-		this.bNodeTree = bNodeTree;
+	public void setIdAdtTemplate(IdAdtTemplate idAdtTemplate) {
+		this.idAdtTemplate = idAdtTemplate;
+	}
+
+	/**
+	 * See {@link bArmature} for documentation.
+	 */
+	public bArmature getBArmature(){
+		return bArmature;
+	}
+
+	/**
+	 * See {@link bArmature} for documentation.
+	 */
+	public void setBArmature(bArmature bArmature) {
+		this.bArmature = bArmature;
 	}
 
 	/**
@@ -741,118 +461,6 @@ public class MainLib extends MainLibBase {
 	}
 
 	/**
-	 * See {@link ParticleSettings} for documentation.
-	 */
-	public ParticleSettings getParticleSettings(){
-		return particleSettings;
-	}
-
-	/**
-	 * See {@link ParticleSettings} for documentation.
-	 */
-	public void setParticleSettings(ParticleSettings particleSettings) {
-		this.particleSettings = particleSettings;
-	}
-
-	/**
-	 * See {@link bGPdata} for documentation.
-	 */
-	public bGPdata getBGPdata(){
-		return bGPdata;
-	}
-
-	/**
-	 * See {@link bGPdata} for documentation.
-	 */
-	public void setBGPdata(bGPdata bGPdata) {
-		this.bGPdata = bGPdata;
-	}
-
-	/**
-	 * See {@link wmWindowManager} for documentation.
-	 */
-	public wmWindowManager getWmWindowManager(){
-		return wmWindowManager;
-	}
-
-	/**
-	 * See {@link wmWindowManager} for documentation.
-	 */
-	public void setWmWindowManager(wmWindowManager wmWindowManager) {
-		this.wmWindowManager = wmWindowManager;
-	}
-
-	/**
-	 * See {@link IdAdtTemplate} for documentation.
-	 */
-	public IdAdtTemplate getIdAdtTemplate(){
-		return idAdtTemplate;
-	}
-
-	/**
-	 * See {@link IdAdtTemplate} for documentation.
-	 */
-	public void setIdAdtTemplate(IdAdtTemplate idAdtTemplate) {
-		this.idAdtTemplate = idAdtTemplate;
-	}
-
-	/**
-	 * See {@link Speaker} for documentation.
-	 */
-	public Speaker getSpeaker(){
-		return speaker;
-	}
-
-	/**
-	 * See {@link Speaker} for documentation.
-	 */
-	public void setSpeaker(Speaker speaker) {
-		this.speaker = speaker;
-	}
-
-	/**
-	 * See {@link MovieClip} for documentation.
-	 */
-	public MovieClip getMovieClip(){
-		return movieClip;
-	}
-
-	/**
-	 * See {@link MovieClip} for documentation.
-	 */
-	public void setMovieClip(MovieClip movieClip) {
-		this.movieClip = movieClip;
-	}
-
-	/**
-	 * See {@link Mask} for documentation.
-	 */
-	public Mask getMask(){
-		return mask;
-	}
-
-	/**
-	 * See {@link Mask} for documentation.
-	 */
-	public void setMask(Mask mask) {
-		this.mask = mask;
-	}
-
-	/**
-	 * See {@link FreestyleLineStyle} for documentation.
-	 */
-	public FreestyleLineStyle getFreestyleLineStyle(){
-		return freestyleLineStyle;
-	}
-
-	/**
-	 * See {@link FreestyleLineStyle} for documentation.
-	 */
-	public void setFreestyleLineStyle(FreestyleLineStyle freestyleLineStyle) {
-		this.freestyleLineStyle = freestyleLineStyle;
-	}
-
-	/**
 	 * See {@link CacheFile} for documentation.
 	 */
 	public CacheFile getCacheFile(){
@@ -867,31 +475,45 @@ public class MainLib extends MainLibBase {
 	}
 
 	/**
-	 * See {@link WorkSpace} for documentation.
+	 * See {@link Camera} for documentation.
 	 */
-	public WorkSpace getWorkSpace(){
-		return workSpace;
+	public Camera getCamera(){
+		return camera;
 	}
 
 	/**
-	 * See {@link WorkSpace} for documentation.
+	 * See {@link Camera} for documentation.
 	 */
-	public void setWorkSpace(WorkSpace workSpace) {
-		this.workSpace = workSpace;
+	public void setCamera(Camera camera) {
+		this.camera = camera;
 	}
 
 	/**
-	 * See {@link LightProbe} for documentation.
+	 * See {@link Collection} for documentation.
 	 */
-	public LightProbe getLightProbe(){
-		return lightProbe;
+	public Collection getCollection(){
+		return collection;
 	}
 
 	/**
-	 * See {@link LightProbe} for documentation.
+	 * See {@link Collection} for documentation.
 	 */
-	public void setLightProbe(LightProbe lightProbe) {
-		this.lightProbe = lightProbe;
+	public void setCollection(Collection collection) {
+		this.collection = collection;
+	}
+
+	/**
+	 * See {@link Curve} for documentation.
+	 */
+	public Curve getCurve(){
+		return curve;
+	}
+
+	/**
+	 * See {@link Curve} for documentation.
+	 */
+	public void setCurve(Curve curve) {
+		this.curve = curve;
 	}
 
 	/**
@@ -909,6 +531,230 @@ public class MainLib extends MainLibBase {
 	}
 
 	/**
+	 * See {@link bGPdata} for documentation.
+	 */
+	public bGPdata getBGPdata(){
+		return bGPdata;
+	}
+
+	/**
+	 * See {@link bGPdata} for documentation.
+	 */
+	public void setBGPdata(bGPdata bGPdata) {
+		this.bGPdata = bGPdata;
+	}
+
+	/**
+	 * See {@link Image} for documentation.
+	 */
+	public Image getImage(){
+		return image;
+	}
+
+	/**
+	 * See {@link Image} for documentation.
+	 */
+	public void setImage(Image image) {
+		this.image = image;
+	}
+
+	/**
+	 * See {@link Ipo} for documentation.
+	 */
+	public Ipo getIpo(){
+		return ipo;
+	}
+
+	/**
+	 * See {@link Ipo} for documentation.
+	 */
+	public void setIpo(Ipo ipo) {
+		this.ipo = ipo;
+	}
+
+	/**
+	 * See {@link Key} for documentation.
+	 */
+	public Key getKey(){
+		return key;
+	}
+
+	/**
+	 * See {@link Key} for documentation.
+	 */
+	public void setKey(Key key) {
+		this.key = key;
+	}
+
+	/**
+	 * See {@link Lattice} for documentation.
+	 */
+	public Lattice getLattice(){
+		return lattice;
+	}
+
+	/**
+	 * See {@link Lattice} for documentation.
+	 */
+	public void setLattice(Lattice lattice) {
+		this.lattice = lattice;
+	}
+
+	/**
+	 * See {@link Lamp} for documentation.
+	 */
+	public Lamp getLamp(){
+		return lamp;
+	}
+
+	/**
+	 * See {@link Lamp} for documentation.
+	 */
+	public void setLamp(Lamp lamp) {
+		this.lamp = lamp;
+	}
+
+	/**
+	 * See {@link LightProbe} for documentation.
+	 */
+	public LightProbe getLightProbe(){
+		return lightProbe;
+	}
+
+	/**
+	 * See {@link LightProbe} for documentation.
+	 */
+	public void setLightProbe(LightProbe lightProbe) {
+		this.lightProbe = lightProbe;
+	}
+
+	/**
+	 * See {@link FreestyleLineStyle} for documentation.
+	 */
+	public FreestyleLineStyle getFreestyleLineStyle(){
+		return freestyleLineStyle;
+	}
+
+	/**
+	 * See {@link FreestyleLineStyle} for documentation.
+	 */
+	public void setFreestyleLineStyle(FreestyleLineStyle freestyleLineStyle) {
+		this.freestyleLineStyle = freestyleLineStyle;
+	}
+
+	/**
+	 * See {@link Mask} for documentation.
+	 */
+	public Mask getMask(){
+		return mask;
+	}
+
+	/**
+	 * See {@link Mask} for documentation.
+	 */
+	public void setMask(Mask mask) {
+		this.mask = mask;
+	}
+
+	/**
+	 * See {@link Material} for documentation.
+	 */
+	public Material getMaterial(){
+		return material;
+	}
+
+	/**
+	 * See {@link Material} for documentation.
+	 */
+	public void setMaterial(Material material) {
+		this.material = material;
+	}
+
+	/**
+	 * See {@link Mesh} for documentation.
+	 */
+	public Mesh getMesh(){
+		return mesh;
+	}
+
+	/**
+	 * See {@link Mesh} for documentation.
+	 */
+	public void setMesh(Mesh mesh) {
+		this.mesh = mesh;
+	}
+
+	/**
+	 * See {@link MetaBall} for documentation.
+	 */
+	public MetaBall getMetaBall(){
+		return metaBall;
+	}
+
+	/**
+	 * See {@link MetaBall} for documentation.
+	 */
+	public void setMetaBall(MetaBall metaBall) {
+		this.metaBall = metaBall;
+	}
+
+	/**
+	 * See {@link MovieClip} for documentation.
+	 */
+	public MovieClip getMovieClip(){
+		return movieClip;
+	}
+
+	/**
+	 * See {@link MovieClip} for documentation.
+	 */
+	public void setMovieClip(MovieClip movieClip) {
+		this.movieClip = movieClip;
+	}
+
+	/**
+	 * See {@link bNodeTree} for documentation.
+	 */
+	public bNodeTree getBNodeTree(){
+		return bNodeTree;
+	}
+
+	/**
+	 * See {@link bNodeTree} for documentation.
+	 */
+	public void setBNodeTree(bNodeTree bNodeTree) {
+		this.bNodeTree = bNodeTree;
+	}
+
+	/**
+	 * See {@link BlenderObject} for documentation.
+	 */
+	public BlenderObject getObject(){
+		return object;
+	}
+
+	/**
+	 * See {@link BlenderObject} for documentation.
+	 */
+	public void setObject(BlenderObject object) {
+		this.object = object;
+	}
+
+	/**
+	 * See {@link ParticleSettings} for documentation.
+	 */
+	public ParticleSettings getParticleSettings(){
+		return particleSettings;
+	}
+
+	/**
+	 * See {@link ParticleSettings} for documentation.
+	 */
+	public void setParticleSettings(ParticleSettings particleSettings) {
+		this.particleSettings = particleSettings;
+	}
+
+	/**
 	 * See {@link PointCloud} for documentation.
 	 */
 	public PointCloud getPointCloud(){
@@ -920,6 +766,132 @@ public class MainLib extends MainLibBase {
 	 */
 	public void setPointCloud(PointCloud pointCloud) {
 		this.pointCloud = pointCloud;
+	}
+
+	/**
+	 * See {@link Scene} for documentation.
+	 */
+	public Scene getScene(){
+		return scene;
+	}
+
+	/**
+	 * See {@link Scene} for documentation.
+	 */
+	public void setScene(Scene scene) {
+		this.scene = scene;
+	}
+
+	/**
+	 * See {@link bScreen} for documentation.
+	 */
+	public bScreen getBScreen(){
+		return bScreen;
+	}
+
+	/**
+	 * See {@link bScreen} for documentation.
+	 */
+	public void setBScreen(bScreen bScreen) {
+		this.bScreen = bScreen;
+	}
+
+	/**
+	 * See {@link Simulation} for documentation.
+	 */
+	public Simulation getSimulation(){
+		return simulation;
+	}
+
+	/**
+	 * See {@link Simulation} for documentation.
+	 */
+	public void setSimulation(Simulation simulation) {
+		this.simulation = simulation;
+	}
+
+	/**
+	 * See {@link bSound} for documentation.
+	 */
+	public bSound getBSound(){
+		return bSound;
+	}
+
+	/**
+	 * See {@link bSound} for documentation.
+	 */
+	public void setBSound(bSound bSound) {
+		this.bSound = bSound;
+	}
+
+	/**
+	 * See {@link Script} for documentation.
+	 */
+	public Script getScript(){
+		return script;
+	}
+
+	/**
+	 * See {@link Script} for documentation.
+	 */
+	public void setScript(Script script) {
+		this.script = script;
+	}
+
+	/**
+	 * See {@link Speaker} for documentation.
+	 */
+	public Speaker getSpeaker(){
+		return speaker;
+	}
+
+	/**
+	 * See {@link Speaker} for documentation.
+	 */
+	public void setSpeaker(Speaker speaker) {
+		this.speaker = speaker;
+	}
+
+	/**
+	 * See {@link Text} for documentation.
+	 */
+	public Text getText(){
+		return text;
+	}
+
+	/**
+	 * See {@link Text} for documentation.
+	 */
+	public void setText(Text text) {
+		this.text = text;
+	}
+
+	/**
+	 * See {@link Tex} for documentation.
+	 */
+	public Tex getTex(){
+		return tex;
+	}
+
+	/**
+	 * See {@link Tex} for documentation.
+	 */
+	public void setTex(Tex tex) {
+		this.tex = tex;
+	}
+
+	/**
+	 * See {@link VFont} for documentation.
+	 */
+	public VFont getVFont(){
+		return vFont;
+	}
+
+	/**
+	 * See {@link VFont} for documentation.
+	 */
+	public void setVFont(VFont vFont) {
+		this.vFont = vFont;
 	}
 
 	/**
@@ -937,17 +909,45 @@ public class MainLib extends MainLibBase {
 	}
 
 	/**
-	 * See {@link Simulation} for documentation.
+	 * See {@link wmWindowManager} for documentation.
 	 */
-	public Simulation getSimulation(){
-		return simulation;
+	public wmWindowManager getWmWindowManager(){
+		return wmWindowManager;
 	}
 
 	/**
-	 * See {@link Simulation} for documentation.
+	 * See {@link wmWindowManager} for documentation.
 	 */
-	public void setSimulation(Simulation simulation) {
-		this.simulation = simulation;
+	public void setWmWindowManager(wmWindowManager wmWindowManager) {
+		this.wmWindowManager = wmWindowManager;
+	}
+
+	/**
+	 * See {@link WorkSpace} for documentation.
+	 */
+	public WorkSpace getWorkSpace(){
+		return workSpace;
+	}
+
+	/**
+	 * See {@link WorkSpace} for documentation.
+	 */
+	public void setWorkSpace(WorkSpace workSpace) {
+		this.workSpace = workSpace;
+	}
+
+	/**
+	 * See {@link World} for documentation.
+	 */
+	public World getWorld(){
+		return world;
+	}
+
+	/**
+	 * See {@link World} for documentation.
+	 */
+	public void setWorld(World world) {
+		this.world = world;
 	}
 
 }

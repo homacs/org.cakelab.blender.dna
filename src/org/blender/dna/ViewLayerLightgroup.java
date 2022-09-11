@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * 
  * <h4>Blender Source Code</h4>
- * <p> Lightgroup Renderpass definition. </p>
+ * <p> Light-group Render-pass definition. </p>
  */
 
 @CMetaData(size32=72, size64=80)
@@ -30,7 +30,7 @@ public class ViewLayerLightgroup extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 760;
+	public static final int __DNA__SDNA_INDEX = 225;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1036, size64=1048)
+@CMetaData(size32=1044, size64=1056)
 public class ImagePackedFile extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class ImagePackedFile extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 43;
+	public static final int __DNA__SDNA_INDEX = 208;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -91,6 +91,54 @@ public class ImagePackedFile extends CFacade {
 	public static final long[] __DNA__FIELD__packedfile = new long[]{8, 16};
 
 	/**
+	 * Field descriptor (offset) for struct member 'view'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
+	 * <p> Which view and tile this {@link ImagePackedFile}  represents. Normal images will use 0 and 1001 respectively when creating their {@link ImagePackedFile} . Must be provided for each packed image. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImagePackedFile imagepackedfile = ...;
+	 * CPointer&lt;Object&gt; p = imagepackedfile.__dna__addressof(ImagePackedFile.__DNA__FIELD__view);
+	 * CPointer&lt;Integer&gt; p_view = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'view'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__view = new long[]{12, 24};
+
+	/**
+	 * Field descriptor (offset) for struct member 'tile_number'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImagePackedFile imagepackedfile = ...;
+	 * CPointer&lt;Object&gt; p = imagepackedfile.__dna__addressof(ImagePackedFile.__DNA__FIELD__tile_number);
+	 * CPointer&lt;Integer&gt; p_tile_number = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tile_number'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tile_number = new long[]{16, 28};
+
+	/**
 	 * Field descriptor (offset) for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -111,7 +159,7 @@ public class ImagePackedFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filepath = new long[]{12, 24};
+	public static final long[] __DNA__FIELD__filepath = new long[]{20, 32};
 
 	public ImagePackedFile(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -218,6 +266,78 @@ public class ImagePackedFile extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'view'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
+	 * <p> Which view and tile this {@link ImagePackedFile}  represents. Normal images will use 0 and 1001 respectively when creating their {@link ImagePackedFile} . Must be provided for each packed image. </p>
+	 * @see #__DNA__FIELD__view
+	 */
+	
+	public int getView() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 24);
+		} else {
+			return __io__block.readInt(__io__address + 12);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'view'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * <h4>Blender Source Code</h4>
+	 * <p> Which view and tile this {@link ImagePackedFile}  represents. Normal images will use 0 and 1001 respectively when creating their {@link ImagePackedFile} . Must be provided for each packed image. </p>
+	 * @see #__DNA__FIELD__view
+	 */
+	
+	public void setView(int view) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 24, view);
+		} else {
+			__io__block.writeInt(__io__address + 12, view);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'tile_number'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * @see #__DNA__FIELD__tile_number
+	 */
+	
+	public int getTile_number() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 28);
+		} else {
+			return __io__block.readInt(__io__address + 16);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'tile_number'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)
+	 * @see #__DNA__FIELD__tile_number
+	 */
+	
+	public void setTile_number(int tile_number) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 28, tile_number);
+		} else {
+			__io__block.writeInt(__io__address + 16, tile_number);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -232,9 +352,9 @@ public class ImagePackedFile extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -250,9 +370,9 @@ public class ImagePackedFile extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 24;
+			__dna__offset = 32;
 		} else {
-			__dna__offset = 12;
+			__dna__offset = 20;
 		}
 		if (__io__equals(filepath, __io__address + __dna__offset)) {
 			return;

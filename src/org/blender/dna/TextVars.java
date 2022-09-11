@@ -28,7 +28,7 @@ public class TextVars extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 333;
+	public static final int __DNA__SDNA_INDEX = 645;
 
 	/**
 	 * Field descriptor (offset) for struct member 'text'.

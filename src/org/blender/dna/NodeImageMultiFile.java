@@ -30,7 +30,7 @@ public class NodeImageMultiFile extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 437;
+	public static final int __DNA__SDNA_INDEX = 428;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base_path'.

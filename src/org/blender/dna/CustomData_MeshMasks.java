@@ -27,7 +27,7 @@ public class CustomData_MeshMasks extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 558;
+	public static final int __DNA__SDNA_INDEX = 144;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vmask'.

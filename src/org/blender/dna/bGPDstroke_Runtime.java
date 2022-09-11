@@ -31,7 +31,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 580;
+	public static final int __DNA__SDNA_INDEX = 194;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tmp_layerinfo'.
@@ -106,7 +106,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'fill_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Triangle offset in the ibo where this fill starts. </p>
+	 * <p> Triangle offset in the IBO where this fill starts. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -317,7 +317,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * Get method for struct member 'fill_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Triangle offset in the ibo where this fill starts. </p>
+	 * <p> Triangle offset in the IBO where this fill starts. </p>
 	 * @see #__DNA__FIELD__fill_start
 	 */
 	
@@ -334,7 +334,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * Set method for struct member 'fill_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Triangle offset in the ibo where this fill starts. </p>
+	 * <p> Triangle offset in the IBO where this fill starts. </p>
 	 * @see #__DNA__FIELD__fill_start
 	 */
 	

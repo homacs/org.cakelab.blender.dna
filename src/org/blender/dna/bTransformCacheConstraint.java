@@ -30,7 +30,7 @@ public class bTransformCacheConstraint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 403;
+	public static final int __DNA__SDNA_INDEX = 130;
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_file'.

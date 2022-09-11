@@ -4,7 +4,6 @@ import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
 import org.cakelab.blender.io.dna.internal.StructDNA;
-import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -28,7 +27,7 @@ public class MaterialLineArt extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 60;
+	public static final int __DNA__SDNA_INDEX = 288;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -99,6 +98,29 @@ public class MaterialLineArt extends CFacade {
 	public static final long[] __DNA__FIELD__mat_occlusion = new long[]{5, 5};
 
 	/**
+	 * Field descriptor (offset) for struct member 'intersection_priority'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The intersection line will be included into the object with the higher intersection priority value
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MaterialLineArt materiallineart = ...;
+	 * CPointer&lt;Object&gt; p = materiallineart.__dna__addressof(MaterialLineArt.__DNA__FIELD__intersection_priority);
+	 * CPointer&lt;Byte&gt; p_intersection_priority = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'intersection_priority'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__intersection_priority = new long[]{6, 6};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -107,16 +129,16 @@ public class MaterialLineArt extends CFacade {
 	 * <pre>
 	 * MaterialLineArt materiallineart = ...;
 	 * CPointer&lt;Object&gt; p = materiallineart.__dna__addressof(MaterialLineArt.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Byte&gt; p__pad = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{6, 6};
+	public static final long[] __DNA__FIELD___pad = new long[]{7, 7};
 
 	public MaterialLineArt(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -227,20 +249,50 @@ public class MaterialLineArt extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'intersection_priority'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The intersection line will be included into the object with the higher intersection priority value
+	 * @see #__DNA__FIELD__intersection_priority
+	 */
+	
+	public byte getIntersection_priority() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 6);
+		} else {
+			return __io__block.readByte(__io__address + 6);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'intersection_priority'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The intersection line will be included into the object with the higher intersection priority value
+	 * @see #__DNA__FIELD__intersection_priority
+	 */
+	
+	public void setIntersection_priority(byte intersection_priority) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 6, intersection_priority);
+		} else {
+			__io__block.writeByte(__io__address + 6, intersection_priority);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public byte get_pad() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 6, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 7);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 6, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 7);
 		}
 	}
 
@@ -249,20 +301,12 @@ public class MaterialLineArt extends CFacade {
 	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void set_pad(byte _pad) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 6;
+			__io__block.writeByte(__io__address + 7, _pad);
 		} else {
-			__dna__offset = 6;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeByte(__io__address + 7, _pad);
 		}
 	}
 

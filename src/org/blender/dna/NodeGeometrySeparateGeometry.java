@@ -27,13 +27,13 @@ public class NodeGeometrySeparateGeometry extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 534;
+	public static final int __DNA__SDNA_INDEX = 527;
 
 	/**
 	 * Field descriptor (offset) for struct member 'domain'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> AttributeDomain. </p>
+	 * <p> eAttrDomain. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -64,7 +64,7 @@ public class NodeGeometrySeparateGeometry extends CFacade {
 	 * Get method for struct member 'domain'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> AttributeDomain. </p>
+	 * <p> eAttrDomain. </p>
 	 * @see #__DNA__FIELD__domain
 	 */
 	
@@ -81,7 +81,7 @@ public class NodeGeometrySeparateGeometry extends CFacade {
 	 * Set method for struct member 'domain'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> AttributeDomain. </p>
+	 * <p> eAttrDomain. </p>
 	 * @see #__DNA__FIELD__domain
 	 */
 	

@@ -30,7 +30,7 @@ public class bChildOfConstraint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 392;
+	public static final int __DNA__SDNA_INDEX = 119;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.

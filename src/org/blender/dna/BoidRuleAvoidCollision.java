@@ -27,7 +27,7 @@ public class BoidRuleAvoidCollision extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 662;
+	public static final int __DNA__SDNA_INDEX = 61;
 
 	/**
 	 * Field descriptor (offset) for struct member 'rule'.

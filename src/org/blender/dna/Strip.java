@@ -28,7 +28,7 @@ public class Strip extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 320;
+	public static final int __DNA__SDNA_INDEX = 632;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

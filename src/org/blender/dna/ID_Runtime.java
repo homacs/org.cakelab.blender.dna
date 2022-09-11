@@ -27,7 +27,7 @@ public class ID_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 21;
+	public static final int __DNA__SDNA_INDEX = 12;
 
 	/**
 	 * Field descriptor (offset) for struct member 'remap'.

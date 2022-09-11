@@ -28,7 +28,7 @@ public class WeightedNormalModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 162;
+	public static final int __DNA__SDNA_INDEX = 383;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

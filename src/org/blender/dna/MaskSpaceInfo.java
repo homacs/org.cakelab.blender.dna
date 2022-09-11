@@ -28,7 +28,7 @@ public class MaskSpaceInfo extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 244;
+	public static final int __DNA__SDNA_INDEX = 681;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask'.
@@ -130,11 +130,31 @@ public class MaskSpaceInfo extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad3'</li>
-	 * <li>Signature: 'char[5]'</li>
-	 * <li>Actual Size (32bit/64bit): 5/5</li>
+	 * <li>Signature: 'char[1]'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad3 = new long[]{7, 11};
+
+	/**
+	 * Field descriptor (offset) for struct member 'blend_factor'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MaskSpaceInfo maskspaceinfo = ...;
+	 * CPointer&lt;Object&gt; p = maskspaceinfo.__dna__addressof(MaskSpaceInfo.__DNA__FIELD__blend_factor);
+	 * CPointer&lt;Float&gt; p_blend_factor = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'blend_factor'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__blend_factor = new long[]{8, 12};
 
 	public MaskSpaceInfo(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -281,7 +301,7 @@ public class MaskSpaceInfo extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			5
+			1
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 11, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -309,6 +329,34 @@ public class MaskSpaceInfo extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad3);
 		} else {
 			__io__generic__copy( get_pad3(), _pad3);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'blend_factor'.
+	 * @see #__DNA__FIELD__blend_factor
+	 */
+	
+	public float getBlend_factor() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 12);
+		} else {
+			return __io__block.readFloat(__io__address + 8);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'blend_factor'.
+	 * @see #__DNA__FIELD__blend_factor
+	 */
+	
+	public void setBlend_factor(float blend_factor) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 12, blend_factor);
+		} else {
+			__io__block.writeFloat(__io__address + 8, blend_factor);
 		}
 	}
 

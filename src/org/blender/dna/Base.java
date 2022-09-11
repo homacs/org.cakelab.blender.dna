@@ -30,7 +30,7 @@ public class Base extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 755;
+	public static final int __DNA__SDNA_INDEX = 220;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=212, size64=288)
+@CMetaData(size32=216, size64=296)
 public class WorkSpace extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class WorkSpace extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 767;
+	public static final int __DNA__SDNA_INDEX = 792;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -147,6 +147,29 @@ public class WorkSpace extends CFacade {
 	public static final long[] __DNA__FIELD__tools = new long[]{176, 240};
 
 	/**
+	 * Field descriptor (offset) for struct member 'pin_scene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Optional, scene to switch to when enabling this workspace (NULL to disable). Cleared on link/append. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * WorkSpace workspace = ...;
+	 * CPointer&lt;Object&gt; p = workspace.__dna__addressof(WorkSpace.__DNA__FIELD__pin_scene);
+	 * CPointer&lt;CPointer&lt;Scene&gt;&gt; p_pin_scene = p.cast(new Class[]{CPointer.class, Scene.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pin_scene'</li>
+	 * <li>Signature: 'Scene*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pin_scene = new long[]{184, 256};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -164,7 +187,7 @@ public class WorkSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{184, 256};
+	public static final long[] __DNA__FIELD___pad = new long[]{188, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_mode'.
@@ -187,7 +210,7 @@ public class WorkSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object_mode = new long[]{188, 260};
+	public static final long[] __DNA__FIELD__object_mode = new long[]{192, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -210,7 +233,7 @@ public class WorkSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{192, 264};
+	public static final long[] __DNA__FIELD__flags = new long[]{196, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'order'.
@@ -233,7 +256,7 @@ public class WorkSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__order = new long[]{196, 268};
+	public static final long[] __DNA__FIELD__order = new long[]{200, 276};
 
 	/**
 	 * Field descriptor (offset) for struct member 'status_text'.
@@ -256,7 +279,7 @@ public class WorkSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__status_text = new long[]{200, 272};
+	public static final long[] __DNA__FIELD__status_text = new long[]{204, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'asset_library_ref'.
@@ -281,7 +304,7 @@ public class WorkSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__asset_library_ref = new long[]{204, 280};
+	public static final long[] __DNA__FIELD__asset_library_ref = new long[]{208, 288};
 
 	public WorkSpace(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -504,6 +527,44 @@ public class WorkSpace extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'pin_scene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Optional, scene to switch to when enabling this workspace (NULL to disable). Cleared on link/append. </p>
+	 * @see #__DNA__FIELD__pin_scene
+	 */
+	
+	public CPointer<Scene> getPin_scene() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Scene.class};
+		return new CPointer<Scene>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Scene.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'pin_scene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Optional, scene to switch to when enabling this workspace (NULL to disable). Cleared on link/append. </p>
+	 * @see #__DNA__FIELD__pin_scene
+	 */
+	
+	public void setPin_scene(CPointer<Scene> pin_scene) throws IOException
+	{
+		long __address = ((pin_scene == null) ? 0 : pin_scene.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 256, __address);
+		} else {
+			__io__block.writeLong(__io__address + 184, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -515,9 +576,9 @@ public class WorkSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 256, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 264, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -530,9 +591,9 @@ public class WorkSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 256;
+			__dna__offset = 264;
 		} else {
-			__dna__offset = 184;
+			__dna__offset = 188;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -554,9 +615,9 @@ public class WorkSpace extends CFacade {
 	public int getObject_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 260);
+			return __io__block.readInt(__io__address + 268);
 		} else {
-			return __io__block.readInt(__io__address + 188);
+			return __io__block.readInt(__io__address + 192);
 		}
 	}
 
@@ -571,9 +632,9 @@ public class WorkSpace extends CFacade {
 	public void setObject_mode(int object_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 260, object_mode);
+			__io__block.writeInt(__io__address + 268, object_mode);
 		} else {
-			__io__block.writeInt(__io__address + 188, object_mode);
+			__io__block.writeInt(__io__address + 192, object_mode);
 		}
 	}
 
@@ -588,9 +649,9 @@ public class WorkSpace extends CFacade {
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 264);
+			return __io__block.readInt(__io__address + 272);
 		} else {
-			return __io__block.readInt(__io__address + 192);
+			return __io__block.readInt(__io__address + 196);
 		}
 	}
 
@@ -605,9 +666,9 @@ public class WorkSpace extends CFacade {
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 264, flags);
+			__io__block.writeInt(__io__address + 272, flags);
 		} else {
-			__io__block.writeInt(__io__address + 192, flags);
+			__io__block.writeInt(__io__address + 196, flags);
 		}
 	}
 
@@ -622,9 +683,9 @@ public class WorkSpace extends CFacade {
 	public int getOrder() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 268);
+			return __io__block.readInt(__io__address + 276);
 		} else {
-			return __io__block.readInt(__io__address + 196);
+			return __io__block.readInt(__io__address + 200);
 		}
 	}
 
@@ -639,9 +700,9 @@ public class WorkSpace extends CFacade {
 	public void setOrder(int order) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 268, order);
+			__io__block.writeInt(__io__address + 276, order);
 		} else {
-			__io__block.writeInt(__io__address + 196, order);
+			__io__block.writeInt(__io__address + 200, order);
 		}
 	}
 
@@ -657,9 +718,9 @@ public class WorkSpace extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 280);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 204);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -677,9 +738,9 @@ public class WorkSpace extends CFacade {
 	{
 		long __address = ((status_text == null) ? 0 : status_text.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 272, __address);
+			__io__block.writeLong(__io__address + 280, __address);
 		} else {
-			__io__block.writeLong(__io__address + 200, __address);
+			__io__block.writeLong(__io__address + 204, __address);
 		}
 	}
 
@@ -696,9 +757,9 @@ public class WorkSpace extends CFacade {
 	public AssetLibraryReference getAsset_library_ref() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new AssetLibraryReference(__io__address + 280, __io__block, __io__blockTable);
+			return new AssetLibraryReference(__io__address + 288, __io__block, __io__blockTable);
 		} else {
-			return new AssetLibraryReference(__io__address + 204, __io__block, __io__blockTable);
+			return new AssetLibraryReference(__io__address + 208, __io__block, __io__blockTable);
 		}
 	}
 
@@ -716,9 +777,9 @@ public class WorkSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 280;
+			__dna__offset = 288;
 		} else {
-			__dna__offset = 204;
+			__dna__offset = 208;
 		}
 		if (__io__equals(asset_library_ref, __io__address + __dna__offset)) {
 			return;

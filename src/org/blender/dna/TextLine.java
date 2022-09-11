@@ -28,7 +28,7 @@ public class TextLine extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 31;
+	public static final int __DNA__SDNA_INDEX = 710;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

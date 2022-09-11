@@ -28,7 +28,7 @@ public class NodeTexGradient extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 460;
+	public static final int __DNA__SDNA_INDEX = 452;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.

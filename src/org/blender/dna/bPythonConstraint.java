@@ -30,7 +30,7 @@ public class bPythonConstraint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 374;
+	public static final int __DNA__SDNA_INDEX = 101;
 
 	/**
 	 * Field descriptor (offset) for struct member 'text'.

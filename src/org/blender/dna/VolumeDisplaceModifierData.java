@@ -28,7 +28,7 @@ public class VolumeDisplaceModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 166;
+	public static final int __DNA__SDNA_INDEX = 387;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

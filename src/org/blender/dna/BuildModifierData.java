@@ -27,7 +27,7 @@ public class BuildModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 105;
+	public static final int __DNA__SDNA_INDEX = 326;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

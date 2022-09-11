@@ -27,7 +27,7 @@ public class ViewLayerEngineData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 756;
+	public static final int __DNA__SDNA_INDEX = 221;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

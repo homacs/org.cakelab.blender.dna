@@ -19,7 +19,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Properties for dof effect. </p>
  */
 
-@CMetaData(size32=28, size64=32)
+@CMetaData(size32=92, size64=96)
 public class CameraDOFSettings extends CFacade {
 
 	/**
@@ -30,7 +30,7 @@ public class CameraDOFSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 37;
+	public static final int __DNA__SDNA_INDEX = 82;
 
 	/**
 	 * Field descriptor (offset) for struct member 'focus_object'.
@@ -58,6 +58,29 @@ public class CameraDOFSettings extends CFacade {
 	public static final long[] __DNA__FIELD__focus_object = new long[]{0, 0};
 
 	/**
+	 * Field descriptor (offset) for struct member 'focus_subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Use this armature bone to define the depth of field focal point
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * CameraDOFSettings cameradofsettings = ...;
+	 * CPointer&lt;Object&gt; p = cameradofsettings.__dna__addressof(CameraDOFSettings.__DNA__FIELD__focus_subtarget);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_focus_subtarget = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'focus_subtarget'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__focus_subtarget = new long[]{4, 8};
+
+	/**
 	 * Field descriptor (offset) for struct member 'focus_distance'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
@@ -78,7 +101,7 @@ public class CameraDOFSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__focus_distance = new long[]{4, 8};
+	public static final long[] __DNA__FIELD__focus_distance = new long[]{68, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'aperture_fstop'.
@@ -101,7 +124,7 @@ public class CameraDOFSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__aperture_fstop = new long[]{8, 12};
+	public static final long[] __DNA__FIELD__aperture_fstop = new long[]{72, 76};
 
 	/**
 	 * Field descriptor (offset) for struct member 'aperture_rotation'.
@@ -124,7 +147,7 @@ public class CameraDOFSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__aperture_rotation = new long[]{12, 16};
+	public static final long[] __DNA__FIELD__aperture_rotation = new long[]{76, 80};
 
 	/**
 	 * Field descriptor (offset) for struct member 'aperture_ratio'.
@@ -147,7 +170,7 @@ public class CameraDOFSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__aperture_ratio = new long[]{16, 20};
+	public static final long[] __DNA__FIELD__aperture_ratio = new long[]{80, 84};
 
 	/**
 	 * Field descriptor (offset) for struct member 'aperture_blades'.
@@ -170,7 +193,7 @@ public class CameraDOFSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__aperture_blades = new long[]{20, 24};
+	public static final long[] __DNA__FIELD__aperture_blades = new long[]{84, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -190,7 +213,7 @@ public class CameraDOFSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{24, 28};
+	public static final long[] __DNA__FIELD__flag = new long[]{88, 92};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -210,7 +233,7 @@ public class CameraDOFSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{26, 30};
+	public static final long[] __DNA__FIELD___pad = new long[]{90, 94};
 
 	public CameraDOFSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -263,6 +286,52 @@ public class CameraDOFSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'focus_subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Use this armature bone to define the depth of field focal point
+	 * @see #__DNA__FIELD__focus_subtarget
+	 */
+	
+	public CArrayFacade<Byte> getFocus_subtarget() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 4, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'focus_subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Use this armature bone to define the depth of field focal point
+	 * @see #__DNA__FIELD__focus_subtarget
+	 */
+	
+	public void setFocus_subtarget(CArrayFacade<Byte> focus_subtarget) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 8;
+		} else {
+			__dna__offset = 4;
+		}
+		if (__io__equals(focus_subtarget, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, focus_subtarget)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, focus_subtarget);
+		} else {
+			__io__generic__copy( getFocus_subtarget(), focus_subtarget);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'focus_distance'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
@@ -273,9 +342,9 @@ public class CameraDOFSettings extends CFacade {
 	public float getFocus_distance() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 8);
+			return __io__block.readFloat(__io__address + 72);
 		} else {
-			return __io__block.readFloat(__io__address + 4);
+			return __io__block.readFloat(__io__address + 68);
 		}
 	}
 
@@ -290,9 +359,9 @@ public class CameraDOFSettings extends CFacade {
 	public void setFocus_distance(float focus_distance) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 8, focus_distance);
+			__io__block.writeFloat(__io__address + 72, focus_distance);
 		} else {
-			__io__block.writeFloat(__io__address + 4, focus_distance);
+			__io__block.writeFloat(__io__address + 68, focus_distance);
 		}
 	}
 
@@ -307,9 +376,9 @@ public class CameraDOFSettings extends CFacade {
 	public float getAperture_fstop() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 12);
+			return __io__block.readFloat(__io__address + 76);
 		} else {
-			return __io__block.readFloat(__io__address + 8);
+			return __io__block.readFloat(__io__address + 72);
 		}
 	}
 
@@ -324,9 +393,9 @@ public class CameraDOFSettings extends CFacade {
 	public void setAperture_fstop(float aperture_fstop) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 12, aperture_fstop);
+			__io__block.writeFloat(__io__address + 76, aperture_fstop);
 		} else {
-			__io__block.writeFloat(__io__address + 8, aperture_fstop);
+			__io__block.writeFloat(__io__address + 72, aperture_fstop);
 		}
 	}
 
@@ -341,9 +410,9 @@ public class CameraDOFSettings extends CFacade {
 	public float getAperture_rotation() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 16);
+			return __io__block.readFloat(__io__address + 80);
 		} else {
-			return __io__block.readFloat(__io__address + 12);
+			return __io__block.readFloat(__io__address + 76);
 		}
 	}
 
@@ -358,9 +427,9 @@ public class CameraDOFSettings extends CFacade {
 	public void setAperture_rotation(float aperture_rotation) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 16, aperture_rotation);
+			__io__block.writeFloat(__io__address + 80, aperture_rotation);
 		} else {
-			__io__block.writeFloat(__io__address + 12, aperture_rotation);
+			__io__block.writeFloat(__io__address + 76, aperture_rotation);
 		}
 	}
 
@@ -375,9 +444,9 @@ public class CameraDOFSettings extends CFacade {
 	public float getAperture_ratio() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 20);
+			return __io__block.readFloat(__io__address + 84);
 		} else {
-			return __io__block.readFloat(__io__address + 16);
+			return __io__block.readFloat(__io__address + 80);
 		}
 	}
 
@@ -392,9 +461,9 @@ public class CameraDOFSettings extends CFacade {
 	public void setAperture_ratio(float aperture_ratio) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 20, aperture_ratio);
+			__io__block.writeFloat(__io__address + 84, aperture_ratio);
 		} else {
-			__io__block.writeFloat(__io__address + 16, aperture_ratio);
+			__io__block.writeFloat(__io__address + 80, aperture_ratio);
 		}
 	}
 
@@ -409,9 +478,9 @@ public class CameraDOFSettings extends CFacade {
 	public int getAperture_blades() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 24);
+			return __io__block.readInt(__io__address + 88);
 		} else {
-			return __io__block.readInt(__io__address + 20);
+			return __io__block.readInt(__io__address + 84);
 		}
 	}
 
@@ -426,9 +495,9 @@ public class CameraDOFSettings extends CFacade {
 	public void setAperture_blades(int aperture_blades) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 24, aperture_blades);
+			__io__block.writeInt(__io__address + 88, aperture_blades);
 		} else {
-			__io__block.writeInt(__io__address + 20, aperture_blades);
+			__io__block.writeInt(__io__address + 84, aperture_blades);
 		}
 	}
 
@@ -440,9 +509,9 @@ public class CameraDOFSettings extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 28);
+			return __io__block.readShort(__io__address + 92);
 		} else {
-			return __io__block.readShort(__io__address + 24);
+			return __io__block.readShort(__io__address + 88);
 		}
 	}
 
@@ -454,9 +523,9 @@ public class CameraDOFSettings extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 28, flag);
+			__io__block.writeShort(__io__address + 92, flag);
 		} else {
-			__io__block.writeShort(__io__address + 24, flag);
+			__io__block.writeShort(__io__address + 88, flag);
 		}
 	}
 
@@ -472,9 +541,9 @@ public class CameraDOFSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 30, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 94, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 26, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 90, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -487,9 +556,9 @@ public class CameraDOFSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 30;
+			__dna__offset = 94;
 		} else {
-			__dna__offset = 26;
+			__dna__offset = 90;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

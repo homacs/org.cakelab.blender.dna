@@ -30,7 +30,7 @@ public class ShaderFxData_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 618;
+	public static final int __DNA__SDNA_INDEX = 658;
 
 	/**
 	 * Field descriptor (offset) for struct member 'loc'.

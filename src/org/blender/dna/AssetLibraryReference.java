@@ -30,7 +30,7 @@ public class AssetLibraryReference extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 797;
+	public static final int __DNA__SDNA_INDEX = 58;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.

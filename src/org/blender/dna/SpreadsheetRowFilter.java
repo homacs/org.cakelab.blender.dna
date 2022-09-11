@@ -28,7 +28,7 @@ public class SpreadsheetRowFilter extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 271;
+	public static final int __DNA__SDNA_INDEX = 708;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -303,24 +303,24 @@ public class SpreadsheetRowFilter extends CFacade {
 	public static final long[] __DNA__FIELD__value_color = new long[]{112, 124};
 
 	/**
-	 * Field descriptor (offset) for struct member 'value_byte_color'.
+	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SpreadsheetRowFilter spreadsheetrowfilter = ...;
-	 * CPointer&lt;Object&gt; p = spreadsheetrowfilter.__dna__addressof(SpreadsheetRowFilter.__DNA__FIELD__value_byte_color);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_value_byte_color = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = spreadsheetrowfilter.__dna__addressof(SpreadsheetRowFilter.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'value_byte_color'</li>
-	 * <li>Signature: 'uchar[4]'</li>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__value_byte_color = new long[]{128, 140};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{128, 140};
 
 	public SpreadsheetRowFilter(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -791,11 +791,11 @@ public class SpreadsheetRowFilter extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'value_byte_color'.
-	 * @see #__DNA__FIELD__value_byte_color
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public CArrayFacade<Byte> getValue_byte_color() throws IOException
+	public CArrayFacade<Byte> get_pad1() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -809,11 +809,11 @@ public class SpreadsheetRowFilter extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'value_byte_color'.
-	 * @see #__DNA__FIELD__value_byte_color
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public void setValue_byte_color(CArrayFacade<Byte> value_byte_color) throws IOException
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -821,12 +821,12 @@ public class SpreadsheetRowFilter extends CFacade {
 		} else {
 			__dna__offset = 128;
 		}
-		if (__io__equals(value_byte_color, __io__address + __dna__offset)) {
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, value_byte_color)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, value_byte_color);
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
 		} else {
-			__io__generic__copy( getValue_byte_color(), value_byte_color);
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 

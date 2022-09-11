@@ -23,7 +23,7 @@ import org.cakelab.blender.nio.CPointer;
  * </p>
  */
 
-@CMetaData(size32=304, size64=408)
+@CMetaData(size32=312, size64=416)
 public class Sequence extends CFacade {
 
 	/**
@@ -34,7 +34,7 @@ public class Sequence extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 322;
+	public static final int __DNA__SDNA_INDEX = 634;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -226,12 +226,12 @@ public class Sequence extends CFacade {
 	 * <pre>
 	 * Sequence sequence = ...;
 	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD__start);
-	 * CPointer&lt;Integer&gt; p_start = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Float&gt; p_start = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'start'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
@@ -249,12 +249,12 @@ public class Sequence extends CFacade {
 	 * <pre>
 	 * Sequence sequence = ...;
 	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD__startofs);
-	 * CPointer&lt;Integer&gt; p_startofs = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Float&gt; p_startofs = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'startofs'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
@@ -269,12 +269,12 @@ public class Sequence extends CFacade {
 	 * <pre>
 	 * Sequence sequence = ...;
 	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD__endofs);
-	 * CPointer&lt;Integer&gt; p_endofs = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Float&gt; p_endofs = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'endofs'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
@@ -292,12 +292,12 @@ public class Sequence extends CFacade {
 	 * <pre>
 	 * Sequence sequence = ...;
 	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD__startstill);
-	 * CPointer&lt;Integer&gt; p_startstill = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Float&gt; p_startstill = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'startstill'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
@@ -312,12 +312,12 @@ public class Sequence extends CFacade {
 	 * <pre>
 	 * Sequence sequence = ...;
 	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD__endstill);
-	 * CPointer&lt;Integer&gt; p_endstill = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Float&gt; p_endstill = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'endstill'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
@@ -370,7 +370,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'startdisp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Starting and ending points of the strip in the sequence. </p>
+	 * <p> Starting and ending points of the effect strip. Undefined for other strip types. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -943,7 +943,9 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'pitch'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Pitch (-0.1..10), pan -2..2. </p>
+	 * <p> Pitch (-0.1..10), pan -2..2. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1328,6 +1330,52 @@ public class Sequence extends CFacade {
 	public static final long[] __DNA__FIELD__modifiers = new long[]{288, 384};
 
 	/**
+	 * Field descriptor (offset) for struct member 'media_playback_rate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Playback rate of strip content in frames per second. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sequence sequence = ...;
+	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD__media_playback_rate);
+	 * CPointer&lt;Float&gt; p_media_playback_rate = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'media_playback_rate'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__media_playback_rate = new long[]{296, 400};
+
+	/**
+	 * Field descriptor (offset) for struct member 'speed_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Multiply strip playback speed. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sequence sequence = ...;
+	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD__speed_factor);
+	 * CPointer&lt;Float&gt; p_speed_factor = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'speed_factor'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__speed_factor = new long[]{300, 404};
+
+	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1345,7 +1393,7 @@ public class Sequence extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{296, 400};
+	public static final long[] __DNA__FIELD__runtime = new long[]{304, 408};
 
 	public Sequence(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1651,12 +1699,12 @@ public class Sequence extends CFacade {
 	 * @see #__DNA__FIELD__start
 	 */
 	
-	public int getStart() throws IOException
+	public float getStart() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 108);
+			return __io__block.readFloat(__io__address + 108);
 		} else {
-			return __io__block.readInt(__io__address + 92);
+			return __io__block.readFloat(__io__address + 92);
 		}
 	}
 
@@ -1668,12 +1716,12 @@ public class Sequence extends CFacade {
 	 * @see #__DNA__FIELD__start
 	 */
 	
-	public void setStart(int start) throws IOException
+	public void setStart(float start) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 108, start);
+			__io__block.writeFloat(__io__address + 108, start);
 		} else {
-			__io__block.writeInt(__io__address + 92, start);
+			__io__block.writeFloat(__io__address + 92, start);
 		}
 	}
 
@@ -1685,12 +1733,12 @@ public class Sequence extends CFacade {
 	 * @see #__DNA__FIELD__startofs
 	 */
 	
-	public int getStartofs() throws IOException
+	public float getStartofs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 112);
+			return __io__block.readFloat(__io__address + 112);
 		} else {
-			return __io__block.readInt(__io__address + 96);
+			return __io__block.readFloat(__io__address + 96);
 		}
 	}
 
@@ -1702,12 +1750,12 @@ public class Sequence extends CFacade {
 	 * @see #__DNA__FIELD__startofs
 	 */
 	
-	public void setStartofs(int startofs) throws IOException
+	public void setStartofs(float startofs) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 112, startofs);
+			__io__block.writeFloat(__io__address + 112, startofs);
 		} else {
-			__io__block.writeInt(__io__address + 96, startofs);
+			__io__block.writeFloat(__io__address + 96, startofs);
 		}
 	}
 
@@ -1716,12 +1764,12 @@ public class Sequence extends CFacade {
 	 * @see #__DNA__FIELD__endofs
 	 */
 	
-	public int getEndofs() throws IOException
+	public float getEndofs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 116);
+			return __io__block.readFloat(__io__address + 116);
 		} else {
-			return __io__block.readInt(__io__address + 100);
+			return __io__block.readFloat(__io__address + 100);
 		}
 	}
 
@@ -1730,12 +1778,12 @@ public class Sequence extends CFacade {
 	 * @see #__DNA__FIELD__endofs
 	 */
 	
-	public void setEndofs(int endofs) throws IOException
+	public void setEndofs(float endofs) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 116, endofs);
+			__io__block.writeFloat(__io__address + 116, endofs);
 		} else {
-			__io__block.writeInt(__io__address + 100, endofs);
+			__io__block.writeFloat(__io__address + 100, endofs);
 		}
 	}
 
@@ -1747,12 +1795,12 @@ public class Sequence extends CFacade {
 	 * @see #__DNA__FIELD__startstill
 	 */
 	
-	public int getStartstill() throws IOException
+	public float getStartstill() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 120);
+			return __io__block.readFloat(__io__address + 120);
 		} else {
-			return __io__block.readInt(__io__address + 104);
+			return __io__block.readFloat(__io__address + 104);
 		}
 	}
 
@@ -1764,12 +1812,12 @@ public class Sequence extends CFacade {
 	 * @see #__DNA__FIELD__startstill
 	 */
 	
-	public void setStartstill(int startstill) throws IOException
+	public void setStartstill(float startstill) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 120, startstill);
+			__io__block.writeFloat(__io__address + 120, startstill);
 		} else {
-			__io__block.writeInt(__io__address + 104, startstill);
+			__io__block.writeFloat(__io__address + 104, startstill);
 		}
 	}
 
@@ -1778,12 +1826,12 @@ public class Sequence extends CFacade {
 	 * @see #__DNA__FIELD__endstill
 	 */
 	
-	public int getEndstill() throws IOException
+	public float getEndstill() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 124);
+			return __io__block.readFloat(__io__address + 124);
 		} else {
-			return __io__block.readInt(__io__address + 108);
+			return __io__block.readFloat(__io__address + 108);
 		}
 	}
 
@@ -1792,12 +1840,12 @@ public class Sequence extends CFacade {
 	 * @see #__DNA__FIELD__endstill
 	 */
 	
-	public void setEndstill(int endstill) throws IOException
+	public void setEndstill(float endstill) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 124, endstill);
+			__io__block.writeFloat(__io__address + 124, endstill);
 		} else {
-			__io__block.writeInt(__io__address + 108, endstill);
+			__io__block.writeFloat(__io__address + 108, endstill);
 		}
 	}
 
@@ -1867,7 +1915,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'startdisp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Starting and ending points of the strip in the sequence. </p>
+	 * <p> Starting and ending points of the effect strip. Undefined for other strip types. </p>
 	 * @see #__DNA__FIELD__startdisp
 	 */
 	
@@ -1884,7 +1932,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'startdisp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Starting and ending points of the strip in the sequence. </p>
+	 * <p> Starting and ending points of the effect strip. Undefined for other strip types. </p>
 	 * @see #__DNA__FIELD__startdisp
 	 */
 	
@@ -2769,7 +2817,9 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'pitch'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Pitch (-0.1..10), pan -2..2. </p>
+	 * <p> Pitch (-0.1..10), pan -2..2. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__pitch
 	 */
 	
@@ -2786,7 +2836,9 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'pitch'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Pitch (-0.1..10), pan -2..2. </p>
+	 * <p> Pitch (-0.1..10), pan -2..2. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__pitch
 	 */
 	
@@ -3370,6 +3422,74 @@ public class Sequence extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'media_playback_rate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Playback rate of strip content in frames per second. </p>
+	 * @see #__DNA__FIELD__media_playback_rate
+	 */
+	
+	public float getMedia_playback_rate() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 400);
+		} else {
+			return __io__block.readFloat(__io__address + 296);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'media_playback_rate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Playback rate of strip content in frames per second. </p>
+	 * @see #__DNA__FIELD__media_playback_rate
+	 */
+	
+	public void setMedia_playback_rate(float media_playback_rate) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 400, media_playback_rate);
+		} else {
+			__io__block.writeFloat(__io__address + 296, media_playback_rate);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'speed_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Multiply strip playback speed. </p>
+	 * @see #__DNA__FIELD__speed_factor
+	 */
+	
+	public float getSpeed_factor() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 404);
+		} else {
+			return __io__block.readFloat(__io__address + 300);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'speed_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Multiply strip playback speed. </p>
+	 * @see #__DNA__FIELD__speed_factor
+	 */
+	
+	public void setSpeed_factor(float speed_factor) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 404, speed_factor);
+		} else {
+			__io__block.writeFloat(__io__address + 300, speed_factor);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'runtime'.
 	 * @see #__DNA__FIELD__runtime
 	 */
@@ -3377,9 +3497,9 @@ public class Sequence extends CFacade {
 	public SequenceRuntime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new SequenceRuntime(__io__address + 400, __io__block, __io__blockTable);
+			return new SequenceRuntime(__io__address + 408, __io__block, __io__blockTable);
 		} else {
-			return new SequenceRuntime(__io__address + 296, __io__block, __io__blockTable);
+			return new SequenceRuntime(__io__address + 304, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3392,9 +3512,9 @@ public class Sequence extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 400;
+			__dna__offset = 408;
 		} else {
-			__dna__offset = 296;
+			__dna__offset = 304;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

@@ -28,7 +28,7 @@ public class FreestyleModuleConfig extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 709;
+	public static final int __DNA__SDNA_INDEX = 157;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

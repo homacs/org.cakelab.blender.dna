@@ -28,7 +28,7 @@ public class TintGpencilModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 610;
+	public static final int __DNA__SDNA_INDEX = 179;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

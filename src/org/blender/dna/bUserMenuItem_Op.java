@@ -28,7 +28,7 @@ public class bUserMenuItem_Op extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 287;
+	public static final int __DNA__SDNA_INDEX = 749;
 
 	/**
 	 * Field descriptor (offset) for struct member 'item'.

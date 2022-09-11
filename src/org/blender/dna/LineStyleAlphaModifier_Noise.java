@@ -27,7 +27,7 @@ public class LineStyleAlphaModifier_Noise extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 725;
+	public static final int __DNA__SDNA_INDEX = 249;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

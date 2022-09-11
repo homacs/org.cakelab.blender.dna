@@ -30,7 +30,7 @@ public class bDistLimitConstraint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 398;
+	public static final int __DNA__SDNA_INDEX = 125;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.

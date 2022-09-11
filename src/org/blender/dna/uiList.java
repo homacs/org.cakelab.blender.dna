@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=188, size64=216)
+@CMetaData(size32=180, size64=200)
 public class uiList extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class uiList extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 305;
+	public static final int __DNA__SDNA_INDEX = 618;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -306,52 +306,6 @@ public class uiList extends CFacade {
 	public static final long[] __DNA__FIELD__filter_sort_flag = new long[]{168, 180};
 
 	/**
-	 * Field descriptor (offset) for struct member 'custom_activate_opname'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Operator executed when activating an item. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * uiList uilist = ...;
-	 * CPointer&lt;Object&gt; p = uilist.__dna__addressof(uiList.__DNA__FIELD__custom_activate_opname);
-	 * CPointer&lt;CPointer&lt;Byte&gt;&gt; p_custom_activate_opname = p.cast(new Class[]{CPointer.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'custom_activate_opname'</li>
-	 * <li>Signature: 'char*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__custom_activate_opname = new long[]{172, 184};
-
-	/**
-	 * Field descriptor (offset) for struct member 'custom_drag_opname'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Operator executed when dragging an item (item gets activated too, without running custom_activate_opname above). </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * uiList uilist = ...;
-	 * CPointer&lt;Object&gt; p = uilist.__dna__addressof(uiList.__DNA__FIELD__custom_drag_opname);
-	 * CPointer&lt;CPointer&lt;Byte&gt;&gt; p_custom_drag_opname = p.cast(new Class[]{CPointer.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'custom_drag_opname'</li>
-	 * <li>Signature: 'char*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__custom_drag_opname = new long[]{176, 192};
-
-	/**
 	 * Field descriptor (offset) for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -372,7 +326,7 @@ public class uiList extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__properties = new long[]{180, 200};
+	public static final long[] __DNA__FIELD__properties = new long[]{172, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dyn_data'.
@@ -395,7 +349,7 @@ public class uiList extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dyn_data = new long[]{184, 208};
+	public static final long[] __DNA__FIELD__dyn_data = new long[]{176, 192};
 
 	public uiList(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -836,82 +790,6 @@ public class uiList extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'custom_activate_opname'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Operator executed when activating an item. </p>
-	 * @see #__DNA__FIELD__custom_activate_opname
-	 */
-	
-	public CPointer<Byte> getCustom_activate_opname() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 172);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'custom_activate_opname'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Operator executed when activating an item. </p>
-	 * @see #__DNA__FIELD__custom_activate_opname
-	 */
-	
-	public void setCustom_activate_opname(CPointer<Byte> custom_activate_opname) throws IOException
-	{
-		long __address = ((custom_activate_opname == null) ? 0 : custom_activate_opname.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 184, __address);
-		} else {
-			__io__block.writeLong(__io__address + 172, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'custom_drag_opname'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Operator executed when dragging an item (item gets activated too, without running custom_activate_opname above). </p>
-	 * @see #__DNA__FIELD__custom_drag_opname
-	 */
-	
-	public CPointer<Byte> getCustom_drag_opname() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'custom_drag_opname'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> Operator executed when dragging an item (item gets activated too, without running custom_activate_opname above). </p>
-	 * @see #__DNA__FIELD__custom_drag_opname
-	 */
-	
-	public void setCustom_drag_opname(CPointer<Byte> custom_drag_opname) throws IOException
-	{
-		long __address = ((custom_drag_opname == null) ? 0 : custom_drag_opname.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 192, __address);
-		} else {
-			__io__block.writeLong(__io__address + 176, __address);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -923,9 +801,9 @@ public class uiList extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 184);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 180);
+			__dna__targetAddress = __io__block.readLong(__io__address + 172);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{IDProperty.class};
 		return new CPointer<IDProperty>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDProperty.__DNA__SDNA_INDEX), __io__blockTable);
@@ -943,9 +821,9 @@ public class uiList extends CFacade {
 	{
 		long __address = ((properties == null) ? 0 : properties.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 200, __address);
+			__io__block.writeLong(__io__address + 184, __address);
 		} else {
-			__io__block.writeLong(__io__address + 180, __address);
+			__io__block.writeLong(__io__address + 172, __address);
 		}
 	}
 
@@ -961,9 +839,9 @@ public class uiList extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -981,9 +859,9 @@ public class uiList extends CFacade {
 	{
 		long __address = ((dyn_data == null) ? 0 : dyn_data.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 208, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		}
 	}
 

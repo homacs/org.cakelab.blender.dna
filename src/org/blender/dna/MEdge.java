@@ -31,7 +31,7 @@ public class MEdge extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 76;
+	public static final int __DNA__SDNA_INDEX = 295;
 
 	/**
 	 * Field descriptor (offset) for struct member 'v1'.

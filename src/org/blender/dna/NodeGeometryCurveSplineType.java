@@ -27,7 +27,7 @@ public class NodeGeometryCurveSplineType extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 510;
+	public static final int __DNA__SDNA_INDEX = 503;
 
 	/**
 	 * Field descriptor (offset) for struct member 'spline_type'.

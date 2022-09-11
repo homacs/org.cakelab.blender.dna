@@ -31,7 +31,7 @@ public class PaintModeSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 199;
+	public static final int __DNA__SDNA_INDEX = 584;
 
 	/**
 	 * Field descriptor (offset) for struct member 'canvas_source'.

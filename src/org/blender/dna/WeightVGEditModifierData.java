@@ -28,7 +28,7 @@ public class WeightVGEditModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 141;
+	public static final int __DNA__SDNA_INDEX = 362;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

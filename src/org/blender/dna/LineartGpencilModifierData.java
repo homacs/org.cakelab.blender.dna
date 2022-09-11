@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=364, size64=400)
+@CMetaData(size32=392, size64=432)
 public class LineartGpencilModifierData extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 614;
+	public static final int __DNA__SDNA_INDEX = 183;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -64,7 +64,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'line_types'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Signature: 'ushort'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
@@ -174,6 +174,26 @@ public class LineartGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__source_camera = new long[]{100, 112};
 
 	/**
+	 * Field descriptor (offset) for struct member 'light_contour_object'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LineartGpencilModifierData lineartgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = lineartgpencilmodifierdata.__dna__addressof(LineartGpencilModifierData.__DNA__FIELD__light_contour_object);
+	 * CPointer&lt;CPointer&lt;BlenderObject&gt;&gt; p_light_contour_object = p.cast(new Class[]{CPointer.class, BlenderObject.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'light_contour_object'</li>
+	 * <li>Signature: 'Object*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__light_contour_object = new long[]{104, 120};
+
+	/**
 	 * Field descriptor (offset) for struct member 'source_object'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -191,7 +211,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__source_object = new long[]{104, 120};
+	public static final long[] __DNA__FIELD__source_object = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'source_collection'.
@@ -211,7 +231,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__source_collection = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__source_collection = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'target_material'.
@@ -231,7 +251,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__target_material = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__target_material = new long[]{116, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'target_layer'.
@@ -251,7 +271,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__target_layer = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__target_layer = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'source_vertex_group'.
@@ -274,7 +294,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__source_vertex_group = new long[]{180, 208};
+	public static final long[] __DNA__FIELD__source_vertex_group = new long[]{184, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgname'.
@@ -294,13 +314,13 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vgname = new long[]{244, 272};
+	public static final long[] __DNA__FIELD__vgname = new long[]{248, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'overscan'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p>{@link Camera}<code></code> , before calculation, which give a wider FOV, this doesn't change coordinates range internally (-1, 1), but makes the calculated frame bigger than actual output. This is for the easier shifting calculation. A value of 0.5 means the "internal" focal length become 2/3 of the actual camera. </p>
+	 * <p>{@link Camera}  focal length is divided by (1 + over-scan), before calculation, which give a wider FOV, this doesn't change coordinates range internally (-1, 1), but makes the calculated frame bigger than actual output. This is for the easier shifting calculation. A value of 0.5 means the "internal" focal length become 2/3 of the actual camera. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -317,7 +337,90 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__overscan = new long[]{308, 336};
+	public static final long[] __DNA__FIELD__overscan = new long[]{312, 344};
+
+	/**
+	 * Field descriptor (offset) for struct member 'shadow_camera_fov'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Values for point light and directional (sun) light. For point light, fov always gonna be 120 deg horizontal, with 3 "cameras" covering 360 deg. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LineartGpencilModifierData lineartgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = lineartgpencilmodifierdata.__dna__addressof(LineartGpencilModifierData.__DNA__FIELD__shadow_camera_fov);
+	 * CPointer&lt;Float&gt; p_shadow_camera_fov = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'shadow_camera_fov'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__shadow_camera_fov = new long[]{316, 348};
+
+	/**
+	 * Field descriptor (offset) for struct member 'shadow_camera_size'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LineartGpencilModifierData lineartgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = lineartgpencilmodifierdata.__dna__addressof(LineartGpencilModifierData.__DNA__FIELD__shadow_camera_size);
+	 * CPointer&lt;Float&gt; p_shadow_camera_size = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'shadow_camera_size'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__shadow_camera_size = new long[]{320, 352};
+
+	/**
+	 * Field descriptor (offset) for struct member 'shadow_camera_near'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LineartGpencilModifierData lineartgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = lineartgpencilmodifierdata.__dna__addressof(LineartGpencilModifierData.__DNA__FIELD__shadow_camera_near);
+	 * CPointer&lt;Float&gt; p_shadow_camera_near = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'shadow_camera_near'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__shadow_camera_near = new long[]{324, 356};
+
+	/**
+	 * Field descriptor (offset) for struct member 'shadow_camera_far'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LineartGpencilModifierData lineartgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = lineartgpencilmodifierdata.__dna__addressof(LineartGpencilModifierData.__DNA__FIELD__shadow_camera_far);
+	 * CPointer&lt;Float&gt; p_shadow_camera_far = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'shadow_camera_far'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__shadow_camera_far = new long[]{328, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'opacity'.
@@ -337,7 +440,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__opacity = new long[]{312, 340};
+	public static final long[] __DNA__FIELD__opacity = new long[]{332, 364};
 
 	/**
 	 * Field descriptor (offset) for struct member 'thickness'.
@@ -357,7 +460,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__thickness = new long[]{316, 344};
+	public static final long[] __DNA__FIELD__thickness = new long[]{336, 368};
 
 	/**
 	 * Field descriptor (offset) for struct member 'transparency_flags'.
@@ -377,7 +480,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__transparency_flags = new long[]{318, 346};
+	public static final long[] __DNA__FIELD__transparency_flags = new long[]{338, 370};
 
 	/**
 	 * Field descriptor (offset) for struct member 'transparency_mask'.
@@ -397,7 +500,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__transparency_mask = new long[]{319, 347};
+	public static final long[] __DNA__FIELD__transparency_mask = new long[]{339, 371};
 
 	/**
 	 * Field descriptor (offset) for struct member 'intersection_mask'.
@@ -417,7 +520,47 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__intersection_mask = new long[]{320, 348};
+	public static final long[] __DNA__FIELD__intersection_mask = new long[]{340, 372};
+
+	/**
+	 * Field descriptor (offset) for struct member 'shadow_selection'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LineartGpencilModifierData lineartgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = lineartgpencilmodifierdata.__dna__addressof(LineartGpencilModifierData.__DNA__FIELD__shadow_selection);
+	 * CPointer&lt;Byte&gt; p_shadow_selection = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'shadow_selection'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__shadow_selection = new long[]{341, 373};
+
+	/**
+	 * Field descriptor (offset) for struct member 'silhouette_selection'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LineartGpencilModifierData lineartgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = lineartgpencilmodifierdata.__dna__addressof(LineartGpencilModifierData.__DNA__FIELD__silhouette_selection);
+	 * CPointer&lt;Byte&gt; p_silhouette_selection = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'silhouette_selection'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__silhouette_selection = new long[]{342, 374};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -433,11 +576,11 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * <li>Signature: 'char[1]'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{321, 349};
+	public static final long[] __DNA__FIELD___pad = new long[]{343, 375};
 
 	/**
 	 * Field descriptor (offset) for struct member 'crease_threshold'.
@@ -460,7 +603,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__crease_threshold = new long[]{324, 352};
+	public static final long[] __DNA__FIELD__crease_threshold = new long[]{344, 376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'angle_splitting_threshold'.
@@ -483,7 +626,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__angle_splitting_threshold = new long[]{328, 356};
+	public static final long[] __DNA__FIELD__angle_splitting_threshold = new long[]{348, 380};
 
 	/**
 	 * Field descriptor (offset) for struct member 'chain_smooth_tolerance'.
@@ -506,7 +649,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__chain_smooth_tolerance = new long[]{332, 360};
+	public static final long[] __DNA__FIELD__chain_smooth_tolerance = new long[]{352, 384};
 
 	/**
 	 * Field descriptor (offset) for struct member 'chaining_image_threshold'.
@@ -529,13 +672,13 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__chaining_image_threshold = new long[]{336, 364};
+	public static final long[] __DNA__FIELD__chaining_image_threshold = new long[]{356, 388};
 
 	/**
 	 * Field descriptor (offset) for struct member 'calculation_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Ported from SceneLineArt flags. </p>
+	 * <p> eLineartMainFlags, for one time calculation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -552,7 +695,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__calculation_flags = new long[]{340, 368};
+	public static final long[] __DNA__FIELD__calculation_flags = new long[]{360, 392};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -575,7 +718,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{344, 372};
+	public static final long[] __DNA__FIELD__flags = new long[]{364, 396};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stroke_depth_offset'.
@@ -598,7 +741,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stroke_depth_offset = new long[]{348, 376};
+	public static final long[] __DNA__FIELD__stroke_depth_offset = new long[]{368, 400};
 
 	/**
 	 * Field descriptor (offset) for struct member 'level_start_override'.
@@ -621,7 +764,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__level_start_override = new long[]{352, 380};
+	public static final long[] __DNA__FIELD__level_start_override = new long[]{372, 404};
 
 	/**
 	 * Field descriptor (offset) for struct member 'level_end_override'.
@@ -641,7 +784,7 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__level_end_override = new long[]{353, 381};
+	public static final long[] __DNA__FIELD__level_end_override = new long[]{373, 405};
 
 	/**
 	 * Field descriptor (offset) for struct member 'edge_types_override'.
@@ -661,7 +804,67 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__edge_types_override = new long[]{354, 382};
+	public static final long[] __DNA__FIELD__edge_types_override = new long[]{374, 406};
+
+	/**
+	 * Field descriptor (offset) for struct member 'shadow_selection_override'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LineartGpencilModifierData lineartgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = lineartgpencilmodifierdata.__dna__addressof(LineartGpencilModifierData.__DNA__FIELD__shadow_selection_override);
+	 * CPointer&lt;Byte&gt; p_shadow_selection_override = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'shadow_selection_override'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__shadow_selection_override = new long[]{376, 408};
+
+	/**
+	 * Field descriptor (offset) for struct member 'shadow_use_silhouette_override'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LineartGpencilModifierData lineartgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = lineartgpencilmodifierdata.__dna__addressof(LineartGpencilModifierData.__DNA__FIELD__shadow_use_silhouette_override);
+	 * CPointer&lt;Byte&gt; p_shadow_use_silhouette_override = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'shadow_use_silhouette_override'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__shadow_use_silhouette_override = new long[]{377, 409};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LineartGpencilModifierData lineartgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = lineartgpencilmodifierdata.__dna__addressof(LineartGpencilModifierData.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad2 = new long[]{378, 410};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache'.
@@ -681,10 +884,10 @@ public class LineartGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache = new long[]{356, 384};
+	public static final long[] __DNA__FIELD__cache = new long[]{384, 416};
 
 	/**
-	 * Field descriptor (offset) for struct member 'render_buffer_ptr'.
+	 * Field descriptor (offset) for struct member 'la_data_ptr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
 	 * <p> Keep a pointer to the render buffer so we can call destroy from {@link ModifierData} . </p>
@@ -694,17 +897,17 @@ public class LineartGpencilModifierData extends CFacade {
 	 * </p>
 	 * <pre>
 	 * LineartGpencilModifierData lineartgpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = lineartgpencilmodifierdata.__dna__addressof(LineartGpencilModifierData.__DNA__FIELD__render_buffer_ptr);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_render_buffer_ptr = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;Object&gt; p = lineartgpencilmodifierdata.__dna__addressof(LineartGpencilModifierData.__DNA__FIELD__la_data_ptr);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_la_data_ptr = p.cast(new Class[]{CPointer.class, Object.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'render_buffer_ptr'</li>
-	 * <li>Signature: 'LineartRenderBuffer*'</li>
+	 * <li>Field: 'la_data_ptr'</li>
+	 * <li>Signature: 'LineartData*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__render_buffer_ptr = new long[]{360, 392};
+	public static final long[] __DNA__FIELD__la_data_ptr = new long[]{388, 424};
 
 	public LineartGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -929,6 +1132,38 @@ public class LineartGpencilModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'light_contour_object'.
+	 * @see #__DNA__FIELD__light_contour_object
+	 */
+	
+	public CPointer<BlenderObject> getLight_contour_object() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
+		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'light_contour_object'.
+	 * @see #__DNA__FIELD__light_contour_object
+	 */
+	
+	public void setLight_contour_object(CPointer<BlenderObject> light_contour_object) throws IOException
+	{
+		long __address = ((light_contour_object == null) ? 0 : light_contour_object.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 120, __address);
+		} else {
+			__io__block.writeLong(__io__address + 104, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'source_object'.
 	 * @see #__DNA__FIELD__source_object
 	 */
@@ -937,9 +1172,9 @@ public class LineartGpencilModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -954,9 +1189,9 @@ public class LineartGpencilModifierData extends CFacade {
 	{
 		long __address = ((source_object == null) ? 0 : source_object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 104, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -969,9 +1204,9 @@ public class LineartGpencilModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 108);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Collection.class};
 		return new CPointer<Collection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Collection.__DNA__SDNA_INDEX), __io__blockTable);
@@ -986,9 +1221,9 @@ public class LineartGpencilModifierData extends CFacade {
 	{
 		long __address = ((source_collection == null) ? 0 : source_collection.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 108, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 
@@ -1001,9 +1236,9 @@ public class LineartGpencilModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 116);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Material.class};
 		return new CPointer<Material>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Material.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1018,9 +1253,9 @@ public class LineartGpencilModifierData extends CFacade {
 	{
 		long __address = ((target_material == null) ? 0 : target_material.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 116, __address);
 		}
 	}
 
@@ -1036,9 +1271,9 @@ public class LineartGpencilModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1051,9 +1286,9 @@ public class LineartGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 144;
+			__dna__offset = 152;
 		} else {
-			__dna__offset = 116;
+			__dna__offset = 120;
 		}
 		if (__io__equals(target_layer, __io__address + __dna__offset)) {
 			return;
@@ -1079,9 +1314,9 @@ public class LineartGpencilModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1097,9 +1332,9 @@ public class LineartGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 208;
+			__dna__offset = 216;
 		} else {
-			__dna__offset = 180;
+			__dna__offset = 184;
 		}
 		if (__io__equals(source_vertex_group, __io__address + __dna__offset)) {
 			return;
@@ -1122,9 +1357,9 @@ public class LineartGpencilModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 244, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 248, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1137,9 +1372,9 @@ public class LineartGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 272;
+			__dna__offset = 280;
 		} else {
-			__dna__offset = 244;
+			__dna__offset = 248;
 		}
 		if (__io__equals(vgname, __io__address + __dna__offset)) {
 			return;
@@ -1154,16 +1389,16 @@ public class LineartGpencilModifierData extends CFacade {
 	 * Get method for struct member 'overscan'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p>{@link Camera}<code></code> , before calculation, which give a wider FOV, this doesn't change coordinates range internally (-1, 1), but makes the calculated frame bigger than actual output. This is for the easier shifting calculation. A value of 0.5 means the "internal" focal length become 2/3 of the actual camera. </p>
+	 * <p>{@link Camera}  focal length is divided by (1 + over-scan), before calculation, which give a wider FOV, this doesn't change coordinates range internally (-1, 1), but makes the calculated frame bigger than actual output. This is for the easier shifting calculation. A value of 0.5 means the "internal" focal length become 2/3 of the actual camera. </p>
 	 * @see #__DNA__FIELD__overscan
 	 */
 	
 	public float getOverscan() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 336);
+			return __io__block.readFloat(__io__address + 344);
 		} else {
-			return __io__block.readFloat(__io__address + 308);
+			return __io__block.readFloat(__io__address + 312);
 		}
 	}
 
@@ -1171,16 +1406,134 @@ public class LineartGpencilModifierData extends CFacade {
 	 * Set method for struct member 'overscan'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p>{@link Camera}<code></code> , before calculation, which give a wider FOV, this doesn't change coordinates range internally (-1, 1), but makes the calculated frame bigger than actual output. This is for the easier shifting calculation. A value of 0.5 means the "internal" focal length become 2/3 of the actual camera. </p>
+	 * <p>{@link Camera}  focal length is divided by (1 + over-scan), before calculation, which give a wider FOV, this doesn't change coordinates range internally (-1, 1), but makes the calculated frame bigger than actual output. This is for the easier shifting calculation. A value of 0.5 means the "internal" focal length become 2/3 of the actual camera. </p>
 	 * @see #__DNA__FIELD__overscan
 	 */
 	
 	public void setOverscan(float overscan) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 336, overscan);
+			__io__block.writeFloat(__io__address + 344, overscan);
 		} else {
-			__io__block.writeFloat(__io__address + 308, overscan);
+			__io__block.writeFloat(__io__address + 312, overscan);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'shadow_camera_fov'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Values for point light and directional (sun) light. For point light, fov always gonna be 120 deg horizontal, with 3 "cameras" covering 360 deg. </p>
+	 * @see #__DNA__FIELD__shadow_camera_fov
+	 */
+	
+	public float getShadow_camera_fov() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 348);
+		} else {
+			return __io__block.readFloat(__io__address + 316);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'shadow_camera_fov'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Values for point light and directional (sun) light. For point light, fov always gonna be 120 deg horizontal, with 3 "cameras" covering 360 deg. </p>
+	 * @see #__DNA__FIELD__shadow_camera_fov
+	 */
+	
+	public void setShadow_camera_fov(float shadow_camera_fov) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 348, shadow_camera_fov);
+		} else {
+			__io__block.writeFloat(__io__address + 316, shadow_camera_fov);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'shadow_camera_size'.
+	 * @see #__DNA__FIELD__shadow_camera_size
+	 */
+	
+	public float getShadow_camera_size() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 352);
+		} else {
+			return __io__block.readFloat(__io__address + 320);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'shadow_camera_size'.
+	 * @see #__DNA__FIELD__shadow_camera_size
+	 */
+	
+	public void setShadow_camera_size(float shadow_camera_size) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 352, shadow_camera_size);
+		} else {
+			__io__block.writeFloat(__io__address + 320, shadow_camera_size);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'shadow_camera_near'.
+	 * @see #__DNA__FIELD__shadow_camera_near
+	 */
+	
+	public float getShadow_camera_near() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 356);
+		} else {
+			return __io__block.readFloat(__io__address + 324);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'shadow_camera_near'.
+	 * @see #__DNA__FIELD__shadow_camera_near
+	 */
+	
+	public void setShadow_camera_near(float shadow_camera_near) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 356, shadow_camera_near);
+		} else {
+			__io__block.writeFloat(__io__address + 324, shadow_camera_near);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'shadow_camera_far'.
+	 * @see #__DNA__FIELD__shadow_camera_far
+	 */
+	
+	public float getShadow_camera_far() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 360);
+		} else {
+			return __io__block.readFloat(__io__address + 328);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'shadow_camera_far'.
+	 * @see #__DNA__FIELD__shadow_camera_far
+	 */
+	
+	public void setShadow_camera_far(float shadow_camera_far) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 360, shadow_camera_far);
+		} else {
+			__io__block.writeFloat(__io__address + 328, shadow_camera_far);
 		}
 	}
 
@@ -1192,9 +1545,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public float getOpacity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 340);
+			return __io__block.readFloat(__io__address + 364);
 		} else {
-			return __io__block.readFloat(__io__address + 312);
+			return __io__block.readFloat(__io__address + 332);
 		}
 	}
 
@@ -1206,9 +1559,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public void setOpacity(float opacity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 340, opacity);
+			__io__block.writeFloat(__io__address + 364, opacity);
 		} else {
-			__io__block.writeFloat(__io__address + 312, opacity);
+			__io__block.writeFloat(__io__address + 332, opacity);
 		}
 	}
 
@@ -1220,9 +1573,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public short getThickness() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 344);
+			return __io__block.readShort(__io__address + 368);
 		} else {
-			return __io__block.readShort(__io__address + 316);
+			return __io__block.readShort(__io__address + 336);
 		}
 	}
 
@@ -1234,9 +1587,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public void setThickness(short thickness) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 344, thickness);
+			__io__block.writeShort(__io__address + 368, thickness);
 		} else {
-			__io__block.writeShort(__io__address + 316, thickness);
+			__io__block.writeShort(__io__address + 336, thickness);
 		}
 	}
 
@@ -1248,9 +1601,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public byte getTransparency_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 346);
+			return __io__block.readByte(__io__address + 370);
 		} else {
-			return __io__block.readByte(__io__address + 318);
+			return __io__block.readByte(__io__address + 338);
 		}
 	}
 
@@ -1262,9 +1615,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public void setTransparency_flags(byte transparency_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 346, transparency_flags);
+			__io__block.writeByte(__io__address + 370, transparency_flags);
 		} else {
-			__io__block.writeByte(__io__address + 318, transparency_flags);
+			__io__block.writeByte(__io__address + 338, transparency_flags);
 		}
 	}
 
@@ -1276,9 +1629,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public byte getTransparency_mask() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 347);
+			return __io__block.readByte(__io__address + 371);
 		} else {
-			return __io__block.readByte(__io__address + 319);
+			return __io__block.readByte(__io__address + 339);
 		}
 	}
 
@@ -1290,9 +1643,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public void setTransparency_mask(byte transparency_mask) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 347, transparency_mask);
+			__io__block.writeByte(__io__address + 371, transparency_mask);
 		} else {
-			__io__block.writeByte(__io__address + 319, transparency_mask);
+			__io__block.writeByte(__io__address + 339, transparency_mask);
 		}
 	}
 
@@ -1304,9 +1657,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public byte getIntersection_mask() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 348);
+			return __io__block.readByte(__io__address + 372);
 		} else {
-			return __io__block.readByte(__io__address + 320);
+			return __io__block.readByte(__io__address + 340);
 		}
 	}
 
@@ -1318,9 +1671,65 @@ public class LineartGpencilModifierData extends CFacade {
 	public void setIntersection_mask(byte intersection_mask) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 348, intersection_mask);
+			__io__block.writeByte(__io__address + 372, intersection_mask);
 		} else {
-			__io__block.writeByte(__io__address + 320, intersection_mask);
+			__io__block.writeByte(__io__address + 340, intersection_mask);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'shadow_selection'.
+	 * @see #__DNA__FIELD__shadow_selection
+	 */
+	
+	public byte getShadow_selection() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 373);
+		} else {
+			return __io__block.readByte(__io__address + 341);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'shadow_selection'.
+	 * @see #__DNA__FIELD__shadow_selection
+	 */
+	
+	public void setShadow_selection(byte shadow_selection) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 373, shadow_selection);
+		} else {
+			__io__block.writeByte(__io__address + 341, shadow_selection);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'silhouette_selection'.
+	 * @see #__DNA__FIELD__silhouette_selection
+	 */
+	
+	public byte getSilhouette_selection() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 374);
+		} else {
+			return __io__block.readByte(__io__address + 342);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'silhouette_selection'.
+	 * @see #__DNA__FIELD__silhouette_selection
+	 */
+	
+	public void setSilhouette_selection(byte silhouette_selection) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 374, silhouette_selection);
+		} else {
+			__io__block.writeByte(__io__address + 342, silhouette_selection);
 		}
 	}
 
@@ -1333,12 +1742,12 @@ public class LineartGpencilModifierData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			1
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 349, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 375, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 321, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 343, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1351,9 +1760,9 @@ public class LineartGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 349;
+			__dna__offset = 375;
 		} else {
-			__dna__offset = 321;
+			__dna__offset = 343;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -1375,9 +1784,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public float getCrease_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 352);
+			return __io__block.readFloat(__io__address + 376);
 		} else {
-			return __io__block.readFloat(__io__address + 324);
+			return __io__block.readFloat(__io__address + 344);
 		}
 	}
 
@@ -1392,9 +1801,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public void setCrease_threshold(float crease_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 352, crease_threshold);
+			__io__block.writeFloat(__io__address + 376, crease_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 324, crease_threshold);
+			__io__block.writeFloat(__io__address + 344, crease_threshold);
 		}
 	}
 
@@ -1409,9 +1818,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public float getAngle_splitting_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 356);
+			return __io__block.readFloat(__io__address + 380);
 		} else {
-			return __io__block.readFloat(__io__address + 328);
+			return __io__block.readFloat(__io__address + 348);
 		}
 	}
 
@@ -1426,9 +1835,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public void setAngle_splitting_threshold(float angle_splitting_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 356, angle_splitting_threshold);
+			__io__block.writeFloat(__io__address + 380, angle_splitting_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 328, angle_splitting_threshold);
+			__io__block.writeFloat(__io__address + 348, angle_splitting_threshold);
 		}
 	}
 
@@ -1443,9 +1852,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public float getChain_smooth_tolerance() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 360);
+			return __io__block.readFloat(__io__address + 384);
 		} else {
-			return __io__block.readFloat(__io__address + 332);
+			return __io__block.readFloat(__io__address + 352);
 		}
 	}
 
@@ -1460,9 +1869,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public void setChain_smooth_tolerance(float chain_smooth_tolerance) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 360, chain_smooth_tolerance);
+			__io__block.writeFloat(__io__address + 384, chain_smooth_tolerance);
 		} else {
-			__io__block.writeFloat(__io__address + 332, chain_smooth_tolerance);
+			__io__block.writeFloat(__io__address + 352, chain_smooth_tolerance);
 		}
 	}
 
@@ -1477,9 +1886,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public float getChaining_image_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 364);
+			return __io__block.readFloat(__io__address + 388);
 		} else {
-			return __io__block.readFloat(__io__address + 336);
+			return __io__block.readFloat(__io__address + 356);
 		}
 	}
 
@@ -1494,9 +1903,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public void setChaining_image_threshold(float chaining_image_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 364, chaining_image_threshold);
+			__io__block.writeFloat(__io__address + 388, chaining_image_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 336, chaining_image_threshold);
+			__io__block.writeFloat(__io__address + 356, chaining_image_threshold);
 		}
 	}
 
@@ -1504,16 +1913,16 @@ public class LineartGpencilModifierData extends CFacade {
 	 * Get method for struct member 'calculation_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Ported from SceneLineArt flags. </p>
+	 * <p> eLineartMainFlags, for one time calculation. </p>
 	 * @see #__DNA__FIELD__calculation_flags
 	 */
 	
 	public int getCalculation_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 368);
+			return __io__block.readInt(__io__address + 392);
 		} else {
-			return __io__block.readInt(__io__address + 340);
+			return __io__block.readInt(__io__address + 360);
 		}
 	}
 
@@ -1521,16 +1930,16 @@ public class LineartGpencilModifierData extends CFacade {
 	 * Set method for struct member 'calculation_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Ported from SceneLineArt flags. </p>
+	 * <p> eLineartMainFlags, for one time calculation. </p>
 	 * @see #__DNA__FIELD__calculation_flags
 	 */
 	
 	public void setCalculation_flags(int calculation_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 368, calculation_flags);
+			__io__block.writeInt(__io__address + 392, calculation_flags);
 		} else {
-			__io__block.writeInt(__io__address + 340, calculation_flags);
+			__io__block.writeInt(__io__address + 360, calculation_flags);
 		}
 	}
 
@@ -1545,9 +1954,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 372);
+			return __io__block.readInt(__io__address + 396);
 		} else {
-			return __io__block.readInt(__io__address + 344);
+			return __io__block.readInt(__io__address + 364);
 		}
 	}
 
@@ -1562,9 +1971,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 372, flags);
+			__io__block.writeInt(__io__address + 396, flags);
 		} else {
-			__io__block.writeInt(__io__address + 344, flags);
+			__io__block.writeInt(__io__address + 364, flags);
 		}
 	}
 
@@ -1579,9 +1988,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public float getStroke_depth_offset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 376);
+			return __io__block.readFloat(__io__address + 400);
 		} else {
-			return __io__block.readFloat(__io__address + 348);
+			return __io__block.readFloat(__io__address + 368);
 		}
 	}
 
@@ -1596,9 +2005,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public void setStroke_depth_offset(float stroke_depth_offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 376, stroke_depth_offset);
+			__io__block.writeFloat(__io__address + 400, stroke_depth_offset);
 		} else {
-			__io__block.writeFloat(__io__address + 348, stroke_depth_offset);
+			__io__block.writeFloat(__io__address + 368, stroke_depth_offset);
 		}
 	}
 
@@ -1613,9 +2022,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public byte getLevel_start_override() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 380);
+			return __io__block.readByte(__io__address + 404);
 		} else {
-			return __io__block.readByte(__io__address + 352);
+			return __io__block.readByte(__io__address + 372);
 		}
 	}
 
@@ -1630,9 +2039,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public void setLevel_start_override(byte level_start_override) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 380, level_start_override);
+			__io__block.writeByte(__io__address + 404, level_start_override);
 		} else {
-			__io__block.writeByte(__io__address + 352, level_start_override);
+			__io__block.writeByte(__io__address + 372, level_start_override);
 		}
 	}
 
@@ -1644,9 +2053,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public byte getLevel_end_override() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 381);
+			return __io__block.readByte(__io__address + 405);
 		} else {
-			return __io__block.readByte(__io__address + 353);
+			return __io__block.readByte(__io__address + 373);
 		}
 	}
 
@@ -1658,9 +2067,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public void setLevel_end_override(byte level_end_override) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 381, level_end_override);
+			__io__block.writeByte(__io__address + 405, level_end_override);
 		} else {
-			__io__block.writeByte(__io__address + 353, level_end_override);
+			__io__block.writeByte(__io__address + 373, level_end_override);
 		}
 	}
 
@@ -1672,9 +2081,9 @@ public class LineartGpencilModifierData extends CFacade {
 	public short getEdge_types_override() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 382);
+			return __io__block.readShort(__io__address + 406);
 		} else {
-			return __io__block.readShort(__io__address + 354);
+			return __io__block.readShort(__io__address + 374);
 		}
 	}
 
@@ -1686,9 +2095,105 @@ public class LineartGpencilModifierData extends CFacade {
 	public void setEdge_types_override(short edge_types_override) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 382, edge_types_override);
+			__io__block.writeShort(__io__address + 406, edge_types_override);
 		} else {
-			__io__block.writeShort(__io__address + 354, edge_types_override);
+			__io__block.writeShort(__io__address + 374, edge_types_override);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'shadow_selection_override'.
+	 * @see #__DNA__FIELD__shadow_selection_override
+	 */
+	
+	public byte getShadow_selection_override() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 408);
+		} else {
+			return __io__block.readByte(__io__address + 376);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'shadow_selection_override'.
+	 * @see #__DNA__FIELD__shadow_selection_override
+	 */
+	
+	public void setShadow_selection_override(byte shadow_selection_override) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 408, shadow_selection_override);
+		} else {
+			__io__block.writeByte(__io__address + 376, shadow_selection_override);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'shadow_use_silhouette_override'.
+	 * @see #__DNA__FIELD__shadow_use_silhouette_override
+	 */
+	
+	public byte getShadow_use_silhouette_override() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 409);
+		} else {
+			return __io__block.readByte(__io__address + 377);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'shadow_use_silhouette_override'.
+	 * @see #__DNA__FIELD__shadow_use_silhouette_override
+	 */
+	
+	public void setShadow_use_silhouette_override(byte shadow_use_silhouette_override) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 409, shadow_use_silhouette_override);
+		} else {
+			__io__block.writeByte(__io__address + 377, shadow_use_silhouette_override);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public CArrayFacade<Byte> get_pad2() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			6
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 410, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 378, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 410;
+		} else {
+			__dna__offset = 378;
+		}
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else {
+			__io__generic__copy( get_pad2(), _pad2);
 		}
 	}
 
@@ -1701,9 +2206,9 @@ public class LineartGpencilModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 384);
+			__dna__targetAddress = __io__block.readLong(__io__address + 416);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 356);
+			__dna__targetAddress = __io__block.readLong(__io__address + 384);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1718,47 +2223,47 @@ public class LineartGpencilModifierData extends CFacade {
 	{
 		long __address = ((cache == null) ? 0 : cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 384, __address);
+			__io__block.writeLong(__io__address + 416, __address);
 		} else {
-			__io__block.writeLong(__io__address + 356, __address);
+			__io__block.writeLong(__io__address + 384, __address);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'render_buffer_ptr'.
+	 * Get method for struct member 'la_data_ptr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
 	 * <p> Keep a pointer to the render buffer so we can call destroy from {@link ModifierData} . </p>
-	 * @see #__DNA__FIELD__render_buffer_ptr
+	 * @see #__DNA__FIELD__la_data_ptr
 	 */
 	
-	public CPointer<Object> getRender_buffer_ptr() throws IOException
+	public CPointer<Object> getLa_data_ptr() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 392);
+			__dna__targetAddress = __io__block.readLong(__io__address + 424);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 360);
+			__dna__targetAddress = __io__block.readLong(__io__address + 388);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member 'render_buffer_ptr'.
+	 * Set method for struct member 'la_data_ptr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
 	 * <p> Keep a pointer to the render buffer so we can call destroy from {@link ModifierData} . </p>
-	 * @see #__DNA__FIELD__render_buffer_ptr
+	 * @see #__DNA__FIELD__la_data_ptr
 	 */
 	
-	public void setRender_buffer_ptr(CPointer<Object> render_buffer_ptr) throws IOException
+	public void setLa_data_ptr(CPointer<Object> la_data_ptr) throws IOException
 	{
-		long __address = ((render_buffer_ptr == null) ? 0 : render_buffer_ptr.getAddress());
+		long __address = ((la_data_ptr == null) ? 0 : la_data_ptr.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 392, __address);
+			__io__block.writeLong(__io__address + 424, __address);
 		} else {
-			__io__block.writeLong(__io__address + 360, __address);
+			__io__block.writeLong(__io__address + 388, __address);
 		}
 	}
 

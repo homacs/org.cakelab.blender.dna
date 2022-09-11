@@ -30,7 +30,7 @@ public class Mesh_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 72;
+	public static final int __DNA__SDNA_INDEX = 291;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_eval'.

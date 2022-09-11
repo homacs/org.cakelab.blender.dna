@@ -28,7 +28,7 @@ public class ClothCollSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 571;
+	public static final int __DNA__SDNA_INDEX = 86;
 
 	/**
 	 * Field descriptor (offset) for struct member 'collision_list'.

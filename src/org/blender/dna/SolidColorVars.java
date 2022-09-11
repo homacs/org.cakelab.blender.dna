@@ -28,7 +28,7 @@ public class SolidColorVars extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 330;
+	public static final int __DNA__SDNA_INDEX = 642;
 
 	/**
 	 * Field descriptor (offset) for struct member 'col'.

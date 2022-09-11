@@ -30,7 +30,7 @@ public class wmKeyConfigPref extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 635;
+	public static final int __DNA__SDNA_INDEX = 786;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

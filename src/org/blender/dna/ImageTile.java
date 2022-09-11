@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=128, size64=136)
+@CMetaData(size32=104, size64=112)
 public class ImageTile extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class ImageTile extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 47;
+	public static final int __DNA__SDNA_INDEX = 211;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -85,7 +85,7 @@ public class ImageTile extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'ImageTile_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 48/48</li>
+	 * <li>Actual Size (32bit/64bit): 24/24</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__runtime = new long[]{8, 16};
@@ -108,7 +108,7 @@ public class ImageTile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{56, 64};
+	public static final long[] __DNA__FIELD___pad = new long[]{32, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tile_number'.
@@ -128,7 +128,7 @@ public class ImageTile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tile_number = new long[]{60, 68};
+	public static final long[] __DNA__FIELD__tile_number = new long[]{36, 44};
 
 	/**
 	 * Field descriptor (offset) for struct member 'label'.
@@ -148,7 +148,7 @@ public class ImageTile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__label = new long[]{64, 72};
+	public static final long[] __DNA__FIELD__label = new long[]{40, 48};
 
 	public ImageTile(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -270,9 +270,9 @@ public class ImageTile extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -285,9 +285,9 @@ public class ImageTile extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 64;
+			__dna__offset = 40;
 		} else {
-			__dna__offset = 56;
+			__dna__offset = 32;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -306,9 +306,9 @@ public class ImageTile extends CFacade {
 	public int getTile_number() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 68);
+			return __io__block.readInt(__io__address + 44);
 		} else {
-			return __io__block.readInt(__io__address + 60);
+			return __io__block.readInt(__io__address + 36);
 		}
 	}
 
@@ -320,9 +320,9 @@ public class ImageTile extends CFacade {
 	public void setTile_number(int tile_number) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 68, tile_number);
+			__io__block.writeInt(__io__address + 44, tile_number);
 		} else {
-			__io__block.writeInt(__io__address + 60, tile_number);
+			__io__block.writeInt(__io__address + 36, tile_number);
 		}
 	}
 
@@ -338,9 +338,9 @@ public class ImageTile extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 72, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -353,9 +353,9 @@ public class ImageTile extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 72;
+			__dna__offset = 48;
 		} else {
-			__dna__offset = 64;
+			__dna__offset = 40;
 		}
 		if (__io__equals(label, __io__address + __dna__offset)) {
 			return;

@@ -28,13 +28,13 @@ public class SpaceText_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 251;
+	public static final int __DNA__SDNA_INDEX = 688;
 
 	/**
 	 * Field descriptor (offset) for struct member 'lheight_px'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Actual line height, scaled by dpi. </p>
+	 * <p> Actual line height, scaled by DPI. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -269,7 +269,7 @@ public class SpaceText_Runtime extends CFacade {
 	 * Get method for struct member 'lheight_px'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Actual line height, scaled by dpi. </p>
+	 * <p> Actual line height, scaled by DPI. </p>
 	 * @see #__DNA__FIELD__lheight_px
 	 */
 	
@@ -286,7 +286,7 @@ public class SpaceText_Runtime extends CFacade {
 	 * Set method for struct member 'lheight_px'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Actual line height, scaled by dpi. </p>
+	 * <p> Actual line height, scaled by DPI. </p>
 	 * @see #__DNA__FIELD__lheight_px
 	 */
 	

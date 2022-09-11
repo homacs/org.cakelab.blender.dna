@@ -41,7 +41,7 @@ import org.cakelab.blender.nio.CPointer;
  * 			</p>
  */
 
-@CMetaData(size32=1144, size64=1448)
+@CMetaData(size32=1152, size64=1456)
 public class BlenderObject extends CFacade {
 
 	/**
@@ -52,7 +52,7 @@ public class BlenderObject extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 174;
+	public static final int __DNA__SDNA_INDEX = 545;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -2053,7 +2053,7 @@ public class BlenderObject extends CFacade {
 	 * <h4>Java .Blend</h4>
 	 * custom index, for renderpasses
 	 * <h4>Blender Source Code</h4>
-	 * <p> Custom index, for renderpasses. </p>
+	 * <p> Custom index, for render-passes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2674,6 +2674,29 @@ public class BlenderObject extends CFacade {
 	public static final long[] __DNA__FIELD__empty_image_flag = new long[]{970, 1210};
 
 	/**
+	 * Field descriptor (offset) for struct member 'modifier_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> ModifierFlag </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BlenderObject blenderobject = ...;
+	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__modifier_flag);
+	 * CPointer&lt;Byte&gt; p_modifier_flag = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'modifier_flag'</li>
+	 * <li>Signature: 'uchar'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__modifier_flag = new long[]{971, 1211};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad8'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2687,11 +2710,11 @@ public class BlenderObject extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad8'</li>
-	 * <li>Signature: 'char[5]'</li>
-	 * <li>Actual Size (32bit/64bit): 5/5</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad8 = new long[]{971, 1211};
+	public static final long[] __DNA__FIELD___pad8 = new long[]{972, 1212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
@@ -2731,7 +2754,7 @@ public class BlenderObject extends CFacade {
 	 * <ul>
 	 * <li>Field: 'lineart'</li>
 	 * <li>Signature: 'ObjectLineArt'</li>
-	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__lineart = new long[]{980, 1224};
@@ -2759,7 +2782,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lightgroup = new long[]{988, 1232};
+	public static final long[] __DNA__FIELD__lightgroup = new long[]{996, 1240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -2782,7 +2805,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 152/208</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{992, 1240};
+	public static final long[] __DNA__FIELD__runtime = new long[]{1000, 1248};
 
 	public BlenderObject(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -6216,7 +6239,7 @@ public class BlenderObject extends CFacade {
 	 * <h4>Java .Blend</h4>
 	 * custom index, for renderpasses
 	 * <h4>Blender Source Code</h4>
-	 * <p> Custom index, for renderpasses. </p>
+	 * <p> Custom index, for render-passes. </p>
 	 * @see #__DNA__FIELD__index
 	 */
 	
@@ -6235,7 +6258,7 @@ public class BlenderObject extends CFacade {
 	 * <h4>Java .Blend</h4>
 	 * custom index, for renderpasses
 	 * <h4>Blender Source Code</h4>
-	 * <p> Custom index, for renderpasses. </p>
+	 * <p> Custom index, for render-passes. </p>
 	 * @see #__DNA__FIELD__index
 	 */
 	
@@ -7267,6 +7290,40 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'modifier_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> ModifierFlag </p>
+	 * @see #__DNA__FIELD__modifier_flag
+	 */
+	
+	public byte getModifier_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 1211);
+		} else {
+			return __io__block.readByte(__io__address + 971);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'modifier_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> ModifierFlag </p>
+	 * @see #__DNA__FIELD__modifier_flag
+	 */
+	
+	public void setModifier_flag(byte modifier_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 1211, modifier_flag);
+		} else {
+			__io__block.writeByte(__io__address + 971, modifier_flag);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad8'.
 	 * @see #__DNA__FIELD___pad8
 	 */
@@ -7275,12 +7332,12 @@ public class BlenderObject extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			5
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1211, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 971, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 972, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7293,9 +7350,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1211;
+			__dna__offset = 1212;
 		} else {
-			__dna__offset = 971;
+			__dna__offset = 972;
 		}
 		if (__io__equals(_pad8, __io__address + __dna__offset)) {
 			return;
@@ -7394,9 +7451,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1232);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1240);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 988);
+			__dna__targetAddress = __io__block.readLong(__io__address + 996);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{LightgroupMembership.class};
 		return new CPointer<LightgroupMembership>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, LightgroupMembership.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7416,9 +7473,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((lightgroup == null) ? 0 : lightgroup.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1232, __address);
+			__io__block.writeLong(__io__address + 1240, __address);
 		} else {
-			__io__block.writeLong(__io__address + 988, __address);
+			__io__block.writeLong(__io__address + 996, __address);
 		}
 	}
 
@@ -7433,9 +7490,9 @@ public class BlenderObject extends CFacade {
 	public Object_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new Object_Runtime(__io__address + 1240, __io__block, __io__blockTable);
+			return new Object_Runtime(__io__address + 1248, __io__block, __io__blockTable);
 		} else {
-			return new Object_Runtime(__io__address + 992, __io__block, __io__blockTable);
+			return new Object_Runtime(__io__address + 1000, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7451,9 +7508,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1240;
+			__dna__offset = 1248;
 		} else {
-			__dna__offset = 992;
+			__dna__offset = 1000;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

@@ -31,7 +31,7 @@ public class MCol extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 98;
+	public static final int __DNA__SDNA_INDEX = 317;
 
 	/**
 	 * Field descriptor (offset) for struct member 'a'.

@@ -28,7 +28,7 @@ public class PartDeflect extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 176;
+	public static final int __DNA__SDNA_INDEX = 535;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.

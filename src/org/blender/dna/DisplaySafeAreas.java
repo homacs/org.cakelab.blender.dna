@@ -30,7 +30,7 @@ public class DisplaySafeAreas extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 220;
+	public static final int __DNA__SDNA_INDEX = 605;
 
 	/**
 	 * Field descriptor (offset) for struct member 'title'.

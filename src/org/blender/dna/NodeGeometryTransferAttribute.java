@@ -28,13 +28,13 @@ public class NodeGeometryTransferAttribute extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 524;
+	public static final int __DNA__SDNA_INDEX = 517;
 
 	/**
 	 * Field descriptor (offset) for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> CustomDataType. </p>
+	 * <p> eCustomDataType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -57,7 +57,7 @@ public class NodeGeometryTransferAttribute extends CFacade {
 	 * Field descriptor (offset) for struct member 'domain'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> AttributeDomain. </p>
+	 * <p> eAttrDomain. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,7 +131,7 @@ public class NodeGeometryTransferAttribute extends CFacade {
 	 * Get method for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> CustomDataType. </p>
+	 * <p> eCustomDataType. </p>
 	 * @see #__DNA__FIELD__data_type
 	 */
 	
@@ -148,7 +148,7 @@ public class NodeGeometryTransferAttribute extends CFacade {
 	 * Set method for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> CustomDataType. </p>
+	 * <p> eCustomDataType. </p>
 	 * @see #__DNA__FIELD__data_type
 	 */
 	
@@ -165,7 +165,7 @@ public class NodeGeometryTransferAttribute extends CFacade {
 	 * Get method for struct member 'domain'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> AttributeDomain. </p>
+	 * <p> eAttrDomain. </p>
 	 * @see #__DNA__FIELD__domain
 	 */
 	
@@ -182,7 +182,7 @@ public class NodeGeometryTransferAttribute extends CFacade {
 	 * Set method for struct member 'domain'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> AttributeDomain. </p>
+	 * <p> eAttrDomain. </p>
 	 * @see #__DNA__FIELD__domain
 	 */
 	

@@ -28,7 +28,7 @@ public class ArmatureModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 118;
+	public static final int __DNA__SDNA_INDEX = 339;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

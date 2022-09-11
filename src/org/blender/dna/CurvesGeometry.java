@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> A reusable data structure for geometry consisting of many curves. All control point data is stored contiguously for better efficiency. Data for each curve is stored as a slice of the main {@link #getPoint_data()}  array.</p><p> The data structure is meant to be embedded in other data-blocks to allow reusing curve-processing algorithms for multiple Blender data-block types. </p>
  */
 
-@CMetaData(size32=500, size64=544)
+@CMetaData(size32=488, size64=520)
 public class CurvesGeometry extends CFacade {
 
 	/**
@@ -29,63 +29,13 @@ public class CurvesGeometry extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 783;
-
-	/**
-	 * Field descriptor (offset) for struct member 'radius'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> A runtime pointer to the "radius" attribute data. <h2>Note</h2><p> This data is owned by {@link #getPoint_data()} . </p> This data is owned by point_data. 
-	 * 
-	 * </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * CurvesGeometry curvesgeometry = ...;
-	 * CPointer&lt;Object&gt; p = curvesgeometry.__dna__addressof(CurvesGeometry.__DNA__FIELD__radius);
-	 * CPointer&lt;CPointer&lt;Float&gt;&gt; p_radius = p.cast(new Class[]{CPointer.class, Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'radius'</li>
-	 * <li>Signature: 'float*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__radius = new long[]{4, 8};
-
-	/**
-	 * Field descriptor (offset) for struct member 'curve_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> The type of each curve. #CurveType. <h2>Note</h2><p> This data is owned by {@link #getCurve_data()} . </p> This data is owned by curve_data. 
-	 * 
-	 * </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * CurvesGeometry curvesgeometry = ...;
-	 * CPointer&lt;Object&gt; p = curvesgeometry.__dna__addressof(CurvesGeometry.__DNA__FIELD__curve_type);
-	 * CPointer&lt;CPointer&lt;Byte&gt;&gt; p_curve_type = p.cast(new Class[]{CPointer.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'curve_type'</li>
-	 * <li>Signature: 'int8_t*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__curve_type = new long[]{8, 16};
+	public static final int __DNA__SDNA_INDEX = 139;
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_offsets'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> The start index of each curve in the point data. The size of each curve can be calculated by subtracting the offset from the next offset. That is valid even for the last curve because this array is allocated with a length one larger than the number of curves. This is allowed to be null when there are no curves.</p><p><h2>Note</h2><p><em></em>  stored in {@link CustomData}  because its size is one larger than {@link #getCurve_data()} . </p> This is not stored in CustomData because its size is one larger than curve_data. 
+	 * <p> The start index of each curve in the point data. The size of each curve can be calculated by subtracting the offset from the next offset. That is valid even for the last curve because this array is allocated with a length one larger than the number of curves. This is allowed to be null when there are no curves.</p><p> Every curve offset must be at least one larger than the previous. In other words, every curve must have at least one point.</p><p><h2>Note</h2><p><em></em>  stored in {@link CustomData}  because its size is one larger than {@link #getCurve_data()} . </p> This is not stored in CustomData because its size is one larger than curve_data. 
 	 * 
 	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -104,7 +54,7 @@ public class CurvesGeometry extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_offsets = new long[]{12, 24};
+	public static final long[] __DNA__FIELD__curve_offsets = new long[]{0, 0};
 
 	/**
 	 * Field descriptor (offset) for struct member 'point_data'.
@@ -127,7 +77,7 @@ public class CurvesGeometry extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 236/248</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__point_data = new long[]{16, 32};
+	public static final long[] __DNA__FIELD__point_data = new long[]{4, 8};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_data'.
@@ -150,13 +100,10 @@ public class CurvesGeometry extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 236/248</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_data = new long[]{252, 280};
+	public static final long[] __DNA__FIELD__curve_data = new long[]{240, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'point_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> The total number of control points in all curves. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -173,13 +120,10 @@ public class CurvesGeometry extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__point_size = new long[]{488, 528};
+	public static final long[] __DNA__FIELD__point_size = new long[]{476, 504};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> The number of curves in the data-block. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -196,7 +140,7 @@ public class CurvesGeometry extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_size = new long[]{492, 532};
+	public static final long[] __DNA__FIELD__curve_size = new long[]{480, 508};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -219,7 +163,7 @@ public class CurvesGeometry extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{496, 536};
+	public static final long[] __DNA__FIELD__runtime = new long[]{484, 512};
 
 	public CurvesGeometry(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -230,94 +174,10 @@ public class CurvesGeometry extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'radius'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> A runtime pointer to the "radius" attribute data. <h2>Note</h2><p> This data is owned by {@link #getPoint_data()} . </p> This data is owned by point_data. 
-	 * 
-	 * </p>
-	 * @see #__DNA__FIELD__radius
-	 */
-	
-	public CPointer<Float> getRadius() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 8);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
-		return new CPointer<Float>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'radius'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> A runtime pointer to the "radius" attribute data. <h2>Note</h2><p> This data is owned by {@link #getPoint_data()} . </p> This data is owned by point_data. 
-	 * 
-	 * </p>
-	 * @see #__DNA__FIELD__radius
-	 */
-	
-	public void setRadius(CPointer<Float> radius) throws IOException
-	{
-		long __address = ((radius == null) ? 0 : radius.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 8, __address);
-		} else {
-			__io__block.writeLong(__io__address + 4, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'curve_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> The type of each curve. #CurveType. <h2>Note</h2><p> This data is owned by {@link #getCurve_data()} . </p> This data is owned by curve_data. 
-	 * 
-	 * </p>
-	 * @see #__DNA__FIELD__curve_type
-	 */
-	
-	public CPointer<Byte> getCurve_type() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 16);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 8);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'curve_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> The type of each curve. #CurveType. <h2>Note</h2><p> This data is owned by {@link #getCurve_data()} . </p> This data is owned by curve_data. 
-	 * 
-	 * </p>
-	 * @see #__DNA__FIELD__curve_type
-	 */
-	
-	public void setCurve_type(CPointer<Byte> curve_type) throws IOException
-	{
-		long __address = ((curve_type == null) ? 0 : curve_type.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 16, __address);
-		} else {
-			__io__block.writeLong(__io__address + 8, __address);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'curve_offsets'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> The start index of each curve in the point data. The size of each curve can be calculated by subtracting the offset from the next offset. That is valid even for the last curve because this array is allocated with a length one larger than the number of curves. This is allowed to be null when there are no curves.</p><p><h2>Note</h2><p><em></em>  stored in {@link CustomData}  because its size is one larger than {@link #getCurve_data()} . </p> This is not stored in CustomData because its size is one larger than curve_data. 
+	 * <p> The start index of each curve in the point data. The size of each curve can be calculated by subtracting the offset from the next offset. That is valid even for the last curve because this array is allocated with a length one larger than the number of curves. This is allowed to be null when there are no curves.</p><p> Every curve offset must be at least one larger than the previous. In other words, every curve must have at least one point.</p><p><h2>Note</h2><p><em></em>  stored in {@link CustomData}  because its size is one larger than {@link #getCurve_data()} . </p> This is not stored in CustomData because its size is one larger than curve_data. 
 	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__curve_offsets
@@ -327,9 +187,9 @@ public class CurvesGeometry extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 24);
+			__dna__targetAddress = __io__block.readLong(__io__address + 0);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 12);
+			__dna__targetAddress = __io__block.readLong(__io__address + 0);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
 		return new CPointer<Integer>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -339,7 +199,7 @@ public class CurvesGeometry extends CFacade {
 	 * Set method for struct member 'curve_offsets'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> The start index of each curve in the point data. The size of each curve can be calculated by subtracting the offset from the next offset. That is valid even for the last curve because this array is allocated with a length one larger than the number of curves. This is allowed to be null when there are no curves.</p><p><h2>Note</h2><p><em></em>  stored in {@link CustomData}  because its size is one larger than {@link #getCurve_data()} . </p> This is not stored in CustomData because its size is one larger than curve_data. 
+	 * <p> The start index of each curve in the point data. The size of each curve can be calculated by subtracting the offset from the next offset. That is valid even for the last curve because this array is allocated with a length one larger than the number of curves. This is allowed to be null when there are no curves.</p><p> Every curve offset must be at least one larger than the previous. In other words, every curve must have at least one point.</p><p><h2>Note</h2><p><em></em>  stored in {@link CustomData}  because its size is one larger than {@link #getCurve_data()} . </p> This is not stored in CustomData because its size is one larger than curve_data. 
 	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__curve_offsets
@@ -349,9 +209,9 @@ public class CurvesGeometry extends CFacade {
 	{
 		long __address = ((curve_offsets == null) ? 0 : curve_offsets.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 24, __address);
+			__io__block.writeLong(__io__address + 0, __address);
 		} else {
-			__io__block.writeLong(__io__address + 12, __address);
+			__io__block.writeLong(__io__address + 0, __address);
 		}
 	}
 
@@ -366,9 +226,9 @@ public class CurvesGeometry extends CFacade {
 	public CustomData getPoint_data() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CustomData(__io__address + 32, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 8, __io__block, __io__blockTable);
 		} else {
-			return new CustomData(__io__address + 16, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 4, __io__block, __io__blockTable);
 		}
 	}
 
@@ -384,9 +244,9 @@ public class CurvesGeometry extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 32;
+			__dna__offset = 8;
 		} else {
-			__dna__offset = 16;
+			__dna__offset = 4;
 		}
 		if (__io__equals(point_data, __io__address + __dna__offset)) {
 			return;
@@ -408,9 +268,9 @@ public class CurvesGeometry extends CFacade {
 	public CustomData getCurve_data() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CustomData(__io__address + 280, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 256, __io__block, __io__blockTable);
 		} else {
-			return new CustomData(__io__address + 252, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 240, __io__block, __io__blockTable);
 		}
 	}
 
@@ -426,9 +286,9 @@ public class CurvesGeometry extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 280;
+			__dna__offset = 256;
 		} else {
-			__dna__offset = 252;
+			__dna__offset = 240;
 		}
 		if (__io__equals(curve_data, __io__address + __dna__offset)) {
 			return;
@@ -441,69 +301,57 @@ public class CurvesGeometry extends CFacade {
 
 	/**
 	 * Get method for struct member 'point_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> The total number of control points in all curves. </p>
 	 * @see #__DNA__FIELD__point_size
 	 */
 	
 	public int getPoint_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 528);
+			return __io__block.readInt(__io__address + 504);
 		} else {
-			return __io__block.readInt(__io__address + 488);
+			return __io__block.readInt(__io__address + 476);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'point_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> The total number of control points in all curves. </p>
 	 * @see #__DNA__FIELD__point_size
 	 */
 	
 	public void setPoint_size(int point_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 528, point_size);
+			__io__block.writeInt(__io__address + 504, point_size);
 		} else {
-			__io__block.writeInt(__io__address + 488, point_size);
+			__io__block.writeInt(__io__address + 476, point_size);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'curve_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> The number of curves in the data-block. </p>
 	 * @see #__DNA__FIELD__curve_size
 	 */
 	
 	public int getCurve_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 532);
+			return __io__block.readInt(__io__address + 508);
 		} else {
-			return __io__block.readInt(__io__address + 492);
+			return __io__block.readInt(__io__address + 480);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'curve_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code</h4>
-	 * <p> The number of curves in the data-block. </p>
 	 * @see #__DNA__FIELD__curve_size
 	 */
 	
 	public void setCurve_size(int curve_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 532, curve_size);
+			__io__block.writeInt(__io__address + 508, curve_size);
 		} else {
-			__io__block.writeInt(__io__address + 492, curve_size);
+			__io__block.writeInt(__io__address + 480, curve_size);
 		}
 	}
 
@@ -519,9 +367,9 @@ public class CurvesGeometry extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 536);
+			__dna__targetAddress = __io__block.readLong(__io__address + 512);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 496);
+			__dna__targetAddress = __io__block.readLong(__io__address + 484);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -539,9 +387,9 @@ public class CurvesGeometry extends CFacade {
 	{
 		long __address = ((runtime == null) ? 0 : runtime.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 536, __address);
+			__io__block.writeLong(__io__address + 512, __address);
 		} else {
-			__io__block.writeLong(__io__address + 496, __address);
+			__io__block.writeLong(__io__address + 484, __address);
 		}
 	}
 

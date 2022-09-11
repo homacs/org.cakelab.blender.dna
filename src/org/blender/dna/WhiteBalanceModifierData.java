@@ -28,7 +28,7 @@ public class WhiteBalanceModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 341;
+	public static final int __DNA__SDNA_INDEX = 653;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

@@ -27,7 +27,7 @@ public class SpeedControlVars extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 331;
+	public static final int __DNA__SDNA_INDEX = 643;
 
 	/**
 	 * Field descriptor (offset) for struct member 'frameMap'.

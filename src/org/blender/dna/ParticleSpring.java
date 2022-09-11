@@ -28,7 +28,7 @@ public class ParticleSpring extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 562;
+	public static final int __DNA__SDNA_INDEX = 553;
 
 	/**
 	 * Field descriptor (offset) for struct member 'rest_length'.

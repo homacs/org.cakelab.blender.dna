@@ -30,7 +30,7 @@ public class uiFontStyle extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 272;
+	public static final int __DNA__SDNA_INDEX = 734;
 
 	/**
 	 * Field descriptor (offset) for struct member 'uifont_id'.
@@ -79,7 +79,7 @@ public class uiFontStyle extends CFacade {
 	 * Field descriptor (offset) for struct member 'points'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Actual size depends on 'global' dpi. </p>
+	 * <p> Actual size depends on 'global' DPI. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -379,7 +379,7 @@ public class uiFontStyle extends CFacade {
 	 * Get method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Actual size depends on 'global' dpi. </p>
+	 * <p> Actual size depends on 'global' DPI. </p>
 	 * @see #__DNA__FIELD__points
 	 */
 	
@@ -396,7 +396,7 @@ public class uiFontStyle extends CFacade {
 	 * Set method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Actual size depends on 'global' dpi. </p>
+	 * <p> Actual size depends on 'global' DPI. </p>
 	 * @see #__DNA__FIELD__points
 	 */
 	

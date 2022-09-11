@@ -27,7 +27,7 @@ public class SequenceRuntime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 321;
+	public static final int __DNA__SDNA_INDEX = 633;
 
 	/**
 	 * Field descriptor (offset) for struct member 'session_uuid'.

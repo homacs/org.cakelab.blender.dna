@@ -30,7 +30,7 @@ public class IDPropertyUIDataInt extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 11;
+	public static final int __DNA__SDNA_INDEX = 2;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.

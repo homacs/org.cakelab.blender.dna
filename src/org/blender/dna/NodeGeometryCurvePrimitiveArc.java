@@ -27,7 +27,7 @@ public class NodeGeometryCurvePrimitiveArc extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 514;
+	public static final int __DNA__SDNA_INDEX = 507;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.

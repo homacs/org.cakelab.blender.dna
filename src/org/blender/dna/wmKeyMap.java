@@ -30,7 +30,7 @@ public class wmKeyMap extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 634;
+	public static final int __DNA__SDNA_INDEX = 785;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

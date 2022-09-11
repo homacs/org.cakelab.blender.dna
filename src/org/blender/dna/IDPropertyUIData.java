@@ -28,7 +28,7 @@ public class IDPropertyUIData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 10;
+	public static final int __DNA__SDNA_INDEX = 1;
 
 	/**
 	 * Field descriptor (offset) for struct member 'description'.

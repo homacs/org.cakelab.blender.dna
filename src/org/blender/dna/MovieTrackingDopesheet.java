@@ -28,7 +28,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 692;
+	public static final int __DNA__SDNA_INDEX = 732;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ok'.

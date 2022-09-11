@@ -28,7 +28,7 @@ public class MovieTrackingMarker extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 681;
+	public static final int __DNA__SDNA_INDEX = 721;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pos'.

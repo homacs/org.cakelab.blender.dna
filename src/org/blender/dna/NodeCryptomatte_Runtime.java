@@ -28,7 +28,7 @@ public class NodeCryptomatte_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 486;
+	public static final int __DNA__SDNA_INDEX = 478;
 
 	/**
 	 * Field descriptor (offset) for struct member 'layers'.

@@ -31,7 +31,7 @@ public class View2D extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 232;
+	public static final int __DNA__SDNA_INDEX = 768;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tot'.
@@ -232,7 +232,7 @@ public class View2D extends CFacade {
 	 * Field descriptor (offset) for struct member 'scroll'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Scroll - scrollbars to display (bitflag). </p>
+	 * <p> Scroll - scrollbars to display (bit-flag). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -962,7 +962,7 @@ public class View2D extends CFacade {
 	 * Get method for struct member 'scroll'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Scroll - scrollbars to display (bitflag). </p>
+	 * <p> Scroll - scrollbars to display (bit-flag). </p>
 	 * @see #__DNA__FIELD__scroll
 	 */
 	
@@ -979,7 +979,7 @@ public class View2D extends CFacade {
 	 * Set method for struct member 'scroll'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Scroll - scrollbars to display (bitflag). </p>
+	 * <p> Scroll - scrollbars to display (bit-flag). </p>
 	 * @see #__DNA__FIELD__scroll
 	 */
 	

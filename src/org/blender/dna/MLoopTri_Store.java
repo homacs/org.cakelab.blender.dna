@@ -31,7 +31,7 @@ public class MLoopTri_Store extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 71;
+	public static final int __DNA__SDNA_INDEX = 290;
 
 	/**
 	 * Field descriptor (offset) for struct member 'array'.

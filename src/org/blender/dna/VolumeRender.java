@@ -27,10 +27,13 @@ public class VolumeRender extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 788;
+	public static final int __DNA__SDNA_INDEX = 777;
 
 	/**
 	 * Field descriptor (offset) for struct member 'precision'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Specify volume data precision. Lower values reduce memory consumption at the cost of detail
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -128,6 +131,9 @@ public class VolumeRender extends CFacade {
 
 	/**
 	 * Get method for struct member 'precision'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Specify volume data precision. Lower values reduce memory consumption at the cost of detail
 	 * @see #__DNA__FIELD__precision
 	 */
 	
@@ -142,6 +148,9 @@ public class VolumeRender extends CFacade {
 
 	/**
 	 * Set method for struct member 'precision'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Specify volume data precision. Lower values reduce memory consumption at the cost of detail
 	 * @see #__DNA__FIELD__precision
 	 */
 	

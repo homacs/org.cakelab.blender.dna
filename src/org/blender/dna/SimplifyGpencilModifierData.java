@@ -28,7 +28,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 605;
+	public static final int __DNA__SDNA_INDEX = 174;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

@@ -29,7 +29,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 212;
+	public static final int __DNA__SDNA_INDEX = 597;
 
 	/**
 	 * Field descriptor (offset) for struct member 'custom_ipo'.

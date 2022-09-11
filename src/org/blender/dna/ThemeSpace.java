@@ -30,7 +30,7 @@ public class ThemeSpace extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 278;
+	public static final int __DNA__SDNA_INDEX = 740;
 
 	/**
 	 * Field descriptor (offset) for struct member 'back'.
@@ -2607,7 +2607,7 @@ public class ThemeSpace extends CFacade {
 	 * Field descriptor (offset) for struct member 'syntaxl'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> syntax for textwindow and nodes </p>
+	 * <p> Syntax for text-window and nodes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -9752,7 +9752,7 @@ public class ThemeSpace extends CFacade {
 	 * Get method for struct member 'syntaxl'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> syntax for textwindow and nodes </p>
+	 * <p> Syntax for text-window and nodes. </p>
 	 * @see #__DNA__FIELD__syntaxl
 	 */
 	
@@ -9773,7 +9773,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'syntaxl'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> syntax for textwindow and nodes </p>
+	 * <p> Syntax for text-window and nodes. </p>
 	 * @see #__DNA__FIELD__syntaxl
 	 */
 	

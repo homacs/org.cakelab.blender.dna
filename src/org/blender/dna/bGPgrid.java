@@ -30,7 +30,7 @@ public class bGPgrid extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 588;
+	public static final int __DNA__SDNA_INDEX = 202;
 
 	/**
 	 * Field descriptor (offset) for struct member 'color'.

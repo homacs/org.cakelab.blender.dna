@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1248, size64=1320)
+@CMetaData(size32=1256, size64=1328)
 public class bSound extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bSound extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 351;
+	public static final int __DNA__SDNA_INDEX = 669;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -453,6 +453,49 @@ public class bSound extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__spinlock = new long[]{1244, 1312};
+
+	/**
+	 * Field descriptor (offset) for struct member 'audio_channels'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> XXX unused currently (SOUND_TYPE_LIMITER) float start, end; Description of Audio channels, as of eSoundChannels </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bSound bsound = ...;
+	 * CPointer&lt;Object&gt; p = bsound.__dna__addressof(bSound.__DNA__FIELD__audio_channels);
+	 * CPointer&lt;Integer&gt; p_audio_channels = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'audio_channels'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__audio_channels = new long[]{1248, 1320};
+
+	/**
+	 * Field descriptor (offset) for struct member 'samplerate'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bSound bsound = ...;
+	 * CPointer&lt;Object&gt; p = bsound.__dna__addressof(bSound.__DNA__FIELD__samplerate);
+	 * CPointer&lt;Integer&gt; p_samplerate = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'samplerate'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__samplerate = new long[]{1252, 1324};
 
 	public bSound(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1131,6 +1174,68 @@ public class bSound extends CFacade {
 			__io__block.writeLong(__io__address + 1312, __address);
 		} else {
 			__io__block.writeLong(__io__address + 1244, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'audio_channels'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> XXX unused currently (SOUND_TYPE_LIMITER) float start, end; Description of Audio channels, as of eSoundChannels </p>
+	 * @see #__DNA__FIELD__audio_channels
+	 */
+	
+	public int getAudio_channels() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 1320);
+		} else {
+			return __io__block.readInt(__io__address + 1248);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'audio_channels'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> XXX unused currently (SOUND_TYPE_LIMITER) float start, end; Description of Audio channels, as of eSoundChannels </p>
+	 * @see #__DNA__FIELD__audio_channels
+	 */
+	
+	public void setAudio_channels(int audio_channels) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 1320, audio_channels);
+		} else {
+			__io__block.writeInt(__io__address + 1248, audio_channels);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'samplerate'.
+	 * @see #__DNA__FIELD__samplerate
+	 */
+	
+	public int getSamplerate() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 1324);
+		} else {
+			return __io__block.readInt(__io__address + 1252);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'samplerate'.
+	 * @see #__DNA__FIELD__samplerate
+	 */
+	
+	public void setSamplerate(int samplerate) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 1324, samplerate);
+		} else {
+			__io__block.writeInt(__io__address + 1252, samplerate);
 		}
 	}
 

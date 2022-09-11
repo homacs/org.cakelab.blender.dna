@@ -27,7 +27,7 @@ public class NodeGeometryRaycast extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 525;
+	public static final int __DNA__SDNA_INDEX = 518;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mapping'.
@@ -56,7 +56,7 @@ public class NodeGeometryRaycast extends CFacade {
 	 * Field descriptor (offset) for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> CustomDataType. </p>
+	 * <p> eCustomDataType. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -164,7 +164,7 @@ public class NodeGeometryRaycast extends CFacade {
 	 * Get method for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> CustomDataType. </p>
+	 * <p> eCustomDataType. </p>
 	 * @see #__DNA__FIELD__data_type
 	 */
 	
@@ -181,7 +181,7 @@ public class NodeGeometryRaycast extends CFacade {
 	 * Set method for struct member 'data_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> CustomDataType. </p>
+	 * <p> eCustomDataType. </p>
 	 * @see #__DNA__FIELD__data_type
 	 */
 	

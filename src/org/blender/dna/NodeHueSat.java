@@ -31,7 +31,7 @@ public class NodeHueSat extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 435;
+	public static final int __DNA__SDNA_INDEX = 426;
 
 	/**
 	 * Field descriptor (offset) for struct member 'hue'.

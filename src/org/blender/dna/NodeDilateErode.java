@@ -27,7 +27,7 @@ public class NodeDilateErode extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 451;
+	public static final int __DNA__SDNA_INDEX = 443;
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff'.

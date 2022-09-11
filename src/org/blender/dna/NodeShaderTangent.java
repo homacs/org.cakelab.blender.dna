@@ -28,7 +28,7 @@ public class NodeShaderTangent extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 477;
+	public static final int __DNA__SDNA_INDEX = 469;
 
 	/**
 	 * Field descriptor (offset) for struct member 'direction_type'.

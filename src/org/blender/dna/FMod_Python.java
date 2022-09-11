@@ -29,7 +29,7 @@ public class FMod_Python extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 644;
+	public static final int __DNA__SDNA_INDEX = 38;
 
 	/**
 	 * Field descriptor (offset) for struct member 'script'.

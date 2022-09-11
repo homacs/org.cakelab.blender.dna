@@ -30,7 +30,7 @@ public class bActionModifier extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 404;
+	public static final int __DNA__SDNA_INDEX = 395;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

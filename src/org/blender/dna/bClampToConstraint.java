@@ -29,7 +29,7 @@ public class bClampToConstraint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 391;
+	public static final int __DNA__SDNA_INDEX = 118;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.

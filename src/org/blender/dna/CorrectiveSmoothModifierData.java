@@ -28,7 +28,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 150;
+	public static final int __DNA__SDNA_INDEX = 371;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
