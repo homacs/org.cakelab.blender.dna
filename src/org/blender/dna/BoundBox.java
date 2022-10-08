@@ -40,7 +40,7 @@ import org.cakelab.blender.nio.CPointer;
  * 			 </pre>
  * 			
  * <h4>Blender Source Code</h4>
- * <p> The following illustrates the orientation of the bounding box in local space</p><p><pre></pre></p><p><pre></pre>  </p>
+ * <p> The following illustrates the orientation of the bounding box in local space</p><p><pre></pre>  </p>
  */
 
 @CMetaData(size32=104, size64=104)
