@@ -75,7 +75,7 @@ public class MovieTrackingMarker extends CFacade {
 	 *  |  |       |
 	 *  | (0) --- (1)
 	 *  +-------------> X
-	 * </p><p> the coordinates are stored relative to pos. </p>
+	 *  the coordinates are stored relative to pos. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -264,7 +264,7 @@ public class MovieTrackingMarker extends CFacade {
 	 *  |  |       |
 	 *  | (0) --- (1)
 	 *  +-------------> X
-	 * </p><p> the coordinates are stored relative to pos. </p>
+	 *  the coordinates are stored relative to pos. </p>
 	 * @see #__DNA__FIELD__pattern_corners
 	 */
 	
@@ -304,7 +304,7 @@ public class MovieTrackingMarker extends CFacade {
 	 *  |  |       |
 	 *  | (0) --- (1)
 	 *  +-------------> X
-	 * </p><p> the coordinates are stored relative to pos. </p>
+	 *  the coordinates are stored relative to pos. </p>
 	 * @see #__DNA__FIELD__pattern_corners
 	 */
 	

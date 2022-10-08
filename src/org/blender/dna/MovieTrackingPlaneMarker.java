@@ -52,7 +52,7 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	 *  |  |       |
 	 *  | (0) --- (1)
 	 *  +-------------> X
-	 * </p><p> The coordinates are stored in frame normalized coordinates. </p>
+	 *  The coordinates are stored in frame normalized coordinates. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -147,7 +147,7 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	 *  |  |       |
 	 *  | (0) --- (1)
 	 *  +-------------> X
-	 * </p><p> The coordinates are stored in frame normalized coordinates. </p>
+	 *  The coordinates are stored in frame normalized coordinates. </p>
 	 * @see #__DNA__FIELD__corners
 	 */
 	
@@ -187,7 +187,7 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	 *  |  |       |
 	 *  | (0) --- (1)
 	 *  +-------------> X
-	 * </p><p> The coordinates are stored in frame normalized coordinates. </p>
+	 *  The coordinates are stored in frame normalized coordinates. </p>
 	 * @see #__DNA__FIELD__corners
 	 */
 	
