@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * 
  * <h4>Blender Source Code</h4>
- * <p> Information to identify a asset library. May be either one of the predefined types (current 'Main', builtin library, project library), or a custom type as defined in the Preferences.</p><p> If the type is set to ASSET_LIBRARY_CUSTOM<code></code>  must be set to identify the custom library. Otherwise it is not used. </p>
+ * <p> Information to identify an asset library. May be either one of the predefined types (current 'Main', builtin library, project library), or a custom type as defined in the Preferences.</p><p> If the type is set to ASSET_LIBRARY_CUSTOM<code></code>  must be set to identify the custom library. Otherwise it is not used. </p>
  */
 
 @CMetaData(size32=8, size64=8)

@@ -11,26 +11,24 @@ import org.cakelab.blender.nio.CPointer;
 
 
 /**
- * Generated facet for DNA struct type 'SpreadsheetContext'.
+ * Generated facet for DNA struct type 'ViewerPathElem'.
  * 
  * <h3>Class Documentation</h3>
  * 
- * <h4>Blender Source Code</h4>
- * <p> An item in {@link SpaceSpreadsheet#getContext_path()} . This is a bases struct for the structs below. </p>
  */
 
 @CMetaData(size32=16, size64=24)
-public class SpreadsheetContext extends CFacade {
+public class ViewerPathElem extends CFacade {
 
 	/**
-	 * This is the sdna index of the struct SpreadsheetContext.
+	 * This is the sdna index of the struct ViewerPathElem.
 	 * <p>
-	 * It is required when allocating a new block to store data for SpreadsheetContext.
+	 * It is required when allocating a new block to store data for ViewerPathElem.
 	 * </p>
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 703;
+	public static final int __DNA__SDNA_INDEX = 774;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -39,14 +37,14 @@ public class SpreadsheetContext extends CFacade {
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
-	 * SpreadsheetContext spreadsheetcontext = ...;
-	 * CPointer&lt;Object&gt; p = spreadsheetcontext.__dna__addressof(SpreadsheetContext.__DNA__FIELD__next);
-	 * CPointer&lt;CPointer&lt;SpreadsheetContext&gt;&gt; p_next = p.cast(new Class[]{CPointer.class, SpreadsheetContext.class});
+	 * ViewerPathElem viewerpathelem = ...;
+	 * CPointer&lt;Object&gt; p = viewerpathelem.__dna__addressof(ViewerPathElem.__DNA__FIELD__next);
+	 * CPointer&lt;CPointer&lt;ViewerPathElem&gt;&gt; p_next = p.cast(new Class[]{CPointer.class, ViewerPathElem.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'next'</li>
-	 * <li>Signature: 'SpreadsheetContext*'</li>
+	 * <li>Signature: 'ViewerPathElem*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
@@ -59,14 +57,14 @@ public class SpreadsheetContext extends CFacade {
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
-	 * SpreadsheetContext spreadsheetcontext = ...;
-	 * CPointer&lt;Object&gt; p = spreadsheetcontext.__dna__addressof(SpreadsheetContext.__DNA__FIELD__prev);
-	 * CPointer&lt;CPointer&lt;SpreadsheetContext&gt;&gt; p_prev = p.cast(new Class[]{CPointer.class, SpreadsheetContext.class});
+	 * ViewerPathElem viewerpathelem = ...;
+	 * CPointer&lt;Object&gt; p = viewerpathelem.__dna__addressof(ViewerPathElem.__DNA__FIELD__prev);
+	 * CPointer&lt;CPointer&lt;ViewerPathElem&gt;&gt; p_prev = p.cast(new Class[]{CPointer.class, ViewerPathElem.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'prev'</li>
-	 * <li>Signature: 'SpreadsheetContext*'</li>
+	 * <li>Signature: 'ViewerPathElem*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
@@ -76,16 +74,14 @@ public class SpreadsheetContext extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * (read-only)    Type of the context
-	 * <h4>Blender Source Code</h4>
-	 * <p> eSpaceSpreadsheet_ContextType. </p>
+	 * (read-only)    Type of the path element
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
-	 * SpreadsheetContext spreadsheetcontext = ...;
-	 * CPointer&lt;Object&gt; p = spreadsheetcontext.__dna__addressof(SpreadsheetContext.__DNA__FIELD__type);
+	 * ViewerPathElem viewerpathelem = ...;
+	 * CPointer&lt;Object&gt; p = viewerpathelem.__dna__addressof(ViewerPathElem.__DNA__FIELD__type);
 	 * CPointer&lt;Integer&gt; p_type = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
@@ -104,8 +100,8 @@ public class SpreadsheetContext extends CFacade {
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
-	 * SpreadsheetContext spreadsheetcontext = ...;
-	 * CPointer&lt;Object&gt; p = spreadsheetcontext.__dna__addressof(SpreadsheetContext.__DNA__FIELD___pad);
+	 * ViewerPathElem viewerpathelem = ...;
+	 * CPointer&lt;Object&gt; p = viewerpathelem.__dna__addressof(ViewerPathElem.__DNA__FIELD___pad);
 	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
@@ -117,11 +113,11 @@ public class SpreadsheetContext extends CFacade {
 	 */
 	public static final long[] __DNA__FIELD___pad = new long[]{12, 20};
 
-	public SpreadsheetContext(long __address, Block __block, BlockTable __blockTable) {
+	public ViewerPathElem(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
 	}
 
-	protected SpreadsheetContext(SpreadsheetContext that) {
+	protected ViewerPathElem(ViewerPathElem that) {
 		super(that.__io__address, that.__io__block, that.__io__blockTable);
 	}
 
@@ -130,7 +126,7 @@ public class SpreadsheetContext extends CFacade {
 	 * @see #__DNA__FIELD__next
 	 */
 	
-	public CPointer<SpreadsheetContext> getNext() throws IOException
+	public CPointer<ViewerPathElem> getNext() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -138,8 +134,8 @@ public class SpreadsheetContext extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 0);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{SpreadsheetContext.class};
-		return new CPointer<SpreadsheetContext>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, SpreadsheetContext.__DNA__SDNA_INDEX), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{ViewerPathElem.class};
+		return new CPointer<ViewerPathElem>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ViewerPathElem.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
@@ -147,7 +143,7 @@ public class SpreadsheetContext extends CFacade {
 	 * @see #__DNA__FIELD__next
 	 */
 	
-	public void setNext(CPointer<SpreadsheetContext> next) throws IOException
+	public void setNext(CPointer<ViewerPathElem> next) throws IOException
 	{
 		long __address = ((next == null) ? 0 : next.getAddress());
 		if ((__io__pointersize == 8)) {
@@ -162,7 +158,7 @@ public class SpreadsheetContext extends CFacade {
 	 * @see #__DNA__FIELD__prev
 	 */
 	
-	public CPointer<SpreadsheetContext> getPrev() throws IOException
+	public CPointer<ViewerPathElem> getPrev() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -170,8 +166,8 @@ public class SpreadsheetContext extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 4);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{SpreadsheetContext.class};
-		return new CPointer<SpreadsheetContext>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, SpreadsheetContext.__DNA__SDNA_INDEX), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{ViewerPathElem.class};
+		return new CPointer<ViewerPathElem>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ViewerPathElem.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
@@ -179,7 +175,7 @@ public class SpreadsheetContext extends CFacade {
 	 * @see #__DNA__FIELD__prev
 	 */
 	
-	public void setPrev(CPointer<SpreadsheetContext> prev) throws IOException
+	public void setPrev(CPointer<ViewerPathElem> prev) throws IOException
 	{
 		long __address = ((prev == null) ? 0 : prev.getAddress());
 		if ((__io__pointersize == 8)) {
@@ -193,9 +189,7 @@ public class SpreadsheetContext extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * (read-only)    Type of the context
-	 * <h4>Blender Source Code</h4>
-	 * <p> eSpaceSpreadsheet_ContextType. </p>
+	 * (read-only)    Type of the path element
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -212,9 +206,7 @@ public class SpreadsheetContext extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * (read-only)    Type of the context
-	 * <h4>Blender Source Code</h4>
-	 * <p> eSpaceSpreadsheet_ContextType. </p>
+	 * (read-only)    Type of the path element
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -270,8 +262,8 @@ public class SpreadsheetContext extends CFacade {
 	/**
 	 * Instantiates a pointer on this instance.
 	 */
-	public CPointer<SpreadsheetContext> __io__addressof() {
-		return new CPointer<SpreadsheetContext>(__io__address, new Class[]{SpreadsheetContext.class}, __io__block, __io__blockTable);
+	public CPointer<ViewerPathElem> __io__addressof() {
+		return new CPointer<ViewerPathElem>(__io__address, new Class[]{ViewerPathElem.class}, __io__block, __io__blockTable);
 	}
 
 }

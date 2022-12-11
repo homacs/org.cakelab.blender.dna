@@ -38,7 +38,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 793;
+	public static final int __DNA__SDNA_INDEX = 797;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

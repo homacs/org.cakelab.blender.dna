@@ -32,7 +32,7 @@ public class bGPDpalettecolor extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 190;
+	public static final int __DNA__SDNA_INDEX = 192;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

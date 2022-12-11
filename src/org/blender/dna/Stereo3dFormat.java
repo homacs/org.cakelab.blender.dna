@@ -28,7 +28,7 @@ public class Stereo3dFormat extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 574;
+	public static final int __DNA__SDNA_INDEX = 577;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.

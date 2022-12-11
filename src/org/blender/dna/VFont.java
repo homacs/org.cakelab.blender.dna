@@ -28,7 +28,7 @@ public class VFont extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 767;
+	public static final int __DNA__SDNA_INDEX = 766;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.

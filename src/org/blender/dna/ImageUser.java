@@ -29,7 +29,7 @@ public class ImageUser extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 205;
+	public static final int __DNA__SDNA_INDEX = 207;
 
 	/**
 	 * Field descriptor (offset) for struct member 'scene'.

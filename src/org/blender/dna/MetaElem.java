@@ -375,7 +375,7 @@ public class MetaElem extends CFacade {
 	 * Field descriptor (offset) for struct member 'len'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Old, only used for backwards compat. use dimensions now. </p>
+	 * <p> Old, only used for backwards compatibility. use dimensions now. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -975,7 +975,7 @@ public class MetaElem extends CFacade {
 	 * Get method for struct member 'len'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Old, only used for backwards compat. use dimensions now. </p>
+	 * <p> Old, only used for backwards compatibility. use dimensions now. </p>
 	 * @see #__DNA__FIELD__len
 	 */
 	
@@ -992,7 +992,7 @@ public class MetaElem extends CFacade {
 	 * Set method for struct member 'len'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Old, only used for backwards compat. use dimensions now. </p>
+	 * <p> Old, only used for backwards compatibility. use dimensions now. </p>
 	 * @see #__DNA__FIELD__len
 	 */
 	

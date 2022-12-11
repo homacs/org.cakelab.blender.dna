@@ -28,7 +28,7 @@ public class Editing extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 638;
+	public static final int __DNA__SDNA_INDEX = 641;
 
 	/**
 	 * Field descriptor (offset) for struct member 'seqbasep'.

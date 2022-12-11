@@ -34,7 +34,7 @@ public class Sequence extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 634;
+	public static final int __DNA__SDNA_INDEX = 637;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -80,7 +80,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'tmp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Tmp var for copying, and tagging for linked selection. </p>
+	 * <p> Temp var for copying, and tagging for linked selection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -610,7 +610,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'scene'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> these {@link ID}  vars should never be NULL but can be when linked libs fail to load, so check on access </p>
+	 * <p> these {@link ID}  vars should never be NULL but can be when linked libraries fail to load, so check on access </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1471,7 +1471,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'tmp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Tmp var for copying, and tagging for linked selection. </p>
+	 * <p> Temp var for copying, and tagging for linked selection. </p>
 	 * @see #__DNA__FIELD__tmp
 	 */
 	
@@ -1491,7 +1491,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'tmp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Tmp var for copying, and tagging for linked selection. </p>
+	 * <p> Temp var for copying, and tagging for linked selection. </p>
 	 * @see #__DNA__FIELD__tmp
 	 */
 	
@@ -2271,7 +2271,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'scene'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> these {@link ID}  vars should never be NULL but can be when linked libs fail to load, so check on access </p>
+	 * <p> these {@link ID}  vars should never be NULL but can be when linked libraries fail to load, so check on access </p>
 	 * @see #__DNA__FIELD__scene
 	 */
 	
@@ -2291,7 +2291,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'scene'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> these {@link ID}  vars should never be NULL but can be when linked libs fail to load, so check on access </p>
+	 * <p> these {@link ID}  vars should never be NULL but can be when linked libraries fail to load, so check on access </p>
 	 * @see #__DNA__FIELD__scene
 	 */
 	

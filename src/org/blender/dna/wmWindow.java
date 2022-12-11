@@ -30,7 +30,7 @@ public class wmWindow extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 782;
+	public static final int __DNA__SDNA_INDEX = 786;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -724,7 +724,11 @@ public class wmWindow extends CFacade {
 	 * Field descriptor (offset) for struct member 'eventstate'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Storage for event system. </p>
+	 * <p> Storage for event system.</p><p><code></code><code></code> . newly added key/button events copy the cursor location and modifier state stored here.</p><p> It's also convenient at times to be able to pass this as if it's a regular event.</p><p><ul><li><p> This is not simply the current event being handled. The type and value is always set to the last press/release events otherwise cursor motion would always clear these values.</p></li><li><p><code></code>  is set from the last pressed/released modifier key. This has the down side that the modifier value will be incorrect if users hold both left/right modifiers then release one. See note in #wm_event_add_ghostevent for details. </p></li></ul> 
+	 * This is not simply the current event being handled. The type and value is always set to the last press/release events otherwise cursor motion would always clear these values.
+	 * The value of eventstate->modifiers is set from the last pressed/released modifier key. This has the down side that the modifier value will be incorrect if users hold both left/right modifiers then release one. See note in #wm_event_add_ghostevent for details. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2038,7 +2042,11 @@ public class wmWindow extends CFacade {
 	 * Get method for struct member 'eventstate'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Storage for event system. </p>
+	 * <p> Storage for event system.</p><p><code></code><code></code> . newly added key/button events copy the cursor location and modifier state stored here.</p><p> It's also convenient at times to be able to pass this as if it's a regular event.</p><p><ul><li><p> This is not simply the current event being handled. The type and value is always set to the last press/release events otherwise cursor motion would always clear these values.</p></li><li><p><code></code>  is set from the last pressed/released modifier key. This has the down side that the modifier value will be incorrect if users hold both left/right modifiers then release one. See note in #wm_event_add_ghostevent for details. </p></li></ul> 
+	 * This is not simply the current event being handled. The type and value is always set to the last press/release events otherwise cursor motion would always clear these values.
+	 * The value of eventstate->modifiers is set from the last pressed/released modifier key. This has the down side that the modifier value will be incorrect if users hold both left/right modifiers then release one. See note in #wm_event_add_ghostevent for details. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__eventstate
 	 */
 	
@@ -2058,7 +2066,11 @@ public class wmWindow extends CFacade {
 	 * Set method for struct member 'eventstate'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Storage for event system. </p>
+	 * <p> Storage for event system.</p><p><code></code><code></code> . newly added key/button events copy the cursor location and modifier state stored here.</p><p> It's also convenient at times to be able to pass this as if it's a regular event.</p><p><ul><li><p> This is not simply the current event being handled. The type and value is always set to the last press/release events otherwise cursor motion would always clear these values.</p></li><li><p><code></code>  is set from the last pressed/released modifier key. This has the down side that the modifier value will be incorrect if users hold both left/right modifiers then release one. See note in #wm_event_add_ghostevent for details. </p></li></ul> 
+	 * This is not simply the current event being handled. The type and value is always set to the last press/release events otherwise cursor motion would always clear these values.
+	 * The value of eventstate->modifiers is set from the last pressed/released modifier key. This has the down side that the modifier value will be incorrect if users hold both left/right modifiers then release one. See note in #wm_event_add_ghostevent for details. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__eventstate
 	 */
 	

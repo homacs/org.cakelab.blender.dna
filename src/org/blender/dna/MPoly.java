@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h4>Java .Blend</h4>
  * Defines a polygon based on a subset of the loop entries of the {@link Mesh}.
  * <h4>Blender Source Code</h4>
- * <p>{@link Mesh}  Faces This only stores the polygon size & flags, the vertex & edge indices are stored in the {@link MLoop} .</p><p> Typically accessed from {@link Mesh#getMpoly()} . </p>
+ * <p>{@link Mesh}  Faces. This only stores the polygon size & flags, the vertex & edge indices are stored in the {@link MLoop} .</p><p> Typically accessed with #Mesh.polys(). </p>
  */
 
 @CMetaData(size32=12, size64=12)

@@ -31,7 +31,7 @@ public class View2D extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 768;
+	public static final int __DNA__SDNA_INDEX = 767;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tot'.
@@ -80,7 +80,7 @@ public class View2D extends CFacade {
 	 * Field descriptor (offset) for struct member 'vert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Vert - vertical scrollbar region; hor - horizontal scrollbar region. </p>
+	 * <p> Vert - vertical scroll-bar region; hor - horizontal scroll-bar region. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -123,7 +123,7 @@ public class View2D extends CFacade {
 	 * Field descriptor (offset) for struct member 'mask'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p>{@link Mask}  - region (in screenspace) within which 'cur' can be viewed. </p>
+	 * <p>{@link Mask}  - region (in screen-space) within which 'cur' can be viewed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -232,7 +232,7 @@ public class View2D extends CFacade {
 	 * Field descriptor (offset) for struct member 'scroll'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Scroll - scrollbars to display (bit-flag). </p>
+	 * <p> Scroll - scroll-bars to display (bit-flag). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -502,7 +502,7 @@ public class View2D extends CFacade {
 	 * Field descriptor (offset) for struct member 'alpha_vert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Usually set externally (as in, not in view2d files). Alpha of vertical and horizontal scrollbars (range is [0, 255]). </p>
+	 * <p> Usually set externally (as in, not in view2d files). Alpha of vertical and horizontal scroll-bars (range is [0, 255]). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -694,7 +694,7 @@ public class View2D extends CFacade {
 	 * Get method for struct member 'vert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Vert - vertical scrollbar region; hor - horizontal scrollbar region. </p>
+	 * <p> Vert - vertical scroll-bar region; hor - horizontal scroll-bar region. </p>
 	 * @see #__DNA__FIELD__vert
 	 */
 	
@@ -711,7 +711,7 @@ public class View2D extends CFacade {
 	 * Set method for struct member 'vert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Vert - vertical scrollbar region; hor - horizontal scrollbar region. </p>
+	 * <p> Vert - vertical scroll-bar region; hor - horizontal scroll-bar region. </p>
 	 * @see #__DNA__FIELD__vert
 	 */
 	
@@ -772,7 +772,7 @@ public class View2D extends CFacade {
 	 * Get method for struct member 'mask'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p>{@link Mask}  - region (in screenspace) within which 'cur' can be viewed. </p>
+	 * <p>{@link Mask}  - region (in screen-space) within which 'cur' can be viewed. </p>
 	 * @see #__DNA__FIELD__mask
 	 */
 	
@@ -789,7 +789,7 @@ public class View2D extends CFacade {
 	 * Set method for struct member 'mask'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p>{@link Mask}  - region (in screenspace) within which 'cur' can be viewed. </p>
+	 * <p>{@link Mask}  - region (in screen-space) within which 'cur' can be viewed. </p>
 	 * @see #__DNA__FIELD__mask
 	 */
 	
@@ -962,7 +962,7 @@ public class View2D extends CFacade {
 	 * Get method for struct member 'scroll'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Scroll - scrollbars to display (bit-flag). </p>
+	 * <p> Scroll - scroll-bars to display (bit-flag). </p>
 	 * @see #__DNA__FIELD__scroll
 	 */
 	
@@ -979,7 +979,7 @@ public class View2D extends CFacade {
 	 * Set method for struct member 'scroll'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Scroll - scrollbars to display (bit-flag). </p>
+	 * <p> Scroll - scroll-bars to display (bit-flag). </p>
 	 * @see #__DNA__FIELD__scroll
 	 */
 	
@@ -1358,7 +1358,7 @@ public class View2D extends CFacade {
 	 * Get method for struct member 'alpha_vert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Usually set externally (as in, not in view2d files). Alpha of vertical and horizontal scrollbars (range is [0, 255]). </p>
+	 * <p> Usually set externally (as in, not in view2d files). Alpha of vertical and horizontal scroll-bars (range is [0, 255]). </p>
 	 * @see #__DNA__FIELD__alpha_vert
 	 */
 	
@@ -1375,7 +1375,7 @@ public class View2D extends CFacade {
 	 * Set method for struct member 'alpha_vert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Usually set externally (as in, not in view2d files). Alpha of vertical and horizontal scrollbars (range is [0, 255]). </p>
+	 * <p> Usually set externally (as in, not in view2d files). Alpha of vertical and horizontal scroll-bars (range is [0, 255]). </p>
 	 * @see #__DNA__FIELD__alpha_vert
 	 */
 	

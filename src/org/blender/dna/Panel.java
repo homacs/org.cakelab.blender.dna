@@ -30,7 +30,7 @@ public class Panel extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 616;
+	public static final int __DNA__SDNA_INDEX = 619;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

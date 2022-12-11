@@ -28,7 +28,7 @@ public class SeqTimelineChannel extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 636;
+	public static final int __DNA__SDNA_INDEX = 639;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

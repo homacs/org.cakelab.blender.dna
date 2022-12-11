@@ -19,7 +19,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> 3D ViewPort Struct. </p>
  */
 
-@CMetaData(size32=1296, size64=1344)
+@CMetaData(size32=1304, size64=1360)
 public class View3D extends CFacade {
 
 	/**
@@ -30,7 +30,7 @@ public class View3D extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 774;
+	public static final int __DNA__SDNA_INDEX = 773;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -611,11 +611,31 @@ public class View3D extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad7'</li>
-	 * <li>Signature: 'short[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * <li>Signature: 'short[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad7 = new long[]{166, 194};
+
+	/**
+	 * Field descriptor (offset) for struct member 'debug_flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3D view3d = ...;
+	 * CPointer&lt;Object&gt; p = view3d.__dna__addressof(View3D.__DNA__FIELD__debug_flag);
+	 * CPointer&lt;Short&gt; p_debug_flag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'debug_flag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__debug_flag = new long[]{170, 198};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ob_centre_cursor'.
@@ -1243,6 +1263,29 @@ public class View3D extends CFacade {
 	public static final long[] __DNA__FIELD__overlay = new long[]{1184, 1224};
 
 	/**
+	 * Field descriptor (offset) for struct member 'viewer_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Path to the viewer node that is currently previewed. This is retrieved from the workspace. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3D view3d = ...;
+	 * CPointer&lt;Object&gt; p = view3d.__dna__addressof(View3D.__DNA__FIELD__viewer_path);
+	 * CPointer&lt;ViewerPath&gt; p_viewer_path = p.cast(new Class[]{ViewerPath.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'viewer_path'</li>
+	 * <li>Signature: 'ViewerPath'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__viewer_path = new long[]{1280, 1320};
+
+	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -1263,7 +1306,7 @@ public class View3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/24</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{1280, 1320};
+	public static final long[] __DNA__FIELD__runtime = new long[]{1288, 1336};
 
 	public View3D(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2196,7 +2239,7 @@ public class View3D extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			2
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Short>(__io__address + 194, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -2224,6 +2267,34 @@ public class View3D extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad7);
 		} else {
 			__io__generic__copy( get_pad7(), _pad7);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'debug_flag'.
+	 * @see #__DNA__FIELD__debug_flag
+	 */
+	
+	public short getDebug_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 198);
+		} else {
+			return __io__block.readShort(__io__address + 170);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'debug_flag'.
+	 * @see #__DNA__FIELD__debug_flag
+	 */
+	
+	public void setDebug_flag(short debug_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 198, debug_flag);
+		} else {
+			__io__block.writeShort(__io__address + 170, debug_flag);
 		}
 	}
 
@@ -3162,6 +3233,48 @@ public class View3D extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'viewer_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Path to the viewer node that is currently previewed. This is retrieved from the workspace. </p>
+	 * @see #__DNA__FIELD__viewer_path
+	 */
+	
+	public ViewerPath getViewer_path() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ViewerPath(__io__address + 1320, __io__block, __io__blockTable);
+		} else {
+			return new ViewerPath(__io__address + 1280, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'viewer_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Path to the viewer node that is currently previewed. This is retrieved from the workspace. </p>
+	 * @see #__DNA__FIELD__viewer_path
+	 */
+	
+	public void setViewer_path(ViewerPath viewer_path) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 1320;
+		} else {
+			__dna__offset = 1280;
+		}
+		if (__io__equals(viewer_path, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, viewer_path)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, viewer_path);
+		} else {
+			__io__generic__copy( getViewer_path(), viewer_path);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -3172,9 +3285,9 @@ public class View3D extends CFacade {
 	public View3D_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new View3D_Runtime(__io__address + 1320, __io__block, __io__blockTable);
+			return new View3D_Runtime(__io__address + 1336, __io__block, __io__blockTable);
 		} else {
-			return new View3D_Runtime(__io__address + 1280, __io__block, __io__blockTable);
+			return new View3D_Runtime(__io__address + 1288, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3190,9 +3303,9 @@ public class View3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1320;
+			__dna__offset = 1336;
 		} else {
-			__dna__offset = 1280;
+			__dna__offset = 1288;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

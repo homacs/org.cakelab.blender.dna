@@ -103,7 +103,7 @@ public class IDOverrideLibraryProperty extends CFacade {
 	 * <h4>Blender Python API</h4>
 	 * (read-only)    List of overriding operations for a property
 	 * <h4>Blender Source Code</h4>
-	 * <p> List of overriding operations ({@link IDOverrideLibraryPropertyOperation} ) applied to this property. </p>
+	 * <p> List of overriding operations ({@link IDOverrideLibraryPropertyOperation} ) applied to this property. Recreated as part of the diffing, so do not store any of these elsewhere. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -308,7 +308,7 @@ public class IDOverrideLibraryProperty extends CFacade {
 	 * <h4>Blender Python API</h4>
 	 * (read-only)    List of overriding operations for a property
 	 * <h4>Blender Source Code</h4>
-	 * <p> List of overriding operations ({@link IDOverrideLibraryPropertyOperation} ) applied to this property. </p>
+	 * <p> List of overriding operations ({@link IDOverrideLibraryPropertyOperation} ) applied to this property. Recreated as part of the diffing, so do not store any of these elsewhere. </p>
 	 * @see #__DNA__FIELD__operations
 	 */
 	
@@ -327,7 +327,7 @@ public class IDOverrideLibraryProperty extends CFacade {
 	 * <h4>Blender Python API</h4>
 	 * (read-only)    List of overriding operations for a property
 	 * <h4>Blender Source Code</h4>
-	 * <p> List of overriding operations ({@link IDOverrideLibraryPropertyOperation} ) applied to this property. </p>
+	 * <p> List of overriding operations ({@link IDOverrideLibraryPropertyOperation} ) applied to this property. Recreated as part of the diffing, so do not store any of these elsewhere. </p>
 	 * @see #__DNA__FIELD__operations
 	 */
 	

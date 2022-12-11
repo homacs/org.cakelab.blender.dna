@@ -28,7 +28,7 @@ public class BakeData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 576;
+	public static final int __DNA__SDNA_INDEX = 579;
 
 	/**
 	 * Field descriptor (offset) for struct member 'im_format'.
@@ -314,6 +314,26 @@ public class BakeData extends CFacade {
 	public static final long[] __DNA__FIELD__margin_type = new long[]{1370, 1378};
 
 	/**
+	 * Field descriptor (offset) for struct member 'view_from'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BakeData bakedata = ...;
+	 * CPointer&lt;Object&gt; p = bakedata.__dna__addressof(BakeData.__DNA__FIELD__view_from);
+	 * CPointer&lt;Byte&gt; p_view_from = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'view_from'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__view_from = new long[]{1371, 1379};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -327,11 +347,11 @@ public class BakeData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[5]'</li>
-	 * <li>Actual Size (32bit/64bit): 5/5</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{1371, 1379};
+	public static final long[] __DNA__FIELD___pad = new long[]{1372, 1380};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cage_object'.
@@ -792,6 +812,34 @@ public class BakeData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'view_from'.
+	 * @see #__DNA__FIELD__view_from
+	 */
+	
+	public byte getView_from() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 1379);
+		} else {
+			return __io__block.readByte(__io__address + 1371);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'view_from'.
+	 * @see #__DNA__FIELD__view_from
+	 */
+	
+	public void setView_from(byte view_from) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 1379, view_from);
+		} else {
+			__io__block.writeByte(__io__address + 1371, view_from);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -800,12 +848,12 @@ public class BakeData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			5
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1379, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1380, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1371, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1372, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -818,9 +866,9 @@ public class BakeData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1379;
+			__dna__offset = 1380;
 		} else {
-			__dna__offset = 1371;
+			__dna__offset = 1372;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

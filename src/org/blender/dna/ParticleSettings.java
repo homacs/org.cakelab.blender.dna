@@ -28,7 +28,7 @@ public class ParticleSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 559;
+	public static final int __DNA__SDNA_INDEX = 562;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -2897,7 +2897,7 @@ public class ParticleSettings extends CFacade {
 	 * <h4>Blender Python API</h4>
 	 * Emit particles from mesh with modifiers applied (must use same subdivision surface level for viewport and render for correct results)
 	 * <h4>Blender Source Code</h4>
-	 * <p> modified dm support </p>
+	 * <p> Evaluated mesh support. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -7479,7 +7479,7 @@ public class ParticleSettings extends CFacade {
 	 * <h4>Blender Python API</h4>
 	 * Emit particles from mesh with modifiers applied (must use same subdivision surface level for viewport and render for correct results)
 	 * <h4>Blender Source Code</h4>
-	 * <p> modified dm support </p>
+	 * <p> Evaluated mesh support. </p>
 	 * @see #__DNA__FIELD__use_modifier_stack
 	 */
 	
@@ -7498,7 +7498,7 @@ public class ParticleSettings extends CFacade {
 	 * <h4>Blender Python API</h4>
 	 * Emit particles from mesh with modifiers applied (must use same subdivision surface level for viewport and render for correct results)
 	 * <h4>Blender Source Code</h4>
-	 * <p> modified dm support </p>
+	 * <p> Evaluated mesh support. </p>
 	 * @see #__DNA__FIELD__use_modifier_stack
 	 */
 	

@@ -30,7 +30,7 @@ public class SpaceSeq extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 680;
+	public static final int __DNA__SDNA_INDEX = 683;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -580,7 +580,7 @@ public class SpaceSeq extends CFacade {
 	 * Field descriptor (offset) for struct member 'multiview_eye'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Multiview current eye - for internal use. </p>
+	 * <p> Multi-view current eye - for internal use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1527,7 +1527,7 @@ public class SpaceSeq extends CFacade {
 	 * Get method for struct member 'multiview_eye'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Multiview current eye - for internal use. </p>
+	 * <p> Multi-view current eye - for internal use. </p>
 	 * @see #__DNA__FIELD__multiview_eye
 	 */
 	
@@ -1544,7 +1544,7 @@ public class SpaceSeq extends CFacade {
 	 * Set method for struct member 'multiview_eye'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Multiview current eye - for internal use. </p>
+	 * <p> Multi-view current eye - for internal use. </p>
 	 * @see #__DNA__FIELD__multiview_eye
 	 */
 	

@@ -28,7 +28,7 @@ public class bGPDspoint_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 187;
+	public static final int __DNA__SDNA_INDEX = 189;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pt_orig'.

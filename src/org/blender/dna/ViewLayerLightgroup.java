@@ -30,7 +30,7 @@ public class ViewLayerLightgroup extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 225;
+	public static final int __DNA__SDNA_INDEX = 227;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -76,7 +76,7 @@ public class ViewLayerLightgroup extends CFacade {
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Name of the Lightgroup </p>
+	 * <p> Name of the Light-group. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,7 +171,7 @@ public class ViewLayerLightgroup extends CFacade {
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Name of the Lightgroup </p>
+	 * <p> Name of the Light-group. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -192,7 +192,7 @@ public class ViewLayerLightgroup extends CFacade {
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Name of the Lightgroup </p>
+	 * <p> Name of the Light-group. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	

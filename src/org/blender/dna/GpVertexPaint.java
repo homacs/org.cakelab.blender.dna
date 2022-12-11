@@ -30,7 +30,7 @@ public class GpVertexPaint extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 591;
+	public static final int __DNA__SDNA_INDEX = 594;
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint'.

@@ -29,7 +29,7 @@ public class LineStyleColorModifier_Curvature_3D extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 245;
+	public static final int __DNA__SDNA_INDEX = 247;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

@@ -28,7 +28,7 @@ public class ArmatureGpencilModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 177;
+	public static final int __DNA__SDNA_INDEX = 179;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

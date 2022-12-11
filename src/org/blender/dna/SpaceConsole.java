@@ -30,7 +30,7 @@ public class SpaceConsole extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 696;
+	public static final int __DNA__SDNA_INDEX = 699;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

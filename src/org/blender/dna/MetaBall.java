@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=248, size64=328)
+@CMetaData(size32=244, size64=320)
 public class MetaBall extends CFacade {
 
 	/**
@@ -185,7 +185,7 @@ public class MetaBall extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Flag is enum for updates, flag2 is bitflags for settings. </p>
+	 * <p> Flag is enum for updates, flag2 is bit-flags for settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -462,26 +462,6 @@ public class MetaBall extends CFacade {
 	 */
 	public static final long[] __DNA__FIELD__lastelem = new long[]{240, 312};
 
-	/**
-	 * Field descriptor (offset) for struct member 'batch_cache'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * MetaBall metaball = ...;
-	 * CPointer&lt;Object&gt; p = metaball.__dna__addressof(MetaBall.__DNA__FIELD__batch_cache);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_batch_cache = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'batch_cache'</li>
-	 * <li>Signature: 'void*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__batch_cache = new long[]{244, 320};
-
 	public MetaBall(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
 	}
@@ -752,7 +732,7 @@ public class MetaBall extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Flag is enum for updates, flag2 is bitflags for settings. </p>
+	 * <p> Flag is enum for updates, flag2 is bit-flags for settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -769,7 +749,7 @@ public class MetaBall extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Flag is enum for updates, flag2 is bitflags for settings. </p>
+	 * <p> Flag is enum for updates, flag2 is bit-flags for settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -1203,38 +1183,6 @@ public class MetaBall extends CFacade {
 			__io__block.writeLong(__io__address + 312, __address);
 		} else {
 			__io__block.writeLong(__io__address + 240, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'batch_cache'.
-	 * @see #__DNA__FIELD__batch_cache
-	 */
-	
-	public CPointer<Object> getBatch_cache() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 320);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 244);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'batch_cache'.
-	 * @see #__DNA__FIELD__batch_cache
-	 */
-	
-	public void setBatch_cache(CPointer<Object> batch_cache) throws IOException
-	{
-		long __address = ((batch_cache == null) ? 0 : batch_cache.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 320, __address);
-		} else {
-			__io__block.writeLong(__io__address + 244, __address);
 		}
 	}
 

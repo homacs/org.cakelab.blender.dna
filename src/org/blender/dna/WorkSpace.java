@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=216, size64=296)
+@CMetaData(size32=224, size64=312)
 public class WorkSpace extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class WorkSpace extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 792;
+	public static final int __DNA__SDNA_INDEX = 796;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -305,6 +305,29 @@ public class WorkSpace extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__asset_library_ref = new long[]{208, 288};
+
+	/**
+	 * Field descriptor (offset) for struct member 'viewer_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Ground truth for the currently active viewer node. When a viewer node is activated its path is set here. Editors can check here for which node is active (currently the node editor, spreadsheet and viewport do this). </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * WorkSpace workspace = ...;
+	 * CPointer&lt;Object&gt; p = workspace.__dna__addressof(WorkSpace.__DNA__FIELD__viewer_path);
+	 * CPointer&lt;ViewerPath&gt; p_viewer_path = p.cast(new Class[]{ViewerPath.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'viewer_path'</li>
+	 * <li>Signature: 'ViewerPath'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__viewer_path = new long[]{216, 296};
 
 	public WorkSpace(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -787,6 +810,48 @@ public class WorkSpace extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, asset_library_ref);
 		} else {
 			__io__generic__copy( getAsset_library_ref(), asset_library_ref);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'viewer_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Ground truth for the currently active viewer node. When a viewer node is activated its path is set here. Editors can check here for which node is active (currently the node editor, spreadsheet and viewport do this). </p>
+	 * @see #__DNA__FIELD__viewer_path
+	 */
+	
+	public ViewerPath getViewer_path() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ViewerPath(__io__address + 296, __io__block, __io__blockTable);
+		} else {
+			return new ViewerPath(__io__address + 216, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'viewer_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Ground truth for the currently active viewer node. When a viewer node is activated its path is set here. Editors can check here for which node is active (currently the node editor, spreadsheet and viewport do this). </p>
+	 * @see #__DNA__FIELD__viewer_path
+	 */
+	
+	public void setViewer_path(ViewerPath viewer_path) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 296;
+		} else {
+			__dna__offset = 216;
+		}
+		if (__io__equals(viewer_path, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, viewer_path)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, viewer_path);
+		} else {
+			__io__generic__copy( getViewer_path(), viewer_path);
 		}
 	}
 

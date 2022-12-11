@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h4>Java .Blend</h4>
  * A loop element defined by a vertex and an edge. A loop is a face of the 3D object in Blender. A full loop (face) is defined by a set of loop entries, where each entry references a vertex and the adjacent edge in clock order. Thus, for each loop entry the system knows which side is front facing
  * <h4>Blender Source Code</h4>
- * <p>{@link Mesh}  Face Corners. "Loop" is an internal name for the corner of a polygon ({@link MPoly} ).</p><p> Typically accessed from {@link Mesh#getMloop()} . </p>
+ * <p>{@link Mesh}  Face Corners. "Loop" is an internal name for the corner of a polygon ({@link MPoly} ).</p><p> Typically accessed with #Mesh.loops(). </p>
  */
 
 @CMetaData(size32=8, size64=8)

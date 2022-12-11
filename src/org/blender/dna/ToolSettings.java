@@ -28,7 +28,7 @@ public class ToolSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 602;
+	public static final int __DNA__SDNA_INDEX = 605;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vpaint'.
@@ -1023,7 +1023,7 @@ public class ToolSettings extends CFacade {
 	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Snap elements (per spacetype), eSnapMode . </p>
+	 * <p> Snap elements (per space-type), eSnapMode . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1106,7 +1106,7 @@ public class ToolSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'snap_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Generic flags (per spacetype), eSnapFlag . </p>
+	 * <p> Generic flags (per space-type), eSnapFlag . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3433,7 +3433,7 @@ public class ToolSettings extends CFacade {
 	 * Get method for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Snap elements (per spacetype), eSnapMode . </p>
+	 * <p> Snap elements (per space-type), eSnapMode . </p>
 	 * @see #__DNA__FIELD___pad1
 	 */
 	
@@ -3454,7 +3454,7 @@ public class ToolSettings extends CFacade {
 	 * Set method for struct member '_pad1'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Snap elements (per spacetype), eSnapMode . </p>
+	 * <p> Snap elements (per space-type), eSnapMode . </p>
 	 * @see #__DNA__FIELD___pad1
 	 */
 	
@@ -3563,7 +3563,7 @@ public class ToolSettings extends CFacade {
 	 * Get method for struct member 'snap_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Generic flags (per spacetype), eSnapFlag . </p>
+	 * <p> Generic flags (per space-type), eSnapFlag . </p>
 	 * @see #__DNA__FIELD__snap_flag
 	 */
 	
@@ -3580,7 +3580,7 @@ public class ToolSettings extends CFacade {
 	 * Set method for struct member 'snap_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Generic flags (per spacetype), eSnapFlag . </p>
+	 * <p> Generic flags (per space-type), eSnapFlag . </p>
 	 * @see #__DNA__FIELD__snap_flag
 	 */
 	

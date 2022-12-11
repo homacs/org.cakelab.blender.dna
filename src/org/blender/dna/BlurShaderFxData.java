@@ -28,7 +28,7 @@ public class BlurShaderFxData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 659;
+	public static final int __DNA__SDNA_INDEX = 662;
 
 	/**
 	 * Field descriptor (offset) for struct member 'shaderfx'.

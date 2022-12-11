@@ -27,7 +27,7 @@ public class StripCrop extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 628;
+	public static final int __DNA__SDNA_INDEX = 631;
 
 	/**
 	 * Field descriptor (offset) for struct member 'top'.

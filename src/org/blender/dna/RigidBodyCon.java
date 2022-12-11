@@ -31,7 +31,7 @@ public class RigidBodyCon extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 568;
+	public static final int __DNA__SDNA_INDEX = 571;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ob1'.

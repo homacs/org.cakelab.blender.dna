@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * 
  * <h4>Blender Source Code</h4>
- * <p><h2>Note</h2><p> Saved in the wm, don't remove. </p> Saved in the wm, don't remove. 
+ * <p><h2>Note</h2><p> Saved in the {@link wmWindowManager} , don't remove. </p> Saved in the wmWindowManager, don't remove. 
  * 
  * </p>
  */
@@ -32,7 +32,7 @@ public class ReportList extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 779;
+	public static final int __DNA__SDNA_INDEX = 783;
 
 	/**
 	 * Field descriptor (offset) for struct member 'list'.
@@ -58,7 +58,7 @@ public class ReportList extends CFacade {
 	 * Field descriptor (offset) for struct member 'printlevel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> eReportType. </p>
+	 * <p>eReportType . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -81,7 +81,7 @@ public class ReportList extends CFacade {
 	 * Field descriptor (offset) for struct member 'storelevel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> eReportType. </p>
+	 * <p>eReportType . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -208,7 +208,7 @@ public class ReportList extends CFacade {
 	 * Get method for struct member 'printlevel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> eReportType. </p>
+	 * <p>eReportType . </p>
 	 * @see #__DNA__FIELD__printlevel
 	 */
 	
@@ -225,7 +225,7 @@ public class ReportList extends CFacade {
 	 * Set method for struct member 'printlevel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> eReportType. </p>
+	 * <p>eReportType . </p>
 	 * @see #__DNA__FIELD__printlevel
 	 */
 	
@@ -242,7 +242,7 @@ public class ReportList extends CFacade {
 	 * Get method for struct member 'storelevel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> eReportType. </p>
+	 * <p>eReportType . </p>
 	 * @see #__DNA__FIELD__storelevel
 	 */
 	
@@ -259,7 +259,7 @@ public class ReportList extends CFacade {
 	 * Set method for struct member 'storelevel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> eReportType. </p>
+	 * <p>eReportType . </p>
 	 * @see #__DNA__FIELD__storelevel
 	 */
 	

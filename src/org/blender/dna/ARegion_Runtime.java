@@ -27,7 +27,7 @@ public class ARegion_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 624;
+	public static final int __DNA__SDNA_INDEX = 627;
 
 	/**
 	 * Field descriptor (offset) for struct member 'category'.
@@ -79,7 +79,7 @@ public class ARegion_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'offset_x'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> The offset needed to not overlap with window scrollbars. Only used by HUD regions for now. </p>
+	 * <p> The offset needed to not overlap with window scroll-bars. Only used by HUD regions for now. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -233,7 +233,7 @@ public class ARegion_Runtime extends CFacade {
 	 * Get method for struct member 'offset_x'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> The offset needed to not overlap with window scrollbars. Only used by HUD regions for now. </p>
+	 * <p> The offset needed to not overlap with window scroll-bars. Only used by HUD regions for now. </p>
 	 * @see #__DNA__FIELD__offset_x
 	 */
 	
@@ -250,7 +250,7 @@ public class ARegion_Runtime extends CFacade {
 	 * Set method for struct member 'offset_x'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> The offset needed to not overlap with window scrollbars. Only used by HUD regions for now. </p>
+	 * <p> The offset needed to not overlap with window scroll-bars. Only used by HUD regions for now. </p>
 	 * @see #__DNA__FIELD__offset_x
 	 */
 	

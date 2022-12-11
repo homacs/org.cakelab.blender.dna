@@ -290,7 +290,7 @@ public class FileGlobal extends CFacade {
 	 * <h4>Java .Blend</h4>
 	 * time when code of the blender binary was commit. Provides more detail to version info.
 	 * <h4>Blender Source Code</h4>
-	 * <p> Commit timestamp from buildinfo. </p>
+	 * <p><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -315,7 +315,7 @@ public class FileGlobal extends CFacade {
 	 * <h4>Java .Blend</h4>
 	 * unique identifier from build info
 	 * <h4>Blender Source Code</h4>
-	 * <p> Hash from buildinfo. </p>
+	 * <p><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -776,7 +776,7 @@ public class FileGlobal extends CFacade {
 	 * <h4>Java .Blend</h4>
 	 * time when code of the blender binary was commit. Provides more detail to version info.
 	 * <h4>Blender Source Code</h4>
-	 * <p> Commit timestamp from buildinfo. </p>
+	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__build_commit_timestamp
 	 */
 	
@@ -795,7 +795,7 @@ public class FileGlobal extends CFacade {
 	 * <h4>Java .Blend</h4>
 	 * time when code of the blender binary was commit. Provides more detail to version info.
 	 * <h4>Blender Source Code</h4>
-	 * <p> Commit timestamp from buildinfo. </p>
+	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__build_commit_timestamp
 	 */
 	
@@ -814,7 +814,7 @@ public class FileGlobal extends CFacade {
 	 * <h4>Java .Blend</h4>
 	 * unique identifier from build info
 	 * <h4>Blender Source Code</h4>
-	 * <p> Hash from buildinfo. </p>
+	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__build_hash
 	 */
 	
@@ -837,7 +837,7 @@ public class FileGlobal extends CFacade {
 	 * <h4>Java .Blend</h4>
 	 * unique identifier from build info
 	 * <h4>Blender Source Code</h4>
-	 * <p> Hash from buildinfo. </p>
+	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__build_hash
 	 */
 	

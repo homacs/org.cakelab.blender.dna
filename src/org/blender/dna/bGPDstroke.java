@@ -19,7 +19,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Grease-Pencil Annotations - 'Stroke' -> A stroke represents a (simplified version) of the curve drawn by the user in one 'mouse-down'->'mouse-up' operation </p>
  */
 
-@CMetaData(size32=424, size64=464)
+@CMetaData(size32=432, size64=472)
 public class bGPDstroke extends CFacade {
 
 	/**
@@ -30,7 +30,7 @@ public class bGPDstroke extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 195;
+	public static final int __DNA__SDNA_INDEX = 197;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -649,7 +649,7 @@ public class bGPDstroke extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'bGPDstroke_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 152/160</li>
+	 * <li>Actual Size (32bit/64bit): 160/168</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__runtime = new long[]{268, 296};
@@ -672,7 +672,7 @@ public class bGPDstroke extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad5 = new long[]{420, 456};
+	public static final long[] __DNA__FIELD___pad5 = new long[]{428, 464};
 
 	public bGPDstroke(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1743,9 +1743,9 @@ public class bGPDstroke extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 456);
+			__dna__targetAddress = __io__block.readLong(__io__address + 464);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 420);
+			__dna__targetAddress = __io__block.readLong(__io__address + 428);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1760,9 +1760,9 @@ public class bGPDstroke extends CFacade {
 	{
 		long __address = ((_pad5 == null) ? 0 : _pad5.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 456, __address);
+			__io__block.writeLong(__io__address + 464, __address);
 		} else {
-			__io__block.writeLong(__io__address + 420, __address);
+			__io__block.writeLong(__io__address + 428, __address);
 		}
 	}
 

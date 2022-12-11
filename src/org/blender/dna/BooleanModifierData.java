@@ -4,6 +4,7 @@ import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
 import org.cakelab.blender.io.dna.internal.StructDNA;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -16,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=120, size64=144)
+@CMetaData(size32=128, size64=152)
 public class BooleanModifierData extends CFacade {
 
 	/**
@@ -150,6 +151,29 @@ public class BooleanModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__solver = new long[]{117, 141};
 
 	/**
+	 * Field descriptor (offset) for struct member 'material_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> #BooleanModifierMaterialMode. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BooleanModifierData booleanmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = booleanmodifierdata.__dna__addressof(BooleanModifierData.__DNA__FIELD__material_mode);
+	 * CPointer&lt;Byte&gt; p_material_mode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'material_mode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__material_mode = new long[]{118, 142};
+
+	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -167,7 +191,7 @@ public class BooleanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{118, 142};
+	public static final long[] __DNA__FIELD__flag = new long[]{119, 143};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bm_flag'.
@@ -187,7 +211,27 @@ public class BooleanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bm_flag = new long[]{119, 143};
+	public static final long[] __DNA__FIELD__bm_flag = new long[]{120, 144};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BooleanModifierData booleanmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = booleanmodifierdata.__dna__addressof(BooleanModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{121, 145};
 
 	public BooleanModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -382,6 +426,40 @@ public class BooleanModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'material_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> #BooleanModifierMaterialMode. </p>
+	 * @see #__DNA__FIELD__material_mode
+	 */
+	
+	public byte getMaterial_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 142);
+		} else {
+			return __io__block.readByte(__io__address + 118);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'material_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> #BooleanModifierMaterialMode. </p>
+	 * @see #__DNA__FIELD__material_mode
+	 */
+	
+	public void setMaterial_mode(byte material_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 142, material_mode);
+		} else {
+			__io__block.writeByte(__io__address + 118, material_mode);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'flag'.
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -389,9 +467,9 @@ public class BooleanModifierData extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 142);
+			return __io__block.readByte(__io__address + 143);
 		} else {
-			return __io__block.readByte(__io__address + 118);
+			return __io__block.readByte(__io__address + 119);
 		}
 	}
 
@@ -403,9 +481,9 @@ public class BooleanModifierData extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 142, flag);
+			__io__block.writeByte(__io__address + 143, flag);
 		} else {
-			__io__block.writeByte(__io__address + 118, flag);
+			__io__block.writeByte(__io__address + 119, flag);
 		}
 	}
 
@@ -417,9 +495,9 @@ public class BooleanModifierData extends CFacade {
 	public byte getBm_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 143);
+			return __io__block.readByte(__io__address + 144);
 		} else {
-			return __io__block.readByte(__io__address + 119);
+			return __io__block.readByte(__io__address + 120);
 		}
 	}
 
@@ -431,9 +509,49 @@ public class BooleanModifierData extends CFacade {
 	public void setBm_flag(byte bm_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 143, bm_flag);
+			__io__block.writeByte(__io__address + 144, bm_flag);
 		} else {
-			__io__block.writeByte(__io__address + 119, bm_flag);
+			__io__block.writeByte(__io__address + 120, bm_flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			7
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 145, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 121, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 145;
+		} else {
+			__dna__offset = 121;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

@@ -30,7 +30,7 @@ public class LineStyleColorModifier_Noise extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 248;
+	public static final int __DNA__SDNA_INDEX = 250;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

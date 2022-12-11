@@ -28,7 +28,7 @@ public class Lattice extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 219;
+	public static final int __DNA__SDNA_INDEX = 221;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.

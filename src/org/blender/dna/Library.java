@@ -121,7 +121,7 @@ public class Library extends CFacade {
 	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * <h4>Blender Source Code</h4>
-	 * <p> Set for indirectly linked libs, used in the outliner and while reading. </p>
+	 * <p> Set for indirectly linked libraries, used in the outliner and while reading. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -454,7 +454,7 @@ public class Library extends CFacade {
 	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * <h4>Blender Source Code</h4>
-	 * <p> Set for indirectly linked libs, used in the outliner and while reading. </p>
+	 * <p> Set for indirectly linked libraries, used in the outliner and while reading. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -476,7 +476,7 @@ public class Library extends CFacade {
 	 * <h4>Blender Python API</h4>
 	 * (read-only)
 	 * <h4>Blender Source Code</h4>
-	 * <p> Set for indirectly linked libs, used in the outliner and while reading. </p>
+	 * <p> Set for indirectly linked libraries, used in the outliner and while reading. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
 	

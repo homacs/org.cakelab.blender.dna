@@ -31,7 +31,7 @@ public class bGPDlayer_Mask extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 198;
+	public static final int __DNA__SDNA_INDEX = 200;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

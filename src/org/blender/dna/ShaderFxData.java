@@ -28,7 +28,7 @@ public class ShaderFxData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 657;
+	public static final int __DNA__SDNA_INDEX = 660;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

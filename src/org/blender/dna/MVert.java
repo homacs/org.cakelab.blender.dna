@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h4>Java .Blend</h4>
  * A single vertex with coordinates and normal vector.
  * <h4>Blender Source Code</h4>
- * <p>{@link Mesh}  Vertices.</p><p> Typically accessed from {@link Mesh#getMvert()}  </p>
+ * <p>{@link Mesh}  Vertices.</p><p> Typically accessed from #Mesh.verts() </p>
  */
 
 @CMetaData(size32=16, size64=16)

@@ -28,7 +28,7 @@ public class Paint_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 580;
+	public static final int __DNA__SDNA_INDEX = 583;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tool_offset'.

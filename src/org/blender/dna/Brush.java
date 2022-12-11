@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=2268, size64=2360)
+@CMetaData(size32=2280, size64=2376)
 public class Brush extends CFacade {
 
 	/**
@@ -2746,6 +2746,75 @@ public class Brush extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__curves_sculpt_settings = new long[]{2264, 2352};
+
+	/**
+	 * Field descriptor (offset) for struct member 'automasking_cavity_blur_steps'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The number of times the cavity mask is blurred
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__automasking_cavity_blur_steps);
+	 * CPointer&lt;Integer&gt; p_automasking_cavity_blur_steps = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'automasking_cavity_blur_steps'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__automasking_cavity_blur_steps = new long[]{2268, 2360};
+
+	/**
+	 * Field descriptor (offset) for struct member 'automasking_cavity_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The contrast of the cavity mask
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__automasking_cavity_factor);
+	 * CPointer&lt;Float&gt; p_automasking_cavity_factor = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'automasking_cavity_factor'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__automasking_cavity_factor = new long[]{2272, 2364};
+
+	/**
+	 * Field descriptor (offset) for struct member 'automasking_cavity_curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Curve used for the sensitivity
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__automasking_cavity_curve);
+	 * CPointer&lt;CPointer&lt;CurveMapping&gt;&gt; p_automasking_cavity_curve = p.cast(new Class[]{CPointer.class, CurveMapping.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'automasking_cavity_curve'</li>
+	 * <li>Signature: 'CurveMapping*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__automasking_cavity_curve = new long[]{2276, 2368};
 
 	public Brush(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -6966,6 +7035,112 @@ public class Brush extends CFacade {
 			__io__block.writeLong(__io__address + 2352, __address);
 		} else {
 			__io__block.writeLong(__io__address + 2264, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'automasking_cavity_blur_steps'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The number of times the cavity mask is blurred
+	 * @see #__DNA__FIELD__automasking_cavity_blur_steps
+	 */
+	
+	public int getAutomasking_cavity_blur_steps() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 2360);
+		} else {
+			return __io__block.readInt(__io__address + 2268);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'automasking_cavity_blur_steps'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The number of times the cavity mask is blurred
+	 * @see #__DNA__FIELD__automasking_cavity_blur_steps
+	 */
+	
+	public void setAutomasking_cavity_blur_steps(int automasking_cavity_blur_steps) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 2360, automasking_cavity_blur_steps);
+		} else {
+			__io__block.writeInt(__io__address + 2268, automasking_cavity_blur_steps);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'automasking_cavity_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The contrast of the cavity mask
+	 * @see #__DNA__FIELD__automasking_cavity_factor
+	 */
+	
+	public float getAutomasking_cavity_factor() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 2364);
+		} else {
+			return __io__block.readFloat(__io__address + 2272);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'automasking_cavity_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The contrast of the cavity mask
+	 * @see #__DNA__FIELD__automasking_cavity_factor
+	 */
+	
+	public void setAutomasking_cavity_factor(float automasking_cavity_factor) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 2364, automasking_cavity_factor);
+		} else {
+			__io__block.writeFloat(__io__address + 2272, automasking_cavity_factor);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'automasking_cavity_curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Curve used for the sensitivity
+	 * @see #__DNA__FIELD__automasking_cavity_curve
+	 */
+	
+	public CPointer<CurveMapping> getAutomasking_cavity_curve() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 2368);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 2276);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
+		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'automasking_cavity_curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Curve used for the sensitivity
+	 * @see #__DNA__FIELD__automasking_cavity_curve
+	 */
+	
+	public void setAutomasking_cavity_curve(CPointer<CurveMapping> automasking_cavity_curve) throws IOException
+	{
+		long __address = ((automasking_cavity_curve == null) ? 0 : automasking_cavity_curve.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 2368, __address);
+		} else {
+			__io__block.writeLong(__io__address + 2276, __address);
 		}
 	}
 

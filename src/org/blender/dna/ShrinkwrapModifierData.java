@@ -100,7 +100,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'vgroup_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
+	 * <p> Optional vertex-group name, #MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -424,7 +424,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * Get method for struct member 'vgroup_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
+	 * <p> Optional vertex-group name, #MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgroup_name
 	 */
 	
@@ -445,7 +445,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * Set method for struct member 'vgroup_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
+	 * <p> Optional vertex-group name, #MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgroup_name
 	 */
 	

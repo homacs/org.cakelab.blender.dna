@@ -28,7 +28,7 @@ public class LineStyleGeometryModifier_Simplification extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 273;
+	public static final int __DNA__SDNA_INDEX = 275;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

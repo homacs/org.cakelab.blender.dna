@@ -30,7 +30,7 @@ public class SpaceFile extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 685;
+	public static final int __DNA__SDNA_INDEX = 688;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

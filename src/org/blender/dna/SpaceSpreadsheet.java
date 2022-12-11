@@ -28,7 +28,7 @@ public class SpaceSpreadsheet extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 707;
+	public static final int __DNA__SDNA_INDEX = 706;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -204,29 +204,29 @@ public class SpaceSpreadsheet extends CFacade {
 	public static final long[] __DNA__FIELD__row_filters = new long[]{32, 56};
 
 	/**
-	 * Field descriptor (offset) for struct member 'context_path'.
+	 * Field descriptor (offset) for struct member 'viewer_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * (read-only)    Context path to the data being displayed
+	 * (read-only)    Path to the data that is displayed in the spreadsheet
 	 * <h4>Blender Source Code</h4>
-	 * <p> List of {@link SpreadsheetContext} . This is a path to the data that is displayed in the spreadsheet. It can be set explicitly by an action of the user (e.g. clicking the preview icon in a geometry node) or it can be derived from context automatically based on some heuristic. </p>
+	 * <p> Context that is currently displayed in the editor. This is usually a either a single object (in original/evaluated mode) or path to a viewer node. This is retrieved from the workspace but can be pinned so that it stays constant even when the active node changes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SpaceSpreadsheet spacespreadsheet = ...;
-	 * CPointer&lt;Object&gt; p = spacespreadsheet.__dna__addressof(SpaceSpreadsheet.__DNA__FIELD__context_path);
-	 * CPointer&lt;ListBase&gt; p_context_path = p.cast(new Class[]{ListBase.class});
+	 * CPointer&lt;Object&gt; p = spacespreadsheet.__dna__addressof(SpaceSpreadsheet.__DNA__FIELD__viewer_path);
+	 * CPointer&lt;ViewerPath&gt; p_viewer_path = p.cast(new Class[]{ViewerPath.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'context_path'</li>
-	 * <li>Signature: 'ListBase'</li>
+	 * <li>Field: 'viewer_path'</li>
+	 * <li>Signature: 'ViewerPath'</li>
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__context_path = new long[]{40, 72};
+	public static final long[] __DNA__FIELD__viewer_path = new long[]{40, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filter_flag'.
@@ -670,35 +670,35 @@ public class SpaceSpreadsheet extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'context_path'.
+	 * Get method for struct member 'viewer_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * (read-only)    Context path to the data being displayed
+	 * (read-only)    Path to the data that is displayed in the spreadsheet
 	 * <h4>Blender Source Code</h4>
-	 * <p> List of {@link SpreadsheetContext} . This is a path to the data that is displayed in the spreadsheet. It can be set explicitly by an action of the user (e.g. clicking the preview icon in a geometry node) or it can be derived from context automatically based on some heuristic. </p>
-	 * @see #__DNA__FIELD__context_path
+	 * <p> Context that is currently displayed in the editor. This is usually a either a single object (in original/evaluated mode) or path to a viewer node. This is retrieved from the workspace but can be pinned so that it stays constant even when the active node changes. </p>
+	 * @see #__DNA__FIELD__viewer_path
 	 */
 	
-	public ListBase getContext_path() throws IOException
+	public ViewerPath getViewer_path() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 72, __io__block, __io__blockTable);
+			return new ViewerPath(__io__address + 72, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 40, __io__block, __io__blockTable);
+			return new ViewerPath(__io__address + 40, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'context_path'.
+	 * Set method for struct member 'viewer_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * (read-only)    Context path to the data being displayed
+	 * (read-only)    Path to the data that is displayed in the spreadsheet
 	 * <h4>Blender Source Code</h4>
-	 * <p> List of {@link SpreadsheetContext} . This is a path to the data that is displayed in the spreadsheet. It can be set explicitly by an action of the user (e.g. clicking the preview icon in a geometry node) or it can be derived from context automatically based on some heuristic. </p>
-	 * @see #__DNA__FIELD__context_path
+	 * <p> Context that is currently displayed in the editor. This is usually a either a single object (in original/evaluated mode) or path to a viewer node. This is retrieved from the workspace but can be pinned so that it stays constant even when the active node changes. </p>
+	 * @see #__DNA__FIELD__viewer_path
 	 */
 	
-	public void setContext_path(ListBase context_path) throws IOException
+	public void setViewer_path(ViewerPath viewer_path) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -706,12 +706,12 @@ public class SpaceSpreadsheet extends CFacade {
 		} else {
 			__dna__offset = 40;
 		}
-		if (__io__equals(context_path, __io__address + __dna__offset)) {
+		if (__io__equals(viewer_path, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, context_path)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, context_path);
+		} else if (__io__same__encoding(this, viewer_path)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, viewer_path);
 		} else {
-			__io__generic__copy( getContext_path(), context_path);
+			__io__generic__copy( getViewer_path(), viewer_path);
 		}
 	}
 

@@ -28,7 +28,7 @@ public class LineStyleGeometryModifier_SinusDisplacement extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 262;
+	public static final int __DNA__SDNA_INDEX = 264;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

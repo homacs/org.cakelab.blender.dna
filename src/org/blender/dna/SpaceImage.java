@@ -28,7 +28,7 @@ public class SpaceImage extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 687;
+	public static final int __DNA__SDNA_INDEX = 690;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -590,6 +590,26 @@ public class SpaceImage extends CFacade {
 	public static final long[] __DNA__FIELD__gizmo_flag = new long[]{10512, 10556};
 
 	/**
+	 * Field descriptor (offset) for struct member 'grid_shape_source'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceImage spaceimage = ...;
+	 * CPointer&lt;Object&gt; p = spaceimage.__dna__addressof(SpaceImage.__DNA__FIELD__grid_shape_source);
+	 * CPointer&lt;Byte&gt; p_grid_shape_source = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'grid_shape_source'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__grid_shape_source = new long[]{10513, 10557};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -603,11 +623,11 @@ public class SpaceImage extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad1'</li>
-	 * <li>Signature: 'char[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{10513, 10557};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{10514, 10558};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -673,7 +693,7 @@ public class SpaceImage extends CFacade {
 	 * Field descriptor (offset) for struct member 'custom_grid_subdiv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p><code></code><code></code>  grid. Use when #SI_CUSTOM_GRID is set. </p>
+	 * <p><code></code><code></code><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -681,36 +701,16 @@ public class SpaceImage extends CFacade {
 	 * <pre>
 	 * SpaceImage spaceimage = ...;
 	 * CPointer&lt;Object&gt; p = spaceimage.__dna__addressof(SpaceImage.__DNA__FIELD__custom_grid_subdiv);
-	 * CPointer&lt;Integer&gt; p_custom_grid_subdiv = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;CArrayFacade&lt;Integer&gt;&gt; p_custom_grid_subdiv = p.cast(new Class[]{CArrayFacade.class, Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'custom_grid_subdiv'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'int[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__custom_grid_subdiv = new long[]{10532, 10576};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad3'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceImage spaceimage = ...;
-	 * CPointer&lt;Object&gt; p = spaceimage.__dna__addressof(SpaceImage.__DNA__FIELD___pad3);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad3 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad3'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{10536, 10580};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_info'.
@@ -1639,6 +1639,34 @@ public class SpaceImage extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'grid_shape_source'.
+	 * @see #__DNA__FIELD__grid_shape_source
+	 */
+	
+	public byte getGrid_shape_source() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 10557);
+		} else {
+			return __io__block.readByte(__io__address + 10513);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'grid_shape_source'.
+	 * @see #__DNA__FIELD__grid_shape_source
+	 */
+	
+	public void setGrid_shape_source(byte grid_shape_source) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 10557, grid_shape_source);
+		} else {
+			__io__block.writeByte(__io__address + 10513, grid_shape_source);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad1'.
 	 * @see #__DNA__FIELD___pad1
 	 */
@@ -1647,12 +1675,12 @@ public class SpaceImage extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 10557, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 10558, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 10513, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 10514, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1665,9 +1693,9 @@ public class SpaceImage extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 10557;
+			__dna__offset = 10558;
 		} else {
-			__dna__offset = 10513;
+			__dna__offset = 10514;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -1778,16 +1806,20 @@ public class SpaceImage extends CFacade {
 	 * Get method for struct member 'custom_grid_subdiv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p><code></code><code></code>  grid. Use when #SI_CUSTOM_GRID is set. </p>
+	 * <p><code></code><code></code><code></code> . </p>
 	 * @see #__DNA__FIELD__custom_grid_subdiv
 	 */
 	
-	public int getCustom_grid_subdiv() throws IOException
+	public CArrayFacade<Integer> getCustom_grid_subdiv() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 10576);
+			return new CArrayFacade<Integer>(__io__address + 10576, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 10532);
+			return new CArrayFacade<Integer>(__io__address + 10532, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1795,56 +1827,24 @@ public class SpaceImage extends CFacade {
 	 * Set method for struct member 'custom_grid_subdiv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p><code></code><code></code>  grid. Use when #SI_CUSTOM_GRID is set. </p>
+	 * <p><code></code><code></code><code></code> . </p>
 	 * @see #__DNA__FIELD__custom_grid_subdiv
 	 */
 	
-	public void setCustom_grid_subdiv(int custom_grid_subdiv) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 10576, custom_grid_subdiv);
-		} else {
-			__io__block.writeInt(__io__address + 10532, custom_grid_subdiv);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
-	 */
-	
-	public CArrayFacade<Byte> get_pad3() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 10580, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 10536, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
-	 */
-	
-	public void set_pad3(CArrayFacade<Byte> _pad3) throws IOException
+	public void setCustom_grid_subdiv(CArrayFacade<Integer> custom_grid_subdiv) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 10580;
+			__dna__offset = 10576;
 		} else {
-			__dna__offset = 10536;
+			__dna__offset = 10532;
 		}
-		if (__io__equals(_pad3, __io__address + __dna__offset)) {
+		if (__io__equals(custom_grid_subdiv, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, _pad3)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad3);
+		} else if (__io__same__encoding(this, custom_grid_subdiv)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, custom_grid_subdiv);
 		} else {
-			__io__generic__copy( get_pad3(), _pad3);
+			__io__generic__copy( getCustom_grid_subdiv(), custom_grid_subdiv);
 		}
 	}
 

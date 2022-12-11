@@ -31,7 +31,7 @@ public class ImageFormatData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 575;
+	public static final int __DNA__SDNA_INDEX = 578;
 
 	/**
 	 * Field descriptor (offset) for struct member 'imtype'.
@@ -108,7 +108,7 @@ public class ImageFormatData extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Generic options for all image types, alpha zbuffer. </p>
+	 * <p> Generic options for all image types, alpha Z-buffer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,7 +131,7 @@ public class ImageFormatData extends CFacade {
 	 * Field descriptor (offset) for struct member 'quality'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> (0 - 100), eg: jpeg quality. </p>
+	 * <p> (0 - 100), eg: JPEG quality. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -154,7 +154,7 @@ public class ImageFormatData extends CFacade {
 	 * Field descriptor (offset) for struct member 'compress'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> (0 - 100), eg: png compression. </p>
+	 * <p> (0 - 100), eg: PNG compression. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -629,7 +629,7 @@ public class ImageFormatData extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Generic options for all image types, alpha zbuffer. </p>
+	 * <p> Generic options for all image types, alpha Z-buffer. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -646,7 +646,7 @@ public class ImageFormatData extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Generic options for all image types, alpha zbuffer. </p>
+	 * <p> Generic options for all image types, alpha Z-buffer. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -663,7 +663,7 @@ public class ImageFormatData extends CFacade {
 	 * Get method for struct member 'quality'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> (0 - 100), eg: jpeg quality. </p>
+	 * <p> (0 - 100), eg: JPEG quality. </p>
 	 * @see #__DNA__FIELD__quality
 	 */
 	
@@ -680,7 +680,7 @@ public class ImageFormatData extends CFacade {
 	 * Set method for struct member 'quality'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> (0 - 100), eg: jpeg quality. </p>
+	 * <p> (0 - 100), eg: JPEG quality. </p>
 	 * @see #__DNA__FIELD__quality
 	 */
 	
@@ -697,7 +697,7 @@ public class ImageFormatData extends CFacade {
 	 * Get method for struct member 'compress'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> (0 - 100), eg: png compression. </p>
+	 * <p> (0 - 100), eg: PNG compression. </p>
 	 * @see #__DNA__FIELD__compress
 	 */
 	
@@ -714,7 +714,7 @@ public class ImageFormatData extends CFacade {
 	 * Set method for struct member 'compress'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> (0 - 100), eg: png compression. </p>
+	 * <p> (0 - 100), eg: PNG compression. </p>
 	 * @see #__DNA__FIELD__compress
 	 */
 	

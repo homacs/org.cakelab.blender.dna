@@ -31,7 +31,7 @@ public class PaintModeSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 584;
+	public static final int __DNA__SDNA_INDEX = 587;
 
 	/**
 	 * Field descriptor (offset) for struct member 'canvas_source'.
@@ -82,7 +82,7 @@ public class PaintModeSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'canvas_image'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * Image used as as painting target
+	 * Image used as painting target
 	 * <h4>Blender Source Code</h4>
 	 * <p> Selected image when canvas_source=PAINT_CANVAS_SOURCE_IMAGE. </p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -213,7 +213,7 @@ public class PaintModeSettings extends CFacade {
 	 * Get method for struct member 'canvas_image'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * Image used as as painting target
+	 * Image used as painting target
 	 * <h4>Blender Source Code</h4>
 	 * <p> Selected image when canvas_source=PAINT_CANVAS_SOURCE_IMAGE. </p>
 	 * @see #__DNA__FIELD__canvas_image
@@ -235,7 +235,7 @@ public class PaintModeSettings extends CFacade {
 	 * Set method for struct member 'canvas_image'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API</h4>
-	 * Image used as as painting target
+	 * Image used as painting target
 	 * <h4>Blender Source Code</h4>
 	 * <p> Selected image when canvas_source=PAINT_CANVAS_SOURCE_IMAGE. </p>
 	 * @see #__DNA__FIELD__canvas_image

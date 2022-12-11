@@ -28,7 +28,7 @@ public class LineStyleAlphaModifier_CreaseAngle extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 252;
+	public static final int __DNA__SDNA_INDEX = 254;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

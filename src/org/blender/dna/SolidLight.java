@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=64, size64=64)
+@CMetaData(size32=56, size64=56)
 public class SolidLight extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class SolidLight extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 753;
+	public static final int __DNA__SDNA_INDEX = 752;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -71,26 +71,6 @@ public class SolidLight extends CFacade {
 	public static final long[] __DNA__FIELD__smooth = new long[]{4, 4};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad0'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SolidLight solidlight = ...;
-	 * CPointer&lt;Object&gt; p = solidlight.__dna__addressof(SolidLight.__DNA__FIELD___pad0);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad0'</li>
-	 * <li>Signature: 'char[8]'</li>
-	 * <li>Actual Size (32bit/64bit): 8/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{8, 8};
-
-	/**
 	 * Field descriptor (offset) for struct member 'col'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -108,7 +88,7 @@ public class SolidLight extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__col = new long[]{16, 16};
+	public static final long[] __DNA__FIELD__col = new long[]{8, 8};
 
 	/**
 	 * Field descriptor (offset) for struct member 'spec'.
@@ -128,7 +108,7 @@ public class SolidLight extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__spec = new long[]{32, 32};
+	public static final long[] __DNA__FIELD__spec = new long[]{24, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vec'.
@@ -148,7 +128,7 @@ public class SolidLight extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vec = new long[]{48, 48};
+	public static final long[] __DNA__FIELD__vec = new long[]{40, 40};
 
 	public SolidLight(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -215,46 +195,6 @@ public class SolidLight extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad0'.
-	 * @see #__DNA__FIELD___pad0
-	 */
-	
-	public CArrayFacade<Byte> get_pad0() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			8
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad0'.
-	 * @see #__DNA__FIELD___pad0
-	 */
-	
-	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 8;
-		} else {
-			__dna__offset = 8;
-		}
-		if (__io__equals(_pad0, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad0)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
-		} else {
-			__io__generic__copy( get_pad0(), _pad0);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'col'.
 	 * @see #__DNA__FIELD__col
 	 */
@@ -266,9 +206,9 @@ public class SolidLight extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -281,9 +221,9 @@ public class SolidLight extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 16;
+			__dna__offset = 8;
 		} else {
-			__dna__offset = 16;
+			__dna__offset = 8;
 		}
 		if (__io__equals(col, __io__address + __dna__offset)) {
 			return;
@@ -306,9 +246,9 @@ public class SolidLight extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -321,9 +261,9 @@ public class SolidLight extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 32;
+			__dna__offset = 24;
 		} else {
-			__dna__offset = 32;
+			__dna__offset = 24;
 		}
 		if (__io__equals(spec, __io__address + __dna__offset)) {
 			return;
@@ -346,9 +286,9 @@ public class SolidLight extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -361,9 +301,9 @@ public class SolidLight extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 48;
+			__dna__offset = 40;
 		} else {
-			__dna__offset = 48;
+			__dna__offset = 40;
 		}
 		if (__io__equals(vec, __io__address + __dna__offset)) {
 			return;

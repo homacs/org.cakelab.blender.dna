@@ -54,7 +54,7 @@ public class WeightVGEditModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Name of vertex group to edit. MAX_VGROUP_NAME. </p>
+	 * <p> Name of vertex group to edit. #MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -235,7 +235,7 @@ public class WeightVGEditModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'mask_defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Name of mask vertex group from which to get weight factors. MAX_VGROUP_NAME. </p>
+	 * <p> Name of mask vertex group from which to get weight factors. #MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -483,7 +483,7 @@ public class WeightVGEditModifierData extends CFacade {
 	 * Get method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Name of vertex group to edit. MAX_VGROUP_NAME. </p>
+	 * <p> Name of vertex group to edit. #MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -504,7 +504,7 @@ public class WeightVGEditModifierData extends CFacade {
 	 * Set method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Name of vertex group to edit. MAX_VGROUP_NAME. </p>
+	 * <p> Name of vertex group to edit. #MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -765,7 +765,7 @@ public class WeightVGEditModifierData extends CFacade {
 	 * Get method for struct member 'mask_defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Name of mask vertex group from which to get weight factors. MAX_VGROUP_NAME. </p>
+	 * <p> Name of mask vertex group from which to get weight factors. #MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__mask_defgrp_name
 	 */
 	
@@ -786,7 +786,7 @@ public class WeightVGEditModifierData extends CFacade {
 	 * Set method for struct member 'mask_defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Name of mask vertex group from which to get weight factors. MAX_VGROUP_NAME. </p>
+	 * <p> Name of mask vertex group from which to get weight factors. #MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__mask_defgrp_name
 	 */
 	

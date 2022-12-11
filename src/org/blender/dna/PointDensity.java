@@ -28,7 +28,7 @@ public class PointDensity extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 715;
+	public static final int __DNA__SDNA_INDEX = 714;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -240,7 +240,7 @@ public class PointDensity extends CFacade {
 	 * Field descriptor (offset) for struct member 'psys'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p><code></code>  in ob.particlesystem, non-ID pointer not allowed </p>
+	 * <p><code></code>  in ob.particle-system, non-ID pointer not allowed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -920,7 +920,7 @@ public class PointDensity extends CFacade {
 	 * Get method for struct member 'psys'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p><code></code>  in ob.particlesystem, non-ID pointer not allowed </p>
+	 * <p><code></code>  in ob.particle-system, non-ID pointer not allowed. </p>
 	 * @see #__DNA__FIELD__psys
 	 */
 	
@@ -937,7 +937,7 @@ public class PointDensity extends CFacade {
 	 * Set method for struct member 'psys'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p><code></code>  in ob.particlesystem, non-ID pointer not allowed </p>
+	 * <p><code></code>  in ob.particle-system, non-ID pointer not allowed. </p>
 	 * @see #__DNA__FIELD__psys
 	 */
 	

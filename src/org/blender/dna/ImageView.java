@@ -28,7 +28,7 @@ public class ImageView extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 207;
+	public static final int __DNA__SDNA_INDEX = 209;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

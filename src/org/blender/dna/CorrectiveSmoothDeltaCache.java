@@ -31,24 +31,24 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	public static final int __DNA__SDNA_INDEX = 370;
 
 	/**
-	 * Field descriptor (offset) for struct member 'totverts'.
+	 * Field descriptor (offset) for struct member 'deltas_num'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * CorrectiveSmoothDeltaCache correctivesmoothdeltacache = ...;
-	 * CPointer&lt;Object&gt; p = correctivesmoothdeltacache.__dna__addressof(CorrectiveSmoothDeltaCache.__DNA__FIELD__totverts);
-	 * CPointer&lt;Integer&gt; p_totverts = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = correctivesmoothdeltacache.__dna__addressof(CorrectiveSmoothDeltaCache.__DNA__FIELD__deltas_num);
+	 * CPointer&lt;Integer&gt; p_deltas_num = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'totverts'</li>
+	 * <li>Field: 'deltas_num'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totverts = new long[]{4, 8};
+	public static final long[] __DNA__FIELD__deltas_num = new long[]{4, 8};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lambda'.
@@ -202,11 +202,11 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'totverts'.
-	 * @see #__DNA__FIELD__totverts
+	 * Get method for struct member 'deltas_num'.
+	 * @see #__DNA__FIELD__deltas_num
 	 */
 	
-	public int getTotverts() throws IOException
+	public int getDeltas_num() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 8);
@@ -216,16 +216,16 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'totverts'.
-	 * @see #__DNA__FIELD__totverts
+	 * Set method for struct member 'deltas_num'.
+	 * @see #__DNA__FIELD__deltas_num
 	 */
 	
-	public void setTotverts(int totverts) throws IOException
+	public void setDeltas_num(int deltas_num) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 8, totverts);
+			__io__block.writeInt(__io__address + 8, deltas_num);
 		} else {
-			__io__block.writeInt(__io__address + 4, totverts);
+			__io__block.writeInt(__io__address + 4, deltas_num);
 		}
 	}
 

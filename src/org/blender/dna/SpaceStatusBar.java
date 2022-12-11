@@ -28,7 +28,7 @@ public class SpaceStatusBar extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 700;
+	public static final int __DNA__SDNA_INDEX = 703;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

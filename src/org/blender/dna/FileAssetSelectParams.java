@@ -30,7 +30,7 @@ public class FileAssetSelectParams extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 683;
+	public static final int __DNA__SDNA_INDEX = 686;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base_params'.

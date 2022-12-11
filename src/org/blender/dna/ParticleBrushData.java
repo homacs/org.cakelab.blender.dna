@@ -30,7 +30,7 @@ public class ParticleBrushData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 585;
+	public static final int __DNA__SDNA_INDEX = 588;
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.

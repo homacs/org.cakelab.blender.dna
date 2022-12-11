@@ -27,7 +27,7 @@ public class SequencerTonemapModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 654;
+	public static final int __DNA__SDNA_INDEX = 657;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

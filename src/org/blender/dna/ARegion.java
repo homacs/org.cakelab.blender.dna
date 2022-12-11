@@ -27,7 +27,7 @@ public class ARegion extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 625;
+	public static final int __DNA__SDNA_INDEX = 628;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -389,7 +389,7 @@ public class ARegion extends CFacade {
 	 * Field descriptor (offset) for struct member 'flagfullscreen'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Temporary copy of flag settings for clean fullscreen. </p>
+	 * <p> Temporary copy of flag settings for clean full-screen. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1288,7 +1288,7 @@ public class ARegion extends CFacade {
 	 * Get method for struct member 'flagfullscreen'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Temporary copy of flag settings for clean fullscreen. </p>
+	 * <p> Temporary copy of flag settings for clean full-screen. </p>
 	 * @see #__DNA__FIELD__flagfullscreen
 	 */
 	
@@ -1305,7 +1305,7 @@ public class ARegion extends CFacade {
 	 * Set method for struct member 'flagfullscreen'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Temporary copy of flag settings for clean fullscreen. </p>
+	 * <p> Temporary copy of flag settings for clean full-screen. </p>
 	 * @see #__DNA__FIELD__flagfullscreen
 	 */
 	

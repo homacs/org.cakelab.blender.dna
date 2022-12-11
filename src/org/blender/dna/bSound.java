@@ -28,7 +28,7 @@ public class bSound extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 669;
+	public static final int __DNA__SDNA_INDEX = 672;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -458,7 +458,7 @@ public class bSound extends CFacade {
 	 * Field descriptor (offset) for struct member 'audio_channels'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> XXX unused currently (SOUND_TYPE_LIMITER) float start, end; Description of Audio channels, as of eSoundChannels </p>
+	 * <p> XXX unused currently (SOUND_TYPE_LIMITER) float start, end; Description of Audio channels, as of #eSoundChannels. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1181,7 +1181,7 @@ public class bSound extends CFacade {
 	 * Get method for struct member 'audio_channels'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> XXX unused currently (SOUND_TYPE_LIMITER) float start, end; Description of Audio channels, as of eSoundChannels </p>
+	 * <p> XXX unused currently (SOUND_TYPE_LIMITER) float start, end; Description of Audio channels, as of #eSoundChannels. </p>
 	 * @see #__DNA__FIELD__audio_channels
 	 */
 	
@@ -1198,7 +1198,7 @@ public class bSound extends CFacade {
 	 * Set method for struct member 'audio_channels'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> XXX unused currently (SOUND_TYPE_LIMITER) float start, end; Description of Audio channels, as of eSoundChannels </p>
+	 * <p> XXX unused currently (SOUND_TYPE_LIMITER) float start, end; Description of Audio channels, as of #eSoundChannels. </p>
 	 * @see #__DNA__FIELD__audio_channels
 	 */
 	

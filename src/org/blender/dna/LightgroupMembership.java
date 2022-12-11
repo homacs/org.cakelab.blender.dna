@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * 
  * <h4>Blender Source Code</h4>
- * <p> Lightgroup membership information. </p>
+ * <p> Light-group membership information. </p>
  */
 
 @CMetaData(size32=64, size64=64)
@@ -30,13 +30,13 @@ public class LightgroupMembership extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 226;
+	public static final int __DNA__SDNA_INDEX = 228;
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Name of the Lightgroup </p>
+	 * <p> Name of the Light-group. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -67,7 +67,7 @@ public class LightgroupMembership extends CFacade {
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Name of the Lightgroup </p>
+	 * <p> Name of the Light-group. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -88,7 +88,7 @@ public class LightgroupMembership extends CFacade {
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Name of the Lightgroup </p>
+	 * <p> Name of the Light-group. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	

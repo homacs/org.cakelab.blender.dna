@@ -28,7 +28,7 @@ public class MaterialGPencilStyle extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 287;
+	public static final int __DNA__SDNA_INDEX = 289;
 
 	/**
 	 * Field descriptor (offset) for struct member 'sima'.

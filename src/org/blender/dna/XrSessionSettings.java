@@ -31,7 +31,7 @@ public class XrSessionSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 796;
+	public static final int __DNA__SDNA_INDEX = 800;
 
 	/**
 	 * Field descriptor (offset) for struct member 'shading'.

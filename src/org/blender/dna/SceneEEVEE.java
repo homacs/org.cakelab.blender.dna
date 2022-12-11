@@ -28,7 +28,7 @@ public class SceneEEVEE extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 607;
+	public static final int __DNA__SDNA_INDEX = 610;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.

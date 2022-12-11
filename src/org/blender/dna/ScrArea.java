@@ -28,7 +28,7 @@ public class ScrArea extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 623;
+	public static final int __DNA__SDNA_INDEX = 626;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

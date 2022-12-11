@@ -28,7 +28,7 @@ public class View3DCursor extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 770;
+	public static final int __DNA__SDNA_INDEX = 769;
 
 	/**
 	 * Field descriptor (offset) for struct member 'location'.

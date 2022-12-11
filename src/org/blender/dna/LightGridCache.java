@@ -30,7 +30,7 @@ public class LightGridCache extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 232;
+	public static final int __DNA__SDNA_INDEX = 234;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.

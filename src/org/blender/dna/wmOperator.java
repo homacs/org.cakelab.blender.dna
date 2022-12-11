@@ -30,7 +30,7 @@ public class wmOperator extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 788;
+	public static final int __DNA__SDNA_INDEX = 792;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -76,7 +76,7 @@ public class wmOperator extends CFacade {
 	 * Field descriptor (offset) for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> saved Used to retrieve type pointer. </p>
+	 * <p> saved Used to retrieve type pointer. OP_MAX_TYPENAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -418,7 +418,7 @@ public class wmOperator extends CFacade {
 	 * Get method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> saved Used to retrieve type pointer. </p>
+	 * <p> saved Used to retrieve type pointer. OP_MAX_TYPENAME </p>
 	 * @see #__DNA__FIELD__idname
 	 */
 	
@@ -439,7 +439,7 @@ public class wmOperator extends CFacade {
 	 * Set method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> saved Used to retrieve type pointer. </p>
+	 * <p> saved Used to retrieve type pointer. OP_MAX_TYPENAME </p>
 	 * @see #__DNA__FIELD__idname
 	 */
 	

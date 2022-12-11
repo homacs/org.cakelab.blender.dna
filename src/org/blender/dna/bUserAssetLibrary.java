@@ -28,7 +28,7 @@ public class bUserAssetLibrary extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 752;
+	public static final int __DNA__SDNA_INDEX = 751;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

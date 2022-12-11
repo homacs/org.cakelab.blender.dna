@@ -28,7 +28,7 @@ public class View3D_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 773;
+	public static final int __DNA__SDNA_INDEX = 772;
 
 	/**
 	 * Field descriptor (offset) for struct member 'properties_storage'.

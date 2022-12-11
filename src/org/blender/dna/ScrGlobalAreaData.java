@@ -28,7 +28,7 @@ public class ScrGlobalAreaData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 621;
+	public static final int __DNA__SDNA_INDEX = 624;
 
 	/**
 	 * Field descriptor (offset) for struct member 'cur_fixed_height'.

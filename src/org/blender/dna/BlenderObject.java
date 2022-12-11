@@ -52,7 +52,7 @@ public class BlenderObject extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 545;
+	public static final int __DNA__SDNA_INDEX = 548;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -1319,8 +1319,6 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * final worldspace matrix with constraints & animsys applied
-	 * <h4>Blender Source Code</h4>
-	 * <p> Final world-space matrix with constraints & animsys applied. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1338,6 +1336,32 @@ public class BlenderObject extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__obmat = new long[]{560, 732};
+
+	/**
+	 * Field descriptor (offset) for struct member 'imat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend</h4>
+	 * inverse matrix of 'obmat' for any other use than rendering! 
+	 * 							note: this isn't assured to be valid as with 'obmat',
+	 * 	                     	before using this value you should do...
+	 * 	                    	invert_m4_m4(ob->imat, ob->obmat);
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BlenderObject blenderobject = ...;
+	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__imat);
+	 * CPointer&lt;CArrayFacade&lt;CArrayFacade&lt;Float&gt;&gt;&gt; p_imat = p.cast(new Class[]{CArrayFacade.class, CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'imat'</li>
+	 * <li>Signature: 'float[4][4]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__imat = new long[]{624, 796};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parentinv'.
@@ -1362,7 +1386,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parentinv = new long[]{624, 796};
+	public static final long[] __DNA__FIELD__parentinv = new long[]{688, 860};
 
 	/**
 	 * Field descriptor (offset) for struct member 'constinv'.
@@ -1387,37 +1411,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__constinv = new long[]{688, 860};
-
-	/**
-	 * Field descriptor (offset) for struct member 'imat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend</h4>
-	 * inverse matrix of 'obmat' for any other use than rendering! 
-	 * 							note: this isn't assured to be valid as with 'obmat',
-	 * 	                     	before using this value you should do...
-	 * 	                    	invert_m4_m4(ob->imat, ob->obmat);
-	 * <h4>Blender Source Code</h4>
-	 * <p> Inverse matrix of 'obmat' for any other use than rendering!</p><p><h2>Note</h2><p><code></code>  </p> this isn't assured to be valid as with 'obmat', before using this value you should do: invert_m4_m4(ob->imat, ob->obmat) 
-	 * 
-	 * </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * BlenderObject blenderobject = ...;
-	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__imat);
-	 * CPointer&lt;CArrayFacade&lt;CArrayFacade&lt;Float&gt;&gt;&gt; p_imat = p.cast(new Class[]{CArrayFacade.class, CArrayFacade.class, Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'imat'</li>
-	 * <li>Signature: 'float[4][4]'</li>
-	 * <li>Actual Size (32bit/64bit): 64/64</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__imat = new long[]{752, 924};
+	public static final long[] __DNA__FIELD__constinv = new long[]{752, 924};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lay'.
@@ -5032,8 +5026,6 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * final worldspace matrix with constraints & animsys applied
-	 * <h4>Blender Source Code</h4>
-	 * <p> Final world-space matrix with constraints & animsys applied. </p>
 	 * @see #__DNA__FIELD__obmat
 	 */
 	
@@ -5056,8 +5048,6 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * final worldspace matrix with constraints & animsys applied
-	 * <h4>Blender Source Code</h4>
-	 * <p> Final world-space matrix with constraints & animsys applied. </p>
 	 * @see #__DNA__FIELD__obmat
 	 */
 	
@@ -5079,6 +5069,59 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'imat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend</h4>
+	 * inverse matrix of 'obmat' for any other use than rendering! 
+	 * 							note: this isn't assured to be valid as with 'obmat',
+	 * 	                     	before using this value you should do...
+	 * 	                    	invert_m4_m4(ob->imat, ob->obmat);
+	 * @see #__DNA__FIELD__imat
+	 */
+	
+	public CArrayFacade<CArrayFacade<Float>> getImat() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{CArrayFacade.class, Float.class};
+		int[] __dna__dimensions = new int[]{
+			4,
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 796, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 624, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'imat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend</h4>
+	 * inverse matrix of 'obmat' for any other use than rendering! 
+	 * 							note: this isn't assured to be valid as with 'obmat',
+	 * 	                     	before using this value you should do...
+	 * 	                    	invert_m4_m4(ob->imat, ob->obmat);
+	 * @see #__DNA__FIELD__imat
+	 */
+	
+	public void setImat(CArrayFacade<CArrayFacade<Float>> imat) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 796;
+		} else {
+			__dna__offset = 624;
+		}
+		if (__io__equals(imat, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, imat)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, imat);
+		} else {
+			__io__generic__copy( getImat(), imat);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'parentinv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
@@ -5096,9 +5139,9 @@ public class BlenderObject extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 796, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 860, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 624, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 688, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5116,9 +5159,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 796;
+			__dna__offset = 860;
 		} else {
-			__dna__offset = 624;
+			__dna__offset = 688;
 		}
 		if (__io__equals(parentinv, __io__address + __dna__offset)) {
 			return;
@@ -5147,9 +5190,9 @@ public class BlenderObject extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 860, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 924, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 688, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 752, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5167,9 +5210,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 860;
+			__dna__offset = 924;
 		} else {
-			__dna__offset = 688;
+			__dna__offset = 752;
 		}
 		if (__io__equals(constinv, __io__address + __dna__offset)) {
 			return;
@@ -5177,67 +5220,6 @@ public class BlenderObject extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, constinv);
 		} else {
 			__io__generic__copy( getConstinv(), constinv);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'imat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend</h4>
-	 * inverse matrix of 'obmat' for any other use than rendering! 
-	 * 							note: this isn't assured to be valid as with 'obmat',
-	 * 	                     	before using this value you should do...
-	 * 	                    	invert_m4_m4(ob->imat, ob->obmat);
-	 * <h4>Blender Source Code</h4>
-	 * <p> Inverse matrix of 'obmat' for any other use than rendering!</p><p><h2>Note</h2><p><code></code>  </p> this isn't assured to be valid as with 'obmat', before using this value you should do: invert_m4_m4(ob->imat, ob->obmat) 
-	 * 
-	 * </p>
-	 * @see #__DNA__FIELD__imat
-	 */
-	
-	public CArrayFacade<CArrayFacade<Float>> getImat() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{CArrayFacade.class, Float.class};
-		int[] __dna__dimensions = new int[]{
-			4,
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 924, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 752, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'imat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend</h4>
-	 * inverse matrix of 'obmat' for any other use than rendering! 
-	 * 							note: this isn't assured to be valid as with 'obmat',
-	 * 	                     	before using this value you should do...
-	 * 	                    	invert_m4_m4(ob->imat, ob->obmat);
-	 * <h4>Blender Source Code</h4>
-	 * <p> Inverse matrix of 'obmat' for any other use than rendering!</p><p><h2>Note</h2><p><code></code>  </p> this isn't assured to be valid as with 'obmat', before using this value you should do: invert_m4_m4(ob->imat, ob->obmat) 
-	 * 
-	 * </p>
-	 * @see #__DNA__FIELD__imat
-	 */
-	
-	public void setImat(CArrayFacade<CArrayFacade<Float>> imat) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 924;
-		} else {
-			__dna__offset = 752;
-		}
-		if (__io__equals(imat, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, imat)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, imat);
-		} else {
-			__io__generic__copy( getImat(), imat);
 		}
 	}
 

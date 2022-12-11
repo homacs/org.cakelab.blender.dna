@@ -19,7 +19,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> #endif </p><p> reports need to be before {@link wmWindowManager}  Window-manager is saved, tag WMAN. </p>
  */
 
-@CMetaData(size32=1284, size64=1448)
+@CMetaData(size32=1288, size64=1456)
 public class wmWindowManager extends CFacade {
 
 	/**
@@ -30,7 +30,7 @@ public class wmWindowManager extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 781;
+	public static final int __DNA__SDNA_INDEX = 785;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -239,7 +239,9 @@ public class wmWindowManager extends CFacade {
 	 * Field descriptor (offset) for struct member 'notifier_queue'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Refresh/redraw #wmNotifier structs. </p>
+	 * <p> Refresh/redraw #wmNotifier structs. <h2>Note</h2><p> Once in the queue, notifiers should be considered read-only. With the exception of clearing notifiers for data which has been removed, see: #NOTE_CATEGORY_TAG_CLEARED. </p> Once in the queue, notifiers should be considered read-only. With the exception of clearing notifiers for data which has been removed, see: #NOTE_CATEGORY_TAG_CLEARED. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -257,6 +259,31 @@ public class wmWindowManager extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__notifier_queue = new long[]{184, 248};
+
+	/**
+	 * Field descriptor (offset) for struct member 'notifier_queue_set'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> For duplicate detection. <h2>Note</h2><p><code></code>  adding/removing elements must also update this set. </p> keep in sync with notifier_queue adding/removing elements must also update this set. 
+	 * 
+	 * </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * wmWindowManager wmwindowmanager = ...;
+	 * CPointer&lt;Object&gt; p = wmwindowmanager.__dna__addressof(wmWindowManager.__DNA__FIELD__notifier_queue_set);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_notifier_queue_set = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'notifier_queue_set'</li>
+	 * <li>Signature: 'GSet*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__notifier_queue_set = new long[]{192, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'reports'.
@@ -279,7 +306,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 28/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__reports = new long[]{192, 264};
+	public static final long[] __DNA__FIELD__reports = new long[]{196, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'jobs'.
@@ -302,7 +329,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__jobs = new long[]{220, 304};
+	public static final long[] __DNA__FIELD__jobs = new long[]{224, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'paintcursors'.
@@ -325,7 +352,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__paintcursors = new long[]{228, 320};
+	public static final long[] __DNA__FIELD__paintcursors = new long[]{232, 328};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drags'.
@@ -348,7 +375,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drags = new long[]{236, 336};
+	public static final long[] __DNA__FIELD__drags = new long[]{240, 344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyconfigs'.
@@ -371,7 +398,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keyconfigs = new long[]{244, 352};
+	public static final long[] __DNA__FIELD__keyconfigs = new long[]{248, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defaultconf'.
@@ -394,7 +421,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defaultconf = new long[]{252, 368};
+	public static final long[] __DNA__FIELD__defaultconf = new long[]{256, 376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'addonconf'.
@@ -417,7 +444,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__addonconf = new long[]{256, 376};
+	public static final long[] __DNA__FIELD__addonconf = new long[]{260, 384};
 
 	/**
 	 * Field descriptor (offset) for struct member 'userconf'.
@@ -440,7 +467,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__userconf = new long[]{260, 384};
+	public static final long[] __DNA__FIELD__userconf = new long[]{264, 392};
 
 	/**
 	 * Field descriptor (offset) for struct member 'timers'.
@@ -463,7 +490,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__timers = new long[]{264, 392};
+	public static final long[] __DNA__FIELD__timers = new long[]{268, 400};
 
 	/**
 	 * Field descriptor (offset) for struct member 'autosavetimer'.
@@ -486,7 +513,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__autosavetimer = new long[]{272, 408};
+	public static final long[] __DNA__FIELD__autosavetimer = new long[]{276, 416};
 
 	/**
 	 * Field descriptor (offset) for struct member 'undo_stack'.
@@ -509,7 +536,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__undo_stack = new long[]{276, 416};
+	public static final long[] __DNA__FIELD__undo_stack = new long[]{280, 424};
 
 	/**
 	 * Field descriptor (offset) for struct member 'is_interface_locked'.
@@ -532,7 +559,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__is_interface_locked = new long[]{280, 424};
+	public static final long[] __DNA__FIELD__is_interface_locked = new long[]{284, 432};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -552,7 +579,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{281, 425};
+	public static final long[] __DNA__FIELD___pad = new long[]{285, 433};
 
 	/**
 	 * Field descriptor (offset) for struct member 'message_bus'.
@@ -572,7 +599,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__message_bus = new long[]{288, 432};
+	public static final long[] __DNA__FIELD__message_bus = new long[]{292, 440};
 
 	/**
 	 * Field descriptor (offset) for struct member 'xr'.
@@ -595,7 +622,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 992/1008</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__xr = new long[]{292, 440};
+	public static final long[] __DNA__FIELD__xr = new long[]{296, 448};
 
 	public wmWindowManager(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -939,7 +966,9 @@ public class wmWindowManager extends CFacade {
 	 * Get method for struct member 'notifier_queue'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Refresh/redraw #wmNotifier structs. </p>
+	 * <p> Refresh/redraw #wmNotifier structs. <h2>Note</h2><p> Once in the queue, notifiers should be considered read-only. With the exception of clearing notifiers for data which has been removed, see: #NOTE_CATEGORY_TAG_CLEARED. </p> Once in the queue, notifiers should be considered read-only. With the exception of clearing notifiers for data which has been removed, see: #NOTE_CATEGORY_TAG_CLEARED. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__notifier_queue
 	 */
 	
@@ -956,7 +985,9 @@ public class wmWindowManager extends CFacade {
 	 * Set method for struct member 'notifier_queue'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Refresh/redraw #wmNotifier structs. </p>
+	 * <p> Refresh/redraw #wmNotifier structs. <h2>Note</h2><p> Once in the queue, notifiers should be considered read-only. With the exception of clearing notifiers for data which has been removed, see: #NOTE_CATEGORY_TAG_CLEARED. </p> Once in the queue, notifiers should be considered read-only. With the exception of clearing notifiers for data which has been removed, see: #NOTE_CATEGORY_TAG_CLEARED. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__notifier_queue
 	 */
 	
@@ -978,6 +1009,48 @@ public class wmWindowManager extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'notifier_queue_set'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> For duplicate detection. <h2>Note</h2><p><code></code>  adding/removing elements must also update this set. </p> keep in sync with notifier_queue adding/removing elements must also update this set. 
+	 * 
+	 * </p>
+	 * @see #__DNA__FIELD__notifier_queue_set
+	 */
+	
+	public CPointer<Object> getNotifier_queue_set() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 264);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'notifier_queue_set'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> For duplicate detection. <h2>Note</h2><p><code></code>  adding/removing elements must also update this set. </p> keep in sync with notifier_queue adding/removing elements must also update this set. 
+	 * 
+	 * </p>
+	 * @see #__DNA__FIELD__notifier_queue_set
+	 */
+	
+	public void setNotifier_queue_set(CPointer<Object> notifier_queue_set) throws IOException
+	{
+		long __address = ((notifier_queue_set == null) ? 0 : notifier_queue_set.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 264, __address);
+		} else {
+			__io__block.writeLong(__io__address + 192, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'reports'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -988,9 +1061,9 @@ public class wmWindowManager extends CFacade {
 	public ReportList getReports() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ReportList(__io__address + 264, __io__block, __io__blockTable);
+			return new ReportList(__io__address + 272, __io__block, __io__blockTable);
 		} else {
-			return new ReportList(__io__address + 192, __io__block, __io__blockTable);
+			return new ReportList(__io__address + 196, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1006,9 +1079,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 264;
+			__dna__offset = 272;
 		} else {
-			__dna__offset = 192;
+			__dna__offset = 196;
 		}
 		if (__io__equals(reports, __io__address + __dna__offset)) {
 			return;
@@ -1030,9 +1103,9 @@ public class wmWindowManager extends CFacade {
 	public ListBase getJobs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 304, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 312, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 220, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 224, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1048,9 +1121,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 304;
+			__dna__offset = 312;
 		} else {
-			__dna__offset = 220;
+			__dna__offset = 224;
 		}
 		if (__io__equals(jobs, __io__address + __dna__offset)) {
 			return;
@@ -1072,9 +1145,9 @@ public class wmWindowManager extends CFacade {
 	public ListBase getPaintcursors() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 320, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 328, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 228, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 232, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1090,9 +1163,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 320;
+			__dna__offset = 328;
 		} else {
-			__dna__offset = 228;
+			__dna__offset = 232;
 		}
 		if (__io__equals(paintcursors, __io__address + __dna__offset)) {
 			return;
@@ -1114,9 +1187,9 @@ public class wmWindowManager extends CFacade {
 	public ListBase getDrags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 336, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 344, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 236, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 240, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1132,9 +1205,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 336;
+			__dna__offset = 344;
 		} else {
-			__dna__offset = 236;
+			__dna__offset = 240;
 		}
 		if (__io__equals(drags, __io__address + __dna__offset)) {
 			return;
@@ -1156,9 +1229,9 @@ public class wmWindowManager extends CFacade {
 	public ListBase getKeyconfigs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 352, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 360, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 244, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 248, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1174,9 +1247,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 352;
+			__dna__offset = 360;
 		} else {
-			__dna__offset = 244;
+			__dna__offset = 248;
 		}
 		if (__io__equals(keyconfigs, __io__address + __dna__offset)) {
 			return;
@@ -1199,9 +1272,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 368);
+			__dna__targetAddress = __io__block.readLong(__io__address + 376);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 252);
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{wmKeyConfig.class};
 		return new CPointer<wmKeyConfig>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, wmKeyConfig.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1219,9 +1292,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __address = ((defaultconf == null) ? 0 : defaultconf.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 368, __address);
+			__io__block.writeLong(__io__address + 376, __address);
 		} else {
-			__io__block.writeLong(__io__address + 252, __address);
+			__io__block.writeLong(__io__address + 256, __address);
 		}
 	}
 
@@ -1237,9 +1310,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 376);
+			__dna__targetAddress = __io__block.readLong(__io__address + 384);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 260);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{wmKeyConfig.class};
 		return new CPointer<wmKeyConfig>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, wmKeyConfig.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1257,9 +1330,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __address = ((addonconf == null) ? 0 : addonconf.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 376, __address);
+			__io__block.writeLong(__io__address + 384, __address);
 		} else {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 260, __address);
 		}
 	}
 
@@ -1275,9 +1348,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 384);
+			__dna__targetAddress = __io__block.readLong(__io__address + 392);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 260);
+			__dna__targetAddress = __io__block.readLong(__io__address + 264);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{wmKeyConfig.class};
 		return new CPointer<wmKeyConfig>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, wmKeyConfig.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1295,9 +1368,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __address = ((userconf == null) ? 0 : userconf.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 384, __address);
+			__io__block.writeLong(__io__address + 392, __address);
 		} else {
-			__io__block.writeLong(__io__address + 260, __address);
+			__io__block.writeLong(__io__address + 264, __address);
 		}
 	}
 
@@ -1312,9 +1385,9 @@ public class wmWindowManager extends CFacade {
 	public ListBase getTimers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 392, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 400, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 264, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 268, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1330,9 +1403,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 392;
+			__dna__offset = 400;
 		} else {
-			__dna__offset = 264;
+			__dna__offset = 268;
 		}
 		if (__io__equals(timers, __io__address + __dna__offset)) {
 			return;
@@ -1355,9 +1428,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 408);
+			__dna__targetAddress = __io__block.readLong(__io__address + 416);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 276);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1375,9 +1448,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __address = ((autosavetimer == null) ? 0 : autosavetimer.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 408, __address);
+			__io__block.writeLong(__io__address + 416, __address);
 		} else {
-			__io__block.writeLong(__io__address + 272, __address);
+			__io__block.writeLong(__io__address + 276, __address);
 		}
 	}
 
@@ -1393,9 +1466,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 416);
+			__dna__targetAddress = __io__block.readLong(__io__address + 424);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 276);
+			__dna__targetAddress = __io__block.readLong(__io__address + 280);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1413,9 +1486,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __address = ((undo_stack == null) ? 0 : undo_stack.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 416, __address);
+			__io__block.writeLong(__io__address + 424, __address);
 		} else {
-			__io__block.writeLong(__io__address + 276, __address);
+			__io__block.writeLong(__io__address + 280, __address);
 		}
 	}
 
@@ -1430,9 +1503,9 @@ public class wmWindowManager extends CFacade {
 	public byte getIs_interface_locked() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 424);
+			return __io__block.readByte(__io__address + 432);
 		} else {
-			return __io__block.readByte(__io__address + 280);
+			return __io__block.readByte(__io__address + 284);
 		}
 	}
 
@@ -1447,9 +1520,9 @@ public class wmWindowManager extends CFacade {
 	public void setIs_interface_locked(byte is_interface_locked) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 424, is_interface_locked);
+			__io__block.writeByte(__io__address + 432, is_interface_locked);
 		} else {
-			__io__block.writeByte(__io__address + 280, is_interface_locked);
+			__io__block.writeByte(__io__address + 284, is_interface_locked);
 		}
 	}
 
@@ -1465,9 +1538,9 @@ public class wmWindowManager extends CFacade {
 			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 425, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 433, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 281, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 285, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1480,9 +1553,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 425;
+			__dna__offset = 433;
 		} else {
-			__dna__offset = 281;
+			__dna__offset = 285;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -1502,9 +1575,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 432);
+			__dna__targetAddress = __io__block.readLong(__io__address + 440);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 288);
+			__dna__targetAddress = __io__block.readLong(__io__address + 292);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1519,9 +1592,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __address = ((message_bus == null) ? 0 : message_bus.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 432, __address);
+			__io__block.writeLong(__io__address + 440, __address);
 		} else {
-			__io__block.writeLong(__io__address + 288, __address);
+			__io__block.writeLong(__io__address + 292, __address);
 		}
 	}
 
@@ -1536,9 +1609,9 @@ public class wmWindowManager extends CFacade {
 	public wmXrData getXr() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new wmXrData(__io__address + 440, __io__block, __io__blockTable);
+			return new wmXrData(__io__address + 448, __io__block, __io__blockTable);
 		} else {
-			return new wmXrData(__io__address + 292, __io__block, __io__blockTable);
+			return new wmXrData(__io__address + 296, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1554,9 +1627,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 440;
+			__dna__offset = 448;
 		} else {
-			__dna__offset = 292;
+			__dna__offset = 296;
 		}
 		if (__io__equals(xr, __io__address + __dna__offset)) {
 			return;

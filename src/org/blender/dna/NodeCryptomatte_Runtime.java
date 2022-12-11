@@ -57,7 +57,7 @@ public class NodeCryptomatte_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'add'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Temp storage for the cryptomatte picker. </p>
+	 * <p> Temp storage for the crypto-matte picker. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -150,7 +150,7 @@ public class NodeCryptomatte_Runtime extends CFacade {
 	 * Get method for struct member 'add'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Temp storage for the cryptomatte picker. </p>
+	 * <p> Temp storage for the crypto-matte picker. </p>
 	 * @see #__DNA__FIELD__add
 	 */
 	
@@ -171,7 +171,7 @@ public class NodeCryptomatte_Runtime extends CFacade {
 	 * Set method for struct member 'add'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Temp storage for the cryptomatte picker. </p>
+	 * <p> Temp storage for the crypto-matte picker. </p>
 	 * @see #__DNA__FIELD__add
 	 */
 	

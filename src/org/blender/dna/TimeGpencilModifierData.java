@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=188, size64=200)
+@CMetaData(size32=204, size64=224)
 public class TimeGpencilModifierData extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class TimeGpencilModifierData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 163;
+	public static final int __DNA__SDNA_INDEX = 164;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -51,6 +51,26 @@ public class TimeGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
 
 	/**
+	 * Field descriptor (offset) for struct member 'material'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TimeGpencilModifierData timegpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = timegpencilmodifierdata.__dna__addressof(TimeGpencilModifierData.__DNA__FIELD__material);
+	 * CPointer&lt;CPointer&lt;Material&gt;&gt; p_material = p.cast(new Class[]{CPointer.class, Material.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'material'</li>
+	 * <li>Signature: 'Material*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__material = new long[]{92, 104};
+
+	/**
 	 * Field descriptor (offset) for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -71,7 +91,7 @@ public class TimeGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layername = new long[]{92, 104};
+	public static final long[] __DNA__FIELD__layername = new long[]{96, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
@@ -94,7 +114,7 @@ public class TimeGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer_pass = new long[]{156, 168};
+	public static final long[] __DNA__FIELD__layer_pass = new long[]{160, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -117,7 +137,7 @@ public class TimeGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{160, 172};
+	public static final long[] __DNA__FIELD__flag = new long[]{164, 180};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
@@ -137,7 +157,7 @@ public class TimeGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset = new long[]{164, 176};
+	public static final long[] __DNA__FIELD__offset = new long[]{168, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'frame_scale'.
@@ -160,7 +180,7 @@ public class TimeGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__frame_scale = new long[]{168, 180};
+	public static final long[] __DNA__FIELD__frame_scale = new long[]{172, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
@@ -180,7 +200,7 @@ public class TimeGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{172, 184};
+	public static final long[] __DNA__FIELD__mode = new long[]{176, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sfra'.
@@ -203,7 +223,7 @@ public class TimeGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sfra = new long[]{176, 188};
+	public static final long[] __DNA__FIELD__sfra = new long[]{180, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'efra'.
@@ -223,7 +243,7 @@ public class TimeGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__efra = new long[]{180, 192};
+	public static final long[] __DNA__FIELD__efra = new long[]{184, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -243,7 +263,67 @@ public class TimeGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{184, 196};
+	public static final long[] __DNA__FIELD___pad = new long[]{188, 204};
+
+	/**
+	 * Field descriptor (offset) for struct member 'segments'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TimeGpencilModifierData timegpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = timegpencilmodifierdata.__dna__addressof(TimeGpencilModifierData.__DNA__FIELD__segments);
+	 * CPointer&lt;CPointer&lt;TimeGpencilModifierSegment&gt;&gt; p_segments = p.cast(new Class[]{CPointer.class, TimeGpencilModifierSegment.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'segments'</li>
+	 * <li>Signature: 'TimeGpencilModifierSegment*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__segments = new long[]{192, 208};
+
+	/**
+	 * Field descriptor (offset) for struct member 'segments_len'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TimeGpencilModifierData timegpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = timegpencilmodifierdata.__dna__addressof(TimeGpencilModifierData.__DNA__FIELD__segments_len);
+	 * CPointer&lt;Integer&gt; p_segments_len = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'segments_len'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__segments_len = new long[]{196, 216};
+
+	/**
+	 * Field descriptor (offset) for struct member 'segment_active_index'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TimeGpencilModifierData timegpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = timegpencilmodifierdata.__dna__addressof(TimeGpencilModifierData.__DNA__FIELD__segment_active_index);
+	 * CPointer&lt;Integer&gt; p_segment_active_index = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'segment_active_index'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__segment_active_index = new long[]{200, 220};
 
 	public TimeGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -290,6 +370,38 @@ public class TimeGpencilModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'material'.
+	 * @see #__DNA__FIELD__material
+	 */
+	
+	public CPointer<Material> getMaterial() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 92);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Material.class};
+		return new CPointer<Material>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Material.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'material'.
+	 * @see #__DNA__FIELD__material
+	 */
+	
+	public void setMaterial(CPointer<Material> material) throws IOException
+	{
+		long __address = ((material == null) ? 0 : material.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 104, __address);
+		} else {
+			__io__block.writeLong(__io__address + 92, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -304,9 +416,9 @@ public class TimeGpencilModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -322,9 +434,9 @@ public class TimeGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 104;
+			__dna__offset = 112;
 		} else {
-			__dna__offset = 92;
+			__dna__offset = 96;
 		}
 		if (__io__equals(layername, __io__address + __dna__offset)) {
 			return;
@@ -346,9 +458,9 @@ public class TimeGpencilModifierData extends CFacade {
 	public int getLayer_pass() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 168);
+			return __io__block.readInt(__io__address + 176);
 		} else {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 160);
 		}
 	}
 
@@ -363,9 +475,9 @@ public class TimeGpencilModifierData extends CFacade {
 	public void setLayer_pass(int layer_pass) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 168, layer_pass);
+			__io__block.writeInt(__io__address + 176, layer_pass);
 		} else {
-			__io__block.writeInt(__io__address + 156, layer_pass);
+			__io__block.writeInt(__io__address + 160, layer_pass);
 		}
 	}
 
@@ -380,9 +492,9 @@ public class TimeGpencilModifierData extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 172);
+			return __io__block.readInt(__io__address + 180);
 		} else {
-			return __io__block.readInt(__io__address + 160);
+			return __io__block.readInt(__io__address + 164);
 		}
 	}
 
@@ -397,9 +509,9 @@ public class TimeGpencilModifierData extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 172, flag);
+			__io__block.writeInt(__io__address + 180, flag);
 		} else {
-			__io__block.writeInt(__io__address + 160, flag);
+			__io__block.writeInt(__io__address + 164, flag);
 		}
 	}
 
@@ -411,9 +523,9 @@ public class TimeGpencilModifierData extends CFacade {
 	public int getOffset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 184);
 		} else {
-			return __io__block.readInt(__io__address + 164);
+			return __io__block.readInt(__io__address + 168);
 		}
 	}
 
@@ -425,9 +537,9 @@ public class TimeGpencilModifierData extends CFacade {
 	public void setOffset(int offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 176, offset);
+			__io__block.writeInt(__io__address + 184, offset);
 		} else {
-			__io__block.writeInt(__io__address + 164, offset);
+			__io__block.writeInt(__io__address + 168, offset);
 		}
 	}
 
@@ -442,9 +554,9 @@ public class TimeGpencilModifierData extends CFacade {
 	public float getFrame_scale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readFloat(__io__address + 188);
 		} else {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 172);
 		}
 	}
 
@@ -459,9 +571,9 @@ public class TimeGpencilModifierData extends CFacade {
 	public void setFrame_scale(float frame_scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 180, frame_scale);
+			__io__block.writeFloat(__io__address + 188, frame_scale);
 		} else {
-			__io__block.writeFloat(__io__address + 168, frame_scale);
+			__io__block.writeFloat(__io__address + 172, frame_scale);
 		}
 	}
 
@@ -473,9 +585,9 @@ public class TimeGpencilModifierData extends CFacade {
 	public int getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 184);
+			return __io__block.readInt(__io__address + 192);
 		} else {
-			return __io__block.readInt(__io__address + 172);
+			return __io__block.readInt(__io__address + 176);
 		}
 	}
 
@@ -487,9 +599,9 @@ public class TimeGpencilModifierData extends CFacade {
 	public void setMode(int mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 184, mode);
+			__io__block.writeInt(__io__address + 192, mode);
 		} else {
-			__io__block.writeInt(__io__address + 172, mode);
+			__io__block.writeInt(__io__address + 176, mode);
 		}
 	}
 
@@ -504,9 +616,9 @@ public class TimeGpencilModifierData extends CFacade {
 	public int getSfra() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 188);
+			return __io__block.readInt(__io__address + 196);
 		} else {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 180);
 		}
 	}
 
@@ -521,9 +633,9 @@ public class TimeGpencilModifierData extends CFacade {
 	public void setSfra(int sfra) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 188, sfra);
+			__io__block.writeInt(__io__address + 196, sfra);
 		} else {
-			__io__block.writeInt(__io__address + 176, sfra);
+			__io__block.writeInt(__io__address + 180, sfra);
 		}
 	}
 
@@ -535,9 +647,9 @@ public class TimeGpencilModifierData extends CFacade {
 	public int getEfra() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 192);
+			return __io__block.readInt(__io__address + 200);
 		} else {
-			return __io__block.readInt(__io__address + 180);
+			return __io__block.readInt(__io__address + 184);
 		}
 	}
 
@@ -549,9 +661,9 @@ public class TimeGpencilModifierData extends CFacade {
 	public void setEfra(int efra) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 192, efra);
+			__io__block.writeInt(__io__address + 200, efra);
 		} else {
-			__io__block.writeInt(__io__address + 180, efra);
+			__io__block.writeInt(__io__address + 184, efra);
 		}
 	}
 
@@ -567,9 +679,9 @@ public class TimeGpencilModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -582,9 +694,9 @@ public class TimeGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 196;
+			__dna__offset = 204;
 		} else {
-			__dna__offset = 184;
+			__dna__offset = 188;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -592,6 +704,94 @@ public class TimeGpencilModifierData extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
 			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'segments'.
+	 * @see #__DNA__FIELD__segments
+	 */
+	
+	public CPointer<TimeGpencilModifierSegment> getSegments() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{TimeGpencilModifierSegment.class};
+		return new CPointer<TimeGpencilModifierSegment>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, TimeGpencilModifierSegment.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'segments'.
+	 * @see #__DNA__FIELD__segments
+	 */
+	
+	public void setSegments(CPointer<TimeGpencilModifierSegment> segments) throws IOException
+	{
+		long __address = ((segments == null) ? 0 : segments.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 208, __address);
+		} else {
+			__io__block.writeLong(__io__address + 192, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'segments_len'.
+	 * @see #__DNA__FIELD__segments_len
+	 */
+	
+	public int getSegments_len() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 216);
+		} else {
+			return __io__block.readInt(__io__address + 196);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'segments_len'.
+	 * @see #__DNA__FIELD__segments_len
+	 */
+	
+	public void setSegments_len(int segments_len) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 216, segments_len);
+		} else {
+			__io__block.writeInt(__io__address + 196, segments_len);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'segment_active_index'.
+	 * @see #__DNA__FIELD__segment_active_index
+	 */
+	
+	public int getSegment_active_index() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 220);
+		} else {
+			return __io__block.readInt(__io__address + 200);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'segment_active_index'.
+	 * @see #__DNA__FIELD__segment_active_index
+	 */
+	
+	public void setSegment_active_index(int segment_active_index) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 220, segment_active_index);
+		} else {
+			__io__block.writeInt(__io__address + 200, segment_active_index);
 		}
 	}
 

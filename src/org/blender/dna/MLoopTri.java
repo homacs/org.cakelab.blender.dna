@@ -23,8 +23,8 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * </p><p> Storing loop indices (instead of vertex indices) allows us to directly access UV's, vertex-colors as well as vertices. The index of the source polygon is stored as well, giving access to materials and polygon normals.</p><p><h2>Note</h2><p> This data is runtime only, never written to disk.</p> This data is runtime only, never written to disk.
  * 
- * Usage examples: <code>       material. ///accessoriginalmaterial.
- *  short short       mpoly[lt->poly].mat_nr; mat_nr=mpoly[lt->poly].mat_nr;
+ * Usage examples: <code>         value. ///accesspolygonattributevalue.
+ *        polygon_attribute[lt->poly]; Tvalue=polygon_attribute[lt->poly];
  * 
  *        locations. ///accessvertexlocations.
  *  float float       { *vtri_co[3]={
@@ -39,8 +39,8 @@ import org.cakelab.blender.nio.CPointer;
  *          mloopuv[lt->tri[1]].uv, mloopuv[lt->tri[1]].uv,
  *          mloopuv[lt->tri[2]].uv, mloopuv[lt->tri[2]].uv,
  *  }; };
- * </code> ///accessoriginalmaterial.
- * shortmat_nr=mpoly[lt->poly].mat_nr;
+ * </code> ///accesspolygonattributevalue.
+ * Tvalue=polygon_attribute[lt->poly];
  * 
  * ///accessvertexlocations.
  * float*vtri_co[3]={

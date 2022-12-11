@@ -453,7 +453,7 @@ public class BevelModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> if the MOD_BEVEL_VWEIGHT option is set, this will be the name of the vert group, MAX_VGROUP_NAME </p>
+	 * <p> if the MOD_BEVEL_VWEIGHT option is set, this will be the name of the vert group, #MAX_VGROUP_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1165,7 +1165,7 @@ public class BevelModifierData extends CFacade {
 	 * Get method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> if the MOD_BEVEL_VWEIGHT option is set, this will be the name of the vert group, MAX_VGROUP_NAME </p>
+	 * <p> if the MOD_BEVEL_VWEIGHT option is set, this will be the name of the vert group, #MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -1186,7 +1186,7 @@ public class BevelModifierData extends CFacade {
 	 * Set method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> if the MOD_BEVEL_VWEIGHT option is set, this will be the name of the vert group, MAX_VGROUP_NAME </p>
+	 * <p> if the MOD_BEVEL_VWEIGHT option is set, this will be the name of the vert group, #MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	

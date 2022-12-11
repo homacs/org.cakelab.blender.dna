@@ -32,7 +32,7 @@ public class bToolRef extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 789;
+	public static final int __DNA__SDNA_INDEX = 793;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -144,7 +144,7 @@ public class bToolRef extends CFacade {
 	 * Field descriptor (offset) for struct member 'space_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> #bToolKey (spacetype, mode), used in 'WM_api.h' </p>
+	 * <p> #bToolKey (space-type, mode), used in 'WM_api.h' </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -428,7 +428,7 @@ public class bToolRef extends CFacade {
 	 * Get method for struct member 'space_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> #bToolKey (spacetype, mode), used in 'WM_api.h' </p>
+	 * <p> #bToolKey (space-type, mode), used in 'WM_api.h' </p>
 	 * @see #__DNA__FIELD__space_type
 	 */
 	
@@ -445,7 +445,7 @@ public class bToolRef extends CFacade {
 	 * Set method for struct member 'space_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> #bToolKey (spacetype, mode), used in 'WM_api.h' </p>
+	 * <p> #bToolKey (space-type, mode), used in 'WM_api.h' </p>
 	 * @see #__DNA__FIELD__space_type
 	 */
 	

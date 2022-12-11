@@ -20,7 +20,7 @@ import org.cakelab.blender.nio.CPointer;
  *  {@link Sculpt}  {@link Sculpt} . </p>
  */
 
-@CMetaData(size32=120, size64=144)
+@CMetaData(size32=152, size64=184)
 public class Sculpt extends CFacade {
 
 	/**
@@ -31,7 +31,7 @@ public class Sculpt extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 587;
+	public static final int __DNA__SDNA_INDEX = 590;
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint'.
@@ -264,6 +264,52 @@ public class Sculpt extends CFacade {
 	public static final long[] __DNA__FIELD__detail_percent = new long[]{108, 128};
 
 	/**
+	 * Field descriptor (offset) for struct member 'automasking_cavity_blur_steps'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The number of times the cavity mask is blurred
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sculpt sculpt = ...;
+	 * CPointer&lt;Object&gt; p = sculpt.__dna__addressof(Sculpt.__DNA__FIELD__automasking_cavity_blur_steps);
+	 * CPointer&lt;Integer&gt; p_automasking_cavity_blur_steps = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'automasking_cavity_blur_steps'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__automasking_cavity_blur_steps = new long[]{112, 132};
+
+	/**
+	 * Field descriptor (offset) for struct member 'automasking_cavity_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The contrast of the cavity mask
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sculpt sculpt = ...;
+	 * CPointer&lt;Object&gt; p = sculpt.__dna__addressof(Sculpt.__DNA__FIELD__automasking_cavity_factor);
+	 * CPointer&lt;Float&gt; p_automasking_cavity_factor = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'automasking_cavity_factor'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__automasking_cavity_factor = new long[]{116, 136};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -281,7 +327,147 @@ public class Sculpt extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{112, 132};
+	public static final long[] __DNA__FIELD___pad = new long[]{120, 140};
+
+	/**
+	 * Field descriptor (offset) for struct member 'automasking_start_normal_limit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The range of angles that will be affected
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sculpt sculpt = ...;
+	 * CPointer&lt;Object&gt; p = sculpt.__dna__addressof(Sculpt.__DNA__FIELD__automasking_start_normal_limit);
+	 * CPointer&lt;Float&gt; p_automasking_start_normal_limit = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'automasking_start_normal_limit'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__automasking_start_normal_limit = new long[]{124, 144};
+
+	/**
+	 * Field descriptor (offset) for struct member 'automasking_start_normal_falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Extend the angular range with a falloff gradient
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sculpt sculpt = ...;
+	 * CPointer&lt;Object&gt; p = sculpt.__dna__addressof(Sculpt.__DNA__FIELD__automasking_start_normal_falloff);
+	 * CPointer&lt;Float&gt; p_automasking_start_normal_falloff = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'automasking_start_normal_falloff'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__automasking_start_normal_falloff = new long[]{128, 148};
+
+	/**
+	 * Field descriptor (offset) for struct member 'automasking_view_normal_limit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The range of angles that will be affected
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sculpt sculpt = ...;
+	 * CPointer&lt;Object&gt; p = sculpt.__dna__addressof(Sculpt.__DNA__FIELD__automasking_view_normal_limit);
+	 * CPointer&lt;Float&gt; p_automasking_view_normal_limit = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'automasking_view_normal_limit'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__automasking_view_normal_limit = new long[]{132, 152};
+
+	/**
+	 * Field descriptor (offset) for struct member 'automasking_view_normal_falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Extend the angular range with a falloff gradient
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sculpt sculpt = ...;
+	 * CPointer&lt;Object&gt; p = sculpt.__dna__addressof(Sculpt.__DNA__FIELD__automasking_view_normal_falloff);
+	 * CPointer&lt;Float&gt; p_automasking_view_normal_falloff = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'automasking_view_normal_falloff'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__automasking_view_normal_falloff = new long[]{136, 156};
+
+	/**
+	 * Field descriptor (offset) for struct member 'automasking_cavity_curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Curve used for the sensitivity
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sculpt sculpt = ...;
+	 * CPointer&lt;Object&gt; p = sculpt.__dna__addressof(Sculpt.__DNA__FIELD__automasking_cavity_curve);
+	 * CPointer&lt;CPointer&lt;CurveMapping&gt;&gt; p_automasking_cavity_curve = p.cast(new Class[]{CPointer.class, CurveMapping.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'automasking_cavity_curve'</li>
+	 * <li>Signature: 'CurveMapping*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__automasking_cavity_curve = new long[]{140, 160};
+
+	/**
+	 * Field descriptor (offset) for struct member 'automasking_cavity_curve_op'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Curve used for the sensitivity
+	 * <h4>Blender Source Code</h4>
+	 * <p> For use by operators </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sculpt sculpt = ...;
+	 * CPointer&lt;Object&gt; p = sculpt.__dna__addressof(Sculpt.__DNA__FIELD__automasking_cavity_curve_op);
+	 * CPointer&lt;CPointer&lt;CurveMapping&gt;&gt; p_automasking_cavity_curve_op = p.cast(new Class[]{CPointer.class, CurveMapping.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'automasking_cavity_curve_op'</li>
+	 * <li>Signature: 'CurveMapping*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__automasking_cavity_curve_op = new long[]{144, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gravity_object'.
@@ -304,7 +490,7 @@ public class Sculpt extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gravity_object = new long[]{116, 136};
+	public static final long[] __DNA__FIELD__gravity_object = new long[]{148, 176};
 
 	public Sculpt(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -675,6 +861,74 @@ public class Sculpt extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'automasking_cavity_blur_steps'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The number of times the cavity mask is blurred
+	 * @see #__DNA__FIELD__automasking_cavity_blur_steps
+	 */
+	
+	public int getAutomasking_cavity_blur_steps() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 132);
+		} else {
+			return __io__block.readInt(__io__address + 112);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'automasking_cavity_blur_steps'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The number of times the cavity mask is blurred
+	 * @see #__DNA__FIELD__automasking_cavity_blur_steps
+	 */
+	
+	public void setAutomasking_cavity_blur_steps(int automasking_cavity_blur_steps) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 132, automasking_cavity_blur_steps);
+		} else {
+			__io__block.writeInt(__io__address + 112, automasking_cavity_blur_steps);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'automasking_cavity_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The contrast of the cavity mask
+	 * @see #__DNA__FIELD__automasking_cavity_factor
+	 */
+	
+	public float getAutomasking_cavity_factor() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 136);
+		} else {
+			return __io__block.readFloat(__io__address + 116);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'automasking_cavity_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The contrast of the cavity mask
+	 * @see #__DNA__FIELD__automasking_cavity_factor
+	 */
+	
+	public void setAutomasking_cavity_factor(float automasking_cavity_factor) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 136, automasking_cavity_factor);
+		} else {
+			__io__block.writeFloat(__io__address + 116, automasking_cavity_factor);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -686,9 +940,9 @@ public class Sculpt extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -701,9 +955,9 @@ public class Sculpt extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 132;
+			__dna__offset = 140;
 		} else {
-			__dna__offset = 112;
+			__dna__offset = 120;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -711,6 +965,222 @@ public class Sculpt extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
 			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'automasking_start_normal_limit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The range of angles that will be affected
+	 * @see #__DNA__FIELD__automasking_start_normal_limit
+	 */
+	
+	public float getAutomasking_start_normal_limit() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 144);
+		} else {
+			return __io__block.readFloat(__io__address + 124);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'automasking_start_normal_limit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The range of angles that will be affected
+	 * @see #__DNA__FIELD__automasking_start_normal_limit
+	 */
+	
+	public void setAutomasking_start_normal_limit(float automasking_start_normal_limit) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 144, automasking_start_normal_limit);
+		} else {
+			__io__block.writeFloat(__io__address + 124, automasking_start_normal_limit);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'automasking_start_normal_falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Extend the angular range with a falloff gradient
+	 * @see #__DNA__FIELD__automasking_start_normal_falloff
+	 */
+	
+	public float getAutomasking_start_normal_falloff() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 148);
+		} else {
+			return __io__block.readFloat(__io__address + 128);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'automasking_start_normal_falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Extend the angular range with a falloff gradient
+	 * @see #__DNA__FIELD__automasking_start_normal_falloff
+	 */
+	
+	public void setAutomasking_start_normal_falloff(float automasking_start_normal_falloff) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 148, automasking_start_normal_falloff);
+		} else {
+			__io__block.writeFloat(__io__address + 128, automasking_start_normal_falloff);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'automasking_view_normal_limit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The range of angles that will be affected
+	 * @see #__DNA__FIELD__automasking_view_normal_limit
+	 */
+	
+	public float getAutomasking_view_normal_limit() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 152);
+		} else {
+			return __io__block.readFloat(__io__address + 132);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'automasking_view_normal_limit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * The range of angles that will be affected
+	 * @see #__DNA__FIELD__automasking_view_normal_limit
+	 */
+	
+	public void setAutomasking_view_normal_limit(float automasking_view_normal_limit) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 152, automasking_view_normal_limit);
+		} else {
+			__io__block.writeFloat(__io__address + 132, automasking_view_normal_limit);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'automasking_view_normal_falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Extend the angular range with a falloff gradient
+	 * @see #__DNA__FIELD__automasking_view_normal_falloff
+	 */
+	
+	public float getAutomasking_view_normal_falloff() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 156);
+		} else {
+			return __io__block.readFloat(__io__address + 136);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'automasking_view_normal_falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * Extend the angular range with a falloff gradient
+	 * @see #__DNA__FIELD__automasking_view_normal_falloff
+	 */
+	
+	public void setAutomasking_view_normal_falloff(float automasking_view_normal_falloff) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 156, automasking_view_normal_falloff);
+		} else {
+			__io__block.writeFloat(__io__address + 136, automasking_view_normal_falloff);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'automasking_cavity_curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Curve used for the sensitivity
+	 * @see #__DNA__FIELD__automasking_cavity_curve
+	 */
+	
+	public CPointer<CurveMapping> getAutomasking_cavity_curve() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 140);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
+		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'automasking_cavity_curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Curve used for the sensitivity
+	 * @see #__DNA__FIELD__automasking_cavity_curve
+	 */
+	
+	public void setAutomasking_cavity_curve(CPointer<CurveMapping> automasking_cavity_curve) throws IOException
+	{
+		long __address = ((automasking_cavity_curve == null) ? 0 : automasking_cavity_curve.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 160, __address);
+		} else {
+			__io__block.writeLong(__io__address + 140, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'automasking_cavity_curve_op'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Curve used for the sensitivity
+	 * <h4>Blender Source Code</h4>
+	 * <p> For use by operators </p>
+	 * @see #__DNA__FIELD__automasking_cavity_curve_op
+	 */
+	
+	public CPointer<CurveMapping> getAutomasking_cavity_curve_op() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
+		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'automasking_cavity_curve_op'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API</h4>
+	 * (read-only)    Curve used for the sensitivity
+	 * <h4>Blender Source Code</h4>
+	 * <p> For use by operators </p>
+	 * @see #__DNA__FIELD__automasking_cavity_curve_op
+	 */
+	
+	public void setAutomasking_cavity_curve_op(CPointer<CurveMapping> automasking_cavity_curve_op) throws IOException
+	{
+		long __address = ((automasking_cavity_curve_op == null) ? 0 : automasking_cavity_curve_op.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 168, __address);
+		} else {
+			__io__block.writeLong(__io__address + 144, __address);
 		}
 	}
 
@@ -726,9 +1196,9 @@ public class Sculpt extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+			__dna__targetAddress = __io__block.readLong(__io__address + 148);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -746,9 +1216,9 @@ public class Sculpt extends CFacade {
 	{
 		long __address = ((gravity_object == null) ? 0 : gravity_object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		} else {
-			__io__block.writeLong(__io__address + 116, __address);
+			__io__block.writeLong(__io__address + 148, __address);
 		}
 	}
 

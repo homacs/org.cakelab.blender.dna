@@ -32,7 +32,7 @@ public class UnitSettings extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 603;
+	public static final int __DNA__SDNA_INDEX = 606;
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale_length'.

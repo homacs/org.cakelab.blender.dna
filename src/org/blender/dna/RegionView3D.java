@@ -28,7 +28,7 @@ public class RegionView3D extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 769;
+	public static final int __DNA__SDNA_INDEX = 768;
 
 	/**
 	 * Field descriptor (offset) for struct member 'winmat'.

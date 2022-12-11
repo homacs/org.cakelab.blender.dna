@@ -32,7 +32,7 @@ public class bTheme extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 744;
+	public static final int __DNA__SDNA_INDEX = 743;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

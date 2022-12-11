@@ -20,7 +20,7 @@ import org.cakelab.blender.nio.CPointer;
  *  GP Strokes Runtime temp data for {@link bGPDstroke}  </p>
  */
 
-@CMetaData(size32=152, size64=160)
+@CMetaData(size32=160, size64=168)
 public class bGPDstroke_Runtime extends CFacade {
 
 	/**
@@ -31,7 +31,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 194;
+	public static final int __DNA__SDNA_INDEX = 196;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tmp_layerinfo'.
@@ -83,7 +83,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'stroke_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Vertex offset in the VBO where this stroke starts. </p>
+	 * <p> Triangle offset in the IBO where this stroke starts. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -126,6 +126,29 @@ public class bGPDstroke_Runtime extends CFacade {
 	public static final long[] __DNA__FIELD__fill_start = new long[]{136, 136};
 
 	/**
+	 * Field descriptor (offset) for struct member 'vertex_start'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Vertex offset in the VBO where this stroke starts. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDstroke_Runtime bgpdstroke_runtime = ...;
+	 * CPointer&lt;Object&gt; p = bgpdstroke_runtime.__dna__addressof(bGPDstroke_Runtime.__DNA__FIELD__vertex_start);
+	 * CPointer&lt;Integer&gt; p_vertex_start = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'vertex_start'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__vertex_start = new long[]{140, 140};
+
+	/**
 	 * Field descriptor (offset) for struct member 'curve_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -146,7 +169,27 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_start = new long[]{140, 140};
+	public static final long[] __DNA__FIELD__curve_start = new long[]{144, 144};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad0'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDstroke_Runtime bgpdstroke_runtime = ...;
+	 * CPointer&lt;Object&gt; p = bgpdstroke_runtime.__dna__addressof(bGPDstroke_Runtime.__DNA__FIELD___pad0);
+	 * CPointer&lt;Integer&gt; p__pad0 = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad0 = new long[]{148, 148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gps_orig'.
@@ -169,7 +212,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gps_orig = new long[]{144, 144};
+	public static final long[] __DNA__FIELD__gps_orig = new long[]{152, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -189,7 +232,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{148, 152};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{156, 160};
 
 	public bGPDstroke_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -283,7 +326,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * Get method for struct member 'stroke_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Vertex offset in the VBO where this stroke starts. </p>
+	 * <p> Triangle offset in the IBO where this stroke starts. </p>
 	 * @see #__DNA__FIELD__stroke_start
 	 */
 	
@@ -300,7 +343,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * Set method for struct member 'stroke_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Vertex offset in the VBO where this stroke starts. </p>
+	 * <p> Triangle offset in the IBO where this stroke starts. </p>
 	 * @see #__DNA__FIELD__stroke_start
 	 */
 	
@@ -348,6 +391,40 @@ public class bGPDstroke_Runtime extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'vertex_start'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Vertex offset in the VBO where this stroke starts. </p>
+	 * @see #__DNA__FIELD__vertex_start
+	 */
+	
+	public int getVertex_start() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 140);
+		} else {
+			return __io__block.readInt(__io__address + 140);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'vertex_start'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code</h4>
+	 * <p> Vertex offset in the VBO where this stroke starts. </p>
+	 * @see #__DNA__FIELD__vertex_start
+	 */
+	
+	public void setVertex_start(int vertex_start) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 140, vertex_start);
+		} else {
+			__io__block.writeInt(__io__address + 140, vertex_start);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'curve_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
@@ -358,9 +435,9 @@ public class bGPDstroke_Runtime extends CFacade {
 	public int getCurve_start() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 140);
+			return __io__block.readInt(__io__address + 144);
 		} else {
-			return __io__block.readInt(__io__address + 140);
+			return __io__block.readInt(__io__address + 144);
 		}
 	}
 
@@ -375,9 +452,37 @@ public class bGPDstroke_Runtime extends CFacade {
 	public void setCurve_start(int curve_start) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 140, curve_start);
+			__io__block.writeInt(__io__address + 144, curve_start);
 		} else {
-			__io__block.writeInt(__io__address + 140, curve_start);
+			__io__block.writeInt(__io__address + 144, curve_start);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public int get_pad0() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 148);
+		} else {
+			return __io__block.readInt(__io__address + 148);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public void set_pad0(int _pad0) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 148, _pad0);
+		} else {
+			__io__block.writeInt(__io__address + 148, _pad0);
 		}
 	}
 
@@ -393,9 +498,9 @@ public class bGPDstroke_Runtime extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bGPDstroke.class};
 		return new CPointer<bGPDstroke>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPDstroke.__DNA__SDNA_INDEX), __io__blockTable);
@@ -413,9 +518,9 @@ public class bGPDstroke_Runtime extends CFacade {
 	{
 		long __address = ((gps_orig == null) ? 0 : gps_orig.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		}
 	}
 
@@ -428,9 +533,9 @@ public class bGPDstroke_Runtime extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 148);
+			__dna__targetAddress = __io__block.readLong(__io__address + 156);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -445,9 +550,9 @@ public class bGPDstroke_Runtime extends CFacade {
 	{
 		long __address = ((_pad2 == null) ? 0 : _pad2.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		} else {
-			__io__block.writeLong(__io__address + 148, __address);
+			__io__block.writeLong(__io__address + 156, __address);
 		}
 	}
 

@@ -30,7 +30,7 @@ public class RigidBodyWorld_Shared extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 565;
+	public static final int __DNA__SDNA_INDEX = 568;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pointcache'.

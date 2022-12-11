@@ -27,7 +27,7 @@ public class FFMpegCodecData extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 570;
+	public static final int __DNA__SDNA_INDEX = 573;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.

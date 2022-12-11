@@ -28,7 +28,7 @@ public class ImageTile_Runtime extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 210;
+	public static final int __DNA__SDNA_INDEX = 212;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tilearray_layer'.

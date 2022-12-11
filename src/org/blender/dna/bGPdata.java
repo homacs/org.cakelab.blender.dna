@@ -19,7 +19,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Grease-Pencil Annotations - 'DataBlock' </p>
  */
 
-@CMetaData(size32=484, size64=592)
+@CMetaData(size32=488, size64=600)
 public class bGPdata extends CFacade {
 
 	/**
@@ -30,7 +30,7 @@ public class bGPdata extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 203;
+	public static final int __DNA__SDNA_INDEX = 205;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -747,7 +747,7 @@ public class bGPdata extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'bGPdata_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 148/184</li>
+	 * <li>Actual Size (32bit/64bit): 152/192</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__runtime = new long[]{336, 408};

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=284, size64=328)
+@CMetaData(size32=272, size64=312)
 public class SpaceOops extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class SpaceOops extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 673;
+	public static final int __DNA__SDNA_INDEX = 676;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -231,26 +231,6 @@ public class SpaceOops extends CFacade {
 	public static final long[] __DNA__FIELD__search_string = new long[]{180, 216};
 
 	/**
-	 * Field descriptor (offset) for struct member 'search_tse'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceOops spaceoops = ...;
-	 * CPointer&lt;Object&gt; p = spaceoops.__dna__addressof(SpaceOops.__DNA__FIELD__search_tse);
-	 * CPointer&lt;TreeStoreElem&gt; p_search_tse = p.cast(new Class[]{TreeStoreElem.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'search_tse'</li>
-	 * <li>Signature: 'TreeStoreElem'</li>
-	 * <li>Actual Size (32bit/64bit): 12/16</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__search_tse = new long[]{244, 280};
-
-	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -268,7 +248,7 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{256, 296};
+	public static final long[] __DNA__FIELD__flag = new long[]{244, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'outlinevis'.
@@ -288,7 +268,7 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__outlinevis = new long[]{258, 298};
+	public static final long[] __DNA__FIELD__outlinevis = new long[]{246, 282};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lib_override_view_mode'.
@@ -308,7 +288,7 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lib_override_view_mode = new long[]{260, 300};
+	public static final long[] __DNA__FIELD__lib_override_view_mode = new long[]{248, 284};
 
 	/**
 	 * Field descriptor (offset) for struct member 'storeflag'.
@@ -328,7 +308,7 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__storeflag = new long[]{262, 302};
+	public static final long[] __DNA__FIELD__storeflag = new long[]{250, 286};
 
 	/**
 	 * Field descriptor (offset) for struct member 'search_flags'.
@@ -348,7 +328,7 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__search_flags = new long[]{264, 304};
+	public static final long[] __DNA__FIELD__search_flags = new long[]{252, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -368,7 +348,7 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{265, 305};
+	public static final long[] __DNA__FIELD___pad = new long[]{253, 289};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sync_select_dirty'.
@@ -388,7 +368,7 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sync_select_dirty = new long[]{271, 311};
+	public static final long[] __DNA__FIELD__sync_select_dirty = new long[]{259, 295};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filter'.
@@ -408,7 +388,7 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filter = new long[]{272, 312};
+	public static final long[] __DNA__FIELD__filter = new long[]{260, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filter_state'.
@@ -428,7 +408,7 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filter_state = new long[]{276, 316};
+	public static final long[] __DNA__FIELD__filter_state = new long[]{264, 300};
 
 	/**
 	 * Field descriptor (offset) for struct member 'show_restrict_flags'.
@@ -448,7 +428,7 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__show_restrict_flags = new long[]{277, 317};
+	public static final long[] __DNA__FIELD__show_restrict_flags = new long[]{265, 301};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filter_id_type'.
@@ -468,7 +448,7 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filter_id_type = new long[]{278, 318};
+	public static final long[] __DNA__FIELD__filter_id_type = new long[]{266, 302};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -488,7 +468,7 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{280, 320};
+	public static final long[] __DNA__FIELD__runtime = new long[]{268, 304};
 
 	public SpaceOops(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -839,42 +819,6 @@ public class SpaceOops extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'search_tse'.
-	 * @see #__DNA__FIELD__search_tse
-	 */
-	
-	public TreeStoreElem getSearch_tse() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return new TreeStoreElem(__io__address + 280, __io__block, __io__blockTable);
-		} else {
-			return new TreeStoreElem(__io__address + 244, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'search_tse'.
-	 * @see #__DNA__FIELD__search_tse
-	 */
-	
-	public void setSearch_tse(TreeStoreElem search_tse) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 280;
-		} else {
-			__dna__offset = 244;
-		}
-		if (__io__equals(search_tse, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, search_tse)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, search_tse);
-		} else {
-			__io__generic__copy( getSearch_tse(), search_tse);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'flag'.
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -882,9 +826,9 @@ public class SpaceOops extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 296);
+			return __io__block.readShort(__io__address + 280);
 		} else {
-			return __io__block.readShort(__io__address + 256);
+			return __io__block.readShort(__io__address + 244);
 		}
 	}
 
@@ -896,9 +840,9 @@ public class SpaceOops extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 296, flag);
+			__io__block.writeShort(__io__address + 280, flag);
 		} else {
-			__io__block.writeShort(__io__address + 256, flag);
+			__io__block.writeShort(__io__address + 244, flag);
 		}
 	}
 
@@ -910,9 +854,9 @@ public class SpaceOops extends CFacade {
 	public short getOutlinevis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 298);
+			return __io__block.readShort(__io__address + 282);
 		} else {
-			return __io__block.readShort(__io__address + 258);
+			return __io__block.readShort(__io__address + 246);
 		}
 	}
 
@@ -924,9 +868,9 @@ public class SpaceOops extends CFacade {
 	public void setOutlinevis(short outlinevis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 298, outlinevis);
+			__io__block.writeShort(__io__address + 282, outlinevis);
 		} else {
-			__io__block.writeShort(__io__address + 258, outlinevis);
+			__io__block.writeShort(__io__address + 246, outlinevis);
 		}
 	}
 
@@ -938,9 +882,9 @@ public class SpaceOops extends CFacade {
 	public short getLib_override_view_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 300);
+			return __io__block.readShort(__io__address + 284);
 		} else {
-			return __io__block.readShort(__io__address + 260);
+			return __io__block.readShort(__io__address + 248);
 		}
 	}
 
@@ -952,9 +896,9 @@ public class SpaceOops extends CFacade {
 	public void setLib_override_view_mode(short lib_override_view_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 300, lib_override_view_mode);
+			__io__block.writeShort(__io__address + 284, lib_override_view_mode);
 		} else {
-			__io__block.writeShort(__io__address + 260, lib_override_view_mode);
+			__io__block.writeShort(__io__address + 248, lib_override_view_mode);
 		}
 	}
 
@@ -966,9 +910,9 @@ public class SpaceOops extends CFacade {
 	public short getStoreflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 302);
+			return __io__block.readShort(__io__address + 286);
 		} else {
-			return __io__block.readShort(__io__address + 262);
+			return __io__block.readShort(__io__address + 250);
 		}
 	}
 
@@ -980,9 +924,9 @@ public class SpaceOops extends CFacade {
 	public void setStoreflag(short storeflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 302, storeflag);
+			__io__block.writeShort(__io__address + 286, storeflag);
 		} else {
-			__io__block.writeShort(__io__address + 262, storeflag);
+			__io__block.writeShort(__io__address + 250, storeflag);
 		}
 	}
 
@@ -994,9 +938,9 @@ public class SpaceOops extends CFacade {
 	public byte getSearch_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 304);
+			return __io__block.readByte(__io__address + 288);
 		} else {
-			return __io__block.readByte(__io__address + 264);
+			return __io__block.readByte(__io__address + 252);
 		}
 	}
 
@@ -1008,9 +952,9 @@ public class SpaceOops extends CFacade {
 	public void setSearch_flags(byte search_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 304, search_flags);
+			__io__block.writeByte(__io__address + 288, search_flags);
 		} else {
-			__io__block.writeByte(__io__address + 264, search_flags);
+			__io__block.writeByte(__io__address + 252, search_flags);
 		}
 	}
 
@@ -1026,9 +970,9 @@ public class SpaceOops extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 305, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 289, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 265, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 253, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1041,9 +985,9 @@ public class SpaceOops extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 305;
+			__dna__offset = 289;
 		} else {
-			__dna__offset = 265;
+			__dna__offset = 253;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -1062,9 +1006,9 @@ public class SpaceOops extends CFacade {
 	public byte getSync_select_dirty() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 311);
+			return __io__block.readByte(__io__address + 295);
 		} else {
-			return __io__block.readByte(__io__address + 271);
+			return __io__block.readByte(__io__address + 259);
 		}
 	}
 
@@ -1076,9 +1020,9 @@ public class SpaceOops extends CFacade {
 	public void setSync_select_dirty(byte sync_select_dirty) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 311, sync_select_dirty);
+			__io__block.writeByte(__io__address + 295, sync_select_dirty);
 		} else {
-			__io__block.writeByte(__io__address + 271, sync_select_dirty);
+			__io__block.writeByte(__io__address + 259, sync_select_dirty);
 		}
 	}
 
@@ -1090,9 +1034,9 @@ public class SpaceOops extends CFacade {
 	public int getFilter() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 312);
+			return __io__block.readInt(__io__address + 296);
 		} else {
-			return __io__block.readInt(__io__address + 272);
+			return __io__block.readInt(__io__address + 260);
 		}
 	}
 
@@ -1104,9 +1048,9 @@ public class SpaceOops extends CFacade {
 	public void setFilter(int filter) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 312, filter);
+			__io__block.writeInt(__io__address + 296, filter);
 		} else {
-			__io__block.writeInt(__io__address + 272, filter);
+			__io__block.writeInt(__io__address + 260, filter);
 		}
 	}
 
@@ -1118,9 +1062,9 @@ public class SpaceOops extends CFacade {
 	public byte getFilter_state() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 316);
+			return __io__block.readByte(__io__address + 300);
 		} else {
-			return __io__block.readByte(__io__address + 276);
+			return __io__block.readByte(__io__address + 264);
 		}
 	}
 
@@ -1132,9 +1076,9 @@ public class SpaceOops extends CFacade {
 	public void setFilter_state(byte filter_state) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 316, filter_state);
+			__io__block.writeByte(__io__address + 300, filter_state);
 		} else {
-			__io__block.writeByte(__io__address + 276, filter_state);
+			__io__block.writeByte(__io__address + 264, filter_state);
 		}
 	}
 
@@ -1146,9 +1090,9 @@ public class SpaceOops extends CFacade {
 	public byte getShow_restrict_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 317);
+			return __io__block.readByte(__io__address + 301);
 		} else {
-			return __io__block.readByte(__io__address + 277);
+			return __io__block.readByte(__io__address + 265);
 		}
 	}
 
@@ -1160,9 +1104,9 @@ public class SpaceOops extends CFacade {
 	public void setShow_restrict_flags(byte show_restrict_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 317, show_restrict_flags);
+			__io__block.writeByte(__io__address + 301, show_restrict_flags);
 		} else {
-			__io__block.writeByte(__io__address + 277, show_restrict_flags);
+			__io__block.writeByte(__io__address + 265, show_restrict_flags);
 		}
 	}
 
@@ -1174,9 +1118,9 @@ public class SpaceOops extends CFacade {
 	public short getFilter_id_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 318);
+			return __io__block.readShort(__io__address + 302);
 		} else {
-			return __io__block.readShort(__io__address + 278);
+			return __io__block.readShort(__io__address + 266);
 		}
 	}
 
@@ -1188,9 +1132,9 @@ public class SpaceOops extends CFacade {
 	public void setFilter_id_type(short filter_id_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 318, filter_id_type);
+			__io__block.writeShort(__io__address + 302, filter_id_type);
 		} else {
-			__io__block.writeShort(__io__address + 278, filter_id_type);
+			__io__block.writeShort(__io__address + 266, filter_id_type);
 		}
 	}
 
@@ -1203,9 +1147,9 @@ public class SpaceOops extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 320);
+			__dna__targetAddress = __io__block.readLong(__io__address + 304);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 280);
+			__dna__targetAddress = __io__block.readLong(__io__address + 268);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1220,9 +1164,9 @@ public class SpaceOops extends CFacade {
 	{
 		long __address = ((runtime == null) ? 0 : runtime.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 320, __address);
+			__io__block.writeLong(__io__address + 304, __address);
 		} else {
-			__io__block.writeLong(__io__address + 280, __address);
+			__io__block.writeLong(__io__address + 268, __address);
 		}
 	}
 

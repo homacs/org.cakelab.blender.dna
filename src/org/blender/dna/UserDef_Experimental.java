@@ -4,6 +4,7 @@ import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
 import org.cakelab.blender.io.dna.internal.StructDNA;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -16,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=16, size64=16)
+@CMetaData(size32=24, size64=24)
 public class UserDef_Experimental extends CFacade {
 
 	/**
@@ -27,7 +28,7 @@ public class UserDef_Experimental extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 758;
+	public static final int __DNA__SDNA_INDEX = 757;
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_undo_legacy'.
@@ -133,6 +134,26 @@ public class UserDef_Experimental extends CFacade {
 	public static final long[] __DNA__FIELD__no_asset_indexing = new long[]{4, 4};
 
 	/**
+	 * Field descriptor (offset) for struct member 'use_viewport_debug'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef_Experimental userdef_experimental = ...;
+	 * CPointer&lt;Object&gt; p = userdef_experimental.__dna__addressof(UserDef_Experimental.__DNA__FIELD__use_viewport_debug);
+	 * CPointer&lt;Byte&gt; p_use_viewport_debug = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'use_viewport_debug'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__use_viewport_debug = new long[]{5, 5};
+
+	/**
 	 * Field descriptor (offset) for struct member 'SANITIZE_AFTER_HERE'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -150,27 +171,7 @@ public class UserDef_Experimental extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__SANITIZE_AFTER_HERE = new long[]{5, 5};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad0'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * UserDef_Experimental userdef_experimental = ...;
-	 * CPointer&lt;Object&gt; p = userdef_experimental.__dna__addressof(UserDef_Experimental.__DNA__FIELD___pad0);
-	 * CPointer&lt;Byte&gt; p__pad0 = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad0'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{6, 6};
+	public static final long[] __DNA__FIELD__SANITIZE_AFTER_HERE = new long[]{6, 6};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_new_curves_tools'.
@@ -355,6 +356,46 @@ public class UserDef_Experimental extends CFacade {
 	 */
 	public static final long[] __DNA__FIELD__use_draw_manager_acquire_lock = new long[]{15, 15};
 
+	/**
+	 * Field descriptor (offset) for struct member 'use_realtime_compositor'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef_Experimental userdef_experimental = ...;
+	 * CPointer&lt;Object&gt; p = userdef_experimental.__dna__addressof(UserDef_Experimental.__DNA__FIELD__use_realtime_compositor);
+	 * CPointer&lt;Byte&gt; p_use_realtime_compositor = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'use_realtime_compositor'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__use_realtime_compositor = new long[]{16, 16};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef_Experimental userdef_experimental = ...;
+	 * CPointer&lt;Object&gt; p = userdef_experimental.__dna__addressof(UserDef_Experimental.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{17, 17};
+
 	public UserDef_Experimental(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
 	}
@@ -510,6 +551,34 @@ public class UserDef_Experimental extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'use_viewport_debug'.
+	 * @see #__DNA__FIELD__use_viewport_debug
+	 */
+	
+	public byte getUse_viewport_debug() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 5);
+		} else {
+			return __io__block.readByte(__io__address + 5);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'use_viewport_debug'.
+	 * @see #__DNA__FIELD__use_viewport_debug
+	 */
+	
+	public void setUse_viewport_debug(byte use_viewport_debug) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 5, use_viewport_debug);
+		} else {
+			__io__block.writeByte(__io__address + 5, use_viewport_debug);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'SANITIZE_AFTER_HERE'.
 	 * @see #__DNA__FIELD__SANITIZE_AFTER_HERE
 	 */
@@ -517,9 +586,9 @@ public class UserDef_Experimental extends CFacade {
 	public byte getSANITIZE_AFTER_HERE() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 5);
+			return __io__block.readByte(__io__address + 6);
 		} else {
-			return __io__block.readByte(__io__address + 5);
+			return __io__block.readByte(__io__address + 6);
 		}
 	}
 
@@ -531,37 +600,9 @@ public class UserDef_Experimental extends CFacade {
 	public void setSANITIZE_AFTER_HERE(byte SANITIZE_AFTER_HERE) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 5, SANITIZE_AFTER_HERE);
+			__io__block.writeByte(__io__address + 6, SANITIZE_AFTER_HERE);
 		} else {
-			__io__block.writeByte(__io__address + 5, SANITIZE_AFTER_HERE);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad0'.
-	 * @see #__DNA__FIELD___pad0
-	 */
-	
-	public byte get_pad0() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 6);
-		} else {
-			return __io__block.readByte(__io__address + 6);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad0'.
-	 * @see #__DNA__FIELD___pad0
-	 */
-	
-	public void set_pad0(byte _pad0) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 6, _pad0);
-		} else {
-			__io__block.writeByte(__io__address + 6, _pad0);
+			__io__block.writeByte(__io__address + 6, SANITIZE_AFTER_HERE);
 		}
 	}
 
@@ -820,6 +861,74 @@ public class UserDef_Experimental extends CFacade {
 			__io__block.writeByte(__io__address + 15, use_draw_manager_acquire_lock);
 		} else {
 			__io__block.writeByte(__io__address + 15, use_draw_manager_acquire_lock);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'use_realtime_compositor'.
+	 * @see #__DNA__FIELD__use_realtime_compositor
+	 */
+	
+	public byte getUse_realtime_compositor() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 16);
+		} else {
+			return __io__block.readByte(__io__address + 16);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'use_realtime_compositor'.
+	 * @see #__DNA__FIELD__use_realtime_compositor
+	 */
+	
+	public void setUse_realtime_compositor(byte use_realtime_compositor) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 16, use_realtime_compositor);
+		} else {
+			__io__block.writeByte(__io__address + 16, use_realtime_compositor);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			7
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 17, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 17, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 17;
+		} else {
+			__dna__offset = 17;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

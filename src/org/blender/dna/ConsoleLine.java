@@ -29,7 +29,7 @@ public class ConsoleLine extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 695;
+	public static final int __DNA__SDNA_INDEX = 698;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -75,7 +75,7 @@ public class ConsoleLine extends CFacade {
 	 * Field descriptor (offset) for struct member 'len_alloc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> keep these 3 vars so as to share free, realloc funcs Allocated length. </p>
+	 * <p> Keep these 3 vars so as to share free, realloc functions. Allocated length. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -258,7 +258,7 @@ public class ConsoleLine extends CFacade {
 	 * Get method for struct member 'len_alloc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> keep these 3 vars so as to share free, realloc funcs Allocated length. </p>
+	 * <p> Keep these 3 vars so as to share free, realloc functions. Allocated length. </p>
 	 * @see #__DNA__FIELD__len_alloc
 	 */
 	
@@ -275,7 +275,7 @@ public class ConsoleLine extends CFacade {
 	 * Set method for struct member 'len_alloc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> keep these 3 vars so as to share free, realloc funcs Allocated length. </p>
+	 * <p> Keep these 3 vars so as to share free, realloc functions. Allocated length. </p>
 	 * @see #__DNA__FIELD__len_alloc
 	 */
 	

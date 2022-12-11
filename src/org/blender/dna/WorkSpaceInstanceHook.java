@@ -29,7 +29,7 @@ public class WorkSpaceInstanceHook extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 794;
+	public static final int __DNA__SDNA_INDEX = 798;
 
 	/**
 	 * Field descriptor (offset) for struct member 'active'.
@@ -75,7 +75,7 @@ public class WorkSpaceInstanceHook extends CFacade {
 	 * Field descriptor (offset) for struct member 'temp_workspace_store'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Needed because we can't change workspaces/layouts in running handler loop, it would break context. </p>
+	 * <p> Needed because we can't change work-spaces/layouts in running handler loop, it would break context. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -190,7 +190,7 @@ public class WorkSpaceInstanceHook extends CFacade {
 	 * Get method for struct member 'temp_workspace_store'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Needed because we can't change workspaces/layouts in running handler loop, it would break context. </p>
+	 * <p> Needed because we can't change work-spaces/layouts in running handler loop, it would break context. </p>
 	 * @see #__DNA__FIELD__temp_workspace_store
 	 */
 	
@@ -210,7 +210,7 @@ public class WorkSpaceInstanceHook extends CFacade {
 	 * Set method for struct member 'temp_workspace_store'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code</h4>
-	 * <p> Needed because we can't change workspaces/layouts in running handler loop, it would break context. </p>
+	 * <p> Needed because we can't change work-spaces/layouts in running handler loop, it would break context. </p>
 	 * @see #__DNA__FIELD__temp_workspace_store
 	 */
 	

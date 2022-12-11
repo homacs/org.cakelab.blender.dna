@@ -36,7 +36,7 @@ public class Image extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 213;
+	public static final int __DNA__SDNA_INDEX = 215;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -573,7 +573,9 @@ public class Image extends CFacade {
 	 * <h4>Java .Blend</h4>
 	 * For generated images: width
 	 * <h4>Blender Source Code</h4>
-	 * <p> for generated images </p>
+	 * <p> for generated images 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -597,6 +599,10 @@ public class Image extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * For generated images: height
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -625,6 +631,10 @@ public class Image extends CFacade {
 	 * 	IMA_GENTYPE_GRID = 1,
 	 * 	IMA_GENTYPE_GRID_COLOR = 2
 	 * 				</pre>
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -651,6 +661,10 @@ public class Image extends CFacade {
 	 * 				<pre>
 	 * 	IMA_GEN_FLOAT		1
 	 * 				</pre>
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -674,6 +688,10 @@ public class Image extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * For generated images: number of bits per pixel (e.g. 24 for rgb or 32 for rgba)
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -697,6 +715,10 @@ public class Image extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * For generated images: Color used to initialize the generated image (e.g. background)
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1862,7 +1884,9 @@ public class Image extends CFacade {
 	 * <h4>Java .Blend</h4>
 	 * For generated images: width
 	 * <h4>Blender Source Code</h4>
-	 * <p> for generated images </p>
+	 * <p> for generated images 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gen_x
 	 */
 	
@@ -1881,7 +1905,9 @@ public class Image extends CFacade {
 	 * <h4>Java .Blend</h4>
 	 * For generated images: width
 	 * <h4>Blender Source Code</h4>
-	 * <p> for generated images </p>
+	 * <p> for generated images 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gen_x
 	 */
 	
@@ -1899,6 +1925,10 @@ public class Image extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * For generated images: height
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gen_y
 	 */
 	
@@ -1916,6 +1946,10 @@ public class Image extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * For generated images: height
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gen_y
 	 */
 	
@@ -1938,6 +1972,10 @@ public class Image extends CFacade {
 	 * 	IMA_GENTYPE_GRID = 1,
 	 * 	IMA_GENTYPE_GRID_COLOR = 2
 	 * 				</pre>
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gen_type
 	 */
 	
@@ -1960,6 +1998,10 @@ public class Image extends CFacade {
 	 * 	IMA_GENTYPE_GRID = 1,
 	 * 	IMA_GENTYPE_GRID_COLOR = 2
 	 * 				</pre>
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gen_type
 	 */
 	
@@ -1980,6 +2022,10 @@ public class Image extends CFacade {
 	 * 				<pre>
 	 * 	IMA_GEN_FLOAT		1
 	 * 				</pre>
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gen_flag
 	 */
 	
@@ -2000,6 +2046,10 @@ public class Image extends CFacade {
 	 * 				<pre>
 	 * 	IMA_GEN_FLOAT		1
 	 * 				</pre>
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gen_flag
 	 */
 	
@@ -2017,6 +2067,10 @@ public class Image extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * For generated images: number of bits per pixel (e.g. 24 for rgb or 32 for rgba)
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gen_depth
 	 */
 	
@@ -2034,6 +2088,10 @@ public class Image extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * For generated images: number of bits per pixel (e.g. 24 for rgb or 32 for rgba)
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gen_depth
 	 */
 	
@@ -2051,6 +2109,10 @@ public class Image extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * For generated images: Color used to initialize the generated image (e.g. background)
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gen_color
 	 */
 	
@@ -2072,6 +2134,10 @@ public class Image extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend</h4>
 	 * For generated images: Color used to initialize the generated image (e.g. background)
+	 * <h4>Blender Source Code</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gen_color
 	 */
 	

@@ -27,7 +27,7 @@ public class PTCacheExtra extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 561;
+	public static final int __DNA__SDNA_INDEX = 564;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

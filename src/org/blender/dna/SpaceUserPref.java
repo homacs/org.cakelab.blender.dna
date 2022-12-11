@@ -28,7 +28,7 @@ public class SpaceUserPref extends CFacade {
 	 * @see StructDNA
 	 * @see BlockTable
 	 */
-	public static final int __DNA__SDNA_INDEX = 697;
+	public static final int __DNA__SDNA_INDEX = 700;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
